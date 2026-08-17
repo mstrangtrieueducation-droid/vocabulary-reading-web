@@ -862,6 +862,7 @@
 
     if (notebookOnly) {
       query(".submit-hero .eyebrow").textContent = "NỘP VỞ CHỮA BÀI";
+      query(".hero-code small").textContent = "Mã bài đã được chọn sẵn; em không cần nhập lại.";
       query(".submit-hero > div > p:not(.eyebrow)").innerHTML =
         "Chọn <strong>01 PDF có sẵn</strong> hoặc <strong>nhiều ảnh theo đúng thứ tự</strong>; trang sẽ tự ghép ảnh thành một PDF để gửi cho cô Trang.";
       query(".notebook-card .section-title p").textContent = "VỞ CHỮA BÀI";
@@ -870,6 +871,7 @@
       var progressRows = document.querySelectorAll("[data-upload-progress] > div");
       if (progressRows[0]) progressRows[0].querySelector("span").textContent = "PDF vở chữa bài";
       if (progressRows[1]) progressRows[1].hidden = true;
+      query(".final-card .section-title > span").textContent = "03";
       query(".final-card .section-title p").textContent = "KIỂM TRA & NỘP BÀI";
       query(".final-card .section-title h2").textContent = "Gửi PDF vở chữa bài";
       query("[data-confirmation] + span").textContent =
