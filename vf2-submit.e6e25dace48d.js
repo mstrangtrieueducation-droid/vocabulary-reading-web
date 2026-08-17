@@ -23,11 +23,15 @@
   var params = new URLSearchParams(window.location.search);
   var requestedCode = String(params.get("code") || "").trim().toUpperCase();
   var codeMatch = /^(VF1|VF2|RI1|RI2)-U(0[1-9]|1[0-4])$/.exec(requestedCode);
-  var program = codeMatch ? PROGRAMS[codeMatch[1]] : null;
-  var matchedUnit = codeMatch ? Number(codeMatch[2]) : 0;
+  var correctionMatch = /^RI2-C(0[1-9]|1[0-2])$/.exec(requestedCode);
+  var notebookOnly = Boolean(correctionMatch);
+  var program = correctionMatch
+    ? Object.freeze({ name: "Reading Intensive 2 · Vở chữa", units: 12 })
+    : (codeMatch ? PROGRAMS[codeMatch[1]] : null);
+  var matchedUnit = correctionMatch ? Number(correctionMatch[1]) : (codeMatch ? Number(codeMatch[2]) : 0);
   var assignmentCode = program && matchedUnit <= program.units ? requestedCode : "";
   var unitNumber = assignmentCode ? matchedUnit : 0;
-  var outputName = assignmentCode + "-so-tu-vung.pdf";
+  var outputName = assignmentCode + (notebookOnly ? "-vo-chua.pdf" : "-so-tu-vung.pdf");
 
   var state = {
     images: [],
@@ -164,7 +168,7 @@
       info.studentName.length >= 2 &&
       Boolean(info.className) &&
       notebookReady() &&
-      Boolean(state.videoFile) &&
+      (notebookOnly || Boolean(state.videoFile)) &&
       Boolean(query("[data-confirmation]").checked) &&
       !state.preparing &&
       !state.submitting &&
@@ -181,7 +185,7 @@
       });
     if (!disabled) {
       renderNotebook();
-      renderVideo();
+      if (!notebookOnly) renderVideo();
       updateSubmitState();
     }
   }
@@ -747,16 +751,18 @@
     setControlsDisabled(true);
     query("[data-upload-progress]").hidden = false;
     setProgress("pdf", 0);
-    setProgress("video", 0);
+    if (!notebookOnly) setProgress("video", 0);
     try {
       var notebook = await preparePdf();
       var pdfName = state.pdfFile ? state.pdfFile.name : outputName;
-      var videoType = state.videoFile.type || "application/octet-stream";
-      setStatus("Đang kiểm tra PDF và video…", "progress");
-      var fingerprints = await Promise.all([
-        fingerprintFile(notebook, pdfName, "application/pdf"),
-        fingerprintFile(state.videoFile, state.videoFile.name, videoType),
-      ]);
+      var videoType = notebookOnly ? "" : (state.videoFile.type || "application/octet-stream");
+      setStatus(notebookOnly ? "Đang kiểm tra PDF…" : "Đang kiểm tra PDF và video…", "progress");
+      var fingerprints = notebookOnly
+        ? [await fingerprintFile(notebook, pdfName, "application/pdf")]
+        : await Promise.all([
+          fingerprintFile(notebook, pdfName, "application/pdf"),
+          fingerprintFile(state.videoFile, state.videoFile.name, videoType),
+        ]);
       setStatus("Đang chuẩn bị nộp bài…", "progress");
       var start = await postToBackend({
         action: "start",
@@ -772,7 +778,7 @@
             size: notebook.size,
             fingerprint: fingerprints[0],
           },
-          video: {
+          video: notebookOnly ? null : {
             name: state.videoFile.name,
             type: videoType,
             size: state.videoFile.size,
@@ -780,7 +786,7 @@
           },
         },
       });
-      if (!start.token || !start.uploads || !start.uploads.notebook || !start.uploads.video) {
+      if (!start.token || !start.uploads || !start.uploads.notebook || (!notebookOnly && !start.uploads.video)) {
         throw new Error("Chưa thể bắt đầu nộp bài. Em hãy thử lại.");
       }
 
@@ -788,10 +794,13 @@
       var notebookId = await uploadFileByChunks(start.token, start.uploads.notebook, notebook, function (percent) {
         setProgress("pdf", percent);
       });
-      setStatus("PDF đã gửi xong. Đang gửi video trả từ…", "progress");
-      var videoId = await uploadFileByChunks(start.token, start.uploads.video, state.videoFile, function (percent) {
-        setProgress("video", percent);
-      });
+      var videoId = "";
+      if (!notebookOnly) {
+        setStatus("PDF đã gửi xong. Đang gửi video trả từ…", "progress");
+        videoId = await uploadFileByChunks(start.token, start.uploads.video, state.videoFile, function (percent) {
+          setProgress("video", percent);
+        });
+      }
       setStatus("Đang hoàn tất bài nộp…", "progress");
       var finished = await postToBackend({
         action: "finalize",
@@ -803,14 +812,14 @@
         },
       });
       state.submitted = true;
-      setStatus("Đã nộp PDF và video thành công.", "success");
+      setStatus(notebookOnly ? "Đã nộp PDF thành công." : "Đã nộp PDF và video thành công.", "success");
       var success = query("[data-success-card]");
       success.hidden = false;
       var pdfLink = query("[data-pdf-result]");
       var videoLink = query("[data-video-result]");
       if (finished.pdfUrl) pdfLink.href = finished.pdfUrl;
       else pdfLink.hidden = true;
-      if (finished.videoUrl) videoLink.href = finished.videoUrl;
+      if (!notebookOnly && finished.videoUrl) videoLink.href = finished.videoUrl;
       else videoLink.hidden = true;
       query("[data-submit-button]").hidden = true;
       success.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -842,12 +851,33 @@
       return;
     }
     document.title = assignmentCode + " · Nộp bài " + program.name;
-    query("[data-page-title]").textContent = "Unit " + unitNumber + " · Nộp bài";
+    query("[data-page-title]").textContent = notebookOnly
+      ? "Bài chữa " + unitNumber + " · Nộp vở"
+      : "Unit " + unitNumber + " · Nộp bài";
     query("[data-assignment-code]").textContent = assignmentCode;
     query("[data-code-chip]").textContent = assignmentCode;
     document.querySelectorAll("[data-program-name]").forEach(function (node) {
       node.textContent = program.name.toUpperCase();
     });
+
+    if (notebookOnly) {
+      query(".submit-hero .eyebrow").textContent = "NỘP VỞ CHỮA BÀI";
+      query(".submit-hero > div > p:not(.eyebrow)").innerHTML =
+        "Chọn <strong>01 PDF có sẵn</strong> hoặc <strong>nhiều ảnh theo đúng thứ tự</strong>; trang sẽ tự ghép ảnh thành một PDF để gửi cho cô Trang.";
+      query(".notebook-card .section-title p").textContent = "VỞ CHỮA BÀI";
+      query("[data-notebook-empty]").textContent = "Chưa chọn PDF hoặc ảnh vở chữa bài.";
+      query(".video-card").hidden = true;
+      var progressRows = document.querySelectorAll("[data-upload-progress] > div");
+      if (progressRows[0]) progressRows[0].querySelector("span").textContent = "PDF vở chữa bài";
+      if (progressRows[1]) progressRows[1].hidden = true;
+      query(".final-card .section-title p").textContent = "KIỂM TRA & NỘP BÀI";
+      query(".final-card .section-title h2").textContent = "Gửi PDF vở chữa bài";
+      query("[data-confirmation] + span").textContent =
+        "Em đã kiểm tra đúng mã bài, đúng thứ tự và chiều ảnh, PDF có đủ trang.";
+      query("[data-submit-button]").textContent = "NỘP PDF VỞ CHỮA";
+      query("[data-success-card] p").textContent = "Cô Trang đã nhận được PDF vở chữa bài của em.";
+      query("[data-video-result]").hidden = true;
+    }
 
     query("[data-notebook-input]").addEventListener("change", function (event) {
       chooseNotebookFiles(event.currentTarget.files);
@@ -864,15 +894,17 @@
       });
     });
     query("[data-download-pdf]").addEventListener("click", downloadPdf);
-    query("[data-video-input]").addEventListener("change", function (event) {
-      chooseVideo(event.currentTarget.files && event.currentTarget.files[0]);
-      event.currentTarget.value = "";
-    });
-    query("[data-remove-video]").addEventListener("click", function () {
-      state.videoFile = null;
-      revokeVideo();
-      renderVideo();
-    });
+    if (!notebookOnly) {
+      query("[data-video-input]").addEventListener("change", function (event) {
+        chooseVideo(event.currentTarget.files && event.currentTarget.files[0]);
+        event.currentTarget.value = "";
+      });
+      query("[data-remove-video]").addEventListener("click", function () {
+        state.videoFile = null;
+        revokeVideo();
+        renderVideo();
+      });
+    }
     query("[data-submit-button]").addEventListener("click", submitAll);
     document
       .querySelectorAll("[data-student-name], [data-class-name], [data-confirmation]")
@@ -881,7 +913,7 @@
         node.addEventListener("change", updateSubmitState);
       });
     renderNotebook();
-    renderVideo();
+    if (!notebookOnly) renderVideo();
     updateSubmitState();
   }
 
@@ -893,7 +925,7 @@
     }
     revokePreparedPdf();
     revokeImages();
-    revokeVideo();
+    if (!notebookOnly) revokeVideo();
   });
 
   if (document.readyState === "loading") {
