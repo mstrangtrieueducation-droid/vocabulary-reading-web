@@ -1,6 +1,3 @@
-const FORM_BASE_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLScOOy3NTX1aIuHk_tfVG-LGsOHFsyJdU0PLGlSFizR2CFWK0g/viewform?usp=pp_url";
-
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -298,12 +295,11 @@ function speak(text, rate = 0.86) {
   window.speechSynthesis.speak(utterance);
 }
 
-function makeFormUrl(unit) {
-  const entryId = document.documentElement.dataset.formEntryId;
-  if (!entryId || entryId === "PENDING") return FORM_BASE_URL;
-  return `${FORM_BASE_URL}&entry.${encodeURIComponent(entryId)}=${encodeURIComponent(
-    unit.code,
-  )}`;
+function makeSubmitUrl(unit) {
+  return new URL(
+    `../vocab-submit/?code=${encodeURIComponent(unit.code)}`,
+    window.location.href,
+  ).href;
 }
 
 function shouldUseEmbeddedPages() {
@@ -627,7 +623,7 @@ function hydrate(unit) {
     node.textContent = unit.code;
   });
   document.querySelectorAll(".form-link").forEach((link) => {
-    link.href = makeFormUrl(unit);
+    link.href = makeSubmitUrl(unit);
   });
 
   renderEntries(unit);
