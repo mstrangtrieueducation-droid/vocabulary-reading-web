@@ -147,6 +147,11 @@ test("all aliases load the same cache-busted resilient uploader release", () => 
   assert.match(source, /ATTEMPT_EXISTS/);
   assert.match(source, /setCreationDate\(stablePdfDate\)/);
   assert.match(source, /isSameOriginReturnBridge/);
+  assert.match(source, /w17-prompts\/w17-prompt-1\.png/);
+  assert.match(source, /w17-prompts\/w17-prompt-2\.png/);
+  assert.ok(fs.existsSync(path.join(root, "w17-prompts", "w17-prompt-1.png")));
+  assert.ok(fs.existsSync(path.join(root, "w17-prompts", "w17-prompt-2.png")));
+  assert.doesNotMatch(source, /renderWritingTimer|data-writing-timer|countdown/i);
 
   const bridge = readUtf8("bridge-return/index.html");
   assert.match(bridge, /add\(window\.parent\.parent\)/);
