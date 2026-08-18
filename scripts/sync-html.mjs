@@ -17,7 +17,7 @@ const ranges = [
 const routes = ranges.flatMap(([prefix, count]) =>
   Array.from({ length: count }, (_, index) => `${prefix}-u${String(index + 1).padStart(2, "0")}-live`),
 );
-routes.push("vocab-submit", "vf2-submit");
+routes.push("vocab-submit", "vf2-submit", "notebook-submit", "bridge-return");
 
 for (const route of routes) {
   const source = path.join(sourceRoot, route, "index.html");

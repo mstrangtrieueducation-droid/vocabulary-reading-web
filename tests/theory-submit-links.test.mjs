@@ -37,13 +37,15 @@ function loadUnits(asset, globalName) {
 function evaluateSubmitUrl(sharedSource, pageUrl, code) {
   const functionSource = sharedSource.match(/function makeSubmitUrl\(unit\) \{[\s\S]*?\n\}/)?.[0];
   assert.ok(functionSource, "Shared asset does not define makeSubmitUrl(unit)");
+  const versionSource = sharedSource.match(/const SHARED_UPLOADER_VERSION = [^;]+;/)?.[0];
+  assert.ok(versionSource, "Shared asset does not define SHARED_UPLOADER_VERSION");
   const sandbox = {
     URL,
     encodeURIComponent,
     window: { location: { href: pageUrl } },
   };
   vm.runInNewContext(
-    `${functionSource}\nresult = makeSubmitUrl({ code: ${JSON.stringify(code)} });`,
+    `${versionSource}\n${functionSource}\nresult = makeSubmitUrl({ code: ${JSON.stringify(code)} });`,
     sandbox,
   );
   return sandbox.result;
@@ -121,9 +123,32 @@ test("all 52 theory routes open the shared uploader with their exact code", () =
       const pageUrl = `https://mstrangtrieueducation-droid.github.io/vocabulary-reading-web/${route}/`;
       assert.equal(
         evaluateSubmitUrl(sharedSource, pageUrl, code),
-        `https://mstrangtrieueducation-droid.github.io/vocabulary-reading-web/vocab-submit/?code=${code}`,
+        `https://mstrangtrieueducation-droid.github.io/vocabulary-reading-web/vocab-submit/?code=${code}&v=20260818-3`,
         `${route} resolves to the wrong uploader URL`,
       );
     }
   }
+});
+
+test("all aliases load the same cache-busted resilient uploader release", () => {
+  const uploader = readUtf8("vocab-submit/index.html");
+  assert.equal(readUtf8("vf2-submit/index.html"), uploader);
+  assert.equal(readUtf8("notebook-submit/index.html"), uploader);
+
+  const asset = extractAsset(
+    uploader,
+    /src=["']\.\.\/(vf2-submit\.[a-f0-9]{12}\.js)["']/,
+    "vocab-submit",
+  );
+  const source = readUtf8(asset);
+  assert.match(source, /maxChunkAttempts = 8/);
+  assert.match(source, /postControlWithRetry/);
+  assert.match(source, /maxAttempts = 6/);
+  assert.match(source, /ATTEMPT_EXISTS/);
+  assert.match(source, /setCreationDate\(stablePdfDate\)/);
+  assert.match(source, /isSameOriginReturnBridge/);
+
+  const bridge = readUtf8("bridge-return/index.html");
+  assert.match(bridge, /add\(window\.parent\.parent\)/);
+  assert.match(bridge, /add\(window\.top\)/);
 });
