@@ -20,6 +20,68 @@
     RI2: Object.freeze({ name: "Reading Intensive 2", units: 12 }),
   });
 
+  var IELTS_WRITING_ASSIGNMENTS = Object.freeze({
+    "IELTS-WRITING-W07": Object.freeze({
+      lesson: 7,
+      tasks: Object.freeze([
+        Object.freeze({ type: "image", image: "../w07-prompts/car-production.png", alt: "Đề 1: Car production", minWords: 150 }),
+        Object.freeze({ type: "image", image: "../w07-prompts/prison-population.png", alt: "Đề 2: Prison population", minWords: 150 }),
+      ]),
+    }),
+    "IELTS-WRITING-W17": Object.freeze({
+      lesson: 17,
+      tasks: Object.freeze([
+        Object.freeze({ type: "image", image: "../w17-prompts/w17-prompt-1.png", alt: "Đề 1: US travel reasons and issues", minWords: 150 }),
+        Object.freeze({ type: "image", image: "../w17-prompts/w17-prompt-2.png", alt: "Đề 2: Australian temperatures and rainfall", minWords: 150 }),
+      ]),
+    }),
+    "IELTS-WRITING-W23": Object.freeze({
+      lesson: 23,
+      tasks: Object.freeze([
+        Object.freeze({ type: "text", title: "IELTS Writing Task 2", prompt: "Advertisements are becoming more and more common in our everyday life.\n\nIs it a positive or negative development?", minWords: 250 }),
+      ]),
+    }),
+    "IELTS-WRITING-W26": Object.freeze({
+      lesson: 26,
+      tasks: Object.freeze([
+        Object.freeze({ type: "text", title: "IELTS Writing Task 2 · Đề 1", prompt: "Some people regard video games as harmless fun, or even as a useful educational tool. Others, however, believe that video games are having an adverse effect on the people who play them.\n\nIn your opinion, do the drawbacks of video games outweigh the benefits?", minWords: 250 }),
+        Object.freeze({ type: "text", title: "IELTS Writing Task 2 · Đề 2", prompt: "It is now possible for scientists and tourists to travel to remote areas with natural environments, such as the South Pole.\n\nIs this a positive or negative development?", minWords: 250 }),
+      ]),
+    }),
+    "IELTS-WRITING-W33": Object.freeze({
+      lesson: 33,
+      tasks: Object.freeze([
+        Object.freeze({ type: "text", title: "Topic 10.1.6", prompt: "In today’s world of advanced science and technology, people still greatly value artists such as musicians, writers, and painters.\n\nWhat can the arts tell us about life that science and technology cannot?", minWords: 250 }),
+        Object.freeze({ type: "text", title: "Topic 10.2.1", prompt: "Some people think history has nothing or little to tell us, but others think that studying the past can help us better understand the present.\n\nDiscuss both views and give your opinion.", minWords: 250 }),
+        Object.freeze({ type: "text", title: "Topic 10.4", prompt: "Most people have forgotten the meaning behind traditional or religious festivals; during festival periods, people nowadays only want to enjoy themselves.\n\nTo what extent do you agree or disagree with this opinion?", minWords: 250 }),
+      ]),
+    }),
+    "IELTS-WRITING-W35": Object.freeze({
+      lesson: 35,
+      tasks: Object.freeze([
+        Object.freeze({ type: "text", title: "Đề 1", prompt: "When children start school, teachers have more influence on their intellectual and social development than their parents.\n\nTo what extent do you agree or disagree?", minWords: 250 }),
+        Object.freeze({ type: "text", title: "Đề 2", prompt: "New parents should attend parenting courses to ensure the growth of their children.\n\nTo what extent do you agree or disagree?", minWords: 250 }),
+        Object.freeze({ type: "text", title: "Đề 3", prompt: "Some people prefer to live alone. Others enjoy sharing a house with family or friends.\n\nDo the advantages of living with others outweigh the disadvantages?", minWords: 250 }),
+      ]),
+    }),
+    "IELTS-WRITING-W36": Object.freeze({
+      lesson: 36,
+      tasks: Object.freeze([
+        Object.freeze({ type: "text", title: "Topic 14", prompt: "Some people say that cheap air travel gives ordinary people more freedom to travel further. Other people say that it adds to the world’s environmental problems and therefore should be made more expensive to discourage people from traveling too much.\n\nDiscuss both views and give your opinion.", minWords: 250 }),
+        Object.freeze({ type: "text", title: "Topic 15", prompt: "Scientists believe that computers will become more intelligent than human beings. Some people find it is a positive trend while others think it is a negative development.\n\nDiscuss both points and give your own opinion.", minWords: 250 }),
+        Object.freeze({ type: "text", title: "Topic 16", prompt: "More and more people want to own famous brands of clothes, cars and other items.\n\nWhat are the reasons? Is this a positive or negative development?", minWords: 250 }),
+      ]),
+    }),
+    "IELTS-WRITING-W37": Object.freeze({
+      lesson: 37,
+      tasks: Object.freeze([
+        Object.freeze({ type: "text", title: "Topic 17 · Đề 1", prompt: "The best way to solve the world’s environmental problems is to increase the cost of fuel.\n\nTo what extent do you agree or disagree?", minWords: 250 }),
+        Object.freeze({ type: "text", title: "Topic 17 · Đề 2", prompt: "It is a natural process for animal species to become extinct. There is no reason why people should try to prevent this from happening.\n\nTo what extent do you agree or disagree with the statement?", minWords: 250 }),
+        Object.freeze({ type: "text", title: "Topic 17 · Đề 3", prompt: "In the modern world, it is no longer necessary to use animals as food, or to use animal products for, for example, clothing and medicines.\n\nTo what extent do you agree or disagree?", minWords: 250 }),
+      ]),
+    }),
+  });
+
   var params = new URLSearchParams(window.location.search);
   var requestedCode = String(params.get("code") || "").trim().toUpperCase();
   var codeMatch = /^(VF1|VF2|RI1|RI2)-U(0[1-9]|1[0-4])$/.exec(requestedCode);
@@ -27,8 +89,9 @@
   var academicMatch = /^AP-B(0[1-8])$/.exec(requestedCode);
   var grammarMatch = /^GF1-U(0[1-9]|1[0-9]|20|04\.[12]|05\.[12]|09\.[12])-LT$/.exec(requestedCode);
   var ieltsReadingMatch = /^IELTS-READING-B01$/.exec(requestedCode);
-  var ieltsWritingMatch = /^IELTS-WRITING-W(05|07)$/.exec(requestedCode);
-  var isWritingRoom = requestedCode === "IELTS-WRITING-W07";
+  var ieltsWritingMatch = /^IELTS-WRITING-W(05|07|17|23|26|33|35|36|37)$/.exec(requestedCode);
+  var writingAssignment = IELTS_WRITING_ASSIGNMENTS[requestedCode] || null;
+  var isWritingRoom = Boolean(writingAssignment);
   var activeWritingTask = 1;
   var notebookOnly = Boolean(correctionMatch || academicMatch || grammarMatch || ieltsWritingMatch);
   var submissionKind = correctionMatch ? "correction" : (academicMatch ? "academic" : (grammarMatch ? "grammar" : (ieltsReadingMatch ? "ieltsReading" : (ieltsWritingMatch ? "ieltsWriting" : "vocabulary"))));
@@ -213,8 +276,9 @@
   function writingData() {
     if (!isWritingRoom) return null;
     return {
-      essayOne: String(query("[data-essay-one]").value || "").trim(),
-      essayTwo: String(query("[data-essay-two]").value || "").trim(),
+      essays: Array.from(document.querySelectorAll("[data-essay-index]")).map(function (textarea) {
+        return String(textarea.value || "").trim();
+      }),
       confirmed: Boolean(query("[data-confirmation]").checked),
     };
   }
@@ -222,29 +286,53 @@
   function writingReady() {
     if (!isWritingRoom) return true;
     var data = writingData();
-    return countWords(data.essayOne) >= 150 && countWords(data.essayTwo) >= 150;
+    return data.essays.length === writingAssignment.tasks.length && data.essays.every(function (essay, index) {
+      return countWords(essay) >= writingAssignment.tasks[index].minWords;
+    });
   }
 
   function writingStorageKey(suffix) {
-    return "ielts-writing-w07-" + suffix;
+    return requestedCode.toLowerCase() + "-" + suffix;
   }
 
   function saveWritingDrafts() {
     if (!isWritingRoom) return;
     try {
-      localStorage.setItem(writingStorageKey("essay-one"), query("[data-essay-one]").value);
-      localStorage.setItem(writingStorageKey("essay-two"), query("[data-essay-two]").value);
+      document.querySelectorAll("[data-essay-index]").forEach(function (textarea, index) {
+        localStorage.setItem(writingStorageKey("essay-" + (index + 1)), textarea.value);
+      });
     } catch (_error) {}
   }
 
   function renderWordCount(number) {
-    var textarea = query(number === 1 ? "[data-essay-one]" : "[data-essay-two]");
-    var countNode = query(number === 1 ? "[data-word-count-one]" : "[data-word-count-two]");
-    var statusNode = query(number === 1 ? "[data-word-status-one]" : "[data-word-status-two]");
+    var textarea = query('[data-essay-index="' + number + '"]');
+    var countNode = query('[data-word-count="' + number + '"]');
+    var statusNode = query('[data-word-status="' + number + '"]');
+    var minimum = writingAssignment.tasks[number - 1].minWords;
     var words = countWords(textarea && textarea.value);
     countNode.textContent = String(words);
-    statusNode.textContent = words >= 150 ? "Đã đủ tối thiểu 150 từ" : "Chưa đủ 150 từ";
-    statusNode.classList.toggle("is-ready", words >= 150);
+    statusNode.textContent = words >= minimum ? "Đã đủ tối thiểu " + minimum + " từ" : "Chưa đủ " + minimum + " từ";
+    statusNode.classList.toggle("is-ready", words >= minimum);
+  }
+
+  function renderWritingRoom() {
+    var tabs = query("[data-task-tabs]");
+    var tasks = query("[data-writing-tasks]");
+    tabs.innerHTML = writingAssignment.tasks.map(function (_task, index) {
+      var number = index + 1;
+      return '<button type="button" class="task-tab' + (number === 1 ? ' is-active' : '') + '" data-task-tab="' + number + '" role="tab" aria-selected="' + (number === 1 ? 'true' : 'false') + '">ĐỀ ' + number + '</button>';
+    }).join("");
+    tasks.innerHTML = writingAssignment.tasks.map(function (task, index) {
+      var number = index + 1;
+      var prompt = task.type === "image"
+        ? '<img src="' + escapeHtml(task.image) + '" alt="' + escapeHtml(task.alt || ("Đề " + number)) + '" />'
+        : '<article class="writing-text-prompt"><small>' + escapeHtml(task.title || ("Đề " + number)) + '</small><p>' + escapeHtml(task.prompt).replace(/\n/g, "<br>") + '</p><strong>Write at least ' + task.minWords + ' words.</strong></article>';
+      return '<div class="writing-task' + (number === 1 ? ' is-active' : '') + '" data-writing-task="' + number + '"' + (number === 1 ? '' : ' hidden') + '>' +
+        '<div class="writing-prompt">' + prompt + '</div>' +
+        '<div class="writing-editor"><label for="writing-essay-' + number + '">Bài viết Đề ' + number + '</label>' +
+        '<textarea id="writing-essay-' + number + '" data-essay-index="' + number + '" rows="18" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="sentences" placeholder="Viết bài hoàn chỉnh tại đây..."></textarea>' +
+        '<div class="word-counter"><span>Word count</span><strong data-word-count="' + number + '">0</strong><em data-word-status="' + number + '">Chưa đủ ' + task.minWords + ' từ</em></div></div></div>';
+    }).join("");
   }
 
   function selectWritingTask(number) {
@@ -580,6 +668,12 @@
     setStatus("Đang ghép ảnh theo đúng thứ tự đã sắp xếp…", "progress");
     try {
       var pdf = await window.PDFLib.PDFDocument.create();
+      // Keep image-generated PDFs byte-stable across a reload. This lets an
+      // interrupted resumable upload recognize the same ordered image set
+      // instead of treating a new creation timestamp as a different file.
+      var stablePdfDate = new Date("2000-01-01T00:00:00.000Z");
+      pdf.setCreationDate(stablePdfDate);
+      pdf.setModificationDate(stablePdfDate);
       var pageWidth = 595.28;
       var pageHeight = 841.89;
       var margin = 22;
@@ -685,7 +779,7 @@
     }).join("");
   }
 
-  function postToBackend(payload) {
+  function postToBackend(payload, timeoutMs) {
     if (!API_BASE || /^__/.test(API_BASE)) {
       return Promise.reject(new Error("Trang nộp bài đang tạm thời chưa sẵn sàng. Em hãy báo cô Trang."));
     }
@@ -729,18 +823,24 @@
         }
         var isLegacyAppsScriptBridge = originHost === "script.google.com"
           || originHost.endsWith(".googleusercontent.com");
-        var isSameOriginReturnBridge = event.origin === window.location.origin
-          && event.source === frame.contentWindow;
+        // Apps Script wraps HtmlService in one or more sandbox frames. The
+        // GitHub return page therefore broadcasts from a nested WindowProxy,
+        // not necessarily from frame.contentWindow. Same-origin plus the
+        // per-request random requestId is the authoritative callback check.
+        var isSameOriginReturnBridge = event.origin === window.location.origin;
         if (!isLegacyAppsScriptBridge && !isSameOriginReturnBridge) return;
         if (data.source !== BRIDGE_SOURCE || data.requestId !== requestId || !data.result) return;
         cleanup();
-        if (!data.result.ok) reject(new Error(studentFacingError(data.result)));
-        else resolve(data.result);
+        if (!data.result.ok) {
+          var failure = new Error(studentFacingError(data.result));
+          failure.code = String(data.result.code || "");
+          reject(failure);
+        } else resolve(data.result);
       }
       var timeout = window.setTimeout(function () {
         cleanup();
         reject(new Error("Việc gửi bài đang mất nhiều thời gian. Em hãy giữ nguyên trang và thử lại."));
-      }, 180000);
+      }, Number(timeoutMs) > 0 ? Number(timeoutMs) : 180000);
       window.addEventListener("message", onMessage);
       document.body.append(frame, form);
       form.submit();
@@ -752,7 +852,7 @@
     if (code === "DUPLICATE") {
       return "Bài này đã được nộp. Nếu cần nộp lại, em hãy báo cô Trang.";
     }
-    if (code === "ACTIVE_ON_OTHER_DEVICE") {
+    if (code === "ACTIVE_ON_OTHER_DEVICE" || code === "ATTEMPT_EXISTS") {
       return "Bài nộp đang được thực hiện trên thiết bị khác. Em hãy quay lại thiết bị đó hoặc báo cô Trang.";
     }
     if (code === "BAD_ASSIGNMENT") {
@@ -764,6 +864,34 @@
     return "Chưa nộp được bài. Em hãy giữ nguyên trang và thử lại.";
   }
 
+  function retryDelay(attempt) {
+    return Math.min(12000, 700 * Math.pow(2, attempt - 1))
+      + Math.floor(Math.random() * 900);
+  }
+
+  function retryableControlError(error) {
+    var code = String(error && error.code || "");
+    return !code || code === "SERVER_ERROR" || code === "DRIVE_UPLOAD_RETRY";
+  }
+
+  async function postControlWithRetry(payload) {
+    var maxAttempts = 6;
+    var lastError;
+    for (var attempt = 1; attempt <= maxAttempts; attempt += 1) {
+      try {
+        return await postToBackend(payload, 65000);
+      } catch (error) {
+        lastError = error;
+        if (!retryableControlError(error) || attempt === maxAttempts) throw error;
+        setStatus("Nhiều bạn đang nộp cùng lúc. Trang sẽ tự tiếp tục…", "progress");
+        await new Promise(function (resolve) {
+          window.setTimeout(resolve, retryDelay(attempt));
+        });
+      }
+    }
+    throw lastError;
+  }
+
   async function probeUploadOffset(token, upload, total) {
     return await postToBackend({
       action: "uploadChunk",
@@ -772,7 +900,7 @@
       uploadId: upload.uploadId,
       total: total,
       probe: true,
-    });
+    }, 65000);
   }
 
   async function uploadFileByChunks(token, upload, file, onProgress) {
@@ -795,7 +923,12 @@
       var base64 = await blobToBase64(chunk);
       var result;
       var lastError;
-      for (var attempt = 1; attempt <= 3; attempt += 1) {
+      // Apps Script has a per-owner concurrency ceiling. When a whole class
+      // submits together, short-lived chunk requests can temporarily queue or
+      // be rejected. Keep the same resumable session and retry with jitter so
+      // students do not have to restart a large video from zero.
+      var maxChunkAttempts = 8;
+      for (var attempt = 1; attempt <= maxChunkAttempts; attempt += 1) {
         try {
           result = await postToBackend({
             action: "uploadChunk",
@@ -805,7 +938,7 @@
             offset: offset,
             total: total,
             dataBase64: base64,
-          });
+          }, 65000);
           break;
         } catch (error) {
           lastError = error;
@@ -818,9 +951,9 @@
           } catch (_probeError) {
             // Keep the original error; a later retry may recover the Drive session.
           }
-          if (attempt < 3) {
+          if (attempt < maxChunkAttempts) {
             await new Promise(function (resolve) {
-              window.setTimeout(resolve, 800 * attempt);
+              window.setTimeout(resolve, retryDelay(attempt));
             });
           }
         }
@@ -869,7 +1002,7 @@
           fingerprintFile(state.videoFile, state.videoFile.name, videoType),
         ]);
       setStatus("Đang chuẩn bị nộp bài…", "progress");
-      var start = await postToBackend({
+      var start = await postControlWithRetry({
         action: "start",
         assignmentCode: assignmentCode,
         clientSubmissionId: clientSubmissionId(),
@@ -908,7 +1041,7 @@
         });
       }
       setStatus("Đang hoàn tất bài nộp…", "progress");
-      var finished = await postToBackend({
+      var finished = await postControlWithRetry({
         action: "finalize",
         assignmentCode: assignmentCode,
         token: start.token,
@@ -920,8 +1053,9 @@
       state.submitted = true;
       if (isWritingRoom) {
         try {
-          localStorage.removeItem(writingStorageKey("essay-one"));
-          localStorage.removeItem(writingStorageKey("essay-two"));
+          writingAssignment.tasks.forEach(function (_task, index) {
+            localStorage.removeItem(writingStorageKey("essay-" + (index + 1)));
+          });
         } catch (_error) {}
       }
       setStatus(notebookOnly ? "Đã nộp PDF thành công." : "Đã nộp PDF và video thành công.", "success");
@@ -1006,29 +1140,31 @@
     }
 
     if (isWritingRoom) {
+      renderWritingRoom();
       query("[data-writing-room]").hidden = false;
       query(".submit-hero .eyebrow").textContent = "NỘP VỞ CHÉP & VIẾT BÀI";
       query(".submit-hero > div > p:not(.eyebrow)").innerHTML =
-        "Nộp <strong>vở chép</strong>, sau đó viết đủ <strong>hai bài Academic Task 1</strong> theo đúng đề Buổi 07 trong phòng viết bên dưới.";
+        "Nộp <strong>vở chép</strong>, sau đó viết đủ <strong>" + writingAssignment.tasks.length + " bài</strong> theo đúng đề Buổi " + String(unitNumber).padStart(2, "0") + " trong phòng viết bên dưới. Bài luyện tập này <strong>không tính giờ</strong>.";
+      query("[data-writing-heading]").textContent = "Viết " + writingAssignment.tasks.length + " bài theo đúng đề Buổi " + String(unitNumber).padStart(2, "0");
       query(".final-card .section-title > span").textContent = "04";
-      query(".final-card .section-title h2").textContent = "Nộp PDF vở chép và hai bài viết";
+      query(".final-card .section-title h2").textContent = "Nộp PDF vở chép và " + writingAssignment.tasks.length + " bài viết";
       query("[data-confirmation] + span").textContent =
-        "Em xác nhận mỗi bài có ít nhất 150 từ, không dùng từ viết tắt hoặc ngôn ngữ văn nói, đã dùng cấu trúc học trên lớp và cả hai bài do em tự viết.";
-      query("[data-submit-button]").textContent = "NỘP VỞ CHÉP + 2 BÀI VIẾT";
-      query("[data-success-card] p").textContent = "Cô Trang đã nhận được PDF vở chép và hai bài viết của em.";
+        "Em xác nhận mỗi bài đã đủ số từ tối thiểu, không dùng từ viết tắt hoặc ngôn ngữ văn nói, đã dùng cấu trúc học trên lớp và toàn bộ bài do em tự viết.";
+      query("[data-submit-button]").textContent = "NỘP VỞ CHÉP + " + writingAssignment.tasks.length + " BÀI VIẾT";
+      query("[data-success-card] p").textContent = "Cô Trang đã nhận được PDF vở chép và " + writingAssignment.tasks.length + " bài viết của em.";
       try {
-        query("[data-essay-one]").value = localStorage.getItem(writingStorageKey("essay-one")) || "";
-        query("[data-essay-two]").value = localStorage.getItem(writingStorageKey("essay-two")) || "";
+        document.querySelectorAll("[data-essay-index]").forEach(function (textarea, index) {
+          textarea.value = localStorage.getItem(writingStorageKey("essay-" + (index + 1))) || "";
+        });
       } catch (_error) {}
-      renderWordCount(1);
-      renderWordCount(2);
+      writingAssignment.tasks.forEach(function (_task, index) { renderWordCount(index + 1); });
       document.querySelectorAll("[data-task-tab]").forEach(function (button) {
         button.addEventListener("click", function () { selectWritingTask(Number(button.dataset.taskTab)); });
       });
-      [["[data-essay-one]", 1], ["[data-essay-two]", 2]].forEach(function (entry) {
-        query(entry[0]).addEventListener("input", function () {
+      document.querySelectorAll("[data-essay-index]").forEach(function (textarea) {
+        textarea.addEventListener("input", function () {
           saveWritingDrafts();
-          renderWordCount(entry[1]);
+          renderWordCount(Number(textarea.dataset.essayIndex));
           updateSubmitState();
         });
       });
@@ -1063,7 +1199,7 @@
     }
     query("[data-submit-button]").addEventListener("click", submitAll);
     document
-      .querySelectorAll("[data-student-name], [data-class-name], [data-confirmation], [data-essay-one], [data-essay-two]")
+      .querySelectorAll("[data-student-name], [data-class-name], [data-confirmation], [data-essay-index]")
       .forEach(function (node) {
         node.addEventListener("input", updateSubmitState);
         node.addEventListener("change", updateSubmitState);
