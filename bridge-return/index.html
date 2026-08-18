@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đang hoàn tất bài nộp</title>
+  </head>
+  <body>
+    <p>Đang hoàn tất bài nộp…</p>
+    <script>
+      (function () {
+        var encoded = window.location.hash.slice(1);
+        if (!encoded || window.parent === window) return;
+        try {
+          var message = JSON.parse(decodeURIComponent(encoded));
+          window.history.replaceState(null, "", window.location.pathname);
+          window.parent.postMessage(message, window.location.origin);
+        } catch (_error) {
+          window.parent.postMessage({
+            source: "vf2-drive-submit",
+            version: 1,
+            requestId: "",
+            result: {
+              ok: false,
+              code: "BRIDGE_RETURN_FAILED",
+              error: "Chưa nhận được phản hồi. Em hãy giữ nguyên trang và thử lại.",
+            },
+          }, window.location.origin);
+        }
+      })();
+    </script>
+  </body>
+</html>
