@@ -10,13 +10,26 @@
     <script>
       (function () {
         var encoded = window.location.hash.slice(1);
-        if (!encoded || window.parent === window) return;
+        if (!encoded) return;
+        function broadcast(message) {
+          var targets = [];
+          function add(target) {
+            if (target && targets.indexOf(target) < 0) targets.push(target);
+          }
+          try { add(window.parent); } catch (_parentError) {}
+          try { add(window.parent.parent); } catch (_grandparentError) {}
+          try { add(window.parent.parent.parent); } catch (_ancestorError) {}
+          try { add(window.top); } catch (_topError) {}
+          targets.forEach(function (target) {
+            try { target.postMessage(message, window.location.origin); } catch (_postError) {}
+          });
+        }
         try {
           var message = JSON.parse(decodeURIComponent(encoded));
           window.history.replaceState(null, "", window.location.pathname);
-          window.parent.postMessage(message, window.location.origin);
+          broadcast(message);
         } catch (_error) {
-          window.parent.postMessage({
+          broadcast({
             source: "vf2-drive-submit",
             version: 1,
             requestId: "",
@@ -25,7 +38,7 @@
               code: "BRIDGE_RETURN_FAILED",
               error: "Chưa nhận được phản hồi. Em hãy giữ nguyên trang và thử lại.",
             },
-          }, window.location.origin);
+          });
         }
       })();
     </script>
