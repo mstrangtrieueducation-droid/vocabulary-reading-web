@@ -229,14 +229,11 @@
     return "ielts-writing-w07-" + suffix;
   }
 
-  function saveWritingDrafts(startTask) {
+  function saveWritingDrafts() {
     if (!isWritingRoom) return;
     try {
       localStorage.setItem(writingStorageKey("essay-one"), query("[data-essay-one]").value);
       localStorage.setItem(writingStorageKey("essay-two"), query("[data-essay-two]").value);
-      if (startTask && !localStorage.getItem(writingStorageKey("started-at-" + startTask))) {
-        localStorage.setItem(writingStorageKey("started-at-" + startTask), String(Date.now()));
-      }
     } catch (_error) {}
   }
 
@@ -262,23 +259,6 @@
       panel.hidden = !active;
       panel.classList.toggle("is-active", active);
     });
-    renderWritingTimer();
-  }
-
-  function renderWritingTimer() {
-    if (!isWritingRoom) return;
-    var timer = query("[data-writing-timer]");
-    var wrap = timer && timer.closest(".writing-timer");
-    var startedAt = 0;
-    try { startedAt = Number(localStorage.getItem(writingStorageKey("started-at-" + activeWritingTask))) || 0; } catch (_error) {}
-    var remaining = startedAt ? Math.max(0, 20 * 60 - Math.floor((Date.now() - startedAt) / 1000)) : 20 * 60;
-    var taskNode = query("[data-timer-task]");
-    if (taskNode) taskNode.textContent = String(activeWritingTask);
-    var minutes = Math.floor(remaining / 60);
-    var seconds = remaining % 60;
-    timer.textContent = String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
-    wrap.classList.toggle("is-warning", remaining > 0 && remaining <= 5 * 60);
-    wrap.classList.toggle("is-expired", remaining === 0);
   }
 
   function updateSubmitState() {
@@ -938,8 +918,6 @@
         try {
           localStorage.removeItem(writingStorageKey("essay-one"));
           localStorage.removeItem(writingStorageKey("essay-two"));
-          localStorage.removeItem(writingStorageKey("started-at-1"));
-          localStorage.removeItem(writingStorageKey("started-at-2"));
         } catch (_error) {}
       }
       setStatus(notebookOnly ? "Đã nộp PDF thành công." : "Đã nộp PDF và video thành công.", "success");
@@ -1040,16 +1018,13 @@
       } catch (_error) {}
       renderWordCount(1);
       renderWordCount(2);
-      renderWritingTimer();
-      window.setInterval(renderWritingTimer, 1000);
       document.querySelectorAll("[data-task-tab]").forEach(function (button) {
         button.addEventListener("click", function () { selectWritingTask(Number(button.dataset.taskTab)); });
       });
       [["[data-essay-one]", 1], ["[data-essay-two]", 2]].forEach(function (entry) {
         query(entry[0]).addEventListener("input", function () {
-          saveWritingDrafts(entry[1]);
+          saveWritingDrafts();
           renderWordCount(entry[1]);
-          renderWritingTimer();
           updateSubmitState();
         });
       });
@@ -1095,7 +1070,7 @@
   }
 
   window.addEventListener("beforeunload", function (event) {
-    if (isWritingRoom && !state.submitted) saveWritingDrafts(0);
+    if (isWritingRoom && !state.submitted) saveWritingDrafts();
     if (state.submitting) {
       event.preventDefault();
       event.returnValue = "";

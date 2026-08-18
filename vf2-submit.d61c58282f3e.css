@@ -70,20 +70,6 @@ textarea {
 
 .task-tab.is-active { border-color: var(--navy); background: var(--navy); color: #fff; }
 
-.writing-timer {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 7px 13px;
-  border-radius: 8px;
-  background: #eef3f1;
-}
-
-.writing-timer span { color: #566c68; font-size: 0.68rem; font-weight: 850; letter-spacing: 0.09em; }
-.writing-timer strong { min-width: 72px; color: var(--navy); font: 700 1.45rem Georgia, "Times New Roman", serif; text-align: right; }
-.writing-timer.is-warning { background: #fff2d2; }
-.writing-timer.is-expired { background: #fae4e1; }
-
 .writing-task {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
@@ -814,7 +800,6 @@ footer {
 @media (max-width: 430px) {
   .writing-toolbar { align-items: center; }
   .task-tab { min-width: 68px; padding-inline: 12px; }
-  .writing-timer span { display: none; }
 
   .submit-masthead span {
     display: none;
