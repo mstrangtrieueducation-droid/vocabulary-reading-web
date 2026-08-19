@@ -151,6 +151,8 @@ test("all aliases load the same cache-busted resilient uploader release", () => 
   const uploader = readUtf8("vocab-submit/index.html");
   assert.equal(readUtf8("vf2-submit/index.html"), uploader);
   assert.equal(readUtf8("notebook-submit/index.html"), uploader);
+  assert.match(uploader, /<script src="\.\.\/original-form-redirect\.20260820\.js"><\/script>/);
+  const immediateRedirect = readUtf8("original-form-redirect.20260820.js");
 
   const asset = extractAsset(
     uploader,
@@ -192,12 +194,15 @@ test("all aliases load the same cache-busted resilient uploader release", () => 
     ["AP-B08", "1FAIpQLSeE7deH99J04Rq9LWAPS6moFYONABFpxfwq86vZ7G4_kkwe0Q", "982583688"],
   ];
   for (const [code, formId, entryId] of formCases) {
+    const expected = `https://docs.google.com/forms/d/e/${formId}/viewform?usp=pp_url&entry.${entryId}=${encodeURIComponent(code)}&srd=true`;
+    assert.equal(evaluateLegacyRedirect(source, code), expected, `${code} does not redirect to its original Form`);
     assert.equal(
-      evaluateLegacyRedirect(source, code),
-      `https://docs.google.com/forms/d/e/${formId}/viewform?usp=pp_url&entry.${entryId}=${encodeURIComponent(code)}&srd=true`,
-      `${code} does not redirect to its original Form`,
+      evaluateLegacyRedirect(immediateRedirect, code),
+      expected,
+      `${code} is not redirected before the GitHub page can render`,
     );
   }
+  assert.equal(evaluateLegacyRedirect(immediateRedirect, "IELTS-WRITING-W07"), "");
   const bridge = readUtf8("bridge-return/index.html");
   assert.match(bridge, /add\(window\.parent\.parent\)/);
   assert.match(bridge, /add\(window\.top\)/);

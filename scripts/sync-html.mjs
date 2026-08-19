@@ -26,6 +26,12 @@ for (const route of routes) {
   html = html
     .replaceAll('href="/android-video-controls.css"', 'href="../android-video-controls.css"')
     .replaceAll('src="/android-video-controls.js"', 'src="../android-video-controls.js"');
+  if (["vocab-submit", "vf2-submit", "notebook-submit"].includes(route)) {
+    html = html.replace(
+      '<meta charset="utf-8" />',
+      '<meta charset="utf-8" />\n    <script src="../original-form-redirect.20260820.js"></script>',
+    );
+  }
   fs.writeFileSync(target, html, "utf8");
 }
 
