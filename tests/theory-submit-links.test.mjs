@@ -194,7 +194,7 @@ test("all aliases load the same cache-busted resilient uploader release", () => 
   for (const [code, formId, entryId] of formCases) {
     assert.equal(
       evaluateLegacyRedirect(source, code),
-      `https://docs.google.com/forms/d/e/${formId}/viewform?usp=pp_url&entry.${entryId}=${encodeURIComponent(code)}`,
+      `https://docs.google.com/forms/d/e/${formId}/viewform?usp=pp_url&entry.${entryId}=${encodeURIComponent(code)}&srd=true`,
       `${code} does not redirect to its original Form`,
     );
   }

@@ -146,6 +146,9 @@
     var url = new URL(route.form);
     url.searchParams.set("usp", "pp_url");
     url.searchParams.set("entry." + route.entry, code);
+    // Replace any unfinished draft from a different lesson so the locked code
+    // always matches the page the student opened.
+    url.searchParams.set("srd", "true");
     return url.href;
   }
 
