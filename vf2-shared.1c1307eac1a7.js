@@ -298,9 +298,10 @@ function speak(text, rate = 0.86) {
 }
 
 function makeSubmitUrl(unit) {
-  const url = new URL("../vocab-submit/", window.location.href);
-  url.searchParams.set("code", unit.code);
-  url.searchParams.set("v", SHARED_UPLOADER_VERSION);
+  const entryId = document.documentElement.dataset.formEntryId;
+  const url = new URL("https://docs.google.com/forms/d/e/1FAIpQLSfwQ-rVxYwumoYBkndLUsrakiFPv9LGm47d7pjRfAuoFZ9Rgg/viewform");
+  url.searchParams.set("usp", "pp_url");
+  if (entryId && entryId !== "PENDING") url.searchParams.set(`entry.${entryId}`, unit.code);
   return url.href;
 }
 
