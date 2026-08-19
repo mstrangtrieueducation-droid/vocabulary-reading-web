@@ -6,12 +6,12 @@ import vm from "node:vm";
 
 const root = path.resolve(import.meta.dirname, "..");
 const programs = [
-  { prefix: "vf1", globalName: "VF1_UNITS", units: 14 },
-  { prefix: "vf2", globalName: "VF2_UNITS", units: 14 },
-  { prefix: "ri1", globalName: "RI1_UNITS", units: 12 },
-  { prefix: "ri2", globalName: "RI2_UNITS", units: 12 },
+  { prefix: "vf1", globalName: "VF1_UNITS", units: 14, formId: "1FAIpQLScOOy3NTX1aIuHk_tfVG-LGsOHFsyJdU0PLGlSFizR2CFWK0g" },
+  { prefix: "vf2", globalName: "VF2_UNITS", units: 14, formId: "1FAIpQLSfwQ-rVxYwumoYBkndLUsrakiFPv9LGm47d7pjRfAuoFZ9Rgg" },
+  { prefix: "ri1", globalName: "RI1_UNITS", units: 12, formId: "1FAIpQLScxFRLu_UYUFqD9iborLAr5n5EXi_tI9Hjb-8DdUN4QFL6FxQ" },
+  { prefix: "ri2", globalName: "RI2_UNITS", units: 12, formId: "1FAIpQLSfq_3Cv80fXEojG0TvwsxHReh3zUieo8lr5SoEBTkb3qL2Vhw" },
 ];
-const legacyHostPattern = /https?:\/\/(?:docs\.google\.com\/forms|forms\.gle|[^/\s"']*chatgpt\.site)/i;
+const forbiddenHostPattern = /https?:\/\/(?:forms\.gle|[^/\s"']*chatgpt\.site)/i;
 const mojibakePattern = /á»|áº|Ä‘|Æ°|Ná»|Chá»|Tráº|Tá»|Ã©|Ã¨|Ã¡|Ã¢|Ãô|Ãê|Ãí|Ãó|Ãú|Ãý|Â·|â€|â€™|ï¿½|�/;
 
 function readUtf8(relativePath) {
@@ -43,6 +43,7 @@ function evaluateSubmitUrl(sharedSource, pageUrl, code) {
     URL,
     encodeURIComponent,
     window: { location: { href: pageUrl } },
+    document: { documentElement: { dataset: { formEntryId: "1040067335" } } },
   };
   vm.runInNewContext(
     `${versionSource}\n${functionSource}\nresult = makeSubmitUrl({ code: ${JSON.stringify(code)} });`,
@@ -51,8 +52,24 @@ function evaluateSubmitUrl(sharedSource, pageUrl, code) {
   return sandbox.result;
 }
 
-test("all 52 theory routes open the shared uploader with their exact code", () => {
-  assert.ok(fs.existsSync(path.join(root, "vocab-submit", "index.html")), "Shared uploader route is missing");
+function evaluateLegacyRedirect(source, code) {
+  let destination = "";
+  const sandbox = {
+    URL,
+    URLSearchParams,
+    document: { documentElement: { dataset: { apiEndpoint: "" } } },
+    window: {
+      location: {
+        search: `?code=${encodeURIComponent(code)}`,
+        replace(value) { destination = value; },
+      },
+    },
+  };
+  vm.runInNewContext(source, sandbox);
+  return destination;
+}
+
+test("all 52 non-IELTS theory routes open their original Google Form with the exact code", () => {
 
   const actualRoutes = fs
     .readdirSync(root, { withFileTypes: true })
@@ -77,7 +94,7 @@ test("all 52 theory routes open the shared uploader with their exact code", () =
       const paddedUnit = String(unit).padStart(2, "0");
       const route = `${program.prefix}-u${paddedUnit}-live`;
       const html = readUtf8(`${route}/index.html`);
-      assert.doesNotMatch(html, legacyHostPattern, `${route} still exposes a Form or ChatGPT URL`);
+      assert.doesNotMatch(html, forbiddenHostPattern, `${route} still exposes a deprecated host`);
       assert.match(html, new RegExp(`data-unit=["']${unit}["']`), `${route} has the wrong unit number`);
 
       const formLinks = html.match(/<a\b[^>]*\bform-link\b[^>]*>/gi) || [];
@@ -102,8 +119,8 @@ test("all 52 theory routes open the shared uploader with their exact code", () =
     const sharedSource = readUtf8(referencedSharedAsset);
     assert.doesNotMatch(
       sharedSource,
-      legacyHostPattern,
-      `${referencedSharedAsset} still contains a Form or ChatGPT URL`,
+      forbiddenHostPattern,
+      `${referencedSharedAsset} still contains a deprecated host`,
     );
     assert.equal(
       readUtf8(`${program.prefix}-shared.js`),
@@ -123,8 +140,8 @@ test("all 52 theory routes open the shared uploader with their exact code", () =
       const pageUrl = `https://mstrangtrieueducation-droid.github.io/vocabulary-reading-web/${route}/`;
       assert.equal(
         evaluateSubmitUrl(sharedSource, pageUrl, code),
-        `https://mstrangtrieueducation-droid.github.io/vocabulary-reading-web/vocab-submit/?code=${code}&v=20260818-3`,
-        `${route} resolves to the wrong uploader URL`,
+        `https://docs.google.com/forms/d/e/${program.formId}/viewform?usp=pp_url&entry.1040067335=${code}`,
+        `${route} resolves to the wrong original Form URL`,
       );
     }
   }
@@ -147,12 +164,40 @@ test("all aliases load the same cache-busted resilient uploader release", () => 
   assert.match(source, /ATTEMPT_EXISTS/);
   assert.match(source, /setCreationDate\(stablePdfDate\)/);
   assert.match(source, /isSameOriginReturnBridge/);
+  assert.match(source, /function originalFormForCode/);
+  assert.match(source, /RI1_CORRECTION/);
+  assert.match(source, /RI2_CORRECTION/);
+  assert.match(source, /entry: "1104752903"/);
+  assert.match(source, /entry: "982583688"/);
+  assert.match(source, /window\.location\.replace\(originalFormDestination\)/);
+  assert.doesNotMatch(
+    source,
+    /originalFormForCode\([^)]*IELTS-(?:READING|WRITING)/,
+    "IELTS routes must stay on their dedicated web workflow",
+  );
   assert.match(source, /w17-prompts\/w17-prompt-1\.png/);
   assert.match(source, /w17-prompts\/w17-prompt-2\.png/);
   assert.ok(fs.existsSync(path.join(root, "w17-prompts", "w17-prompt-1.png")));
   assert.ok(fs.existsSync(path.join(root, "w17-prompts", "w17-prompt-2.png")));
   assert.doesNotMatch(source, /renderWritingTimer|data-writing-timer|countdown/i);
 
+  const formCases = [
+    ["VF1-U14", "1FAIpQLScOOy3NTX1aIuHk_tfVG-LGsOHFsyJdU0PLGlSFizR2CFWK0g", "1040067335"],
+    ["VF2-U01", "1FAIpQLSfwQ-rVxYwumoYBkndLUsrakiFPv9LGm47d7pjRfAuoFZ9Rgg", "1040067335"],
+    ["RI1-U12", "1FAIpQLScxFRLu_UYUFqD9iborLAr5n5EXi_tI9Hjb-8DdUN4QFL6FxQ", "1040067335"],
+    ["RI2-U01", "1FAIpQLSfq_3Cv80fXEojG0TvwsxHReh3zUieo8lr5SoEBTkb3qL2Vhw", "1040067335"],
+    ["RI1-C01", "1FAIpQLSd1hBw9Xm6kbx_ryIb3ivAsMKm-9I4ki_Qa60VXemmP-fh8kg", "1040067335"],
+    ["RI2-C12", "1FAIpQLSfyuDFyxDjaBrLlwfqwwfCLB25tDDka2ZfyV48DaYapY8oaog", "1040067335"],
+    ["GF1-U04.2-LT", "1FAIpQLSfz3w5t6VffWL-OqNrrZJPE-DrR3L7RFt3u8Z-QsU9t6HW93g", "1104752903"],
+    ["AP-B08", "1FAIpQLSeE7deH99J04Rq9LWAPS6moFYONABFpxfwq86vZ7G4_kkwe0Q", "982583688"],
+  ];
+  for (const [code, formId, entryId] of formCases) {
+    assert.equal(
+      evaluateLegacyRedirect(source, code),
+      `https://docs.google.com/forms/d/e/${formId}/viewform?usp=pp_url&entry.${entryId}=${encodeURIComponent(code)}`,
+      `${code} does not redirect to its original Form`,
+    );
+  }
   const bridge = readUtf8("bridge-return/index.html");
   assert.match(bridge, /add\(window\.parent\.parent\)/);
   assert.match(bridge, /add\(window\.top\)/);
