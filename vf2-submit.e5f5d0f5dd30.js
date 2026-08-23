@@ -317,6 +317,10 @@
   var ieltsReadingMatch = /^IELTS-READING-B01$/.exec(requestedCode);
   var ieltsWritingMatch = /^IELTS-WRITING-W(05|06|07|08|09|10|12|13|14|15|16|17|18|19|21|22|23|24|25|26|27|28|29|30|31|33|34|35|36|37|38|39)$/.exec(requestedCode);
   var writingFormUrl = IELTS_WRITING_FORMS[requestedCode] || "";
+  if (writingFormUrl) {
+    window.location.replace(writingFormUrl);
+    return;
+  }
   var writingAssignment = IELTS_WRITING_ASSIGNMENTS[requestedCode] || null;
   var isWritingRoom = Boolean(writingAssignment && writingAssignment.tasks && writingAssignment.tasks.length);
   var activeWritingTask = 1;
