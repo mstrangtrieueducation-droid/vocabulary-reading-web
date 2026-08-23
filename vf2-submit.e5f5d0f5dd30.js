@@ -94,6 +94,185 @@
     }),
   });
 
+  IELTS_WRITING_ASSIGNMENTS = Object.freeze({
+  "IELTS-WRITING-W07": Object.freeze({
+    lesson: 7,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W07-item-05.png", alt: "ĐỀ 1 | CAR PRODUCTION", minWords: 150 }),
+      Object.freeze({ type: "image", image: "../writing-prompts/W07-item-08.png", alt: "ĐỀ 2 | PRISON POPULATION", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W08": Object.freeze({
+    lesson: 8,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W08-item-05.png", alt: "ĐỀ 1 | MEAT AND FISH CONSUMPTION", minWords: 150 }),
+      Object.freeze({ type: "image", image: "../writing-prompts/W08-item-08.png", alt: "ĐỀ 2 | HIGHER EDUCATION", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W09": Object.freeze({
+    lesson: 9,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W09-item-05.png", alt: "ĐỀ 1 | FEMALE MEMBERS OF PARLIAMENT", minWords: 150 }),
+      Object.freeze({ type: "image", image: "../writing-prompts/W09-item-08.png", alt: "ĐỀ 2 | REASONS FOR CHOOSING A UNIVERSITY", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W10": Object.freeze({
+    lesson: 10,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W10-item-05.png", alt: "ĐỀ 1 | POPULATION AGED 65 AND ABOVE", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W13": Object.freeze({
+    lesson: 13,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W13-item-05.png", alt: "ĐỀ 1 | MOST COMMON SPORTS IN THE UK", minWords: 150 }),
+      Object.freeze({ type: "image", image: "../writing-prompts/W13-item-08.png", alt: "ĐỀ 2 | DOCTOR AND OTHER WORKERS SALARIES", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W14": Object.freeze({
+    lesson: 14,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W14-item-05.png", alt: "ĐỀ 1 | FIRST-YEAR STUDENTS' EVALUATION", minWords: 150 }),
+      Object.freeze({ type: "image", image: "../writing-prompts/W14-item-08.png", alt: "ĐỀ 2 | TOP 200 UNIVERSITIES", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W15": Object.freeze({
+    lesson: 15,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W15-item-05.png", alt: "ĐỀ 1 | SALARIES AND UNIVERSITY FEES", minWords: 150 }),
+      Object.freeze({ type: "image", image: "../writing-prompts/W15-item-08.png", alt: "ĐỀ 2 | UK MIGRATION REASONS", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W16": Object.freeze({
+    lesson: 16,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W16-item-05.png", alt: "ĐỀ 1 | CHILDREN'S BEDTIME ROUTINES", minWords: 150 }),
+      Object.freeze({ type: "image", image: "../writing-prompts/W16-item-08.png", alt: "ĐỀ 2 | WORLD FOREST AND TIMBER", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W17": Object.freeze({
+    lesson: 17,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W17-item-05.png", alt: "US TRAVEL REASONS AND ISSUES", minWords: 150 }),
+      Object.freeze({ type: "image", image: "../writing-prompts/W17-item-08.png", alt: "AUSTRALIAN TEMPERATURES AND RAINFALL", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W18": Object.freeze({
+    lesson: 18,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W18-item-05.png", alt: "TRAIN PASSENGERS AND PUNCTUALITY", minWords: 150 }),
+      Object.freeze({ type: "image", image: "../writing-prompts/W18-item-08.png", alt: "ENDANGERED PLANT SPECIES", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W19": Object.freeze({
+    lesson: 19,
+    tasks: Object.freeze([
+      Object.freeze({ type: "image", image: "../writing-prompts/W19-item-05.png", alt: "ĐỀ 1 | CHANGES IN SHALTON VILLAGE", minWords: 150 }),
+    ]),
+  }),
+  "IELTS-WRITING-W27": Object.freeze({
+    lesson: 27,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 1.1", prompt: "If a product is good or meets people\u0019s needs, they will buy it. Therefore, advertising is unnecessary and no more than entertainment. \nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 1.3", prompt: "Today, the high sales of popular consumer goods reflect the power of advertising and not the real needs of the society in which they are sold. \nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 1.6", prompt: "Research indicates that nowadays some consumers are much less influenced by advertising than in the past.\nWhat are the reasons for this trend? \nDo you think this is a positive or negative development?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W28": Object.freeze({
+    lesson: 28,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 2.2", prompt: "Online shopping is increasing dramatically. \nHow could this trend affect our environment and the kinds of jobs required?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 3.3", prompt: "Some say that news has no connection with most people's lives, and it is a waste of time for most of us to read newspapers and watch television news programs.\nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 3.4.1", prompt: "Some people say we do not need printed newspaper anymore. \nTo what extent do you agree or disagree with this opinion?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W29": Object.freeze({
+    lesson: 29,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 4.2", prompt: "With the rapid development of communication technology; e.g. smart phones, tablets and other mobile devices, some people believe that the disadvantages outweigh the advantages. \nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 4.5", prompt: "Some people think that the increasing use of computers and mobile phones for communication has a negative effect on young people\u0019s reading and writing skills. \nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 4.6", prompt: "The Internet has transformed the way information is shared and consumed, but it has also created problems that did not exist before.\nWhat are the most serious problems associated with the Internet and what are the possible solutions?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W30": Object.freeze({
+    lesson: 30,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 7.2", prompt: "Some people believe that reading stories from a book is better than watching TV or playing computer games for children. \nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 8.1", prompt: "Some people think that studying at university or college is the best way for students to prepare for their future career. Others, however, say today this is no longer true. \nDiscuss both views and give your opinion.", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 8.5", prompt: "Too much emphasis is placed on going to university for academic education. People should be encouraged to do vocational training, because there is a lack of qualified tradespeople such as electricians or plumbers. \nTo what extent do you agree or disagree?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W31": Object.freeze({
+    lesson: 31,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 9.2.1", prompt: "The government should invest more money in teaching science than other subjects for a country\u0019s development and progress.  \nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 9.6", prompt: "Many people argue that in order to improve educational quality, high school students should be encouraged to make comments or even criticism on their teachers. Others; however, think it will lead to loss of respect and discipline in the classroom.\nDiscuss both views and give your opinion.", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 9.9.1", prompt: "Schools are no longer necessary because children can get so much information available through the Internet, and they can study just as well at home.\nTo what extent do you agree or disagree?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W33": Object.freeze({
+    lesson: 33,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 10.1.6", prompt: "In today\u0019s world of advanced science and technology, people still greatly value artists such as musicians, writers, and painters.\nWhat can the arts tell us about life that science and technology cannot?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 10.2.1", prompt: "Some people think history has nothing or little to tell us, but others think that studying the past can help us better understand the present.\nDiscuss both views and give your opinion.", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 10.4", prompt: "Most people have forgotten the meaning behind traditional or religious festivals; during festival periods, people nowadays only want to enjoy themselves.\nTo what extent do you agree or disagree with this opinion?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W34": Object.freeze({
+    lesson: 34,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 11.2.1", prompt: "Large companies use sports events to promote their products. Some people think it has a negative impact on sports. \nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 11.4", prompt: "Some people say that to be successful in sport it is more important to be physically strong. Others argue that mental strength is more important.\nDiscuss both views and give your opinion.", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 12.7", prompt: "Nowadays in many countries women have full time jobs. Therefore, it is logical to share household tasks evenly between men and women.\nTo what extent do you agree or disagree with this statement?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W35": Object.freeze({
+    lesson: 35,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 13.1.2", prompt: "When children start school, teachers have more influence on their intellectual and social development than their parents. \nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 13.3.1", prompt: "New parents should attend parenting courses to ensure the growth of their children. \nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 13.5", prompt: "Some people prefer to live alone. Others enjoy sharing a house with family or friends. \nDo the advantages of living with others outweigh the disadvantages?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W36": Object.freeze({
+    lesson: 36,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 14.1.4", prompt: "Some people say that cheap air travel gives ordinary people more freedom to travel further. Other people say that it adds to the world\u0019s environmental problems and therefore should be made more expensive to discourage people from traveling too much. \nDiscuss both views and give your opinion.", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 15.2", prompt: "Scientists believe that computers will become more intelligent than human beings. Some people find it is a positive trend while others think it is a negative development.\nDiscuss both points and give your own opinion.", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 16.2.1", prompt: "More and more people want to own famous brands of clothes, cars and other items. \nWhat are the reasons? \nIs this a positive or negative development?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W37": Object.freeze({
+    lesson: 37,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 17.1.1", prompt: "The best way to solve the world\u0019s environmental problems is to increase the cost of fuel.\nTo what extent do you agree or disagree?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 17.2.1", prompt: "It is a natural process for animal species to become extinct. There is no reason why people should try to prevent this from happening.\nTo what extent do you agree or disagree with the statement?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 17.2.4", prompt: "In the modern world, it is no longer necessary to use animals as food, or to use animal products for, for example, clothing and medicines.\nTo what extent do you agree or disagree?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W38": Object.freeze({
+    lesson: 38,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "TOPIC 18.1.3", prompt: "Some people say public health would be greatly improved if governments made laws concerning people's nutrition and food choices. Others argue that this is a matter of personal choice and personal responsibility. \nDiscuss both these views and give your own opinion.", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 18.5.5", prompt: "Some people think that it is best to live in a horizontal city while others think of a vertical city.\nDiscuss both views and give your opinion.", minWords: 250 }),
+      Object.freeze({ type: "text", title: "TOPIC 19.1.1", prompt: "Scientists believe that by studying behaviour of 3-year-old children, we can predict if that child can become criminals in the future.\nTo what extent is crime a product of human nature?\nIs it possible to stop children from growing to be a criminal?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W23": Object.freeze({
+    lesson: 23,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "IELTS Writing Task 2", prompt: "Advertisements are becoming more and more common in our everyday life.\n\nIs it a positive or negative development?", minWords: 250 }),
+    ]),
+  }),
+  "IELTS-WRITING-W26": Object.freeze({
+    lesson: 26,
+    tasks: Object.freeze([
+      Object.freeze({ type: "text", title: "IELTS Writing Task 2 · Đề 1", prompt: "Some people regard video games as harmless fun, or even as a useful educational tool. Others, however, believe that video games are having an adverse effect on the people who play them.\n\nIn your opinion, do the drawbacks of video games outweigh the benefits?", minWords: 250 }),
+      Object.freeze({ type: "text", title: "IELTS Writing Task 2 · Đề 2", prompt: "It is now possible for scientists and tourists to travel to remote areas with natural environments, such as the South Pole.\n\nIs this a positive or negative development?", minWords: 250 }),
+    ]),
+  }),
+  });
+
   var params = new URLSearchParams(window.location.search);
   var requestedCode = String(params.get("code") || "").trim().toUpperCase();
   var codeMatch = /^(VF1|VF2|RI1|RI2)-U(0[1-9]|1[0-4])$/.exec(requestedCode);
@@ -101,7 +280,7 @@
   var academicMatch = /^AP-B(0[1-8])$/.exec(requestedCode);
   var grammarMatch = /^GF1-U(0[1-9]|1[0-9]|20|04\.[12]|05\.[12]|09\.[12])-LT$/.exec(requestedCode);
   var ieltsReadingMatch = /^IELTS-READING-B01$/.exec(requestedCode);
-  var ieltsWritingMatch = /^IELTS-WRITING-W(05|07|17|23|26|33|35|36|37|38|39)$/.exec(requestedCode);
+  var ieltsWritingMatch = /^IELTS-WRITING-W(07|08|09|10|13|14|15|16|17|18|19|23|26|27|28|29|30|31|33|34|35|36|37|38)$/.exec(requestedCode);
   var writingAssignment = IELTS_WRITING_ASSIGNMENTS[requestedCode] || null;
   var isWritingRoom = Boolean(writingAssignment && writingAssignment.tasks && writingAssignment.tasks.length);
   var activeWritingTask = 1;
