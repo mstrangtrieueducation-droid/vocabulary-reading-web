@@ -273,6 +273,41 @@
   }),
   });
 
+  var IELTS_WRITING_FORMS = Object.freeze({
+    "IELTS-WRITING-W05": "https://docs.google.com/forms/d/1bSdyx9e7xsZZT1ncAF_p0wWphjNHCVF8GQIf5RtAmU4/viewform",
+    "IELTS-WRITING-W06": "https://docs.google.com/forms/d/1hmy61yVRyW_jktSMGOg7b-aJHgM2Tmy381HHl3tGyI4/viewform",
+    "IELTS-WRITING-W07": "https://docs.google.com/forms/d/13n8bkH4sZm_928TvCYqawowR7eC6H_LJ4YfxmB1HfvI/viewform",
+    "IELTS-WRITING-W08": "https://docs.google.com/forms/d/17MQkay4baPs_R4GVBshnvWs1q5psohEDNxuRv7UrSgQ/viewform",
+    "IELTS-WRITING-W09": "https://docs.google.com/forms/d/1Rugd99LL3bY0JnstHKaPnDwFRCurw_ShbU19Jgd_vco/viewform",
+    "IELTS-WRITING-W10": "https://docs.google.com/forms/d/1O8qnGLD1aQywmrXmYT6dJ2YbT1mBNxjrxpoawnB1yRM/viewform",
+    "IELTS-WRITING-W12": "https://docs.google.com/forms/d/1LEVE5Q_02P6858Ssd0t1qqLkvGKCBKVZWlcLT9m0cc4/viewform",
+    "IELTS-WRITING-W13": "https://docs.google.com/forms/d/1tT-2SXwjA_RqRKG8-5GCe-kYnOqFRztQvcjW-xQdess/viewform",
+    "IELTS-WRITING-W14": "https://docs.google.com/forms/d/1rF_6HETx-sOhg2y_nxiDZqsb9AdBNFNh_zEPRixOqog/viewform",
+    "IELTS-WRITING-W15": "https://docs.google.com/forms/d/1I1i9W23lrO_21EEusrZQ_g0uRtRJllJNU0OHJnQdYYc/viewform",
+    "IELTS-WRITING-W16": "https://docs.google.com/forms/d/1N5DkVY5UyajmESP1rSoGhwLfJSlzZjmr-tFdqW-Sguc/viewform",
+    "IELTS-WRITING-W17": "https://docs.google.com/forms/d/1OuIkpmGMRLdx2SgRgrkJjRXb-ScOLIQhARCwo3pS1Uw/viewform",
+    "IELTS-WRITING-W18": "https://docs.google.com/forms/d/1DN19y5Ylcixqd2Y3AmjInZYbVaM_nH4YabzIC3cf7fU/viewform",
+    "IELTS-WRITING-W19": "https://docs.google.com/forms/d/1aUSO3XsbRnvxz1w7T0gFK34VPeanAXdE1gFItDDW7Dc/viewform",
+    "IELTS-WRITING-W21": "https://docs.google.com/forms/d/1S9dhCr7zJvjq0yCt4vgRL-KHJFxrXdxwtpQfyGWwvmc/viewform",
+    "IELTS-WRITING-W22": "https://docs.google.com/forms/d/1gtJNqsxwyXUg0-g6R87d-FXWTnCwNnC3CoL8sEKEcfM/viewform",
+    "IELTS-WRITING-W23": "https://docs.google.com/forms/d/1oWzxuUEetXPQo51OTNsbgDA6JpbSxm9yrdu_1CSSYpY/viewform",
+    "IELTS-WRITING-W24": "https://docs.google.com/forms/d/1fkTopNzXgtqrzQZrjeOYpHEiN_mzMtbQvCyb3-33ucs/viewform",
+    "IELTS-WRITING-W25": "https://docs.google.com/forms/d/1iKdkRPn8wTjZYfdQK_X5lHDmy0JCg5yRYjtJnWGQ13g/viewform",
+    "IELTS-WRITING-W26": "https://docs.google.com/forms/d/15deiH60qfaC2SMQ-ZKfmOuI29RERQpkDQH6Kqj1XcuE/viewform",
+    "IELTS-WRITING-W27": "https://docs.google.com/forms/d/1jRYO1mbdH_xGxr6bEKG0YHJUCbKNVB0yBSHxM_Ad5bI/viewform",
+    "IELTS-WRITING-W28": "https://docs.google.com/forms/d/1ynoBn6OUTctQl0frg93d_aKmxESsdvjd0udTP2WEmyE/viewform",
+    "IELTS-WRITING-W29": "https://docs.google.com/forms/d/1Q9tiom4XI6WBf1hhBWQASso-7-lqls3xfyRgVcsx14s/viewform",
+    "IELTS-WRITING-W30": "https://docs.google.com/forms/d/1S3Ft-5fmhn4iBOwFRpzcjiNA58tdjLfV4IzLj-MD0ss/viewform",
+    "IELTS-WRITING-W31": "https://docs.google.com/forms/d/1yd-veW_aF_BJUKMdwDFSYe51i2KXavgrZKgVs8b0bQI/viewform",
+    "IELTS-WRITING-W33": "https://docs.google.com/forms/d/1cFIm1bN32yP-ezCW3VeoZBp_flLdfimgTkTW8RipqkA/viewform",
+    "IELTS-WRITING-W34": "https://docs.google.com/forms/d/1wi-sh3-Jhk_Z-iNB-uvgx8fA1QadAhNdZZ046cc8kOc/viewform",
+    "IELTS-WRITING-W35": "https://docs.google.com/forms/d/1T-vJoayYyiNW6dZTZAhe6Tgmkb-Ie7HJBK5wN4_z5bo/viewform",
+    "IELTS-WRITING-W36": "https://docs.google.com/forms/d/1DvsUcw_-OXSGDoiA3ceMLJgUrsEtijzVFEm9wbP0X4g/viewform",
+    "IELTS-WRITING-W37": "https://docs.google.com/forms/d/1PFyJ8BXFleu_e5ZxOTF4fOGip1JolLAfMh1To6kJS4c/viewform",
+    "IELTS-WRITING-W38": "https://docs.google.com/forms/d/13llSTIKpp1_3--mdL8C21TrOA2uxyWSHojh_TN-O-Sc/viewform",
+    "IELTS-WRITING-W39": "https://docs.google.com/forms/d/1PVBv-TtChKg85rN-HErIescx2BcyoU0PdMgKXtsMk7Y/viewform",
+  });
+
   var params = new URLSearchParams(window.location.search);
   var requestedCode = String(params.get("code") || "").trim().toUpperCase();
   var codeMatch = /^(VF1|VF2|RI1|RI2)-U(0[1-9]|1[0-4])$/.exec(requestedCode);
@@ -280,7 +315,8 @@
   var academicMatch = /^AP-B(0[1-8])$/.exec(requestedCode);
   var grammarMatch = /^GF1-U(0[1-9]|1[0-9]|20|04\.[12]|05\.[12]|09\.[12])-LT$/.exec(requestedCode);
   var ieltsReadingMatch = /^IELTS-READING-B01$/.exec(requestedCode);
-  var ieltsWritingMatch = /^IELTS-WRITING-W(07|08|09|10|13|14|15|16|17|18|19|23|26|27|28|29|30|31|33|34|35|36|37|38)$/.exec(requestedCode);
+  var ieltsWritingMatch = /^IELTS-WRITING-W(05|06|07|08|09|10|12|13|14|15|16|17|18|19|21|22|23|24|25|26|27|28|29|30|31|33|34|35|36|37|38|39)$/.exec(requestedCode);
+  var writingFormUrl = IELTS_WRITING_FORMS[requestedCode] || "";
   var writingAssignment = IELTS_WRITING_ASSIGNMENTS[requestedCode] || null;
   var isWritingRoom = Boolean(writingAssignment && writingAssignment.tasks && writingAssignment.tasks.length);
   var activeWritingTask = 1;
@@ -542,6 +578,16 @@
 
   function updateSubmitState() {
     var info = identity();
+    if (submissionKind === "ieltsWriting") {
+      query("[data-submit-button]").disabled = !(
+        writingFormUrl &&
+        info.studentName.length >= 2 &&
+        Boolean(info.className) &&
+        writingReady() &&
+        Boolean(query("[data-confirmation]").checked)
+      );
+      return;
+    }
     var ready =
       assignmentCode &&
       info.studentName.length >= 2 &&
@@ -1271,6 +1317,13 @@
     }
   }
 
+  function openWritingForm() {
+    if (!writingFormUrl || query("[data-submit-button]").disabled) return;
+    saveWritingDrafts();
+    var opened = window.open(writingFormUrl, "_blank", "noopener,noreferrer");
+    if (!opened) window.location.href = writingFormUrl;
+  }
+
   function showInvalidCode() {
     document.title = "Mã bài không hợp lệ";
     query("[data-page-title]").textContent = "Mã bài không hợp lệ";
@@ -1309,7 +1362,7 @@
       });
     }
 
-    if (notebookOnly) {
+    if (notebookOnly && submissionKind !== "ieltsWriting") {
       query(".submit-hero .eyebrow").textContent = notebookCopy.eyebrow;
       query(".hero-code small").textContent = "Mã bài đã được chọn sẵn; em không cần nhập lại.";
       query(".submit-hero > div > p:not(.eyebrow)").innerHTML =
@@ -1361,22 +1414,42 @@
       });
     }
 
+    if (submissionKind === "ieltsWriting") {
+      query(".notebook-card").hidden = true;
+      query(".video-card").hidden = true;
+      query("[data-upload-progress]").hidden = true;
+      query(".submit-hero .eyebrow").textContent = "IELTS WRITING";
+      query(".submit-hero > div > p:not(.eyebrow)").innerHTML = isWritingRoom
+        ? "Viết đủ bài trong phòng viết, kiểm tra số từ, sau đó chọn ảnh vở và nộp vào đúng Form của buổi học."
+        : "Điền đúng họ tên và lớp, sau đó chọn ảnh vở và nộp vào đúng Form của buổi học.";
+      query(".final-card .section-title > span").textContent = isWritingRoom ? "03" : "02";
+      query(".final-card .section-title p").textContent = "NỘP ẢNH VỞ";
+      query(".final-card .section-title h2").textContent = "Mở Form ảnh của Buổi " + String(unitNumber).padStart(2, "0");
+      query("[data-confirmation] + span").textContent = isWritingRoom
+        ? "Em xác nhận đã viết đủ số từ tối thiểu và đã chuẩn bị ảnh vở rõ nét, đúng chiều."
+        : "Em xác nhận đã chuẩn bị đủ ảnh vở rõ nét, đúng chiều và đúng buổi học.";
+      query("[data-submit-button]").textContent = "CHỌN ẢNH & NỘP BÀI";
+      query("[data-success-card]").hidden = true;
+    }
 
-    query("[data-notebook-input]").addEventListener("change", function (event) {
-      chooseNotebookFiles(event.currentTarget.files);
-      event.currentTarget.value = "";
-    });
-    query("[data-remove-pdf]").addEventListener("click", function () {
-      state.pdfFile = null;
-      resetPreparedPdf();
-      renderNotebook();
-    });
-    query("[data-create-pdf]").addEventListener("click", function () {
-      preparePdf({ download: false }).catch(function (error) {
-        setStatus(error.message, "error");
+
+    if (submissionKind !== "ieltsWriting") {
+      query("[data-notebook-input]").addEventListener("change", function (event) {
+        chooseNotebookFiles(event.currentTarget.files);
+        event.currentTarget.value = "";
       });
-    });
-    query("[data-download-pdf]").addEventListener("click", downloadPdf);
+      query("[data-remove-pdf]").addEventListener("click", function () {
+        state.pdfFile = null;
+        resetPreparedPdf();
+        renderNotebook();
+      });
+      query("[data-create-pdf]").addEventListener("click", function () {
+        preparePdf({ download: false }).catch(function (error) {
+          setStatus(error.message, "error");
+        });
+      });
+      query("[data-download-pdf]").addEventListener("click", downloadPdf);
+    }
     if (!notebookOnly) {
       query("[data-video-input]").addEventListener("change", function (event) {
         chooseVideo(event.currentTarget.files && event.currentTarget.files[0]);
@@ -1388,14 +1461,14 @@
         renderVideo();
       });
     }
-    query("[data-submit-button]").addEventListener("click", submitAll);
+    query("[data-submit-button]").addEventListener("click", submissionKind === "ieltsWriting" ? openWritingForm : submitAll);
     document
       .querySelectorAll("[data-student-name], [data-class-name], [data-confirmation], [data-essay-index]")
       .forEach(function (node) {
         node.addEventListener("input", updateSubmitState);
         node.addEventListener("change", updateSubmitState);
       });
-    renderNotebook();
+    if (submissionKind !== "ieltsWriting") renderNotebook();
     if (!notebookOnly) renderVideo();
     updateSubmitState();
   }
