@@ -30,6 +30,9 @@ test('all 12 lesson datasets preserve one-to-one question IDs and exact paragrap
     for (const items of grouped.values()) {
       const label = items[0].group;
       const plan = planInline(label, items);
+      if (/\(\d+\)\s*_/.test(label) && items.every(q => ['text', 'choice'].includes(q.kind))) {
+        assert(plan, `${directory} ${items[0].id}: every current paragraph with separate gap questions must render inline`);
+      }
       if (!plan) continue;
       const bindings = plan.flat().filter(x => typeof x !== 'string');
       assert.equal(bindings.length, items.length);
@@ -40,7 +43,8 @@ test('all 12 lesson datasets preserve one-to-one question IDs and exact paragrap
     assert(questions.length > 0, directory);
   }
   console.log(JSON.stringify({ lessons: inventory.length, groups, gaps }));
-  assert(groups >= 12);
+  assert.equal(groups, 44);
+  assert.equal(gaps, 220);
 });
 test('ambiguous, repeated or missing gap numbers fall back without hiding questions', () => {
   const items = [{ id: 'x', prompt: '1. Example', kind: 'text' }];
@@ -48,6 +52,41 @@ test('ambiguous, repeated or missing gap numbers fall back without hiding questi
   assert.equal(planInline('Fill.\n\n(1) ____ (1) ____', items), null);
   assert.equal(planInline('Fill.\n\nNo blank.', items), null);
   assert.equal(planInline('Fill.\n\n(1) ____', [...items, { ...items[0], id: 'y' }]), null);
+  assert.equal(planInline('Fill.\n\n(1) ____', [items[0], { ...items[0], id: 'y', prompt: 'Gap 1' }]), null);
+});
+test('short gap labels bind by explicit number even when questions are out of order', () => {
+  const items = [{ id: 'second', prompt: 'Gap 2', kind: 'text' }, { id: 'first', prompt: 'Blank 1', kind: 'text' }];
+  const plan = planInline('Fill.\n\nThe (1) ____ comes before (2) ____.', items);
+  assert.deepEqual(plan.flat().filter(x => typeof x !== 'string').map(x => x.question.id), ['first', 'second']);
+  assert.equal(planInline('Fill.\n\n(1) ____', [{ ...items[0], prompt: 'Gap 10' }]), null);
+  assert.equal(planInline('Fill.\n\n(1) ____', [{ ...items[0], prompt: 'Gap 1st' }]), null);
+});
+test('Unit 2A beauty summary renders all five Gap labels as editable inline inputs', () => {
+  const items = inventory.find(x => x.directory === 'ri3-n8w2c6r5').questions.filter(q => q.reading === 'A' && q.section === 'Summary');
+  assert.equal(items.length, 5);
+  assert(items.every(q => /^Gap \d+$/.test(q.prompt)));
+  const plan = planInline(items[0].group, items);
+  assert(plan, 'The screenshot summary must not fall back to detached question cards');
+  assert.deepEqual(plan.flat().filter(x => typeof x !== 'string').map(x => x.number), [1, 2, 3, 4, 5]);
+});
+test('inline choices display words while preserving encoded answer values', () => {
+  const items = inventory.find(x => x.directory === 'ri3-c9w4k7p2').questions.filter(q => q.reading === 'B' && /^B-V[1-5]$/.test(q.id));
+  assert.equal(items.length, 5);
+  const jsx = (type, props, key) => ({ type, props, key });
+  const Group = createInlineGroup({ jsx, jsxs: jsx }, (q, value) => value === q.answer, (q, value) => q.options.find(o => o.value === value)?.label ?? value, q => q.source);
+  const props = { label: items[0].group, items, answers: {}, words: {}, submitted: false, setAnswer: (id,v) => props.answers[id]=v, setWord: (id,v) => props.words[id]=v };
+  function nodes(node, type) { return !node || typeof node !== 'object' ? [] : [...(node.type === type ? [node] : []), ...[node.props?.children].flat(Infinity).flatMap(c => nodes(c, type))]; }
+  let tree = Group(props);
+  assert.equal(nodes(tree, 'input').length, 0);
+  assert.equal(nodes(tree, 'select').length, 5);
+  assert.equal(nodes(tree, 'option')[2].props.children, 'packages');
+  nodes(tree, 'select')[0].props.onChange({ target: { value: 'b' } });
+  assert.equal(props.answers['B-V1'], 'b');
+  props.submitted = true;
+  tree = Group(props);
+  assert(nodes(tree, 'select').every(n => n.props.disabled));
+  assert(nodes(tree, 'p').some(n => n.props.children === 'Bạn trả lời: packages'));
+  assert.equal(planInline('Fill.\n\n(1) ____ (2) ____', [{ id: 'multi', kind: 'multi-choice', prompt: '1. Select two', options: items[0].options }]), null);
 });
 test('selection, manual inflection, grading and reset share parent answer state', () => {
   const items = inventory.find(x => x.directory === 'ri3-n8w2c6r5').questions.filter(q => /^A-V[1-5]$/.test(q.id));
