@@ -1,0 +1,12 @@
+.ri-inline-gap { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .3rem; max-width: 100%; vertical-align: middle; margin: .2rem .15rem; padding: .15rem .25rem; border-radius: .45rem; background: #fff; border: 1px solid #b8d2d4; line-height: 1.4; }
+.ri-inline-gap select, .ri-inline-gap input { box-sizing: border-box; min-width: 0; max-width: 100%; min-height: 2.5rem; padding: .35rem .5rem; border: 1px solid #9cbabe; border-radius: .3rem; font: inherit; font-size: .9em; color: #0b1f33; background: #fff; }
+.ri-inline-gap select { max-width: min(100%, 17rem); }
+.ri-inline-gap input:disabled, .ri-inline-gap select:disabled { opacity: 1; background: #f1f5f5; color: #354d60; }
+.ri-inline-gap :focus-visible { outline: 3px solid #12878e; outline-offset: 2px; }
+.ri-inline-number { font-size: .8em; font-weight: 700; }
+.ri-inline-gap.correct { border: 2px solid #24844c; }
+.ri-inline-gap.wrong { border: 2px solid #b33434; }
+.ri-inline-status { font-size: .7em; }
+.ri-inline-help { font-size: .85rem; color: #40616b; }
+.ri-inline-feedback { display: grid; gap: .75rem; }
+.ri-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
