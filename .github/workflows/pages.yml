@@ -25,10 +25,31 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Stage lesson website without development catalogs
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import shutil
+          root = Path('.')
+          destination = root / '.pages-output'
+          excluded = {'.git', '.github', '.pages-output', 'tests', 'scripts', 'node_modules'}
+          allowed = {'.html', '.js', '.mjs', '.css', '.json', '.png', '.jpg', '.jpeg', '.webp', '.svg', '.ico', '.mp3', '.mp4', '.wav', '.ogg', '.woff', '.woff2', '.ttf', '.otf', '.pdf'}
+          for source in root.rglob('*'):
+              if not source.is_file() or any(part in excluded for part in source.parts):
+                  continue
+              if source.suffix.lower() not in allowed and source.name not in {'.nojekyll', 'CNAME', 'robots.txt'}:
+                  continue
+              target = destination / source
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(source, target)
+          assert (destination / 'index.html').is_file()
+          assert not (destination / 'tests').exists()
+          assert not (destination / 'scripts').exists()
+          PY
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: .pages-output
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,1 +1,2 @@
-document.querySelectorAll('[data-speaking-selector]').forEach(select=>select.addEventListener('change',()=>{const target=select.value;if(target)location.assign(new URL(target,location.href).href)}));
+/* Keep each lesson independent, including previously cached lesson HTML. */
+(()=>{const clean=()=>{document.querySelectorAll('nav.course-nav,nav.writing-app-nav,nav.lesson-footer,nav.lesson-pagination,nav.lesson-neighbors,nav.navigation').forEach(node=>node.remove());document.querySelectorAll('header.brand>a').forEach(link=>{if(link.querySelector('img'))link.replaceWith(...link.childNodes);});};clean();if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',clean,{once:true});})();
