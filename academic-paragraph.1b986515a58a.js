@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-lesson-select]').forEach(select=>select.addEventListener('change',()=>{if(select.value)location.assign(select.value);}));

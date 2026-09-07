@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Reading Intensive · Làm lại đề</title>
+  <style>
+    :root{color-scheme:light;--navy:#142b43;--navy-deep:#0d2135;--teal:#087f83;--teal-dark:#06686b;--teal-light:#e8f6f4;--ink:#22374a;--muted:#657789;--line:#dbe5eb;--paper:#fff;--canvas:#eef3f6;--green:#18754b;--green-bg:#edf8f1;--red:#ab3c3c;--red-bg:#fff3f1;--amber:#855d16;--amber-bg:#fff8e9;--radius:18px;--shadow:0 12px 36px rgba(20,43,67,.07)}
+    *{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--canvas)}body{font-size:16px;line-height:1.5}button,input,select{font:inherit}button,input,select{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:3px solid #36b7bc;outline-offset:3px}button{border:0}button.primary{min-height:50px;padding:13px 22px;border-radius:12px;background:var(--teal);color:white;font-weight:750;letter-spacing:.01em;transition:background .15s,transform .15s}button.primary:hover:not(:disabled){background:var(--teal-dark)}button.primary:active:not(:disabled){transform:translateY(1px)}button.primary:disabled{background:#c4d2d9;color:#647887}button.secondary{min-height:46px;padding:11px 18px;border:1px solid var(--line);border-radius:11px;background:white;color:var(--navy);font-weight:700}button.secondary:hover{background:#f5f9fb}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .gate{min-height:100dvh;display:grid;place-items:center;padding:32px 20px;background:linear-gradient(145deg,#edf4f6 0%,#f8fbfc 58%,#e4f2f0 100%)}.gate-card{width:min(100%,560px);padding:36px;border:1px solid rgba(255,255,255,.95);border-radius:24px;background:white;box-shadow:0 24px 70px rgba(20,43,67,.12)}.brand-line{display:flex;align-items:center;gap:12px;color:var(--navy);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.brand-mark{display:grid;place-items:center;width:43px;height:43px;border-radius:12px;background:var(--navy);color:white;letter-spacing:-.03em;font-size:17px}.eyebrow{margin:26px 0 8px;color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.gate h1{margin:0;color:var(--navy);font-size:clamp(27px,4vw,36px);line-height:1.16;letter-spacing:-.04em}.gate-subtitle{margin:12px 0 25px;color:var(--muted);line-height:1.65}.gate-facts{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 25px}.gate-facts span{padding:5px 10px;border-radius:8px;background:#f0f5f7;color:#536b7d;font-size:12px;font-weight:700}.identity-form{display:grid;gap:17px}.field{display:grid;gap:7px}.field label{color:var(--navy);font-size:14px;font-weight:750}.field input,.field select{width:100%;height:52px;border:1px solid #c8d6df;border-radius:11px;padding:0 14px;background:#fbfdfe;color:var(--ink)}.field input::placeholder{color:#8a9ba9}.identity-form .primary{margin-top:4px}.gate-note{margin:19px 0 0;font-size:12px;color:var(--muted);line-height:1.65}.gate-error{padding:13px 15px;margin:18px 0 0;border:1px solid #edd5ba;border-radius:10px;background:var(--amber-bg);color:var(--amber);font-size:14px}.noscript{max-width:560px;margin:25px auto;padding:20px;background:white;border:1px solid var(--line);border-radius:12px}
+    .app{height:100dvh;min-height:680px;display:flex;flex-direction:column;padding:18px 22px 22px;gap:16px;overflow:hidden}.app-header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex:0 0 auto}.app-title{display:flex;align-items:center;gap:13px;min-width:0}.app-title .brand-mark{flex:0 0 auto;width:44px;height:44px}.app-kicker{margin:0 0 2px;color:var(--teal);font-size:10px;letter-spacing:.12em;font-weight:800;text-transform:uppercase}.app-header h1{margin:0;color:var(--navy);font-size:21px;line-height:1.25;letter-spacing:-.025em}.identity-badge{display:flex;align-items:center;gap:12px;max-width:42%;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.7)}.identity-badge strong{display:block;font-size:13px;overflow-wrap:anywhere}.identity-badge span{font-size:11px;font-weight:800;color:var(--teal);white-space:nowrap;border-left:1px solid #cddde3;padding-left:12px}.quiz-layout{display:grid;grid-template-columns:minmax(0,1.42fr) minmax(440px,.9fr);gap:16px;flex:1;min-height:0}.panel{display:flex;flex-direction:column;min-width:0;min-height:0;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);box-shadow:var(--shadow);overflow:hidden}.panel-header{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:62px;padding:15px 20px;border-bottom:1px solid var(--line);background:white;flex:0 0 auto}.panel-header h2{margin:0;font-size:15px;letter-spacing:-.01em;color:var(--navy)}.panel-header p{margin:2px 0 0;font-size:11px;color:var(--muted)}.panel-tag{color:var(--teal);background:var(--teal-light);padding:5px 8px;border-radius:7px;font-size:10px;font-weight:800;letter-spacing:.05em;white-space:nowrap}.document-body{position:relative;flex:1;min-height:0;background:#e6edf1}.document-frame{display:block;width:100%;height:100%;border:0;background:white}.document-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#f6f9fb;color:var(--muted);padding:24px;text-align:center;font-size:14px}.document-loading::before{content:"";width:27px;height:27px;border:3px solid #d8e6ea;border-top-color:var(--teal);border-radius:50%;animation:spin .9s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.document-note{flex:0 0 auto;margin:0;padding:7px 15px;color:#738391;background:#f8fafb;border-top:1px solid var(--line);font-size:10px;line-height:1.5}
+    .answers-panel{position:relative}.answer-progress{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);font-weight:700}.answer-progress strong{color:var(--teal);font-size:16px}.progress-track{height:4px;background:#e7eff2;flex:0 0 auto}.progress-fill{height:100%;width:0;background:var(--teal);transition:width .2s ease}.answer-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:19px 20px 24px;scrollbar-gutter:stable}.answer-intro{margin:0 0 18px;font-size:13px;color:var(--muted);line-height:1.65}.answer-section+.answer-section{margin-top:27px}.section-heading{margin-bottom:12px;padding:0 0 10px;border-bottom:1px solid var(--line)}.section-heading h3{margin:0;color:var(--navy);font-size:14px;font-weight:800}.section-heading p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.6;white-space:pre-line}.question-card{padding:14px;margin:0 0 11px;border:1px solid var(--line);border-radius:12px;background:#fff}.question-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.question-number{font-size:12px;font-weight:800;color:var(--navy)}.question-state{font-size:11px;font-weight:750}.question-card input[type=text],.question-card select{width:100%;min-height:48px;border:1px solid #c9d7df;border-radius:9px;padding:11px 12px;background:#fbfdfe;color:var(--ink);font-size:16px}.question-card input::placeholder{font-size:13px;color:#94a1ac}.question-card input:disabled,.question-card select:disabled{opacity:1;color:var(--ink);-webkit-text-fill-color:var(--ink);background:#f5f8fa}.choice-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.choice{position:relative;display:block}.choice input{position:absolute;opacity:0;width:1px;height:1px}.choice span{display:flex;align-items:center;justify-content:center;min-height:46px;padding:9px 5px;border:1px solid #ccdae2;border-radius:9px;background:#fbfdfe;color:#536c80;font-size:15px;font-weight:750}.choice input:checked+span{border-color:var(--teal);background:var(--teal-light);color:var(--teal-dark);box-shadow:inset 0 0 0 1px var(--teal)}.choice input:focus-visible+span{outline:3px solid #36b7bc;outline-offset:2px}.choice input:disabled+span{cursor:default}.question-card.is-correct{border-color:#b9ddc8;background:#fbfefc}.question-card.is-correct .question-state{color:var(--green)}.question-card.is-wrong{border-color:#ebc3bd;background:#fffdfc}.question-card.is-wrong .question-state{color:var(--red)}.answer-review{margin-top:13px;padding-top:13px;border-top:1px solid #dde6e9}.answer-key{display:grid;gap:4px;margin:0 0 12px;font-size:13px;overflow-wrap:anywhere}.answer-key b{color:var(--green);font-size:14px}.answer-key small{color:var(--muted);line-height:1.5}.review-label{margin:13px 0 5px;color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.035em;text-transform:uppercase}.explanation,.question-context{margin:0;color:#41566a;font-size:13px;line-height:1.75;white-space:pre-wrap;overflow-wrap:anywhere}.question-context{padding:10px 12px;border-left:3px solid #a7cbcd;background:#f1f7f7;color:#567071;font-size:12px}.result-summary{margin:0 0 22px;padding:20px;border-radius:14px;background:var(--navy);color:white}.result-summary .result-kicker{margin:0;color:#9cdddc;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.result-numbers{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin-top:8px}.result-score{font-size:43px;line-height:1.1;font-weight:800;letter-spacing:-.05em}.result-score small{font-size:19px;color:#afc0ce;font-weight:500;letter-spacing:0}.result-percent{font-size:22px;color:#9cdddc;font-weight:750}.result-summary h3{margin:12px 0 5px;font-size:16px;font-weight:700}.result-summary p{margin:0;color:#c4d3de;font-size:12px;line-height:1.65}.attempt-reference{margin-top:12px!important;padding-top:10px;border-top:1px solid #345069;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:10px!important;overflow-wrap:anywhere}.answer-footer{padding:15px 20px 17px;border-top:1px solid var(--line);background:#fbfdfe;flex:0 0 auto}.answer-footer .primary{width:100%;font-size:14px}.footer-hint{margin:8px 0 0;text-align:center;color:var(--muted);font-size:11px;line-height:1.5}.delivery{margin:0 0 12px;padding:11px 12px;border:1px solid #d3e6e5;border-radius:10px;background:#eef8f7;color:#386768;font-size:11px;line-height:1.6}.delivery strong{display:block;font-size:12px;color:#175f62;margin-bottom:2px}.delivery.is-warning{border-color:#ead9b6;background:var(--amber-bg);color:var(--amber)}.delivery.is-warning strong{color:#795315}.storage-warning{margin:0 0 12px;padding:10px 12px;border-radius:9px;background:var(--amber-bg);color:var(--amber);font-size:11px;line-height:1.6}.form-error{margin:0 0 10px;color:var(--red);font-size:12px;font-weight:600}.loading-shimmer{animation:none}
+    .answer-key-row{display:block}.answer-key .submitted-answer{color:var(--red)}.explanation{padding:13px 14px;border-left:4px solid var(--teal);border-radius:0 9px 9px 0;background:var(--teal-light);color:var(--ink);font-size:15px;line-height:1.72}.result-wrong-label{margin-top:15px!important;color:#9cdddc!important;font-size:10px!important;font-weight:800;letter-spacing:.1em}.wrong-jumps{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}.wrong-jumps button,.review-toggle button{min-height:34px;border:1px solid #496178;border-radius:8px;background:#203b54;color:#fff;font-size:11px;font-weight:800}.wrong-jumps button{min-width:36px;padding:0 8px}.wrong-jumps button:hover,.review-toggle button:hover{background:#2a4b68}.review-toggle{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:14px;padding-top:14px;border-top:1px solid #345069}.review-toggle button{padding:0 10px}.review-toggle button.active{border-color:#9cdddc;background:#e8f6f4;color:var(--teal-dark)}
+    .test-mode-banner{position:sticky;top:0;z-index:50;min-height:38px;display:grid;place-items:center;padding:8px 12px;border-bottom:1px solid #e7cd92;background:#fff0c9;color:#704d09;font-size:12px;line-height:21px;font-weight:800;text-align:center}.testing .app{height:calc(100dvh - 38px)}.testing .gate{min-height:calc(100dvh - 38px)}
+    @media(max-width:920px){.app,.testing .app{height:auto;min-height:100dvh;overflow:visible;padding:14px;gap:14px}.app-header{align-items:flex-start;gap:12px}.app-header h1{font-size:18px}.identity-badge{max-width:43%;padding:7px 9px;flex-direction:column;align-items:flex-start;gap:3px}.identity-badge span{border:0;padding:0;font-size:10px}.identity-badge strong{font-size:11px}.quiz-layout{display:flex;flex-direction:column;gap:14px}.document-panel{height:58dvh;min-height:360px;max-height:650px;flex:none}.answers-panel{height:78dvh;min-height:570px;max-height:950px;flex:none}.answer-scroll{padding:17px}.panel-header{padding:13px 17px;min-height:58px}.answer-footer{padding:13px 17px 15px}.panel{border-radius:15px}.document-note{font-size:9px}}
+    @media(max-width:480px){.gate{padding:18px 14px}.gate-card{padding:27px 22px;border-radius:20px}.gate h1{font-size:29px}.gate-subtitle{font-size:14px}.app{padding:10px;gap:12px}.app-title{gap:9px}.app-title .brand-mark{width:35px;height:35px;font-size:14px;border-radius:10px}.app-kicker{font-size:8px;letter-spacing:.07em}.app-header h1{font-size:16px}.identity-badge{max-width:39%;padding:6px 8px}.identity-badge strong{font-size:10px}.panel-header{padding:12px 14px}.panel-header h2{font-size:14px}.panel-tag{font-size:9px}.answer-scroll{padding:15px 13px}.question-card{padding:12px}.answer-footer{padding:12px 13px 14px}.choice-grid{gap:7px}.choice span{min-height:45px}.result-summary{padding:17px}.result-score{font-size:39px}.document-panel{height:54dvh;min-height:340px}.answers-panel{height:82dvh;min-height:580px}.answer-progress{gap:5px;font-size:11px}.answer-progress strong{font-size:15px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+  </style>
+<link rel="stylesheet" href="../vf-course-navigation.32c08ac91ffd.css" data-vf-course-navigation></head>
+<body>
+  <aside class="test-mode-banner" id="test-mode-banner" role="status" hidden>CHẾ ĐỘ KIỂM THỬ — không ghi điểm</aside>
+  <section class="gate" id="identity-gate" aria-labelledby="gate-title">
+    <div class="gate-card">
+      <div class="brand-line"><span class="brand-mark" aria-hidden="true">RI2</span><span id="gate-course">READING INTENSIVE</span></div>
+      <h1 id="gate-title" style="margin:26px 0 18px">Sẵn sàng bắt đầu?</h1>
+      <div class="gate-facts"><span id="gate-question-count">Phiếu trả lời</span></div>
+      <form class="identity-form" id="identity-form" novalidate>
+        <div class="field"><label for="student-name">Họ và tên</label><input id="student-name" name="student-name" type="text" maxlength="120" autocomplete="name" placeholder="Nhập đầy đủ họ và tên" required></div>
+        <div class="field"><label for="student-class">Lớp</label><select id="student-class" name="student-class" required><option value="">— Chọn lớp FIGHTER —</option></select></div>
+        <button class="primary" id="open-quiz" type="submit">MỞ ĐỀ & PHIẾU TRẢ LỜI →</button>
+      </form>
+      <p class="gate-error" id="gate-error" role="alert" hidden></p>
+    </div>
+  </section>
+
+  <main class="app" id="quiz-app" hidden>
+    <header class="app-header">
+      <div class="app-title"><span class="brand-mark" aria-hidden="true">RI2</span><div><p class="app-kicker" id="app-course">READING INTENSIVE</p><h1 id="app-title">Làm lại đề</h1></div></div>
+      <div class="identity-badge"><strong id="identity-name"></strong><span id="identity-class"></span></div>
+    </header>
+    <div class="quiz-layout">
+      <section class="panel document-panel" aria-labelledby="document-heading">
+        <div class="panel-header"><h2 id="document-heading">Đề bài</h2></div>
+        <div class="document-body" id="document-body"><div class="document-loading" id="document-loading" role="status">Đang tải đề bài…</div></div>
+      </section>
+      <form class="panel answers-panel" id="answer-form" novalidate aria-labelledby="answers-heading">
+        <div class="panel-header"><div><h2 id="answers-heading">Phiếu trả lời</h2><p id="attempt-label">Lượt 1</p></div><div class="answer-progress"><strong id="answered-count">0</strong><span id="total-count"></span></div></div>
+        <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+        <div class="answer-scroll" id="answer-scroll" tabindex="-1">
+          <p class="storage-warning" id="storage-warning" role="status" hidden></p>
+          <div id="result-summary" hidden></div>
+          <div id="answer-sections"></div>
+        </div>
+        <footer class="answer-footer">
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <div class="delivery" id="delivery-status" role="status" aria-live="polite" hidden></div>
+          <button class="primary" id="submit-answers" type="submit" disabled>ĐIỀN ĐỦ CÁC CÂU ĐỂ NỘP</button>
+          <button class="primary" id="new-attempt" type="button" hidden>LÀM MỘT LƯỢT MỚI ↻</button>
+        </footer>
+      </form>
+    </div>
+  </main>
+  <noscript><p class="noscript">Trang này cần JavaScript để mở đề và chấm bài. Vui lòng bật JavaScript hoặc báo giáo viên.</p></noscript>
+
+  <!-- Build contract: inject student-only, allowlisted JSON; remove teacher/source identifiers.
+       Escape every '<' as '\u003c' in JSON before replacing the two JSON placeholders. -->
+  <script id="ri2-unit-data" type="application/json">{"unit":10,"title":"READING INTENSIVE 2 · UNIT 10","testCode":"RI2-U10","total":65,"studentPreviewUrl":"https://docs.google.com/document/d/1BCcnsngQoWspRWD1Yg-_4t2hYecjtZPRdQ89oVYnTV0/preview","sections":[{"exercise":1,"count":15,"inputKind":"matching","choices":["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"],"instruction":"Ex 1: Match the words in Column A with their correct definitions in Column B. Write the letter of the definition next to the corresponding word.","questions":[{"number":1,"answer":"H","context":"excessive (a)","explanation":"Giải thích của cô: Excessive: Quá mức, nhiều hơn mức cần thiết hoặc mức bình thường.\n\nExcessive là tính từ chỉ số lượng/mức độ vượt quá giới hạn hợp lý. Vì vậy từ khớp H: “More than what is necessary or normal.”; necessary or normal chính là chuẩn bị vượt quá."},{"number":2,"answer":"J","context":"debate (n)","explanation":"Giải thích của cô: Debate: Cuộc tranh luận, một cuộc thảo luận hoặc tranh cãi về một chủ đề mà ở đó mọi người bày tỏ các ý kiến khác nhau.\n\nDebate ở đây là danh từ chỉ cuộc thảo luận có nhiều quan điểm đối lập. Định nghĩa J—“A discussion or argument about a topic where people express different opinions.”—diễn đạt đúng cả hình thức thảo luận và sự khác biệt ý kiến."},{"number":3,"answer":"L","context":"sustainable (a)","explanation":"Giải thích của cô: Sustainable: Bền vững, có thể tiếp tục trong một thời gian dài mà không gây hại cho môi trường hoặc sử dụng quá nhiều tài nguyên.\n\nSustainable là tính từ chỉ khả năng duy trì lâu dài mà không làm cạn kiệt tài nguyên hay gây hại môi trường. Nó khớp chính xác L, nơi có đủ ba ý continue for a long time, without harm và without using too many resources."},{"number":4,"answer":"N","context":"shift (n)","explanation":"Giải thích của cô: Shift: Sự chuyển dịch, một sự thay đổi hoặc di chuyển từ vị trí, trạng thái hoặc hướng này sang hướng khác.\n\nShift là danh từ chỉ một sự thay đổi/chuyển hướng. Định nghĩa N: “A change or movement from one position, state, or direction to another.” lặp lại đúng các nét nghĩa vị trí, trạng thái và phương hướng."},{"number":5,"answer":"A","context":"economical (a)","explanation":"Giải thích của cô: Economical: Tiết kiệm, kinh tế, biết tiết kiệm tiền bạc hoặc tài nguyên; không lãng phí.\n\nEconomical là tính từ mô tả thứ/người sử dụng tiền hoặc tài nguyên hiệu quả. Vì vậy đáp án A: “Saving money or resources; not wasteful.”; cần phân biệt economic = thuộc kinh tế, không nhất thiết mang nghĩa tiết kiệm."},{"number":6,"answer":"C","context":"instability (n)","explanation":"Giải thích của cô: Instability: Sự bất ổn, trạng thái không chắc chắn, không thể dự đoán trước, hoặc thay đổi theo cách không ổn định.\n\nInstability là danh từ phủ định của stability, chỉ trạng thái thiếu ổn định. Định nghĩa C nêu “uncertain, unpredictable” và “not stable”, nên khớp trực tiếp."},{"number":7,"answer":"E","context":"crack (v)","explanation":"Giải thích của cô: Crack: Làm nứt, vỡ một thứ gì đó thành các mảnh, thường đi kèm một âm thanh sắc nhọn.\n\nCrack ở đây là động từ chỉ làm nứt/vỡ, thường tạo tiếng rắc. Nó tương ứng với E: “To break something into pieces, usually with a sharp sound.”; break và sharp sound là hai tín hiệu nhận diện."},{"number":8,"answer":"G","context":"appeal (v)","explanation":"Giải thích của cô: Appeal: Sức hút, hoặc hành động đưa ra một yêu cầu nghiêm túc hoặc chính thức cho điều gì đó, hoặc cố gắng thu hút sự chú ý/quan tâm.\n\nAppeal có thể là động từ kêu gọi/kháng nghị hoặc thu hút. Định nghĩa G nhắc “make a serious or formal request” và “attract attention or interest”, nên bao quát đúng hai cách dùng được nêu."},{"number":9,"answer":"O","context":"critical (a)","explanation":"Giải thích của cô: Critical: Nguy cấp, cực kỳ quan trọng hoặc thiết yếu; ngoài ra còn có nghĩa là mang tính chỉ trích, đánh giá cẩn thận và tìm ra lỗi sai.\n\nCritical là tính từ đa nghĩa: cực kỳ quan trọng/nguy cấp hoặc có tính đánh giá, phê bình. Định nghĩa O nêu cả “extremely important or essential” lẫn “judging ... and finding mistakes”, nên khớp đầy đủ."},{"number":10,"answer":"M","context":"melt (v)","explanation":"Giải thích của cô: Melt: Tan chảy, chuyển từ thể rắn sang thể lỏng do tác động của nhiệt độ.\n\nMelt là động từ mô tả sự chuyển pha từ rắn sang lỏng vì nhiệt. Định nghĩa M nói đúng “To change from a solid to a liquid because of heat.”, nên là cặp tương ứng trực tiếp."},{"number":11,"answer":"I","context":"slide (v)","explanation":"Giải thích của cô: Slide: Trượt, di chuyển mượt mà trên một bề mặt, thường là do tình cờ hoặc với rất ít sự kiểm soát.\n\nSlide là động từ chỉ chuyển động trượt trên bề mặt. Nó khớp I: “To move smoothly over a surface, often by accident or with little control.”; smoothly over a surface phân biệt slide với shift chung chung."},{"number":12,"answer":"K","context":"amenity (n)","explanation":"Giải thích của cô: Amenity: Tiện nghi, một tính năng hoặc dịch vụ làm cho một nơi nào đó trở nên thoải mái hoặc dễ chịu hơn.\n\nAmenity là danh từ chỉ tiện ích/dịch vụ giúp nơi ở hoặc địa điểm dễ chịu hơn. Vì vậy K—“A feature or service that makes a place comfortable or enjoyable.”—là định nghĩa chính xác."},{"number":13,"answer":"B","context":"subsidy (n)","explanation":"Giải thích của cô: Subsidy: Tiền trợ cấp, khoản tiền do chính phủ hoặc một tổ chức khác cấp để giúp giảm chi phí của một cái gì đó.\n\nSubsidy là danh từ chỉ khoản trợ cấp tài chính nhằm hỗ trợ/giảm chi phí. Định nghĩa B nêu rõ nguồn tiền là government or another organization và mục đích reduce the cost, nên khớp hoàn toàn."},{"number":14,"answer":"F","context":"host (v)","explanation":"Giải thích của cô: Host: Làm chủ nhà, cung cấp một địa điểm cho một sự kiện hoặc cho mọi người ở lại.\n\nHost ở đây là động từ, nghĩa là tổ chức/đón tiếp bằng cách cung cấp địa điểm. Nó nối với F: “To provide a place for an event or for people to stay.”; không phải danh từ host chỉ người chủ trì."},{"number":15,"answer":"D","context":"anthropology (n)","explanation":"Giải thích của cô: Anthropology: Nhân chủng học, ngành nghiên cứu về con người, văn hóa, xã hội và sự phát triển của họ theo thời gian.\n\nAnthropology là danh từ tên ngành nhân học. Định nghĩa D liệt kê đúng đối tượng nghiên cứu: humans, cultures, societies và development over time, nên là đáp án duy nhất."}]},{"exercise":2,"count":10,"inputKind":"text","choices":[],"instruction":"Ex 2: Fill in the blanks with the following words: exceeds, stake, appeal, stable, economic, anthropologist, host, abandon, priority, conservationists.","questions":[{"number":16,"answer":"anthropologist","context":"As a _______ studying different cultures, she traveled to remote villages to understand their customs and traditions.","explanation":"Sau mạo từ a cần danh từ đếm được chỉ người; anthropologist là nhà nhân chủng học. Việc nghiên cứu văn hóa, đến các làng xa xôi và tìm hiểu phong tục là công việc đặc trưng của người này. Câu hoàn chỉnh: “As an anthropologist studying different cultures, she traveled to remote villages to understand their customs and traditions.”"},{"number":17,"answer":"economic","context":"With the recent rise in prices, the government is facing serious _______ challenges.","explanation":"Ô trống đứng trước challenges nên cần tính từ economic = thuộc kinh tế. “Rise in prices” và áp lực lên chính phủ tạo ngữ cảnh vấn đề kinh tế. Câu hoàn chỉnh: “With the recent rise in prices, the government is facing serious economic challenges.”; economical sẽ mang nghĩa tiết kiệm, không phù hợp."},{"number":18,"answer":"host","context":"It's important for a _______ to make their guests feel welcomed and comfortable at the party.","explanation":"Sau a cần danh từ đếm được số ít; host ở đây là chủ nhà/người tổ chức. Nhiệm vụ làm khách cảm thấy được chào đón và thoải mái khớp trực tiếp với vai trò ấy. Câu hoàn chỉnh: “It’s important for a host to make their guests feel welcomed and comfortable at the party.”"},{"number":19,"answer":"abandon","context":"They had to _______ their old home because of the financial crisis, leaving behind a place full of memories.","explanation":"Sau had to cần động từ nguyên mẫu abandon = rời bỏ, từ bỏ. Khủng hoảng tài chính buộc họ rời căn nhà cũ và để lại ký ức, nên nghĩa hoàn toàn phù hợp. Câu hoàn chỉnh: “They had to abandon their old home because of the financial crisis, leaving behind a place full of memories.”"},{"number":20,"answer":"priority","context":"The health of the child is the _______ of the parents, and they always try to make sure she receives the best care.","explanation":"Sau the cần danh từ; priority nghĩa là điều được ưu tiên hàng đầu. Nội dung sau nói cha mẹ luôn bảo đảm con nhận chăm sóc tốt nhất, chứng minh sức khỏe của con là ưu tiên. Câu theo đề: “The health of the child is the priority of the parents ...”."},{"number":21,"answer":"exceeds","context":"The amount of dust in the air in Hanoi today ________ the safe level that is acknowledged by WHO.","explanation":"Chủ ngữ The amount số ít và câu nêu sự thật hiện tại, nên động từ exceed phải chia exceeds. Exceed the safe level nghĩa là vượt quá mức an toàn. Câu hoàn chỉnh: “The amount of dust in the air in Hanoi today exceeds the safe level that is acknowledged by WHO.”"},{"number":22,"answer":"stable","context":"If the foundations of the house aren't ________ , collapse is possible.","explanation":"Sau động từ be aren’t cần tính từ stable = vững chắc/ổn định để mô tả foundations. Mệnh đề “collapse is possible” nêu hậu quả nếu nền móng không vững. Câu hoàn chỉnh: “If the foundations of the house aren’t stable, collapse is possible.”"},{"number":23,"answer":"stake","context":"Thousands of lives will be at ________ if emergency aid does not arrive in the city soon.","explanation":"Cụm cố định be at stake nghĩa là bị đe dọa, đang lâm nguy. “Thousands of lives” và điều kiện viện trợ khẩn cấp không đến tạo đúng ngữ cảnh nguy hiểm. Câu hoàn chỉnh: “Thousands of lives will be at stake if emergency aid does not arrive in the city soon.”"},{"number":24,"answer":"appeal","context":"This used to be a marvellous hotel, but it has lost its ________ in recent years.","explanation":"Sau tính từ sở hữu its cần danh từ; appeal ở đây là sức hấp dẫn. Khách sạn từng tuyệt vời nhưng nay không còn hấp dẫn như trước. Câu hoàn chỉnh: “This used to be a marvellous hotel, but it has lost its appeal in recent years.”"},{"number":25,"answer":"conservationists","context":"__________ are fighting to save that kind of tiger from extinction.","explanation":"Chủ ngữ đứng trước are fighting phải là danh từ số nhiều chỉ người; conservationists là các nhà bảo tồn. Hoạt động cứu loài hổ khỏi tuyệt chủng đúng với vai trò của họ. Câu hoàn chỉnh: “Conservationists are fighting to save that kind of tiger from extinction.”"}]},{"exercise":3,"count":8,"inputKind":"mcq","choices":["A","B","C","D"],"instruction":"Ex 3: Read the passage below and choose the correct word from the options to fill in the blanks.","questions":[{"number":26,"answer":"D","context":"As the glacier melts, the rocks underneath (26) ______ more heat, causing even faster snowmelt.","explanation":"Đá lộ ra dưới băng hấp thụ nhiệt, làm tuyết tan nhanh hơn; collocation là absorb heat. Distribute là phân phối, provide là cung cấp, maintain là duy trì, đều không diễn tả cơ chế bề mặt tối giữ nhiệt."},{"number":27,"answer":"C","context":"This process illustrates the alarming impact of global warming, a (27) ______ linked to human activity.","explanation":"Sau mạo từ a cần danh từ số ít; phenomenon nghĩa là hiện tượng và phù hợp để gọi global warming. Case là trường hợp, factor là yếu tố, scene là cảnh—không bao quát hiện tượng khí hậu đang được mô tả."},{"number":28,"answer":"D","context":"Scientists worldwide, (28) ______ about the accelerated melting of glaciers, warn that this trend could have dire consequences.","explanation":"Cụm chen giữa hai dấu phẩy rút gọn từ “who are concerned about ...”, nên dùng quá khứ phân từ concerned. Concerned about = lo ngại về. Concerning sẽ khiến scientists là bên “gây lo ngại”, concern là sai loại từ, to concern sai cấu trúc."},{"number":29,"answer":"B","context":"The ice sheets of Greenland and Antarctica, for example, are melting faster than anticipated, (29) ______ could cause sea levels to rise significantly by the end of the century.","explanation":"Sau dấu phẩy cần đại từ quan hệ which để thay cho toàn bộ sự việc các dải băng tan nhanh và làm chủ ngữ của could cause. That thường không mở mệnh đề quan hệ không xác định sau dấu phẩy; this sẽ tạo comma splice; what không có tiền ngữ."},{"number":30,"answer":"D","context":"Melting water can seep into cracks on the surface of glaciers, allowing them to slide into warmer ocean waters, (30) ______ the melting process.","explanation":"Nước tan giúp sông băng trượt vào vùng biển ấm hơn, qua đó đẩy nhanh quá trình tan; speeding up the melting process là cụm V-ing chỉ kết quả. Opening up, switching on và calming down không hợp nghĩa cơ chế tăng tốc."},{"number":31,"answer":"D","context":"(31) ______ this issue affects some regions by causing floods, other areas, particularly those relying on glacial meltwater, are facing severe water shortages.","explanation":"While mở mệnh đề tương phản: một số vùng bị lũ, trong khi các vùng phụ thuộc nước băng tan lại thiếu nước nghiêm trọng. And và Since không thể hiện tương phản. Though cũng có thể tạo nghĩa nhượng bộ gần tương đương, nhưng đáp án nguồn chọn While để đặt hai tình huống song song đối lập."},{"number":32,"answer":"B","context":"To combat these effects, public (32) ______ like Leonardo DiCaprio emphasize the need for an urgent shift in attitudes toward climate change.","explanation":"Leonardo DiCaprio là người nổi tiếng có ảnh hưởng công chúng, nên public figures = các nhân vật công chúng. People/humans quá chung, còn patterns là mô hình, không thể chỉ người đứng ra kêu gọi."},{"number":33,"answer":"A","context":"He advocates for voting for leaders who understand the gravity of these environmental issues, stating that the future of the planet is (33) ______ stake.","explanation":"Thành ngữ be at stake nghĩa là đang bị đe dọa/đặt trong tình thế nguy hiểm. “The future of the planet is at stake” nhấn mạnh hậu quả cấp bách; in, on và under không đi trong cụm này."}]},{"exercise":4,"count":10,"inputKind":"text","choices":[],"instruction":"Ex 4: Fill in the blanks with ONE suitable word.","questions":[{"number":34,"answer":"effect / impact","context":"Climate change has a profound (34) __________ on all forms of life on Earth, affecting ecosystems, biodiversity, and the stability of natural processes.","explanation":"Sau a profound cần danh từ số ít và giới từ on. Cả have an effect on và have an impact on đều là collocation nghĩa là có tác động đến: “Climate change has a profound effect/impact on all forms of life on Earth.”"},{"number":35,"answer":"such","context":"Rising global temperatures, caused primarily by human activities (35) __________ as deforestation and the burning of fossil fuels, lead to extreme weather events, including (36) __________ frequent storms, droughts, and floods.","explanation":"Cụm such as dùng để giới thiệu ví dụ. Deforestation và the burning of fossil fuels là hai ví dụ cụ thể của human activities, nên “activities such as ...” hoàn chỉnh quan hệ khái quát–ví dụ."},{"number":36,"answer":"more","context":"Rising global temperatures, caused primarily by human activities (35) __________ as deforestation and the burning of fossil fuels, lead to extreme weather events, including (36) __________ frequent storms, droughts, and floods.","explanation":"Ô trống bổ nghĩa frequent để tạo so sánh hơn: more frequent storms = các cơn bão xảy ra thường xuyên hơn. Rising temperatures khiến tần suất tăng, và frequent là tính từ nhiều âm tiết nên dùng more."},{"number":37,"answer":"making","context":"These disturbances disrupt habitats, (37) __________ survival more difficult for many species.","explanation":"Sau dấu phẩy dùng V-ing making để nêu kết quả của mệnh đề trước: các xáo trộn phá hủy sinh cảnh, khiến sự sinh tồn khó hơn. Cấu trúc make + object + adjective là “making survival more difficult”."},{"number":38,"answer":"marine / sea / ocean","context":"For instance, polar bears face shrinking ice caps, while coral reefs, which are vital to (38) __________ life, suffer from bleaching due to higher ocean temperatures.","explanation":"Ô trống đứng trước life nên cần từ bổ nghĩa chỉ sự sống ở biển. Marine life là collocation chuẩn; sea life và ocean life cũng cùng nghĩa và đúng ngữ cảnh rạn san hô. “Vital to ... life” nói vai trò thiết yếu của san hô với sinh vật biển."},{"number":39,"answer":"on","context":"Altered weather patterns also affect food and water availability, putting stress (39) __________ plants and animals alike.","explanation":"Cụm put stress on somebody/something nghĩa là gây áp lực lên. Vì vậy “putting stress on plants and animals alike” diễn tả thực vật và động vật đều chịu sức ép do nguồn thức ăn, nước thay đổi."},{"number":40,"answer":"search","context":"Migratory patterns are changing as species are forced to move to new areas in (40) __________ of more favorable conditions.","explanation":"Cụm in search of = để tìm kiếm. Các loài buộc di chuyển tới khu vực mới “in search of more favorable conditions”, tức tìm điều kiện thuận lợi hơn; sau in và trước of cần danh từ search."},{"number":41,"answer":"who / that","context":"Additionally, altered temperature and rainfall can influence the growth cycles of plants, impacting herbivores (41) __________ depend on them, and in turn, affecting the entire food chain.","explanation":"Tiền ngữ herbivores chỉ sinh vật và mệnh đề sau thiếu chủ ngữ cho depend. Who hoặc that đều làm đại từ quan hệ chủ ngữ: “herbivores who/that depend on them”; them quy chiếu plants."},{"number":42,"answer":"extinction / disappearance","context":"As ecosystems become less stable, the biodiversity that has evolved over millions of years is threatened, leading to the (42) __________ of vulnerable species.","explanation":"Sau the và trước of vulnerable species cần danh từ chỉ kết quả bị đe dọa. Extinction là sự tuyệt chủng, còn disappearance là sự biến mất; cả hai phù hợp với chuỗi ý biodiversity is threatened → species vanish."},{"number":43,"answer":"how","context":"Ultimately, climate change presents a serious challenge to all living things, forcing us to reconsider (43) __________ we interact with the planet and its resources.","explanation":"Sau reconsider là mệnh đề gián tiếp “how we interact with ...”: xem xét lại cách chúng ta tương tác với hành tinh và tài nguyên. How đóng vai trò trạng từ chỉ cách thức; mệnh đề phía sau đã có đủ chủ ngữ we và động từ interact."}]},{"exercise":5,"count":22,"inputKind":"mcq","choices":["A","B","C","D"],"instruction":"Ex 5: Read the following passages and answer the questions.","questions":[{"number":44,"answer":"C","context":"Chủ đề chính của đoạn văn là gì?","explanation":"Giải thích của cô: Chủ đề chính của đoạn văn là gì?\n\nBài không chỉ mô tả vật liệu hay cách làm hạt chuỗi mà giải thích vì sao chúng đáng nghiên cứu: quan hệ với chủ nhân, đặc tính sưu tầm, các “secrets” về lịch sử/văn hóa và giá trị khảo cổ. Do đó C, the reasons for studying beads, bao quát nhất; A, B, D đều quá hẹp."},{"number":45,"answer":"B","context":"Từ \"adorned\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Từ \"adorned\" gần nghĩa nhất với từ nào?\n\nTrong “men, women, and children adorned themselves with beads”, họ dùng hạt chuỗi để trang sức cho mình. Adorned vì vậy gần nhất với decorated (B). Protected, purchased và enjoyed không diễn tả hành động đeo đồ trang trí."},{"number":46,"answer":"C","context":"Từ \"attire\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Từ \"attire\" gần nghĩa nhất với từ nào?\n\nCụm “incorporated into articles of attire” nói hạt chuỗi được gắn vào các món trang phục. Attire = clothing (C). Ritual, importance và history không phải vật có thể gắn hạt chuỗi vào."},{"number":47,"answer":"D","context":"Tất cả các đặc điểm sau đều được nêu là đặc tính của đồ sưu tầm, NGOẠI TRỪ?","explanation":"Giải thích của cô: Tất cả các đặc điểm sau đều được nêu là đặc tính của đồ sưu tầm, NGOẠI TRỪ?\n\nĐoạn 2 liệt kê “durable, portable, available in infinite variety, and often valuable”, tương ứng A, B và C. Scarcity (sự khan hiếm) không được nêu; thậm chí “infinite variety” không đồng nghĩa khan hiếm. Vì câu hỏi EXCEPT, chọn D."},{"number":48,"answer":"D","context":"Theo đoạn văn, tất cả các yếu tố sau khiến người ta muốn chạm vào hạt chuỗi, NGOẠI TRỪ?","explanation":"Giải thích của cô: Theo đoạn văn, tất cả các yếu tố sau khiến người ta muốn chạm vào hạt chuỗi, NGOẠI TRỪ?\n\nBài nói “beads come in shapes, colors, and materials that almost compel one to handle them”, nên A, B, C đều được nêu. Odor (mùi) không xuất hiện, vì vậy D là yếu tố ngoại lệ."},{"number":49,"answer":"D","context":"Từ \"unravel\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Từ \"unravel\" gần nghĩa nhất với từ nào?\n\n“Secrets waiting to be revealed” ngay trước đó giải nghĩa cho “points of information one hopes to unravel”: khám phá/làm sáng tỏ thông tin. Vì vậy discover (D) đúng. Communicate, transport và improve không hợp với secrets/history cần được hé lộ."},{"number":50,"answer":"C","context":"Từ \"mundane\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Từ \"mundane\" gần nghĩa nhất với từ nào?\n\nCâu nhấn mạnh “Even the most mundane beads” vẫn có thể đi rất xa, tạo tương phản giữa vẻ bình thường và lịch sử đặc biệt. Mundane vì thế = ordinary (C). Carved, beautiful và heavy mô tả đặc điểm khác không được ngữ cảnh gợi ra."},{"number":51,"answer":"C","context":"Rất khó để lần theo lịch sử của một số hạt chuỗi cổ là vì chúng?","explanation":"Giải thích của cô: Rất khó để lần theo lịch sử của một số hạt chuỗi cổ là vì chúng?\n\nĐoạn 3 nói tài liệu gốc ít hoặc không có và nhiều hạt cổ “have often been separated from their original cultural context”. Trong các đáp án, điều này tương ứng việc bị chuyển khỏi vị trí/bối cảnh ban đầu (C). Kích thước, chôn dưới đất hay thường bị mất không phải lý do bài nêu."},{"number":52,"answer":"A","context":"Kiến thức về lịch sử của hạt chuỗi có thể hữu ích cho nghiên cứu của ai?","explanation":"Giải thích của cô: Kiến thức về lịch sử của hạt chuỗi có thể hữu ích cho nghiên cứu của ai?\n\nHạt chuỗi cho biết “cultural context”, trình độ thương mại, công nghệ, văn hóa và giúp định niên đại di chỉ—đều thuộc phạm vi nghiên cứu con người và văn hóa của anthropologists. Vì vậy A đúng; chuyên gia nông nghiệp, y khoa và kinh tế chỉ chạm một phần hoặc không phù hợp."},{"number":53,"answer":"B","context":"Đoạn văn chủ yếu thảo luận về điều gì?","explanation":"Giải thích của cô: Đoạn văn chủ yếu thảo luận về điều gì?\n\nSau phần mở về sự thích nghi của mỏ chim với nguồn thức ăn, bài tập trung vào crossbill: cấu tạo mỏ chéo, cách tách vảy quả thông, sự khác nhau giữa mỏ lớn/nhỏ và một trường hợp ngoại lệ. Vì vậy B, the efficiency of the bill of the crossbill, sát nhất. A và C lệch trọng tâm; D quá rộng cho nhiều loài chim."},{"number":54,"answer":"A","context":"Phát biểu nào phản ánh tốt nhất kiểu \"tinh chỉnh tiến hóa\" được nhắc đến ở đoạn 1?","explanation":"Giải thích của cô: Phát biểu nào phản ánh tốt nhất kiểu \"tinh chỉnh tiến hóa\" được nhắc đến ở đoạn 1?\n\nCác ví dụ cho thấy hình dạng mỏ chuyên hóa theo cách kiếm thức ăn: oystercatcher cạy vỏ, hummingbird hút mật sâu, kiwi ngửi giun; crossbill cũng thích nghi với quả thông. Do đó A nói các hình dạng mỏ tiến hóa tùy nguồn thức ăn. B–D đưa ra quan hệ tiến hóa cụ thể mà bài không khẳng định."},{"number":55,"answer":"C","context":"Tại sao tác giả lại nhắc đến chim oystercatchers, chim hút mật và chim kiwi?","explanation":"Giải thích của cô: Tại sao tác giả lại nhắc đến chim oystercatchers, chim hút mật và chim kiwi?\n\nBa loài được dùng làm ví dụ về mối quan hệ chức năng giữa thiết kế mỏ và thức ăn: cạy vỏ, thăm hoa có mật, tìm giun. Vì vậy C đúng. Bài không nói chúng đều sống trong rừng, có mỏ giống crossbill hay có họ hàng gần với crossbill."},{"number":56,"answer":"D","context":"Crossbills là một loại?","explanation":"Giải thích của cô: Crossbills là một loại?\n\nĐoạn 1 gọi rõ “Two species of these finches” rồi mô tả crossbills. Vì thế crossbills là một loại finch (D). Shorebird, hummingbird và kiwi chỉ là các ví dụ đứng trước, không phải phân loại của crossbill."},{"number":57,"answer":"C","context":"Từ \"which\" ở đoạn 2 ám chỉ cái gì?","explanation":"Giải thích của cô: Từ \"which\" ở đoạn 2 ám chỉ cái gì?\n\nTrong “a powerful biting force at the bill tips, which is critical...”, which đứng ngay sau và bổ nghĩa cho cụm danh từ “a powerful biting force”. Vì vậy nó quy chiếu force (C); seed, bird và bill không khớp cấu trúc gần nhất của mệnh đề quan hệ."},{"number":58,"answer":"A","context":"Từ \"gap\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Từ \"gap\" gần nghĩa nhất với từ nào?\n\nCrossbill tách hai vảy chồng nhau của quả thông rồi luồn lưỡi “into the gap”. Gap ở đây là khe hở vừa được tạo, tương ứng opening (A). Flower, mouth và tree không mô tả khoảng trống giữa các vảy."},{"number":59,"answer":"D","context":"Từ \"discards\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Từ \"discards\" gần nghĩa nhất với từ nào?\n\nSau khi làm nứt lớp vỏ gỗ của hạt, chim “discards the woody seed covering” rồi nuốt nhân: nó vứt/bỏ phần vỏ đi. Vì vậy gets rid of (D) đúng. Eats trái với việc chỉ nuốt inner kernel; breaks và finds out không diễn tả loại bỏ."},{"number":60,"answer":"A","context":"Từ \"others\" ở đoạn 3 ám chỉ cái gì?","explanation":"Giải thích của cô: Từ \"others\" ở đoạn 3 ám chỉ cái gì?\n\nCấu trúc “The bills ... vary—some are stout and deep, others more slender and shallow” lược bỏ danh từ sau some/others. Cả hai đều chỉ các bills, nên A đúng; không phải species, seeds hay cones."},{"number":61,"answer":"B","context":"Từ \"deft\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Từ \"deft\" gần nghĩa nhất với từ nào?\n\n“Small-billed crossbills are more deft at removing the seeds” nghĩa là chúng khéo léo/thành thạo hơn khi lấy hạt nhỏ. Deft gần nhất với skilled (B). Hungry, tired và pleasant không nói năng lực thao tác."},{"number":62,"answer":"A","context":"Từ \"robust\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Từ \"robust\" gần nghĩa nhất với từ nào?\n\n“A large, robust bill” đối lập với loại mỏ slender và dùng cho lực cắn; robust ở đây nghĩa là chắc khỏe, tương ứng strong (A). Colorful, unusual và sharp không phải nghĩa từ vựng này."},{"number":63,"answer":"C","context":"Nội dung bài viết chỉ ra chim mỏ chéo Newfoundland là một điểm dị biệt (anomaly) ở chỗ nào?","explanation":"Giải thích của cô: Nội dung bài viết chỉ ra chim mỏ chéo Newfoundland là một điểm dị biệt (anomaly) ở chỗ nào?\n\nQuy luật trước đó là mỏ lớn hợp quả lớn, mỏ nhỏ hợp quả nhỏ. Newfoundland crossbill lại có “large, robust bill” trong khi phần lớn cây lá kim ở đó có “small cones”, nên kích thước mỏ không khớp nguồn thức ăn (C). Bài không nói nó lớn hơn toàn thân, đổi kỹ thuật hay rời rừng thường xanh."},{"number":64,"answer":"D","context":"Đoạn cuối cùng của bài đọc có khả năng cao sẽ tiếp tục thảo luận về điều gì?","explanation":"Giải thích của cô: Đoạn cuối cùng của bài đọc có khả năng cao sẽ tiếp tục thảo luận về điều gì?\n\nĐoạn cuối vừa nêu nghịch lý mỏ lớn–quả nhỏ nhưng chưa giải thích. Mạch triển khai hợp lý tiếp theo là cách loài này vẫn sinh tồn/kiếm ăn bằng chiếc mỏ lớn, tức D. A–C chuyển chủ đề sang chim khác, hệ sinh thái hoặc thú mà không giải quyết anomaly vừa đặt ra."},{"number":65,"answer":"B","context":"Tác giả mô tả cách chim mỏ chéo lấy hạt ra khỏi quả thông ở đoạn nào trong bài?","explanation":"Giải thích của cô: Tác giả mô tả cách chim mỏ chéo lấy hạt ra khỏi quả thông ở đoạn nào trong bài?\n\nĐoạn 2 trình bày toàn bộ chuỗi thao tác: dùng hàm dưới tách hai vảy, luồn lưỡi vào khe, kéo hạt ra, bỏ vỏ và nuốt nhân. Vì vậy đáp án là the second paragraph (B); các đoạn khác nói bối cảnh, biến thể mỏ và trường hợp Newfoundland."}]}]}</script>
+  <script id="ri2-course-data" type="application/json">{"schemaVersion":1,"courseId":"ri2","courseName":"Reading Intensive 2","totalQuestions":761,"classes":["FIGHTER 5","FIGHTER 6","FIGHTER 7","FIGHTER 8","FIGHTER 9"],"scoreSink":{"kind":"google-form","formResponseUrl":"https://docs.google.com/forms/d/e/1FAIpQLSf939uh6Lb5ZrIy5CY0ejCHGx5SCVrdIcaU4vCKDLb2PVFfPg/formResponse","entries":{"name":"entry.655449102","total":"entry.330493587","assignmentCode":"entry.86015848","lesson":"entry.414474821","activity":"entry.1423127065","className":"entry.172500407","percent":"entry.1161504407","score":"entry.1454259834","wrong":"entry.989432617"}},"testing":false}</script>
+  <script>/* RI2 grading is deliberately deterministic: only approved keys and explicit
+ * alternatives are accepted. Formatting normalization is not synonym matching. */
+(function (root, factory) {
+  if (typeof module === "object" && module.exports) module.exports = factory();
+  else if (typeof define === "function" && define.amd) define([], factory);
+  else root.RI2Grading = factory();
+})(typeof globalThis !== "undefined" ? globalThis : this, function () {
+  "use strict";
+
+  const SMALL = Object.freeze({ zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5,
+    six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12,
+    thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17,
+    eighteen: 18, nineteen: 19 });
+  const TENS = Object.freeze({ twenty: 20, thirty: 30, forty: 40, fifty: 50,
+    sixty: 60, seventy: 70, eighty: 80, ninety: 90 });
+  const SCALES = Object.freeze({ thousand: 1000, million: 1000000, billion: 1000000000 });
+  const ORDINALS = Object.freeze({ zeroth: "zero", first: "one", second: "two", third: "three",
+    fourth: "four", fifth: "five", sixth: "six", seventh: "seven", eighth: "eight",
+    ninth: "nine", tenth: "ten", eleventh: "eleven", twelfth: "twelve", thirteenth: "thirteen",
+    fourteenth: "fourteen", fifteenth: "fifteen", sixteenth: "sixteen", seventeenth: "seventeen",
+    eighteenth: "eighteen", nineteenth: "nineteen", twentieth: "twenty", thirtieth: "thirty",
+    fortieth: "forty", fiftieth: "fifty", sixtieth: "sixty", seventieth: "seventy",
+    eightieth: "eighty", ninetieth: "ninety", hundredth: "hundred", thousandth: "thousand",
+    millionth: "million", billionth: "billion" });
+  const own = (object, key) => Object.prototype.hasOwnProperty.call(object, key);
+  const cardinalWord = word => own(SMALL, word) || own(TENS, word) || own(SCALES, word) || word === "hundred";
+  const numericWord = word => cardinalWord(word) || own(ORDINALS, word);
+
+  function inputText(value) {
+    if (typeof value === "string") return value;
+    if (typeof value === "number" && Number.isFinite(value)) return String(value);
+    return "";
+  }
+
+  function basicText(value) {
+    return inputText(value).normalize("NFKC").toLowerCase()
+      .replace(/[\u200B-\u200D\uFEFF\u00AD]/g, "")
+      .replace(/[‘’‛ʼ′]/g, "'")
+      .replace(/[‐‑‒–—―−]/g, "-")
+      .replace(/\s+/g, " ").trim();
+  }
+
+  function unwrap(value) {
+    const pairs = { '"': '"', "'": "'", "“": "”", "‘": "’", "(": ")", "[": "]", "{": "}" };
+    let result = value.trim();
+    // Only a balanced wrapper is presentation punctuation, not a missing bracket.
+    for (let depth = 0; depth < 4 && result.length > 1; depth += 1) {
+      if (pairs[result[0]] !== result[result.length - 1]) break;
+      result = result.slice(1, -1).trim();
+    }
+    return result;
+  }
+
+  function meridiem(value) {
+    return value.replace(/(?<![a-z])([ap])\s*\.?\s*m\s*\.?(?![a-z])/g, "$1m");
+  }
+
+  function policyFor(expected, question) {
+    const text = basicText(expected);
+    const timeText = meridiem(text);
+    const time = /\bo\s*'?\s*clock\b/.test(timeText) ? "oclock"
+      : /(?<![a-z])[ap]m(?![a-z])/.test(timeText) ? "meridiem"
+      : /\b\d{1,2}\s*:\s*\d{2}\b/.test(timeText) ? "clock" : "none";
+    let numbers = /\d/.test(text);
+    // Standalone One/First and anaphoric "the one" are grammatical keys in RI2.
+    // A caller may explicitly opt in for a numeric-only word answer.
+    const quantity = text.replace(/^(?:at least|more than|less than|nearly|about|approximately|over|under|up to|around)\s+/, "");
+    const words = quantity.replace(/-/g, " ").split(/\s+/);
+    let length = 0;
+    while (length < words.length && (numericWord(words[length]) || words[length] === "and")) length += 1;
+    const qualifier = quantity !== text;
+    const grammaticalTail = /^(?:of|that|which|who|whom|to|by|with|for|as|than)$/;
+    if (length > 0 && (qualifier || (length < words.length && !grammaticalTail.test(words[length])) || length > 1)) numbers = true;
+    if (question && typeof question.numberFormatting === "boolean") numbers = question.numberFormatting;
+    return { numbers, time, degrees: /°|º|˚|\bdegrees\b/.test(inputText(expected).toLowerCase()) };
+  }
+
+  function surface(value, policy) {
+    let text = inputText(value);
+    if (policy.degrees) text = text.replace(/[º˚]/g, "°");
+    text = meridiem(basicText(unwrap(text)));
+    // A single final sentence mark is harmless; internal numeric punctuation stays.
+    text = text.replace(/[.!?,;:]$/, "").trim();
+    text = unwrap(text)
+      .replace(/(?<=[a-z])\s*-\s*(?=[a-z0-9])|(?<=[0-9])\s*-\s*(?=[a-z])/g, " ")
+      .replace(/%/g, " percent ")
+      .replace(/\bper\s+cent\b/g, "percent")
+      .replace(/\s*\/\s*/g, "/")
+      .replace(/\s*,\s*/g, ", ");
+    if (policy.time === "oclock") text = text.replace(/\bo\s*'?\s*clock\b/g, "oclock");
+    return text.replace(/\s+/g, " ").trim();
+  }
+
+  function parseCardinal(words) {
+    let total = 0, group = 0, previous = "start", previousSmall = -1, lastScale = Infinity;
+    for (const word of words) {
+      if (word === "and") {
+        if (previous !== "hundred" && previous !== "scale") return null;
+        previous = "and";
+      } else if (own(SMALL, word)) {
+        const number = SMALL[word];
+        if (number === 0 ? words.length !== 1 : number < 10
+          ? !["start", "tens", "hundred", "scale", "and"].includes(previous)
+          : !["start", "hundred", "scale", "and"].includes(previous)) return null;
+        group += number;
+        previous = number < 10 ? "small" : "teen";
+        previousSmall = number;
+      } else if (own(TENS, word)) {
+        if (!["start", "hundred", "scale", "and"].includes(previous)) return null;
+        group += TENS[word]; previous = "tens"; previousSmall = -1;
+      } else if (word === "hundred") {
+        if (previous !== "small" || previousSmall < 1 || previousSmall > 9 || group > 9) return null;
+        group *= 100; previous = "hundred"; previousSmall = -1;
+      } else {
+        const scale = SCALES[word];
+        if (!scale || !group || previous === "and" || scale >= lastScale) return null;
+        total += group * scale; group = 0; previous = "scale"; previousSmall = -1; lastScale = scale;
+      }
+    }
+    const number = total + group;
+    return previous !== "start" && previous !== "and" && Number.isSafeInteger(number) ? number : null;
+  }
+
+  function suffix(number) {
+    const tail = number % 100;
+    return tail >= 11 && tail <= 13 ? "th" : number % 10 === 1 ? "st" : number % 10 === 2 ? "nd" : number % 10 === 3 ? "rd" : "th";
+  }
+
+  function parseWords(words) {
+    const final = words[words.length - 1];
+    if (!own(ORDINALS, final)) {
+      const number = parseCardinal(words);
+      return number === null ? null : String(number);
+    }
+    if (words.slice(0, -1).some(word => own(ORDINALS, word))) return null;
+    const cardinal = ORDINALS[final];
+    const number = words.length === 1 && (cardinal === "hundred" || own(SCALES, cardinal))
+      ? (cardinal === "hundred" ? 100 : SCALES[cardinal])
+      : parseCardinal(words.slice(0, -1).concat(cardinal));
+    return number === null ? null : String(number) + suffix(number);
+  }
+
+  function numberWords(value) {
+    const tokens = value.match(/[a-z]+|\d+|[^a-z\d]+/g) || [];
+    const output = [];
+    for (let index = 0; index < tokens.length; index += 1) {
+      if (!numericWord(tokens[index])) { output.push(tokens[index]); continue; }
+      const candidates = [{ word: tokens[index], end: index }];
+      let cursor = index + 1;
+      while (candidates.length < 64 && cursor + 1 < tokens.length && /^\s+$/.test(tokens[cursor]) && (numericWord(tokens[cursor + 1]) || tokens[cursor + 1] === "and")) {
+        candidates.push({ word: tokens[cursor + 1], end: cursor + 1 }); cursor += 2;
+      }
+      let matched = false;
+      for (let length = candidates.length; length > 0; length -= 1) {
+        const parsed = parseWords(candidates.slice(0, length).map(candidate => candidate.word));
+        if (parsed !== null) { output.push(parsed); index = candidates[length - 1].end; matched = true; break; }
+      }
+      if (!matched) output.push(tokens[index]);
+    }
+    return output.join("");
+  }
+
+  function clock(value, mode) {
+    const format = (whole, hourText, minuteText, period) => {
+      const hour = Number(hourText), minute = Number(minuteText);
+      if (hour < (period ? 1 : 0) || hour > (period ? 12 : 23) || minute > 59) return whole;
+      return hour + ":" + String(minute).padStart(2, "0") + (period ? " " + period : "");
+    };
+    if (mode === "oclock") return value.replace(/\b(0?\d|1[0-2])\s+oclock\b/g, (whole, hour) => Number(hour) >= 1 ? Number(hour) + " oclock" : whole);
+    if (mode === "meridiem") return value
+      .replace(/\b(\d{1,2})\s*[:.]\s*(\d{2})\s*(am|pm)\b/g, format)
+      .replace(/\b(\d{1,2})\s+(\d{1,2})\s*(am|pm)\b/g, format)
+      .replace(/(?<![\d:.])\b(0?\d|1[0-2])\s*(am|pm)\b/g, (whole, hour, period) => Number(hour) >= 1 ? Number(hour) + " " + period : whole);
+    if (mode === "clock") return value.replace(/\b(\d{1,2})\s*[:.]\s*(\d{2})\b/g, (whole, hour, minute) => format(whole, hour, minute));
+    return value;
+  }
+
+  function numericLiteral(whole) {
+    let match = /^([+-]?)(\d{1,3}(?:,\d{3})+|\d+)(?:\.(\d+))?$/.exec(whole);
+    if (!match) match = /^([+-]?)(\d+),(\d{1,2})$/.exec(whole);
+    if (!match) {
+      const fraction = /^([+-]?)\.(\d+)$/.exec(whole);
+      if (fraction) match = [whole, fraction[1], "0", fraction[2]];
+    }
+    if (!match) return whole;
+    const sign = match[1] === "+" ? "" : match[1];
+    let integer = match[2].replace(/,/g, "");
+    if (match[3] === undefined) return sign + integer; // Keep leading zeros in potential codes.
+    integer = integer.replace(/^0+(?=\d)/, "");
+    const fraction = match[3].replace(/0+$/, "");
+    return (integer === "0" && !fraction ? "" : sign) + integer + (fraction ? "." + fraction : "");
+  }
+
+  function canonical(value, policy) {
+    let text = surface(value, policy);
+    if (policy.numbers) {
+      // Restore commas inside validated number tokens; prose commas keep their spaces.
+      text = text.replace(/(?<=\d), (?=\d)/g, ",")
+        .replace(/(?<![\w.,])\d{1,3}(?: \d{3})+(?![\w.,])/g, group => group.replace(/ /g, ""));
+      text = numberWords(text);
+      text = text.replace(/\b(\d+)\s+point\s+(\d(?:\s+\d)*)\b/g, (_whole, integer, fraction) => integer + "." + fraction.replace(/ /g, ""));
+      text = clock(text, policy.time);
+      text = text.replace(/(?<![\w.,])([+-]?(?:\d[\d.,]*|\.\d+))(?![\w.,])/g, numericLiteral);
+      text = text.replace(/\b(\d+)(st|nd|rd|th)\b/g, (whole, digits, ending) => {
+        const number = Number(digits);
+        return Number.isSafeInteger(number) && suffix(number) === ending ? number + ending : whole;
+      });
+    }
+    if (policy.degrees) text = text.replace(/\b(\d+(?:\.\d+)?)\s*°(?!\s*[cf]\b)/g, "$1 degrees");
+    return text.replace(/\s+/g, " ").trim();
+  }
+
+  function normalizeAnswer(value, question) {
+    const expected = question && question.answer !== undefined ? question.answer : value;
+    return canonical(value, policyFor(expected, question));
+  }
+
+  function slashOptions(value) {
+    const parts = inputText(value).split("/").map(part => part.trim());
+    if (parts.length < 2 || !parts[0]) return null;
+    if (!parts[parts.length - 1]) parts.pop(); // A trailing separator never means a blank answer.
+    const units = /^(?:km|hr|ms|cm|mm|kg|ml|mph|kph|sec|min)$/i;
+    if (parts.some(part => !/^[a-z]{2,}(?:[ '-][a-z]+)*$/i.test(part) || units.test(part))) return null;
+    return parts;
+  }
+
+  function acceptedAnswers(question) {
+    if (!question || !inputText(question.answer).trim()) return [];
+    const listed = slashOptions(question.answer) || [inputText(question.answer)];
+    const explicit = Array.isArray(question.acceptedAnswers) ? question.acceptedAnswers.filter(answer => typeof answer === "string" && basicText(answer)) : [];
+    const seen = new Set();
+    return listed.concat(explicit).filter(answer => {
+      const key = basicText(answer);
+      if (seen.has(key)) return false;
+      seen.add(key); return true;
+    });
+  }
+
+  function answersMatch(actual, question) {
+    if (!basicText(actual) || !question) return false;
+    const candidates = [inputText(question.answer)].concat(acceptedAnswers(question)).filter(answer => basicText(answer));
+    return candidates.some(expected => {
+      const policy = policyFor(expected, question);
+      return canonical(actual, policy) === canonical(expected, policy);
+    });
+  }
+
+  function gradeAttempt(unit, answers) {
+    if (!unit || !Array.isArray(unit.sections)) throw new TypeError("A unit with sections is required.");
+    const questions = unit.sections.flatMap(section => Array.isArray(section.questions) ? section.questions : []);
+    const seen = new Set();
+    const entries = questions.map(question => {
+      const key = String(question.number);
+      if (question.number === undefined || seen.has(key)) throw new TypeError("Question numbers must be present and unique within a unit.");
+      seen.add(key);
+      const value = answers instanceof Map ? answers.get(key) : answers && own(answers, key) ? answers[key] : undefined;
+      const actual = inputText(value);
+      return { question, number: question.number, actual, answered: !!basicText(actual) };
+    });
+    const total = entries.length;
+    const complete = total > 0 && entries.every(entry => entry.answered);
+    if (!complete) return { complete: false, score: null, total, percent: null, wrong: [],
+      results: entries.map(entry => ({ number: entry.number, actual: entry.actual, answered: entry.answered, correct: null })) };
+    const results = entries.map(entry => ({ number: entry.number, actual: entry.actual, answered: true,
+      correct: answersMatch(entry.actual, entry.question), answer: entry.question.answer,
+      acceptedAnswers: acceptedAnswers(entry.question), explanation: entry.question.explanation || "" }));
+    const wrong = results.filter(result => !result.correct);
+    const score = total - wrong.length;
+    return { complete: true, score, total, percent: Math.round(score * 1000 / total) / 10, wrong, results };
+  }
+
+  return Object.freeze({ answersMatch, gradeAttempt, acceptedAnswers, normalizeAnswer });
+});
+</script>
+  <script>(function () {
+  "use strict";
+
+  const $ = (id) => document.getElementById(id);
+  const ALLOWED_CLASSES = ["FIGHTER 5", "FIGHTER 6", "FIGHTER 7", "FIGHTER 8", "FIGHTER 9"];
+  const STORAGE_VERSION = 1;
+  let unit;
+  let course;
+  let questions = [];
+  let questionByNumber = new Map();
+  let identity = null;
+  let attempt = null;
+  let storageBase = "";
+  let storageAvailable = true;
+  let submitting = false;
+  let reviewMode = "wrong";
+
+  function node(tag, className, text) {
+    const element = document.createElement(tag);
+    if (className) element.className = className;
+    if (text !== undefined) element.textContent = text;
+    return element;
+  }
+
+  function plainText(value) {
+    if (typeof value === "string" || typeof value === "number") return String(value).trim();
+    if (Array.isArray(value)) return value.filter((part) => typeof part === "string").join("\n\n").trim();
+    return "";
+  }
+
+  function normalizedName(value) {
+    return String(value || "").normalize("NFKC").replace(/\s+/g, " ").trim();
+  }
+
+  function newId() {
+    if (globalThis.crypto && typeof globalThis.crypto.randomUUID === "function") return globalThis.crypto.randomUUID();
+    if (globalThis.crypto && typeof globalThis.crypto.getRandomValues === "function") {
+      const bytes = new Uint8Array(16);
+      globalThis.crypto.getRandomValues(bytes);
+      return Array.from(bytes, (byte) => byte.toString(16).padStart(2, "0")).join("");
+    }
+    return Date.now().toString(36) + "-" + Math.random().toString(36).slice(2) + "-" + Math.random().toString(36).slice(2);
+  }
+
+  function currentKey() { return storageBase + ":current"; }
+  function attemptKey(id) { return storageBase + ":attempt:" + id; }
+
+  function readStorage(key) {
+    let raw;
+    try {
+      raw = localStorage.getItem(key);
+    } catch (_) {
+      storageAvailable = false;
+      return null;
+    }
+    try { return raw ? JSON.parse(raw) : null; } catch (_) { return null; }
+  }
+
+  function persist(options = {}) {
+    if (!attempt || !storageBase) return;
+    try {
+      const serialized = JSON.stringify(attempt);
+      localStorage.setItem(attemptKey(attempt.id), serialized);
+      // The current key is a selection pointer, not a frequently rewritten snapshot.
+      // An older tab may finish sending after another tab has started a newer attempt.
+      // Only an intentional new attempt may select itself; ordinary saves never do.
+      if (options.makeCurrent === true) {
+        localStorage.setItem(currentKey(), JSON.stringify({ version: STORAGE_VERSION, id: attempt.id }));
+      }
+    } catch (_) {
+      storageAvailable = false;
+    }
+    renderStorageWarning();
+  }
+
+  function renderStorageWarning() {
+    const target = $("storage-warning");
+    target.hidden = storageAvailable;
+    target.textContent = storageAvailable ? "" : "Trình duyệt không lưu được tiến độ. Vui lòng giữ trang mở cho đến khi nộp bài.";
+  }
+
+  function validStoredAttempt(value) {
+    return value && value.version === STORAGE_VERSION && typeof value.id === "string" &&
+      value.courseId === course.courseId && String(value.unit) === String(unit.unit) &&
+      value.identity && normalizedName(value.identity.name).toLocaleLowerCase("vi") === identity.name.toLocaleLowerCase("vi") && value.identity.className === identity.className &&
+      value.answers && typeof value.answers === "object" && !Array.isArray(value.answers);
+  }
+
+  function createAttempt(number) {
+    return {
+      version: STORAGE_VERSION,
+      id: newId(),
+      courseId: course.courseId,
+      unit: unit.unit,
+      testCode: unit.testCode,
+      identity: { name: identity.name, className: identity.className },
+      number: number || 1,
+      startedAt: new Date().toISOString(),
+      answers: {},
+      submittedAt: null,
+      grade: null,
+      delivery: { state: "draft" }
+    };
+  }
+
+  function previewUrl() {
+    const value = unit && ((unit.config && unit.config.studentPreviewUrl) || unit.studentPreviewUrl);
+    if (typeof value !== "string") return null;
+    try {
+      const url = new URL(value);
+      if (url.protocol !== "https:" || url.hostname !== "docs.google.com" || url.username || url.password) return null;
+      if (!/^\/document\/d\/(?:e\/)?[^/]+\/(?:preview|pub)\/?$/.test(url.pathname)) return null;
+      return url.href;
+    } catch (_) { return null; }
+  }
+
+  function unitLabel() {
+    return plainText(unit.title) || "Test " + String(unit.unit).padStart(2, "0");
+  }
+
+  function failSetup(message) {
+    $("gate-error").textContent = message;
+    $("gate-error").hidden = false;
+    $("open-quiz").disabled = true;
+  }
+
+  function initialize() {
+    try {
+      unit = JSON.parse($("ri2-unit-data").textContent);
+      course = JSON.parse($("ri2-course-data").textContent);
+      if (course && course.testing === true) {
+        document.body.classList.add("testing");
+        $("test-mode-banner").hidden = false;
+      }
+      if (!unit || !course || !course.courseId || !plainText(unit.testCode) || !Array.isArray(unit.sections)) throw new Error("configuration");
+      if (!globalThis.RI2Grading || typeof globalThis.RI2Grading.gradeAttempt !== "function") throw new Error("grading");
+      questions = unit.sections.flatMap((section) => Array.isArray(section.questions) ? section.questions : []);
+      questionByNumber = new Map(questions.map((question) => [String(question.number), question]));
+      if (!questions.length || questionByNumber.size !== questions.length || Number(unit.total) !== questions.length) throw new Error("questions");
+      if (questions.some((question) => question.number === undefined || !plainText(question.answer))) throw new Error("answer key");
+      if (!previewUrl()) throw new Error("student preview");
+      if (Object.prototype.hasOwnProperty.call(unit, "sourceDocumentId") || Object.prototype.hasOwnProperty.call(unit, "teacherDocumentId")) throw new Error("student-only data required");
+    } catch (_) {
+      failSetup("Bài học chưa sẵn sàng để mở. Vui lòng báo giáo viên để kiểm tra cấu hình bản học sinh.");
+      return;
+    }
+
+    document.title = (course.courseName || "Reading Intensive") + " · " + unitLabel();
+    $("gate-course").textContent = course.courseName || "Reading Intensive";
+    $("app-course").textContent = course.courseName || "Reading Intensive";
+    $("gate-title").textContent = unitLabel();
+    $("app-title").textContent = unitLabel();
+    $("gate-question-count").textContent = questions.length + " câu hỏi";
+    $("total-count").textContent = "/ " + questions.length + " câu";
+    const classes = Array.isArray(course.classes) ? ALLOWED_CLASSES.filter((name) => course.classes.includes(name)) : ALLOWED_CLASSES;
+    (classes.length ? classes : ALLOWED_CLASSES).forEach((name) => {
+      const option = node("option", "", name);
+      option.value = name;
+      $("student-class").appendChild(option);
+    });
+    try {
+      const previous = JSON.parse(sessionStorage.getItem("ri2:identity:" + course.courseId) || "null");
+      if (previous) {
+        $("student-name").value = normalizedName(previous.name);
+        if (ALLOWED_CLASSES.includes(previous.className)) $("student-class").value = previous.className;
+      }
+      const probe = "ri2:storage-probe:" + newId();
+      localStorage.setItem(probe, "1");
+      localStorage.removeItem(probe);
+    } catch (_) { storageAvailable = false; }
+
+    $("identity-form").addEventListener("submit", openQuiz);
+    $("answer-form").addEventListener("submit", submitAttempt);
+    $("new-attempt").addEventListener("click", startNewAttempt);
+    window.addEventListener("storage", receiveStorageUpdate);
+  }
+
+  function openQuiz(event) {
+    event.preventDefault();
+    const name = normalizedName($("student-name").value);
+    const className = $("student-class").value;
+    if (!name || !ALLOWED_CLASSES.includes(className)) {
+      $("gate-error").textContent = "Vui lòng nhập họ tên và chọn đúng lớp trước khi mở đề.";
+      $("gate-error").hidden = false;
+      (!name ? $("student-name") : $("student-class")).focus();
+      return;
+    }
+    identity = { name, className };
+    storageBase = "ri2:student:v" + STORAGE_VERSION + ":" + (course.testing === true ? "testing" : "live") + ":" + encodeURIComponent(course.courseId) + ":" + encodeURIComponent(String(unit.unit)) + ":" + encodeURIComponent(name.toLocaleLowerCase("vi") + "|" + className);
+    try { sessionStorage.setItem("ri2:identity:" + course.courseId, JSON.stringify(identity)); } catch (_) { /* Identity is still held in memory. */ }
+    const current = readStorage(currentKey());
+    const latest = current && typeof current.id === "string" ? readStorage(attemptKey(current.id)) : null;
+    // The fallback preserves attempts from the earlier full-snapshot current-key format.
+    const saved = validStoredAttempt(latest) ? latest : current;
+    const restored = validStoredAttempt(saved);
+    attempt = restored ? saved : createAttempt(1);
+    if (attempt.submittedAt) {
+      if (!attempt.grade || attempt.grade.complete !== true || attempt.grade.total !== questions.length || !Array.isArray(attempt.grade.results) || attempt.grade.results.length !== questions.length) {
+        attempt.grade = globalThis.RI2Grading.gradeAttempt(unit, attempt.answers);
+      }
+      if (["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) {
+        attempt.delivery = { state: "unconfirmed", attemptedAt: attempt.delivery.attemptedAt, reason: "reload" };
+      }
+    }
+    persist({ makeCurrent: !restored });
+    $("identity-name").textContent = identity.name;
+    $("identity-class").textContent = identity.className;
+    $("identity-gate").hidden = true;
+    $("quiz-app").hidden = false;
+    loadStudentDocument();
+    renderAnswers();
+  }
+
+  function loadStudentDocument() {
+    if ($("student-document")) return;
+    const frame = node("iframe", "document-frame");
+    frame.id = "student-document";
+    frame.title = "Đề bài bản học sinh · " + unitLabel();
+    frame.setAttribute("referrerpolicy", "no-referrer");
+    frame.setAttribute("sandbox", "allow-scripts allow-same-origin");
+    frame.addEventListener("load", () => { $("document-loading").hidden = true; }, { once: true });
+    frame.src = previewUrl();
+    $("document-body").appendChild(frame);
+  }
+
+  function answeredCount() {
+    return questions.filter((question) => plainText(attempt.answers[String(question.number)]) !== "").length;
+  }
+
+  function updateProgress() {
+    const count = answeredCount();
+    $("answered-count").textContent = String(count);
+    $("progress-fill").style.width = (count / questions.length * 100) + "%";
+    $("attempt-label").textContent = "Lượt " + attempt.number + (attempt.submittedAt ? " · đã chấm" : " · đang làm");
+    $("submit-answers").disabled = submitting || !!attempt.submittedAt || count !== questions.length;
+    $("submit-answers").textContent = submitting ? "ĐANG CHẤM BÀI…" : count === questions.length ? "NỘP BÀI & XEM LỜI GIẢI →" : "CÒN " + (questions.length - count) + " CÂU CHƯA TRẢ LỜI";
+  }
+
+  function recordAnswer(number, value) {
+    if (attempt.submittedAt || submitting) return;
+    attempt.answers[String(number)] = value;
+    persist();
+    updateProgress();
+  }
+
+  function renderAnswers() {
+    const container = $("answer-sections");
+    container.replaceChildren();
+    const results = new Map(attempt.grade && attempt.grade.complete ? attempt.grade.results.map((result) => [String(result.number), result]) : []);
+    if (attempt.grade && attempt.grade.complete && attempt.grade.wrong.length === 0) reviewMode = "all";
+    unit.sections.forEach((section) => {
+      const sectionElement = node("section", "answer-section");
+      const heading = node("div", "section-heading");
+      const exercise = plainText(section.exercise);
+      heading.appendChild(node("h3", "", /^exercise\b/i.test(exercise) ? exercise : "Exercise " + exercise));
+      if (plainText(section.instruction)) heading.appendChild(node("p", "", plainText(section.instruction)));
+      sectionElement.appendChild(heading);
+      let visibleQuestions = 0;
+      (section.questions || []).forEach((question) => {
+        const result = results.get(String(question.number));
+        const card = renderQuestion(section, question, result);
+        if (result && reviewMode === "wrong" && result.correct) card.hidden = true;
+        else visibleQuestions += 1;
+        sectionElement.appendChild(card);
+      });
+      if (results.size && reviewMode === "wrong" && visibleQuestions === 0) sectionElement.hidden = true;
+      container.appendChild(sectionElement);
+    });
+    $("submit-answers").hidden = !!attempt.submittedAt;
+    $("new-attempt").hidden = !attempt.submittedAt;
+    renderResultSummary();
+    renderDelivery();
+    renderStorageWarning();
+    updateProgress();
+  }
+
+  function renderQuestion(section, question, result) {
+    const number = String(question.number);
+    const card = node("article", "question-card" + (result ? result.correct ? " is-correct" : " is-wrong" : ""));
+    card.dataset.question = number;
+    if (result) {
+      card.dataset.correct = String(result.correct);
+      card.tabIndex = -1;
+    }
+    const top = node("div", "question-top");
+    const label = node("label", "question-number", "Câu " + number.padStart(2, "0"));
+    label.htmlFor = "answer-" + number;
+    top.appendChild(label);
+    if (result) top.appendChild(node("span", "question-state", result.correct ? "✓ Đúng" : "✕ Sai"));
+    card.appendChild(top);
+    const value = plainText(attempt.answers[number]);
+    const choices = Array.isArray(section.choices) ? section.choices.filter((choice) => typeof choice === "string" && choice.trim()).map((choice) => choice.trim()) : [];
+    if (section.inputKind === "mcq" && choices.length) {
+      const grid = node("div", "choice-grid");
+      grid.setAttribute("role", "radiogroup");
+      grid.setAttribute("aria-label", "Đáp án câu " + number);
+      choices.forEach((choice, index) => {
+        const choiceLabel = node("label", "choice");
+        const input = node("input");
+        input.type = "radio";
+        input.name = "answer-" + number;
+        input.id = index === 0 ? "answer-" + number : "answer-" + number + "-" + index;
+        input.value = choice;
+        input.checked = value === choice;
+        input.disabled = !!attempt.submittedAt || submitting;
+        input.addEventListener("change", () => recordAnswer(number, choice));
+        choiceLabel.append(input, node("span", "", choice));
+        grid.appendChild(choiceLabel);
+      });
+      card.appendChild(grid);
+    } else if (section.inputKind === "matching" && choices.length) {
+      const input = node("select");
+      input.id = "answer-" + number;
+      input.name = "answer-" + number;
+      input.setAttribute("aria-label", "Đáp án câu " + number);
+      const empty = node("option", "", "— Chọn đáp án —");
+      empty.value = "";
+      input.appendChild(empty);
+      choices.forEach((choice) => { const option = node("option", "", choice); option.value = choice; input.appendChild(option); });
+      input.value = value;
+      input.disabled = !!attempt.submittedAt || submitting;
+      input.addEventListener("change", () => recordAnswer(number, input.value));
+      card.appendChild(input);
+    } else {
+      const input = node("input");
+      input.type = "text";
+      input.id = "answer-" + number;
+      input.name = "answer-" + number;
+      input.value = value;
+      input.maxLength = 600;
+      input.placeholder = "Nhập câu trả lời của bạn";
+      input.autocomplete = "off";
+      input.setAttribute("autocapitalize", "off");
+      input.setAttribute("autocorrect", "off");
+      input.spellcheck = false;
+      input.disabled = !!attempt.submittedAt || submitting;
+      input.addEventListener("input", () => recordAnswer(number, input.value));
+      card.appendChild(input);
+    }
+    if (result) {
+      const review = node("div", "answer-review");
+      const key = node("p", "answer-key");
+      const mine = node("span", "answer-key-row", "Bạn trả lời: ");
+      mine.appendChild(node("b", result.correct ? "" : "submitted-answer", plainText(result.actual)));
+      const correct = node("span", "answer-key-row", "Đáp án đúng: ");
+      correct.appendChild(node("b", "", plainText(result.answer)));
+      key.append(mine, correct);
+      const alternatives = Array.isArray(result.acceptedAnswers) ? result.acceptedAnswers.map(plainText).filter((answer) => answer && answer !== plainText(result.answer)) : [];
+      if (alternatives.length) key.appendChild(node("small", "", "Cũng chấp nhận: " + alternatives.join(" · ")));
+      review.appendChild(key);
+      if (plainText(question.context)) {
+        review.appendChild(node("p", "review-label", "Ngữ cảnh câu hỏi"));
+        review.appendChild(node("p", "question-context", plainText(question.context)));
+      }
+      review.appendChild(node("p", "review-label", "Giải thích"));
+      review.appendChild(node("p", "explanation", cleanExplanation(result.explanation) || "Chưa có giải thích cho câu này."));
+      card.appendChild(review);
+    }
+    return card;
+  }
+
+  function cleanExplanation(value) {
+    return plainText(value).replace(/^Giải thích của cô\s*:\s*/i, "");
+  }
+
+  function setReviewMode(mode, questionNumber) {
+    reviewMode = mode === "all" ? "all" : "wrong";
+    renderAnswers();
+    $("answer-scroll").scrollTop = 0;
+    if (questionNumber !== undefined) {
+      const card = [...document.querySelectorAll("[data-question]")].find((item) => item.dataset.question === String(questionNumber));
+      if (card) {
+        card.scrollIntoView({ block: "start" });
+        card.focus({ preventScroll: true });
+      }
+    }
+  }
+
+  function renderResultSummary() {
+    const target = $("result-summary");
+    target.replaceChildren();
+    target.hidden = !attempt.submittedAt || !attempt.grade || !attempt.grade.complete;
+    if (target.hidden) return;
+    const grade = attempt.grade;
+    const box = node("section", "result-summary");
+    box.setAttribute("aria-labelledby", "result-heading");
+    box.appendChild(node("p", "result-kicker", "KẾT QUẢ"));
+    const numbers = node("div", "result-numbers");
+    const score = node("div", "result-score", String(grade.score));
+    score.appendChild(node("small", "", " / " + grade.total));
+    numbers.append(score, node("div", "result-percent", String(grade.percent) + "%"));
+    box.appendChild(numbers);
+    const title = node("h3", "", grade.score === grade.total ? "Hoàn thành tất cả các câu" : grade.wrong.length + " câu cần sửa");
+    title.id = "result-heading";
+    box.appendChild(title);
+    if (grade.wrong.length) {
+      const wrongLabel = node("p", "result-wrong-label", "CÂU SAI");
+      const jumps = node("div", "wrong-jumps");
+      grade.wrong.forEach((result) => {
+        const button = node("button", "", String(result.number));
+        button.type = "button";
+        button.setAttribute("aria-label", "Xem câu sai " + result.number);
+        button.addEventListener("click", () => setReviewMode("wrong", result.number));
+        jumps.appendChild(button);
+      });
+      box.append(wrongLabel, jumps);
+    }
+    const toggles = node("div", "review-toggle");
+    const wrongButton = node("button", reviewMode === "wrong" ? "active" : "", "CÂU SAI (" + grade.wrong.length + ")");
+    wrongButton.type = "button";
+    wrongButton.hidden = grade.wrong.length === 0;
+    wrongButton.setAttribute("aria-pressed", String(reviewMode === "wrong"));
+    wrongButton.addEventListener("click", () => setReviewMode("wrong"));
+    const allButton = node("button", reviewMode === "all" ? "active" : "", "TẤT CẢ (" + grade.total + ")");
+    allButton.type = "button";
+    allButton.setAttribute("aria-pressed", String(reviewMode === "all"));
+    allButton.addEventListener("click", () => setReviewMode("all"));
+    toggles.append(wrongButton, allButton);
+    box.appendChild(toggles);
+    target.appendChild(box);
+  }
+
+  function renderDelivery() {
+    const target = $("delivery-status");
+    target.replaceChildren();
+    const pending = !!attempt && ["sending", "pending"].includes(attempt.delivery && attempt.delivery.state);
+    $("new-attempt").disabled = pending;
+    $("new-attempt").textContent = pending ? "ĐANG LƯU ĐIỂM…" : "LÀM MỘT LƯỢT MỚI ↻";
+    const state = attempt.delivery && attempt.delivery.state;
+    target.hidden = !attempt || !attempt.submittedAt || !["unconfirmed", "not-configured", "test-mode"].includes(state);
+    if (target.hidden) return;
+    const messages = {
+      unconfirmed: ["Chưa lưu được điểm", "Vui lòng kiểm tra mạng hoặc báo giáo viên."],
+      "not-configured": ["Chưa lưu được điểm", "Vui lòng báo giáo viên."],
+      "test-mode": ["CHẾ ĐỘ KIỂM THỬ — không ghi điểm", ""]
+    };
+    const message = messages[state] || messages.unconfirmed;
+    target.className = "delivery" + (["unconfirmed", "not-configured"].includes(state) ? " is-warning" : "");
+    target.appendChild(node("strong", "", message[0]));
+    if (message[1]) target.appendChild(node("span", "", message[1]));
+  }
+
+  async function withSubmissionLock(action) {
+    if (navigator.locks && typeof navigator.locks.request === "function") {
+      let actionStarted = false;
+      try {
+        return await navigator.locks.request(storageBase + ":submit:" + attempt.id, { mode: "exclusive" }, () => {
+          actionStarted = true;
+          return action();
+        });
+      } catch (error) {
+        if (actionStarted) throw error;
+        // Some embedded/partitioned contexts expose Web Locks but reject access.
+        return action();
+      }
+    }
+    return action();
+  }
+
+  async function submitAttempt(event) {
+    event.preventDefault();
+    if (!attempt || attempt.submittedAt || submitting) return;
+    $("form-error").hidden = true;
+    if (answeredCount() !== questions.length) {
+      $("form-error").textContent = "Bạn cần trả lời đủ toàn bộ câu trước khi chấm bài.";
+      $("form-error").hidden = false;
+      const missing = questions.find((question) => !plainText(attempt.answers[String(question.number)]));
+      const input = missing && $("answer-" + missing.number);
+      if (input) input.focus();
+      return;
+    }
+    submitting = true;
+    renderAnswers();
+    let shouldSend = false;
+    try {
+      shouldSend = await withSubmissionLock(() => {
+        const saved = readStorage(attemptKey(attempt.id));
+        if (validStoredAttempt(saved) && saved.submittedAt) {
+          attempt = saved;
+          if (["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) attempt.delivery = { state: "unconfirmed", reason: "already-submitted" };
+          return false;
+        }
+        const grade = globalThis.RI2Grading.gradeAttempt(unit, attempt.answers);
+        if (!grade.complete) throw new Error("incomplete");
+        attempt.grade = grade;
+        attempt.submittedAt = new Date().toISOString();
+        attempt.delivery = { state: "sending", attemptedAt: attempt.submittedAt };
+        persist();
+        return true;
+      });
+    } catch (_) {
+      $("form-error").textContent = "Chưa thể chấm bài. Các câu trả lời vẫn được giữ; vui lòng kiểm tra lại hoặc báo giáo viên.";
+      $("form-error").hidden = false;
+    } finally {
+      submitting = false;
+      renderAnswers();
+      if (attempt.submittedAt) {
+        $("answer-scroll").scrollTop = 0;
+        $("answer-scroll").focus({ preventScroll: true });
+      }
+    }
+    if (shouldSend) await sendScore(attempt.id);
+  }
+
+  function configuredFormSink() {
+    if (course.testing === true) return null;
+    const sink = course.scoreSink;
+    if (!sink || sink.kind !== "google-form" || !sink.entries || typeof sink.formResponseUrl !== "string") return null;
+    try {
+      const url = new URL(sink.formResponseUrl);
+      if (url.protocol !== "https:" || url.hostname !== "docs.google.com" || !/^\/forms\/d\/(?:e\/)?[^/]+\/formResponse\/?$/.test(url.pathname)) return null;
+      const required = ["name", "total", "assignmentCode", "lesson", "activity", "className", "percent", "score", "wrong"];
+      if (required.some((field) => !/^entry\.\d+$/.test(sink.entries[field] || ""))) return null;
+      return sink;
+    } catch (_) { return null; }
+  }
+
+  function scoreBody(sink, snapshot) {
+    const grade = snapshot.grade;
+    const values = {
+      name: snapshot.identity.name,
+      className: snapshot.identity.className,
+      total: String(grade.total),
+      assignmentCode: plainText(unit.testCode),
+      lesson: unitLabel(),
+      activity: "Làm lại đề · Lượt " + snapshot.number + " · Mã lượt " + snapshot.id + " · " + snapshot.submittedAt,
+      percent: String(grade.percent),
+      score: String(grade.score),
+      wrong: grade.wrong.length ? grade.wrong.map((result) => "Câu " + result.number + ": " + plainText(result.actual) + " → " + plainText(result.answer)).join("\n") : "Không có câu sai"
+    };
+    const body = new URLSearchParams();
+    Object.keys(values).forEach((field) => body.set(sink.entries[field], values[field]));
+    // Only use additional form mappings when explicitly supplied by the course configuration.
+    const optional = { attemptId: snapshot.id, attemptNumber: String(snapshot.number), submittedAt: snapshot.submittedAt, startedAt: snapshot.startedAt };
+    Object.keys(optional).forEach((field) => { if (/^entry\.\d+$/.test(sink.entries[field] || "")) body.set(sink.entries[field], optional[field]); });
+    return body;
+  }
+
+  async function sendScore(id) {
+    if (!attempt || attempt.id !== id || !attempt.submittedAt) return;
+    if (course.testing === true) {
+      attempt.delivery = { state: "test-mode" };
+      persist();
+      renderDelivery();
+      return;
+    }
+    const sink = configuredFormSink();
+    if (!sink) {
+      attempt.delivery = { state: "not-configured" };
+      persist();
+      renderDelivery();
+      return;
+    }
+    const snapshot = JSON.parse(JSON.stringify(attempt));
+    const controller = typeof AbortController === "function" ? new AbortController() : null;
+    const timeout = controller ? setTimeout(() => controller.abort(), 25000) : null;
+    try {
+      // Google Forms is intentionally no-cors: an opaque response is NOT a storage confirmation.
+      await fetch(sink.formResponseUrl, { method: "POST", mode: "no-cors", credentials: "omit", body: scoreBody(sink, snapshot), ...(controller ? { signal: controller.signal } : {}) });
+      snapshot.delivery = { state: "sent-unverified", attemptedAt: snapshot.delivery.attemptedAt, requestFinishedAt: new Date().toISOString() };
+    } catch (_) {
+      snapshot.delivery = { state: "unconfirmed", attemptedAt: snapshot.delivery.attemptedAt, reason: "network" };
+    } finally {
+      if (timeout !== null) clearTimeout(timeout);
+    }
+    try { localStorage.setItem(attemptKey(id), JSON.stringify(snapshot)); } catch (_) { storageAvailable = false; }
+    if (attempt && attempt.id === id) {
+      attempt.delivery = snapshot.delivery;
+      persist();
+      renderDelivery();
+    }
+  }
+
+  function startNewAttempt() {
+    if (!attempt || !attempt.submittedAt || submitting || ["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) return;
+    attempt = createAttempt(Number(attempt.number || 1) + 1);
+    reviewMode = "wrong";
+    persist({ makeCurrent: true });
+    $("form-error").hidden = true;
+    renderAnswers();
+    $("answer-scroll").scrollTop = 0;
+    const first = questions[0] && $("answer-" + questions[0].number);
+    if (first) first.focus({ preventScroll: true });
+  }
+
+  function receiveStorageUpdate(event) {
+    if (!attempt || !storageBase || event.key !== attemptKey(attempt.id) || !event.newValue) return;
+    try {
+      const saved = JSON.parse(event.newValue);
+      if (!validStoredAttempt(saved) || !saved.submittedAt) return;
+      attempt = saved;
+      if (["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) attempt.delivery = { state: "unconfirmed", reason: "another-tab" };
+      renderAnswers();
+    } catch (_) { /* Ignore unrelated or incomplete browser-storage events. */ }
+  }
+
+  initialize();
+}());
+</script>
+<script src="../vf-course-navigation.53e975c9a910.js" defer data-vf-course-navigation></script></body>
+</html>

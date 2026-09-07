@@ -1,0 +1,762 @@
+{
+  "schemaVersion": 1,
+  "id": "model-ielts-listening-test-1",
+  "title": "Model IELTS Listening Test 1",
+  "testNumber": 1,
+  "totalQuestions": 40,
+  "source": {
+    "questionPages": "pages/page-1.png to pages/page-8.png",
+    "answerKey": "LISTENING 1-KEY.png",
+    "transcriptPages": "LISTENING 1-TS1.png to LISTENING 1-TS7.png"
+  },
+  "grading": {
+    "pointsPerQuestion": 1,
+    "textNormalization": [
+      "trim leading and trailing whitespace",
+      "compare case-insensitively",
+      "collapse consecutive internal whitespace",
+      "treat Unicode apostrophes as straight apostrophes"
+    ],
+    "note": "For text-entry questions, accept only a value listed in acceptedAnswers after normalization. Hyphenated and unhyphenated forms are both listed where the official key permits them."
+  },
+  "sections": [
+    {
+      "number": 1,
+      "title": "Section 1",
+      "questionRange": [1, 10],
+      "audio": {
+        "fileName": "TEST 1-SECTION 1.mp3",
+        "sourceRelativePath": "audio/File nghe đã nén (do Drive báo lỗi file đáng ngờ nên ko hiển thị)/TEST 1-SECTION 1.mp3"
+      },
+      "groups": [
+        {
+          "id": "section-1-questions-1-5",
+          "questionRange": [1, 5],
+          "taskType": "note_completion",
+          "instructions": [
+            "Complete the notes below.",
+            "Write NO MORE THAN THREE WORDS for each answer."
+          ],
+          "constraints": {
+            "maxWords": 3,
+            "numbersAllowed": true
+          },
+          "presentation": {
+            "heading": "Transport from Airport to Milton",
+            "example": {
+              "label": "Distance",
+              "answer": "147",
+              "suffix": "miles"
+            },
+            "blocks": [
+              {
+                "kind": "subheading",
+                "text": "Options"
+              },
+              {
+                "kind": "bullet",
+                "text": "Car hire",
+                "subitems": [
+                  "don’t want to drive"
+                ]
+              },
+              {
+                "kind": "questionBullet",
+                "question": 1,
+                "suffix": "— expensive"
+              },
+              {
+                "kind": "bullet",
+                "text": "Greyhound bus",
+                "subitems": [
+                  "$15 single, $27.50 return",
+                  "direct to the {{q2}}",
+                  "long {{q3}}"
+                ]
+              },
+              {
+                "kind": "bullet",
+                "text": "Airport Shuttle",
+                "subitems": [
+                  "{{q4}} service",
+                  "every 2 hours",
+                  "$35 single, $65 return",
+                  "need to {{q5}}"
+                ]
+              }
+            ]
+          },
+          "questions": [
+            {
+              "number": 1,
+              "type": "text",
+              "prompt": "Transport option: ______ — expensive",
+              "canonicalAnswer": "taxi",
+              "acceptedAnswers": [
+                "taxi",
+                "a taxi",
+                "cab",
+                "a cab"
+              ]
+            },
+            {
+              "number": 2,
+              "type": "text",
+              "prompt": "Greyhound bus: direct to the ______",
+              "canonicalAnswer": "city centre",
+              "acceptedAnswers": [
+                "city centre",
+                "city center"
+              ]
+            },
+            {
+              "number": 3,
+              "type": "text",
+              "prompt": "Greyhound bus: long ______",
+              "canonicalAnswer": "wait",
+              "acceptedAnswers": [
+                "wait"
+              ]
+            },
+            {
+              "number": 4,
+              "type": "text",
+              "prompt": "Airport Shuttle: ______ service",
+              "canonicalAnswer": "door-to-door",
+              "acceptedAnswers": [
+                "door-to-door",
+                "door to door"
+              ]
+            },
+            {
+              "number": 5,
+              "type": "text",
+              "prompt": "Airport Shuttle: need to ______",
+              "canonicalAnswer": "reserve",
+              "acceptedAnswers": [
+                "reserve",
+                "reserve a seat"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "section-1-questions-6-10",
+          "questionRange": [6, 10],
+          "taskType": "form_completion",
+          "instructions": [
+            "Complete the booking form below.",
+            "Write ONE WORD AND/OR A NUMBER for each answer."
+          ],
+          "constraints": {
+            "maxWords": 1,
+            "numbersAllowed": true,
+            "wordAndNumberCombinationAllowed": true
+          },
+          "presentation": {
+            "heading": "AIRPORT SHUTTLE BOOKING FORM",
+            "fields": [
+              {
+                "label": "To",
+                "value": "Milton"
+              },
+              {
+                "label": "Date",
+                "question": 6
+              },
+              {
+                "label": "No. of passengers",
+                "value": "One"
+              },
+              {
+                "label": "Bus Time",
+                "question": 7,
+                "suffix": "pm"
+              },
+              {
+                "label": "Type of ticket",
+                "value": "Single"
+              },
+              {
+                "label": "Name",
+                "prefix": "Janet",
+                "question": 8
+              },
+              {
+                "label": "Flight No",
+                "question": 9
+              },
+              {
+                "label": "From",
+                "value": "London Heathrow"
+              },
+              {
+                "label": "Address in Milton",
+                "value": "Vacation Motel, 24, Kitchener Street"
+              },
+              {
+                "label": "Fare",
+                "value": "$35"
+              },
+              {
+                "label": "Credit Card No",
+                "prefix": "(Visa)",
+                "question": 10
+              }
+            ]
+          },
+          "questions": [
+            {
+              "number": 6,
+              "type": "text",
+              "prompt": "Date: ______",
+              "canonicalAnswer": "17th October",
+              "acceptedAnswers": [
+                "17th October",
+                "the 17th October",
+                "17th of October",
+                "the 17th of October"
+              ]
+            },
+            {
+              "number": 7,
+              "type": "text",
+              "prompt": "Bus Time: ______ pm",
+              "canonicalAnswer": "12.30",
+              "acceptedAnswers": [
+                "12.30",
+                "12:30"
+              ]
+            },
+            {
+              "number": 8,
+              "type": "text",
+              "prompt": "Name: Janet ______",
+              "canonicalAnswer": "Thomson",
+              "acceptedAnswers": [
+                "Thomson"
+              ]
+            },
+            {
+              "number": 9,
+              "type": "text",
+              "prompt": "Flight No: ______",
+              "canonicalAnswer": "AC 936",
+              "acceptedAnswers": [
+                "AC 936",
+                "AC936"
+              ]
+            },
+            {
+              "number": 10,
+              "type": "text",
+              "prompt": "Credit Card No: (Visa) ______",
+              "canonicalAnswer": "3303 8450 2045 6837",
+              "acceptedAnswers": [
+                "3303 8450 2045 6837",
+                "3303-8450-2045-6837",
+                "3303845020456837"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Section 2",
+      "questionRange": [11, 20],
+      "audio": {
+        "fileName": "TEST 1-SECTION 2.mp3",
+        "sourceRelativePath": "audio/File nghe đã nén (do Drive báo lỗi file đáng ngờ nên ko hiển thị)/TEST 1-SECTION 2.mp3"
+      },
+      "groups": [
+        {
+          "id": "section-2-questions-11-16",
+          "questionRange": [11, 16],
+          "taskType": "multiple_choice",
+          "instructions": [
+            "Choose the correct letter, A, B or C."
+          ],
+          "questions": [
+            {
+              "number": 11,
+              "type": "multiple_choice",
+              "prompt": "PS Camping has been organising holidays for",
+              "options": {
+                "A": "15 years.",
+                "B": "20 years.",
+                "C": "25 years."
+              },
+              "correctOption": "B"
+            },
+            {
+              "number": 12,
+              "type": "multiple_choice",
+              "prompt": "The company has most camping sites in",
+              "options": {
+                "A": "France.",
+                "B": "Italy.",
+                "C": "Switzerland."
+              },
+              "correctOption": "A"
+            },
+            {
+              "number": 13,
+              "type": "multiple_choice",
+              "prompt": "Which organised activity can children do every day of the week?",
+              "options": {
+                "A": "football",
+                "B": "drama",
+                "C": "model making"
+              },
+              "correctOption": "B"
+            },
+            {
+              "number": 14,
+              "type": "multiple_choice",
+              "prompt": "Some areas of the sites have a ‘no noise’ rule after",
+              "options": {
+                "A": "9.30 p.m.",
+                "B": "10.00 p.m.",
+                "C": "10.30 p.m."
+              },
+              "correctOption": "C"
+            },
+            {
+              "number": 15,
+              "type": "multiple_choice",
+              "prompt": "The holiday insurance that is offered by PS Camping",
+              "options": {
+                "A": "can be charged on an annual basis.",
+                "B": "is included in the price of the holiday.",
+                "C": "must be taken out at the time of booking."
+              },
+              "correctOption": "C"
+            },
+            {
+              "number": 16,
+              "type": "multiple_choice",
+              "prompt": "Customers who recommend PS Camping to friends will receive",
+              "options": {
+                "A": "a free gift.",
+                "B": "an upgrade to a luxury tent.",
+                "C": "a discount."
+              },
+              "correctOption": "A"
+            }
+          ]
+        },
+        {
+          "id": "section-2-questions-17-20",
+          "questionRange": [17, 20],
+          "taskType": "matching",
+          "instructions": [
+            "What does the speaker say about the following items?",
+            "Write the correct letter, A, B or C, next to questions 17–20."
+          ],
+          "sharedOptions": {
+            "A": "They are provided in all tents.",
+            "B": "They are found in central areas of the campsite.",
+            "C": "They are available on request."
+          },
+          "questions": [
+            {
+              "number": 17,
+              "type": "matching",
+              "prompt": "barbecues",
+              "correctOption": "C"
+            },
+            {
+              "number": 18,
+              "type": "matching",
+              "prompt": "toys",
+              "correctOption": "A"
+            },
+            {
+              "number": 19,
+              "type": "matching",
+              "prompt": "cool boxes",
+              "correctOption": "C"
+            },
+            {
+              "number": 20,
+              "type": "matching",
+              "prompt": "mops and buckets",
+              "correctOption": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Section 3",
+      "questionRange": [21, 30],
+      "audio": {
+        "fileName": "TEST 1-SECTION 3.mp3",
+        "sourceRelativePath": "audio/File nghe đã nén (do Drive báo lỗi file đáng ngờ nên ko hiển thị)/TEST 1-SECTION 3.mp3"
+      },
+      "groups": [
+        {
+          "id": "section-3-questions-21-23",
+          "questionRange": [21, 23],
+          "taskType": "note_completion",
+          "instructions": [
+            "Complete the notes below.",
+            "Write ONE WORD ONLY for each answer."
+          ],
+          "constraints": {
+            "maxWords": 1,
+            "numbersAllowed": false
+          },
+          "presentation": {
+            "heading": "DIFFERENCES BETWEEN INDIVIDUALS IN THE WORKPLACE",
+            "blocks": [
+              {
+                "kind": "bulletSection",
+                "heading": "Individuals bring different:",
+                "items": [
+                  "ideas",
+                  "{{q21}}",
+                  "learning experiences"
+                ]
+              },
+              {
+                "kind": "bulletSection",
+                "heading": "Work behaviour differences are due to:",
+                "items": [
+                  "personality",
+                  "{{q22}}"
+                ]
+              },
+              {
+                "kind": "labelledLines",
+                "heading": "Effects of diversity on companies:",
+                "lines": [
+                  {
+                    "label": "Advantage",
+                    "text": "diversity develops {{q23}}"
+                  },
+                  {
+                    "label": "Disadvantage",
+                    "text": "diversity can cause conflict"
+                  }
+                ]
+              }
+            ]
+          },
+          "questions": [
+            {
+              "number": 21,
+              "type": "text",
+              "prompt": "Individuals bring different: ideas; ______; learning experiences",
+              "canonicalAnswer": "attitudes",
+              "acceptedAnswers": [
+                "attitude",
+                "attitudes"
+              ]
+            },
+            {
+              "number": 22,
+              "type": "text",
+              "prompt": "Work behaviour differences are due to: personality; ______",
+              "canonicalAnswer": "gender",
+              "acceptedAnswers": [
+                "gender",
+                "sex"
+              ]
+            },
+            {
+              "number": 23,
+              "type": "text",
+              "prompt": "Advantage: diversity develops ______",
+              "canonicalAnswer": "creativity",
+              "acceptedAnswers": [
+                "creativity",
+                "creativeness"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "section-3-questions-24-27",
+          "questionRange": [24, 27],
+          "taskType": "multiple_choice",
+          "instructions": [
+            "Choose the correct letter, A, B or C."
+          ],
+          "questions": [
+            {
+              "number": 24,
+              "type": "multiple_choice",
+              "prompt": "Janice thinks that employers should encourage workers who are",
+              "options": {
+                "A": "potential leaders.",
+                "B": "open to new ideas.",
+                "C": "good at teamwork."
+              },
+              "correctOption": "A"
+            },
+            {
+              "number": 25,
+              "type": "multiple_choice",
+              "prompt": "Janice suggests that managers may find it difficult to",
+              "options": {
+                "A": "form successful groups.",
+                "B": "balance conflicting needs.",
+                "C": "deal with uncooperative workers."
+              },
+              "correctOption": "B"
+            },
+            {
+              "number": 26,
+              "type": "multiple_choice",
+              "prompt": "Janice believes employers should look for job applicants who",
+              "options": {
+                "A": "can think independently.",
+                "B": "will obey the system.",
+                "C": "can solve problems."
+              },
+              "correctOption": "A"
+            },
+            {
+              "number": 27,
+              "type": "multiple_choice",
+              "prompt": "Janice believes managers should",
+              "options": {
+                "A": "demonstrate good behaviour.",
+                "B": "encourage co-operation early on.",
+                "C": "increase financial incentives."
+              },
+              "correctOption": "B"
+            }
+          ]
+        },
+        {
+          "id": "section-3-questions-28-30",
+          "questionRange": [28, 30],
+          "taskType": "sentence_completion",
+          "instructions": [
+            "Complete the sentences below.",
+            "Write ONE WORD ONLY for each answer."
+          ],
+          "constraints": {
+            "maxWords": 1,
+            "numbersAllowed": false
+          },
+          "questions": [
+            {
+              "number": 28,
+              "type": "text",
+              "prompt": "All managers need to understand their employees and recognise their company’s ______.",
+              "canonicalAnswer": "culture",
+              "acceptedAnswers": [
+                "culture"
+              ]
+            },
+            {
+              "number": 29,
+              "type": "text",
+              "prompt": "When managing change, increasing the company’s ______ may be more important than employee satisfaction.",
+              "canonicalAnswer": "profit",
+              "acceptedAnswers": [
+                "profit",
+                "profits"
+              ]
+            },
+            {
+              "number": 30,
+              "type": "text",
+              "prompt": "During periods of change, managers may have to cope with increased amounts of ______.",
+              "canonicalAnswer": "stress",
+              "acceptedAnswers": [
+                "stress",
+                "strain"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Section 4",
+      "questionRange": [31, 40],
+      "audio": {
+        "fileName": "TEST 1-SECTION 4.mp3",
+        "sourceRelativePath": "audio/File nghe đã nén (do Drive báo lỗi file đáng ngờ nên ko hiển thị)/TEST 1-SECTION 4.mp3"
+      },
+      "groups": [
+        {
+          "id": "section-4-questions-31-35",
+          "questionRange": [31, 35],
+          "taskType": "note_completion",
+          "instructions": [
+            "Complete the notes below.",
+            "Write ONE WORD ONLY for each answer."
+          ],
+          "constraints": {
+            "maxWords": 1,
+            "numbersAllowed": false
+          },
+          "presentation": {
+            "heading": "SEMINAR ON ROCK ART",
+            "blocks": [
+              {
+                "kind": "line",
+                "text": "Preparation for fieldwork trip to Namibia in {{q31}}"
+              },
+              {
+                "kind": "bulletSection",
+                "heading": "Rock art in Namibia may be",
+                "items": [
+                  "paintings",
+                  "engravings"
+                ]
+              },
+              {
+                "kind": "section",
+                "heading": "Earliest explanation of engravings of animal footprints",
+                "lines": [
+                  "They were used to help {{q32}} learn about tracking"
+                ]
+              },
+              {
+                "kind": "bulletSection",
+                "heading": "But:",
+                "items": [
+                  "Why are the tracks usually {{q33}}?",
+                  "Why are some engravings realistic and others unrealistic?",
+                  "Why are the unrealistic animals sometimes half {{q34}}?"
+                ]
+              },
+              {
+                "kind": "section",
+                "heading": "More recent explanation:",
+                "lines": [
+                  "Wise men may have been trying to control wild animals with {{q35}}."
+                ]
+              },
+              {
+                "kind": "section",
+                "heading": "Comment:",
+                "lines": [
+                  "Earlier explanation was due to scholars over-generalising from their experience of a different culture."
+                ]
+              }
+            ]
+          },
+          "questions": [
+            {
+              "number": 31,
+              "type": "text",
+              "prompt": "Preparation for fieldwork trip to Namibia in ______",
+              "canonicalAnswer": "April",
+              "acceptedAnswers": [
+                "April"
+              ]
+            },
+            {
+              "number": 32,
+              "type": "text",
+              "prompt": "They were used to help ______ learn about tracking.",
+              "canonicalAnswer": "children",
+              "acceptedAnswers": [
+                "children"
+              ]
+            },
+            {
+              "number": 33,
+              "type": "text",
+              "prompt": "Why are the tracks usually ______?",
+              "canonicalAnswer": "repeated",
+              "acceptedAnswers": [
+                "repeated"
+              ]
+            },
+            {
+              "number": 34,
+              "type": "text",
+              "prompt": "Why are the unrealistic animals sometimes half ______?",
+              "canonicalAnswer": "human",
+              "acceptedAnswers": [
+                "human"
+              ]
+            },
+            {
+              "number": 35,
+              "type": "text",
+              "prompt": "Wise men may have been trying to control wild animals with ______.",
+              "canonicalAnswer": "magic",
+              "acceptedAnswers": [
+                "magic"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "section-4-questions-36-40",
+          "questionRange": [36, 40],
+          "taskType": "sentence_completion",
+          "instructions": [
+            "Complete the sentences below.",
+            "Write ONE WORD ONLY for each answer."
+          ],
+          "constraints": {
+            "maxWords": 1,
+            "numbersAllowed": false
+          },
+          "questions": [
+            {
+              "number": 36,
+              "type": "text",
+              "prompt": "If you look at a site from a ______, you reduce visitor pressure.",
+              "canonicalAnswer": "distance",
+              "acceptedAnswers": [
+                "distance"
+              ]
+            },
+            {
+              "number": 37,
+              "type": "text",
+              "prompt": "To camp on a site may be disrespectful to people from that ______.",
+              "canonicalAnswer": "culture",
+              "acceptedAnswers": [
+                "culture"
+              ]
+            },
+            {
+              "number": 38,
+              "type": "text",
+              "prompt": "Undiscovered material may be damaged by ______.",
+              "canonicalAnswer": "fire",
+              "acceptedAnswers": [
+                "fire",
+                "fires"
+              ]
+            },
+            {
+              "number": 39,
+              "type": "text",
+              "prompt": "You should avoid ______ or tracing rock art as it is so fragile.",
+              "canonicalAnswer": "touching",
+              "acceptedAnswers": [
+                "touching"
+              ]
+            },
+            {
+              "number": 40,
+              "type": "text",
+              "prompt": "In general, your aim is to leave the site ______.",
+              "canonicalAnswer": "intact",
+              "acceptedAnswers": [
+                "intact"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

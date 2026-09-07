@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Phiếu trả lời</title>
+  <style>
+    :root{--ink:#17233a;--navy:#182a4a;--navy-deep:#0f1c33;--muted:#667085;--gold:#b58a3a;--gold-deep:#77591f;--gold-soft:#f7f0e2;--soft:#f3f0e9;--ivory:#faf8f3;--line:#ddd8ce;--white:#fffdf9;--font:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Arial,sans-serif}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;overflow:hidden;background:var(--white);color:var(--ink);font-family:var(--font);font-synthesis:none;text-rendering:optimizeLegibility}
+    button,input,select{font-family:var(--font);font-size:inherit}
+    button{cursor:pointer}
+    button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid rgba(181,138,58,.28);outline-offset:2px}
+    [hidden]{display:none!important}
+    .frame{height:100%;padding:0;display:grid;grid-template-rows:54px minmax(0,1fr);gap:0}
+    .topbar{min-width:0;padding:6px 12px;display:flex;align-items:center;gap:14px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:var(--white);box-shadow:none}
+    .brand{min-width:0;flex:1 1 auto;display:flex;align-items:center;gap:10px;white-space:nowrap}
+    .brand-badge{display:grid;width:36px;height:36px;place-items:center;border:1px solid var(--gold);border-radius:10px;background:var(--navy-deep);color:var(--gold);font-size:13px;font-weight:700;box-shadow:0 3px 10px rgba(15,28,51,.14)}
+    .brand-copy{min-width:0;display:grid;gap:2px}
+    .brand-copy strong{display:block;max-width:clamp(180px,38vw,560px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:17px;line-height:1.05}
+    .brand-copy .eyebrow{display:block;max-width:clamp(220px,46vw,680px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .eyebrow,.student span,.progress span,.gate label>span,.sheet-title,.saved{color:var(--navy);font-size:10px;font-weight:700;line-height:1.2;letter-spacing:.04em}
+    .student{min-width:0;flex:0 1 260px;display:grid;text-align:right}
+    .student strong{max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}
+    .student small{color:var(--muted);font-size:11px}
+    .progress{width:min(320px,28vw);flex:0 1 320px;display:grid;gap:6px}
+    .progress>div{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+    .progress strong{color:var(--navy);font-size:20px}
+    .track{height:8px;overflow:hidden;border-radius:99px;background:var(--soft)}
+    .track i{display:block;width:0;height:100%;border-radius:inherit;background:var(--gold);transition:width .2s ease}
+    .workspace{min-width:0;min-height:0;display:grid;grid-template-columns:minmax(0,3fr) minmax(440px,2fr);gap:0}
+    .workspace.locked{grid-template-columns:1fr}
+    .doc-pane,.right-pane{min-width:0;min-height:0;border:0;border-radius:0;background:var(--white);box-shadow:none;overflow:hidden}
+    .doc-pane{display:grid;grid-template-rows:34px minmax(0,1fr);border-right:1px solid var(--line)}
+    .doc-head{padding:0 11px;display:flex;align-items:center;border-bottom:1px solid var(--line);background:var(--ivory);color:var(--navy);font-size:10px;font-weight:700;letter-spacing:.04em}
+    .doc-pane iframe{width:100%;height:100%;border:0;background:var(--white)}
+    .right-pane{position:relative;display:grid;grid-template-rows:auto minmax(0,1fr)}
+    .mode-banner{z-index:2;padding:9px 13px;display:flex;align-items:center;gap:9px;border-bottom:1px solid var(--gold);background:var(--gold-soft);color:var(--gold-deep);font-size:11px;line-height:1.35}
+    .mode-banner strong{flex:0 0 auto;font-size:10px;letter-spacing:.04em}
+    .gate,.sheet,.result{min-height:0;grid-column:1;grid-row:2}
+    .gate{height:100%;padding:clamp(28px,4vw,50px);display:flex;flex-direction:column;justify-content:flex-start}
+    .gate .kicker{margin:0 0 9px;color:var(--gold-deep);font-size:11px;font-weight:700;letter-spacing:.04em}
+    .gate h1{margin:0 0 10px;font-size:clamp(28px,2.4vw,38px);font-weight:700;line-height:1.08;letter-spacing:-.02em}
+    .gate>p{margin:0 0 24px;color:var(--muted);font-size:14px;line-height:1.55}
+    .gate label{display:grid;gap:8px;margin-bottom:14px}
+    .gate input,.gate select{width:100%;height:56px;padding:0 15px;border:1px solid var(--line);border-radius:10px;background:var(--white);color:var(--ink);font-size:17px}
+    .primary{min-height:52px;padding:0 18px;border:0;border-radius:10px;background:var(--navy);color:var(--white);font-size:11px;font-weight:700;letter-spacing:.03em}
+    .primary:hover{background:var(--navy-deep)}
+    .primary:disabled{cursor:not-allowed;opacity:.55}
+    .gate .primary{width:100%;margin-top:4px}
+    .notice{margin:0 0 13px;padding:10px 12px;border:1px solid var(--gold);border-radius:9px;background:var(--gold-soft);color:var(--gold-deep);font-size:12px;font-weight:700;line-height:1.4}
+    .sheet{height:100%;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto}
+    .tabs{padding:9px;display:flex;gap:5px;overflow-x:auto;border-bottom:1px solid var(--line);background:var(--ivory);scrollbar-width:thin}
+    .tabs button{flex:1 0 66px;height:42px;border:1px solid var(--line);border-radius:9px;background:var(--white);color:var(--muted);font-size:10px;font-weight:700}
+    .tabs button.active{border-color:var(--navy);background:var(--navy);color:var(--white)}
+    .tabs button.done:after{margin-left:4px;content:"✓";color:var(--gold-deep)}
+    .tabs button.active.done:after{color:var(--gold)}
+    .sheet-head{padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line)}
+    .sheet-head h2{margin:4px 0 0;font-size:25px;line-height:1;font-weight:700}
+    .section-helper{margin:7px 0 0;color:var(--muted);font-size:11px;line-height:1.4}
+    .sheet-head>b{padding:6px 9px;border-radius:99px;background:var(--gold-soft);color:var(--gold-deep);font-size:11px}
+    .rows{min-height:0;padding:11px 12px 18px;display:grid;align-content:start;gap:9px;overflow-y:auto;overscroll-behavior:contain;scrollbar-color:var(--gold) transparent;scrollbar-width:thin;-webkit-overflow-scrolling:touch;touch-action:pan-y;overflow-anchor:none}
+    .answer-row{min-height:64px;display:grid;grid-template-columns:58px minmax(0,1fr);align-items:stretch;border:1px solid var(--line);border-radius:11px;background:var(--white);overflow:hidden}
+    .answer-row.answered{border-color:var(--gold);box-shadow:0 0 0 2px rgba(181,138,58,.07)}
+    .qnum{display:grid;place-items:center;border-right:1px solid var(--line);background:var(--soft);color:var(--navy);font-size:21px;font-weight:700}
+    .answer-row input,.answer-row select,.answer-row textarea{width:calc(100% - 20px);height:48px;margin:8px 10px;padding:0 14px;border:1px solid var(--line);border-radius:8px;background:var(--ivory);color:var(--ink);font-size:18px}
+    .answer-row textarea{height:96px;padding:12px 14px;resize:vertical;line-height:1.45}
+    .answer-row:has(textarea){min-height:114px}
+    .answer-row input:focus,.answer-row select:focus,.answer-row textarea:focus{border-color:var(--gold);background:var(--white);outline:0;box-shadow:0 0 0 3px rgba(181,138,58,.13)}
+    .letters{padding:8px 10px;display:grid;grid-template-columns:repeat(var(--choice-count,4),minmax(38px,1fr));gap:6px}
+    .letters button{height:48px;border:1px solid var(--line);border-radius:8px;background:var(--ivory);color:var(--navy);font-weight:700;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+    .letters button.selected{border-color:var(--navy);background:var(--navy);color:var(--white)}
+    .sheet-foot{padding:9px 11px;display:flex;align-items:center;gap:7px;border-top:1px solid var(--line);background:var(--white);box-shadow:0 -6px 18px rgba(15,28,51,.04)}
+    .saved{margin-right:auto}
+    .sheet-foot button{min-height:44px;padding:0 13px;border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--navy);font-size:10px;font-weight:700}
+    .sheet-foot button:disabled{cursor:not-allowed;opacity:.42}
+    .sheet-foot .grade{border-color:var(--navy);background:var(--navy);color:var(--white)}
+    .result{height:100%;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto}
+    .result-head{padding:18px;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:15px;border-bottom:1px solid var(--line)}
+    .score{display:flex;align-items:baseline;color:var(--navy)}
+    .score strong{font-size:48px;line-height:1;font-weight:700}
+    .score span{color:var(--muted);font-size:19px;font-weight:700}
+    .result-head h2{margin:2px 0 5px;font-size:22px;font-weight:700}
+    .result-head p{margin:0;color:var(--muted);font-size:12px}
+    .sync{margin-top:5px;color:var(--navy);font-size:11px;font-weight:700}
+    .sync.error{color:var(--gold-deep)}
+    .review-tools{padding:11px 12px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);background:var(--ivory)}
+    .wrong-list{margin:0;color:var(--gold-deep);font-size:12px;line-height:1.5}
+    .wrong-list strong{display:block;margin-bottom:2px;font-size:10px;letter-spacing:.04em}
+    .wrong-groups{display:flex;flex-wrap:wrap;gap:6px 12px}
+    .wrong-group{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+    .wrong-group>span{font-weight:700}
+    .wrong-jump{min-width:30px;height:30px;padding:0 7px;border:1px solid var(--gold);border-radius:7px;background:var(--white);color:var(--gold-deep);font-size:11px;font-weight:700}
+    .review-filters{display:flex;gap:6px;flex:0 0 auto}
+    .review-filters button{min-height:36px;padding:0 11px;border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--navy);font-size:10px;font-weight:700}
+    .review-filters button.active{border-color:var(--navy);background:var(--navy);color:var(--white)}
+    .reviews{min-height:0;padding:11px;display:flex;flex-direction:column;gap:8px;overflow-y:auto;scrollbar-gutter:stable}
+    .review{flex:0 0 auto;display:grid;grid-template-columns:64px minmax(0,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--white)}
+    .review.wrong{border-color:var(--gold)}
+    .review-num{padding:12px 4px;display:grid;align-content:start;justify-items:center;gap:6px;border-right:1px solid var(--line);background:var(--soft);color:var(--navy)}
+    .review.wrong .review-num{background:var(--gold-soft);color:var(--gold-deep)}
+    .review-num strong{font-size:22px;font-weight:700}
+    .review-num span{font-size:9px;font-weight:700;text-align:center}
+    .review-body{padding:14px 15px}
+    .review-answers{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;color:var(--muted);font-size:14px;line-height:1.45}
+    .review-answers b{color:var(--ink)}
+    .review-answers .correct{color:var(--navy);font-size:16px}
+    .explain{margin:12px 0 0;padding:12px 13px;border-left:4px solid var(--navy);background:var(--soft);color:var(--ink);font-size:15px;line-height:1.65}
+    .explain strong{display:block;margin-bottom:5px;color:var(--navy);font-size:11px;letter-spacing:.05em}.explain p{margin:0}
+    .result-foot{padding:10px 12px;display:grid;grid-template-columns:1fr;gap:8px;border-top:1px solid var(--line);background:var(--white)}
+    .secondary{min-height:52px;padding:0 14px;border:1px solid var(--line);border-radius:10px;background:var(--white);color:var(--navy);font-size:10px;font-weight:700}
+    @media(max-width:1100px){
+      html{height:100%;min-height:100%;overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:none;-webkit-overflow-scrolling:touch}
+      body{height:auto;min-height:100%;overflow:visible}
+      .frame{height:auto;min-height:100vh;min-height:100dvh;grid-template-rows:auto auto}
+      .topbar{flex-wrap:wrap}
+      .brand{width:100%}
+      .brand-copy strong{max-width:calc(100vw - 130px)}
+      .student{order:3;width:100%;margin:0;text-align:left}
+      .progress{margin-left:auto;width:45%}
+      .workspace{grid-template-columns:1fr}
+      .doc-pane{height:58vh;height:58dvh;min-height:430px;border-right:0;border-bottom:1px solid var(--line)}
+      .right-pane{height:auto;min-height:0;display:block;overflow:visible}
+      .gate{height:auto;min-height:620px}
+      .sheet,.result{height:auto;min-height:0;display:block}
+      .rows,.reviews{height:auto;max-height:none;overflow:visible;overscroll-behavior:auto;touch-action:auto}
+    }
+    @media(max-width:520px){
+      .frame{padding:0;gap:0}
+      .brand-copy strong{font-size:14px}.eyebrow{font-size:8px}
+      .progress{width:100%}
+      .workspace{gap:0}
+      .doc-pane{height:52vh;height:52dvh}
+      .right-pane{height:auto}
+      .gate{padding:24px 16px}
+      .mode-banner{align-items:flex-start;flex-direction:column;gap:2px}
+      .tabs{padding:6px;gap:3px}
+      .tabs button{height:39px;font-size:9px}
+      .sheet-head{padding:12px}
+      .rows{padding:8px;gap:7px}
+      .answer-row{grid-template-columns:50px minmax(0,1fr)}
+      .saved{display:none}
+      .sheet-foot button{flex:1;padding:0 8px}
+      .review-tools{align-items:flex-start;flex-direction:column}
+      .review-filters{width:100%}
+      .review-filters button{flex:1}
+      .result-foot{grid-template-columns:1fr}
+    }
+  </style>
+<link rel="stylesheet" href="../remaining-practice-ta.70016dfbe488.css"></head>
+<body class="remaining-test-page"><nav class="remaining-nav" aria-label="Điều hướng khóa học"><div class="remaining-nav-links"><a href="../practice/">← Luyện đề</a><a href="../practice-test-03/" aria-current="page">Làm bài kiểm tra</a><a href="../practice-correction-03/">Sổ luyện đề & sổ từ</a></div><label>Chọn bài <select data-remaining-unit><option value="">Chọn Test</option><option value="../practice-test-01/">Practice Test 1</option><option value="../practice-test-02/">Practice Test 2</option><option value="../practice-test-03/" selected>Practice Test 3</option></select></label></nav>
+  <main class="frame">
+    <header class="topbar">
+      <div class="brand"><div class="brand-badge" id="testBadge"></div><div class="brand-copy"><span class="eyebrow" id="courseName"></span><strong id="topic"></strong></div></div>
+      <div class="student" id="student" hidden><span>HỌC SINH</span><strong id="studentName"></strong><small id="studentClass"></small></div>
+      <div class="progress" id="progress" hidden><div><strong id="progressCount"></strong><span>ĐÃ ĐIỀN</span></div><div class="track"><i id="progressBar"></i></div></div>
+    </header>
+
+    <section class="workspace locked" id="workspace">
+      <article class="doc-pane" id="docPane" hidden>
+        <div class="doc-head"><span>ĐỀ BÀI</span></div>
+        <iframe id="docFrame" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer" loading="eager"></iframe>
+      </article>
+
+      <aside class="right-pane">
+        <div class="mode-banner" id="modeBanner" hidden><strong>BẢN NHÁP GIÁO VIÊN</strong><span>Đủ 100 ô để kiểm tra bố cục; chấm điểm và gửi Sheet đang bị khóa cho tới khi toàn bộ đáp án được duyệt.</span></div>
+
+        <form class="gate" id="gate">
+          <p class="kicker" id="gateKicker"></p>
+          <h1>Bắt đầu lượt làm</h1>
+          <p>Đọc đề ở khung bên trái và điền đáp án vào phiếu. Làm lại sau khi xem kỹ từng lỗi sai để tiến gần hơn tới mục tiêu thi chuyên.</p>
+          <label><span>HỌ VÀ TÊN</span><input id="name" autocomplete="name" required></label>
+          <label><span>LỚP</span><select id="className" required></select></label>
+          <p class="notice" id="gateNotice" hidden></p>
+          <button class="primary" type="submit">BẮT ĐẦU →</button>
+        </form>
+
+        <section class="sheet" id="sheet" hidden>
+          <nav class="tabs" id="tabs" aria-label="Các phần của đề"></nav>
+          <header class="sheet-head"><div><span class="sheet-title" id="sheetTitle"></span><h2 id="sectionTitle"></h2><p class="section-helper" id="sectionHelper" hidden></p></div><b id="sectionTotal"></b></header>
+          <div class="rows" id="rows"></div>
+          <footer class="sheet-foot"><span class="saved">ĐÃ LƯU</span><button id="prev" type="button">← TRƯỚC</button><button id="next" type="button">TIẾP →</button><button class="grade" id="grade" type="button" hidden>CHẤM BÀI</button></footer>
+        </section>
+
+        <section class="result" id="result" hidden>
+          <header class="result-head"><div class="score"><strong id="score"></strong><span id="scoreTotal"></span></div><div><span class="sheet-title">KẾT QUẢ</span><h2 id="resultTitle"></h2><p id="resultMeta"></p><div class="sync" id="sync"></div></div></header>
+          <div class="review-tools" id="reviewTools"><p class="wrong-list" id="wrongList"></p><div class="review-filters" role="group" aria-label="Lọc lời giải"><button class="active" id="showWrong" type="button">CÂU SAI</button><button id="showAll" type="button">TẤT CẢ</button></div></div>
+          <div class="reviews" id="reviews"></div>
+          <footer class="result-foot"><button class="primary" id="retry" type="button">LÀM LƯỢT MỚI →</button></footer>
+        </section>
+      </aside>
+    </section>
+  </main>
+  <iframe id="scoreTarget" name="scoreTarget" hidden></iframe>
+  <script>
+    const APP = {"mode":"production","course":{"schemaVersion":2,"courseId":"luyen-de","courseCode":"LD","courseName":"LUYỆN ĐỀ","labels":{"test":"ĐỀ","section":"PHẦN","sectionShort":"PHẦN","answerSheet":"PHIẾU TRẢ LỜI"},"expected":{"testCount":3,"questionTotal":300},"classes":["FIGHTER 5","FIGHTER 6","FIGHTER 7","FIGHTER 8","FIGHTER 9"],"matching":{"defaultMode":"normalized-exact","caseInsensitive":true,"collapseWhitespace":true,"normalizeApostrophes":true,"ignoreTerminalPunctuation":true,"expandContractionsGlobally":false},"submissionTemplates":{"assignmentCode":"LUYỆN ĐỀ - {testLabel}","lesson":"LUYỆN ĐỀ – {testLabel}","activity":"{topic} – Luyện đề"},"scoreSink":{"status":"verified","kind":"google-form","label":"KẾT QUẢ LUYỆN ĐỀ","spreadsheetId":"1ob6vm7FeB9dDlLa1YApMTB1wDk8gcRdLh_A15DaU7oI","sheetName":"Câu trả lời biểu mẫu 1","sheetGid":"1144044438","formEditorId":"1iECsC22ePpNJcjlw-m4XwAIK0_w6d6C8j_aO6eqEqUI","formResponseUrl":"https://docs.google.com/forms/d/e/1FAIpQLSeoPfhhIOecx4v7Hwj0FdXM5SoaraScsMklrf15W5xG3kkVvQ/formResponse","entries":{"name":"entry.1864333843","total":"entry.1802279054","testCode":"entry.932229322","lesson":"entry.114926046","activity":"entry.1413127424","className":"entry.412705812","percent":"entry.2057500492","score":"entry.1870158333","wrong":"entry.1066958615","attemptId":"entry.1405842479"}}},"test":{"schemaVersion":2,"sequence":3,"testId":"luyen-de-practice-test-03","testLabel":"PRACTICE TEST 3","testNumber":3,"testCode":"LD-PT03","title":"PRACTICE TEST 3","topic":"ÔN THI CHUYÊN ANH","total":100,"questionDocumentId":"15z6oNywG4hWpRSgT_r7FcLd6vNuu4TCQoBdACJbTEEw","questionTab":"t.0","sections":[{"sectionCode":"I.1","sectionLabel":"I.1","startGlobal":1,"count":30,"inputType":"letters","choices":["A","B","C","D"]},{"sectionCode":"I.2","sectionLabel":"I.2","startGlobal":31,"count":15,"inputType":"text","choices":[]},{"sectionCode":"I.3","sectionLabel":"I.3","startGlobal":46,"count":5,"inputType":"text","choices":[]},{"sectionCode":"II.1","sectionLabel":"II.1","startGlobal":51,"count":10,"inputType":"letters","choices":["A","B","C","D"]},{"sectionCode":"II.2","sectionLabel":"II.2","startGlobal":61,"count":10,"inputType":"text","choices":[]},{"sectionCode":"II.3","sectionLabel":"II.3","startGlobal":71,"count":10,"inputType":"letters","choices":["A","B","C","D"]},{"sectionCode":"III.1","sectionLabel":"III.1","startGlobal":81,"count":10,"inputType":"text","choices":[]},{"sectionCode":"III.2","sectionLabel":"III.2","startGlobal":91,"count":10,"inputType":"text","choices":[]}],"answers":[{"globalNumber":1,"sectionCode":"I.1","localNumber":1,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Each of us là chủ ngữ số ít, nên động từ hiện tại đơn phải là has. Although chỉ tạo quan hệ tương phản và không làm thay đổi sự hòa hợp chủ–vị.\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":2,"sectionCode":"I.1","localNumber":2,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"So that + mệnh đề diễn tả mục đích: Tom đóng cửa sổ để mưa không thể lọt vào. In order to phải theo sau bằng động từ nguyên mẫu, không phải một mệnh đề.\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":3,"sectionCode":"I.1","localNumber":3,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Trật tự tính từ tự nhiên là opinion → size/length → material → noun: a beautiful long silk dress, nên chọn B.\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":4,"sectionCode":"I.1","localNumber":4,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Deaf-mutes được mô tả là không thể nói cũng không thể nghe, nên dùng neither ... nor. Các cặp còn lại tạo nghĩa khẳng định hoặc lựa chọn.\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":5,"sectionCode":"I.1","localNumber":5,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Giải thích của cô:\ndeter someone from doing something\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":6,"sectionCode":"I.1","localNumber":6,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Under guarantee nghĩa là vẫn còn trong thời hạn bảo hành; vì vậy công ty chịu trách nhiệm sửa máy tính.\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":7,"sectionCode":"I.1","localNumber":7,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"What does she look like? hỏi ngoại hình. She is of medium height mô tả chiều cao; các phương án khác nói sở thích hoặc tính cách.\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":8,"sectionCode":"I.1","localNumber":8,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Hai mệnh đề đối lập: New York là thành phố lớn nhất nhưng không phải thủ đô. But nối trực tiếp hai mệnh đề; however không đứng như vậy sau dấu phẩy.\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":9,"sectionCode":"I.1","localNumber":9,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Giải thích của cô:\nbombard someone with questions\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":10,"sectionCode":"I.1","localNumber":10,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Câu mệnh lệnh khẳng định dùng câu hỏi đuôi will you. Vì vậy Remember to turn off the lights, will you?\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":11,"sectionCode":"I.1","localNumber":11,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Twice as large as là cấu trúc so sánh bội số: khu vườn của Thomas lớn gấp đôi khu vườn của tôi.\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":12,"sectionCode":"I.1","localNumber":12,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Sau dấu phẩy dùng mệnh đề quan hệ không xác định với which để thay cho Da Lat. That không dùng trong mệnh đề không xác định.\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":13,"sectionCode":"I.1","localNumber":13,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"People là danh từ đếm được số nhiều; few people nghĩa là hầu như không ai, phù hợp với lập luận quá khó hiểu.\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":14,"sectionCode":"I.1","localNumber":14,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Giải thích của cô:\ncasual clothes: thường phục\nformal clothes: quần áo trang trọng\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":15,"sectionCode":"I.1","localNumber":15,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Câu trả lời từ chối lời xin phép phải lịch sự và phù hợp quy định: I’d rather you didn’t. Các phương án còn lại đều cho phép chụp ảnh.\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":16,"sectionCode":"I.1","localNumber":16,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Giải thích của cô:\nbring out = produce\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":17,"sectionCode":"I.1","localNumber":17,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"No sooner đứng đầu câu kéo theo đảo ngữ quá khứ hoàn thành: No sooner had he arrived than he left.\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":18,"sectionCode":"I.1","localNumber":18,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Giải thích của cô:\nby and large = in general = on the whole\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":19,"sectionCode":"I.1","localNumber":19,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Tính từ ghép mô tả hình dạng giống chiếc đĩa là plate-like. Các dạng còn lại sai trật tự hoặc sai cấu tạo từ.\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":20,"sectionCode":"I.1","localNumber":20,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Only one of the girls cần the vì nói đến một nhóm xác định; tên loại nhạc classical music dùng không mạo từ. Chọn the / Ø.\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":21,"sectionCode":"I.1","localNumber":21,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Giải thích của cô:\ncome as a shock / surprise to sb\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":22,"sectionCode":"I.1","localNumber":22,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Trật tự đúng của chuỗi tính từ là chỉ định those → opinion impressive → shape square → origin Italian → material wood → purpose dining → noun tables.\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":23,"sectionCode":"I.1","localNumber":23,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Giải thích của cô:\nbeyond repair ko thể sửa chữa\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":24,"sectionCode":"I.1","localNumber":24,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Giải thích của cô:\nat a/an … rate / pace ở mức độ / tốc độ\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":25,"sectionCode":"I.1","localNumber":25,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Come up with an idea nghĩa là nghĩ ra/đề xuất một ý tưởng. Các cụm còn lại không mang nghĩa này.\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":26,"sectionCode":"I.1","localNumber":26,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Not until mở mệnh đề phụ nhưng không đảo ngữ trong chính mệnh đề đó: Not until I saw her.... Đảo ngữ đã xuất hiện ở mệnh đề chính did I realize.\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":27,"sectionCode":"I.1","localNumber":27,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Otherwise nghĩa là nếu không thì: hãy gọi trước chín giờ, nếu không tôi sẽ quá bận. Unless/if không nối đúng cấu trúc hiện có.\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":28,"sectionCode":"I.1","localNumber":28,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Quite có thể bổ nghĩa cho tính từ meaningless với nghĩa hoàn toàn/khá là vô nghĩa. Mere, most và real không đứng đúng vị trí hoặc sai dạng.\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":29,"sectionCode":"I.1","localNumber":29,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Of the three teachers, one ... and the others ...: the others chỉ hai người còn lại và đi với động từ số nhiều are.\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":30,"sectionCode":"I.1","localNumber":30,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Cụm thông dụng là hidden from view, không phải hidden from sight trong câu này. Khóa nguồn chọn C nên cần giáo viên xác nhận lại trước khi chấm.\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":31,"sectionCode":"I.2","localNumber":1,"acceptedAnswers":["participants"],"displayAnswer":"participants","explanation":"Sau all the cần danh từ số nhiều chỉ người tham gia: participants, được tạo từ PARTICIPATE.\n\nBổ sung:\nDạng từ cần điền là “participants”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":32,"sectionCode":"I.2","localNumber":2,"acceptedAnswers":["widening"],"displayAnswer":"widening","explanation":"Giải thích của cô:\nneed + doing = need to be done\n\nBổ sung:\nDạng từ cần điền là “widening”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":33,"sectionCode":"I.2","localNumber":3,"acceptedAnswers":["countless"],"displayAnswer":"countless","explanation":"Giải thích của cô:\ncountless nhiều ko đếm xuể\n\nBổ sung:\nDạng từ cần điền là “countless”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":34,"sectionCode":"I.2","localNumber":4,"acceptedAnswers":["imaginative"],"displayAnswer":"imaginative","explanation":"Giải thích của cô:\nimaginary ko có thật\nimaginative sáng tạo; có trí tưởng tượng phong phú\n(un)imaginable (không) có thể tưởng tượng được\n\nBổ sung:\nDạng từ cần điền là “imaginative”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":35,"sectionCode":"I.2","localNumber":5,"acceptedAnswers":["exceptionally"],"displayAnswer":"exceptionally","explanation":"Khoảng trống bổ nghĩa cho tính từ good nên cần trạng từ exceptionally: exceptionally good.\n\nBổ sung:\nDạng từ cần điền là “exceptionally”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":36,"sectionCode":"I.2","localNumber":6,"acceptedAnswers":["unharmed"],"displayAnswer":"unharmed","explanation":"Giải thích của cô:\nunharmed ko bị gây hại\nharmless vô hại; ko có hại\n\nBổ sung:\nDạng từ cần điền là “unharmed”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":37,"sectionCode":"I.2","localNumber":7,"acceptedAnswers":["Traditionally"],"displayAnswer":"Traditionally","explanation":"Trạng từ Traditionally đứng đầu câu để bổ nghĩa cho toàn bộ nhận định về cách áo dài thường được mặc.\n\nBổ sung:\nDạng từ cần điền là “Traditionally”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":38,"sectionCode":"I.2","localNumber":8,"acceptedAnswers":["interactive"],"displayAnswer":"interactive","explanation":"Interactive TV là truyền hình có tính tương tác; ACT đổi thành tính từ interactive.\n\nBổ sung:\nDạng từ cần điền là “interactive”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":39,"sectionCode":"I.2","localNumber":9,"acceptedAnswers":["pollutants"],"displayAnswer":"pollutants","explanation":"Danh sách oil slicks, chemical waste, garbage gồm các chất gây ô nhiễm, nên dùng danh từ số nhiều pollutants.\n\nBổ sung:\nDạng từ cần điền là “pollutants”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":40,"sectionCode":"I.2","localNumber":10,"acceptedAnswers":["unsuccessful"],"displayAnswer":"unsuccessful","explanation":"Hai attempts đứng trước lần cuối thành công là những lần không thành công, nên SUCCESS đổi thành unsuccessful.\n\nBổ sung:\nDạng từ cần điền là “unsuccessful”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":41,"sectionCode":"I.2","localNumber":11,"acceptedAnswers":["decorated"],"displayAnswer":"decorated","explanation":"Sau have cần quá khứ phân từ decorated trong hiện tại hoàn thành: have decorated the town.\n\nBổ sung:\nDạng từ cần điền là “decorated”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":42,"sectionCode":"I.2","localNumber":12,"acceptedAnswers":["unreliability"],"displayAnswer":"unreliability","explanation":"Sau her cần danh từ unreliability, nghĩa là tính không đáng tin cậy; đây là điều người nói không thích ở Silvia.\n\nBổ sung:\nDạng từ cần điền là “unreliability”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":43,"sectionCode":"I.2","localNumber":13,"acceptedAnswers":["parentage"],"displayAnswer":"parentage","explanation":"Giải thích của cô:\nparentage (n) có nguồn gốc… (gia đình bố mẹ)\n\nBổ sung:\nDạng từ cần điền là “parentage”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":44,"sectionCode":"I.2","localNumber":14,"acceptedAnswers":["incalculable"],"displayAnswer":"incalculable","explanation":"Incalculable damage là thiệt hại lớn đến mức không thể tính toán/định lượng; CALCULATE thêm tiền tố in- và hậu tố -able.\n\nBổ sung:\nDạng từ cần điền là “incalculable”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":45,"sectionCode":"I.2","localNumber":15,"acceptedAnswers":["unpredictable"],"displayAnswer":"unpredictable","explanation":"Unpredictable mô tả người có tâm trạng thay đổi khó đoán; tiền tố un- tạo nghĩa phủ định từ PREDICT.\n\nBổ sung:\nDạng từ cần điền là “unpredictable”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."},{"globalNumber":46,"sectionCode":"I.3","localNumber":1,"acceptedAnswers":["Line 1: cultural → culturally","cultural → culturally","culturally"],"displayAnswer":"Line 1: cultural → culturally","explanation":"Giải thích của cô:\ncultural đang bổ nghĩa cho từ significant → phải chuyển thành trạng từ\n\nBổ sung:\nCách sửa chuẩn là “Line 1: cultural → culturally”. Sau khi thay, cần đọc lại trọn câu để chắc rằng phần sai, phần thay thế, từ loại và quan hệ nghĩa đều đã đúng; không chỉ ghi một từ rời nếu đề yêu cầu nêu lỗi và cách sửa."},{"globalNumber":47,"sectionCode":"I.3","localNumber":2,"acceptedAnswers":["Line 3: Originated → Originating","Originated → Originating","Originating"],"displayAnswer":"Line 3: Originated → Originating","explanation":"Giải thích của cô:\noriginate nghĩa là bắt nguồn từ → chủ ngữ là festival → lễ hội này bắt nguồn từ → mang nghĩa chủ động → V-ing\n\nBổ sung:\nCách sửa chuẩn là “Line 3: Originated → Originating”. Sau khi thay, cần đọc lại trọn câu để chắc rằng phần sai, phần thay thế, từ loại và quan hệ nghĩa đều đã đúng; không chỉ ghi một từ rời nếu đề yêu cầu nêu lỗi và cách sửa."},{"globalNumber":48,"sectionCode":"I.3","localNumber":3,"acceptedAnswers":["Line 5: which → where","which → where","where"],"displayAnswer":"Line 5: which → where","explanation":"Sau space cần trạng từ quan hệ where để chỉ nơi young men and women may engage in courtship. Which không thể trực tiếp theo sau bằng một mệnh đề đủ chủ–vị như vậy.\n\nBổ sung:\nCách sửa chuẩn là “Line 5: which → where”. Sau khi thay, cần đọc lại trọn câu để chắc rằng phần sai, phần thay thế, từ loại và quan hệ nghĩa đều đã đúng; không chỉ ghi một từ rời nếu đề yêu cầu nêu lỗi và cách sửa."},{"globalNumber":49,"sectionCode":"I.3","localNumber":4,"acceptedAnswers":["Line 7: Beneath → Beyond","Beneath → Beyond","Beyond"],"displayAnswer":"Line 7: Beneath → Beyond","explanation":"Giải thích của cô:\nLỗi chơi chữ → các từ na ná nhau nhưng khác nhau về nghĩa trong từ văn cảnh cụ thể\n→ beyond its romantic connotations → ngoài ý nghĩa về mặt tình cảm/tình yêu, lễ hội này còn…\n\nBổ sung:\nCách sửa chuẩn là “Line 7: Beneath → Beyond”. Sau khi thay, cần đọc lại trọn câu để chắc rằng phần sai, phần thay thế, từ loại và quan hệ nghĩa đều đã đúng; không chỉ ghi một từ rời nếu đề yêu cầu nêu lỗi và cách sửa."},{"globalNumber":50,"sectionCode":"I.3","localNumber":5,"acceptedAnswers":["Line 10: single → singular","single → singular","singular"],"displayAnswer":"Line 10: single → singular","explanation":"Giải thích của cô:\nLỗi chơi chữ/Lỗi từ vựng\nsingle: đơn lẻ; một mình\n# singular: độc nhất; chỉ có một\n→ singular charm: sự hấp dẫn độc đáo\n\nBổ sung:\nCách sửa chuẩn là “Line 10: single → singular”. Sau khi thay, cần đọc lại trọn câu để chắc rằng phần sai, phần thay thế, từ loại và quan hệ nghĩa đều đã đúng; không chỉ ghi một từ rời nếu đề yêu cầu nêu lỗi và cách sửa."},{"globalNumber":51,"sectionCode":"II.1","localNumber":1,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Giải thích của cô:\nnovel (a) mới mẻ\ninflux (n) làn sóng đổ bộ/ập tới\ncognitive (a) thuộc về nhận thức\nembrace (v) = hug (nghĩa đen)\n→ đón nhận (nghĩa suy ra)\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":52,"sectionCode":"II.1","localNumber":2,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Giải thích của cô:\n…demand that + mệnh đề giả định → thức giả định\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":53,"sectionCode":"II.1","localNumber":3,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Giải thích của cô:\nbasic skills\nbasics: kiến thức nền tảng; cơ bản\n# basis: cái nền tảng\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":54,"sectionCode":"II.1","localNumber":4,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Giải thích của cô:\naddress = deal with\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":55,"sectionCode":"II.1","localNumber":5,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Giải thích của cô:\nPhân biệt as và like rất hay xuất hiện trong đề thi\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":56,"sectionCode":"II.1","localNumber":6,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Giải thích của cô:\nopen up\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":57,"sectionCode":"II.1","localNumber":7,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Giải thích của cô:\nnearly: gần như/xấp xỉ\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":58,"sectionCode":"II.1","localNumber":8,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Giải thích của cô:\nin the words of a report\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":59,"sectionCode":"II.1","localNumber":9,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Giải thích của cô:\nmake a start at doing st\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":60,"sectionCode":"II.1","localNumber":10,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Giải thích của cô:\nthe answer to a question\nthe key to success\nthe solution to a problem\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."},{"globalNumber":61,"sectionCode":"II.2","localNumber":1,"acceptedAnswers":["up","entirely"],"displayAnswer":"up / entirely","explanation":"Made up of carbon và made entirely of carbon đều diễn tả thành phần cấu tạo. Khóa nguồn ghi rõ hai khả năng up / entirely.\n\nBổ sung:\nTừ cần điền là “up / entirely”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."},{"globalNumber":62,"sectionCode":"II.2","localNumber":2,"acceptedAnswers":["pressure"],"displayAnswer":"pressure","explanation":"Cụm extreme heat and pressure là cách nói khoa học chuẩn về điều kiện hình thành kim cương sâu trong lớp phủ Trái Đất.\n\nBổ sung:\nTừ cần điền là “pressure”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."},{"globalNumber":63,"sectionCode":"II.2","localNumber":3,"acceptedAnswers":["what"],"displayAnswer":"what","explanation":"What mở mệnh đề danh từ làm bổ ngữ sau is: This atomic structure is what allows diamonds....\n\nBổ sung:\nTừ cần điền là “what”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."},{"globalNumber":64,"sectionCode":"II.2","localNumber":4,"acceptedAnswers":["when","once"],"displayAnswer":"when / once","explanation":"When hoặc once cut and polished là mệnh đề rút gọn bị động, nghĩa là khi/sau khi kim cương được cắt và đánh bóng.\n\nBổ sung:\nTừ cần điền là “when / once”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."},{"globalNumber":65,"sectionCode":"II.2","localNumber":5,"acceptedAnswers":["known"],"displayAnswer":"known","explanation":"Known to science là cụm cố định nghĩa là được khoa học biết đến; kim cương là vật liệu tự nhiên cứng nhất đã được biết đến.\n\nBổ sung:\nTừ cần điền là “known”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."},{"globalNumber":66,"sectionCode":"II.2","localNumber":6,"acceptedAnswers":["purity"],"displayAnswer":"purity","explanation":"Purity of its composition nói đến độ tinh khiết của thành phần cacbon, phù hợp với việc kim cương khác các đá quý chứa hỗn hợp nguyên tố.\n\nBổ sung:\nTừ cần điền là “purity”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."},{"globalNumber":67,"sectionCode":"II.2","localNumber":7,"acceptedAnswers":["surface"],"displayAnswer":"surface","explanation":"At the Earth’s surface là cụm địa điểm chuẩn; điều kiện tự nhiên ở sâu trong lòng đất không thể được tái tạo trên bề mặt.\n\nBổ sung:\nTừ cần điền là “surface”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."},{"globalNumber":68,"sectionCode":"II.2","localNumber":8,"acceptedAnswers":["jewelry","jewellery"],"displayAnswer":"jewelry / jewellery","explanation":"Fine jewellery/jewelry là đồ trang sức cao cấp. Hai cách viết Anh–Anh và Anh–Mỹ đều hợp lệ.\n\nBổ sung:\nTừ cần điền là “jewelry / jewellery”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."},{"globalNumber":69,"sectionCode":"II.2","localNumber":9,"acceptedAnswers":["perspective"],"displayAnswer":"perspective","explanation":"To put it into perspective là cụm cố định dùng để đặt một thông tin vào bối cảnh giúp người đọc hiểu đúng quy mô.\n\nBổ sung:\nTừ cần điền là “perspective”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."},{"globalNumber":70,"sectionCode":"II.2","localNumber":10,"acceptedAnswers":["do"],"displayAnswer":"do","explanation":"Those that do dùng trợ động từ do thay cho reach the surface để tránh lặp lại cả cụm động từ.\n\nBổ sung:\nTừ cần điền là “do”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."},{"globalNumber":71,"sectionCode":"II.3","localNumber":1,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Giải thích của cô:\nTrẻ con học thì chúng phải được hối lộ; thưởng ngôi sao vàng… thì mới chịu học → chúng có motivation nhưng là từ bên ngoài tác động → ko phải tự thân → chọn A → chúng lazy; phải được motivated thì mới chịu học\nbribe (v) hối lộ\n→ bribery (n)\nrust (n) gỉ (sắt)\n→ rusty (a)\nlinger (v) nán lại…\nfrown (v) nhăn nhó\n\nBổ sung:\nĐáp án là A. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."},{"globalNumber":72,"sectionCode":"II.3","localNumber":2,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Giải thích của cô:\nÝ chính của bài: học lúc trưởng thành thì động lực sẽ là tự thân; là cho chính bản thân mình → đây là điều có lợi\n\nBổ sung:\nĐáp án là B. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."},{"globalNumber":73,"sectionCode":"II.3","localNumber":3,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Giải thích của cô:\nĐây là lí do đầu tiên và quan trọng nhất\n→ Trong văn cảnh này for starters = first and foremost\n\nBổ sung:\nĐáp án là B. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."},{"globalNumber":74,"sectionCode":"II.3","localNumber":4,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Người viết ngạc nhiên vì khi học ở tuổi trưởng thành, homework was a pleasure và việc học mang lại sự thỏa mãn cá nhân; vì vậy chọn C.\n\nBổ sung:\nĐáp án là C. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."},{"globalNumber":75,"sectionCode":"II.3","localNumber":5,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Rusty được dùng ẩn dụ cho kỹ năng không còn tốt như trước vì lâu không luyện tập, tương ứng với A.\n\nBổ sung:\nĐáp án là A. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."},{"globalNumber":76,"sectionCode":"II.3","localNumber":6,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Giải thích của cô:\nVăn cảnh này ám chỉ hard word thì sẽ thành công\n→ loại A vì ko ám chỉ thời gian; ko phải là ao ước từ lâu long desire\n\nBổ sung:\nĐáp án là B. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."},{"globalNumber":77,"sectionCode":"II.3","localNumber":7,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Giải thích của cô:\nko phải fewer mà là more\n\nBổ sung:\nĐáp án là D. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."},{"globalNumber":78,"sectionCode":"II.3","localNumber":8,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Giải thích của cô:\nif you can’t, say, build a chair instantly…. not destroy your first attempt… → kiên nhẫn và trưởng thành\n\nBổ sung:\nĐáp án là B. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."},{"globalNumber":79,"sectionCode":"II.3","localNumber":9,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Đoạn cuối cho thấy khi học lại piano ở tuổi trưởng thành, người viết hiểu được những khái niệm và cảm xúc trước đây không nắm được; chọn C.\n\nBổ sung:\nĐáp án là C. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."},{"globalNumber":80,"sectionCode":"II.3","localNumber":10,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Toàn bài nhấn mạnh lợi ích, động lực và sự trưởng thành khi người lớn quay lại học, nhằm khuyến khích adult learning; chọn C.\n\nBổ sung:\nĐáp án là C. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."},{"globalNumber":81,"sectionCode":"III.1","localNumber":1,"acceptedAnswers":["If it weren’t for her patience, she would have left him."],"displayAnswer":"If it weren’t for her patience, she would have left him.","explanation":"If it weren’t for + noun diễn tả điều kiện trái với hiện tại. Chính patience của cô ấy là lý do cô ấy chưa rời bỏ anh ta.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “If it weren’t for her patience, she would have left him.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":82,"sectionCode":"III.1","localNumber":2,"acceptedAnswers":["This jewellery is in such good condition that it seems almost impossible to believe it is nearly a thousand years old."],"displayAnswer":"This jewellery is in such good condition that it seems almost impossible to believe it is nearly a thousand years old.","explanation":"Such good condition that ... là cấu trúc such + adjective + noun + that. Vế sau phải giữ ý khó tin món trang sức đã gần một nghìn năm tuổi.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “This jewellery is in such good condition that it seems almost impossible to believe it is nearly a thousand years old.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":83,"sectionCode":"III.1","localNumber":3,"acceptedAnswers":["As far as punctuality is concerned, Fiona takes after her mother."],"displayAnswer":"As far as punctuality is concerned, Fiona takes after her mother.","explanation":"Giải thích của cô:\nAs far as + danh từ + be + concerned = in terms of = regarding → về mặt; về khía cạnh.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “As far as punctuality is concerned, Fiona takes after her mother.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":84,"sectionCode":"III.1","localNumber":4,"acceptedAnswers":["Working as a primary school teacher calls for a great deal of patience."],"displayAnswer":"Working as a primary school teacher calls for a great deal of patience.","explanation":"Giải thích của cô:\ncall for = require → đòi hỏi phải có…\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Working as a primary school teacher calls for a great deal of patience.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":85,"sectionCode":"III.1","localNumber":5,"acceptedAnswers":["Terry\u0027s idea met with no support from the other team members."],"displayAnswer":"Terry\u0027s idea met with no support from the other team members.","explanation":"Meet with no support nghĩa là không nhận được sự ủng hộ. Khóa nguồn ghi Teddy trong khi đề ghi Terry, nên tên riêng phải được sửa thống nhất trước khi chấm.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Terry\u0027s idea met with no support from the other team members.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":86,"sectionCode":"III.1","localNumber":6,"acceptedAnswers":["The region has a lot to offer in terms of natural resources."],"displayAnswer":"The region has a lot to offer in terms of natural resources.","explanation":"Have a lot to offer in terms of natural resources diễn tả khu vực có nhiều giá trị/lợi thế về tài nguyên thiên nhiên.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “The region has a lot to offer in terms of natural resources.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":87,"sectionCode":"III.1","localNumber":7,"acceptedAnswers":["The price of the book may prevent it from becoming a bestseller."],"displayAnswer":"The price of the book may prevent it from becoming a bestseller.","explanation":"Prevent something from becoming ... diễn tả giá của cuốn sách có thể ngăn nó trở thành bestseller.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “The price of the book may prevent it from becoming a bestseller.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":88,"sectionCode":"III.1","localNumber":8,"acceptedAnswers":["Sally was on the point of leaving the office when the boss asked her to type up a report."],"displayAnswer":"Sally was on the point of leaving the office when the boss asked her to type up a report.","explanation":"Giải thích của cô:\nbe on the point of doing something = be about to do something → sắp sửa làm gì; đang định làm gì.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Sally was on the point of leaving the office when the boss asked her to type up a report.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":89,"sectionCode":"III.1","localNumber":9,"acceptedAnswers":["It was the absence/lack of leadership on the committee that caused/resulted in/led to most of the problems."],"displayAnswer":"It was the absence/lack of leadership on the committee that caused/resulted in/led to most of the problems.","explanation":"Câu chẻ It was ... that nhấn mạnh nguyên nhân: chính sự thiếu vắng lãnh đạo đã gây ra phần lớn vấn đề. Cause/result in/lead to đều diễn tả quan hệ nguyên nhân–kết quả.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “It was the absence/lack of leadership on the committee that caused/resulted in/led to most of the problems.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":90,"sectionCode":"III.1","localNumber":10,"acceptedAnswers":["The repair of the bridge is planned for this weekend."],"displayAnswer":"The repair of the bridge is planned for this weekend.","explanation":"Động từ plan được chuyển thành danh từ repair làm chủ ngữ; cấu trúc bị động is planned for this weekend giữ nguyên thời gian dự kiến.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “The repair of the bridge is planned for this weekend.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":91,"sectionCode":"III.2","localNumber":1,"acceptedAnswers":["My grandfather didn\u0027t have any recollection of phoning me last night."],"displayAnswer":"My grandfather didn\u0027t have any recollection of phoning me last night.","explanation":"Giải thích của cô:\nhave a recollection of…: nhớ lại; có ấn tượng về một việc trong quá khứ.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “My grandfather didn\u0027t have any recollection of phoning me last night.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":92,"sectionCode":"III.2","localNumber":2,"acceptedAnswers":["If Mark hadn’t taken up politics, he might have made a name for himself as an art historian."],"displayAnswer":"If Mark hadn’t taken up politics, he might have made a name for himself as an art historian.","explanation":"Make a name for oneself as ... nghĩa là trở nên nổi tiếng với tư cách nào đó; với Mark dùng himself.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “If Mark hadn’t taken up politics, he might have made a name for himself as an art historian.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":93,"sectionCode":"III.2","localNumber":3,"acceptedAnswers":["I was often made to carry his schoolbag when we lived in the country."],"displayAnswer":"I was often made to carry his schoolbag when we lived in the country.","explanation":"Make somebody do ở chủ động chuyển sang be made to do ở bị động, nên dùng I was often made to carry....\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “I was often made to carry his schoolbag when we lived in the country.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":94,"sectionCode":"III.2","localNumber":4,"acceptedAnswers":["The company\u0027s employees shouldn\u0027t count on being allocated a car-parking space.","The company\u0027s employees should not count on being allocated a car-parking space."],"displayAnswer":"The company\u0027s employees shouldn\u0027t count on being allocated a car-parking space.\n/\nThe company\u0027s employees should not count on being allocated a car-parking space.","explanation":"Giải thích của cô:\nallocate (v): phân bổ thời gian, tiền bạc hoặc nguồn lực cho một mục đích.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “The company\u0027s employees shouldn\u0027t count on being allocated a car-parking space.\n/\nThe company\u0027s employees should not count on being allocated a car-parking space.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":95,"sectionCode":"III.2","localNumber":5,"acceptedAnswers":["We lost no time in getting started on the new project."],"displayAnswer":"We lost no time in getting started on the new project.","explanation":"Giải thích của cô:\nlose no time in doing something: làm ngay, không trì hoãn.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “We lost no time in getting started on the new project.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":96,"sectionCode":"III.2","localNumber":6,"acceptedAnswers":["The heavy snow prevented us from driving home."],"displayAnswer":"The heavy snow prevented us from driving home.","explanation":"Prevent somebody from + V-ing nghĩa là ngăn ai làm gì. Heavy snow là nguyên nhân khiến chúng tôi không thể lái xe về nhà.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “The heavy snow prevented us from driving home.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":97,"sectionCode":"III.2","localNumber":7,"acceptedAnswers":["I’m not willing to put up with rudeness from my colleagues any longer."],"displayAnswer":"I’m not willing to put up with rudeness from my colleagues any longer.","explanation":"Put up with something nghĩa là chịu đựng. Be not willing to put up with tương đương would no longer tolerate.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “I’m not willing to put up with rudeness from my colleagues any longer.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":98,"sectionCode":"III.2","localNumber":8,"acceptedAnswers":["We can afford this holiday as long as we avoid the expensive restaurants in the tourist centre."],"displayAnswer":"We can afford this holiday as long as we avoid the expensive restaurants in the tourist centre.","explanation":"Can afford this holiday giữ ý kỳ nghỉ nằm trong khả năng chi trả; as long as nêu điều kiện phải tránh các nhà hàng đắt tiền.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “We can afford this holiday as long as we avoid the expensive restaurants in the tourist centre.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":99,"sectionCode":"III.2","localNumber":9,"acceptedAnswers":["Martin has almost no chance of winning the 100 metres."],"displayAnswer":"Martin has almost no chance of winning the 100 metres.","explanation":"Have almost no chance of + V-ing nghĩa là hầu như không có khả năng làm gì, tương đương very unlikely.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Martin has almost no chance of winning the 100 metres.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."},{"globalNumber":100,"sectionCode":"III.2","localNumber":10,"acceptedAnswers":["Nadia was just on the point of leaving the restaurant when her friends arrived."],"displayAnswer":"Nadia was just on the point of leaving the restaurant when her friends arrived.","explanation":"Be on the point of + V-ing nghĩa là vừa sắp làm gì thì sự việc khác xảy ra; ở đây Nadia sắp rời nhà hàng khi bạn đến.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Nadia was just on the point of leaving the restaurant when her friends arrived.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."}],"publishReady":true}};
+    const COURSE = APP.course;
+    const TEST = APP.test;
+    const SECTIONS = TEST.sections;
+    const SOLUTIONS = TEST.answers;
+    const TOTAL = TEST.total;
+    const DRAFT = APP.mode !== "production";
+    const PRODUCTION_READY = !DRAFT && COURSE.scoreSink.status === "verified" && TEST.publishReady === true;
+    const FORM_URL = PRODUCTION_READY ? COURSE.scoreSink.formResponseUrl : "";
+    const ENTRIES = COURSE.scoreSink.entries || {};
+    const STORAGE_PREFIX = COURSE.courseId;
+    const PROFILE_KEY = `${STORAGE_PREFIX}:profile:v1`;
+    const ACTIVE_KEY = `${STORAGE_PREFIX}:${TEST.testId}:active:v1`;
+    const HISTORY_KEY = `${STORAGE_PREFIX}:${TEST.testId}:history:v1`;
+    const LAST_KEY = `${STORAGE_PREFIX}:${TEST.testId}:last:v1`;
+    const SUBMIT_LOCK_PREFIX = `${STORAGE_PREFIX}:${TEST.testId}:submit-lock`;
+    let answers = {};
+    let current = 0;
+    let attemptId = "";
+    let identity = {name:"",className:""};
+    let history = [];
+    let graded = false;
+    let submitting = false;
+    let sessionConfirmed = false;
+    let storedActive = null;
+    let storedLast = null;
+    const $ = id => document.getElementById(id);
+    const setSync = (message,isError=false) => { const target = $("sync"); target.textContent = message; target.classList.toggle("error",isError); };
+    const questions = Array.from({length:TOTAL}, (_,index) => index + 1);
+    const norm = value => String(value || "").normalize("NFKC").trim().toLowerCase().replace(/[’‘]/g,"'").replace(/\s*->\s*/g," → ").replace(/[.!?]+$/g,"").trim().replace(/\s+/g," ");
+    const equivalent = (left,right) => norm(left) === norm(right);
+    const solutionByGlobal = new Map(SOLUTIONS.map(solution => [solution.globalNumber,solution]));
+    const templateValue = key => ({testLabel:TEST.testLabel,topic:TEST.topic,testId:TEST.testId,testCode:TEST.testCode || TEST.testId})[key] ?? "";
+    const renderTemplate = template => String(template || "").replace(/\{(\w+)\}/g,(_,key) => templateValue(key));
+    const makeId = () => `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    const TAB_ID = makeId();
+    const range = section => Array.from({length:section.count}, (_,index) => section.startGlobal + index);
+    const cleanIdentity = candidate => {
+      const name = String(candidate?.name || "").trim().replace(/\s+/g," ");
+      const className = String(candidate?.className || "").trim();
+      return name.length >= 2 && COURSE.classes.includes(className) ? {name,className} : null;
+    };
+    const sameIdentity = (left,right) => {
+      const a = cleanIdentity(left);
+      const b = cleanIdentity(right);
+      return Boolean(a && b && a.name.toLocaleLowerCase("vi") === b.name.toLocaleLowerCase("vi") && a.className === b.className);
+    };
+    const completeAnswers = snapshot => Boolean(snapshot && typeof snapshot === "object" && !Array.isArray(snapshot) && questions.every(number => norm(snapshot[number])));
+    const validAttemptId = value => typeof value === "string" && value.trim().length >= 5;
+    const validActiveRecord = record => Boolean(record && validAttemptId(record.attemptId) && cleanIdentity(record.identity) && record.answers && typeof record.answers === "object" && !Array.isArray(record.answers));
+    const validCompletedRecord = record => validActiveRecord(record) && completeAnswers(record.answers);
+    const readStored = key => {
+      try{ return JSON.parse(localStorage.getItem(key) || "null"); }
+      catch(_){ localStorage.removeItem(key); return null; }
+    };
+    const locate = globalNumber => {
+      const sectionIndex = SECTIONS.findIndex(section => globalNumber >= section.startGlobal && globalNumber < section.startGlobal + section.count);
+      return {sectionIndex,section:SECTIONS[sectionIndex],local:globalNumber - SECTIONS[sectionIndex].startGlobal + 1};
+    };
+
+    function lockQuestions(){
+      $("docPane").hidden = true;
+      $("docFrame").removeAttribute("src");
+      $("workspace").classList.add("locked");
+    }
+
+    function unlockQuestions(){
+      if(!sessionConfirmed || !cleanIdentity(identity)) return false;
+      $("workspace").classList.remove("locked");
+      $("docPane").hidden = false;
+      if(!$("docFrame").hasAttribute("src")){
+        const docBase = `https://docs.google.com/document/d/${TEST.questionDocumentId}`;
+        const tab = TEST.questionTab || "t.0";
+        $("docFrame").src = `${docBase}/preview?tab=${encodeURIComponent(tab)}&embedded=true&rm=minimal`;
+      }
+      return true;
+    }
+
+    function initializeStaticUi(){
+      document.title = `${TEST.testLabel} · ${COURSE.courseName}`;
+      $("courseName").textContent = "ÔN THI CHUYÊN ANH · LÀM LẠI – SỬA KỸ – TIẾN BỘ";
+      $("testBadge").textContent = String(TEST.sequence || 1).padStart(2,"0");
+      $("topic").textContent = TEST.testLabel;
+      $("gateKicker").textContent = `${COURSE.labels.answerSheet} · ${TOTAL} CÂU`;
+      $("sheetTitle").textContent = COURSE.labels.answerSheet;
+      $("progressCount").textContent = `0/${TOTAL}`;
+      $("scoreTotal").textContent = `/${TOTAL}`;
+      $("modeBanner").hidden = !DRAFT;
+      $("grade").textContent = DRAFT ? "CHẤM BÀI · CHỜ DUYỆT" : "CHẤM BÀI";
+      const tab = TEST.questionTab || "t.0";
+      $("docFrame").title = `Đề ${TEST.testLabel}, tab ${tab}`;
+      const select = $("className");
+      select.innerHTML = "";
+      const empty = document.createElement("option");
+      empty.value = "";
+      empty.textContent = "Chọn lớp";
+      select.append(empty);
+      COURSE.classes.forEach(className => {
+        const option = document.createElement("option");
+        option.value = className;
+        option.textContent = className;
+        select.append(option);
+      });
+    }
+
+    function load(){
+      initializeStaticUi();
+      lockQuestions();
+      const profile = cleanIdentity(readStored(PROFILE_KEY));
+      const rawHistory = readStored(HISTORY_KEY);
+      history = Array.isArray(rawHistory) ? rawHistory : [];
+      const rawActive = readStored(ACTIVE_KEY);
+      storedActive = validActiveRecord(rawActive) ? rawActive : null;
+      if(rawActive && !storedActive) localStorage.removeItem(ACTIVE_KEY);
+      const rawLast = PRODUCTION_READY ? readStored(LAST_KEY) : null;
+      storedLast = validCompletedRecord(rawLast) ? rawLast : null;
+      if(rawLast && !storedLast) localStorage.removeItem(LAST_KEY);
+      const prefill = profile || cleanIdentity(storedActive?.identity) || cleanIdentity(storedLast?.identity);
+      if(prefill){
+        $("name").value = prefill.name;
+        $("className").value = prefill.className;
+      }
+    }
+
+    function save(){
+      if(!sessionConfirmed || !cleanIdentity(identity) || !validAttemptId(attemptId)) return;
+      localStorage.setItem(ACTIVE_KEY,JSON.stringify({attemptId,identity,answers,current}));
+    }
+
+    function startAttempt(){
+      if(!sessionConfirmed || !cleanIdentity(identity)) return;
+      answers = {};
+      current = 0;
+      attemptId = makeId();
+      graded = false;
+      submitting = false;
+      storedActive = null;
+      storedLast = null;
+      $("retry").disabled = false;
+      $("retry").textContent = "LÀM LƯỢT MỚI →";
+      localStorage.removeItem(LAST_KEY);
+      showSheet();
+    }
+
+    function showStudent(){
+      const completedIndex = history.findIndex(item => item.attemptId === attemptId);
+      const attemptNumber = completedIndex >= 0 ? completedIndex + 1 : history.length + 1;
+      $("student").hidden = false;
+      $("studentName").textContent = identity.name;
+      $("studentClass").textContent = `${identity.className} · LƯỢT ${attemptNumber}`;
+    }
+
+    function showSheet(){
+      if(!sessionConfirmed || !cleanIdentity(identity) || !validAttemptId(attemptId) || !unlockQuestions()) return;
+      $("gate").hidden = true;
+      $("result").hidden = true;
+      $("sheet").hidden = false;
+      $("progress").hidden = false;
+      showStudent();
+      renderTabs();
+      renderRows();
+      updateProgress();
+      save();
+    }
+
+    $("gate").addEventListener("submit",event => {
+      event.preventDefault();
+      const confirmedIdentity = cleanIdentity({name:$("name").value,className:$("className").value});
+      if(!confirmedIdentity){
+        $("gateNotice").textContent = "Nhập đầy đủ họ tên và lớp.";
+        $("gateNotice").hidden = false;
+        return;
+      }
+      $("gateNotice").hidden = true;
+      identity = confirmedIdentity;
+      sessionConfirmed = true;
+      localStorage.setItem(PROFILE_KEY,JSON.stringify(identity));
+      unlockQuestions();
+      if(storedActive && sameIdentity(storedActive.identity,identity)){
+        answers = {...storedActive.answers};
+        current = Math.max(0,Math.min(SECTIONS.length - 1,Number(storedActive.current) || 0));
+        attemptId = storedActive.attemptId;
+        graded = false;
+        storedActive = null;
+        showSheet();
+        return;
+      }
+      if(storedLast && sameIdentity(storedLast.identity,identity) && validCompletedRecord(storedLast)){
+        const record = storedLast;
+        answers = {...record.answers};
+        attemptId = record.attemptId;
+        graded = true;
+        storedLast = null;
+        showResult(record,true);
+        if(!localStorage.getItem(sentKey(record.attemptId))){
+          const result = buildReview(record.answers);
+          setTimeout(() => postScore({attemptId:record.attemptId,score:result.score,percent:result.percent,wrong:result.wrongNumbers.join(", "),answers:{...record.answers},identity:{...identity}}),500);
+        }
+        return;
+      }
+      startAttempt();
+    });
+
+    function renderTabs(){
+      $("tabs").innerHTML = "";
+      SECTIONS.forEach((section,index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.dataset.sectionIndex = index;
+        button.textContent = section.sectionCode;
+        if(index === current) button.classList.add("active");
+        if(range(section).every(number => norm(answers[number]))) button.classList.add("done");
+        button.onclick = () => { current = index; renderTabs(); renderRows(); save(); };
+        $("tabs").append(button);
+      });
+    }
+
+    function captureAnswerScroll(){
+      const page = document.scrollingElement || document.documentElement;
+      return {rowsTop:$("rows").scrollTop,pageTop:page ? page.scrollTop : 0};
+    }
+
+    function restoreAnswerScroll(position){
+      if(!position) return;
+      const rows = $("rows");
+      const page = document.scrollingElement || document.documentElement;
+      if(Math.abs(rows.scrollTop - position.rowsTop) > 1) rows.scrollTop = position.rowsTop;
+      if(page && Math.abs(page.scrollTop - position.pageTop) > 1) page.scrollTop = position.pageTop;
+    }
+
+    function renderRows(){
+      const section = SECTIONS[current];
+      $("sectionTitle").textContent = section.sectionLabel || section.sectionCode;
+      $("sectionTotal").textContent = `${section.count} CÂU`;
+      const helper = section.sectionCode === "I.3" ? "Nhập dạng: Line 1: Spread → Spreading" : (section.sectionCode === "III.1" || section.sectionCode === "III.2") ? "Nhập nguyên câu hoàn chỉnh" : "";
+      $("sectionHelper").textContent = helper;
+      $("sectionHelper").hidden = !helper;
+      $("rows").innerHTML = "";
+      range(section).forEach(globalNumber => {
+        const row = document.createElement("div");
+        row.className = `answer-row${norm(answers[globalNumber]) ? " answered" : ""}`;
+        const number = document.createElement("div");
+        number.className = "qnum";
+        number.textContent = globalNumber;
+        row.append(number);
+        if(section.inputType === "letters"){
+          const letters = document.createElement("div");
+          letters.className = "letters";
+          letters.style.setProperty("--choice-count",Math.min((section.choices || []).length,6));
+          (section.choices || []).forEach(choice => {
+            const button = document.createElement("button");
+            let pressScroll = null;
+            button.type = "button";
+            button.textContent = choice;
+            button.setAttribute("aria-label",`Câu ${globalNumber}: ${choice}`);
+            if(answers[globalNumber] === choice) button.className = "selected";
+            const rememberScroll = () => { pressScroll = captureAnswerScroll(); };
+            button.addEventListener("pointerdown",rememberScroll,{passive:true});
+            button.addEventListener("touchstart",rememberScroll,{passive:true});
+            button.onclick = () => {
+              const stableScroll = pressScroll || captureAnswerScroll();
+              setAnswer(globalNumber,choice);
+              [...letters.children].forEach(choiceButton => choiceButton.classList.remove("selected"));
+              button.classList.add("selected");
+              row.classList.add("answered");
+              button.blur();
+              requestAnimationFrame(() => restoreAnswerScroll(stableScroll));
+              pressScroll = null;
+            };
+            letters.append(button);
+          });
+          row.append(letters);
+        }else if(section.inputType === "select"){
+          const select = document.createElement("select");
+          select.setAttribute("aria-label",`Câu ${globalNumber}`);
+          const empty = document.createElement("option");
+          empty.value = "";
+          empty.textContent = "—";
+          select.append(empty);
+          (section.choices || []).forEach(choice => {
+            const option = document.createElement("option");
+            option.value = choice;
+            option.textContent = choice;
+            select.append(option);
+          });
+          select.value = answers[globalNumber] || "";
+          select.onchange = () => {
+            setAnswer(globalNumber,select.value);
+            row.classList.toggle("answered",Boolean(norm(select.value)));
+          };
+          row.append(select);
+        }else if(section.sectionCode === "III.1" || section.sectionCode === "III.2"){
+          const textarea = document.createElement("textarea");
+          textarea.setAttribute("aria-label",`Câu ${globalNumber} · Nhập nguyên câu hoàn chỉnh`);
+          textarea.autocomplete = "off";
+          textarea.spellcheck = false;
+          textarea.placeholder = "Nhập nguyên câu hoàn chỉnh";
+          textarea.value = answers[globalNumber] || "";
+          textarea.oninput = () => setAnswer(globalNumber,textarea.value);
+          row.append(textarea);
+        }else{
+          const input = document.createElement("input");
+          input.setAttribute("aria-label",`Câu ${globalNumber}`);
+          input.autocomplete = "off";
+          input.spellcheck = false;
+          input.value = answers[globalNumber] || "";
+          input.oninput = () => setAnswer(globalNumber,input.value);
+          input.onkeydown = event => {
+            if(event.key === "Enter"){
+              event.preventDefault();
+              const fields = [...document.querySelectorAll(".rows input")];
+              fields[fields.indexOf(input) + 1]?.focus();
+            }
+          };
+          row.append(input);
+        }
+        $("rows").append(row);
+      });
+      $("rows").scrollTop = 0;
+      $("prev").disabled = current === 0;
+      $("next").hidden = current === SECTIONS.length - 1;
+      $("grade").hidden = current !== SECTIONS.length - 1;
+      $("grade").disabled = graded || !PRODUCTION_READY;
+    }
+
+    function refreshCurrentTabStatus(){
+      const tab = $("tabs").querySelector(`[data-section-index="${current}"]`);
+      if(tab) tab.classList.toggle("done",range(SECTIONS[current]).every(number => norm(answers[number])));
+    }
+
+    function setAnswer(globalNumber,value){
+      answers[globalNumber] = value;
+      updateProgress();
+      refreshCurrentTabStatus();
+      save();
+    }
+
+    function updateProgress(){
+      const count = questions.filter(number => norm(answers[number])).length;
+      $("progressCount").textContent = `${count}/${TOTAL}`;
+      $("progressBar").style.width = `${count / TOTAL * 100}%`;
+    }
+
+    $("prev").onclick = () => { if(current > 0){ current--; renderTabs(); renderRows(); save(); } };
+    $("next").onclick = () => { if(current < SECTIONS.length - 1){ current++; renderTabs(); renderRows(); save(); } };
+    $("grade").onclick = grade;
+
+    function buildReview(answerSnapshot){
+      let score = 0;
+      const review = questions.map(globalNumber => {
+        const solution = solutionByGlobal.get(globalNumber);
+        const submitted = String(answerSnapshot[globalNumber] || "").trim();
+        const correct = Boolean(solution) && solution.acceptedAnswers.some(answer => equivalent(answer,submitted));
+        if(correct) score++;
+        return {...solution,globalNumber,submitted,correct};
+      });
+      const wrongNumbers = review.filter(item => !item.correct).map(item => item.globalNumber);
+      return {score,review,percent:Math.round(score / TOTAL * 100),wrong:wrongNumbers.length,wrongNumbers};
+    }
+
+    function renderWrongList(review){
+      const target = $("wrongList");
+      target.replaceChildren();
+      const wrong = review.filter(item => !item.correct);
+      const heading = document.createElement("strong");
+      heading.textContent = wrong.length ? "CÂU SAI" : "KẾT QUẢ";
+      target.append(heading);
+      if(!wrong.length){
+        target.append(document.createTextNode("Không có câu sai."));
+        return;
+      }
+      const groups = new Map();
+      wrong.forEach(item => {
+        const place = locate(item.globalNumber);
+        const label = place.section.sectionLabel || place.section.sectionCode;
+        if(!groups.has(label)) groups.set(label,[]);
+        groups.get(label).push(item.globalNumber);
+      });
+      const groupList = document.createElement("div");
+      groupList.className = "wrong-groups";
+      groups.forEach((numbers,label) => {
+        const group = document.createElement("span");
+        group.className = "wrong-group";
+        const groupLabel = document.createElement("span");
+        groupLabel.textContent = `${label}:`;
+        group.append(groupLabel);
+        numbers.forEach(number => {
+          const jump = document.createElement("button");
+          jump.type = "button";
+          jump.className = "wrong-jump";
+          jump.textContent = number;
+          jump.setAttribute("aria-label",`Xem câu sai ${number}`);
+          jump.onclick = () => {
+            setReviewFilter("wrong");
+            const card = $(`review-${number}`);
+            card?.scrollIntoView({behavior:"smooth",block:"center"});
+            card?.focus({preventScroll:true});
+          };
+          group.append(jump);
+        });
+        groupList.append(group);
+      });
+      target.append(groupList);
+    }
+
+    function setReviewFilter(mode){
+      const wrongOnly = mode === "wrong";
+      document.querySelectorAll("#reviews .review").forEach(card => {
+        card.hidden = wrongOnly && card.dataset.correct === "true";
+      });
+      $("showWrong").classList.toggle("active",wrongOnly);
+      $("showAll").classList.toggle("active",!wrongOnly);
+      $("showWrong").setAttribute("aria-pressed",String(wrongOnly));
+      $("showAll").setAttribute("aria-pressed",String(!wrongOnly));
+      $("reviews").scrollTop = 0;
+    }
+
+    function grade(){
+      if(graded || !PRODUCTION_READY) return;
+      const confirmedIdentity = cleanIdentity(identity);
+      if(!sessionConfirmed || !confirmedIdentity || !validAttemptId(attemptId)) return;
+      const missing = questions.filter(number => !norm(answers[number]));
+      if(missing.length){
+        const first = locate(missing[0]);
+        current = first.sectionIndex;
+        renderTabs();
+        renderRows();
+        alert(`Còn ${missing.length} câu chưa điền. Bắt đầu từ ${first.section.sectionLabel || first.section.sectionCode}, câu ${missing[0]}.`);
+        return;
+      }
+      graded = true;
+      $("grade").disabled = true;
+      const answerSnapshot = {...answers};
+      const result = buildReview(answerSnapshot);
+      const completedAttemptId = attemptId;
+      const record = {attemptId:completedAttemptId,completedAt:new Date().toISOString(),score:result.score,percent:result.percent,answers:answerSnapshot,identity:{...identity}};
+      if(!history.some(item => item.attemptId === completedAttemptId)){
+        history.push({attemptId:record.attemptId,completedAt:record.completedAt,score:record.score,percent:record.percent});
+        localStorage.setItem(HISTORY_KEY,JSON.stringify(history.slice(-50)));
+      }
+      localStorage.setItem(LAST_KEY,JSON.stringify(record));
+      localStorage.removeItem(ACTIVE_KEY);
+      showResult(record,false);
+      postScore({attemptId:completedAttemptId,score:result.score,percent:result.percent,wrong:result.wrongNumbers.join(", "),answers:answerSnapshot,identity:{...confirmedIdentity}});
+    }
+
+    function showResult(record,restored){
+      const recordIdentity = cleanIdentity(record?.identity);
+      if(!sessionConfirmed || !recordIdentity || !sameIdentity(recordIdentity,identity) || !validCompletedRecord(record) || !unlockQuestions()) return false;
+      const result = buildReview(record.answers || {});
+      $("gate").hidden = true;
+      $("sheet").hidden = true;
+      $("result").hidden = false;
+      $("progress").hidden = true;
+      identity = recordIdentity;
+      showStudent();
+      $("score").textContent = result.score;
+      $("resultTitle").textContent = result.score === TOTAL ? `Hoàn thành ${TOTAL}/${TOTAL}` : `${result.wrong} câu cần sửa`;
+      $("resultMeta").textContent = `Điểm ${result.score}/${TOTAL} · ${result.percent}%`;
+      setSync(restored ? (localStorage.getItem(sentKey(record.attemptId)) ? "Đã lưu điểm" : "Điểm của lượt gần nhất") : "Đang lưu điểm…");
+      renderWrongList(result.review);
+      $("showWrong").textContent = `CÂU SAI (${result.wrong})`;
+      $("showWrong").hidden = result.wrong === 0;
+      $("showAll").textContent = `TẤT CẢ (${TOTAL})`;
+      $("reviews").innerHTML = "";
+      result.review.forEach(item => {
+        const place = locate(item.globalNumber);
+        const card = document.createElement("article");
+        card.className = `review${item.correct ? "" : " wrong"}`;
+        card.dataset.correct = String(item.correct);
+        card.id = `review-${item.globalNumber}`;
+        card.tabIndex = -1;
+        const number = document.createElement("div");
+        number.className = "review-num";
+        const numberStrong = document.createElement("strong");
+        numberStrong.textContent = item.globalNumber;
+        const section = document.createElement("span");
+        section.textContent = place.section.sectionCode;
+        const status = document.createElement("span");
+        status.textContent = item.correct ? "ĐÚNG" : "SAI";
+        number.append(numberStrong,section,status);
+        const body = document.createElement("div");
+        body.className = "review-body";
+        const answersLine = document.createElement("div");
+        answersLine.className = "review-answers";
+        const mine = document.createElement("span");
+        mine.textContent = "Bạn trả lời: ";
+        const mineAnswer = document.createElement("b");
+        mineAnswer.textContent = item.submitted;
+        mine.append(mineAnswer);
+        const key = document.createElement("span");
+        key.textContent = "Đáp án đúng: ";
+        const keyAnswer = document.createElement("b");
+        keyAnswer.className = "correct";
+        keyAnswer.textContent = item.displayAnswer;
+        key.append(keyAnswer);
+        answersLine.append(mine,key);
+        const explanation = document.createElement("div");
+        explanation.className = "explain";
+        const explanationTitle = document.createElement("strong");
+        explanationTitle.textContent = "GIẢI THÍCH CHI TIẾT";
+        const explanationText = document.createElement("p");
+        explanationText.textContent = item.explanation;
+        explanation.append(explanationTitle,explanationText);
+        body.append(answersLine,explanation);
+        card.append(number,body);
+        $("reviews").append(card);
+      });
+      setReviewFilter(result.wrong ? "wrong" : "all");
+      return true;
+    }
+
+    const sentKey = id => `${STORAGE_PREFIX}:${TEST.testId}:sent:${id}`;
+    const storageLockKey = id => `${SUBMIT_LOCK_PREFIX}:${id}`;
+    const wait = milliseconds => new Promise(resolve => setTimeout(resolve,milliseconds));
+
+    function submitScoreForm(snapshot,key){
+      return new Promise(resolve => {
+        const target = $("scoreTarget");
+        const form = document.createElement("form");
+        form.method = "POST";
+        form.action = FORM_URL;
+        form.target = target.name;
+        form.hidden = true;
+        const values = {
+          [ENTRIES.name]:snapshot.identity.name,
+          [ENTRIES.total]:String(TOTAL),
+          [ENTRIES.testCode]:renderTemplate(COURSE.submissionTemplates.assignmentCode),
+          [ENTRIES.lesson]:renderTemplate(COURSE.submissionTemplates.lesson),
+          [ENTRIES.activity]:renderTemplate(COURSE.submissionTemplates.activity),
+          [ENTRIES.className]:snapshot.identity.className,
+          [ENTRIES.percent]:`${snapshot.percent}%`,
+          [ENTRIES.score]:`${snapshot.score}/${TOTAL}`,
+          [ENTRIES.wrong]:String(snapshot.wrong),
+          [ENTRIES.attemptId]:snapshot.attemptId
+        };
+        Object.entries(values).forEach(([name,value]) => {
+          const input = document.createElement("input");
+          input.name = name;
+          input.value = value;
+          form.append(input);
+        });
+        document.body.append(form);
+        let settled = false;
+        let timer = 0;
+        const finish = success => {
+          if(settled) return;
+          settled = true;
+          clearTimeout(timer);
+          if(success) localStorage.setItem(key,new Date().toISOString());
+          form.remove();
+          resolve(success);
+        };
+        target.addEventListener("load",() => finish(true),{once:true});
+        form.submit();
+        timer = setTimeout(() => finish(false),12000);
+      });
+    }
+
+    async function submitWithStorageLock(snapshot,key){
+      const claimKey = storageLockKey(snapshot.attemptId);
+      const owner = `${TAB_ID}:${makeId()}`;
+      const deadline = Date.now() + 35000;
+      while(Date.now() < deadline){
+        if(localStorage.getItem(key)) return true;
+        const now = Date.now();
+        const existing = readStored(claimKey);
+        if(!existing || !existing.owner || Number(existing.expiresAt) <= now){
+          localStorage.setItem(claimKey,JSON.stringify({owner,expiresAt:now + 20000}));
+          await wait(25);
+          const confirmed = readStored(claimKey);
+          if(confirmed?.owner === owner){
+            try{
+              if(localStorage.getItem(key)) return true;
+              return await submitScoreForm(snapshot,key);
+            }finally{
+              const latest = readStored(claimKey);
+              if(latest?.owner === owner) localStorage.removeItem(claimKey);
+            }
+          }
+        }
+        await wait(300);
+      }
+      return false;
+    }
+
+    function postScore(snapshot){
+      if(!PRODUCTION_READY || submitting) return;
+      const safeIdentity = cleanIdentity(snapshot?.identity);
+      if(!sessionConfirmed || !safeIdentity || !sameIdentity(safeIdentity,identity) || !validAttemptId(snapshot?.attemptId) || !completeAnswers(snapshot?.answers)) return;
+      const checked = buildReview(snapshot.answers);
+      const safeSnapshot = {
+        attemptId:snapshot.attemptId,
+        score:checked.score,
+        percent:checked.percent,
+        wrong:checked.wrongNumbers.join(", "),
+        answers:{...snapshot.answers},
+        identity:safeIdentity
+      };
+      const key = sentKey(snapshot.attemptId);
+      if(localStorage.getItem(key)){
+        setSync("Đã lưu điểm");
+        $("retry").textContent = "LÀM LƯỢT MỚI →";
+        return;
+      }
+      submitting = true;
+      $("retry").disabled = true;
+      setSync("Đang lưu điểm…");
+      (async () => {
+        let success = false;
+        try{
+          if(navigator.locks?.request){
+            success = await navigator.locks.request(`${SUBMIT_LOCK_PREFIX}:${safeSnapshot.attemptId}`,async () => {
+              if(localStorage.getItem(key)) return true;
+              return submitScoreForm(safeSnapshot,key);
+            });
+          }else{
+            success = await submitWithStorageLock(safeSnapshot,key);
+          }
+        }catch(_){
+          success = await submitWithStorageLock(safeSnapshot,key);
+        }finally{
+          submitting = false;
+          $("retry").disabled = false;
+          if(success || localStorage.getItem(key)){
+            setSync("Đã lưu điểm");
+            $("retry").textContent = "LÀM LƯỢT MỚI →";
+          }else{
+            setSync("Chưa lưu được điểm. Bấm nút bên dưới để thử lại.",true);
+            $("retry").textContent = "THỬ GHI ĐIỂM LẠI →";
+          }
+        }
+      })();
+    }
+
+    $("retry").onclick = () => {
+      if(submitting) return;
+      const pending = readStored(LAST_KEY);
+      if(validCompletedRecord(pending) && sameIdentity(pending.identity,identity) && !localStorage.getItem(sentKey(pending.attemptId))){
+        const result = buildReview(pending.answers);
+        postScore({attemptId:pending.attemptId,score:result.score,percent:result.percent,wrong:result.wrongNumbers.join(", "),answers:{...pending.answers},identity:{...identity}});
+        return;
+      }
+      startAttempt();
+    };
+    $("showWrong").onclick = () => setReviewFilter("wrong");
+    $("showAll").onclick = () => setReviewFilter("all");
+
+    load();
+  </script>
+<script src="../remaining-practice-ta.e7e7c3578f04.js" defer></script></body>
+</html>

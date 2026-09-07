@@ -1,0 +1,1 @@
+document.querySelector('[data-lesson-select]')?.addEventListener('change',event=>{if(event.target.value)location.href=event.target.value;});

@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Reading Intensive · Làm lại đề</title>
+  <style>
+    :root{color-scheme:light;--navy:#142b43;--navy-deep:#0d2135;--teal:#087f83;--teal-dark:#06686b;--teal-light:#e8f6f4;--ink:#22374a;--muted:#657789;--line:#dbe5eb;--paper:#fff;--canvas:#eef3f6;--green:#18754b;--green-bg:#edf8f1;--red:#ab3c3c;--red-bg:#fff3f1;--amber:#855d16;--amber-bg:#fff8e9;--radius:18px;--shadow:0 12px 36px rgba(20,43,67,.07)}
+    *{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--canvas)}body{font-size:16px;line-height:1.5}button,input,select{font:inherit}button,input,select{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:3px solid #36b7bc;outline-offset:3px}button{border:0}button.primary{min-height:50px;padding:13px 22px;border-radius:12px;background:var(--teal);color:white;font-weight:750;letter-spacing:.01em;transition:background .15s,transform .15s}button.primary:hover:not(:disabled){background:var(--teal-dark)}button.primary:active:not(:disabled){transform:translateY(1px)}button.primary:disabled{background:#c4d2d9;color:#647887}button.secondary{min-height:46px;padding:11px 18px;border:1px solid var(--line);border-radius:11px;background:white;color:var(--navy);font-weight:700}button.secondary:hover{background:#f5f9fb}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .gate{min-height:100dvh;display:grid;place-items:center;padding:32px 20px;background:linear-gradient(145deg,#edf4f6 0%,#f8fbfc 58%,#e4f2f0 100%)}.gate-card{width:min(100%,560px);padding:36px;border:1px solid rgba(255,255,255,.95);border-radius:24px;background:white;box-shadow:0 24px 70px rgba(20,43,67,.12)}.brand-line{display:flex;align-items:center;gap:12px;color:var(--navy);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.brand-mark{display:grid;place-items:center;width:43px;height:43px;border-radius:12px;background:var(--navy);color:white;letter-spacing:-.03em;font-size:17px}.eyebrow{margin:26px 0 8px;color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.gate h1{margin:0;color:var(--navy);font-size:clamp(27px,4vw,36px);line-height:1.16;letter-spacing:-.04em}.gate-subtitle{margin:12px 0 25px;color:var(--muted);line-height:1.65}.gate-facts{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 25px}.gate-facts span{padding:5px 10px;border-radius:8px;background:#f0f5f7;color:#536b7d;font-size:12px;font-weight:700}.identity-form{display:grid;gap:17px}.field{display:grid;gap:7px}.field label{color:var(--navy);font-size:14px;font-weight:750}.field input,.field select{width:100%;height:52px;border:1px solid #c8d6df;border-radius:11px;padding:0 14px;background:#fbfdfe;color:var(--ink)}.field input::placeholder{color:#8a9ba9}.identity-form .primary{margin-top:4px}.gate-note{margin:19px 0 0;font-size:12px;color:var(--muted);line-height:1.65}.gate-error{padding:13px 15px;margin:18px 0 0;border:1px solid #edd5ba;border-radius:10px;background:var(--amber-bg);color:var(--amber);font-size:14px}.noscript{max-width:560px;margin:25px auto;padding:20px;background:white;border:1px solid var(--line);border-radius:12px}
+    .app{height:100dvh;min-height:680px;display:flex;flex-direction:column;padding:18px 22px 22px;gap:16px;overflow:hidden}.app-header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex:0 0 auto}.app-title{display:flex;align-items:center;gap:13px;min-width:0}.app-title .brand-mark{flex:0 0 auto;width:44px;height:44px}.app-kicker{margin:0 0 2px;color:var(--teal);font-size:10px;letter-spacing:.12em;font-weight:800;text-transform:uppercase}.app-header h1{margin:0;color:var(--navy);font-size:21px;line-height:1.25;letter-spacing:-.025em}.identity-badge{display:flex;align-items:center;gap:12px;max-width:42%;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.7)}.identity-badge strong{display:block;font-size:13px;overflow-wrap:anywhere}.identity-badge span{font-size:11px;font-weight:800;color:var(--teal);white-space:nowrap;border-left:1px solid #cddde3;padding-left:12px}.quiz-layout{display:grid;grid-template-columns:minmax(0,1.42fr) minmax(440px,.9fr);gap:16px;flex:1;min-height:0}.panel{display:flex;flex-direction:column;min-width:0;min-height:0;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);box-shadow:var(--shadow);overflow:hidden}.panel-header{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:62px;padding:15px 20px;border-bottom:1px solid var(--line);background:white;flex:0 0 auto}.panel-header h2{margin:0;font-size:15px;letter-spacing:-.01em;color:var(--navy)}.panel-header p{margin:2px 0 0;font-size:11px;color:var(--muted)}.panel-tag{color:var(--teal);background:var(--teal-light);padding:5px 8px;border-radius:7px;font-size:10px;font-weight:800;letter-spacing:.05em;white-space:nowrap}.document-body{position:relative;flex:1;min-height:0;background:#e6edf1}.document-frame{display:block;width:100%;height:100%;border:0;background:white}.document-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#f6f9fb;color:var(--muted);padding:24px;text-align:center;font-size:14px}.document-loading::before{content:"";width:27px;height:27px;border:3px solid #d8e6ea;border-top-color:var(--teal);border-radius:50%;animation:spin .9s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.document-note{flex:0 0 auto;margin:0;padding:7px 15px;color:#738391;background:#f8fafb;border-top:1px solid var(--line);font-size:10px;line-height:1.5}
+    .answers-panel{position:relative}.answer-progress{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);font-weight:700}.answer-progress strong{color:var(--teal);font-size:16px}.progress-track{height:4px;background:#e7eff2;flex:0 0 auto}.progress-fill{height:100%;width:0;background:var(--teal);transition:width .2s ease}.answer-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:19px 20px 24px;scrollbar-gutter:stable}.answer-intro{margin:0 0 18px;font-size:13px;color:var(--muted);line-height:1.65}.answer-section+.answer-section{margin-top:27px}.section-heading{margin-bottom:12px;padding:0 0 10px;border-bottom:1px solid var(--line)}.section-heading h3{margin:0;color:var(--navy);font-size:14px;font-weight:800}.section-heading p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.6;white-space:pre-line}.question-card{padding:14px;margin:0 0 11px;border:1px solid var(--line);border-radius:12px;background:#fff}.question-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.question-number{font-size:12px;font-weight:800;color:var(--navy)}.question-state{font-size:11px;font-weight:750}.question-card input[type=text],.question-card select{width:100%;min-height:48px;border:1px solid #c9d7df;border-radius:9px;padding:11px 12px;background:#fbfdfe;color:var(--ink);font-size:16px}.question-card input::placeholder{font-size:13px;color:#94a1ac}.question-card input:disabled,.question-card select:disabled{opacity:1;color:var(--ink);-webkit-text-fill-color:var(--ink);background:#f5f8fa}.choice-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.choice{position:relative;display:block}.choice input{position:absolute;opacity:0;width:1px;height:1px}.choice span{display:flex;align-items:center;justify-content:center;min-height:46px;padding:9px 5px;border:1px solid #ccdae2;border-radius:9px;background:#fbfdfe;color:#536c80;font-size:15px;font-weight:750}.choice input:checked+span{border-color:var(--teal);background:var(--teal-light);color:var(--teal-dark);box-shadow:inset 0 0 0 1px var(--teal)}.choice input:focus-visible+span{outline:3px solid #36b7bc;outline-offset:2px}.choice input:disabled+span{cursor:default}.question-card.is-correct{border-color:#b9ddc8;background:#fbfefc}.question-card.is-correct .question-state{color:var(--green)}.question-card.is-wrong{border-color:#ebc3bd;background:#fffdfc}.question-card.is-wrong .question-state{color:var(--red)}.answer-review{margin-top:13px;padding-top:13px;border-top:1px solid #dde6e9}.answer-key{display:grid;gap:4px;margin:0 0 12px;font-size:13px;overflow-wrap:anywhere}.answer-key b{color:var(--green);font-size:14px}.answer-key small{color:var(--muted);line-height:1.5}.review-label{margin:13px 0 5px;color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.035em;text-transform:uppercase}.explanation,.question-context{margin:0;color:#41566a;font-size:13px;line-height:1.75;white-space:pre-wrap;overflow-wrap:anywhere}.question-context{padding:10px 12px;border-left:3px solid #a7cbcd;background:#f1f7f7;color:#567071;font-size:12px}.result-summary{margin:0 0 22px;padding:20px;border-radius:14px;background:var(--navy);color:white}.result-summary .result-kicker{margin:0;color:#9cdddc;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.result-numbers{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin-top:8px}.result-score{font-size:43px;line-height:1.1;font-weight:800;letter-spacing:-.05em}.result-score small{font-size:19px;color:#afc0ce;font-weight:500;letter-spacing:0}.result-percent{font-size:22px;color:#9cdddc;font-weight:750}.result-summary h3{margin:12px 0 5px;font-size:16px;font-weight:700}.result-summary p{margin:0;color:#c4d3de;font-size:12px;line-height:1.65}.attempt-reference{margin-top:12px!important;padding-top:10px;border-top:1px solid #345069;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:10px!important;overflow-wrap:anywhere}.answer-footer{padding:15px 20px 17px;border-top:1px solid var(--line);background:#fbfdfe;flex:0 0 auto}.answer-footer .primary{width:100%;font-size:14px}.footer-hint{margin:8px 0 0;text-align:center;color:var(--muted);font-size:11px;line-height:1.5}.delivery{margin:0 0 12px;padding:11px 12px;border:1px solid #d3e6e5;border-radius:10px;background:#eef8f7;color:#386768;font-size:11px;line-height:1.6}.delivery strong{display:block;font-size:12px;color:#175f62;margin-bottom:2px}.delivery.is-warning{border-color:#ead9b6;background:var(--amber-bg);color:var(--amber)}.delivery.is-warning strong{color:#795315}.storage-warning{margin:0 0 12px;padding:10px 12px;border-radius:9px;background:var(--amber-bg);color:var(--amber);font-size:11px;line-height:1.6}.form-error{margin:0 0 10px;color:var(--red);font-size:12px;font-weight:600}.loading-shimmer{animation:none}
+    .answer-key-row{display:block}.answer-key .submitted-answer{color:var(--red)}.explanation{padding:13px 14px;border-left:4px solid var(--teal);border-radius:0 9px 9px 0;background:var(--teal-light);color:var(--ink);font-size:15px;line-height:1.72}.result-wrong-label{margin-top:15px!important;color:#9cdddc!important;font-size:10px!important;font-weight:800;letter-spacing:.1em}.wrong-jumps{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}.wrong-jumps button,.review-toggle button{min-height:34px;border:1px solid #496178;border-radius:8px;background:#203b54;color:#fff;font-size:11px;font-weight:800}.wrong-jumps button{min-width:36px;padding:0 8px}.wrong-jumps button:hover,.review-toggle button:hover{background:#2a4b68}.review-toggle{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:14px;padding-top:14px;border-top:1px solid #345069}.review-toggle button{padding:0 10px}.review-toggle button.active{border-color:#9cdddc;background:#e8f6f4;color:var(--teal-dark)}
+    .test-mode-banner{position:sticky;top:0;z-index:50;min-height:38px;display:grid;place-items:center;padding:8px 12px;border-bottom:1px solid #e7cd92;background:#fff0c9;color:#704d09;font-size:12px;line-height:21px;font-weight:800;text-align:center}.testing .app{height:calc(100dvh - 38px)}.testing .gate{min-height:calc(100dvh - 38px)}
+    @media(max-width:920px){.app,.testing .app{height:auto;min-height:100dvh;overflow:visible;padding:14px;gap:14px}.app-header{align-items:flex-start;gap:12px}.app-header h1{font-size:18px}.identity-badge{max-width:43%;padding:7px 9px;flex-direction:column;align-items:flex-start;gap:3px}.identity-badge span{border:0;padding:0;font-size:10px}.identity-badge strong{font-size:11px}.quiz-layout{display:flex;flex-direction:column;gap:14px}.document-panel{height:58dvh;min-height:360px;max-height:650px;flex:none}.answers-panel{height:78dvh;min-height:570px;max-height:950px;flex:none}.answer-scroll{padding:17px}.panel-header{padding:13px 17px;min-height:58px}.answer-footer{padding:13px 17px 15px}.panel{border-radius:15px}.document-note{font-size:9px}}
+    @media(max-width:480px){.gate{padding:18px 14px}.gate-card{padding:27px 22px;border-radius:20px}.gate h1{font-size:29px}.gate-subtitle{font-size:14px}.app{padding:10px;gap:12px}.app-title{gap:9px}.app-title .brand-mark{width:35px;height:35px;font-size:14px;border-radius:10px}.app-kicker{font-size:8px;letter-spacing:.07em}.app-header h1{font-size:16px}.identity-badge{max-width:39%;padding:6px 8px}.identity-badge strong{font-size:10px}.panel-header{padding:12px 14px}.panel-header h2{font-size:14px}.panel-tag{font-size:9px}.answer-scroll{padding:15px 13px}.question-card{padding:12px}.answer-footer{padding:12px 13px 14px}.choice-grid{gap:7px}.choice span{min-height:45px}.result-summary{padding:17px}.result-score{font-size:39px}.document-panel{height:54dvh;min-height:340px}.answers-panel{height:82dvh;min-height:580px}.answer-progress{gap:5px;font-size:11px}.answer-progress strong{font-size:15px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+  </style>
+<link rel="stylesheet" href="../vf-course-navigation.32c08ac91ffd.css" data-vf-course-navigation></head>
+<body>
+  <aside class="test-mode-banner" id="test-mode-banner" role="status" hidden>CHẾ ĐỘ KIỂM THỬ — không ghi điểm</aside>
+  <section class="gate" id="identity-gate" aria-labelledby="gate-title">
+    <div class="gate-card">
+      <div class="brand-line"><span class="brand-mark" aria-hidden="true">RI2</span><span id="gate-course">READING INTENSIVE</span></div>
+      <h1 id="gate-title" style="margin:26px 0 18px">Sẵn sàng bắt đầu?</h1>
+      <div class="gate-facts"><span id="gate-question-count">Phiếu trả lời</span></div>
+      <form class="identity-form" id="identity-form" novalidate>
+        <div class="field"><label for="student-name">Họ và tên</label><input id="student-name" name="student-name" type="text" maxlength="120" autocomplete="name" placeholder="Nhập đầy đủ họ và tên" required></div>
+        <div class="field"><label for="student-class">Lớp</label><select id="student-class" name="student-class" required><option value="">— Chọn lớp FIGHTER —</option></select></div>
+        <button class="primary" id="open-quiz" type="submit">MỞ ĐỀ & PHIẾU TRẢ LỜI →</button>
+      </form>
+      <p class="gate-error" id="gate-error" role="alert" hidden></p>
+    </div>
+  </section>
+
+  <main class="app" id="quiz-app" hidden>
+    <header class="app-header">
+      <div class="app-title"><span class="brand-mark" aria-hidden="true">RI2</span><div><p class="app-kicker" id="app-course">READING INTENSIVE</p><h1 id="app-title">Làm lại đề</h1></div></div>
+      <div class="identity-badge"><strong id="identity-name"></strong><span id="identity-class"></span></div>
+    </header>
+    <div class="quiz-layout">
+      <section class="panel document-panel" aria-labelledby="document-heading">
+        <div class="panel-header"><h2 id="document-heading">Đề bài</h2></div>
+        <div class="document-body" id="document-body"><div class="document-loading" id="document-loading" role="status">Đang tải đề bài…</div></div>
+      </section>
+      <form class="panel answers-panel" id="answer-form" novalidate aria-labelledby="answers-heading">
+        <div class="panel-header"><div><h2 id="answers-heading">Phiếu trả lời</h2><p id="attempt-label">Lượt 1</p></div><div class="answer-progress"><strong id="answered-count">0</strong><span id="total-count"></span></div></div>
+        <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+        <div class="answer-scroll" id="answer-scroll" tabindex="-1">
+          <p class="storage-warning" id="storage-warning" role="status" hidden></p>
+          <div id="result-summary" hidden></div>
+          <div id="answer-sections"></div>
+        </div>
+        <footer class="answer-footer">
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <div class="delivery" id="delivery-status" role="status" aria-live="polite" hidden></div>
+          <button class="primary" id="submit-answers" type="submit" disabled>ĐIỀN ĐỦ CÁC CÂU ĐỂ NỘP</button>
+          <button class="primary" id="new-attempt" type="button" hidden>LÀM MỘT LƯỢT MỚI ↻</button>
+        </footer>
+      </form>
+    </div>
+  </main>
+  <noscript><p class="noscript">Trang này cần JavaScript để mở đề và chấm bài. Vui lòng bật JavaScript hoặc báo giáo viên.</p></noscript>
+
+  <!-- Build contract: inject student-only, allowlisted JSON; remove teacher/source identifiers.
+       Escape every '<' as '\u003c' in JSON before replacing the two JSON placeholders. -->
+  <script id="ri2-unit-data" type="application/json">{"unit":2,"title":"READING INTENSIVE 2 · UNIT 2","testCode":"RI2-U02","total":64,"studentPreviewUrl":"https://docs.google.com/document/d/1sHdLgprNWe5Lshhgrv-b9PZ5M8LGdNMVFBQEjBF7aZA/preview","sections":[{"exercise":1,"count":15,"inputKind":"matching","choices":["A","B","C","D","E","F","G","H","I","K","L","M","O","P","Q"],"instruction":"Ex 1: Match the words in Column A with their correct definitions in Column B. Write the letter of the definition next to the corresponding word.","questions":[{"number":1,"answer":"O","context":"Anthem (n)","explanation":"Giải thích của cô: Anthem (n): bài hát đặc trưng/quốc ca\n\nAnthem là danh từ chỉ bài hát có ý nghĩa đặc biệt đối với một quốc gia, tổ chức hoặc cộng đồng và thường được hát vào dịp trang trọng. Định nghĩa O nêu đầy đủ cả đối tượng lẫn cách sử dụng ấy, nên là cặp tương ứng."},{"number":2,"answer":"G","context":"Immigrant (n)","explanation":"Giải thích của cô: Immigrant (n): người nhập cư\n\nImmigrant là danh từ chỉ người đến một quốc gia khác để sinh sống lâu dài. G diễn đạt đúng hướng di chuyển ‘come to a different country’ và mục đích định cư; cần phân biệt với emigrant, người rời quê hương đi nơi khác."},{"number":3,"answer":"K","context":"Revelation (n)","explanation":"Giải thích của cô: Revelation (n): sự tiết lộ/phát hiện\n\nRevelation là danh từ chỉ hành động làm lộ điều từng bí mật hoặc một sự thật mới được tiết lộ. K nêu chính xác hai nét nghĩa này, khác với evidence là dữ kiện dùng để chứng minh."},{"number":4,"answer":"I","context":"Mimic (v)","explanation":"Giải thích của cô: Mimic (v): bắt chước\n\nMimic là động từ nghĩa là bắt chước giọng nói, cử chỉ hoặc cách di chuyển của người khác, đôi khi để gây cười/chế giễu. Định nghĩa I mô tả đúng hành động này, nên không thể ghép với các định nghĩa về tiếp cận hay phát triển."},{"number":5,"answer":"F","context":"Approach (v)","explanation":"Giải thích của cô: Approach (v): tiếp cận\n\nỞ vai trò động từ, approach nghĩa là tiến lại gần một người/vật hoặc gần tới một mốc về thời gian, chất lượng hay số lượng. F bao quát đúng các cách dùng ‘come near or nearer’, nên là định nghĩa phù hợp."},{"number":6,"answer":"P","context":"Organism (n)","explanation":"Giải thích của cô: Organism (n): sinh vật/cơ thể sống\n\nOrganism là danh từ chỉ một cá thể sống, chẳng hạn thực vật, động vật hoặc vi sinh vật. P định nghĩa đúng ‘a single living plant, animal, virus, etc.’, trong khi các lựa chọn khác là hành động hoặc tính chất."},{"number":7,"answer":"L","context":"Light-hearted (a)","explanation":"Giải thích của cô: Light-hearted (a): vui vẻ, vô tư\n\nLight-hearted là tính từ mô tả tâm trạng/nội dung vui vẻ, thoải mái và không quá nghiêm trọng. L dùng đúng hai nét nghĩa ‘happy and not serious’, nên là cặp tương ứng trực tiếp."},{"number":8,"answer":"Q","context":"Evolve (v)","explanation":"Giải thích của cô: Evolve (v): tiến hóa/phát triển dần dần\n\nEvolve là động từ chỉ quá trình tự phát triển hoặc làm cho một điều phát triển dần theo thời gian. Q diễn đạt đúng ý ‘develop gradually’ ở cả nội động từ và ngoại động từ."},{"number":9,"answer":"E","context":"Apparent (a)","explanation":"Giải thích của cô: Apparent (a): rõ ràng, hiển nhiên\n\nApparent là tính từ chỉ điều có thể nhận thấy hoặc hiểu được; tùy ngữ cảnh còn có thể mang nghĩa ‘có vẻ’. E (‘able to be seen or understood’) khớp đúng nghĩa được kiểm tra ở đây."},{"number":10,"answer":"C","context":"Potential (a)","explanation":"Giải thích của cô: Potential (a): tiềm năng\n\nPotential là tính từ chỉ khả năng có thể phát triển hoặc xảy ra khi có điều kiện cần thiết. C truyền đạt ý một điều trở nên khả thi khi các điều kiện tồn tại, nên được dùng để ghép với từ này."},{"number":11,"answer":"A","context":"Isolate (v)","explanation":"Giải thích của cô: Isolate (v): cô lập/tách biệt\n\nIsolate là động từ nghĩa là tách một người/vật ra khỏi những thứ đang nối hoặc trộn cùng nó. A mô tả chính xác hành động ‘separate ... from other things’, nên là định nghĩa đúng."},{"number":12,"answer":"M","context":"Longevity (n)","explanation":"Giải thích của cô: Longevity (n): sự trường thọ\n\nLongevity là danh từ chỉ tuổi thọ dài hoặc thời gian tồn tại lâu. M nêu ý cốt lõi ‘living for a long time’, do đó tương ứng về nghĩa, dù cần hiểu đây là ‘the state/duration of living long’ chứ không phải một tính từ."},{"number":13,"answer":"D","context":"Extensive (a)","explanation":"Giải thích của cô: Extensive (a): rộng lớn/bao quát\n\nExtensive là tính từ nghĩa là trải rộng trên một khu vực lớn hoặc bao quát phạm vi rộng. D nêu đúng cả ‘covering a large area’ và ‘having a great range’, nên khớp đầy đủ."},{"number":14,"answer":"H","context":"Standard (a)","explanation":"Giải thích của cô: Standard (a): tiêu chuẩn/thông thường\n\nỞ đây standard là tính từ chỉ điều thông thường, được xem là chuẩn mực hoặc được chấp nhận. H diễn đạt đúng nét nghĩa ‘usual rather than special ... correct or acceptable’."},{"number":15,"answer":"B","context":"Dialect (n)","explanation":"Giải thích của cô: Dialect (n): tiếng địa phương\n\nDialect là danh từ chỉ biến thể ngôn ngữ của một vùng/nhóm, có thể khác về từ vựng, ngữ pháp và phát âm. Định nghĩa B mô tả đúng biến thể được nói ở một khu vực cụ thể của đất nước."}]},{"exercise":2,"count":10,"inputKind":"text","choices":[],"instruction":"Ex 2: Fill in the blanks with the following words: complex, giant, strategy, stability, conceal, breed, extension, marine, aspect, culprit","questions":[{"number":16,"answer":"culprit","context":"The police identified the main ________ behind the robbery after reviewing the security footage.","explanation":"Culprit là danh từ đếm được, nghĩa là thủ phạm hoặc tác nhân chính gây ra vấn đề. Câu hoàn chỉnh “The police identified the main culprit behind the robbery...” dùng cụm culprit behind + event; việc xem camera để xác định người chịu trách nhiệm xác nhận nghĩa này."},{"number":17,"answer":"marine","context":"Many ________ species are at risk due to pollution in the oceans.","explanation":"Marine là tính từ, nghĩa là thuộc biển/đại dương. “Many marine species are at risk due to pollution in the oceans” nói các loài sinh vật biển bị đe dọa bởi ô nhiễm đại dương; vị trí trước species cũng yêu cầu từ bổ nghĩa dạng tính từ."},{"number":18,"answer":"stability","context":"Economic ________ is crucial for the growth and development of any country.","explanation":"Stability là danh từ, nghĩa là sự ổn định. Câu “Economic stability is crucial for the growth...” cần một danh từ làm trung tâm chủ ngữ, và một nền kinh tế ổn định là điều kiện hợp logic cho tăng trưởng/phát triển."},{"number":19,"answer":"breed","context":"Scientists are working to ________ endangered animals in captivity to save them from extinction.","explanation":"Breed là động từ, nghĩa là cho động vật sinh sản/nhân giống. Sau to cần nguyên mẫu: “Scientists are working to breed endangered animals in captivity...”; nuôi sinh sản trong điều kiện nuôi nhốt là biện pháp trực tiếp để ngăn tuyệt chủng."},{"number":20,"answer":"aspect","context":"One important ________ of the problem is the lack of proper communication between departments.","explanation":"Aspect là danh từ chỉ một khía cạnh của vấn đề. Câu hoàn chỉnh “One important aspect of the problem is...” dùng cấu trúc an aspect of; sự thiếu giao tiếp là một phương diện cụ thể trong vấn đề rộng hơn."},{"number":21,"answer":"giant","context":"A ________ wave crashed against the shore, causing damage to the harbor.","explanation":"Giant ở đây là tính từ, nghĩa là khổng lồ. “A giant wave crashed against the shore...” mô tả con sóng lớn đến mức làm hư hại cảng; vị trí giữa mạo từ a và danh từ wave cần một từ bổ nghĩa kích thước."},{"number":22,"answer":"complex","context":"The issue is quite ________ and requires careful analysis before making a decision.","explanation":"Complex là tính từ, nghĩa là phức tạp, gồm nhiều yếu tố khó xử lý. Sau is quite cần tính từ: “The issue is quite complex and requires careful analysis”; nhu cầu phân tích cẩn thận là dấu hiệu nghĩa quyết định."},{"number":23,"answer":"extension","context":"The new ________ of the building will include additional office spaces and a conference hall.","explanation":"Extension là danh từ chỉ phần mở rộng/cơi nới. “The new extension of the building will include additional office spaces...” nói phần xây thêm của tòa nhà; new và of the building cùng xác định đây là một danh từ công trình."},{"number":24,"answer":"strategy","context":"The company developed a new ________ to increase its market share and attract more customers.","explanation":"Strategy là danh từ chỉ kế hoạch có chủ đích để đạt mục tiêu. Câu “The company developed a new strategy to increase its market share...” dùng develop a strategy to + verb; hai mục tiêu tăng thị phần và thu hút khách hàng cho thấy đây là kế hoạch kinh doanh."},{"number":25,"answer":"conceal","context":"The criminal tried to ________ the evidence, but the police discovered it.","explanation":"Conceal là động từ nghĩa là che giấu. Sau tried to cần nguyên mẫu: “The criminal tried to conceal the evidence, but the police discovered it”; vế but ... discovered it tạo đối lập trực tiếp giữa giấu và bị phát hiện."}]},{"exercise":3,"count":10,"inputKind":"mcq","choices":["A","B","C","D"],"instruction":"Ex 3: Read the passage below and choose the correct word from the options to fill in the blanks.","questions":[{"number":26,"answer":"D","context":"Despite centuries of study, the ocean (26) ______ largely unexplored, with an estimated 80% of it still hidden beneath the surface.","explanation":"Cụm remains largely unexplored nghĩa là đại dương vẫn phần lớn chưa được khám phá; remain + adjective diễn tả trạng thái tiếp tục tồn tại. Maintains, obtains và retains thường cần tân ngữ, không đứng nối trực tiếp với tính từ unexplored theo cấu trúc này."},{"number":27,"answer":"C","context":"This lack of exploration (27) ______ countless mysteries waiting to be uncovered, and within these depths, there are probably many incredible creatures and ecosystems yet to be discovered.","explanation":"Leaves countless mysteries waiting to be uncovered nghĩa là tình trạng thiếu khám phá để lại vô số bí ẩn đang chờ được tìm ra. Leave + object + V-ing là cấu trúc đúng; get, make và keep không tạo được cách diễn đạt tự nhiên với toàn cụm này."},{"number":28,"answer":"B","context":"The ocean is home (28) ______ millions of species, many of (29) ______ are so unique that they seem almost otherworldly.","explanation":"Kết hợp từ cố định là be home to + noun, nghĩa là là nơi sinh sống của. “The ocean is home to millions of species” vì thế cần to; of, for, with không đi trong cấu trúc này."},{"number":29,"answer":"C","context":"The ocean is home (28) ______ millions of species, many of (29) ______ are so unique that they seem almost otherworldly.","explanation":"Cấu trúc many of which mở mệnh đề quan hệ không xác định và thay cho millions of species. Which theo sau giới từ of và chỉ vật/loài; them sẽ cần liên từ, that không dùng sau giới từ ở dạng này, còn it sai số."},{"number":30,"answer":"A","context":"For example, bioluminescent creatures, such as certain species of jellyfish, fish, and plankton, produce their own light, (30) ______ stunning displays in the deep, dark waters.","explanation":"Khóa nguồn chọn A create, mang nghĩa tạo ra các màn trình diễn ánh sáng đẹp mắt. Tuy nhiên câu đã có động từ hữu hạn produce và dấu phẩy trước chỗ trống; để biểu thị kết quả đúng ngữ pháp phải dùng creating stunning displays (B), không thể đặt thêm create mà thiếu liên từ/chủ ngữ mới."},{"number":31,"answer":"D","context":"Scientists are continually discovering new species that have adapted in (31) ______ unimaginable to survive in the ocean's harshest environments.","explanation":"Khóa nguồn chọn D means, với ý các loài thích nghi bằng những cách không thể tưởng tượng. Tuy nhiên kết hợp chuẩn là adapt in ways unimaginable (A); in means unimaginable không tự nhiên và means thường dùng trong by means of hoặc a means of doing something."},{"number":32,"answer":"B","context":"In addition to (32) ______ new species, the ocean holds secrets to various natural processes that humans have yet to fully understand.","explanation":"Sau giới từ in addition to phải dùng danh từ hoặc V-ing, nên discovering là dạng đúng: “In addition to discovering new species...”. Discover nguyên mẫu và to discover không theo giới từ to ở đây; to be discovered vừa sai cấu trúc vừa đổi nghĩa chủ động."},{"number":33,"answer":"D","context":"Marine ecosystems, such as coral reefs, (33) ______ vital roles in maintaining the balance of the global environment, yet their true importance is still not (34) ______ understood.","explanation":"Cụm cố định play a vital role in nghĩa là đóng vai trò thiết yếu trong. Chủ ngữ số nhiều Marine ecosystems đi với play; take, keep và make không kết hợp với roles theo nghĩa này."},{"number":34,"answer":"D","context":"Marine ecosystems, such as coral reefs, (33) ______ vital roles in maintaining the balance of the global environment, yet their true importance is still not (34) ______ understood.","explanation":"Completely understood nghĩa là được hiểu đầy đủ/hoàn toàn, hợp với still not và ý con người chưa biết hết tầm quan trọng thật sự của hệ sinh thái biển. Deeply thường đi với cảm xúc, intensely chỉ cường độ và extremely understood không phải kết hợp tự nhiên."},{"number":35,"answer":"A","context":"The ocean, full of life and mystery, is an endless (35) ______ of awe and wonder, with much left to be explored.","explanation":"Cụm an endless source of awe and wonder nghĩa là nguồn cảm hứng kinh ngạc và kỳ thú bất tận. Source of là kết hợp từ đúng; power, root và resource không diễn tả tự nhiên đại dương liên tục tạo nên cảm giác kinh ngạc."}]},{"exercise":4,"count":10,"inputKind":"text","choices":[],"instruction":"Ex 4: Fill in the blanks with ONE suitable word.","questions":[{"number":36,"answer":"are","context":"Humpback whales (36) __________ fascinating creatures, known for their long songs and their ability to interact with humans in the ocean.","explanation":"Chủ ngữ Humpback whales là số nhiều và câu nêu một đặc điểm chung ở hiện tại, nên dùng are. Câu hoàn chỉnh “Humpback whales are fascinating creatures” là cấu trúc subject + be + noun phrase."},{"number":37,"answer":"made","context":"Jim Darling, a marine biologist who has studied humpback whales for over 25 years, has (37) __________ significant discoveries about their songs.","explanation":"Sau trợ động từ has cần quá khứ phân từ, và kết hợp từ là make discoveries. “Has made significant discoveries” dùng hiện tại hoàn thành để tổng kết những phát hiện Darling đạt được trong hơn 25 năm nghiên cứu."},{"number":38,"answer":"from/while","context":"He recorded these songs (38) __________ on a boat near Hawaii, and during one memorable experience, author Douglas Chadwick joined him in the water.","explanation":"From tạo “recorded these songs from on a boat” nếu giữ nguyên cả từ on thì không chuẩn; cách hiểu hợp lệ là while on a boat, nghĩa là ghi âm trong lúc ở trên thuyền. Nếu nguồn dự định chấp nhận from, câu phải là from a boat và bỏ on."},{"number":39,"answer":"at/by","context":"While swimming alongside a whale, Chadwick was amazed (39) __________ the whale's curiosity but also its peaceful behavior, even as it swam under the boat and began to sing.","explanation":"Cả amazed at và amazed by đều có thể giới thiệu nguyên nhân gây kinh ngạc. “Chadwick was amazed at/by the whale's curiosity...” nghĩa là ông kinh ngạc trước tính tò mò nhưng hiền hòa của cá voi; sau was amazed cần một giới từ nối với cụm danh từ."},{"number":40,"answer":"last","context":"Humpback songs are incredibly complex and can (40) __________ for up to 30 minutes, (41) __________ them among the longest songs sung by any animal.","explanation":"Sau động từ khuyết thiếu can dùng nguyên mẫu last, nghĩa là kéo dài. “Humpback songs ... can last for up to 30 minutes” đi với cụm thời lượng for up to 30 minutes, là dấu hiệu kết hợp từ rõ ràng."},{"number":41,"answer":"making","context":"Humpback songs are incredibly complex and can (40) __________ for up to 30 minutes, (41) __________ them among the longest songs sung by any animal.","explanation":"Sau dấu phẩy, making them among the longest songs... là cụm phân từ chỉ kết quả: việc kéo dài đến 30 phút khiến chúng thuộc nhóm bài hát động vật dài nhất. Dùng động từ hữu hạn sẽ cần một liên từ và chủ ngữ riêng."},{"number":42,"answer":"although","context":"Scientists are still unsure why whales sing, (42) __________ it is believed that male whales may use their songs to attract females or to communicate with other males.","explanation":"Although nối hai ý nhượng bộ: các nhà khoa học vẫn chưa chắc vì sao cá voi hát, mặc dù người ta tin con đực có thể dùng bài hát để thu hút con cái hoặc giao tiếp. Dấu phẩy ngăn hai mệnh đề và quan hệ ‘chưa chắc—nhưng có giả thuyết’ quyết định liên từ này."},{"number":43,"answer":"can/may","context":"Some researchers suggest that the songs (43) __________ even evolve, changing year after year, much like national anthems.","explanation":"Trước động từ nguyên mẫu evolve cần động từ khuyết thiếu. Can nói khả năng đặc trưng rằng bài hát có thể biến đổi; may diễn tả giả thuyết chưa chắc chắn, phù hợp với Some researchers suggest và chi tiết chúng thay đổi qua từng năm."},{"number":44,"answer":"led","context":"The study of humpback whales continues, and scientists (44) __________ Darling and his team are dedicated to unraveling the mystery behind these majestic creatures' behavior and songs.","explanation":"Khóa nguồn giữ led, có thể đoán ý định là ‘các nhà khoa học do Darling và đội của ông dẫn dắt’. Tuy nhiên câu cần đầy đủ scientists led by Darling and his team are dedicated...; với nguyên văn chỉ có một ô trống trước Darling, điền riêng led tạo “scientists led Darling and his team are”, sai cấu trúc."},{"number":45,"answer":"behind","context":"Their curiosity about human understanding of the species is a driving force (45) __________ their ongoing research.","explanation":"Cụm cố định a driving force behind + noun chỉ động lực đứng sau một hoạt động. “Their curiosity ... is a driving force behind their ongoing research” nghĩa là sự tò mò thúc đẩy nghiên cứu đang tiếp diễn."}]},{"exercise":5,"count":19,"inputKind":"mcq","choices":["A","B","C","D"],"instruction":"Ex 5: Read the following passages and answer the questions.","questions":[{"number":46,"answer":"B","context":"principal (a) = main = major # principle","explanation":"Giải thích của cô: principal (a) = main = major # principle\n\nTrong câu “Galaxies are the major building blocks”, major mang nghĩa chính/yếu nhất, tương đương principal (B). Intense chỉ cường độ, huge chỉ kích thước và unique là độc nhất; đồng thời cần phân biệt principal với danh từ principle."},{"number":47,"answer":"B","context":"Đoạn 2 thảo luận về điều gì?","explanation":"Giải thích của cô: Đoạn 2 thảo luận về điều gì?\n\nĐoạn 2 mở bằng “There are three main types of galaxies” rồi lần lượt mô tả spiral, elliptical và irregular. Vì vậy B bao quát cả đoạn; A và C chỉ là một tiểu mục, còn D chỉ so sánh hai loại và bỏ elliptical."},{"number":48,"answer":"B","context":"Từ \"which\" thay thế cho từ nào?","explanation":"Giải thích của cô: Từ \"which\" thay thế cho từ nào?\n\nTrong cụm “the interstellar gas in which new stars form”, đại từ quan hệ which đứng sau in và thay cho gas: các sao mới hình thành trong khí liên sao. Dust, pattern và galaxy không phải tiền ngữ trực tiếp của mệnh đề này."},{"number":49,"answer":"B","context":"Sao mới hình thành trong thiên hà xoắn ốc do đâu?","explanation":"Giải thích của cô: Sao mới hình thành trong thiên hà xoắn ốc do đâu?\n\nBài viết nói mô hình xoắn quay “compresses gas and dust, triggering the formation of bright young stars”. Đây là bằng chứng trực tiếp cho B; không có vụ nổ khí, sự kết hợp sao cũ hay phát xạ vô tuyến làm nguyên nhân trong đoạn."},{"number":50,"answer":"B","context":"\"obvious\" gần nghĩa với từ nào?","explanation":"Giải thích của cô: \"obvious\" gần nghĩa với từ nào?\n\nTrong “no obvious structure”, obvious nghĩa là rõ ràng, dễ nhận thấy. Apparent (B) là từ đồng nghĩa sát nhất; discovered là được khám phá, understood là được hiểu và simplistic là đơn giản hóa quá mức."},{"number":51,"answer":"C","context":"devoid of = lacking in (adj)","explanation":"Giải thích của cô: devoid of = lacking in (adj)\n\nBài nói thiên hà elliptical “are devoid of interstellar gas”, tức không có/thiếu khí liên sao. Vì vậy phát biểu chúng chứa lượng khí liên sao cao (C) là điều KHÔNG đúng; các ý kích thước lớn, phần lớn sao già và hình cầu/ellipsoid đều được đoạn văn hỗ trợ."},{"number":52,"answer":"A","context":"Đặc điểm của thiên hà vô tuyến?","explanation":"Giải thích của cô: Đặc điểm của thiên hà vô tuyến?\n\nĐoạn 2 giải thích các thiên hà elliptical khổng lồ đôi khi là nguồn phát xạ vô tuyến mạnh, “in which case they are called radio galaxies”. Vì vậy radio galaxies là một trường hợp thuộc loại elliptical (A); các lựa chọn về kích thước nhỏ, quan hệ với irregular hay độ sáng thấp trái hoặc không có trong bài."},{"number":53,"answer":"A","context":"Tỷ lệ thiên hà không định hình (irregular)?","explanation":"Giải thích của cô: Tỷ lệ thiên hà không định hình (irregular)?\n\nBài nêu “Irregular galaxies comprise about one-tenth of all galaxies”. Một phần mười tương đương 10%, nên A đúng; 25% là tỷ lệ gần đúng của spiral, còn 50% và 75% không được nêu."},{"number":54,"answer":"C","context":"Từ \"they\" thay thế cho từ nào?","explanation":"Giải thích của cô: Từ \"they\" thay thế cho từ nào?\n\nTrong câu “the distances to the galaxies are incomprehensibly large, but they too are made more manageable...”, they quay lại cụm chủ ngữ the distances to the galaxies. Do đó C đúng; intervals, yardsticks và bản thân galaxies không phải thứ được đo theo light-year ở cấu trúc này."},{"number":55,"answer":"C","context":"Tại sao tác giả nhắc đến thiên hà Virgo và Andromeda?","explanation":"Giải thích của cô: Tại sao tác giả nhắc đến thiên hà Virgo và Andromeda?\n\nAndromeda được nói cách hai triệu năm ánh sáng, còn ánh sáng từ Virgo khởi hành khi bò sát vẫn thống trị. Hai ví dụ biến khoảng cách trừu tượng thành thời gian truyền ánh sáng cực dài, nhấn mạnh các thiên hà cách Trái Đất vô cùng xa (C). Các phương án về khả năng nhìn thấy, tuổi thiên hà hay giới hạn kính thiên văn không phải mục đích của ví dụ."},{"number":56,"answer":"D","context":"prevalent (a) = very common","explanation":"Giải thích của cô: prevalent (a) = very common\n\n“Reptiles still dominated the animal world” nghĩa là bò sát thịnh hành/chiếm ưu thế trong thế giới động vật thời đó. Were prevalent in (D) giữ đúng ý phổ biến và thống trị; threatened, replaced và were developing in không tương đương."},{"number":57,"answer":"B","context":"Tại sao tác động của đường sắt trước 1860 bị coi là \"hạn chế\"?","explanation":"Giải thích của cô: Tại sao tác động của đường sắt trước 1860 bị coi là \"hạn chế\"?\n\nĐường ray dừng ở sông Missouri, nên tàu phải chuyển hàng, thư và hành khách sang tàu hơi nước, xe ngựa hoặc xe khách để đi tiếp về phía tây. Điều này khớp trực tiếp B; bài không quy nguyên nhân cho tuyến đường vòng, sở thích hành khách hay giá vé."},{"number":58,"answer":"B","context":"Từ \"they\" thay thế cho từ nào?","explanation":"Giải thích của cô: Từ \"they\" thay thế cho từ nào?\n\nKhóa nguồn chọn B trains. Tuy nhiên đại từ they trong câu “wagon freighting, stagecoaching and steamboating did not come to an end ...; rather they became supplements or feeders” quy chiếu ba phương thức vận tải cũ, tương ứng gần nhất với D, không phải tàu hỏa."},{"number":59,"answer":"D","context":"freight (n) hàng hoá vận chuyển","explanation":"Giải thích của cô: freight (n) hàng hoá vận chuyển\n\nBài cho biết các tuyến xe hàng tiếp tục hoạt động nhưng “constantly shrinking routes”, còn xe ngựa chỉ đi nơi đường ray chưa được đặt. Có thể suy ra khi đường sắt mở rộng, chúng được sử dụng ít hơn trước (D); bài không nói tài xế từ chối làm việc, chuyên môn hóa hay lập tuyến cạnh tranh."},{"number":60,"answer":"C","context":"\"crisscross\" gần nghĩa với từ nào?","explanation":"Giải thích của cô: \"crisscross\" gần nghĩa với từ nào?\n\nTrong ngữ cảnh các xe ngựa tiếp tục đi khắp miền Tây nơi chưa có đường ray, crisscross nghĩa là di chuyển qua lại theo nhiều hướng. C diễn đạt sát nhất; lead the way, separate và uncover không nói sự di chuyển đan chéo."},{"number":61,"answer":"D","context":"Tại sao nhắc đến dãy Sierra Nevada?","explanation":"Giải thích của cô: Tại sao nhắc đến dãy Sierra Nevada?\n\nĐường sắt Central Pacific phải tiến về phía đông từ California “through the formidable barriers of the Sierra Nevada”. Dãy núi được dùng làm ví dụ cụ thể về chướng ngại xây dựng (D), không nhằm đề xuất tuyến khác, kể tai nạn hay chỉ nhận diện một địa danh lịch sử."},{"number":62,"answer":"A","context":"skepticism = doubt","explanation":"Giải thích của cô: skepticism = doubt\n\nSkepticism trong câu chỉ sự nghi ngờ rằng tuyến đường sắt qua vùng khó khăn, thưa dân có thể sinh lời. Doubt (A) là từ đồng nghĩa trực tiếp; amazement, urgency và determination là các thái độ khác."},{"number":63,"answer":"C","context":"mature (a) trưởng thành","explanation":"Giải thích của cô: mature (a) trưởng thành\n\nNgay sau cụm “premature enterprise”, bài giải thích “not only the cost of construction but also the very high risk deterred private investment”. Vì chi phí và rủi ro làm nhà đầu tư tư nhân chùn bước, C là diễn giải trực tiếp; các vấn đề công nghệ, vật liệu và nhân lực không được nêu."},{"number":64,"answer":"B","context":"subsidy (n) tài trợ tiền","explanation":"Giải thích của cô: subsidy (n) tài trợ tiền\n\nGovernment subsidy là khoản hỗ trợ tài chính của chính phủ để một dự án có thể thực hiện. Financing (B) gần nghĩa nhất; persuasion là thuyết phục, explanation là giải thích và penalty là hình phạt, trái với vai trò hỗ trợ."}]}]}</script>
+  <script id="ri2-course-data" type="application/json">{"schemaVersion":1,"courseId":"ri2","courseName":"Reading Intensive 2","totalQuestions":761,"classes":["FIGHTER 5","FIGHTER 6","FIGHTER 7","FIGHTER 8","FIGHTER 9"],"scoreSink":{"kind":"google-form","formResponseUrl":"https://docs.google.com/forms/d/e/1FAIpQLSf939uh6Lb5ZrIy5CY0ejCHGx5SCVrdIcaU4vCKDLb2PVFfPg/formResponse","entries":{"name":"entry.655449102","total":"entry.330493587","assignmentCode":"entry.86015848","lesson":"entry.414474821","activity":"entry.1423127065","className":"entry.172500407","percent":"entry.1161504407","score":"entry.1454259834","wrong":"entry.989432617"}},"testing":false}</script>
+  <script>/* RI2 grading is deliberately deterministic: only approved keys and explicit
+ * alternatives are accepted. Formatting normalization is not synonym matching. */
+(function (root, factory) {
+  if (typeof module === "object" && module.exports) module.exports = factory();
+  else if (typeof define === "function" && define.amd) define([], factory);
+  else root.RI2Grading = factory();
+})(typeof globalThis !== "undefined" ? globalThis : this, function () {
+  "use strict";
+
+  const SMALL = Object.freeze({ zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5,
+    six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12,
+    thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17,
+    eighteen: 18, nineteen: 19 });
+  const TENS = Object.freeze({ twenty: 20, thirty: 30, forty: 40, fifty: 50,
+    sixty: 60, seventy: 70, eighty: 80, ninety: 90 });
+  const SCALES = Object.freeze({ thousand: 1000, million: 1000000, billion: 1000000000 });
+  const ORDINALS = Object.freeze({ zeroth: "zero", first: "one", second: "two", third: "three",
+    fourth: "four", fifth: "five", sixth: "six", seventh: "seven", eighth: "eight",
+    ninth: "nine", tenth: "ten", eleventh: "eleven", twelfth: "twelve", thirteenth: "thirteen",
+    fourteenth: "fourteen", fifteenth: "fifteen", sixteenth: "sixteen", seventeenth: "seventeen",
+    eighteenth: "eighteen", nineteenth: "nineteen", twentieth: "twenty", thirtieth: "thirty",
+    fortieth: "forty", fiftieth: "fifty", sixtieth: "sixty", seventieth: "seventy",
+    eightieth: "eighty", ninetieth: "ninety", hundredth: "hundred", thousandth: "thousand",
+    millionth: "million", billionth: "billion" });
+  const own = (object, key) => Object.prototype.hasOwnProperty.call(object, key);
+  const cardinalWord = word => own(SMALL, word) || own(TENS, word) || own(SCALES, word) || word === "hundred";
+  const numericWord = word => cardinalWord(word) || own(ORDINALS, word);
+
+  function inputText(value) {
+    if (typeof value === "string") return value;
+    if (typeof value === "number" && Number.isFinite(value)) return String(value);
+    return "";
+  }
+
+  function basicText(value) {
+    return inputText(value).normalize("NFKC").toLowerCase()
+      .replace(/[\u200B-\u200D\uFEFF\u00AD]/g, "")
+      .replace(/[‘’‛ʼ′]/g, "'")
+      .replace(/[‐‑‒–—―−]/g, "-")
+      .replace(/\s+/g, " ").trim();
+  }
+
+  function unwrap(value) {
+    const pairs = { '"': '"', "'": "'", "“": "”", "‘": "’", "(": ")", "[": "]", "{": "}" };
+    let result = value.trim();
+    // Only a balanced wrapper is presentation punctuation, not a missing bracket.
+    for (let depth = 0; depth < 4 && result.length > 1; depth += 1) {
+      if (pairs[result[0]] !== result[result.length - 1]) break;
+      result = result.slice(1, -1).trim();
+    }
+    return result;
+  }
+
+  function meridiem(value) {
+    return value.replace(/(?<![a-z])([ap])\s*\.?\s*m\s*\.?(?![a-z])/g, "$1m");
+  }
+
+  function policyFor(expected, question) {
+    const text = basicText(expected);
+    const timeText = meridiem(text);
+    const time = /\bo\s*'?\s*clock\b/.test(timeText) ? "oclock"
+      : /(?<![a-z])[ap]m(?![a-z])/.test(timeText) ? "meridiem"
+      : /\b\d{1,2}\s*:\s*\d{2}\b/.test(timeText) ? "clock" : "none";
+    let numbers = /\d/.test(text);
+    // Standalone One/First and anaphoric "the one" are grammatical keys in RI2.
+    // A caller may explicitly opt in for a numeric-only word answer.
+    const quantity = text.replace(/^(?:at least|more than|less than|nearly|about|approximately|over|under|up to|around)\s+/, "");
+    const words = quantity.replace(/-/g, " ").split(/\s+/);
+    let length = 0;
+    while (length < words.length && (numericWord(words[length]) || words[length] === "and")) length += 1;
+    const qualifier = quantity !== text;
+    const grammaticalTail = /^(?:of|that|which|who|whom|to|by|with|for|as|than)$/;
+    if (length > 0 && (qualifier || (length < words.length && !grammaticalTail.test(words[length])) || length > 1)) numbers = true;
+    if (question && typeof question.numberFormatting === "boolean") numbers = question.numberFormatting;
+    return { numbers, time, degrees: /°|º|˚|\bdegrees\b/.test(inputText(expected).toLowerCase()) };
+  }
+
+  function surface(value, policy) {
+    let text = inputText(value);
+    if (policy.degrees) text = text.replace(/[º˚]/g, "°");
+    text = meridiem(basicText(unwrap(text)));
+    // A single final sentence mark is harmless; internal numeric punctuation stays.
+    text = text.replace(/[.!?,;:]$/, "").trim();
+    text = unwrap(text)
+      .replace(/(?<=[a-z])\s*-\s*(?=[a-z0-9])|(?<=[0-9])\s*-\s*(?=[a-z])/g, " ")
+      .replace(/%/g, " percent ")
+      .replace(/\bper\s+cent\b/g, "percent")
+      .replace(/\s*\/\s*/g, "/")
+      .replace(/\s*,\s*/g, ", ");
+    if (policy.time === "oclock") text = text.replace(/\bo\s*'?\s*clock\b/g, "oclock");
+    return text.replace(/\s+/g, " ").trim();
+  }
+
+  function parseCardinal(words) {
+    let total = 0, group = 0, previous = "start", previousSmall = -1, lastScale = Infinity;
+    for (const word of words) {
+      if (word === "and") {
+        if (previous !== "hundred" && previous !== "scale") return null;
+        previous = "and";
+      } else if (own(SMALL, word)) {
+        const number = SMALL[word];
+        if (number === 0 ? words.length !== 1 : number < 10
+          ? !["start", "tens", "hundred", "scale", "and"].includes(previous)
+          : !["start", "hundred", "scale", "and"].includes(previous)) return null;
+        group += number;
+        previous = number < 10 ? "small" : "teen";
+        previousSmall = number;
+      } else if (own(TENS, word)) {
+        if (!["start", "hundred", "scale", "and"].includes(previous)) return null;
+        group += TENS[word]; previous = "tens"; previousSmall = -1;
+      } else if (word === "hundred") {
+        if (previous !== "small" || previousSmall < 1 || previousSmall > 9 || group > 9) return null;
+        group *= 100; previous = "hundred"; previousSmall = -1;
+      } else {
+        const scale = SCALES[word];
+        if (!scale || !group || previous === "and" || scale >= lastScale) return null;
+        total += group * scale; group = 0; previous = "scale"; previousSmall = -1; lastScale = scale;
+      }
+    }
+    const number = total + group;
+    return previous !== "start" && previous !== "and" && Number.isSafeInteger(number) ? number : null;
+  }
+
+  function suffix(number) {
+    const tail = number % 100;
+    return tail >= 11 && tail <= 13 ? "th" : number % 10 === 1 ? "st" : number % 10 === 2 ? "nd" : number % 10 === 3 ? "rd" : "th";
+  }
+
+  function parseWords(words) {
+    const final = words[words.length - 1];
+    if (!own(ORDINALS, final)) {
+      const number = parseCardinal(words);
+      return number === null ? null : String(number);
+    }
+    if (words.slice(0, -1).some(word => own(ORDINALS, word))) return null;
+    const cardinal = ORDINALS[final];
+    const number = words.length === 1 && (cardinal === "hundred" || own(SCALES, cardinal))
+      ? (cardinal === "hundred" ? 100 : SCALES[cardinal])
+      : parseCardinal(words.slice(0, -1).concat(cardinal));
+    return number === null ? null : String(number) + suffix(number);
+  }
+
+  function numberWords(value) {
+    const tokens = value.match(/[a-z]+|\d+|[^a-z\d]+/g) || [];
+    const output = [];
+    for (let index = 0; index < tokens.length; index += 1) {
+      if (!numericWord(tokens[index])) { output.push(tokens[index]); continue; }
+      const candidates = [{ word: tokens[index], end: index }];
+      let cursor = index + 1;
+      while (candidates.length < 64 && cursor + 1 < tokens.length && /^\s+$/.test(tokens[cursor]) && (numericWord(tokens[cursor + 1]) || tokens[cursor + 1] === "and")) {
+        candidates.push({ word: tokens[cursor + 1], end: cursor + 1 }); cursor += 2;
+      }
+      let matched = false;
+      for (let length = candidates.length; length > 0; length -= 1) {
+        const parsed = parseWords(candidates.slice(0, length).map(candidate => candidate.word));
+        if (parsed !== null) { output.push(parsed); index = candidates[length - 1].end; matched = true; break; }
+      }
+      if (!matched) output.push(tokens[index]);
+    }
+    return output.join("");
+  }
+
+  function clock(value, mode) {
+    const format = (whole, hourText, minuteText, period) => {
+      const hour = Number(hourText), minute = Number(minuteText);
+      if (hour < (period ? 1 : 0) || hour > (period ? 12 : 23) || minute > 59) return whole;
+      return hour + ":" + String(minute).padStart(2, "0") + (period ? " " + period : "");
+    };
+    if (mode === "oclock") return value.replace(/\b(0?\d|1[0-2])\s+oclock\b/g, (whole, hour) => Number(hour) >= 1 ? Number(hour) + " oclock" : whole);
+    if (mode === "meridiem") return value
+      .replace(/\b(\d{1,2})\s*[:.]\s*(\d{2})\s*(am|pm)\b/g, format)
+      .replace(/\b(\d{1,2})\s+(\d{1,2})\s*(am|pm)\b/g, format)
+      .replace(/(?<![\d:.])\b(0?\d|1[0-2])\s*(am|pm)\b/g, (whole, hour, period) => Number(hour) >= 1 ? Number(hour) + " " + period : whole);
+    if (mode === "clock") return value.replace(/\b(\d{1,2})\s*[:.]\s*(\d{2})\b/g, (whole, hour, minute) => format(whole, hour, minute));
+    return value;
+  }
+
+  function numericLiteral(whole) {
+    let match = /^([+-]?)(\d{1,3}(?:,\d{3})+|\d+)(?:\.(\d+))?$/.exec(whole);
+    if (!match) match = /^([+-]?)(\d+),(\d{1,2})$/.exec(whole);
+    if (!match) {
+      const fraction = /^([+-]?)\.(\d+)$/.exec(whole);
+      if (fraction) match = [whole, fraction[1], "0", fraction[2]];
+    }
+    if (!match) return whole;
+    const sign = match[1] === "+" ? "" : match[1];
+    let integer = match[2].replace(/,/g, "");
+    if (match[3] === undefined) return sign + integer; // Keep leading zeros in potential codes.
+    integer = integer.replace(/^0+(?=\d)/, "");
+    const fraction = match[3].replace(/0+$/, "");
+    return (integer === "0" && !fraction ? "" : sign) + integer + (fraction ? "." + fraction : "");
+  }
+
+  function canonical(value, policy) {
+    let text = surface(value, policy);
+    if (policy.numbers) {
+      // Restore commas inside validated number tokens; prose commas keep their spaces.
+      text = text.replace(/(?<=\d), (?=\d)/g, ",")
+        .replace(/(?<![\w.,])\d{1,3}(?: \d{3})+(?![\w.,])/g, group => group.replace(/ /g, ""));
+      text = numberWords(text);
+      text = text.replace(/\b(\d+)\s+point\s+(\d(?:\s+\d)*)\b/g, (_whole, integer, fraction) => integer + "." + fraction.replace(/ /g, ""));
+      text = clock(text, policy.time);
+      text = text.replace(/(?<![\w.,])([+-]?(?:\d[\d.,]*|\.\d+))(?![\w.,])/g, numericLiteral);
+      text = text.replace(/\b(\d+)(st|nd|rd|th)\b/g, (whole, digits, ending) => {
+        const number = Number(digits);
+        return Number.isSafeInteger(number) && suffix(number) === ending ? number + ending : whole;
+      });
+    }
+    if (policy.degrees) text = text.replace(/\b(\d+(?:\.\d+)?)\s*°(?!\s*[cf]\b)/g, "$1 degrees");
+    return text.replace(/\s+/g, " ").trim();
+  }
+
+  function normalizeAnswer(value, question) {
+    const expected = question && question.answer !== undefined ? question.answer : value;
+    return canonical(value, policyFor(expected, question));
+  }
+
+  function slashOptions(value) {
+    const parts = inputText(value).split("/").map(part => part.trim());
+    if (parts.length < 2 || !parts[0]) return null;
+    if (!parts[parts.length - 1]) parts.pop(); // A trailing separator never means a blank answer.
+    const units = /^(?:km|hr|ms|cm|mm|kg|ml|mph|kph|sec|min)$/i;
+    if (parts.some(part => !/^[a-z]{2,}(?:[ '-][a-z]+)*$/i.test(part) || units.test(part))) return null;
+    return parts;
+  }
+
+  function acceptedAnswers(question) {
+    if (!question || !inputText(question.answer).trim()) return [];
+    const listed = slashOptions(question.answer) || [inputText(question.answer)];
+    const explicit = Array.isArray(question.acceptedAnswers) ? question.acceptedAnswers.filter(answer => typeof answer === "string" && basicText(answer)) : [];
+    const seen = new Set();
+    return listed.concat(explicit).filter(answer => {
+      const key = basicText(answer);
+      if (seen.has(key)) return false;
+      seen.add(key); return true;
+    });
+  }
+
+  function answersMatch(actual, question) {
+    if (!basicText(actual) || !question) return false;
+    const candidates = [inputText(question.answer)].concat(acceptedAnswers(question)).filter(answer => basicText(answer));
+    return candidates.some(expected => {
+      const policy = policyFor(expected, question);
+      return canonical(actual, policy) === canonical(expected, policy);
+    });
+  }
+
+  function gradeAttempt(unit, answers) {
+    if (!unit || !Array.isArray(unit.sections)) throw new TypeError("A unit with sections is required.");
+    const questions = unit.sections.flatMap(section => Array.isArray(section.questions) ? section.questions : []);
+    const seen = new Set();
+    const entries = questions.map(question => {
+      const key = String(question.number);
+      if (question.number === undefined || seen.has(key)) throw new TypeError("Question numbers must be present and unique within a unit.");
+      seen.add(key);
+      const value = answers instanceof Map ? answers.get(key) : answers && own(answers, key) ? answers[key] : undefined;
+      const actual = inputText(value);
+      return { question, number: question.number, actual, answered: !!basicText(actual) };
+    });
+    const total = entries.length;
+    const complete = total > 0 && entries.every(entry => entry.answered);
+    if (!complete) return { complete: false, score: null, total, percent: null, wrong: [],
+      results: entries.map(entry => ({ number: entry.number, actual: entry.actual, answered: entry.answered, correct: null })) };
+    const results = entries.map(entry => ({ number: entry.number, actual: entry.actual, answered: true,
+      correct: answersMatch(entry.actual, entry.question), answer: entry.question.answer,
+      acceptedAnswers: acceptedAnswers(entry.question), explanation: entry.question.explanation || "" }));
+    const wrong = results.filter(result => !result.correct);
+    const score = total - wrong.length;
+    return { complete: true, score, total, percent: Math.round(score * 1000 / total) / 10, wrong, results };
+  }
+
+  return Object.freeze({ answersMatch, gradeAttempt, acceptedAnswers, normalizeAnswer });
+});
+</script>
+  <script>(function () {
+  "use strict";
+
+  const $ = (id) => document.getElementById(id);
+  const ALLOWED_CLASSES = ["FIGHTER 5", "FIGHTER 6", "FIGHTER 7", "FIGHTER 8", "FIGHTER 9"];
+  const STORAGE_VERSION = 1;
+  let unit;
+  let course;
+  let questions = [];
+  let questionByNumber = new Map();
+  let identity = null;
+  let attempt = null;
+  let storageBase = "";
+  let storageAvailable = true;
+  let submitting = false;
+  let reviewMode = "wrong";
+
+  function node(tag, className, text) {
+    const element = document.createElement(tag);
+    if (className) element.className = className;
+    if (text !== undefined) element.textContent = text;
+    return element;
+  }
+
+  function plainText(value) {
+    if (typeof value === "string" || typeof value === "number") return String(value).trim();
+    if (Array.isArray(value)) return value.filter((part) => typeof part === "string").join("\n\n").trim();
+    return "";
+  }
+
+  function normalizedName(value) {
+    return String(value || "").normalize("NFKC").replace(/\s+/g, " ").trim();
+  }
+
+  function newId() {
+    if (globalThis.crypto && typeof globalThis.crypto.randomUUID === "function") return globalThis.crypto.randomUUID();
+    if (globalThis.crypto && typeof globalThis.crypto.getRandomValues === "function") {
+      const bytes = new Uint8Array(16);
+      globalThis.crypto.getRandomValues(bytes);
+      return Array.from(bytes, (byte) => byte.toString(16).padStart(2, "0")).join("");
+    }
+    return Date.now().toString(36) + "-" + Math.random().toString(36).slice(2) + "-" + Math.random().toString(36).slice(2);
+  }
+
+  function currentKey() { return storageBase + ":current"; }
+  function attemptKey(id) { return storageBase + ":attempt:" + id; }
+
+  function readStorage(key) {
+    let raw;
+    try {
+      raw = localStorage.getItem(key);
+    } catch (_) {
+      storageAvailable = false;
+      return null;
+    }
+    try { return raw ? JSON.parse(raw) : null; } catch (_) { return null; }
+  }
+
+  function persist(options = {}) {
+    if (!attempt || !storageBase) return;
+    try {
+      const serialized = JSON.stringify(attempt);
+      localStorage.setItem(attemptKey(attempt.id), serialized);
+      // The current key is a selection pointer, not a frequently rewritten snapshot.
+      // An older tab may finish sending after another tab has started a newer attempt.
+      // Only an intentional new attempt may select itself; ordinary saves never do.
+      if (options.makeCurrent === true) {
+        localStorage.setItem(currentKey(), JSON.stringify({ version: STORAGE_VERSION, id: attempt.id }));
+      }
+    } catch (_) {
+      storageAvailable = false;
+    }
+    renderStorageWarning();
+  }
+
+  function renderStorageWarning() {
+    const target = $("storage-warning");
+    target.hidden = storageAvailable;
+    target.textContent = storageAvailable ? "" : "Trình duyệt không lưu được tiến độ. Vui lòng giữ trang mở cho đến khi nộp bài.";
+  }
+
+  function validStoredAttempt(value) {
+    return value && value.version === STORAGE_VERSION && typeof value.id === "string" &&
+      value.courseId === course.courseId && String(value.unit) === String(unit.unit) &&
+      value.identity && normalizedName(value.identity.name).toLocaleLowerCase("vi") === identity.name.toLocaleLowerCase("vi") && value.identity.className === identity.className &&
+      value.answers && typeof value.answers === "object" && !Array.isArray(value.answers);
+  }
+
+  function createAttempt(number) {
+    return {
+      version: STORAGE_VERSION,
+      id: newId(),
+      courseId: course.courseId,
+      unit: unit.unit,
+      testCode: unit.testCode,
+      identity: { name: identity.name, className: identity.className },
+      number: number || 1,
+      startedAt: new Date().toISOString(),
+      answers: {},
+      submittedAt: null,
+      grade: null,
+      delivery: { state: "draft" }
+    };
+  }
+
+  function previewUrl() {
+    const value = unit && ((unit.config && unit.config.studentPreviewUrl) || unit.studentPreviewUrl);
+    if (typeof value !== "string") return null;
+    try {
+      const url = new URL(value);
+      if (url.protocol !== "https:" || url.hostname !== "docs.google.com" || url.username || url.password) return null;
+      if (!/^\/document\/d\/(?:e\/)?[^/]+\/(?:preview|pub)\/?$/.test(url.pathname)) return null;
+      return url.href;
+    } catch (_) { return null; }
+  }
+
+  function unitLabel() {
+    return plainText(unit.title) || "Test " + String(unit.unit).padStart(2, "0");
+  }
+
+  function failSetup(message) {
+    $("gate-error").textContent = message;
+    $("gate-error").hidden = false;
+    $("open-quiz").disabled = true;
+  }
+
+  function initialize() {
+    try {
+      unit = JSON.parse($("ri2-unit-data").textContent);
+      course = JSON.parse($("ri2-course-data").textContent);
+      if (course && course.testing === true) {
+        document.body.classList.add("testing");
+        $("test-mode-banner").hidden = false;
+      }
+      if (!unit || !course || !course.courseId || !plainText(unit.testCode) || !Array.isArray(unit.sections)) throw new Error("configuration");
+      if (!globalThis.RI2Grading || typeof globalThis.RI2Grading.gradeAttempt !== "function") throw new Error("grading");
+      questions = unit.sections.flatMap((section) => Array.isArray(section.questions) ? section.questions : []);
+      questionByNumber = new Map(questions.map((question) => [String(question.number), question]));
+      if (!questions.length || questionByNumber.size !== questions.length || Number(unit.total) !== questions.length) throw new Error("questions");
+      if (questions.some((question) => question.number === undefined || !plainText(question.answer))) throw new Error("answer key");
+      if (!previewUrl()) throw new Error("student preview");
+      if (Object.prototype.hasOwnProperty.call(unit, "sourceDocumentId") || Object.prototype.hasOwnProperty.call(unit, "teacherDocumentId")) throw new Error("student-only data required");
+    } catch (_) {
+      failSetup("Bài học chưa sẵn sàng để mở. Vui lòng báo giáo viên để kiểm tra cấu hình bản học sinh.");
+      return;
+    }
+
+    document.title = (course.courseName || "Reading Intensive") + " · " + unitLabel();
+    $("gate-course").textContent = course.courseName || "Reading Intensive";
+    $("app-course").textContent = course.courseName || "Reading Intensive";
+    $("gate-title").textContent = unitLabel();
+    $("app-title").textContent = unitLabel();
+    $("gate-question-count").textContent = questions.length + " câu hỏi";
+    $("total-count").textContent = "/ " + questions.length + " câu";
+    const classes = Array.isArray(course.classes) ? ALLOWED_CLASSES.filter((name) => course.classes.includes(name)) : ALLOWED_CLASSES;
+    (classes.length ? classes : ALLOWED_CLASSES).forEach((name) => {
+      const option = node("option", "", name);
+      option.value = name;
+      $("student-class").appendChild(option);
+    });
+    try {
+      const previous = JSON.parse(sessionStorage.getItem("ri2:identity:" + course.courseId) || "null");
+      if (previous) {
+        $("student-name").value = normalizedName(previous.name);
+        if (ALLOWED_CLASSES.includes(previous.className)) $("student-class").value = previous.className;
+      }
+      const probe = "ri2:storage-probe:" + newId();
+      localStorage.setItem(probe, "1");
+      localStorage.removeItem(probe);
+    } catch (_) { storageAvailable = false; }
+
+    $("identity-form").addEventListener("submit", openQuiz);
+    $("answer-form").addEventListener("submit", submitAttempt);
+    $("new-attempt").addEventListener("click", startNewAttempt);
+    window.addEventListener("storage", receiveStorageUpdate);
+  }
+
+  function openQuiz(event) {
+    event.preventDefault();
+    const name = normalizedName($("student-name").value);
+    const className = $("student-class").value;
+    if (!name || !ALLOWED_CLASSES.includes(className)) {
+      $("gate-error").textContent = "Vui lòng nhập họ tên và chọn đúng lớp trước khi mở đề.";
+      $("gate-error").hidden = false;
+      (!name ? $("student-name") : $("student-class")).focus();
+      return;
+    }
+    identity = { name, className };
+    storageBase = "ri2:student:v" + STORAGE_VERSION + ":" + (course.testing === true ? "testing" : "live") + ":" + encodeURIComponent(course.courseId) + ":" + encodeURIComponent(String(unit.unit)) + ":" + encodeURIComponent(name.toLocaleLowerCase("vi") + "|" + className);
+    try { sessionStorage.setItem("ri2:identity:" + course.courseId, JSON.stringify(identity)); } catch (_) { /* Identity is still held in memory. */ }
+    const current = readStorage(currentKey());
+    const latest = current && typeof current.id === "string" ? readStorage(attemptKey(current.id)) : null;
+    // The fallback preserves attempts from the earlier full-snapshot current-key format.
+    const saved = validStoredAttempt(latest) ? latest : current;
+    const restored = validStoredAttempt(saved);
+    attempt = restored ? saved : createAttempt(1);
+    if (attempt.submittedAt) {
+      if (!attempt.grade || attempt.grade.complete !== true || attempt.grade.total !== questions.length || !Array.isArray(attempt.grade.results) || attempt.grade.results.length !== questions.length) {
+        attempt.grade = globalThis.RI2Grading.gradeAttempt(unit, attempt.answers);
+      }
+      if (["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) {
+        attempt.delivery = { state: "unconfirmed", attemptedAt: attempt.delivery.attemptedAt, reason: "reload" };
+      }
+    }
+    persist({ makeCurrent: !restored });
+    $("identity-name").textContent = identity.name;
+    $("identity-class").textContent = identity.className;
+    $("identity-gate").hidden = true;
+    $("quiz-app").hidden = false;
+    loadStudentDocument();
+    renderAnswers();
+  }
+
+  function loadStudentDocument() {
+    if ($("student-document")) return;
+    const frame = node("iframe", "document-frame");
+    frame.id = "student-document";
+    frame.title = "Đề bài bản học sinh · " + unitLabel();
+    frame.setAttribute("referrerpolicy", "no-referrer");
+    frame.setAttribute("sandbox", "allow-scripts allow-same-origin");
+    frame.addEventListener("load", () => { $("document-loading").hidden = true; }, { once: true });
+    frame.src = previewUrl();
+    $("document-body").appendChild(frame);
+  }
+
+  function answeredCount() {
+    return questions.filter((question) => plainText(attempt.answers[String(question.number)]) !== "").length;
+  }
+
+  function updateProgress() {
+    const count = answeredCount();
+    $("answered-count").textContent = String(count);
+    $("progress-fill").style.width = (count / questions.length * 100) + "%";
+    $("attempt-label").textContent = "Lượt " + attempt.number + (attempt.submittedAt ? " · đã chấm" : " · đang làm");
+    $("submit-answers").disabled = submitting || !!attempt.submittedAt || count !== questions.length;
+    $("submit-answers").textContent = submitting ? "ĐANG CHẤM BÀI…" : count === questions.length ? "NỘP BÀI & XEM LỜI GIẢI →" : "CÒN " + (questions.length - count) + " CÂU CHƯA TRẢ LỜI";
+  }
+
+  function recordAnswer(number, value) {
+    if (attempt.submittedAt || submitting) return;
+    attempt.answers[String(number)] = value;
+    persist();
+    updateProgress();
+  }
+
+  function renderAnswers() {
+    const container = $("answer-sections");
+    container.replaceChildren();
+    const results = new Map(attempt.grade && attempt.grade.complete ? attempt.grade.results.map((result) => [String(result.number), result]) : []);
+    if (attempt.grade && attempt.grade.complete && attempt.grade.wrong.length === 0) reviewMode = "all";
+    unit.sections.forEach((section) => {
+      const sectionElement = node("section", "answer-section");
+      const heading = node("div", "section-heading");
+      const exercise = plainText(section.exercise);
+      heading.appendChild(node("h3", "", /^exercise\b/i.test(exercise) ? exercise : "Exercise " + exercise));
+      if (plainText(section.instruction)) heading.appendChild(node("p", "", plainText(section.instruction)));
+      sectionElement.appendChild(heading);
+      let visibleQuestions = 0;
+      (section.questions || []).forEach((question) => {
+        const result = results.get(String(question.number));
+        const card = renderQuestion(section, question, result);
+        if (result && reviewMode === "wrong" && result.correct) card.hidden = true;
+        else visibleQuestions += 1;
+        sectionElement.appendChild(card);
+      });
+      if (results.size && reviewMode === "wrong" && visibleQuestions === 0) sectionElement.hidden = true;
+      container.appendChild(sectionElement);
+    });
+    $("submit-answers").hidden = !!attempt.submittedAt;
+    $("new-attempt").hidden = !attempt.submittedAt;
+    renderResultSummary();
+    renderDelivery();
+    renderStorageWarning();
+    updateProgress();
+  }
+
+  function renderQuestion(section, question, result) {
+    const number = String(question.number);
+    const card = node("article", "question-card" + (result ? result.correct ? " is-correct" : " is-wrong" : ""));
+    card.dataset.question = number;
+    if (result) {
+      card.dataset.correct = String(result.correct);
+      card.tabIndex = -1;
+    }
+    const top = node("div", "question-top");
+    const label = node("label", "question-number", "Câu " + number.padStart(2, "0"));
+    label.htmlFor = "answer-" + number;
+    top.appendChild(label);
+    if (result) top.appendChild(node("span", "question-state", result.correct ? "✓ Đúng" : "✕ Sai"));
+    card.appendChild(top);
+    const value = plainText(attempt.answers[number]);
+    const choices = Array.isArray(section.choices) ? section.choices.filter((choice) => typeof choice === "string" && choice.trim()).map((choice) => choice.trim()) : [];
+    if (section.inputKind === "mcq" && choices.length) {
+      const grid = node("div", "choice-grid");
+      grid.setAttribute("role", "radiogroup");
+      grid.setAttribute("aria-label", "Đáp án câu " + number);
+      choices.forEach((choice, index) => {
+        const choiceLabel = node("label", "choice");
+        const input = node("input");
+        input.type = "radio";
+        input.name = "answer-" + number;
+        input.id = index === 0 ? "answer-" + number : "answer-" + number + "-" + index;
+        input.value = choice;
+        input.checked = value === choice;
+        input.disabled = !!attempt.submittedAt || submitting;
+        input.addEventListener("change", () => recordAnswer(number, choice));
+        choiceLabel.append(input, node("span", "", choice));
+        grid.appendChild(choiceLabel);
+      });
+      card.appendChild(grid);
+    } else if (section.inputKind === "matching" && choices.length) {
+      const input = node("select");
+      input.id = "answer-" + number;
+      input.name = "answer-" + number;
+      input.setAttribute("aria-label", "Đáp án câu " + number);
+      const empty = node("option", "", "— Chọn đáp án —");
+      empty.value = "";
+      input.appendChild(empty);
+      choices.forEach((choice) => { const option = node("option", "", choice); option.value = choice; input.appendChild(option); });
+      input.value = value;
+      input.disabled = !!attempt.submittedAt || submitting;
+      input.addEventListener("change", () => recordAnswer(number, input.value));
+      card.appendChild(input);
+    } else {
+      const input = node("input");
+      input.type = "text";
+      input.id = "answer-" + number;
+      input.name = "answer-" + number;
+      input.value = value;
+      input.maxLength = 600;
+      input.placeholder = "Nhập câu trả lời của bạn";
+      input.autocomplete = "off";
+      input.setAttribute("autocapitalize", "off");
+      input.setAttribute("autocorrect", "off");
+      input.spellcheck = false;
+      input.disabled = !!attempt.submittedAt || submitting;
+      input.addEventListener("input", () => recordAnswer(number, input.value));
+      card.appendChild(input);
+    }
+    if (result) {
+      const review = node("div", "answer-review");
+      const key = node("p", "answer-key");
+      const mine = node("span", "answer-key-row", "Bạn trả lời: ");
+      mine.appendChild(node("b", result.correct ? "" : "submitted-answer", plainText(result.actual)));
+      const correct = node("span", "answer-key-row", "Đáp án đúng: ");
+      correct.appendChild(node("b", "", plainText(result.answer)));
+      key.append(mine, correct);
+      const alternatives = Array.isArray(result.acceptedAnswers) ? result.acceptedAnswers.map(plainText).filter((answer) => answer && answer !== plainText(result.answer)) : [];
+      if (alternatives.length) key.appendChild(node("small", "", "Cũng chấp nhận: " + alternatives.join(" · ")));
+      review.appendChild(key);
+      if (plainText(question.context)) {
+        review.appendChild(node("p", "review-label", "Ngữ cảnh câu hỏi"));
+        review.appendChild(node("p", "question-context", plainText(question.context)));
+      }
+      review.appendChild(node("p", "review-label", "Giải thích"));
+      review.appendChild(node("p", "explanation", cleanExplanation(result.explanation) || "Chưa có giải thích cho câu này."));
+      card.appendChild(review);
+    }
+    return card;
+  }
+
+  function cleanExplanation(value) {
+    return plainText(value).replace(/^Giải thích của cô\s*:\s*/i, "");
+  }
+
+  function setReviewMode(mode, questionNumber) {
+    reviewMode = mode === "all" ? "all" : "wrong";
+    renderAnswers();
+    $("answer-scroll").scrollTop = 0;
+    if (questionNumber !== undefined) {
+      const card = [...document.querySelectorAll("[data-question]")].find((item) => item.dataset.question === String(questionNumber));
+      if (card) {
+        card.scrollIntoView({ block: "start" });
+        card.focus({ preventScroll: true });
+      }
+    }
+  }
+
+  function renderResultSummary() {
+    const target = $("result-summary");
+    target.replaceChildren();
+    target.hidden = !attempt.submittedAt || !attempt.grade || !attempt.grade.complete;
+    if (target.hidden) return;
+    const grade = attempt.grade;
+    const box = node("section", "result-summary");
+    box.setAttribute("aria-labelledby", "result-heading");
+    box.appendChild(node("p", "result-kicker", "KẾT QUẢ"));
+    const numbers = node("div", "result-numbers");
+    const score = node("div", "result-score", String(grade.score));
+    score.appendChild(node("small", "", " / " + grade.total));
+    numbers.append(score, node("div", "result-percent", String(grade.percent) + "%"));
+    box.appendChild(numbers);
+    const title = node("h3", "", grade.score === grade.total ? "Hoàn thành tất cả các câu" : grade.wrong.length + " câu cần sửa");
+    title.id = "result-heading";
+    box.appendChild(title);
+    if (grade.wrong.length) {
+      const wrongLabel = node("p", "result-wrong-label", "CÂU SAI");
+      const jumps = node("div", "wrong-jumps");
+      grade.wrong.forEach((result) => {
+        const button = node("button", "", String(result.number));
+        button.type = "button";
+        button.setAttribute("aria-label", "Xem câu sai " + result.number);
+        button.addEventListener("click", () => setReviewMode("wrong", result.number));
+        jumps.appendChild(button);
+      });
+      box.append(wrongLabel, jumps);
+    }
+    const toggles = node("div", "review-toggle");
+    const wrongButton = node("button", reviewMode === "wrong" ? "active" : "", "CÂU SAI (" + grade.wrong.length + ")");
+    wrongButton.type = "button";
+    wrongButton.hidden = grade.wrong.length === 0;
+    wrongButton.setAttribute("aria-pressed", String(reviewMode === "wrong"));
+    wrongButton.addEventListener("click", () => setReviewMode("wrong"));
+    const allButton = node("button", reviewMode === "all" ? "active" : "", "TẤT CẢ (" + grade.total + ")");
+    allButton.type = "button";
+    allButton.setAttribute("aria-pressed", String(reviewMode === "all"));
+    allButton.addEventListener("click", () => setReviewMode("all"));
+    toggles.append(wrongButton, allButton);
+    box.appendChild(toggles);
+    target.appendChild(box);
+  }
+
+  function renderDelivery() {
+    const target = $("delivery-status");
+    target.replaceChildren();
+    const pending = !!attempt && ["sending", "pending"].includes(attempt.delivery && attempt.delivery.state);
+    $("new-attempt").disabled = pending;
+    $("new-attempt").textContent = pending ? "ĐANG LƯU ĐIỂM…" : "LÀM MỘT LƯỢT MỚI ↻";
+    const state = attempt.delivery && attempt.delivery.state;
+    target.hidden = !attempt || !attempt.submittedAt || !["unconfirmed", "not-configured", "test-mode"].includes(state);
+    if (target.hidden) return;
+    const messages = {
+      unconfirmed: ["Chưa lưu được điểm", "Vui lòng kiểm tra mạng hoặc báo giáo viên."],
+      "not-configured": ["Chưa lưu được điểm", "Vui lòng báo giáo viên."],
+      "test-mode": ["CHẾ ĐỘ KIỂM THỬ — không ghi điểm", ""]
+    };
+    const message = messages[state] || messages.unconfirmed;
+    target.className = "delivery" + (["unconfirmed", "not-configured"].includes(state) ? " is-warning" : "");
+    target.appendChild(node("strong", "", message[0]));
+    if (message[1]) target.appendChild(node("span", "", message[1]));
+  }
+
+  async function withSubmissionLock(action) {
+    if (navigator.locks && typeof navigator.locks.request === "function") {
+      let actionStarted = false;
+      try {
+        return await navigator.locks.request(storageBase + ":submit:" + attempt.id, { mode: "exclusive" }, () => {
+          actionStarted = true;
+          return action();
+        });
+      } catch (error) {
+        if (actionStarted) throw error;
+        // Some embedded/partitioned contexts expose Web Locks but reject access.
+        return action();
+      }
+    }
+    return action();
+  }
+
+  async function submitAttempt(event) {
+    event.preventDefault();
+    if (!attempt || attempt.submittedAt || submitting) return;
+    $("form-error").hidden = true;
+    if (answeredCount() !== questions.length) {
+      $("form-error").textContent = "Bạn cần trả lời đủ toàn bộ câu trước khi chấm bài.";
+      $("form-error").hidden = false;
+      const missing = questions.find((question) => !plainText(attempt.answers[String(question.number)]));
+      const input = missing && $("answer-" + missing.number);
+      if (input) input.focus();
+      return;
+    }
+    submitting = true;
+    renderAnswers();
+    let shouldSend = false;
+    try {
+      shouldSend = await withSubmissionLock(() => {
+        const saved = readStorage(attemptKey(attempt.id));
+        if (validStoredAttempt(saved) && saved.submittedAt) {
+          attempt = saved;
+          if (["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) attempt.delivery = { state: "unconfirmed", reason: "already-submitted" };
+          return false;
+        }
+        const grade = globalThis.RI2Grading.gradeAttempt(unit, attempt.answers);
+        if (!grade.complete) throw new Error("incomplete");
+        attempt.grade = grade;
+        attempt.submittedAt = new Date().toISOString();
+        attempt.delivery = { state: "sending", attemptedAt: attempt.submittedAt };
+        persist();
+        return true;
+      });
+    } catch (_) {
+      $("form-error").textContent = "Chưa thể chấm bài. Các câu trả lời vẫn được giữ; vui lòng kiểm tra lại hoặc báo giáo viên.";
+      $("form-error").hidden = false;
+    } finally {
+      submitting = false;
+      renderAnswers();
+      if (attempt.submittedAt) {
+        $("answer-scroll").scrollTop = 0;
+        $("answer-scroll").focus({ preventScroll: true });
+      }
+    }
+    if (shouldSend) await sendScore(attempt.id);
+  }
+
+  function configuredFormSink() {
+    if (course.testing === true) return null;
+    const sink = course.scoreSink;
+    if (!sink || sink.kind !== "google-form" || !sink.entries || typeof sink.formResponseUrl !== "string") return null;
+    try {
+      const url = new URL(sink.formResponseUrl);
+      if (url.protocol !== "https:" || url.hostname !== "docs.google.com" || !/^\/forms\/d\/(?:e\/)?[^/]+\/formResponse\/?$/.test(url.pathname)) return null;
+      const required = ["name", "total", "assignmentCode", "lesson", "activity", "className", "percent", "score", "wrong"];
+      if (required.some((field) => !/^entry\.\d+$/.test(sink.entries[field] || ""))) return null;
+      return sink;
+    } catch (_) { return null; }
+  }
+
+  function scoreBody(sink, snapshot) {
+    const grade = snapshot.grade;
+    const values = {
+      name: snapshot.identity.name,
+      className: snapshot.identity.className,
+      total: String(grade.total),
+      assignmentCode: plainText(unit.testCode),
+      lesson: unitLabel(),
+      activity: "Làm lại đề · Lượt " + snapshot.number + " · Mã lượt " + snapshot.id + " · " + snapshot.submittedAt,
+      percent: String(grade.percent),
+      score: String(grade.score),
+      wrong: grade.wrong.length ? grade.wrong.map((result) => "Câu " + result.number + ": " + plainText(result.actual) + " → " + plainText(result.answer)).join("\n") : "Không có câu sai"
+    };
+    const body = new URLSearchParams();
+    Object.keys(values).forEach((field) => body.set(sink.entries[field], values[field]));
+    // Only use additional form mappings when explicitly supplied by the course configuration.
+    const optional = { attemptId: snapshot.id, attemptNumber: String(snapshot.number), submittedAt: snapshot.submittedAt, startedAt: snapshot.startedAt };
+    Object.keys(optional).forEach((field) => { if (/^entry\.\d+$/.test(sink.entries[field] || "")) body.set(sink.entries[field], optional[field]); });
+    return body;
+  }
+
+  async function sendScore(id) {
+    if (!attempt || attempt.id !== id || !attempt.submittedAt) return;
+    if (course.testing === true) {
+      attempt.delivery = { state: "test-mode" };
+      persist();
+      renderDelivery();
+      return;
+    }
+    const sink = configuredFormSink();
+    if (!sink) {
+      attempt.delivery = { state: "not-configured" };
+      persist();
+      renderDelivery();
+      return;
+    }
+    const snapshot = JSON.parse(JSON.stringify(attempt));
+    const controller = typeof AbortController === "function" ? new AbortController() : null;
+    const timeout = controller ? setTimeout(() => controller.abort(), 25000) : null;
+    try {
+      // Google Forms is intentionally no-cors: an opaque response is NOT a storage confirmation.
+      await fetch(sink.formResponseUrl, { method: "POST", mode: "no-cors", credentials: "omit", body: scoreBody(sink, snapshot), ...(controller ? { signal: controller.signal } : {}) });
+      snapshot.delivery = { state: "sent-unverified", attemptedAt: snapshot.delivery.attemptedAt, requestFinishedAt: new Date().toISOString() };
+    } catch (_) {
+      snapshot.delivery = { state: "unconfirmed", attemptedAt: snapshot.delivery.attemptedAt, reason: "network" };
+    } finally {
+      if (timeout !== null) clearTimeout(timeout);
+    }
+    try { localStorage.setItem(attemptKey(id), JSON.stringify(snapshot)); } catch (_) { storageAvailable = false; }
+    if (attempt && attempt.id === id) {
+      attempt.delivery = snapshot.delivery;
+      persist();
+      renderDelivery();
+    }
+  }
+
+  function startNewAttempt() {
+    if (!attempt || !attempt.submittedAt || submitting || ["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) return;
+    attempt = createAttempt(Number(attempt.number || 1) + 1);
+    reviewMode = "wrong";
+    persist({ makeCurrent: true });
+    $("form-error").hidden = true;
+    renderAnswers();
+    $("answer-scroll").scrollTop = 0;
+    const first = questions[0] && $("answer-" + questions[0].number);
+    if (first) first.focus({ preventScroll: true });
+  }
+
+  function receiveStorageUpdate(event) {
+    if (!attempt || !storageBase || event.key !== attemptKey(attempt.id) || !event.newValue) return;
+    try {
+      const saved = JSON.parse(event.newValue);
+      if (!validStoredAttempt(saved) || !saved.submittedAt) return;
+      attempt = saved;
+      if (["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) attempt.delivery = { state: "unconfirmed", reason: "another-tab" };
+      renderAnswers();
+    } catch (_) { /* Ignore unrelated or incomplete browser-storage events. */ }
+  }
+
+  initialize();
+}());
+</script>
+<script src="../vf-course-navigation.53e975c9a910.js" defer data-vf-course-navigation></script></body>
+</html>
