@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Reading Intensive · Làm lại đề</title>
+  <style>
+    :root{color-scheme:light;--navy:#142b43;--navy-deep:#0d2135;--teal:#087f83;--teal-dark:#06686b;--teal-light:#e8f6f4;--ink:#22374a;--muted:#657789;--line:#dbe5eb;--paper:#fff;--canvas:#eef3f6;--green:#18754b;--green-bg:#edf8f1;--red:#ab3c3c;--red-bg:#fff3f1;--amber:#855d16;--amber-bg:#fff8e9;--radius:18px;--shadow:0 12px 36px rgba(20,43,67,.07)}
+    *{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--canvas)}body{font-size:16px;line-height:1.5}button,input,select{font:inherit}button,input,select{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:3px solid #36b7bc;outline-offset:3px}button{border:0}button.primary{min-height:50px;padding:13px 22px;border-radius:12px;background:var(--teal);color:white;font-weight:750;letter-spacing:.01em;transition:background .15s,transform .15s}button.primary:hover:not(:disabled){background:var(--teal-dark)}button.primary:active:not(:disabled){transform:translateY(1px)}button.primary:disabled{background:#c4d2d9;color:#647887}button.secondary{min-height:46px;padding:11px 18px;border:1px solid var(--line);border-radius:11px;background:white;color:var(--navy);font-weight:700}button.secondary:hover{background:#f5f9fb}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .gate{min-height:100dvh;display:grid;place-items:center;padding:32px 20px;background:linear-gradient(145deg,#edf4f6 0%,#f8fbfc 58%,#e4f2f0 100%)}.gate-card{width:min(100%,560px);padding:36px;border:1px solid rgba(255,255,255,.95);border-radius:24px;background:white;box-shadow:0 24px 70px rgba(20,43,67,.12)}.brand-line{display:flex;align-items:center;gap:12px;color:var(--navy);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.brand-mark{display:grid;place-items:center;width:43px;height:43px;border-radius:12px;background:var(--navy);color:white;letter-spacing:-.03em;font-size:17px}.eyebrow{margin:26px 0 8px;color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.gate h1{margin:0;color:var(--navy);font-size:clamp(27px,4vw,36px);line-height:1.16;letter-spacing:-.04em}.gate-subtitle{margin:12px 0 25px;color:var(--muted);line-height:1.65}.gate-facts{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 25px}.gate-facts span{padding:5px 10px;border-radius:8px;background:#f0f5f7;color:#536b7d;font-size:12px;font-weight:700}.identity-form{display:grid;gap:17px}.field{display:grid;gap:7px}.field label{color:var(--navy);font-size:14px;font-weight:750}.field input,.field select{width:100%;height:52px;border:1px solid #c8d6df;border-radius:11px;padding:0 14px;background:#fbfdfe;color:var(--ink)}.field input::placeholder{color:#8a9ba9}.identity-form .primary{margin-top:4px}.gate-note{margin:19px 0 0;font-size:12px;color:var(--muted);line-height:1.65}.gate-error{padding:13px 15px;margin:18px 0 0;border:1px solid #edd5ba;border-radius:10px;background:var(--amber-bg);color:var(--amber);font-size:14px}.noscript{max-width:560px;margin:25px auto;padding:20px;background:white;border:1px solid var(--line);border-radius:12px}
+    .app{height:100dvh;min-height:680px;display:flex;flex-direction:column;padding:18px 22px 22px;gap:16px;overflow:hidden}.app-header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex:0 0 auto}.app-title{display:flex;align-items:center;gap:13px;min-width:0}.app-title .brand-mark{flex:0 0 auto;width:44px;height:44px}.app-kicker{margin:0 0 2px;color:var(--teal);font-size:10px;letter-spacing:.12em;font-weight:800;text-transform:uppercase}.app-header h1{margin:0;color:var(--navy);font-size:21px;line-height:1.25;letter-spacing:-.025em}.identity-badge{display:flex;align-items:center;gap:12px;max-width:42%;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.7)}.identity-badge strong{display:block;font-size:13px;overflow-wrap:anywhere}.identity-badge span{font-size:11px;font-weight:800;color:var(--teal);white-space:nowrap;border-left:1px solid #cddde3;padding-left:12px}.quiz-layout{display:grid;grid-template-columns:minmax(0,1.42fr) minmax(440px,.9fr);gap:16px;flex:1;min-height:0}.panel{display:flex;flex-direction:column;min-width:0;min-height:0;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);box-shadow:var(--shadow);overflow:hidden}.panel-header{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:62px;padding:15px 20px;border-bottom:1px solid var(--line);background:white;flex:0 0 auto}.panel-header h2{margin:0;font-size:15px;letter-spacing:-.01em;color:var(--navy)}.panel-header p{margin:2px 0 0;font-size:11px;color:var(--muted)}.panel-tag{color:var(--teal);background:var(--teal-light);padding:5px 8px;border-radius:7px;font-size:10px;font-weight:800;letter-spacing:.05em;white-space:nowrap}.document-body{position:relative;flex:1;min-height:0;background:#e6edf1}.document-frame{display:block;width:100%;height:100%;border:0;background:white}.document-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#f6f9fb;color:var(--muted);padding:24px;text-align:center;font-size:14px}.document-loading::before{content:"";width:27px;height:27px;border:3px solid #d8e6ea;border-top-color:var(--teal);border-radius:50%;animation:spin .9s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.document-note{flex:0 0 auto;margin:0;padding:7px 15px;color:#738391;background:#f8fafb;border-top:1px solid var(--line);font-size:10px;line-height:1.5}
+    .answers-panel{position:relative}.answer-progress{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);font-weight:700}.answer-progress strong{color:var(--teal);font-size:16px}.progress-track{height:4px;background:#e7eff2;flex:0 0 auto}.progress-fill{height:100%;width:0;background:var(--teal);transition:width .2s ease}.answer-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:19px 20px 24px;scrollbar-gutter:stable}.answer-intro{margin:0 0 18px;font-size:13px;color:var(--muted);line-height:1.65}.answer-section+.answer-section{margin-top:27px}.section-heading{margin-bottom:12px;padding:0 0 10px;border-bottom:1px solid var(--line)}.section-heading h3{margin:0;color:var(--navy);font-size:14px;font-weight:800}.section-heading p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.6;white-space:pre-line}.question-card{padding:14px;margin:0 0 11px;border:1px solid var(--line);border-radius:12px;background:#fff}.question-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.question-number{font-size:12px;font-weight:800;color:var(--navy)}.question-state{font-size:11px;font-weight:750}.question-card input[type=text],.question-card select{width:100%;min-height:48px;border:1px solid #c9d7df;border-radius:9px;padding:11px 12px;background:#fbfdfe;color:var(--ink);font-size:16px}.question-card input::placeholder{font-size:13px;color:#94a1ac}.question-card input:disabled,.question-card select:disabled{opacity:1;color:var(--ink);-webkit-text-fill-color:var(--ink);background:#f5f8fa}.choice-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.choice{position:relative;display:block}.choice input{position:absolute;opacity:0;width:1px;height:1px}.choice span{display:flex;align-items:center;justify-content:center;min-height:46px;padding:9px 5px;border:1px solid #ccdae2;border-radius:9px;background:#fbfdfe;color:#536c80;font-size:15px;font-weight:750}.choice input:checked+span{border-color:var(--teal);background:var(--teal-light);color:var(--teal-dark);box-shadow:inset 0 0 0 1px var(--teal)}.choice input:focus-visible+span{outline:3px solid #36b7bc;outline-offset:2px}.choice input:disabled+span{cursor:default}.question-card.is-correct{border-color:#b9ddc8;background:#fbfefc}.question-card.is-correct .question-state{color:var(--green)}.question-card.is-wrong{border-color:#ebc3bd;background:#fffdfc}.question-card.is-wrong .question-state{color:var(--red)}.answer-review{margin-top:13px;padding-top:13px;border-top:1px solid #dde6e9}.answer-key{display:grid;gap:4px;margin:0 0 12px;font-size:13px;overflow-wrap:anywhere}.answer-key b{color:var(--green);font-size:14px}.answer-key small{color:var(--muted);line-height:1.5}.review-label{margin:13px 0 5px;color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.035em;text-transform:uppercase}.explanation,.question-context{margin:0;color:#41566a;font-size:13px;line-height:1.75;white-space:pre-wrap;overflow-wrap:anywhere}.question-context{padding:10px 12px;border-left:3px solid #a7cbcd;background:#f1f7f7;color:#567071;font-size:12px}.result-summary{margin:0 0 22px;padding:20px;border-radius:14px;background:var(--navy);color:white}.result-summary .result-kicker{margin:0;color:#9cdddc;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.result-numbers{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin-top:8px}.result-score{font-size:43px;line-height:1.1;font-weight:800;letter-spacing:-.05em}.result-score small{font-size:19px;color:#afc0ce;font-weight:500;letter-spacing:0}.result-percent{font-size:22px;color:#9cdddc;font-weight:750}.result-summary h3{margin:12px 0 5px;font-size:16px;font-weight:700}.result-summary p{margin:0;color:#c4d3de;font-size:12px;line-height:1.65}.attempt-reference{margin-top:12px!important;padding-top:10px;border-top:1px solid #345069;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:10px!important;overflow-wrap:anywhere}.answer-footer{padding:15px 20px 17px;border-top:1px solid var(--line);background:#fbfdfe;flex:0 0 auto}.answer-footer .primary{width:100%;font-size:14px}.footer-hint{margin:8px 0 0;text-align:center;color:var(--muted);font-size:11px;line-height:1.5}.delivery{margin:0 0 12px;padding:11px 12px;border:1px solid #d3e6e5;border-radius:10px;background:#eef8f7;color:#386768;font-size:11px;line-height:1.6}.delivery strong{display:block;font-size:12px;color:#175f62;margin-bottom:2px}.delivery.is-warning{border-color:#ead9b6;background:var(--amber-bg);color:var(--amber)}.delivery.is-warning strong{color:#795315}.storage-warning{margin:0 0 12px;padding:10px 12px;border-radius:9px;background:var(--amber-bg);color:var(--amber);font-size:11px;line-height:1.6}.form-error{margin:0 0 10px;color:var(--red);font-size:12px;font-weight:600}.loading-shimmer{animation:none}
+    .answer-key-row{display:block}.answer-key .submitted-answer{color:var(--red)}.explanation{padding:13px 14px;border-left:4px solid var(--teal);border-radius:0 9px 9px 0;background:var(--teal-light);color:var(--ink);font-size:15px;line-height:1.72}.result-wrong-label{margin-top:15px!important;color:#9cdddc!important;font-size:10px!important;font-weight:800;letter-spacing:.1em}.wrong-jumps{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}.wrong-jumps button,.review-toggle button{min-height:34px;border:1px solid #496178;border-radius:8px;background:#203b54;color:#fff;font-size:11px;font-weight:800}.wrong-jumps button{min-width:36px;padding:0 8px}.wrong-jumps button:hover,.review-toggle button:hover{background:#2a4b68}.review-toggle{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:14px;padding-top:14px;border-top:1px solid #345069}.review-toggle button{padding:0 10px}.review-toggle button.active{border-color:#9cdddc;background:#e8f6f4;color:var(--teal-dark)}
+    .test-mode-banner{position:sticky;top:0;z-index:50;min-height:38px;display:grid;place-items:center;padding:8px 12px;border-bottom:1px solid #e7cd92;background:#fff0c9;color:#704d09;font-size:12px;line-height:21px;font-weight:800;text-align:center}.testing .app{height:calc(100dvh - 38px)}.testing .gate{min-height:calc(100dvh - 38px)}
+    @media(max-width:920px){.app,.testing .app{height:auto;min-height:100dvh;overflow:visible;padding:14px;gap:14px}.app-header{align-items:flex-start;gap:12px}.app-header h1{font-size:18px}.identity-badge{max-width:43%;padding:7px 9px;flex-direction:column;align-items:flex-start;gap:3px}.identity-badge span{border:0;padding:0;font-size:10px}.identity-badge strong{font-size:11px}.quiz-layout{display:flex;flex-direction:column;gap:14px}.document-panel{height:58dvh;min-height:360px;max-height:650px;flex:none}.answers-panel{height:78dvh;min-height:570px;max-height:950px;flex:none}.answer-scroll{padding:17px}.panel-header{padding:13px 17px;min-height:58px}.answer-footer{padding:13px 17px 15px}.panel{border-radius:15px}.document-note{font-size:9px}}
+    @media(max-width:480px){.gate{padding:18px 14px}.gate-card{padding:27px 22px;border-radius:20px}.gate h1{font-size:29px}.gate-subtitle{font-size:14px}.app{padding:10px;gap:12px}.app-title{gap:9px}.app-title .brand-mark{width:35px;height:35px;font-size:14px;border-radius:10px}.app-kicker{font-size:8px;letter-spacing:.07em}.app-header h1{font-size:16px}.identity-badge{max-width:39%;padding:6px 8px}.identity-badge strong{font-size:10px}.panel-header{padding:12px 14px}.panel-header h2{font-size:14px}.panel-tag{font-size:9px}.answer-scroll{padding:15px 13px}.question-card{padding:12px}.answer-footer{padding:12px 13px 14px}.choice-grid{gap:7px}.choice span{min-height:45px}.result-summary{padding:17px}.result-score{font-size:39px}.document-panel{height:54dvh;min-height:340px}.answers-panel{height:82dvh;min-height:580px}.answer-progress{gap:5px;font-size:11px}.answer-progress strong{font-size:15px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+  </style></head>
+<body>
+  <aside class="test-mode-banner" id="test-mode-banner" role="status" hidden>CHẾ ĐỘ KIỂM THỬ — không ghi điểm</aside>
+  <section class="gate" id="identity-gate" aria-labelledby="gate-title">
+    <div class="gate-card">
+      <div class="brand-line"><span class="brand-mark" aria-hidden="true">RI2</span><span id="gate-course">READING INTENSIVE</span></div>
+      <h1 id="gate-title" style="margin:26px 0 18px">Sẵn sàng bắt đầu?</h1>
+      <div class="gate-facts"><span id="gate-question-count">Phiếu trả lời</span></div>
+      <form class="identity-form" id="identity-form" novalidate>
+        <div class="field"><label for="student-name">Họ và tên</label><input id="student-name" name="student-name" type="text" maxlength="120" autocomplete="name" placeholder="Nhập đầy đủ họ và tên" required></div>
+        <div class="field"><label for="student-class">Lớp</label><select id="student-class" name="student-class" required><option value="">— Chọn lớp FIGHTER —</option></select></div>
+        <button class="primary" id="open-quiz" type="submit">MỞ ĐỀ & PHIẾU TRẢ LỜI →</button>
+      </form>
+      <p class="gate-error" id="gate-error" role="alert" hidden></p>
+    </div>
+  </section>
+
+  <main class="app" id="quiz-app" hidden>
+    <header class="app-header">
+      <div class="app-title"><span class="brand-mark" aria-hidden="true">RI2</span><div><p class="app-kicker" id="app-course">READING INTENSIVE</p><h1 id="app-title">Làm lại đề</h1></div></div>
+      <div class="identity-badge"><strong id="identity-name"></strong><span id="identity-class"></span></div>
+    </header>
+    <div class="quiz-layout">
+      <section class="panel document-panel" aria-labelledby="document-heading">
+        <div class="panel-header"><h2 id="document-heading">Đề bài</h2></div>
+        <div class="document-body" id="document-body"><div class="document-loading" id="document-loading" role="status">Đang tải đề bài…</div></div>
+      </section>
+      <form class="panel answers-panel" id="answer-form" novalidate aria-labelledby="answers-heading">
+        <div class="panel-header"><div><h2 id="answers-heading">Phiếu trả lời</h2><p id="attempt-label">Lượt 1</p></div><div class="answer-progress"><strong id="answered-count">0</strong><span id="total-count"></span></div></div>
+        <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+        <div class="answer-scroll" id="answer-scroll" tabindex="-1">
+          <p class="storage-warning" id="storage-warning" role="status" hidden></p>
+          <div id="result-summary" hidden></div>
+          <div id="answer-sections"></div>
+        </div>
+        <footer class="answer-footer">
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <div class="delivery" id="delivery-status" role="status" aria-live="polite" hidden></div>
+          <button class="primary" id="submit-answers" type="submit" disabled>ĐIỀN ĐỦ CÁC CÂU ĐỂ NỘP</button>
+          <button class="primary" id="new-attempt" type="button" hidden>LÀM MỘT LƯỢT MỚI ↻</button>
+        </footer>
+      </form>
+    </div>
+  </main>
+  <noscript><p class="noscript">Trang này cần JavaScript để mở đề và chấm bài. Vui lòng bật JavaScript hoặc báo giáo viên.</p></noscript>
+
+  <!-- Build contract: inject student-only, allowlisted JSON; remove teacher/source identifiers.
+       Escape every '<' as '\u003c' in JSON before replacing the two JSON placeholders. -->
+  <script id="ri2-unit-data" type="application/json">{"unit":3,"title":"READING INTENSIVE 2 · UNIT 3","testCode":"RI2-U03","total":60,"studentPreviewUrl":"https://docs.google.com/document/d/1DKQmia2_Dh_0ZBFcgGwsjWlQ5OuNqUHOpHw0sDf_46g/preview","sections":[{"exercise":1,"count":15,"inputKind":"matching","choices":["A","B","C","D","E","F","G","H","I","K","L","M","O","P","Q"],"instruction":"Ex 1: Match the words in Column A with their correct definitions in Column B. Write the letter of the definition next to the corresponding word.","questions":[{"number":1,"answer":"M","context":"archeology (n)","explanation":"Archeology (thường viết archaeology) là danh từ chỉ ngành nghiên cứu con người và văn hóa quá khứ qua công trình, mộ, công cụ cùng các di vật. Định nghĩa M nêu đúng đối tượng và mục đích nghiên cứu này, nên là cặp tương ứng."},{"number":2,"answer":"I","context":"evidence (n)","explanation":"Evidence là danh từ không đếm được, nghĩa là bằng chứng—các sự kiện hoặc dấu hiệu giúp chứng minh điều gì đó. I diễn đạt chính xác chức năng ‘help to prove something’; cần phân biệt với clue, một manh mối giúp lần ra lời giải."},{"number":3,"answer":"E","context":"clue (n)","explanation":"Clue là danh từ đếm được chỉ một dữ kiện/manh mối giúp giải quyết vấn đề hoặc tìm ra câu trả lời. Định nghĩa E tập trung đúng chức năng hỗ trợ khám phá lời giải, nên ghép với clue thay vì nghĩa rộng hơn của evidence."},{"number":4,"answer":"H","context":"conduct (v)","explanation":"Conduct ở vai trò động từ nghĩa là tổ chức và thực hiện một hoạt động có hệ thống, như cuộc điều tra hoặc thí nghiệm. H nêu đúng cả cấu trúc conduct an investigation/experiment, nên là định nghĩa phù hợp."},{"number":5,"answer":"P","context":"analysis (n)","explanation":"Analysis là danh từ chỉ quá trình xem xét chi tiết để hiểu một vấn đề hoặc nhận ra các thành phần quan trọng. P diễn đạt đầy đủ quá trình ấy; A lại là động từ investigate, không phải danh từ chỉ sự phân tích."},{"number":6,"answer":"O","context":"fracture (n)","explanation":"Fracture là danh từ chỉ vết nứt/gãy, đặc biệt ở xương hoặc cấu trúc như đá. Định nghĩa O lặp đúng cả nghĩa chính lẫn các ví dụ điển hình, nên khớp trực tiếp."},{"number":7,"answer":"L","context":"burial (n)","explanation":"Burial là danh từ chỉ hành động/chính lễ chôn cất thi thể trong đất hoặc trong mộ. L mô tả đúng hành động đặt người chết vào ground/tomb; C lại định nghĩa chính nơi chôn là tomb."},{"number":8,"answer":"Q","context":"beyond (pre)","explanation":"Beyond là giới từ chỉ ở phía xa hơn hoặc vượt quá một ranh giới/mốc. Q (‘on or to the farther side of; farther than’) diễn giải chính xác quan hệ không gian hoặc mức độ này."},{"number":9,"answer":"B","context":"flee (v)","explanation":"Flee là động từ nghĩa là chạy trốn khỏi nơi hoặc tình huống nguy hiểm. B nêu đúng hành động ‘run away ... from danger’; từ thường dùng nội động từ (flee) hoặc ngoại động từ trực tiếp (flee a place)."},{"number":10,"answer":"F","context":"speculation (n)","explanation":"Speculation là danh từ chỉ sự phỏng đoán khi chưa có đủ thông tin để chắc chắn. Định nghĩa F nhấn đúng cả hành động đoán và mức độ thiếu bằng chứng, nên phân biệt được với analysis dựa trên xem xét chi tiết."},{"number":11,"answer":"A","context":"investigate (v)","explanation":"Investigate là động từ nghĩa là điều tra/xem xét cẩn thận một tình huống, vấn đề hoặc tội phạm để tìm sự thật. A nêu đúng hành động, đối tượng và mục đích đó."},{"number":12,"answer":"D","context":"distinguish (v)","explanation":"Distinguish là động từ chỉ việc nhận ra hoặc chỉ ra sự khác biệt giữa hai hay nhiều người/vật. D diễn đạt trực tiếp cấu trúc distinguish between A and B; không phải hành động tách vật lý như isolate."},{"number":13,"answer":"K","context":"religious (a)","explanation":"Religious là tính từ nghĩa là thuộc tôn giáo hoặc có niềm tin tôn giáo mạnh. K bao quát cả hai cách dùng này, nên đúng về nghĩa và từ loại."},{"number":14,"answer":"G","context":"attach (v)","explanation":"Attach là động từ nghĩa là gắn, buộc hoặc nối một vật với vật khác. G liệt kê đúng ba động tác ‘fasten, join, or connect’, nên là định nghĩa tương ứng."},{"number":15,"answer":"C","context":"tomb (n)","explanation":"Tomb là danh từ chỉ ngôi mộ lớn hoặc buồng/công trình nơi người chết được chôn. C định nghĩa chính xác vật/nơi chôn cất này; cần phân biệt với burial, hành động chôn cất."}]},{"exercise":2,"count":10,"inputKind":"text","choices":[],"instruction":"Ex 2: Fill in the blanks with the following words: archaeologist, attempt, deal, carry, analyze, vulnerable, rule, indicate, exposure, likelihood","questions":[{"number":16,"answer":"indicate","context":"The preliminary results __________ that the experiment was successful, but further testing is required.","explanation":"Indicate là động từ, nghĩa là cho thấy hoặc chỉ ra. Chủ ngữ số nhiều The preliminary results đi với nguyên mẫu hiện tại indicate: “The preliminary results indicate that the experiment was successful”; vế sau về kiểm tra thêm cho thấy đây mới là dấu hiệu ban đầu."},{"number":17,"answer":"vulnerable","context":"Some species are __________ to diseases due to their weakened immune systems.","explanation":"Vulnerable là tính từ, nghĩa là dễ bị tổn thương hoặc mắc bệnh. Sau are cần bổ ngữ tính từ: “Some species are vulnerable to diseases...”; cụm cố định vulnerable to và nguyên nhân hệ miễn dịch yếu xác nhận lựa chọn."},{"number":18,"answer":"archaeologists","context":"The __________ was able to uncover new artifacts at the ancient site after months of excavation.","explanation":"Archaeologist là danh từ chỉ nhà khảo cổ; ngữ cảnh khai quật di vật tại một địa điểm cổ đại đòi hỏi nghề này. Tuy nhiên câu có The ... was able, nên về hòa hợp số phải là số ít archaeologist; khóa nguồn lại giữ dạng số nhiều archaeologists."},{"number":19,"answer":"analyze","context":"Experts must __________ the data before making any conclusions about the patterns.","explanation":"Analyze là động từ nghĩa là phân tích. Sau động từ khuyết thiếu must dùng nguyên mẫu: “Experts must analyze the data before making any conclusions”; thứ tự phân tích dữ liệu trước khi kết luận đúng với quy trình nghiên cứu."},{"number":20,"answer":"attempt","context":"The company made an __________ to improve customer service by launching a new training program.","explanation":"Attempt là danh từ đếm được, nghĩa là một nỗ lực/lần cố gắng. Cấu trúc “made an attempt to improve customer service” dùng make an attempt to + verb; chương trình đào tạo mới là biện pháp của nỗ lực ấy."},{"number":21,"answer":"rule","context":"We can __________ out the possibility of foul play in this case after reviewing the evidence.","explanation":"Cụm động từ rule out nghĩa là loại trừ một khả năng sau khi xem xét bằng chứng. Sau can dùng nguyên mẫu: “We can rule out the possibility of foul play...”; out có sẵn sau chỗ trống là dấu hiệu collocation quyết định."},{"number":22,"answer":"likelihood","context":"There is a high __________ of success if the new treatment is administered at the early stages of the disease.","explanation":"Likelihood là danh từ nghĩa là khả năng/xác suất một việc xảy ra. Cụm “a high likelihood of success” hoàn chỉnh theo mẫu likelihood of + noun; điều kiện điều trị ở giai đoạn sớm làm xác suất thành công cao."},{"number":23,"answer":"deal","context":"The scientist has done a great __________ of research on climate change over the past decade.","explanation":"Cụm định lượng a great deal of + uncountable noun nghĩa là rất nhiều. “The scientist has done a great deal of research...” đúng vì research không đếm được; deal là danh từ nhưng cả cụm mới mang nghĩa số lượng."},{"number":24,"answer":"carry","context":"To determine the cause of the issue, the team will __________ out an in-depth study of the materials.","explanation":"Cụm động từ carry out nghĩa là tiến hành/thực hiện. Sau will dùng nguyên mẫu: “the team will carry out an in-depth study”; danh từ study là đối tượng thường đi với conduct/carry out."},{"number":25,"answer":"exposure","context":"The __________ to toxic chemicals in the workplace poses a serious health risk to employees.","explanation":"Exposure là danh từ chỉ sự tiếp xúc/phơi nhiễm. Chủ ngữ đầy đủ “The exposure to toxic chemicals in the workplace” đi với poses; cụm exposure to + harmful substance giải thích nguy cơ sức khỏe nghiêm trọng."}]},{"exercise":3,"count":10,"inputKind":"mcq","choices":["A","B","C","D"],"instruction":"Ex 3: Read the passage below and choose the correct word from the options to fill in the blanks.","questions":[{"number":26,"answer":"D","context":"The (26) ______ of pyramids around the world is a testament to humanity’s ability to construct monumental structures that endure through time.","explanation":"The discovery of pyramids nghĩa là việc phát hiện các kim tự tháp, và được xem là bằng chứng cho năng lực xây dựng của con người. Invention là phát minh, exploration là thám hiểm, còn foundation là nền móng/sự thành lập, đều không phù hợp với các công trình đã tồn tại và được tìm thấy."},{"number":27,"answer":"B","context":"The most famous pyramids are (27) ______ of ancient Egypt, which have long captured the imagination of historians and archaeologists.","explanation":"Cấu trúc thay thế danh từ số nhiều là The most famous pyramids are those of ancient Egypt: those thay cho pyramids để tránh lặp. One sai số, còn that là số ít/đại từ quan hệ và không thể thay danh từ số nhiều ở đây."},{"number":28,"answer":"C","context":"The Great Pyramid of Giza, (28) ______ around 2580–2560 BCE during the reign of Pharaoh Khufu, stands as one of the Seven Wonders of the Ancient World.","explanation":"Cụm built around 2580–2560 BCE... là mệnh đề phân từ quá khứ rút gọn, bổ nghĩa bị động cho The Great Pyramid of Giza. A to be built chỉ mục đích/kỳ vọng, B chủ động sai nghĩa, còn D was built sẽ tạo hai động từ hữu hạn nối bằng dấu phẩy trước stands."},{"number":29,"answer":"A","context":"Its precision and scale continue to intrigue researchers, (29) ______ questions about the technology and manpower used to build it.","explanation":"Raising questions nghĩa là làm nảy sinh/đặt ra các câu hỏi; cụm V-ing sau dấu phẩy chỉ kết quả của việc độ chính xác và quy mô vẫn gây tò mò. Rising là tự tăng lên, arising thường mô tả câu hỏi tự xuất hiện, còn arousing cần tân ngữ như interest/curiosity, không đi tự nhiên với questions ở đây."},{"number":30,"answer":"D","context":"(30) ______ , pyramids are not unique to Egypt.","explanation":"Đoạn trước tập trung kim tự tháp Ai Cập; câu mới chuyển ý rằng kim tự tháp không chỉ có ở Ai Cập rồi đưa ví dụ Mesoamerica. However diễn tả tương phản phù hợp; Then chỉ trình tự, Therefore chỉ kết quả và Moreover chỉ bổ sung cùng hướng."},{"number":31,"answer":"C","context":"Built around 200 CE, (31) ______ is one of the largest pyramids in the world.","explanation":"Sau cụm phân từ “Built around 200 CE,” cần đại từ It làm chủ ngữ cho is one of the largest pyramids, quy chiếu Pyramid of the Sun. They sai số; What và Which sẽ mở mệnh đề phụ nhưng câu không có mệnh đề chính tương ứng."},{"number":32,"answer":"A","context":"In Sudan, the Kingdom of Kush built pyramids at sites like Meroë, (32) ______ over 200 pyramids have been uncovered, many smaller than those in Egypt but still monumental in their own right.","explanation":"Tiền ngữ sites like Meroë chỉ nơi chốn và mệnh đề sau đã đủ chủ-vị over 200 pyramids have been uncovered; vì vậy dùng trạng từ quan hệ where. Which/that phải giữ một chức năng danh từ trong mệnh đề, còn when chỉ thời gian."},{"number":33,"answer":"D","context":"These pyramids served as tombs for the royal family, showcasing the influence of Egyptian architecture (33) ______ Nubian culture.","explanation":"Cụm danh từ chuẩn là the influence of A on B: ảnh hưởng của kiến trúc Ai Cập đối với văn hóa Nubia. Vì of Egyptian architecture đã nêu nguồn ảnh hưởng, chỗ trống phải là on trước đối tượng chịu ảnh hưởng; to/with/in không đúng collocation này."},{"number":34,"answer":"C","context":"These structures have provided (34) ______ insights into ancient societies and continue to inspire curiosity and research into the (35) ______ in which ancient cultures approached engineering, astronomy, and ritual.","explanation":"Invaluable insights nghĩa là những hiểu biết cực kỳ quý giá, phù hợp với đóng góp của kim tự tháp cho việc nghiên cứu xã hội cổ đại. Valueless trái nghĩa; value là danh từ, còn overvalued hàm ý bị đánh giá cao quá mức mà đoạn không nói tới."},{"number":35,"answer":"C","context":"These structures have provided (34) ______ insights into ancient societies and continue to inspire curiosity and research into the (35) ______ in which ancient cultures approached engineering, astronomy, and ritual.","explanation":"Cấu trúc cố định the ways in which + clause nghĩa là những cách mà các nền văn hóa cổ tiếp cận kỹ thuật, thiên văn và nghi lễ. Means thường đi với by which, methods cần by/through which, còn processes in which đổi sang nghĩa quá trình tham gia."}]},{"exercise":4,"count":10,"inputKind":"text","choices":[],"instruction":"Ex 4: Fill in the blanks with ONE suitable word.","questions":[{"number":36,"answer":"has","context":"The discovery of Ötzi, the Iceman, in 1991 in the Alps (36) __________ significantly advanced our understanding of life in ancient Europe.","explanation":"Chủ ngữ trung tâm The discovery là số ít, và in 1991 nêu thời điểm phát hiện nhưng ảnh hưởng hiểu biết kéo đến hiện tại. Do đó hiện tại hoàn thành has significantly advanced phù hợp cả hòa hợp chủ-vị và ý nghĩa kéo dài."},{"number":37,"answer":"that","context":"Carbon dating revealed (37) __________ he lived over 5,300 years ago, making him the oldest preserved complete human body ever found.","explanation":"Sau revealed cần một mệnh đề danh từ làm tân ngữ: revealed that he lived over 5,300 years ago. That chỉ nối nội dung được phép định tuổi carbon cho thấy; nó không giữ vai trò chủ ngữ/tân ngữ bên trong mệnh đề."},{"number":38,"answer":"provided","context":"His body, perfectly preserved in ice, (38) __________ scientists with remarkable insights into his life.","explanation":"Giải thích của cô: insight (n) into st hiểu biết sâu về st\n\nCụm provide someone with something cho ta “His body ... provided scientists with remarkable insights into his life”. Sự bảo quản hoàn hảo đã cung cấp dữ liệu cho các nhà khoa học, và thì quá khứ provided thống nhất với câu chuyện phát hiện."},{"number":39,"answer":"showed / indicated","context":"Analysis of his tools, including a knife made of stone and an axe, (39) __________ he was likely a local leader, as well as a skilled hunter.","explanation":"Chủ ngữ Analysis of his tools là số ít và sự phân tích đã xảy ra trong quá khứ, nên showed hoặc indicated đều đúng. Mệnh đề theo sau “he was likely a local leader...” là kết luận mà các công cụ—đặc biệt chiếc rìu—cho thấy."},{"number":40,"answer":"which","context":"His diet, (40) __________ included bread and goat meat, further indicated that he resided in a village, offering a glimpse into his daily life.","explanation":"Sau dấu phẩy cần đại từ quan hệ which để thay His diet và làm chủ ngữ của included bread and goat meat. Đây là mệnh đề quan hệ không xác định bổ sung chi tiết; that thường không dùng sau dấu phẩy trong cấu trúc này."},{"number":41,"answer":"of / for","context":"In addition to his personal belongings, scientific research also uncovered evidence (41) __________ his violent death.","explanation":"Evidence of his violent death nghĩa là bằng chứng cho thấy cái chết bạo lực đã xảy ra; evidence for nhấn mạnh bằng chứng ủng hộ giả thuyết về cái chết ấy. Cả hai giới từ có thể nối evidence với cụm danh từ, dù of tự nhiên và trực tiếp hơn trong câu này."},{"number":42,"answer":"by","context":"An X-ray examination conducted in 2001 revealed that Ötzi was fatally injured (42) __________ an arrow wound beneath his left shoulder, inflicted from behind.","explanation":"Câu bị động was fatally injured by an arrow wound dùng by để nêu nguyên nhân/tác nhân gây thương tích. Chi tiết vết thương nằm dưới vai và bị bắn từ phía sau củng cố quan hệ này; with có thể nói công cụ trong cách viết khác nhưng không phải khóa ở đây."},{"number":43,"answer":"might / may","context":"Further analysis of his clothing in 2003 revealed traces of blood from other individuals, indicating he (43) __________ have been involved in a fight shortly before his demise.","explanation":"Trước have been involved cần động từ khuyết thiếu để tạo modal perfect. May/might have been involved diễn tả suy đoán về một việc trong quá khứ dựa trên vết máu của người khác; might thường cho mức chắc chắn thấp hơn một chút."},{"number":44,"answer":"while","context":"Some researchers initially speculated that he was fleeing from danger, but his stomach contents suggested he had just eaten, implying that he was attacked (44) __________ resting.","explanation":"While resting là mệnh đề trạng ngữ thời gian rút gọn từ while he was resting. Dạ dày cho thấy Ötzi vừa ăn nên các nhà nghiên cứu suy ra ông bị tấn công trong lúc nghỉ, thay vì đang bỏ chạy."},{"number":45,"answer":"on","context":"Today, Ötzi’s mysterious death continues to fascinate researchers, shedding light (45) __________ the struggles and challenges of life in the ancient world.","explanation":"Giải thích của cô: shed / throw / cast light on st\n\nCụm cố định shed light on something nghĩa là làm sáng tỏ/cung cấp hiểu biết về điều gì. “Shedding light on the struggles and challenges...” nói bí ẩn Ötzi giúp ta hiểu đời sống cổ đại; giới từ bắt buộc của cụm là on."}]},{"exercise":5,"count":15,"inputKind":"mcq","choices":["A","B","C","D"],"instruction":"Ex 5: Read the following passages and answer the questions.","questions":[{"number":46,"answer":"A","context":"Khía cạnh nào của nông nghiệp Hoa Kỳ thế kỷ 19 được thảo luận chính?","explanation":"Giải thích của cô: Khía cạnh nào của nông nghiệp Hoa Kỳ thế kỷ 19 được thảo luận chính?\n\nBài liên tục nối việc áp dụng máy tiết kiệm lao động với sản lượng tăng: máy gặt/đập trước và trong Nội chiến, cải tiến sau chiến tranh, rồi diện tích canh tác tăng cuối thế kỷ. A bao quát mạch này; B–D chỉ nói nội dung không có hoặc quá hẹp."},{"number":47,"answer":"C","context":"Từ \"crucial\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Từ \"crucial\" gần nghĩa nhất với từ nào?\n\nTrong “The most crucial factor behind this phenomenal upsurge”, crucial nghĩa là quan trọng nhất/then chốt. Important (C) gần nghĩa trực tiếp; obvious, unbelievable và desirable lần lượt chỉ sự rõ ràng, khó tin và đáng mong muốn."},{"number":48,"answer":"B","context":"Cụm \"avail themselves\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Cụm \"avail themselves\" gần nghĩa nhất với từ nào?\n\nCụm đầy đủ avail themselves of the new equipment nghĩa là tận dụng/sử dụng thiết bị mới. Make use (B), hiểu đầy đủ là make use of, giữ đúng nghĩa; take care, get rid và do more không tương đương."},{"number":49,"answer":"D","context":"Tại sao Nội chiến (Civil War) là động lực cho cơ giới hóa?","explanation":"Giải thích của cô: Tại sao Nội chiến (Civil War) là động lực cho cơ giới hóa?\n\nBài nêu phần lớn lực lượng lao động bị gọi nhập ngũ, nên nông dân miền Bắc vội dùng thiết bị tiết kiệm lao động. Máy móc cần để thay thế lực lượng lao động đang biến mất (D); các phương án về nhu cầu ngũ cốc của quân đội, công nghệ chiến tranh hay giảm giá không phải lý do tác giả đưa ra."},{"number":50,"answer":"C","context":"Phát biểu nào đúng về máy móc sau Nội chiến?","explanation":"Giải thích của cô: Phát biểu nào đúng về máy móc sau Nội chiến?\n\nĐầu đoạn 2 nói sau năm 1865, máy móc “became ever more important” và thiết bị cải tiến “was continually introduced”. Vì vậy việc dùng máy nông nghiệp tiếp tục tăng (C); bài không nói nông dân quay lại lao động thủ công hay máy kém chất lượng làm chậm sản xuất."},{"number":51,"answer":"A","context":"Máy gặt đập (combines) và máy gặt tự buộc giống nhau vì đều?","explanation":"Giải thích của cô: Máy gặt đập (combines) và máy gặt tự buộc giống nhau vì đều?\n\nMáy gặt tự buộc vừa cắt, gom và buộc thân lúa; combine vừa gặt, đập và đóng bao trong một hoạt động. Cả hai thực hiện nhiều hơn một chức năng (A); bài không cho thấy chúng cần ít năng lượng, chỉ dùng ở California hay cần đúng hai người."},{"number":52,"answer":"D","context":"Từ \"they\" ám chỉ cái gì?","explanation":"Giải thích của cô: Từ \"they\" ám chỉ cái gì?\n\nTrong “Threshing machines were also being improved ... and after 1870 they were increasingly powered by steam engines”, they quay lại chủ ngữ Threshing machines. Vì vậy D đúng; steam engines là nguồn cung năng lượng nằm sau by, còn grain stalks và horses không phải tiền ngữ."},{"number":53,"answer":"D","context":"Có thể suy ra hầu hết nông dân không sở hữu máy đập vì?","explanation":"Giải thích của cô: Có thể suy ra hầu hết nông dân không sở hữu máy đập vì?\n\nBài cho giá máy đập hơi nước từ 1.000 đến 4.000 đô la và ngay sau đó nói chúng thường thuộc chủ máy chuyên đi làm thuê. Quan hệ nhân quả cho phép suy ra máy quá đắt để mỗi nông dân đều sở hữu (D); các lý do về kỹ năng, chỗ chứa hay cơ hội mua trước không có bằng chứng."},{"number":54,"answer":"B","context":"Từ \"ponderous\" gần nghĩa nhất với từ nào?","explanation":"Giải thích của cô: Từ \"ponderous\" gần nghĩa nhất với từ nào?\n\nCác combine được mô tả đôi khi phải dùng tới 40 con ngựa kéo, cho thấy chúng rất nặng và cồng kềnh. Heavy (B) sát nghĩa ponderous; advanced, complex và rapid không nhấn trọng lượng/kích thước khó di chuyển."},{"number":55,"answer":"B","context":"Chủ đề chính của bài đọc là gì?","explanation":"Giải thích của cô: Chủ đề chính của bài đọc là gì?\n\nBài kể nhu cầu tìm chất diệt nấm an toàn, cách Hazen và Brown chia việc xử lý mẫu đất, rồi phát hiện và phát triển chất thành nystatin. Do đó B bao quát quá trình phát triển một fungicide an toàn; tiểu sử hai người và các tổ chức/penicillin chỉ tạo bối cảnh."},{"number":56,"answer":"B","context":"Có thể suy ra điều gì về penicillin?","explanation":"Giải thích của cô: Có thể suy ra điều gì về penicillin?\n\nPenicillin được gọi là một trong các “new wonder drugs” đã tồn tại khi Hazen và Brown bắt đầu tìm thuốc chống nấm; nystatin chỉ xuất hiện sau mẫu đất năm 1948 và nghiên cứu tiếp theo. Vì vậy có thể suy ra penicillin được phát triển trước nystatin (B); bài còn nói nó giết vi khuẩn kiểm soát nấm, nên A sai."},{"number":57,"answer":"C","context":"Tại sao tác giả nhắc đến Đại học Columbia?","explanation":"Giải thích của cô: Tại sao tác giả nhắc đến Đại học Columbia?\n\nCâu “Based upon Hazen's previous research at Columbia University, where she had built...” cho biết Hazen từng nghiên cứu và xây dựng bộ sưu tập nuôi cấy nấm ở đó. Vì thế C đúng; nystatin không được phát triển tại Columbia và bài không nói Brown học hay trường trao giải."},{"number":58,"answer":"A","context":"Từ \"both\" ám chỉ ai?","explanation":"Giải thích của cô: Từ \"both\" ám chỉ ai?\n\nCâu vừa nêu Brown và Hazen, rồi nói “both were convinced that an antifungal organism...”. Both chỉ đúng hai nhà khoa học Hazen và Brown (A); các cặp thuốc, phòng thí nghiệm hay double effect không thể là chủ thể mang niềm tin."},{"number":59,"answer":"A","context":"Brown và Hazen đã phân tích chất gì?","explanation":"Giải thích của cô: Brown và Hazen đã phân tích chất gì?\n\nHazen sàng lọc và nuôi cấy nhiều soil samples, gửi chúng cho Brown để chiết xuất, cô lập và tinh chế hoạt chất. Soil tương ứng với dirt (A); streptomycin, bacteria và penicillin không phải vật liệu mẫu hai người phân tích trong quy trình được mô tả."},{"number":60,"answer":"D","context":"W. B. Nourse là ai?","explanation":"Giải thích của cô: W. B. Nourse là ai?\n\nHazen lấy cục đất ở mép “W.B. Nourse's cow pasture” và sau đó văn bản gọi ông là “farm owner Nourse”. Hai chi tiết xác định ông là một nông dân/chủ trang trại (D), không phải nhà vi sinh, thầy giáo hay người sưu tầm nấm."}]}]}</script>
+  <script id="ri2-course-data" type="application/json">{"schemaVersion":1,"courseId":"ri2","courseName":"Reading Intensive 2","totalQuestions":761,"classes":["FIGHTER 5","FIGHTER 6","FIGHTER 7","FIGHTER 8","FIGHTER 9"],"scoreSink":{"kind":"google-form","formResponseUrl":"https://docs.google.com/forms/d/e/1FAIpQLSf939uh6Lb5ZrIy5CY0ejCHGx5SCVrdIcaU4vCKDLb2PVFfPg/formResponse","entries":{"name":"entry.655449102","total":"entry.330493587","assignmentCode":"entry.86015848","lesson":"entry.414474821","activity":"entry.1423127065","className":"entry.172500407","percent":"entry.1161504407","score":"entry.1454259834","wrong":"entry.989432617"}},"testing":false}</script>
+  <script>/* RI2 grading is deliberately deterministic: only approved keys and explicit
+ * alternatives are accepted. Formatting normalization is not synonym matching. */
+(function (root, factory) {
+  if (typeof module === "object" && module.exports) module.exports = factory();
+  else if (typeof define === "function" && define.amd) define([], factory);
+  else root.RI2Grading = factory();
+})(typeof globalThis !== "undefined" ? globalThis : this, function () {
+  "use strict";
+
+  const SMALL = Object.freeze({ zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5,
+    six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12,
+    thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17,
+    eighteen: 18, nineteen: 19 });
+  const TENS = Object.freeze({ twenty: 20, thirty: 30, forty: 40, fifty: 50,
+    sixty: 60, seventy: 70, eighty: 80, ninety: 90 });
+  const SCALES = Object.freeze({ thousand: 1000, million: 1000000, billion: 1000000000 });
+  const ORDINALS = Object.freeze({ zeroth: "zero", first: "one", second: "two", third: "three",
+    fourth: "four", fifth: "five", sixth: "six", seventh: "seven", eighth: "eight",
+    ninth: "nine", tenth: "ten", eleventh: "eleven", twelfth: "twelve", thirteenth: "thirteen",
+    fourteenth: "fourteen", fifteenth: "fifteen", sixteenth: "sixteen", seventeenth: "seventeen",
+    eighteenth: "eighteen", nineteenth: "nineteen", twentieth: "twenty", thirtieth: "thirty",
+    fortieth: "forty", fiftieth: "fifty", sixtieth: "sixty", seventieth: "seventy",
+    eightieth: "eighty", ninetieth: "ninety", hundredth: "hundred", thousandth: "thousand",
+    millionth: "million", billionth: "billion" });
+  const own = (object, key) => Object.prototype.hasOwnProperty.call(object, key);
+  const cardinalWord = word => own(SMALL, word) || own(TENS, word) || own(SCALES, word) || word === "hundred";
+  const numericWord = word => cardinalWord(word) || own(ORDINALS, word);
+
+  function inputText(value) {
+    if (typeof value === "string") return value;
+    if (typeof value === "number" && Number.isFinite(value)) return String(value);
+    return "";
+  }
+
+  function basicText(value) {
+    return inputText(value).normalize("NFKC").toLowerCase()
+      .replace(/[\u200B-\u200D\uFEFF\u00AD]/g, "")
+      .replace(/[‘’‛ʼ′]/g, "'")
+      .replace(/[‐‑‒–—―−]/g, "-")
+      .replace(/\s+/g, " ").trim();
+  }
+
+  function unwrap(value) {
+    const pairs = { '"': '"', "'": "'", "“": "”", "‘": "’", "(": ")", "[": "]", "{": "}" };
+    let result = value.trim();
+    // Only a balanced wrapper is presentation punctuation, not a missing bracket.
+    for (let depth = 0; depth < 4 && result.length > 1; depth += 1) {
+      if (pairs[result[0]] !== result[result.length - 1]) break;
+      result = result.slice(1, -1).trim();
+    }
+    return result;
+  }
+
+  function meridiem(value) {
+    return value.replace(/(?<![a-z])([ap])\s*\.?\s*m\s*\.?(?![a-z])/g, "$1m");
+  }
+
+  function policyFor(expected, question) {
+    const text = basicText(expected);
+    const timeText = meridiem(text);
+    const time = /\bo\s*'?\s*clock\b/.test(timeText) ? "oclock"
+      : /(?<![a-z])[ap]m(?![a-z])/.test(timeText) ? "meridiem"
+      : /\b\d{1,2}\s*:\s*\d{2}\b/.test(timeText) ? "clock" : "none";
+    let numbers = /\d/.test(text);
+    // Standalone One/First and anaphoric "the one" are grammatical keys in RI2.
+    // A caller may explicitly opt in for a numeric-only word answer.
+    const quantity = text.replace(/^(?:at least|more than|less than|nearly|about|approximately|over|under|up to|around)\s+/, "");
+    const words = quantity.replace(/-/g, " ").split(/\s+/);
+    let length = 0;
+    while (length < words.length && (numericWord(words[length]) || words[length] === "and")) length += 1;
+    const qualifier = quantity !== text;
+    const grammaticalTail = /^(?:of|that|which|who|whom|to|by|with|for|as|than)$/;
+    if (length > 0 && (qualifier || (length < words.length && !grammaticalTail.test(words[length])) || length > 1)) numbers = true;
+    if (question && typeof question.numberFormatting === "boolean") numbers = question.numberFormatting;
+    return { numbers, time, degrees: /°|º|˚|\bdegrees\b/.test(inputText(expected).toLowerCase()) };
+  }
+
+  function surface(value, policy) {
+    let text = inputText(value);
+    if (policy.degrees) text = text.replace(/[º˚]/g, "°");
+    text = meridiem(basicText(unwrap(text)));
+    // A single final sentence mark is harmless; internal numeric punctuation stays.
+    text = text.replace(/[.!?,;:]$/, "").trim();
+    text = unwrap(text)
+      .replace(/(?<=[a-z])\s*-\s*(?=[a-z0-9])|(?<=[0-9])\s*-\s*(?=[a-z])/g, " ")
+      .replace(/%/g, " percent ")
+      .replace(/\bper\s+cent\b/g, "percent")
+      .replace(/\s*\/\s*/g, "/")
+      .replace(/\s*,\s*/g, ", ");
+    if (policy.time === "oclock") text = text.replace(/\bo\s*'?\s*clock\b/g, "oclock");
+    return text.replace(/\s+/g, " ").trim();
+  }
+
+  function parseCardinal(words) {
+    let total = 0, group = 0, previous = "start", previousSmall = -1, lastScale = Infinity;
+    for (const word of words) {
+      if (word === "and") {
+        if (previous !== "hundred" && previous !== "scale") return null;
+        previous = "and";
+      } else if (own(SMALL, word)) {
+        const number = SMALL[word];
+        if (number === 0 ? words.length !== 1 : number < 10
+          ? !["start", "tens", "hundred", "scale", "and"].includes(previous)
+          : !["start", "hundred", "scale", "and"].includes(previous)) return null;
+        group += number;
+        previous = number < 10 ? "small" : "teen";
+        previousSmall = number;
+      } else if (own(TENS, word)) {
+        if (!["start", "hundred", "scale", "and"].includes(previous)) return null;
+        group += TENS[word]; previous = "tens"; previousSmall = -1;
+      } else if (word === "hundred") {
+        if (previous !== "small" || previousSmall < 1 || previousSmall > 9 || group > 9) return null;
+        group *= 100; previous = "hundred"; previousSmall = -1;
+      } else {
+        const scale = SCALES[word];
+        if (!scale || !group || previous === "and" || scale >= lastScale) return null;
+        total += group * scale; group = 0; previous = "scale"; previousSmall = -1; lastScale = scale;
+      }
+    }
+    const number = total + group;
+    return previous !== "start" && previous !== "and" && Number.isSafeInteger(number) ? number : null;
+  }
+
+  function suffix(number) {
+    const tail = number % 100;
+    return tail >= 11 && tail <= 13 ? "th" : number % 10 === 1 ? "st" : number % 10 === 2 ? "nd" : number % 10 === 3 ? "rd" : "th";
+  }
+
+  function parseWords(words) {
+    const final = words[words.length - 1];
+    if (!own(ORDINALS, final)) {
+      const number = parseCardinal(words);
+      return number === null ? null : String(number);
+    }
+    if (words.slice(0, -1).some(word => own(ORDINALS, word))) return null;
+    const cardinal = ORDINALS[final];
+    const number = words.length === 1 && (cardinal === "hundred" || own(SCALES, cardinal))
+      ? (cardinal === "hundred" ? 100 : SCALES[cardinal])
+      : parseCardinal(words.slice(0, -1).concat(cardinal));
+    return number === null ? null : String(number) + suffix(number);
+  }
+
+  function numberWords(value) {
+    const tokens = value.match(/[a-z]+|\d+|[^a-z\d]+/g) || [];
+    const output = [];
+    for (let index = 0; index < tokens.length; index += 1) {
+      if (!numericWord(tokens[index])) { output.push(tokens[index]); continue; }
+      const candidates = [{ word: tokens[index], end: index }];
+      let cursor = index + 1;
+      while (candidates.length < 64 && cursor + 1 < tokens.length && /^\s+$/.test(tokens[cursor]) && (numericWord(tokens[cursor + 1]) || tokens[cursor + 1] === "and")) {
+        candidates.push({ word: tokens[cursor + 1], end: cursor + 1 }); cursor += 2;
+      }
+      let matched = false;
+      for (let length = candidates.length; length > 0; length -= 1) {
+        const parsed = parseWords(candidates.slice(0, length).map(candidate => candidate.word));
+        if (parsed !== null) { output.push(parsed); index = candidates[length - 1].end; matched = true; break; }
+      }
+      if (!matched) output.push(tokens[index]);
+    }
+    return output.join("");
+  }
+
+  function clock(value, mode) {
+    const format = (whole, hourText, minuteText, period) => {
+      const hour = Number(hourText), minute = Number(minuteText);
+      if (hour < (period ? 1 : 0) || hour > (period ? 12 : 23) || minute > 59) return whole;
+      return hour + ":" + String(minute).padStart(2, "0") + (period ? " " + period : "");
+    };
+    if (mode === "oclock") return value.replace(/\b(0?\d|1[0-2])\s+oclock\b/g, (whole, hour) => Number(hour) >= 1 ? Number(hour) + " oclock" : whole);
+    if (mode === "meridiem") return value
+      .replace(/\b(\d{1,2})\s*[:.]\s*(\d{2})\s*(am|pm)\b/g, format)
+      .replace(/\b(\d{1,2})\s+(\d{1,2})\s*(am|pm)\b/g, format)
+      .replace(/(?<![\d:.])\b(0?\d|1[0-2])\s*(am|pm)\b/g, (whole, hour, period) => Number(hour) >= 1 ? Number(hour) + " " + period : whole);
+    if (mode === "clock") return value.replace(/\b(\d{1,2})\s*[:.]\s*(\d{2})\b/g, (whole, hour, minute) => format(whole, hour, minute));
+    return value;
+  }
+
+  function numericLiteral(whole) {
+    let match = /^([+-]?)(\d{1,3}(?:,\d{3})+|\d+)(?:\.(\d+))?$/.exec(whole);
+    if (!match) match = /^([+-]?)(\d+),(\d{1,2})$/.exec(whole);
+    if (!match) {
+      const fraction = /^([+-]?)\.(\d+)$/.exec(whole);
+      if (fraction) match = [whole, fraction[1], "0", fraction[2]];
+    }
+    if (!match) return whole;
+    const sign = match[1] === "+" ? "" : match[1];
+    let integer = match[2].replace(/,/g, "");
+    if (match[3] === undefined) return sign + integer; // Keep leading zeros in potential codes.
+    integer = integer.replace(/^0+(?=\d)/, "");
+    const fraction = match[3].replace(/0+$/, "");
+    return (integer === "0" && !fraction ? "" : sign) + integer + (fraction ? "." + fraction : "");
+  }
+
+  function canonical(value, policy) {
+    let text = surface(value, policy);
+    if (policy.numbers) {
+      // Restore commas inside validated number tokens; prose commas keep their spaces.
+      text = text.replace(/(?<=\d), (?=\d)/g, ",")
+        .replace(/(?<![\w.,])\d{1,3}(?: \d{3})+(?![\w.,])/g, group => group.replace(/ /g, ""));
+      text = numberWords(text);
+      text = text.replace(/\b(\d+)\s+point\s+(\d(?:\s+\d)*)\b/g, (_whole, integer, fraction) => integer + "." + fraction.replace(/ /g, ""));
+      text = clock(text, policy.time);
+      text = text.replace(/(?<![\w.,])([+-]?(?:\d[\d.,]*|\.\d+))(?![\w.,])/g, numericLiteral);
+      text = text.replace(/\b(\d+)(st|nd|rd|th)\b/g, (whole, digits, ending) => {
+        const number = Number(digits);
+        return Number.isSafeInteger(number) && suffix(number) === ending ? number + ending : whole;
+      });
+    }
+    if (policy.degrees) text = text.replace(/\b(\d+(?:\.\d+)?)\s*°(?!\s*[cf]\b)/g, "$1 degrees");
+    return text.replace(/\s+/g, " ").trim();
+  }
+
+  function normalizeAnswer(value, question) {
+    const expected = question && question.answer !== undefined ? question.answer : value;
+    return canonical(value, policyFor(expected, question));
+  }
+
+  function slashOptions(value) {
+    const parts = inputText(value).split("/").map(part => part.trim());
+    if (parts.length < 2 || !parts[0]) return null;
+    if (!parts[parts.length - 1]) parts.pop(); // A trailing separator never means a blank answer.
+    const units = /^(?:km|hr|ms|cm|mm|kg|ml|mph|kph|sec|min)$/i;
+    if (parts.some(part => !/^[a-z]{2,}(?:[ '-][a-z]+)*$/i.test(part) || units.test(part))) return null;
+    return parts;
+  }
+
+  function acceptedAnswers(question) {
+    if (!question || !inputText(question.answer).trim()) return [];
+    const listed = slashOptions(question.answer) || [inputText(question.answer)];
+    const explicit = Array.isArray(question.acceptedAnswers) ? question.acceptedAnswers.filter(answer => typeof answer === "string" && basicText(answer)) : [];
+    const seen = new Set();
+    return listed.concat(explicit).filter(answer => {
+      const key = basicText(answer);
+      if (seen.has(key)) return false;
+      seen.add(key); return true;
+    });
+  }
+
+  function answersMatch(actual, question) {
+    if (!basicText(actual) || !question) return false;
+    const candidates = [inputText(question.answer)].concat(acceptedAnswers(question)).filter(answer => basicText(answer));
+    return candidates.some(expected => {
+      const policy = policyFor(expected, question);
+      return canonical(actual, policy) === canonical(expected, policy);
+    });
+  }
+
+  function gradeAttempt(unit, answers) {
+    if (!unit || !Array.isArray(unit.sections)) throw new TypeError("A unit with sections is required.");
+    const questions = unit.sections.flatMap(section => Array.isArray(section.questions) ? section.questions : []);
+    const seen = new Set();
+    const entries = questions.map(question => {
+      const key = String(question.number);
+      if (question.number === undefined || seen.has(key)) throw new TypeError("Question numbers must be present and unique within a unit.");
+      seen.add(key);
+      const value = answers instanceof Map ? answers.get(key) : answers && own(answers, key) ? answers[key] : undefined;
+      const actual = inputText(value);
+      return { question, number: question.number, actual, answered: !!basicText(actual) };
+    });
+    const total = entries.length;
+    const complete = total > 0 && entries.every(entry => entry.answered);
+    if (!complete) return { complete: false, score: null, total, percent: null, wrong: [],
+      results: entries.map(entry => ({ number: entry.number, actual: entry.actual, answered: entry.answered, correct: null })) };
+    const results = entries.map(entry => ({ number: entry.number, actual: entry.actual, answered: true,
+      correct: answersMatch(entry.actual, entry.question), answer: entry.question.answer,
+      acceptedAnswers: acceptedAnswers(entry.question), explanation: entry.question.explanation || "" }));
+    const wrong = results.filter(result => !result.correct);
+    const score = total - wrong.length;
+    return { complete: true, score, total, percent: Math.round(score * 1000 / total) / 10, wrong, results };
+  }
+
+  return Object.freeze({ answersMatch, gradeAttempt, acceptedAnswers, normalizeAnswer });
+});
+</script>
+  <script>(function () {
+  "use strict";
+
+  const $ = (id) => document.getElementById(id);
+  const ALLOWED_CLASSES = ["FIGHTER 5", "FIGHTER 6", "FIGHTER 7", "FIGHTER 8", "FIGHTER 9"];
+  const STORAGE_VERSION = 1;
+  let unit;
+  let course;
+  let questions = [];
+  let questionByNumber = new Map();
+  let identity = null;
+  let attempt = null;
+  let storageBase = "";
+  let storageAvailable = true;
+  let submitting = false;
+  let reviewMode = "wrong";
+
+  function node(tag, className, text) {
+    const element = document.createElement(tag);
+    if (className) element.className = className;
+    if (text !== undefined) element.textContent = text;
+    return element;
+  }
+
+  function plainText(value) {
+    if (typeof value === "string" || typeof value === "number") return String(value).trim();
+    if (Array.isArray(value)) return value.filter((part) => typeof part === "string").join("\n\n").trim();
+    return "";
+  }
+
+  function normalizedName(value) {
+    return String(value || "").normalize("NFKC").replace(/\s+/g, " ").trim();
+  }
+
+  function newId() {
+    if (globalThis.crypto && typeof globalThis.crypto.randomUUID === "function") return globalThis.crypto.randomUUID();
+    if (globalThis.crypto && typeof globalThis.crypto.getRandomValues === "function") {
+      const bytes = new Uint8Array(16);
+      globalThis.crypto.getRandomValues(bytes);
+      return Array.from(bytes, (byte) => byte.toString(16).padStart(2, "0")).join("");
+    }
+    return Date.now().toString(36) + "-" + Math.random().toString(36).slice(2) + "-" + Math.random().toString(36).slice(2);
+  }
+
+  function currentKey() { return storageBase + ":current"; }
+  function attemptKey(id) { return storageBase + ":attempt:" + id; }
+
+  function readStorage(key) {
+    let raw;
+    try {
+      raw = localStorage.getItem(key);
+    } catch (_) {
+      storageAvailable = false;
+      return null;
+    }
+    try { return raw ? JSON.parse(raw) : null; } catch (_) { return null; }
+  }
+
+  function persist(options = {}) {
+    if (!attempt || !storageBase) return;
+    try {
+      const serialized = JSON.stringify(attempt);
+      localStorage.setItem(attemptKey(attempt.id), serialized);
+      // The current key is a selection pointer, not a frequently rewritten snapshot.
+      // An older tab may finish sending after another tab has started a newer attempt.
+      // Only an intentional new attempt may select itself; ordinary saves never do.
+      if (options.makeCurrent === true) {
+        localStorage.setItem(currentKey(), JSON.stringify({ version: STORAGE_VERSION, id: attempt.id }));
+      }
+    } catch (_) {
+      storageAvailable = false;
+    }
+    renderStorageWarning();
+  }
+
+  function renderStorageWarning() {
+    const target = $("storage-warning");
+    target.hidden = storageAvailable;
+    target.textContent = storageAvailable ? "" : "Trình duyệt không lưu được tiến độ. Vui lòng giữ trang mở cho đến khi nộp bài.";
+  }
+
+  function validStoredAttempt(value) {
+    return value && value.version === STORAGE_VERSION && typeof value.id === "string" &&
+      value.courseId === course.courseId && String(value.unit) === String(unit.unit) &&
+      value.identity && normalizedName(value.identity.name).toLocaleLowerCase("vi") === identity.name.toLocaleLowerCase("vi") && value.identity.className === identity.className &&
+      value.answers && typeof value.answers === "object" && !Array.isArray(value.answers);
+  }
+
+  function createAttempt(number) {
+    return {
+      version: STORAGE_VERSION,
+      id: newId(),
+      courseId: course.courseId,
+      unit: unit.unit,
+      testCode: unit.testCode,
+      identity: { name: identity.name, className: identity.className },
+      number: number || 1,
+      startedAt: new Date().toISOString(),
+      answers: {},
+      submittedAt: null,
+      grade: null,
+      delivery: { state: "draft" }
+    };
+  }
+
+  function previewUrl() {
+    const value = unit && ((unit.config && unit.config.studentPreviewUrl) || unit.studentPreviewUrl);
+    if (typeof value !== "string") return null;
+    try {
+      const url = new URL(value);
+      if (url.protocol !== "https:" || url.hostname !== "docs.google.com" || url.username || url.password) return null;
+      if (!/^\/document\/d\/(?:e\/)?[^/]+\/(?:preview|pub)\/?$/.test(url.pathname)) return null;
+      return url.href;
+    } catch (_) { return null; }
+  }
+
+  function unitLabel() {
+    return plainText(unit.title) || "Test " + String(unit.unit).padStart(2, "0");
+  }
+
+  function failSetup(message) {
+    $("gate-error").textContent = message;
+    $("gate-error").hidden = false;
+    $("open-quiz").disabled = true;
+  }
+
+  function initialize() {
+    try {
+      unit = JSON.parse($("ri2-unit-data").textContent);
+      course = JSON.parse($("ri2-course-data").textContent);
+      if (course && course.testing === true) {
+        document.body.classList.add("testing");
+        $("test-mode-banner").hidden = false;
+      }
+      if (!unit || !course || !course.courseId || !plainText(unit.testCode) || !Array.isArray(unit.sections)) throw new Error("configuration");
+      if (!globalThis.RI2Grading || typeof globalThis.RI2Grading.gradeAttempt !== "function") throw new Error("grading");
+      questions = unit.sections.flatMap((section) => Array.isArray(section.questions) ? section.questions : []);
+      questionByNumber = new Map(questions.map((question) => [String(question.number), question]));
+      if (!questions.length || questionByNumber.size !== questions.length || Number(unit.total) !== questions.length) throw new Error("questions");
+      if (questions.some((question) => question.number === undefined || !plainText(question.answer))) throw new Error("answer key");
+      if (!previewUrl()) throw new Error("student preview");
+      if (Object.prototype.hasOwnProperty.call(unit, "sourceDocumentId") || Object.prototype.hasOwnProperty.call(unit, "teacherDocumentId")) throw new Error("student-only data required");
+    } catch (_) {
+      failSetup("Bài học chưa sẵn sàng để mở. Vui lòng báo giáo viên để kiểm tra cấu hình bản học sinh.");
+      return;
+    }
+
+    document.title = (course.courseName || "Reading Intensive") + " · " + unitLabel();
+    $("gate-course").textContent = course.courseName || "Reading Intensive";
+    $("app-course").textContent = course.courseName || "Reading Intensive";
+    $("gate-title").textContent = unitLabel();
+    $("app-title").textContent = unitLabel();
+    $("gate-question-count").textContent = questions.length + " câu hỏi";
+    $("total-count").textContent = "/ " + questions.length + " câu";
+    const classes = Array.isArray(course.classes) ? ALLOWED_CLASSES.filter((name) => course.classes.includes(name)) : ALLOWED_CLASSES;
+    (classes.length ? classes : ALLOWED_CLASSES).forEach((name) => {
+      const option = node("option", "", name);
+      option.value = name;
+      $("student-class").appendChild(option);
+    });
+    try {
+      const previous = JSON.parse(sessionStorage.getItem("ri2:identity:" + course.courseId) || "null");
+      if (previous) {
+        $("student-name").value = normalizedName(previous.name);
+        if (ALLOWED_CLASSES.includes(previous.className)) $("student-class").value = previous.className;
+      }
+      const probe = "ri2:storage-probe:" + newId();
+      localStorage.setItem(probe, "1");
+      localStorage.removeItem(probe);
+    } catch (_) { storageAvailable = false; }
+
+    $("identity-form").addEventListener("submit", openQuiz);
+    $("answer-form").addEventListener("submit", submitAttempt);
+    $("new-attempt").addEventListener("click", startNewAttempt);
+    window.addEventListener("storage", receiveStorageUpdate);
+  }
+
+  function openQuiz(event) {
+    event.preventDefault();
+    const name = normalizedName($("student-name").value);
+    const className = $("student-class").value;
+    if (!name || !ALLOWED_CLASSES.includes(className)) {
+      $("gate-error").textContent = "Vui lòng nhập họ tên và chọn đúng lớp trước khi mở đề.";
+      $("gate-error").hidden = false;
+      (!name ? $("student-name") : $("student-class")).focus();
+      return;
+    }
+    identity = { name, className };
+    storageBase = "ri2:student:v" + STORAGE_VERSION + ":" + (course.testing === true ? "testing" : "live") + ":" + encodeURIComponent(course.courseId) + ":" + encodeURIComponent(String(unit.unit)) + ":" + encodeURIComponent(name.toLocaleLowerCase("vi") + "|" + className);
+    try { sessionStorage.setItem("ri2:identity:" + course.courseId, JSON.stringify(identity)); } catch (_) { /* Identity is still held in memory. */ }
+    const current = readStorage(currentKey());
+    const latest = current && typeof current.id === "string" ? readStorage(attemptKey(current.id)) : null;
+    // The fallback preserves attempts from the earlier full-snapshot current-key format.
+    const saved = validStoredAttempt(latest) ? latest : current;
+    const restored = validStoredAttempt(saved);
+    attempt = restored ? saved : createAttempt(1);
+    if (attempt.submittedAt) {
+      if (!attempt.grade || attempt.grade.complete !== true || attempt.grade.total !== questions.length || !Array.isArray(attempt.grade.results) || attempt.grade.results.length !== questions.length) {
+        attempt.grade = globalThis.RI2Grading.gradeAttempt(unit, attempt.answers);
+      }
+      if (["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) {
+        attempt.delivery = { state: "unconfirmed", attemptedAt: attempt.delivery.attemptedAt, reason: "reload" };
+      }
+    }
+    persist({ makeCurrent: !restored });
+    $("identity-name").textContent = identity.name;
+    $("identity-class").textContent = identity.className;
+    $("identity-gate").hidden = true;
+    $("quiz-app").hidden = false;
+    loadStudentDocument();
+    renderAnswers();
+  }
+
+  function loadStudentDocument() {
+    if ($("student-document")) return;
+    const frame = node("iframe", "document-frame");
+    frame.id = "student-document";
+    frame.title = "Đề bài bản học sinh · " + unitLabel();
+    frame.setAttribute("referrerpolicy", "no-referrer");
+    frame.setAttribute("sandbox", "allow-scripts allow-same-origin");
+    frame.addEventListener("load", () => { $("document-loading").hidden = true; }, { once: true });
+    frame.src = previewUrl();
+    $("document-body").appendChild(frame);
+  }
+
+  function answeredCount() {
+    return questions.filter((question) => plainText(attempt.answers[String(question.number)]) !== "").length;
+  }
+
+  function updateProgress() {
+    const count = answeredCount();
+    $("answered-count").textContent = String(count);
+    $("progress-fill").style.width = (count / questions.length * 100) + "%";
+    $("attempt-label").textContent = "Lượt " + attempt.number + (attempt.submittedAt ? " · đã chấm" : " · đang làm");
+    $("submit-answers").disabled = submitting || !!attempt.submittedAt || count !== questions.length;
+    $("submit-answers").textContent = submitting ? "ĐANG CHẤM BÀI…" : count === questions.length ? "NỘP BÀI & XEM LỜI GIẢI →" : "CÒN " + (questions.length - count) + " CÂU CHƯA TRẢ LỜI";
+  }
+
+  function recordAnswer(number, value) {
+    if (attempt.submittedAt || submitting) return;
+    attempt.answers[String(number)] = value;
+    persist();
+    updateProgress();
+  }
+
+  function renderAnswers() {
+    const container = $("answer-sections");
+    container.replaceChildren();
+    const results = new Map(attempt.grade && attempt.grade.complete ? attempt.grade.results.map((result) => [String(result.number), result]) : []);
+    if (attempt.grade && attempt.grade.complete && attempt.grade.wrong.length === 0) reviewMode = "all";
+    unit.sections.forEach((section) => {
+      const sectionElement = node("section", "answer-section");
+      const heading = node("div", "section-heading");
+      const exercise = plainText(section.exercise);
+      heading.appendChild(node("h3", "", /^exercise\b/i.test(exercise) ? exercise : "Exercise " + exercise));
+      if (plainText(section.instruction)) heading.appendChild(node("p", "", plainText(section.instruction)));
+      sectionElement.appendChild(heading);
+      let visibleQuestions = 0;
+      (section.questions || []).forEach((question) => {
+        const result = results.get(String(question.number));
+        const card = renderQuestion(section, question, result);
+        if (result && reviewMode === "wrong" && result.correct) card.hidden = true;
+        else visibleQuestions += 1;
+        sectionElement.appendChild(card);
+      });
+      if (results.size && reviewMode === "wrong" && visibleQuestions === 0) sectionElement.hidden = true;
+      container.appendChild(sectionElement);
+    });
+    $("submit-answers").hidden = !!attempt.submittedAt;
+    $("new-attempt").hidden = !attempt.submittedAt;
+    renderResultSummary();
+    renderDelivery();
+    renderStorageWarning();
+    updateProgress();
+  }
+
+  function renderQuestion(section, question, result) {
+    const number = String(question.number);
+    const card = node("article", "question-card" + (result ? result.correct ? " is-correct" : " is-wrong" : ""));
+    card.dataset.question = number;
+    if (result) {
+      card.dataset.correct = String(result.correct);
+      card.tabIndex = -1;
+    }
+    const top = node("div", "question-top");
+    const label = node("label", "question-number", "Câu " + number.padStart(2, "0"));
+    label.htmlFor = "answer-" + number;
+    top.appendChild(label);
+    if (result) top.appendChild(node("span", "question-state", result.correct ? "✓ Đúng" : "✕ Sai"));
+    card.appendChild(top);
+    const value = plainText(attempt.answers[number]);
+    const choices = Array.isArray(section.choices) ? section.choices.filter((choice) => typeof choice === "string" && choice.trim()).map((choice) => choice.trim()) : [];
+    if (section.inputKind === "mcq" && choices.length) {
+      const grid = node("div", "choice-grid");
+      grid.setAttribute("role", "radiogroup");
+      grid.setAttribute("aria-label", "Đáp án câu " + number);
+      choices.forEach((choice, index) => {
+        const choiceLabel = node("label", "choice");
+        const input = node("input");
+        input.type = "radio";
+        input.name = "answer-" + number;
+        input.id = index === 0 ? "answer-" + number : "answer-" + number + "-" + index;
+        input.value = choice;
+        input.checked = value === choice;
+        input.disabled = !!attempt.submittedAt || submitting;
+        input.addEventListener("change", () => recordAnswer(number, choice));
+        choiceLabel.append(input, node("span", "", choice));
+        grid.appendChild(choiceLabel);
+      });
+      card.appendChild(grid);
+    } else if (section.inputKind === "matching" && choices.length) {
+      const input = node("select");
+      input.id = "answer-" + number;
+      input.name = "answer-" + number;
+      input.setAttribute("aria-label", "Đáp án câu " + number);
+      const empty = node("option", "", "— Chọn đáp án —");
+      empty.value = "";
+      input.appendChild(empty);
+      choices.forEach((choice) => { const option = node("option", "", choice); option.value = choice; input.appendChild(option); });
+      input.value = value;
+      input.disabled = !!attempt.submittedAt || submitting;
+      input.addEventListener("change", () => recordAnswer(number, input.value));
+      card.appendChild(input);
+    } else {
+      const input = node("input");
+      input.type = "text";
+      input.id = "answer-" + number;
+      input.name = "answer-" + number;
+      input.value = value;
+      input.maxLength = 600;
+      input.placeholder = "Nhập câu trả lời của bạn";
+      input.autocomplete = "off";
+      input.setAttribute("autocapitalize", "off");
+      input.setAttribute("autocorrect", "off");
+      input.spellcheck = false;
+      input.disabled = !!attempt.submittedAt || submitting;
+      input.addEventListener("input", () => recordAnswer(number, input.value));
+      card.appendChild(input);
+    }
+    if (result) {
+      const review = node("div", "answer-review");
+      const key = node("p", "answer-key");
+      const mine = node("span", "answer-key-row", "Bạn trả lời: ");
+      mine.appendChild(node("b", result.correct ? "" : "submitted-answer", plainText(result.actual)));
+      const correct = node("span", "answer-key-row", "Đáp án đúng: ");
+      correct.appendChild(node("b", "", plainText(result.answer)));
+      key.append(mine, correct);
+      const alternatives = Array.isArray(result.acceptedAnswers) ? result.acceptedAnswers.map(plainText).filter((answer) => answer && answer !== plainText(result.answer)) : [];
+      if (alternatives.length) key.appendChild(node("small", "", "Cũng chấp nhận: " + alternatives.join(" · ")));
+      review.appendChild(key);
+      if (plainText(question.context)) {
+        review.appendChild(node("p", "review-label", "Ngữ cảnh câu hỏi"));
+        review.appendChild(node("p", "question-context", plainText(question.context)));
+      }
+      review.appendChild(node("p", "review-label", "Giải thích"));
+      review.appendChild(node("p", "explanation", cleanExplanation(result.explanation) || "Chưa có giải thích cho câu này."));
+      card.appendChild(review);
+    }
+    return card;
+  }
+
+  function cleanExplanation(value) {
+    return plainText(value).replace(/^Giải thích của cô\s*:\s*/i, "");
+  }
+
+  function setReviewMode(mode, questionNumber) {
+    reviewMode = mode === "all" ? "all" : "wrong";
+    renderAnswers();
+    $("answer-scroll").scrollTop = 0;
+    if (questionNumber !== undefined) {
+      const card = [...document.querySelectorAll("[data-question]")].find((item) => item.dataset.question === String(questionNumber));
+      if (card) {
+        card.scrollIntoView({ block: "start" });
+        card.focus({ preventScroll: true });
+      }
+    }
+  }
+
+  function renderResultSummary() {
+    const target = $("result-summary");
+    target.replaceChildren();
+    target.hidden = !attempt.submittedAt || !attempt.grade || !attempt.grade.complete;
+    if (target.hidden) return;
+    const grade = attempt.grade;
+    const box = node("section", "result-summary");
+    box.setAttribute("aria-labelledby", "result-heading");
+    box.appendChild(node("p", "result-kicker", "KẾT QUẢ"));
+    const numbers = node("div", "result-numbers");
+    const score = node("div", "result-score", String(grade.score));
+    score.appendChild(node("small", "", " / " + grade.total));
+    numbers.append(score, node("div", "result-percent", String(grade.percent) + "%"));
+    box.appendChild(numbers);
+    const title = node("h3", "", grade.score === grade.total ? "Hoàn thành tất cả các câu" : grade.wrong.length + " câu cần sửa");
+    title.id = "result-heading";
+    box.appendChild(title);
+    if (grade.wrong.length) {
+      const wrongLabel = node("p", "result-wrong-label", "CÂU SAI");
+      const jumps = node("div", "wrong-jumps");
+      grade.wrong.forEach((result) => {
+        const button = node("button", "", String(result.number));
+        button.type = "button";
+        button.setAttribute("aria-label", "Xem câu sai " + result.number);
+        button.addEventListener("click", () => setReviewMode("wrong", result.number));
+        jumps.appendChild(button);
+      });
+      box.append(wrongLabel, jumps);
+    }
+    const toggles = node("div", "review-toggle");
+    const wrongButton = node("button", reviewMode === "wrong" ? "active" : "", "CÂU SAI (" + grade.wrong.length + ")");
+    wrongButton.type = "button";
+    wrongButton.hidden = grade.wrong.length === 0;
+    wrongButton.setAttribute("aria-pressed", String(reviewMode === "wrong"));
+    wrongButton.addEventListener("click", () => setReviewMode("wrong"));
+    const allButton = node("button", reviewMode === "all" ? "active" : "", "TẤT CẢ (" + grade.total + ")");
+    allButton.type = "button";
+    allButton.setAttribute("aria-pressed", String(reviewMode === "all"));
+    allButton.addEventListener("click", () => setReviewMode("all"));
+    toggles.append(wrongButton, allButton);
+    box.appendChild(toggles);
+    target.appendChild(box);
+  }
+
+  function renderDelivery() {
+    const target = $("delivery-status");
+    target.replaceChildren();
+    const pending = !!attempt && ["sending", "pending"].includes(attempt.delivery && attempt.delivery.state);
+    $("new-attempt").disabled = pending;
+    $("new-attempt").textContent = pending ? "ĐANG LƯU ĐIỂM…" : "LÀM MỘT LƯỢT MỚI ↻";
+    const state = attempt.delivery && attempt.delivery.state;
+    target.hidden = !attempt || !attempt.submittedAt || !["unconfirmed", "not-configured", "test-mode"].includes(state);
+    if (target.hidden) return;
+    const messages = {
+      unconfirmed: ["Chưa lưu được điểm", "Vui lòng kiểm tra mạng hoặc báo giáo viên."],
+      "not-configured": ["Chưa lưu được điểm", "Vui lòng báo giáo viên."],
+      "test-mode": ["CHẾ ĐỘ KIỂM THỬ — không ghi điểm", ""]
+    };
+    const message = messages[state] || messages.unconfirmed;
+    target.className = "delivery" + (["unconfirmed", "not-configured"].includes(state) ? " is-warning" : "");
+    target.appendChild(node("strong", "", message[0]));
+    if (message[1]) target.appendChild(node("span", "", message[1]));
+  }
+
+  async function withSubmissionLock(action) {
+    if (navigator.locks && typeof navigator.locks.request === "function") {
+      let actionStarted = false;
+      try {
+        return await navigator.locks.request(storageBase + ":submit:" + attempt.id, { mode: "exclusive" }, () => {
+          actionStarted = true;
+          return action();
+        });
+      } catch (error) {
+        if (actionStarted) throw error;
+        // Some embedded/partitioned contexts expose Web Locks but reject access.
+        return action();
+      }
+    }
+    return action();
+  }
+
+  async function submitAttempt(event) {
+    event.preventDefault();
+    if (!attempt || attempt.submittedAt || submitting) return;
+    $("form-error").hidden = true;
+    if (answeredCount() !== questions.length) {
+      $("form-error").textContent = "Bạn cần trả lời đủ toàn bộ câu trước khi chấm bài.";
+      $("form-error").hidden = false;
+      const missing = questions.find((question) => !plainText(attempt.answers[String(question.number)]));
+      const input = missing && $("answer-" + missing.number);
+      if (input) input.focus();
+      return;
+    }
+    submitting = true;
+    renderAnswers();
+    let shouldSend = false;
+    try {
+      shouldSend = await withSubmissionLock(() => {
+        const saved = readStorage(attemptKey(attempt.id));
+        if (validStoredAttempt(saved) && saved.submittedAt) {
+          attempt = saved;
+          if (["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) attempt.delivery = { state: "unconfirmed", reason: "already-submitted" };
+          return false;
+        }
+        const grade = globalThis.RI2Grading.gradeAttempt(unit, attempt.answers);
+        if (!grade.complete) throw new Error("incomplete");
+        attempt.grade = grade;
+        attempt.submittedAt = new Date().toISOString();
+        attempt.delivery = { state: "sending", attemptedAt: attempt.submittedAt };
+        persist();
+        return true;
+      });
+    } catch (_) {
+      $("form-error").textContent = "Chưa thể chấm bài. Các câu trả lời vẫn được giữ; vui lòng kiểm tra lại hoặc báo giáo viên.";
+      $("form-error").hidden = false;
+    } finally {
+      submitting = false;
+      renderAnswers();
+      if (attempt.submittedAt) {
+        $("answer-scroll").scrollTop = 0;
+        $("answer-scroll").focus({ preventScroll: true });
+      }
+    }
+    if (shouldSend) await sendScore(attempt.id);
+  }
+
+  function configuredFormSink() {
+    if (course.testing === true) return null;
+    const sink = course.scoreSink;
+    if (!sink || sink.kind !== "google-form" || !sink.entries || typeof sink.formResponseUrl !== "string") return null;
+    try {
+      const url = new URL(sink.formResponseUrl);
+      if (url.protocol !== "https:" || url.hostname !== "docs.google.com" || !/^\/forms\/d\/(?:e\/)?[^/]+\/formResponse\/?$/.test(url.pathname)) return null;
+      const required = ["name", "total", "assignmentCode", "lesson", "activity", "className", "percent", "score", "wrong"];
+      if (required.some((field) => !/^entry\.\d+$/.test(sink.entries[field] || ""))) return null;
+      return sink;
+    } catch (_) { return null; }
+  }
+
+  function scoreBody(sink, snapshot) {
+    const grade = snapshot.grade;
+    const values = {
+      name: snapshot.identity.name,
+      className: snapshot.identity.className,
+      total: String(grade.total),
+      assignmentCode: plainText(unit.testCode),
+      lesson: unitLabel(),
+      activity: "Làm lại đề · Lượt " + snapshot.number + " · Mã lượt " + snapshot.id + " · " + snapshot.submittedAt,
+      percent: String(grade.percent),
+      score: String(grade.score),
+      wrong: grade.wrong.length ? grade.wrong.map((result) => "Câu " + result.number + ": " + plainText(result.actual) + " → " + plainText(result.answer)).join("\n") : "Không có câu sai"
+    };
+    const body = new URLSearchParams();
+    Object.keys(values).forEach((field) => body.set(sink.entries[field], values[field]));
+    // Only use additional form mappings when explicitly supplied by the course configuration.
+    const optional = { attemptId: snapshot.id, attemptNumber: String(snapshot.number), submittedAt: snapshot.submittedAt, startedAt: snapshot.startedAt };
+    Object.keys(optional).forEach((field) => { if (/^entry\.\d+$/.test(sink.entries[field] || "")) body.set(sink.entries[field], optional[field]); });
+    return body;
+  }
+
+  async function sendScore(id) {
+    if (!attempt || attempt.id !== id || !attempt.submittedAt) return;
+    if (course.testing === true) {
+      attempt.delivery = { state: "test-mode" };
+      persist();
+      renderDelivery();
+      return;
+    }
+    const sink = configuredFormSink();
+    if (!sink) {
+      attempt.delivery = { state: "not-configured" };
+      persist();
+      renderDelivery();
+      return;
+    }
+    const snapshot = JSON.parse(JSON.stringify(attempt));
+    const controller = typeof AbortController === "function" ? new AbortController() : null;
+    const timeout = controller ? setTimeout(() => controller.abort(), 25000) : null;
+    try {
+      // Google Forms is intentionally no-cors: an opaque response is NOT a storage confirmation.
+      await fetch(sink.formResponseUrl, { method: "POST", mode: "no-cors", credentials: "omit", body: scoreBody(sink, snapshot), ...(controller ? { signal: controller.signal } : {}) });
+      snapshot.delivery = { state: "sent-unverified", attemptedAt: snapshot.delivery.attemptedAt, requestFinishedAt: new Date().toISOString() };
+    } catch (_) {
+      snapshot.delivery = { state: "unconfirmed", attemptedAt: snapshot.delivery.attemptedAt, reason: "network" };
+    } finally {
+      if (timeout !== null) clearTimeout(timeout);
+    }
+    try { localStorage.setItem(attemptKey(id), JSON.stringify(snapshot)); } catch (_) { storageAvailable = false; }
+    if (attempt && attempt.id === id) {
+      attempt.delivery = snapshot.delivery;
+      persist();
+      renderDelivery();
+    }
+  }
+
+  function startNewAttempt() {
+    if (!attempt || !attempt.submittedAt || submitting || ["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) return;
+    attempt = createAttempt(Number(attempt.number || 1) + 1);
+    reviewMode = "wrong";
+    persist({ makeCurrent: true });
+    $("form-error").hidden = true;
+    renderAnswers();
+    $("answer-scroll").scrollTop = 0;
+    const first = questions[0] && $("answer-" + questions[0].number);
+    if (first) first.focus({ preventScroll: true });
+  }
+
+  function receiveStorageUpdate(event) {
+    if (!attempt || !storageBase || event.key !== attemptKey(attempt.id) || !event.newValue) return;
+    try {
+      const saved = JSON.parse(event.newValue);
+      if (!validStoredAttempt(saved) || !saved.submittedAt) return;
+      attempt = saved;
+      if (["sending", "pending"].includes(attempt.delivery && attempt.delivery.state)) attempt.delivery = { state: "unconfirmed", reason: "another-tab" };
+      renderAnswers();
+    } catch (_) { /* Ignore unrelated or incomplete browser-storage events. */ }
+  }
+
+  initialize();
+}());
+</script></body>
+</html>

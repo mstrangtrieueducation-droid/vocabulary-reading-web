@@ -29,7 +29,7 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import shutil
+          import shutil, re
           root = Path('.')
           destination = root / '.pages-output'
           excluded = {'.git', '.github', '.pages-output', 'tests', 'scripts', 'node_modules'}
@@ -39,6 +39,12 @@ jobs:
                   continue
               if source.suffix.lower() not in allowed and source.name not in {'.nojekyll', 'CNAME', 'robots.txt'}:
                   continue
+              if source.name == 'index.html' and len(source.parts) > 1:
+                  utilities = {'bridge-return', 'notebook-submit', 'vf2-submit', 'vocab-submit'}
+                  if source.parent.name not in utilities and not re.fullmatch(r'[a-f0-9]{32}', source.parent.name):
+                      html = source.read_text(encoding='utf-8')
+                      neutral = 'lesson-link-retired' in html or 'Vui lòng mở đường link bài học được giáo viên gửi.' in html
+                      assert neutral, f'Lesson URLs must use an independent random token: {source}'
               target = destination / source
               target.parent.mkdir(parents=True, exist_ok=True)
               shutil.copyfile(source, target)

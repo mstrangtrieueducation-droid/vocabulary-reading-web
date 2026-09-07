@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Phiếu trả lời</title>
+  <style>
+    :root{--ink:#17302f;--muted:#64726f;--teal:#1f675f;--teal2:#174d48;--soft:#e8f2ee;--ivory:#f4f2ec;--line:#d5dfdb;--white:#fff;--red:#a64035;--redbg:#fff0ed;--green:#277154;--greenbg:#eaf6ef;--font:Arial,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;overflow:hidden;background:var(--ivory);color:var(--ink);font-family:var(--font)}
+    button,input,select{font-family:var(--font);font-size:inherit}
+    button{cursor:pointer}
+    button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid rgba(31,103,95,.22);outline-offset:2px}
+    [hidden]{display:none!important}
+    .frame{height:100%;padding:10px;display:grid;grid-template-rows:64px minmax(0,1fr);gap:10px}
+    .topbar{min-width:0;padding:8px 14px;display:flex;align-items:center;gap:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.96);box-shadow:0 7px 22px rgba(20,55,51,.06)}
+    .brand{min-width:0;flex:1 1 auto;display:flex;align-items:center;gap:10px;white-space:nowrap}
+    .brand-badge{display:grid;width:40px;height:40px;place-items:center;border-radius:50%;background:var(--teal);color:#fff;font-size:14px;font-weight:800}
+    .brand-copy{min-width:0;display:grid;gap:2px}
+    .brand-copy strong{display:block;max-width:clamp(180px,38vw,560px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:17px;line-height:1.05}
+    .eyebrow,.student span,.progress span,.gate label>span,.sheet-title,.saved{color:var(--teal);font-size:10px;font-weight:800;line-height:1.2;letter-spacing:.04em}
+    .student{min-width:0;flex:0 1 260px;display:grid;text-align:right}
+    .student strong{max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}
+    .student small{color:var(--muted);font-size:11px}
+    .progress{width:min(320px,28vw);flex:0 1 320px;display:grid;gap:6px}
+    .progress>div{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+    .progress strong{color:var(--teal);font-size:20px}
+    .track{height:8px;overflow:hidden;border-radius:99px;background:#dde7e3}
+    .track i{display:block;width:0;height:100%;border-radius:inherit;background:var(--teal);transition:width .2s ease}
+    .workspace{min-width:0;min-height:0;display:grid;grid-template-columns:minmax(0,1.42fr) minmax(440px,.9fr);gap:10px}
+    .workspace.locked{grid-template-columns:1fr}
+    .doc-pane,.right-pane{min-width:0;min-height:0;border:1px solid var(--line);border-radius:15px;background:#fff;box-shadow:0 12px 32px rgba(20,55,51,.08);overflow:hidden}
+    .doc-pane{display:grid;grid-template-rows:42px minmax(0,1fr)}
+    .doc-head{padding:0 13px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#f7faf8;color:var(--teal);font-size:10px;font-weight:800;letter-spacing:.04em}
+    .doc-head a{color:var(--teal);text-decoration:none}
+    .doc-pane iframe{width:100%;height:100%;border:0;background:#fff}
+    .right-pane{position:relative}
+    .gate{height:100%;padding:clamp(22px,4vw,50px);display:flex;flex-direction:column;justify-content:center}
+    .gate .kicker{margin:0 0 9px;color:var(--teal);font-size:11px;font-weight:800;letter-spacing:.04em}
+    .gate h1{margin:0 0 10px;font-size:clamp(28px,2.4vw,38px);font-weight:800;line-height:1.08;letter-spacing:-.02em}
+    .gate>p{margin:0 0 24px;color:var(--muted);font-size:14px;line-height:1.55}
+    .gate label{display:grid;gap:8px;margin-bottom:14px}
+    .gate input,.gate select{width:100%;height:56px;padding:0 15px;border:1px solid #c7d4cf;border-radius:10px;background:#fff;color:var(--ink);font-size:17px}
+    .primary{min-height:52px;padding:0 18px;border:0;border-radius:10px;background:var(--teal);color:#fff;font-size:11px;font-weight:800;letter-spacing:.03em}
+    .primary:hover{background:var(--teal2)}
+    .primary:disabled{cursor:not-allowed;opacity:.55}
+    .gate .primary{width:100%;margin-top:4px}
+    .notice{margin:0 0 13px;padding:10px 12px;border:1px solid #efc4bc;border-radius:9px;background:var(--redbg);color:var(--red);font-size:12px;font-weight:700;line-height:1.4}
+    .sheet{height:100%;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto}
+    .tabs{padding:9px;display:flex;gap:5px;overflow-x:auto;border-bottom:1px solid var(--line);background:#f7faf8;scrollbar-width:thin}
+    .tabs button{flex:1 0 58px;height:42px;border:1px solid #cedad5;border-radius:9px;background:#fff;color:var(--muted);font-size:10px;font-weight:800}
+    .tabs button.active{border-color:var(--teal);background:var(--teal);color:#fff}
+    .tabs button.done:after{margin-left:4px;content:"✓";color:var(--green)}
+    .tabs button.active.done:after{color:#fff}
+    .sheet-head{padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .sheet-head h2{margin:4px 0 0;font-size:25px;line-height:1;font-weight:800}
+    .sheet-head>b{padding:6px 9px;border-radius:99px;background:var(--soft);color:var(--teal);font-size:11px}
+    .rows{min-height:0;padding:11px 12px 18px;display:grid;align-content:start;gap:9px;overflow-y:auto;overscroll-behavior:contain;scrollbar-color:#aac1b8 transparent;scrollbar-width:thin}
+    .answer-row{min-height:64px;display:grid;grid-template-columns:56px minmax(0,1fr);align-items:stretch;border:1px solid var(--line);border-radius:11px;background:#fff;overflow:hidden}
+    .answer-row.answered{border-color:#9fc6b7;box-shadow:0 0 0 2px rgba(31,103,95,.05)}
+    .qnum{display:grid;place-items:center;border-right:1px solid var(--line);background:var(--soft);color:var(--teal);font-size:21px;font-weight:800}
+    .answer-row input,.answer-row select{width:calc(100% - 20px);height:48px;margin:8px 10px;padding:0 14px;border:1px solid #c7d4cf;border-radius:8px;background:#fbfdfc;color:var(--ink);font-size:18px}
+    .answer-row input:focus,.answer-row select:focus{border-color:var(--teal);background:#fff;outline:0;box-shadow:0 0 0 3px rgba(31,103,95,.1)}
+    .letters{padding:8px 10px;display:grid;grid-template-columns:repeat(var(--choice-count,4),minmax(38px,1fr));gap:6px}
+    .letters button{height:48px;border:1px solid #cbd8d3;border-radius:8px;background:#fbfdfc;color:var(--teal);font-weight:800}
+    .letters button.selected{border-color:var(--teal);background:var(--teal);color:#fff}
+    .sheet-foot{padding:9px 11px;display:flex;align-items:center;gap:7px;border-top:1px solid var(--line);background:#fff;box-shadow:0 -6px 18px rgba(20,55,51,.04)}
+    .saved{margin-right:auto}
+    .sheet-foot button{min-height:44px;padding:0 13px;border:1px solid #c8d5d0;border-radius:8px;background:#fff;color:var(--teal);font-size:10px;font-weight:800}
+    .sheet-foot button:disabled{cursor:not-allowed;opacity:.35}
+    .sheet-foot .grade{border-color:var(--teal);background:var(--teal);color:#fff}
+    .result{height:100%;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto}
+    .result-head{padding:18px;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:15px;border-bottom:1px solid var(--line)}
+    .score{display:flex;align-items:baseline;color:var(--teal)}
+    .score strong{font-size:48px;line-height:1;font-weight:800}
+    .score span{color:var(--muted);font-size:19px;font-weight:700}
+    .result-head h2{margin:2px 0 5px;font-size:22px;font-weight:800}
+    .result-head p{margin:0;color:var(--muted);font-size:12px}
+    .sync{margin-top:5px;color:var(--green);font-size:11px;font-weight:700}
+    .sync.error{color:var(--red)}
+    .review-tools{padding:11px 12px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);background:#f7faf8}
+    .wrong-list{margin:0;color:var(--red);font-size:12px;line-height:1.5}
+    .wrong-list strong{display:block;margin-bottom:2px;font-size:10px;letter-spacing:.04em}
+    .review-filters{display:flex;gap:6px;flex:0 0 auto}
+    .review-filters button{min-height:36px;padding:0 11px;border:1px solid #c8d5d0;border-radius:8px;background:#fff;color:var(--teal);font-size:10px;font-weight:800}
+    .review-filters button.active{border-color:var(--teal);background:var(--teal);color:#fff}
+    .reviews{min-height:0;padding:11px;display:flex;flex-direction:column;gap:8px;overflow-y:auto;scrollbar-gutter:stable}
+    .review{flex:0 0 auto;display:grid;grid-template-columns:64px minmax(0,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+    .review.wrong{border-color:#ecc6bf}
+    .review-num{padding:12px 4px;display:grid;align-content:start;justify-items:center;gap:6px;border-right:1px solid var(--line);background:var(--greenbg);color:var(--green)}
+    .review.wrong .review-num{background:var(--redbg);color:var(--red)}
+    .review-num strong{font-size:22px;font-weight:800}
+    .review-num span{font-size:9px;font-weight:800}
+    .review-body{padding:14px 15px}
+    .review-answers{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;color:var(--muted);font-size:14px;line-height:1.45}
+    .review-answers b{color:var(--ink)}
+    .review-answers .correct{color:var(--green);font-size:16px}
+    .explain{margin:12px 0 0;padding:12px 13px;border-left:4px solid var(--teal);background:var(--soft);color:#263f3c;font-size:14px;line-height:1.65}
+    .explain strong{display:block;margin-bottom:5px;color:var(--teal);font-size:11px;letter-spacing:.05em}
+    .explain p{margin:0}
+    .result-foot{padding:10px 12px;display:grid;grid-template-columns:1fr;gap:8px;border-top:1px solid var(--line);background:#fff}
+    .secondary{min-height:52px;padding:0 14px;border:1px solid #c8d5d0;border-radius:10px;background:#fff;color:var(--teal);font-size:10px;font-weight:800}
+    @media(max-width:850px){
+      html,body{height:auto;min-height:100%;overflow:auto}
+      .frame{height:auto;min-height:100vh;grid-template-rows:auto auto}
+      .topbar{flex-wrap:wrap}
+      .brand{width:100%}
+      .brand-copy strong{max-width:calc(100vw - 130px)}
+      .student{order:3;width:100%;margin:0;text-align:left}
+      .progress{margin-left:auto;width:45%}
+      .workspace{grid-template-columns:1fr}
+      .doc-pane{height:58vh;min-height:430px}
+      .right-pane{height:78vh;min-height:620px}
+    }
+    @media(max-width:520px){
+      .frame{padding:6px;gap:6px}
+      .brand-copy strong{font-size:14px}.eyebrow{font-size:8px}
+      .progress{width:100%}
+      .workspace{gap:6px}
+      .doc-pane{height:52vh}
+      .right-pane{height:82vh}
+      .gate{padding:24px 16px}
+      .tabs{padding:6px;gap:3px}
+      .tabs button{height:39px;font-size:9px}
+      .sheet-head{padding:12px}
+      .rows{padding:8px;gap:7px}
+      .answer-row{grid-template-columns:48px minmax(0,1fr)}
+      .saved{display:none}
+      .sheet-foot button{flex:1;padding:0 8px}
+      .review-tools{align-items:stretch;flex-direction:column}
+      .review-filters button{flex:1}
+      .result-foot{grid-template-columns:1fr}
+    }
+  </style>
+  <link rel="stylesheet" href="../../vf-course-navigation.32c08ac91ffd.css">
+</head>
+<body>
+  <main class="frame">
+    <header class="topbar">
+      <div class="brand"><div class="brand-badge" id="unitBadge"></div><div class="brand-copy"><span class="eyebrow" id="courseName"></span><strong id="topic"></strong></div></div>
+      <div class="student" id="student" hidden><span>HỌC SINH</span><strong id="studentName"></strong><small id="studentClass"></small></div>
+      <div class="progress" id="progress" hidden><div><strong id="progressCount"></strong><span>ĐÃ ĐIỀN</span></div><div class="track"><i id="progressBar"></i></div></div>
+    </header>
+
+    <section class="workspace locked" id="workspace">
+      <article class="doc-pane" id="docPane" hidden>
+        <div class="doc-head"><span>ĐỀ BÀI</span></div>
+        <iframe id="docFrame"></iframe>
+      </article>
+
+      <aside class="right-pane">
+        <form class="gate" id="gate">
+          <p class="kicker" id="gateKicker"></p>
+          <h1>Bắt đầu lượt làm</h1>
+          <p>Đọc đề ở khung bên trái và chỉ điền đáp án vào phiếu.</p>
+          <label><span>HỌ VÀ TÊN</span><input id="name" autocomplete="name" required></label>
+          <label><span>LỚP</span><select id="className" required></select></label>
+          <p class="notice" id="gateNotice" hidden></p>
+          <button class="primary" type="submit">BẮT ĐẦU →</button>
+        </form>
+
+        <section class="sheet" id="sheet" hidden>
+          <nav class="tabs" id="tabs" aria-label="Exercise"></nav>
+          <header class="sheet-head"><div><span class="sheet-title">PHIẾU TRẢ LỜI</span><h2 id="exerciseTitle"></h2></div><b id="sectionTotal"></b></header>
+          <div class="rows" id="rows"></div>
+          <footer class="sheet-foot"><span class="saved">ĐÃ LƯU</span><button id="prev" type="button">← TRƯỚC</button><button id="next" type="button">TIẾP →</button><button class="grade" id="grade" type="button" hidden>CHẤM BÀI</button></footer>
+        </section>
+
+        <section class="result" id="result" hidden>
+          <header class="result-head"><div class="score"><strong id="score"></strong><span id="scoreTotal"></span></div><div><span class="sheet-title">KẾT QUẢ</span><h2 id="resultTitle"></h2><p id="resultMeta"></p><div class="sync" id="sync"></div></div></header>
+          <div class="review-tools" id="reviewTools"><p class="wrong-list" id="wrongList"></p><div class="review-filters" role="group" aria-label="Lọc lời giải"><button class="active" id="showWrong" type="button">CÂU SAI</button><button id="showAll" type="button">TẤT CẢ</button></div></div>
+          <div class="reviews" id="reviews"></div>
+          <footer class="result-foot"><button class="primary" id="retry" type="button">LÀM LƯỢT MỚI →</button></footer>
+        </section>
+      </aside>
+    </section>
+  </main>
+  <iframe id="scoreTarget" name="scoreTarget" hidden></iframe>
+  <script>
+    const APP = {"course":{"schemaVersion":1,"courseId":"grammar-foundation","courseCode":"GF","courseName":"Grammar Foundation","labels":{"unit":"UNIT","section":"EXERCISE","sectionShort":"EX"},"expected":{"unitCount":23,"questionTotal":1324},"classes":["FIGHTER 5","FIGHTER 6","FIGHTER 7","FIGHTER 8","FIGHTER 9"],"matching":{"defaultMode":"normalized-exact","caseInsensitive":true,"collapseWhitespace":true,"normalizeApostrophes":true,"ignoreTerminalPunctuation":true,"expandContractionsGlobally":false},"submissionTemplates":{"assignmentCode":"Grammar Foundation - Unit {unitLabel}","lesson":"Grammar Foundation – Unit {unitLabel}","activity":"{topic} – Bài kiểm tra{partSuffix}"},"scoreSink":{"kind":"google-form","label":"Old Grammar Google Form/Sheet","spreadsheetId":"1IGTRaRLdAkfFMqBmtnPXj-FbBmkt7JyfT-4VMlJEULc","sheetName":"Câu trả lời biểu mẫu 1","sheetGid":"531869170","formEditorId":"1YRgvpw5hU7EFA8tpsd0NbKZ1cTvzyEBYVoByb2kUmlU","formResponseUrl":"https://docs.google.com/forms/d/e/1FAIpQLSd9HJvGOR7VUETE-KRfvWCsQPQPEshLq_NiFNWVvA04Sicl6g/formResponse","entries":{"name":"entry.655449102","total":"entry.330493587","assignmentCode":"entry.86015848","lesson":"entry.414474821","activity":"entry.1423127065","className":"entry.172500407","percent":"entry.1161504407","score":"entry.1454259834","wrong":"entry.989432617"}}},"test":{"schemaVersion":1,"sequence":20,"unitLabel":"17","unitNumber":17,"unitCode":"GF-U17","topic":"Subjunctive Mood","total":40,"docId":"1zRBqtUVqE6n8RUfWzCPrpRNYZhn1qVqaQ0NamAfmldw","sections":[{"exerciseNumber":1,"startGlobal":1,"count":10,"inputType":"letters","choices":["A","B","C","D"]},{"exerciseNumber":2,"startGlobal":11,"count":6,"inputType":"text"},{"exerciseNumber":3,"startGlobal":17,"count":10,"inputType":"text"},{"exerciseNumber":4,"startGlobal":27,"count":14,"inputType":"text"}],"answers":[{"globalNumber":1,"exerciseNumber":1,"localNumber":1,"acceptedAnswers":["A"],"displayAnswer":"A. get","explanation":"Sau suggested that, mệnh đề giả định dùng động từ nguyên mẫu get."},{"globalNumber":2,"exerciseNumber":1,"localNumber":2,"acceptedAnswers":["C"],"displayAnswer":"C. be","explanation":"Sau demand that, thức giả định dùng be cho mọi ngôi."},{"globalNumber":3,"exerciseNumber":1,"localNumber":3,"acceptedAnswers":["D"],"displayAnswer":"D. be operated","explanation":"Sau It is essential that dùng giả định; người bệnh nhận phẫu thuật nên dùng bị động be operated."},{"globalNumber":4,"exerciseNumber":1,"localNumber":4,"acceptedAnswers":["B"],"displayAnswer":"B. that everyone know ...","explanation":"Cấu trúc essential that + chủ ngữ + động từ nguyên mẫu dùng know, không dùng knows hay to know."},{"globalNumber":5,"exerciseNumber":1,"localNumber":5,"acceptedAnswers":["B"],"displayAnswer":"B. make","explanation":"Suggest that + chủ ngữ + động từ nguyên mẫu: he make a quick decision."},{"globalNumber":6,"exerciseNumber":1,"localNumber":6,"acceptedAnswers":["B"],"displayAnswer":"B. finish","explanation":"Insisted that mở mệnh đề giả định nên dùng động từ nguyên mẫu finish."},{"globalNumber":7,"exerciseNumber":1,"localNumber":7,"acceptedAnswers":["A"],"displayAnswer":"A. that the student do","explanation":"Sau insists that, động từ ở dạng nguyên mẫu do dù chủ ngữ student là số ít."},{"globalNumber":8,"exerciseNumber":1,"localNumber":8,"acceptedAnswers":["D"],"displayAnswer":"D. recommends","explanation":"Recommend có thể dẫn mệnh đề giả định that the student make; các động từ còn lại không phù hợp cấu trúc và nghĩa."},{"globalNumber":9,"exerciseNumber":1,"localNumber":9,"acceptedAnswers":["C"],"displayAnswer":"C. explain","explanation":"It is critical that yêu cầu động từ giả định nguyên mẫu explain."},{"globalNumber":10,"exerciseNumber":1,"localNumber":10,"acceptedAnswers":["C"],"displayAnswer":"C. that a drastic measure be adopted","explanation":"It is advisable that dùng giả định; measure nhận hành động nên dùng bị động be adopted."},{"globalNumber":11,"exerciseNumber":2,"localNumber":1,"acceptedAnswers":["eat"],"displayAnswer":"eat","explanation":"Recommend that dùng động từ nguyên mẫu eat."},{"globalNumber":12,"exerciseNumber":2,"localNumber":2,"acceptedAnswers":["not drink","do not drink","don’t drink"],"displayAnswer":"not drink","explanation":"Phủ định của thức giả định đặt not trước động từ nguyên mẫu: not drink; dạng should not drink cũng có thể gặp nhưng chỗ trống chỉ cho động từ."},{"globalNumber":13,"exerciseNumber":2,"localNumber":3,"acceptedAnswers":["study"],"displayAnswer":"study","explanation":"Requested that dẫn mệnh đề giả định với động từ nguyên mẫu study."},{"globalNumber":14,"exerciseNumber":2,"localNumber":4,"acceptedAnswers":["pass"],"displayAnswer":"pass","explanation":"It is essential that + chủ ngữ + động từ nguyên mẫu pass."},{"globalNumber":15,"exerciseNumber":2,"localNumber":5,"acceptedAnswers":["be kept"],"displayAnswer":"be kept","explanation":"Record nhận hành động lưu giữ, nên thức giả định bị động là be kept."},{"globalNumber":16,"exerciseNumber":2,"localNumber":6,"acceptedAnswers":["be sent"],"displayAnswer":"be sent","explanation":"Letter nhận hành động gửi; sau imperative that dùng bị động giả định be sent."},{"globalNumber":17,"exerciseNumber":3,"localNumber":1,"acceptedAnswers":["that he address his problem himself","that he should address his problem himself"],"displayAnswer":"that he address his problem himself","explanation":"Suggest that dùng động từ nguyên mẫu address; should address là biến thể Anh-Anh hợp lệ."},{"globalNumber":18,"exerciseNumber":3,"localNumber":2,"acceptedAnswers":["that the mechanic fix her car today","that the mechanic should fix her car today"],"displayAnswer":"that the mechanic fix her car today","explanation":"Ask that có thể dẫn mệnh đề giả định với fix; should fix cũng diễn đạt cùng yêu cầu."},{"globalNumber":19,"exerciseNumber":3,"localNumber":3,"acceptedAnswers":["that the children be quiet","that the children should be quiet"],"displayAnswer":"that the children be quiet","explanation":"Insist that dùng be ở dạng nguyên mẫu cho mọi chủ ngữ."},{"globalNumber":20,"exerciseNumber":3,"localNumber":4,"acceptedAnswers":["that I accept this new position","that I should accept this new position"],"displayAnswer":"that I accept this new position","explanation":"Advise that dùng động từ giả định nguyên mẫu accept; should accept cũng đúng trong Anh-Anh."},{"globalNumber":21,"exerciseNumber":3,"localNumber":5,"acceptedAnswers":["that he help his brother with the Math homework","that he should help his brother with the Math homework","that he help his brother with the maths homework","that he should help his brother with the maths homework"],"displayAnswer":"that he help his brother with the Math homework","explanation":"Request that dùng động từ nguyên mẫu help; should help là biến thể tương đương."},{"globalNumber":22,"exerciseNumber":3,"localNumber":6,"acceptedAnswers":["that her husband apply for the post in the government","that her husband should apply for the post in the government"],"displayAnswer":"that her husband apply for the post in the government","explanation":"Urge that dẫn mệnh đề giả định với apply không thêm -s."},{"globalNumber":23,"exerciseNumber":3,"localNumber":7,"acceptedAnswers":["that an accountant master computer science","that an accountant should master computer science"],"displayAnswer":"that an accountant master computer science","explanation":"It is necessary that dùng động từ giả định nguyên mẫu master."},{"globalNumber":24,"exerciseNumber":3,"localNumber":8,"acceptedAnswers":["that all those involved in education be computer-literate","that all those involved in education should be computer-literate","that all those involved in education be computer literate","that all those involved in education should be computer literate"],"displayAnswer":"that all those involved in education be computer-literate","explanation":"Sau essential that, be giữ nguyên dạng trong thức giả định."},{"globalNumber":25,"exerciseNumber":3,"localNumber":9,"acceptedAnswers":["that all cases of Covid-19 be reported to the authorities","that all cases of Covid-19 should be reported to the authorities"],"displayAnswer":"that all cases of Covid-19 be reported to the authorities","explanation":"Cases nhận hành động báo cáo nên dùng giả định bị động be reported."},{"globalNumber":26,"exerciseNumber":3,"localNumber":10,"acceptedAnswers":["that the treatment be continued for at least two months","that the treatment should be continued for at least two months","that we continue the treatment for at least two months","that we should continue the treatment for at least two months"],"displayAnswer":"that the treatment be continued for at least two months","explanation":"Sau imperative that có thể dùng bị động be continued hoặc nêu chủ thể chung we continue."},{"globalNumber":27,"exerciseNumber":4,"localNumber":1,"acceptedAnswers":["left → leave","left -> leave","leave"],"displayAnswer":"left → leave","explanation":"Demand that yêu cầu động từ giả định nguyên mẫu leave."},{"globalNumber":28,"exerciseNumber":4,"localNumber":2,"acceptedAnswers":["called → call","called -> call","call"],"displayAnswer":"called → call","explanation":"Sau It was urgent that, dùng động từ giả định nguyên mẫu call."},{"globalNumber":29,"exerciseNumber":4,"localNumber":3,"acceptedAnswers":["✓","✔","tick","correct","v"],"displayAnswer":"✓","explanation":"Delay là dạng nguyên mẫu đúng sau It was very important that."},{"globalNumber":30,"exerciseNumber":4,"localNumber":4,"acceptedAnswers":["suspends → suspend","suspends -> suspend","suspend"],"displayAnswer":"suspends → suspend","explanation":"Move that theo nghĩa đề nghị dùng mệnh đề giả định với suspend không thêm -s."},{"globalNumber":31,"exerciseNumber":4,"localNumber":5,"acceptedAnswers":["took affect → take effect","took affect -> take effect","take effect"],"displayAnswer":"took affect → take effect","explanation":"Sau decreed that dùng giả định take; cụm đúng là take effect, không phải affect."},{"globalNumber":32,"exerciseNumber":4,"localNumber":6,"acceptedAnswers":["✓","✔","tick","correct","v"],"displayAnswer":"✓","explanation":"Should stop là cấu trúc mandative hợp lệ trong Anh-Anh sau propose that."},{"globalNumber":33,"exerciseNumber":4,"localNumber":7,"acceptedAnswers":["speaks → speak","speaks -> speak","speak"],"displayAnswer":"speaks → speak","explanation":"It is of great importance that yêu cầu động từ giả định nguyên mẫu speak."},{"globalNumber":34,"exerciseNumber":4,"localNumber":8,"acceptedAnswers":["come → came","come -> came","came"],"displayAnswer":"come → came","explanation":"It’s time + chủ ngữ dùng quá khứ đơn để nói việc nên làm ngay: we came back home."},{"globalNumber":35,"exerciseNumber":4,"localNumber":9,"acceptedAnswers":["was hungry → had been hungry","was hungry -> had been hungry","had been hungry"],"displayAnswer":"was hungry → had been hungry","explanation":"Tình trạng đói kéo dài trước hành động ate nên sau as though dùng quá khứ hoàn thành had been hungry."},{"globalNumber":36,"exerciseNumber":4,"localNumber":10,"acceptedAnswers":["went → to go","went -> to go","to go"],"displayAnswer":"went → to go","explanation":"Cấu trúc đúng là It’s time for somebody to do something."},{"globalNumber":37,"exerciseNumber":4,"localNumber":11,"acceptedAnswers":["is → were","is -> were","were","is → was","is -> was","was"],"displayAnswer":"is → were","explanation":"Would rather + mệnh đề về mong muốn tương lai dùng quá khứ giả định were; was cũng hợp lệ trong cách dùng hiện đại."},{"globalNumber":38,"exerciseNumber":4,"localNumber":12,"acceptedAnswers":["✓","✔","tick","correct","v"],"displayAnswer":"✓","explanation":"I’d rather she not go là cấu trúc giả định phủ định đúng, đặc biệt phổ biến trong Anh-Mỹ."},{"globalNumber":39,"exerciseNumber":4,"localNumber":13,"acceptedAnswers":["✓","✔","tick","correct","v"],"displayAnswer":"✓","explanation":"Had là quá khứ giả định đúng sau as if cho một tình trạng không có thật ở hiện tại."},{"globalNumber":40,"exerciseNumber":4,"localNumber":14,"acceptedAnswers":["finished → had finished","finished -> had finished","had finished"],"displayAnswer":"finished → had finished","explanation":"Wish nói sự tiếc nuối về đêm qua dùng quá khứ hoàn thành had finished."}],"reviewNeeded":[{"globalNumber":31,"exerciseNumber":4,"localNumber":5,"reason":"Nguồn có đồng thời lỗi thức giả định took và lỗi từ loại/cụm từ affect; phải sửa cả cụm thành take effect."},{"globalNumber":35,"exerciseNumber":4,"localNumber":9,"reason":"Nguồn dùng was hungry for days; đáp án theo quan hệ thời gian là had been hungry vì trạng thái kéo dài trước hành động ate."}],"part":null,"testId":"grammar-foundation-u17"}};
+    const TEST = APP.test;
+    const SECTIONS = TEST.sections;
+    const SOLUTIONS = TEST.answers;
+    const TOTAL = TEST.total;
+    const FORM_URL = APP.course.scoreSink.formResponseUrl;
+    const ENTRIES = APP.course.scoreSink.entries;
+    const STORAGE_PREFIX = APP.course.courseId;
+    const PROFILE_KEY = `${STORAGE_PREFIX}:profile:v1`;
+    const ACTIVE_KEY = `${STORAGE_PREFIX}:${TEST.testId}:active:v1`;
+    const HISTORY_KEY = `${STORAGE_PREFIX}:${TEST.testId}:history:v1`;
+    const LAST_KEY = `${STORAGE_PREFIX}:${TEST.testId}:last:v1`;
+    const SUBMIT_LOCK_PREFIX = `${STORAGE_PREFIX}:${TEST.testId}:submit-lock`;
+    let answers = {};
+    let current = 0;
+    let attemptId = "";
+    let identity = {name:"",className:""};
+    let history = [];
+    let graded = false;
+    let submitting = false;
+    let sessionConfirmed = false;
+    let storedActive = null;
+    let storedLast = null;
+    const $ = id => document.getElementById(id);
+    const setSync = (message,isError=false) => { const target = $("sync"); target.textContent = message; target.classList.toggle("error",isError); };
+    const questions = Array.from({length:TOTAL}, (_,index) => index + 1);
+    const norm = value => String(value || "").normalize("NFKC").trim().toLowerCase().replace(/[’‘]/g,"'").replace(/[.!?]+$/g,"").trim().replace(/\s+/g," ");
+    const equivalent = (left,right) => norm(left) === norm(right);
+    const UNIT_PART = TEST.part ?? (String(TEST.unitLabel).includes(".") ? String(TEST.unitLabel).split(".").pop() : null);
+    const templateValue = key => ({
+      unitLabel:TEST.unitLabel,
+      topic:TEST.topic,
+      partSuffix:UNIT_PART == null ? "" : ` ${UNIT_PART}`
+    })[key] ?? "";
+    const renderTemplate = template => String(template || "").replace(/\{(\w+)\}/g,(_,key) => templateValue(key));
+    const makeId = () => `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    const TAB_ID = makeId();
+    const range = section => Array.from({length:section.count}, (_,index) => section.startGlobal + index);
+    const cleanIdentity = candidate => {
+      const name = String(candidate?.name || "").trim().replace(/\s+/g," ");
+      const className = String(candidate?.className || "").trim();
+      return name.length >= 2 && APP.course.classes.includes(className) ? {name,className} : null;
+    };
+    const sameIdentity = (left,right) => {
+      const a = cleanIdentity(left);
+      const b = cleanIdentity(right);
+      return Boolean(a && b && a.name.toLocaleLowerCase("vi") === b.name.toLocaleLowerCase("vi") && a.className === b.className);
+    };
+    const completeAnswers = snapshot => Boolean(snapshot && typeof snapshot === "object" && !Array.isArray(snapshot) && questions.every(number => norm(snapshot[number])));
+    const validAttemptId = value => typeof value === "string" && value.trim().length >= 5;
+    const validActiveRecord = record => Boolean(record && validAttemptId(record.attemptId) && cleanIdentity(record.identity) && record.answers && typeof record.answers === "object" && !Array.isArray(record.answers));
+    const validCompletedRecord = record => validActiveRecord(record) && completeAnswers(record.answers);
+    const readStored = key => {
+      try{ return JSON.parse(localStorage.getItem(key) || "null"); }
+      catch(_){ localStorage.removeItem(key); return null; }
+    };
+    const locate = globalNumber => {
+      const sectionIndex = SECTIONS.findIndex(section => globalNumber >= section.startGlobal && globalNumber < section.startGlobal + section.count);
+      return {sectionIndex, exercise:SECTIONS[sectionIndex].exerciseNumber, local:globalNumber - SECTIONS[sectionIndex].startGlobal + 1};
+    };
+
+    function lockQuestions(){
+      $("docPane").hidden = true;
+      $("docFrame").removeAttribute("src");
+      $("workspace").classList.add("locked");
+    }
+
+    function unlockQuestions(){
+      if(!sessionConfirmed || !cleanIdentity(identity)) return false;
+      $("workspace").classList.remove("locked");
+      $("docPane").hidden = false;
+      if(!$("docFrame").hasAttribute("src")){
+        $("docFrame").src = `https://docs.google.com/document/d/${TEST.docId}/preview`;
+      }
+      return true;
+    }
+
+    function initializeStaticUi(){
+      document.title = `${APP.course.courseName} · Unit ${TEST.unitLabel}`;
+      $("courseName").textContent = APP.course.courseName.toUpperCase();
+      $("unitBadge").textContent = TEST.unitLabel;
+      $("topic").textContent = TEST.topic;
+      $("gateKicker").textContent = `PHIẾU TRẢ LỜI · ${TOTAL} CÂU`;
+      $("progressCount").textContent = `0/${TOTAL}`;
+      $("scoreTotal").textContent = `/${TOTAL}`;
+      $("docFrame").title = `Đề kiểm tra Unit ${TEST.unitLabel}`;
+      const select = $("className");
+      select.innerHTML = "";
+      const empty = document.createElement("option");
+      empty.value = "";
+      empty.textContent = "Chọn lớp";
+      select.append(empty);
+      APP.course.classes.forEach(className => {
+        const option = document.createElement("option");
+        option.value = className;
+        option.textContent = className;
+        select.append(option);
+      });
+    }
+
+    function load(){
+      initializeStaticUi();
+      lockQuestions();
+      const profile = cleanIdentity(readStored(PROFILE_KEY));
+      const rawHistory = readStored(HISTORY_KEY);
+      history = Array.isArray(rawHistory) ? rawHistory : [];
+      const rawActive = readStored(ACTIVE_KEY);
+      storedActive = validActiveRecord(rawActive) ? rawActive : null;
+      if(rawActive && !storedActive) localStorage.removeItem(ACTIVE_KEY);
+      const rawLast = readStored(LAST_KEY);
+      storedLast = validCompletedRecord(rawLast) ? rawLast : null;
+      if(rawLast && !storedLast) localStorage.removeItem(LAST_KEY);
+      const prefill = profile || cleanIdentity(storedActive?.identity) || cleanIdentity(storedLast?.identity);
+      if(prefill){
+        $("name").value = prefill.name;
+        $("className").value = prefill.className;
+      }
+    }
+
+    function save(){
+      if(!sessionConfirmed || !cleanIdentity(identity) || !validAttemptId(attemptId)) return;
+      localStorage.setItem(ACTIVE_KEY, JSON.stringify({attemptId,identity,answers,current}));
+    }
+
+    function startAttempt(){
+      if(!sessionConfirmed || !cleanIdentity(identity)) return;
+      answers = {};
+      current = 0;
+      attemptId = makeId();
+      graded = false;
+      submitting = false;
+      storedActive = null;
+      storedLast = null;
+      $("retry").disabled = false;
+      $("retry").textContent = "LÀM LƯỢT MỚI →";
+      localStorage.removeItem(LAST_KEY);
+      showSheet();
+    }
+
+    function showStudent(){
+      const completedIndex = history.findIndex(item => item.attemptId === attemptId);
+      const attemptNumber = completedIndex >= 0 ? completedIndex + 1 : history.length + 1;
+      $("student").hidden = false;
+      $("studentName").textContent = identity.name;
+      $("studentClass").textContent = `${identity.className} · LƯỢT ${attemptNumber}`;
+    }
+
+    function showSheet(){
+      if(!sessionConfirmed || !cleanIdentity(identity) || !validAttemptId(attemptId) || !unlockQuestions()) return;
+      $("gate").hidden = true;
+      $("result").hidden = true;
+      $("sheet").hidden = false;
+      $("progress").hidden = false;
+      showStudent();
+      renderTabs();
+      renderRows();
+      updateProgress();
+      save();
+    }
+
+    $("gate").addEventListener("submit", event => {
+      event.preventDefault();
+      const confirmedIdentity = cleanIdentity({name:$("name").value,className:$("className").value});
+      if(!confirmedIdentity){
+        $("gateNotice").textContent = "Nhập đầy đủ họ tên và lớp.";
+        $("gateNotice").hidden = false;
+        return;
+      }
+      $("gateNotice").hidden = true;
+      identity = confirmedIdentity;
+      sessionConfirmed = true;
+      localStorage.setItem(PROFILE_KEY, JSON.stringify(identity));
+      unlockQuestions();
+      if(storedActive && sameIdentity(storedActive.identity,identity)){
+        answers = {...storedActive.answers};
+        current = Math.max(0, Math.min(SECTIONS.length - 1, Number(storedActive.current) || 0));
+        attemptId = storedActive.attemptId;
+        graded = false;
+        storedActive = null;
+        showSheet();
+        return;
+      }
+      if(storedLast && sameIdentity(storedLast.identity,identity) && validCompletedRecord(storedLast)){
+        const record = storedLast;
+        answers = {...record.answers};
+        attemptId = record.attemptId;
+        graded = true;
+        storedLast = null;
+        showResult(record,true);
+        if(!localStorage.getItem(sentKey(record.attemptId))){
+          const result = buildReview(record.answers);
+          setTimeout(() => postScore({attemptId:record.attemptId,score:result.score,percent:result.percent,wrong:result.wrongNumbers.join(", "),answers:{...record.answers},identity:{...identity}}),500);
+        }
+        return;
+      }
+      startAttempt();
+    });
+
+    function renderTabs(){
+      $("tabs").innerHTML = "";
+      SECTIONS.forEach((section,index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.dataset.sectionIndex = index;
+        button.textContent = `EX ${section.exerciseNumber}`;
+        if(index === current) button.classList.add("active");
+        if(range(section).every(number => norm(answers[number]))) button.classList.add("done");
+        button.onclick = () => { current = index; renderTabs(); renderRows(); save(); };
+        $("tabs").append(button);
+      });
+    }
+
+    function renderRows(){
+      const section = SECTIONS[current];
+      $("exerciseTitle").textContent = `EX ${section.exerciseNumber}`;
+      $("sectionTotal").textContent = `${section.count} CÂU`;
+      $("rows").innerHTML = "";
+      range(section).forEach((globalNumber,localIndex) => {
+        const localNumber = localIndex + 1;
+        const row = document.createElement("div");
+        row.className = `answer-row${norm(answers[globalNumber]) ? " answered" : ""}`;
+        const number = document.createElement("div");
+        number.className = "qnum";
+        number.textContent = localNumber;
+        row.append(number);
+        if(section.inputType === "letters"){
+          const letters = document.createElement("div");
+          letters.className = "letters";
+          letters.style.setProperty("--choice-count", Math.min((section.choices || []).length, 6));
+          (section.choices || []).forEach(letter => {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.textContent = letter;
+            button.setAttribute("aria-label", `Exercise ${section.exerciseNumber}, câu ${localNumber}: ${letter}`);
+            if(answers[globalNumber] === letter) button.className = "selected";
+            button.onclick = () => {
+              setAnswer(globalNumber,letter);
+              [...letters.children].forEach(choiceButton => choiceButton.classList.remove("selected"));
+              button.classList.add("selected");
+              row.classList.add("answered");
+            };
+            letters.append(button);
+          });
+          row.append(letters);
+        }else if(section.inputType === "select"){
+          const select = document.createElement("select");
+          select.setAttribute("aria-label", `Exercise ${section.exerciseNumber}, câu ${localNumber}`);
+          const empty = document.createElement("option");
+          empty.value = "";
+          empty.textContent = "—";
+          select.append(empty);
+          (section.choices || []).forEach(letter => {
+            const option = document.createElement("option");
+            option.value = letter;
+            option.textContent = letter;
+            select.append(option);
+          });
+          select.value = answers[globalNumber] || "";
+          select.onchange = () => {
+            setAnswer(globalNumber,select.value);
+            row.classList.toggle("answered",Boolean(norm(select.value)));
+          };
+          row.append(select);
+        }else{
+          const input = document.createElement("input");
+          input.setAttribute("aria-label", `Exercise ${section.exerciseNumber}, câu ${localNumber}`);
+          input.autocomplete = "off";
+          input.spellcheck = false;
+          input.value = answers[globalNumber] || "";
+          input.oninput = () => setAnswer(globalNumber,input.value);
+          input.onkeydown = event => {
+            if(event.key === "Enter"){
+              event.preventDefault();
+              const fields = [...document.querySelectorAll(".rows input")];
+              fields[fields.indexOf(input) + 1]?.focus();
+            }
+          };
+          row.append(input);
+        }
+        $("rows").append(row);
+      });
+      $("rows").scrollTop = 0;
+      $("prev").disabled = current === 0;
+      $("next").hidden = current === SECTIONS.length - 1;
+      $("grade").hidden = current !== SECTIONS.length - 1;
+      $("grade").disabled = graded;
+    }
+
+    function refreshCurrentTabStatus(){
+      const tab = $("tabs").querySelector(`[data-section-index="${current}"]`);
+      if(tab) tab.classList.toggle("done",range(SECTIONS[current]).every(number => norm(answers[number])));
+    }
+
+    function setAnswer(globalNumber,value){
+      answers[globalNumber] = value;
+      updateProgress();
+      refreshCurrentTabStatus();
+      save();
+    }
+
+    function updateProgress(){
+      const count = questions.filter(number => norm(answers[number])).length;
+      $("progressCount").textContent = `${count}/${TOTAL}`;
+      $("progressBar").style.width = `${count / TOTAL * 100}%`;
+    }
+
+    $("prev").onclick = () => { if(current > 0){ current--; renderTabs(); renderRows(); save(); } };
+    $("next").onclick = () => { if(current < SECTIONS.length - 1){ current++; renderTabs(); renderRows(); save(); } };
+    $("grade").onclick = grade;
+
+    function buildReview(answerSnapshot){
+      let score = 0;
+      const review = SOLUTIONS.map(solution => {
+        const submitted = String(answerSnapshot[solution.globalNumber] || "").trim();
+        const correct = solution.acceptedAnswers.some(answer => equivalent(answer,submitted));
+        if(correct) score++;
+        return {...solution,submitted,correct};
+      });
+      const wrongNumbers = review.filter(item => !item.correct).map(item => item.globalNumber);
+      return {score,review,percent:Math.round(score / TOTAL * 100),wrong:wrongNumbers.length,wrongNumbers};
+    }
+
+    function formatWrongList(review){
+      const groups = new Map();
+      review.filter(item => !item.correct).forEach(item => {
+        const place = locate(item.globalNumber);
+        const label = `EX ${place.exercise}`;
+        if(!groups.has(label)) groups.set(label,[]);
+        groups.get(label).push(place.local);
+      });
+      return [...groups].map(([label,numbers]) => `${label}: ${numbers.join(", ")}`).join(" · ");
+    }
+
+    function setReviewFilter(mode){
+      const wrongOnly = mode === "wrong";
+      document.querySelectorAll("#reviews .review").forEach(card => {
+        card.hidden = wrongOnly && card.dataset.correct === "true";
+      });
+      $("showWrong").classList.toggle("active",wrongOnly);
+      $("showAll").classList.toggle("active",!wrongOnly);
+      $("showWrong").setAttribute("aria-pressed",String(wrongOnly));
+      $("showAll").setAttribute("aria-pressed",String(!wrongOnly));
+      $("reviews").scrollTop = 0;
+    }
+
+    function grade(){
+      if(graded) return;
+      const confirmedIdentity = cleanIdentity(identity);
+      if(!sessionConfirmed || !confirmedIdentity || !validAttemptId(attemptId)) return;
+      const missing = questions.filter(number => !norm(answers[number]));
+      if(missing.length){
+        const first = locate(missing[0]);
+        current = first.sectionIndex;
+        renderTabs();
+        renderRows();
+        alert(`Còn ${missing.length} câu chưa điền. Bắt đầu từ EX ${first.exercise}, câu ${first.local}.`);
+        return;
+      }
+      graded = true;
+      $("grade").disabled = true;
+      const answerSnapshot = {...answers};
+      const result = buildReview(answerSnapshot);
+      const completedAttemptId = attemptId;
+      const record = {attemptId:completedAttemptId,completedAt:new Date().toISOString(),score:result.score,percent:result.percent,answers:answerSnapshot,identity:{...identity}};
+      if(!history.some(item => item.attemptId === completedAttemptId)){
+        history.push({attemptId:record.attemptId,completedAt:record.completedAt,score:record.score,percent:record.percent});
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(-50)));
+      }
+      localStorage.setItem(LAST_KEY, JSON.stringify(record));
+      localStorage.removeItem(ACTIVE_KEY);
+      showResult(record,false);
+      postScore({attemptId:completedAttemptId,score:result.score,percent:result.percent,wrong:result.wrongNumbers.join(", "),answers:answerSnapshot,identity:{...confirmedIdentity}});
+    }
+
+    function showResult(record,restored){
+      const recordIdentity = cleanIdentity(record?.identity);
+      if(!sessionConfirmed || !recordIdentity || !sameIdentity(recordIdentity,identity) || !validCompletedRecord(record) || !unlockQuestions()) return false;
+      const result = buildReview(record.answers || {});
+      $("gate").hidden = true;
+      $("sheet").hidden = true;
+      $("result").hidden = false;
+      $("progress").hidden = true;
+      identity = recordIdentity;
+      showStudent();
+      $("score").textContent = result.score;
+      $("resultTitle").textContent = result.score === TOTAL ? `Hoàn thành ${TOTAL}/${TOTAL}` : `${result.wrong} câu cần sửa`;
+      $("resultMeta").textContent = `Điểm ${result.score}/${TOTAL} · ${result.percent}%`;
+      setSync(restored ? (localStorage.getItem(sentKey(record.attemptId)) ? "Đã lưu điểm" : "Điểm của lượt gần nhất") : "Đang lưu điểm…");
+      $("wrongList").replaceChildren();
+      const wrongLabel = document.createElement("strong");
+      wrongLabel.textContent = result.wrong ? "CÂU SAI" : "KẾT QUẢ";
+      $("wrongList").append(wrongLabel,document.createTextNode(result.wrong ? formatWrongList(result.review) : "Không có câu sai."));
+      $("showWrong").textContent = `CÂU SAI (${result.wrong})`;
+      $("showWrong").hidden = result.wrong === 0;
+      $("showAll").textContent = `TẤT CẢ (${TOTAL})`;
+      $("reviews").innerHTML = "";
+      result.review.forEach(item => {
+        const place = locate(item.globalNumber);
+        const card = document.createElement("article");
+        card.className = `review${item.correct ? "" : " wrong"}`;
+        card.dataset.correct = String(item.correct);
+        const number = document.createElement("div");
+        number.className = "review-num";
+        const numberStrong = document.createElement("strong");
+        numberStrong.textContent = place.local;
+        const exercise = document.createElement("span");
+        exercise.textContent = `EX ${place.exercise}`;
+        const status = document.createElement("span");
+        status.textContent = item.correct ? "ĐÚNG" : "SAI";
+        number.append(numberStrong,exercise,status);
+        const body = document.createElement("div");
+        body.className = "review-body";
+        const answersLine = document.createElement("div");
+        answersLine.className = "review-answers";
+        const mine = document.createElement("span");
+        mine.textContent = "Em: ";
+        const mineAnswer = document.createElement("b");
+        mineAnswer.textContent = item.submitted;
+        mine.append(mineAnswer);
+        const key = document.createElement("span");
+        key.textContent = "Đáp án: ";
+        const keyAnswer = document.createElement("b");
+        keyAnswer.className = "correct";
+        keyAnswer.textContent = item.displayAnswer;
+        key.append(keyAnswer);
+        answersLine.append(mine,key);
+        const explanation = document.createElement("div");
+        explanation.className = "explain";
+        const explanationTitle = document.createElement("strong");
+        explanationTitle.textContent = "GIẢI THÍCH";
+        const explanationText = document.createElement("p");
+        explanationText.textContent = item.explanation || "Chưa có giải thích cho câu này.";
+        explanation.append(explanationTitle,explanationText);
+        body.append(answersLine,explanation);
+        card.append(number,body);
+        $("reviews").append(card);
+      });
+      setReviewFilter(result.wrong ? "wrong" : "all");
+      return true;
+    }
+
+    const sentKey = id => `${STORAGE_PREFIX}:${TEST.testId}:sent:${id}`;
+    const storageLockKey = id => `${SUBMIT_LOCK_PREFIX}:${id}`;
+    const wait = milliseconds => new Promise(resolve => setTimeout(resolve,milliseconds));
+
+    function submitScoreForm(snapshot,key){
+      return new Promise(resolve => {
+        const target = $("scoreTarget");
+        const form = document.createElement("form");
+        form.method = "POST";
+        form.action = FORM_URL;
+        form.target = target.name;
+        form.hidden = true;
+        const values = {
+          [ENTRIES.name]:snapshot.identity.name,
+          [ENTRIES.total]:String(TOTAL),
+          [ENTRIES.assignmentCode]:renderTemplate(APP.course.submissionTemplates.assignmentCode),
+          [ENTRIES.lesson]:renderTemplate(APP.course.submissionTemplates.lesson),
+          [ENTRIES.activity]:renderTemplate(APP.course.submissionTemplates.activity),
+          [ENTRIES.className]:snapshot.identity.className,
+          [ENTRIES.percent]:`${snapshot.percent}%`,
+          [ENTRIES.score]:`${snapshot.score}/${TOTAL}`,
+          [ENTRIES.wrong]:String(snapshot.wrong)
+        };
+        Object.entries(values).forEach(([name,value]) => {
+          const input = document.createElement("input");
+          input.name = name;
+          input.value = value;
+          form.append(input);
+        });
+        document.body.append(form);
+        let settled = false;
+        let timer = 0;
+        const finish = success => {
+          if(settled) return;
+          settled = true;
+          clearTimeout(timer);
+          if(success) localStorage.setItem(key,new Date().toISOString());
+          form.remove();
+          resolve(success);
+        };
+        target.addEventListener("load",() => finish(true),{once:true});
+        form.submit();
+        timer = setTimeout(() => finish(false),12000);
+      });
+    }
+
+    async function submitWithStorageLock(snapshot,key){
+      const claimKey = storageLockKey(snapshot.attemptId);
+      const owner = `${TAB_ID}:${makeId()}`;
+      const deadline = Date.now() + 35000;
+      while(Date.now() < deadline){
+        if(localStorage.getItem(key)) return true;
+        const now = Date.now();
+        const existing = readStored(claimKey);
+        if(!existing || !existing.owner || Number(existing.expiresAt) <= now){
+          localStorage.setItem(claimKey,JSON.stringify({owner,expiresAt:now + 20000}));
+          await wait(25);
+          const confirmed = readStored(claimKey);
+          if(confirmed?.owner === owner){
+            try{
+              if(localStorage.getItem(key)) return true;
+              return await submitScoreForm(snapshot,key);
+            }finally{
+              const latest = readStored(claimKey);
+              if(latest?.owner === owner) localStorage.removeItem(claimKey);
+            }
+          }
+        }
+        await wait(300);
+      }
+      return false;
+    }
+
+    function postScore(snapshot){
+      if(submitting) return;
+      const safeIdentity = cleanIdentity(snapshot?.identity);
+      if(!sessionConfirmed || !safeIdentity || !sameIdentity(safeIdentity,identity) || !validAttemptId(snapshot?.attemptId) || !completeAnswers(snapshot?.answers)) return;
+      const checked = buildReview(snapshot.answers);
+      const safeSnapshot = {
+        attemptId:snapshot.attemptId,
+        score:checked.score,
+        percent:checked.percent,
+        wrong:checked.wrongNumbers.join(", "),
+        answers:{...snapshot.answers},
+        identity:safeIdentity
+      };
+      const key = sentKey(safeSnapshot.attemptId);
+      if(localStorage.getItem(key)){
+        setSync("Đã lưu điểm");
+        $("retry").textContent = "LÀM LƯỢT MỚI →";
+        return;
+      }
+      submitting = true;
+      $("retry").disabled = true;
+      setSync("Đang lưu điểm…");
+      (async () => {
+        let success = false;
+        try{
+          if(navigator.locks?.request){
+            success = await navigator.locks.request(`${SUBMIT_LOCK_PREFIX}:${safeSnapshot.attemptId}`,async () => {
+              if(localStorage.getItem(key)) return true;
+              return submitScoreForm(safeSnapshot,key);
+            });
+          }else{
+            success = await submitWithStorageLock(safeSnapshot,key);
+          }
+        }catch(_){
+          success = await submitWithStorageLock(safeSnapshot,key);
+        }finally{
+          submitting = false;
+          $("retry").disabled = false;
+          if(success || localStorage.getItem(key)){
+            setSync("Đã lưu điểm");
+            $("retry").textContent = "LÀM LƯỢT MỚI →";
+          }else{
+            setSync("Chưa lưu được điểm. Bấm nút bên dưới để thử lại.",true);
+            $("retry").textContent = "THỬ LƯU ĐIỂM LẠI →";
+          }
+        }
+      })();
+    }
+
+    $("retry").onclick = () => {
+      if(submitting) return;
+      const pending = readStored(LAST_KEY);
+      if(validCompletedRecord(pending) && sameIdentity(pending.identity,identity) && !localStorage.getItem(sentKey(pending.attemptId))){
+        const result = buildReview(pending.answers);
+        postScore({attemptId:pending.attemptId,score:result.score,percent:result.percent,wrong:result.wrongNumbers.join(", "),answers:{...pending.answers},identity:{...identity}});
+        return;
+      }
+      startAttempt();
+    };
+    $("showWrong").onclick = () => setReviewFilter("wrong");
+    $("showAll").onclick = () => setReviewFilter("all");
+
+    load();
+  </script>
+  <script src="../../vf-course-navigation.53e975c9a910.js"></script>
+</body>
+</html>
