@@ -9,103 +9,106 @@
   if (!link || !config.nameEntry || !config.classEntry) return;
 
   const STORAGE_KEY = "ms-trang-trieu-student-profile-v1";
-  const classes = Array.from({ length: 14 }, (_, index) => `IELTS ${index + 40}`);
   const baseUrl = link.getAttribute("href") || "";
+  const nameInput = config.nameSelector ? document.querySelector(config.nameSelector) : null;
+  const classInput = config.classSelector ? document.querySelector(config.classSelector) : null;
 
-  const readProfile = () => {
+  const cleanName = (value) => String(value || "").trim().replace(/\s+/g, " ");
+  const cleanClass = (value) => String(value || "").trim();
+  const validProfile = (profile) => Boolean(profile && cleanName(profile.name) && cleanClass(profile.className));
+
+  const normalizeProfile = (value) => {
+    if (!value || typeof value !== "object") return null;
+    const source = value.identity && typeof value.identity === "object" ? value.identity : value;
+    const profile = {
+      name: cleanName(source.name || source.studentName || source.fullName || source.hoTen),
+      className: cleanClass(source.className || source.studentClass || source.class || source.lop)
+    };
+    return validProfile(profile) ? profile : null;
+  };
+
+  const readJson = (key) => {
     try {
-      const value = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
-      return value && typeof value === "object" ? value : {};
+      return JSON.parse(localStorage.getItem(key) || "null");
     } catch {
-      return {};
+      return null;
     }
   };
 
-  const saveProfile = (name, className) => {
-    if (!name || !className) return;
+  const readUrlProfile = () => {
+    const params = new URLSearchParams(window.location.search);
+    const first = (keys) => keys.map((key) => params.get(key)).find(Boolean) || "";
+    return normalizeProfile({
+      name: first([`entry.${config.nameEntry}`, "studentName", "fullName", "name", "student", "hoTen", "hoten"]),
+      className: first([`entry.${config.classEntry}`, "studentClass", "className", "class", "lop"])
+    });
+  };
+
+  const readStoredProfile = () => {
+    const shared = normalizeProfile(readJson(STORAGE_KEY));
+    if (shared) return shared;
+
+    const knownKeys = [
+      "mstt-reading-b02-v1",
+      "ielts-listening-b04-practice-attempt",
+      "ielts:profile:v1",
+      "ri2:profile:v1",
+      "ri3:profile:v1"
+    ];
+    for (const key of knownKeys) {
+      const profile = normalizeProfile(readJson(key));
+      if (profile) return profile;
+    }
+
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ name, className }));
+      const ri3Profile = normalizeProfile({
+        name: localStorage.getItem("ri3-student-name"),
+        className: localStorage.getItem("ri3-student-class")
+      });
+      if (ri3Profile) return ri3Profile;
+
+      for (let index = 0; index < localStorage.length; index += 1) {
+        const key = localStorage.key(index) || "";
+        if (!/(profile|identity|student|attempt|reading-b02|listening-b04)/i.test(key)) continue;
+        const profile = normalizeProfile(readJson(key));
+        if (profile) return profile;
+      }
     } catch {
-      // Prefill still works for the current page if storage is unavailable.
+      // The form link still opens normally when browser storage is unavailable.
+    }
+    return null;
+  };
+
+  const readPageProfile = () => normalizeProfile({
+    name: nameInput && nameInput.value,
+    className: classInput && classInput.value
+  });
+
+  const saveProfile = (profile) => {
+    if (!validProfile(profile)) return;
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(profile));
+    } catch {
+      // Prefilling the current link does not depend on storage being writable.
     }
   };
-
-  const addStyles = () => {
-    if (document.getElementById("student-prefill-styles")) return;
-    const style = document.createElement("style");
-    style.id = "student-prefill-styles";
-    style.textContent = `
-      .student-prefill-card{margin:18px 0;padding:20px;border:1px solid #c7dadd;border-radius:14px;background:#f1f8f7;color:#17384a;text-align:left}
-      .student-prefill-card strong{display:block;margin-bottom:5px;color:#126f70;font-size:16px}
-      .student-prefill-card p{margin:0 0 14px;font-size:14px;line-height:1.55}
-      .student-prefill-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(160px,1fr);gap:12px}
-      .student-prefill-card label{display:grid;gap:6px;font-size:13px;font-weight:700}
-      .student-prefill-card input,.student-prefill-card select{width:100%;min-height:44px;padding:10px 12px;border:1px solid #9fb9bf;border-radius:9px;background:#fff;color:#17384a;font:inherit}
-      .student-prefill-card input:focus,.student-prefill-card select:focus{outline:3px solid rgba(204,158,60,.3);border-color:#a67517}
-      .student-prefill-status{margin:12px 0 0!important;font-weight:700;color:#6d4b0c}
-      @media(max-width:600px){.student-prefill-grid{grid-template-columns:1fr}.student-prefill-card{padding:16px}}
-    `;
-    document.head.appendChild(style);
-  };
-
-  let nameInput = config.nameSelector ? document.querySelector(config.nameSelector) : null;
-  let classInput = config.classSelector ? document.querySelector(config.classSelector) : null;
-  let status;
-
-  if (!nameInput || !classInput) {
-    addStyles();
-    const card = document.createElement("div");
-    card.className = "student-prefill-card";
-    card.innerHTML = `
-      <strong>THÔNG TIN HỌC SINH</strong>
-      <p>Nhập một lần tại đây. Khi mở form, họ tên và lớp sẽ được điền sẵn.</p>
-      <div class="student-prefill-grid">
-        <label>Họ và tên đầy đủ<input type="text" autocomplete="name" data-student-name placeholder="Nguyễn Văn A"></label>
-        <label>Lớp IELTS<select data-student-class><option value="">Chọn lớp</option>${classes.map((item) => `<option value="${item}">${item}</option>`).join("")}</select></label>
-      </div>
-      <p class="student-prefill-status" aria-live="polite"></p>
-    `;
-    link.parentNode.insertBefore(card, link);
-    nameInput = card.querySelector("[data-student-name]");
-    classInput = card.querySelector("[data-student-class]");
-    status = card.querySelector(".student-prefill-status");
-  }
-
-  const profile = readProfile();
-  if (profile.name && !String(nameInput.value || "").trim()) nameInput.value = profile.name;
-  if (profile.className && !String(classInput.value || "").trim()) classInput.value = profile.className;
 
   const sync = () => {
-    const name = String(nameInput.value || "").trim().replace(/\s+/g, " ");
-    const className = String(classInput.value || "").trim();
+    const profile = readPageProfile() || readUrlProfile() || readStoredProfile();
     const destination = new URL(baseUrl, window.location.href);
-    destination.searchParams.set("usp", "pp_url");
-    if (name) destination.searchParams.set(`entry.${config.nameEntry}`, name);
-    else destination.searchParams.delete(`entry.${config.nameEntry}`);
-    if (className) destination.searchParams.set(`entry.${config.classEntry}`, className);
-    else destination.searchParams.delete(`entry.${config.classEntry}`);
-    link.href = destination.toString();
-    if (name && className) saveProfile(name, className);
-    if (status) {
-      status.textContent = name && className
-        ? `✓ Form sẽ điền sẵn: ${name} · ${className}`
-        : "Điền đủ họ tên và lớp trước khi mở form.";
+    if (profile) {
+      destination.searchParams.set("usp", "pp_url");
+      destination.searchParams.set(`entry.${config.nameEntry}`, profile.name);
+      destination.searchParams.set(`entry.${config.classEntry}`, profile.className);
+      saveProfile(profile);
     }
-    return Boolean(name && className);
+    link.href = destination.toString();
   };
 
-  [nameInput, classInput].forEach((control) => {
+  [nameInput, classInput].filter(Boolean).forEach((control) => {
     control.addEventListener("input", sync);
     control.addEventListener("change", sync);
   });
-
-  link.addEventListener("click", (event) => {
-    if (sync()) return;
-    event.preventDefault();
-    if (status) status.textContent = "Em cần nhập đủ họ tên và lớp để form điền sẵn chính xác.";
-    if (!String(nameInput.value || "").trim()) nameInput.focus();
-    else classInput.focus();
-  });
-
+  link.addEventListener("click", sync);
   sync();
 })();
