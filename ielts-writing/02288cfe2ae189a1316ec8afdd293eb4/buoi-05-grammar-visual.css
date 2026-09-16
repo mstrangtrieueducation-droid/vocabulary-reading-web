@@ -1,0 +1,86 @@
+.homework-summary {
+  margin: 30px 0 40px;
+  padding: 24px 28px;
+  border: 1px solid #c5dbdc;
+  border-left: 6px solid #147a7b;
+  border-radius: 16px;
+  background: #f1f8f7;
+}
+
+.homework-summary h2 {
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+}
+
+.homework-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.homework-list li {
+  padding-left: 6px;
+}
+
+.copy-note {
+  margin: 0 0 24px;
+  padding: 20px 24px;
+  border-radius: 14px;
+  background: #fff6dc;
+  border: 1px solid #ead49a;
+}
+
+.copy-note strong {
+  display: block;
+  color: #7a5510;
+  letter-spacing: .06em;
+}
+
+.copy-note p {
+  margin-bottom: 0;
+}
+
+.grammar-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+  margin: 26px 0 44px;
+}
+
+.grammar-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #cbd9dc;
+  border-radius: 16px;
+  background: #eef3f4;
+  box-shadow: 0 10px 26px rgba(17, 45, 66, .09);
+}
+
+.grammar-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+.grammar-gallery figcaption {
+  padding: 10px 16px;
+  color: #536d78;
+  font-size: 14px;
+  text-align: right;
+}
+
+.submission h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .homework-summary,
+  .copy-note {
+    padding: 18px;
+  }
+
+  .grammar-gallery {
+    gap: 18px;
+  }
+}
