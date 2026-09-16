@@ -400,7 +400,7 @@
         row.className = `answer-row${norm(answers[globalNumber]) ? " answered" : ""}`;
         const number = document.createElement("div");
         number.className = "qnum";
-        number.textContent = localNumber;
+        number.textContent = globalNumber;
         row.append(number);
         if(section.inputType === "letters"){
           const letters = document.createElement("div");
@@ -410,7 +410,7 @@
             const button = document.createElement("button");
             button.type = "button";
             button.textContent = letter;
-            button.setAttribute("aria-label", `Exercise ${section.exerciseNumber}, câu ${localNumber}: ${letter}`);
+            button.setAttribute("aria-label", `Exercise ${section.exerciseNumber}, câu ${globalNumber}: ${letter}`);
             if(answers[globalNumber] === letter) button.className = "selected";
             button.onclick = () => {
               setAnswer(globalNumber,letter);
@@ -423,7 +423,7 @@
           row.append(letters);
         }else if(section.inputType === "select"){
           const select = document.createElement("select");
-          select.setAttribute("aria-label", `Exercise ${section.exerciseNumber}, câu ${localNumber}`);
+          select.setAttribute("aria-label", `Exercise ${section.exerciseNumber}, câu ${globalNumber}`);
           const empty = document.createElement("option");
           empty.value = "";
           empty.textContent = "—";
@@ -442,7 +442,7 @@
           row.append(select);
         }else{
           const input = document.createElement("input");
-          input.setAttribute("aria-label", `Exercise ${section.exerciseNumber}, câu ${localNumber}`);
+          input.setAttribute("aria-label", `Exercise ${section.exerciseNumber}, câu ${globalNumber}`);
           input.autocomplete = "off";
           input.spellcheck = false;
           input.value = answers[globalNumber] || "";
@@ -505,7 +505,7 @@
         const place = locate(item.globalNumber);
         const label = `EX ${place.exercise}`;
         if(!groups.has(label)) groups.set(label,[]);
-        groups.get(label).push(place.local);
+        groups.get(label).push(item.globalNumber);
       });
       return [...groups].map(([label,numbers]) => `${label}: ${numbers.join(", ")}`).join(" · ");
     }
@@ -532,7 +532,7 @@
         current = first.sectionIndex;
         renderTabs();
         renderRows();
-        alert(`Còn ${missing.length} câu chưa điền. Bắt đầu từ EX ${first.exercise}, câu ${first.local}.`);
+        alert(`Còn ${missing.length} câu chưa điền. Bắt đầu từ EX ${first.exercise}, câu ${missing[0]}.`);
         return;
       }
       graded = true;
@@ -581,7 +581,7 @@
         const number = document.createElement("div");
         number.className = "review-num";
         const numberStrong = document.createElement("strong");
-        numberStrong.textContent = place.local;
+        numberStrong.textContent = item.globalNumber;
         const exercise = document.createElement("span");
         exercise.textContent = `EX ${place.exercise}`;
         const status = document.createElement("span");
