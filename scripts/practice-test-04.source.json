@@ -1,0 +1,1647 @@
+{
+  "schemaVersion": 1,
+  "sequence": 4,
+  "testNumber": 4,
+  "testCode": "LD-PT04",
+  "title": "PRACTICE TEST 4",
+  "total": 100,
+  "docId": "1kyFNJkOi3ts6-DfAtOi2bAsmg8qUEYtv2540U8Dhtoc",
+  "sourceTabs": {
+    "test": {
+      "documentId": "1kyFNJkOi3ts6-DfAtOi2bAsmg8qUEYtv2540U8Dhtoc",
+      "tabId": "t.0"
+    },
+    "answers": {
+      "documentId": "1EKFb7d91SKlQEUF0XztylZll2wYvrpTHbbjTyhBs3QA",
+      "tabId": "t.lr7m9i62gf93"
+    }
+  },
+  "sections": [
+    {
+      "sectionCode": "I.1",
+      "sectionLabel": "I.1",
+      "startGlobal": 1,
+      "count": 25,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "I.2",
+      "sectionLabel": "I.2",
+      "startGlobal": 26,
+      "count": 20,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "I.3",
+      "sectionLabel": "I.3",
+      "startGlobal": 46,
+      "count": 5,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "II.1",
+      "sectionLabel": "II.1",
+      "startGlobal": 51,
+      "count": 10,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "II.2",
+      "sectionLabel": "II.2",
+      "startGlobal": 61,
+      "count": 10,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "II.3",
+      "sectionLabel": "II.3",
+      "startGlobal": 71,
+      "count": 10,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "III.1",
+      "sectionLabel": "III.1",
+      "startGlobal": 81,
+      "count": 10,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "III.2",
+      "sectionLabel": "III.2",
+      "startGlobal": 91,
+      "count": 10,
+      "inputType": "text"
+    }
+  ],
+  "answers": [
+    {
+      "globalNumber": 1,
+      "sectionCode": "I.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — know somebody by sight nghĩa là nhận ra ai qua diện mạo, dù chưa từng trực tiếp gặp gỡ hay quen biết. Chi tiết người nổi tiếng giải thích vì sao người nói nhận ra anh ấy. View là quang cảnh/góc nhìn; scenery là phong cảnh; vision là thị lực/tầm nhìn, không tạo thành cụm cố định này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q1",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 2,
+      "sectionCode": "I.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — play an important part in something = đóng vai trò quan trọng trong việc/lĩnh vực nào. Câu nói người này có vai trò lớn trong chính trị đến ngoài 80 tuổi. Scene là cảnh, job là công việc và position là vị trí; chúng không đi với play trong kết hợp đang kiểm tra.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q2",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 3,
+      "sectionCode": "I.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — break down có thể chỉ việc mất bình tĩnh và suy sụp tinh thần. Nghe tin người bạn qua đời khiến cô ấy hoàn toàn suy sụp, nên dùng quá khứ broke. Turn down là từ chối/giảm âm lượng; put down là đặt xuống/hạ thấp; fall down là ngã.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q3",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 4,
+      "sectionCode": "I.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — It's high time + chủ ngữ + động từ quá khứ đơn diễn tả một việc đã đến lúc phải làm, thường hàm ý đã muộn. Vì vậy dùng faced, dù trách nhiệm cần được thực hiện ở hiện tại. Face up to one's responsibilities nghĩa là đối diện và nhận trách nhiệm của mình. Will face, face và should face không phù hợp mẫu câu này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q4",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 5,
+      "sectionCode": "I.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — appearance là diện mạo/vẻ bề ngoài; untidy appearance là vẻ ngoài thiếu gọn gàng. Câu nêu lý do người quản lý không tuyển cô ấy. Sight và view liên quan đến việc nhìn/quang cảnh; presence là sự có mặt, không diễn đạt sự chỉn chu trong cách ăn mặc.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q5",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 6,
+      "sectionCode": "I.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — a ray of hope là một tia hy vọng, tức một khả năng nhỏ cho kết quả tốt. Ray tạo thành kết hợp cố định với hope. Rope là dây thừng; flash là ánh chớp/khoảnh khắc lóe lên; beam thường là chùm tia nhưng không phải cụm thành ngữ đang dùng.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q6",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 7,
+      "sectionCode": "I.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — the speech of which the first part… có nghĩa là bài phát biểu mà phần đầu của nó…; which thay cho speech, còn the first part là chủ ngữ của revolved. Có thể diễn đạt rõ hơn bằng the first part of which. A tạo hai mệnh đề thiếu liên từ; C thiếu of; D có trật tự whose part first không phù hợp. Ý câu là phần đầu chỉ xoay quanh lý thuyết nên không giữ được sự chú ý của khán giả.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q7",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 8,
+      "sectionCode": "I.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — Having + quá khứ phân từ mở đầu mệnh đề phân từ hoàn thành, diễn tả hành động xảy ra trước hành động ở mệnh đề chính và cùng chủ thể she. Cô ấy đã cãi nhau với bạn trai nên bây giờ không muốn nghe điện thoại. B không có mệnh đề đầy đủ sau because; D thiếu chủ ngữ; C dùng quá khứ tiếp diễn, không diễn đạt đúng hành động hoàn tất được nhấn mạnh ở đây.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q8",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 9,
+      "sectionCode": "I.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — Trong mệnh đề thời gian sau until, ta dùng hiện tại đơn để nói về một mốc tương lai: until she is 25. Won't get married nằm ở mệnh đề chính nên dùng tương lai. Will be/will have been không dùng theo mẫu mệnh đề thời gian này; has been không phù hợp ý đến tuổi 25.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q9",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 10,
+      "sectionCode": "I.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — Everyone là đại từ bất định số ít nên đi với was injured. Tuy nhiên câu hỏi đuôi dùng they để thay thế everyone mà không xác định giới tính; với they phải dùng weren't they. Mệnh đề chính khẳng định nên đuôi phủ định. Không dùng were sau everyone hoặc he để đại diện cả nhóm.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q10",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 11,
+      "sectionCode": "I.1",
+      "localNumber": 11,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — fundamentally different nghĩa là khác nhau về căn bản. Tự nguyện và bắt buộc là sự khác biệt thuộc nguyên tắc vận hành của hai hệ thống. Centrally là ở trung tâm; universally là một cách phổ quát; superficially là bề ngoài, không diễn đạt sự đối lập về bản chất ở đây.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q11",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 12,
+      "sectionCode": "I.1",
+      "localNumber": 12,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — respectively nghĩa là lần lượt theo đúng thứ tự vừa liệt kê: Martha 17 tuổi, Julia 19 tuổi, Mark 20 tuổi. Respectably là một cách đáng kính/đáng kể; disrespectfully là thiếu tôn trọng. Phân biệt respective là tính từ nghĩa tương ứng/riêng của từng người, còn respectively mới là trạng từ chỉ thứ tự.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q12",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 13,
+      "sectionCode": "I.1",
+      "localNumber": 13,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — take in a lecture/information nghĩa là hiểu, tiếp thu nội dung. Câu sau nói bài giảng quá khó nên người nói không tiếp thu được. Make off là bỏ chạy; get along là hòa hợp/xoay xở; hold on là chờ/giữ chặt, không diễn đạt việc hiểu bài.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q13",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 14,
+      "sectionCode": "I.1",
+      "localNumber": 14,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — at which melting takes place = tại nhiệt độ mà sự nóng chảy diễn ra. Melting là danh từ làm chủ ngữ của takes place; at which thay cho at that temperature. D sẽ tạo hai cụm động từ chồng lên nhau: they melt takes place. A/B thiếu giới từ at hoặc sai cấu trúc.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q14",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 15,
+      "sectionCode": "I.1",
+      "localNumber": 15,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — barely visible nghĩa là hầu như không nhìn thấy. Dense fog là sương mù dày đặc, khiến tầm nhìn rất kém. Barely gần nghĩa hardly/scarcely; hard thường có nghĩa chăm chỉ/mạnh hoặc khó và không thay được hardly ở đây. Mostly/only không diễn tả mức độ khó nhìn thấy như ngữ cảnh.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q15",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 16,
+      "sectionCode": "I.1",
+      "localNumber": 16,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — Khi trạng từ chỉ hướng off đứng đầu với chủ ngữ là một cụm danh từ, có thể đảo động từ chính lên trước chủ ngữ: off ran the runners. Hành động chạy đi xảy ra sau tiếng còi, trong mạch quá khứ blew → ran. D dùng hiện tại run nên lệch thì; A/C không tạo cấu trúc đảo ngữ tự nhiên của câu này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q16",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 17,
+      "sectionCode": "I.1",
+      "localNumber": 17,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — not nearly as + tính từ + as diễn tả kém xa về mức độ: chiếc áo này không đắt gần bằng chiếc kia. C thiếu than để nối với that one. A sai trật tự từ bổ nghĩa và dạng so sánh; B không thể dùng as much expensive as vì expensive là tính từ.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q17",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 18,
+      "sectionCode": "I.1",
+      "localNumber": 18,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — save money for a rainy day là để dành tiền phòng lúc khó khăn. Rainy day mang nghĩa bóng về thời điểm thiếu thốn hoặc bất trắc, không phải dự báo thời tiết. Vì vậy giàu rồi vẫn nên có khoản dự phòng; foggy, snowy, windy không thuộc thành ngữ này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q18",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 19,
+      "sectionCode": "I.1",
+      "localNumber": 19,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — for the time being nghĩa là tạm thời, trong lúc này. Họ ở nhờ cho đến khi đủ tiền mua nhà nên cách diễn đạt này phù hợp. Giới từ cố định là for; không thay bằng in, during hoặc at.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q19",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 20,
+      "sectionCode": "I.1",
+      "localNumber": 20,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — take effect nghĩa là bắt đầu phát huy tác dụng. Khi thuốc có tác dụng, cậu bé trở nên yên hơn. Take action là hành động nhưng không mô tả tác dụng của thuốc; force/influence không tạo kết hợp cần dùng. Lưu ý in effect có nghĩa khác, như thực chất/đang có hiệu lực tùy ngữ cảnh.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q20",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 21,
+      "sectionCode": "I.1",
+      "localNumber": 21,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — few and far between nghĩa là ít và hiếm gặp. Tỷ lệ thất nghiệp tăng cho thấy khó tìm được việc làm tốt. Far and away nghĩa là hơn hẳn; far from it dùng để phủ định mạnh; as far as they go nghĩa là trong giới hạn của chúng, đều không phù hợp ý hiếm việc.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q21",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 22,
+      "sectionCode": "I.1",
+      "localNumber": 22,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — pull through diễn tả vượt qua bệnh nặng hoặc ca phẫu thuật và hồi phục/sống sót. After the operation là dấu hiệu ngữ cảnh. Pull over là tấp xe vào lề; pull out là rút ra/rút lui; get through có thể là hoàn thành/vượt qua một việc nhưng pull through là kết hợp rõ nhất cho sự hồi phục này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q22",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 23,
+      "sectionCode": "I.1",
+      "localNumber": 23,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — jot down là ghi nhanh, ghi tóm tắt. Trong khi nghe giảng, người nói cố ghi lại các ý chính nên không cần ghi nguyên văn. Read down là đọc lần xuống; sketch là phác họa; bring down là làm giảm/hạ bệ, không thay được cụm jot down the main points.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q23",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 24,
+      "sectionCode": "I.1",
+      "localNumber": 24,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — green còn có nghĩa bóng là non kinh nghiệm. Việc không biết dựng lều cho thấy những người cắm trại còn mới mẻ với hoạt động này. Các màu blue, black, white không có nghĩa thiếu kinh nghiệm trong ngữ cảnh câu.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q24",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 25,
+      "sectionCode": "I.1",
+      "localNumber": 25,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — irrespective of = regardless of, nghĩa là bất kể/không phụ thuộc vào. Phụ nữ đáp ứng tiêu chí được tham gia dù xuất thân thế nào. In consideration of là xét đến; on account of là bởi vì; under guarantee liên quan đến bảo hành/bảo đảm, không diễn đạt sự không phân biệt xuất thân.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q25",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 26,
+      "sectionCode": "I.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "manager"
+      ],
+      "displayAnswer": "manager",
+      "explanation": "manager — Sau a cần danh từ đếm được số ít chỉ người mà công ty muốn tuyển. Manage là động từ quản lý; manager là người quản lý. Ngữ cảnh tuyển cho bộ phận châu Á mở rộng phù hợp một vị trí quản lý, không phải management là hoạt động/bộ máy quản lý.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q26",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 27,
+      "sectionCode": "I.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "applicant"
+      ],
+      "displayAnswer": "applicant",
+      "explanation": "applicant — The successful applicant là ứng viên được chọn. Apply chuyển thành danh từ chỉ người applicant; sau successful cần danh từ. Application chỉ đơn xin/việc ứng tuyển, không thể là chủ thể will have a good understanding như câu này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q27",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 28,
+      "sectionCode": "I.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "understanding"
+      ],
+      "displayAnswer": "understanding",
+      "explanation": "understanding — have a good understanding of… nghĩa là có sự hiểu biết tốt về… Sau a good cần danh từ; understand chuyển thành understanding. Cụm of the commercial world cho biết lĩnh vực mà ứng viên cần am hiểu.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q28",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 29,
+      "sectionCode": "I.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "enthusiasm"
+      ],
+      "displayAnswer": "enthusiasm",
+      "explanation": "enthusiasm — a lot of enthusiasm for the fashion industry nghĩa là nhiều nhiệt huyết đối với ngành thời trang. Cần danh từ sau a lot of; enthusiastic là tính từ nên không đúng vị trí. Giới từ đi kèm trong câu là for.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q29",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 30,
+      "sectionCode": "I.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "addition"
+      ],
+      "displayAnswer": "addition",
+      "explanation": "addition — in addition to… nghĩa là ngoài… ra, bổ sung thêm một trách nhiệm bên cạnh bán hàng. Add là động từ; addition là danh từ trong cụm cố định. To ở đây là giới từ nên theo sau bằng danh từ sales.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q30",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 31,
+      "sectionCode": "I.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "responsibility"
+      ],
+      "displayAnswer": "responsibility",
+      "explanation": "responsibility — take responsibility for something nghĩa là chịu trách nhiệm về việc gì. Sau taking cần danh từ responsibility, đi với for the development… Không dùng responsible vì đó là tính từ, thường theo sau be.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q31",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 32,
+      "sectionCode": "I.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "professional"
+      ],
+      "displayAnswer": "professional",
+      "explanation": "professional — Cần tính từ bổ nghĩa cho cả attitude và appearance: thái độ và diện mạo chuyên nghiệp. Profession là nghề nghiệp; professional là thuộc tính thể hiện chuẩn mực nghề nghiệp. Professionally là trạng từ nên không bổ nghĩa trực tiếp cho hai danh từ này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q32",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 33,
+      "sectionCode": "I.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "attractive"
+      ],
+      "displayAnswer": "attractive",
+      "explanation": "attractive — an attractive salary là mức lương hấp dẫn. Sau an và trước salary cần tính từ; attract chuyển thành attractive. Attraction là danh từ sự hấp dẫn, còn attractively là trạng từ và không phù hợp vị trí.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q33",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 34,
+      "sectionCode": "I.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "qualification",
+        "qualifications"
+      ],
+      "displayAnswer": "qualification / qualifications",
+      "explanation": "qualifications — have the necessary qualifications for this post nghĩa là có các bằng cấp/năng lực cần thiết cho vị trí. Qualify là động từ; qualification là danh từ. Dạng số nhiều phù hợp nhất khi nói chung về các điều kiện chuyên môn; khóa nguồn cũng cho phép qualification ở dạng số ít nếu hiểu là một điều kiện cần thiết.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q34",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 35,
+      "sectionCode": "I.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "supervisor"
+      ],
+      "displayAnswer": "supervisor",
+      "explanation": "supervisor — Sau the và sau apply to cần danh từ chỉ người tiếp nhận/giám sát. Supervise là động từ; supervisor là người giám sát. In writing quy định hình thức ứng tuyển bằng văn bản, không làm thay đổi từ loại cần điền.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q35",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 36,
+      "sectionCode": "I.2",
+      "localNumber": 11,
+      "acceptedAnswers": [
+        "enduring"
+      ],
+      "displayAnswer": "enduring",
+      "explanation": "enduring — an enduring place in people's minds nghĩa là một vị trí/ấn tượng bền lâu trong tâm trí mọi người. Enduring là tính từ bổ nghĩa cho place. Không dùng endured, vì ý là danh tiếng tồn tại lâu dài chứ không phải một vị trí bị chịu đựng.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q36",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 37,
+      "sectionCode": "I.2",
+      "localNumber": 12,
+      "acceptedAnswers": [
+        "revolutionized",
+        "revolutionised"
+      ],
+      "displayAnswer": "revolutionized / revolutionised",
+      "explanation": "revolutionized — Home computing là tân ngữ nên chỗ trống cần động từ. Câu kể về những đóng góp trong quá khứ: ông đã cách mạng hóa điện toán tại nhà. Dùng quá khứ revolutionized; cách viết Anh–Anh revolutionised mang cùng nghĩa. Không dùng revolution là danh từ cuộc cách mạng.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q37",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 38,
+      "sectionCode": "I.2",
+      "localNumber": 13,
+      "acceptedAnswers": [
+        "alternative"
+      ],
+      "displayAnswer": "alternative",
+      "explanation": "alternative — an alternative to the car là một phương án thay thế ô tô. Cần danh từ sau whose; to là giới từ đi với alternative. C5 được nêu như phương tiện thay thế, nên alteration (sự thay đổi/chỉnh sửa) không diễn đạt đúng quan hệ.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q38",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 39,
+      "sectionCode": "I.2",
+      "localNumber": 14,
+      "acceptedAnswers": [
+        "replacement"
+      ],
+      "displayAnswer": "replacement",
+      "explanation": "replacement — its successful replacement là sản phẩm thay thế thành công của nó, ở đây chỉ ZX Spectrum sau ZX81. Replace là động từ, replacement là danh từ. Tính từ successful đứng trước yêu cầu danh từ đi theo.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q39",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 40,
+      "sectionCode": "I.2",
+      "localNumber": 15,
+      "acceptedAnswers": [
+        "capabilities"
+      ],
+      "displayAnswer": "capabilities",
+      "explanation": "capabilities — Despite limited capabilities nghĩa là dù các khả năng/chức năng còn hạn chế. Sau despite là cụm danh từ, không dùng tính từ capable đứng một mình. Dạng số nhiều phù hợp vì máy tính có nhiều mặt năng lực và tính năng khác nhau.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q40",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 41,
+      "sectionCode": "I.2",
+      "localNumber": 16,
+      "acceptedAnswers": [
+        "processor"
+      ],
+      "displayAnswer": "processor",
+      "explanation": "processor — word processor là công cụ/phần mềm xử lý văn bản. Process chuyển thành processor để tạo danh từ ghép đúng. Đọc cả cụm the word processor; processing chỉ hoạt động xử lý và không phải đáp án danh từ chỉ công cụ trong khóa này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q41",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 42,
+      "sectionCode": "I.2",
+      "localNumber": 17,
+      "acceptedAnswers": [
+        "electricity"
+      ],
+      "displayAnswer": "electricity",
+      "explanation": "electricity — run on electricity nghĩa là chạy bằng điện. Sau giới từ on cần danh từ chỉ nguồn năng lượng. Electric/electrical là tính từ; electricity là danh từ không đếm được nên không thêm s.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q42",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 43,
+      "sectionCode": "I.2",
+      "localNumber": 18,
+      "acceptedAnswers": [
+        "modernize",
+        "modernise"
+      ],
+      "displayAnswer": "modernize / modernise",
+      "explanation": "modernize — an attempt to + động từ nguyên mẫu: một nỗ lực hiện đại hóa giao thông. Modern là tính từ; modernize là động từ. Modernise là biến thể chính tả Anh–Anh. Không dùng modernization vì sau to trong cấu trúc attempt to cần động từ.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q43",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 44,
+      "sectionCode": "I.2",
+      "localNumber": 19,
+      "acceptedAnswers": [
+        "persistently"
+      ],
+      "displayAnswer": "persistently",
+      "explanation": "persistently — Cần trạng từ bổ nghĩa cho was criticized: liên tục bị chỉ trích. Persist chuyển thành persistently. Persistent là tính từ nên không trực tiếp diễn tả cách/mức độ lặp lại của hành động criticized ở vị trí này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q44",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 45,
+      "sectionCode": "I.2",
+      "localNumber": 20,
+      "acceptedAnswers": [
+        "discontinued"
+      ],
+      "displayAnswer": "discontinued",
+      "explanation": "discontinued — Production was discontinued nghĩa là việc sản xuất bị ngừng lại. Dùng phân từ quá khứ trong bị động was + V3; thêm tiền tố dis- để diễn đạt ngừng, phù hợp phản ứng tiêu cực được nêu trước đó. Continued mang nghĩa tiếp tục nên trái ngữ cảnh.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q45",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 46,
+      "sectionCode": "I.3",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "thorough → thoroughly"
+      ],
+      "displayAnswer": "thorough → thoroughly",
+      "explanation": "thorough → thoroughly — Clean là động từ; từ đứng trước bổ nghĩa cách dọn dẹp phải là trạng từ thoroughly, nghĩa là kỹ lưỡng. Thorough là tính từ, chỉ dùng để bổ nghĩa danh từ như a thorough cleaning. Sau sửa, families thoroughly clean their homes nghĩa là các gia đình dọn nhà thật kỹ.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q46",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 47,
+      "sectionCode": "I.3",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "places → is placed"
+      ],
+      "displayAnswer": "places → is placed",
+      "explanation": "places → is placed — Chủ ngữ chính là a tray, số ít; mâm được đặt lên bàn thờ nên cần bị động is placed. Five fruits and offerings nằm trong cụm of…, không phải chủ ngữ chính. Places vừa là chủ động vừa không phù hợp nghĩa mâm tự đặt thứ gì đó.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q47",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 48,
+      "sectionCode": "I.3",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "reunity → reunion"
+      ],
+      "displayAnswer": "reunity → reunion",
+      "explanation": "reunity → reunion — family reunion/reunion meal nói đến sự hoặc bữa ăn đoàn tụ gia đình. Reunity không phải danh từ chuẩn cho ý này. Reunion bổ nghĩa cho meal để chỉ bữa cơm các thành viên sum họp.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q48",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 49,
+      "sectionCode": "I.3",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "contain → containing"
+      ],
+      "displayAnswer": "contain → containing",
+      "explanation": "contain → containing — Red envelopes containing money là cụm danh từ có mệnh đề quan hệ rút gọn: red envelopes that contain money. Vì phong bao chứa tiền, dùng phân từ hiện tại mang nghĩa chủ động containing. Không dùng contain như một động từ chia thì độc lập ngay sau danh từ nếu thiếu từ nối/đại từ quan hệ.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q49",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 50,
+      "sectionCode": "I.3",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "reminding → reminder"
+      ],
+      "displayAnswer": "reminding → reminder",
+      "explanation": "reminding → reminder — Sau a powerful cần danh từ đếm được số ít chỉ điều gợi nhắc: a powerful reminder of filial piety. Remind là động từ nhắc nhở; reminder là vật/điều nhắc nhớ. Reminding không phù hợp cấu trúc danh từ đếm được và kết hợp reminder of ở đây.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q50",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 51,
+      "sectionCode": "II.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — invent words nghĩa là sáng tạo ra từ ngữ, phù hợp câu tiếp theo bàn về origin of language. Pronounce là phát âm những từ đã có; discover là khám phá thứ tồn tại; make không phải kết hợp chuẩn nhất để nói việc tạo hệ thống từ ngữ trong ngữ cảnh này. Đoạn nhấn mạnh chưa biết loài người đầu tiên hình thành ngôn ngữ bằng cách nào.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q51",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 52,
+      "sectionCode": "II.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — a mystery là một điều bí ẩn/chưa được giải đáp. Vế trước có is unknown và in other words báo hiệu diễn đạt lại cùng ý, nên mystery khớp trực tiếp. Story/legend là truyện/truyền thuyết; secret thường là điều được giữ kín chứ không nhất thiết chưa ai biết nguồn gốc.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q52",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 53,
+      "sectionCode": "II.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — somehow nghĩa là bằng cách nào đó mà ta chưa xác định rõ. Từ này bổ nghĩa cho invented và tiếp nối ý nguồn gốc ngôn ngữ chưa rõ. However diễn tả tương phản; somewhat là phần nào về mức độ; whatever không đứng ở vị trí này để tạo câu hoàn chỉnh.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q53",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 54,
+      "sectionCode": "II.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — agree upon something = agree on something, nghĩa là thống nhất về điều gì. Con người thống nhất một số ký hiệu gọi là chữ cái để biểu thị âm thanh. Agree with thường là đồng tình với ai/ý kiến; agree to là chấp thuận một đề nghị. Ở đây đối tượng là bộ ký hiệu được cùng thống nhất nên upon phù hợp nhất.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q54",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 55,
+      "sectionCode": "II.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — whether…or… đưa ra hai khả năng song song: dù ở dạng được nói ra hay được viết bằng chữ. Spoken và written là các dạng phân từ rút gọn; không cần lặp they are. If không tạo cặp lựa chọn tương ứng với or theo ý bao quát cả hai dạng trong câu.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q55",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 56,
+      "sectionCode": "II.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — appeal to our minds and emotions nghĩa là tác động/khơi gợi sự quan tâm của trí tuệ và tình cảm. Dấu hiệu cấu trúc là to sau chỗ trống. Interest, attract và lure thường nhận tân ngữ trực tiếp nên không dùng với to our minds theo cùng mẫu này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q56",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 57,
+      "sectionCode": "II.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — literary style là phong cách văn chương, tức cách dùng từ có sức hấp dẫn và diễn đạt hiệu quả. Đoạn đang mô tả cách nhà văn thể hiện ý tưởng, không phân loại văn xuôi hay nói một tác phẩm cụ thể. Prose là văn xuôi; work là tác phẩm; form là hình thức/thể loại.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q57",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 58,
+      "sectionCode": "II.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — convey one's meaning nghĩa là truyền đạt ý nghĩa/điều muốn nói. Nhà thơ truyền đạt ý qua các từ ngữ giàu nhạc tính nên convey là kết hợp tự nhiên nhất. Transfer thường là chuyển giao; transmit thường nhấn mạnh truyền tín hiệu/thông tin; carry không chính xác bằng convey trong collocation convey meaning.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q58",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 59,
+      "sectionCode": "II.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — move somebody to tears nghĩa là làm ai cảm động đến rơi nước mắt. Ở đây sức gợi của từ ngữ tác động tới cảm xúc người đọc. Take/send/break không tạo cụm cố định thể hiện sự xúc động như move…to tears.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q59",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 60,
+      "sectionCode": "II.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — Mệnh đề khuyên learn to choose our words carefully nối với hậu quả xấu nếu không làm như vậy: or = otherwise, nếu không thì. So chỉ kết quả trực tiếp, khiến việc chọn từ cẩn thận lại gây lời nói thô tục, trái ý. Although là tương phản; because chỉ nguyên nhân, đều không đúng quan hệ lập luận.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q60",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 61,
+      "sectionCode": "II.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "enter",
+        "join"
+      ],
+      "displayAnswer": "enter / join",
+      "explanation": "enter — enter the adult world of work nghĩa là bước vào thế giới lao động của người trưởng thành. Sau would cần động từ nguyên mẫu; enter đi thẳng với tân ngữ, không thêm into ở chỗ trống này. Khóa nguồn cũng chấp nhận join, mang ý gia nhập thế giới việc làm. Ý câu là kết thúc học tập rồi bắt đầu đi làm.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q61",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 62,
+      "sectionCode": "II.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "settle"
+      ],
+      "displayAnswer": "settle",
+      "explanation": "settle — settle into a job nghĩa là ổn định/thích nghi với một công việc. Hai động từ song song cùng chịu sự chi phối của would: would enter… and settle…; do đó phải dùng nguyên mẫu settle. Settling không phù hợp cấu trúc đề mới đã có and.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q62",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 63,
+      "sectionCode": "II.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "only"
+      ],
+      "displayAnswer": "only",
+      "explanation": "only — Not only…(but) also… diễn tả không chỉ cung cấp thu nhập mà còn mang lại lương hưu. Khi Not only đứng đầu mệnh đề, đảo trợ động từ lên trước chủ ngữ: would this occupation provide…. Không đảo ở vế it would also allow… vì vế này không mở đầu bằng cụm phủ định.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q63",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 64,
+      "sectionCode": "II.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "old"
+      ],
+      "displayAnswer": "old",
+      "explanation": "old — old age là tuổi già, phù hợp với retired và pension. Cần tính từ bổ nghĩa cho age. Mạch thời gian của đoạn là hoàn thành học tập, làm việc trong nhiều năm rồi nghỉ hưu khi cao tuổi.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q64",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 65,
+      "sectionCode": "II.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "however",
+        "though"
+      ],
+      "displayAnswer": "however / though",
+      "explanation": "however / though — Đoạn đầu mô tả việc làm ổn định nhiều thập kỷ, còn đoạn sau nói mối quan hệ người lao động–nghề nghiệp đã thay đổi lớn. Cần từ nối tương phản đặt giữa dấu phẩy. However và though đều có thể dùng như trạng từ liên kết ở vị trí này; không dùng although nếu không tạo một mệnh đề phụ đi kèm.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q65",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 66,
+      "sectionCode": "II.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "replaced",
+        "superseded"
+      ],
+      "displayAnswer": "replaced / superseded",
+      "explanation": "replaced / superseded — to be + phân từ quá khứ là cấu trúc bị động; by giới thiệu điều thay thế cho quan niệm việc làm suốt đời. Replaced nghĩa là bị thay thế, superseded nhấn mạnh cái cũ bị cái mới thay chỗ. Replace/supersede ở nguyên mẫu không đứng trực tiếp sau be trong cấu trúc này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q66",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 67,
+      "sectionCode": "II.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "against"
+      ],
+      "displayAnswer": "against",
+      "explanation": "against — pit A against B nghĩa là đặt hai bên vào thế cạnh tranh/đối đầu. Old và young chỉ những người lớn tuổi và trẻ tuổi đang cạnh tranh việc làm. Giới từ against đánh dấu bên đối địch, phù hợp constant battle to find work.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q67",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 68,
+      "sectionCode": "II.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "fact"
+      ],
+      "displayAnswer": "fact",
+      "explanation": "fact — with the fact that… dùng một sự việc làm căn cứ: tỷ lệ thất nghiệp tiếp tục giảm. Sau the cần danh từ; that dẫn mệnh đề giải thích nội dung của fact. Đây là điều chính phủ dùng để chứng minh kinh tế tăng trưởng, dù tác giả sau đó phản biện chất lượng việc làm.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q68",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 69,
+      "sectionCode": "II.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "which"
+      ],
+      "displayAnswer": "which",
+      "explanation": "which — all of which mở đầu mệnh đề quan hệ bổ sung và thay cho casual, temporary or short-term positions. Sau giới từ of phải dùng which để chỉ các vị trí việc làm. That không dùng sau giới từ trong cấu trúc này; who/whom chỉ người nên không phù hợp.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q69",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 70,
+      "sectionCode": "II.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "least"
+      ],
+      "displayAnswer": "least",
+      "explanation": "least — not least because… nghĩa là đặc biệt là bởi vì/một lý do đáng kể là…. Least nằm trong cụm cố định, không mang nghĩa lý do ít quan trọng nhất khi đứng trong not least. Vế sau giải thích vì sao bức tranh tăng trưởng dựa nhiều vào ảo tưởng có ảnh hưởng lâu dài bất lợi.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q70",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 71,
+      "sectionCode": "II.3",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — Đoạn 1 nói quyền bầu cử của phụ nữ Anh được giành vào đầu thế kỷ 20. Từ đó bài cho phép suy ra trong thế kỷ 19 họ chưa có quyền này. B khẳng định mong muốn của hầu hết phụ nữ mà bài không nói; C không có căn cứ; D nhầm mục tiêu bầu cử của suffragettes với việc làm và tiền lương.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q71",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 72,
+      "sectionCode": "II.3",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — Gender gap ở đây là khoảng cách về địa vị/quyền lợi giữa nam và nữ. Ngay sau đó bài đưa ví dụ về trả lương, tuyển dụng và cơ hội nghề nghiệp. Vì vậy không hiểu gap là khoảng cách vật lý nhìn thấy, cũng không đơn giản là quan hệ xã hội chung chung.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q72",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 73,
+      "sectionCode": "II.3",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — Ba nhân vật được đặt trong đoạn nói về first wave of feminism tại Mỹ. Anthony đấu tranh cho quyền bầu cử, Sanger cho quyền chủ động sinh con, Blackwell cho cơ hội học tập/nghề nghiệp. Vai trò chung của họ là những người tiên phong cho quyền phụ nữ, không phải bài so sánh họ thành công hơn nam giới.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q73",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 74,
+      "sectionCode": "II.3",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — Dẫn chứng trực tiếp ở đoạn 4: “Although the ERA was not passed”. Was not passed tương ứng với was not officially approved. B và D trái với thông tin chưa được thông qua; A nhầm những tổ chức bị cấm phân biệt đối xử với mục đích của ERA. Đáp án được xác định theo nội dung bài đọc.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q74",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 75,
+      "sectionCode": "II.3",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — Đoạn 2 nêu Equal Opportunities Commission được thành lập để giúp mọi người đòi quyền bình đẳng và publish research and statistics. Publish ở đây tương đương issue trong câu hỏi. Các đạo luật ở A/B không phải cơ quan công bố nghiên cứu; ERA thuộc phần nói về Mỹ.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q75",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 76,
+      "sectionCode": "II.3",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — Bài đặt khởi đầu first wave tại Mỹ ở mid 1800s, còn ở Anh vấn đề thu hút sự chú ý toàn quốc vào early 20th century. Theo các mốc được bài nêu, phong trào ở Mỹ bắt đầu sớm hơn. A trái với việc giảm phổ biến trong thập niên 1980; B nói đầu tiên trên toàn thế giới mà bài không khẳng định; D nhầm các đạo luật 1970/1975 thành đầu thế kỷ 20.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q76",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 77,
+      "sectionCode": "II.3",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — Glass ceiling là rào cản vô hình hạn chế khả năng thăng tiến của phụ nữ. Ngay trong câu, bài giải thích nó ngăn họ có high-level jobs. Imaginary barrier là phương án gần nhất về nghĩa bóng, không có nghĩa sự phân biệt là tưởng tượng hoặc không tồn tại. Không chọn nghĩa đen trần kính/khung trong suốt.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q77",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 78,
+      "sectionCode": "II.3",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — Bài không nói hiện đã hoàn toàn hết phân biệt giới tính ở Anh và Mỹ; cuối bài còn ghi there is still discrimination. A có trong vấn đề second shift/household chores; B có trong câu chuyện Blackwell; C có trong nhận xét về cơ hội việc làm tốt hơn ở Anh. Với câu NOT, cần chọn điều không được bài xác nhận.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q78",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 79,
+      "sectionCode": "II.3",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "B — Dù có tiến bộ về luật và cơ hội việc làm, bài vẫn nêu khoảng cách lương, ít phụ nữ ở vị trí cao và glass ceiling. Vì vậy có thể suy ra cuộc đấu tranh cho vị thế và quyền bình đẳng vẫn còn tiếp diễn. A trái với nguyên tắc chống phân biệt được chấp nhận rộng rãi; D phủ nhận tiến bộ bài đã nêu; C không có căn cứ.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q79",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 80,
+      "sectionCode": "II.3",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — Bài bao quát phong trào nữ quyền, thành tựu và những hạn chế tại cả Anh và Mỹ qua nhiều giai đoạn. Feminism in Britain and the US bao trùm đúng phạm vi đó. A/C chỉ nói một khía cạnh hoặc một nước; B bỏ mất lịch sử phong trào và các cuộc đấu tranh cho quyền bình đẳng.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q80",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 81,
+      "sectionCode": "III.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "Despite his severe disability, Kent participated in many sports."
+      ],
+      "displayAnswer": "Despite his severe disability, Kent participated in many sports.",
+      "explanation": "Despite his severe disability, Kent participated in many sports. Although đi với mệnh đề, còn despite đi với cụm danh từ. Chuyển severely disabled thành severe disability: severe bổ nghĩa danh từ disability; his giữ thông tin khuyết tật thuộc về Kent. Mệnh đề chính giữ quá khứ participated.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q81",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 82,
+      "sectionCode": "III.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "I'd rather you hadn't taken me for a ride yesterday.",
+        "I would rather you had not taken me for a ride yesterday.",
+        "I'd rather you had not taken me for a ride yesterday."
+      ],
+      "displayAnswer": "I'd rather you hadn't taken me for a ride yesterday.",
+      "explanation": "I'd rather you hadn't taken me for a ride yesterday. Would rather + chủ ngữ khác + had not + V3 diễn tả sự không hài lòng/mong việc quá khứ đã khác. Take somebody for a ride là lừa gạt ai, tương đương cheated me. Yesterday yêu cầu dạng quá khứ hoàn thành trong mệnh đề sau would rather, không dùng didn't take để thay mẫu hồi tưởng này.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q82",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 83,
+      "sectionCode": "III.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "Not only does Barbara run a successful company but she also manages to look after her five children.",
+        "Not only does Barbara run a successful company, but she also manages to look after her five children."
+      ],
+      "displayAnswer": "Not only does Barbara run a successful company but she also manages to look after her five children.",
+      "explanation": "Not only does Barbara run a successful company, but she also manages to look after her five children. Đưa Not only lên đầu phải đảo trợ động từ does trước Barbara; run trở về nguyên mẫu. Vế sau giữ manages ở hiện tại đơn và bổ sung bằng but…also. Giữ đủ thông tin công ty thành công và năm người con.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q83",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 84,
+      "sectionCode": "III.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "Man is mainly distinguished from other animals by the power of speech."
+      ],
+      "displayAnswer": "Man is mainly distinguished from other animals by the power of speech.",
+      "explanation": "Man is mainly distinguished from other animals by the power of speech. Chuyển câu chủ động thành bị động: distinguish A from B → A is distinguished from B by…. The power of speech trở thành tác nhân/đặc điểm phân biệt sau by. Mainly giữ ý chủ yếu; không bỏ from trước other animals.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q84",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 85,
+      "sectionCode": "III.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "The more qualifications you are able to amass, the more successful you are in the academic field.",
+        "The more qualifications you are able to amass, the more successful you will be in the academic field.",
+        "The more qualifications you are able to amass, the more successful you can be in the academic field."
+      ],
+      "displayAnswer": "The more qualifications you are able to amass, the more successful you are in the academic field.",
+      "explanation": "The more qualifications you are able to amass, the more successful you are in the academic field. Dùng so sánh kép the + comparative…, the + comparative…: càng tích lũy nhiều bằng cấp thì càng thành công. Qualifications là danh từ đếm được số nhiều; successful là tính từ dài nên dùng more successful. Khóa còn chấp nhận will be/can be ở vế kết quả, tùy nhấn mạnh khả năng hoặc kết quả tương lai.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q85",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 86,
+      "sectionCode": "III.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "Lisa has no intention of giving up her independence to get married."
+      ],
+      "displayAnswer": "Lisa has no intention of giving up her independence to get married.",
+      "explanation": "Lisa has no intention of giving up her independence to get married. Have no intention of doing something nghĩa là không có ý định làm việc gì, tương đương lời khẳng định cô ấy sẽ không từ bỏ sự độc lập. Of là giới từ nên theo sau bằng giving, không phải give/to give. Giữ to get married để bảo toàn mục đích của việc từ bỏ.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q86",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 87,
+      "sectionCode": "III.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "It's high time Simon made a decision about his future.",
+        "It is high time Simon made a decision about his future."
+      ],
+      "displayAnswer": "It's high time Simon made a decision about his future.",
+      "explanation": "It's high time Simon made a decision about his future. Sau It's high time dùng mệnh đề với quá khứ đơn made để nói việc lẽ ra cần làm từ bây giờ hoặc trước đó. Đây không phải kể lại một quyết định đã xảy ra trong quá khứ. Make a decision tương đương decide; giữ about his future.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q87",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 88,
+      "sectionCode": "III.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "Insect bites can be avoided in various ways."
+      ],
+      "displayAnswer": "Insect bites can be avoided in various ways.",
+      "explanation": "Insect bites can be avoided in various ways. Chuyển avoiding insect bites sang bị động với modal: can + be + V3. Various ways giữ ý có nhiều cách, còn insect bites trở thành chủ ngữ. Không dùng can avoided hoặc can be avoid vì thiếu/thừa sai dạng động từ.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q88",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 89,
+      "sectionCode": "III.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "I can't see any point in learning to use a typewriter.",
+        "I can't see any point learning to use a typewriter.",
+        "I can't see the point in learning to use a typewriter.",
+        "I can't see the point learning to use a typewriter.",
+        "I cannot see any point in learning to use a typewriter.",
+        "I cannot see any point learning to use a typewriter.",
+        "I cannot see the point in learning to use a typewriter.",
+        "I cannot see the point learning to use a typewriter."
+      ],
+      "displayAnswer": "I can't see any point in learning to use a typewriter.",
+      "explanation": "I can't see any point in learning to use a typewriter. Can't see the/any point in doing something nghĩa là không thấy ích lợi/ý nghĩa của việc đó, tương đương coi đó là lãng phí thời gian. Learning là V-ing theo sau in; khóa nguồn cho phép bỏ in và dùng the thay any. Không đổi thành can't learn vì sẽ chuyển từ nhận định về ích lợi sang khả năng học.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q89",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 90,
+      "sectionCode": "III.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "Failure to pay on time will cause your booking to be canceled.",
+        "Failure to pay on time will cause your booking to be cancelled.",
+        "Failure to pay on time will result in your booking being canceled.",
+        "Failure to pay on time will result in your booking being cancelled.",
+        "Failure to pay on time will result in your booking's being canceled.",
+        "Failure to pay on time will result in your booking's being cancelled.",
+        "Failure to pay on time will lead to your booking being canceled.",
+        "Failure to pay on time will lead to your booking being cancelled.",
+        "Failure to pay on time will lead to your booking's being canceled.",
+        "Failure to pay on time will lead to your booking's being cancelled.",
+        "Failure to pay on time will cause your booking being canceled.",
+        "Failure to pay on time will cause your booking being cancelled.",
+        "Failure to pay on time will cause your booking's being canceled.",
+        "Failure to pay on time will cause your booking's being cancelled."
+      ],
+      "displayAnswer": "Failure to pay on time will cause your booking to be canceled.",
+      "explanation": "Failure to pay on time will cause your booking to be cancelled. Failure to + V diễn tả việc không thực hiện hành động, thay cho if you don't pay. Cause + tân ngữ + to be + V3 diễn đạt việc đặt chỗ bị hủy. Một cách khác đúng là will result in/lead to your booking being cancelled: sau in/to là cụm V-ing. Không ghép lead trực tiếp với your booking to be cancelled; lead to và cause có cấu trúc khác nhau.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q90",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 91,
+      "sectionCode": "III.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "She began to fall prey to irrational fears."
+      ],
+      "displayAnswer": "She began to fall prey to irrational fears.",
+      "explanation": "She began to fall prey to irrational fears. Fall prey to something nghĩa là trở thành nạn nhân/chịu tác động xấu của điều gì, ở đây là nỗi sợ phi lý. Began giữ ý bắt đầu của câu gốc; prey phải được giữ nguyên như từ khóa. To trong fall prey to là giới từ đứng trước cụm danh từ irrational fears.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q91",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 92,
+      "sectionCode": "III.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "I would always take your advice."
+      ],
+      "displayAnswer": "I would always take your advice.",
+      "explanation": "I would always take your advice. Take somebody's advice là làm theo lời khuyên của người đó. Advice là danh từ không đếm được, không thêm s. Would always được giữ để diễn tả thói quen/sự sẵn lòng làm theo lời khuyên trong bối cảnh của câu gốc.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q92",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 93,
+      "sectionCode": "III.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "The book did not come up to his expectations.",
+        "The book did not live up to his expectations.",
+        "The book didn't come up to his expectations.",
+        "The book didn't live up to his expectations."
+      ],
+      "displayAnswer": "The book did not come up to his expectations.",
+      "explanation": "The book did not live up to his expectations. Live up to/come up to one's expectations nghĩa là đạt như kỳ vọng. Vì sách không hay như mong đợi, cần phủ định did not; sau did dùng live/come nguyên mẫu. Expectations giữ dạng số nhiều và sở hữu his để xác định kỳ vọng của người đọc.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q93",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 94,
+      "sectionCode": "III.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "To my knowledge, he is still working in Ho Chi Minh City.",
+        "To the best of my knowledge, he is still working in Ho Chi Minh City."
+      ],
+      "displayAnswer": "To my knowledge, he is still working in Ho Chi Minh City.",
+      "explanation": "To the best of my knowledge, he is still working in Ho Chi Minh City. Cụm mở đầu giới hạn mức độ chắc chắn vào những gì người nói biết, tương đương as far as I know. To my knowledge cũng được chấp nhận. Giữ still working để không làm mất ý công việc vẫn tiếp diễn.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q94",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 95,
+      "sectionCode": "III.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "The kids' non-stop snacking is eating us out of house and home."
+      ],
+      "displayAnswer": "The kids' non-stop snacking is eating us out of house and home.",
+      "explanation": "The kids' non-stop snacking is eating us out of house and home. Eat somebody out of house and home là thành ngữ nói việc ăn quá nhiều khiến chủ nhà tốn kém/cạn đồ ăn. Sau is cần eating theo đề; giữ us và cả cụm out of house and home, không dịch từng từ thành ăn ngôi nhà.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q95",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 96,
+      "sectionCode": "III.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "This project will go ahead according to plan.",
+        "The project will go ahead according to plan."
+      ],
+      "displayAnswer": "This project will go ahead according to plan.",
+      "explanation": "This project will go ahead according to plan. Go ahead nghĩa là tiếp tục/được tiến hành, còn according to plan là theo đúng kế hoạch. Kết hợp hai cụm diễn tả dự án tiếp tục theo kế hoạch, không có thay đổi. Giữ This project đúng phần dẫn của đề; sau will dùng go nguyên mẫu.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q96",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 97,
+      "sectionCode": "III.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "I'm not sure how I would have reacted in that situation.",
+        "I am not sure how I would have reacted in that situation."
+      ],
+      "displayAnswer": "I'm not sure how I would have reacted in that situation.",
+      "explanation": "I'm not sure how I would have reacted in that situation. What my reaction would have been chuyển thành how I would have reacted: reaction là danh từ, react là động từ. Would have + V3 giữ tính giả định về quá khứ; how dẫn câu hỏi gián tiếp nên theo trật tự chủ ngữ I rồi động từ, không đảo như câu hỏi trực tiếp.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q97",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 98,
+      "sectionCode": "III.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "Given the economic climate, I will be surprised should the company make a profit this year."
+      ],
+      "displayAnswer": "Given the economic climate, I will be surprised should the company make a profit this year.",
+      "explanation": "Given the economic climate, I will be surprised should the company make a profit this year. Should + chủ ngữ + V là đảo ngữ điều kiện, tương đương if the company should make a profit. Việc có lợi nhuận trái với kỳ vọng nên người nói sẽ ngạc nhiên. Đề đã in company make, vì vậy should trước chủ ngữ giúp giữ make ở nguyên mẫu.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q98",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 99,
+      "sectionCode": "III.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "You have to put in your pay claims before the end of the month."
+      ],
+      "displayAnswer": "You have to put in your pay claims before the end of the month.",
+      "explanation": "You have to put in your pay claims before the end of the month. Put in a claim nghĩa là nộp yêu cầu đòi/thanh toán một khoản tiền. Have to giữ nghĩa bắt buộc của must be submitted và chuyển bị động sang chủ động với you. Before the end of the month giữ nguyên hạn nộp; không dùng put off vì nghĩa là trì hoãn.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q99",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    },
+    {
+      "globalNumber": 100,
+      "sectionCode": "III.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "Under no circumstances should your mobile phone be switched on during the performance."
+      ],
+      "displayAnswer": "Under no circumstances should your mobile phone be switched on during the performance.",
+      "explanation": "Under no circumstances should your mobile phone be switched on during the performance. Under no circumstances nghĩa là không trong bất kỳ trường hợp nào; đặt đầu câu yêu cầu đảo should lên trước chủ ngữ. Switched off at all times tương đương không bao giờ được switched on trong khoảng thời gian ấy. Giữ mobile phone số ít đúng câu gốc và phần đuôi cố định của đề.",
+      "reviewStatus": "approved",
+      "sourceRefs": [
+        "PRACTICE TEST 4 > ĐÁP ÁN > Q100",
+        "Latest question and answer sources read 2026-09-26"
+      ]
+    }
+  ],
+  "reviewNeeded": [],
+  "explanationPolicy": {
+    "basis": "user-approved-revised-test-with-authorized-per-question-explanations",
+    "authorizationDate": "2026-09-26",
+    "teacherAnswerDocumentModified": false,
+    "explanationsAuthoredBy": "assistant; requested by user",
+    "webKeyAdjustments": {
+      "4": "B confirmed by teacher in chat and re-exported source key 2026-09-26",
+      "90": "expand only grammatical branches of slash-separated source key",
+      "96": "retain This project from fixed question stem; source The project accepted too"
+    }
+  }
+}
