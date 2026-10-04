@@ -1,0 +1,40 @@
+.vocabulary-review{--navy:#0b123d;--gold:#f5c842;--line:#dfe3ec;--muted:#626a7f;border-top:5px solid var(--gold);color:#101736;font-family:Segoe UI,Arial,sans-serif;line-height:1.65;background:#fff}
+.vocabulary-review *{box-sizing:border-box}
+.vocabulary-review .hero{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:40px 38px 32px}
+.vocabulary-review .eyebrow,.vocabulary-review .section-kicker,.vocabulary-review .card-label,.vocabulary-review .word-meta{letter-spacing:.09em;text-transform:uppercase;font-size:.7rem;font-weight:800;margin:0;color:#626a7f}
+.vocabulary-review .eyebrow{color:#88660c}
+.vocabulary-review .hero h2{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;letter-spacing:-.03em;color:var(--navy);margin:8px 0 12px}
+.vocabulary-review .lede{margin:0;color:var(--muted);max-width:650px}
+.vocabulary-review .lesson-badge{background:var(--gold);color:var(--navy);width:98px;height:98px;flex:none;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:2rem;font-weight:850;line-height:1.2}
+.vocabulary-review .lesson-badge span{font-size:.7rem;text-transform:uppercase}
+.vocabulary-review .tabs{display:grid;grid-template-columns:repeat(4,1fr);background:var(--navy)}
+.vocabulary-review .tabs button{font:inherit;font-weight:750;background:transparent;color:#fff;border:0;border-right:1px solid #ffffff33;padding:20px 10px;cursor:pointer;min-height:70px}
+.vocabulary-review .tabs button:hover{background:#202b63}
+.vocabulary-review .tabs button.active{background:var(--gold);color:var(--navy)}
+.vocabulary-review .tabs button:focus-visible{outline:3px solid #fff;outline-offset:-5px}
+.vocabulary-review .study-note{padding:20px 38px;background:#f8f9fd;border-bottom:1px solid var(--line);font-size:.96rem}
+.vocabulary-review .notation-note{display:block;margin-top:8px;color:var(--muted);font-size:.88rem}
+.vocabulary-review .content{padding:34px 22px 48px}
+.vocabulary-review .section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin:0 4px 25px}
+.vocabulary-review .section-heading>div{min-width:0}
+.vocabulary-review .section-heading h2{font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.2;margin:6px 0 10px;color:var(--navy)}
+.vocabulary-review .section-heading p{margin:0;color:var(--muted)}
+.vocabulary-review .search{flex:0 0 auto}
+.vocabulary-review .search input{font:inherit;padding:12px 14px;width:260px;max-width:100%;border:1px solid var(--line);border-radius:10px;color:#101736;background:#fff}
+.vocabulary-review .search input:focus{outline:3px solid #f5c84288;border-color:#9b7411}
+.vocabulary-review .word-list{display:grid;gap:16px}
+.vocabulary-review .word-card{display:grid;grid-template-columns:38px minmax(0,1.1fr) minmax(0,1fr) minmax(0,2.4fr);align-items:start;gap:18px;padding:24px 22px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 5px 16px #0f18420b}
+.vocabulary-review .word-card>*{min-width:0;overflow-wrap:anywhere}
+.vocabulary-review .word-index{display:grid;place-items:center;background:#fff4bd;color:#7a5a08;border-radius:10px;width:38px;height:38px;font-size:.75rem;font-weight:850}
+.vocabulary-review .word-identity h3{font-size:1.16rem;line-height:1.35;margin:5px 0 0;color:var(--navy)}
+.vocabulary-review .word-meta{font-size:.62rem}
+.vocabulary-review .word-meaning p:last-child{font-weight:750;margin:8px 0 0}
+.vocabulary-review .word-detail{border-left:1px solid var(--line);padding-left:18px}
+.vocabulary-review .word-detail p{margin:8px 0 0}
+.vocabulary-review .word-detail .card-label{margin:0}
+.vocabulary-review .card-label{font-size:.63rem;color:#49516d}
+.vocabulary-review .translation{padding-top:10px;border-top:1px dashed var(--line);color:#536078}
+.vocabulary-review .empty{text-align:center;padding:30px;color:var(--muted)}
+.vocabulary-review .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media(max-width:860px){.vocabulary-review .hero{padding:30px 22px}.vocabulary-review .tabs{grid-template-columns:repeat(2,1fr)}.vocabulary-review .word-card{grid-template-columns:38px minmax(0,1fr) minmax(0,1.7fr)}.vocabulary-review .word-meaning{grid-column:2}.vocabulary-review .word-detail{grid-area:1/3/span 2}.vocabulary-review .section-heading{display:block}.vocabulary-review .search{display:block;margin-top:16px}.vocabulary-review .search input{width:100%}}
+@media(max-width:620px){.vocabulary-review .hero{gap:14px}.vocabulary-review .lesson-badge{width:72px;height:72px;font-size:1.5rem}.vocabulary-review .hero h2{font-size:2rem}.vocabulary-review .content{padding:26px 12px 36px}.vocabulary-review .study-note{padding:18px 22px}.vocabulary-review .word-card{grid-template-columns:32px minmax(0,1fr);gap:12px;padding:20px 16px}.vocabulary-review .word-index{width:32px;height:34px}.vocabulary-review .word-detail{grid-area:auto/1/auto/-1;border-left:0;border-top:1px solid var(--line);padding:14px 0 0}.vocabulary-review .tabs button{font-size:.9rem;min-height:64px}}
