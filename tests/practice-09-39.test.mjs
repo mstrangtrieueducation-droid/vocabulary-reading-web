@@ -16,7 +16,8 @@ for(const [n,r] of Object.entries(routes)){
  assert.equal(ctx.buildReview(sample).score,data.total);assert.equal(ctx.buildReview({}).score,0);
  for(const a of answers)for(const k of a.acceptedAnswers)assert.equal(ctx.buildReview({...sample,[a.globalNumber]:k}).score,data.total);
  const errors=answers.filter(a=>a.sectionCode===(data.errorCorrectionSection??'I.3')),swapped={...sample};
- assert.equal(errors.length,5);
+ assert.equal(errors.length,data.sections.find(s=>s.sectionCode===(data.errorCorrectionSection??'I.3')).count);
+ assert(html.includes('Điền '+errors.length+' lỗi khác nhau'));
  errors.forEach((a,i)=>swapped[a.globalNumber]=sample[errors.at(-1-i).globalNumber]);
  assert.equal(ctx.buildReview(swapped).score,data.total);
  swapped[errors[1].globalNumber]=swapped[errors[0].globalNumber];assert.equal(ctx.buildReview(swapped).score,data.total-1);
