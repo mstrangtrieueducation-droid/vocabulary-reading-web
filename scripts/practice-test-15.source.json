@@ -1,0 +1,1201 @@
+{
+  "schemaVersion": 2,
+  "sequence": 15,
+  "testNumber": 15,
+  "testCode": "LD-PT15",
+  "title": "PRACTICE TEST 15",
+  "total": 100,
+  "docId": "1IvHhBmXCpzdk3nIaS3YW37Olf27U3cnTHOkD7_XW0Jk",
+  "sourceTabs": {
+    "test": {
+      "documentId": "1IvHhBmXCpzdk3nIaS3YW37Olf27U3cnTHOkD7_XW0Jk",
+      "tabId": "t.0"
+    },
+    "answers": {
+      "documentId": "1IvHhBmXCpzdk3nIaS3YW37Olf27U3cnTHOkD7_XW0Jk",
+      "tabId": "t.6i5bxyc9pnxp"
+    }
+  },
+  "sections": [
+    {
+      "sectionCode": "I.1",
+      "sectionLabel": "I.1",
+      "startGlobal": 1,
+      "count": 22,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "I.2",
+      "sectionLabel": "I.2",
+      "startGlobal": 23,
+      "count": 8,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "I.3",
+      "sectionLabel": "I.3",
+      "startGlobal": 31,
+      "count": 5,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "II.1",
+      "sectionLabel": "II.1",
+      "startGlobal": 36,
+      "count": 25,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "II.2",
+      "sectionLabel": "II.2",
+      "startGlobal": 61,
+      "count": 10,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "II.3",
+      "sectionLabel": "II.3",
+      "startGlobal": 71,
+      "count": 10,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "III.1",
+      "sectionLabel": "III.1",
+      "startGlobal": 81,
+      "count": 10,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "III.2",
+      "sectionLabel": "III.2",
+      "startGlobal": 91,
+      "count": 10,
+      "inputType": "text"
+    }
+  ],
+  "answers": [
+    {
+      "globalNumber": 1,
+      "sectionCode": "I.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Of all the novels… nghĩa là trong tất cả những tiểu thuyết đã đọc, tạo phạm vi cho so sánh nhất the most. All of the novels làm một cụm danh từ nhưng không nối đúng với I enjoy this one theo cấu trúc câu này."
+    },
+    {
+      "globalNumber": 2,
+      "sectionCode": "I.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Be accustomed to + danh từ/V-ing = đã quen với điều gì. To ở đây là giới từ nên dùng jogging. Không nhầm với used to jog, cấu trúc nói về thói quen quá khứ đã thay đổi, khác với accustomed to jogging."
+    },
+    {
+      "globalNumber": 3,
+      "sectionCode": "I.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Coincidentally nghĩa là một cách tình cờ, phù hợp việc Sarah ngạc nhiên khi gặp người kia ở cùng khách sạn. Intentionally/deliberately đều là cố ý; practically là gần như/thực tế. Surprised là dấu hiệu chọn tình cờ."
+    },
+    {
+      "globalNumber": 4,
+      "sectionCode": "I.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Ask a favour of somebody là nhờ ai một việc. Có thể nói ask somebody for a favour, nhưng vị trí tân ngữ thay đổi. Câu đã đặt a favour trước chỗ trống nên phải dùng of you; favor là cách viết Mỹ của favour."
+    },
+    {
+      "globalNumber": 5,
+      "sectionCode": "I.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "On display nghĩa là đang được trưng bày. Paintings on display là những bức tranh được đưa ra cho công chúng xem. On account thường cần of để nêu nguyên nhân; on occasion là thỉnh thoảng; on approval liên quan chấp nhận thử hàng."
+    },
+    {
+      "globalNumber": 6,
+      "sectionCode": "I.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "At a glance là chỉ cần nhìn lướt qua, phù hợp bảng tổng hợp các khóa học trên trang 24. Stare là cái nhìn chằm chằm; glimpse là thoáng thấy; look là cái nhìn nói chung. Thành ngữ cố định dùng glance."
+    },
+    {
+      "globalNumber": 7,
+      "sectionCode": "I.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Mệnh đề chính là The man has to take another one, có nghĩa vụ hiện tại. Has to là động từ thường nên câu hỏi đuôi dùng doesn’t he. Failed nằm trong mệnh đề quan hệ, không quyết định thì của đuôi câu."
+    },
+    {
+      "globalNumber": 8,
+      "sectionCode": "I.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Be saved by the bell là được cứu khỏi tình huống khó xử vào phút cuối. Jack tiếp quản phần trình bày nên người nói thoát nguy. Bell là thành phần cố định của thành ngữ; tone/bang/ring không thay thế được."
+    },
+    {
+      "globalNumber": 9,
+      "sectionCode": "I.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Both of them look nice nói cả hai chiếc đều đẹp, nên look ở số nhiều. Either the blue or the yellow one cho phép chọn một trong hai. Neither có nghĩa không chiếc nào, không phù hợp lời khen và đề nghị lựa chọn ở sau."
+    },
+    {
+      "globalNumber": 10,
+      "sectionCode": "I.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Stand for dùng với chữ viết tắt có nghĩa là đại diện cho những từ đầy đủ. UNESCO stands for… giải thích tên tổ chức. Bring about là gây ra; get across là truyền đạt; take after là giống người thân."
+    },
+    {
+      "globalNumber": 11,
+      "sectionCode": "I.1",
+      "localNumber": 11,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "That thay cho structure để tránh lặp: the structure of one building and that of another. One thường thay danh từ đếm được riêng lẻ nhưng one of another không phù hợp ở đây. What/which không tạo đúng cụm so sánh theo cấu trúc câu."
+    },
+    {
+      "globalNumber": 12,
+      "sectionCode": "I.1",
+      "localNumber": 12,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Wear off là tác dụng giảm dần hoặc hết, phù hợp thuốc giảm đau không còn hiệu quả và cảm giác đau quay lại. Turn out là hóa ra; do without là xoay xở khi thiếu; fade out thường chỉ âm thanh/hình ảnh mờ dần."
+    },
+    {
+      "globalNumber": 13,
+      "sectionCode": "I.1",
+      "localNumber": 13,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Take something at face value nghĩa là tin/hiểu theo điều được trình bày bên ngoài, không tìm một ý ẩn khác. Face value là cụm cố định; không thay bằng real/true/straight value trong thành ngữ này."
+    },
+    {
+      "globalNumber": 14,
+      "sectionCode": "I.1",
+      "localNumber": 14,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Put one’s foot in one’s mouth nghĩa là lỡ nói điều khiến mình ngượng hoặc làm người khác khó chịu. Lời xin lỗi I shouldn’t have said that xác nhận ngữ cảnh. Hand/elbow/knee không thuộc thành ngữ này."
+    },
+    {
+      "globalNumber": 15,
+      "sectionCode": "I.1",
+      "localNumber": 15,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Sau It’s essential that, thể giả định dùng động từ nguyên mẫu pass dù chủ ngữ every student số ít. Passing thiếu động từ hữu hạn; would pass không phải mẫu giả định yêu cầu ở đây; passed không diễn đạt điều kiện bắt buộc trước khóa học."
+    },
+    {
+      "globalNumber": 16,
+      "sectionCode": "I.1",
+      "localNumber": 16,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "My heart was pounding nghĩa là tim đập thình thịch, thường vì hồi hộp. Người nói đang dò tên trong bảng kết quả nên pounding hợp nhất. Shivering là run rẩy; bursting thường chỉ cảm xúc tràn đầy; skipping cần ngữ cảnh nhịp tim bỏ nhịp."
+    },
+    {
+      "globalNumber": 17,
+      "sectionCode": "I.1",
+      "localNumber": 17,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "There’s no doubt about it là cách đồng tình chắc chắn với dự đoán của Paul. A nói không quan trọng, C đáp lại lời khen, D bày tỏ tiếc nuối; các phương án đó không phù hợp một cuộc trao đổi về dự đoán du hành vũ trụ."
+    },
+    {
+      "globalNumber": 18,
+      "sectionCode": "I.1",
+      "localNumber": 18,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Not until + mệnh đề thời gian đứng đầu câu yêu cầu đảo trợ động từ ở mệnh đề chính: did Bill realize. A thiếu did; B cần realized sau that; D cần một mệnh đề hoàn chỉnh sau than, không phù hợp Bill realize đã cho."
+    },
+    {
+      "globalNumber": 19,
+      "sectionCode": "I.1",
+      "localNumber": 19,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "The elderly và the young chỉ những nhóm người nên động từ chia số nhiều: don’t like và do. Do ở vế sau thay cho like this kind of music để tránh lặp. Không chia số ít chỉ vì elderly/young không có đuôi -s."
+    },
+    {
+      "globalNumber": 20,
+      "sectionCode": "I.1",
+      "localNumber": 20,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Tighten our belts là thắt chặt chi tiêu, phù hợp start saving money. Our đi với belts số nhiều trong câu này. Thành ngữ dùng belt, không dùng shoes/tie/shoelaces; nghĩa không phải thực sự chỉnh quần áo."
+    },
+    {
+      "globalNumber": 21,
+      "sectionCode": "I.1",
+      "localNumber": 21,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Intrinsically nghĩa là xét về bản chất. Helping people is central to its purpose giải thích hoạt động nhân đạo là bản chất của tổ chức. Intriguingly là một cách thú vị; intrusively là xâm phạm; intrepidly là gan dạ."
+    },
+    {
+      "globalNumber": 22,
+      "sectionCode": "I.1",
+      "localNumber": 22,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "In light of that dynamic nghĩa là xét đến tình hình/cách diễn biến đó. Đây là căn cứ để cân nhắc khuyến nghị. In accordance with thường là tuân theo một quy tắc/quy định; dynamic không phải quy tắc. Đáp án cũ D cần đổi thành A."
+    },
+    {
+      "globalNumber": 23,
+      "sectionCode": "I.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "irrevocable"
+      ],
+      "displayAnswer": "irrevocable",
+      "explanation": "Irrevocable là không thể thu hồi hoặc thay đổi, khớp việc không thể thuyết phục anh ấy đổi ý. Revoke là động từ thu hồi quyết định/quyền; revocable là có thể thu hồi; tiền tố ir- tạo nghĩa ngược lại."
+    },
+    {
+      "globalNumber": 24,
+      "sectionCode": "I.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "differentiate"
+      ],
+      "displayAnswer": "differentiate",
+      "explanation": "Learn to + động từ nguyên mẫu nên dùng differentiate. Differentiate between politeness and real kindness là phân biệt sự lịch sự với lòng tốt thực sự. Different là tính từ; difference là danh từ, không làm động từ sau to ở đây."
+    },
+    {
+      "globalNumber": 25,
+      "sectionCode": "I.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "evaluation",
+        "self-evaluation",
+        "self evaluation"
+      ],
+      "displayAnswer": "evaluation / self-evaluation / self evaluation",
+      "explanation": "Evaluation là việc đánh giá; emphasis on evaluation by individual schools nói việc mỗi trường thực hiện đánh giá. Self-evaluation cũng phù hợp nếu hiểu nhà trường tự đánh giá mình. Value là gốc từ nhưng không diễn đạt đúng quá trình đánh giá trong câu."
+    },
+    {
+      "globalNumber": 26,
+      "sectionCode": "I.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "personified"
+      ],
+      "displayAnswer": "personified",
+      "explanation": "Be personified là được nhân hóa, tức được miêu tả như con người. Sun and moon nhận hành động nhân hóa trong thơ nên dùng bị động are personified. Person là danh từ; personal là thuộc cá nhân, khác nghĩa."
+    },
+    {
+      "globalNumber": 27,
+      "sectionCode": "I.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "shrinkproof",
+        "shrink-proof",
+        "shrink-resistant",
+        "shrink resistant",
+        "non-shrink"
+      ],
+      "displayAnswer": "shrinkproof / shrink-proof / shrink-resistant / shrink resistant / non-shrink",
+      "explanation": "Fabrics được xử lý để chống co rút khi giặt nên dùng shrinkproof hoặc shrink-resistant. Chấp nhận biến thể có/không gạch nối và non-shrink. Shrink là động từ co lại; shrunken là đã bị co, không phải khả năng chống co."
+    },
+    {
+      "globalNumber": 28,
+      "sectionCode": "I.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "outspoken"
+      ],
+      "displayAnswer": "outspoken",
+      "explanation": "Outspoken là thẳng thắn bày tỏ quan điểm, khớp never hesitates to express his strong opinions openly. Soft-spoken là nói năng nhẹ nhàng, khác ý; speech là danh từ. Most outspoken tạo so sánh nhất tính từ."
+    },
+    {
+      "globalNumber": 29,
+      "sectionCode": "I.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "impoverished"
+      ],
+      "displayAnswer": "impoverished",
+      "explanation": "Have impoverished là hiện tại hoàn thành chủ động: mưa nhiều và sử dụng quá mức làm đất nghèo dinh dưỡng. Không phân tích thành have something done như đáp án cũ. Impoverish là động từ hình thành từ poverty, không dùng poor sau have theo cấu trúc này."
+    },
+    {
+      "globalNumber": 30,
+      "sectionCode": "I.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "foolhardy",
+        "foolish"
+      ],
+      "displayAnswer": "foolhardy / foolish",
+      "explanation": "Foolhardy nhấn sự liều lĩnh thiếu suy xét, khớp recklessly daring và cây cao nguy hiểm. Foolish cũng đúng dạng từ và nghĩa dại dột nên được nhận. Foolproof mô tả thứ khó dùng sai, không mô tả một hành động leo cây thiếu khôn ngoan."
+    },
+    {
+      "globalNumber": 31,
+      "sectionCode": "I.3",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "effects → affects"
+      ],
+      "displayAnswer": "effects → affects",
+      "explanation": "Affect là động từ tác động đến; effect thường là danh từ ảnh hưởng hoặc động từ tạo ra. Serious issue affects people nghĩa là vấn đề ảnh hưởng con người. Chủ ngữ issue số ít nên affects thêm -s."
+    },
+    {
+      "globalNumber": 32,
+      "sectionCode": "I.3",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "case → cases"
+      ],
+      "displayAnswer": "case → cases",
+      "explanation": "In severe cases là trong những trường hợp nghiêm trọng. Case là danh từ đếm được; khi dùng số ít cần a severe case. Cấu trúc không có mạo từ trong đoạn nên sửa thành cases số nhiều."
+    },
+    {
+      "globalNumber": 33,
+      "sectionCode": "I.3",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "made → making"
+      ],
+      "displayAnswer": "made → making",
+      "explanation": "Making it challenging… là mệnh đề phân từ diễn tả hệ quả của việc hành vi lan truyền. Made sau dấu phẩy không có liên từ nối sẽ tạo lỗi ghép mệnh đề; making nối ý tự nhiên với mệnh đề đứng trước."
+    },
+    {
+      "globalNumber": 34,
+      "sectionCode": "I.3",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "cyberbully → cyberbullying"
+      ],
+      "displayAnswer": "cyberbully → cyberbullying",
+      "explanation": "The dangers of cyberbullying nói về sự nguy hiểm của hành vi bắt nạt trên mạng. Cyberbully chỉ người thực hiện hành vi hoặc động từ, không chỉ khái niệm hoạt động phù hợp ở đây. Cyberbullying là danh từ cần dùng."
+    },
+    {
+      "globalNumber": 35,
+      "sectionCode": "I.3",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "which → where",
+        "which → in which"
+      ],
+      "displayAnswer": "which → where / which → in which",
+      "explanation": "Community được xem là môi trường trong đó mọi người tôn trọng nhau, nên dùng where hoặc in which. Sau chỗ trống đã có chủ ngữ respect and kindness; which đứng một mình không làm trạng ngữ nơi chốn cho mệnh đề đó."
+    },
+    {
+      "globalNumber": 36,
+      "sectionCode": "II.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Sau giới từ on dùng đại từ quan hệ which: the hill on which the observatory stands. Where đã có nghĩa in/at/on which nên không thêm on trước where trong cấu trúc này. That không dùng ngay sau giới từ được đưa lên trước."
+    },
+    {
+      "globalNumber": 37,
+      "sectionCode": "II.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Beneath me were all the lights… = bên dưới tôi là ánh đèn thành phố, phù hợp người đang đi xuống đồi. Between cần hai phía/đối tượng bao quanh; aside không đi trực tiếp với me như giới từ ở đây; across không diễn tả phía dưới."
+    },
+    {
+      "globalNumber": 38,
+      "sectionCode": "II.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Hardly see any stars nghĩa là hầu như không nhìn thấy sao, khớp ánh sáng thành phố che lấp bầu trời. Clearly lại là rõ ràng, trái ý; surely là chắc chắn; mainly là chủ yếu, không diễn đạt mức độ nhìn thấy rất ít."
+    },
+    {
+      "globalNumber": 39,
+      "sectionCode": "II.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "At a rate là với một tốc độ/tỷ lệ. Increase at its present rate nói mức gia tăng hiện tại của ô nhiễm ánh sáng. In/on/from không đi với rate theo nghĩa tốc độ thay đổi ở đây."
+    },
+    {
+      "globalNumber": 40,
+      "sectionCode": "II.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Be taken for granted nghĩa là bị coi là điều đương nhiên và ít được chú ý. Đây là bị động của take something for granted. Brought/felt/passed không tạo đúng thành ngữ dù đều là quá khứ phân từ."
+    },
+    {
+      "globalNumber": 41,
+      "sectionCode": "II.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "According to research nghĩa là theo kết quả nghiên cứu, dùng để nêu nguồn căn cứ. Apart from là ngoài ra/ngoại trừ; instead of là thay vì; in addition to là thêm vào, không giới thiệu nguồn của nhận định theo cách này."
+    },
+    {
+      "globalNumber": 42,
+      "sectionCode": "II.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "No longer nghĩa là không còn nữa, phù hợp việc trước đây có thể thấy Ngân Hà nhưng nay ánh sáng nhân tạo cản trở. No sooner dùng trong cấu trúc vừa mới…thì; no further/no better không phù hợp với see the Milky Way ở đây."
+    },
+    {
+      "globalNumber": 43,
+      "sectionCode": "II.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Waste money là lãng phí tiền, phù hợp việc dùng điện chiếu sáng không cần thiết. Spend money thường cần chủ thể chi tiêu có chủ đích; lose money là mất tiền; make money là kiếm tiền, trái với tác hại được nêu."
+    },
+    {
+      "globalNumber": 44,
+      "sectionCode": "II.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "A light bulb unnecessarily left on là bóng đèn bị để bật không cần thiết. Left on rút gọn từ that is left on. Turned off là đã tắt nên không lãng phí điện liên tục; set off và lit in không diễn đạt việc để đèn bật."
+    },
+    {
+      "globalNumber": 45,
+      "sectionCode": "II.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Making global warming even worse là cụm V-ing chỉ hệ quả: khiến nóng lên toàn cầu tồi tệ hơn. Make + tân ngữ + tính từ phù hợp. Cause cần to become worse; result cần in; let cần động từ nguyên mẫu, không đi trực tiếp với worse."
+    },
+    {
+      "globalNumber": 46,
+      "sectionCode": "II.1",
+      "localNumber": 11,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Prove to be distressing nghĩa là cho thấy/thực tế là gây khổ sở. Present, entail và realize không dùng theo mẫu chủ ngữ sleep problems + to be với nghĩa này. Cần học prove to be + tính từ như một cụm."
+    },
+    {
+      "globalNumber": 47,
+      "sectionCode": "II.1",
+      "localNumber": 12,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Conjure up a memory là gợi lên một ký ức hoặc hình ảnh trong đầu. Up là thành phần của cụm động từ; about/of/out không tạo nghĩa hồi tưởng như ở đây. Đoạn gợi lại một đêm trằn trọc."
+    },
+    {
+      "globalNumber": 48,
+      "sectionCode": "II.1",
+      "localNumber": 13,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Tossing and turning là trở mình liên tục vì khó ngủ. Đây là cặp từ cố định thường đi cùng nhau. Rolling/wriggling/spinning có thể là chuyển động khác nhưng không thay cho tossing trong thành ngữ nói về mất ngủ."
+    },
+    {
+      "globalNumber": 49,
+      "sectionCode": "II.1",
+      "localNumber": 14,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Undergo an experience là trải qua một trải nghiệm, nhất là điều khó chịu. Undertake là đảm nhận nhiệm vụ; underlie là làm nền tảng; underpass là lối đi bên dưới, không phải động từ đúng cho trải nghiệm này."
+    },
+    {
+      "globalNumber": 50,
+      "sectionCode": "II.1",
+      "localNumber": 15,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Function well during the day là hoạt động tốt trong sinh hoạt ban ngày. Operating không thể đứng sau to ở đây; process thường cần tân ngữ; behaviour là danh từ. Function diễn đạt khả năng làm việc/sinh hoạt sau giấc ngủ."
+    },
+    {
+      "globalNumber": 51,
+      "sectionCode": "II.1",
+      "localNumber": 16,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Few and far between là thành ngữ chỉ rất hiếm gặp. Between là phần cố định, không phải yêu cầu liệt kê hai đối tượng như nghĩa thông thường của giới từ. Along/within/beyond không tạo đúng thành ngữ này."
+    },
+    {
+      "globalNumber": 52,
+      "sectionCode": "II.1",
+      "localNumber": 17,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Substantiate a claim là đưa bằng chứng đáng tin để chứng minh một khẳng định. Proclaim chỉ tuyên bố; endure là chịu đựng; invalidate là bác bỏ tính hợp lệ. Câu cần bằng chứng ủng hộ lời khẳng định, nên dùng substantiate."
+    },
+    {
+      "globalNumber": 53,
+      "sectionCode": "II.1",
+      "localNumber": 18,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Restore something to a state là đưa thứ đó trở lại trạng thái phù hợp: restore the brain to effective functioning. Recuperate thường là hồi phục của người; revive là làm sống lại; resume là tiếp tục một hoạt động, không dùng cùng mẫu tân ngữ + to này."
+    },
+    {
+      "globalNumber": 54,
+      "sectionCode": "II.1",
+      "localNumber": 19,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Compel somebody to do something là khiến hoặc buộc ai phải làm gì. Mệt mỏi kéo dài có thể khiến người ta tìm tư vấn chuyên môn. Exert/affect/enforce không dùng theo mẫu somebody to seek với nghĩa thúc đẩy hành động như compel."
+    },
+    {
+      "globalNumber": 55,
+      "sectionCode": "II.1",
+      "localNumber": 20,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Sleep-inducing effects là tác dụng gây buồn ngủ. Induce nghĩa là gây ra; sleep-inducing là tính từ ghép bổ nghĩa effects. Attaining/exacting/contributing không tạo nghĩa này. Đoạn không nói thuốc là cách điều trị duy nhất."
+    },
+    {
+      "globalNumber": 56,
+      "sectionCode": "II.1",
+      "localNumber": 21,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Factors may be detected là các yếu tố có thể được phát hiện qua đánh giá cẩn thận. Disparaged là bị chê bai, retrieved là được lấy lại, originated là bắt nguồn và không dùng bị động theo ý tìm ra nguyên nhân như ở đây."
+    },
+    {
+      "globalNumber": 57,
+      "sectionCode": "II.1",
+      "localNumber": 22,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Beset somebody là gây khó khăn, đeo bám ai, phù hợp insomnia besets people. Betray là phản bội, bemoan là than phiền, bestow là ban tặng và thường cần on. Đoạn nói mất ngủ có thể ảnh hưởng người đang căng thẳng."
+    },
+    {
+      "globalNumber": 58,
+      "sectionCode": "II.1",
+      "localNumber": 23,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Be engendered by là được gây ra bởi một yếu tố. Applied thường nghĩa là được áp dụng; instigating không phải quá khứ phân từ; evolved thường là tự phát triển qua thời gian. Engendered phù hợp quan hệ nguyên nhân trong câu."
+    },
+    {
+      "globalNumber": 59,
+      "sectionCode": "II.1",
+      "localNumber": 24,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Place hopes on something nghĩa là đặt hy vọng vào điều gì; bị động là hopes should be placed on… Ascribe cần to để quy nguyên nhân; focus thường dùng on nhưng focused hopes không phải cụm tự nhiên ở đây; attach cần to."
+    },
+    {
+      "globalNumber": 60,
+      "sectionCode": "II.1",
+      "localNumber": 25,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Determine which factors contribute nghĩa là xác định những yếu tố nào góp phần gây khó ngủ. Emerge là xuất hiện và không nhận mệnh đề tân ngữ kiểu này; release là giải phóng; confess là thú nhận. Determine hợp công việc đánh giá của chuyên gia."
+    },
+    {
+      "globalNumber": 61,
+      "sectionCode": "II.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "tongue",
+        "language"
+      ],
+      "displayAnswer": "tongue / language",
+      "explanation": "Mother tongue là tiếng mẹ đẻ; mother language cũng có thể dùng với cùng nghĩa trong bài điền mở. Không điền native tongue vì native đã mang nghĩa bản ngữ và sẽ tạo mother native tongue không tự nhiên, đồng thời vượt yêu cầu một từ."
+    },
+    {
+      "globalNumber": 62,
+      "sectionCode": "II.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "which"
+      ],
+      "displayAnswer": "which",
+      "explanation": "Which mở mệnh đề quan hệ không xác định, bổ sung rằng họ ngôn ngữ này gồm nhiều ngôn ngữ ở châu Âu và châu Á. Có dấu phẩy nên không dùng that theo cấu trúc này. Who dành cho người, không phải language family."
+    },
+    {
+      "globalNumber": 63,
+      "sectionCode": "II.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "rest"
+      ],
+      "displayAnswer": "rest",
+      "explanation": "The rest of Europe nghĩa là phần còn lại của châu Âu, đối chiếu với Britain. Rest là danh từ đi sau the và trước of. Other cần hình thức hoặc cấu trúc khác; remaining là tính từ nên cần danh từ theo sau."
+    },
+    {
+      "globalNumber": 64,
+      "sectionCode": "II.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "them",
+        "these",
+        "those"
+      ],
+      "displayAnswer": "them / these / those",
+      "explanation": "One of them/these/those thay cho several languages vừa nêu và chỉ một trong các ngôn ngữ đó là tiếng Pháp. Sau of cần đại từ tân ngữ hoặc đại từ chỉ định số nhiều. Không dùng they vì đó là dạng chủ ngữ."
+    },
+    {
+      "globalNumber": 65,
+      "sectionCode": "II.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "by"
+      ],
+      "displayAnswer": "by",
+      "explanation": "Was strongly influenced by French là bị động, trong đó by dẫn tác nhân/nguồn ảnh hưởng. Influence là động từ tác động đến; in sẽ chỉ phạm vi/hoàn cảnh chứ không diễn đạt trực tiếp tiếng Pháp là nguồn ảnh hưởng như trong câu."
+    },
+    {
+      "globalNumber": 66,
+      "sectionCode": "II.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "to"
+      ],
+      "displayAnswer": "to",
+      "explanation": "Due to + danh từ/V-ing chỉ nguyên nhân: partly due to the spread of printing. To thuộc cụm cố định, không phải dấu hiệu một động từ nguyên mẫu vì phía sau là danh từ the spread."
+    },
+    {
+      "globalNumber": 67,
+      "sectionCode": "II.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "known",
+        "described",
+        "regarded",
+        "labelled",
+        "labeled"
+      ],
+      "displayAnswer": "known / described / regarded / labelled / labeled",
+      "explanation": "Be known as Middle English là được biết đến với tên tiếng Anh trung đại. Described/regarded/labelled/labeled as cũng phù hợp cách phân loại giai đoạn. Referred cần to trước as nên không thể điền chỉ referred vào câu này."
+    },
+    {
+      "globalNumber": 68,
+      "sectionCode": "II.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "vocabulary",
+        "lexis",
+        "lexicon"
+      ],
+      "displayAnswer": "vocabulary / lexis / lexicon",
+      "explanation": "Vế tiếp nói về new words nên chỗ trống cần khái niệm vốn từ: vocabulary, lexis hoặc lexicon. Đây là một lĩnh vực thay đổi song song với pronunciation và grammar; bài không khẳng định các mặt khác của ngôn ngữ ngừng thay đổi."
+    },
+    {
+      "globalNumber": 69,
+      "sectionCode": "II.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "such"
+      ],
+      "displayAnswer": "such",
+      "explanation": "Such as dùng để đưa ví dụ: công nghiệp hóa và công nghệ mới là các developments được nêu. As đã có sẵn sau chỗ trống nên dùng such. Không dùng like as vì đó là trộn hai cách giới thiệu ví dụ."
+    },
+    {
+      "globalNumber": 70,
+      "sectionCode": "II.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "Another",
+        "One",
+        "A"
+      ],
+      "displayAnswer": "Another / One / A",
+      "explanation": "Another factor nghĩa là một yếu tố khác bên cạnh công nghệ/những phát triển đã nêu. One factor hoặc a factor cũng đúng nếu giới thiệu yếu tố này như một ví dụ, nên được nhận. Factor số ít cần từ hạn định thích hợp."
+    },
+    {
+      "globalNumber": 71,
+      "sectionCode": "II.3",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Bài trình bày nhiều cách làm khô thực phẩm: phơi nắng, khí nóng, trục quay và phun sấy, rồi nêu lợi ích. D bao quát toàn bài. A chỉ đoạn cuối; B là dữ kiện nền; C chỉ phần phương pháp cơ học."
+    },
+    {
+      "globalNumber": 72,
+      "sectionCode": "II.3",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Do this quy chiếu đến removing moisture from food trong cùng câu, nghĩa là loại bỏ độ ẩm. Expose food to sun and wind là một cách thực hiện việc đó, không phải hành động được do this thay thế."
+    },
+    {
+      "globalNumber": 73,
+      "sectionCode": "II.3",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Checked ở đây là bị hạn chế hoặc kìm lại: giảm nước giúp hạn chế hoạt động vi sinh vật gây hỏng thực phẩm. Không mang nghĩa đánh dấu tick hay kiểm tra cẩn thận. D lại là thúc đẩy phát triển, ngược ý."
+    },
+    {
+      "globalNumber": 74,
+      "sectionCode": "II.3",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Đoạn 3 nói in order to prevent darkening, nghĩa là ngăn trái cây bị sẫm màu. C maintain their color phù hợp. Loại lớp sáp và làm nứt vỏ thuộc xử lý bằng dung dịch kiềm được nhắc sau đó, không phải vai trò của khí lưu huỳnh trong câu."
+    },
+    {
+      "globalNumber": 75,
+      "sectionCode": "II.3",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Đoạn 4 nêu phương pháp thương mại đưa thực phẩm vào buồng có khí nóng thổi qua trong điều kiện kiểm soát. C mô tả đúng. A là phơi nắng; B là tiền xử lý một số trái cây; D là phương pháp dành cho chất lỏng ở đoạn sau."
+    },
+    {
+      "globalNumber": 76,
+      "sectionCode": "II.3",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Which trong chambers through which hot air is blown thay cho chambers: khí nóng đi qua các buồng sấy. Through được đưa trước đại từ quan hệ. Không chọn foods/vegetables vì câu mô tả nơi không khí lưu thông qua."
+    },
+    {
+      "globalNumber": 77,
+      "sectionCode": "II.3",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Phương pháp thứ nhất dùng trục thép nóng: lớp khô được cạo ra thành màng rồi bẻ thành flakes, các mảnh/vảy nhỏ. Fine powder thuộc phương pháp phun vào luồng khí nóng, là cách thứ hai nên không chọn B."
+    },
+    {
+      "globalNumber": 78,
+      "sectionCode": "II.3",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Bài nhắc người bản địa Bắc Mỹ, không nói người ở Ấn Độ bắt đầu làm khô thực phẩm nhiều thế kỷ trước. D là thông tin không có trong bài. Cần tránh nhầm từ chỉ người bản địa trong bản cũ với quốc gia India."
+    },
+    {
+      "globalNumber": 79,
+      "sectionCode": "II.3",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Climbers, explorers và soldiers in battle là những người thường di chuyển và có ít chỗ mang đồ. C people who are on the move khái quát nhóm đó. B phủ định in battle; A thêm underweight; D nói không cần lưu trữ thực phẩm, đều không đúng."
+    },
+    {
+      "globalNumber": 80,
+      "sectionCode": "II.3",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Bài cung cấp và giải thích thông tin về phương pháp bảo quản thực phẩm nên mang tính informative. Nó không phải truyện hư cấu, quảng cáo hay bài tranh luận nhằm bảo vệ một ý kiến đối lập."
+    },
+    {
+      "globalNumber": 81,
+      "sectionCode": "III.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "Peter not had such a lot of English homework, he could have gone to the party",
+        "Peter not had so much English homework, he could have gone to the party",
+        "it not been for the fact that Peter had so much English homework, he could have gone to the party"
+      ],
+      "displayAnswer": "Peter not had such a lot of English homework, he could have gone to the party / Peter not had so much English homework, he could have gone to the party / it not been for the fact that Peter had so much English homework, he could have gone to the party",
+      "explanation": "Had + chủ ngữ + not + V3 là đảo ngữ của điều kiện loại 3. Peter thực tế có quá nhiều bài nên đã không thể dự tiệc; vế kết quả dùng could have gone. Had Peter not had giữ had thứ hai như phân từ của have.",
+      "prefix": "Had",
+      "suffix": "",
+      "fullSentence": "Had Peter not had so much English homework, he could have gone to the party."
+    },
+    {
+      "globalNumber": 82,
+      "sectionCode": "III.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "arriving at the airport, I was told my flight was cancelled",
+        "arrival at the airport, I was told my flight was cancelled",
+        "getting to the airport, I was told my flight was cancelled",
+        "arriving at the airport, I was told that my flight was canceled",
+        "my arrival at the airport, someone told me my flight was cancelled"
+      ],
+      "displayAnswer": "arriving at the airport, I was told my flight was cancelled / arrival at the airport, I was told my flight was cancelled / getting to the airport, I was told my flight was cancelled / arriving at the airport, I was told that my flight was canceled / my arrival at the airport, someone told me my flight was cancelled",
+      "explanation": "On + V-ing hoặc on arrival diễn tả ngay khi đến. Nếu dùng arriving/getting, chủ thể vế chính phải là I để tránh mệnh đề rút gọn sai chủ ngữ. Bị động I was told giữ việc một người khác báo thông tin hủy chuyến bay.",
+      "prefix": "On",
+      "suffix": "",
+      "fullSentence": "On arriving at the airport, I was told my flight was cancelled."
+    },
+    {
+      "globalNumber": 83,
+      "sectionCode": "III.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "forward to seeing you again"
+      ],
+      "displayAnswer": "forward to seeing you again",
+      "explanation": "Look forward to + danh từ/V-ing là mong đợi một việc với niềm vui. To là giới từ nên dùng seeing, không phải see. Again giữ ý gặp lại, không chỉ gặp lần đầu.",
+      "prefix": "We are looking",
+      "suffix": "",
+      "fullSentence": "We are looking forward to seeing you again."
+    },
+    {
+      "globalNumber": 84,
+      "sectionCode": "III.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "depth of the Pacific Ocean is greater than that of the Atlantic",
+        "depth of the Pacific Ocean is greater than the Atlantic’s"
+      ],
+      "displayAnswer": "depth of the Pacific Ocean is greater than that of the Atlantic / depth of the Pacific Ocean is greater than the Atlantic’s",
+      "explanation": "Đổi tính từ deeper thành danh từ depth. Average depth là độ sâu trung bình; greater than so sánh hai độ sâu. That of the Atlantic hoặc the Atlantic’s tránh lặp depth và bảo đảm so sánh cùng loại đại lượng.",
+      "prefix": "The average",
+      "suffix": "",
+      "fullSentence": "The average depth of the Pacific Ocean is greater than that of the Atlantic."
+    },
+    {
+      "globalNumber": 85,
+      "sectionCode": "III.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "as no surprise to Jenifer to hear that Jim had failed the entrance exam to high school",
+        "as no shock to Jenifer to hear that Jim had failed the entrance exam to high school",
+        "as no surprise to Jenifer that Jim had failed the entrance exam to high school"
+      ],
+      "displayAnswer": "as no surprise to Jenifer to hear that Jim had failed the entrance exam to high school / as no shock to Jenifer to hear that Jim had failed the entrance exam to high school / as no surprise to Jenifer that Jim had failed the entrance exam to high school",
+      "explanation": "Come as no surprise/shock to somebody nghĩa là hoàn toàn không khiến ai ngạc nhiên. Câu giữ tên Jenifer như đề gốc, đồng thời giữ quá khứ hoàn thành had failed để thể hiện kết quả thi xảy ra trước phản ứng của cô ấy.",
+      "prefix": "It came",
+      "suffix": "",
+      "fullSentence": "It came as no surprise to Jenifer to hear that Jim had failed the entrance exam to high school."
+    },
+    {
+      "globalNumber": 86,
+      "sectionCode": "III.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "she had applied for the job in the company"
+      ],
+      "displayAnswer": "she had applied for the job in the company",
+      "explanation": "Wish + quá khứ hoàn thành diễn tả tiếc nuối về điều đã không làm. Mary hiện tiếc vì trước đó không nộp đơn, nên dùng she had applied. Không dùng would apply vì đó là mong muốn hướng tới hành động sau thời điểm nói.",
+      "prefix": "Mary wishes",
+      "suffix": "",
+      "fullSentence": "Mary wishes she had applied for the job in the company."
+    },
+    {
+      "globalNumber": 87,
+      "sectionCode": "III.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "Peter not to lend Jim any more money",
+        "Peter against lending Jim any more money"
+      ],
+      "displayAnswer": "Peter not to lend Jim any more money / Peter against lending Jim any more money",
+      "explanation": "Advise somebody not to V hoặc advise somebody against V-ing chuyển lời khuyên If I were you… sang câu tường thuật. Peter là người nhận lời khuyên; Jim là người không nên cho vay thêm. Cần giữ đúng hai vai trò này.",
+      "prefix": "Jane advised",
+      "suffix": "",
+      "fullSentence": "Jane advised Peter not to lend Jim any more money."
+    },
+    {
+      "globalNumber": 88,
+      "sectionCode": "III.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "did it rain that they cancelled the flight",
+        "did it rain that they canceled the flight",
+        "did it rain that the flight was cancelled",
+        "did it rain that the flight was canceled"
+      ],
+      "displayAnswer": "did it rain that they cancelled the flight / did it rain that they canceled the flight / did it rain that the flight was cancelled / did it rain that the flight was canceled",
+      "explanation": "Đưa So heavily lên đầu câu thì đảo did lên trước chủ ngữ it và đưa rained về rain. Vế that nêu hệ quả hủy chuyến bay. Cần viết they, không phải the như đáp án cũ; cancelled/canceled đều là cách viết được chấp nhận.",
+      "prefix": "So heavily",
+      "suffix": "",
+      "fullSentence": "So heavily did it rain that they cancelled the flight."
+    },
+    {
+      "globalNumber": 89,
+      "sectionCode": "III.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "nor I am present at the meeting"
+      ],
+      "displayAnswer": "nor I am present at the meeting",
+      "explanation": "Neither…nor nối hai chủ ngữ phủ định. Trong cấu trúc này động từ hòa hợp với chủ ngữ gần nó nhất, I, nên dùng am: Neither he nor I am present. Không thêm not vì neither…nor đã mang nghĩa phủ định.",
+      "prefix": "Neither he",
+      "suffix": "",
+      "fullSentence": "Neither he nor I am present at the meeting."
+    },
+    {
+      "globalNumber": 90,
+      "sectionCode": "III.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "understand what my teacher said"
+      ],
+      "displayAnswer": "understand what my teacher said",
+      "explanation": "Could hardly understand nghĩa là hầu như không hiểu, tương đương only understood very little. Sau could dùng understand nguyên mẫu. Hardly đã có nghĩa phủ định nên không thêm not hoặc đảo nghĩa thành could understand clearly.",
+      "prefix": "I could hardly",
+      "suffix": "",
+      "fullSentence": "I could hardly understand what my teacher said."
+    },
+    {
+      "globalNumber": 91,
+      "sectionCode": "III.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "in putting out the fire after five hours",
+        "in extinguishing the fire after five hours"
+      ],
+      "displayAnswer": "in putting out the fire after five hours / in extinguishing the fire after five hours",
+      "explanation": "Succeed in + V-ing = thành công trong việc gì. Succeeded in putting out/extinguishing thay cho managed to put out. Cần giữ after five hours để không mất thông tin về thời gian dập lửa.",
+      "prefix": "The firemen",
+      "suffix": "",
+      "fullSentence": "The firemen succeeded in putting out the fire after five hours."
+    },
+    {
+      "globalNumber": 92,
+      "sectionCode": "III.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "Tom of stealing some money from his wallet",
+        "Tom of having stolen some money from his wallet"
+      ],
+      "displayAnswer": "Tom of stealing some money from his wallet / Tom of having stolen some money from his wallet",
+      "explanation": "Accuse somebody of doing/having done something là buộc tội ai làm gì. Tom là người bị buộc tội; his wallet quy chiếu ví của Mr. Smith trong câu. Không dùng accuse somebody for theo cấu trúc này.",
+      "prefix": "Mr. Smith",
+      "suffix": "",
+      "fullSentence": "Mr. Smith accused Tom of stealing some money from his wallet."
+    },
+    {
+      "globalNumber": 93,
+      "sectionCode": "III.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "are on the verge of extinction",
+        "are on the verge of becoming extinct"
+      ],
+      "displayAnswer": "are on the verge of extinction / are on the verge of becoming extinct",
+      "explanation": "On the verge of + danh từ/V-ing nghĩa là ở sát ngưỡng xảy ra điều gì. Câu gốc đã làm rõ close to becoming extinct, nên extinction hoặc becoming extinct giữ đúng mức nguy cấp. Không đánh đồng mọi nguy cơ với việc sắp xảy ra.",
+      "prefix": "Many species of wildlife",
+      "suffix": "",
+      "fullSentence": "Many species of wildlife are on the verge of extinction."
+    },
+    {
+      "globalNumber": 94,
+      "sectionCode": "III.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "makes far too frequent complaints for my liking",
+        "makes complaints that are far too frequent for my liking"
+      ],
+      "displayAnswer": "makes far too frequent complaints for my liking / makes complaints that are far too frequent for my liking",
+      "explanation": "Make complaints là đưa ra lời phàn nàn; frequent là tính từ diễn tả tần suất. Phải giữ far too và for my liking = nhiều hơn mức tôi thấy chấp nhận được. About my liking của đáp án cũ sẽ đổi đối tượng bị phàn nàn và sai nghĩa.",
+      "prefix": "She",
+      "suffix": "",
+      "fullSentence": "She makes far too frequent complaints for my liking."
+    },
+    {
+      "globalNumber": 95,
+      "sectionCode": "III.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "delay to your flight is beyond our control at the moment",
+        "delay to your flight is beyond our power to remedy at the moment"
+      ],
+      "displayAnswer": "delay to your flight is beyond our control at the moment / delay to your flight is beyond our power to remedy at the moment",
+      "explanation": "Beyond our control nghĩa là nằm ngoài khả năng kiểm soát của chúng tôi. At the moment phải được giữ vì việc không thể can thiệp chỉ nói ở thời điểm hiện tại. Không bỏ delay to your flight hoặc chuyển sang sự bất lực vĩnh viễn.",
+      "prefix": "I regret that the",
+      "suffix": "",
+      "fullSentence": "I regret that the delay to your flight is beyond our control at the moment."
+    },
+    {
+      "globalNumber": 96,
+      "sectionCode": "III.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "whose name was missed",
+        "whose name had been missed",
+        "whose name was left",
+        "whose name had been left"
+      ],
+      "displayAnswer": "whose name was missed / whose name had been missed / whose name was left / whose name had been left",
+      "explanation": "Whose name thể hiện tên của Vicky; was/had been missed off the list nghĩa là đã bị bỏ sót khỏi danh sách. Mệnh đề bổ sung được ngăn bởi hai dấu phẩy có sẵn. Không điền lại off the list vì cụm này nằm sau chỗ trống.",
+      "prefix": "Vicky,",
+      "suffix": "off the list, wasn’t very pleased.",
+      "fullSentence": "Vicky, whose name was missed off the list, wasn’t very pleased."
+    },
+    {
+      "globalNumber": 97,
+      "sectionCode": "III.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "is believed to have been"
+      ],
+      "displayAnswer": "is believed to have been",
+      "explanation": "Sự tin tưởng của cảnh sát ở hiện tại nên dùng is believed. Việc đang mặc áo xảy ra trước thời điểm đó nên dùng to have been wearing. Không chỉ viết is believed to be vì sẽ mất quan hệ quá khứ của was wearing.",
+      "prefix": "The robber",
+      "suffix": "wearing a dark-blue jacket.",
+      "fullSentence": "The robber is believed to have been wearing a dark-blue jacket."
+    },
+    {
+      "globalNumber": 98,
+      "sectionCode": "III.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "in case I ran"
+      ],
+      "displayAnswer": "in case I ran",
+      "explanation": "In case + mệnh đề diễn tả phòng trường hợp có thể xảy ra. Câu kể quá khứ nên dùng I ran out of cash. Phải có chủ ngữ I; đáp án cũ thiếu I là sai cấu trúc. Out of cash đã được cho sẵn sau ô trống.",
+      "prefix": "I took my cheque-book with me",
+      "suffix": "out of cash.",
+      "fullSentence": "I took my cheque-book with me in case I ran out of cash."
+    },
+    {
+      "globalNumber": 99,
+      "sectionCode": "III.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "for a picnic have fallen through"
+      ],
+      "displayAnswer": "for a picnic have fallen through",
+      "explanation": "Fall through nghĩa là kế hoạch không thực hiện được. Plans số nhiều dùng have fallen through, giữ hiện tại hoàn thành của have been spoiled. Không dùng fallen down vì cụm đó chỉ ngã/sụp, không diễn đạt kế hoạch thất bại.",
+      "prefix": "Linda’s plans",
+      "suffix": "due to the weather.",
+      "fullSentence": "Linda’s plans for a picnic have fallen through due to the weather."
+    },
+    {
+      "globalNumber": 100,
+      "sectionCode": "III.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "not possible to access",
+        "not possible to get to",
+        "not possible to reach",
+        "not possible to gain access to",
+        "not possible to get access to"
+      ],
+      "displayAnswer": "not possible to access / not possible to get to / not possible to reach / not possible to gain access to / not possible to get access to",
+      "explanation": "Inaccessible nghĩa là không thể tiếp cận hoặc đi tới. Đổi sang It is not possible to access/get to/reach… và giữ in winter. Possible là từ khóa bắt buộc; accessible hoặc impossible dù gần nghĩa vẫn không đáp ứng yêu cầu giữ từ.",
+      "prefix": "It is",
+      "suffix": "this hotel in winter.",
+      "fullSentence": "It is not possible to access this hotel in winter."
+    }
+  ]
+}
