@@ -6,7 +6,17 @@ const routes=JSON.parse(await read('scripts/practice-09-39.routes.json'));
 for(const [n,r] of Object.entries(routes)){
  const html=await read(r.student+'/index.html'),app=JSON.parse(html.match(/const APP = (.*);/)[1]),data=app.test,answers=data.answers;
  assert.equal(answers.length,data.total);
- assert.deepEqual(data.sections.flatMap(s=>Array.from({length:s.count},(_,i)=>s.startGlobal+i)),Array.from({length:data.total},(_,i)=>i+1));
+ assert.deepEqual(data.sections.flatMap(s=>Array.from({length:s.count},(_,i)=>s.startGlobal+i)),answers.map(a=>a.globalNumber));
+ assert.equal(new Set(answers.map(a=>a.globalNumber)).size,data.total);
+ if(+n===38){
+  assert.equal(data.total,70);assert.equal(answers[0].globalNumber,21);assert.equal(answers.at(-1).globalNumber,90);
+  assert(html.includes('const questions = SECTIONS.flatMap('));
+  assert(html.includes('Web chấm 70 câu phần viết (21–90)'));
+  assert(html.includes('button.textContent = section.sectionLabel || section.sectionCode;'));
+  for(const answer of answers.filter(a=>a.globalNumber>=86))for(const variant of answer.acceptedAnswers){
+   const count=variant.split(/\s+/).length;assert(count>=2&&count<=6);
+  }
+ }
  assert.equal(new Set(answers.map(a=>a.explanation)).size,data.total);
  assert(answers.every(a=>a.explanation.length>100&&a.acceptedAnswers.length));
  const script=html.match(/<script>([\s\S]*?)<\/script>/)[1];new vm.Script(script);

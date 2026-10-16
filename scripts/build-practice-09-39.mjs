@@ -22,7 +22,16 @@ for(const n of numbers){
  let html=student.replace(/const APP = .*;\r?\n/,()=> 'const APP = '+JSON.stringify(app)+';\n').replaceAll('PRACTICE TEST 5 · LUYỆN ĐỀ','PRACTICE TEST '+n+' · LUYỆN ĐỀ');
  html=html.replaceAll('=== "I.3"','=== '+JSON.stringify(errorSection));
  html=html.replaceAll('Điền 5 lỗi khác nhau','Điền '+src.sections.find(s=>s.sectionCode===errorSection).count+' lỗi khác nhau');
+ html=html.replace('const questions = Array.from({length:TOTAL}, (_,index) => index + 1);','const questions = SECTIONS.flatMap(section => Array.from({length:section.count}, (_,index) => section.startGlobal + index));');
+ html=html.replace('button.textContent = section.sectionCode;','button.textContent = section.sectionLabel || section.sectionCode;').replace('section.textContent = place.section.sectionCode;','section.textContent = place.section.sectionLabel || place.section.sectionCode;');
+ html=html.replace('needsReview:globalNumber >= 81','needsReview:Boolean(solution?.fullSentence)');
+ if(src.scopeNote){
+  html=html.replace('<h1>Bắt đầu lượt làm</h1>','<h1>Bắt đầu lượt làm</h1><p class="notice">'+escape(src.scopeNote)+'</p>');
+  html=html.replace('<span>ĐỀ BÀI</span>','<span>ĐỀ BÀI · CÂU '+src.answers[0].globalNumber+'–'+src.answers.at(-1).globalNumber+'</span>');
+  html=html.replace('submissionNote:wrongNumbers.join(", ")','submissionNote:'+JSON.stringify(src.scopeNote+' | Câu cần xem: ')+'+wrongNumbers.join(", ")');
+ }
  let page=correction.replaceAll('PRACTICE TEST 5','PRACTICE TEST '+n).replaceAll('TEST 5 ·','TEST '+n+' ·').replaceAll('PRACTICE+TEST+5','PRACTICE+TEST+'+n).replaceAll('15OQMFYSwy38N2PeqnDjk82WQZauPAHiTiajyGP-Je1o',src.sourceTabs.answers.documentId).replaceAll('t.nqldg9snrw3x',src.sourceTabs.answers.tabId);
+ if(src.scopeNote)page=page.replace('</h1>','</h1><p>'+escape(src.scopeNote)+'</p>');
  const cards=vocab.words.map((w,i)=>'<article class="word-card"><div class="word-index">'+String(i+1).padStart(2,'0')+'</div><div class="word-identity"><p class="word-meta">'+escape(w.meta)+' · Câu '+w.question+'</p><h3>'+escape(w.term)+'</h3></div><div class="word-meaning"><p class="card-label">NGHĨA TIẾNG VIỆT</p><p>'+escape(w.meaning)+'</p></div><div class="word-detail"><p class="card-label">GIẢI THÍCH &amp; LƯU Ý</p><p>'+escape(w.note)+'</p></div></article>').join('');
  const a=page.indexOf('<div class="word-list">'),b=page.indexOf('</section>',a);if(a<0||b<0)throw Error('Vocabulary template boundary');
  page=page.slice(0,a)+'<div class="word-list">'+cards+'</div>'+page.slice(b);
