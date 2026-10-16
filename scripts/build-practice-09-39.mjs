@@ -17,8 +17,10 @@ for(const n of numbers){
  const route=routes[n]??={student:randomBytes(16).toString('hex'),correction:randomBytes(16).toString('hex')};
  const app=JSON.parse(student.match(/const APP = (.*);\r?\n/)[1]);
  app.course.expected={testCount:39,questionTotal:null};
- app.test={...app.test,sequence:n,testId:'luyen-de-practice-test-'+pad,testLabel:src.title,testNumber:n,testCode:src.testCode,title:src.title,total:src.total,questionDocumentId:src.docId,questionTab:src.sourceTabs.test.tabId,sections:src.sections,answers:src.answers,contentRevision:'2026-10-16',publishReady:true};
+ const errorSection=src.errorCorrectionSection??'I.3';
+ app.test={...app.test,sequence:n,testId:'luyen-de-practice-test-'+pad,testLabel:src.title,testNumber:n,testCode:src.testCode,title:src.title,total:src.total,questionDocumentId:src.docId,questionTab:src.sourceTabs.test.tabId,sections:src.sections,answers:src.answers,errorCorrectionSection:errorSection,contentRevision:'2026-10-16',publishReady:true};
  let html=student.replace(/const APP = .*;\r?\n/,()=> 'const APP = '+JSON.stringify(app)+';\n').replaceAll('PRACTICE TEST 5 · LUYỆN ĐỀ','PRACTICE TEST '+n+' · LUYỆN ĐỀ');
+ html=html.replaceAll('=== "I.3"','=== '+JSON.stringify(errorSection));
  let page=correction.replaceAll('PRACTICE TEST 5','PRACTICE TEST '+n).replaceAll('TEST 5 ·','TEST '+n+' ·').replaceAll('PRACTICE+TEST+5','PRACTICE+TEST+'+n).replaceAll('15OQMFYSwy38N2PeqnDjk82WQZauPAHiTiajyGP-Je1o',src.sourceTabs.answers.documentId).replaceAll('t.nqldg9snrw3x',src.sourceTabs.answers.tabId);
  const cards=vocab.words.map((w,i)=>'<article class="word-card"><div class="word-index">'+String(i+1).padStart(2,'0')+'</div><div class="word-identity"><p class="word-meta">'+escape(w.meta)+' · Câu '+w.question+'</p><h3>'+escape(w.term)+'</h3></div><div class="word-meaning"><p class="card-label">NGHĨA TIẾNG VIỆT</p><p>'+escape(w.meaning)+'</p></div><div class="word-detail"><p class="card-label">GIẢI THÍCH &amp; LƯU Ý</p><p>'+escape(w.note)+'</p></div></article>').join('');
  const a=page.indexOf('<div class="word-list">'),b=page.indexOf('</section>',a);if(a<0||b<0)throw Error('Vocabulary template boundary');
