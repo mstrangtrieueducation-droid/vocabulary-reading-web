@@ -1,0 +1,1179 @@
+{
+  "schemaVersion": 2,
+  "sequence": 6,
+  "testNumber": 6,
+  "testCode": "LD-PT06",
+  "title": "PRACTICE TEST 6",
+  "total": 100,
+  "docId": "1JmlwFW44Uhu3kNPpXgDUut3VcXuCYBgcK58ytFwbpL8",
+  "sourceTabs": {
+    "test": {
+      "documentId": "1JmlwFW44Uhu3kNPpXgDUut3VcXuCYBgcK58ytFwbpL8",
+      "tabId": "t.0"
+    },
+    "answers": {
+      "documentId": "11PhOsxMP9qp3kZG7Yjmg8O-3nlJYH3pFuc_kZ9ONnV0",
+      "tabId": "t.x6znnht7cjx1"
+    }
+  },
+  "sections": [
+    {
+      "sectionCode": "I.1",
+      "sectionLabel": "I.1",
+      "startGlobal": 1,
+      "count": 35,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "I.2",
+      "sectionLabel": "I.2",
+      "startGlobal": 36,
+      "count": 10,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "I.3",
+      "sectionLabel": "I.3",
+      "startGlobal": 46,
+      "count": 5,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "II.1",
+      "sectionLabel": "II.1",
+      "startGlobal": 51,
+      "count": 10,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "II.2",
+      "sectionLabel": "II.2",
+      "startGlobal": 61,
+      "count": 10,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "II.3",
+      "sectionLabel": "II.3",
+      "startGlobal": 71,
+      "count": 10,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "III.1",
+      "sectionLabel": "III.1",
+      "startGlobal": 81,
+      "count": 10,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "III.2",
+      "sectionLabel": "III.2",
+      "startGlobal": 91,
+      "count": 10,
+      "inputType": "text"
+    }
+  ],
+  "answers": [
+    {
+      "globalNumber": 1,
+      "sectionCode": "I.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Oppose the plan là phản đối kế hoạch, nhận tân ngữ trực tiếp. Object và disagree phải đi với to/with; differ nghĩa là khác nhau, không dùng differ the plan."
+    },
+    {
+      "globalNumber": 2,
+      "sectionCode": "I.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "One of the world’s most useful ways có cấu trúc sở hữu world’s đứng trước so sánh nhất most useful. Sau one of cần danh từ số nhiều ways; ba phương án còn lại đảo sai trật tự."
+    },
+    {
+      "globalNumber": 3,
+      "sectionCode": "I.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Both of them look nice nói cả hai váy đều đẹp. Either the blue or the yellow one nghĩa là chọn một trong hai; both…both không tạo cặp lựa chọn, neither lại trái ý khen hai váy."
+    },
+    {
+      "globalNumber": 4,
+      "sectionCode": "I.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Or else nối hậu quả nếu không làm điều vừa nói: nếu không đi thật bình tĩnh, họ đã nghĩ tôi là kẻ trộm. Would have thought phù hợp tình huống giả định quá khứ; in case không diễn đạt hậu quả đối lập này."
+    },
+    {
+      "globalNumber": 5,
+      "sectionCode": "I.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Do you have a minute? là hỏi liệu giáo sư có chút thời gian trao đổi. Sure. What’s the problem? nhận lời và mời trình bày; các đáp án khác hiểu sai thành hỏi một vật hoặc thời điểm cụ thể."
+    },
+    {
+      "globalNumber": 6,
+      "sectionCode": "I.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Be out of the habit of doing something là không còn/thoát khỏi thói quen làm gì. Arriving late là hành vi cá nhân lặp lại; custom là phong tục, fashion là thời trang hoặc xu hướng."
+    },
+    {
+      "globalNumber": 7,
+      "sectionCode": "I.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Bell the cat là dám nhận việc khó hoặc nguy hiểm vì lợi ích chung. Việc đối chất với đồng nghiệp là hành động khó xử; cat là thành phần cố định, không thay bằng tên con vật khác."
+    },
+    {
+      "globalNumber": 8,
+      "sectionCode": "I.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Hinder somebody from doing something = cản trở ai làm gì. Hoàn cảnh nghèo cản trở việc học; protect from là bảo vệ khỏi điều xấu, eliminate/disable không phù hợp cấu trúc ở đây."
+    },
+    {
+      "globalNumber": 9,
+      "sectionCode": "I.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "In the heat of the moment nghĩa là trong lúc nóng giận/bốc đồng. Người nói lấy sự mất bình tĩnh để giải thích lời nặng nề; spur thuộc on the spur of the moment, không phải in the spur."
+    },
+    {
+      "globalNumber": 10,
+      "sectionCode": "I.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "As clean as a pin là thành ngữ chỉ rất sạch sẽ, phù hợp phòng thí nghiệm vừa được dọn kỹ. Pin là từ cố định của phép so sánh; các danh từ còn lại không tạo cụm này."
+    },
+    {
+      "globalNumber": 11,
+      "sectionCode": "I.1",
+      "localNumber": 11,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "The most commonly abused drug có most bổ nghĩa commonly; commonly bổ nghĩa phân từ abused, cả cụm đứng trước drug. Các lựa chọn khác đặt trạng từ và danh từ sai trật tự."
+    },
+    {
+      "globalNumber": 12,
+      "sectionCode": "I.1",
+      "localNumber": 12,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Somewhere that has plenty of sun and sand cần đại từ quan hệ làm chủ ngữ của has. Where chỉ nơi chốn, không làm chủ ngữ; who chỉ người và when chỉ thời gian."
+    },
+    {
+      "globalNumber": 13,
+      "sectionCode": "I.1",
+      "localNumber": 13,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Dish là món ăn đã chế biến; this dish is best served with… = món này ngon nhất khi dùng kèm… Plate là cái đĩa, food là thức ăn nói chung, meal là cả bữa."
+    },
+    {
+      "globalNumber": 14,
+      "sectionCode": "I.1",
+      "localNumber": 14,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Wish về điều trái với quá khứ dùng had + V3. Yesterday cho mốc quá khứ nên had sent; had been sent là bị động, sẽ biến người nói thành người được gửi."
+    },
+    {
+      "globalNumber": 15,
+      "sectionCode": "I.1",
+      "localNumber": 15,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "So sánh gấp đôi: twice as much as. Costs nói số tiền nên dùng much; twice phải đứng trước as much as, không dùng twice more than cho mẫu kiểm tra này."
+    },
+    {
+      "globalNumber": 16,
+      "sectionCode": "I.1",
+      "localNumber": 16,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Take after somebody là giống người thân về ngoại hình/tính cách. Physically xác định nghĩa ngoại hình; run into là tình cờ gặp, let down là làm thất vọng, hold up là trì hoãn/giơ lên."
+    },
+    {
+      "globalNumber": 17,
+      "sectionCode": "I.1",
+      "localNumber": 17,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Even if nghĩa là ngay cả nếu, nhấn mạnh dù lương gấp đôi vẫn không nhận việc. Despite cần danh từ/V-ing; however không đứng trước mệnh đề theo cách này."
+    },
+    {
+      "globalNumber": 18,
+      "sectionCode": "I.1",
+      "localNumber": 18,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Get over her shyness là vượt qua sự nhút nhát. Yet cho biết điều này chưa đạt được dù đã lớn; get through là vượt qua giai đoạn/công việc, không tự nhiên bằng get over trong cụm này."
+    },
+    {
+      "globalNumber": 19,
+      "sectionCode": "I.1",
+      "localNumber": 19,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Excessive exploitation là khai thác quá mức. Quy định nhằm ngăn mức khai thác gây hại; reluctant là miễn cưỡng, cautious là thận trọng, temporary là tạm thời."
+    },
+    {
+      "globalNumber": 20,
+      "sectionCode": "I.1",
+      "localNumber": 20,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Celebrated nghĩa là nổi tiếng và được ngưỡng mộ, phù hợp cách giới thiệu nghệ sĩ. Defamed nghĩa là bị bôi nhọ; known thường cần well-known hoặc thêm phần xác định."
+    },
+    {
+      "globalNumber": 21,
+      "sectionCode": "I.1",
+      "localNumber": 21,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Make out trong ngữ cảnh lời nói là nghe/hiểu được. Giọng lạ khiến người nghe không hiểu; make up là bịa ra/tạo thành, còn make by/on không đúng cụm này."
+    },
+    {
+      "globalNumber": 22,
+      "sectionCode": "I.1",
+      "localNumber": 22,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "No person other than John nghĩa là không ai ngoài John. Other than tạo ngoại lệ cho phủ định no person; rather than là thay vì, không biểu đạt ngoại lệ tương đương."
+    },
+    {
+      "globalNumber": 23,
+      "sectionCode": "I.1",
+      "localNumber": 23,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Suggest + that + chủ ngữ + động từ nguyên mẫu dùng cho lời đề nghị; có thể lược that. Vì vậy suggested we come back đúng; không dùng suggest to come back hoặc tự động lùi thành came."
+    },
+    {
+      "globalNumber": 24,
+      "sectionCode": "I.1",
+      "localNumber": 24,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Let the disease take its course là để bệnh diễn tiến tự nhiên khi không còn điều trị nào khác. Take its course là cụm cố định, không thay course bằng end/term/way."
+    },
+    {
+      "globalNumber": 25,
+      "sectionCode": "I.1",
+      "localNumber": 25,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Shouldn’t have gone phê bình việc đã đi ra ngoài không mặc áo khoác. Hành động xảy ra hôm qua và gây cảm lạnh; mustn’t have gone không diễn đạt lời trách về việc đã làm."
+    },
+    {
+      "globalNumber": 26,
+      "sectionCode": "I.1",
+      "localNumber": 26,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "That the ancestor… is the red jungle fowl là mệnh đề danh từ làm chủ ngữ của is widely believed. That cần để đóng gói cả nhận định; chỉ The ancestor sẽ tạo hai động từ is không liên kết."
+    },
+    {
+      "globalNumber": 27,
+      "sectionCode": "I.1",
+      "localNumber": 27,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Where years of cultivation have removed… bổ nghĩa areas. Chủ ngữ của have removed là years số nhiều, nên chọn B; with/because of/by không tạo mệnh đề quan hệ có chủ ngữ thích hợp."
+    },
+    {
+      "globalNumber": 28,
+      "sectionCode": "I.1",
+      "localNumber": 28,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Numerate là biết làm các phép tính cơ bản, đi song song với literate là biết đọc viết. Numeric/numeral liên quan con số; numerous nghĩa là nhiều, không diễn đạt năng lực của học sinh."
+    },
+    {
+      "globalNumber": 29,
+      "sectionCode": "I.1",
+      "localNumber": 29,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Part and parcel of là một phần không thể tách rời. Bị báo chí bàn luận đời tư là mặt thường đi kèm sự nổi tiếng; packet/post/package không tạo thành ngữ."
+    },
+    {
+      "globalNumber": 30,
+      "sectionCode": "I.1",
+      "localNumber": 30,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Vitamin supplements là sản phẩm bổ sung vitamin. Herbs là thảo dược; cả hai là những thứ được sử dụng. Components, materials, ingredients chỉ thành phần/vật liệu, không phải tên sản phẩm bổ sung."
+    },
+    {
+      "globalNumber": 31,
+      "sectionCode": "I.1",
+      "localNumber": 31,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Lend somebody an ear nghĩa là lắng nghe và cảm thông. Sympathetic listener và việc mất việc làm cho thấy Jane chia sẻ khó khăn; không dịch ear thành cho mượn tai theo nghĩa đen."
+    },
+    {
+      "globalNumber": 32,
+      "sectionCode": "I.1",
+      "localNumber": 32,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Released in 1915 bổ nghĩa cho bộ phim, nên chủ ngữ mệnh đề chính phải là the film. C đặt D. W. Griffith’s epic film làm chủ ngữ; các đáp án khác đặt đạo diễn, cuộc chiến hoặc chủ đề sai vị trí."
+    },
+    {
+      "globalNumber": 33,
+      "sectionCode": "I.1",
+      "localNumber": 33,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Substance là chất, phù hợp định nghĩa mật ong là chất ngọt do ong tạo ra. Material thiên về vật liệu, fabric là vải, matter là vật chất nói chung và không tự nhiên sau a sweet ở đây."
+    },
+    {
+      "globalNumber": 34,
+      "sectionCode": "I.1",
+      "localNumber": 34,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "What psychologists call cognition là mệnh đề danh từ làm chủ ngữ của is. Trong câu gián tiếp không đảo do; B tạo hai mệnh đề không nối, D có which khiến câu thiếu cấu trúc chính phù hợp."
+    },
+    {
+      "globalNumber": 35,
+      "sectionCode": "I.1",
+      "localNumber": 35,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Following the guidelines… phải cùng chủ thể với hành động avoid procedural confusion. Large decision-making organizations là bên làm theo hướng dẫn; các lựa chọn còn lại thiếu chủ ngữ hoặc sai cách nối câu."
+    },
+    {
+      "globalNumber": 36,
+      "sectionCode": "I.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "tasteless"
+      ],
+      "displayAnswer": "tasteless",
+      "explanation": "Tasteless nghĩa là nhạt nhẽo/không có vị, phù hợp nhận xét tiêu cực awful và cooked badly. Tasty lại là ngon; tasteful thường nói về gu thẩm mỹ, không phải hương vị đồ ăn."
+    },
+    {
+      "globalNumber": 37,
+      "sectionCode": "I.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "laughter"
+      ],
+      "displayAnswer": "laughter",
+      "explanation": "Roars of laughter là những tràng cười lớn. Sau of cần danh từ laughter; laugh có thể là danh từ đếm được nhưng không tạo cụm thông dụng roars of laughter."
+    },
+    {
+      "globalNumber": 38,
+      "sectionCode": "I.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "unfair"
+      ],
+      "displayAnswer": "unfair",
+      "explanation": "This is a little unfair nghĩa là đánh giá như vậy hơi bất công. Phần sau nêu tiến bộ của ẩm thực Anh, nên cần tiền tố phủ định un- thay vì fair."
+    },
+    {
+      "globalNumber": 39,
+      "sectionCode": "I.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "improvements"
+      ],
+      "displayAnswer": "improvements",
+      "explanation": "Some wonderful improvements là một số cải thiện đáng kể. Cần danh từ đếm được số nhiều sau some; improve là động từ, improvement số ít không khớp ý nhiều thay đổi."
+    },
+    {
+      "globalNumber": 40,
+      "sectionCode": "I.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "excellent"
+      ],
+      "displayAnswer": "excellent",
+      "explanation": "Excellent restaurants nghĩa là các nhà hàng xuất sắc. Cần tính từ trước restaurants; excel là động từ vượt trội, excellence là danh từ chỉ sự xuất sắc."
+    },
+    {
+      "globalNumber": 41,
+      "sectionCode": "I.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "skillfully",
+        "skilfully"
+      ],
+      "displayAnswer": "skillfully / skilfully",
+      "explanation": "Cần trạng từ bổ nghĩa prepared: được chuẩn bị khéo léo. Skillfully là chính tả Mỹ, skilfully là chính tả Anh; skillful/skilful là tính từ nên không dùng trực tiếp bổ nghĩa động từ ở đây."
+    },
+    {
+      "globalNumber": 42,
+      "sectionCode": "I.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "variety"
+      ],
+      "displayAnswer": "variety",
+      "explanation": "A good variety of food là nhiều loại thức ăn đa dạng. Sau a good cần danh từ số ít variety; various là tính từ và vary là động từ."
+    },
+    {
+      "globalNumber": 43,
+      "sectionCode": "I.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "Fortunately"
+      ],
+      "displayAnswer": "Fortunately",
+      "explanation": "Fortunately đứng đầu câu để bình luận “may thay”. Việc thực đơn không còn chỉ có rau luộc và thịt hầm được xem là cải thiện tích cực; fortune là danh từ."
+    },
+    {
+      "globalNumber": 44,
+      "sectionCode": "I.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "adventurous"
+      ],
+      "displayAnswer": "adventurous",
+      "explanation": "Be adventurous là sẵn lòng thử điều mới. Câu khuyến khích ăn thử món Anh nên cần tính từ adventurous, không phải adventure chỉ cuộc phiêu lưu."
+    },
+    {
+      "globalNumber": 45,
+      "sectionCode": "I.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "reputation"
+      ],
+      "displayAnswer": "reputation",
+      "explanation": "Its terrible reputation là danh tiếng xấu của ẩm thực Anh. Sau tính từ terrible cần danh từ reputation; reputable là có uy tín và không phù hợp ý phủ định tiếng xấu."
+    },
+    {
+      "globalNumber": 46,
+      "sectionCode": "I.3",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "by → with"
+      ],
+      "displayAnswer": "by → with",
+      "explanation": "Be decorated with flags nghĩa là được trang trí bằng cờ. With nêu vật trang trí; by thường nêu người thực hiện hành động bị động."
+    },
+    {
+      "globalNumber": 47,
+      "sectionCode": "I.3",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "historic → historical"
+      ],
+      "displayAnswer": "historic → historical",
+      "explanation": "Historical exhibitions là triển lãm về lịch sử. Historic thường chỉ điều có ý nghĩa lịch sử lớn; trong mô tả chủ đề trưng bày ở đây dùng historical."
+    },
+    {
+      "globalNumber": 48,
+      "sectionCode": "I.3",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "as → such as",
+        "as → like"
+      ],
+      "displayAnswer": "as → such as / as → like",
+      "explanation": "Such as Hanoi… hoặc like Hanoi… đưa ra ví dụ các thành phố lớn. As một mình thường chỉ vai trò/chức năng, không phù hợp để mở danh sách ví dụ này."
+    },
+    {
+      "globalNumber": 49,
+      "sectionCode": "I.3",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "patriot → patriotism"
+      ],
+      "displayAnswer": "patriot → patriotism",
+      "explanation": "A sense of unity and patriotism cần hai danh từ trừu tượng song song. Patriot là người yêu nước; patriotism là lòng yêu nước, phù hợp ý tinh thần được thể hiện."
+    },
+    {
+      "globalNumber": 50,
+      "sectionCode": "I.3",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "celebrate → celebrating"
+      ],
+      "displayAnswer": "celebrate → celebrating",
+      "explanation": "Banners celebrating national pride rút gọn từ banners that celebrate…. Sau are decorated by… không thể thêm động từ celebrate không liên kết; dạng V-ing bổ nghĩa banners đúng."
+    },
+    {
+      "globalNumber": 51,
+      "sectionCode": "II.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Grapple with a question nghĩa là vật lộn để giải quyết một vấn đề khó. Với nghĩa này grapple kết hợp with; for/over/about không tạo mẫu đang kiểm tra."
+    },
+    {
+      "globalNumber": 52,
+      "sectionCode": "II.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Be associated with nghĩa là có liên hệ với. Prefrontal cortex liên quan suy nghĩ lý trí; dependent cần on, responsible cần for, capable cần of, trong khi đề cho with."
+    },
+    {
+      "globalNumber": 53,
+      "sectionCode": "II.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Whereas nối sự tương phản giữa hai vùng não phát triển vào các mốc khác nhau. Despite cần danh từ/V-ing; nevertheless là trạng từ liên kết, không nối hai mệnh đề theo cấu trúc ở đây."
+    },
+    {
+      "globalNumber": 54,
+      "sectionCode": "II.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "During which thay cho trong khoảng thời gian mất cân bằng thần kinh đó. Which dùng sau giới từ during; that không đứng trực tiếp sau giới từ trong mệnh đề quan hệ này."
+    },
+    {
+      "globalNumber": 55,
+      "sectionCode": "II.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Far from being a flaw nghĩa là hoàn toàn không phải một khiếm khuyết. From là phần cố định của mẫu far from + V-ing; câu sau nêu lợi ích thích nghi để giải thích."
+    },
+    {
+      "globalNumber": 56,
+      "sectionCode": "II.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Ancestral family units nhắc các đơn vị gia đình trong bối cảnh tiến hóa/tổ tiên. Ancestral phù hợp lập luận về lợi thế sinh tồn; native/communal/familial không thể hiện rõ mốc tổ tiên."
+    },
+    {
+      "globalNumber": 57,
+      "sectionCode": "II.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Conversely báo hiệu chuyển sang mặt đối lập: điều từng giúp thích nghi có thể gây hại trong xã hội hiện đại. Accordingly chỉ kết quả, subsequently chỉ thứ tự thời gian, incidentally mở ý phụ."
+    },
+    {
+      "globalNumber": 58,
+      "sectionCode": "II.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Research suggests that… = nghiên cứu cho thấy/gợi ý rằng…. Suggests trình bày bằng chứng chưa kết luận chắc chắn; infers thường dùng cho người suy luận, implicates là cho thấy có liên can."
+    },
+    {
+      "globalNumber": 59,
+      "sectionCode": "II.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Corroborating evidence là bằng chứng bổ trợ/xác nhận một nhận định. Critics caution… limited cho biết bằng chứng còn ít; collaborating chỉ việc cộng tác, không phải tính chất xác nhận của bằng chứng."
+    },
+    {
+      "globalNumber": 60,
+      "sectionCode": "II.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "With considerable circumspection nghĩa là với sự thận trọng đáng kể. With diễn đạt cách tiếp cận; circumspection là cân nhắc kỹ rủi ro trước khi hành động."
+    },
+    {
+      "globalNumber": 61,
+      "sectionCode": "II.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "before"
+      ],
+      "displayAnswer": "before",
+      "explanation": "Even before… nhấn mạnh thủy thủ đã làm quần kiểu này trước khi Levi Strauss sản xuất. Thế kỷ 16 xảy ra trước thế kỷ 19, nên before đúng theo mạch thời gian."
+    },
+    {
+      "globalNumber": 62,
+      "sectionCode": "II.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "of"
+      ],
+      "displayAnswer": "of",
+      "explanation": "Make something out of a material nghĩa là làm một vật từ vật liệu nào. Out đã có trước ô trống nên điền of; không thêm cả cụm out of vì đề chỉ cho một từ."
+    },
+    {
+      "globalNumber": 63,
+      "sectionCode": "II.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "enough"
+      ],
+      "displayAnswer": "enough",
+      "explanation": "Strong enough to allow… = đủ bền để cho phép…. Enough đứng sau tính từ strong và trước to-infinitive; vị trí này không dùng very để thay thế ý “đủ…để”."
+    },
+    {
+      "globalNumber": 64,
+      "sectionCode": "II.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "them"
+      ],
+      "displayAnswer": "them",
+      "explanation": "Them thay cho jeans ở câu trước, làm tân ngữ của wear. Jeans luôn dùng dạng số nhiều trong ngữ cảnh này; không dùng it hoặc they ở vị trí tân ngữ."
+    },
+    {
+      "globalNumber": 65,
+      "sectionCode": "II.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "little"
+      ],
+      "displayAnswer": "little",
+      "explanation": "Have changed very little = thay đổi rất ít. Những chi tiết cotton, màu xanh và túi sau vẫn giữ nguyên giải thích cho mức độ thay đổi nhỏ."
+    },
+    {
+      "globalNumber": 66,
+      "sectionCode": "II.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "as"
+      ],
+      "displayAnswer": "as",
+      "explanation": "As they were in the beginning nghĩa là giống như lúc ban đầu. As nối sự tương đồng về màu xanh giữa quần jeans hiện nay và trước đây."
+    },
+    {
+      "globalNumber": 67,
+      "sectionCode": "II.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "have"
+      ],
+      "displayAnswer": "have",
+      "explanation": "As have the metal pins… lược remained a common feature ở vế trước và đảo trợ động từ have. Pins số nhiều; used to strengthen… bổ nghĩa pins, không phải phần của have been used."
+    },
+    {
+      "globalNumber": 68,
+      "sectionCode": "II.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "There"
+      ],
+      "displayAnswer": "There",
+      "explanation": "There have also been times… là mẫu tồn tại “cũng đã có những thời kỳ”. Times là số nhiều nên have been; there không phải địa điểm cụ thể trong câu này."
+    },
+    {
+      "globalNumber": 69,
+      "sectionCode": "II.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "just"
+      ],
+      "displayAnswer": "just",
+      "explanation": "Just as good quality nhấn mạnh chất lượng ngang bằng. Các nhãn ít nổi tiếng có thể tốt không kém nhưng rẻ hơn; just đứng trước as để tăng ý tương đương."
+    },
+    {
+      "globalNumber": 70,
+      "sectionCode": "II.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "far",
+        "much"
+      ],
+      "displayAnswer": "far / much",
+      "explanation": "Far/much more reasonable prices = mức giá hợp lý hơn nhiều. Hai trạng từ tăng mức độ so sánh hơn more reasonable; không dùng very more."
+    },
+    {
+      "globalNumber": 71,
+      "sectionCode": "II.3",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Câu mở bài định nghĩa learning gồm acquiring knowledge và developing the ability to perform new behaviors. B bao quát cả thu nhận kiến thức lẫn phát triển khả năng; các đáp án khác chỉ nêu một phần."
+    },
+    {
+      "globalNumber": 72,
+      "sectionCode": "II.3",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Đoạn 2 gắn reading, writing, mathematics với lúc vào trường. Vì vậy literacy and calculation là lựa chọn không được trình bày như việc thường học ngoài lớp; giao tiếp và kỹ năng sống thì có."
+    },
+    {
+      "globalNumber": 73,
+      "sectionCode": "II.3",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Ngay trước các ví dụ cưới, nuôi con, tìm việc là learn to adapt to the many major changes. C diễn đạt lại các thay đổi mà con người cần thích nghi, không phải việc không thể tự học."
+    },
+    {
+      "globalNumber": 74,
+      "sectionCode": "II.3",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Bài nói much of human learning occurs outside the classroom và học kéo dài suốt đời. Trong các phương án, D gần nhất với phạm vi rộng của học ngoài trường; bài không khẳng định học ở trường luôn hiệu quả hơn."
+    },
+    {
+      "globalNumber": 75,
+      "sectionCode": "II.3",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Đoạn 3 giải thích học tập liên tục và ảnh hưởng gần như mọi việc ta làm. Chính ảnh hưởng rộng của quá trình này khiến việc nghiên cứu quan trọng trong nhiều lĩnh vực."
+    },
+    {
+      "globalNumber": 76,
+      "sectionCode": "II.3",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Đoạn 3 cho thấy các nghề cần hiểu trải nghiệm làm đổi hành vi và dùng nguyên tắc học tập để tác động người khác. D bao quát nhu cầu hiểu hành vi; A thêm mục tiêu “hướng tới học tập” không được nêu."
+    },
+    {
+      "globalNumber": 77,
+      "sectionCode": "II.3",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Retrieve knowledge nghĩa là truy xuất/lấy lại kiến thức đã lưu. Recovers gần nghĩa nhất; generates/creates là tạo mới, gains là thu nhận, khác với lấy lại từ trí nhớ."
+    },
+    {
+      "globalNumber": 78,
+      "sectionCode": "II.3",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Đoạn 4 phân biệt người nghiên cứu memory và learning theo trọng tâm khác nhau. Vì vậy nhận định tất cả đều quan tâm trí nhớ ngang hành vi là sai; A, B, D phản ánh nội dung bài."
+    },
+    {
+      "globalNumber": 79,
+      "sectionCode": "II.3",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Đoạn 2 nói người trưởng thành vẫn phải thích nghi với thay đổi lớn trong đời. B khớp lý do học không kết thúc ở tuổi thơ; các đáp án khác giới hạn vào trẻ em hoặc ghi nhớ."
+    },
+    {
+      "globalNumber": 80,
+      "sectionCode": "II.3",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Bài đi từ định nghĩa, học suốt đời, ý nghĩa trong nhiều nghề, quan hệ với trí nhớ đến các hình thức học. General principles of learning bao quát toàn bài; các lựa chọn khác quá hẹp."
+    },
+    {
+      "globalNumber": 81,
+      "sectionCode": "III.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "had I shut the door than I realized I’d left the key inside",
+        "had I shut the door than I realized that I’d left the key inside",
+        "had I shut the door than I realised that I had left the key inside"
+      ],
+      "displayAnswer": "No sooner had I shut the door than I realized I’d left the key inside.",
+      "explanation": "No sooner + had + chủ ngữ + V3 + than + quá khứ đơn chỉ hai việc nối tiếp ngay. Đảo had I ở vế đầu; việc để quên chìa trước đó dùng had left.",
+      "prefix": "No sooner",
+      "suffix": "",
+      "blankAnswer": "had I shut the door than I realized I’d left the key inside"
+    },
+    {
+      "globalNumber": 82,
+      "sectionCode": "III.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "Joe to feed the goldfish"
+      ],
+      "displayAnswer": "Mary reminded Joe to feed the goldfish.",
+      "explanation": "Remind somebody to do something = nhắc ai làm gì. Lời “Don’t forget…” đổi thành Mary reminded Joe to feed…; không giữ don’t trong câu gián tiếp vì remind đã hàm ý nhắc thực hiện.",
+      "prefix": "Mary reminded",
+      "suffix": "",
+      "blankAnswer": "Joe to feed the goldfish"
+    },
+    {
+      "globalNumber": 83,
+      "sectionCode": "III.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "a lot of money, Tom can afford two holidays abroad"
+      ],
+      "displayAnswer": "Having a lot of money, Tom can afford two holidays abroad.",
+      "explanation": "Having a lot of money là cụm phân từ nêu nguyên nhân, cùng chủ thể Tom với mệnh đề chính. Giữ can afford và two holidays abroad để bảo toàn khả năng và số chuyến đi.",
+      "prefix": "Having",
+      "suffix": "",
+      "blankAnswer": "a lot of money, Tom can afford two holidays abroad"
+    },
+    {
+      "globalNumber": 84,
+      "sectionCode": "III.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "whose real name was Samuel L. Clemens, wrote “Tom Sawyer”",
+        "whose real name was Samuel L. Clemens, wrote \"Tom Sawyer\""
+      ],
+      "displayAnswer": "Mark Twain, whose real name was Samuel L. Clemens, wrote “Tom Sawyer”.",
+      "explanation": "Whose + danh từ diễn đạt sở hữu: tên thật của Mark Twain. Mệnh đề quan hệ không xác định được ngăn bằng dấu phẩy; wrote chuyển câu gốc bị động sang chủ động đúng tác giả.",
+      "prefix": "Mark Twain,",
+      "suffix": "",
+      "blankAnswer": "whose real name was Samuel L. Clemens, wrote “Tom Sawyer”"
+    },
+    {
+      "globalNumber": 85,
+      "sectionCode": "III.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "those rabbits survive their first month, they may live to be fifteen"
+      ],
+      "displayAnswer": "Should those rabbits survive their first month, they may live to be fifteen.",
+      "explanation": "Should + chủ ngữ + V nguyên mẫu là đảo ngữ điều kiện. Đề đã in Should nên điền those rabbits survive…; giữ may ở hệ quả vì câu nói khả năng sống, không đảm bảo chắc chắn.",
+      "prefix": "Should",
+      "suffix": "",
+      "blankAnswer": "those rabbits survive their first month, they may live to be fifteen"
+    },
+    {
+      "globalNumber": 86,
+      "sectionCode": "III.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "when I saw the singer onstage that I realised how short he was",
+        "after I saw the singer onstage that I realised how short he was",
+        "when I saw him on stage that I realized how short the singer was"
+      ],
+      "displayAnswer": "It was only when I saw the singer onstage that I realised how short he was.",
+      "explanation": "It was only when/after…that… nhấn mạnh chỉ khi nhìn thấy mới nhận ra. Không dùng only until; not until là cấu trúc khác và không khớp phần It was only đã in.",
+      "prefix": "It was only",
+      "suffix": "",
+      "blankAnswer": "when I saw the singer onstage that I realised how short he was"
+    },
+    {
+      "globalNumber": 87,
+      "sectionCode": "III.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "though the teacher explained the task, many students did not perform it well",
+        "as the teacher explained the task, many students did not perform it well",
+        "as the teacher instructed the students, many of them did not perform the task well"
+      ],
+      "displayAnswer": "Clearly though the teacher explained the task, many students did not perform it well.",
+      "explanation": "Clearly + though/as + chủ ngữ + động từ là cấu trúc nhượng bộ đảo trạng từ. Giáo viên giải thích rõ nhưng học sinh làm chưa tốt; cần tân ngữ the task/the students để câu đủ nghĩa.",
+      "prefix": "Clearly",
+      "suffix": "",
+      "blankAnswer": "though the teacher explained the task, many students did not perform it well"
+    },
+    {
+      "globalNumber": 88,
+      "sectionCode": "III.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "to everyone because there are no fewer than twenty dinosaurs on display"
+      ],
+      "displayAnswer": "This exhibition will appeal to everyone because there are no fewer than twenty dinosaurs on display.",
+      "explanation": "Appeal to somebody = thu hút/làm ai thích. Cần giới từ to trước everyone; giữ no fewer than twenty để bảo toàn ý ít nhất 20 mẫu trưng bày.",
+      "prefix": "This exhibition will appeal",
+      "suffix": "",
+      "blankAnswer": "to everyone because there are no fewer than twenty dinosaurs on display"
+    },
+    {
+      "globalNumber": 89,
+      "sectionCode": "III.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "by discussing the media and its importance in education",
+        "with a discussion of the media and its importance in education"
+      ],
+      "displayAnswer": "The panel of experts started the programme by discussing the media and its importance in education.",
+      "explanation": "Start by + V-ing hoặc start with + danh từ đều nêu cách chương trình bắt đầu. Câu chỉ đầu chương trình thảo luận truyền thông, không nói cả chương trình chỉ có chủ đề đó.",
+      "prefix": "The panel of experts started the programme",
+      "suffix": "",
+      "blankAnswer": "by discussing the media and its importance in education"
+    },
+    {
+      "globalNumber": 90,
+      "sectionCode": "III.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "have any recollection of phoning me last night",
+        "have any recollection of having phoned me last night"
+      ],
+      "displayAnswer": "My grandfather didn’t have any recollection of phoning me last night.",
+      "explanation": "Have no recollection of + V-ing = không nhớ đã làm việc gì. Didn’t đã cho sẵn nên dùng have any…, tránh thêm no tạo phủ định kép; last night thuộc hành động gọi.",
+      "prefix": "My grandfather didn’t",
+      "suffix": "",
+      "blankAnswer": "have any recollection of phoning me last night"
+    },
+    {
+      "globalNumber": 91,
+      "sectionCode": "III.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "on good terms with"
+      ],
+      "displayAnswer": "I'm on good terms with everyone at work.",
+      "explanation": "Be on good terms with somebody = có quan hệ tốt với ai. I’m đã chứa be; điền on good terms with và giữ everyone at work ở phần đuôi.",
+      "prefix": "I'm",
+      "suffix": "everyone at work.",
+      "blankAnswer": "on good terms with"
+    },
+    {
+      "globalNumber": 92,
+      "sectionCode": "III.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "sooner had Yuri qualified than Yuri",
+        "sooner had Yuri qualified than they",
+        "sooner had Yuri qualified than she",
+        "sooner had Yuri qualified than he"
+      ],
+      "displayAnswer": "No sooner had Yuri qualified than Yuri found a really good job.",
+      "explanation": "No sooner had Yuri qualified than… diễn tả vừa đủ điều kiện thì tìm được việc. Đề không xác định giới tính, nên mẫu dùng Yuri; nhận they và đại từ phù hợp thay vì ép dùng she.",
+      "prefix": "No",
+      "suffix": "found a really good job.",
+      "blankAnswer": "sooner had Yuri qualified than Yuri"
+    },
+    {
+      "globalNumber": 93,
+      "sectionCode": "III.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "attributed his success to his parents’ support"
+      ],
+      "displayAnswer": "Mike attributed his success to his parents’ support.",
+      "explanation": "Attribute A to B = cho rằng A có được là nhờ B. A là his success, B là his parents’ support; phải giữ đúng thứ tự nguyên nhân và kết quả.",
+      "prefix": "Mike",
+      "suffix": "",
+      "blankAnswer": "attributed his success to his parents’ support"
+    },
+    {
+      "globalNumber": 94,
+      "sectionCode": "III.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "no point in arguing with him",
+        "no point arguing with him"
+      ],
+      "displayAnswer": "There was no point in arguing with him.",
+      "explanation": "There was no point (in) + V-ing nghĩa là làm việc đó vô ích. Arguing giữ ý hành động tranh luận đã xảy ra; không dùng to argue sau in.",
+      "prefix": "There was",
+      "suffix": "",
+      "blankAnswer": "no point in arguing with him"
+    },
+    {
+      "globalNumber": 95,
+      "sectionCode": "III.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "make an attempt at answering"
+      ],
+      "displayAnswer": "You didn’t even make an attempt at answering the question.",
+      "explanation": "Make an attempt at + V-ing = thử/cố làm gì. Didn’t even đã cho nên dùng make nguyên mẫu; giữ at theo từ khóa và answering trước the question đã có.",
+      "prefix": "You didn’t even",
+      "suffix": "the question.",
+      "blankAnswer": "make an attempt at answering"
+    },
+    {
+      "globalNumber": 96,
+      "sectionCode": "III.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "took notice of"
+      ],
+      "displayAnswer": "Few of the children took notice of what the teacher had told them.",
+      "explanation": "Take notice of = chú ý tới. Most ignored đổi thành Few took notice of…, tức chỉ ít người chú ý; took giữ thì quá khứ và of nối nội dung lời giáo viên.",
+      "prefix": "Few of the children",
+      "suffix": "what the teacher had told them.",
+      "blankAnswer": "took notice of"
+    },
+    {
+      "globalNumber": 97,
+      "sectionCode": "III.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "is highly thought"
+      ],
+      "displayAnswer": "The company is highly thought of in the local area.",
+      "explanation": "Be highly thought of = được đánh giá cao/có uy tín. Of nằm sẵn sau ô trống nên chỉ điền is highly thought; không lặp of hoặc bỏ dạng bị động.",
+      "prefix": "The company",
+      "suffix": "of in the local area.",
+      "blankAnswer": "is highly thought"
+    },
+    {
+      "globalNumber": 98,
+      "sectionCode": "III.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "a matter of time before"
+      ],
+      "displayAnswer": "I think it’s only a matter of time before Jemma becomes a famous model.",
+      "explanation": "It’s only a matter of time before… = chỉ còn là vấn đề thời gian trước khi điều gì xảy ra. Dùng a matter, không phải the matter; thể hiện niềm tin sự việc sẽ đến.",
+      "prefix": "I think it’s only",
+      "suffix": "Jemma becomes a famous model.",
+      "blankAnswer": "a matter of time before"
+    },
+    {
+      "globalNumber": 99,
+      "sectionCode": "III.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "in no doubt",
+        "not in any doubt",
+        "in no doubt about the fact",
+        "in no doubt of the fact"
+      ],
+      "displayAnswer": "Barbara’s parents were in no doubt that she would be a great tennis player.",
+      "explanation": "Be in no doubt that… diễn đạt chắc chắn. That đã in sau ô trống; in no doubt đơn giản nhất. Nếu thêm about/of phải có the fact trước that, không ghép in no doubt of that she….",
+      "prefix": "Barbara’s parents were",
+      "suffix": "that she would be a great tennis player.",
+      "blankAnswer": "in no doubt"
+    },
+    {
+      "globalNumber": 100,
+      "sectionCode": "III.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "made a name for"
+      ],
+      "displayAnswer": "If Marc hadn’t taken up politics, he might have made a name for himself as an art historian.",
+      "explanation": "Make a name for oneself = trở nên nổi tiếng. Sau might have dùng made; himself đã có sau ô trống nên không lặp. Giữ điều kiện giả định quá khứ về việc không theo chính trị.",
+      "prefix": "If Marc hadn’t taken up politics, he might have",
+      "suffix": "himself as an art historian.",
+      "blankAnswer": "made a name for"
+    }
+  ],
+  "reviewApproved": true,
+  "updated": "2026-10-16",
+  "scienceReferences": []
+}
