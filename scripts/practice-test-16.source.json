@@ -1,0 +1,1202 @@
+{
+  "schemaVersion": 2,
+  "sequence": 16,
+  "testNumber": 16,
+  "testCode": "LD-PT16",
+  "title": "PRACTICE TEST 16",
+  "total": 100,
+  "docId": "1lnX-bSE0g508bVhvEjSX4BoiHMCWw3lxErsMG5qlcNg",
+  "sourceTabs": {
+    "test": {
+      "documentId": "1lnX-bSE0g508bVhvEjSX4BoiHMCWw3lxErsMG5qlcNg",
+      "tabId": "t.0"
+    },
+    "answers": {
+      "documentId": "1lnX-bSE0g508bVhvEjSX4BoiHMCWw3lxErsMG5qlcNg",
+      "tabId": "t.a1skj2dg7r8c"
+    }
+  },
+  "sections": [
+    {
+      "sectionCode": "I.1",
+      "sectionLabel": "I.1",
+      "startGlobal": 1,
+      "count": 20,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "I.2",
+      "sectionLabel": "I.2",
+      "startGlobal": 21,
+      "count": 10,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "I.3",
+      "sectionLabel": "I.3",
+      "startGlobal": 31,
+      "count": 5,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "II.1",
+      "sectionLabel": "II.1",
+      "startGlobal": 36,
+      "count": 25,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "II.2",
+      "sectionLabel": "II.2",
+      "startGlobal": 61,
+      "count": 10,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "II.3",
+      "sectionLabel": "II.3",
+      "startGlobal": 71,
+      "count": 10,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "III.1",
+      "sectionLabel": "III.1",
+      "startGlobal": 81,
+      "count": 10,
+      "inputType": "text"
+    },
+    {
+      "sectionCode": "III.2",
+      "sectionLabel": "III.2",
+      "startGlobal": 91,
+      "count": 10,
+      "inputType": "text"
+    }
+  ],
+  "answers": [
+    {
+      "globalNumber": 1,
+      "sectionCode": "I.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Although + mệnh đề diễn tả sự tương phản: một số từ phát âm giống nhau dù cách viết khác nhau. Despite cần danh từ/V-ing, không theo trực tiếp bằng they are spelled; since và because lại nêu nguyên nhân, không đúng quan hệ giữa hai ý."
+    },
+    {
+      "globalNumber": 2,
+      "sectionCode": "I.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "John hỏi loại công việc Mike muốn làm, nên Anything to do with computers trả lời đúng trọng tâm: bất cứ việc gì liên quan máy tính. B nói khả năng, C nói thời điểm, D hỏi cơ hội thăng tiến; cả ba đều chưa trả lời loại công việc mong muốn."
+    },
+    {
+      "globalNumber": 3,
+      "sectionCode": "I.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Appreciate có thể theo sau bằng cụm sở hữu + V-ing: appreciate your offering to help me = trân trọng việc bạn đề nghị giúp tôi. A dùng to offer sai cấu trúc; B thiếu liên từ that; D không xác định đúng người đưa ra lời đề nghị trong ngữ cảnh này."
+    },
+    {
+      "globalNumber": 4,
+      "sectionCode": "I.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Make up for the hardships nghĩa là bù đắp những khó khăn đã trải qua. Make off with là lấy trộm rồi bỏ đi; make over to là chuyển quyền sở hữu; make out with thường chỉ hành động thân mật. Chỉ make up for phù hợp ý người cha muốn bù đắp cho con."
+    },
+    {
+      "globalNumber": 5,
+      "sectionCode": "I.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Practically no time nghĩa là gần như không còn thời gian. Practically ở đây tương đương almost, phù hợp việc hạn nộp chỉ còn năm phút. Completely/totally diễn tả hoàn toàn, còn extremely bổ nghĩa mức độ; không kết hợp tự nhiên với no time trong câu này."
+    },
+    {
+      "globalNumber": 6,
+      "sectionCode": "I.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A slim chance là cơ hội rất nhỏ, phù hợp với I can’t see it happening: người nói không tin việc đó sẽ xảy ra. Thin/skinny thường nói về độ mỏng hoặc vóc dáng; short nói độ dài/thời gian, không thay slim trong kết hợp từ này."
+    },
+    {
+      "globalNumber": 7,
+      "sectionCode": "I.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Having opened the bottle là mệnh đề phân từ hoàn thành, có chủ thể ngầm phải trùng chủ ngữ mệnh đề chính. Mike mở chai rồi rót đồ uống, nên Mike poured the drink đúng. A/D khiến the drink thành người mở chai; C không có động từ chia thì cho mệnh đề chính."
+    },
+    {
+      "globalNumber": 8,
+      "sectionCode": "I.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Put some money aside every month là dành một khoản tiền mỗi tháng để dùng sau này, ở đây cho nghỉ hưu. Put money off không có nghĩa tiết kiệm; take up some money và take money away không diễn đạt việc đều đặn để dành tiền theo ngữ cảnh."
+    },
+    {
+      "globalNumber": 9,
+      "sectionCode": "I.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "For short nghĩa là gọi tắt: Test of English as a Foreign Language được gọi là TOEFL. In short lại là tóm lại, dùng để tóm tắt ý; of short và on short không tạo thành cụm có nghĩa này. Dấu hiệu là tên đầy đủ đi cùng tên viết tắt."
+    },
+    {
+      "globalNumber": 10,
+      "sectionCode": "I.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "None thay cho không người nào trong nhóm các bạn nam và có thể đi với was trong văn phong trang trọng. Neither/either thường dùng cho hai đối tượng, trong khi câu đang nói một nhóm; every phải có danh từ hoặc dùng everyone, không đứng riêng như ở đây."
+    },
+    {
+      "globalNumber": 11,
+      "sectionCode": "I.1",
+      "localNumber": 11,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Strike a match là quẹt một que diêm; quá khứ của strike là struck. Mất điện nên người đó quẹt diêm để tìm nến. Rub/scratch mô tả động tác chà hoặc cào nhưng không phải kết hợp từ chuẩn được dùng trong câu; start a match thường là bắt đầu trận đấu."
+    },
+    {
+      "globalNumber": 12,
+      "sectionCode": "I.1",
+      "localNumber": 12,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "The practice of medicine nghĩa là việc hành nghề y. Người này đã đủ điều kiện làm bác sĩ nhưng bỏ nghề để viết toàn thời gian. Treatment là điều trị; procedure là thủ thuật/quy trình; prescription là đơn thuốc, đều không chỉ nghề nghiệp nói chung."
+    },
+    {
+      "globalNumber": 13,
+      "sectionCode": "I.1",
+      "localNumber": 13,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Room ở đây là không gian để di chuyển, nên là danh từ không đếm được: little room = rất ít chỗ. Few/not many cần danh từ đếm được số nhiều; rooms lại chỉ các căn phòng. Xe buýt đông chật là dấu hiệu cần nghĩa không gian."
+    },
+    {
+      "globalNumber": 14,
+      "sectionCode": "I.1",
+      "localNumber": 14,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "More likely to be damaged than là cấu trúc so sánh khả năng bị hỏng: be more likely + to V + than. Vì vật chứa chịu tác động nên to be damaged ở dạng bị động. Câu so sánh vật chứa thủy tinh mỏng với các loại khác; các phương án còn lại đặt more/than sai vị trí."
+    },
+    {
+      "globalNumber": 15,
+      "sectionCode": "I.1",
+      "localNumber": 15,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Be above the law nghĩa là đứng trên pháp luật, không bị luật ràng buộc như người khác. None of us is above the law khẳng định mọi người đều phải tuân thủ. Beyond/over/onto không tạo đúng thành ngữ trong câu này."
+    },
+    {
+      "globalNumber": 16,
+      "sectionCode": "I.1",
+      "localNumber": 16,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Prolong your visit là kéo dài chuyến thăm. Ông đã mệt và cần nghỉ nên lời khuyên là đừng ở lại quá lâu. Contract là thu hẹp/co lại, weaken là làm yếu, shorten là rút ngắn; ba từ này không diễn đạt hành động kéo dài mà câu đang ngăn lại."
+    },
+    {
+      "globalNumber": 17,
+      "sectionCode": "I.1",
+      "localNumber": 17,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Cụm cảm thán gián tiếp theo mẫu how + tính từ + chủ ngữ + động từ: how excited they were. Excited đứng ngay sau how, còn they were giữ trật tự câu kể. C/D đảo were lên trước they như câu hỏi trực tiếp; A đặt excited sai vị trí."
+    },
+    {
+      "globalNumber": 18,
+      "sectionCode": "I.1",
+      "localNumber": 18,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Almond-shaped eyes nghĩa là đôi mắt hình hạnh nhân. Tính từ ghép almond-shaped đứng trước eyes, với shaped mang nghĩa có hình dạng. Các cách ghép almond-eyed shape/eyes shaped almond/almond-shape eyed không tạo đúng cụm danh từ mô tả đôi mắt."
+    },
+    {
+      "globalNumber": 19,
+      "sectionCode": "I.1",
+      "localNumber": 19,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "A process in which bổ sung lời giải thích cho homogenization: một quá trình trong đó sữa được ép qua các khe hẹp. Sau which là mệnh đề đầy đủ it is forced nên cần in which. A/C thiếu giới từ nối ý đúng; D chỉ có danh từ process nên không nối được mệnh đề sau."
+    },
+    {
+      "globalNumber": 20,
+      "sectionCode": "I.1",
+      "localNumber": 20,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Stand comparison with nghĩa là đủ tốt để sánh với ai/cái gì. Người nói đánh giá nhà thơ có thể sánh với những nhà thơ lớn nhất thế kỷ. Make/match/lead comparison with không tạo kết hợp từ chuẩn này; dạng số ít she đi với stands."
+    },
+    {
+      "globalNumber": 21,
+      "sectionCode": "I.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "lookout"
+      ],
+      "displayAnswer": "lookout",
+      "explanation": "On the lookout for là cụm cố định, nghĩa là đang chú ý tìm kiếm điều gì: người đi ngắm lá tìm nơi cây đổi màu. Lookout là đáp án đúng, không phải outlook; outlook nghĩa là quan điểm/triển vọng, không dùng trong on the lookout for."
+    },
+    {
+      "globalNumber": 22,
+      "sectionCode": "I.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "generating"
+      ],
+      "displayAnswer": "generating",
+      "explanation": "Generating millions of dollars là cụm V-ing bổ sung kết quả của hoạt động du lịch ngắm lá: hoạt động ấy tạo ra doanh thu. Chủ thể là leaf peeping và mang nghĩa chủ động, nên dùng generating; generated sẽ khiến hoạt động bị tạo ra thay vì tạo doanh thu."
+    },
+    {
+      "globalNumber": 23,
+      "sectionCode": "I.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "invasion"
+      ],
+      "displayAnswer": "invasion",
+      "explanation": "Sau an cần một danh từ đếm được số ít. Invasion ở đây dùng nghĩa hình ảnh: một đợt đổ bộ đông đảo của du khách. Invade là động từ, invasive là tính từ; an invasion of peepers diễn đạt dòng người ùn đến khi lá bắt đầu đổi màu."
+    },
+    {
+      "globalNumber": 24,
+      "sectionCode": "I.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "eagerness"
+      ],
+      "displayAnswer": "eagerness",
+      "explanation": "Trong in their eagerness to find…, their cần một danh từ: eagerness = sự háo hức, nóng lòng. Eager là tính từ và eagerly là trạng từ. Cấu trúc eagerness to do something giải thích vì sao nhiều người truy cập các trang tìm địa điểm ngắm lá."
+    },
+    {
+      "globalNumber": 25,
+      "sectionCode": "I.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "glorious"
+      ],
+      "displayAnswer": "glorious",
+      "explanation": "Colours là danh từ, còn the most cần một tính từ để tạo so sánh nhất, nên dùng glorious = rực rỡ, tuyệt đẹp. Glory là danh từ vinh quang; gloriously là trạng từ. The most glorious colours nói những sắc lá nổi bật nhất."
+    },
+    {
+      "globalNumber": 26,
+      "sectionCode": "I.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "talking"
+      ],
+      "displayAnswer": "talking",
+      "explanation": "A talking point là một chủ đề khiến mọi người bàn luận. Talking trong cụm này bổ nghĩa cho point, không nói một điểm đang phát ra tiếng nói. Sự thay đổi màu lá mỗi năm trở thành đề tài trò chuyện; talk/talked không tạo đúng cụm quen dùng này."
+    },
+    {
+      "globalNumber": 27,
+      "sectionCode": "I.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "intensity"
+      ],
+      "displayAnswer": "intensity",
+      "explanation": "The intensity of the colour là độ đậm/rực của màu sắc. Sau the và trước of cần danh từ intensity, không dùng tính từ intense hoặc trạng từ intensely. Ý câu là mức độ rực rỡ còn phụ thuộc sắc tố trong lá, không chỉ một điều kiện thời tiết."
+    },
+    {
+      "globalNumber": 28,
+      "sectionCode": "I.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "increasingly"
+      ],
+      "displayAnswer": "increasingly",
+      "explanation": "Chỗ trống bổ nghĩa cho tính từ hot trong increasingly hot, dry summers, nên cần trạng từ increasingly = ngày càng. Increasing là tính từ/phân từ, increase là danh từ/động từ. Câu đã sửa nêu mùa hè nóng, khô hơn có thể gây sức ép cho cây, không khẳng định lá sẽ đẹp hơn."
+    },
+    {
+      "globalNumber": 29,
+      "sectionCode": "I.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "unlike"
+      ],
+      "displayAnswer": "unlike",
+      "explanation": "Not unlike nghĩa là không khác mấy, tức khá giống. Câu so sánh những sắc màu ở một số cánh rừng châu Âu với New England. Like nghĩa là giống; nếu điền like sau not sẽ đảo ý thành không giống, trái với similarities được nêu rõ trong câu đã chỉnh."
+    },
+    {
+      "globalNumber": 30,
+      "sectionCode": "I.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "seasonal"
+      ],
+      "displayAnswer": "seasonal",
+      "explanation": "Colour là danh từ cần tính từ bổ nghĩa: seasonal colour = sắc màu theo mùa. Season là danh từ mùa; seasonally là trạng từ. Câu nhấn mạnh sắc lá theo mùa chịu ảnh hưởng của loài cây và điều kiện địa phương, không bảo đảm nơi nào cũng có màu như nhau."
+    },
+    {
+      "globalNumber": 31,
+      "sectionCode": "I.3",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "mark → marks"
+      ],
+      "displayAnswer": "mark → marks",
+      "explanation": "Chủ ngữ của mệnh đề quan hệ which là Tet holiday, số ít, nên động từ hiện tại đơn phải là marks. Đây là lỗi hòa hợp chủ ngữ–động từ: Tet holiday marks the Lunar New Year. Không đổi mark thành marked vì đoạn đang mô tả một phong tục nói chung."
+    },
+    {
+      "globalNumber": 32,
+      "sectionCode": "I.3",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "believe → believing",
+        "believe → and believe"
+      ],
+      "displayAnswer": "believe → believing / believe → and believe",
+      "explanation": "Believing it will bring good luck là cụm phân từ diễn tả niềm tin của families khi dọn và trang trí nhà. Believe đứng sau dấu phẩy không có liên từ tạo nối câu sai. Đổi thành believing để cùng chủ thể families và nối hợp lý với hành động trước. Cũng chấp nhận thêm and trước believe để nối hai động từ cùng chủ thể."
+    },
+    {
+      "globalNumber": 33,
+      "sectionCode": "I.3",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "advanced → advance"
+      ],
+      "displayAnswer": "advanced → advance",
+      "explanation": "In advance là cụm cố định, nghĩa là trước, từ trước. Dishes are prepared days in advance nghĩa là món ăn được chuẩn bị trước nhiều ngày. Advanced là tính từ nâng cao/tiên tiến, không dùng trong cụm thời gian này."
+    },
+    {
+      "globalNumber": 34,
+      "sectionCode": "I.3",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "joyed → joyful",
+        "joyed → joyous"
+      ],
+      "displayAnswer": "joyed → joyful / joyed → joyous",
+      "explanation": "Atmosphere cần tính từ mô tả không khí vui tươi, nên dùng joyful hoặc joyous. Joyed không phải tính từ thông dụng phù hợp ở vị trí này. Joyful/joyous atmosphere phù hợp với phố phường rực rỡ và các lễ hội sôi động trong dịp Tết."
+    },
+    {
+      "globalNumber": 35,
+      "sectionCode": "I.3",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "one → ones",
+        "loved one → loved ones"
+      ],
+      "displayAnswer": "one → ones / loved one → loved ones",
+      "explanation": "All their loved ones chỉ tất cả những người thân yêu. All + tính từ sở hữu + danh từ đếm được yêu cầu số nhiều trong ngữ cảnh này, nên one phải đổi thành ones. Loved ones là cụm danh từ chỉ người thân, không phải một người được gọi là loved one."
+    },
+    {
+      "globalNumber": 36,
+      "sectionCode": "II.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Involve someone in something nghĩa là khiến ai tham gia vào một hoạt động. Involve you in the fight là đưa người đọc vào nỗ lực bảo tồn. Combine thường đi với with; bring/lead cần cách nối khác, nên không phù hợp cấu trúc you in the fight ở đây."
+    },
+    {
+      "globalNumber": 37,
+      "sectionCode": "II.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "On the verge of extinction nghĩa là bên bờ tuyệt chủng. Verge là phần của cụm on the verge of; limit/end/start không kết hợp theo đúng cấu trúc này. Câu nói các loài đang bị đe dọa nên ý gần đến nguy cơ biến mất là phù hợp."
+    },
+    {
+      "globalNumber": 38,
+      "sectionCode": "II.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Have the satisfaction of knowing… là có cảm giác hài lòng khi biết việc mình làm mang lại ích lợi. Người mua sách biết một phần tiền giúp động vật nên chọn satisfaction. Enjoyment thường là sự thích thú; virtue/value không diễn tả đúng cảm giác trong kết hợp này."
+    },
+    {
+      "globalNumber": 39,
+      "sectionCode": "II.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Help animals survive nghĩa là giúp động vật sống sót. Sau help + tân ngữ dùng động từ nguyên mẫu; survive có thể tự đứng mà không cần tân ngữ. Preserve/conserve thường cần nêu thứ được giữ gìn, còn revive là hồi sinh/phục hồi, không đúng ý bảo tồn quần thể ở đây."
+    },
+    {
+      "globalNumber": 40,
+      "sectionCode": "II.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Human greed for land, flesh and skin là lòng tham của con người đối với đất, thịt và da thú. Terrible results báo hiệu một động cơ tiêu cực, nên greed phù hợp. Interest/care/concern chỉ sự quan tâm, không thể hiện rõ ý khai thác quá mức được nói đến."
+    },
+    {
+      "globalNumber": 41,
+      "sectionCode": "II.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "With their large paws nói bộ phận được dùng để di chuyển trên băng: bằng những bàn chân lớn. With + công cụ/bộ phận cơ thể phù hợp ở đây. By thường dùng với V-ing để nêu cách làm; for/from không diễn đạt phương tiện trong câu này."
+    },
+    {
+      "globalNumber": 42,
+      "sectionCode": "II.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Publication là một ấn phẩm, ở đây chính là cuốn sách Animal Watch. Publicity là sự quảng bá, periodical là tạp chí định kỳ, reference là tài liệu/thông tin tham khảo. Một cuốn sách được nói rõ từ đầu nên publication là tên gọi bao quát phù hợp."
+    },
+    {
+      "globalNumber": 43,
+      "sectionCode": "II.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "A title awarded to books nghĩa là một danh hiệu được trao cho sách, cụ thể Book of the Year. Symbol là biểu tượng, trademark là nhãn hiệu, nickname là biệt danh. Title vừa có nghĩa tên sách vừa có nghĩa danh hiệu; ở đây phải hiểu theo nghĩa thứ hai."
+    },
+    {
+      "globalNumber": 44,
+      "sectionCode": "II.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Make a contribution to something là đóng góp cho một việc. Sau have cần quá khứ phân từ made: have made a major contribution to wildlife conservation. Do/have/give không thay make trong kết hợp từ chuẩn được kiểm tra ở đây."
+    },
+    {
+      "globalNumber": 45,
+      "sectionCode": "II.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "An introductory price là giá ưu đãi giới thiệu sản phẩm khi mới đưa ra thị trường. Beginning/preparatory/original không diễn đạt chính xác loại giá chào bán này. Lời thúc giục hurry while stocks last là ngữ cảnh quảng cáo phù hợp với introductory price."
+    },
+    {
+      "globalNumber": 46,
+      "sectionCode": "II.1",
+      "localNumber": 11,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Decipher the patterns nghĩa là giải mã/hiểu các quy luật phức tạp. Obviate là làm cho không còn cần thiết, account thường cần for để giải thích, elaborate là phát triển chi tiết. Câu nói nhà khoa học tìm hiểu quy luật đằng sau biến đổi thời tiết nên chọn decipher."
+    },
+    {
+      "globalNumber": 47,
+      "sectionCode": "II.1",
+      "localNumber": 12,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Their objective has been to… cần danh từ nghĩa là mục tiêu. Objective phù hợp với mục đích dự báo thời tiết chính xác hơn. Subject là chủ đề/chủ thể; objectivity là tính khách quan; subjection là sự khuất phục, không nêu mục tiêu nghiên cứu."
+    },
+    {
+      "globalNumber": 48,
+      "sectionCode": "II.1",
+      "localNumber": 13,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Forecast the weather là dự báo thời tiết, phù hợp với for the days to come: những ngày sắp tới. Unravel là tháo gỡ/giải mã; perceive là nhận biết; explore là khám phá. Chỉ forecast diễn đạt việc dự đoán các điều kiện thời tiết tương lai."
+    },
+    {
+      "globalNumber": 49,
+      "sectionCode": "II.1",
+      "localNumber": 14,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Eyes are directed at the oceans nghĩa là sự chú ý được hướng về đại dương. Direct something at dùng at, còn focus thường đi với on. Looked không dùng theo cấu trúc bị động eyes are looked at với nghĩa này; applied at cũng không diễn đạt hướng quan sát."
+    },
+    {
+      "globalNumber": 50,
+      "sectionCode": "II.1",
+      "localNumber": 15,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Come about nghĩa là xảy ra. Changes that come about in the upper layers nói những thay đổi xảy ra ở lớp nước trên. Bring about nghĩa là gây ra nhưng cần tân ngữ; turn about là quay lại; get about thường là đi lại/lan truyền, không phù hợp câu này."
+    },
+    {
+      "globalNumber": 51,
+      "sectionCode": "II.1",
+      "localNumber": 16,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Upper layers of the ocean nghĩa là các lớp nước phía trên của đại dương. Utmost/ultimate không diễn đạt đúng vị trí địa lý trong câu nên lựa chọn A đã được sửa thành upper. Đây là nơi các thay đổi về nhiệt và dòng chảy có thể ảnh hưởng đến thời tiết."
+    },
+    {
+      "globalNumber": 52,
+      "sectionCode": "II.1",
+      "localNumber": 17,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Generate variations nghĩa là tạo ra những biến đổi. Sự tương tác giữa đại dương và khí quyển có thể tạo biến đổi trong các kiểu thời tiết. Accomplish là hoàn thành một việc, procure là thu xếp để có, formulate là xây dựng kế hoạch/lý thuyết; không phù hợp quan hệ tự nhiên này."
+    },
+    {
+      "globalNumber": 53,
+      "sectionCode": "II.1",
+      "localNumber": 18,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Get hold of something nghĩa là có được/thu thập được thứ gì. Sau of trong way of cần V-ing, nên getting hold of observations là cách thu thập quan sát. Come/find/make hold of không phải các cụm đúng mang nghĩa này."
+    },
+    {
+      "globalNumber": 54,
+      "sectionCode": "II.1",
+      "localNumber": 19,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Be equipped with instruments nghĩa là được trang bị các thiết bị. Equipped là phân từ bị động rút gọn, bổ nghĩa cho satellites. Delivered là được giao; supplemented là được bổ sung; donated là được hiến tặng, không diễn tả chức năng thiết bị đặt trên vệ tinh."
+    },
+    {
+      "globalNumber": 55,
+      "sectionCode": "II.1",
+      "localNumber": 20,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Take measurements là thực hiện các phép đo; chuyển sang bị động thành measurements can be taken. Done/formed/fulfilled không phải kết hợp từ chuẩn ở đây. Câu nhấn mạnh dữ liệu vẫn thu thập được ở những vùng biển khó tiếp cận trực tiếp."
+    },
+    {
+      "globalNumber": 56,
+      "sectionCode": "II.1",
+      "localNumber": 21,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Calculated estimates là những ước tính được tính toán từ dữ liệu. Calculated bổ nghĩa cho estimates, không khẳng định phép đo chính xác tuyệt đối. Amounted thường cần to; scored liên quan ghi điểm; enumerated là liệt kê, không đúng cách xử lý số liệu trong câu."
+    },
+    {
+      "globalNumber": 57,
+      "sectionCode": "II.1",
+      "localNumber": 22,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Besides + V-ing nghĩa là ngoài việc…, dùng để thêm một lợi ích khác của vệ tinh. Apart cần from; otherwise là nếu không/thay vào đó; whereby nghĩa là nhờ đó và thường mở mệnh đề. Vì sau chỗ trống là providing nên Besides phù hợp."
+    },
+    {
+      "globalNumber": 58,
+      "sectionCode": "II.1",
+      "localNumber": 23,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Issue warnings nghĩa là phát cảnh báo. Dữ liệu vệ tinh giúp các cơ quan dự báo phát cảnh báo sớm về bão. Denote là biểu thị, proceed là tiếp tục, emerge là xuất hiện; không dùng trực tiếp với warnings để diễn tả ban hành cảnh báo."
+    },
+    {
+      "globalNumber": 59,
+      "sectionCode": "II.1",
+      "localNumber": 24,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Enable somebody to do something là tạo điều kiện/giúp ai có thể làm gì. Cảnh báo giúp dân ven biển tự bảo vệ. Entitle là cho quyền; entail là kéo theo và không có mẫu người + to V này; enforce là cưỡng chế, không phù hợp với khả năng chủ động ứng phó."
+    },
+    {
+      "globalNumber": 60,
+      "sectionCode": "II.1",
+      "localNumber": 25,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Protect themselves against destructive forces nghĩa là tự bảo vệ trước các lực thiên nhiên gây hại. Ward thường cần off và tân ngữ nguy cơ; sustain là duy trì/chịu đựng; preserve là giữ gìn. Protect + người + against/from là cấu trúc phù hợp."
+    },
+    {
+      "globalNumber": 61,
+      "sectionCode": "II.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "was"
+      ],
+      "displayAnswer": "was",
+      "explanation": "There was a party là cấu trúc tồn tại ở quá khứ với danh từ số ít a party. Câu mở đầu câu chuyện kể về sinh nhật đầu tiên trong album, nên dùng was. Were cần danh từ số nhiều; is không phù hợp mốc hồi tưởng trong câu."
+    },
+    {
+      "globalNumber": 62,
+      "sectionCode": "II.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "by",
+        "on"
+      ],
+      "displayAnswer": "by / on",
+      "explanation": "As time went by/as time went on đều nghĩa là khi thời gian trôi qua. By và on đều có thể đi sau went trong ngữ cảnh này, nên web chấp nhận cả hai. Chỗ trống chỉ được điền một từ, không lặp went đã có sẵn."
+    },
+    {
+      "globalNumber": 63,
+      "sectionCode": "II.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "own"
+      ],
+      "displayAnswer": "own",
+      "explanation": "Of their own nghĩa là của riêng họ. Own đứng sau tính từ sở hữu their và kết thúc cụm birthday celebrations of their own. Đây là cách nhấn mạnh mỗi người có buổi sinh nhật riêng; không dùng themselves vì đó là đại từ phản thân."
+    },
+    {
+      "globalNumber": 64,
+      "sectionCode": "II.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "such"
+      ],
+      "displayAnswer": "such",
+      "explanation": "Such as dùng để đưa ví dụ, ở đây là gửi thiệp, thổi nến và hát. As đã có sẵn trong đề nên chỉ điền such. Không điền for example vì đó là hai từ và không nối với as theo cấu trúc này."
+    },
+    {
+      "globalNumber": 65,
+      "sectionCode": "II.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "almost",
+        "nearly",
+        "practically",
+        "virtually"
+      ],
+      "displayAnswer": "almost / nearly / practically / virtually",
+      "explanation": "Almost/nearly/practically/virtually anywhere đều có thể nghĩa là gần như ở bất cứ đâu. Câu kể rằng trong cộng đồng của người kể, các truyền thống này rất phổ biến. Đây là chỗ điền mở nên các trạng từ tự nhiên cùng nghĩa đều được chấp nhận."
+    },
+    {
+      "globalNumber": 66,
+      "sectionCode": "II.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "older"
+      ],
+      "displayAnswer": "older",
+      "explanation": "One year older là lớn hơn một tuổi; older là so sánh hơn của old. Câu nói người kể bước sang tuổi mới mỗi lần sinh nhật đến, không khẳng định tất cả người Trung Quốc cùng sinh nhật vào Tết như bản cũ."
+    },
+    {
+      "globalNumber": 67,
+      "sectionCode": "II.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "put",
+        "place",
+        "set",
+        "arrange"
+      ],
+      "displayAnswer": "put / place / set / arrange",
+      "explanation": "Put/place/set/arrange toys on the floor đều diễn đạt việc đặt/sắp đồ chơi trên sàn. Câu đang nói thói quen In our family nên dùng hiện tại đơn với chủ ngữ adults số nhiều. Không thêm s và không chia quá khứ chỉ vì đoạn trước kể về album."
+    },
+    {
+      "globalNumber": 68,
+      "sectionCode": "II.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "later"
+      ],
+      "displayAnswer": "later",
+      "explanation": "Later in life nghĩa là về sau trong cuộc đời. Nhân vật tự hỏi trẻ em sẽ chọn nghề gì khi lớn lên. Later là trạng từ; không dùng latter, vì latter chỉ người/vật thứ hai trong hai thứ vừa được nhắc đến."
+    },
+    {
+      "globalNumber": 69,
+      "sectionCode": "II.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "itself"
+      ],
+      "displayAnswer": "itself",
+      "explanation": "The cake itself nhấn mạnh chính chiếc bánh có hình chiếc chìa khóa, thay vì chỉ có một chiếc chìa khóa trang trí bên trên. Cake là vật số ít nên dùng itself. It là đại từ thường và không tạo đúng cấu trúc nhấn mạnh ở vị trí sau danh từ này."
+    },
+    {
+      "globalNumber": 70,
+      "sectionCode": "II.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "any"
+      ],
+      "displayAnswer": "any",
+      "explanation": "At any time they want to nghĩa là vào bất cứ lúc nào họ muốn. Any diễn đạt sự tự do lựa chọn thời điểm. Every time nghĩa là mỗi lần và sẽ thay đổi cấu trúc/nghĩa; some time thường chỉ một thời điểm không xác định."
+    },
+    {
+      "globalNumber": 71,
+      "sectionCode": "II.3",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Hidden nghĩa là bị che khuất, không nhìn thấy được, gần nhất với concealed ở lựa chọn D đã sửa. Hồ nằm dưới lớp băng nên bị che khỏi tầm nhìn. Untouched là chưa bị tác động, undrinkable là không uống được, unexploitable là không thể khai thác; chúng không đồng nghĩa với hidden."
+    },
+    {
+      "globalNumber": 72,
+      "sectionCode": "II.3",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Đoạn đầu cho biết hồ nằm dưới khoảng bốn ki-lô-mét băng, nên beneath a thick slab of ice là diễn đạt tương đương. A sai vì nước hồ ở trạng thái lỏng; B sai vì đây là hồ nước ngọt; D sai vì đoạn nói nguồn nhiệt từ bên trong Trái Đất, không phải Mặt Trời."
+    },
+    {
+      "globalNumber": 73,
+      "sectionCode": "II.3",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Frigid nghĩa là cực kỳ lạnh, phù hợp mô tả nhiệt độ trên bề mặt Nam Cực. Easily broken là dễ vỡ; quite harsh quá rộng nghĩa; lukewarm là âm ấm. Đối chiếu unfrozen water bên dưới với frigid surface temperatures giúp xác định nghĩa."
+    },
+    {
+      "globalNumber": 74,
+      "sectionCode": "II.3",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Câu hỏi có EXCEPT nên chọn thông tin không đúng với cuộc khảo sát bằng máy bay thập niên 1970. Đoạn nói khảo sát dùng sóng vô tuyến và chưa xác định rõ kích thước; không nói được điều khiển bằng vệ tinh. Dữ liệu vệ tinh được dùng ở giai đoạn sau."
+    },
+    {
+      "globalNumber": 75,
+      "sectionCode": "II.3",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Đoạn hai giải thích băng ở vùng quan sát được giữ khá bằng phẳng vì nổi trên mặt nước hồ. Do đó A nêu đúng lý do vùng phẳng là dấu hiệu gợi ý có hồ. Không được suy diễn rằng mọi vùng băng phẳng đều có hồ, hoặc không có hồ thì tuyệt đối không thể phẳng."
+    },
+    {
+      "globalNumber": 76,
+      "sectionCode": "II.3",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Microbes là các vi sinh vật, tức những sinh vật rất nhỏ. Tiny organisms diễn đạt đúng. Pieces of dust là hạt bụi, tiny bubbles là bọt khí, rays of light là tia sáng; ba lựa chọn này không phải sinh vật sống."
+    },
+    {
+      "globalNumber": 77,
+      "sectionCode": "II.3",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Đoạn cuối nói hồ có thể chứa những vi sinh vật thích nghi với môi trường biệt lập, vì vậy B nêu đúng tiềm năng nghiên cứu. May/potentially chỉ khả năng, chưa phải khẳng định chắc chắn về nguồn gốc hay tuổi của mọi vi sinh vật trong mẫu."
+    },
+    {
+      "globalNumber": 78,
+      "sectionCode": "II.3",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Downside nghĩa là mặt bất lợi/điểm hạn chế. Ngay sau từ này tác giả nêu khó khăn nghiên cứu và nguy cơ làm nhiễm bẩn mẫu/hồ, nên negative aspect đúng. Các đáp án bottom level/underside/buried section chỉ vị trí bên dưới theo nghĩa vật lý."
+    },
+    {
+      "globalNumber": 79,
+      "sectionCode": "II.3",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Đoạn cuối nhấn mạnh phải thu mẫu đáng tin cậy mà không đưa chất gây nhiễm vào hồ. Vì thế scientists should be aware of ways to study it without contaminating it là ý chính cần chọn. Khí hậu khắc nghiệt cũng là khó khăn, nhưng câu hỏi đã thu hẹp vào vấn đề lấy mẫu."
+    },
+    {
+      "globalNumber": 80,
+      "sectionCode": "II.3",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Toàn bài giới thiệu một đặc điểm địa lý bất ngờ của Nam Cực: hồ nước lỏng rất lớn bị băng che phủ, kèm cách phát hiện và ý nghĩa nghiên cứu. A chỉ bao quát đoạn hai; B chỉ một loại dữ liệu; C chỉ hướng nghiên cứu. D bao quát cả bài."
+    },
+    {
+      "globalNumber": 81,
+      "sectionCode": "III.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "arrival at the party, everyone was dancing and singing happily"
+      ],
+      "displayAnswer": "arrival at the party, everyone was dancing and singing happily",
+      "explanation": "On + danh từ chỉ sự kiện có thể nghĩa là ngay khi sự kiện xảy ra. Arrival là danh từ của arrive, đi với at the party. Giữ was dancing and singing để diễn tả hoạt động đang diễn ra khi cô ấy tới; không chuyển mọi hành động sang quá khứ đơn.",
+      "prefix": "On her",
+      "suffix": "",
+      "fullSentence": "On her arrival at the party, everyone was dancing and singing happily."
+    },
+    {
+      "globalNumber": 82,
+      "sectionCode": "III.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "had very little money when he died, which surprised everyone",
+        "had very little money when he died, to everyone's surprise",
+        "had very little money at the time of his death, which surprised everyone"
+      ],
+      "displayAnswer": "had very little money when he died, which surprised everyone / had very little money when he died, to everyone's surprise / had very little money at the time of his death, which surprised everyone",
+      "explanation": "Đưa the famous actor lên làm chủ ngữ và giữ sự thật ông có rất ít tiền lúc qua đời. Which surprised everyone là mệnh đề quan hệ chỉ toàn bộ sự việc ấy. Không đổi very little thành a little, vì a little mang sắc thái vẫn có một ít khác với gần như không có.",
+      "prefix": "The famous actor",
+      "suffix": "",
+      "fullSentence": "The famous actor had very little money when he died, which surprised everyone."
+    },
+    {
+      "globalNumber": 83,
+      "sectionCode": "III.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "qualifications you amass, the more successful you become in the academic field",
+        "qualifications you gain, the more successful you become in the academic field",
+        "qualifications you can amass, the more successful you become in the academic field"
+      ],
+      "displayAnswer": "qualifications you amass, the more successful you become in the academic field / qualifications you gain, the more successful you become in the academic field / qualifications you can amass, the more successful you become in the academic field",
+      "explanation": "So sánh kép dùng the more + danh từ số nhiều, the more + tính từ: càng tích lũy nhiều bằng cấp thì càng thành công. Qualifications phải ở số nhiều sau more; đáp án cũ thiếu s là sai. Câu gốc đã làm rõ quan hệ tăng cùng nhau để phép biến đổi giữ đúng nghĩa.",
+      "prefix": "The more",
+      "suffix": "",
+      "fullSentence": "The more qualifications you amass, the more successful you become in the academic field."
+    },
+    {
+      "globalNumber": 84,
+      "sectionCode": "III.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "to shoot the strange man if he did not get out of her house",
+        "to shoot the strange man unless he got out of her house"
+      ],
+      "displayAnswer": "to shoot the strange man if he did not get out of her house / to shoot the strange man unless he got out of her house",
+      "explanation": "Threaten to do something nghĩa là đe dọa sẽ làm gì; không dùng threaten somebody to do. Đổi my house thành her house và you thành the strange man. Unless he got out tương đương if he did not get out; giữ điều kiện không rời nhà thì sẽ bị bắn.",
+      "prefix": "The woman threatened",
+      "suffix": "",
+      "fullSentence": "The woman threatened to shoot the strange man if he did not get out of her house."
+    },
+    {
+      "globalNumber": 85,
+      "sectionCode": "III.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "him into a confident person",
+        "him into a confident boy",
+        "him into a confident man"
+      ],
+      "displayAnswer": "him into a confident person / him into a confident boy / him into a confident man",
+      "explanation": "Turn somebody into + danh từ nghĩa là biến ai thành người như thế nào. Timmy’s success là nguyên nhân khiến Timmy trở nên tự tin, nên dùng turned him into a confident person. Him thay cho Timmy; giữ hiện tại hoàn thành has turned đã có sẵn trong đề.",
+      "prefix": "Timmy’s success has turned",
+      "suffix": "",
+      "fullSentence": "Timmy’s success has turned him into a confident person."
+    },
+    {
+      "globalNumber": 86,
+      "sectionCode": "III.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "you to be offered freelance work, would you take it"
+      ],
+      "displayAnswer": "you to be offered freelance work, would you take it",
+      "explanation": "Đảo ngữ điều kiện giả định dùng Were + chủ ngữ + to V thay cho If + chủ ngữ + quá khứ. Công việc được đề nghị cho bạn nên dùng to be offered ở bị động. Mệnh đề kết quả vẫn là would you take it vì toàn câu là câu hỏi.",
+      "prefix": "Were",
+      "suffix": "",
+      "fullSentence": "Were you to be offered freelance work, would you take it?"
+    },
+    {
+      "globalNumber": 87,
+      "sectionCode": "III.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "likelihood, there will be a rise in temperature in the next century",
+        "probability, there will be a rise in temperature in the next century",
+        "likelihood, temperature will rise in the next century",
+        "probability, temperature will rise in the next century"
+      ],
+      "displayAnswer": "likelihood, there will be a rise in temperature in the next century / probability, there will be a rise in temperature in the next century / likelihood, temperature will rise in the next century / probability, temperature will rise in the next century",
+      "explanation": "In all likelihood/in all probability nghĩa là rất có thể, tương đương seems likely trong câu gốc. Sau cụm mở đầu cần một mệnh đề đầy đủ. Giữ mốc in the next century và không đổi khả năng thành chắc chắn; there will be a rise cũng tương đương temperature will rise.",
+      "prefix": "In all",
+      "suffix": "",
+      "fullSentence": "In all likelihood, there will be a rise in temperature in the next century."
+    },
+    {
+      "globalNumber": 88,
+      "sectionCode": "III.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "are not as rare as this one",
+        "are less rare than this one",
+        "are more common than this one",
+        "are not as rare as this stamp"
+      ],
+      "displayAnswer": "are not as rare as this one / are less rare than this one / are more common than this one / are not as rare as this stamp",
+      "explanation": "This stamp is rarer than any other nghĩa là tem này hiếm nhất trong bộ sưu tập. Khi đổi chủ ngữ thành the other stamps phải đảo hướng so sánh: các tem còn lại ít hiếm hơn/không hiếm bằng tem này. Dùng are vì stamps số nhiều.",
+      "prefix": "The other stamps in my collection",
+      "suffix": "",
+      "fullSentence": "The other stamps in my collection are not as rare as this one."
+    },
+    {
+      "globalNumber": 89,
+      "sectionCode": "III.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "if I took a photograph here",
+        "my taking a photograph here",
+        "me taking a photograph here"
+      ],
+      "displayAnswer": "if I took a photograph here / my taking a photograph here / me taking a photograph here",
+      "explanation": "Would you mind có thể đi với if + chủ ngữ + quá khứ để xin phép lịch sự, hoặc với V-ing có chủ thể my/me. Câu hỏi đang xin phép người nói chụp ảnh nên giữ I/my/me. Would you mind taking… lại yêu cầu người nghe chụp, làm đổi nghĩa.",
+      "prefix": "Would you mind",
+      "suffix": "",
+      "fullSentence": "Would you mind if I took a photograph here?"
+    },
+    {
+      "globalNumber": 90,
+      "sectionCode": "III.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "have taken so many clothes on holiday last summer",
+        "have taken as many clothes on holiday last summer"
+      ],
+      "displayAnswer": "have taken so many clothes on holiday last summer / have taken as many clothes on holiday last summer",
+      "explanation": "Needn’t have + quá khứ phân từ nói một việc đã làm nhưng không cần thiết. Câu gốc cho biết chúng tôi đã mang nhiều quần áo hơn mức cần, nên giữ so many/as many. Didn’t need to take chỉ sự không cần thiết và không khẳng định rõ việc đã xảy ra.",
+      "prefix": "We needn’t",
+      "suffix": "",
+      "fullSentence": "We needn’t have taken so many clothes on holiday last summer."
+    },
+    {
+      "globalNumber": 91,
+      "sectionCode": "III.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "to have a word with Jack about the problem but he was too busy"
+      ],
+      "displayAnswer": "to have a word with Jack about the problem but he was too busy",
+      "explanation": "Have a word with somebody about something nghĩa là nói chuyện ngắn với ai về một việc. Tried to have giữ ý đã cố nói chuyện nhưng Jack quá bận. Từ word phải giữ nguyên ở số ít; have words with thường là cãi vã, không đúng ý câu gốc.",
+      "prefix": "I tried",
+      "suffix": "",
+      "fullSentence": "I tried to have a word with Jack about the problem but he was too busy."
+    },
+    {
+      "globalNumber": 92,
+      "sectionCode": "III.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "moment I decided to get up and dance, the band decided to stop playing",
+        "moment that I decided to get up and dance, the band decided to stop playing"
+      ],
+      "displayAnswer": "moment I decided to get up and dance, the band decided to stop playing / moment that I decided to get up and dance, the band decided to stop playing",
+      "explanation": "The moment (that) + mệnh đề nghĩa là ngay lúc…, diễn tả hai quyết định trùng thời điểm. Giữ decided ở cả hai vế vì câu gốc nói quyết định, chưa khẳng định cả hai hành động đã thực hiện. Không thay moment bằng moments vì phải giữ nguyên từ cho sẵn.",
+      "prefix": "The",
+      "suffix": "",
+      "fullSentence": "The moment I decided to get up and dance, the band decided to stop playing."
+    },
+    {
+      "globalNumber": 93,
+      "sectionCode": "III.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "number of travelers are being stopped by customs officials this week",
+        "number of travellers are being stopped by customs officials this week",
+        "number of travelers are being stopped this week by customs officials",
+        "number of travellers are being stopped this week by customs officials"
+      ],
+      "displayAnswer": "number of travelers are being stopped by customs officials this week / number of travellers are being stopped by customs officials this week / number of travelers are being stopped this week by customs officials / number of travellers are being stopped this week by customs officials",
+      "explanation": "An increasing number of + danh từ số nhiều đi với động từ số nhiều are. Chuyển chủ ngữ từ customs officials sang travelers nên dùng bị động hiện tại tiếp diễn are being stopped. Câu gốc đã chỉnh rõ số người đang tăng; chỉ more than usual chưa đủ để suy ra xu hướng tăng.",
+      "prefix": "An increasing",
+      "suffix": "",
+      "fullSentence": "An increasing number of travelers are being stopped by customs officials this week."
+    },
+    {
+      "globalNumber": 94,
+      "sectionCode": "III.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "would do you good"
+      ],
+      "displayAnswer": "would do you good",
+      "explanation": "Do somebody good nghĩa là có lợi, giúp ai khỏe hơn/cảm thấy tốt hơn. A quiet holiday would do you good giữ ý giả định bạn sẽ cảm thấy dễ chịu hơn nếu nghỉ yên tĩnh. Good là danh từ trong thành ngữ này; không đổi thành well.",
+      "prefix": "A quiet holiday",
+      "suffix": "",
+      "fullSentence": "A quiet holiday would do you good."
+    },
+    {
+      "globalNumber": 95,
+      "sectionCode": "III.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "agreement among the teachers to introduce the new testing methods",
+        "agreement among the teachers on introducing the new testing methods",
+        "agreement among the teachers that they would introduce the new testing methods"
+      ],
+      "displayAnswer": "agreement among the teachers to introduce the new testing methods / agreement among the teachers on introducing the new testing methods / agreement among the teachers that they would introduce the new testing methods",
+      "explanation": "Agreement là danh từ của agree; among the teachers xác định sự đồng thuận giữa các giáo viên. Có thể dùng agreement to introduce hoặc agreement on introducing. Sau on phải là V-ing, còn to introduce là động từ nguyên mẫu; giữ đúng từ among theo yêu cầu.",
+      "prefix": "There was",
+      "suffix": "",
+      "fullSentence": "There was agreement among the teachers to introduce the new testing methods."
+    },
+    {
+      "globalNumber": 96,
+      "sectionCode": "III.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "he is at last beginning to come round to my point of view",
+        "he is at last beginning to come round to my way of thinking",
+        "he is at last coming round to my point of view",
+        "he is at last coming round to my way of thinking"
+      ],
+      "displayAnswer": "he is at last beginning to come round to my point of view / he is at last beginning to come round to my way of thinking / he is at last coming round to my point of view / he is at last coming round to my way of thinking",
+      "explanation": "Come round to somebody’s point of view là dần bị thuyết phục để đồng ý với quan điểm của người đó. At last nghĩa là cuối cùng, đúng câu gốc; at least nghĩa là ít nhất và là lỗi trong đáp án cũ. Giữ round nguyên dạng và diễn đạt quá trình đang thay đổi bằng is coming/beginning to come.",
+      "prefix": "I suppose",
+      "suffix": "",
+      "fullSentence": "I suppose he is at last beginning to come round to my point of view."
+    },
+    {
+      "globalNumber": 97,
+      "sectionCode": "III.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "to dawn on Alan how lucky he was"
+      ],
+      "displayAnswer": "to dawn on Alan how lucky he was",
+      "explanation": "It dawns on somebody that/how… nghĩa là ai bắt đầu nhận ra điều gì. Sau began dùng to dawn, còn on Alan xác định người nhận ra. How lucky he was là mệnh đề gián tiếp nên không đảo was trước he; không dùng Alan dawned vì cấu trúc này có chủ ngữ it.",
+      "prefix": "When he won the scholarship, it began",
+      "suffix": "",
+      "fullSentence": "When he won the scholarship, it began to dawn on Alan how lucky he was."
+    },
+    {
+      "globalNumber": 98,
+      "sectionCode": "III.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "shed any light on how Jack made enough money",
+        "throw any light on how Jack made enough money",
+        "cast any light on how Jack made enough money",
+        "shed light on how Jack made enough money",
+        "throw light on how Jack made enough money",
+        "cast light on how Jack made enough money"
+      ],
+      "displayAnswer": "shed any light on how Jack made enough money / throw any light on how Jack made enough money / cast any light on how Jack made enough money / shed light on how Jack made enough money / throw light on how Jack made enough money / cast light on how Jack made enough money",
+      "explanation": "Shed/throw/cast light on something là giúp làm sáng tỏ một việc. Giữ enough money để thể hiện đủ tiền mua xe, không chỉ có kiếm tiền nói chung. Phần to buy that new sports car đã in sẵn nên chỗ trống dừng ở money; any tự nhiên trong câu hỏi nhưng có thể bỏ.",
+      "prefix": "Can you",
+      "suffix": "to buy that new sports car?",
+      "fullSentence": "Can you shed any light on how Jack made enough money to buy that new sports car?"
+    },
+    {
+      "globalNumber": 99,
+      "sectionCode": "III.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "spent the entire holiday complaining about the weather",
+        "spent her entire holiday complaining about the weather",
+        "complained about the weather during the entire holiday",
+        "complained about the weather throughout the entire holiday"
+      ],
+      "displayAnswer": "spent the entire holiday complaining about the weather / spent her entire holiday complaining about the weather / complained about the weather during the entire holiday / complained about the weather throughout the entire holiday",
+      "explanation": "Entire nghĩa là toàn bộ, tương đương throughout the holiday. Có thể dùng spent the entire holiday + V-ing để diễn tả việc cô ấy liên tục than phiền suốt kỳ nghỉ. Complain about the weather là phàn nàn về thời tiết; phải giữ entire, không đổi thành entirely.",
+      "prefix": "Anne",
+      "suffix": "",
+      "fullSentence": "Anne spent the entire holiday complaining about the weather."
+    },
+    {
+      "globalNumber": 100,
+      "sectionCode": "III.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "ruled out the possibility of the government",
+        "ruled out any possibility of the government",
+        "ruled out the government"
+      ],
+      "displayAnswer": "ruled out the possibility of the government / ruled out any possibility of the government / ruled out the government",
+      "explanation": "Rule out nghĩa là loại trừ khả năng xảy ra. Ruled out the possibility of the government + V-ing giữ ý ông cho rằng chính phủ sẽ không gửi viện trợ. Phần sending financial aid… đã có sẵn nên không viết lặp. The government là chủ thể của sending, không phải người nhận viện trợ.",
+      "prefix": "He",
+      "suffix": "sending financial aid to the region.",
+      "fullSentence": "He ruled out the possibility of the government sending financial aid to the region."
+    }
+  ]
+}
