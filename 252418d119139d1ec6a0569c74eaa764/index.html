@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PRACTICE TEST 22 · LUYỆN ĐỀ</title>
+  <style>
+    :root{--ink:#17233a;--navy:#182a4a;--navy-deep:#0f1c33;--muted:#667085;--gold:#b58a3a;--gold-deep:#77591f;--gold-soft:#f7f0e2;--soft:#f3f0e9;--ivory:#faf8f3;--line:#ddd8ce;--white:#fffdf9;--font:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Arial,sans-serif}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;overflow:hidden;background:var(--white);color:var(--ink);font-family:var(--font);font-synthesis:none;text-rendering:optimizeLegibility}
+    button,input,select{font-family:var(--font);font-size:inherit}
+    button{cursor:pointer}
+    button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid rgba(181,138,58,.28);outline-offset:2px}
+    [hidden]{display:none!important}
+    .frame{height:100%;padding:0;display:grid;grid-template-rows:54px minmax(0,1fr);gap:0}
+    .topbar{min-width:0;padding:6px 12px;display:flex;align-items:center;gap:14px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:var(--white);box-shadow:none}
+    .brand{min-width:0;flex:1 1 auto;display:flex;align-items:center;gap:10px;white-space:nowrap}
+    .brand-badge{display:grid;width:36px;height:36px;place-items:center;border:1px solid var(--gold);border-radius:10px;background:var(--navy-deep);color:var(--gold);font-size:13px;font-weight:700;box-shadow:0 3px 10px rgba(15,28,51,.14)}
+    .brand-copy{min-width:0;display:grid;gap:2px}
+    .brand-copy strong{display:block;max-width:clamp(180px,38vw,560px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:17px;line-height:1.05}
+    .brand-copy .eyebrow{display:block;max-width:clamp(220px,46vw,680px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .eyebrow,.student span,.progress span,.gate label>span,.sheet-title,.saved{color:var(--navy);font-size:10px;font-weight:700;line-height:1.2;letter-spacing:.04em}
+    .student{min-width:0;flex:0 1 260px;display:grid;text-align:right}
+    .student strong{max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}
+    .student small{color:var(--muted);font-size:11px}
+    .progress{width:min(320px,28vw);flex:0 1 320px;display:grid;gap:6px}
+    .progress>div{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+    .progress strong{color:var(--navy);font-size:20px}
+    .track{height:8px;overflow:hidden;border-radius:99px;background:var(--soft)}
+    .track i{display:block;width:0;height:100%;border-radius:inherit;background:var(--gold);transition:width .2s ease}
+    .workspace{min-width:0;min-height:0;display:grid;grid-template-columns:minmax(0,3fr) minmax(440px,2fr);gap:0}
+    .workspace.locked{grid-template-columns:1fr}
+    .doc-pane,.right-pane{min-width:0;min-height:0;border:0;border-radius:0;background:var(--white);box-shadow:none;overflow:hidden}
+    .doc-pane{display:grid;grid-template-rows:34px minmax(0,1fr);border-right:1px solid var(--line)}
+    .doc-head{padding:0 11px;display:flex;align-items:center;border-bottom:1px solid var(--line);background:var(--ivory);color:var(--navy);font-size:10px;font-weight:700;letter-spacing:.04em}
+    .doc-pane iframe{width:100%;height:100%;border:0;background:var(--white)}
+    .right-pane{position:relative;display:grid;grid-template-rows:auto minmax(0,1fr)}
+    .mode-banner{z-index:2;padding:9px 13px;display:flex;align-items:center;gap:9px;border-bottom:1px solid var(--gold);background:var(--gold-soft);color:var(--gold-deep);font-size:11px;line-height:1.35}
+    .mode-banner strong{flex:0 0 auto;font-size:10px;letter-spacing:.04em}
+    .gate,.sheet,.result{min-height:0;grid-column:1;grid-row:2}
+    .gate{height:100%;padding:clamp(28px,4vw,50px);display:flex;flex-direction:column;justify-content:flex-start}
+    .gate .kicker{margin:0 0 9px;color:var(--gold-deep);font-size:11px;font-weight:700;letter-spacing:.04em}
+    .gate h1{margin:0 0 10px;font-size:clamp(28px,2.4vw,38px);font-weight:700;line-height:1.08;letter-spacing:-.02em}
+    .gate>p{margin:0 0 24px;color:var(--muted);font-size:14px;line-height:1.55}
+    .gate label{display:grid;gap:8px;margin-bottom:14px}
+    .gate input,.gate select{width:100%;height:56px;padding:0 15px;border:1px solid var(--line);border-radius:10px;background:var(--white);color:var(--ink);font-size:17px}
+    .primary{min-height:52px;padding:0 18px;border:0;border-radius:10px;background:var(--navy);color:var(--white);font-size:11px;font-weight:700;letter-spacing:.03em}
+    .primary:hover{background:var(--navy-deep)}
+    .primary:disabled{cursor:not-allowed;opacity:.55}
+    .gate .primary{width:100%;margin-top:4px}
+    .notice{margin:0 0 13px;padding:10px 12px;border:1px solid var(--gold);border-radius:9px;background:var(--gold-soft);color:var(--gold-deep);font-size:12px;font-weight:700;line-height:1.4}
+    .sheet{height:100%;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto}
+    .tabs{padding:9px;display:flex;gap:5px;overflow-x:auto;border-bottom:1px solid var(--line);background:var(--ivory);scrollbar-width:thin}
+    .tabs button{flex:1 0 66px;height:42px;border:1px solid var(--line);border-radius:9px;background:var(--white);color:var(--muted);font-size:10px;font-weight:700}
+    .tabs button.active{border-color:var(--navy);background:var(--navy);color:var(--white)}
+    .tabs button.done:after{margin-left:4px;content:"✓";color:var(--gold-deep)}
+    .tabs button.active.done:after{color:var(--gold)}
+    .sheet-head{padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line)}
+    .sheet-head h2{margin:4px 0 0;font-size:25px;line-height:1;font-weight:700}
+    .section-helper{margin:7px 0 0;color:var(--muted);font-size:11px;line-height:1.4}
+    .sheet-head>b{padding:6px 9px;border-radius:99px;background:var(--gold-soft);color:var(--gold-deep);font-size:11px}
+    .rows{min-height:0;padding:11px 12px 18px;display:grid;align-content:start;gap:9px;overflow-y:auto;overscroll-behavior:contain;scrollbar-color:var(--gold) transparent;scrollbar-width:thin;-webkit-overflow-scrolling:touch;touch-action:pan-y;overflow-anchor:none}
+    .answer-row{min-height:64px;display:grid;grid-template-columns:58px minmax(0,1fr);align-items:stretch;border:1px solid var(--line);border-radius:11px;background:var(--white);overflow:hidden}
+    .answer-row.answered{border-color:var(--gold);box-shadow:0 0 0 2px rgba(181,138,58,.07)}
+    .qnum{display:grid;place-items:center;border-right:1px solid var(--line);background:var(--soft);color:var(--navy);font-size:21px;font-weight:700}
+    .answer-row input,.answer-row select,.answer-row textarea{width:calc(100% - 20px);height:48px;margin:8px 10px;padding:0 14px;border:1px solid var(--line);border-radius:8px;background:var(--ivory);color:var(--ink);font-size:18px}
+    .answer-row textarea{height:96px;padding:12px 14px;resize:vertical;line-height:1.45}
+    .answer-row:has(textarea){min-height:114px}
+    .answer-row input:focus,.answer-row select:focus,.answer-row textarea:focus{border-color:var(--gold);background:var(--white);outline:0;box-shadow:0 0 0 3px rgba(181,138,58,.13)}
+    .letters{padding:8px 10px;display:grid;grid-template-columns:repeat(var(--choice-count,4),minmax(38px,1fr));gap:6px}
+    .letters button{height:48px;border:1px solid var(--line);border-radius:8px;background:var(--ivory);color:var(--navy);font-weight:700;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+    .letters button.selected{border-color:var(--navy);background:var(--navy);color:var(--white)}
+    .sheet-foot{padding:9px 11px;display:flex;align-items:center;gap:7px;border-top:1px solid var(--line);background:var(--white);box-shadow:0 -6px 18px rgba(15,28,51,.04)}
+    .saved{margin-right:auto}
+    .sheet-foot button{min-height:44px;padding:0 13px;border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--navy);font-size:10px;font-weight:700}
+    .sheet-foot button:disabled{cursor:not-allowed;opacity:.42}
+    .sheet-foot .grade{border-color:var(--navy);background:var(--navy);color:var(--white)}
+    .result{height:100%;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto}
+    .result-head{padding:18px;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:15px;border-bottom:1px solid var(--line)}
+    .score{display:flex;align-items:baseline;color:var(--navy)}
+    .score strong{font-size:48px;line-height:1;font-weight:700}
+    .score span{color:var(--muted);font-size:19px;font-weight:700}
+    .result-head h2{margin:2px 0 5px;font-size:22px;font-weight:700}
+    .result-head p{margin:0;color:var(--muted);font-size:12px}
+    .sync{margin-top:5px;color:var(--navy);font-size:11px;font-weight:700}
+    .sync.error{color:var(--gold-deep)}
+    .review-tools{padding:11px 12px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);background:var(--ivory)}
+    .wrong-list{margin:0;color:var(--gold-deep);font-size:12px;line-height:1.5}
+    .wrong-list strong{display:block;margin-bottom:2px;font-size:10px;letter-spacing:.04em}
+    .wrong-groups{display:flex;flex-wrap:wrap;gap:6px 12px}
+    .wrong-group{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+    .wrong-group>span{font-weight:700}
+    .wrong-jump{min-width:30px;height:30px;padding:0 7px;border:1px solid var(--gold);border-radius:7px;background:var(--white);color:var(--gold-deep);font-size:11px;font-weight:700}
+    .review-filters{display:flex;gap:6px;flex:0 0 auto}
+    .review-filters button{min-height:36px;padding:0 11px;border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--navy);font-size:10px;font-weight:700}
+    .review-filters button.active{border-color:var(--navy);background:var(--navy);color:var(--white)}
+    .reviews{min-height:0;padding:11px;display:flex;flex-direction:column;gap:8px;overflow-y:auto;scrollbar-gutter:stable}
+    .review{flex:0 0 auto;display:grid;grid-template-columns:64px minmax(0,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--white)}
+    .review.wrong{border-color:var(--gold)}
+    .review-num{padding:12px 4px;display:grid;align-content:start;justify-items:center;gap:6px;border-right:1px solid var(--line);background:var(--soft);color:var(--navy)}
+    .review.wrong .review-num{background:var(--gold-soft);color:var(--gold-deep)}
+    .review-num strong{font-size:22px;font-weight:700}
+    .review-num span{font-size:9px;font-weight:700;text-align:center}
+    .review-body{padding:14px 15px}
+    .review-answers{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;color:var(--muted);font-size:14px;line-height:1.45}
+    .review-answers b{color:var(--ink)}
+    .review-answers .correct{color:var(--navy);font-size:16px}
+    .explain{margin:12px 0 0;padding:12px 13px;border-left:4px solid var(--navy);background:var(--soft);color:var(--ink);font-size:15px;line-height:1.65}
+    .explain strong{display:block;margin-bottom:5px;color:var(--navy);font-size:11px;letter-spacing:.05em}.explain p{margin:0}
+    .result-foot{padding:10px 12px;display:grid;grid-template-columns:1fr;gap:8px;border-top:1px solid var(--line);background:var(--white)}
+    .secondary{min-height:52px;padding:0 14px;border:1px solid var(--line);border-radius:10px;background:var(--white);color:var(--navy);font-size:10px;font-weight:700}
+    @media(max-width:1100px){
+      html{height:100%;min-height:100%;overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:none;-webkit-overflow-scrolling:touch}
+      body{height:auto;min-height:100%;overflow:visible}
+      .frame{height:auto;min-height:100vh;min-height:100dvh;grid-template-rows:auto auto}
+      .topbar{flex-wrap:wrap}
+      .brand{width:100%}
+      .brand-copy strong{max-width:calc(100vw - 130px)}
+      .student{order:3;width:100%;margin:0;text-align:left}
+      .progress{margin-left:auto;width:45%}
+      .workspace{grid-template-columns:1fr}
+      .doc-pane{height:58vh;height:58dvh;min-height:430px;border-right:0;border-bottom:1px solid var(--line)}
+      .right-pane{height:auto;min-height:0;display:block;overflow:visible}
+      .gate{height:auto;min-height:620px}
+      .sheet,.result{height:auto;min-height:0;display:block}
+      .rows,.reviews{height:auto;max-height:none;overflow:visible;overscroll-behavior:auto;touch-action:auto}
+    }
+    @media(max-width:520px){
+      .frame{padding:0;gap:0}
+      .brand-copy strong{font-size:14px}.eyebrow{font-size:8px}
+      .progress{width:100%}
+      .workspace{gap:0}
+      .doc-pane{height:52vh;height:52dvh}
+      .right-pane{height:auto}
+      .gate{padding:24px 16px}
+      .mode-banner{align-items:flex-start;flex-direction:column;gap:2px}
+      .tabs{padding:6px;gap:3px}
+      .tabs button{height:39px;font-size:9px}
+      .sheet-head{padding:12px}
+      .rows{padding:8px;gap:7px}
+      .answer-row{grid-template-columns:50px minmax(0,1fr)}
+      .saved{display:none}
+      .sheet-foot button{flex:1;padding:0 8px}
+      .review-tools{align-items:flex-start;flex-direction:column}
+      .review-filters{width:100%}
+      .review-filters button{flex:1}
+      .result-foot{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <main class="frame">
+    <header class="topbar">
+      <div class="brand"><div class="brand-badge" id="testBadge"></div><div class="brand-copy"><span class="eyebrow" id="courseName"></span><strong id="topic"></strong></div></div>
+      <div class="student" id="student" hidden><span>HỌC SINH</span><strong id="studentName"></strong><small id="studentClass"></small></div>
+      <div class="progress" id="progress" hidden><div><strong id="progressCount"></strong><span>ĐÃ ĐIỀN</span></div><div class="track"><i id="progressBar"></i></div></div>
+    </header>
+
+    <section class="workspace locked" id="workspace">
+      <article class="doc-pane" id="docPane" hidden>
+        <div class="doc-head"><span>ĐỀ BÀI</span></div>
+        <iframe id="docFrame" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer" loading="eager"></iframe>
+      </article>
+
+      <aside class="right-pane">
+        <div class="mode-banner" id="modeBanner" hidden><strong>BẢN NHÁP GIÁO VIÊN</strong><span>Đủ 100 ô để kiểm tra bố cục; chấm điểm và gửi Sheet đang bị khóa cho tới khi toàn bộ đáp án được duyệt.</span></div>
+
+        <form class="gate" id="gate">
+          <p class="kicker" id="gateKicker"></p>
+          <h1>Bắt đầu lượt làm</h1>
+          <p>Đọc đề ở khung bên trái và điền đáp án vào phiếu. Làm lại sau khi xem kỹ từng lỗi sai để tiến gần hơn tới mục tiêu thi chuyên.</p>
+          <label><span>HỌ VÀ TÊN</span><input id="name" autocomplete="name" required></label>
+          <label><span>LỚP</span><select id="className" required></select></label>
+          <p class="notice" id="gateNotice" hidden></p>
+          <button class="primary" type="submit">BẮT ĐẦU →</button>
+        </form>
+
+        <section class="sheet" id="sheet" hidden>
+          <nav class="tabs" id="tabs" aria-label="Các phần của đề"></nav>
+          <header class="sheet-head"><div><span class="sheet-title" id="sheetTitle"></span><h2 id="sectionTitle"></h2><p class="section-helper" id="sectionHelper" hidden></p></div><b id="sectionTotal"></b></header>
+          <div class="rows" id="rows"></div>
+          <footer class="sheet-foot"><span class="saved">ĐÃ LƯU</span><button id="prev" type="button">← TRƯỚC</button><button id="next" type="button">TIẾP →</button><button class="grade" id="grade" type="button" hidden>CHẤM BÀI</button></footer>
+        </section>
+
+        <section class="result" id="result" hidden>
+          <header class="result-head"><div class="score"><strong id="score"></strong><span id="scoreTotal"></span></div><div><span class="sheet-title">KẾT QUẢ</span><h2 id="resultTitle"></h2><p id="resultMeta"></p><div class="sync" id="sync"></div></div></header>
+          <div class="review-tools" id="reviewTools"><p class="wrong-list" id="wrongList"></p><div class="review-filters" role="group" aria-label="Lọc lời giải"><button class="active" id="showWrong" type="button">CÂU CẦN XEM LẠI</button><button id="showAll" type="button">TẤT CẢ</button></div></div>
+          <div class="reviews" id="reviews"></div>
+          <footer class="result-foot"><button class="primary" id="retry" type="button">LÀM LƯỢT MỚI →</button></footer>
+        </section>
+      </aside>
+    </section>
+  </main>
+  <iframe id="scoreTarget" name="scoreTarget" hidden></iframe>
+  <script>
+    const APP = {"mode":"production","course":{"schemaVersion":2,"courseId":"luyen-de","courseCode":"LD","courseName":"LUYỆN ĐỀ","labels":{"test":"ĐỀ","section":"PHẦN","sectionShort":"PHẦN","answerSheet":"PHIẾU TRẢ LỜI"},"expected":{"testCount":39,"questionTotal":null},"classes":["FIGHTER 5","FIGHTER 6","FIGHTER 7","FIGHTER 8","FIGHTER 9"],"matching":{"defaultMode":"normalized-exact","caseInsensitive":true,"collapseWhitespace":true,"normalizeApostrophes":true,"ignoreTerminalPunctuation":true,"expandContractionsGlobally":false},"submissionTemplates":{"assignmentCode":"LUYỆN ĐỀ - {testLabel}","lesson":"LUYỆN ĐỀ – {testLabel}","activity":"{topic} – Luyện đề"},"scoreSink":{"status":"verified","kind":"google-form","label":"KẾT QUẢ LUYỆN ĐỀ","spreadsheetId":"1ob6vm7FeB9dDlLa1YApMTB1wDk8gcRdLh_A15DaU7oI","sheetName":"Câu trả lời biểu mẫu 1","sheetGid":"1144044438","formEditorId":"1iECsC22ePpNJcjlw-m4XwAIK0_w6d6C8j_aO6eqEqUI","formResponseUrl":"https://docs.google.com/forms/d/e/1FAIpQLSeoPfhhIOecx4v7Hwj0FdXM5SoaraScsMklrf15W5xG3kkVvQ/formResponse","entries":{"name":"entry.1864333843","total":"entry.1802279054","testCode":"entry.932229322","lesson":"entry.114926046","activity":"entry.1413127424","className":"entry.412705812","percent":"entry.2057500492","score":"entry.1870158333","wrong":"entry.1066958615","attemptId":"entry.1405842479"}}},"test":{"schemaVersion":2,"sequence":22,"testId":"luyen-de-practice-test-22","testLabel":"PRACTICE TEST 22","testNumber":22,"testCode":"LD-PT22","title":"PRACTICE TEST 22","topic":"ÔN THI CHUYÊN ANH","total":100,"questionDocumentId":"1_LLeH75ZuQUqTrHqTVykuDZ5dB_2Fw1pKd-QbIFH1kU","questionTab":"t.0","sections":[{"sectionCode":"I.1","sectionLabel":"I.1","startGlobal":1,"count":35,"inputType":"letters","choices":["A","B","C","D"]},{"sectionCode":"I.2","sectionLabel":"I.2","startGlobal":36,"count":10,"inputType":"text"},{"sectionCode":"I.3","sectionLabel":"I.3","startGlobal":46,"count":5,"inputType":"text"},{"sectionCode":"II.1","sectionLabel":"II.1","startGlobal":51,"count":10,"inputType":"letters","choices":["A","B","C","D"]},{"sectionCode":"II.2","sectionLabel":"II.2","startGlobal":61,"count":10,"inputType":"text"},{"sectionCode":"II.3","sectionLabel":"II.3","startGlobal":71,"count":10,"inputType":"letters","choices":["A","B","C","D"]},{"sectionCode":"III.1","sectionLabel":"III.1","startGlobal":81,"count":10,"inputType":"text"},{"sectionCode":"III.2","sectionLabel":"III.2","startGlobal":91,"count":10,"inputType":"text"}],"answers":[{"globalNumber":1,"sectionCode":"I.1","localNumber":1,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Lay up a ship là cho tàu ngừng hoạt động tạm thời; câu đã nêu out of service làm dấu hiệu. Lay down có thể nói bắt đầu đóng một con tàu, khác với tàu đang có bị tạm ngưng sử dụng. Dạng bị động là have been laid up."},{"globalNumber":2,"sectionCode":"I.1","localNumber":2,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Wear away là bị mòn dần do thời tiết hoặc ma sát, khiến nét khắc khó đọc. Worn out thường nói đồ dùng bị hỏng hoặc người kiệt sức; không phải lựa chọn tự nhiên cho chữ khắc bị bào mòn. Đáp án cũ chọn out cần sửa thành away."},{"globalNumber":3,"sectionCode":"I.1","localNumber":3,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"On second thoughts là sau khi nghĩ lại, người nói đổi quyết định và muốn ở nhà. Đây là cụm cố định trong tiếng Anh Anh. Không dùng in/with/under second thoughts để diễn tả ý cân nhắc lại này."},{"globalNumber":4,"sectionCode":"I.1","localNumber":4,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Comply with a rule/standard nghĩa là tuân thủ quy định hoặc tiêu chuẩn. With là giới từ cố định sau comply. Obey không cần giới từ nhưng không phải động từ được cho; comply to/against/on không đúng kết hợp."},{"globalNumber":5,"sectionCode":"I.1","localNumber":5,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Censorship là việc kiểm duyệt nội dung trước khi được công bố/phổ biến, phù hợp chuyện sách không được đưa ra công chúng. Omission là bỏ sót, inhibition là sự kìm chế, compensation là bồi thường; chúng không diễn tả kiểm duyệt."},{"globalNumber":6,"sectionCode":"I.1","localNumber":6,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Acquit someone là tuyên người bị cáo buộc không có tội tại phiên xét xử; was acquitted khớp found not guilty. Excused là được bỏ qua/lượng thứ, liberated là giải phóng, interned là bị giam giữ; không thay thế thuật ngữ trong câu."},{"globalNumber":7,"sectionCode":"I.1","localNumber":7,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Eminent là nổi tiếng và được kính trọng, bổ nghĩa authority với nghĩa chuyên gia có uy tín. Prominence và expertise là danh từ; quality ở đây không thể hiện đúng ý một chuyên gia kiệt xuất. Cấu trúc là an eminent authority on a subject."},{"globalNumber":8,"sectionCode":"I.1","localNumber":8,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Sell a car for scrap là bán xe để lấy vật liệu/phụ tùng phế liệu. Rubbish/waste là rác/chất thải nói chung; debris là mảnh vỡ còn lại sau phá huỷ. Scrap đúng kết hợp khi chiếc xe quá cũ không còn bán như xe sử dụng bình thường."},{"globalNumber":9,"sectionCode":"I.1","localNumber":9,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Not only đứng đầu mệnh đề yêu cầu đảo trợ động từ: is Jack involved. Involve dùng bị động be involved in khi nói tham gia. Right now và wants trong vế sau xác định hiện tại; D không đảo, còn A thiếu cấu trúc bị động cần thiết."},{"globalNumber":10,"sectionCode":"I.1","localNumber":10,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Out of sorts là không khoẻ hoặc khó chịu trong người, phù hợp đau nhức nhiều hơn thường lệ. On the mend và over the worst nói đang hồi phục; in high spirits là rất vui vẻ. Những cụm đó không khớp mô tả sức khoẻ hiện tại."},{"globalNumber":11,"sectionCode":"I.1","localNumber":11,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"An outbreak là sự bùng phát, thường dùng với bệnh truyền nhiễm hoặc bạo lực. Outcome là kết quả, outburst là cơn bộc phát cảm xúc, outset là lúc bắt đầu. Trường đóng vì đợt bệnh bùng phát nên chọn outbreak."},{"globalNumber":12,"sectionCode":"I.1","localNumber":12,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Với I don’t think + mệnh đề, câu hỏi đuôi thường theo mệnh đề sau nhưng phản ánh ý phủ định. He’s ever been there dùng he has been, nên đuôi khẳng định has he. Không hỏi do I vì điều cần xác nhận là anh ấy từng tới đó hay chưa."},{"globalNumber":13,"sectionCode":"I.1","localNumber":13,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Begin work in earnest là bắt đầu làm việc một cách nghiêm túc/thực sự sau thời gian nghỉ. On end là liên tục theo khoảng thời gian, out of bounds là ngoài giới hạn cho phép. In proportions không diễn tả cách bắt đầu công việc."},{"globalNumber":14,"sectionCode":"I.1","localNumber":14,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Ride out the storm theo nghĩa bóng là chịu đựng và vượt qua giai đoạn khó khăn. Chính trị gia dày dạn biết cách đương đầu khủng hoảng. Run down, keep up và push back không tạo thành ngữ này với the storm."},{"globalNumber":15,"sectionCode":"I.1","localNumber":15,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Blocks scattered all over the carpet là các khối gỗ nằm rải rác khắp thảm. Scattered rút gọn which were scattered, thể hiện trạng thái bị rải ra. Tossing mang nghĩa chủ động ném, còn plunged/settled không diễn đạt đúng tình trạng ở đây."},{"globalNumber":16,"sectionCode":"I.1","localNumber":16,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Give off gas/heat/light nghĩa là phát hoặc toả ra. The gas given off rút gọn the gas that was given off. Give away là cho đi/tiết lộ, give over là chuyển giao hoặc ngừng, give up là từ bỏ; không phù hợp khí thoát ra từ hỗn hợp."},{"globalNumber":17,"sectionCode":"I.1","localNumber":17,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Khi up được đưa lên đầu để diễn tả chuyển động và chủ ngữ là cụm danh từ, có thể đảo toàn bộ động từ trước chủ ngữ: up walked a policeman. Động từ quá khứ walked phù hợp stopped. Không thêm did trong mẫu đảo chỉ chuyển động này."},{"globalNumber":18,"sectionCode":"I.1","localNumber":18,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"All that much là nhiều/đáng kể đến thế, thường dùng trong câu phủ định. It is not worth all that much nghĩa là không đáng giá tới mức đó. Ba phương án còn lại sắp xếp that, all và much sai thứ tự."},{"globalNumber":19,"sectionCode":"I.1","localNumber":19,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Require that + chủ ngữ + động từ nguyên thể là cấu trúc giả định mang nghĩa yêu cầu. Vì vậy each player be responsible, không chia be theo số ít. Being/been không đứng làm động từ chính trong mệnh đề này."},{"globalNumber":20,"sectionCode":"I.1","localNumber":20,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Cụm sở hữu the earth’s đứng trước magnetic field; magnetic là tính từ bổ nghĩa field. C cần đúng cả trật tự và quan hệ sở hữu. Những phương án khác đặt tính từ hoặc danh từ sở hữu sai vị trí."},{"globalNumber":21,"sectionCode":"I.1","localNumber":21,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Had I known tương đương If I had known, đảo ngữ điều kiện loại 3. Would have saved cho biết giả định trái với quá khứ. If I knew nói hiện tại không thật nên không khớp việc lẽ ra đã tiết kiệm thời gian qua nhiều năm."},{"globalNumber":22,"sectionCode":"I.1","localNumber":22,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Adopt plans là chấp nhận và đưa kế hoạch vào sử dụng, nên if our plans were adopted. Practise là luyện tập, exploit là khai thác/tận dụng, rehearse là diễn tập. Chúng không tạo nghĩa thông qua kế hoạch như trong câu."},{"globalNumber":23,"sectionCode":"I.1","localNumber":23,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"A grim future là một tương lai u ám, nhiều khó khăn, khớp cảnh hạn hán và thiếu lương thực trong truyện. Pessimistic thường nói người hoặc cách nhìn bi quan; fierce là dữ dội; cruel nói tàn nhẫn, không phải kết hợp trọng tâm ở đây."},{"globalNumber":24,"sectionCode":"I.1","localNumber":24,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Catch on là trở nên phổ biến hoặc được nhiều người chấp nhận. Ý kính mắt thành phụ kiện thời trang lan rộng chậm. Take in là tiếp nhận/hiểu/lừa; put across là truyền đạt; set aside là để riêng hoặc gác lại."},{"globalNumber":25,"sectionCode":"I.1","localNumber":25,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Silence hung over the theatre là sự im lặng bao trùm nhà hát. Hang ở đây dùng nghĩa trạng thái phủ lên một nơi, quá khứ hung. Các cụm còn lại không tạo hình ảnh không khí im lặng trong lúc khán giả chờ màn mở."},{"globalNumber":26,"sectionCode":"I.1","localNumber":26,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"A storm in a teacup là chuyện nhỏ bị làm thành chuyện lớn. Câu người chủ xe phản ứng quá mức dù chỉ bị chạm nhẹ khớp thành ngữ này. Storm là từ cố định; không thay bằng rain, wind hay snow."},{"globalNumber":27,"sectionCode":"I.1","localNumber":27,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Bolt down food là ăn/ngốn rất nhanh, phù hợp in record time rồi gọi thêm. Tuck in thường đứng độc lập hoặc dùng tuck into + đồ ăn; không phải tucked in that pizza trong nghĩa cần kiểm tra. Chopped up chỉ cắt nhỏ, không khẳng định đã ăn."},{"globalNumber":28,"sectionCode":"I.1","localNumber":28,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"A roaring success là một thành công vang dội, khớp sự kiện quyên góp vượt xa kỳ vọng. Howling success cũng là một thành ngữ đúng, nên phương án đó đã được đổi để không còn hai đáp án hợp lệ. Roaring đứng ở vai trò tính từ trước success."},{"globalNumber":29,"sectionCode":"I.1","localNumber":29,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Break a leg là lời chúc may mắn thân mật, phù hợp trước kỳ thi. Đây là thành ngữ chứ không chúc bị thương. See you soon hẹn gặp lại, long time no see dùng khi lâu không gặp; D là yêu cầu đi ngay, không đáp lời thông báo kỳ thi."},{"globalNumber":30,"sectionCode":"I.1","localNumber":30,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"You live and learn là cách thừa nhận mình vừa rút ra bài học từ trải nghiệm không hay. Peter được nhắc lẽ ra không nên nhận sửa xe nên B phù hợp. Famous last words thường phản ứng với lời tự tin có thể sớm bị chứng minh sai."},{"globalNumber":31,"sectionCode":"I.1","localNumber":31,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Be on the rocks nói một công việc, công ty hoặc quan hệ đang gặp nguy cơ thất bại. Dấu hiệu going bankrupt hướng tới khó khăn tài chính. Không dùng on the fires/waves/clouds để diễn tả tình trạng này."},{"globalNumber":32,"sectionCode":"I.1","localNumber":32,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Search high and low nghĩa là tìm khắp nơi. Đây là cặp từ cố định, không nói chỉ nơi cao hoặc thấp. Thick and thin thường gặp trong through thick and thin, nghĩa là qua mọi khó khăn, không kết hợp searched như câu này."},{"globalNumber":33,"sectionCode":"I.1","localNumber":33,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Perfectly capable là hoàn toàn đủ khả năng. Perfectly bổ nghĩa tính từ capable. Highly capable cũng đúng trong tiếng Anh, nên phương án cũ đã được đổi thành height để câu chỉ còn A; bitterly/widely không phù hợp nghĩa ở đây."},{"globalNumber":34,"sectionCode":"I.1","localNumber":34,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Count one’s chickens before they are hatched là tính trước thành quả khi chưa chắc có, tương tự tính cua trong lỗ. Chủ ngữ he dùng his. Người sắp được bổ nhiệm vẫn thận trọng vì việc đó chưa hoàn toàn được bảo đảm."},{"globalNumber":35,"sectionCode":"I.1","localNumber":35,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Become second nature to someone là trở thành thói quen/kỹ năng tự nhiên, gần như không cần nghĩ. Các phần việc lúc đầu khó sẽ quen dần. Nature là từ cố định trong thành ngữ, không thay bằng instinct dù nghĩa có liên quan."},{"globalNumber":36,"sectionCode":"I.2","localNumber":1,"acceptedAnswers":["exemplified","exemplifies"],"displayAnswer":"exemplified / exemplifies","explanation":"Exemplify là làm ví dụ điển hình/thể hiện rõ một phẩm chất. Exemplified nhìn hành động quyên góp trong quá khứ; exemplifies nói hành động đó hiện vẫn minh hoạ lòng tốt nên cũng hợp. Example là danh từ gốc, không dùng trực tiếp như động từ chia thì ở đây."},{"globalNumber":37,"sectionCode":"I.2","localNumber":2,"acceptedAnswers":["confidential"],"displayAnswer":"confidential","explanation":"Confidential nghĩa là bảo mật, chỉ được chia sẻ với người có thẩm quyền. Don’t discuss it outside the office là dấu hiệu. Confident nghĩa là tự tin, khác nghĩa hoàn toàn dù cùng gốc; confidentiality là danh từ nên không đứng sau very."},{"globalNumber":38,"sectionCode":"I.2","localNumber":3,"acceptedAnswers":["mid-sentence","midsentence"],"displayAnswer":"mid-sentence / midsentence","explanation":"In mid-sentence là đang nói dở một câu. Tiền tố mid- mang nghĩa ở giữa; midsentence cũng là cách viết được dùng. Không thêm một câu đầy đủ vào chỗ trống vì đề yêu cầu dạng từ từ SENTENCE."},{"globalNumber":39,"sectionCode":"I.2","localNumber":4,"acceptedAnswers":["dependants","dependents"],"displayAnswer":"dependants / dependents","explanation":"Dependants/dependents là những người phụ thuộc vào sự chu cấp của người nói. All my yêu cầu danh từ số nhiều; dependent còn có thể là tính từ nhưng ở đây chỉ người. Hai cách viết Anh/Mỹ đều được chấp nhận."},{"globalNumber":40,"sectionCode":"I.2","localNumber":5,"acceptedAnswers":["downpour"],"displayAnswer":"downpour","explanation":"A heavy downpour là một trận mưa rất to, phù hợp làm hỏng buổi tiệc ngoài trời. Downpour là danh từ đếm được nên đi với a. Pour là động từ đổ/mưa như trút; pouring không thể thay một trận mưa trong khung này."},{"globalNumber":41,"sectionCode":"I.2","localNumber":6,"acceptedAnswers":["negligible"],"displayAnswer":"negligible","explanation":"Negligible là nhỏ đến mức không đáng kể; câu nói sai số đo rất nhỏ. Negligent nghĩa là cẩu thả, mô tả cách làm/người làm chứ không phải độ lớn của sai số. Neglect là động từ/danh từ sự bỏ bê."},{"globalNumber":42,"sectionCode":"I.2","localNumber":7,"acceptedAnswers":["domineering","dominating","dominant"],"displayAnswer":"domineering / dominating / dominant","explanation":"Domineering là hay áp đặt, muốn kiểm soát người khác, phù hợp insist that they do exactly…. Dominating hoặc dominant cũng có thể tả người chi phối trong ngữ cảnh này nên được nhận. Không dùng dominated vì như vậy người bạn là người bị kiểm soát."},{"globalNumber":43,"sectionCode":"I.2","localNumber":8,"acceptedAnswers":["provocation"],"displayAnswer":"provocation","explanation":"Without provocation nghĩa là không có hành động chọc tức/khiêu khích trước đó. Sau without cần danh từ provocation; provoke là động từ, provocative là tính từ. Câu mô tả tình huống của người kể, không phải quy luật về hành vi của mọi con chó."},{"globalNumber":44,"sectionCode":"I.2","localNumber":9,"acceptedAnswers":["occurrence"],"displayAnswer":"occurrence","explanation":"An everyday occurrence là một việc xảy ra hằng ngày/thường xuyên. Occurrence là danh từ của occur; chú ý cụm -rr- và đuôi -ence, không viết occurence. Occur hoặc occurring không đứng sau an everyday để chỉ một sự kiện như câu này."},{"globalNumber":45,"sectionCode":"I.2","localNumber":10,"acceptedAnswers":["decriminalize","decriminalise"],"displayAnswer":"decriminalize / decriminalise","explanation":"Decriminalize/decriminalise là bỏ quy định coi một hành vi là tội hình sự. Tiền tố de- làm đảo chiều nghĩa criminalize. Sau to cần động từ nguyên thể; đây là quan điểm của người nói trong bài, không phải thông tin về pháp luật hiện hành."},{"globalNumber":46,"sectionCode":"I.3","localNumber":1,"acceptedAnswers":["as → such as","as → like"],"displayAnswer":"as → such as / as → like","explanation":"Khi nêu ví dụ của habits, dùng such as hoặc like. As một mình không mở danh sách ví dụ theo cấu trúc ở đây. Sau such as/like, skipping và leaving là các dạng V-ing song song, không cần sửa chúng."},{"globalNumber":47,"sectionCode":"I.3","localNumber":2,"acceptedAnswers":["student → students"],"displayAnswer":"student → students","explanation":"Many phải đi với danh từ đếm được số nhiều nên many students. Động từ say trong câu đã phù hợp số nhiều và được giữ nguyên. Không sửa many thành much vì student là danh từ đếm được chỉ người."},{"globalNumber":48,"sectionCode":"I.3","localNumber":3,"acceptedAnswers":["in → of","lack in → lack of"],"displayAnswer":"in → of / lack in → lack of","explanation":"A lack of suitable study space là sự thiếu chỗ học phù hợp. Lack dùng như danh từ thường đi với of để chỉ thứ thiếu. Lack cũng có thể là động từ không cần giới từ, nhưng câu này đã có a nên phải sửa mẫu danh từ."},{"globalNumber":49,"sectionCode":"I.3","localNumber":4,"acceptedAnswers":["contribute → contributes"],"displayAnswer":"contribute → contributes","explanation":"Chủ ngữ chính là this combination, số ít, nên động từ hiện tại đơn thêm -s: contributes. Tiredness and distraction nằm trong cụm of bổ nghĩa, không quyết định số của động từ. Không để hai danh từ đó khiến mình chọn contribute."},{"globalNumber":50,"sectionCode":"I.3","localNumber":5,"acceptedAnswers":["worsened → worsening"],"displayAnswer":"worsened → worsening","explanation":"Worsening the pressure là mệnh đề phân từ bổ sung kết quả của việc trì hoãn đến phút cuối. Dùng V-ing mang nghĩa chủ động làm áp lực tăng. Worsened là V2/V3 không nối đúng trong câu khi đã có động từ put off và không có liên từ."},{"globalNumber":51,"sectionCode":"II.1","localNumber":1,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Official residences là các nơi ở chính thức của quân chủ. Venues chỉ địa điểm tổ chức sự kiện, situations là tình huống/vị trí, occupation là nghề nghiệp hoặc sự chiếm đóng. B phù hợp cả chức năng cư trú và tính chính thức của ba cung điện."},{"globalNumber":52,"sectionCode":"II.1","localNumber":2,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Whenever the Sovereign is present nghĩa là bất cứ khi nào quân chủ có mặt. Chỗ trống cần từ nối thời gian. Whatever chỉ sự vật, whoever chỉ người, however chỉ cách thức/mức độ nên không diễn tả điều kiện treo cờ theo thời gian."},{"globalNumber":53,"sectionCode":"II.1","localNumber":3,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Open to the public là mở cửa cho công chúng, cụm cố định dùng với nơi tham quan. The public chỉ mọi người nói chung. Humans là loài người, peoples thường chỉ các dân tộc, strangers là người lạ; không thay public trong mẫu này."},{"globalNumber":54,"sectionCode":"II.1","localNumber":4,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Works of art là tác phẩm nghệ thuật. Work ở nghĩa tác phẩm có thể đếm được nên dùng works. Jobs là công việc; paintings/statues là từng loại tác phẩm cụ thể và không phải từ bao quát trong cụm other works of art."},{"globalNumber":55,"sectionCode":"II.1","localNumber":5,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Objects are displayed in rooms nghĩa là các hiện vật được trưng bày trong phòng. Created/produced nói được tạo ra, explored là được khám phá; đoạn đang mô tả cách khách thấy hiện vật trong không gian trưng bày nên displayed đúng."},{"globalNumber":56,"sectionCode":"II.1","localNumber":6,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Rooms for which they were intended là những phòng mà hiện vật vốn được dự định đặt vào. Intended for là dành cho/định cho. Instructed là được hướng dẫn, performed là được trình diễn, guarded là được canh giữ, không giữ ý thiết kế theo không gian."},{"globalNumber":57,"sectionCode":"II.1","localNumber":7,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"In regular use nghĩa là được sử dụng thường xuyên. Các nơi này vẫn phục vụ hoạt động của hoàng gia nên cách mở cửa phải phù hợp. Local/national/minor use không diễn đạt tần suất hoạt động như ý đoạn văn."},{"globalNumber":58,"sectionCode":"II.1","localNumber":8,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Rooms are shown to visitors là phòng được giới thiệu cho khách xem. Cần dạng bị động shown. Designed nói thiết kế, given nói trao cho, taken nói mang đi; không phù hợp hoạt động tham quan các phòng có sẵn."},{"globalNumber":59,"sectionCode":"II.1","localNumber":9,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Preserve their usual appearance nghĩa là giữ diện mạo thông thường của các phòng. Feature là một đặc điểm riêng lẻ; location là vị trí, destination là đích đến. Đáp án cũ A không diễn tả tổng thể cách căn phòng trông như thế nào."},{"globalNumber":60,"sectionCode":"II.1","localNumber":10,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Badly damaged by fire là bị hư hại nặng vì cháy. Đoạn còn nói lâu đài không bị phá huỷ hoàn toàn nên không chọn destroyed. Ruin là danh từ/động từ nguyên thể, collapsed không tạo bị động đúng với by fire ở đây."},{"globalNumber":61,"sectionCode":"II.2","localNumber":1,"acceptedAnswers":["in","under"],"displayAnswer":"in / under","explanation":"In the media spotlight là ở tâm điểm chú ý của truyền thông; under the media spotlight cũng được dùng và đúng nghĩa. Đây là cụm giới từ trước danh từ spotlight, không phải ánh sáng sân khấu theo nghĩa đen trong ngữ cảnh này."},{"globalNumber":62,"sectionCode":"II.2","localNumber":2,"acceptedAnswers":["making","hitting","grabbing"],"displayAnswer":"making / hitting / grabbing","explanation":"Make/hit/grab the headlines là trở thành nội dung nổi bật trên báo. Sau risk cần V-ing nên making, hitting hoặc grabbing. Không dùng make nguyên thể; hành động nóng giận khiến người đó thu hút chú ý ngoài ý muốn."},{"globalNumber":63,"sectionCode":"II.2","localNumber":3,"acceptedAnswers":["outbursts","bursts","fits","displays","expressions","episodes"],"displayAnswer":"outbursts / bursts / fits / displays / expressions / episodes","explanation":"Uncontrolled outbursts of anger là những cơn bộc phát tức giận. Các từ bursts/fits/displays/expressions/episodes cũng tạo nghĩa phù hợp về biểu hiện hoặc đợt tức giận. Động từ can be theo sau cho phép danh từ số nhiều; chỉ điền một từ."},{"globalNumber":64,"sectionCode":"II.2","localNumber":4,"acceptedAnswers":["what"],"displayAnswer":"what","explanation":"What seem to be minor problems là những điều có vẻ là vấn đề nhỏ, làm tân ngữ sau by. What mang nghĩa the things that nên không cần danh từ đi trước. That/which đơn lẻ ở đây thiếu danh từ tiền ngữ để làm mệnh đề quan hệ."},{"globalNumber":65,"sectionCode":"II.2","localNumber":5,"acceptedAnswers":["lose"],"displayAnswer":"lose","explanation":"Lose one’s cool là mất bình tĩnh, khớp chủ đề tức giận nơi công cộng. Sau can also dùng nguyên thể lose. Loose là tính từ lỏng hoặc động từ thả, khác lose; mất chữ o hoặc thêm chữ o sẽ đổi từ."},{"globalNumber":66,"sectionCode":"II.2","localNumber":6,"acceptedAnswers":["level","degree","amount"],"displayAnswer":"level / degree / amount","explanation":"A high level/degree/amount of stress nói mức độ/lượng căng thẳng cao. Chỗ trống cần danh từ số ít sau a high và trước of. Không dùng highly vì đó là trạng từ, hoặc levels vì đã có mạo từ a."},{"globalNumber":67,"sectionCode":"II.2","localNumber":7,"acceptedAnswers":["end","wind","finish"],"displayAnswer":"end / wind / finish","explanation":"End up/wind up/finish up + V-ing đều có thể nói cuối cùng rơi vào kết quả làm việc gì. Sau may dùng nguyên thể; saying là hành động có thể khiến người đó hối tiếc. Không viết ended vì may không đi với dạng quá khứ."},{"globalNumber":68,"sectionCode":"II.2","localNumber":8,"acceptedAnswers":["skipped","missed","forgone","forgotten"],"displayAnswer":"skipped / missed / forgone / forgotten","explanation":"Has skipped/missed lunch là đã bỏ lỡ bữa trưa; forgone và forgotten cũng phù hợp một tình huống không ăn bữa đó. Sau has cần V3. Đoạn xác định đây là ví dụ hư cấu, không kết luận bỏ một bữa luôn gây tức giận."},{"globalNumber":69,"sectionCode":"II.2","localNumber":9,"acceptedAnswers":["does","should","can","could","may","might","did","will"],"displayAnswer":"does / should / can / could / may / might / did / will","explanation":"Does make dùng does để nhấn mạnh một lời nhận xét thực sự làm bạn tức giận, sau đó make giữ nguyên thể. Các trợ động từ should/can/could/may/might/did/will cũng tạo điều kiện có nghĩa trong câu mở này nên được nhận; do không hoà hợp với a remark."},{"globalNumber":70,"sectionCode":"II.2","localNumber":10,"acceptedAnswers":["bad","serious","upsetting","worrying","alarming","severe","terrible","hopeless","awful","distressing"],"displayAnswer":"bad / serious / upsetting / worrying / alarming / severe / terrible / hopeless / awful / distressing","explanation":"As + tính từ + as so sánh mức độ: vấn đề có thể không còn tệ/nghiêm trọng như lúc đầu cảm nhận. Bad là đáp án mẫu; các tính từ phù hợp như serious/upsetting cũng đúng. Không dùng worse trong khung as…as vì đó là so sánh hơn."},{"globalNumber":71,"sectionCode":"II.3","localNumber":1,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Bài so sánh cách chăm con qua sữa, bảo vệ trứng và dự trữ thức ăn, rồi bàn lợi ích và chi phí của việc cho con ăn. A bao quát các nhóm động vật. B, C và D chỉ nói một phần nội dung nên không phải ý chính toàn bài."},{"globalNumber":72,"sectionCode":"II.3","localNumber":2,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Đoạn 1 liệt kê cá voi, thú có túi, thú mỏ vịt và thú lông nhím để nhấn mạnh các nhóm rất khác nhau vẫn có đặc điểm tạo sữa. Không nói mọi cá thể đều cho con ăn hay mọi kiểu chăm con giống hệt nhau; đó là điều đoạn đã phân biệt."},{"globalNumber":73,"sectionCode":"II.3","localNumber":3,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Tend their eggs nghĩa là chăm sóc trứng, gần care for. Sit on chỉ một hành vi ấp cụ thể, không bao quát tend và không được nói trong ví dụ cá. Move là di chuyển, notice là nhận thấy nên không phù hợp."},{"globalNumber":74,"sectionCode":"II.3","localNumber":4,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Đoạn 1 xác định việc tạo sữa nuôi con thuộc sinh học sinh sản của thú. Đoạn 2 nói một số cá cũng cung cấp thức ăn, nên A sai. B trái với sự đa dạng cách chăm con; C trái với chi phí thời gian và năng lượng nêu ở đoạn cuối."},{"globalNumber":75,"sectionCode":"II.3","localNumber":5,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Provisioning cells with prey là cung cấp thức ăn cho các khoang tổ, tương đương supplying. Preparing nói chuẩn bị chung, building là xây dựng, expanding là mở rộng. Cấu trúc provision something with something làm rõ vật được cung cấp."},{"globalNumber":76,"sectionCode":"II.3","localNumber":6,"acceptedAnswers":["A"],"displayAnswer":"A","explanation":"Đoạn 2 mô tả ong dự trữ con mồi bị làm tê liệt trong khoang tổ để ấu trùng phát triển có thức ăn. A diễn đạt đúng hành động dự trữ. B chỉ nói làm tổ gần con mồi, không phải đưa con mồi vào tổ như bài."},{"globalNumber":77,"sectionCode":"II.3","localNumber":7,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Give offspring an edge nghĩa là tạo cho con non một lợi thế, nên advantage đúng. Edge không mang nghĩa mép/cạnh trong câu này. Opportunity là cơ hội, purpose là mục đích, rest là nghỉ ngơi, không thay đúng ý lợi thế phát triển."},{"globalNumber":78,"sectionCode":"II.3","localNumber":8,"acceptedAnswers":["C"],"displayAnswer":"C","explanation":"Trong it is better able to cope, it tiếp tục chỉ the young animal đã lớn hơn ở vế trước. Động vật non là chủ thể có khả năng ứng phó tốt hơn; feeding, moment và size không thể là đối tượng biết cope."},{"globalNumber":79,"sectionCode":"II.3","localNumber":9,"acceptedAnswers":["D"],"displayAnswer":"D","explanation":"Đoạn 3 nêu giai đoạn dễ bị tổn thương khi con non lần đầu phải forage and fend for itself, tức tự kiếm ăn và tự lo. D tương đương sự chuyển sang tự lập. Không gán một số ngày tuổi cố định hoặc số lượng con cho mốc này."},{"globalNumber":80,"sectionCode":"II.3","localNumber":10,"acceptedAnswers":["B"],"displayAnswer":"B","explanation":"Shielded from nghĩa là được bảo vệ trước một tác động, gần protected. Đoạn nói được che chở khỏi phần nào sự biến động nguồn thức ăn. Raised là nuôi/lớn lên, hatched là nở, valued là được coi trọng nên không đồng nghĩa ở đây."},{"globalNumber":81,"sectionCode":"III.1","localNumber":1,"acceptedAnswers":["have meant to hurt you"],"displayAnswer":"have meant to hurt you","prefix":"He can’t","suffix":"","fullSentence":"He can’t have meant to hurt you.","explanation":"Can’t have + V3 diễn tả suy đoán chắc chắn phủ định về quá khứ: anh ấy hẳn không cố ý làm bạn tổn thương. Mean to do là có ý định; quá khứ phân từ meant. Không dùng can’t mean vì câu gốc xác định ý định lúc trước."},{"globalNumber":82,"sectionCode":"III.1","localNumber":2,"acceptedAnswers":["though he was, he was unable to earn enough for his living","as he was, he was unable to earn enough for his living","though he was, he could not earn enough for his living","as he was, he couldn’t earn enough for his living"],"displayAnswer":"though he was, he was unable to earn enough for his living / as he was, he was unable to earn enough for his living / though he was, he could not earn enough for his living / as he was, he couldn’t earn enough for his living","prefix":"Hard-working","suffix":"","fullSentence":"Hard-working though he was, he was unable to earn enough for his living.","explanation":"Đưa tính từ lên trước though/as tạo nhượng bộ: tuy chăm chỉ nhưng không kiếm đủ sống. Sau hard-working vẫn cần chủ ngữ và động từ he was. Không bỏ vế phủ định hoặc đổi unable thành able vì sẽ đảo ngược kết quả."},{"globalNumber":83,"sectionCode":"III.1","localNumber":3,"acceptedAnswers":["can read your handwriting, they will accept your paper","can make out your handwriting, they will accept your paper"],"displayAnswer":"can read your handwriting, they will accept your paper / can make out your handwriting, they will accept your paper","prefix":"So long as the examiners","suffix":"","fullSentence":"So long as the examiners can read your handwriting, they will accept your paper.","explanation":"Legible nghĩa là đọc được, nên chuyển thành the examiners can read/make out your handwriting. So long as tương đương provided, nêu điều kiện. Dùng can ở hiện tại kết hợp will trong kết quả; could không phù hợp mẫu điều kiện thực ở đây."},{"globalNumber":84,"sectionCode":"III.1","localNumber":4,"acceptedAnswers":["can be compared with her sacrifice","can be compared to her sacrifice","compares with her sacrifice","compares to her sacrifice"],"displayAnswer":"can be compared with her sacrifice / can be compared to her sacrifice / compares with her sacrifice / compares to her sacrifice","prefix":"Nothing","suffix":"","fullSentence":"Nothing can be compared with her sacrifice.","explanation":"Nothing can be compared with/to nhấn mạnh không gì có thể so sánh với sự hy sinh ấy. Compare with và compare to đều được dùng trong nghĩa đối chiếu giá trị này. Dạng chủ động nothing compares cũng tạo cùng ý nhấn mạnh."},{"globalNumber":85,"sectionCode":"III.1","localNumber":5,"acceptedAnswers":["round to my point of view, given a bit of time","around to my point of view, given a bit of time","round to my point of view if he is given a bit of time","around to my point of view if he is given a bit of time"],"displayAnswer":"round to my point of view, given a bit of time / around to my point of view, given a bit of time / round to my point of view if he is given a bit of time / around to my point of view if he is given a bit of time","prefix":"He’ll come","suffix":"","fullSentence":"He’ll come round to my point of view, given a bit of time.","explanation":"Come round/around to a point of view nghĩa là dần đổi ý để đồng ý với quan điểm đó. Giữ điều kiện cần thêm thời gian bằng given a bit of time. Come round còn có nghĩa ghé thăm hoặc tỉnh lại, nhưng không phải ở ngữ cảnh này."},{"globalNumber":86,"sectionCode":"III.1","localNumber":6,"acceptedAnswers":["to meet a more generous person than Andrew","to meet anyone more generous than Andrew","to meet someone more generous than Andrew"],"displayAnswer":"to meet a more generous person than Andrew / to meet anyone more generous than Andrew / to meet someone more generous than Andrew","prefix":"I’ve yet","suffix":"","fullSentence":"I’ve yet to meet anyone more generous than Andrew.","explanation":"Have yet to do nghĩa là vẫn chưa từng/chưa làm. Andrew là người hào phóng nhất đã gặp, nên chưa gặp ai more generous than Andrew. Không viết chưa gặp ai as generous as Andrew vì người nói đã gặp chính Andrew."},{"globalNumber":87,"sectionCode":"III.1","localNumber":7,"acceptedAnswers":["a month before I received the results of my test","not until a month later that I received the results of my test"],"displayAnswer":"a month before I received the results of my test / not until a month later that I received the results of my test","prefix":"It was","suffix":"","fullSentence":"It was a month before I received the results of my test.","explanation":"It was + khoảng thời gian + before… diễn tả phải chờ chừng ấy thời gian mới có việc xảy ra. Cũng có thể dùng it was not until a month later that. Không đổi a month thành within a month vì within cho phép sớm hơn một tháng."},{"globalNumber":88,"sectionCode":"III.1","localNumber":8,"acceptedAnswers":["I had cleared the spare room could I start decorating","I had cleared the spare room was I able to start decorating","I cleared the spare room could I start decorating"],"displayAnswer":"I had cleared the spare room could I start decorating / I had cleared the spare room was I able to start decorating / I cleared the spare room could I start decorating","prefix":"Only when","suffix":"","fullSentence":"Only when I had cleared the spare room could I start decorating.","explanation":"Only when đứng đầu yêu cầu đảo trợ động từ ở mệnh đề chính: could I start hoặc was I able to start. Không đảo mệnh đề I had cleared. Quá khứ hoàn thành làm rõ việc dọn phòng xong trước khi có thể trang trí."},{"globalNumber":89,"sectionCode":"III.1","localNumber":9,"acceptedAnswers":["matter what economic difficulties we have, we are able to increase our exports each year","matter what economic difficulties we have, we can increase our exports each year"],"displayAnswer":"matter what economic difficulties we have, we are able to increase our exports each year / matter what economic difficulties we have, we can increase our exports each year","prefix":"No","suffix":"","fullSentence":"No matter what economic difficulties we have, we are able to increase our exports each year.","explanation":"No matter what + danh từ/mệnh đề tương đương whatever: bất kể có khó khăn kinh tế nào. Bản câu dẫn đã dùng whatever để giữ cùng phạm vi ý nghĩa. Are able to và can đều chỉ khả năng; giữ mỗi năm bằng each year."},{"globalNumber":90,"sectionCode":"III.1","localNumber":10,"acceptedAnswers":["not have bought you that computer game","never have bought you that computer game"],"displayAnswer":"not have bought you that computer game / never have bought you that computer game","prefix":"I should","suffix":"","fullSentence":"I should not have bought you that computer game.","explanation":"Should not have + V3 diễn tả đã làm nhưng lẽ ra không nên: đã mua trò chơi và nay thấy đó là sai lầm. Buy có V3 bought. Should not buy là lời khuyên hiện tại/tương lai nên không giữ sự hối tiếc về việc đã xảy ra."},{"globalNumber":91,"sectionCode":"III.2","localNumber":1,"acceptedAnswers":["decided, because of Anna’s previous successes, to bet the ranch","decided, because of Anna's previous successes, to bet the ranch","decided to bet the ranch because of Anna’s previous successes","decided to bet the ranch because of Anna's previous successes"],"displayAnswer":"decided, because of Anna’s previous successes, to bet the ranch / decided, because of Anna's previous successes, to bet the ranch / decided to bet the ranch because of Anna’s previous successes / decided to bet the ranch because of Anna's previous successes","prefix":"He","suffix":"on her latest business idea.","fullSentence":"He decided, because of Anna’s previous successes, to bet the ranch on her latest business idea.","explanation":"Bet the ranch on là đặt cược mọi thứ vào một việc. Phải giữ decided vì câu nói quyết định, chưa khẳng định đã thực hiện; đồng thời giữ lý do Anna từng thành công. Không chỉ viết he bet the ranch rồi bỏ nguyên nhân và ý quyết định."},{"globalNumber":92,"sectionCode":"III.2","localNumber":2,"acceptedAnswers":["for grabs if the investor had stepped up to the plate","for grabs had the investor stepped up to the plate"],"displayAnswer":"for grabs if the investor had stepped up to the plate / for grabs had the investor stepped up to the plate","prefix":"The contract would have been up","suffix":"","fullSentence":"The contract would have been up for grabs if the investor had stepped up to the plate.","explanation":"Up for grabs nghĩa là sẵn cho người khác cạnh tranh để giành được. Step up to the plate là chủ động nhận trách nhiệm. Điều kiện trái quá khứ dùng if…had stepped hoặc đảo had the investor stepped, đi với would have been."},{"globalNumber":93,"sectionCode":"III.2","localNumber":3,"acceptedAnswers":["point in reasoning with Jimmy until he gets his groove back","point reasoning with Jimmy until he gets his groove back","use in reasoning with Jimmy until he gets his groove back"],"displayAnswer":"point in reasoning with Jimmy until he gets his groove back / point reasoning with Jimmy until he gets his groove back / use in reasoning with Jimmy until he gets his groove back","prefix":"There’s no","suffix":"after the loss.","fullSentence":"There’s no point in reasoning with Jimmy until he gets his groove back after the loss.","explanation":"There is no point (in) + V-ing nghĩa là làm việc đó cũng vô ích. Get one’s groove back là tìm lại trạng thái/phong độ quen thuộc; trong câu là trở lại bình thường sau mất mát. After the loss đã có cuối câu, không lặp lại trong ô."},{"globalNumber":94,"sectionCode":"III.2","localNumber":4,"acceptedAnswers":["refusal to come to the table was a further turn of","refusal to come to the table was another turn of","refusal to come to the table was a turn of"],"displayAnswer":"refusal to come to the table was a further turn of / refusal to come to the table was another turn of / refusal to come to the table was a turn of","prefix":"The director’s","suffix":"the screw.","fullSentence":"The director’s refusal to come to the table was a further turn of the screw.","explanation":"Come to the table là sẵn sàng tham gia thương lượng. A further turn of the screw nói một việc làm tình thế thêm khó khăn hoặc áp lực tăng lên. Director là một người nên dùng director’s, không phải directors’ chỉ nhiều người."},{"globalNumber":95,"sectionCode":"III.2","localNumber":5,"acceptedAnswers":["took a notion to throw down the","had a notion to throw down the","suddenly took a notion to throw down the","suddenly had a notion to throw down the"],"displayAnswer":"took a notion to throw down the / had a notion to throw down the / suddenly took a notion to throw down the / suddenly had a notion to throw down the","prefix":"Daniel","suffix":"gauntlet to his opponents during the winter night.","fullSentence":"Daniel took a notion to throw down the gauntlet to his opponents during the winter night.","explanation":"Take/have a notion to do là nảy ý định muốn làm. Throw down the gauntlet to someone nghĩa là thách thức đối thủ. Phải điền the trước gauntlet vì đây là thành ngữ có mạo từ; không chỉ viết notion mà thiếu hành động thách thức."},{"globalNumber":96,"sectionCode":"III.2","localNumber":6,"acceptedAnswers":["be under the cosh because of the economic recession","come under the cosh because of the economic recession","be under the cosh because of the economic recession sooner or","come under the cosh because of the economic recession sooner or"],"displayAnswer":"be under the cosh because of the economic recession / come under the cosh because of the economic recession / be under the cosh because of the economic recession sooner or / come under the cosh because of the economic recession sooner or","prefix":"These people will","suffix":"later.","fullSentence":"These people will be under the cosh because of the economic recession later.","explanation":"Be/come under the cosh là chịu áp lực lớn. Câu đã nói rõ severe pressure để không đánh đồng thành ngữ với mọi dạng đau khổ. Later đã có ở cuối; có thể thêm sooner or để tạo sooner or later, nhưng không điền lại later."},{"globalNumber":97,"sectionCode":"III.2","localNumber":7,"acceptedAnswers":["of luck, the storm will not put a crimp in","of luck, the storm won’t put a crimp in"],"displayAnswer":"of luck, the storm will not put a crimp in / of luck, the storm won’t put a crimp in","prefix":"With a bit","suffix":"our travel plans.","fullSentence":"With a bit of luck, the storm will not put a crimp in our travel plans.","explanation":"With a bit of luck thể hiện hy vọng nếu mọi việc thuận lợi. Put a crimp in something là cản trở/làm gián đoạn kế hoạch. Trong câu hoàn chỉnh phải giữ our travel plans; sau hope hiện tại dùng will cho khả năng tương lai, không dùng would tùy tiện."},{"globalNumber":98,"sectionCode":"III.2","localNumber":8,"acceptedAnswers":["she had not turned on the waterworks with a view","she hadn’t turned on the waterworks with a view","she had not turned on the waterworks with an eye","she hadn’t turned on the waterworks with an eye"],"displayAnswer":"she had not turned on the waterworks with a view / she hadn’t turned on the waterworks with a view / she had not turned on the waterworks with an eye / she hadn’t turned on the waterworks with an eye","prefix":"I would rather","suffix":"to avoiding punishment.","fullSentence":"I would rather she had not turned on the waterworks with a view to avoiding punishment.","explanation":"Would rather + chủ ngữ + quá khứ hoàn thành nói mong một việc đã qua không xảy ra. Turn on the waterworks là bắt đầu khóc nhiều, thường hàm ý cố tác động người khác. With a view/an eye to + V-ing nêu mục đích; to avoiding đã có sẵn."},{"globalNumber":99,"sectionCode":"III.2","localNumber":9,"acceptedAnswers":["has it that the two captives have cut the cords binding them","has it that, in the story, the two captives have cut the cords binding them"],"displayAnswer":"has it that the two captives have cut the cords binding them / has it that, in the story, the two captives have cut the cords binding them","prefix":"Word","suffix":"","fullSentence":"Word has it that the two captives have cut the cords binding them.","explanation":"Word has it that nghĩa là có lời đồn rằng. Cords trong câu là các sợi dây trói nên cut the cords là cắt dây thật. Không dạy cụm này như từ thay thế chung cho chia tay; câu đã đổi sang tình huống dây trói để giữ nghĩa tự nhiên."},{"globalNumber":100,"sectionCode":"III.2","localNumber":10,"acceptedAnswers":["was the ineffectiveness of the policy that the team went off the boil","was the policy’s ineffectiveness that the team went off the boil","was the policy's ineffectiveness that the team went off the boil"],"displayAnswer":"was the ineffectiveness of the policy that the team went off the boil / was the policy’s ineffectiveness that the team went off the boil / was the policy's ineffectiveness that the team went off the boil","prefix":"Such","suffix":"","fullSentence":"Such was the ineffectiveness of the policy that the team went off the boil.","explanation":"Such was + cụm danh từ + that… nhấn mạnh mức độ dẫn tới kết quả. Go off the boil là mất nhiệt huyết/phong độ trước đó, nên phù hợp việc nhóm không còn năng lượng như trước. Không ghép máy móc went off the boil in the project như đáp án cũ."}],"publishReady":true,"contentRevision":"2026-10-16"}};
+    const COURSE = APP.course;
+    const TEST = APP.test;
+    const SECTIONS = TEST.sections;
+    const SOLUTIONS = TEST.answers;
+    const TOTAL = TEST.total;
+    const DRAFT = APP.mode !== "production";
+    const PRODUCTION_READY = !DRAFT && COURSE.scoreSink.status === "verified" && TEST.publishReady === true;
+    const FORM_URL = PRODUCTION_READY ? COURSE.scoreSink.formResponseUrl : "";
+    const ENTRIES = COURSE.scoreSink.entries || {};
+    const STORAGE_PREFIX = COURSE.courseId;
+    const PROFILE_KEY = `${STORAGE_PREFIX}:profile:v1`;
+    const ACTIVE_KEY = `${STORAGE_PREFIX}:${TEST.testId}:active:v1`;
+    const HISTORY_KEY = `${STORAGE_PREFIX}:${TEST.testId}:history:v1`;
+    const LAST_KEY = `${STORAGE_PREFIX}:${TEST.testId}:last:v1`;
+    const SUBMIT_LOCK_PREFIX = `${STORAGE_PREFIX}:${TEST.testId}:submit-lock`;
+    let answers = {};
+    let current = 0;
+    let attemptId = "";
+    let identity = {name:"",className:""};
+    let history = [];
+    let graded = false;
+    let submitting = false;
+    let sessionConfirmed = false;
+    let storedActive = null;
+    let storedLast = null;
+    const $ = id => document.getElementById(id);
+    const setSync = (message,isError=false) => { const target = $("sync"); target.textContent = message; target.classList.toggle("error",isError); };
+    const questions = Array.from({length:TOTAL}, (_,index) => index + 1);
+    const norm = value => String(value || "").normalize("NFKC").trim().toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/\s*(?:->|→)\s*/g," → ").replace(/[.!?]+$/g,"").replace(/\bmr\./g,'mr').replace(/,/g,'').replace(/\s+/g," ").trim();
+    const canonical = value => norm(value)
+      .replace(/\b(would|should|could|had|did|does|do|was|were|is|are|has|have|must)n['’]t\b/g,'$1 not')
+      .replace(/\bcan['’]t\b/g,'cannot').replace(/\bwon['’]t\b/g,'will not')
+      .replace(/\b(i|you|we|they)'ve\b/g,'$1 have').replace(/\b(you|we|they)'re\b/g,'$1 are')
+      .replace(/\bi'm\b/g,'i am').replace(/\b(he|she|it)'s\b/g,'$1 is')
+      .replace(/\bi'd left\b/g,'i had left')
+      .replace(/\brealized\b/g,'realised').replace(/\brealize\b/g,'realise')
+      .replace(/\bbehavior\b/g,'behaviour').replace(/\bneighborhood\b/g,'neighbourhood')
+      .replace(/\bonstage\b/g,'on stage');
+    const equivalent = (left,right) => canonical(left) === canonical(right);
+    const solutionByGlobal = new Map(SOLUTIONS.map(solution => [solution.globalNumber,solution]));
+    const templateValue = key => ({testLabel:TEST.testLabel,topic:TEST.topic,testId:TEST.testId,testCode:TEST.testCode || TEST.testId})[key] ?? "";
+    const renderTemplate = template => String(template || "").replace(/\{(\w+)\}/g,(_,key) => templateValue(key));
+    const makeId = () => `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    const TAB_ID = makeId();
+    const range = section => Array.from({length:section.count}, (_,index) => section.startGlobal + index);
+    const cleanIdentity = candidate => {
+      const name = String(candidate?.name || "").trim().replace(/\s+/g," ");
+      const className = String(candidate?.className || "").trim();
+      return name.length >= 2 && COURSE.classes.includes(className) ? {name,className} : null;
+    };
+    const sameIdentity = (left,right) => {
+      const a = cleanIdentity(left);
+      const b = cleanIdentity(right);
+      return Boolean(a && b && a.name.toLocaleLowerCase("vi") === b.name.toLocaleLowerCase("vi") && a.className === b.className);
+    };
+    const completeAnswers = snapshot => Boolean(snapshot && typeof snapshot === "object" && !Array.isArray(snapshot) && questions.every(number => norm(snapshot[number])));
+    const validAttemptId = value => typeof value === "string" && value.trim().length >= 5;
+    const validActiveRecord = record => Boolean(record && validAttemptId(record.attemptId) && cleanIdentity(record.identity) && record.answers && typeof record.answers === "object" && !Array.isArray(record.answers));
+    const validCompletedRecord = record => validActiveRecord(record) && completeAnswers(record.answers);
+    const readStored = key => {
+      try{ return JSON.parse(localStorage.getItem(key) || "null"); }
+      catch(_){ localStorage.removeItem(key); return null; }
+    };
+    const locate = globalNumber => {
+      const sectionIndex = SECTIONS.findIndex(section => globalNumber >= section.startGlobal && globalNumber < section.startGlobal + section.count);
+      return {sectionIndex,section:SECTIONS[sectionIndex],local:globalNumber - SECTIONS[sectionIndex].startGlobal + 1};
+    };
+
+    function lockQuestions(){
+      $("docPane").hidden = true;
+      $("docFrame").removeAttribute("src");
+      $("workspace").classList.add("locked");
+    }
+
+    function unlockQuestions(){
+      if(!sessionConfirmed || !cleanIdentity(identity)) return false;
+      $("workspace").classList.remove("locked");
+      $("docPane").hidden = false;
+      if(!$("docFrame").hasAttribute("src")){
+        const docBase = `https://docs.google.com/document/d/${TEST.questionDocumentId}`;
+        const tab = TEST.questionTab || "t.0";
+        $("docFrame").src = `${docBase}/preview?tab=${encodeURIComponent(tab)}&embedded=true&rm=minimal`;
+      }
+      return true;
+    }
+
+    function initializeStaticUi(){
+      document.title = `${TEST.testLabel} · ${COURSE.courseName}`;
+      $("courseName").textContent = "ÔN THI CHUYÊN ANH · LÀM LẠI – SỬA KỸ – TIẾN BỘ";
+      $("testBadge").textContent = String(TEST.sequence || 1).padStart(2,"0");
+      $("topic").textContent = TEST.testLabel;
+      $("gateKicker").textContent = `${COURSE.labels.answerSheet} · ${TOTAL} CÂU`;
+      $("sheetTitle").textContent = COURSE.labels.answerSheet;
+      $("progressCount").textContent = `0/${TOTAL}`;
+      $("scoreTotal").textContent = `/${TOTAL}`;
+      $("modeBanner").hidden = !DRAFT;
+      $("grade").textContent = DRAFT ? "CHẤM BÀI · CHỜ DUYỆT" : "CHẤM BÀI";
+      const tab = TEST.questionTab || "t.0";
+      $("docFrame").title = `Đề ${TEST.testLabel}, tab ${tab}`;
+      const select = $("className");
+      select.innerHTML = "";
+      const empty = document.createElement("option");
+      empty.value = "";
+      empty.textContent = "Chọn lớp";
+      select.append(empty);
+      COURSE.classes.forEach(className => {
+        const option = document.createElement("option");
+        option.value = className;
+        option.textContent = className;
+        select.append(option);
+      });
+    }
+
+    function load(){
+      initializeStaticUi();
+      lockQuestions();
+      const profile = cleanIdentity(readStored(PROFILE_KEY));
+      const rawHistory = readStored(HISTORY_KEY);
+      history = Array.isArray(rawHistory) ? rawHistory : [];
+      const rawActive = readStored(ACTIVE_KEY);
+      storedActive = validActiveRecord(rawActive) ? rawActive : null;
+      if(rawActive && !storedActive) localStorage.removeItem(ACTIVE_KEY);
+      const rawLast = PRODUCTION_READY ? readStored(LAST_KEY) : null;
+      storedLast = validCompletedRecord(rawLast) ? rawLast : null;
+      if(rawLast && !storedLast) localStorage.removeItem(LAST_KEY);
+      const prefill = profile || cleanIdentity(storedActive?.identity) || cleanIdentity(storedLast?.identity);
+      if(prefill){
+        $("name").value = prefill.name;
+        $("className").value = prefill.className;
+      }
+    }
+
+    function save(){
+      if(!sessionConfirmed || !cleanIdentity(identity) || !validAttemptId(attemptId)) return;
+      localStorage.setItem(ACTIVE_KEY,JSON.stringify({attemptId,identity,answers,current}));
+    }
+
+    function startAttempt(){
+      if(!sessionConfirmed || !cleanIdentity(identity)) return;
+      answers = {};
+      current = 0;
+      attemptId = makeId();
+      graded = false;
+      submitting = false;
+      storedActive = null;
+      storedLast = null;
+      $("retry").disabled = false;
+      $("retry").textContent = "LÀM LƯỢT MỚI →";
+      localStorage.removeItem(LAST_KEY);
+      showSheet();
+    }
+
+    function showStudent(){
+      const completedIndex = history.findIndex(item => item.attemptId === attemptId);
+      const attemptNumber = completedIndex >= 0 ? completedIndex + 1 : history.length + 1;
+      $("student").hidden = false;
+      $("studentName").textContent = identity.name;
+      $("studentClass").textContent = `${identity.className} · LƯỢT ${attemptNumber}`;
+    }
+
+    function showSheet(){
+      if(!sessionConfirmed || !cleanIdentity(identity) || !validAttemptId(attemptId) || !unlockQuestions()) return;
+      $("gate").hidden = true;
+      $("result").hidden = true;
+      $("sheet").hidden = false;
+      $("progress").hidden = false;
+      showStudent();
+      renderTabs();
+      renderRows();
+      updateProgress();
+      save();
+    }
+
+    $("gate").addEventListener("submit",event => {
+      event.preventDefault();
+      const confirmedIdentity = cleanIdentity({name:$("name").value,className:$("className").value});
+      if(!confirmedIdentity){
+        $("gateNotice").textContent = "Nhập đầy đủ họ tên và lớp.";
+        $("gateNotice").hidden = false;
+        return;
+      }
+      $("gateNotice").hidden = true;
+      identity = confirmedIdentity;
+      sessionConfirmed = true;
+      localStorage.setItem(PROFILE_KEY,JSON.stringify(identity));
+      unlockQuestions();
+      if(storedActive && sameIdentity(storedActive.identity,identity)){
+        answers = {...storedActive.answers};
+        current = Math.max(0,Math.min(SECTIONS.length - 1,Number(storedActive.current) || 0));
+        attemptId = storedActive.attemptId;
+        graded = false;
+        storedActive = null;
+        showSheet();
+        return;
+      }
+      if(storedLast && sameIdentity(storedLast.identity,identity) && validCompletedRecord(storedLast)){
+        const record = storedLast;
+        answers = {...record.answers};
+        attemptId = record.attemptId;
+        graded = true;
+        storedLast = null;
+        showResult(record,true);
+        if(!localStorage.getItem(sentKey(record.attemptId))){
+          const result = buildReview(record.answers);
+          setTimeout(() => postScore({attemptId:record.attemptId,score:result.score,percent:result.percent,wrong:result.submissionNote,answers:{...record.answers},identity:{...identity}}),500);
+        }
+        return;
+      }
+      startAttempt();
+    });
+
+    function renderTabs(){
+      $("tabs").innerHTML = "";
+      SECTIONS.forEach((section,index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.dataset.sectionIndex = index;
+        button.textContent = section.sectionCode;
+        if(index === current) button.classList.add("active");
+        if(range(section).every(number => norm(answers[number]))) button.classList.add("done");
+        button.onclick = () => { current = index; renderTabs(); renderRows(); save(); };
+        $("tabs").append(button);
+      });
+    }
+
+    function captureAnswerScroll(){
+      const page = document.scrollingElement || document.documentElement;
+      return {rowsTop:$("rows").scrollTop,pageTop:page ? page.scrollTop : 0};
+    }
+
+    function restoreAnswerScroll(position){
+      if(!position) return;
+      const rows = $("rows");
+      const page = document.scrollingElement || document.documentElement;
+      if(Math.abs(rows.scrollTop - position.rowsTop) > 1) rows.scrollTop = position.rowsTop;
+      if(page && Math.abs(page.scrollTop - position.pageTop) > 1) page.scrollTop = position.pageTop;
+    }
+
+    function renderRows(){
+      const section = SECTIONS[current];
+      $("sectionTitle").textContent = section.sectionLabel || section.sectionCode;
+      $("sectionTotal").textContent = `${section.count} CÂU`;
+      const helper = section.sectionCode === "I.3" ? "Nhập từ sai → từ đúng (hoặc dùng ->). Điền 5 lỗi khác nhau, không cần theo thứ tự xuất hiện." : (section.sectionCode === "III.1" || section.sectionCode === "III.2") ? "Chỉ nhập phần còn thiếu trong câu" : "";
+      $("sectionHelper").textContent = helper;
+      $("sectionHelper").hidden = !helper;
+      $("rows").innerHTML = "";
+      range(section).forEach(globalNumber => {
+        const row = document.createElement("div");
+        row.className = `answer-row${norm(answers[globalNumber]) ? " answered" : ""}`;
+        const number = document.createElement("div");
+        number.className = "qnum";
+        number.textContent = globalNumber;
+        row.append(number);
+        if(section.inputType === "letters"){
+          const letters = document.createElement("div");
+          letters.className = "letters";
+          letters.style.setProperty("--choice-count",Math.min((section.choices || []).length,6));
+          (section.choices || []).forEach(choice => {
+            const button = document.createElement("button");
+            let pressScroll = null;
+            button.type = "button";
+            button.textContent = choice;
+            button.setAttribute("aria-label",`Câu ${globalNumber}: ${choice}`);
+            if(answers[globalNumber] === choice) button.className = "selected";
+            const rememberScroll = () => { pressScroll = captureAnswerScroll(); };
+            button.addEventListener("pointerdown",rememberScroll,{passive:true});
+            button.addEventListener("touchstart",rememberScroll,{passive:true});
+            button.onclick = () => {
+              const stableScroll = pressScroll || captureAnswerScroll();
+              setAnswer(globalNumber,choice);
+              [...letters.children].forEach(choiceButton => choiceButton.classList.remove("selected"));
+              button.classList.add("selected");
+              row.classList.add("answered");
+              button.blur();
+              requestAnimationFrame(() => restoreAnswerScroll(stableScroll));
+              pressScroll = null;
+            };
+            letters.append(button);
+          });
+          row.append(letters);
+        }else if(section.inputType === "select"){
+          const select = document.createElement("select");
+          select.setAttribute("aria-label",`Câu ${globalNumber}`);
+          const empty = document.createElement("option");
+          empty.value = "";
+          empty.textContent = "—";
+          select.append(empty);
+          (section.choices || []).forEach(choice => {
+            const option = document.createElement("option");
+            option.value = choice;
+            option.textContent = choice;
+            select.append(option);
+          });
+          select.value = answers[globalNumber] || "";
+          select.onchange = () => {
+            setAnswer(globalNumber,select.value);
+            row.classList.toggle("answered",Boolean(norm(select.value)));
+          };
+          row.append(select);
+        }else if(section.sectionCode === "III.1" || section.sectionCode === "III.2"){
+          const textarea = document.createElement("textarea");
+          textarea.setAttribute("aria-label",`Câu ${globalNumber} · Chỉ nhập phần còn thiếu trong câu`);
+          textarea.autocomplete = "off";
+          textarea.spellcheck = false;
+          textarea.placeholder = "Chỉ nhập phần còn thiếu trong câu";
+          textarea.value = answers[globalNumber] || "";
+          textarea.oninput = () => setAnswer(globalNumber,textarea.value);
+          const sentence = document.createElement("div");
+          sentence.style.cssText = "display:grid;gap:7px;min-width:0";
+          const clue = document.createElement("p");
+          const solution = solutionByGlobal.get(globalNumber);
+          clue.textContent = [solution.prefix,"_____",solution.suffix].filter(Boolean).join(" ");
+          clue.style.cssText = "margin:0;font-size:13px;line-height:1.5;color:var(--muted)";
+          sentence.append(clue,textarea);
+          row.append(sentence);
+        }else{
+          const input = document.createElement("input");
+          input.setAttribute("aria-label",`Câu ${globalNumber}`);
+          input.autocomplete = "off";
+          input.spellcheck = false;
+          input.value = answers[globalNumber] || "";
+          input.oninput = () => setAnswer(globalNumber,input.value);
+          input.onkeydown = event => {
+            if(event.key === "Enter"){
+              event.preventDefault();
+              const fields = [...document.querySelectorAll(".rows input")];
+              fields[fields.indexOf(input) + 1]?.focus();
+            }
+          };
+          row.append(input);
+        }
+        $("rows").append(row);
+      });
+      $("rows").scrollTop = 0;
+      $("prev").disabled = current === 0;
+      $("next").hidden = current === SECTIONS.length - 1;
+      $("grade").hidden = current !== SECTIONS.length - 1;
+      $("grade").disabled = graded || !PRODUCTION_READY;
+    }
+
+    function refreshCurrentTabStatus(){
+      const tab = $("tabs").querySelector(`[data-section-index="${current}"]`);
+      if(tab) tab.classList.toggle("done",range(SECTIONS[current]).every(number => norm(answers[number])));
+    }
+
+    function setAnswer(globalNumber,value){
+      answers[globalNumber] = value;
+      updateProgress();
+      refreshCurrentTabStatus();
+      save();
+    }
+
+    function updateProgress(){
+      const count = questions.filter(number => norm(answers[number])).length;
+      $("progressCount").textContent = `${count}/${TOTAL}`;
+      $("progressBar").style.width = `${count / TOTAL * 100}%`;
+    }
+
+    $("prev").onclick = () => { if(current > 0){ current--; renderTabs(); renderRows(); save(); } };
+    $("next").onclick = () => { if(current < SECTIONS.length - 1){ current++; renderTabs(); renderRows(); save(); } };
+    $("grade").onclick = grade;
+
+    function buildReview(answerSnapshot){
+      const errorSolutions = SOLUTIONS.filter(solution => solution.sectionCode === "I.3");
+      const errorMatches = new Map();
+      const usedErrors = new Set();
+      errorSolutions.forEach(slot => {
+        const submitted = String(answerSnapshot[slot.globalNumber] || "").trim();
+        const match = errorSolutions.find(candidate => !usedErrors.has(candidate.globalNumber) && candidate.acceptedAnswers.some(answer => equivalent(answer,submitted)));
+        if(match){ errorMatches.set(slot.globalNumber,match); usedErrors.add(match.globalNumber); }
+      });
+      const remainingErrors = errorSolutions.filter(solution => !usedErrors.has(solution.globalNumber));
+      let score = 0;
+      const review = questions.map(globalNumber => {
+        let solution = solutionByGlobal.get(globalNumber);
+        const submitted = String(answerSnapshot[globalNumber] || "").trim();
+        let correct;
+        if(solution?.sectionCode === "I.3"){
+          correct = errorMatches.has(globalNumber);
+          solution = errorMatches.get(globalNumber) || remainingErrors.shift();
+        }else{
+          correct = Boolean(solution) && solution.acceptedAnswers.some(answer => equivalent(answer,submitted));
+        }
+        if(correct) score++;
+        return {...solution,globalNumber,submitted,correct,needsReview:globalNumber >= 81 && Boolean(submitted) && !correct};
+      });
+      const wrongNumbers = review.filter(item => !item.correct).map(item => item.globalNumber);
+      const pending = review.filter(item => item.needsReview);
+      return {score,review,percent:Math.round(score / TOTAL * 100),wrong:wrongNumbers.length,wrongNumbers,pending,submissionNote:wrongNumbers.join(", ") + (pending.length ? " | CẦN CÔ XEM: " + pending.map(item => item.globalNumber + ": " + item.submitted).join("; ") : "")};
+    }
+
+    function renderWrongList(review){
+      const target = $("wrongList");
+      target.replaceChildren();
+      const wrong = review.filter(item => !item.correct);
+      const heading = document.createElement("strong");
+      heading.textContent = wrong.length ? "CÂU CẦN XEM LẠI" : "KẾT QUẢ";
+      target.append(heading);
+      if(!wrong.length){
+        target.append(document.createTextNode("Không có câu sai."));
+        return;
+      }
+      const groups = new Map();
+      wrong.forEach(item => {
+        const place = locate(item.globalNumber);
+        const label = place.section.sectionLabel || place.section.sectionCode;
+        if(!groups.has(label)) groups.set(label,[]);
+        groups.get(label).push(item.globalNumber);
+      });
+      const groupList = document.createElement("div");
+      groupList.className = "wrong-groups";
+      groups.forEach((numbers,label) => {
+        const group = document.createElement("span");
+        group.className = "wrong-group";
+        const groupLabel = document.createElement("span");
+        groupLabel.textContent = `${label}:`;
+        group.append(groupLabel);
+        numbers.forEach(number => {
+          const jump = document.createElement("button");
+          jump.type = "button";
+          jump.className = "wrong-jump";
+          jump.textContent = number;
+          jump.setAttribute("aria-label",`Xem lại câu ${number}`);
+          jump.onclick = () => {
+            setReviewFilter("wrong");
+            const card = $(`review-${number}`);
+            card?.scrollIntoView({behavior:"smooth",block:"center"});
+            card?.focus({preventScroll:true});
+          };
+          group.append(jump);
+        });
+        groupList.append(group);
+      });
+      target.append(groupList);
+    }
+
+    function setReviewFilter(mode){
+      const wrongOnly = mode === "wrong";
+      document.querySelectorAll("#reviews .review").forEach(card => {
+        card.hidden = wrongOnly && card.dataset.correct === "true";
+      });
+      $("showWrong").classList.toggle("active",wrongOnly);
+      $("showAll").classList.toggle("active",!wrongOnly);
+      $("showWrong").setAttribute("aria-pressed",String(wrongOnly));
+      $("showAll").setAttribute("aria-pressed",String(!wrongOnly));
+      $("reviews").scrollTop = 0;
+    }
+
+    function grade(){
+      if(graded || !PRODUCTION_READY) return;
+      const confirmedIdentity = cleanIdentity(identity);
+      if(!sessionConfirmed || !confirmedIdentity || !validAttemptId(attemptId)) return;
+      const missing = questions.filter(number => !norm(answers[number]));
+      if(missing.length){
+        const first = locate(missing[0]);
+        current = first.sectionIndex;
+        renderTabs();
+        renderRows();
+        alert(`Còn ${missing.length} câu chưa điền. Bắt đầu từ ${first.section.sectionLabel || first.section.sectionCode}, câu ${missing[0]}.`);
+        return;
+      }
+      graded = true;
+      $("grade").disabled = true;
+      const answerSnapshot = {...answers};
+      const result = buildReview(answerSnapshot);
+      const completedAttemptId = attemptId;
+      const record = {attemptId:completedAttemptId,completedAt:new Date().toISOString(),score:result.score,percent:result.percent,answers:answerSnapshot,identity:{...identity}};
+      if(!history.some(item => item.attemptId === completedAttemptId)){
+        history.push({attemptId:record.attemptId,completedAt:record.completedAt,score:record.score,percent:record.percent});
+        localStorage.setItem(HISTORY_KEY,JSON.stringify(history.slice(-50)));
+      }
+      localStorage.setItem(LAST_KEY,JSON.stringify(record));
+      localStorage.removeItem(ACTIVE_KEY);
+      showResult(record,false);
+      postScore({attemptId:completedAttemptId,score:result.score,percent:result.percent,wrong:result.submissionNote,answers:answerSnapshot,identity:{...confirmedIdentity}});
+    }
+
+    function showResult(record,restored){
+      const recordIdentity = cleanIdentity(record?.identity);
+      if(!sessionConfirmed || !recordIdentity || !sameIdentity(recordIdentity,identity) || !validCompletedRecord(record) || !unlockQuestions()) return false;
+      const result = buildReview(record.answers || {});
+      $("gate").hidden = true;
+      $("sheet").hidden = true;
+      $("result").hidden = false;
+      $("progress").hidden = true;
+      identity = recordIdentity;
+      showStudent();
+      $("score").textContent = result.score;
+      $("resultTitle").textContent = result.score === TOTAL ? `Hoàn thành ${TOTAL}/${TOTAL}` : `${result.wrong} câu cần xem lại`;
+      $("resultMeta").textContent = result.pending.length ? `Điểm tự chấm tạm thời ${result.score}/${TOTAL} · ${result.pending.length} câu viết cần cô xem thêm` : `Điểm ${result.score}/${TOTAL} · ${result.percent}%`;
+      setSync(restored ? (localStorage.getItem(sentKey(record.attemptId)) ? "Đã lưu điểm" : "Điểm của lượt gần nhất") : "Đang lưu điểm…");
+      renderWrongList(result.review);
+      $("showWrong").textContent = `CÂU CẦN XEM LẠI (${result.wrong})`;
+      $("showWrong").hidden = result.wrong === 0;
+      $("showAll").textContent = `TẤT CẢ (${TOTAL})`;
+      $("reviews").innerHTML = "";
+      result.review.forEach(item => {
+        const place = locate(item.globalNumber);
+        const card = document.createElement("article");
+        card.className = `review${item.correct ? "" : " wrong"}`;
+        card.dataset.correct = String(item.correct);
+        card.id = `review-${item.globalNumber}`;
+        card.tabIndex = -1;
+        const number = document.createElement("div");
+        number.className = "review-num";
+        const numberStrong = document.createElement("strong");
+        numberStrong.textContent = item.globalNumber;
+        const section = document.createElement("span");
+        section.textContent = place.section.sectionCode;
+        const status = document.createElement("span");
+        status.textContent = item.correct ? "ĐÚNG" : item.needsReview ? "CẦN CÔ XEM" : "SAI";
+        number.append(numberStrong,section,status);
+        const body = document.createElement("div");
+        body.className = "review-body";
+        const answersLine = document.createElement("div");
+        answersLine.className = "review-answers";
+        const mine = document.createElement("span");
+        mine.textContent = "Bạn trả lời: ";
+        const mineAnswer = document.createElement("b");
+        mineAnswer.textContent = item.submitted;
+        mine.append(mineAnswer);
+        const key = document.createElement("span");
+        key.textContent = item.needsReview ? "Đáp án tham khảo: " : "Đáp án: ";
+        const keyAnswer = document.createElement("b");
+        keyAnswer.className = "correct";
+        keyAnswer.textContent = item.displayAnswer;
+        key.append(keyAnswer);
+        answersLine.append(mine,key);
+        const explanation = document.createElement("div");
+        explanation.className = "explain";
+        const explanationTitle = document.createElement("strong");
+        explanationTitle.textContent = "GIẢI THÍCH CHI TIẾT";
+        const explanationText = document.createElement("p");
+        explanationText.textContent = item.explanation + (item.needsReview ? " Bài viết của em chưa trùng các đáp án đã duyệt. Cô cần kiểm tra thêm trước khi kết luận đúng/sai." : "");
+        explanation.append(explanationTitle,explanationText);
+        body.append(answersLine,explanation);
+        card.append(number,body);
+        $("reviews").append(card);
+      });
+      setReviewFilter(result.wrong ? "wrong" : "all");
+      return true;
+    }
+
+    const sentKey = id => `${STORAGE_PREFIX}:${TEST.testId}:sent:${id}`;
+    const storageLockKey = id => `${SUBMIT_LOCK_PREFIX}:${id}`;
+    const wait = milliseconds => new Promise(resolve => setTimeout(resolve,milliseconds));
+
+    function submitScoreForm(snapshot,key){
+      return new Promise(resolve => {
+        const target = $("scoreTarget");
+        const form = document.createElement("form");
+        form.method = "POST";
+        form.action = FORM_URL;
+        form.target = target.name;
+        form.hidden = true;
+        const values = {
+          [ENTRIES.name]:snapshot.identity.name,
+          [ENTRIES.total]:String(TOTAL),
+          [ENTRIES.testCode]:renderTemplate(COURSE.submissionTemplates.assignmentCode),
+          [ENTRIES.lesson]:renderTemplate(COURSE.submissionTemplates.lesson),
+          [ENTRIES.activity]:renderTemplate(COURSE.submissionTemplates.activity),
+          [ENTRIES.className]:snapshot.identity.className,
+          [ENTRIES.percent]:`${snapshot.percent}%`,
+          [ENTRIES.score]:`${snapshot.score}/${TOTAL}`,
+          [ENTRIES.wrong]:String(snapshot.wrong),
+          [ENTRIES.attemptId]:snapshot.attemptId
+        };
+        Object.entries(values).forEach(([name,value]) => {
+          const input = document.createElement("input");
+          input.name = name;
+          input.value = value;
+          form.append(input);
+        });
+        document.body.append(form);
+        let settled = false;
+        let timer = 0;
+        const finish = success => {
+          if(settled) return;
+          settled = true;
+          clearTimeout(timer);
+          if(success) localStorage.setItem(key,new Date().toISOString());
+          form.remove();
+          resolve(success);
+        };
+        target.addEventListener("load",() => finish(true),{once:true});
+        form.submit();
+        timer = setTimeout(() => finish(false),12000);
+      });
+    }
+
+    async function submitWithStorageLock(snapshot,key){
+      const claimKey = storageLockKey(snapshot.attemptId);
+      const owner = `${TAB_ID}:${makeId()}`;
+      const deadline = Date.now() + 35000;
+      while(Date.now() < deadline){
+        if(localStorage.getItem(key)) return true;
+        const now = Date.now();
+        const existing = readStored(claimKey);
+        if(!existing || !existing.owner || Number(existing.expiresAt) <= now){
+          localStorage.setItem(claimKey,JSON.stringify({owner,expiresAt:now + 20000}));
+          await wait(25);
+          const confirmed = readStored(claimKey);
+          if(confirmed?.owner === owner){
+            try{
+              if(localStorage.getItem(key)) return true;
+              return await submitScoreForm(snapshot,key);
+            }finally{
+              const latest = readStored(claimKey);
+              if(latest?.owner === owner) localStorage.removeItem(claimKey);
+            }
+          }
+        }
+        await wait(300);
+      }
+      return false;
+    }
+
+    function postScore(snapshot){
+      if(!PRODUCTION_READY || submitting) return;
+      const safeIdentity = cleanIdentity(snapshot?.identity);
+      if(!sessionConfirmed || !safeIdentity || !sameIdentity(safeIdentity,identity) || !validAttemptId(snapshot?.attemptId) || !completeAnswers(snapshot?.answers)) return;
+      const checked = buildReview(snapshot.answers);
+      const safeSnapshot = {
+        attemptId:snapshot.attemptId,
+        score:checked.score,
+        percent:checked.percent,
+        wrong:checked.wrongNumbers.join(", "),
+        answers:{...snapshot.answers},
+        identity:safeIdentity
+      };
+      const key = sentKey(snapshot.attemptId);
+      if(localStorage.getItem(key)){
+        setSync("Đã lưu điểm");
+        $("retry").textContent = "LÀM LƯỢT MỚI →";
+        return;
+      }
+      submitting = true;
+      $("retry").disabled = true;
+      setSync("Đang lưu điểm…");
+      (async () => {
+        let success = false;
+        try{
+          if(navigator.locks?.request){
+            success = await navigator.locks.request(`${SUBMIT_LOCK_PREFIX}:${safeSnapshot.attemptId}`,async () => {
+              if(localStorage.getItem(key)) return true;
+              return submitScoreForm(safeSnapshot,key);
+            });
+          }else{
+            success = await submitWithStorageLock(safeSnapshot,key);
+          }
+        }catch(_){
+          success = await submitWithStorageLock(safeSnapshot,key);
+        }finally{
+          submitting = false;
+          $("retry").disabled = false;
+          if(success || localStorage.getItem(key)){
+            setSync("Đã lưu điểm");
+            $("retry").textContent = "LÀM LƯỢT MỚI →";
+          }else{
+            setSync("Chưa lưu được điểm. Bấm nút bên dưới để thử lại.",true);
+            $("retry").textContent = "THỬ GHI ĐIỂM LẠI →";
+          }
+        }
+      })();
+    }
+
+    $("retry").onclick = () => {
+      if(submitting) return;
+      const pending = readStored(LAST_KEY);
+      if(validCompletedRecord(pending) && sameIdentity(pending.identity,identity) && !localStorage.getItem(sentKey(pending.attemptId))){
+        const result = buildReview(pending.answers);
+        postScore({attemptId:pending.attemptId,score:result.score,percent:result.percent,wrong:result.submissionNote,answers:{...pending.answers},identity:{...identity}});
+        return;
+      }
+      startAttempt();
+    };
+    $("showWrong").onclick = () => setReviewFilter("wrong");
+    $("showAll").onclick = () => setReviewFilter("all");
+
+    load();
+  </script>
+</body>
+</html>
