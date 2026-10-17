@@ -53,7 +53,10 @@ for(const [n,r] of Object.entries(routes)){
  assert.equal(pending.pending.length,1);assert(pending.submissionNote.includes('another valid answer'));
  const page=await read(r.correction+'/index.html'),v=JSON.parse(page.match(/<script[^>]*id="correction-vocabulary-data"[^>]*>([\s\S]*?)<\/script>/)[1]);
  assert.equal(v.words.length,30);assert(v.words.every(w=>['term','meaning','note','usage','family','example','translation'].every(k=>w[k]?.length>3)));
- assert(page.includes('PRACTICE+TEST+'+n));assert(page.includes(data.questionDocumentId));
+ const source=JSON.parse(await read('scripts/practice-test-'+String(n).padStart(2,'0')+'.source.json'));
+ assert.equal(data.questionDocumentId,source.sourceTabs.test.documentId);
+ assert.notEqual(data.questionDocumentId,source.sourceTabs.answers.documentId,'Student and answer documents must be separate');
+ assert(page.includes('PRACTICE+TEST+'+n));assert(page.includes(source.sourceTabs.answers.documentId));
  if(+n===9){assert.equal(answers[9].displayAnswer,'B');assert.equal(answers[28].displayAnswer,'practitioners');assert.equal(answers[78].displayAnswer,'B');assert.equal(answers[79].displayAnswer,'A');}
  console.log('PASS Practice '+n+': keys, variants, writing review, unique errors, vocabulary fields');
 }
