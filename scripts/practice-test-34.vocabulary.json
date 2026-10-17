@@ -25,14 +25,14 @@
     },
     {
       "question": 5,
-      "term": "any old how",
-      "meta": "IDIOM",
-      "meaning": "một cách cẩu thả, tùy tiện",
-      "note": "Nói làm việc không cẩn thận, không có tổ chức. Đây là cách nói thân mật, thường phê bình chất lượng thực hiện. Old trong cụm không nói tuổi tác.",
-      "usage": "do something any old how",
-      "example": "Do not arrange the files any old how.",
-      "translation": "Đừng sắp hồ sơ tùy tiện.",
-      "family": "any (determiner); old (adj); how (adv)"
+      "term": "carelessly",
+      "meta": "ADVERB",
+      "meaning": "một cách cẩu thả, thiếu cẩn thận",
+      "note": "Cần trạng từ carelessly để bổ nghĩa cho does: làm bài cẩu thả, không kiểm tra lại. Careless là tính từ; care và carefulness là danh từ. Câu ôn cách thêm -ly và hiểu nghĩa phủ định của careless, thay một cụm khẩu ngữ ít hữu ích.",
+      "usage": "do/check/write something carelessly",
+      "example": "He completed the work carelessly.",
+      "translation": "Anh ấy làm xong công việc một cách cẩu thả.",
+      "family": "care (n/v); careful/careless (adj); carefully/carelessly (adv)"
     },
     {
       "question": 6,
@@ -47,14 +47,14 @@
     },
     {
       "question": 9,
-      "term": "gild the lily",
-      "meta": "IDIOM",
-      "meaning": "tô điểm thừa cho thứ vốn đã tốt đẹp",
-      "note": "Gild nghĩa đen là mạ vàng; cả cụm nói thêm trang trí không cần thiết. Không đồng nghĩa mọi việc cải thiện đều vô ích. Ý nghĩa phụ thuộc thứ ban đầu đã đủ đẹp hoặc tốt.",
-      "usage": "avoid gilding the lily",
-      "example": "The simple design works; adding more would gild the lily.",
-      "translation": "Thiết kế đơn giản đã ổn; thêm nữa sẽ thành tô điểm thừa.",
-      "family": "gild (v); gilded (adj); lily (n)"
+      "term": "unnecessary details",
+      "meta": "NOUN PHRASE",
+      "meaning": "các chi tiết không cần thiết",
+      "note": "Trước danh từ details cần tính từ unnecessary, nghĩa là không cần thiết. Unnecessarily là trạng từ, necessity là danh từ, necessitate là động từ. Avoid đi với danh từ hoặc V-ing, và ở đây tân ngữ là unnecessary details. Câu giữ ý chuộng sự đơn giản mà không đòi hỏi thành ngữ hiếm.",
+      "usage": "avoid/remove unnecessary details",
+      "example": "The designer avoids unnecessary details.",
+      "translation": "Nhà thiết kế tránh các chi tiết không cần thiết.",
+      "family": "necessary/unnecessary (adj); necessity (n); unnecessarily (adv)"
     },
     {
       "question": 10,

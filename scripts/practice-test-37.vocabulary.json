@@ -278,14 +278,14 @@
     },
     {
       "question": 89,
-      "term": "redundancy",
-      "meta": "NOUN",
-      "meaning": "tình trạng mất việc vì vị trí không còn cần thiết",
-      "note": "Trong bài là mất việc do doanh nghiệp bỏ vị trí, không phải vì người đó làm sai. Redundancy còn nghĩa sự thừa/lặp không cần trong ngôn ngữ. Dùng be made redundant cho nhân viên.",
-      "usage": "face redundancy; be made redundant",
-      "example": "The factory closure led to many redundancies.",
-      "translation": "Nhà máy đóng cửa khiến nhiều vị trí việc làm bị cắt bỏ.",
-      "family": "redundant (adj); redundancy (n)"
+      "term": "many a + singular noun",
+      "meta": "STRUCTURE",
+      "meaning": "nhiều người/vật, nhưng dùng dạng ngữ pháp số ít",
+      "note": "Many a + danh từ số ít đi với động từ số ít dù mang nghĩa nhiều người. Vì vậy dùng passenger has complained, không dùng passengers have. Giữ hiện tại hoàn thành và nội dung repeated delays để tương đương câu gốc.",
+      "usage": "many a passenger has; many a student is",
+      "example": "Many a passenger has complained about the delays.",
+      "translation": "Nhiều hành khách đã phàn nàn về các lần chậm trễ.",
+      "family": "many + plural noun; many a + singular noun + singular verb"
     },
     {
       "question": 91,
@@ -300,36 +300,36 @@
     },
     {
       "question": 95,
-      "term": "out of one’s depth",
-      "meta": "IDIOM",
-      "meaning": "vượt quá năng lực hoặc hiểu biết của mình",
-      "note": "Hình ảnh đứng chỗ nước quá sâu; nghĩa bóng là không đủ kinh nghiệm xử lý việc. Không chỉ đơn thuần bối rối nhất thời. One’s thay theo chủ thể: out of his/my/their depth.",
-      "usage": "feel/be out of one’s depth",
-      "example": "I was out of my depth in the advanced seminar.",
-      "translation": "Tôi không theo nổi buổi chuyên đề nâng cao.",
-      "family": "depth (n); deep (adj); deepen (v)"
+      "term": "experienced enough",
+      "meta": "ADJECTIVE PHRASE",
+      "meaning": "đủ kinh nghiệm",
+      "note": "Not + tính từ + enough diễn tả chưa đủ một phẩm chất. Có thể dùng for + danh từ hoặc to take on + vai trò. Experienced là tính từ, đứng trước enough; không dùng enough experienced. Câu không suy diễn thêm rằng anh ấy chắc chắn sẽ thất bại thảm hại.",
+      "usage": "experienced enough for/to do something",
+      "example": "She is experienced enough to lead the project.",
+      "translation": "Cô ấy đủ kinh nghiệm để dẫn dắt dự án.",
+      "family": "experience (n/v); experienced/inexperienced (adj)"
     },
     {
       "question": 97,
-      "term": "get one’s fingers burnt",
-      "meta": "IDIOM",
-      "meaning": "chịu thiệt sau một việc mạo hiểm",
-      "note": "Thường dùng cho mất tiền/đầu tư thất bại, nhưng không có nghĩa bị bỏng thật. Burn one’s fingers cũng dùng được; burnt/burned đều là phân từ hợp lệ. Cần giữ fingers số nhiều.",
-      "usage": "get your fingers burnt in an investment",
-      "example": "He got his fingers burnt in a risky deal.",
-      "translation": "Anh ấy chịu thiệt trong một thương vụ rủi ro.",
-      "family": "burn–burnt/burned–burnt/burned; finger (n)"
+      "term": "afford to do",
+      "meta": "VERB PATTERN",
+      "meaning": "có đủ khả năng tài chính để làm gì",
+      "note": "Can/could afford to do something là có đủ khả năng tài chính để làm gì. Câu ở quá khứ nên dùng could not afford; to pay đi sau afford. Giữ his bills để nói rõ khoản chi không trả được, không tự suy rộng thành mất toàn bộ tiền bạc.",
+      "usage": "can/cannot afford to buy/pay",
+      "example": "He could not afford to pay the bills.",
+      "translation": "Anh ấy không đủ tiền trả các hóa đơn.",
+      "family": "afford (v); affordable (adj); affordability (n)"
     },
     {
       "question": 100,
-      "term": "see the back of",
-      "meta": "IDIOM",
-      "meaning": "thoát khỏi, không còn phải chịu ai/điều khó chịu",
-      "note": "Thường đi với glad/pleased to: vui khi người khó chịu rời đi. Không đồng nghĩa nhìn thấy lưng theo nghĩa đen. Bài đối lập vẻ đau buồn công khai với niềm vui kín đáo.",
-      "usage": "be glad to see the back of somebody",
-      "example": "They were glad to see the back of the dictator.",
-      "translation": "Họ vui vì cuối cùng cũng thoát khỏi tên độc tài.",
-      "family": "see–saw–seen; back (n/adv); glad (adj)"
+      "term": "although",
+      "meta": "CONJUNCTION",
+      "meaning": "mặc dù; nối hai ý tương phản",
+      "note": "Although nối hai ý tương phản: bên ngoài tỏ ra buồn nhưng thực ra vui. Sau although cần mệnh đề có chủ ngữ và động từ. Had left chỉ việc rời đi xảy ra trước cảm giác pleased; không dùng despite they pretended vì despite không đi trực tiếp với mệnh đề như vậy.",
+      "usage": "although + subject + verb",
+      "example": "Although they looked sad, they were actually pleased.",
+      "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+      "family": "although/though + clause; despite/in spite of + noun or V-ing"
     }
   ]
 }

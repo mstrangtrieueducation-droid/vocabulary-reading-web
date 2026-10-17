@@ -131,7 +131,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Implacably hostile = thù địch không khoan nhượng, không dễ làm dịu. Impalpably = một cách khó cảm nhận; impeccably = hoàn hảo, không chê được; implausibly = khó tin, không phải kết hợp chỉ thái độ đối đầu bền bỉ."
+      "explanation": "Cần trạng từ widely bổ nghĩa cho criticised: bị nhiều người hoặc ở nhiều nơi phê bình. Wide là tính từ, width là danh từ, widen là động từ. Were criticised là bị động quá khứ; trạng từ có thể đứng giữa were và criticised."
     },
     {
       "globalNumber": 5,
@@ -221,7 +221,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Puppy fat = lớp mỡ trẻ nhỏ còn giữ khi bước vào tuổi thiếu niên, khiến khuôn mặt trông non hơn. Puppy không chỉ chó con trong thành ngữ này. Các tên con vật khác không tạo cụm tương đương."
+      "explanation": "Sau tính từ physical cần danh từ fitness, nghĩa là thể lực/tình trạng khỏe mạnh. Fit thường là tính từ hoặc động từ, fitly là trạng từ ít dùng, fitted là dạng quá khứ/phân từ. Physical fitness là một cách kết hợp phổ biến, hữu ích hơn việc nhớ cụm khẩu ngữ puppy fat."
     },
     {
       "globalNumber": 14,
@@ -1214,6 +1214,6 @@
       "fullSentence": "Everyone was taken aback by the sudden change in the rules."
     }
   ],
-  "contentRevision": "2026-10-17-100q",
-  "storageVersion": "v2-100q"
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

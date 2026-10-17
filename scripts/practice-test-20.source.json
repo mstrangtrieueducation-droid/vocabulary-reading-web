@@ -935,28 +935,29 @@
       "sectionCode": "III.1",
       "localNumber": 1,
       "acceptedAnswers": [
-        "if I took a photograph here",
-        "my taking a photograph here",
-        "me taking a photograph here"
+        "my borrowing your dictionary for a moment",
+        "if I borrowed your dictionary for a moment"
       ],
-      "displayAnswer": "if I took a photograph here / my taking a photograph here / me taking a photograph here",
+      "displayAnswer": "my borrowing your dictionary for a moment",
       "prefix": "Would you mind",
       "suffix": "?",
-      "fullSentence": "Would you mind if I took a photograph here?",
-      "explanation": "Xin phép bằng Would you mind if + chủ ngữ + quá khứ đơn, hoặc Would you mind + sở hữu/tân ngữ + V-ing. Took ở đây thể hiện sự lịch sự, không nói hành động đã xảy ra. Không dùng would you mind if I take trong mẫu chuẩn của bài."
+      "fullSentence": "Would you mind my borrowing your dictionary for a moment?",
+      "explanation": "Would you mind my + V-ing hoặc would you mind if I + quá khứ đơn đều là cách xin phép lịch sự. Hai đáp án giữ người mượn là I. Không viết would you mind borrowing, vì sẽ chuyển thành nhờ người nghe đi mượn."
     },
     {
       "globalNumber": 82,
       "sectionCode": "III.1",
       "localNumber": 2,
       "acceptedAnswers": [
-        "have taken so many clothes on holiday last summer"
+        "have printed twenty copies because ten would have been enough",
+        "have printed so many copies because ten would have been enough",
+        "have printed more than ten copies"
       ],
-      "displayAnswer": "have taken so many clothes on holiday last summer",
+      "displayAnswer": "have printed twenty copies because ten would have been enough",
       "prefix": "We needn’t",
-      "suffix": "",
-      "fullSentence": "We needn’t have taken so many clothes on holiday last summer.",
-      "explanation": "Needn’t have + V3 diễn tả đã làm một việc nhưng việc đó không cần thiết. Câu gốc xác nhận chúng tôi đã mang quá nhiều quần áo; didn’t need to take chỉ nói không cần mang và không chắc đã mang hay chưa."
+      "suffix": ".",
+      "fullSentence": "We needn’t have printed twenty copies because ten would have been enough.",
+      "explanation": "Needn’t have + V3 diễn tả việc đã làm nhưng không cần đến mức đó. Câu gốc xác nhận đã in hai mươi bản, nên cần have printed. Giữ thông tin ten would have been enough để diễn tả chính xác số bản thực sự cần."
     },
     {
       "globalNumber": 83,
@@ -1220,5 +1221,7 @@
       "fullSentence": "Harry made a very quick decision without giving enough thought to the matter.",
       "explanation": "Without là giới từ nên theo sau bằng giving. Give thought to something nghĩa là cân nhắc điều gì; enough/sufficient/adequate thought giữ ý đã không suy nghĩ đủ. Không dùng without thinking to vì think đi với about trong nghĩa này."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

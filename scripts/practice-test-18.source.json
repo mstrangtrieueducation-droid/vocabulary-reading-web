@@ -141,7 +141,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Look like death warmed up là thành ngữ chỉ trông rất mệt mỏi, thiếu sức sống, hợp với việc thức khuya dự tiệc. A bear with a sore head chỉ người cáu kỉnh; a dead duck là người/việc hết hy vọng; a wet blanket là người làm mất hứng."
+      "explanation": "Cannot have + phân từ II diễn tả suy luận một việc khó có thể đã xảy ra: nhìn John kiệt sức, người nói cho rằng anh ấy không thể đã ngủ ngon. Must have slept well diễn tả suy luận ngược lại. Need và would không diễn đạt sự suy luận phủ định dựa trên dấu hiệu này."
     },
     {
       "globalNumber": 6,
@@ -191,7 +191,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Work hand in glove with someone là phối hợp rất chặt chẽ với ai. B nói về tốc độ kiếm hoặc mất tiền; D nghĩa đen là quỳ chống tay. Đề cũ có cả hand in hand cũng dùng được, nên phương án C đã được sửa; không học rằng hand in hand là sai."
+      "explanation": "Work closely with somebody là phối hợp chặt chẽ với ai. Nearly nghĩa là gần như; hardly là hầu như không; lately chỉ thời gian gần đây và không diễn tả cách phối hợp. Câu dùng cách kết hợp trung tính, phù hợp với sự hợp tác giữa hai tổ chức."
     },
     {
       "globalNumber": 11,
@@ -1011,16 +1011,13 @@
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "did it rain that they cancelled the flight",
-        "did it rain that they canceled the flight",
-        "was it raining that they cancelled the flight",
-        "was it raining that they canceled the flight"
+        "was the wind that the ferry could not leave the harbour"
       ],
-      "displayAnswer": "did it rain that they cancelled the flight / did it rain that they canceled the flight / was it raining that they cancelled the flight / was it raining that they canceled the flight",
-      "explanation": "So + trạng từ đặt đầu câu cần đảo trợ động từ: So heavily did it rain that… Sau did dùng rain nguyên thể. Mệnh đề that nêu kết quả huỷ chuyến. Cũng nhận was it raining nếu diễn đạt cơn mưa đang xảy ra; cancelled/canceled là hai cách viết chuẩn.",
-      "prefix": "So heavily",
-      "suffix": "",
-      "fullSentence": "So heavily did it rain that they cancelled the flight."
+      "displayAnswer": "was the wind that the ferry could not leave the harbour",
+      "explanation": "So + tính từ được đưa lên đầu câu để nhấn mạnh, kéo theo đảo be: So strong was the wind that... Wind số ít nên dùng was. Mệnh đề kết quả giữ could not leave; không đổi sang did not leave vì would bỏ ý không thể rời bến.",
+      "prefix": "So strong",
+      "suffix": ".",
+      "fullSentence": "So strong was the wind that the ferry could not leave the harbour."
     },
     {
       "globalNumber": 89,
@@ -1172,16 +1169,14 @@
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "It is not possible to access this hotel in winter",
-        "It is not possible to get to this hotel in winter",
-        "Access to this hotel is not possible in winter",
-        "It isn't possible to reach this hotel in winter"
+        "not possible for visitors to use",
+        "not possible to use"
       ],
-      "displayAnswer": "It is not possible to access this hotel in winter / It is not possible to get to this hotel in winter / Access to this hotel is not possible in winter / It isn't possible to reach this hotel in winter",
-      "explanation": "Inaccessible nghĩa là không thể tiếp cận/đi đến. Đổi sang It is not possible to + động từ hoặc Access… is not possible. Giữ in winter vì sự bất khả tiếp cận chỉ được nêu cho mùa đông; access là động từ ngoại động không cần to sau nó.",
-      "prefix": "",
-      "suffix": "",
-      "fullSentence": "It is not possible to get to this hotel in winter."
+      "displayAnswer": "not possible for visitors to use",
+      "explanation": "It is not possible for somebody to do something là không thể để ai làm gì. Dùng visitors để giữ đúng đối tượng, hoặc bỏ for visitors khi ngữ cảnh đã rõ. During maintenance giới hạn thời gian không sử dụng được; không bỏ cụm này khi viết câu đầy đủ.",
+      "prefix": "It is",
+      "suffix": "the lift during maintenance.",
+      "fullSentence": "It is not possible for visitors to use the lift during maintenance."
     },
     {
       "globalNumber": 100,
@@ -1199,5 +1194,7 @@
       "suffix": "",
       "fullSentence": "To the best of my knowledge, he is still working in Bristol."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

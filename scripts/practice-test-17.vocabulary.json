@@ -69,25 +69,25 @@
     },
     {
       "question": 16,
-      "term": "a lucky charm",
-      "meta": "PHRASE",
-      "meaning": "vật cầu may",
-      "note": "Là một vật người ta tin đem lại may mắn, chẳng hạn vòng tay hoặc đồng xu. Charm còn có nghĩa sức hấp dẫn; cần cụm lucky để nhận ra nghĩa vật cầu may.",
-      "usage": "carry/wear a lucky charm",
-      "example": "He keeps an old coin as a lucky charm.",
-      "translation": "Anh ấy giữ một đồng xu cũ làm vật cầu may.",
-      "family": "charm (n/v); charming (adj); charmed (adj/V3)"
+      "term": "prepare for",
+      "meta": "VERB PHRASE",
+      "meaning": "chuẩn bị cho",
+      "note": "Prepare for an interview nghĩa là chuẩn bị cho buổi phỏng vấn; carefully bổ nghĩa cho việc chuẩn bị. Had prepared là quá khứ hoàn thành, diễn tả việc xảy ra trước felt. Prevent là ngăn cản, promise là hứa, pretend là giả vờ, nên không phù hợp nghĩa và cách kết hợp ở đây.",
+      "usage": "prepare for an interview/exam",
+      "example": "She prepared carefully for the interview.",
+      "translation": "Cô ấy chuẩn bị kỹ cho buổi phỏng vấn.",
+      "family": "prepare (v); preparation (n); prepared (adj)"
     },
     {
       "question": 17,
-      "term": "sparsely furnished",
-      "meta": "PHRASE",
-      "meaning": "được kê rất ít đồ đạc",
-      "note": "Sparsely nhấn số lượng ít và thưa, không nhất thiết nói chất lượng kém. A sparsely furnished room có ít bàn ghế, khác a poorly furnished room nhấn việc trang bị chưa tốt.",
-      "usage": "a sparsely furnished room; sparsely populated",
-      "example": "The flat was sparsely furnished but comfortable.",
-      "translation": "Căn hộ ít đồ đạc nhưng thoải mái.",
-      "family": "sparse (adj); sparsely (adv); sparsity (n); furnish (v)"
+      "term": "faintly",
+      "meta": "ADVERB",
+      "meaning": "mờ nhạt; nhỏ hoặc yếu đến mức khó nhận ra",
+      "note": "Cần trạng từ faintly để bổ nghĩa cho was printed: được in quá mờ. Cấu trúc so + trạng từ + that diễn tả kết quả. Faint là tính từ, faintness là danh từ, fainter là dạng so sánh hơn, không phù hợp vị trí trống.",
+      "usage": "print faintly; hear something faintly",
+      "example": "The notice was printed too faintly to read.",
+      "translation": "Thông báo được in quá mờ nên không đọc được.",
+      "family": "faint (adj); faintly (adv); faintness (n)"
     },
     {
       "question": 19,

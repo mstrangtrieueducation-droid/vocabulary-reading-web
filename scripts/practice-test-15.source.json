@@ -311,7 +311,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "In light of that dynamic nghĩa là xét đến tình hình/cách diễn biến đó. Đây là căn cứ để cân nhắc khuyến nghị. In accordance with thường là tuân theo một quy tắc/quy định; dynamic không phải quy tắc. Đáp án cũ D cần đổi thành A."
+      "explanation": "In light of + danh từ nghĩa là xét đến một thông tin để đưa ra quyết định. Dự báo tuyết là lý do đổi địa điểm. At the forefront of là đi đầu, on the verge of là sắp sửa, on behalf of là thay mặt; chúng không diễn tả việc cân nhắc thông tin trong câu."
     },
     {
       "globalNumber": 23,
@@ -991,69 +991,68 @@
       "sectionCode": "III.1",
       "localNumber": 6,
       "acceptedAnswers": [
-        "she had applied for the job in the company"
+        "she had joined the school choir last year",
+        "that she had joined the school choir last year"
       ],
-      "displayAnswer": "she had applied for the job in the company",
-      "explanation": "Wish + quá khứ hoàn thành diễn tả tiếc nuối về điều đã không làm. Mary hiện tiếc vì trước đó không nộp đơn, nên dùng she had applied. Không dùng would apply vì đó là mong muốn hướng tới hành động sau thời điểm nói.",
-      "prefix": "Mary wishes",
-      "suffix": "",
-      "fullSentence": "Mary wishes she had applied for the job in the company."
+      "displayAnswer": "she had joined the school choir last year",
+      "explanation": "Wish + quá khứ hoàn thành diễn tả sự tiếc nuối về việc đã không làm: wishes she had joined. Last year cho biết sự việc thuộc quá khứ; không dùng wished hoặc had not joined vì sẽ đổi thời hoặc đảo ngược ý muốn tham gia.",
+      "prefix": "Lan wishes",
+      "suffix": ".",
+      "fullSentence": "Lan wishes she had joined the school choir last year."
     },
     {
       "globalNumber": 87,
       "sectionCode": "III.1",
       "localNumber": 7,
       "acceptedAnswers": [
-        "Peter not to lend Jim any more money",
-        "Peter against lending Jim any more money"
+        "us to check the evidence before sharing the story"
       ],
-      "displayAnswer": "Peter not to lend Jim any more money / Peter against lending Jim any more money",
-      "explanation": "Advise somebody not to V hoặc advise somebody against V-ing chuyển lời khuyên If I were you… sang câu tường thuật. Peter là người nhận lời khuyên; Jim là người không nên cho vay thêm. Cần giữ đúng hai vai trò này.",
-      "prefix": "Jane advised",
-      "suffix": "",
-      "fullSentence": "Jane advised Peter not to lend Jim any more money."
+      "displayAnswer": "us to check the evidence before sharing the story",
+      "explanation": "Advise somebody to do something dùng để thuật lại lời khuyên. Us vẫn là người nhận lời khuyên; check giữ nguyên sau to. Before là giới từ nên theo sau là sharing. Cần giữ cả ý kiểm tra bằng chứng và thứ tự kiểm tra trước, chia sẻ sau.",
+      "prefix": "The teacher advised",
+      "suffix": ".",
+      "fullSentence": "The teacher advised us to check the evidence before sharing the story."
     },
     {
       "globalNumber": 88,
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "did it rain that they cancelled the flight",
-        "did it rain that they canceled the flight",
-        "did it rain that the flight was cancelled",
-        "did it rain that the flight was canceled"
+        "were the instructions that we completed the task without help"
       ],
-      "displayAnswer": "did it rain that they cancelled the flight / did it rain that they canceled the flight / did it rain that the flight was cancelled / did it rain that the flight was canceled",
-      "explanation": "Đưa So heavily lên đầu câu thì đảo did lên trước chủ ngữ it và đưa rained về rain. Vế that nêu hệ quả hủy chuyến bay. Cần viết they, không phải the như đáp án cũ; cancelled/canceled đều là cách viết được chấp nhận.",
-      "prefix": "So heavily",
-      "suffix": "",
-      "fullSentence": "So heavily did it rain that they cancelled the flight."
+      "displayAnswer": "were the instructions that we completed the task without help",
+      "explanation": "Đưa so + tính từ lên đầu câu thì đảo động từ be lên trước chủ ngữ: So clear were the instructions that... Instructions số nhiều nên dùng were. Giữ mệnh đề kết quả we completed the task without help; không đảo mệnh đề này.",
+      "prefix": "So clear",
+      "suffix": ".",
+      "fullSentence": "So clear were the instructions that we completed the task without help."
     },
     {
       "globalNumber": 89,
       "sectionCode": "III.1",
       "localNumber": 9,
       "acceptedAnswers": [
-        "nor I am present at the meeting"
+        "nor the scanner is working",
+        "nor the scanner works"
       ],
-      "displayAnswer": "nor I am present at the meeting",
-      "explanation": "Neither…nor nối hai chủ ngữ phủ định. Trong cấu trúc này động từ hòa hợp với chủ ngữ gần nó nhất, I, nên dùng am: Neither he nor I am present. Không thêm not vì neither…nor đã mang nghĩa phủ định.",
-      "prefix": "Neither he",
-      "suffix": "",
-      "fullSentence": "Neither he nor I am present at the meeting."
+      "displayAnswer": "nor the scanner is working",
+      "explanation": "Neither ... nor ... nối hai ý phủ định. Printer và scanner đều số ít nên dùng is hoặc works. Have stopped working cho biết hiện giờ cả hai không hoạt động; không dùng either ... or vì sẽ không giữ được ý phủ định cả hai.",
+      "prefix": "Neither the printer",
+      "suffix": ".",
+      "fullSentence": "Neither the printer nor the scanner is working."
     },
     {
       "globalNumber": 90,
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "understand what my teacher said"
+        "hear the announcement because the music was so loud",
+        "hear the announcement because of the loud music"
       ],
-      "displayAnswer": "understand what my teacher said",
-      "explanation": "Could hardly understand nghĩa là hầu như không hiểu, tương đương only understood very little. Sau could dùng understand nguyên mẫu. Hardly đã có nghĩa phủ định nên không thêm not hoặc đảo nghĩa thành could understand clearly.",
+      "displayAnswer": "hear the announcement because the music was so loud",
+      "explanation": "Hardly và barely đều nghĩa là hầu như không. Could hardly hear giữ ý nghe rất khó; cần nêu cả nguyên nhân là nhạc quá lớn. Because đi với mệnh đề, còn because of đi với cụm danh từ the loud music.",
       "prefix": "I could hardly",
-      "suffix": "",
-      "fullSentence": "I could hardly understand what my teacher said."
+      "suffix": ".",
+      "fullSentence": "I could hardly hear the announcement because the music was so loud."
     },
     {
       "globalNumber": 91,
@@ -1130,72 +1129,68 @@
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "whose name was missed",
-        "whose name had been missed",
-        "whose name was left",
-        "whose name had been left"
+        "whose research project impressed the judges"
       ],
-      "displayAnswer": "whose name was missed / whose name had been missed / whose name was left / whose name had been left",
-      "explanation": "Whose name thể hiện tên của Vicky; was/had been missed off the list nghĩa là đã bị bỏ sót khỏi danh sách. Mệnh đề bổ sung được ngăn bởi hai dấu phẩy có sẵn. Không điền lại off the list vì cụm này nằm sau chỗ trống.",
-      "prefix": "Vicky,",
-      "suffix": "off the list, wasn’t very pleased.",
-      "fullSentence": "Vicky, whose name was missed off the list, wasn’t very pleased."
+      "displayAnswer": "whose research project impressed the judges",
+      "explanation": "Whose thay cho her và diễn tả sở hữu: whose research project. Mệnh đề quan hệ xác định đứng giữa the student và won a scholarship, giúp xác định sinh viên nào. Sau whose phải có danh từ research project, không dùng whose her project.",
+      "prefix": "The student",
+      "suffix": "won a scholarship.",
+      "fullSentence": "The student whose research project impressed the judges won a scholarship."
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "is believed to have been"
+        "is believed to be"
       ],
-      "displayAnswer": "is believed to have been",
-      "explanation": "Sự tin tưởng của cảnh sát ở hiện tại nên dùng is believed. Việc đang mặc áo xảy ra trước thời điểm đó nên dùng to have been wearing. Không chỉ viết is believed to be vì sẽ mất quan hệ quá khứ của was wearing.",
-      "prefix": "The robber",
-      "suffix": "wearing a dark-blue jacket.",
-      "fullSentence": "The robber is believed to have been wearing a dark-blue jacket."
+      "displayAnswer": "is believed to be",
+      "explanation": "Bị động với động từ tường thuật ở hiện tại: people believe that... chuyển thành chủ ngữ + is believed to + động từ. Trạng thái is unsafe đồng thời với niềm tin nên dùng to be, không dùng to have been, vốn lùi trạng thái về trước.",
+      "prefix": "The old bridge",
+      "suffix": "unsafe.",
+      "fullSentence": "The old bridge is believed to be unsafe."
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "in case I ran"
+        "in case I needed"
       ],
-      "displayAnswer": "in case I ran",
-      "explanation": "In case + mệnh đề diễn tả phòng trường hợp có thể xảy ra. Câu kể quá khứ nên dùng I ran out of cash. Phải có chủ ngữ I; đáp án cũ thiếu I là sai cấu trúc. Out of cash đã được cho sẵn sau ô trống.",
-      "prefix": "I took my cheque-book with me",
-      "suffix": "out of cash.",
-      "fullSentence": "I took my cheque-book with me in case I ran out of cash."
+      "displayAnswer": "in case I needed",
+      "explanation": "In case diễn tả sự phòng ngừa cho một khả năng có thể xảy ra. Mốc saved ở quá khứ nên dùng needed trong câu này. Giữ chủ ngữ I; không dùng in case of I needed vì in case of chỉ đi với danh từ hoặc V-ing.",
+      "prefix": "I saved a copy of the file",
+      "suffix": "it later.",
+      "fullSentence": "I saved a copy of the file in case I needed it later."
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "for a picnic have fallen through"
+        "have fallen through"
       ],
-      "displayAnswer": "for a picnic have fallen through",
-      "explanation": "Fall through nghĩa là kế hoạch không thực hiện được. Plans số nhiều dùng have fallen through, giữ hiện tại hoàn thành của have been spoiled. Không dùng fallen down vì cụm đó chỉ ngã/sụp, không diễn đạt kế hoạch thất bại.",
-      "prefix": "Linda’s plans",
-      "suffix": "due to the weather.",
-      "fullSentence": "Linda’s plans for a picnic have fallen through due to the weather."
+      "displayAnswer": "have fallen through",
+      "explanation": "Fall through nghĩa là kế hoạch không thực hiện được. Have fallen through dùng hiện tại hoàn thành để thông báo kết quả hiện tại; through là thành phần bắt buộc của cụm. Không dùng fallen down vì cụm đó thường diễn tả ngã hoặc sụp đổ vật lý.",
+      "prefix": "Our plans for a school trip",
+      "suffix": "because we could not hire a coach.",
+      "fullSentence": "Our plans for a school trip have fallen through because we could not hire a coach."
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "not possible to access",
-        "not possible to get to",
-        "not possible to reach",
-        "not possible to gain access to",
-        "not possible to get access to"
+        "not possible to enter",
+        "not possible for you to enter"
       ],
-      "displayAnswer": "not possible to access / not possible to get to / not possible to reach / not possible to gain access to / not possible to get access to",
-      "explanation": "Inaccessible nghĩa là không thể tiếp cận hoặc đi tới. Đổi sang It is not possible to access/get to/reach… và giữ in winter. Possible là từ khóa bắt buộc; accessible hoặc impossible dù gần nghĩa vẫn không đáp ứng yêu cầu giữ từ.",
+      "displayAnswer": "not possible to enter",
+      "explanation": "It is not possible to + động từ diễn tả việc không thể làm. Có thể thêm for you để giữ rõ đối tượng. Possible là tính từ nên không dùng possibly hoặc possibility. Phần without permission phải được giữ để tránh biến thành cấm vào phòng trong mọi trường hợp.",
       "prefix": "It is",
-      "suffix": "this hotel in winter.",
-      "fullSentence": "It is not possible to access this hotel in winter."
+      "suffix": "the laboratory without permission.",
+      "fullSentence": "It is not possible to enter the laboratory without permission."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

@@ -322,14 +322,14 @@
     },
     {
       "question": 96,
-      "term": "cut little ice with",
-      "meta": "idiom",
-      "meaning": "có rất ít tác dụng thuyết phục",
-      "note": "Nói lý lẽ hoặc lời bào chữa không gây nhiều ảnh hưởng. Cut no ice mạnh hơn: không có tác dụng; giữ little khi câu gốc nói ít.",
-      "usage": "an excuse cuts little/no ice with somebody",
-      "example": "His excuses cut little ice with the teacher.",
-      "translation": "Các lời bào chữa của cậu ấy ít thuyết phục được giáo viên.",
-      "family": "cut → cut → cut; persuasive (a): có sức thuyết phục; ice là nghĩa bóng trong cụm."
+      "term": "make little difference to",
+      "meta": "PHRASE",
+      "meaning": "hầu như không làm thay đổi",
+      "note": "Make little difference to something nghĩa là hầu như không làm thay đổi điều gì. Chủ ngữ his excuse số ít nên dùng makes; to nối với her opinion đã có sau chỗ trống. Little hoặc hardly any giữ nghĩa phủ định nhẹ của hardly changes.",
+      "usage": "make little difference to an opinion/result",
+      "example": "His excuse made little difference to her opinion.",
+      "translation": "Lời giải thích của anh ấy hầu như không làm cô ấy đổi ý.",
+      "family": "differ (v); different (adj); difference (n)"
     }
   ]
 }

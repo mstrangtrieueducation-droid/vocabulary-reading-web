@@ -401,7 +401,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Take one's hat off to someone nghĩa là khâm phục, nể phục ai. Off là thành tố cố định; to đứng trước người được khen. Câu khen giám đốc đưa công ty thoát nguy cơ phá sản, không nói hành động đội hay đặt mũ thật."
+      "explanation": "Admire somebody for doing something nghĩa là ngưỡng mộ ai vì một hành động hoặc phẩm chất. Sau for dùng V-ing remaining. With, on và to không đi với admire theo nghĩa này. Câu vẫn ôn diễn đạt sự ngưỡng mộ nhưng không chép lại thành ngữ take one’s hat off."
     },
     {
       "globalNumber": 32,
@@ -411,7 +411,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Live life in the fast lane là sống sôi động, nhiều kích thích hoặc mạo hiểm. Lane là từ cố định trong thành ngữ, không thay bằng track, path hoặc street. Thông tin nhớ cảm giác nguy hiểm trong quân đội phù hợp với nghĩa này."
+      "explanation": "Get used to + danh từ/V-ing là dần quen với điều gì; to ở đây là giới từ nên cần living. Không nhầm với used to + động từ nguyên mẫu, diễn tả thói quen cũ. Câu giữ chủ đề thay đổi cuộc sống và ôn một cấu trúc có tính ứng dụng cao."
     },
     {
       "globalNumber": 33,
@@ -938,28 +938,26 @@
     },
     {
       "acceptedAnswers": [
-        "off a faint smell of fish",
-        "off a faint fishy smell",
-        "out a faint smell of fish"
+        "off a faint smell of burning"
       ],
-      "displayAnswer": "off a faint smell of fish / off a faint fishy smell / out a faint smell of fish",
-      "prefix": "The box gave",
-      "suffix": "",
-      "fullSentence": "The box gave off a faint smell of fish.",
-      "explanation": "Give off a smell là tỏa ra mùi; gave là quá khứ của give. Faintly là trạng từ trong câu gốc, chuyển thành tính từ faint trước smell. Fishy smell có thể mang nghĩa mùi cá trong ngữ cảnh này; giữ faint để không biến mùi thoang thoảng thành mùi nồng.",
+      "displayAnswer": "off a faint smell of burning",
+      "prefix": "The heater gave",
+      "suffix": ".",
+      "fullSentence": "The heater gave off a faint smell of burning.",
+      "explanation": "Give off a smell nghĩa là tỏa ra một mùi. Câu kể quá khứ nên gave đã có; cần thêm off, không dùng out thay thế tùy tiện. A faint smell giữ mức độ mùi nhẹ và of burning xác định đó là mùi khét.",
       "globalNumber": 82,
       "sectionCode": "III.1",
       "localNumber": 2
     },
     {
       "acceptedAnswers": [
-        "have reacted so aggressively"
+        "have ignored the warning signs"
       ],
-      "displayAnswer": "have reacted so aggressively",
-      "prefix": "You shouldn’t",
-      "suffix": "",
-      "fullSentence": "You shouldn’t have reacted so aggressively.",
-      "explanation": "Shouldn't have + V3 phê bình việc đã làm trong quá khứ: lẽ ra không nên phản ứng hung hăng như vậy. Reacted là quá khứ phân từ sau have. Shouldn't react chỉ lời khuyên hiện tại/tương lai, không giữ rõ thời gian của It was wrong of you.",
+      "displayAnswer": "have ignored the warning signs",
+      "prefix": "We should not",
+      "suffix": ".",
+      "fullSentence": "We should not have ignored the warning signs.",
+      "explanation": "Should not have + V3 phê bình một việc đã làm trong quá khứ. Câu gốc xác nhận chúng ta đã bỏ qua các dấu hiệu cảnh báo, nên dùng have ignored. Should not ignore chỉ nêu lời khuyên cho hiện tại/tương lai, không giữ được thời gian của câu.",
       "globalNumber": 83,
       "sectionCode": "III.1",
       "localNumber": 3
@@ -1001,80 +999,65 @@
       "sectionCode": "III.1",
       "localNumber": 6,
       "acceptedAnswers": [
-        "has been a considerable fall in the value of dollars in the past week",
-        "has been a considerable drop in the value of dollars in the past week",
-        "has been a considerable decrease in the value of dollars in the past week",
-        "has been a considerable decline in the value of dollars in the past week"
+        "been a steady increase in the number of students using the library this term"
       ],
-      "displayAnswer": "has been a considerable fall in the value of dollars in the past week / has been a considerable drop in the value of dollars in the past week / has been a considerable decrease in the value of dollars in the past week / has been a considerable decline in the value of dollars in the past week",
-      "prefix": "There",
-      "suffix": "",
-      "fullSentence": "There has been a considerable fall in the value of dollars in the past week.",
-      "explanation": "Đổi has fallen considerably thành There has been a considerable fall ...: động từ fall chuyển thành danh từ và trạng từ considerably chuyển thành tính từ considerable. Drop/decrease/decline cũng giữ nghĩa giảm. Giữ hiện tại hoàn thành và in the past week để không đổi khoảng thời gian."
+      "displayAnswer": "been a steady increase in the number of students using the library this term",
+      "prefix": "There has",
+      "suffix": ".",
+      "fullSentence": "There has been a steady increase in the number of students using the library this term.",
+      "explanation": "Chuyển động từ increase thành danh từ: there has been a steady increase in... Trạng từ steadily đổi thành tính từ steady bổ nghĩa cho increase. Giữ the number of students và this term để bảo toàn đối tượng cũng như khoảng thời gian."
     },
     {
       "globalNumber": 87,
       "sectionCode": "III.1",
       "localNumber": 7,
       "acceptedAnswers": [
-        "another ten years had passed did my cousin return to his hometown",
-        "another ten years had elapsed did my cousin return to his hometown",
-        "another ten years had gone by did my cousin return to his hometown",
-        "another ten years later did my cousin return to his hometown",
-        "another ten years passed did my cousin return to his hometown"
+        "all the repairs had been completed did the laboratory reopen"
       ],
-      "displayAnswer": "another ten years had passed did my cousin return to his hometown / another ten years had elapsed did my cousin return to his hometown / another ten years had gone by did my cousin return to his hometown / another ten years later did my cousin return to his hometown / another ten years passed did my cousin return to his hometown",
+      "displayAnswer": "all the repairs had been completed did the laboratory reopen",
       "prefix": "Not until",
-      "suffix": "",
-      "fullSentence": "Not until another ten years had passed did my cousin return to his hometown.",
-      "explanation": "Not until đặt đầu câu dẫn đến đảo ngữ ở mệnh đề chính: did my cousin return. Mệnh đề thời gian another ten years had passed không đảo. Another giữ ý phải thêm mười năm nữa; return ở nguyên mẫu sau did, không dùng returned."
+      "suffix": ".",
+      "fullSentence": "Not until all the repairs had been completed did the laboratory reopen.",
+      "explanation": "Not until + mệnh đề thời gian đứng đầu kéo theo đảo ngữ ở mệnh đề chính: did the laboratory reopen. Không đảo mệnh đề all the repairs had been completed. Sau did dùng reopen nguyên mẫu, không dùng reopened."
     },
     {
       "globalNumber": 88,
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "always forgetting to correct our homework",
-        "constantly forgetting to correct our homework",
-        "forever forgetting to correct our homework"
+        "borrowing my headphones without asking, which annoys me"
       ],
-      "displayAnswer": "always forgetting to correct our homework / constantly forgetting to correct our homework / forever forgetting to correct our homework",
-      "prefix": "Our science teacher is",
-      "suffix": "",
-      "fullSentence": "Our science teacher is always forgetting to correct our homework.",
-      "explanation": "Is always/constantly/forever + V-ing diễn tả thói quen lặp lại gây khó chịu hoặc lời phàn nàn. Forgetting to correct là quên việc cần làm; forgetting correcting sẽ đổi sang quên một việc đã làm. Our homework cần được giữ để xác định đối tượng bài tập."
+      "displayAnswer": "borrowing my headphones without asking, which annoys me",
+      "prefix": "My brother is always",
+      "suffix": ".",
+      "fullSentence": "My brother is always borrowing my headphones without asking, which annoys me.",
+      "explanation": "Always + hiện tại tiếp diễn có thể diễn tả một thói quen lặp lại gây khó chịu: is always borrowing. Cần giữ without asking và ý annoys me. Không dùng is always borrow vì sau be phải là V-ing trong cấu trúc này."
     },
     {
       "globalNumber": 89,
       "sectionCode": "III.1",
       "localNumber": 9,
       "acceptedAnswers": [
-        "Sam hadn’t made a good impression on the judges, she wouldn’t have earned a place on the talent show",
-        "Sam had not made a good impression on the judges, she would not have earned a place on the talent show",
-        "Sam hadn’t made a good impression on the judges, she couldn’t have earned a place on the talent show",
-        "she hadn’t made a good impression on the judges, Sam wouldn’t have earned a place on the talent show"
+        "had not prepared carefully, she would not have passed the interview"
       ],
-      "displayAnswer": "Sam hadn’t made a good impression on the judges, she wouldn’t have earned a place on the talent show / Sam had not made a good impression on the judges, she would not have earned a place on the talent show / Sam hadn’t made a good impression on the judges, she couldn’t have earned a place on the talent show / she hadn’t made a good impression on the judges, Sam wouldn’t have earned a place on the talent show",
-      "prefix": "If",
-      "suffix": "",
-      "fullSentence": "If Sam hadn’t made a good impression on the judges, she wouldn’t have earned a place on the talent show.",
-      "explanation": "Câu điều kiện loại ba nói giả định trái quá khứ: If + had not + quá khứ phân từ, would/could not have + quá khứ phân từ. Only because trong câu gốc cho biết ấn tượng tốt là điều kiện quyết định giúp Sam có suất, nên dạng phủ định giả định giữ đúng quan hệ đó."
+      "displayAnswer": "had not prepared carefully, she would not have passed the interview",
+      "prefix": "If Mai",
+      "suffix": ".",
+      "fullSentence": "If Mai had not prepared carefully, she would not have passed the interview.",
+      "explanation": "Điều kiện loại 3 đảo ngược nguyên nhân và kết quả thực tế ở quá khứ. Mai đã chuẩn bị và đã đỗ, nên giả định là had not prepared và would not have passed. Không dùng would not pass vì kết quả cuộc phỏng vấn cũng đã xảy ra."
     },
     {
       "globalNumber": 90,
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "life had been devoted to studying Bach was honoured at the ceremony",
-        "life had been devoted to studying Bach was honored at the ceremony",
-        "life had been dedicated to studying Bach was honoured at the ceremony",
-        "life had been dedicated to studying Bach was honored at the ceremony"
+        "design helped reduce energy use received an award"
       ],
-      "displayAnswer": "life had been devoted to studying Bach was honoured at the ceremony / life had been devoted to studying Bach was honored at the ceremony / life had been dedicated to studying Bach was honoured at the ceremony / life had been dedicated to studying Bach was honored at the ceremony",
-      "prefix": "The conductor whose",
-      "suffix": "",
-      "fullSentence": "The conductor whose life had been devoted to studying Bach was honoured at the ceremony.",
-      "explanation": "Whose + danh từ diễn tả sở hữu: whose life là cuộc đời của nữ nhạc trưởng. Life chuyển thành chủ ngữ bị động nên dùng had been devoted/dedicated to studying. To là giới từ nên giữ studying; honoured/honored là hai cách viết Anh–Mỹ của cùng từ."
+      "displayAnswer": "design helped reduce energy use received an award",
+      "prefix": "The engineer whose",
+      "suffix": ".",
+      "fullSentence": "The engineer whose design helped reduce energy use received an award.",
+      "explanation": "Whose thay cho her để nối hai câu, biểu thị thiết kế thuộc về kỹ sư. Mệnh đề whose design helped reduce energy use đứng trước động từ chính received. Không thêm her sau whose và không bỏ received an award, là ý chính của câu gốc."
     },
     {
       "acceptedAnswers": [
@@ -1219,5 +1202,7 @@
       "sectionCode": "III.2",
       "localNumber": 10
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

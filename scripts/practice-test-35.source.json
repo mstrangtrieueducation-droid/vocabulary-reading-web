@@ -121,7 +121,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Pretentious là cố tỏ ra quan trọng, tinh tế hoặc giỏi hơn thực tế. Câu nói nhãn mô tả nhân vật trong phim tài liệu trở nên sáo mòn. Precarious là bấp bênh, proverbial là nổi tiếng như câu thành ngữ, precedented không mô tả tính cách này."
+      "explanation": "Pretentious tả người cố tỏ ra quan trọng, có học hoặc tinh tế hơn thực tế. Phần because giải thích trực tiếp đặc điểm ấy. Precarious là bấp bênh, precedented là đã có tiền lệ, proverbial là nổi tiếng như thành ngữ; các từ này không diễn tả sự phô trương trong câu."
     },
     {
       "globalNumber": 4,
@@ -171,7 +171,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Lassitude là trạng thái mệt mỏi, uể oải, thiếu năng lượng. Công việc lặp lại khiến thực tập sinh xuống sức, có thể bị hiểu nhầm là lười. Resolve là quyết tâm, acuity là sự sắc bén, verve là sức sống/nhiệt huyết, đều không hợp dấu hiệu mệt."
+      "explanation": "Tính từ boring tả công việc gây nhàm chán; bored tả cảm giác của người. Cấu trúc find + tân ngữ + tính từ và so ... that diễn tả công việc chán đến mức khó tập trung. Boredom là danh từ, bore là động từ/danh từ, không phù hợp vị trí trống."
     },
     {
       "globalNumber": 9,
@@ -181,7 +181,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Imminence là tình trạng một sự việc sắp xảy ra. Cảnh báo nói nguy cơ đợt nóng đang đến gần. Adventure là phiêu lưu, entrance là lối vào/sự đi vào, embarkation là việc lên tàu hoặc bắt đầu hành trình."
+      "explanation": "A strong possibility of something là khả năng khá lớn một việc xảy ra. Dự báo mưa là lý do sự kiện có thể bị hủy. Doubt là sự nghi ngờ, wish là mong muốn và decision là quyết định, đều không diễn tả khả năng trời mưa theo cấu trúc này."
     },
     {
       "globalNumber": 10,
@@ -221,7 +221,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Trật tự tự nhiên trong các lựa chọn là chất lượng/đánh giá fragile, kích thước small, tuổi ancient, xuất xứ Chinese, vật liệu porcelain, rồi vase. Porcelain đứng gần danh từ vì nói chất liệu. Các đáp án khác đảo vật liệu/xuất xứ hoặc để fragile ở vị trí không tự nhiên."
+      "explanation": "A vase decorated by local artists là bình hoa được các nghệ sĩ địa phương trang trí. Decorated là phân từ II trong mệnh đề quan hệ rút gọn bị động, tương đương which was decorated. Decorating mang nghĩa chủ động; decorates và decorate không nối được với danh từ theo cấu trúc câu."
     },
     {
       "globalNumber": 14,
@@ -398,25 +398,21 @@
       "sectionCode": "I.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "cleantech",
-        "clean technology",
-        "green technology",
-        "environmental technology",
-        "greentech"
+        "technological"
       ],
-      "displayAnswer": "cleantech / clean technology / green technology / environmental technology / greentech",
-      "explanation": "Cleantech/clean technology nói các công nghệ hướng đến giảm ô nhiễm và sử dụng tài nguyên hiệu quả. Phần giải thích sau gạch ngang xác định nghĩa; green/environmental technology cũng phù hợp. Biotechnology chỉ công nghệ sinh học nói chung, không tự động đồng nghĩa công nghệ bảo vệ môi trường."
+      "displayAnswer": "technological",
+      "explanation": "Trước danh từ developments cần tính từ technological: thuộc về công nghệ. Technology là danh từ, technologically là trạng từ nên không dùng ở vị trí này. Cụm technological developments diễn tả các bước phát triển công nghệ mà không yêu cầu thuật ngữ chuyên ngành hiếm."
     },
     {
       "globalNumber": 32,
       "sectionCode": "I.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "self-creation",
-        "selfcreation"
+        "creativity",
+        "creativeness"
       ],
-      "displayAnswer": "self-creation / selfcreation",
-      "explanation": "Self-creation là quá trình tự tạo dựng bản thân hoặc bản sắc cá nhân. Phần actively forming one’s own identity xác định tiền tố self-. Creation đơn thuần chỉ sự tạo ra, còn recreation thường là sự giải trí hoặc tạo lại, không thể hiện rõ tự hình thành bản sắc."
+      "displayAnswer": "creativity",
+      "explanation": "Sau tính từ sở hữu their cần danh từ creativity, nghĩa là khả năng sáng tạo. Creative là tính từ, creatively là trạng từ; creation thường chỉ một sản phẩm hoặc việc tạo ra, trong khi ngữ cảnh nhấn mạnh năng lực nghĩ ra ý tưởng mới. Creativeness là một danh từ đúng nhưng ít thông dụng hơn và cũng được chấp nhận."
     },
     {
       "globalNumber": 33,
@@ -434,35 +430,30 @@
       "sectionCode": "I.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "biomanufacturing",
-        "bio-manufacturing"
+        "manufacturers"
       ],
-      "displayAnswer": "biomanufacturing / bio-manufacturing",
-      "explanation": "Biomanufacturing là sản xuất bằng hệ thống sinh học, chẳng hạn tế bào sống. Phần giải thích trong câu làm rõ tiền tố bio-. Manufacturing đơn thuần là sản xuất, chưa thể hiện phương pháp sinh học; cần dạng danh từ V-ing sau to."
+      "displayAnswer": "manufacturers",
+      "explanation": "Several đứng trước danh từ đếm được số nhiều chỉ các nhà sản xuất, nên dùng manufacturers. Manufacture thêm -er tạo danh từ chỉ người/tổ chức sản xuất, rồi thêm -s. Manufacturing thường chỉ hoạt động sản xuất, không phù hợp với several ở đây."
     },
     {
       "globalNumber": 35,
       "sectionCode": "I.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "autoresponder",
-        "auto-responder",
-        "automatic responder"
+        "responses"
       ],
-      "displayAnswer": "autoresponder / auto-responder / automatic responder",
-      "explanation": "Autoresponder là hệ thống tự động trả lời, thường dùng cho email khi lượng thư lớn. An yêu cầu danh từ số ít bắt đầu bằng âm nguyên âm. Respond là động từ; response là câu trả lời, không phải công cụ được activated."
+      "displayAnswer": "responses",
+      "explanation": "Several yêu cầu danh từ số nhiều; respond là động từ, đổi thành response rồi thêm -s. A response to a question là câu trả lời cho một câu hỏi. Không dùng responsible vì đó là tính từ mang nghĩa có trách nhiệm, khác họ từ cần dùng ở đây."
     },
     {
       "globalNumber": 36,
       "sectionCode": "I.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "clickstream",
-        "click stream",
-        "click-stream"
+        "clickable"
       ],
-      "displayAnswer": "clickstream / click stream / click-stream",
-      "explanation": "Clickstream là chuỗi thao tác nhấp/trang truy cập của người dùng theo thứ tự. From headline to exit page cho thấy cần cả hành trình, không chỉ một click. Cụm giúp tòa soạn tìm điểm độc giả rời trang."
+      "displayAnswer": "clickable",
+      "explanation": "Trước danh từ links cần tính từ clickable, nghĩa là có thể nhấp vào. Hậu tố -able diễn tả khả năng được thực hiện một hành động. Click là động từ/danh từ, clicking là dạng -ing; clickable links phù hợp chức năng mở ví dụ khi người dùng nhấp."
     },
     {
       "globalNumber": 37,
@@ -493,25 +484,20 @@
       "sectionCode": "I.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "multilocation",
-        "multi-location",
-        "multilocational",
-        "multi-locational",
-        "cross-locational"
+        "location"
       ],
-      "displayAnswer": "multilocation / multi-location / multilocational / multi-locational / cross-locational",
-      "explanation": "Multilocation/multilocational nói nghiên cứu ở nhiều địa điểm, đối lập city-based snapshot chỉ một thành phố. Cross-locational cũng phù hợp khi nhấn mạnh so sánh giữa địa điểm. Các dạng có gạch nối được chấp nhận; giữ vai trò tính từ trước comparison."
+      "displayAnswer": "location",
+      "explanation": "Sau the và trước of the new library cần danh từ location, nghĩa là vị trí. Chủ ngữ location số ít phù hợp với makes. Located là phân từ thường dùng trong be located, còn locate là động từ nên không thể làm cụm danh từ trong câu này."
     },
     {
       "globalNumber": 40,
       "sectionCode": "I.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "anti-vivisection",
-        "antivivisection"
+        "differences"
       ],
-      "displayAnswer": "anti-vivisection / antivivisection",
-      "explanation": "Anti-vivisection chỉ phong trào phản đối việc mổ/thử nghiệm trên động vật sống. Objections to animal experimentation xác định tiền tố anti-. Vivisection tự nó là hoạt động bị phản đối, không có nghĩa phản đối; cần phân biệt thuật ngữ với mọi thí nghiệm sinh học nói chung."
+      "displayAnswer": "differences",
+      "explanation": "Individual differences là những khác biệt giữa từng người. Sau tính từ individual cần danh từ; ngữ cảnh nói nhiều khác biệt nên dùng differences. Different là tính từ và differently là trạng từ, không phù hợp. Câu luyện đổi động từ differ thành danh từ difference."
     },
     {
       "globalNumber": 41,
@@ -949,28 +935,27 @@
       "sectionCode": "III.1",
       "localNumber": 1,
       "acceptedAnswers": [
-        "was his disgust at the way she behaved that he refused to speak to her"
+        "was the confusion caused by the instructions that everyone asked for clarification"
       ],
-      "displayAnswer": "was his disgust at the way she behaved that he refused to speak to her",
+      "displayAnswer": "was the confusion caused by the instructions that everyone asked for clarification",
       "prefix": "Such",
-      "suffix": "",
-      "fullSentence": "Such was his disgust at the way she behaved that he refused to speak to her.",
-      "explanation": "So disgusted chuyển thành danh từ his disgust trong mẫu Such was ... that ... . Phần at the way she behaved nêu nguyên nhân cảm xúc, không được bỏ. Refused to speak giữ hành động từ chối, khác với không thể nói."
+      "suffix": ".",
+      "fullSentence": "Such was the confusion caused by the instructions that everyone asked for clarification.",
+      "explanation": "Such was + cụm danh từ + that... nhấn mạnh mức độ dẫn đến một kết quả. Confusion caused by the instructions là sự bối rối do hướng dẫn gây ra; confusion không đếm được nên dùng was. Giữ everyone asked for clarification để bảo toàn kết quả mọi người đều hỏi lại."
     },
     {
       "globalNumber": 82,
       "sectionCode": "III.1",
       "localNumber": 2,
       "acceptedAnswers": [
-        "to be seen whether he will keep his promise or not",
-        "to be seen whether he'll keep his promise or not",
-        "to be seen whether he will keep his promise"
+        "to be seen whether the new plan is successful",
+        "to be seen whether the new plan will be successful"
       ],
-      "displayAnswer": "to be seen whether he will keep his promise or not / to be seen whether he'll keep his promise or not / to be seen whether he will keep his promise",
+      "displayAnswer": "to be seen whether the new plan is successful",
       "prefix": "It remains",
-      "suffix": "",
-      "fullSentence": "It remains to be seen whether he will keep his promise or not.",
-      "explanation": "It remains to be seen nghĩa là còn phải chờ mới biết. Whether mở câu hỏi gián tiếp về việc giữ lời; or not có thể được lược mà không đổi nghĩa. Không dùng remains seeing hoặc đảo will he trong mệnh đề gián tiếp."
+      "suffix": ".",
+      "fullSentence": "It remains to be seen whether the new plan is successful.",
+      "explanation": "It remains to be seen whether... nghĩa là còn phải chờ mới biết. To be seen mang nghĩa bị động; không dùng to see sau it remains trong mẫu này. Is successful hoặc will be successful đều phù hợp khi nói kết quả chưa rõ ở hiện tại."
     },
     {
       "globalNumber": 83,
@@ -1005,14 +990,14 @@
       "sectionCode": "III.1",
       "localNumber": 5,
       "acceptedAnswers": [
-        "off the handle at the slightest thing",
-        "off the handle over the slightest thing"
+        "into a temper whenever someone questions his decisions",
+        "into a rage whenever someone questions his decisions"
       ],
-      "displayAnswer": "off the handle at the slightest thing / off the handle over the slightest thing",
+      "displayAnswer": "into a temper whenever someone questions his decisions",
       "prefix": "He flies",
-      "suffix": "",
-      "fullSentence": "He flies off the handle at the slightest thing.",
-      "explanation": "Fly off the handle là nổi nóng đột ngột. At/over the slightest thing giữ ý ngay cả chuyện nhỏ nhất cũng làm anh ấy tức giận. Chủ ngữ he ở hiện tại đơn dùng flies; phần cố định đã có flies nên chỉ điền tiếp off the handle..."
+      "suffix": ".",
+      "fullSentence": "He flies into a temper whenever someone questions his decisions.",
+      "explanation": "Fly into a temper/rage nghĩa là đột nhiên nổi giận. Chủ ngữ he, thói quen hiện tại nên dùng flies đã có trong đề. Whenever giữ nghĩa mỗi lần có người chất vấn quyết định, không phải chỉ một lần trong quá khứ."
     },
     {
       "globalNumber": 86,
@@ -1106,54 +1091,53 @@
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "the street is that there are no flies on"
+        "to be taken in by"
       ],
-      "displayAnswer": "the street is that there are no flies on",
-      "prefix": "Word on",
-      "suffix": "the new principal.",
-      "fullSentence": "Word on the street is that there are no flies on the new principal.",
-      "explanation": "Word on the street is that ... là người ta truyền nhau rằng. There are no flies on someone là người đó lanh lợi, khó bị lừa. Hai cụm kết hợp giữ cả nguồn thông tin people say và ý too sharp to be taken in, không nói ruồi thật."
+      "displayAnswer": "to be taken in by",
+      "prefix": "The principal was too experienced",
+      "suffix": "the salesman’s promises.",
+      "fullSentence": "The principal was too experienced to be taken in by the salesman’s promises.",
+      "explanation": "Take somebody in nghĩa là lừa ai. Chủ ngữ principal là người bị lừa nên dùng to be taken in by, kết hợp với too ... to. Không dùng to take in vì sẽ biến hiệu trưởng thành người đi lừa. Câu giữ một cụm động từ thông dụng thay cho hai thành ngữ hiếm ghép chung."
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "for time of late, none of us has seen hide nor"
+        "of late"
       ],
-      "displayAnswer": "for time of late, none of us has seen hide nor",
-      "prefix": "Because she has been so strapped",
-      "suffix": "hair of her.",
-      "fullSentence": "Because she has been so strapped for time of late, none of us has seen hide nor hair of her.",
-      "explanation": "Strapped for time là thiếu thời gian; of late là dạo gần đây. Not see hide nor hair of someone là không thấy tăm hơi người đó. None of us tạo phủ định cho thành ngữ, nên không thêm một not nữa trước seen."
+      "displayAnswer": "of late",
+      "prefix": "We have not seen her",
+      "suffix": "because she has been very busy.",
+      "fullSentence": "We have not seen her of late because she has been very busy.",
+      "explanation": "Of late nghĩa là gần đây, thường dùng với hiện tại hoàn thành khi nói tình trạng trong thời gian vừa qua. Câu đã có have not seen nên chỉ cần điền cụm thời gian. Không thêm các thành ngữ khác về bận rộn hoặc vắng mặt; chúng không cần thiết để giữ nghĩa câu gốc."
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "had they splurged such an enormous amount of money on a campaign to no",
-        "had such an enormous amount of money been splurged on a campaign to no"
+        "should not have spent so much",
+        "should not have spent that much"
       ],
-      "displayAnswer": "had they splurged such an enormous amount of money on a campaign to no / had such an enormous amount of money been splurged on a campaign to no",
-      "prefix": "Never before",
-      "suffix": "purpose.",
-      "fullSentence": "Never before had they splurged such an enormous amount of money on a campaign to no purpose.",
-      "explanation": "Never before đặt đầu kéo theo đảo had trước chủ ngữ. Splurge money on something là vung nhiều tiền vào việc gì; to no purpose là không đem lại ích lợi. Mẫu bị động cũng đúng khi money làm chủ ngữ, nhưng cần been splurged."
+      "displayAnswer": "should not have spent so much",
+      "prefix": "They",
+      "suffix": "money on the campaign.",
+      "fullSentence": "They should not have spent so much money on the campaign.",
+      "explanation": "Should not have + V3 dùng để nhận xét một việc đã làm là không nên. Too much chuyển thành so much/that much trong câu phê bình đã tiêu quá nhiều. Không dùng should not spend vì câu gốc nói việc chi tiền đã xảy ra."
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "out of both sides of his mouth left the hospital spokesperson skating on",
-        "out of both sides of his mouth left the hospital spokesperson on"
+        "left the audience confused"
       ],
-      "displayAnswer": "out of both sides of his mouth left the hospital spokesperson skating on / out of both sides of his mouth left the hospital spokesperson on",
-      "prefix": "Speaking",
-      "suffix": "thin ice.",
-      "fullSentence": "Speaking out of both sides of his mouth left the hospital spokesperson skating on thin ice.",
-      "explanation": "Speak out of both sides of one’s mouth là nói tiền hậu bất nhất. Left someone (skating) on thin ice nghĩa là khiến người đó ở tình thế rất rủi ro. Speaking cả cụm làm chủ ngữ, left là động từ chính ở quá khứ; phải giữ người phát ngôn làm tân ngữ."
+      "displayAnswer": "left the audience confused",
+      "prefix": "The spokesperson’s contradictory statements",
+      "suffix": ".",
+      "fullSentence": "The spokesperson’s contradictory statements left the audience confused.",
+      "explanation": "Leave + tân ngữ + tính từ diễn tả khiến ai ở trạng thái nào đó. Contradictory statements là các phát biểu mâu thuẫn, còn confused tả cảm giác của khán giả. Dùng left để giữ thì quá khứ; không dùng confusing, vì khi đó sẽ tả khán giả gây khó hiểu."
     },
     {
       "globalNumber": 96,
@@ -1174,27 +1158,27 @@
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "well as his classmates has every intention of giving"
+        "have no intention of joining"
       ],
-      "displayAnswer": "well as his classmates has every intention of giving",
-      "prefix": "He as",
-      "suffix": "her a wide berth.",
-      "fullSentence": "He as well as his classmates has every intention of giving her a wide berth.",
-      "explanation": "As well as his classmates là phần bổ sung, nên động từ chính theo he và dùng has. Have every intention of V-ing là rất có ý định/quyết tâm. Give someone a wide berth là tránh xa, không phải cho ai một chỗ rộng theo nghĩa đen."
+      "displayAnswer": "have no intention of joining",
+      "prefix": "He and his classmates",
+      "suffix": "the club.",
+      "fullSentence": "He and his classmates have no intention of joining the club.",
+      "explanation": "Have no intention of doing something nghĩa là không có ý định làm việc gì. Chủ ngữ he and his classmates số nhiều nên dùng have. Sau of dùng joining; không dùng to join trong cụm này. No giữ ý phủ định cả anh ấy lẫn các bạn cùng lớp."
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "for her gift of the gab, no one would feel at",
-        "for her gift of the gab, no one would be at"
+        "is due to her clear explanations of her ideas",
+        "is due to her clear explanations"
       ],
-      "displayAnswer": "for her gift of the gab, no one would feel at / for her gift of the gab, no one would be at",
-      "prefix": "But",
-      "suffix": "one with her.",
-      "fullSentence": "But for her gift of the gab, no one would feel at one with her.",
-      "explanation": "But for + danh từ nghĩa là nếu không có. Gift of the gab là tài ăn nói thuyết phục; at one with someone là hòa hợp/cùng quan điểm. Would feel/be diễn tả giả định trái hiện tại. Không đồng nhất at one with với chỉ thấy thoải mái trong mọi tình huống."
+      "displayAnswer": "is due to her clear explanations of her ideas",
+      "prefix": "People’s support for her",
+      "suffix": ".",
+      "fullSentence": "People’s support for her is due to her clear explanations of her ideas.",
+      "explanation": "Be due to + cụm danh từ diễn tả nguyên nhân. Explanations là danh từ chuyển từ explains, còn clearly đổi thành clear. Support ở đây không đếm được nên dùng is. Không cần thành ngữ gift of the gab để diễn tả khả năng giải thích rõ ràng."
     },
     {
       "globalNumber": 99,
@@ -1215,14 +1199,15 @@
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "was originally intended for the inclusion of a red",
-        "was originally designed for the inclusion of a red"
+        "was taken out of"
       ],
-      "displayAnswer": "was originally intended for the inclusion of a red / was originally designed for the inclusion of a red",
-      "prefix": "The reading passage",
-      "suffix": "herring to distract the students.",
-      "fullSentence": "The reading passage was originally intended for the inclusion of a red herring to distract the students.",
-      "explanation": "Inclusion là sự đưa một chi tiết vào nội dung, theo sau bằng of. Câu cần was trước intended/designed để có vị ngữ bị động hoàn chỉnh. A red herring là chi tiết đánh lạc hướng, có thể hoàn toàn đúng nhưng không liên quan; không nhất thiết là thông tin giả."
+      "displayAnswer": "was taken out of",
+      "prefix": "An irrelevant detail",
+      "suffix": "the passage.",
+      "fullSentence": "An irrelevant detail was taken out of the passage.",
+      "explanation": "Take something out of something là bỏ một phần ra khỏi một tổng thể. An irrelevant detail là đối tượng bị loại nên chuyển thành was taken out of. Was giữ quá khứ và số ít; không dùng took out ở câu bị động."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

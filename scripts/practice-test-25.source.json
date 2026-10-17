@@ -291,7 +291,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Fall back nghĩa là rút lui hoặc lùi lại. Khi bị bắn dữ dội, đội trưởng ra lệnh quân lùi về. Fall over là ngã, fall out có thể là bất hòa/rời hàng, còn fall away là giảm hoặc tách ra."
+      "explanation": "Fall back on something là quay lại sử dụng một phương án dự phòng khi cách làm hiện tại không khả thi. Had to đi với động từ nguyên mẫu. Fall over là ngã, fall out là cãi nhau/rơi ra, fall away là giảm hoặc tách đi; chỉ fall back on đi với original plan đúng nghĩa trong tình huống này."
     },
     {
       "globalNumber": 21,
@@ -1103,14 +1103,14 @@
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
-      "prefix": "Don’t you have",
-      "suffix": "your time in London as a child?",
+      "prefix": "I have",
+      "suffix": "this author before.",
       "acceptedAnswers": [
-        "any recollection of"
+        "no recollection of meeting"
       ],
-      "fullSentence": "Don't you have any recollection of your time in London as a child?",
-      "explanation": "Have any recollection of something nghĩa là còn nhớ điều đó. Câu hỏi phủ định Don't you have ...? giữ ý người nói ngạc nhiên rằng bạn không nhớ gì. Time in London chỉ quãng thời gian sống ở đó, không dùng lifetime cho riêng thời thơ ấu.",
-      "displayAnswer": "any recollection of"
+      "fullSentence": "I have no recollection of meeting this author before.",
+      "explanation": "Have no recollection of doing something nghĩa là không nhớ đã làm gì. Of là giới từ, nên theo sau bằng meeting. Không dùng recollection to meet, vì sẽ sai cách kết hợp và chuyển thành hành động tương lai. Before giữ nghĩa trước đây.",
+      "displayAnswer": "no recollection of meeting"
     },
     {
       "globalNumber": 95,
@@ -1199,5 +1199,7 @@
       "explanation": "Set/put the record straight nghĩa là làm rõ sự thật, đính chính hiểu lầm. To mở mục đích viết cho báo chí và phủ nhận liên quan. Record ở đây là thông tin/lời tường thuật đã được biết tới, không phải phá một kỷ lục.",
       "displayAnswer": "set the record straight / put the record straight"
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

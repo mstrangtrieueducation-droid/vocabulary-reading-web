@@ -1132,13 +1132,15 @@
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "cuts little ice with her"
+        "makes little difference to",
+        "makes very little difference to",
+        "makes hardly any difference to"
       ],
-      "displayAnswer": "cuts little ice with her",
-      "explanation": "Cut little ice with somebody nghĩa là có rất ít sức thuyết phục hoặc tác động. Little giữ đúng has little effect. Cut no ice nghĩa là không có tác động nào, mạnh hơn câu gốc nên không lấy làm đáp án chuẩn.",
-      "prefix": "His excuse for such behavior",
-      "suffix": "",
-      "fullSentence": "His excuse for such behavior cuts little ice with her."
+      "displayAnswer": "makes little difference to",
+      "explanation": "Make little difference to something nghĩa là hầu như không làm thay đổi điều gì. Chủ ngữ his excuse số ít nên dùng makes; to nối với her opinion đã có sau chỗ trống. Little hoặc hardly any giữ nghĩa phủ định nhẹ của hardly changes.",
+      "prefix": "His excuse",
+      "suffix": "her opinion of him.",
+      "fullSentence": "His excuse makes little difference to her opinion of him."
     },
     {
       "globalNumber": 97,
@@ -1195,5 +1197,7 @@
       "suffix": "he should take the job.",
       "fullSentence": "John came to the conclusion that he should take the job."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

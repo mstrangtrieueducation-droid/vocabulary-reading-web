@@ -923,14 +923,14 @@
       "sectionCode": "III.1",
       "localNumber": 1,
       "acceptedAnswers": [
-        "as Richard is in his work, he does not know how to deal with this client",
-        "though Richard is in his work, he does not know how to deal with this client"
+        "as the route was, we reached the village before dark",
+        "though the route was, we reached the village before dark"
       ],
-      "displayAnswer": "as Richard is in his work, he does not know how to deal with this client / though Richard is in his work, he does not know how to deal with this client",
-      "explanation": "Đảo tính từ với as/though để nhượng bộ: Competent as Richard is ... = Although Richard is competent .... Sau as/though vẫn giữ chủ ngữ rồi động từ is, không đảo is Richard. Giữ đầy đủ in his work và this client.",
-      "prefix": "Competent",
-      "suffix": "",
-      "fullSentence": "Competent as Richard is in his work, he does not know how to deal with this client."
+      "displayAnswer": "as the route was, we reached the village before dark",
+      "explanation": "Tính từ + as/though + chủ ngữ + be diễn tả nhượng bộ: Unfamiliar as the route was... Route số ít nên dùng was. Câu giữ cả kết quả đến làng trước khi trời tối; không đổi unfamiliar thành familiar vì sẽ đảo ngược nghĩa.",
+      "prefix": "Unfamiliar",
+      "suffix": ".",
+      "fullSentence": "Unfamiliar as the route was, we reached the village before dark."
     },
     {
       "globalNumber": 82,
@@ -968,13 +968,13 @@
       "sectionCode": "III.1",
       "localNumber": 4,
       "acceptedAnswers": [
-        "refused to sleep in that haunted house"
+        "to sign an agreement she did not understand"
       ],
-      "displayAnswer": "refused to sleep in that haunted house",
-      "explanation": "Flatly refuse to do something = kiên quyết từ chối làm gì. Nothing will persuade me thể hiện sự từ chối dứt khoát. Đổi me thành she trong lời tường thuật; sau refused dùng to sleep.",
-      "prefix": "She flatly",
-      "suffix": "",
-      "fullSentence": "She flatly refused to sleep in that haunted house."
+      "displayAnswer": "to sign an agreement she did not understand",
+      "explanation": "Refuse to do something thuật lại lời từ chối. She said firmly chuyển thành she firmly refused, và do not understand lùi thành did not understand trong lời tường thuật quá khứ. Refuse không đi với V-ing trong cấu trúc này.",
+      "prefix": "She firmly refused",
+      "suffix": ".",
+      "fullSentence": "She firmly refused to sign an agreement she did not understand."
     },
     {
       "globalNumber": 85,
@@ -1153,10 +1153,10 @@
         "fell on deaf ears"
       ],
       "displayAnswer": "fell on deaf ears",
-      "explanation": "Fall on deaf ears = không được ai lắng nghe/chú ý. Last night là mốc quá khứ nên fall đổi thành fell. What the man was saying là chủ ngữ chỉ lời nói; không dùng were falling nếu muốn giữ cách kể kết quả trong câu gốc.",
-      "prefix": "What the man was saying",
-      "suffix": "last night.",
-      "fullSentence": "What the man was saying fell on deaf ears last night."
+      "explanation": "Fall on deaf ears nghĩa là lời cảnh báo hoặc đề nghị bị bỏ ngoài tai. Câu gốc dùng were ignored ở quá khứ nên điền fell, không phải fall. Deaf ears ở số nhiều là cách kết hợp cố định; không thêm người nghe vì câu gốc không nêu cụ thể.",
+      "prefix": "Our warnings about the unsafe bridge",
+      "suffix": ".",
+      "fullSentence": "Our warnings about the unsafe bridge fell on deaf ears."
     },
     {
       "globalNumber": 98,
@@ -1197,5 +1197,7 @@
       "suffix": "himself as an artist.",
       "fullSentence": "Mr Uyen’s son is making a name for himself as an artist."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

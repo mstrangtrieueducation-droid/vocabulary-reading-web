@@ -391,7 +391,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Make a song and dance about something là phản ứng ầm ĩ, phàn nàn quá mức về việc gì. Người lao động đang bất mãn với giờ làm thêm. Các lựa chọn khác ghép từ về biểu diễn nhưng không tạo thành ngữ tương ứng."
+      "explanation": "Raise concerns about something là nêu lên điều lo ngại. Sau have cần phân từ II raised. Arise và grow là nội động từ trong các nghĩa thường gặp, không nhận concerns làm tân ngữ như vậy; lift không tạo cách kết hợp này. Câu dùng cách diễn đạt phù hợp cho ý kiến tại nơi làm việc."
     },
     {
       "globalNumber": 31,
@@ -421,7 +421,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Pit one’s wits against someone là thử sức trí tuệ với người khác. Pit ... against diễn tả đặt hai bên vào cuộc so tài. Set/try không tạo cụm cố định này; yaw là xoay lệch hướng, thường trong kỹ thuật."
+      "explanation": "Test your knowledge là kiểm tra kiến thức của mình. A chance to đi với động từ nguyên mẫu. Raise, earn và reach không kết hợp với your knowledge để diễn tả việc làm một bài đố kiểm tra hiểu biết. Câu thay một thành ngữ hiếm bằng cách dùng từ dễ tái sử dụng."
     },
     {
       "globalNumber": 34,
@@ -431,7 +431,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Beset là gây khó khăn, vây bủa ai; chủ ngữ financial problems số nhiều nên dùng beset, không thêm -s. Bestow là ban/tặng và thường đi với on; bemoan là than phiền; betray là phản bội hoặc để lộ, không diễn tả khó khăn đeo bám."
+      "explanation": "Beset somebody nghĩa là liên tiếp gây khó khăn cho ai. Chủ ngữ financial problems là số nhiều nên dùng beset, không thêm -s. Bestow là ban/tặng, bemoan là than phiền, betray là phản bội; chúng cũng không phù hợp nghĩa của câu."
     },
     {
       "globalNumber": 35,
@@ -979,15 +979,13 @@
       "sectionCode": "III.1",
       "localNumber": 5,
       "acceptedAnswers": [
-        "expense of it put me off the idea",
-        "expense involved put me off the idea",
-        "expense of the idea put me off it"
+        "amount of work involved discouraged me from applying"
       ],
-      "displayAnswer": "expense of it put me off the idea / expense involved put me off the idea / expense of the idea put me off it",
+      "displayAnswer": "amount of work involved discouraged me from applying",
       "prefix": "The sheer",
-      "suffix": "",
-      "fullSentence": "The sheer expense of it put me off the idea.",
-      "explanation": "Sheer nhấn mạnh chính mức chi phí là lý do khiến người nói không muốn tiếp tục. How expensive it was going to be chuyển thành danh từ expense. Put me off giữ nghĩa làm mất hứng/ý định; không đổi thành prevent vì câu không nói bị cấm hoặc không thể làm."
+      "suffix": ".",
+      "fullSentence": "The sheer amount of work involved discouraged me from applying.",
+      "explanation": "The sheer amount of something nhấn mạnh số lượng/mức độ lớn của nó. Discourage somebody from doing something nghĩa là khiến ai nản lòng không làm việc gì. Giữ applying sau from; không dùng to apply trong cấu trúc này."
     },
     {
       "globalNumber": 86,
@@ -1201,5 +1199,7 @@
       "fullSentence": "The new principal will have to get to grips with the problems facing this school without delay.",
       "explanation": "Get to grips with something là bắt đầu nắm bắt và xử lý một vấn đề khó. With nối cụm động từ với problems. Without delay ở cuối giữ ý urgent, nên câu không chỉ yêu cầu xử lý vào một lúc nào đó; sau have to dùng get nguyên mẫu."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

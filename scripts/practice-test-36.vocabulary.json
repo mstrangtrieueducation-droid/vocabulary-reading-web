@@ -102,14 +102,14 @@
     },
     {
       "question": 23,
-      "term": "dissolute",
-      "meta": "ADJECTIVE",
-      "meaning": "buông thả, sống thiếu chuẩn mực",
-      "note": "Thường mô tả người hoặc lối sống sa đà hưởng lạc. Từ khá trang trọng và mang phê phán. Không nhầm insolvent là mất khả năng trả nợ hoặc irresolute là thiếu quyết đoán.",
-      "usage": "a dissolute life/lifestyle",
-      "example": "He regretted his dissolute youth.",
-      "translation": "Ông hối tiếc thời tuổi trẻ buông thả của mình.",
-      "family": "dissolute (adj); dissolutely (adv); dissoluteness (n)"
+      "term": "feel guilty about",
+      "meta": "ADJECTIVE PHRASE",
+      "meaning": "cảm thấy có lỗi về",
+      "note": "Feel là động từ nối nên theo sau bằng tính từ guilty: cảm thấy có lỗi. Guiltily là trạng từ, guilt và guiltiness là danh từ. Apologised cho thấy tâm trạng áy náy, giúp chọn cả đúng từ loại lẫn nghĩa; không cần biết tính từ văn chương dissolute.",
+      "usage": "feel guilty about doing something",
+      "example": "He felt guilty about missing the deadline.",
+      "translation": "Anh ấy thấy có lỗi vì đã lỡ hạn.",
+      "family": "guilt (n); guilty (adj); guiltily (adv)"
     },
     {
       "question": 24,
@@ -289,14 +289,14 @@
     },
     {
       "question": 95,
-      "term": "cut no ice with",
-      "meta": "IDIOM",
-      "meaning": "không gây ấn tượng hay thuyết phục được",
-      "note": "Nêu một lý lẽ/lời giải thích không khiến người nghe thay đổi thái độ. Không nói đến cắt băng thật. With chỉ người không bị thuyết phục; cut không đổi ở quá khứ.",
-      "usage": "an excuse cuts no ice with someone",
-      "example": "That excuse cut no ice with the teacher.",
-      "translation": "Lời biện hộ ấy chẳng thuyết phục được giáo viên.",
-      "family": "cut–cut–cut; ice (n)"
+      "term": "be impressed by",
+      "meta": "ADJECTIVE/PASSIVE PHRASE",
+      "meaning": "cảm thấy ấn tượng trước",
+      "note": "Chuyển chủ động did not impress thành bị động was/were not impressed by. At all giữ mức độ hoàn toàn không. Committee có thể coi là một tập thể số ít hoặc các thành viên theo cách dùng Anh-Anh, nên chấp nhận was và were; không dùng impressive để tả cảm nhận của họ.",
+      "usage": "be impressed by an explanation/performance",
+      "example": "The committee was not impressed by his explanation.",
+      "translation": "Hội đồng không thấy lời giải thích của anh ấy thuyết phục.",
+      "family": "impress (v); impressed/impressive (adj); impression (n)"
     },
     {
       "question": 96,
@@ -322,14 +322,14 @@
     },
     {
       "question": 100,
-      "term": "push the boat out",
-      "meta": "IDIOM",
-      "meaning": "chi tiêu rộng tay cho một dịp đặc biệt",
-      "note": "Thành ngữ Anh, thường nói ăn mừng hoặc mua quà hào phóng. Không chỉ là mua một món đồ bình thường, cũng không đẩy thuyền theo nghĩa đen. Giữ the boat trong cụm.",
-      "usage": "push the boat out for a celebration",
-      "example": "We pushed the boat out for Mum’s birthday.",
-      "translation": "Chúng tôi chi tiêu rộng tay cho sinh nhật mẹ.",
-      "family": "push (v/n); boat (n); boat out chỉ dùng trong thành ngữ này"
+      "term": "no matter how little",
+      "meta": "CONCESSION",
+      "meaning": "bất kể ít đến mức nào",
+      "note": "No matter how little + danh từ không đếm được diễn tả bất kể có ít tiền đến đâu. Money dùng little, không dùng few. Mệnh đề chính giữ buys ở hiện tại để nói thói quen; câu không đòi hỏi thành ngữ địa phương push the boat out.",
+      "usage": "no matter how little + uncountable noun + subject + verb",
+      "example": "No matter how little time she has, she always reads a few pages.",
+      "translation": "Dù có ít thời gian đến đâu, cô ấy vẫn luôn đọc vài trang.",
+      "family": "little – less – least; no matter how = however"
     }
   ]
 }

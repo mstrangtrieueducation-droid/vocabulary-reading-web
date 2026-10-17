@@ -321,7 +321,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Dissolute mô tả lối sống buông thả, thiếu chuẩn mực đạo đức. Cảm giác tội lỗi của vị linh mục gắn với lối sống thời trẻ. Insolent = xấc xược, irresolute = thiếu quyết đoán, insolvent = mất khả năng thanh toán."
+      "explanation": "Feel là động từ nối nên theo sau bằng tính từ guilty: cảm thấy có lỗi. Guiltily là trạng từ, guilt và guiltiness là danh từ. Apologised cho thấy tâm trạng áy náy, giúp chọn cả đúng từ loại lẫn nghĩa; không cần biết tính từ văn chương dissolute."
     },
     {
       "globalNumber": 24,
@@ -1125,15 +1125,16 @@
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "cut no ice with the committee",
-        "cut no ice at all with the committee",
-        "cut no ice with the committee at all"
+        "was not at all impressed by",
+        "were not at all impressed by",
+        "was not impressed at all by",
+        "were not impressed at all by"
       ],
-      "displayAnswer": "cut no ice with the committee / cut no ice at all with the committee / cut no ice with the committee at all",
-      "prefix": "His explanation",
-      "suffix": "",
-      "fullSentence": "His explanation cut no ice with the committee.",
-      "explanation": "Cut no ice with somebody = không gây ấn tượng/thuyết phục được ai. Cut là cả hiện tại lẫn quá khứ, nên giữ nguyên từ gợi ý. No đã thể hiện phủ định; không thêm did not trước cut no ice."
+      "displayAnswer": "was not at all impressed by",
+      "prefix": "The committee",
+      "suffix": "his explanation.",
+      "fullSentence": "The committee was not at all impressed by his explanation.",
+      "explanation": "Chuyển chủ động did not impress thành bị động was/were not impressed by. At all giữ mức độ hoàn toàn không. Committee có thể coi là một tập thể số ít hoặc các thành viên theo cách dùng Anh-Anh, nên chấp nhận was và were; không dùng impressive để tả cảm nhận của họ."
     },
     {
       "globalNumber": 96,
@@ -1198,13 +1199,16 @@
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "of money Simon is, he pushes the boat out"
+        "matter how little money Simon has, he buys his mother a generous birthday present",
+        "matter how little money he has, Simon buys his mother a generous birthday present"
       ],
-      "displayAnswer": "of money Simon is, he pushes the boat out",
-      "prefix": "However short",
-      "suffix": "for his mum’s birthday present.",
-      "fullSentence": "However short of money Simon is, he pushes the boat out for his mum’s birthday present.",
-      "explanation": "However + tính từ + chủ ngữ + động từ = dù đến mức nào. Short of money là thiếu tiền; push the boat out là chi tiêu hào phóng cho dịp đặc biệt. Câu gốc đã nói spends generously nên thành ngữ giữ đúng mức độ, không suy diễn từ việc chỉ mua quà."
+      "displayAnswer": "matter how little money Simon has, he buys his mother a generous birthday present",
+      "prefix": "No",
+      "suffix": ".",
+      "fullSentence": "No matter how little money Simon has, he buys his mother a generous birthday present.",
+      "explanation": "No matter how little + danh từ không đếm được diễn tả bất kể có ít tiền đến đâu. Money dùng little, không dùng few. Mệnh đề chính giữ buys ở hiện tại để nói thói quen; câu không đòi hỏi thành ngữ địa phương push the boat out."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

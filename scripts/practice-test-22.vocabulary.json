@@ -311,25 +311,25 @@
     },
     {
       "question": 94,
-      "term": "come to the table",
-      "meta": "IDIOM",
-      "meaning": "tham gia thương lượng",
-      "note": "Trong bối cảnh bất đồng, nghĩa là sẵn sàng gặp và đàm phán. Không chỉ hành động đi tới bàn ăn theo nghĩa đen; refuse to come to the table là từ chối thương lượng.",
-      "usage": "agree/refuse to come to the table",
-      "example": "Both sides finally agreed to come to the table.",
-      "translation": "Cuối cùng hai bên đồng ý tham gia thương lượng.",
-      "family": "negotiate (v); negotiation (n); negotiable (adj)"
+      "term": "make it harder to",
+      "meta": "STRUCTURE",
+      "meaning": "khiến việc gì trở nên khó hơn",
+      "note": "Make it + tính từ so sánh hơn + to do diễn tả làm việc gì trở nên khó hơn. It là tân ngữ giả, chỉ việc giải quyết vấn đề. Made giữ thì quá khứ; harder là dạng so sánh hơn của hard. Không dùng more harder vì lặp dấu hiệu so sánh.",
+      "usage": "make it harder to solve/understand",
+      "example": "The noise made it harder to concentrate.",
+      "translation": "Tiếng ồn khiến việc tập trung trở nên khó hơn.",
+      "family": "hard (adj/adv); harder (comparative); difficulty (n)"
     },
     {
       "question": 99,
-      "term": "cord",
-      "meta": "NOUN",
-      "meaning": "dây; sợi dây",
-      "note": "Trong câu, cords là dây trói các nhân vật và cut the cords là cắt những sợi dây ấy. Không dùng cụm này như bản dịch chung của chia tay; cut ties với ai là cắt quan hệ.",
-      "usage": "a length of cord; cut the cords",
-      "example": "They used a cord to tie the bundle.",
-      "translation": "Họ dùng một sợi dây để buộc bó đồ.",
-      "family": "cord (n); rope (n); string (n); tie (n/v)"
+      "term": "be said to have been",
+      "meta": "STRUCTURE",
+      "meaning": "được cho là đã được/bị",
+      "note": "Bị động tường thuật: people say chuyển thành are said. Việc được tìm thấy đã xảy ra trước lúc đưa tin nên dùng to have been found, vừa là nguyên mẫu hoàn thành vừa mang nghĩa bị động. Hikers số nhiều nên không dùng is said.",
+      "usage": "be said to have been found/taken",
+      "example": "The missing painting is said to have been found.",
+      "translation": "Người ta nói rằng bức tranh thất lạc đã được tìm thấy.",
+      "family": "say – said – said; report (v/n); reported (adj)"
     }
   ]
 }

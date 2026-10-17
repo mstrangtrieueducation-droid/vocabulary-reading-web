@@ -190,25 +190,25 @@
     },
     {
       "question": 30,
-      "term": "make a song and dance about",
-      "meta": "IDIOM",
-      "meaning": "làm ầm ĩ hoặc phàn nàn quá mức về",
-      "note": "Thường mang sắc thái người nói cho rằng phản ứng là thái quá. Vì có tính đánh giá, dùng thận trọng khi nói về vấn đề nghiêm trọng. Không chỉ một buổi biểu diễn thật.",
-      "usage": "make a song and dance about a delay",
-      "example": "He made a song and dance about a small delay.",
-      "translation": "Anh ấy làm ầm lên vì một sự chậm trễ nhỏ.",
-      "family": "song (n); dance (n/v); make–made–made"
+      "term": "raise concerns about",
+      "meta": "COLLOCATION",
+      "meaning": "nêu lên mối lo ngại về",
+      "note": "Raise concerns about something là nêu lên điều lo ngại. Sau have cần phân từ II raised. Arise và grow là nội động từ trong các nghĩa thường gặp, không nhận concerns làm tân ngữ như vậy; lift không tạo cách kết hợp này. Câu dùng cách diễn đạt phù hợp cho ý kiến tại nơi làm việc.",
+      "usage": "raise concerns about safety/working hours",
+      "example": "The workers raised concerns about the extra hours.",
+      "translation": "Người lao động nêu lo ngại về số giờ làm thêm.",
+      "family": "raise (v); concern (n/v); concerned (adj)"
     },
     {
       "question": 33,
-      "term": "pit one’s wits against",
-      "meta": "IDIOM",
-      "meaning": "so tài trí với",
-      "note": "Wits là khả năng suy nghĩ nhanh, khôn khéo. Cụm nói một cuộc thử sức trí tuệ như câu đố hoặc trò chơi, không phải đánh nhau. Giữ wits ở số nhiều và against trước đối thủ.",
-      "usage": "pit your wits against a puzzle expert",
-      "example": "The quiz lets you pit your wits against other players.",
-      "translation": "Trò đố cho phép bạn so tài trí với người chơi khác.",
-      "family": "wit (n); wits (plural noun); witty (adj); pit (v)"
+      "term": "test your knowledge",
+      "meta": "COLLOCATION",
+      "meaning": "kiểm tra kiến thức của mình",
+      "note": "Test your knowledge là kiểm tra kiến thức của mình. A chance to đi với động từ nguyên mẫu. Raise, earn và reach không kết hợp với your knowledge để diễn tả việc làm một bài đố kiểm tra hiểu biết. Câu thay một thành ngữ hiếm bằng cách dùng từ dễ tái sử dụng.",
+      "usage": "test your knowledge of a subject",
+      "example": "The quiz tests your knowledge of wildlife.",
+      "translation": "Bài đố kiểm tra kiến thức của bạn về động vật hoang dã.",
+      "family": "test (n/v); knowledge (n); knowledgeable (adj)"
     },
     {
       "question": 34,

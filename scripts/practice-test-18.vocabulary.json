@@ -3,14 +3,14 @@
   "words": [
     {
       "question": 5,
-      "term": "look like death warmed up",
-      "meta": "IDIOM",
-      "meaning": "trông rất mệt mỏi, thiếu sức sống",
-      "note": "Thành ngữ thân mật nói về vẻ ngoài của người mệt hoặc ốm. Không hiểu theo nghĩa đen là chết; cần cả cụm look like để mô tả dáng vẻ.",
-      "usage": "look like death warmed up",
-      "example": "After the overnight journey, I looked like death warmed up.",
-      "translation": "Sau chuyến đi suốt đêm, tôi trông rất mệt mỏi.",
-      "family": "die (v); death (n); dead (adj); deadly (adj/adv)"
+      "term": "cannot have + V3",
+      "meta": "STRUCTURE",
+      "meaning": "suy luận rằng một việc không thể đã xảy ra",
+      "note": "Cannot have + phân từ II diễn tả suy luận một việc khó có thể đã xảy ra: nhìn John kiệt sức, người nói cho rằng anh ấy không thể đã ngủ ngon. Must have slept well diễn tả suy luận ngược lại. Need và would không diễn đạt sự suy luận phủ định dựa trên dấu hiệu này.",
+      "usage": "cannot have slept/seen/known",
+      "example": "He looks exhausted. He cannot have slept well.",
+      "translation": "Anh ấy trông kiệt sức. Chắc anh ấy đã không ngủ ngon.",
+      "family": "can; cannot; cannot have + past participle"
     },
     {
       "question": 6,
@@ -47,14 +47,14 @@
     },
     {
       "question": 10,
-      "term": "hand in glove",
-      "meta": "IDIOM",
-      "meaning": "phối hợp chặt chẽ",
-      "note": "Có thể nói sự hợp tác rất mật thiết; đôi khi mang sắc thái thông đồng nếu ngữ cảnh tiêu cực. Hand in hand cũng diễn đạt hợp tác, nên không coi hai cụm luôn đối lập nhau.",
-      "usage": "work hand in glove with someone",
-      "example": "The designers worked hand in glove with the engineers.",
-      "translation": "Các nhà thiết kế phối hợp chặt chẽ với các kỹ sư.",
-      "family": "cooperate (v); cooperation (n); collaborative (adj)"
+      "term": "work closely with",
+      "meta": "VERB PHRASE",
+      "meaning": "phối hợp chặt chẽ với",
+      "note": "Work closely with somebody là phối hợp chặt chẽ với ai. Nearly nghĩa là gần như; hardly là hầu như không; lately chỉ thời gian gần đây và không diễn tả cách phối hợp. Câu dùng cách kết hợp trung tính, phù hợp với sự hợp tác giữa hai tổ chức.",
+      "usage": "work closely with a team/organisation",
+      "example": "The teachers work closely with parents.",
+      "translation": "Các giáo viên phối hợp chặt chẽ với phụ huynh.",
+      "family": "close (adj); closely (adv); cooperation (n)"
     },
     {
       "question": 13,

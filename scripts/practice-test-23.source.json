@@ -198,10 +198,10 @@
       "sectionCode": "I.1",
       "localNumber": 11,
       "acceptedAnswers": [
-        "D"
+        "C"
       ],
-      "displayAnswer": "D",
-      "explanation": "An outbreak of fever chỉ sự bùng phát bệnh. Outcome là kết quả, outset là thời điểm bắt đầu và outburst thường là cơn bộc phát cảm xúc. Nghĩa dịch bệnh khiến trường phải đóng cửa phù hợp outbreak."
+      "displayAnswer": "C",
+      "explanation": "At the outset of something nghĩa là ngay từ lúc bắt đầu. Outcome là kết quả, outburst là sự bộc phát và outbreak là sự bùng phát dịch bệnh/bạo lực. Câu yêu cầu phân biệt các danh từ bắt đầu bằng out- trong ngữ cảnh khởi đầu một dự án."
     },
     {
       "globalNumber": 12,
@@ -421,7 +421,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Fat chance là thành ngữ mang nghĩa mỉa mai: rất ít khả năng, gần như không có cơ hội. Almost no employers operate here giải thích vì sao khó tìm việc. Big/good/huge chance đều chỉ cơ hội lớn nên ngược ngữ cảnh."
+      "explanation": "A slim chance là một khả năng rất nhỏ. Thông tin almost no employers operate here cho thấy rất ít cơ hội tìm được việc, nên chọn slim. Big, good và huge đều gợi khả năng thuận lợi hoặc lớn, trái với ngữ cảnh. Cụm này dùng được trong nhiều tình huống học tập và công việc."
     },
     {
       "globalNumber": 34,
@@ -1195,5 +1195,7 @@
       "explanation": "Weigh (up) something nghĩa là cân nhắc cẩn thận, không phải cân khối lượng trong ngữ cảnh quyết định. Sau need to dùng weigh nguyên mẫu và giữ all the risks. Cả weigh all the risks và weigh up all the risks đều đúng.",
       "displayAnswer": "weigh up all the risks / weigh all the risks / weigh all the risks up"
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

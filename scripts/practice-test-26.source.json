@@ -171,7 +171,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "At that ở cuối câu bổ sung một nhận xét có tính nhấn mạnh: món đồ đã đắt, lại còn lỗi thời nữa. As such nghĩa là với tư cách/đúng bản chất như vậy, per se là tự thân nó, in all là tổng cộng. Đáp án phải thể hiện ý thêm một nhược điểm."
+      "explanation": "Moreover bổ sung thêm một lý do cùng hướng: chiếc bàn vừa đắt vừa quá lớn. Otherwise nêu điều sẽ xảy ra nếu không làm việc trước đó; nevertheless thể hiện tương phản; instead nêu sự thay thế. Hai bất lợi nối tiếp nên chọn moreover."
     },
     {
       "globalNumber": 9,
@@ -191,7 +191,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Sovereign trong sovereign remedy là từ văn chương mang nghĩa rất hiệu nghiệm. Sovereign còn là danh từ chỉ vị quân chủ; dấu hiệu này phân biệt nó với top-notch hay superfine, vốn cũng có thể diễn tả chất lượng tốt. Đây là câu hỏi nghĩa từ, không phải khẳng định về điều trị."
+      "explanation": "Prove ở đây là động từ nối, nghĩa là tỏ ra, nên theo sau bằng tính từ effective. Effective in doing something là có hiệu quả trong việc gì. Effectively là trạng từ, effect và effectiveness là danh từ, không phù hợp cấu trúc has proved + tính từ."
     },
     {
       "globalNumber": 11,
@@ -251,27 +251,27 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Clean có thể làm trạng từ thân mật nghĩa là hoàn toàn trong clean forgot. Người nói xin lỗi vì quên hẳn việc gửi thư hôm qua. Barely là hầu như không, only là chỉ, còn fair không tạo cụm đúng với forgot trong câu này."
+      "explanation": "Forget to do something là quên thực hiện một việc; lá thư vẫn trên bàn cho thấy việc gửi chưa xảy ra. Forget doing something là không nhớ một việc đã làm, không phù hợp. Sau forgot không dùng posted hoặc post đứng một mình."
     },
     {
       "globalNumber": 17,
       "sectionCode": "I.1",
       "localNumber": 17,
       "acceptedAnswers": [
-        "B"
+        "A"
       ],
-      "displayAnswer": "B",
-      "explanation": "Quench one's thirst là làm dịu hoặc giải cơn khát. Mineral water là đồ uống phục vụ mục đích đó. Quit là bỏ/dừng, quiver là run và quieten là làm yên; chúng không đi với thirst theo kết hợp từ chuẩn của câu."
+      "displayAnswer": "A",
+      "explanation": "Make + tân ngữ + tính từ diễn tả làm ai có trạng thái nào: made us very thirsty. Thirst là danh từ, thirstily là trạng từ; thirstier là so sánh hơn và không đi trực tiếp sau very theo cách này. Câu ôn họ từ thirst qua một cấu trúc quen thuộc."
     },
     {
       "globalNumber": 18,
       "sectionCode": "I.1",
       "localNumber": 18,
       "acceptedAnswers": [
-        "D"
+        "B"
       ],
-      "displayAnswer": "D",
-      "explanation": "Injected nghĩa là được tiêm; câu dùng bị động couldn't be + quá khứ phân từ. Việc bộ dụng cụ thiếu needles giải thích vì sao không tiêm được tại chỗ. Served, catered và distributed nói phục vụ hoặc phân phát, không diễn đạt thao tác này."
+      "displayAnswer": "B",
+      "explanation": "Thiết bị là đối tượng được kiểm tra nên cần bị động sau động từ khuyết thiếu: must be + V3. Must be checked nghĩa là phải được kiểm tra. Check và have checked diễn đạt chủ động; checking không thể theo sau must ở đây."
     },
     {
       "globalNumber": 19,
@@ -281,7 +281,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Adopt a solution là chọn và đưa giải pháp vào sử dụng. Adapt là điều chỉnh cho phù hợp, adorn là trang trí, adept là tính từ chỉ sự thành thạo. Hội đồng có nhiều giải pháp tốt và đang quyết định chọn giải pháp nào nên adopt phù hợp."
+      "explanation": "Adapt something to meet a need là điều chỉnh thứ đang có để đáp ứng nhu cầu. Adopt là chọn hoặc áp dụng, không nhấn mạnh sửa đổi; adorn là trang trí, adept là tính từ giỏi. Câu đối chiếu adapt với adopt ở đề trước bằng một tình huống cần điều chỉnh tài liệu."
     },
     {
       "globalNumber": 20,
@@ -926,14 +926,13 @@
       "sectionCode": "III.1",
       "localNumber": 1,
       "acceptedAnswers": [
-        "have known that his mother was seriously ill",
-        "have known his mother was seriously ill"
+        "have seen the email before the meeting"
       ],
-      "displayAnswer": "have known that his mother was seriously ill / have known his mother was seriously ill",
-      "prefix": "He couldn’t possibly",
-      "suffix": "",
-      "fullSentence": "He couldn’t possibly have known that his mother was seriously ill.",
-      "explanation": "Couldn't possibly have + quá khứ phân từ diễn tả suy đoán chắc chắn rằng một việc trong quá khứ không xảy ra. Vì câu gốc là he didn't know, cần have known, không dùng know ở hiện tại. That có thể giữ hoặc bỏ trước mệnh đề về tình trạng của mẹ."
+      "displayAnswer": "have seen the email before the meeting",
+      "prefix": "She cannot",
+      "suffix": ".",
+      "fullSentence": "She cannot have seen the email before the meeting.",
+      "explanation": "Cannot have + phân từ II diễn tả suy luận chắc chắn rằng một việc không xảy ra trong quá khứ. Câu gốc nói did not see trước cuộc họp, nên dùng have seen. Không dùng cannot see vì đó là khả năng hoặc tình huống hiện tại."
     },
     {
       "globalNumber": 82,
@@ -1150,15 +1149,13 @@
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "came to my farewell party with the exception of Leo",
-        "with the exception of Leo came to my farewell party",
-        "came to my farewell party, with the exception of Leo"
+        "the exception of Minh, all the students"
       ],
-      "displayAnswer": "came to my farewell party with the exception of Leo / with the exception of Leo came to my farewell party / came to my farewell party, with the exception of Leo",
-      "prefix": "Everyone in the street",
-      "suffix": "",
-      "fullSentence": "Everyone in the street came to my farewell party with the exception of Leo.",
-      "explanation": "With the exception of Leo nghĩa là ngoại trừ Leo. Nó chuyển ý Leo là người duy nhất không đến thành mọi người đều đến trừ Leo. Phải giữ my farewell party; không dùng everyone didn't come vì sẽ mang nghĩa khác về số người tham dự."
+      "displayAnswer": "the exception of Minh, all the students",
+      "prefix": "With",
+      "suffix": "handed in their essays.",
+      "fullSentence": "With the exception of Minh, all the students handed in their essays.",
+      "explanation": "With the exception of somebody nghĩa là ngoại trừ người đó. Phần điền phải có cả all the students làm chủ ngữ cho handed in. Không dùng except of; đây là cách diễn đạt bằng cụm danh từ exception, khác vị trí except ở câu gốc."
     },
     {
       "globalNumber": 97,
@@ -1194,29 +1191,28 @@
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "bought it on a whim",
-        "bought it on a sudden whim"
+        "on a whim rather than after careful thought"
       ],
-      "displayAnswer": "bought it on a whim / bought it on a sudden whim",
-      "prefix": "I",
-      "suffix": "and now I really regret it!",
-      "fullSentence": "I bought it on a whim and now I really regret it!",
-      "explanation": "On a whim là theo hứng nhất thời, không có kế hoạch trước, đúng với on a sudden impulse. Bought cho biết việc mua đã thực sự xảy ra; decided to buy chỉ quyết định mua, chưa bảo đảm đã mua. Whim phải giữ nguyên và cần mạo từ a."
+      "displayAnswer": "on a whim rather than after careful thought",
+      "prefix": "She chose the colour",
+      "suffix": ".",
+      "fullSentence": "She chose the colour on a whim rather than after careful thought.",
+      "explanation": "On a whim nghĩa là theo một ý thích bất chợt, không cân nhắc kỹ. Whim là danh từ đếm được số ít nên cần a. Rather than after careful thought giữ sự đối lập với quyết định có suy xét; không dùng in a whim."
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "caught in the act of driving a stolen vehicle, he was arrested",
-        "caught in the act of driving a stolen vehicle led to his arrest",
-        "caught in the act of driving a stolen vehicle resulted in his arrest"
+        "a visitor in the act of trying to remove"
       ],
-      "displayAnswer": "caught in the act of driving a stolen vehicle, he was arrested / caught in the act of driving a stolen vehicle led to his arrest / caught in the act of driving a stolen vehicle resulted in his arrest",
-      "prefix": "Being",
-      "suffix": "",
-      "fullSentence": "Being caught in the act of driving a stolen vehicle, he was arrested.",
-      "explanation": "Be caught in the act of doing something là bị bắt gặp ngay lúc đang làm việc đó. Being đã được cho sẵn; cần caught rồi in the act of + V-ing. Có thể dùng cụm đầu câu chỉ nguyên nhân hoặc cho toàn bộ Being caught ... làm chủ ngữ của led to his arrest."
+      "displayAnswer": "a visitor in the act of trying to remove",
+      "prefix": "The guard caught",
+      "suffix": "a painting.",
+      "fullSentence": "The guard caught a visitor in the act of trying to remove a painting.",
+      "explanation": "Catch somebody in the act of doing something nghĩa là bắt gặp đúng lúc người đó đang làm việc gì. Sau of dùng trying; to remove phụ thuộc vào try. Cần giữ trying vì câu gốc chưa khẳng định người khách đã tháo được bức tranh."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

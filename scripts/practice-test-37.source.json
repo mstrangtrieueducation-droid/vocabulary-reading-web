@@ -980,14 +980,13 @@
       "sectionCode": "III.1",
       "localNumber": 4,
       "acceptedAnswers": [
-        "the time our parents heard my brother use those words",
-        "the time that our parents heard my brother use those words"
+        "were made to wait outside until the room was ready"
       ],
-      "displayAnswer": "the time our parents heard my brother use those words / the time that our parents heard my brother use those words",
-      "explanation": "Many’s the time (that) ... là cách diễn đạt nhấn mạnh 'đã nhiều lần'. Hear somebody do something dùng use nguyên mẫu; không đổi thành heard my brother those words used. Giữ our parents theo câu gốc, không đổi my parents tùy ý.",
-      "prefix": "Many’s",
-      "suffix": "",
-      "fullSentence": "Many’s the time our parents heard my brother use those words."
+      "displayAnswer": "were made to wait outside until the room was ready",
+      "explanation": "Make somebody do something khi chuyển sang bị động trở thành be made to do something. Us chuyển thành chủ ngữ we, và quá khứ dùng were made. Phải thêm to trước wait; giữ until the room was ready để bảo toàn điều kiện kết thúc việc chờ.",
+      "prefix": "We",
+      "suffix": ".",
+      "fullSentence": "We were made to wait outside until the room was ready."
     },
     {
       "globalNumber": 85,
@@ -1048,29 +1047,26 @@
       "sectionCode": "III.1",
       "localNumber": 9,
       "acceptedAnswers": [
-        "domestic problem has been caused by redundancy"
+        "passenger has complained about the repeated delays"
       ],
-      "displayAnswer": "domestic problem has been caused by redundancy",
-      "explanation": "Many a + danh từ số ít + động từ số ít, dù nghĩa là nhiều. Domestic problem dùng số ít và has been caused giữ thì hiện tại hoàn thành, thể bị động. Không dùng many a domestic problems/have.",
+      "displayAnswer": "passenger has complained about the repeated delays",
+      "explanation": "Many a + danh từ số ít đi với động từ số ít dù mang nghĩa nhiều người. Vì vậy dùng passenger has complained, không dùng passengers have. Giữ hiện tại hoàn thành và nội dung repeated delays để tương đương câu gốc.",
       "prefix": "Many a",
-      "suffix": "",
-      "fullSentence": "Many a domestic problem has been caused by redundancy."
+      "suffix": ".",
+      "fullSentence": "Many a passenger has complained about the repeated delays."
     },
     {
       "globalNumber": 90,
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "my explanation of what had happened totally unacceptable",
-        "my explanation for what had happened totally unacceptable",
-        "it impossible to accept my explanation of what had happened",
-        "it impossible to accept my explanation for what had happened"
+        "it impossible to believe my account of the incident"
       ],
-      "displayAnswer": "my explanation of what had happened totally unacceptable / my explanation for what had happened totally unacceptable / it impossible to accept my explanation of what had happened / it impossible to accept my explanation for what had happened",
-      "explanation": "Found + tân ngữ + tính từ nêu việc họ không chấp nhận lời giải thích. Unacceptable giữ sự bác bỏ, không đơn thuần nói khó hiểu. What had happened giữ thứ tự xảy ra trước lời giải thích; it có thể làm tân ngữ giả trước impossible to accept.",
+      "displayAnswer": "it impossible to believe my account of the incident",
+      "explanation": "Find it + tính từ + to do: found it impossible to believe, nghĩa là thấy không thể tin. It là tân ngữ giả nên không bỏ. My account of the incident là lời kể về sự việc; không đổi believe thành understand vì không tin và không hiểu là hai ý khác nhau.",
       "prefix": "They found",
-      "suffix": "",
-      "fullSentence": "They found my explanation of what had happened totally unacceptable."
+      "suffix": ".",
+      "fullSentence": "They found it impossible to believe my account of the incident."
     },
     {
       "globalNumber": 91,
@@ -1131,14 +1127,14 @@
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "as he is totally out of his depth, he will definitely go down in",
-        "as he is completely out of his depth, he will definitely go down in"
+        "not experienced enough for",
+        "not experienced enough to take on"
       ],
-      "displayAnswer": "as he is totally out of his depth, he will definitely go down in / as he is completely out of his depth, he will definitely go down in",
-      "explanation": "Inasmuch as = bởi vì; out of one’s depth = thiếu năng lực/kinh nghiệm xử lý tình huống. Go down in flames = thất bại thảm hại. Giữ definitely để tương ứng chắc chắn thất bại, và điền in trước flames có sẵn.",
-      "prefix": "Inasmuch",
-      "suffix": "flames.",
-      "fullSentence": "Inasmuch as he is totally out of his depth, he will definitely go down in flames."
+      "displayAnswer": "not experienced enough for",
+      "explanation": "Not + tính từ + enough diễn tả chưa đủ một phẩm chất. Có thể dùng for + danh từ hoặc to take on + vai trò. Experienced là tính từ, đứng trước enough; không dùng enough experienced. Câu không suy diễn thêm rằng anh ấy chắc chắn sẽ thất bại thảm hại.",
+      "prefix": "He was",
+      "suffix": "such a demanding role.",
+      "fullSentence": "He was not experienced enough for such a demanding role."
     },
     {
       "globalNumber": 96,
@@ -1158,30 +1154,29 @@
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "did he get his fingers burnt in the investment that he has not got a penny",
-        "did he get his fingers burned in the investment that he has not got a penny",
-        "did he burn his fingers in the investment that he now has not got a penny",
-        "did he get his fingers burnt from the investment that he has not got a penny"
+        "could not afford to pay his bills",
+        "could no longer afford to pay his bills"
       ],
-      "displayAnswer": "did he get his fingers burnt in the investment that he has not got a penny / did he get his fingers burned in the investment that he has not got a penny / did he burn his fingers in the investment that he now has not got a penny / did he get his fingers burnt from the investment that he has not got a penny",
-      "explanation": "So severely đưa đầu câu gây đảo did he get/burn. Get one’s fingers burnt/burn one’s fingers = chịu thiệt từ một việc mạo hiểm, nhất là đầu tư. Not have a penny to rub together = hoàn toàn cháy túi. Giữ hiện tại has vì hậu quả hiện giờ.",
-      "prefix": "So severely",
-      "suffix": "to rub together.",
-      "fullSentence": "So severely did he get his fingers burnt in the investment that he has not got a penny to rub together."
+      "displayAnswer": "could not afford to pay his bills",
+      "explanation": "Can/could afford to do something là có đủ khả năng tài chính để làm gì. Câu ở quá khứ nên dùng could not afford; to pay đi sau afford. Giữ his bills để nói rõ khoản chi không trả được, không tự suy rộng thành mất toàn bộ tiền bạc.",
+      "prefix": "After losing so much money on the investment, he",
+      "suffix": ".",
+      "fullSentence": "After losing so much money on the investment, he could not afford to pay his bills."
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "deal a severe blow to small businesses, leaving them hanging by a",
-        "deal a serious blow to small businesses, leaving them hanging by a"
+        "a seriously harmful effect on",
+        "a very harmful effect on",
+        "a serious negative effect on"
       ],
-      "displayAnswer": "deal a severe blow to small businesses, leaving them hanging by a / deal a serious blow to small businesses, leaving them hanging by a",
-      "explanation": "Deal a severe/serious blow to = gây tổn hại lớn; hang by a thread = ở tình thế rất mong manh. Leaving them nêu kết quả đối với small businesses, không phải các luật thuế. Điền a trước thread có sẵn.",
-      "prefix": "The new punitive tax laws will",
-      "suffix": "thread.",
-      "fullSentence": "The new punitive tax laws will deal a severe blow to small businesses, leaving them hanging by a thread."
+      "displayAnswer": "a seriously harmful effect on",
+      "explanation": "Have an effect on somebody/something diễn tả tác động đến đối tượng. Harm chuyển thành harmful hoặc negative; seriously/very/serious giữ mức độ đáng kể. On là giới từ cần có. Không phải ghép thêm thành ngữ hanging by a thread để làm câu tương đương.",
+      "prefix": "The new tax will have",
+      "suffix": "small businesses.",
+      "fullSentence": "The new tax will have a seriously harmful effect on small businesses."
     },
     {
       "globalNumber": 99,
@@ -1201,14 +1196,15 @@
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "on a show of grief in public, they were secretly glad to see the back",
-        "on a public show of grief, they were secretly glad to see the back"
+        "although they pretended to be sad"
       ],
-      "displayAnswer": "on a show of grief in public, they were secretly glad to see the back / on a public show of grief, they were secretly glad to see the back",
-      "explanation": "For all + danh từ/V-ing diễn tả mặc dù. Put on a show of grief = tỏ vẻ đau buồn; be glad to see the back of somebody = vui vì không còn phải chịu người đó. Giữ secretly để đối lập với biểu hiện công khai.",
-      "prefix": "For all their putting",
-      "suffix": "of the tyrant.",
-      "fullSentence": "For all their putting on a show of grief in public, they were secretly glad to see the back of the tyrant."
+      "displayAnswer": "although they pretended to be sad",
+      "explanation": "Although nối hai ý tương phản: bên ngoài tỏ ra buồn nhưng thực ra vui. Sau although cần mệnh đề có chủ ngữ và động từ. Had left chỉ việc rời đi xảy ra trước cảm giác pleased; không dùng despite they pretended vì despite không đi trực tiếp với mệnh đề như vậy.",
+      "prefix": "They were actually pleased that he had left",
+      "suffix": ".",
+      "fullSentence": "They were actually pleased that he had left although they pretended to be sad."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

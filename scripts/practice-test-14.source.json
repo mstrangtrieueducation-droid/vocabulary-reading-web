@@ -158,10 +158,10 @@
       "sectionCode": "I.1",
       "localNumber": 7,
       "acceptedAnswers": [
-        "D"
+        "B"
       ],
-      "displayAnswer": "D",
-      "explanation": "It is important that + chủ ngữ + động từ nguyên mẫu là thể giả định. Vì chúng tôi cần được báo, dùng be notified. Are notifying là chủ động; being notified thiếu động từ hữu hạn; were notified không diễn đạt yêu cầu ở đây."
+      "displayAnswer": "B",
+      "explanation": "Sau recommend that, động từ trong mệnh đề chỉ đề nghị dùng dạng nguyên mẫu không to: every candidate read. Chủ ngữ số ít không làm động từ thêm -s trong cấu trúc này. Reads và has read là dạng trần thuật; reading không thể tự làm vị ngữ."
     },
     {
       "globalNumber": 8,
@@ -1200,5 +1200,7 @@
       "suffix": "the magnificent carvings above the windows.",
       "fullSentence": "The guide drew our attention to the magnificent carvings above the windows."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

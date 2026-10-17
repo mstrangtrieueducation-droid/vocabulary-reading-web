@@ -58,14 +58,14 @@
     },
     {
       "question": 11,
-      "term": "outbreak",
-      "meta": "NOUN",
-      "meaning": "sự bùng phát",
-      "note": "Thường đi với bệnh, chiến tranh hoặc bạo lực bắt đầu xuất hiện mạnh. Outburst thường chỉ cơn giận hoặc lời nói bộc phát; outcome là kết quả.",
-      "usage": "an outbreak of disease/violence",
-      "example": "The story begins with an outbreak of violence.",
-      "translation": "Câu chuyện bắt đầu bằng một đợt bùng phát bạo lực.",
-      "family": "break out (phrasal verb); outbreak (n)"
+      "term": "at the outset of",
+      "meta": "PHRASE",
+      "meaning": "ngay từ lúc bắt đầu",
+      "note": "At the outset of something nghĩa là ngay từ lúc bắt đầu. Outcome là kết quả, outburst là sự bộc phát và outbreak là sự bùng phát dịch bệnh/bạo lực. Câu yêu cầu phân biệt các danh từ bắt đầu bằng out- trong ngữ cảnh khởi đầu một dự án.",
+      "usage": "at the outset of a project/course",
+      "example": "The goals were explained at the outset of the course.",
+      "translation": "Các mục tiêu được giải thích ngay đầu khóa học.",
+      "family": "outset (n); start (n/v); beginning (n)"
     },
     {
       "question": 15,
@@ -179,14 +179,14 @@
     },
     {
       "question": 33,
-      "term": "fat chance",
-      "meta": "IDIOM",
-      "meaning": "rất ít hy vọng; gần như không có cơ hội",
-      "note": "Đây là cách nói mỉa mai, thân mật: fat không mang nghĩa cơ hội lớn. Đọc ngữ cảnh để tránh nhầm với a good chance, vốn chỉ khả năng khá cao.",
-      "usage": "fat chance of doing something; Fat chance!",
-      "example": "Fat chance of finishing today without help!",
-      "translation": "Gần như không có cơ hội làm xong hôm nay nếu không được giúp.",
-      "family": "chance (n); unlikely (adj); slim chance (phrase)"
+      "term": "a slim chance",
+      "meta": "COLLOCATION",
+      "meaning": "một khả năng rất nhỏ",
+      "note": "A slim chance là một khả năng rất nhỏ. Thông tin almost no employers operate here cho thấy rất ít cơ hội tìm được việc, nên chọn slim. Big, good và huge đều gợi khả năng thuận lợi hoặc lớn, trái với ngữ cảnh. Cụm này dùng được trong nhiều tình huống học tập và công việc.",
+      "usage": "a slim chance of success/finding work",
+      "example": "There is only a slim chance of success.",
+      "translation": "Chỉ có một khả năng thành công rất nhỏ.",
+      "family": "slim (adj); chance (n); possibility (n)"
     },
     {
       "question": 37,

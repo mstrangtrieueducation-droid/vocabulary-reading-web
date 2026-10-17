@@ -201,7 +201,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "For donkey’s years nghĩa là trong một khoảng thời gian rất lâu. Đây là thành ngữ cố định, không thay donkey bằng snail, tortoise hoặc monkey. Trong câu phủ định, người nói nhấn mạnh đã lâu không chơi môn này."
+      "explanation": "Since nối với mốc bắt đầu, ở đây là mệnh đề I left secondary school. Hiện tại hoàn thành have not played diễn tả khoảng thời gian từ mốc đó đến nay. For cần một khoảng thời gian; during và from không thay since trong cấu trúc này."
     },
     {
       "globalNumber": 12,
@@ -1079,14 +1079,13 @@
       "sectionCode": "III.1",
       "localNumber": 9,
       "acceptedAnswers": [
-        "to which he was influenced by his brother",
-        "of his brother's influence on him"
+        "to which the weather could affect our plans"
       ],
-      "displayAnswer": "to which he was influenced by his brother / of his brother's influence on him",
-      "prefix": "I didn’t realize the extent",
-      "suffix": "",
-      "fullSentence": "I didn’t realize the extent to which he was influenced by his brother.",
-      "explanation": "The extent to which... diễn tả mức độ mà một việc đúng/xảy ra. To phải đi trước which trong cụm này, không dùng extent which. Có thể chuyển sang of his brother’s influence on him, nhưng phải giữ rõ người anh là nguồn ảnh hưởng và he là người chịu ảnh hưởng."
+      "displayAnswer": "to which the weather could affect our plans",
+      "prefix": "I had not realised the extent",
+      "suffix": ".",
+      "fullSentence": "I had not realised the extent to which the weather could affect our plans.",
+      "explanation": "The extent to which + mệnh đề diễn tả mức độ mà một việc có thể xảy ra. To which là cụm cần giữ nguyên, không dùng at which hoặc how sau extent. Could affect giữ ý khả năng tác động lên kế hoạch chứ không khẳng định kế hoạch đã hỏng."
     },
     {
       "globalNumber": 90,
@@ -1245,5 +1244,7 @@
       "fullSentence": "You put your foot in it when you asked him where his wife was. Didn’t you realize she was dead?",
       "explanation": "Put one’s foot in it là lỡ lời gây ngượng hoặc chạm vào điều nhạy cảm. You dùng your foot, và put có dạng quá khứ giống nguyên mẫu. It đã có ngoài ô trống nên chỉ nhập put your foot in, không lặp it."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

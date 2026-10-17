@@ -289,14 +289,14 @@
     },
     {
       "question": 81,
-      "term": "competent",
-      "meta": "adjective",
-      "meaning": "có năng lực, làm việc đạt yêu cầu",
-      "note": "Competent không nhất thiết có nghĩa xuất sắc nhất; nó nói người đó đủ kỹ năng làm tốt công việc. Câu nhượng bộ cho thấy năng lực chung không đảm bảo xử lý được mọi khách hàng.",
-      "usage": "competent in/at something; a competent worker",
-      "example": "She is competent in her work but still asks for advice.",
-      "translation": "Cô ấy có năng lực trong công việc nhưng vẫn hỏi ý kiến khi cần.",
-      "family": "competence/competency (n); competently (adv); incompetent (adj)"
+      "term": "unfamiliar",
+      "meta": "ADJECTIVE",
+      "meaning": "không quen thuộc",
+      "note": "Tính từ + as/though + chủ ngữ + be diễn tả nhượng bộ: Unfamiliar as the route was... Route số ít nên dùng was. Câu giữ cả kết quả đến làng trước khi trời tối; không đổi unfamiliar thành familiar vì sẽ đảo ngược nghĩa.",
+      "usage": "an unfamiliar route; be unfamiliar with",
+      "example": "The route was unfamiliar, but we arrived on time.",
+      "translation": "Tuyến đường lạ, nhưng chúng tôi vẫn đến đúng giờ.",
+      "family": "familiar/unfamiliar (adj); familiarity (n); familiarise/familiarize (v)"
     },
     {
       "question": 87,

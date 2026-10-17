@@ -268,10 +268,10 @@
       "sectionCode": "I.1",
       "localNumber": 18,
       "acceptedAnswers": [
-        "B"
+        "A"
       ],
-      "displayAnswer": "B",
-      "explanation": "All that much là nhiều/đáng kể đến thế, thường dùng trong câu phủ định. It is not worth all that much nghĩa là không đáng giá tới mức đó. Ba phương án còn lại sắp xếp that, all và much sai thứ tự."
+      "displayAnswer": "A",
+      "explanation": "Worth as much as so sánh giá trị: không đáng giá bằng chiếc ba lô đã mua. Much dùng cho giá trị tiền, không dùng many. Cấu trúc so sánh ngang bằng là as ... as; more nếu dùng phải đi với than, không đi với as."
     },
     {
       "globalNumber": 19,
@@ -301,7 +301,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Had I known tương đương If I had known, đảo ngữ điều kiện loại 3. Would have saved cho biết giả định trái với quá khứ. If I knew nói hiện tại không thật nên không khớp việc lẽ ra đã tiết kiệm thời gian qua nhiều năm."
+      "explanation": "Điều kiện trái với quá khứ: if + had + V3, mệnh đề chính dùng would have + V3. Vì đã không kiểm tra và đã lỡ xe, đáp án là would not have missed. Would not miss phù hợp kết quả hiện tại/tương lai, nhưng ở đây last bus home đã bị lỡ."
     },
     {
       "globalNumber": 22,
@@ -311,7 +311,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Adopt plans là chấp nhận và đưa kế hoạch vào sử dụng, nên if our plans were adopted. Practise là luyện tập, exploit là khai thác/tận dụng, rehearse là diễn tập. Chúng không tạo nghĩa thông qua kế hoạch như trong câu."
+      "explanation": "Adopt a plan là chính thức chọn và thực hiện một kế hoạch. Exactly as written cho biết không sửa đổi, nên loại adapt, vốn nghĩa là điều chỉnh cho phù hợp. Rehearse là diễn tập, imitate là bắt chước. Sau agreed to dùng động từ nguyên mẫu adopt."
     },
     {
       "globalNumber": 23,
@@ -331,17 +331,17 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Catch on là trở nên phổ biến hoặc được nhiều người chấp nhận. Ý kính mắt thành phụ kiện thời trang lan rộng chậm. Take in là tiếp nhận/hiểu/lừa; put across là truyền đạt; set aside là để riêng hoặc gác lại."
+      "explanation": "Catch on nghĩa là trở nên phổ biến hoặc được nhiều người đón nhận. Among students nêu nhóm người sử dụng. Take in có nhiều nghĩa như tiếp nhận/lừa, put across là truyền đạt, set aside là để riêng; chúng không diễn đạt việc ứng dụng dần phổ biến."
     },
     {
       "globalNumber": 25,
       "sectionCode": "I.1",
       "localNumber": 25,
       "acceptedAnswers": [
-        "B"
+        "C"
       ],
-      "displayAnswer": "B",
-      "explanation": "Silence hung over the theatre là sự im lặng bao trùm nhà hát. Hang ở đây dùng nghĩa trạng thái phủ lên một nơi, quá khứ hung. Các cụm còn lại không tạo hình ảnh không khí im lặng trong lúc khán giả chờ màn mở."
+      "displayAnswer": "C",
+      "explanation": "Remain là động từ nối nên theo sau bằng tính từ silent để tả trạng thái của khán giả. Silence là danh từ, silently là trạng từ và silencing có nghĩa làm ai im lặng. Câu ôn từ vựng về sự yên lặng qua lựa chọn từ loại."
     },
     {
       "globalNumber": 26,
@@ -1084,106 +1084,95 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "decided, because of Anna’s previous successes, to bet the ranch",
-        "decided, because of Anna's previous successes, to bet the ranch",
-        "decided to bet the ranch because of Anna’s previous successes",
-        "decided to bet the ranch because of Anna's previous successes"
+        "risk losing all his savings"
       ],
-      "displayAnswer": "decided, because of Anna’s previous successes, to bet the ranch / decided, because of Anna's previous successes, to bet the ranch / decided to bet the ranch because of Anna’s previous successes / decided to bet the ranch because of Anna's previous successes",
-      "prefix": "He",
-      "suffix": "on her latest business idea.",
-      "fullSentence": "He decided, because of Anna’s previous successes, to bet the ranch on her latest business idea.",
-      "explanation": "Bet the ranch on là đặt cược mọi thứ vào một việc. Phải giữ decided vì câu nói quyết định, chưa khẳng định đã thực hiện; đồng thời giữ lý do Anna từng thành công. Không chỉ viết he bet the ranch rồi bỏ nguyên nhân và ý quyết định."
+      "displayAnswer": "risk losing all his savings",
+      "prefix": "He would",
+      "suffix": "if he invested in that business.",
+      "fullSentence": "He would risk losing all his savings if he invested in that business.",
+      "explanation": "Risk đi với V-ing: risk losing, nghĩa là có nguy cơ mất. Would risk đi với điều kiện if he invested, diễn tả quyết định giả định. Không dùng risk to lose; phải giữ all his savings vì câu gốc nói toàn bộ tiền tiết kiệm."
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "for grabs if the investor had stepped up to the plate",
-        "for grabs had the investor stepped up to the plate"
+        "provided you complete",
+        "provided that you complete"
       ],
-      "displayAnswer": "for grabs if the investor had stepped up to the plate / for grabs had the investor stepped up to the plate",
-      "prefix": "The contract would have been up",
-      "suffix": "",
-      "fullSentence": "The contract would have been up for grabs if the investor had stepped up to the plate.",
-      "explanation": "Up for grabs nghĩa là sẵn cho người khác cạnh tranh để giành được. Step up to the plate là chủ động nhận trách nhiệm. Điều kiện trái quá khứ dùng if…had stepped hoặc đảo had the investor stepped, đi với would have been."
+      "displayAnswer": "provided you complete",
+      "prefix": "You can join the course",
+      "suffix": "the registration form.",
+      "fullSentence": "You can join the course provided you complete the registration form.",
+      "explanation": "Provided (that) nghĩa là với điều kiện là. Sau provided dùng mệnh đề hiện tại đơn you complete để nói điều kiện cho phép tham gia. Không cần will complete. That có thể có hoặc không, nên cả hai cách đều được chấp nhận."
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "point in reasoning with Jimmy until he gets his groove back",
-        "point reasoning with Jimmy until he gets his groove back",
-        "use in reasoning with Jimmy until he gets his groove back"
+        "until he has calmed down",
+        "until he calms down"
       ],
-      "displayAnswer": "point in reasoning with Jimmy until he gets his groove back / point reasoning with Jimmy until he gets his groove back / use in reasoning with Jimmy until he gets his groove back",
-      "prefix": "There’s no",
-      "suffix": "after the loss.",
-      "fullSentence": "There’s no point in reasoning with Jimmy until he gets his groove back after the loss.",
-      "explanation": "There is no point (in) + V-ing nghĩa là làm việc đó cũng vô ích. Get one’s groove back là tìm lại trạng thái/phong độ quen thuộc; trong câu là trở lại bình thường sau mất mát. After the loss đã có cuối câu, không lặp lại trong ô."
+      "displayAnswer": "until he has calmed down",
+      "prefix": "Please do not discuss the problem with Jimmy",
+      "suffix": ".",
+      "fullSentence": "Please do not discuss the problem with Jimmy until he has calmed down.",
+      "explanation": "Not ... until nghĩa là chưa làm việc gì cho đến khi một điều kiện xảy ra. Until he calms down dùng hiện tại đơn trong mệnh đề thời gian; until he has calmed down nhấn mạnh việc bình tĩnh đã hoàn tất. Cả hai đều phù hợp với lời đề nghị chờ rồi mới nói chuyện."
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "refusal to come to the table was a further turn of",
-        "refusal to come to the table was another turn of",
-        "refusal to come to the table was a turn of"
+        "made it harder to solve"
       ],
-      "displayAnswer": "refusal to come to the table was a further turn of / refusal to come to the table was another turn of / refusal to come to the table was a turn of",
-      "prefix": "The director’s",
-      "suffix": "the screw.",
-      "fullSentence": "The director’s refusal to come to the table was a further turn of the screw.",
-      "explanation": "Come to the table là sẵn sàng tham gia thương lượng. A further turn of the screw nói một việc làm tình thế thêm khó khăn hoặc áp lực tăng lên. Director là một người nên dùng director’s, không phải directors’ chỉ nhiều người."
+      "displayAnswer": "made it harder to solve",
+      "prefix": "The director’s refusal to negotiate",
+      "suffix": "the problem.",
+      "fullSentence": "The director’s refusal to negotiate made it harder to solve the problem.",
+      "explanation": "Make it + tính từ so sánh hơn + to do diễn tả làm việc gì trở nên khó hơn. It là tân ngữ giả, chỉ việc giải quyết vấn đề. Made giữ thì quá khứ; harder là dạng so sánh hơn của hard. Không dùng more harder vì lặp dấu hiệu so sánh."
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "took a notion to throw down the",
-        "had a notion to throw down the",
-        "suddenly took a notion to throw down the",
-        "suddenly had a notion to throw down the"
+        "felt like joining"
       ],
-      "displayAnswer": "took a notion to throw down the / had a notion to throw down the / suddenly took a notion to throw down the / suddenly had a notion to throw down the",
-      "prefix": "Daniel",
-      "suffix": "gauntlet to his opponents during the winter night.",
-      "fullSentence": "Daniel took a notion to throw down the gauntlet to his opponents during the winter night.",
-      "explanation": "Take/have a notion to do là nảy ý định muốn làm. Throw down the gauntlet to someone nghĩa là thách thức đối thủ. Phải điền the trước gauntlet vì đây là thành ngữ có mạo từ; không chỉ viết notion mà thiếu hành động thách thức."
+      "displayAnswer": "felt like joining",
+      "prefix": "Daniel suddenly",
+      "suffix": "the debate.",
+      "fullSentence": "Daniel suddenly felt like joining the debate.",
+      "explanation": "Feel like doing something nghĩa là muốn làm gì ở một thời điểm. Wanted ở quá khứ nên chuyển thành felt like joining. Sau like trong cụm này dùng V-ing, không dùng to join. Cần giữ suddenly để bảo toàn ý muốn nảy ra bất chợt."
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "be under the cosh because of the economic recession",
-        "come under the cosh because of the economic recession",
-        "be under the cosh because of the economic recession sooner or",
-        "come under the cosh because of the economic recession sooner or"
+        "put these families under much greater pressure",
+        "put much greater pressure on these families"
       ],
-      "displayAnswer": "be under the cosh because of the economic recession / come under the cosh because of the economic recession / be under the cosh because of the economic recession sooner or / come under the cosh because of the economic recession sooner or",
-      "prefix": "These people will",
-      "suffix": "later.",
-      "fullSentence": "These people will be under the cosh because of the economic recession later.",
-      "explanation": "Be/come under the cosh là chịu áp lực lớn. Câu đã nói rõ severe pressure để không đánh đồng thành ngữ với mọi dạng đau khổ. Later đã có ở cuối; có thể thêm sooner or để tạo sooner or later, nhưng không điền lại later."
+      "displayAnswer": "put these families under much greater pressure",
+      "prefix": "The economic slowdown will",
+      "suffix": ".",
+      "fullSentence": "The economic slowdown will put these families under much greater pressure.",
+      "explanation": "Put somebody under pressure hoặc put pressure on somebody là đặt ai vào tình thế khó khăn/căng thẳng. Much greater giữ ý mức độ khó khăn tăng lên. Sau will dùng put nguyên mẫu; không dùng putted vì put là động từ bất quy tắc có ba dạng giống nhau."
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "of luck, the storm will not put a crimp in",
-        "of luck, the storm won’t put a crimp in"
+        "prevent us from travelling",
+        "prevent us from traveling"
       ],
-      "displayAnswer": "of luck, the storm will not put a crimp in / of luck, the storm won’t put a crimp in",
-      "prefix": "With a bit",
-      "suffix": "our travel plans.",
-      "fullSentence": "With a bit of luck, the storm will not put a crimp in our travel plans.",
-      "explanation": "With a bit of luck thể hiện hy vọng nếu mọi việc thuận lợi. Put a crimp in something là cản trở/làm gián đoạn kế hoạch. Trong câu hoàn chỉnh phải giữ our travel plans; sau hope hiện tại dùng will cho khả năng tương lai, không dùng would tùy tiện."
+      "displayAnswer": "prevent us from travelling",
+      "prefix": "I hope the storm will not",
+      "suffix": ".",
+      "fullSentence": "I hope the storm will not prevent us from travelling.",
+      "explanation": "Prevent somebody from doing something tương đương stop somebody from doing something. Sau from dùng travelling; us là người bị cản trở. Will not đã có trong đề, không lặp lại phủ định trong phần điền. Traveling theo chính tả Mỹ cũng được chấp nhận."
     },
     {
       "globalNumber": 98,
@@ -1206,29 +1195,29 @@
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "has it that the two captives have cut the cords binding them",
-        "has it that, in the story, the two captives have cut the cords binding them"
+        "are said to have been found"
       ],
-      "displayAnswer": "has it that the two captives have cut the cords binding them / has it that, in the story, the two captives have cut the cords binding them",
-      "prefix": "Word",
-      "suffix": "",
-      "fullSentence": "Word has it that the two captives have cut the cords binding them.",
-      "explanation": "Word has it that nghĩa là có lời đồn rằng. Cords trong câu là các sợi dây trói nên cut the cords là cắt dây thật. Không dạy cụm này như từ thay thế chung cho chia tay; câu đã đổi sang tình huống dây trói để giữ nghĩa tự nhiên."
+      "displayAnswer": "are said to have been found",
+      "prefix": "The two missing hikers",
+      "suffix": ".",
+      "fullSentence": "The two missing hikers are said to have been found.",
+      "explanation": "Bị động tường thuật: people say chuyển thành are said. Việc được tìm thấy đã xảy ra trước lúc đưa tin nên dùng to have been found, vừa là nguyên mẫu hoàn thành vừa mang nghĩa bị động. Hikers số nhiều nên không dùng is said."
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "was the ineffectiveness of the policy that the team went off the boil",
-        "was the policy’s ineffectiveness that the team went off the boil",
-        "was the policy's ineffectiveness that the team went off the boil"
+        "as a result of the ineffective policy",
+        "as a result of the policy being ineffective"
       ],
-      "displayAnswer": "was the ineffectiveness of the policy that the team went off the boil / was the policy’s ineffectiveness that the team went off the boil / was the policy's ineffectiveness that the team went off the boil",
-      "prefix": "Such",
-      "suffix": "",
-      "fullSentence": "Such was the ineffectiveness of the policy that the team went off the boil.",
-      "explanation": "Such was + cụm danh từ + that… nhấn mạnh mức độ dẫn tới kết quả. Go off the boil là mất nhiệt huyết/phong độ trước đó, nên phù hợp việc nhóm không còn năng lượng như trước. Không ghép máy móc went off the boil in the project như đáp án cũ."
+      "displayAnswer": "as a result of the ineffective policy",
+      "prefix": "The team lost enthusiasm",
+      "suffix": ".",
+      "fullSentence": "The team lost enthusiasm as a result of the ineffective policy.",
+      "explanation": "As a result of + cụm danh từ/V-ing diễn tả nguyên nhân dẫn đến kết quả. The ineffective policy và the policy being ineffective đều giữ đúng ý chính sách không hiệu quả. Không viết as a result the policy vì thiếu of trước cụm danh từ."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

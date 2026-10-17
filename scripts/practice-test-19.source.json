@@ -121,7 +121,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Fall off the back of a lorry là cách nói đùa ám chỉ đồ có nguồn gốc trộm cắp. Đề cũ có cả truck, cũng là một biến thể dùng được nên đã thay phương án B. Sau had dùng fallen; câu đang kể lời đùa, không phải bằng chứng khẳng định hành vi phạm pháp."
+      "explanation": "Under guarantee nghĩa là còn trong thời hạn bảo hành. Đây là cách kết hợp cố định; below, beneath và down đều không dùng thay under trong cụm này. Ngữ cảnh mua một chiếc máy rẻ khiến việc kiểm tra bảo hành hợp lý, không cần hiểu tiếng lóng về đồ trộm cắp."
     },
     {
       "globalNumber": 4,
@@ -251,7 +251,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Rabbit on about nghĩa là nói dai, nói lan man về một chủ đề; lời sau nói cuộc trò chuyện nào cũng xoay về bạn gái nên A đúng. Horse around with là đùa nghịch cùng ai, không có nghĩa nói mãi về ai; duck out of là trốn tránh trách nhiệm."
+      "explanation": "Boast about somebody/something là khoe khoang về người hoặc điều gì; việc liên tục kể cô ấy tài giỏi, thành công là dấu hiệu. Keep đi với V-ing nên dùng boasting. Các cụm còn lại lần lượt là xin lỗi vì, chia tay và chịu đựng, không phù hợp nội dung lời kể."
     },
     {
       "globalNumber": 17,
@@ -281,7 +281,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Clean forget là cách nói thân mật nghĩa là quên hoàn toàn. Clean ở đây là trạng từ nhấn mạnh, không phải tính từ sạch sẽ. Barely là hầu như không, fairly là khá/công bằng tùy ngữ cảnh, sole là tính từ; không phù hợp lời xin lỗi vì quên hẳn việc gửi thư."
+      "explanation": "Completely forgot nghĩa là quên hoàn toàn. Cần trạng từ bổ nghĩa cho forgot; sole là tính từ nên sai loại từ. Barely là hầu như không, fairly là khá, đều không phù hợp với lời giải thích rằng người nói đã quên gửi thư."
     },
     {
       "globalNumber": 20,
@@ -994,46 +994,41 @@
       "sectionCode": "III.1",
       "localNumber": 6,
       "acceptedAnswers": [
-        "matter what prices they offer, my father has no intention of selling the antique clock",
-        "matter how much they offer, my father has no intention of selling the antique clock",
-        "matter what price they offer, my father has no intention of selling the antique clock"
+        "how much they offer, my aunt refuses to sell her paintings",
+        "how much money they offer, my aunt refuses to sell her paintings"
       ],
-      "displayAnswer": "matter what prices they offer, my father has no intention of selling the antique clock / matter how much they offer, my father has no intention of selling the antique clock / matter what price they offer, my father has no intention of selling the antique clock",
-      "explanation": "No matter what/how much diễn đạt bất kể giá được trả là bao nhiêu. Vế sau giữ has no intention of selling vì câu gốc nói không có ý định bán, không chỉ chưa bán. Intention of đi với V-ing; không dùng intention selling thiếu giới từ.",
-      "prefix": "No",
-      "suffix": "",
-      "fullSentence": "No matter how much they offer, my father has no intention of selling the antique clock."
+      "displayAnswer": "how much they offer, my aunt refuses to sell her paintings",
+      "explanation": "No matter how much và however much cùng diễn tả bất kể số tiền nhiều đến đâu. Dùng trật tự mệnh đề thường they offer, không đảo trợ động từ. Refuses to sell giữ ý từ chối bán; không chuyển refuses sang agrees.",
+      "prefix": "No matter",
+      "suffix": ".",
+      "fullSentence": "No matter how much they offer, my aunt refuses to sell her paintings."
     },
     {
       "globalNumber": 87,
       "sectionCode": "III.1",
       "localNumber": 7,
       "acceptedAnswers": [
-        "the attendance of a famous film star, the party would not have been a success",
-        "the attendance of a famous film star, the party wouldn't have been successful",
-        "the fact that a famous film star attended, the party would not have been a success",
-        "a famous film star's attendance, the party would not have been successful"
+        "our classmates’ help, we would not have finished the project on time",
+        "the help of our classmates, we would not have finished the project on time"
       ],
-      "displayAnswer": "the attendance of a famous film star, the party would not have been a success / the attendance of a famous film star, the party wouldn't have been successful / the fact that a famous film star attended, the party would not have been a success / a famous film star's attendance, the party would not have been successful",
-      "explanation": "But for + danh từ nêu điều kiện trái thực tế: nếu không có sự tham dự của ngôi sao, buổi tiệc đã không thành công. Dùng would not have been vì kết quả thuộc quá khứ. Có thể dùng attendance hoặc the fact that… để tạo tân ngữ cho for.",
+      "displayAnswer": "our classmates’ help, we would not have finished the project on time",
+      "explanation": "But for + cụm danh từ nghĩa là nếu không nhờ. Việc đã hoàn thành trong quá khứ nên kết quả giả định dùng would not have finished. Classmates’ help hoặc the help of our classmates đều diễn tả đúng sự giúp đỡ đã khiến dự án hoàn thành đúng hạn.",
       "prefix": "But for",
-      "suffix": "",
-      "fullSentence": "But for the attendance of a famous film star, the party would not have been a success."
+      "suffix": ".",
+      "fullSentence": "But for our classmates’ help, we would not have finished the project on time."
     },
     {
       "globalNumber": 88,
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "objection to my asking you a few questions for a customer satisfaction survey",
-        "objection to me asking you a few questions for a customer satisfaction survey",
-        "objections to my asking you a few questions for a customer satisfaction survey"
+        "objection to my opening the window"
       ],
-      "displayAnswer": "objection to my asking you a few questions for a customer satisfaction survey / objection to me asking you a few questions for a customer satisfaction survey / objections to my asking you a few questions for a customer satisfaction survey",
-      "explanation": "Have any objection to something/V-ing là có phản đối/ngại việc gì không. To là giới từ nên theo sau bằng asking. My asking trang trọng, me asking thông dụng và đều được nhận; không dùng objection to ask vì chuyển sai sang động từ nguyên thể.",
+      "displayAnswer": "objection to my opening the window",
+      "explanation": "Have an objection to + danh từ/V-ing diễn tả phản đối điều gì. My opening the window là việc tôi mở cửa sổ; to là giới từ nên không dùng to open. Câu hỏi giữ tính chất xin phép của câu gốc, không khẳng định người nghe phản đối.",
       "prefix": "Do you have any",
-      "suffix": "",
-      "fullSentence": "Do you have any objection to my asking you a few questions for a customer satisfaction survey?"
+      "suffix": "?",
+      "fullSentence": "Do you have any objection to my opening the window?"
     },
     {
       "globalNumber": 89,
@@ -1056,15 +1051,13 @@
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "the details is restricted to the managing director and the chief chemist",
-        "the details is limited to the managing director and the chief chemist",
-        "the details is confined to the managing director and the chief chemist"
+        "is restricted to members of the research team"
       ],
-      "displayAnswer": "the details is restricted to the managing director and the chief chemist / the details is limited to the managing director and the chief chemist / the details is confined to the managing director and the chief chemist",
-      "explanation": "Knowledge không đếm được nên dùng is. Restricted/limited/confined to giữ ý chỉ hai người này biết thông tin. Không dùng are theo details vì details nằm trong cụm of, không phải chủ ngữ chính của câu.",
-      "prefix": "Knowledge of",
-      "suffix": "",
-      "fullSentence": "Knowledge of the details is restricted to the managing director and the chief chemist."
+      "displayAnswer": "is restricted to members of the research team",
+      "explanation": "Be restricted to nghĩa là được giới hạn cho một nhóm. Access là danh từ không đếm được nên dùng is. To nối với members of the research team; phải giữ nhóm người được quyền truy cập để tương đương với only trong câu gốc.",
+      "prefix": "Access to the data",
+      "suffix": ".",
+      "fullSentence": "Access to the data is restricted to members of the research team."
     },
     {
       "globalNumber": 91,
@@ -1210,5 +1203,7 @@
       "suffix": "",
       "fullSentence": "Being caught in the act of driving a stolen vehicle, he was arrested."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

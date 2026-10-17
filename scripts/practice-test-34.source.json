@@ -141,7 +141,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Any old how là một cách cẩu thả, không theo trật tự cẩn thận. Untidy homework cung cấp dấu hiệu nghĩa. Trật tự trong thành ngữ cố định là any old how; các đáp án khác chỉ đảo vị trí từ nhưng không tạo cụm đúng."
+      "explanation": "Cần trạng từ carelessly để bổ nghĩa cho does: làm bài cẩu thả, không kiểm tra lại. Careless là tính từ; care và carefulness là danh từ. Câu ôn cách thêm -ly và hiểu nghĩa phủ định của careless, thay một cụm khẩu ngữ ít hữu ích."
     },
     {
       "globalNumber": 6,
@@ -181,7 +181,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Gild the lily là tô điểm thêm một cách thừa thãi cho thứ vốn đã đẹp hoặc đủ tốt. Nhà thiết kế chuộng đường nét đơn giản nên không muốn trang trí quá mức. Lily là từ cố định, không thể thay bằng tên loài hoa khác."
+      "explanation": "Trước danh từ details cần tính từ unnecessary, nghĩa là không cần thiết. Unnecessarily là trạng từ, necessity là danh từ, necessitate là động từ. Avoid đi với danh từ hoặc V-ing, và ở đây tân ngữ là unnecessary details. Câu giữ ý chuộng sự đơn giản mà không đòi hỏi thành ngữ hiếm."
     },
     {
       "globalNumber": 10,
@@ -1053,14 +1053,14 @@
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "as Richard is in his work, he does not know how to deal with this client",
-        "though Richard is in his work, he does not know how to deal with this client"
+        "as the instructions were, several students misunderstood the task",
+        "though the instructions were, several students misunderstood the task"
       ],
-      "displayAnswer": "as Richard is in his work, he does not know how to deal with this client / though Richard is in his work, he does not know how to deal with this client",
-      "prefix": "Competent",
-      "suffix": "",
-      "fullSentence": "Competent as Richard is in his work, he does not know how to deal with this client.",
-      "explanation": "Tính từ + as/though + chủ ngữ + động từ diễn tả nhượng bộ, tương đương although. Competent đặt đầu nhưng is vẫn sau Richard. Không thêm although sau competent trong mẫu này; mệnh đề chính giữ does not know how to deal with."
+      "displayAnswer": "as the instructions were, several students misunderstood the task",
+      "prefix": "Clear",
+      "suffix": ".",
+      "fullSentence": "Clear as the instructions were, several students misunderstood the task.",
+      "explanation": "Tính từ + as/though + chủ ngữ + be diễn tả nhượng bộ: Clear as the instructions were... Instructions số nhiều nên dùng were. Không đảo were lên trước the instructions; mệnh đề sau vẫn giữ ý một số học sinh hiểu sai nhiệm vụ."
     },
     {
       "globalNumber": 91,
@@ -1081,14 +1081,13 @@
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "fell on deaf ears last night",
-        "last night fell on deaf ears"
+        "fell on deaf ears"
       ],
-      "displayAnswer": "fell on deaf ears last night / last night fell on deaf ears",
-      "prefix": "What the politician was saying",
-      "suffix": "",
-      "fullSentence": "What the politician was saying fell on deaf ears last night.",
-      "explanation": "Fall on deaf ears là lời nói bị phớt lờ, không được người nghe hưởng ứng. Last night yêu cầu quá khứ fell. What the politician was saying làm chủ ngữ, còn cụm thành ngữ thay cho nobody listened."
+      "displayAnswer": "fell on deaf ears",
+      "prefix": "The neighbours’ repeated requests for quieter music",
+      "suffix": ".",
+      "fullSentence": "The neighbours’ repeated requests for quieter music fell on deaf ears.",
+      "explanation": "Fall on deaf ears diễn tả lời yêu cầu bị phớt lờ. Fell là quá khứ của fall và deaf ears là phần cố định của cụm. Câu chuyển từ hành động asked sang danh từ requests, đồng thời giữ tính lặp lại bằng repeated."
     },
     {
       "globalNumber": 93,
@@ -1204,5 +1203,7 @@
       "fullSentence": "Since the company was exposed in a newspaper, it has fallen into disrepute.",
       "explanation": "Fall into disrepute là mất uy tín, bị đánh giá xấu. Since + mốc quá khứ đi với hiện tại hoàn thành has fallen cho sự thay đổi kéo dài đến nay. Has been brought into disrepute cũng diễn tả bị làm mất uy tín; không dùng disreputable vì phải giữ từ DISREPUTE."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

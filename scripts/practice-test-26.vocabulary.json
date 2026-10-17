@@ -47,14 +47,14 @@
     },
     {
       "question": 8,
-      "term": "at that",
-      "meta": "IDIOM",
-      "meaning": "lại còn; hơn nữa",
-      "note": "Khi đứng cuối câu, cụm này nhấn mạnh một chi tiết bổ sung. Phải đọc theo ngữ cảnh, không dịch từng từ thành tại cái đó và không nhầm với as such.",
-      "usage": "..., and + description + at that",
-      "example": "The room was small, and noisy at that.",
-      "translation": "Căn phòng nhỏ, lại còn ồn nữa.",
-      "family": "that (đại từ/từ hạn định); at that là cụm cố định, không có dạng từ phái sinh riêng"
+      "term": "moreover",
+      "meta": "LINKING ADVERB",
+      "meaning": "hơn nữa; bổ sung một ý cùng hướng",
+      "note": "Moreover bổ sung thêm một lý do cùng hướng: chiếc bàn vừa đắt vừa quá lớn. Otherwise nêu điều sẽ xảy ra nếu không làm việc trước đó; nevertheless thể hiện tương phản; instead nêu sự thay thế. Hai bất lợi nối tiếp nên chọn moreover.",
+      "usage": "sentence; moreover, sentence",
+      "example": "The desk is expensive; moreover, it is too large.",
+      "translation": "Chiếc bàn đắt; hơn nữa, nó còn quá lớn.",
+      "family": "moreover; furthermore; in addition"
     },
     {
       "question": 9,
@@ -69,14 +69,14 @@
     },
     {
       "question": 10,
-      "term": "a sovereign remedy",
-      "meta": "NOUN PHRASE",
-      "meaning": "một phương thuốc hoặc cách khắc phục rất hiệu nghiệm",
-      "note": "Đây là cách nói văn chương, ngày nay ít dùng. Sovereign cũng chỉ một vị quân chủ hoặc mang nghĩa có chủ quyền; nghĩa phải được chọn theo danh từ đi kèm.",
-      "usage": "a sovereign remedy for + problem",
-      "example": "In the novel, gardening is described as a sovereign remedy for boredom.",
-      "translation": "Trong tiểu thuyết, làm vườn được mô tả là cách xua tan buồn chán rất hiệu nghiệm.",
-      "family": "sovereign (n/adj); sovereignty (n); remedy (n/v); remedies (số nhiều)"
+      "term": "effective in",
+      "meta": "ADJECTIVE PHRASE",
+      "meaning": "có hiệu quả trong việc",
+      "note": "Prove ở đây là động từ nối, nghĩa là tỏ ra, nên theo sau bằng tính từ effective. Effective in doing something là có hiệu quả trong việc gì. Effectively là trạng từ, effect và effectiveness là danh từ, không phù hợp cấu trúc has proved + tính từ.",
+      "usage": "be effective in doing something",
+      "example": "The programme is effective in improving reading skills.",
+      "translation": "Chương trình có hiệu quả trong việc cải thiện kỹ năng đọc.",
+      "family": "effect (n); effective (adj); effectively (adv); effectiveness (n)"
     },
     {
       "question": 12,
@@ -113,36 +113,36 @@
     },
     {
       "question": 16,
-      "term": "clean forgot",
-      "meta": "VERB PHRASE",
-      "meaning": "quên hẳn; quên hoàn toàn",
-      "note": "Clean là trạng từ thân mật trong cách nói này. Không liên quan đến sạch sẽ; thông thường cũng có thể nói completely forgot hoặc forgot altogether.",
-      "usage": "clean forget something; clean forget to + V",
-      "example": "I clean forgot to bring the tickets.",
-      "translation": "Tôi quên hẳn việc mang vé.",
-      "family": "forget – forgot – forgotten; forgetful (adj); forgetfulness (n); clean (adv trong cụm)"
+      "term": "forget to do",
+      "meta": "VERB PATTERN",
+      "meaning": "quên thực hiện một việc",
+      "note": "Forget to do something là quên thực hiện một việc; lá thư vẫn trên bàn cho thấy việc gửi chưa xảy ra. Forget doing something là không nhớ một việc đã làm, không phù hợp. Sau forgot không dùng posted hoặc post đứng một mình.",
+      "usage": "forget to post/check/bring",
+      "example": "I forgot to post the letter.",
+      "translation": "Tôi quên gửi lá thư.",
+      "family": "forget – forgot – forgotten; forgetful (adj)"
     },
     {
       "question": 17,
-      "term": "quench one's thirst",
-      "meta": "VERB PHRASE",
-      "meaning": "giải cơn khát",
-      "note": "Quench đi trực tiếp với thirst; thay one's bằng my/your/his/her/their theo người khát. Quench còn dùng bóng với thirst for knowledge: thỏa mãn khao khát hiểu biết.",
-      "usage": "quench my/your/their thirst; quench a thirst for + N",
-      "example": "A glass of water helped quench my thirst.",
-      "translation": "Một cốc nước giúp tôi dịu cơn khát.",
-      "family": "quench (v); quenching (V-ing); thirst (n/v); thirsty (adj)"
+      "term": "thirsty",
+      "meta": "ADJECTIVE",
+      "meaning": "khát nước",
+      "note": "Make + tân ngữ + tính từ diễn tả làm ai có trạng thái nào: made us very thirsty. Thirst là danh từ, thirstily là trạng từ; thirstier là so sánh hơn và không đi trực tiếp sau very theo cách này. Câu ôn họ từ thirst qua một cấu trúc quen thuộc.",
+      "usage": "feel thirsty; make somebody thirsty",
+      "example": "The long walk made us thirsty.",
+      "translation": "Cuộc đi bộ dài khiến chúng tôi khát nước.",
+      "family": "thirst (n); thirsty (adj); thirstily (adv)"
     },
     {
       "question": 19,
-      "term": "adopt a solution",
+      "term": "adapt something to meet a need",
       "meta": "VERB PHRASE",
-      "meaning": "chọn và áp dụng một giải pháp",
-      "note": "Adopt là chấp nhận đưa vào dùng, còn adapt là sửa đổi để phù hợp. Hai từ gần giống chữ nhưng khác nghĩa; có thể adapt a plan trước khi adopt it.",
-      "usage": "adopt a solution/approach/policy",
-      "example": "The team adopted the simplest solution.",
-      "translation": "Nhóm đã chọn áp dụng giải pháp đơn giản nhất.",
-      "family": "adopt (v); adoption (n); adopted (adj); adapt (v, từ dễ nhầm)"
+      "meaning": "điều chỉnh một thứ để đáp ứng nhu cầu",
+      "note": "Adapt something to meet a need là điều chỉnh thứ đang có để đáp ứng nhu cầu. Adopt là chọn hoặc áp dụng, không nhấn mạnh sửa đổi; adorn là trang trí, adept là tính từ giỏi. Câu đối chiếu adapt với adopt ở đề trước bằng một tình huống cần điều chỉnh tài liệu.",
+      "usage": "adapt materials to meet learners’ needs",
+      "example": "We adapted the materials to meet younger learners’ needs.",
+      "translation": "Chúng tôi điều chỉnh tài liệu để phù hợp nhu cầu học sinh nhỏ tuổi.",
+      "family": "adapt (v); adaptation (n); adaptable (adj); adopt = chọn/áp dụng"
     },
     {
       "question": 20,

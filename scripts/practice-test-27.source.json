@@ -116,10 +116,10 @@
       "sectionCode": "I.1",
       "localNumber": 2,
       "acceptedAnswers": [
-        "C"
+        "A"
       ],
-      "displayAnswer": "C",
-      "explanation": "Didn't need to buy nghĩa là không cần mua và trong ngữ cảnh này đã không mua, vì người nói tìm được kính trước khi vào cửa hàng và không tiêu tiền. Needn't have bought lại hàm ý đã mua nhưng sau đó thấy không cần, trái với spent nothing."
+      "displayAnswer": "A",
+      "explanation": "Needn’t have + V3 nói việc đã làm nhưng thực ra không cần thiết: người nói đã mua vé, sau đó mới biết được vào miễn phí. Mustn’t diễn tả cấm đoán; can’t have bought phủ nhận việc đã mua, trái với câu đầu. Câu giúp phân biệt với didn’t need to buy khi không cần và đã không mua."
     },
     {
       "globalNumber": 3,
@@ -1128,13 +1128,13 @@
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "butterflies in her stomach before the audition"
+        "butterflies in my stomach"
       ],
-      "displayAnswer": "butterflies in her stomach before the audition",
-      "prefix": "The young actress had",
-      "suffix": "",
-      "fullSentence": "The young actress had butterflies in her stomach before the audition.",
-      "explanation": "Have butterflies in one's stomach là cảm giác hồi hộp, bồn chồn trước sự kiện quan trọng. Chủ thể là nữ diễn viên nên dùng her stomach. Butterflies là số nhiều trong thành ngữ; giữ before the audition để không đổi thời điểm xảy ra cảm giác."
+      "displayAnswer": "butterflies in my stomach",
+      "prefix": "I had",
+      "suffix": "while waiting to give my first speech.",
+      "fullSentence": "I had butterflies in my stomach while waiting to give my first speech.",
+      "explanation": "Have butterflies in one’s stomach là cảm giác hồi hộp trước một sự kiện quan trọng. Chủ ngữ I đi với my, sự việc quá khứ nên had đã có sẵn. Chỉ điền butterflies in my stomach; không thêm had hoặc đổi stomach thành heart."
     },
     {
       "globalNumber": 94,
@@ -1247,5 +1247,7 @@
       "fullSentence": "What is amazing is how she is managing to keep her chin up during this difficult time.",
       "explanation": "Keep one's chin up hoặc keep one's spirits up là duy trì sự tích cực, tinh thần vững vàng khi khó khăn. Câu chẻ What is amazing is how ... nhấn mạnh điều đáng ngạc nhiên. Giữ is managing để thể hiện đang nỗ lực duy trì trạng thái, không chỉ một thói quen chung."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

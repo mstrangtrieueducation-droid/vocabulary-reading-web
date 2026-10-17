@@ -191,7 +191,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "It is important that + chủ ngữ + động từ nguyên mẫu là cấu trúc giả định diễn tả yêu cầu. We nhận thông báo nên dùng bị động be notified of a change. Notify/are notifying là chủ động và thiếu đối tượng được thông báo; notified đứng một mình thiếu trợ động từ."
+      "explanation": "Cấu trúc it is essential for somebody/something to do; application nhận hành động nên dùng to be submitted. Submitting và submit không đứng được sau for every application trong mẫu này. Đây là cách diễn đạt khác của yêu cầu phải nộp đơn, ôn cả nguyên mẫu lẫn bị động."
     },
     {
       "globalNumber": 11,
@@ -241,7 +241,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Sell something for scrap là bán làm phế liệu, thường nói đến vật liệu còn thu hồi được từ máy móc hay xe cũ. Rubbish là rác, debris là mảnh vỡ và waste là chất thải; các từ đó không tạo cụm for scrap trong nghĩa bán thu hồi vật liệu."
+      "explanation": "Sell something for scrap nghĩa là bán làm phế liệu. For nêu mục đích sử dụng sau khi bán; by, with và from không tạo cụm này. Câu ôn lại từ scrap qua giới từ thay vì lặp câu hỏi chọn danh từ của đề trước."
     },
     {
       "globalNumber": 16,
@@ -318,10 +318,10 @@
       "sectionCode": "I.1",
       "localNumber": 23,
       "acceptedAnswers": [
-        "D"
+        "A"
       ],
-      "displayAnswer": "D",
-      "explanation": "Trong cụm này, intriguing nêu đánh giá, modern nói thời kỳ, British nói nguồn gốc và wizarding chỉ loại thế giới tưởng tượng. Thứ tự tự nhiên là intriguing modern British wizarding world. Không nên xếp các từ mô tả loại và nguồn gốc trước từ đánh giá theo các phương án còn lại."
+      "displayAnswer": "A",
+      "explanation": "One of + the + tính từ so sánh nhất + danh từ số nhiều: one of the most interesting fantasy novels. I have ever read xác định phạm vi so sánh. Cần the trước most interesting; more chỉ là so sánh hơn nên không phù hợp cấu trúc này."
     },
     {
       "globalNumber": 24,
@@ -1239,5 +1239,7 @@
       "fullSentence": "I don't feel like going out this evening.",
       "explanation": "Don't feel like + V-ing diễn tả không muốn hoặc không có hứng làm gì, phù hợp I'd rather not go out. Không dùng don't feel up to trong đáp án mẫu vì cụm ấy nhấn mạnh thiếu sức/không đủ khả năng, điều câu gốc không nói. Going là V-ing sau like."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

@@ -954,14 +954,13 @@
       "sectionCode": "III.1",
       "localNumber": 3,
       "acceptedAnswers": [
-        "was believed to have been wearing a dark-blue jacket at the time of the robbery",
-        "was believed to have been wearing a dark blue jacket at the time of the robbery"
+        "is believed to be at risk of extinction"
       ],
-      "displayAnswer": "was believed to have been wearing a dark-blue jacket at the time of the robbery / was believed to have been wearing a dark blue jacket at the time of the robbery",
-      "prefix": "The robber",
-      "suffix": "",
-      "fullSentence": "The robber was believed to have been wearing a dark-blue jacket at the time of the robbery.",
-      "explanation": "The police believed đổi sang the robber was believed. Had been wearing chỉ việc đang diễn ra trước thời điểm nhận định, nên dùng nguyên thể hoàn thành tiếp diễn to have been wearing. Phần at the time of the robbery giữ mốc của hành động mặc áo."
+      "displayAnswer": "is believed to be at risk of extinction",
+      "prefix": "This species",
+      "suffix": ".",
+      "fullSentence": "This species is believed to be at risk of extinction.",
+      "explanation": "Với niềm tin hiện tại và trạng thái hiện tại, people believe that... chuyển thành is believed to be. At risk of extinction nghĩa là có nguy cơ tuyệt chủng. Không dùng to have been, vì câu gốc không nói nguy cơ chỉ thuộc về quá khứ."
     },
     {
       "globalNumber": 84,
@@ -1205,5 +1204,7 @@
       "fullSentence": "I hope you will enjoy yourself during your stay with Janet’s family.",
       "explanation": "During + danh từ chỉ thời gian, nên while you stay chuyển thành during your stay. Enjoy yourself tương đương have a good time. Không viết during you stay vì during không nối trực tiếp một mệnh đề có chủ ngữ và động từ."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

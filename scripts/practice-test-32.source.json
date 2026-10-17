@@ -271,7 +271,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Trật tự phù hợp là exquisite (đánh giá), tailored (kiểu/cách may), navy-blue (màu), French (xuất xứ), cashmere (chất liệu), rồi coat. Vì vậy chọn C. Đáp án A đặt tailored sau chất liệu không tự nhiên theo trật tự chuẩn; B và D xáo trộn đánh giá, màu và xuất xứ."
+      "explanation": "Far có thể nhấn mạnh dạng so sánh hơn: far more expensive than. Expensively là trạng từ; most expensive là so sánh nhất, không đi với than. Too expensive diễn tả quá đắt nhưng không tạo cấu trúc so sánh hơn cần có ở đây."
     },
     {
       "globalNumber": 19,
@@ -1010,14 +1010,13 @@
       "sectionCode": "III.1",
       "localNumber": 6,
       "acceptedAnswers": [
-        "has been under review for the last three months",
-        "has been being reviewed for the last three months"
+        "is being reviewed at the moment"
       ],
-      "displayAnswer": "has been under review for the last three months / has been being reviewed for the last three months",
+      "displayAnswer": "is being reviewed at the moment",
       "prefix": "The company’s recruitment policy",
-      "suffix": "",
-      "fullSentence": "The company’s recruitment policy has been under review for the last three months.",
-      "explanation": "Be under review nghĩa là đang được xem xét. Has been under review giữ quá trình kéo dài từ ba tháng trước tới hiện tại, diễn đạt tự nhiên hơn bị động hoàn thành tiếp diễn has been being reviewed. Dạng sau vẫn đúng ngữ pháp và được chấp nhận; không dùng was reviewed vì làm mất tính kéo dài đến hiện tại."
+      "suffix": ".",
+      "fullSentence": "The company’s recruitment policy is being reviewed at the moment.",
+      "explanation": "Bị động của hiện tại tiếp diễn là am/is/are being + V3. Recruitment policy số ít nên dùng is being reviewed. At the moment giữ thời điểm đang diễn ra. Câu luyện một dạng bị động thông dụng, tránh bắt học sinh tạo dạng has been being reviewed rất nặng nề."
     },
     {
       "globalNumber": 87,
@@ -1194,10 +1193,10 @@
         "fell on deaf ears"
       ],
       "displayAnswer": "fell on deaf ears",
-      "prefix": "What the politician was saying",
-      "suffix": "last night.",
-      "fullSentence": "What the politician was saying fell on deaf ears last night.",
-      "explanation": "Fall on deaf ears là lời nói bị bỏ ngoài tai, không được chú ý. Chủ ngữ là toàn bộ what-clause; last night yêu cầu quá khứ fell. Không dùng fallen nếu không có trợ động từ; deaf ears là thành ngữ, không mô tả tình trạng thính lực của người nghe."
+      "prefix": "Repeated requests for a safer crossing",
+      "suffix": ".",
+      "fullSentence": "Repeated requests for a safer crossing fell on deaf ears.",
+      "explanation": "Fall on deaf ears là lời đề nghị/cảnh báo không được lắng nghe. Câu gốc ở quá khứ nên dùng fell; ears luôn ở số nhiều trong thành ngữ này. Chủ ngữ đã là các yêu cầu, nên không điền thêm the committee vào sau cụm."
     },
     {
       "globalNumber": 100,
@@ -1215,5 +1214,7 @@
       "fullSentence": "We assembled at school punctually and Ms Tan did a count of the class before we boarded the bus.",
       "explanation": "Do/make a count of the class là đếm số học sinh có mặt, phù hợp việc kiểm tra trước khi lên xe. Giữ quá khứ did/made và từ COUNT nguyên dạng. Headcount viết liền là một từ khác hình thức từ khóa, nên đáp án mẫu dùng a count of để tuân thủ yêu cầu giữ từ."
     }
-  ]
+  ],
+  "contentRevision": "2026-10-17-balanced",
+  "storageVersion": "v3-balanced-20261017"
 }

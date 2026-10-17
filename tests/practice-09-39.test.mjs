@@ -13,7 +13,7 @@ for(const [n,r] of Object.entries(routes)){
   assert.deepEqual(data.sections.map(s=>s.count),[30,15,5,10,10,10,10,10]);
   assert(html.includes('const questions = SECTIONS.flatMap('));
   assert(!html.includes('Web chấm 70 câu phần viết (21–90)'));
-  assert.equal(data.storageVersion,'v2-100q');
+  assert.equal(data.storageVersion,'v3-balanced-20261017');
   for(const kind of ['active','history','last'])assert(html.includes(':'+kind+':${TEST.storageVersion}'));
   assert(html.includes('button.textContent = section.sectionLabel || section.sectionCode;'));
   const keywords=['NOWHERE','WORD','SET','OBJECTED','ENDS','PUT','OCCURRED','CHANCE','PRESSED','TAKEN'];
@@ -29,7 +29,7 @@ for(const [n,r] of Object.entries(routes)){
   const storageContext={COURSE:app.course,TEST:data};vm.createContext(storageContext);
   vm.runInContext(script.slice(script.indexOf('    const STORAGE_PREFIX ='),script.indexOf('    let answers ='))+'\nthis.keys={profile:PROFILE_KEY,active:ACTIVE_KEY,history:HISTORY_KEY,last:LAST_KEY};',storageContext);
   assert.equal(storageContext.keys.profile,'luyen-de:profile:v1');
-  for(const kind of ['active','history','last'])assert.equal(storageContext.keys[kind],'luyen-de:luyen-de-practice-test-38:'+kind+':v2-100q');
+  for(const kind of ['active','history','last'])assert.equal(storageContext.keys[kind],'luyen-de:luyen-de-practice-test-38:'+kind+':v3-balanced-20261017');
  }
  const ctx={SOLUTIONS:answers,questions:answers.map(a=>a.globalNumber),solutionByGlobal:new Map(answers.map(a=>[a.globalNumber,a])),TOTAL:data.total};vm.createContext(ctx);
  vm.runInContext(script.slice(script.indexOf('    const norm ='),script.indexOf('    const solutionByGlobal ='))+'\n'+script.slice(script.indexOf('    function buildReview('),script.indexOf('    function renderWrongList(')),ctx);

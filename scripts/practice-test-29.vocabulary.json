@@ -179,25 +179,25 @@
     },
     {
       "question": 31,
-      "term": "take one's hat off to",
-      "meta": "IDIOM",
-      "meaning": "ngả mũ thán phục ai",
-      "note": "Bày tỏ sự ngưỡng mộ trước việc làm hoặc thành tích của ai, không nhất thiết có hành động tháo mũ thật. Thay one's bằng my/your/his/her theo chủ ngữ.",
-      "usage": "take my/your hat off to someone",
-      "example": "I take my hat off to everyone who finished the difficult course.",
-      "translation": "Tôi khâm phục tất cả những người đã hoàn thành khóa học khó ấy.",
-      "family": "take – took – taken; hat (n); admiration (n, nghĩa gần)"
+      "term": "admire somebody for",
+      "meta": "VERB PATTERN",
+      "meaning": "ngưỡng mộ ai vì điều gì",
+      "note": "Admire somebody for doing something nghĩa là ngưỡng mộ ai vì một hành động hoặc phẩm chất. Sau for dùng V-ing remaining. With, on và to không đi với admire theo nghĩa này. Câu vẫn ôn diễn đạt sự ngưỡng mộ nhưng không chép lại thành ngữ take one’s hat off.",
+      "usage": "admire somebody for doing something",
+      "example": "I admire her for remaining calm.",
+      "translation": "Tôi ngưỡng mộ cô ấy vì vẫn giữ được bình tĩnh.",
+      "family": "admire (v); admiration (n); admirable (adj)"
     },
     {
       "question": 32,
-      "term": "life in the fast lane",
-      "meta": "IDIOM",
-      "meaning": "cuộc sống sôi động, nhiều kích thích",
-      "note": "Nghĩa bóng chỉ lối sống nhanh, hào nhoáng hoặc nhiều trải nghiệm mạo hiểm. Không đơn thuần nói đi ở làn xe chạy nhanh khi dùng về cuộc sống.",
-      "usage": "live life in the fast lane",
-      "example": "The character soon grew tired of life in the fast lane.",
-      "translation": "Nhân vật nhanh chóng chán cuộc sống quá sôi động ấy.",
-      "family": "life (n), lives (số nhiều); live (v); lane (n)"
+      "term": "get used to doing",
+      "meta": "VERB PATTERN",
+      "meaning": "dần quen với việc gì",
+      "note": "Get used to + danh từ/V-ing là dần quen với điều gì; to ở đây là giới từ nên cần living. Không nhầm với used to + động từ nguyên mẫu, diễn tả thói quen cũ. Câu giữ chủ đề thay đổi cuộc sống và ôn một cấu trúc có tính ứng dụng cao.",
+      "usage": "get used to living/working somewhere",
+      "example": "He is getting used to living in a quiet village.",
+      "translation": "Anh ấy đang dần quen với cuộc sống ở một ngôi làng yên tĩnh.",
+      "family": "be used to = đã quen; get used to = dần quen; used to + V = từng thường làm"
     },
     {
       "question": 33,
