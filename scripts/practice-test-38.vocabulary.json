@@ -2,7 +2,7 @@
   "test": 38,
   "words": [
     {
-      "question": 21,
+      "question": 1,
       "term": "put out",
       "meta": "ADJECTIVE PHRASE",
       "meaning": "khó chịu, bực vì một việc",
@@ -13,7 +13,7 @@
       "family": "put–put–put; put out (phrasal verb)"
     },
     {
-      "question": 22,
+      "question": 2,
       "term": "as regards",
       "meta": "PREPOSITIONAL PHRASE",
       "meaning": "về; liên quan tới",
@@ -24,7 +24,7 @@
       "family": "regard (n/v); regards (n); regarding (prep)"
     },
     {
-      "question": 23,
+      "question": 3,
       "term": "inconceivable",
       "meta": "ADJECTIVE",
       "meaning": "khó hoặc không thể tưởng tượng",
@@ -35,7 +35,7 @@
       "family": "conceive (v); conceivable/inconceivable (adj); inconceivably (adv)"
     },
     {
-      "question": 24,
+      "question": 4,
       "term": "implacably hostile",
       "meta": "ADJECTIVE PHRASE",
       "meaning": "thù địch quyết liệt, không khoan nhượng",
@@ -46,7 +46,7 @@
       "family": "implacable (adj); implacably (adv); hostility (n)"
     },
     {
-      "question": 25,
+      "question": 5,
       "term": "pull it off",
       "meta": "PHRASAL VERB",
       "meaning": "làm được việc khó một cách thành công",
@@ -57,7 +57,7 @@
       "family": "pull (v/n); pulled (past); pull off (phrase)"
     },
     {
-      "question": 27,
+      "question": 7,
       "term": "through no fault of one’s own",
       "meta": "IDIOM",
       "meaning": "không do lỗi của bản thân",
@@ -68,7 +68,7 @@
       "family": "fault (n); faulty (adj); faultless (adj)"
     },
     {
-      "question": 30,
+      "question": 10,
       "term": "the rat race",
       "meta": "IDIOM",
       "meaning": "cuộc đua mệt mỏi vì tiền bạc và thành công",
@@ -79,18 +79,7 @@
       "family": "rat (n); race (n/v); rat race (compound noun)"
     },
     {
-      "question": 33,
-      "term": "puppy fat",
-      "meta": "NOUN PHRASE",
-      "meaning": "lớp mỡ thời trẻ nhỏ còn giữ khi lớn lên",
-      "note": "Cụm chủ yếu dùng trong tiếng Anh Anh, thường nói vẻ tròn trịa ở trẻ/thiếu niên. Không phải mỡ của chó con. Fat trong cụm là không đếm được nên không thêm -s.",
-      "usage": "lose one's puppy fat; have puppy fat",
-      "example": "He still had puppy fat in his cheeks.",
-      "translation": "Hai má cậu vẫn còn nét tròn trịa của tuổi nhỏ.",
-      "family": "puppy (n); fat (n/adj); puppy fat (phrase)"
-    },
-    {
-      "question": 34,
+      "question": 14,
       "term": "a spate of",
       "meta": "NOUN PHRASE",
       "meaning": "một loạt sự việc xảy ra dồn dập",
@@ -101,18 +90,40 @@
       "family": "spate (n); a spate of (phrase)"
     },
     {
-      "question": 35,
-      "term": "take a rain check",
-      "meta": "IDIOM",
-      "meaning": "xin hẹn dịp khác",
-      "note": "Cách từ chối lời mời lúc này nhưng để ngỏ khả năng tham gia sau. Không phải kiểm tra thời tiết. Có thể take a rain check on dinner; thường dùng câu hỏi lịch sự.",
-      "usage": "Can I take a rain check?",
-      "example": "I’m busy tonight. Can I take a rain check?",
-      "translation": "Tối nay tôi bận. Cho tôi hẹn dịp khác được không?",
-      "family": "rain (n/v); check (n/v); rain check (noun phrase)"
+      "question": 24,
+      "term": "at face value",
+      "meta": "idiom",
+      "meaning": "theo vẻ ngoài hoặc đúng như điều được nói, chưa kiểm chứng",
+      "note": "Accept/take a claim at face value là tin ngay lời khẳng định mà chưa tìm bằng chứng. Trong bài, nhà báo cần kiểm chứng thay vì chấp nhận thông tin theo cách này.",
+      "usage": "accept/take something at face value",
+      "example": "We should not take every online review at face value.",
+      "translation": "Chúng ta không nên tin ngay mọi đánh giá trên mạng.",
+      "family": "face (n): mặt/bề ngoài; value (n): giá trị; verify (v): kiểm chứng"
     },
     {
-      "question": 36,
+      "question": 26,
+      "term": "run counter to",
+      "meta": "verb phrase",
+      "meaning": "đi ngược, trái với",
+      "note": "Dùng khi hành động hoặc quyết định mâu thuẫn với chính sách, lời khuyên hay kỳ vọng. Counter ở đây thể hiện hướng đối lập; cả cụm đi với to.",
+      "usage": "run counter to a policy/principle; ran counter to",
+      "example": "The new rule runs counter to the aim of equal access.",
+      "translation": "Quy định mới đi ngược mục tiêu tiếp cận bình đẳng.",
+      "family": "counter (adv): theo hướng ngược; contrary (adj); contradiction (n)"
+    },
+    {
+      "question": 29,
+      "term": "infer",
+      "meta": "verb",
+      "meaning": "suy ra, rút ra kết luận từ dấu hiệu",
+      "note": "Infer là việc của người đọc/nghe khi suy luận từ bằng chứng. Phân biệt imply: người nói hoặc thông tin gợi ra điều gì; người tiếp nhận infer điều đó.",
+      "usage": "infer something from evidence; infer that + clause",
+      "example": "From her silence, I inferred that she disagreed.",
+      "translation": "Từ sự im lặng của cô ấy, tôi suy ra rằng cô ấy không đồng ý.",
+      "family": "infer–inferred–inferred; inference (n): sự suy luận; inferential (adj)"
+    },
+    {
+      "question": 31,
       "term": "hazardous",
       "meta": "ADJECTIVE",
       "meaning": "nguy hiểm, có nguy cơ gây hại",
@@ -123,7 +134,7 @@
       "family": "hazard (n); hazardous (adj); hazardously (adv)"
     },
     {
-      "question": 37,
+      "question": 32,
       "term": "senselessly",
       "meta": "ADVERB",
       "meaning": "một cách dại dột, thiếu suy nghĩ",
@@ -134,7 +145,7 @@
       "family": "sense (n); sensible/senseless (adj); sensibly/senselessly (adv)"
     },
     {
-      "question": 38,
+      "question": 33,
       "term": "unaffected",
       "meta": "ADJECTIVE",
       "meaning": "không bị ảnh hưởng",
@@ -145,7 +156,7 @@
       "family": "affect (v); affected/unaffected (adj); effect (n)"
     },
     {
-      "question": 39,
+      "question": 34,
       "term": "merciless",
       "meta": "ADJECTIVE",
       "meaning": "tàn nhẫn, không biết thương xót",
@@ -156,18 +167,7 @@
       "family": "mercy (n); merciful/merciless (adj); mercilessly (adv)"
     },
     {
-      "question": 40,
-      "term": "deserted",
-      "meta": "ADJECTIVE",
-      "meaning": "vắng người, bị bỏ lại",
-      "note": "A deserted road là con đường không có ai. Deserted không nhất thiết là nơi bỏ hoang lâu năm. Lưu ý desert (sa mạc/bỏ rơi) khác dessert có hai s (món tráng miệng).",
-      "usage": "a deserted road/village/building",
-      "example": "They drove along a deserted road.",
-      "translation": "Họ lái xe trên con đường vắng người.",
-      "family": "desert (v/n); deserted (adj); desertion (n)"
-    },
-    {
-      "question": 41,
+      "question": 36,
       "term": "uncertainty",
       "meta": "NOUN",
       "meaning": "sự không chắc chắn, không biết điều gì sẽ xảy ra",
@@ -178,7 +178,7 @@
       "family": "certain/uncertain (adj); certainty/uncertainty (n)"
     },
     {
-      "question": 42,
+      "question": 37,
       "term": "indefinitely",
       "meta": "ADVERB",
       "meaning": "không xác định đến bao giờ",
@@ -189,7 +189,7 @@
       "family": "definite/indefinite (adj); definitely/indefinitely (adv)"
     },
     {
-      "question": 43,
+      "question": 38,
       "term": "inexplicable",
       "meta": "ADJECTIVE",
       "meaning": "không thể giải thích, khó hiểu nguyên nhân",
@@ -200,15 +200,15 @@
       "family": "explain (v); explanation (n); inexplicable (adj); inexplicably (adv)"
     },
     {
-      "question": 45,
-      "term": "questioningly",
-      "meta": "ADVERB",
-      "meaning": "với vẻ dò hỏi, muốn được giải thích",
-      "note": "Thường bổ nghĩa look/gaze/raise an eyebrow; biểu hiện câu hỏi bằng nét mặt. Questionable = đáng nghi, còn questioning có thể là tính từ chỉ sự chất vấn. Không thay bằng danh từ question.",
-      "usage": "look at somebody questioningly",
-      "example": "She looked at him questioningly.",
-      "translation": "Cô nhìn anh với vẻ dò hỏi.",
-      "family": "question (n/v); questioning (adj); questioningly (adv)"
+      "question": 41,
+      "term": "sceptical",
+      "meta": "adjective",
+      "meaning": "hoài nghi, chưa tin",
+      "note": "Sceptical about something nghĩa là cần thêm lý do/bằng chứng trước khi tin. Đây không nhất thiết là thái độ phủ nhận hoàn toàn. Skeptical là chính tả Mỹ được chấp nhận.",
+      "usage": "be sceptical about a claim; sceptical about whether ...",
+      "example": "Some residents were sceptical about whether the plan would work.",
+      "translation": "Một số cư dân còn hoài nghi liệu kế hoạch có hiệu quả hay không.",
+      "family": "sceptic/skeptic (n): người hoài nghi; scepticism/skepticism (n)"
     },
     {
       "question": 51,
@@ -310,7 +310,7 @@
       "family": "mode (n); modality (n); multimodal (adj); multimodality (n)"
     },
     {
-      "question": 88,
+      "question": 93,
       "term": "set aside",
       "meta": "PHRASAL VERB",
       "meaning": "để dành; dành riêng cho mục đích",
@@ -321,7 +321,7 @@
       "family": "set–set–set; aside (adv); savings (n)"
     },
     {
-      "question": 90,
+      "question": 95,
       "term": "make ends meet",
       "meta": "IDIOM",
       "meaning": "kiếm đủ tiền trang trải cuộc sống",

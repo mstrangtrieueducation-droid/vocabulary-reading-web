@@ -4,7 +4,7 @@
   "testNumber": 38,
   "testCode": "PRACTICE TEST 38",
   "title": "PRACTICE TEST 38",
-  "total": 70,
+  "total": 100,
   "docId": "14zQnJL5Wfq6X7NCE5_nlJoR9uhMPRZN6xvPq2HwjCY8",
   "sourceTabs": {
     "test": {
@@ -19,9 +19,9 @@
   "sections": [
     {
       "sectionCode": "I.1",
-      "sectionLabel": "II.1",
-      "startGlobal": 21,
-      "count": 15,
+      "sectionLabel": "I.1",
+      "startGlobal": 1,
+      "count": 30,
       "inputType": "letters",
       "choices": [
         "A",
@@ -32,21 +32,21 @@
     },
     {
       "sectionCode": "I.2",
-      "sectionLabel": "II.2",
-      "startGlobal": 36,
-      "count": 10,
+      "sectionLabel": "I.2",
+      "startGlobal": 31,
+      "count": 15,
       "inputType": "text"
     },
     {
       "sectionCode": "I.3",
-      "sectionLabel": "II.3",
+      "sectionLabel": "I.3",
       "startGlobal": 46,
       "count": 5,
       "inputType": "text"
     },
     {
       "sectionCode": "II.1",
-      "sectionLabel": "III.1",
+      "sectionLabel": "II.1",
       "startGlobal": 51,
       "count": 10,
       "inputType": "letters",
@@ -59,14 +59,14 @@
     },
     {
       "sectionCode": "II.2",
-      "sectionLabel": "III.2",
+      "sectionLabel": "II.2",
       "startGlobal": 61,
       "count": 10,
       "inputType": "text"
     },
     {
       "sectionCode": "II.3",
-      "sectionLabel": "III.3",
+      "sectionLabel": "II.3",
       "startGlobal": 71,
       "count": 10,
       "inputType": "letters",
@@ -79,22 +79,22 @@
     },
     {
       "sectionCode": "III.1",
-      "sectionLabel": "IV.1",
+      "sectionLabel": "III.1",
       "startGlobal": 81,
-      "count": 5,
+      "count": 10,
       "inputType": "text"
     },
     {
       "sectionCode": "III.2",
-      "sectionLabel": "IV.2",
-      "startGlobal": 86,
-      "count": 5,
+      "sectionLabel": "III.2",
+      "startGlobal": 91,
+      "count": 10,
       "inputType": "text"
     }
   ],
   "answers": [
     {
-      "globalNumber": 21,
+      "globalNumber": 1,
       "sectionCode": "I.1",
       "localNumber": 1,
       "acceptedAnswers": [
@@ -104,7 +104,7 @@
       "explanation": "On the contrary phủ định ý vừa bị bác bỏ và đưa điều ngược lại: tôi không khó chịu, trái lại tôi hoan nghênh. In contrast/on the other hand chủ yếu so sánh hai mặt; all the same = tuy vậy, không nhấn mạnh sự đảo ngược nhận định."
     },
     {
-      "globalNumber": 22,
+      "globalNumber": 2,
       "sectionCode": "I.1",
       "localNumber": 2,
       "acceptedAnswers": [
@@ -114,7 +114,7 @@
       "explanation": "As regards + danh từ = về/về phần. Cụm cố định có regards thêm -s. Concerning/regarding có thể tự làm giới từ nhưng không ghép as concerning/as regarding trong mẫu đang kiểm tra."
     },
     {
-      "globalNumber": 23,
+      "globalNumber": 3,
       "sectionCode": "I.1",
       "localNumber": 3,
       "acceptedAnswers": [
@@ -124,7 +124,7 @@
       "explanation": "Inconceivable that ... = khó/không thể tưởng tượng rằng... . Việc quên ba hẹn liên tiếp gây ngạc nhiên. Unintelligible = không hiểu được lời nói/văn bản, inscrutable = khó đoán nội tâm, incompatible = không tương thích và thường đi với with."
     },
     {
-      "globalNumber": 24,
+      "globalNumber": 4,
       "sectionCode": "I.1",
       "localNumber": 4,
       "acceptedAnswers": [
@@ -134,7 +134,7 @@
       "explanation": "Implacably hostile = thù địch không khoan nhượng, không dễ làm dịu. Impalpably = một cách khó cảm nhận; impeccably = hoàn hảo, không chê được; implausibly = khó tin, không phải kết hợp chỉ thái độ đối đầu bền bỉ."
     },
     {
-      "globalNumber": 25,
+      "globalNumber": 5,
       "sectionCode": "I.1",
       "localNumber": 5,
       "acceptedAnswers": [
@@ -144,7 +144,7 @@
       "explanation": "Pull something off = thực hiện thành công điều khó. Tân ngữ it đứng giữa pull và off: pull it off. Bring out là phát hành/làm lộ, weigh up là cân nhắc, throw up là nôn hoặc từ bỏ tùy ngữ cảnh."
     },
     {
-      "globalNumber": 26,
+      "globalNumber": 6,
       "sectionCode": "I.1",
       "localNumber": 6,
       "acceptedAnswers": [
@@ -154,7 +154,7 @@
       "explanation": "Mệnh lệnh phủ định Don’t ... thường dùng đuôi will you? để yêu cầu người nghe tuân theo. Không căn cứ vào don’t rồi chọn do you như câu trần thuật. Won’t you thường dùng với lời mời/khuyến khích khẳng định."
     },
     {
-      "globalNumber": 27,
+      "globalNumber": 7,
       "sectionCode": "I.1",
       "localNumber": 7,
       "acceptedAnswers": [
@@ -164,7 +164,7 @@
       "explanation": "Through no fault of his own = không do lỗi của chính anh ấy. Through nêu nguyên nhân/hoàn cảnh. Đây là cụm cố định; không thay bằng by/from/for chỉ vì các từ đó cũng có thể dịch là 'do' trong ngữ cảnh khác."
     },
     {
-      "globalNumber": 28,
+      "globalNumber": 8,
       "sectionCode": "I.1",
       "localNumber": 8,
       "acceptedAnswers": [
@@ -174,7 +174,7 @@
       "explanation": "Had it not been for = If it had not been for, điều kiện trái quá khứ. Kết quả wouldn’t have been able xác nhận mẫu điều kiện loại ba. Would không đặt trong mệnh đề điều kiện; be/should không phù hợp mốc quá khứ này."
     },
     {
-      "globalNumber": 29,
+      "globalNumber": 9,
       "sectionCode": "I.1",
       "localNumber": 9,
       "acceptedAnswers": [
@@ -184,7 +184,7 @@
       "explanation": "Using the laws of genetics là cụm phân từ chủ động có chủ thể scientists, nêu phương pháp tăng năng suất. A thêm as khiến cụm sai cấu trúc; C/D không nối được với mệnh đề chính. Không để laws làm chủ thể hành động của scientists."
     },
     {
-      "globalNumber": 30,
+      "globalNumber": 10,
       "sectionCode": "I.1",
       "localNumber": 10,
       "acceptedAnswers": [
@@ -194,7 +194,7 @@
       "explanation": "The rat race = cuộc đua mệt mỏi vì tiền bạc/thành công. Opt out of nghĩa rời bỏ, phù hợp chuyển về trang trại yên tĩnh. Horse race là đua ngựa; cat-and-mouse là trò đuổi bắt, không phải thành ngữ về cạnh tranh công việc."
     },
     {
-      "globalNumber": 31,
+      "globalNumber": 11,
       "sectionCode": "I.1",
       "localNumber": 11,
       "acceptedAnswers": [
@@ -204,17 +204,17 @@
       "explanation": "That the Earth is ... là mệnh đề danh từ làm chủ ngữ của surprises. Cần that để đóng gói toàn bộ sự thật làm chủ ngữ. Đề đã bỏ cách The Earth being cũng có thể danh từ hóa và sửa thông tin 'chín hành tinh' lỗi thời; Trái Đất vẫn là hành tinh lớn thứ năm."
     },
     {
-      "globalNumber": 32,
+      "globalNumber": 12,
       "sectionCode": "I.1",
       "localNumber": 12,
       "acceptedAnswers": [
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Needn’t have dressed so formally = đã ăn quá trang trọng trong khi không cần. Yesterday và everyone was casually dressed cho biết nhận xét về việc đã làm ở bữa tiệc. Couldn’t have phủ định khả năng đã làm; don’t need chỉ hiện tại, mustn’t là cấm đoán."
+      "explanation": "Needn’t have dressed so formally = đã ăn mặc quá trang trọng trong khi không cần. Yesterday và everyone was casually dressed cho biết nhận xét về việc đã làm ở bữa tiệc. Couldn’t have phủ định khả năng đã làm; don’t need chỉ hiện tại, mustn’t là cấm đoán."
     },
     {
-      "globalNumber": 33,
+      "globalNumber": 13,
       "sectionCode": "I.1",
       "localNumber": 13,
       "acceptedAnswers": [
@@ -224,7 +224,7 @@
       "explanation": "Puppy fat = lớp mỡ trẻ nhỏ còn giữ khi bước vào tuổi thiếu niên, khiến khuôn mặt trông non hơn. Puppy không chỉ chó con trong thành ngữ này. Các tên con vật khác không tạo cụm tương đương."
     },
     {
-      "globalNumber": 34,
+      "globalNumber": 14,
       "sectionCode": "I.1",
       "localNumber": 14,
       "acceptedAnswers": [
@@ -234,7 +234,7 @@
       "explanation": "A spate of films = một loạt phim xuất hiện dồn dập. Điều này thể hiện sự quan tâm trở lại với thời Elizabeth. Hypocrisy = đạo đức giả, transience = tính chóng qua, demise = sự kết thúc/sụp đổ; đều không phù hợp lượng phim mới."
     },
     {
-      "globalNumber": 35,
+      "globalNumber": 15,
       "sectionCode": "I.1",
       "localNumber": 15,
       "acceptedAnswers": [
@@ -244,7 +244,157 @@
       "explanation": "Can I take a rain check? là cách lịch sự xin hẹn dịp khác thay vì nhận lời ngay. Câu hỏi Would you like... mời đi ăn, không hỏi sở thích thường xuyên nên I do không phù hợp. Mustn’t là bị cấm, không phải cách từ chối trung tính tự nhiên."
     },
     {
-      "globalNumber": 36,
+      "globalNumber": 16,
+      "sectionCode": "I.1",
+      "localNumber": 16,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Only after + mệnh đề đặt đầu câu yêu cầu đảo trợ động từ ở mệnh đề chính: did the team realise. Phần after the figures had been checked giữ trật tự bình thường. Sau did dùng realise nguyên mẫu; không viết did the team realised."
+    },
+    {
+      "globalNumber": 17,
+      "sectionCode": "I.1",
+      "localNumber": 17,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "It is essential that + S + V nguyên mẫu là cấu trúc giả định chỉ yêu cầu cần thiết. Application là thứ được nộp nên cần bị động be submitted. Been submitted thiếu trợ động từ; to submit và submitting không tạo vị ngữ đúng ở đây."
+    },
+    {
+      "globalNumber": 18,
+      "sectionCode": "I.1",
+      "localNumber": 18,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Meet with opposition = gặp phải sự phản đối. Met là quá khứ của meet; with là giới từ cố định trong cách diễn đạt này. Không nhầm với oppose something, một động từ theo sau trực tiếp bởi tân ngữ."
+    },
+    {
+      "globalNumber": 19,
+      "sectionCode": "I.1",
+      "localNumber": 19,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Take something into account = tính đến, cân nhắc một yếu tố khi quyết định. Cost of maintenance là chi phí bảo trì cần xét trước khi mua. Into effect thường đi với put/come, còn into practice đi với put; không dùng với take theo nghĩa này."
+    },
+    {
+      "globalNumber": 20,
+      "sectionCode": "I.1",
+      "localNumber": 20,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Object to + danh từ/V-ing; to ở đây là giới từ. Timetable nhận hành động thay đổi nên dùng dạng -ing bị động being changed. Cụm the timetable being changed là nội dung khiến các nhân viên phản đối."
+    },
+    {
+      "globalNumber": 21,
+      "sectionCode": "I.1",
+      "localNumber": 21,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Unless = if ... not: nếu không nộp tài liệu trước thứ Sáu thì hồ sơ sẽ không được xét. Vế sau đã có not, vì vậy cần đọc toàn bộ quan hệ điều kiện để tránh dịch sai. Despite không thể trực tiếp đứng trước mệnh đề you submit."
+    },
+    {
+      "globalNumber": 22,
+      "sectionCode": "I.1",
+      "localNumber": 22,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "By this time tomorrow là hạn hoàn thành ở tương lai nên dùng tương lai hoàn thành will have + V3. Engineers là người thực hiện kiểm tra, vì vậy will have completed đúng. Had completed diễn tả trước một mốc quá khứ, không phù hợp tomorrow."
+    },
+    {
+      "globalNumber": 23,
+      "sectionCode": "I.1",
+      "localNumber": 23,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Cấu trúc là so + tính từ + a/an + danh từ số ít + that: so detailed a report that .... Có thể diễn đạt bằng such a detailed report, nhưng phương án B đặt sai vị trí a. Ba lựa chọn còn lại không đúng thứ tự từ."
+    },
+    {
+      "globalNumber": 24,
+      "sectionCode": "I.1",
+      "localNumber": 24,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Accept something at face value = tin ngay theo vẻ ngoài/nội dung được nói, chưa kiểm chứng. Rather than đối chiếu việc kiểm tra thông tin với tin ngay. In plain sight, at short notice và at first hand mang những nghĩa khác, không phù hợp ý câu."
+    },
+    {
+      "globalNumber": 25,
+      "sectionCode": "I.1",
+      "localNumber": 25,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Would rather + một người khác + quá khứ đơn diễn tả mong muốn về hành động hiện tại/tương lai. Vì chủ ngữ sau would rather là you nên dùng discussed. Would rather discuss chỉ đúng khi chính người nói là người thực hiện, không có you chen vào."
+    },
+    {
+      "globalNumber": 26,
+      "sectionCode": "I.1",
+      "localNumber": 26,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Run counter to = đi ngược, trái với một quan điểm/chính sách. Counter ở đây là thành phần của cụm cố định, không phải quầy thu ngân. To nối với chính sách bị đi ngược lại; các lựa chọn khác không tạo cụm đúng nghĩa này."
+    },
+    {
+      "globalNumber": 27,
+      "sectionCode": "I.1",
+      "localNumber": 27,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Hardly had + S + V3 + when + S + V quá khứ: vừa mới ... thì .... Hardly đầu câu gây đảo ngữ had the speaker begun. Than thuộc cặp no sooner ... than, không đi với hardly trong mẫu này."
+    },
+    {
+      "globalNumber": 28,
+      "sectionCode": "I.1",
+      "localNumber": 28,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Chủ ngữ trung tâm là Nothing, số ít. But careful planning mang nghĩa ngoại trừ sự chuẩn bị kỹ và không làm chủ ngữ thành số nhiều, nên động từ là stands. Stand between A and B diễn tả điều ngăn A gặp kết quả B."
+    },
+    {
+      "globalNumber": 29,
+      "sectionCode": "I.1",
+      "localNumber": 29,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Infer = suy ra từ bằng chứng; from the manager’s expression chính là dấu hiệu dùng để suy luận. Imply, insinuate và hint nói về việc người nói gợi ra một ý, không phải người quan sát rút ra kết luận từ nét mặt."
+    },
+    {
+      "globalNumber": 30,
+      "sectionCode": "I.1",
+      "localNumber": 30,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Fall through = kế hoạch không thành, đổ bể. Chủ thể là plans và nguyên nhân là nhà tài trợ rút hỗ trợ nên fell through phù hợp. Break out là bùng phát; catch on là trở nên phổ biến; run into cần tân ngữ chỉ vấn đề gặp phải."
+    },
+    {
+      "globalNumber": 31,
       "sectionCode": "I.2",
       "localNumber": 1,
       "acceptedAnswers": [
@@ -254,7 +404,7 @@
       "explanation": "Conditions were ... cần tính từ chỉ điều kiện nguy hiểm. Hazard → hazardous. Bão tuyết buộc nhân vật lái chậm, nên hazardous phù hợp; hazard là danh từ/động từ, không diễn tả tính chất sau were như yêu cầu."
     },
     {
-      "globalNumber": 37,
+      "globalNumber": 32,
       "sectionCode": "I.2",
       "localNumber": 2,
       "acceptedAnswers": [
@@ -264,7 +414,7 @@
       "explanation": "Cần trạng từ bổ nghĩa become mixed up: nhân vật đã dại dột dính vào nhóm xấu. Senselessly mang nghĩa thiếu suy nghĩ, hợp lời tự trách. Sensibly = khôn ngoan sẽ trái với madness và hậu quả nguy hiểm."
     },
     {
-      "globalNumber": 38,
+      "globalNumber": 33,
       "sectionCode": "I.2",
       "localNumber": 3,
       "acceptedAnswers": [
@@ -274,7 +424,7 @@
       "explanation": "Walk away unaffected = rời khỏi mà không bị tác động/tổn hại. Nhân vật nhận ra thật điên rồ khi nghĩ có thể dính vào băng nhóm rồi bình yên rút lui. Cần dạng phủ định un-; affected sẽ đảo ý của điều anh ta từng kỳ vọng."
     },
     {
-      "globalNumber": 39,
+      "globalNumber": 34,
       "sectionCode": "I.2",
       "localNumber": 4,
       "acceptedAnswers": [
@@ -284,7 +434,7 @@
       "explanation": "The most merciless member = thành viên tàn nhẫn, không biết thương xót nhất. Mercy → merciless. Merciful là có lòng thương, trái với nguy cơ đe dọa vợ nhân vật; most đã cho sẵn nên không thêm một dạng so sánh nhất khác."
     },
     {
-      "globalNumber": 40,
+      "globalNumber": 35,
       "sectionCode": "I.2",
       "localNumber": 5,
       "acceptedAnswers": [
@@ -294,7 +444,7 @@
       "explanation": "A deserted forest highway = đường cao tốc qua rừng vắng người. Deserted là phân từ dùng như tính từ; desert có nghĩa sa mạc không phù hợp bão tuyết và ngữ cảnh vắng vẻ. Không nhầm dessert là món tráng miệng."
     },
     {
-      "globalNumber": 41,
+      "globalNumber": 36,
       "sectionCode": "I.2",
       "localNumber": 6,
       "acceptedAnswers": [
@@ -304,7 +454,7 @@
       "explanation": "The uncertainty of her fate = sự không chắc số phận cô ấy. Nhân vật sợ nhưng chưa biết chuyện gì đã xảy ra, nên uncertainty hợp hơn certainty. Sau the cần danh từ; uncertain là tính từ."
     },
     {
-      "globalNumber": 42,
+      "globalNumber": 37,
       "sectionCode": "I.2",
       "localNumber": 7,
       "acceptedAnswers": [
@@ -314,7 +464,7 @@
       "explanation": "Delay me indefinitely = khiến tôi chậm lại không biết đến lúc nào. Cần trạng từ bổ nghĩa delay. Definitely = chắc chắn, thiếu ý không có hạn định; indefinite là tính từ. Đề đã bổ sung dấu chấm trước câu I wrestled tiếp theo."
     },
     {
-      "globalNumber": 43,
+      "globalNumber": 38,
       "sectionCode": "I.2",
       "localNumber": 8,
       "acceptedAnswers": [
@@ -325,7 +475,7 @@
       "explanation": "Cảnh vợ xuất hiện sau tay lái không thể giải thích trong hiểu biết lúc đó: inexplicable/unexplainable. Cả hai đều là tính từ phủ định từ explain. Inexplicably là trạng từ, không đứng trực tiếp trước vision."
     },
     {
-      "globalNumber": 44,
+      "globalNumber": 39,
       "sectionCode": "I.2",
       "localNumber": 9,
       "acceptedAnswers": [
@@ -336,7 +486,7 @@
       "explanation": "A car that was unrecognizable/unrecognisable to me = chiếc xe tôi không nhận ra. Hai chính tả Mỹ/Anh đều chấp nhận. Nhân vật thấy vợ nhưng không hiểu vì sao cô ở trong chiếc xe lạ; cần tính từ sau was."
     },
     {
-      "globalNumber": 45,
+      "globalNumber": 40,
       "sectionCode": "I.2",
       "localNumber": 10,
       "acceptedAnswers": [
@@ -344,6 +494,57 @@
       ],
       "displayAnswer": "questioningly",
       "explanation": "Looked at her questioningly = nhìn cô ấy với vẻ dò hỏi. Cần trạng từ mô tả cách nhìn vì anh chưa hiểu tình huống. Questionable là đáng nghi, không diễn đạt hành động nhìn hỏi; questioningly có đuôi -ingly."
+    },
+    {
+      "globalNumber": 41,
+      "sectionCode": "I.2",
+      "localNumber": 11,
+      "acceptedAnswers": [
+        "sceptical",
+        "skeptical"
+      ],
+      "displayAnswer": "sceptical / skeptical",
+      "explanation": "Sceptical/skeptical about whether ... = hoài nghi, chưa tin liệu việc đó có khả thi. Hai dạng chính tả Anh/Mỹ đều chấp nhận. Sau were cần tính từ mô tả volunteers, không dùng scepticism là danh từ chỉ sự hoài nghi."
+    },
+    {
+      "globalNumber": 42,
+      "sectionCode": "I.2",
+      "localNumber": 12,
+      "acceptedAnswers": [
+        "reliability"
+      ],
+      "displayAnswer": "reliability",
+      "explanation": "The reliability of the advice = độ đáng tin cậy của lời khuyên. Sau the và trước of cần danh từ reliability. Reliable là tính từ, reliably là trạng từ; cả hai không thể đứng một mình ở vị trí danh từ này."
+    },
+    {
+      "globalNumber": 43,
+      "sectionCode": "I.2",
+      "localNumber": 13,
+      "acceptedAnswers": [
+        "qualified"
+      ],
+      "displayAnswer": "qualified",
+      "explanation": "A qualified technician = kỹ thuật viên có đủ chuyên môn/chứng chỉ cần thiết. Qualified là tính từ tạo từ qualify, bổ nghĩa technician. Qualification là danh từ và không thay trực tiếp được vị trí này; qualifying nói thứ giúp đạt điều kiện, khác nghĩa."
+    },
+    {
+      "globalNumber": 44,
+      "sectionCode": "I.2",
+      "localNumber": 14,
+      "acceptedAnswers": [
+        "constructive"
+      ],
+      "displayAnswer": "constructive",
+      "explanation": "Constructive feedback = góp ý mang tính xây dựng, giúp người nhận tiến bộ. Ngữ cảnh rather than criticising và showed them how to improve xác định nghĩa tích cực. Construction là danh từ; constructively là trạng từ, không bổ nghĩa trực tiếp feedback như cần ở đây."
+    },
+    {
+      "globalNumber": 45,
+      "sectionCode": "I.2",
+      "localNumber": 15,
+      "acceptedAnswers": [
+        "independent"
+      ],
+      "displayAnswer": "independent",
+      "explanation": "Independent of expert help = không phụ thuộc vào sự trợ giúp chuyên gia. Cụm entirely independent of phù hợp với ý mục tiêu không phải tự làm mọi thứ mà là biết khi nào cần hỏi. Dependent thường đi với on, và sẽ trái với cấu trúc of đã cho."
     },
     {
       "globalNumber": 46,
@@ -798,6 +999,79 @@
     },
     {
       "globalNumber": 86,
+      "sectionCode": "III.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "is believed to have been taken abroad"
+      ],
+      "displayAnswer": "is believed to have been taken abroad",
+      "explanation": "People believe that ... chuyển thành S + is believed + to V. Việc đưa bức tranh ra nước ngoài xảy ra trước niềm tin hiện tại, và bức tranh nhận hành động, nên dùng to have been taken. To be taken sẽ làm sai quan hệ thời gian.",
+      "prefix": "The missing painting",
+      "suffix": "",
+      "fullSentence": "The missing painting is believed to have been taken abroad."
+    },
+    {
+      "globalNumber": 87,
+      "sectionCode": "III.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "the steep route, the hikers completed it",
+        "the route being steep, the hikers completed it",
+        "the steepness of the route, the hikers completed it",
+        "the fact that the route was steep, the hikers completed it"
+      ],
+      "displayAnswer": "the steep route, the hikers completed it / the route being steep, the hikers completed it / the steepness of the route, the hikers completed it / the fact that the route was steep, the hikers completed it",
+      "explanation": "Despite đi với danh từ/cụm -ing; nếu dùng mệnh đề đầy đủ cần the fact that. Các cách đều diễn tả dù tuyến đường dốc, nhóm đi bộ vẫn hoàn thành. Không viết despite the route was steep hoặc despite of.",
+      "prefix": "Despite",
+      "suffix": "",
+      "fullSentence": "Despite the steep route, the hikers completed it."
+    },
+    {
+      "globalNumber": 88,
+      "sectionCode": "III.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "confusing were the instructions that we had to ask for help"
+      ],
+      "displayAnswer": "confusing were the instructions that we had to ask for help",
+      "explanation": "Đưa So + tính từ lên đầu câu để nhấn mạnh thì đảo be ra trước chủ ngữ: So confusing were the instructions that .... Instructions số nhiều nên dùng were. Giữ had to ask for help để bảo toàn ý đã buộc phải nhờ trợ giúp.",
+      "prefix": "So",
+      "suffix": "",
+      "fullSentence": "So confusing were the instructions that we had to ask for help."
+    },
+    {
+      "globalNumber": 89,
+      "sectionCode": "III.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "she would have the broken window repaired the next day",
+        "she would get the broken window repaired the next day",
+        "she would ask someone to repair the broken window the next day",
+        "she would have the broken window repaired the following day",
+        "she would ask someone to repair the broken window the following day"
+      ],
+      "displayAnswer": "she would have the broken window repaired the next day / she would get the broken window repaired the next day / she would ask someone to repair the broken window the next day / she would have the broken window repaired the following day / she would ask someone to repair the broken window the following day",
+      "explanation": "Lời nói được tường thuật ở quá khứ: I → she, will → would, tomorrow → the next/following day. Have/get something repaired diễn tả nhờ người khác sửa; cũng chấp nhận giữ ask someone to repair. Không dùng she would repair nếu muốn giữ rõ việc nhờ người khác.",
+      "prefix": "Lan said that",
+      "suffix": "",
+      "fullSentence": "Lan said that she would have the broken window repaired the next day."
+    },
+    {
+      "globalNumber": 90,
+      "sectionCode": "III.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "I had checked the dates before booking the tickets",
+        "I had checked the dates before I booked the tickets"
+      ],
+      "displayAnswer": "I had checked the dates before booking the tickets / I had checked the dates before I booked the tickets",
+      "explanation": "Regret not doing diễn tả tiếc vì đã không làm. Wish về quá khứ dùng had + V3: I wish I had checked .... Không dùng I checked, vốn diễn tả mong muốn trái hiện tại trong cấu trúc wish.",
+      "prefix": "I wish",
+      "suffix": "",
+      "fullSentence": "I wish I had checked the dates before booking the tickets."
+    },
+    {
+      "globalNumber": 91,
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
@@ -810,7 +1084,7 @@
       "fullSentence": "Lan is nowhere near as talkative as her brother."
     },
     {
-      "globalNumber": 87,
+      "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
@@ -823,7 +1097,7 @@
       "fullSentence": "Mai gave her word that she would never tell anyone about the missing files."
     },
     {
-      "globalNumber": 88,
+      "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
@@ -836,7 +1110,7 @@
       "fullSentence": "I wish we had set aside a bit more money for the summer holidays."
     },
     {
-      "globalNumber": 89,
+      "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
@@ -850,7 +1124,7 @@
       "fullSentence": "It was Nam who objected to tidying up after the party."
     },
     {
-      "globalNumber": 90,
+      "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
@@ -862,7 +1136,84 @@
       "prefix": "Like many other students, Phong would have great",
       "suffix": "the help of his parents.",
       "fullSentence": "Like many other students, Phong would have great difficulty making ends meet without the help of his parents."
+    },
+    {
+      "globalNumber": 96,
+      "sectionCode": "III.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "to put off its decision",
+        "to put its decision off",
+        "to put off making its decision",
+        "to put off making a decision"
+      ],
+      "displayAnswer": "to put off its decision / to put its decision off / to put off making its decision / to put off making a decision",
+      "explanation": "Put off = hoãn. Sau decided dùng to V; có thể đặt tân ngữ giữa put và off hoặc sau off. Các cụm mẫu có 5–6 từ, giữ nguyên PUT và nghĩa hoãn quyết định tới thứ Sáu.",
+      "prefix": "The committee decided",
+      "suffix": "until Friday.",
+      "fullSentence": "The committee decided to put off its decision until Friday."
+    },
+    {
+      "globalNumber": 97,
+      "sectionCode": "III.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "had not occurred to me",
+        "had never occurred to me",
+        "never occurred to me"
+      ],
+      "displayAnswer": "had not occurred to me / had never occurred to me / never occurred to me",
+      "explanation": "It occurs to someone that/how ... = ai chợt nghĩ hoặc nhận ra điều gì. Dạng phủ định giữ ý tôi đã không nhận ra chi phí sửa chữa sẽ cao đến đâu. Các cụm có 4–5 từ, nhưng phải giữ OCCURRED nguyên dạng; vì vậy did not occur to me không đáp ứng từ khóa và không được tính.",
+      "prefix": "It",
+      "suffix": "how expensive the repairs would be.",
+      "fullSentence": "It had not occurred to me how expensive the repairs would be."
+    },
+    {
+      "globalNumber": 98,
+      "sectionCode": "III.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "little chance of Hoa forgetting",
+        "little chance of Hoa's forgetting",
+        "little chance of Hoa’s forgetting",
+        "little chance that Hoa will forget",
+        "not much chance of Hoa forgetting"
+      ],
+      "displayAnswer": "little chance of Hoa forgetting / little chance of Hoa's forgetting / little chance of Hoa’s forgetting / little chance that Hoa will forget / not much chance of Hoa forgetting",
+      "explanation": "Little chance of + danh từ/V-ing hoặc little chance that + mệnh đề diễn tả khả năng thấp. Không dùng no chance vì sẽ chuyển unlikely thành hoàn toàn không thể xảy ra. Các phương án mẫu có 5–6 từ và giữ CHANCE.",
+      "prefix": "There is",
+      "suffix": "such an important appointment.",
+      "fullSentence": "There is little chance of Hoa forgetting such an important appointment."
+    },
+    {
+      "globalNumber": 99,
+      "sectionCode": "III.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "pressed on with",
+        "pressed ahead with"
+      ],
+      "displayAnswer": "pressed on with / pressed ahead with",
+      "explanation": "Press on/ahead with something = tiếp tục kiên trì thực hiện dù gặp khó khăn. Câu kể quá khứ nên dùng pressed. Điền 3 từ, giữ nguyên PRESSED; không lặp the project đã có sẵn.",
+      "prefix": "Despite many setbacks, the team",
+      "suffix": "the project.",
+      "fullSentence": "Despite many setbacks, the team pressed on with the project."
+    },
+    {
+      "globalNumber": 100,
+      "sectionCode": "III.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "was taken aback",
+        "was taken by surprise"
+      ],
+      "displayAnswer": "was taken aback / was taken by surprise",
+      "explanation": "Be taken aback/be taken by surprise = bị bất ngờ. Nobody expected ... có thể diễn đạt là everyone was taken aback/by surprise. Everyone là chủ ngữ số ít nên dùng was; hai cách điền có 3 hoặc 5 từ và giữ TAKEN.",
+      "prefix": "Everyone",
+      "suffix": "by the sudden change in the rules.",
+      "fullSentence": "Everyone was taken aback by the sudden change in the rules."
     }
   ],
-  "scopeNote": "Web chấm 70 câu phần viết (21–90). Phần Listening 1–20 dùng handout/audio riêng, chưa được tính vào điểm web."
+  "contentRevision": "2026-10-17-100q",
+  "storageVersion": "v2-100q"
 }

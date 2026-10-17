@@ -9,17 +9,28 @@ for(const [n,r] of Object.entries(routes)){
  assert.deepEqual(data.sections.flatMap(s=>Array.from({length:s.count},(_,i)=>s.startGlobal+i)),answers.map(a=>a.globalNumber));
  assert.equal(new Set(answers.map(a=>a.globalNumber)).size,data.total);
  if(+n===38){
-  assert.equal(data.total,70);assert.equal(answers[0].globalNumber,21);assert.equal(answers.at(-1).globalNumber,90);
+  assert.equal(data.total,100);assert.equal(answers[0].globalNumber,1);assert.equal(answers.at(-1).globalNumber,100);
+  assert.deepEqual(data.sections.map(s=>s.count),[30,15,5,10,10,10,10,10]);
   assert(html.includes('const questions = SECTIONS.flatMap('));
-  assert(html.includes('Web chấm 70 câu phần viết (21–90)'));
+  assert(!html.includes('Web chấm 70 câu phần viết (21–90)'));
+  assert.equal(data.storageVersion,'v2-100q');
+  for(const kind of ['active','history','last'])assert(html.includes(':'+kind+':${TEST.storageVersion}'));
   assert(html.includes('button.textContent = section.sectionLabel || section.sectionCode;'));
-  for(const answer of answers.filter(a=>a.globalNumber>=86))for(const variant of answer.acceptedAnswers){
+  const keywords=['NOWHERE','WORD','SET','OBJECTED','ENDS','PUT','OCCURRED','CHANCE','PRESSED','TAKEN'];
+  for(const answer of answers.filter(a=>a.globalNumber>=91))for(const variant of answer.acceptedAnswers){
    const count=variant.split(/\s+/).length;assert(count>=2&&count<=6);
+   assert(variant.toUpperCase().split(/\s+/).includes(keywords[answer.globalNumber-91]));
   }
  }
  assert.equal(new Set(answers.map(a=>a.explanation)).size,data.total);
  assert(answers.every(a=>a.explanation.length>100&&a.acceptedAnswers.length));
  const script=html.match(/<script>([\s\S]*?)<\/script>/)[1];new vm.Script(script);
+ if(+n===38){
+  const storageContext={COURSE:app.course,TEST:data};vm.createContext(storageContext);
+  vm.runInContext(script.slice(script.indexOf('    const STORAGE_PREFIX ='),script.indexOf('    let answers ='))+'\nthis.keys={profile:PROFILE_KEY,active:ACTIVE_KEY,history:HISTORY_KEY,last:LAST_KEY};',storageContext);
+  assert.equal(storageContext.keys.profile,'luyen-de:profile:v1');
+  for(const kind of ['active','history','last'])assert.equal(storageContext.keys[kind],'luyen-de:luyen-de-practice-test-38:'+kind+':v2-100q');
+ }
  const ctx={SOLUTIONS:answers,questions:answers.map(a=>a.globalNumber),solutionByGlobal:new Map(answers.map(a=>[a.globalNumber,a])),TOTAL:data.total};vm.createContext(ctx);
  vm.runInContext(script.slice(script.indexOf('    const norm ='),script.indexOf('    const solutionByGlobal ='))+'\n'+script.slice(script.indexOf('    function buildReview('),script.indexOf('    function renderWrongList(')),ctx);
  const sample=Object.fromEntries(answers.map(a=>[a.globalNumber,a.acceptedAnswers[0]]));

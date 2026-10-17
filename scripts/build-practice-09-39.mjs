@@ -18,13 +18,14 @@ for(const n of numbers){
  const app=JSON.parse(student.match(/const APP = (.*);\r?\n/)[1]);
  app.course.expected={testCount:39,questionTotal:null};
  const errorSection=src.errorCorrectionSection??'I.3';
- app.test={...app.test,sequence:n,testId:'luyen-de-practice-test-'+pad,testLabel:src.title,testNumber:n,testCode:src.testCode,title:src.title,total:src.total,questionDocumentId:src.docId,questionTab:src.sourceTabs.test.tabId,sections:src.sections,answers:src.answers,errorCorrectionSection:errorSection,contentRevision:'2026-10-16',publishReady:true};
+ app.test={...app.test,sequence:n,testId:'luyen-de-practice-test-'+pad,testLabel:src.title,testNumber:n,testCode:src.testCode,title:src.title,total:src.total,questionDocumentId:src.docId,questionTab:src.sourceTabs.test.tabId,sections:src.sections,answers:src.answers,errorCorrectionSection:errorSection,contentRevision:src.contentRevision||'2026-10-16',storageVersion:src.storageVersion||'v1',publishReady:true};
  let html=student.replace(/const APP = .*;\r?\n/,()=> 'const APP = '+JSON.stringify(app)+';\n').replaceAll('PRACTICE TEST 5 · LUYỆN ĐỀ','PRACTICE TEST '+n+' · LUYỆN ĐỀ');
  html=html.replaceAll('=== "I.3"','=== '+JSON.stringify(errorSection));
  html=html.replaceAll('Điền 5 lỗi khác nhau','Điền '+src.sections.find(s=>s.sectionCode===errorSection).count+' lỗi khác nhau');
  html=html.replace('const questions = Array.from({length:TOTAL}, (_,index) => index + 1);','const questions = SECTIONS.flatMap(section => Array.from({length:section.count}, (_,index) => section.startGlobal + index));');
  html=html.replace('button.textContent = section.sectionCode;','button.textContent = section.sectionLabel || section.sectionCode;').replace('section.textContent = place.section.sectionCode;','section.textContent = place.section.sectionLabel || place.section.sectionCode;');
  html=html.replace('needsReview:globalNumber >= 81','needsReview:Boolean(solution?.fullSentence)');
+ if(src.storageVersion)for(const kind of ['active','history','last'])html=html.replace(':'+kind+':v1',':'+kind+':${TEST.storageVersion}');
  if(src.scopeNote){
   html=html.replace('<h1>Bắt đầu lượt làm</h1>','<h1>Bắt đầu lượt làm</h1><p class="notice">'+escape(src.scopeNote)+'</p>');
   html=html.replace('<span>ĐỀ BÀI</span>','<span>ĐỀ BÀI · CÂU '+src.answers[0].globalNumber+'–'+src.answers.at(-1).globalNumber+'</span>');
