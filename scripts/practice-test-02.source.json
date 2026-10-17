@@ -1,0 +1,1135 @@
+{
+  "schemaVersion": 2,
+  "sequence": 2,
+  "testId": "luyen-de-practice-test-02",
+  "testLabel": "PRACTICE TEST 2",
+  "testNumber": 2,
+  "testCode": "LD-PT02",
+  "title": "PRACTICE TEST 2",
+  "topic": "ÔN THI CHUYÊN ANH",
+  "total": 100,
+  "questionDocumentId": "1b9S6nEupIT6CoPKqjCGfwn_hhQW69A801-FCEd_6coU",
+  "questionTab": "t.0",
+  "sections": [
+    {
+      "sectionCode": "I.1",
+      "sectionLabel": "I.1",
+      "startGlobal": 1,
+      "count": 35,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "I.2",
+      "sectionLabel": "I.2",
+      "startGlobal": 36,
+      "count": 10,
+      "inputType": "text",
+      "choices": []
+    },
+    {
+      "sectionCode": "I.3",
+      "sectionLabel": "I.3",
+      "startGlobal": 46,
+      "count": 5,
+      "inputType": "text",
+      "choices": []
+    },
+    {
+      "sectionCode": "II.1",
+      "sectionLabel": "II.1",
+      "startGlobal": 51,
+      "count": 10,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "II.2",
+      "sectionLabel": "II.2",
+      "startGlobal": 61,
+      "count": 10,
+      "inputType": "text",
+      "choices": []
+    },
+    {
+      "sectionCode": "II.3",
+      "sectionLabel": "II.3",
+      "startGlobal": 71,
+      "count": 10,
+      "inputType": "letters",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sectionCode": "III.1",
+      "sectionLabel": "III.1",
+      "startGlobal": 81,
+      "count": 10,
+      "inputType": "text",
+      "choices": []
+    },
+    {
+      "sectionCode": "III.2",
+      "sectionLabel": "III.2",
+      "startGlobal": 91,
+      "count": 10,
+      "inputType": "text",
+      "choices": []
+    }
+  ],
+  "answers": [
+    {
+      "globalNumber": 1,
+      "sectionCode": "I.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Nobody’s got to stay late mang ý phủ định, nên câu hỏi đuôi phải ở dạng khẳng định have they. Chủ ngữ quy chiếu là nobody → they; trợ động từ của have got to là have.\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 2,
+      "sectionCode": "I.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Có đúng hai con ngựa và cả hai đều chạy nhanh, nên dùng both of which. All cần từ ba đối tượng trở lên; each đi với động từ số ít runs.\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 3,
+      "sectionCode": "I.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\nTrật từ của tính từ\nOP SA Sh COMP\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 4,
+      "sectionCode": "I.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nrút gọn mệnh đề quan hệ\nthe last… + to V\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 5,
+      "sectionCode": "I.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\nĐáng lẽ đã ko cần vội vàng đến airport vì máy bay bị delay.\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 6,
+      "sectionCode": "I.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Giải thích của cô:\nlive (a/adv) (phát sóng) trực tiếp\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 7,
+      "sectionCode": "I.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nCàng….càng…\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 8,
+      "sectionCode": "I.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\nmodest (a) khiêm tốn; giản dị\nreserved (a) rụt rè; kín đáo (tính cách)\n→ a modest house\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 9,
+      "sectionCode": "I.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Giải thích của cô:\nmake room for\n= give way to\n→ nhường đường; nhường chỗ…\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 10,
+      "sectionCode": "I.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nwith a view to + V-ing = in order to V\nin the event of… = in case of…: phòng khi\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 11,
+      "sectionCode": "I.1",
+      "localNumber": 11,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Giải thích của cô:\nrút gọn đồng chủ ngữ\n→ he - working in the garden\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 12,
+      "sectionCode": "I.1",
+      "localNumber": 12,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nso sánh phải hợp lí\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 13,
+      "sectionCode": "I.1",
+      "localNumber": 13,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Giải thích của cô:\nbị bắt đang làm gì …\nforge (v) giả mạo\n→ forgery (n)\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 14,
+      "sectionCode": "I.1",
+      "localNumber": 14,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — Bring in an income = mang lại thu nhập. Chủ ngữ the new shop phù hợp nghĩa tạo nguồn tiền đều đặn cho gia đình. Bring up là nuôi dạy/đề cập; into/to không tạo cụm này.",
+      "focusVocabulary": []
+    },
+    {
+      "globalNumber": 15,
+      "sectionCode": "I.1",
+      "localNumber": 15,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nhalf-hearted (tính từ ghép): hời hợt\n>< whole-hearted: bằng hết sức; hết lòng\ntackle = solve (v)\n→ one = job: thay thế cho danh từ đằng trước; tránh lặp\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 16,
+      "sectionCode": "I.1",
+      "localNumber": 16,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Giải thích của cô:\nwater - vaporize → bốc hơi\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 17,
+      "sectionCode": "I.1",
+      "localNumber": 17,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\ncome down with a minor disease: mắc bệnh vặt\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 18,
+      "sectionCode": "I.1",
+      "localNumber": 18,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nYou can say that again.\n= I agree with you.\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 19,
+      "sectionCode": "I.1",
+      "localNumber": 19,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Giải thích của cô:\nas long as\n= so long as\n= provided / providing\n→ miễn là…\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 20,
+      "sectionCode": "I.1",
+      "localNumber": 20,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "A — From my point of view = theo quan điểm của tôi. Opinion cũng nghĩa là ý kiến nhưng cần in my opinion, không dùng from my point of opinion. Thought và idea không hoàn thành cụm cố định này.",
+      "focusVocabulary": []
+    },
+    {
+      "globalNumber": 21,
+      "sectionCode": "I.1",
+      "localNumber": 21,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "D — Take the blame for something = chịu trách nhiệm/bị quy lỗi về việc gì. Unfairly cho biết Janny phải gánh lỗi dù cả nhóm cùng quyết định. Fault/error/mistake có liên quan nghĩa lỗi nhưng không dùng take the fault/error/mistake trong cụm này.",
+      "focusVocabulary": [
+        {
+          "term": "take the blame for",
+          "meaning": "chịu lỗi; bị quy trách nhiệm về"
+        }
+      ]
+    },
+    {
+      "globalNumber": 22,
+      "sectionCode": "I.1",
+      "localNumber": 22,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nbring the house down: (một buổi biểu diễn) khiến mọi người vỗ tay vang dội\ngive sb a standing ovation: đứng lên vỗ tay…\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 23,
+      "sectionCode": "I.1",
+      "localNumber": 23,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\nkeep st at bay ngăn chặn ko có st đến gần\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 24,
+      "sectionCode": "I.1",
+      "localNumber": 24,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Giải thích của cô:\nspend money like water: tiêu rất nhiều tiền\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 25,
+      "sectionCode": "I.1",
+      "localNumber": 25,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Giải thích của cô:\ntake the bull by the horns dũng cảm đối mặt trực tiếp với khó khăn; ko né tránh\nput the cat among the pigeons gây phiền toái; bối rối\nrat race cuộc sống bon chen; cạnh tranh kiếm tiền\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 26,
+      "sectionCode": "I.1",
+      "localNumber": 26,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Khoảng trống trước next summer không cần mạo từ, còn good price là danh từ đếm được số ít nên cần a. Vì vậy chọn Ø – a.\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 27,
+      "sectionCode": "I.1",
+      "localNumber": 27,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "C — Nevertheless = tuy vậy. Hai ý đối lập là người cha lớn tuổi, hay quên nhưng vẫn có kinh nghiệm và giúp ích được. Therefore chỉ kết quả, otherwise là nếu không, similarly là tương tự; không diễn tả sự tương phản cần có.",
+      "focusVocabulary": [
+        {
+          "term": "nevertheless",
+          "meaning": "tuy vậy; dù thế"
+        }
+      ]
+    },
+    {
+      "globalNumber": 28,
+      "sectionCode": "I.1",
+      "localNumber": 28,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Imagine đặt người nghe vào một tình huống trái với thực tế trong quá khứ, nên dùng past perfect continuous: you’d been living. Các thì hiện tại không phù hợp với thời Ai Cập cổ đại.\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 29,
+      "sectionCode": "I.1",
+      "localNumber": 29,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Sau dấu phẩy cần mệnh đề quan hệ không xác định. Which thay cho mango trees và phải có are trong bị động are densely covered; vì thế chọn C.\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 30,
+      "sectionCode": "I.1",
+      "localNumber": 30,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Giải thích của cô:\nparliament (n) quốc hội\nbreak through đột phá\n→ breakthrough (n)\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 31,
+      "sectionCode": "I.1",
+      "localNumber": 31,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Giải thích của cô:\na long-range plan: kế hoạch đã chuẩn bị kĩ lưỡng từ lâu\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 32,
+      "sectionCode": "I.1",
+      "localNumber": 32,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\nfrom scratch: từ đầu; từ con số 0\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 33,
+      "sectionCode": "I.1",
+      "localNumber": 33,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nan old flame người yêu cũ\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 34,
+      "sectionCode": "I.1",
+      "localNumber": 34,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\ntake the initiative = take the lead: đi đầu; tiên phong\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 35,
+      "sectionCode": "I.1",
+      "localNumber": 35,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Giải thích của cô:\nbecome second nature to sb: trở nên quen thuộc với cái gì…\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 36,
+      "sectionCode": "I.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "unemployment"
+      ],
+      "displayAnswer": "unemployment",
+      "explanation": "Danh từ cần điền chỉ tình trạng không có việc làm. Từ EMPLOY thêm tiền tố un- và hậu tố -ment thành unemployment.\n\nBổ sung:\nDạng từ cần điền là “unemployment”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."
+    },
+    {
+      "globalNumber": 37,
+      "sectionCode": "I.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "misleading"
+      ],
+      "displayAnswer": "misleading",
+      "explanation": "Giải thích của cô:\nlead (v)\n→ misleading (a) sai lầm\n\nBổ sung:\nDạng từ cần điền là “misleading”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."
+    },
+    {
+      "globalNumber": 38,
+      "sectionCode": "I.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "technological"
+      ],
+      "displayAnswer": "technological",
+      "explanation": "Chỗ trống bổ nghĩa cho developments nên cần tính từ technological, được tạo từ TECHNOLOGY.\n\nBổ sung:\nDạng từ cần điền là “technological”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."
+    },
+    {
+      "globalNumber": 39,
+      "sectionCode": "I.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "characterized"
+      ],
+      "displayAnswer": "characterized",
+      "explanation": "Giải thích của cô:\nbe characterized by…: có đặc điểm…\n\nBổ sung:\nDạng từ cần điền là “characterized”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."
+    },
+    {
+      "globalNumber": 40,
+      "sectionCode": "I.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "industrial"
+      ],
+      "displayAnswer": "industrial",
+      "explanation": "Giải thích của cô:\nindustrial revolution: cuộc cách mạng công nghiệp\n\nBổ sung:\nDạng từ cần điền là “industrial”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."
+    },
+    {
+      "globalNumber": 41,
+      "sectionCode": "I.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "productivity"
+      ],
+      "displayAnswer": "productivity",
+      "explanation": "Giải thích của cô:\nproduction (n) sự sản xuất; sản lượng\n→ productivity (n) năng suất sản xuất\n\nBổ sung:\nDạng từ cần điền là “productivity”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."
+    },
+    {
+      "globalNumber": 42,
+      "sectionCode": "I.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "caused"
+      ],
+      "displayAnswer": "caused",
+      "explanation": "Giải thích của cô:\n= which is caused by…\nlargely = mainly: chính; chủ yếu\n\nBổ sung:\nDạng từ cần điền là “caused”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."
+    },
+    {
+      "globalNumber": 43,
+      "sectionCode": "I.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "definitely"
+      ],
+      "displayAnswer": "definitely",
+      "explanation": "Definite (tính từ) → definitely (trạng từ). Trong has definitely enhanced, trạng từ đứng giữa trợ động từ has và phân từ enhanced để nhấn mạnh sự khẳng định. Nghĩa câu: công nghệ chắc chắn đã nâng cao mức sống của chúng ta.",
+      "focusVocabulary": []
+    },
+    {
+      "globalNumber": 44,
+      "sectionCode": "I.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "capability",
+        "capacity"
+      ],
+      "displayAnswer": "capability\n/ capacity",
+      "explanation": "Giải thích của cô:\ncapability / capacity (n) = ability to do st\ndiminish (v) = decrease\npurchasing power / spending power / consuming power sức mua\n\nBổ sung:\nDạng từ cần điền là “capability / capacity”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."
+    },
+    {
+      "globalNumber": 45,
+      "sectionCode": "I.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "recession"
+      ],
+      "displayAnswer": "recession",
+      "explanation": "Giải thích của cô:\nrecede (v) (thủy triều/nước lũ/quân đội) rút\n→ economic recession: sự suy thoái kinh tế\n\nBổ sung:\nDạng từ cần điền là “recession”. Khi tự kiểm, nhìn từ đứng trước và sau chỗ trống để xác định từ loại, sau đó kiểm tra tiền tố/hậu tố, số ít–số nhiều và sắc thái khẳng định hoặc phủ định."
+    },
+    {
+      "globalNumber": 46,
+      "sectionCode": "I.3",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "Line 2: like → alike",
+        "like → alike",
+        "alike"
+      ],
+      "displayAnswer": "Line 2: like → alike",
+      "explanation": "Giải thích của cô:\nA and B alike: cả a và B\n\nBổ sung:\nCách sửa chuẩn là “Line 2: like → alike”. Sau khi thay, cần đọc lại trọn câu để chắc rằng phần sai, phần thay thế, từ loại và quan hệ nghĩa đều đã đúng; không chỉ ghi một từ rời nếu đề yêu cầu nêu lỗi và cách sửa."
+    },
+    {
+      "globalNumber": 47,
+      "sectionCode": "I.3",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "Line 4: in the end of → at the end of",
+        "in the end of → at the end of",
+        "at the end of"
+      ],
+      "displayAnswer": "Line 4: in the end of → at the end of",
+      "explanation": "Giải thích của cô:\nin the end\n# at the end of st\n\nBổ sung:\nCách sửa chuẩn là “Line 4: in the end of → at the end of”. Sau khi thay, cần đọc lại trọn câu để chắc rằng phần sai, phần thay thế, từ loại và quan hệ nghĩa đều đã đúng; không chỉ ghi một từ rời nếu đề yêu cầu nêu lỗi và cách sửa."
+    },
+    {
+      "globalNumber": 48,
+      "sectionCode": "I.3",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "Line 6: so → but",
+        "so → but",
+        "but"
+      ],
+      "displayAnswer": "Line 6: so → but",
+      "explanation": "Hai mệnh đề đối lập: lễ hội thường rơi vào tháng Ba nhưng đôi khi lại vào cuối tháng Hai. Vì vậy so phải đổi thành but.\n\nBổ sung:\nCách sửa chuẩn là “Line 6: so → but”. Sau khi thay, cần đọc lại trọn câu để chắc rằng phần sai, phần thay thế, từ loại và quan hệ nghĩa đều đã đúng; không chỉ ghi một từ rời nếu đề yêu cầu nêu lỗi và cách sửa."
+    },
+    {
+      "globalNumber": 49,
+      "sectionCode": "I.3",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "Line 8: memorized → commemorated",
+        "memorized → commemorated",
+        "commemorated"
+      ],
+      "displayAnswer": "Line 8: memorized → commemorated",
+      "explanation": "Giải thích của cô:\nmemory (n)\n→ memorize (v) thuộc lòng; ghi nhớ\n→ commemorate (v) tưởng nhớ\n\nBổ sung:\nCách sửa chuẩn là “Line 8: memorized → commemorated”. Sau khi thay, cần đọc lại trọn câu để chắc rằng phần sai, phần thay thế, từ loại và quan hệ nghĩa đều đã đúng; không chỉ ghi một từ rời nếu đề yêu cầu nêu lỗi và cách sửa."
+    },
+    {
+      "globalNumber": 50,
+      "sectionCode": "I.3",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "Line 10: them → themselves",
+        "them → themselves",
+        "themselves"
+      ],
+      "displayAnswer": "Line 10: them → themselves",
+      "explanation": "Giải thích của cô:\nrid themselves of accumulated emotional impurities → tước bỏ ra khỏi chính họ những sự không thuần khiết về tình cảm tích lũy từ trước\nsacred (a) thiêng liêng\naccumulate (v) tích lũy\nprominent (a) nổi bật; xuất chúng…\n\nBổ sung:\nCách sửa chuẩn là “Line 10: them → themselves”. Sau khi thay, cần đọc lại trọn câu để chắc rằng phần sai, phần thay thế, từ loại và quan hệ nghĩa đều đã đúng; không chỉ ghi một từ rời nếu đề yêu cầu nêu lỗi và cách sửa."
+    },
+    {
+      "globalNumber": 51,
+      "sectionCode": "II.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Giải thích của cô:\ndiscipline (n) kỉ luật\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 52,
+      "sectionCode": "II.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Giải thích của cô:\nregular exercise\n\nBổ sung:\nĐáp án cần ghi là A. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 53,
+      "sectionCode": "II.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\nthe body → perform\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 54,
+      "sectionCode": "II.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\nconsider…normal\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 55,
+      "sectionCode": "II.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nxét nghĩa → do more\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 56,
+      "sectionCode": "II.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nthể dục thể thao → be active\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 57,
+      "sectionCode": "II.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nthể thao → competitive → có sức cạnh tranh dù đã già\n\nBổ sung:\nĐáp án cần ghi là B. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 58,
+      "sectionCode": "II.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\nstay in shape\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 59,
+      "sectionCode": "II.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Giải thích của cô:\ndo + các loại bài tập thể dục\n\nBổ sung:\nĐáp án cần ghi là D. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 60,
+      "sectionCode": "II.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Các bài tập sẽ ít tác dụng nếu sau đó người tập lại dùng nước ngọt và khoai tây chiên, nên chọn if. Unless sẽ đảo ngược quan hệ nghĩa.\n\nBổ sung:\nĐáp án cần ghi là C. Hãy đặt phương án trở lại toàn câu rồi kiểm tra đồng thời cấu trúc ngữ pháp, kết hợp từ/cụm cố định và nghĩa trong ngữ cảnh; một phương án chỉ đúng nghĩa nhưng sai cấu trúc vẫn không được chọn."
+    },
+    {
+      "globalNumber": 61,
+      "sectionCode": "II.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "over"
+      ],
+      "displayAnswer": "over",
+      "explanation": "Cụm cố định over and above nghĩa là ngoài ra, thêm vào đó; phù hợp với ý ngoài thiết kế cửa hàng và bao bì.\n\nBổ sung:\nTừ cần điền là “over”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."
+    },
+    {
+      "globalNumber": 62,
+      "sectionCode": "II.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "every"
+      ],
+      "displayAnswer": "every",
+      "explanation": "Cụm each and every section nhấn mạnh mọi khu vực trong cửa hàng; từ cần điền là every.\n\nBổ sung:\nTừ cần điền là “every”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."
+    },
+    {
+      "globalNumber": 63,
+      "sectionCode": "II.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "with"
+      ],
+      "displayAnswer": "with",
+      "explanation": "With deadly accuracy là cụm giới từ chỉ cách thức: khách hàng được dẫn hướng với độ chính xác gần như tuyệt đối.\n\nBổ sung:\nTừ cần điền là “with”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."
+    },
+    {
+      "globalNumber": 64,
+      "sectionCode": "II.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "level"
+      ],
+      "displayAnswer": "level",
+      "explanation": "Cụm song song between waist level and eye level cần danh từ level sau waist.\n\nBổ sung:\nTừ cần điền là “level”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."
+    },
+    {
+      "globalNumber": 65,
+      "sectionCode": "II.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "made"
+      ],
+      "displayAnswer": "made",
+      "explanation": "Make one’s way to là cụm cố định nghĩa là tiến đến một nơi; quá khứ của make là made.\n\nBổ sung:\nTừ cần điền là “made”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."
+    },
+    {
+      "globalNumber": 66,
+      "sectionCode": "II.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "which"
+      ],
+      "displayAnswer": "which",
+      "explanation": "Sau giới từ behind cần đại từ quan hệ which để thay cho the counter: behind which would be the shopkeeper.\n\nBổ sung:\nTừ cần điền là “which”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."
+    },
+    {
+      "globalNumber": 67,
+      "sectionCode": "II.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "truly"
+      ],
+      "displayAnswer": "truly",
+      "explanation": "Well and truly over là cụm nhấn mạnh rằng thời kỳ đó đã hoàn toàn chấm dứt; đáp án là truly.\n\nBổ sung:\nTừ cần điền là “truly”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."
+    },
+    {
+      "globalNumber": 68,
+      "sectionCode": "II.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "ourselves"
+      ],
+      "displayAnswer": "ourselves",
+      "explanation": "Serve oneself nghĩa là tự phục vụ. Chủ ngữ we nên đại từ phản thân là ourselves.\n\nBổ sung:\nTừ cần điền là “ourselves”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."
+    },
+    {
+      "globalNumber": 69,
+      "sectionCode": "II.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "possible"
+      ],
+      "displayAnswer": "possible",
+      "explanation": "As enticingly as possible là cấu trúc as + trạng từ + as possible, nghĩa là hấp dẫn nhất có thể.\n\nBổ sung:\nTừ cần điền là “possible”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."
+    },
+    {
+      "globalNumber": 70,
+      "sectionCode": "II.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "keep"
+      ],
+      "displayAnswer": "keep",
+      "explanation": "Keep one’s wits about oneself nghĩa là luôn tỉnh táo/cảnh giác. Với chủ ngữ we dùng keep our wits about us.\n\nBổ sung:\nTừ cần điền là “keep”. Dạng open cloze phải kiểm tra cả ngữ pháp hai bên chỗ trống lẫn cụm cố định của toàn câu; đáp án phải là một từ và không làm thay đổi ý của đoạn."
+    },
+    {
+      "globalNumber": 71,
+      "sectionCode": "II.3",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\ndeprive (v) sb of st: tước bỏ cái gì khỏi ai\n→ sleep deprivation: sự mất/thiếu ngủ\ninvent (v) = make up: bịa chuyện\nround the clock: suốt ngày đêm\ntempt (v) dụ dỗ\nsymptom (n) triệu chứng (bệnh)\nchronic (a) mãn tính (bệnh)\non call = on duty\n→ on night call\nironic (a) nực cười; lố bịch\nirritate (v) = annoy\n→ irritable (a) dễ nổi cáu\n\nBổ sung:\nĐáp án là B. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."
+    },
+    {
+      "globalNumber": 72,
+      "sectionCode": "II.3",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Giải thích của cô:\ngive an account of…\n= give a description of…\n\nBổ sung:\nĐáp án là C. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."
+    },
+    {
+      "globalNumber": 73,
+      "sectionCode": "II.3",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "displayAnswer": "D",
+      "explanation": "Round the clock là thành ngữ nghĩa là liên tục suốt ngày đêm, tương ứng với all day and night, nên chọn D.\n\nBổ sung:\nĐáp án là D. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."
+    },
+    {
+      "globalNumber": 74,
+      "sectionCode": "II.3",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "displayAnswer": "C",
+      "explanation": "Trong cụm the importance it deserves, it thay cho sleeping: xã hội không dành cho việc ngủ tầm quan trọng xứng đáng. Vì vậy chọn C.\n\nBổ sung:\nĐáp án là C. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."
+    },
+    {
+      "globalNumber": 75,
+      "sectionCode": "II.3",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "displayAnswer": "B",
+      "explanation": "Giải thích của cô:\nInternet là một thứ cám dỗ khiến chúng ta không ngủ\n\nBổ sung:\nĐáp án là B. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."
+    },
+    {
+      "globalNumber": 76,
+      "sectionCode": "II.3",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Giải thích của cô:\nnhững người bị ảnh hưởng bởi việc thiếu ngủ trừ biologists\n\nBổ sung:\nĐáp án là A. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."
+    },
+    {
+      "globalNumber": 77,
+      "sectionCode": "II.3",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Giải thích của cô:\nTìm câu sai\n→ đảm bảo rằng 3 phương án đúng nằm ở đâu trong bài\n\nBổ sung:\nĐáp án là A. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."
+    },
+    {
+      "globalNumber": 78,
+      "sectionCode": "II.3",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Đoạn cuối nêu thiếu ngủ làm con người cáu kỉnh, giảm động lực và gây nguy hiểm cho xã hội; do đó A khái quát đúng cả tác động cá nhân lẫn xã hội.\n\nBổ sung:\nĐáp án là A. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."
+    },
+    {
+      "globalNumber": 79,
+      "sectionCode": "II.3",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Chronic mô tả tình trạng kéo dài, tái diễn trong thời gian dài; đáp án gần nghĩa nhất là lasting for a long time.\n\nBổ sung:\nĐáp án là A. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."
+    },
+    {
+      "globalNumber": 80,
+      "sectionCode": "II.3",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "displayAnswer": "A",
+      "explanation": "Giải thích của cô:\nTác giả ám chỉ: người uống rượu lái xe và người thiếu ngủ lái xe đều đáng trách\n\nBổ sung:\nĐáp án là A. Khi tự kiểm, gạch chân từ khóa trong câu hỏi, tìm câu chứa thông tin tương ứng trong bài và đối chiếu paraphrase; không chọn chỉ vì phương án lặp lại một vài từ của đoạn."
+    },
+    {
+      "globalNumber": 81,
+      "sectionCode": "III.1",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "It suddenly dawned on him that he had been taken in by the salesman."
+      ],
+      "displayAnswer": "It suddenly dawned on him that he had been taken in by the salesman.",
+      "explanation": "Dawn on somebody nghĩa là ai đó chợt nhận ra. Be taken in by somebody nghĩa là bị lừa; vì vậy câu chuyển dùng dawned on him that he had been taken in.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “It suddenly dawned on him that he had been taken in by the salesman.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 82,
+      "sectionCode": "III.1",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "Had it not been for Lan's help, I wouldn't have been able to finish the project.",
+        "Had it not been for Lan's help, I would not have been able to finish the project.",
+        "Had it not been for Lan's help, I couldn't have finished the project.",
+        "Had it not been for Lan's help, I could not have finished the project."
+      ],
+      "displayAnswer": "Had it not been for Lan's help, I wouldn't have been able to finish the project.\n/\nHad it not been for Lan's help, I would not have been able to finish the project.\n/\nHad it not been for Lan's help, I couldn't have finished the project.\n/\nHad it not been for Lan's help, I could not have finished the project.",
+      "explanation": "Đảo ngữ điều kiện loại ba dùng Had it not been for + danh từ, tương đương If it had not been for. Vế kết quả cần wouldn’t/couldn’t have + V3 để nói kết quả trái với quá khứ.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Had it not been for Lan's help, I wouldn't have been able to finish the project.\n/\nHad it not been for Lan's help, I would not have been able to finish the project.\n/\nHad it not been for Lan's help, I couldn't have finished the project.\n/\nHad it not been for Lan's help, I could not have finished the project.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 83,
+      "sectionCode": "III.1",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "They wanted to know what the width of Hoan Kiem Lake was."
+      ],
+      "displayAnswer": "They wanted to know what the width of Hoan Kiem Lake was.",
+      "explanation": "How wide được chuyển thành cụm danh từ the width of; trong câu hỏi gián tiếp giữ trật tự chủ ngữ–động từ: what the width of Hoan Kiem Lake was.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “They wanted to know what the width of Hoan Kiem Lake was.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 84,
+      "sectionCode": "III.1",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "It is vital that the report should be finished by Monday.",
+        "It is vital that the report be finished by Monday."
+      ],
+      "displayAnswer": "It is vital that the report should be finished by Monday.\n/\nIt is vital that the report be finished by Monday.",
+      "explanation": "Giải thích của cô:\n→ Thức giả định\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “It is vital that the report should be finished by Monday.\n/\nIt is vital that the report be finished by Monday.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 85,
+      "sectionCode": "III.1",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "The singer had a little money when she died, which surprised everyone.",
+        "The singer had a little money when she died, which made everyone surprised."
+      ],
+      "displayAnswer": "The singer had a little money when she died, which surprised everyone.\n/\nThe singer had a little money when she died, which made everyone surprised.",
+      "explanation": "Giải thích của cô:\nBắt buộc phải có dấu phẩy và bắt buộc phải dùng which → …, việc này làm cho mọi người ngạc nhiên. , which… có thể thế cho cả mệnh đề / cả thông tin được nhắc tới ở phía trước.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “The singer had a little money when she died, which surprised everyone.\n/\nThe singer had a little money when she died, which made everyone surprised.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 86,
+      "sectionCode": "III.1",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "If it hadn’t been for the noise/it hadn’t been very noisy, we would have stayed long(er) at the party."
+      ],
+      "displayAnswer": "If it hadn’t been for the noise/it hadn’t been very noisy, we would have stayed long(er) at the party.",
+      "explanation": "Câu điều kiện loại ba diễn tả quá khứ trái thực tế: If it hadn’t been for the noise / If it hadn’t been very noisy, we would have stayed longer.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “If it hadn’t been for the noise/it hadn’t been very noisy, we would have stayed long(er) at the party.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 87,
+      "sectionCode": "III.1",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "Such was the appeal of the book that I lost track of time.",
+        "Such a captivating book was it that I lost track of time."
+      ],
+      "displayAnswer": "Such was the appeal of the book that I lost track of time.\n/\nSuch a captivating book was it that I lost track of time.",
+      "explanation": "Giải thích của cô:\ncaptivating (a) = very interesting\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Such was the appeal of the book that I lost track of time.\n/\nSuch a captivating book was it that I lost track of time.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 88,
+      "sectionCode": "III.1",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "Rosa had difficulty (in) persuading her boss to give her a pay rise."
+      ],
+      "displayAnswer": "Rosa had difficulty (in) persuading her boss to give her a pay rise.",
+      "explanation": "Have difficulty (in) + V-ing nghĩa là gặp khó khăn khi làm gì. Persuade somebody to do something giữ nguyên cấu trúc ở phần sau.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Rosa had difficulty (in) persuading her boss to give her a pay rise.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 89,
+      "sectionCode": "III.1",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "You must not breathe a word about / a word of this highly confidential business plan."
+      ],
+      "displayAnswer": "You must not breathe a word about / a word of this highly confidential business plan.",
+      "explanation": "Breathe a word about/of something nghĩa là tiết lộ dù chỉ một lời. Câu phủ định must not breathe a word nhấn mạnh tính tuyệt mật.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “You must not breathe a word about / a word of this highly confidential business plan.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 90,
+      "sectionCode": "III.1",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "It was only when he read Julie's letter that he understood exactly what was wrong.",
+        "It was not until he read Julie's letter that he understood exactly what was wrong."
+      ],
+      "displayAnswer": "It was only when he read Julie's letter that he understood exactly what was wrong.\n/\nIt was not until he read Julie's letter that he understood exactly what was wrong.",
+      "explanation": "Giải thích của cô:\nCâu chẻ nhấn mạnh: It was … that …\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “It was only when he read Julie's letter that he understood exactly what was wrong.\n/\nIt was not until he read Julie's letter that he understood exactly what was wrong.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 91,
+      "sectionCode": "III.2",
+      "localNumber": 1,
+      "acceptedAnswers": [
+        "On no account are the contestants to be disturbed."
+      ],
+      "displayAnswer": "On no account are the contestants to be disturbed.",
+      "explanation": "Giải thích của cô:\nCấu trúc trang trọng: to be + to V → sẽ làm gì / phải làm gì\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “On no account are the contestants to be disturbed.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 92,
+      "sectionCode": "III.2",
+      "localNumber": 2,
+      "acceptedAnswers": [
+        "Despite his nervousness, he came to terms with the situation."
+      ],
+      "displayAnswer": "Despite his nervousness, he came to terms with the situation.",
+      "explanation": "Come to terms with something nghĩa là chấp nhận và đối mặt với một tình huống khó khăn; giữ nguyên despite his nervousness để diễn tả tương phản.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Despite his nervousness, he came to terms with the situation.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 93,
+      "sectionCode": "III.2",
+      "localNumber": 3,
+      "acceptedAnswers": [
+        "We finally succeeded in persuading my dad to let us go to the concert."
+      ],
+      "displayAnswer": "We finally succeeded in persuading my dad to let us go to the concert.",
+      "explanation": "Manage to persuade được chuyển sang succeed in + V-ing: succeeded in persuading. Cấu trúc persuade somebody to do something được giữ nguyên.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “We finally succeeded in persuading my dad to let us go to the concert.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 94,
+      "sectionCode": "III.2",
+      "localNumber": 4,
+      "acceptedAnswers": [
+        "The interviewee admitted having no knowledge about / of computer programming."
+      ],
+      "displayAnswer": "The interviewee admitted having no knowledge about / of computer programming.",
+      "explanation": "Admit + V-ing diễn tả thừa nhận một việc; having no knowledge about/of tương đương know nothing about. Cả about và of đều đi được với knowledge trong ngữ cảnh này.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “The interviewee admitted having no knowledge about / of computer programming.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 95,
+      "sectionCode": "III.2",
+      "localNumber": 5,
+      "acceptedAnswers": [
+        "Our hotel booking hasn’t been confirmed yet."
+      ],
+      "displayAnswer": "Our hotel booking hasn’t been confirmed yet.",
+      "explanation": "Present perfect passive của confirm là has not/hasn’t been confirmed. Yet được giữ ở cuối để nói việc xác nhận đến nay vẫn chưa xảy ra.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Our hotel booking hasn’t been confirmed yet.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 96,
+      "sectionCode": "III.2",
+      "localNumber": 6,
+      "acceptedAnswers": [
+        "There was a fall in the number of people applying for university grants last year."
+      ],
+      "displayAnswer": "There was a fall in the number of people applying for university grants last year.",
+      "explanation": "Giải thích của cô:\ngrant (n): học bổng; khoản trợ cấp\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “There was a fall in the number of people applying for university grants last year.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 97,
+      "sectionCode": "III.2",
+      "localNumber": 7,
+      "acceptedAnswers": [
+        "Mr Conrad's son is making a name for himself as an artist."
+      ],
+      "displayAnswer": "Mr Conrad's son is making a name for himself as an artist.",
+      "explanation": "Giải thích của cô:\nmake a name for oneself as…: trở nên nổi tiếng như là…\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “Mr Conrad's son is making a name for himself as an artist.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 98,
+      "sectionCode": "III.2",
+      "localNumber": 8,
+      "acceptedAnswers": [
+        "This box is really heavy so I'd be grateful if you could help me carry it to the car.",
+        "This box is really heavy so I would be grateful if you could help me carry it to the car.",
+        "This box is really heavy so I'd feel grateful if you could help me carry it to the car.",
+        "This box is really heavy so I would feel grateful if you could help me carry it to the car."
+      ],
+      "displayAnswer": "This box is really heavy so I'd be grateful if you could help me carry it to the car.\n/\nThis box is really heavy so I would be grateful if you could help me carry it to the car.\n/\nThis box is really heavy so I'd feel grateful if you could help me carry it to the car.\n/\nThis box is really heavy so I would feel grateful if you could help me carry it to the car.",
+      "explanation": "Ý cần giữ là người nói sẽ biết ơn nếu người nghe giúp. Dạng tự nhiên nhất là I’d be grateful if you could help me.... Các tổ hợp trong khóa nguồn cần được thu hẹp trước khi chấm.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “This box is really heavy so I'd be grateful if you could help me carry it to the car.\n/\nThis box is really heavy so I would be grateful if you could help me carry it to the car.\n/\nThis box is really heavy so I'd feel grateful if you could help me carry it to the car.\n/\nThis box is really heavy so I would feel grateful if you could help me carry it to the car.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 99,
+      "sectionCode": "III.2",
+      "localNumber": 9,
+      "acceptedAnswers": [
+        "“Excuse me madam, but does this bag belong to you?” the policeman asked."
+      ],
+      "displayAnswer": "“Excuse me madam, but does this bag belong to you?” the policeman asked.",
+      "explanation": "Câu hỏi trực tiếp dùng belong to để diễn đạt sở hữu: Does this bag belong to you? Trật tự câu hỏi phải có does trước chủ ngữ this bag.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: ““Excuse me madam, but does this bag belong to you?” the policeman asked.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    },
+    {
+      "globalNumber": 100,
+      "sectionCode": "III.2",
+      "localNumber": 10,
+      "acceptedAnswers": [
+        "By the time we got to the sale, there was [no single book] / [not a single book] left."
+      ],
+      "displayAnswer": "By the time we got to the sale, there was [no single book] / [not a single book] left.",
+      "explanation": "Every book had been sold tương đương there was no/not a single book left. Single nhấn mạnh rằng không còn dù chỉ một cuốn.\n\nBổ sung:\nCâu hoàn chỉnh cần giữ đúng nghĩa của câu gốc: “By the time we got to the sale, there was [no single book] / [not a single book] left.”. Khi tự kiểm, soát lại chủ ngữ, thì, dạng động từ, giới từ/cụm cố định và mọi giới hạn từ của đề; không thêm hoặc làm mất thông tin."
+    }
+  ],
+  "publishReady": true,
+  "contentRevision": "2026-10-17-authentic",
+  "readingSources": []
+}

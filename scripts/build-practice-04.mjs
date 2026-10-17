@@ -17,6 +17,8 @@ app.test = {
   title: 'PRACTICE TEST 4', topic: 'ÔN THI CHUYÊN ANH', total: 100,
   questionDocumentId: source.docId, questionTab: source.sourceTabs.test.tabId,
   sections: source.sections,
+  contentRevision: source.contentRevision || 'original',
+  readingSources: source.readingSources || [],
   answers: source.answers.map(({globalNumber,sectionCode,localNumber,acceptedAnswers,displayAnswer,explanation}) =>
     ({globalNumber,sectionCode,localNumber,acceptedAnswers,displayAnswer,explanation})),
   publishReady: true

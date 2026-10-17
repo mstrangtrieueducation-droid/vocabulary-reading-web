@@ -91,14 +91,14 @@
     },
     {
       "question": 20,
-      "term": "rank and file",
-      "meta": "noun phrase",
-      "meaning": "các thành viên/nhân viên thông thường",
-      "note": "The rank and file là những thành viên/nhân viên thông thường của tổ chức. Cụm này chỉ người nên làm chủ ngữ được; các cặp từ còn lại không phải danh từ chỉ tập thể nhân viên.",
-      "usage": "the rank and file of an organisation",
-      "family": "rank-and-file members: cụm tính từ có gạch nối",
-      "example": "The decision affected the rank and file.",
-      "translation": "Quyết định ảnh hưởng tới các thành viên thông thường."
+      "term": "employee / employment",
+      "meta": "nouns",
+      "meaning": "nhân viên / việc làm, tình trạng có việc",
+      "note": "Employee là người được thuê làm việc, đếm được. Employment nói về việc làm, không dùng để chỉ nhiều nhân viên. Employer là người/tổ chức thuê lao động.",
+      "usage": "an employee; new employees; find employment",
+      "family": "employ (v); employee/employer (n); employed/unemployed (adj)",
+      "example": "Every new employee receives training.",
+      "translation": "Mỗi nhân viên mới đều được đào tạo."
     },
     {
       "question": 21,
@@ -179,14 +179,14 @@
     },
     {
       "question": 31,
-      "term": "copious",
-      "meta": "adjective",
-      "meaning": "dồi dào; rất nhiều",
-      "note": "Copious evidence nghĩa là rất nhiều bằng chứng. Cần tính từ bổ nghĩa evidence, một danh từ không đếm được; copy không thể giữ nguyên ở vị trí này.",
-      "usage": "copious evidence/notes",
-      "family": "copiously (adv); evidence thường không đếm được",
-      "example": "She took copious notes during the lecture.",
-      "translation": "Cô ấy ghi rất nhiều trong buổi giảng."
+      "term": "convincing evidence",
+      "meta": "adjective + noun",
+      "meaning": "bằng chứng có sức thuyết phục",
+      "note": "Convincing mô tả thứ khiến người khác tin. Convinced mô tả người đã tin hoặc bị thuyết phục. Evidence là không đếm được.",
+      "usage": "convincing evidence; a convincing explanation; be convinced that",
+      "family": "convince (v); convincing/convinced (adj); convincingly (adv)",
+      "example": "She provided convincing evidence for her argument.",
+      "translation": "Cô ấy đưa ra bằng chứng thuyết phục cho lập luận của mình."
     },
     {
       "question": 33,
@@ -332,5 +332,5 @@
       "translation": "Tôi không nhịn được cười trước câu đùa."
     }
   ],
-  "revision": "2026-10-16-approved"
+  "revision": "2026-10-17-authentic"
 }

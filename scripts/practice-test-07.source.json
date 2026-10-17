@@ -291,7 +291,13 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "The rank and file là những thành viên/nhân viên thông thường của tổ chức. Cụm này chỉ người nên làm chủ ngữ được; các cặp từ còn lại không phải danh từ chỉ tập thể nhân viên."
+      "explanation": "C — Employees là những nhân viên, phù hợp receive safety training và before they start work. Employ là động từ; employment là danh từ chỉ việc làm/tình trạng có việc; employing là V-ing, không chỉ nhóm nhân viên trong câu.",
+      "focusVocabulary": [
+        {
+          "term": "employee / employment",
+          "meaning": "nhân viên / việc làm, tình trạng có việc"
+        }
+      ]
     },
     {
       "globalNumber": 21,
@@ -398,10 +404,16 @@
       "sectionCode": "I.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "copious"
+        "convincing"
       ],
-      "displayAnswer": "copious",
-      "explanation": "Copious evidence nghĩa là rất nhiều bằng chứng. Cần tính từ bổ nghĩa evidence, một danh từ không đếm được; copy không thể giữ nguyên ở vị trí này."
+      "displayAnswer": "convincing",
+      "explanation": "Convince (thuyết phục) → convincing (có sức thuyết phục). Trước evidence cần tính từ nói về chất lượng bằng chứng. Convinced mô tả người đã tin điều gì, không mô tả evidence.",
+      "focusVocabulary": [
+        {
+          "term": "convincing evidence",
+          "meaning": "bằng chứng có sức thuyết phục"
+        }
+      ]
     },
     {
       "globalNumber": 32,
@@ -702,103 +714,114 @@
       "sectionCode": "II.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "have"
+        "that",
+        "which"
       ],
-      "displayAnswer": "have",
-      "explanation": "Since the 1980s cho khoảng thời gian kéo dài tới hiện tại nên dùng hiện tại hoàn thành. Researchers số nhiều: have identified; chỉ điền have vì identified đã có."
+      "displayAnswer": "that / which",
+      "explanation": "That/which thay cho an effective method và làm chủ ngữ của can supplement. Đây là mệnh đề quan hệ chỉ vật nên cả hai đều đúng.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 62,
       "sectionCode": "II.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "instance",
-        "example"
+        "for"
       ],
-      "displayAnswer": "instance / example",
-      "explanation": "For instance/for example đều nghĩa là chẳng hạn. Phần sau minh họa kinesthetic learners học thông qua hoạt động thực hành, nên cả hai danh từ đều phù hợp."
+      "displayAnswer": "for",
+      "explanation": "An opportunity for somebody to do something = cơ hội để ai làm gì. Sau ô trống là children to develop nên cần for.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 63,
       "sectionCode": "II.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "however",
-        "though"
+        "than"
       ],
-      "displayAnswer": "however / though",
-      "explanation": "Từ nối giữa dấu phẩy đánh dấu chuyển hướng: các lý thuyết từng được tin nhưng dần mất uy tín. However hoặc though dùng như trạng từ nhượng bộ đều được nhận."
+      "displayAnswer": "than",
+      "explanation": "Rather than = thay vì, đối chiếu các khái niệm lớn với tên gọi/sự kiện riêng lẻ. Rather đã có nên chỉ điền than.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 64,
       "sectionCode": "II.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "Instead"
+        "to"
       ],
-      "displayAnswer": "Instead",
-      "explanation": "Instead of + V-ing = thay vì. Câu đối chiếu việc phụ thuộc một kiểu học với cách tiếp cận linh hoạt; of đã in sẵn nên chỉ điền Instead."
+      "displayAnswer": "to",
+      "explanation": "It is more important to know... dùng to-infinitive sau tính từ important. Không dùng knowing ngay sau important trong mẫu It is... này.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 65,
       "sectionCode": "II.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "more"
+        "in",
+        "within"
       ],
-      "displayAnswer": "more",
-      "explanation": "More beneficial than… là so sánh hơn: cách linh hoạt có lợi hơn việc chỉ dựa vào một kiểu học. Than sau beneficial khiến highly và far đứng riêng không còn đúng cấu trúc."
+      "displayAnswer": "in / within",
+      "explanation": "Play a role in something = đóng vai trò trong điều gì. In the environment là cách kết hợp chuẩn; within cũng phù hợp nghĩa trong môi trường.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 66,
       "sectionCode": "II.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "another"
+        "to"
       ],
-      "displayAnswer": "another",
-      "explanation": "Another person = một người khác. Person là danh từ đếm được số ít; other cần a/the hoặc số nhiều trong cấu trúc khác, nên another phù hợp."
+      "displayAnswer": "to",
+      "explanation": "The answer to a question = câu trả lời cho một câu hỏi. To là giới từ đi với answer, không phải dấu hiệu động từ nguyên mẫu.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 67,
       "sectionCode": "II.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "how"
+        "themselves"
       ],
-      "displayAnswer": "how",
-      "explanation": "Consider how they would explain… hỏi cách giải thích kiến thức. Đây là câu hỏi gián tiếp nên how + chủ ngữ + would; không dùng what vì information đã là tân ngữ của explain."
+      "displayAnswer": "themselves",
+      "explanation": "For themselves = tự mình, chủ động khám phá. Students là số nhiều nên dùng themselves; them chỉ tân ngữ, không diễn đạt cùng ý tự khám phá.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 68,
       "sectionCode": "II.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "taking",
-        "making"
+        "likely"
       ],
-      "displayAnswer": "taking / making",
-      "explanation": "Take/make well-organized notes đều diễn tả ghi chép có tổ chức. Danh sách song song gồm selecting, taking/making và allowing nên cần V-ing."
+      "displayAnswer": "likely",
+      "explanation": "Be likely to + V = có khả năng làm gì. More likely to remember nghĩa là dễ nhớ hơn khi dùng các giác quan. Likely là tính từ sau are.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 69,
       "sectionCode": "II.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "at"
+        "up",
+        "along"
       ],
-      "displayAnswer": "at",
-      "explanation": "At which thay cho at a stage: ở giai đoạn mà não không tiếp nhận thêm hiệu quả. Which đã có sau ô trống nên điền giới từ at, không thêm when."
+      "displayAnswer": "up / along",
+      "explanation": "Come up/come along = xuất hiện, nảy sinh. They thay cho teachable moments: những thời điểm có thể tận dụng để dạy học xuất hiện trong chuyến đi. Up là từ của bản gốc; along cũng phù hợp cả cấu trúc và nghĩa nên được chấp nhận.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 70,
       "sectionCode": "II.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "before"
+        "into",
+        "to"
       ],
-      "displayAnswer": "before",
-      "explanation": "Switch to a different activity before returning to study nghĩa là đổi hoạt động rồi mới trở lại học. Before diễn đạt đúng thứ tự nghỉ/đổi việc trước khi tiếp tục."
+      "displayAnswer": "into / to",
+      "explanation": "Tie something into/to something = gắn/kết nối điều gì với điều khác. Câu hỏi là làm thế nào gắn con hươu bất ngờ xuất hiện với nội dung bài học; cả into và to phù hợp.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 71,
@@ -1174,5 +1197,18 @@
   ],
   "reviewApproved": true,
   "updated": "2026-10-16",
-  "scienceReferences": []
+  "scienceReferences": [],
+  "contentRevision": "2026-10-17-authentic",
+  "readingSources": [
+    {
+      "part": "II.2",
+      "url": "https://www.nps.gov/articles/teaching-outdoors.htm",
+      "title": "National Park Service — Teaching Outdoors (30 April 2020)",
+      "adjustments": [
+        "Trích phần mở đầu và bốn lời khuyên liên tiếp; gộp hai lời khuyên cuối.",
+        "Giữ câu chữ nguyên bản, chỉ thay 10 từ bằng ô trống."
+      ],
+      "accessed": "2026-10-17"
+    }
+  ]
 }

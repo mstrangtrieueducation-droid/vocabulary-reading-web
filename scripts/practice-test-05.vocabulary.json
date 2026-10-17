@@ -278,25 +278,25 @@
     },
     {
       "question": 56,
-      "term": "stem from",
-      "meta": "verb phrase",
-      "meaning": "bắt nguồn từ",
-      "note": "Stem from = bắt nguồn từ. From đã có sau chỗ trống; relate thường đi với to, rise from không diễn đạt nguồn gốc đặc điểm tự nhiên bằng stem from.",
-      "usage": "stem from a misunderstanding",
-      "family": "stem (n: thân cây); stem (v: chặn dòng) có nghĩa khác",
-      "example": "The conflict stemmed from a misunderstanding.",
-      "translation": "Mâu thuẫn bắt nguồn từ hiểu lầm."
+      "term": "stock up on",
+      "meta": "phrasal verb",
+      "meaning": "mua hoặc chuẩn bị sẵn một lượng để dùng dần",
+      "note": "Stock up on healthy foods là chuẩn bị sẵn thực phẩm lành mạnh để dễ duy trì thói quen tốt. On nối cụm động từ với thứ được tích trữ.",
+      "usage": "stock up on food/supplies; stock the cupboard with food",
+      "family": "stock (n/v); supplies (plural noun: đồ dùng, nguồn dự trữ)",
+      "example": "We stocked up on healthy snacks for the week.",
+      "translation": "Chúng tôi chuẩn bị sẵn đồ ăn nhẹ lành mạnh cho cả tuần."
     },
     {
       "question": 60,
-      "term": "subject to",
-      "meta": "adjective phrase",
-      "meaning": "chịu tác động; có thể bị thay đổi",
-      "note": "Be subject to changes = có thể chịu các thay đổi. Câu nhấn mạnh một số đặc điểm còn biến đổi theo hoàn cảnh; feasible/practicable/potential không tạo mẫu subject to.",
-      "usage": "be subject to change/review",
-      "family": "subject (n: chủ đề); subjective (adj: chủ quan)",
-      "example": "The timetable is subject to change.",
-      "translation": "Thời khóa biểu có thể thay đổi."
+      "term": "be tempted by",
+      "meta": "passive verb phrase",
+      "meaning": "bị hấp dẫn, bị cám dỗ bởi",
+      "note": "Tempted mô tả cảm giác của người muốn làm điều hấp dẫn nhưng có thể không có lợi. Tempting mô tả thứ gây ra cảm giác đó.",
+      "usage": "be tempted by something; be tempted to do something; resist temptation",
+      "family": "tempt (v); temptation (n); tempted/tempting (adj)",
+      "example": "I was tempted to buy another snack.",
+      "translation": "Tôi đã muốn mua thêm một món ăn nhẹ dù không thật sự cần."
     },
     {
       "question": 90,
@@ -332,5 +332,5 @@
       "translation": "Chúng tôi rất rối sau lần chuyển chỗ đột ngột."
     }
   ],
-  "revision": "2026-10-16-approved"
+  "revision": "2026-10-17-authentic"
 }

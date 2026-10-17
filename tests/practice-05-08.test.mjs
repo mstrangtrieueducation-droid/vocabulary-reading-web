@@ -35,7 +35,7 @@ for(const n of [5,6,7,8]){
  assert.equal(ctx.buildReview({...sample,46:sample[46].replace(' → ','->')}).score,100);
  if(n===5){assert.deepEqual(answers[4].acceptedAnswers,['D']);assert.deepEqual(answers[25].acceptedAnswers,['D']);assert(answers[63].acceptedAnswers.includes('still'));assert(!answers[63].acceptedAnswers.includes('even'));assert(!answers[90].acceptedAnswers.some(s=>s.includes('out of')));}
  if(n===6){assert.deepEqual(answers[26].acceptedAnswers,['B']);assert(!answers[85].acceptedAnswers.some(s=>s.includes('until')));assert(answers[91].acceptedAnswers.some(s=>s.endsWith('Yuri')));}
- if(n===7){assert.deepEqual(answers[64].acceptedAnswers,['more']);assert(answers[32].acceptedAnswers.includes('purposely'));assert(!answers[87].acceptedAnswers.some(s=>s.includes('everyone')));}
+ if(n===7){assert.deepEqual(answers[64].acceptedAnswers,['in','within']);assert(answers[32].acceptedAnswers.includes('purposely'));assert(!answers[87].acceptedAnswers.some(s=>s.includes('everyone')));}
  if(n===8){assert(answers[49].acceptedAnswers.includes('captures → capture'));assert(!answers[89].acceptedAnswers.some(s=>s.includes('shock')));assert.equal(answers[94].acceptedAnswers[0],'lost my appetite the moment');}
  const page=await read(routes[n].correction+'/index.html');
  const vocab=JSON.parse(page.match(/<script[^>]*id="correction-vocabulary-data"[^>]*>([\s\S]*?)<\/script>/)[1]);

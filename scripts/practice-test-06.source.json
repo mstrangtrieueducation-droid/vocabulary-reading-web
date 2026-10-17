@@ -161,7 +161,13 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Bell the cat là dám nhận việc khó hoặc nguy hiểm vì lợi ích chung. Việc đối chất với đồng nghiệp là hành động khó xử; cat là thành phần cố định, không thay bằng tên con vật khác."
+      "explanation": "C — Take responsibility for something = nhận trách nhiệm về việc gì. She admitted that the mistake was hers cho biết cô ấy nhận lỗi. Ability là khả năng, opportunity là cơ hội, possibility là khả năng xảy ra; các từ này không tạo cụm mang nghĩa nhận trách nhiệm.",
+      "focusVocabulary": [
+        {
+          "term": "take responsibility for",
+          "meaning": "nhận trách nhiệm về"
+        }
+      ]
     },
     {
       "globalNumber": 8,
@@ -191,7 +197,13 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "As clean as a pin là thành ngữ chỉ rất sạch sẽ, phù hợp phòng thí nghiệm vừa được dọn kỹ. Pin là từ cố định của phép so sánh; các danh từ còn lại không tạo cụm này."
+      "explanation": "B — Spotlessly clean = sạch không một vết bẩn. Sau việc dọn dẹp, đây là cách miêu tả mức độ sạch tự nhiên. Closely thường đi với watch/work, strongly với believe/recommend, widely với known/used; chúng không kết hợp với clean theo nghĩa cần diễn đạt.",
+      "focusVocabulary": [
+        {
+          "term": "spotlessly clean",
+          "meaning": "sạch không một vết bẩn"
+        }
+      ]
     },
     {
       "globalNumber": 11,
@@ -600,70 +612,87 @@
       "sectionCode": "II.1",
       "localNumber": 1,
       "acceptedAnswers": [
-        "A"
+        "B"
       ],
-      "displayAnswer": "A",
-      "explanation": "Grapple with a question nghĩa là vật lộn để giải quyết một vấn đề khó. Với nghĩa này grapple kết hợp with; for/over/about không tạo mẫu đang kiểm tra."
+      "displayAnswer": "B",
+      "explanation": "B — When giới thiệu tình huống định nghĩa citizen science: khi người dân hỗ trợ nhà khoa học nghiên cứu. Which/whose thiếu cấu trúc phù hợp; where chỉ nơi chốn, không khớp định nghĩa một hoạt động.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 52,
       "sectionCode": "II.1",
       "localNumber": 2,
       "acceptedAnswers": [
-        "A"
+        "C"
       ],
-      "displayAnswer": "A",
-      "explanation": "Be associated with nghĩa là có liên hệ với. Prefrontal cortex liên quan suy nghĩ lý trí; dependent cần on, responsible cần for, capable cần of, trong khi đề cho with."
+      "displayAnswer": "C",
+      "explanation": "C — Such as = chẳng hạn như, dùng trước danh sách tên gọi. Không dùng so as hay same as để đưa ví dụ theo mẫu này.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 53,
       "sectionCode": "II.1",
       "localNumber": 3,
       "acceptedAnswers": [
-        "B"
+        "A"
       ],
-      "displayAnswer": "B",
-      "explanation": "Whereas nối sự tương phản giữa hai vùng não phát triển vào các mốc khác nhau. Despite cần danh từ/V-ing; nevertheless là trạng từ liên kết, không nối hai mệnh đề theo cấu trúc ở đây."
+      "displayAnswer": "A",
+      "explanation": "A — Participate in = tham gia vào. Sau in là the scientific process; đây là giới từ của cụm động từ, không phải giới từ chỉ địa điểm.",
+      "focusVocabulary": [
+        {
+          "term": "participate in",
+          "meaning": "tham gia vào"
+        }
+      ]
     },
     {
       "globalNumber": 54,
       "sectionCode": "II.1",
       "localNumber": 4,
       "acceptedAnswers": [
-        "A"
+        "D"
       ],
-      "displayAnswer": "A",
-      "explanation": "During which thay cho trong khoảng thời gian mất cân bằng thần kinh đó. Which dùng sau giới từ during; that không đứng trực tiếp sau giới từ trong mệnh đề quan hệ này."
+      "displayAnswer": "D",
+      "explanation": "D — Typically là trạng từ bổ nghĩa includes: một dự án thường bao gồm các nhóm người được liệt kê. Typical là tính từ, type là danh từ/động từ, typify là động từ.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 55,
       "sectionCode": "II.1",
       "localNumber": 5,
       "acceptedAnswers": [
-        "A"
+        "B"
       ],
-      "displayAnswer": "A",
-      "explanation": "Far from being a flaw nghĩa là hoàn toàn không phải một khiếm khuyết. From là phần cố định của mẫu far from + V-ing; câu sau nêu lợi ích thích nghi để giải thích."
+      "displayAnswer": "B",
+      "explanation": "B — In collaboration with = hợp tác với. Partner và university cho thấy các bên cùng làm nghiên cứu. Competition là cạnh tranh, comparison là so sánh, collision là va chạm.",
+      "focusVocabulary": [
+        {
+          "term": "in collaboration with",
+          "meaning": "hợp tác với"
+        }
+      ]
     },
     {
       "globalNumber": 56,
       "sectionCode": "II.1",
       "localNumber": 6,
       "acceptedAnswers": [
-        "B"
+        "C"
       ],
-      "displayAnswer": "B",
-      "explanation": "Ancestral family units nhắc các đơn vị gia đình trong bối cảnh tiến hóa/tổ tiên. Ancestral phù hợp lập luận về lợi thế sinh tồn; native/communal/familial không thể hiện rõ mốc tổ tiên."
+      "displayAnswer": "C",
+      "explanation": "C — Consider the need and use for data = cân nhắc nhu cầu và cách sử dụng dữ liệu. Consider nhận tân ngữ trực tiếp; depend cần on; borrow/attend không hợp nghĩa.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 57,
       "sectionCode": "II.1",
       "localNumber": 7,
       "acceptedAnswers": [
-        "B"
+        "A"
       ],
-      "displayAnswer": "B",
-      "explanation": "Conversely báo hiệu chuyển sang mặt đối lập: điều từng giúp thích nghi có thể gây hại trong xã hội hiện đại. Accordingly chỉ kết quả, subsequently chỉ thứ tự thời gian, incidentally mở ý phụ."
+      "displayAnswer": "A",
+      "explanation": "A — Tools là các công cụ thu thập dữ liệu, đi cùng methods trong công việc nghiên cứu. Toys là đồ chơi, toils chỉ công việc cực nhọc, tolls là phí đường bộ/thiệt hại.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 58,
@@ -673,7 +702,8 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Research suggests that… = nghiên cứu cho thấy/gợi ý rằng…. Suggests trình bày bằng chứng chưa kết luận chắc chắn; infers thường dùng cho người suy luận, implicates là cho thấy có liên can."
+      "explanation": "D — Who thay cho the public và làm chủ ngữ của might be. Whom dùng làm tân ngữ, whose phải chỉ sở hữu; which không phù hợp với các nhóm người trong câu.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 59,
@@ -683,17 +713,29 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Corroborating evidence là bằng chứng bổ trợ/xác nhận một nhận định. Critics caution… limited cho biết bằng chứng còn ít; collaborating chỉ việc cộng tác, không phải tính chất xác nhận của bằng chứng."
+      "explanation": "B — By + V-ing diễn tả cách thức: có dữ liệu tốt bằng việc đào tạo và hướng dẫn người tham gia. By training and mentoring cho biết làm thế nào để đạt chất lượng dữ liệu.",
+      "focusVocabulary": [
+        {
+          "term": "by + V-ing",
+          "meaning": "bằng cách làm gì"
+        }
+      ]
     },
     {
       "globalNumber": 60,
       "sectionCode": "II.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "A"
+        "C"
       ],
-      "displayAnswer": "A",
-      "explanation": "With considerable circumspection nghĩa là với sự thận trọng đáng kể. With diễn đạt cách tiếp cận; circumspection là cân nhắc kỹ rủi ro trước khi hành động."
+      "displayAnswer": "C",
+      "explanation": "C — The opportunity to do something = cơ hội làm gì. Câu nói mọi người có quyền và cơ hội tham gia. Occasion/event/incident không kết hợp với to participate để diễn tả ý cơ hội này.",
+      "focusVocabulary": [
+        {
+          "term": "an opportunity to",
+          "meaning": "một cơ hội để làm gì"
+        }
+      ]
     },
     {
       "globalNumber": 61,
@@ -834,7 +876,8 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Bài nói much of human learning occurs outside the classroom và học kéo dài suốt đời. Trong các phương án, D gần nhất với phạm vi rộng của học ngoài trường; bài không khẳng định học ở trường luôn hiệu quả hơn."
+      "explanation": "D — Đoạn 1 nói con người tiếp tục học suốt đời; đoạn 2 nêu việc kết hôn, nuôi con và tìm việc đòi hỏi thích nghi. Vì vậy có thể kết luận học tập tiếp tục ngoài trường học. Bài không so sánh chính xác tần suất học trong và ngoài trường, cũng không nói người lớn luôn học dễ hơn.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 75,
@@ -1175,5 +1218,19 @@
   ],
   "reviewApproved": true,
   "updated": "2026-10-16",
-  "scienceReferences": []
+  "scienceReferences": [],
+  "contentRevision": "2026-10-17-authentic",
+  "readingSources": [
+    {
+      "part": "II.1",
+      "url": "https://www.nps.gov/articles/000/what-is-citizen-science.htm",
+      "title": "National Park Service — What Is Citizen Science?",
+      "adjustments": [
+        "Trích câu/đoạn nguyên bản, lược phần không cần thiết; gộp đoạn cuối.",
+        "Giải nghĩa chữ viết tắt NPS lần đầu; sửa may or not, A NPS và sự hòa hợp staff member/are trong bản xuất bản.",
+        "Chỉ thay 10 từ bằng ô trống."
+      ],
+      "accessed": "2026-10-17"
+    }
+  ]
 }

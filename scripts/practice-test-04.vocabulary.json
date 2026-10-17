@@ -1,0 +1,296 @@
+{
+  "test": 4,
+  "words": [
+    {
+      "term": "respectable / respectful / respective",
+      "meta": "adjectives",
+      "meaning": "đáng kính / thể hiện sự tôn trọng / riêng, tương ứng của từng người",
+      "note": "Respectable tả người hoặc việc đáng được tôn trọng. Respectful tả thái độ tôn trọng người khác. Respective nói mỗi người/vật có phần riêng tương ứng; “lần lượt” thường là trạng từ respectively, không phải respective.",
+      "usage": "a respectable person; be respectful to/towards someone; their respective roles; A and B are 10 and 12 respectively.",
+      "family": "respect (n/v); respectable, respectful, respective (adj); respectively (adv); disrespectful (adj).",
+      "example": "The students were respectful to their teachers and returned to their respective classrooms.",
+      "translation": "Học sinh thể hiện sự tôn trọng giáo viên rồi trở về lớp học riêng của mình."
+    },
+    {
+      "term": "irrespective of",
+      "meta": "preposition phrase",
+      "meaning": "bất kể; không phụ thuộc vào",
+      "note": "Cụm này nói một điều vẫn đúng dù yếu tố phía sau khác nhau. Nó gần nghĩa regardless of. Sau of dùng danh từ hoặc V-ing, không đặt thẳng một mệnh đề đầy đủ.",
+      "usage": "irrespective of age/background; regardless of cost; irrespective of whether + mệnh đề.",
+      "family": "respective (adj) và irrespective of khác cách dùng; regardless of là cụm gần nghĩa.",
+      "example": "All applicants are considered irrespective of their age.",
+      "translation": "Tất cả ứng viên đều được xem xét bất kể tuổi tác."
+    },
+    {
+      "term": "take in / absorb / intake",
+      "meta": "phrasal verb / verb / noun",
+      "meaning": "tiếp thu, hấp thụ / hấp thụ / lượng đưa vào",
+      "note": "Take in và absorb đều có thể nói việc hiểu hoặc tiếp thu thông tin. Take in còn có nghĩa lừa gạt, nên phải xét ngữ cảnh. Intake là danh từ chỉ lượng ăn/uống/hít vào hoặc số người được nhận vào, không phải động từ.",
+      "usage": "take in information; absorb knowledge/water; food/water intake; be taken in by a story = bị câu chuyện lừa.",
+      "family": "take–took–taken; absorb (v), absorption (n); intake (n).",
+      "example": "There was too much information for me to take in at once.",
+      "translation": "Có quá nhiều thông tin để tôi tiếp thu cùng lúc."
+    },
+    {
+      "term": "barely / hardly / scarcely",
+      "meta": "adverbs",
+      "meaning": "hầu như không; chỉ vừa đủ",
+      "note": "Ba từ đều thường mang ý gần phủ định, dù câu không có not. Hardly không phải trạng từ của hard ở nghĩa chăm chỉ: work hard là chăm làm, hardly work là hầu như không làm.",
+      "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
+      "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
+      "example": "She could barely hear the speaker over the noise.",
+      "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn."
+    },
+    {
+      "term": "save for a rainy day",
+      "meta": "idiom",
+      "meaning": "để dành cho lúc khó khăn",
+      "note": "Rainy day là hình ảnh chỉ lúc cần tiền hoặc gặp khó khăn, không phải ngày mưa thật. Cụm này nói chuẩn bị một khoản dự phòng thay vì tiêu hết ngay khi có tiền.",
+      "usage": "save money for a rainy day; put something aside for a rainy day; emergency savings = tiền dự phòng.",
+      "family": "save (v); savings (n số nhiều: tiền tiết kiệm). Rainy day là thành ngữ trong cụm này.",
+      "example": "She saves a little each month for a rainy day.",
+      "translation": "Cô ấy để dành một ít mỗi tháng phòng lúc khó khăn."
+    },
+    {
+      "term": "take effect / in effect",
+      "meta": "verb phrase / phrase",
+      "meaning": "bắt đầu có hiệu lực / đang có hiệu lực; thực chất",
+      "note": "Take effect nói thời điểm một quy định hay thay đổi bắt đầu có tác dụng. Be in effect nói nó đang được áp dụng. In effect đứng như cụm bình luận còn nghĩa là trên thực tế, xét về bản chất.",
+      "usage": "a rule takes effect; a rule is in effect; in effect, … = thực chất là…; come into effect cũng là bắt đầu có hiệu lực.",
+      "family": "effect (n); effective (adj); effectively (adv). Take effect khác affect (v: ảnh hưởng).",
+      "example": "The new rules take effect on Monday and remain in effect for a year.",
+      "translation": "Quy định mới có hiệu lực từ thứ Hai và được áp dụng trong một năm."
+    },
+    {
+      "term": "few and far between",
+      "meta": "idiom",
+      "meaning": "rất hiếm; ít và thưa thớt",
+      "note": "Cả cụm nhấn mạnh số lượng ít và khó gặp. Dùng cho cơ hội, sự kiện hay vật có số lượng ít; không cần dịch riêng “few” và “far”. Thường đứng sau be.",
+      "usage": "opportunities are few and far between; buses are few and far between; near synonym: rare.",
+      "family": "few (từ chỉ lượng) + far between; ghi nguyên cụm, không có một họ từ chung.",
+      "example": "Jobs in that small town were few and far between.",
+      "translation": "Việc làm ở thị trấn nhỏ đó rất hiếm."
+    },
+    {
+      "term": "pull through",
+      "meta": "phrasal verb",
+      "meaning": "vượt qua nguy kịch hoặc khó khăn",
+      "note": "Pull through thường nói sống sót, hồi phục sau bệnh nặng hoặc vượt qua một giai đoạn khó. Pull someone through nhấn mạnh thứ/người giúp họ vượt qua, không phải kéo họ qua vật cản theo nghĩa đen.",
+      "usage": "pull through an illness/crisis; help someone pull through; support pulls someone through.",
+      "family": "pull (v); pulled/pulling (dạng động từ). Pull through gần survive/recover trong ngữ cảnh phù hợp.",
+      "example": "The business pulled through the crisis with support from local customers.",
+      "translation": "Doanh nghiệp vượt qua khủng hoảng nhờ khách hàng địa phương hỗ trợ."
+    },
+    {
+      "term": "jot down / note down",
+      "meta": "phrasal verbs",
+      "meaning": "ghi nhanh; ghi lại ngắn gọn",
+      "note": "Jot down nhấn mạnh ghi nhanh vài ý để nhớ; note down có nghĩa ghi lại, không nhất thiết vội. Khi tân ngữ là it/them, đặt giữa động từ và down.",
+      "usage": "jot down an address / jot an address down; jot it down; note down key points.",
+      "family": "jot → jotted, jotting; note (n/v); notes (n số nhiều: ghi chú).",
+      "example": "Jot down the main points before you forget them.",
+      "translation": "Ghi nhanh các ý chính trước khi quên."
+    },
+    {
+      "term": "green / inexperienced",
+      "meta": "adjectives",
+      "meaning": "non kinh nghiệm; chưa từng trải",
+      "note": "Green ngoài màu xanh còn chỉ người mới, thiếu kinh nghiệm. Đây là nghĩa bóng và thường thân mật. Không nhầm green employee là nhân viên làm việc về môi trường nếu ngữ cảnh đang nói năng lực.",
+      "usage": "be green at a job; an inexperienced worker; lack experience; gain experience.",
+      "family": "experience (n/v); experienced/inexperienced (adj). Green là từ gần nghĩa trong ngữ cảnh kinh nghiệm.",
+      "example": "The new assistant was still green but eager to learn.",
+      "translation": "Trợ lý mới còn non kinh nghiệm nhưng ham học hỏi."
+    },
+    {
+      "term": "criterion / criteria",
+      "meta": "nouns",
+      "meaning": "tiêu chí / các tiêu chí",
+      "note": "Criterion là số ít, criteria là số nhiều. Chọn động từ phù hợp: one criterion is, several criteria are. Tiêu chí là căn cứ để đánh giá, khác kết quả đánh giá.",
+      "usage": "a selection criterion; meet the criteria; criteria for admission; one important criterion.",
+      "family": "criterion (số ít) → criteria (số nhiều). Không dùng a criteria khi chỉ một tiêu chí.",
+      "example": "Applicants must meet all the selection criteria.",
+      "translation": "Ứng viên phải đáp ứng tất cả tiêu chí tuyển chọn."
+    },
+    {
+      "term": "endure / enduring",
+      "meta": "verb / adjective",
+      "meaning": "chịu đựng, tồn tại lâu / lâu bền",
+      "note": "Endure có thể là chịu một điều khó chịu hoặc tiếp tục tồn tại lâu. Enduring trong bài tả giá trị/ảnh hưởng dài lâu; không mặc định dịch là “đang chịu đựng”.",
+      "usage": "endure pain/hardship; a tradition endures; enduring influence/popularity; an enduring friendship.",
+      "family": "endure (v); endurance (n: sức chịu đựng); enduring (adj); endurable (adj: chịu được).",
+      "example": "The novel has had an enduring influence on later writers.",
+      "translation": "Cuốn tiểu thuyết có ảnh hưởng lâu bền đến các nhà văn sau này."
+    },
+    {
+      "term": "family reunion",
+      "meta": "noun phrase",
+      "meaning": "cuộc đoàn tụ gia đình",
+      "note": "Reunion là việc gặp lại sau một thời gian xa cách. Với family reunion, ghi đúng danh từ reunion, không tự tạo “reunity”. Reunite là động từ đoàn tụ hoặc giúp đoàn tụ.",
+      "usage": "hold/attend a family reunion; reunite with family; be reunited with someone.",
+      "family": "reunite (v); reunion (n); reunited (dạng phân từ).",
+      "example": "Relatives travelled from different cities for the family reunion.",
+      "translation": "Họ hàng từ các thành phố khác nhau đến dự buổi đoàn tụ gia đình."
+    },
+    {
+      "term": "agree on / upon",
+      "meta": "verb phrase",
+      "meaning": "thống nhất về một vấn đề",
+      "note": "Agree on/upon thường nói các bên cùng đi đến quyết định. Agree with someone là đồng ý với một người; agree to a proposal là chấp thuận đề xuất. Không dùng một giới từ cho mọi nghĩa.",
+      "usage": "agree on/upon a date/plan; agree with someone; agree to do something; reach an agreement.",
+      "family": "agree (v); agreement (n); disagree (v); disagreement (n).",
+      "example": "After a long discussion, we agreed on a date for the event.",
+      "translation": "Sau cuộc thảo luận dài, chúng tôi thống nhất ngày tổ chức sự kiện."
+    },
+    {
+      "term": "appeal / appealing",
+      "meta": "verb / noun / adjective",
+      "meaning": "hấp dẫn; sức hấp dẫn / hấp dẫn",
+      "note": "Trong đoạn văn học, appeal to someone là thu hút họ, không phải kháng cáo. Appeal còn nghĩa lời kêu gọi hoặc kháng cáo trong ngữ cảnh khác. Appealing tả thứ gây hứng thú.",
+      "usage": "appeal to readers; have broad appeal; an appealing story; an appeal for help là lời kêu gọi giúp đỡ.",
+      "family": "appeal (n/v); appealing (adj); unappealing (adj).",
+      "example": "Stories about friendship appeal to readers of different ages.",
+      "translation": "Truyện về tình bạn hấp dẫn độc giả ở nhiều độ tuổi."
+    },
+    {
+      "term": "prose / poem / poetry",
+      "meta": "nouns",
+      "meaning": "văn xuôi / bài thơ / thơ ca",
+      "note": "Prose là văn xuôi, không được viết theo hình thức thơ. Poem là một bài thơ đếm được; poetry là thơ ca nói chung, thường không đếm được. Không dùng poem để chỉ toàn bộ thể loại thơ trong mọi câu.",
+      "usage": "write prose; read a poem; a collection of poems; modern poetry; prose and poetry.",
+      "family": "poem (n đếm được); poetry (n); poet (n: nhà thơ); poetic (adj); prose (n).",
+      "example": "The collection contains both short prose pieces and poems.",
+      "translation": "Tuyển tập gồm cả những bài văn xuôi ngắn và các bài thơ."
+    },
+    {
+      "term": "literate / literary / literal",
+      "meta": "adjectives",
+      "meaning": "biết đọc viết / thuộc văn học / theo nghĩa đen",
+      "note": "Ba từ gần giống mặt chữ nhưng khác nghĩa. Literate nói khả năng đọc viết; literary liên quan văn học; literal bám đúng nghĩa trực tiếp, đối lập nghĩa bóng. Computer-literate mở rộng sang biết sử dụng máy tính.",
+      "usage": "a literate population; literary works; the literal meaning; a literal translation.",
+      "family": "literacy (n), literate/illiterate (adj); literature (n), literary (adj); literal (adj), literally (adv).",
+      "example": "A literary text may use words beyond their literal meanings.",
+      "translation": "Một văn bản văn học có thể dùng từ vượt ra ngoài nghĩa đen."
+    },
+    {
+      "term": "convey",
+      "meta": "verb",
+      "meaning": "truyền đạt; truyền tải",
+      "note": "Trong văn học, convey nói đưa ý tưởng, cảm xúc hay thông điệp đến người đọc. Từ này không có nghĩa người đọc chắc chắn đồng ý. Nó cũng có thể chỉ vận chuyển vật, tùy tân ngữ.",
+      "usage": "convey an idea/message/emotion; convey something to someone; convey that + mệnh đề.",
+      "family": "convey (v); conveyed/conveying (dạng động từ). Conveyance (n) thường dùng ở nghĩa vận chuyển/chuyển giao.",
+      "example": "The poem conveys a strong sense of loss.",
+      "translation": "Bài thơ truyền tải cảm giác mất mát sâu sắc."
+    },
+    {
+      "term": "move someone / moving",
+      "meta": "verb / adjective",
+      "meaning": "làm ai cảm động / gây xúc động",
+      "note": "Move không chỉ là di chuyển. Khi tân ngữ là người và câu nói về cảm xúc, nó có thể nghĩa làm cảm động. Moving tả câu chuyện; moved tả người cảm thấy xúc động.",
+      "usage": "a story moves someone; be deeply moved by; a moving film; move someone to tears.",
+      "family": "move (v); moving (adj: gây xúc động); moved (adj: cảm thấy xúc động).",
+      "example": "The moving speech brought several listeners to tears.",
+      "translation": "Bài phát biểu xúc động khiến một số người nghe rơi nước mắt."
+    },
+    {
+      "term": "vulgar",
+      "meta": "adjective",
+      "meaning": "thô tục; thiếu thanh nhã",
+      "note": "Vulgar thường thể hiện sự chê trách với lời nói, hành vi hoặc thị hiếu bị coi là thô tục. Không phải cứ giản dị hay bình dân là vulgar. Trong bài, xem nó đang tả ngôn ngữ hay cách cư xử.",
+      "usage": "vulgar language/remarks/behaviour; a vulgar joke; avoid vulgar expressions.",
+      "family": "vulgar (adj); vulgarity (n); vulgarly (adv).",
+      "example": "The editor removed the vulgar expressions from the article.",
+      "translation": "Biên tập viên bỏ những cách diễn đạt thô tục khỏi bài viết."
+    },
+    {
+      "term": "status",
+      "meta": "noun",
+      "meaning": "địa vị; tình trạng",
+      "note": "Status có thể nói vị thế xã hội hoặc tình trạng hiện tại của một người/vật. Social status khác current status of a project. Đừng nhầm với statue là tượng.",
+      "usage": "social/legal status; achieve high status; a status symbol; check the status of an application.",
+      "family": "status (n); statuses (số nhiều khi nói nhiều loại/tình trạng).",
+      "example": "Education helped improve her social status.",
+      "translation": "Giáo dục giúp nâng cao địa vị xã hội của cô ấy."
+    },
+    {
+      "term": "pioneer",
+      "meta": "noun / verb",
+      "meaning": "người tiên phong; đi đầu phát triển",
+      "note": "Pioneer tả người mở đường hoặc hành động phát triển cách làm mới. Nó không chỉ là người đầu tiên đến một địa điểm. Pioneering trước research/methods mang nghĩa có tính tiên phong.",
+      "usage": "a pioneer in a field; pioneer a method; pioneering research; an early pioneer.",
+      "family": "pioneer (n/v); pioneering (adj).",
+      "example": "The institute pioneered a new method of collecting data.",
+      "translation": "Viện đi tiên phong trong phát triển một phương pháp thu thập dữ liệu mới."
+    },
+    {
+      "term": "issue",
+      "meta": "verb / noun",
+      "meaning": "phát hành, công bố; vấn đề",
+      "note": "Trong bài, issue research and statistics là công bố/phát hành nghiên cứu và số liệu. Danh từ issue có thể là vấn đề hoặc số báo. Động từ issue không cần giới từ trước tài liệu được công bố.",
+      "usage": "issue a report/statistics/a statement; discuss an issue; the latest issue of a journal.",
+      "family": "issue (n/v); issued (quá khứ); issuing (dạng -ing).",
+      "example": "The organisation issued a report on employment trends.",
+      "translation": "Tổ chức công bố báo cáo về xu hướng việc làm."
+    },
+    {
+      "term": "amass / accumulate",
+      "meta": "verbs",
+      "meaning": "tích lũy, gom được nhiều",
+      "note": "Amass thường nhấn mạnh tích lũy số lượng lớn, như tài sản, bằng chứng hoặc thành tích. Accumulate rộng hơn, có thể nói thứ tự tích tụ dần, như bụi. Không phải mọi thứ tích tụ đều là điều tốt.",
+      "usage": "amass wealth/evidence/qualifications; accumulate experience/debt; dust accumulates.",
+      "family": "amass (v); accumulate (v), accumulation (n), accumulated (adj).",
+      "example": "Over the years, she amassed a large collection of historical records.",
+      "translation": "Qua nhiều năm, cô ấy tích lũy được bộ sưu tập tư liệu lịch sử lớn."
+    },
+    {
+      "term": "fall prey to / fall victim to",
+      "meta": "verb phrases",
+      "meaning": "trở thành nạn nhân; bị điều xấu chi phối",
+      "note": "Nghĩa gốc của prey là con mồi, nhưng cả hai cụm thường dùng nghĩa bóng với lừa đảo, bệnh tật hoặc nỗi sợ. Chúng không có nghĩa chủ động lựa chọn điều đó.",
+      "usage": "fall prey to fear/fraud; fall victim to a scam; prey on someone = lợi dụng ai.",
+      "family": "fall–fell–fallen; prey (n/v); victim (n). Giữ to trước nguyên nhân gây hại.",
+      "example": "Without checking the facts, people may fall prey to false rumours.",
+      "translation": "Nếu không kiểm tra sự thật, người ta có thể bị tin đồn sai chi phối."
+    },
+    {
+      "term": "rational / irrational",
+      "meta": "adjectives",
+      "meaning": "hợp lý, dựa trên lý trí / phi lý",
+      "note": "Rational nói suy nghĩ dựa trên lý lẽ; irrational nói không hợp lý hoặc bị cảm xúc chi phối. Reasonable có thể gần nghĩa hợp lý, nhưng còn có nghĩa vừa phải như reasonable prices.",
+      "usage": "rational thinking/decision; irrational fears; behave rationally; a reasonable explanation.",
+      "family": "rational (adj), rationally (adv), rationality (n); irrational (adj), irrationally (adv).",
+      "example": "A rational decision should be based on evidence rather than fear.",
+      "translation": "Quyết định hợp lý nên dựa trên bằng chứng thay vì nỗi sợ."
+    },
+    {
+      "term": "live up to / fall short of expectations",
+      "meta": "verb phrases",
+      "meaning": "đáp ứng / không đạt kỳ vọng",
+      "note": "Live/come up to expectations nói kết quả đạt mức mong đợi. Fall short of expectations nói kết quả thấp hơn mong đợi, không nhất thiết hoàn toàn thất bại. Chú ý to ở cụm đầu và of ở cụm sau.",
+      "usage": "live/come up to one’s expectations; fall short of one’s expectations; exceed expectations = vượt kỳ vọng.",
+      "family": "expect (v); expectation (n); expected/unexpected (adj). Expectations thường dùng số nhiều trong các cụm này.",
+      "example": "The service was pleasant, but the food fell short of our expectations.",
+      "translation": "Dịch vụ dễ chịu nhưng đồ ăn không đạt kỳ vọng của chúng tôi."
+    },
+    {
+      "term": "climate / economic climate",
+      "meta": "noun / noun phrase",
+      "meaning": "khí hậu; tình hình hoặc môi trường chung / tình hình kinh tế",
+      "note": "Climate không chỉ nói thời tiết dài hạn. Economic climate là những điều kiện kinh tế chung ảnh hưởng đến hoạt động kinh doanh. Đừng dịch “khí hậu kinh tế” theo nghĩa thời tiết thực.",
+      "usage": "a tropical climate; the current economic climate; a climate of uncertainty; business climate.",
+      "family": "climate (n); climatic (adj ở nghĩa khí hậu). Weather là thời tiết ngắn hạn.",
+      "example": "Small firms face difficulties in the current economic climate.",
+      "translation": "Doanh nghiệp nhỏ gặp khó khăn trong tình hình kinh tế hiện nay."
+    },
+    {
+      "term": "claim",
+      "meta": "verb / noun",
+      "meaning": "khẳng định; lời khẳng định; yêu cầu quyền lợi",
+      "note": "Claim là điều một người khẳng định, chưa tự bảo đảm đúng. Khi đọc, phân biệt lời tuyên bố với bằng chứng. Trong ngữ cảnh bảo hiểm/quyền lợi, claim có thể là yêu cầu thanh toán hoặc đòi quyền.",
+      "usage": "claim that + mệnh đề; claim to do/have done; support a claim with evidence; make an insurance claim.",
+      "family": "claim (n/v); claimant (n); claimed/unclaimed (dạng phân từ/tính từ).",
+      "example": "The company claimed that its new product used less energy.",
+      "translation": "Công ty khẳng định sản phẩm mới tiêu thụ ít năng lượng hơn."
+    }
+  ],
+  "revision": "2026-10-17-authentic"
+}

@@ -191,12 +191,13 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "B — the speech of which the first part… có nghĩa là bài phát biểu mà phần đầu của nó…; which thay cho speech, còn the first part là chủ ngữ của revolved. Có thể diễn đạt rõ hơn bằng the first part of which. A tạo hai mệnh đề thiếu liên từ; C thiếu of; D có trật tự whose part first không phù hợp. Ý câu là phần đầu chỉ xoay quanh lý thuyết nên không giữ được sự chú ý của khán giả.",
+      "explanation": "B — Of which the first part = phần đầu của bài phát biểu đó, tương đương the first part of which. Which thay cho the speech. A dùng it nên không nối được mệnh đề quan hệ; C thiếu of; D sai trật tự, phải là whose first part. Hold the audience’s attention = giữ được sự chú ý của người nghe.",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q7",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "focusVocabulary": []
     },
     {
       "globalNumber": 8,
@@ -1643,5 +1644,7 @@
       "90": "expand only grammatical branches of slash-separated source key",
       "96": "retain This project from fixed question stem; source The project accepted too"
     }
-  }
+  },
+  "contentRevision": "2026-10-17-authentic",
+  "readingSources": []
 }

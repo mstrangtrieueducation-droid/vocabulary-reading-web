@@ -14,14 +14,14 @@
     },
     {
       "question": 7,
-      "term": "bell the cat",
-      "meta": "idiom",
-      "meaning": "nhận việc khó hoặc nguy hiểm cho cả nhóm",
-      "note": "Bell the cat là dám nhận việc khó hoặc nguy hiểm vì lợi ích chung. Việc đối chất với đồng nghiệp là hành động khó xử; cat là thành phần cố định, không thay bằng tên con vật khác.",
-      "usage": "volunteer to bell the cat",
-      "family": "bell ở đây là động từ; không thay cat bằng con vật khác",
-      "example": "Someone had to bell the cat and raise the issue.",
-      "translation": "Phải có người nhận việc khó là nêu vấn đề đó."
+      "term": "take responsibility for",
+      "meta": "verb phrase",
+      "meaning": "nhận trách nhiệm về",
+      "note": "Nhấn mạnh việc nhận phần việc hoặc nhận trách nhiệm với kết quả mình gây ra. Trong câu, nhân vật thừa nhận sai sót là của mình.",
+      "usage": "take responsibility for + N/V-ing; be responsible for",
+      "family": "responsibility (n); responsible (adj); responsibly (adv)",
+      "example": "He took responsibility for the mistake.",
+      "translation": "Anh ấy nhận trách nhiệm về sai sót đó."
     },
     {
       "question": 8,
@@ -47,14 +47,14 @@
     },
     {
       "question": 10,
-      "term": "as clean as a pin",
-      "meta": "idiom",
-      "meaning": "rất sạch sẽ",
-      "note": "As clean as a pin là thành ngữ chỉ rất sạch sẽ, phù hợp phòng thí nghiệm vừa được dọn kỹ. Pin là từ cố định của phép so sánh; các danh từ còn lại không tạo cụm này.",
-      "usage": "keep a room as clean as a pin",
-      "family": "clean (adj/v); cleanliness (n)",
-      "example": "Her kitchen was as clean as a pin.",
-      "translation": "Bếp của cô ấy sạch tinh tươm."
+      "term": "spotlessly clean",
+      "meta": "adverb + adjective",
+      "meaning": "sạch không một vết bẩn",
+      "note": "Spotless là không có vết bẩn. Khi bổ nghĩa cho tính từ clean, dùng trạng từ spotlessly; đây là kết hợp từ tự nhiên để nhấn mạnh độ sạch.",
+      "usage": "keep something spotlessly clean; a spotless room",
+      "family": "spot (n: vết); spotless (adj); spotlessly (adv)",
+      "example": "They keep the kitchen spotlessly clean.",
+      "translation": "Họ giữ căn bếp sạch không một vết bẩn."
     },
     {
       "question": 16,
@@ -244,48 +244,48 @@
       "translation": "Buổi lễ khơi dậy lòng yêu nước."
     },
     {
-      "question": 51,
-      "term": "grapple with",
+      "question": 53,
+      "term": "participate in",
       "meta": "verb phrase",
-      "meaning": "nỗ lực giải quyết vấn đề khó",
-      "note": "Grapple with a question nghĩa là vật lộn để giải quyết một vấn đề khó. Với nghĩa này grapple kết hợp with; for/over/about không tạo mẫu đang kiểm tra.",
-      "usage": "grapple with a problem/question",
-      "family": "grapple còn có nghĩa vật lộn theo nghĩa đen",
-      "example": "Researchers grapple with this difficult question.",
-      "translation": "Các nhà nghiên cứu cố giải quyết câu hỏi khó này."
+      "meaning": "tham gia vào",
+      "note": "Participate in nhấn mạnh việc trực tiếp góp mặt hoặc đóng góp vào một hoạt động. Trong bài, người dân tham gia quá trình nghiên cứu, chứ không chỉ đọc kết quả.",
+      "usage": "participate in a project; participate actively; take part in",
+      "family": "participation (n); participant (n); participatory (adj)",
+      "example": "Students participated in a local research project.",
+      "translation": "Học sinh tham gia một dự án nghiên cứu tại địa phương."
     },
     {
-      "question": 53,
-      "term": "whereas",
-      "meta": "conjunction",
-      "meaning": "trong khi; trái lại",
-      "note": "Whereas nối sự tương phản giữa hai vùng não phát triển vào các mốc khác nhau. Despite cần danh từ/V-ing; nevertheless là trạng từ liên kết, không nối hai mệnh đề theo cấu trúc ở đây.",
-      "usage": "mệnh đề + whereas + mệnh đề",
-      "family": "despite + danh từ; nevertheless là trạng từ",
-      "example": "Lan prefers reading, whereas Minh enjoys sport.",
-      "translation": "Lan thích đọc sách, còn Minh thích thể thao."
+      "question": 55,
+      "term": "in collaboration with",
+      "meta": "prepositional phrase",
+      "meaning": "hợp tác với",
+      "note": "Collaboration là việc các bên cùng đóng góp để hoàn thành một nhiệm vụ chung. Nhân viên công viên có thể phối hợp với một trường đại học trong dự án.",
+      "usage": "work in collaboration with somebody; collaborate with somebody on something",
+      "family": "collaborate (v); collaboration (n); collaborative (adj)",
+      "example": "The school worked in collaboration with a local museum.",
+      "translation": "Trường phối hợp với một bảo tàng địa phương."
     },
     {
       "question": 59,
-      "term": "corroborating evidence",
-      "meta": "noun phrase",
-      "meaning": "bằng chứng xác nhận/bổ trợ",
-      "note": "Corroborating evidence là bằng chứng bổ trợ/xác nhận một nhận định. Critics caution… limited cho biết bằng chứng còn ít; collaborating chỉ việc cộng tác, không phải tính chất xác nhận của bằng chứng.",
-      "usage": "provide corroborating evidence",
-      "family": "corroborate (v); corroboration (n); collaborate: cộng tác",
-      "example": "The witness provided corroborating evidence.",
-      "translation": "Nhân chứng cung cấp bằng chứng xác nhận."
+      "term": "by + V-ing",
+      "meta": "grammar pattern",
+      "meaning": "bằng cách làm gì",
+      "note": "By trước động từ thêm -ing cho biết phương pháp thực hiện việc gì. Trong bài, đào tạo và hướng dẫn người tham gia giúp dự án thu được dữ liệu tốt.",
+      "usage": "learn by doing; improve by practising; by training participants",
+      "family": "by: giới từ chỉ cách thức; V-ing: dạng động từ sau giới từ",
+      "example": "You can improve your writing by reading regularly.",
+      "translation": "Bạn có thể cải thiện kĩ năng viết bằng cách đọc thường xuyên."
     },
     {
       "question": 60,
-      "term": "circumspection",
-      "meta": "noun",
-      "meaning": "sự thận trọng, cân nhắc kỹ",
-      "note": "With considerable circumspection nghĩa là với sự thận trọng đáng kể. With diễn đạt cách tiếp cận; circumspection là cân nhắc kỹ rủi ro trước khi hành động.",
-      "usage": "with considerable circumspection",
-      "family": "circumspect (adj); circumspectly (adv)",
-      "example": "The team approached the decision with circumspection.",
-      "translation": "Nhóm cân nhắc quyết định một cách thận trọng."
+      "term": "an opportunity to",
+      "meta": "noun phrase",
+      "meaning": "một cơ hội để làm gì",
+      "note": "Opportunity chỉ hoàn cảnh thuận lợi để làm một việc. Trong bài, mọi người cần được tạo cơ hội tham gia nghiên cứu, không chỉ các nhà khoa học chuyên nghiệp.",
+      "usage": "an opportunity to do something; an opportunity for somebody to do something",
+      "family": "opportunity (n); opportunities (plural); chance (near synonym)",
+      "example": "The project gives students an opportunity to collect real data.",
+      "translation": "Dự án cho học sinh cơ hội thu thập dữ liệu thật."
     },
     {
       "question": 71,
@@ -332,5 +332,5 @@
       "translation": "Anh ấy tạo dựng tên tuổi với nghề thiết kế."
     }
   ],
-  "revision": "2026-10-16-approved"
+  "revision": "2026-10-17-authentic"
 }

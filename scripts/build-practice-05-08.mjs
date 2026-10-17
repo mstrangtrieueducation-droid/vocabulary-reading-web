@@ -29,7 +29,7 @@ for(const n of [5,6,7,8]){
  await write(`scripts/practice-test-0${n}.source.json`,JSON.stringify(source,null,2)+'\n');
  const app=JSON.parse(template.match(/const APP = (.*);\r?\n/)[1]);
  app.course.expected={testCount:8,questionTotal:800};
- app.test={...app.test,sequence:n,testId:`luyen-de-practice-test-0${n}`,testLabel:source.title,testNumber:n,testCode:source.testCode,title:source.title,questionDocumentId:source.docId,questionTab:source.sourceTabs.test.tabId,sections:source.sections,answers:source.answers,contentRevision:'2026-10-16',publishReady:true};
+ app.test={...app.test,sequence:n,testId:`luyen-de-practice-test-0${n}`,testLabel:source.title,testNumber:n,testCode:source.testCode,title:source.title,questionDocumentId:source.docId,questionTab:source.sourceTabs.test.tabId,sections:source.sections,answers:source.answers,contentRevision:source.contentRevision || '2026-10-16',readingSources:source.readingSources || [],publishReady:true};
  let html=template.replace(/const APP = .*;\r?\n/,()=>`const APP = ${JSON.stringify(app)};\n`).replaceAll('PRACTICE TEST 4 · LUYỆN ĐỀ',`PRACTICE TEST ${n} · LUYỆN ĐỀ`);
  html=html.replace(/    const norm = .*\r?\n    const equivalent = .*;/,()=>matching);
  html=html.replaceAll('Nhập nguyên câu hoàn chỉnh','Chỉ nhập phần còn thiếu trong câu');

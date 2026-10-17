@@ -141,7 +141,13 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Ask after somebody là hỏi thăm tình hình/sức khỏe của ai. Ask for là yêu cầu gặp hoặc xin thứ gì; over/upon không tạo cụm hỏi thăm. Phương án about đã được thay để tránh hai đáp án hợp nghĩa."
+      "explanation": "B — Ask after somebody = hỏi thăm tình hình của ai. Wanted to know how you were getting on là tín hiệu rõ của hỏi thăm. Ask for somebody là yêu cầu gặp người đó, không phải nghĩa này; ask over/upon không phù hợp.",
+      "focusVocabulary": [
+        {
+          "term": "ask after",
+          "meaning": "hỏi thăm tình hình/sức khỏe"
+        }
+      ]
     },
     {
       "globalNumber": 6,
@@ -251,7 +257,13 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Mildly amusing nghĩa là hơi vui/hơi buồn cười, khớp đánh giá không phải phim hài nhất và at best. Softly nói cách nhẹ nhàng, modestly là khiêm tốn, không phải mức độ gây cười tự nhiên nhất ở đây."
+      "explanation": "B — Mildly amusing = hơi vui, chỉ gây cười ở mức nhẹ, hợp với not the funniest và at best. Softly chỉ cách nhẹ/khẽ; modestly thường diễn tả sự khiêm tốn; widely chỉ phạm vi rộng. Các từ này không kết hợp với amusing theo nghĩa cần diễn đạt.",
+      "focusVocabulary": [
+        {
+          "term": "mildly amusing",
+          "meaning": "hơi buồn cười, vui nhẹ"
+        }
+      ]
     },
     {
       "globalNumber": 17,
@@ -341,7 +353,8 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Where long years of cultivation have removed… là mệnh đề quan hệ bổ nghĩa areas. Years là chủ ngữ số nhiều của have; because of/with/by không tạo được mệnh đề hoàn chỉnh."
+      "explanation": "B — Villages where many people are unable... = những ngôi làng nơi nhiều người không thể đi học hằng ngày. Where bổ nghĩa cho villages; many people là chủ ngữ của are. With/of không nối được mệnh đề đầy đủ; because tạo lí do không khớp nghĩa xác định loại làng ở đây.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 26,
@@ -411,7 +424,13 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Beset somebody nghĩa là gây khó khăn/ám ảnh ai. Sleeplessness là tình trạng gây phiền toái; bestow là ban tặng, bemoan là than phiền, betray là phản bội."
+      "explanation": "B — Affect = ảnh hưởng đến, nhận tân ngữ trực tiếp. Chủ ngữ A lack of sleep là số ít nên dùng affects. Effect dùng như động từ nghĩa là gây ra/tạo nên điều gì, không mang nghĩa ảnh hưởng ở đây; affecting thiếu trợ động từ, affect chưa chia theo chủ ngữ.",
+      "focusVocabulary": [
+        {
+          "term": "affect / effect",
+          "meaning": "ảnh hưởng đến / tác động; tạo ra"
+        }
+      ]
     },
     {
       "globalNumber": 33,
@@ -701,104 +720,123 @@
       "sectionCode": "II.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "use"
+        "to"
       ],
-      "displayAnswer": "use",
-      "explanation": "Make use of something = sử dụng điều gì. Make và of đã in sẵn nên điền use; không dùng động từ use sau make trong cụm cố định này."
+      "displayAnswer": "to",
+      "explanation": "According to + tiêu chuẩn/nguồn = theo. Trong câu, thực phẩm được sản xuất theo bộ tiêu chuẩn hữu cơ USDA; according đã có nên điền to.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 62,
       "sectionCode": "II.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "with"
+        "which"
       ],
-      "displayAnswer": "with",
-      "explanation": "Substitute A with B ở đây diễn tả thay thuốc trừ sâu/phân bón nhân tạo bằng loại hữu cơ. With chỉ vật thay vào; không điền for theo mẫu substitute B for A vì sẽ đảo thứ tự ý của hai đối tượng trong câu."
+      "displayAnswer": "which",
+      "explanation": "Which thay cho USDA organic standards trong mệnh đề quan hệ không xác định sau dấu phẩy. Không dùng that sau dấu phẩy trong loại mệnh đề này.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 63,
       "sectionCode": "II.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "between"
+        "for",
+        "on"
       ],
-      "displayAnswer": "between",
-      "explanation": "A difference between A and B là sự khác biệt giữa hai đối tượng. Câu so sánh chi phí thực phẩm hữu cơ với loại thông thường nên cần between."
+      "displayAnswer": "for / on",
+      "explanation": "Standards for organic crops = các tiêu chuẩn áp dụng cho cây trồng hữu cơ. For chỉ đối tượng áp dụng của tiêu chuẩn. On cũng hợp lệ khi hiểu các tiêu chuẩn về lĩnh vực này. Không điền to: câu không có cấu trúc according to tại vị trí này.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 64,
       "sectionCode": "II.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "sold"
+        "confirm",
+        "ensure",
+        "check",
+        "verify",
+        "see"
       ],
-      "displayAnswer": "sold",
-      "explanation": "Is sold at higher prices = được bán với giá cao hơn. Chủ ngữ produce là sản phẩm được bán, nên is + sold bị động; sell là nguyên mẫu không phù hợp."
+      "displayAnswer": "confirm / ensure / check / verify / see",
+      "explanation": "Confirm/ensure/check/verify/see they still meet... đều diễn đạt kiểm tra, xác nhận hoặc bảo đảm cơ sở tiếp tục đạt tiêu chuẩn. Sau to cần động từ nguyên mẫu. Confirm là từ của bản gốc; các cách diễn đạt khác phù hợp ngữ cảnh cũng được chấp nhận.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 65,
       "sectionCode": "II.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "providing",
-        "feeding"
+        "to"
       ],
-      "displayAnswer": "providing / feeding",
-      "explanation": "Providing animals with food = cung cấp thức ăn cho vật nuôi; feeding animals with food cũng được nhận theo khóa. Cụm V-ing làm chủ ngữ của keeps, song song ý bảo đảm điều kiện sống."
+      "displayAnswer": "to",
+      "explanation": "Be subject to inspections = chịu sự kiểm tra/có thể được kiểm tra. Subject to là cụm cố định; to là giới từ trước danh từ inspections.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 66,
       "sectionCode": "II.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "considered"
+        "sure",
+        "certain"
       ],
-      "displayAnswer": "considered",
-      "explanation": "All things considered = xét mọi yếu tố. Đây là cụm tuyệt đối với phân từ quá khứ, mở kết luận rằng thực phẩm hữu cơ có thể đáng tiền dù đắt hơn."
+      "displayAnswer": "sure / certain",
+      "explanation": "Make sure/certain that... = đảm bảo rằng. Hai tính từ đều tạo cụm đúng. Sau ô trống là mệnh đề that các đơn vị kiểm tra thực hiện đúng công việc.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 67,
       "sectionCode": "II.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "Since"
+        "through"
       ],
-      "displayAnswer": "Since",
-      "explanation": "Since + mốc quá khứ đi với hiện tại hoàn thành has been on the rise. Mốc là lúc lo ngại lần đầu xuất hiện; since nghĩa là kể từ khi, không chỉ nguyên nhân ở đây."
+      "displayAnswer": "through",
+      "explanation": "Go through a process = trải qua một quy trình. Rigorous process là quá trình kiểm tra nghiêm ngặt, không phải địa điểm để dùng into/over.",
+      "focusVocabulary": [
+        {
+          "term": "go through a process",
+          "meaning": "trải qua một quy trình"
+        }
+      ]
     },
     {
       "globalNumber": 68,
       "sectionCode": "II.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "rise",
-        "increase"
+        "of",
+        "on",
+        "about"
       ],
-      "displayAnswer": "rise / increase",
-      "explanation": "On the rise/on the increase nghĩa là đang tăng. Chủ thể là số người lựa chọn thay đổi chế độ ăn; sau the cần danh từ chỉ xu hướng."
+      "displayAnswer": "of / on / about",
+      "explanation": "Records of/on/about the products = hồ sơ về các sản phẩm. Of là đáp án nguồn; on/about cũng hợp ngữ pháp và nghĩa trong câu lưu hồ sơ chi tiết về hàng hóa.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 69,
       "sectionCode": "II.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "meet",
-        "match",
-        "satisfy"
+        "what"
       ],
-      "displayAnswer": "meet / match / satisfy",
-      "explanation": "Meet/match/satisfy demand đều diễn đạt đáp ứng nhu cầu. It thay demand ở vế trước; supply unable to… cho biết cung không theo kịp cầu."
+      "displayAnswer": "what",
+      "explanation": "What they sell = những gì họ bán. What vừa làm tân ngữ của sell vừa mở mệnh đề danh từ làm chủ ngữ của is organic. Không dùng that khi không có tiền ngữ phù hợp.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 70,
       "sectionCode": "II.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "accounting"
+        "before"
       ],
-      "displayAnswer": "accounting",
-      "explanation": "Account for = chiếm tỷ lệ. With organic farming accounting for… dùng cụm with + danh từ + V-ing; không dùng accounts vì đây không phải mệnh đề hữu hạn mới."
+      "displayAnswer": "before",
+      "explanation": "Before it reaches stores = trước khi việc gian lận/hàng gian lận lọt đến cửa hàng. Mục đích detect and deter fraud xác định kiểm tra để ngăn sớm, không phải chờ đến sau khi bán.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 71,
@@ -818,7 +856,8 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Volume trong ngữ cảnh khối nước/vật rắn là thể tích, lượng không gian chiếm chỗ. Quantity gần nhất trong các lựa chọn; loudness là nghĩa âm lượng không phù hợp vật lý của đoạn."
+      "explanation": "B — Volume ở đây là thể tích: lượng không gian một vật chiếm chỗ. Ví dụ 100 cm3 ngay trong bài giúp xác định nghĩa. Loudness là âm lượng, frequency là tần suất, length là chiều dài; chúng không đúng ngữ cảnh khối vật và nước bị chiếm chỗ.",
+      "focusVocabulary": []
     },
     {
       "globalNumber": 73,
@@ -1174,5 +1213,19 @@
   ],
   "reviewApproved": true,
   "updated": "2026-10-16",
-  "scienceReferences": []
+  "scienceReferences": [],
+  "contentRevision": "2026-10-17-authentic",
+  "readingSources": [
+    {
+      "part": "II.2",
+      "url": "https://www.ams.usda.gov/services/organic-certification/organic-basics",
+      "title": "U.S. Department of Agriculture — USDA Certified Organic: Understanding the Basics",
+      "adjustments": [
+        "Trích mục định nghĩa, kiểm tra và truy xuất nguồn gốc; gộp các gạch đầu dòng thành đoạn.",
+        "Sửa lỗi số ít business → businesses trong câu nguồn.",
+        "Giữ từ ngữ còn lại, chỉ tạo 10 ô trống."
+      ],
+      "accessed": "2026-10-17"
+    }
+  ]
 }

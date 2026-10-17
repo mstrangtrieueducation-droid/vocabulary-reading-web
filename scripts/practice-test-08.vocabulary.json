@@ -201,14 +201,14 @@
     },
     {
       "question": 32,
-      "term": "beset",
-      "meta": "verb",
-      "meaning": "gây khó khăn, đeo bám",
-      "note": "Beset somebody nghĩa là gây khó khăn/ám ảnh ai. Sleeplessness là tình trạng gây phiền toái; bestow là ban tặng, bemoan là than phiền, betray là phản bội.",
-      "usage": "be beset by problems; problems beset somebody",
-      "family": "beset–beset–beset; bestow: ban tặng",
-      "example": "The project was beset by delays.",
-      "translation": "Dự án liên tục gặp chậm trễ."
+      "term": "affect / effect",
+      "meta": "verb / noun or verb",
+      "meaning": "ảnh hưởng đến / tác động; tạo ra",
+      "note": "Affect thường là động từ nghĩa là ảnh hưởng. Effect thường là danh từ chỉ tác động; khi là động từ, nó nghĩa là tạo ra một thay đổi, không thay affect trong mọi câu.",
+      "usage": "affect concentration; have an effect on something; effect a change",
+      "family": "affected (adj); effective (adj: hiệu quả); effectively (adv)",
+      "example": "Noise can affect concentration.",
+      "translation": "Tiếng ồn có thể ảnh hưởng đến khả năng tập trung."
     },
     {
       "question": 39,
@@ -288,15 +288,15 @@
       "translation": "Báo cáo bàn cách xử lý hai vấn đề cấp bách."
     },
     {
-      "question": 70,
-      "term": "account for",
+      "question": 67,
+      "term": "go through a process",
       "meta": "verb phrase",
-      "meaning": "chiếm tỷ lệ; giải thích",
-      "note": "Account for = chiếm tỷ lệ. With organic farming accounting for… dùng cụm with + danh từ + V-ing; không dùng accounts vì đây không phải mệnh đề hữu hạn mới.",
-      "usage": "account for 5% of production",
-      "family": "account (n); give an account of: thuật lại",
-      "example": "Exports account for half of the firm's sales.",
-      "translation": "Xuất khẩu chiếm một nửa doanh số công ty."
+      "meaning": "trải qua một quy trình",
+      "note": "Go through nhấn mạnh việc lần lượt thực hiện hoặc trải qua các bước. Trong bài, các cơ sở phải qua quy trình kiểm tra trước khi được chứng nhận hữu cơ.",
+      "usage": "go through a process; go through several stages; go through training",
+      "family": "go–went–gone; process (n); procedure (n)",
+      "example": "Every application goes through the same review process.",
+      "translation": "Mỗi hồ sơ đều trải qua cùng một quy trình xét duyệt."
     },
     {
       "question": 78,
@@ -332,5 +332,5 @@
       "translation": "Không cần quát mắng tôi như vậy."
     }
   ],
-  "revision": "2026-10-16-approved"
+  "revision": "2026-10-17-authentic"
 }
