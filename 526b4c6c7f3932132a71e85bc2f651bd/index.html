@@ -427,7 +427,7 @@
       const section = SECTIONS[current];
       $("sectionTitle").textContent = section.sectionLabel || section.sectionCode;
       $("sectionTotal").textContent = `${section.count} CÂU`;
-      const helper = section.sectionCode === "I.3" ? "Nhập dạng: Line 1: Spread → Spreading" : (section.sectionCode === "III.1" || section.sectionCode === "III.2") ? "Nhập nguyên câu hoàn chỉnh" : "";
+      const helper = section.sectionCode === "I.3" ? "Nhập từ sai → từ đúng (hoặc dùng ->). Điền 5 lỗi khác nhau, không cần theo thứ tự xuất hiện." : (section.sectionCode === "III.1" || section.sectionCode === "III.2") ? "Nhập nguyên câu hoàn chỉnh" : "";
       $("sectionHelper").textContent = helper;
       $("sectionHelper").hidden = !helper;
       $("rows").innerHTML = "";
