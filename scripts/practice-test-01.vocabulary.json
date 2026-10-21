@@ -443,7 +443,9 @@
       "questions": [
         7
       ],
-      "aliases": [],
+      "aliases": [
+        "open-minded"
+      ],
       "teacherSelected": true
     },
     {
@@ -637,7 +639,9 @@
       "questions": [
         47
       ],
-      "aliases": [],
+      "aliases": [
+        "unhelpful"
+      ],
       "teacherSelected": true
     },
     {
