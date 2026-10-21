@@ -441,7 +441,420 @@
       "usage": "keep a straight face while listening",
       "family": "keep–kept–kept; straight không phải strait",
       "example": "I could not keep a straight face at the joke.",
-      "translation": "Tôi không nhịn được cười trước câu đùa."
+      "translation": "Tôi không nhịn được cười trước câu đùa.",
+      "teacherSelected": true,
+      "questions": [
+        99
+      ]
+    },
+    {
+      "term": "mistake A for B",
+      "meaning": "nhầm A thành B",
+      "usage": "mistake somebody/something for somebody/something",
+      "example": "I mistook him for his brother.",
+      "translation": "Tôi nhầm anh ấy với anh trai của anh ấy.",
+      "family": "mistake → mistook → mistaken",
+      "meta": "PHRASE",
+      "note": "Mistake A for B là nhầm A thành B. Columbus nhầm nơi cập bến thành Indies nên đặt tên người bản địa là Indians; giới từ for là phần cố định.",
+      "aliases": [],
+      "question": 54,
+      "questions": [
+        54
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "give up",
+      "meaning": "từ bỏ, ngừng làm",
+      "usage": "give up + danh từ/V-ing",
+      "example": "He gave up smoking last year.",
+      "translation": "Anh ấy bỏ thuốc lá năm ngoái.",
+      "family": "give → gave → given",
+      "meta": "VERB PHRASE",
+      "note": "Keep from giving up land = tránh phải từ bỏ đất. Sau from dùng V-ing; giving up phù hợp việc các bộ lạc chống lại mất lãnh thổ truyền thống.",
+      "aliases": [],
+      "question": 59,
+      "questions": [
+        59
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be likely to",
+      "meaning": "có khả năng xảy ra hoặc làm gì",
+      "usage": "be likely/unlikely to + V",
+      "example": "It is likely to rain tonight.",
+      "translation": "Tối nay có khả năng trời sẽ mưa.",
+      "family": "likely/unlikely (adj); likelihood (n)",
+      "meta": "VERB PHRASE",
+      "note": "Be likely to + V = có khả năng làm gì. More likely to remember nghĩa là dễ nhớ hơn khi dùng các giác quan. Likely là tính từ sau are.",
+      "aliases": [
+        "be not likely to",
+        "Be not likely to"
+      ],
+      "question": 68,
+      "questions": [
+        68,
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be in the habit of",
+      "meaning": "có thói quen làm gì",
+      "usage": "be in the habit of + V-ing",
+      "example": "She is in the habit of reading before bed.",
+      "translation": "Cô ấy có thói quen đọc sách trước khi ngủ.",
+      "family": "habit (n); habitual (adj); habitually (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Be in the habit of + V-ing là có thói quen. Not usually chuyển thành I’m not in the habit of…; foolish mistakes phải giữ để không biến ý thành không bao giờ mắc lỗi.",
+      "aliases": [
+        "in the habit of"
+      ],
+      "question": 81,
+      "questions": [
+        81
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have almost no chance of",
+      "meaning": "hầu như không có khả năng làm gì",
+      "usage": "have (almost) no chance of + V-ing",
+      "example": "We have almost no chance of winning.",
+      "translation": "Chúng tôi hầu như không có khả năng thắng.",
+      "family": "chance (n); chances (số nhiều)",
+      "meta": "VERB PHRASE",
+      "note": "Have almost no chance of + V-ing diễn tả rất ít khả năng. Winning chuyển từ will win; giữ nguyên nguyên nhân out of training vì Martin không luyện tập.",
+      "aliases": [
+        "have no chance of"
+      ],
+      "question": 82,
+      "questions": [
+        82
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be on the point of",
+      "meaning": "sắp sửa làm gì",
+      "usage": "be on the point of + V-ing; be about to + V",
+      "example": "I was on the point of leaving when she called.",
+      "translation": "Tôi vừa định rời đi thì cô ấy gọi.",
+      "family": "point (n); be: am/is/are → was/were → been",
+      "meta": "VERB PHRASE",
+      "note": "Be on the point of + V-ing hoặc be about to + V đều nói sắp làm. When nối thời điểm người bạn đến; phải giữ the restaurant để không thiếu nơi Nadia định rời đi.",
+      "aliases": [
+        "on the point of"
+      ],
+      "question": 83,
+      "questions": [
+        83
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be on the point of / be about to",
+      "meta": "verb phrases",
+      "meaning": "sắp sửa, ngay trước lúc làm gì",
+      "note": "Hai mẫu đều nói việc sắp xảy ra ngay. Cấu trúc khác nhau: on the point of + V-ing, about to + động từ nguyên mẫu. Khi một việc khác xen vào, thường nối bằng when.",
+      "usage": "be on the point of leaving; be about to leave; was about to do when something happened.",
+      "family": "point (n), about (trong cụm cố định). Đây là mẫu cấu trúc, không thay of bằng to rồi giữ V-ing.",
+      "example": "I was on the point of leaving when the phone rang.",
+      "translation": "Tôi đang sắp rời đi thì điện thoại reo.",
+      "aliases": [
+        "be on the point of doing st",
+        "be about to do st",
+        "be about to"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        83
+      ],
+      "question": 83
+    },
+    {
+      "term": "make it impossible for",
+      "meaning": "khiến ai không thể làm gì",
+      "usage": "make it impossible for somebody to + V",
+      "example": "The noise made it impossible for me to sleep.",
+      "translation": "Tiếng ồn khiến tôi không thể ngủ.",
+      "family": "possible → impossible; possibility → impossibility",
+      "meta": "VERB PHRASE",
+      "note": "Make it impossible for somebody to V = khiến ai không thể làm. It là tân ngữ giả trước impossible; cách made Paul unable to… cũng giữ nghĩa thời tiết ngăn việc ra khỏi nhà suốt ngày.",
+      "aliases": [],
+      "question": 84,
+      "questions": [
+        84
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "look on the bright side",
+      "meaning": "nhìn vào mặt tích cực",
+      "usage": "look on the bright side (of something)",
+      "example": "Try to look on the bright side of the situation.",
+      "translation": "Hãy thử nhìn vào mặt tích cực của tình huống.",
+      "family": "bright (adj); brighter; brightest",
+      "meta": "VERB PHRASE",
+      "note": "Look on the bright side (of things) = nhìn mặt tích cực. Invariably đã giữ always; even when things were going wrong giữ sự lạc quan trong hoàn cảnh khó khăn.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "invariably",
+      "meaning": "luôn luôn, hầu như lần nào cũng vậy",
+      "usage": "invariably + động từ; be invariably + tính từ",
+      "example": "She invariably arrives early.",
+      "translation": "Cô ấy luôn đến sớm.",
+      "family": "vary (v); variable/invariable (adj); invariably (adv)",
+      "meta": "ADVERB",
+      "note": "Look on the bright side (of things) = nhìn mặt tích cực. Invariably đã giữ always; even when things were going wrong giữ sự lạc quan trong hoàn cảnh khó khăn.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "let it be known",
+      "meaning": "công khai cho biết",
+      "usage": "let it be known that + mệnh đề",
+      "example": "She let it be known that she wanted to leave.",
+      "translation": "Cô ấy công khai cho biết mình muốn rời đi.",
+      "family": "let → let → let; know → knew → known",
+      "meta": "VERB PHRASE",
+      "note": "Let it be known that… = công khai cho biết. Disapproval đổi thành động từ disapproved of; phải giữ some of his supporters, không mở rộng thành toàn bộ người ủng hộ.",
+      "aliases": [
+        "let it be known that",
+        "Let it be known that"
+      ],
+      "question": 86,
+      "questions": [
+        86
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "disapprove of",
+      "meaning": "không tán thành",
+      "usage": "disapprove of + danh từ/V-ing",
+      "example": "His parents disapprove of smoking.",
+      "translation": "Bố mẹ anh ấy không tán thành việc hút thuốc.",
+      "family": "approve/disapprove (v); approval/disapproval (n)",
+      "meta": "VERB PHRASE",
+      "note": "Let it be known that… = công khai cho biết. Disapproval đổi thành động từ disapproved of; phải giữ some of his supporters, không mở rộng thành toàn bộ người ủng hộ.",
+      "aliases": [],
+      "question": 86,
+      "questions": [
+        86
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "smoke heavily",
+      "meaning": "hút thuốc nhiều",
+      "usage": "smoke heavily; be a heavy smoker",
+      "example": "He used to smoke heavily.",
+      "translation": "Trước đây anh ấy hút thuốc nhiều.",
+      "family": "smoke (v/n); smoker (n); heavy (adj); heavily (adv)",
+      "meta": "PHRASE",
+      "note": "Smoke heavily chuyển thành be a heavy smoker. Despite being đã cho nên theo sau bằng cụm danh từ a heavy smoker; giữ refuses ở hiện tại để nói sự từ chối hiện nay.",
+      "aliases": [],
+      "question": 87,
+      "questions": [
+        87
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be a heavy smoker",
+      "meaning": "là người hút thuốc nhiều",
+      "usage": "be a heavy smoker = smoke heavily",
+      "example": "My uncle is a heavy smoker.",
+      "translation": "Chú tôi là người hút thuốc nhiều.",
+      "family": "smoke (v/n); smoker (n); heavy → heavily",
+      "meta": "VERB PHRASE",
+      "note": "Smoke heavily chuyển thành be a heavy smoker. Despite being đã cho nên theo sau bằng cụm danh từ a heavy smoker; giữ refuses ở hiện tại để nói sự từ chối hiện nay.",
+      "aliases": [
+        "a heavy smoker"
+      ],
+      "question": 87,
+      "questions": [
+        87
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 89,
+      "term": "attribute something to",
+      "meta": "verb pattern",
+      "meaning": "cho rằng điều gì là do",
+      "note": "Dùng để nêu nguyên nhân của kết quả, thường là thành công/thất bại. Tân ngữ kết quả đứng trước to, nguyên nhân đứng sau to.",
+      "usage": "attribute success to hard work",
+      "example": "She attributes her progress to regular practice.",
+      "translation": "Cô ấy cho rằng mình tiến bộ nhờ luyện tập đều đặn.",
+      "family": "attribute (v); attribution (n): việc quy nguyên nhân; attributable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        89
+      ],
+      "aliases": [
+        "Attribute A to"
+      ]
+    },
+    {
+      "term": "count on",
+      "meaning": "trông cậy, tin tưởng vào",
+      "usage": "count on somebody/something; count on + V-ing",
+      "example": "You can count on me to help.",
+      "translation": "Bạn có thể trông cậy vào tôi giúp đỡ.",
+      "family": "count (v); counted; counting",
+      "meta": "VERB PHRASE",
+      "note": "Count on + V-ing = trông cậy rằng điều gì sẽ xảy ra. Nhân viên là người được bố trí chỗ nên dùng being allocated; allocated đã có sau ô trống.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be willing to",
+      "meaning": "sẵn lòng làm gì",
+      "usage": "be willing to + V",
+      "example": "She is willing to help us.",
+      "translation": "Cô ấy sẵn lòng giúp chúng tôi.",
+      "family": "willing/unwilling (adj); willingness (n)",
+      "meta": "VERB PHRASE",
+      "note": "Be willing to + V và put up with + danh từ/V-ing = sẵn lòng chịu đựng. Rudeness/rude behaviour thay hành động cư xử thô lỗ của đồng nghiệp; from my colleagues đã in sẵn.",
+      "aliases": [
+        "willing to"
+      ],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put up with",
+      "meaning": "chịu đựng",
+      "usage": "put up with + danh từ/V-ing",
+      "example": "I cannot put up with this noise.",
+      "translation": "Tôi không thể chịu nổi tiếng ồn này.",
+      "family": "put → put → put; putting",
+      "meta": "VERB PHRASE",
+      "note": "Be willing to + V và put up with + danh từ/V-ing = sẵn lòng chịu đựng. Rudeness/rude behaviour thay hành động cư xử thô lỗ của đồng nghiệp; from my colleagues đã in sẵn.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "afford",
+      "meaning": "có đủ tiền hoặc điều kiện để làm gì",
+      "usage": "can/could afford + danh từ/to V",
+      "example": "We cannot afford to buy a new car.",
+      "translation": "Chúng tôi không đủ tiền mua xe mới.",
+      "family": "afford (v); affordable (adj); affordability (n)",
+      "meta": "VERB",
+      "note": "Can afford this holiday là đủ tiền cho kỳ nghỉ; as long as = provided. Đuôi đã bắt đầu bằng as we avoid… nên ô trống kết thúc as long, không nhập lặp as hoặc đổi tourist centre.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "as long as / so long as / provided / providing",
+      "meta": "CONJUNCTIONS",
+      "meaning": "miễn là; với điều kiện là",
+      "note": "Các từ nối này đặt ra điều kiện để việc khác được thực hiện. Provided và providing có thể thêm that. As long as còn có nghĩa chỉ thời gian là trong suốt khoảng thời gian; hãy xem câu đang nói về điều kiện hay độ dài thời gian.",
+      "usage": "as/so long as + S + V; provided/providing (that) + S + V",
+      "family": "condition (n): điều kiện; conditional (adj): có điều kiện; provide (v): cung cấp",
+      "example": "You may borrow the book as long as you return it on Friday.",
+      "translation": "Bạn có thể mượn sách miễn là trả lại vào thứ Sáu.",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ],
+      "question": 93,
+      "aliases": [
+        "as long as"
+      ]
+    },
+    {
+      "term": "do away with",
+      "meaning": "bãi bỏ, loại bỏ",
+      "usage": "do away with + danh từ",
+      "example": "The school did away with the old rule.",
+      "translation": "Nhà trường đã bỏ quy định cũ.",
+      "family": "do → did → done",
+      "meta": "VERB PHRASE",
+      "note": "Do away with = bãi bỏ. Did away with là quá khứ; when they did… là câu gián tiếp nên không đảo did lên trước they.",
+      "aliases": [],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "splash out",
+      "meaning": "chi nhiều tiền, thường để tự thưởng",
+      "usage": "splash out on something",
+      "example": "They splashed out on a holiday.",
+      "translation": "Họ đã chi mạnh tay cho một kỳ nghỉ.",
+      "family": "splash (v/n); splashed; splashing",
+      "meta": "VERB PHRASE",
+      "note": "Splash out (money) on something = chi nhiều tiền cho thứ gì. Giữ splashes để hòa hợp he và đúng từ khóa; them chỉ stamps, còn every month giữ tần suất.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in case",
+      "meaning": "phòng khi, đề phòng khả năng",
+      "usage": "in case + mệnh đề",
+      "example": "Take an umbrella in case it rains.",
+      "translation": "Hãy mang ô phòng khi trời mưa.",
+      "family": "case (n); in case of + danh từ",
+      "meta": "PHRASE",
+      "note": "In case + mệnh đề nói biện pháp phòng khi điều gì xảy ra. Nhờ ở lại để phòng khi cần nói tiếp; không dùng if vì đó chỉ là điều kiện, không thể hiện rõ sự chuẩn bị trước.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "no guarantee",
+      "meaning": "không có gì bảo đảm",
+      "usage": "there is no guarantee that + mệnh đề",
+      "example": "There is no guarantee that it will work.",
+      "translation": "Không có gì bảo đảm rằng cách đó sẽ hiệu quả.",
+      "family": "guarantee (n/v); guaranteed",
+      "meta": "PHRASE",
+      "note": "There is no guarantee that… = không có gì bảo đảm rằng…. Cần you trước will get the job đã cho; không dùng I guarantee vì sẽ đảo ngược ý không thể hứa.",
+      "aliases": [],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"

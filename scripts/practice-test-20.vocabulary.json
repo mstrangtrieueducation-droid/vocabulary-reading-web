@@ -449,7 +449,177 @@
       "teacherSelected": true,
       "questions": [
         98
+      ],
+      "aliases": [
+        "Be up in arms"
       ]
+    },
+    {
+      "term": "come as a surprise",
+      "meaning": "gây ngạc nhiên",
+      "usage": "come as a surprise to somebody",
+      "example": "The result came as a surprise to us.",
+      "translation": "Kết quả khiến chúng tôi ngạc nhiên.",
+      "family": "surprise (n/v); surprised/surprising (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Come as a surprise to someone nghĩa là khiến ai bất ngờ. Sau a cần danh từ surprise; các lựa chọn còn lại đã được đổi thành tính từ nên không đứng được ở đây. Bản cũ có delight/pleasure cũng có thể dùng sau came as a, nên đã loại sự mơ hồ đó.",
+      "aliases": [],
+      "question": 2,
+      "questions": [
+        2
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come as a shock / surprise to",
+      "meta": "verb phrase",
+      "meaning": "khiến ai sốc hoặc bất ngờ",
+      "note": "Chủ ngữ thường là tin tức hoặc sự kiện; người cảm thấy bất ngờ đứng sau to. Shock mạnh hơn surprise và thường gắn với điều không vui. Cụm này không diễn tả chuyển động đến nơi nào.",
+      "usage": "something comes as a shock/surprise to someone; come as no surprise = không có gì lạ.",
+      "family": "shock/surprise (n/v); shocked/surprised (cảm xúc); shocking/surprising (gây cảm xúc).",
+      "example": "The sudden cancellation came as a surprise to everyone.",
+      "translation": "Việc hủy đột ngột khiến mọi người bất ngờ.",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ],
+      "question": 2,
+      "aliases": [
+        "surprise to"
+      ]
+    },
+    {
+      "question": 16,
+      "term": "engrossed in",
+      "meta": "ADJECTIVE PHRASE",
+      "meaning": "mải mê, bị cuốn hút vào",
+      "note": "Người engrossed in something tập trung đến mức ít chú ý xung quanh. Theo sau in là danh từ hoặc V-ing; không dùng engrossed to.",
+      "usage": "be engrossed in a book/work/reading",
+      "example": "She was so engrossed in the book that she missed the announcement.",
+      "translation": "Cô ấy mải đọc đến mức không nghe thông báo.",
+      "family": "engross (v); engrossed (adj); engrossing (adj)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ],
+      "aliases": []
+    },
+    {
+      "question": 88,
+      "term": "but for",
+      "meta": "PHRASE",
+      "meaning": "nếu không có; nếu không nhờ",
+      "note": "Nêu điều kiện giả định bằng danh từ sau for. Thường dùng khi nhờ một người/vật mà tình huống xấu đã không xảy ra; không theo trực tiếp bằng một mệnh đề đầy đủ.",
+      "usage": "but for + noun, S + would have + V3",
+      "example": "But for your advice, I would have made a costly mistake.",
+      "translation": "Nếu không nhờ lời khuyên của bạn, tôi đã mắc sai lầm tốn kém.",
+      "family": "without; if it had not been for",
+      "teacherSelected": true,
+      "questions": [
+        88
+      ],
+      "aliases": []
+    },
+    {
+      "term": "take somebody by surprise",
+      "meaning": "khiến ai bất ngờ",
+      "usage": "take somebody by surprise",
+      "example": "The news took us by surprise.",
+      "translation": "Tin đó khiến chúng tôi bất ngờ.",
+      "family": "surprise (n/v); surprised/surprising (adj); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Có thể dùng which để thay cho cả sự việc Ann đến đúng giờ, hoặc take someone by surprise. Dấu phẩy trước which tách mệnh đề bổ sung; punctually là đúng giờ, không đổi thành đến sớm vì ý nghĩa khác.",
+      "aliases": [
+        "take someone by surprise",
+        "be taken by surprise"
+      ],
+      "question": 89,
+      "questions": [
+        89
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "count for nothing",
+      "meaning": "không có giá trị, không được tính đến",
+      "usage": "count for nothing",
+      "example": "His excuses counted for nothing.",
+      "translation": "Những lời bào chữa của anh ấy chẳng có giá trị gì.",
+      "family": "count (v); counted; counting",
+      "meta": "VERB PHRASE",
+      "note": "Count for nothing nghĩa là hoàn toàn không có giá trị hoặc tầm quan trọng. Phải giữ nothing tương ứng no value; count for little chỉ là ít giá trị, làm nhẹ nghĩa gốc. Mệnh đề trong câu chuyện giới hạn nhận định vào bối cảnh hư cấu.",
+      "aliases": [],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "stand in for",
+      "meaning": "làm thay, thay thế tạm thời",
+      "usage": "stand in for somebody",
+      "example": "I stood in for the teacher yesterday.",
+      "translation": "Hôm qua tôi dạy thay giáo viên đó.",
+      "family": "stand → stood → stood; stand-in (n)",
+      "meta": "VERB PHRASE",
+      "note": "Stand in for someone là làm thay công việc của người đó tạm thời. Cần đủ in for; stand for mang nghĩa đại diện hoặc chịu đựng.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 92,
+      "term": "stand for",
+      "meta": "PHRASAL VERB",
+      "meaning": "viết tắt của; đại diện cho",
+      "note": "Với một chữ viết tắt, stand for giới thiệu tên đầy đủ. Với một người/tổ chức, cụm còn có thể nói giá trị hoặc quan điểm họ đại diện.",
+      "usage": "What does…stand for?; stand for a principle",
+      "example": "What does this abbreviation stand for?",
+      "translation": "Chữ viết tắt này là viết tắt của những từ nào?",
+      "family": "stand–stood–stood; abbreviation (n); abbreviate (v)",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ],
+      "aliases": []
+    },
+    {
+      "term": "be in favour of",
+      "meaning": "tán thành, ủng hộ",
+      "usage": "be in favour/favor of + danh từ/V-ing",
+      "example": "I am in favour of reducing waste.",
+      "translation": "Tôi tán thành việc giảm rác thải.",
+      "family": "favour/favor (n/v); favourable/favorable (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Be in favour of + danh từ/V-ing nghĩa là tán thành hoặc ủng hộ. Do they agree đổi thành Are they in favour; không giữ do trước tính từ/cụm giới từ.",
+      "aliases": [
+        "be in favor of"
+      ],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 96,
+      "term": "not breathe a word",
+      "meta": "idiom",
+      "meaning": "không hé một lời",
+      "note": "Dùng khi yêu cầu giữ kín thông tin. Breathe ở đây không chỉ hành động thở mà thuộc thành ngữ tiết lộ dù chỉ một lời.",
+      "usage": "not breathe a word of/about something to anyone",
+      "example": "Don’t breathe a word of this to anyone.",
+      "translation": "Đừng hé chuyện này với bất cứ ai.",
+      "family": "breathe (v): thở; breath (n): hơi thở; confidential (a): bí mật.",
+      "teacherSelected": true,
+      "questions": [
+        96
+      ],
+      "aliases": []
     }
   ]
 }

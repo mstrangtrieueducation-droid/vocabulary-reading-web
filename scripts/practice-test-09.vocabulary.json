@@ -58,7 +58,8 @@
       "family": "term (n) ở đây dùng số nhiều terms; không dịch là học kỳ.",
       "teacherSelected": true,
       "questions": [
-        9
+        9,
+        84
       ]
     },
     {
@@ -450,6 +451,197 @@
       "questions": [
         100
       ]
+    },
+    {
+      "term": "be likely to",
+      "meaning": "có khả năng xảy ra hoặc làm gì",
+      "usage": "be likely/unlikely to + V",
+      "example": "It is likely to rain tonight.",
+      "translation": "Tối nay có khả năng trời sẽ mưa.",
+      "family": "likely/unlikely (adj); likelihood (n)",
+      "meta": "VERB PHRASE",
+      "note": "Be likely to + V diễn tả có khả năng làm gì. Are much more likely to find nghĩa là có khả năng tìm thấy cao hơn nhiều. More likelier sai vì so sánh hơn hai lần; could không đi thẳng với more or less to find.",
+      "aliases": [
+        "be not likely to"
+      ],
+      "question": 58,
+      "questions": [
+        58
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "look nothing like",
+      "meaning": "hoàn toàn không giống",
+      "usage": "look nothing like somebody/something",
+      "example": "He looks nothing like his brother.",
+      "translation": "Anh ấy trông hoàn toàn không giống anh trai mình.",
+      "family": "look (v/n); like (giới từ chỉ sự giống nhau)",
+      "meta": "VERB PHRASE",
+      "note": "Look nothing like = not look like…at all hoặc not look anything like. Doesn't đã có nên động từ phải ở nguyên mẫu look/resemble/take. Take after chỉ sự giống người trong gia đình.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 88,
+      "term": "but for",
+      "meta": "PHRASE",
+      "meaning": "nếu không có; nếu không nhờ",
+      "note": "Nêu điều kiện giả định bằng danh từ sau for. Thường dùng khi nhờ một người/vật mà tình huống xấu đã không xảy ra; không theo trực tiếp bằng một mệnh đề đầy đủ.",
+      "usage": "but for + noun, S + would have + V3",
+      "example": "But for your advice, I would have made a costly mistake.",
+      "translation": "Nếu không nhờ lời khuyên của bạn, tôi đã mắc sai lầm tốn kém.",
+      "family": "without; if it had not been for",
+      "teacherSelected": true,
+      "questions": [
+        88
+      ],
+      "aliases": []
+    },
+    {
+      "term": "have an objection to",
+      "meaning": "phản đối điều gì",
+      "usage": "have an/any objection to + danh từ/V-ing",
+      "example": "Do you have any objection to opening the window?",
+      "translation": "Bạn có phản đối việc mở cửa sổ không?",
+      "family": "object (v); objection (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have any objection to + danh từ/V-ing = có phản đối việc…không. To ở đây là giới từ nên dùng asking. My asking trang trọng; me asking phổ biến trong giao tiếp và cũng được chấp nhận.",
+      "aliases": [
+        "have any objection to",
+        "Have any objection to"
+      ],
+      "question": 89,
+      "questions": [
+        89
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "with the aim of",
+      "meaning": "nhằm mục đích",
+      "usage": "with the aim/intention/purpose of + V-ing",
+      "example": "They met with the aim of reaching an agreement.",
+      "translation": "Họ gặp nhau nhằm đạt được thỏa thuận.",
+      "family": "aim (n/v); intend → intention; purpose (n)",
+      "meta": "PHRASE",
+      "note": "With the aim/intention/goal/purpose of + V-ing diễn đạt mục đích. Further dùng như động từ nghĩa là phát triển, học tiếp; sau of phải là furthering. Giữ has been taking để không đổi thời của câu gốc.",
+      "aliases": [
+        "with the aim/intention/goal/purpose of",
+        "with the aim/intention/goal/objective of",
+        "With the aim/intention/goal/purpose of"
+      ],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come to your senses",
+      "meaning": "tỉnh ra, biết suy xét hợp lý",
+      "usage": "come to one’s senses",
+      "example": "I hope he comes to his senses soon.",
+      "translation": "Tôi hy vọng anh ấy sớm tỉnh ra và suy nghĩ hợp lý.",
+      "family": "sense (n); sensible (adj); sensibly (adv); come → came → come",
+      "meta": "VERB PHRASE",
+      "note": "Come to your senses là tỉnh ra, biết suy xét hợp lý. Senses phải giữ số nhiều như từ khóa.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come to the conclusion",
+      "meaning": "đi đến kết luận",
+      "usage": "come to the conclusion that + mệnh đề",
+      "example": "We came to the conclusion that the plan was too costly.",
+      "translation": "Chúng tôi đi đến kết luận rằng kế hoạch quá tốn kém.",
+      "family": "conclude (v); conclusion (n); conclusive (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Come to/arrive at/reach the conclusion that… là đi đến kết luận rằng… I’ve đã có nên dùng phân từ come/arrived/reached. Giữ nguyên từ khóa conclusion và không lặp that sau ô.",
+      "aliases": [
+        "come to/arrive at/reach the conclusion",
+        "Come to/arrive at/reach the conclusion"
+      ],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "give an account of",
+      "meaning": "kể lại, thuật lại",
+      "usage": "give an account of something",
+      "example": "He gave an account of the accident.",
+      "translation": "Anh ấy thuật lại vụ tai nạn.",
+      "family": "account (n); give → gave → given",
+      "meta": "VERB PHRASE",
+      "note": "Give an account of something nghĩa là thuật lại hoặc giải thích chi tiết điều gì. Your whereabouts là nơi ông ở; sau could dùng give nguyên mẫu.",
+      "aliases": [
+        "give/provide a vivid account of",
+        "an account of"
+      ],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "by no means",
+      "meaning": "hoàn toàn không",
+      "usage": "be by no means + tính từ",
+      "example": "The task is by no means easy.",
+      "translation": "Nhiệm vụ này hoàn toàn không dễ.",
+      "family": "means giữ dạng có -s trong cụm cố định",
+      "meta": "PHRASE",
+      "note": "By no means nghĩa là hoàn toàn không. By no means poor giữ đúng ý not poor at all và phù hợp với thông tin thực tế cô ấy khá giàu.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "pull oneself together",
+      "meaning": "lấy lại bình tĩnh, tự chủ",
+      "usage": "pull oneself together",
+      "example": "She took a breath and pulled herself together.",
+      "translation": "Cô ấy hít thở rồi lấy lại bình tĩnh.",
+      "family": "pull (v); pulled; pulling; đại từ phản thân thay theo chủ ngữ",
+      "meta": "VERB PHRASE",
+      "note": "Pull oneself together là lấy lại bình tĩnh. Julia là nữ, số ít nên dùng herself; câu kể quá khứ nên dùng pulled và explained.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "draw the line at",
+      "meaning": "đặt giới hạn, nhất quyết không chấp nhận",
+      "usage": "draw the line at + danh từ/V-ing",
+      "example": "I draw the line at lying to customers.",
+      "translation": "Tôi nhất quyết không chấp nhận việc nói dối khách hàng.",
+      "family": "draw → drew → drawn; line (n)",
+      "meta": "VERB PHRASE",
+      "note": "Draw the line at something nghĩa là đặt giới hạn, không chấp nhận điều gì. Sau should dùng draw nguyên mẫu.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
     }
   ]
 }

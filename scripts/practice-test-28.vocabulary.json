@@ -418,7 +418,8 @@
       "family": "scrutinize/scrutinise (v); scrutiny (n)",
       "teacherSelected": true,
       "questions": [
-        75
+        75,
+        76
       ]
     },
     {
@@ -433,7 +434,9 @@
       "family": "greenwash (v/n); greenwashing (n); environmental claim (cụm danh từ liên quan)",
       "teacherSelected": true,
       "questions": [
-        76
+        76,
+        79,
+        80
       ]
     },
     {
@@ -450,6 +453,187 @@
       "questions": [
         84
       ]
+    },
+    {
+      "term": "on receipt of",
+      "meaning": "ngay khi nhận được",
+      "usage": "on receipt of something",
+      "example": "We will reply on receipt of your letter.",
+      "translation": "Chúng tôi sẽ trả lời ngay khi nhận thư của bạn.",
+      "family": "receive (v); receipt (n)",
+      "meta": "PHRASE",
+      "note": "On receipt of nghĩa là ngay khi nhận được, chuyển thành as soon as + mệnh đề. Sau as soon as chỉ thời gian tương lai dùng hiện tại đơn receive, không dùng will receive. We shall/will send giữ hành động tương lai; send the goods to you và send you the goods đều đúng.",
+      "aliases": [],
+      "question": 83,
+      "questions": [
+        83
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come up against",
+      "meaning": "gặp phải khó khăn, đối đầu với",
+      "usage": "come up against a problem/opposition",
+      "example": "We came up against several problems.",
+      "translation": "Chúng tôi gặp phải một số vấn đề.",
+      "family": "come → came → come",
+      "meta": "VERB PHRASE",
+      "note": "Come up against a problem là gặp phải, đối mặt với một vấn đề. Present perfect we've come giữ ý vấn đề vừa xuất hiện và hiện còn liên quan. Come across a problem cũng có thể diễn đạt việc gặp/phát hiện vấn đề trong ngữ cảnh này; không dùng come up with vì đó là nghĩ ra.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come to an end",
+      "meaning": "kết thúc",
+      "usage": "come to an end",
+      "example": "The meeting came to an end at six.",
+      "translation": "Cuộc họp kết thúc lúc sáu giờ.",
+      "family": "end (n/v); come → came → come",
+      "meta": "VERB PHRASE",
+      "note": "Come to an end nghĩa là kết thúc, quá khứ came to an end. Câu gốc dùng cảnh sát làm chủ ngữ với ended the fighting; câu mới chuyển the fighting thành chủ ngữ nhưng giữ thời điểm kết thúc là khi các thủ lĩnh bị bắt.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 92,
+      "term": "as a last resort",
+      "meta": "IDIOM",
+      "meaning": "như giải pháp cuối cùng",
+      "note": "Dùng khi các lựa chọn khác đã hết hoặc không hiệu quả. Resort ở đây là phương cách, không phải khu nghỉ dưỡng trong nghĩa thông dụng khác.",
+      "usage": "use/do something as a last resort",
+      "example": "We can postpone the trip as a last resort.",
+      "translation": "Chúng ta có thể hoãn chuyến đi nếu không còn cách nào khác.",
+      "family": "resort (n/v); resort to + N/V-ing; last (adj)",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ],
+      "aliases": []
+    },
+    {
+      "question": 93,
+      "term": "make ends meet",
+      "meta": "idiom",
+      "meaning": "kiếm đủ tiền trang trải",
+      "note": "Make ends meet là kiếm đủ tiền trang trải cuộc sống. Làm 12 giờ/ngày cho thấy khó khăn tài chính; call it a day là dừng làm, break the ice là phá sự ngại ngùng ban đầu.",
+      "usage": "struggle to make ends meet",
+      "family": "make–made–made; không đổi ends thành end",
+      "example": "The family worked hard to make ends meet.",
+      "translation": "Gia đình làm việc vất vả để đủ trang trải.",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ],
+      "aliases": []
+    },
+    {
+      "term": "be overcome with",
+      "meaning": "bị cảm xúc mạnh choán ngợp",
+      "usage": "be overcome with/by fear/emotion",
+      "example": "She was overcome with emotion.",
+      "translation": "Cô ấy xúc động đến choáng ngợp.",
+      "family": "overcome → overcame → overcome",
+      "meta": "VERB PHRASE",
+      "note": "Be overcome with/by fear là bị nỗi sợ choán ngợp, tương đương overwhelmed by fear. Overcome giữ nguyên hình thức trong cụm bị động, không viết overcomed.",
+      "aliases": [
+        "be overcome with/by fear",
+        "Be overcome with/by fear"
+      ],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be in charge of",
+      "meaning": "chịu trách nhiệm quản lý",
+      "usage": "be in charge of somebody/something",
+      "example": "She is in charge of the project.",
+      "translation": "Cô ấy phụ trách dự án.",
+      "family": "charge (n/v); person in charge (người phụ trách)",
+      "meta": "VERB PHRASE",
+      "note": "Be in charge of something là chịu trách nhiệm phụ trách việc đó, tương đương be responsible for. Chỗ trống chỉ điền in charge of vì Jim is now và the new campaign đã có sẵn.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be responsible for",
+      "meaning": "chịu trách nhiệm, là nguyên nhân của",
+      "usage": "be responsible for + danh từ/V-ing",
+      "example": "She is responsible for organising the event.",
+      "translation": "Cô ấy chịu trách nhiệm tổ chức sự kiện.",
+      "family": "responsible (adj); responsibility (n); responsibly (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Be in charge of something là chịu trách nhiệm phụ trách việc đó, tương đương be responsible for. Chỗ trống chỉ điền in charge of vì Jim is now và the new campaign đã có sẵn.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "run out of",
+      "meaning": "hết, cạn thứ gì",
+      "usage": "run out of something",
+      "example": "We have run out of tea.",
+      "translation": "Chúng tôi đã hết trà.",
+      "family": "run → ran → run",
+      "meta": "VERB PHRASE",
+      "note": "Run out of tea là hết trà, chuyển thành there is no tea left hoặc there is not any tea left. Left ở đây nghĩa là còn lại, không phải động từ left mang nghĩa rời đi.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have no intention of",
+      "meaning": "không có ý định làm gì",
+      "usage": "have no intention of + V-ing",
+      "example": "I have no intention of selling the house.",
+      "translation": "Tôi không có ý định bán ngôi nhà.",
+      "family": "intend (v); intention (n); intentional (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Have no intention of doing something nghĩa là không có ý định làm; đây là cách dùng tự nhiên nhất trong câu. Intention to answer cũng được chấp nhận về nghĩa và ngữ pháp.",
+      "aliases": [
+        "no intention of"
+      ],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "feel like",
+      "meaning": "muốn, có hứng làm gì",
+      "usage": "feel like + danh từ/V-ing",
+      "example": "I feel like going for a walk.",
+      "translation": "Tôi muốn đi dạo.",
+      "family": "feel → felt → felt; feeling (n)",
+      "meta": "VERB PHRASE",
+      "note": "Don't feel like + V-ing diễn tả không muốn hoặc không có hứng làm gì, phù hợp I'd rather not go out. Không dùng don't feel up to trong đáp án mẫu vì cụm ấy nhấn mạnh thiếu sức/không đủ khả năng, điều câu gốc không nói.",
+      "aliases": [],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ]
 }

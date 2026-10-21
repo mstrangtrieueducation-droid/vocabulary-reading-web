@@ -55,6 +55,10 @@
       "teacherSelected": true,
       "questions": [
         9
+      ],
+      "aliases": [
+        "make room for",
+        "give way to"
       ]
     },
     {
@@ -97,6 +101,10 @@
       "teacherSelected": true,
       "questions": [
         13
+      ],
+      "aliases": [
+        "forge",
+        "forgery"
       ]
     },
     {
@@ -107,7 +115,11 @@
       "usage": "bring in money/revenue; bring in a new rule; bring in an expert",
       "family": "bring – brought – brought; income (n): thu nhập; revenue (n): doanh thu",
       "example": "The new service brings in extra income for the company.",
-      "translation": "Dịch vụ mới mang lại thêm thu nhập cho công ty."
+      "translation": "Dịch vụ mới mang lại thêm thu nhập cho công ty.",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "term": "half-hearted / wholehearted",
@@ -119,7 +131,8 @@
       "example": "His half-hearted apology did little to improve the situation.",
       "translation": "Lời xin lỗi thiếu thành ý của anh ấy không giúp tình hình khá hơn bao nhiêu.",
       "aliases": [
-        "whole-hearted"
+        "whole-hearted",
+        "half-hearted"
       ],
       "teacherSelected": true,
       "questions": [
@@ -150,7 +163,8 @@
       "example": "“That journey was exhausting.” “You can say that again!”",
       "translation": "“Chuyến đi đó mệt thật.” “Đúng quá còn gì!”",
       "aliases": [
-        "I agree with you."
+        "I agree with you.",
+        "I agree with you"
       ],
       "teacherSelected": true,
       "questions": [
@@ -169,6 +183,12 @@
       "teacherSelected": true,
       "questions": [
         19
+      ],
+      "aliases": [
+        "as long as",
+        "so long as",
+        "provided",
+        "providing"
       ]
     },
     {
@@ -317,6 +337,10 @@
       "teacherSelected": true,
       "questions": [
         30
+      ],
+      "aliases": [
+        "break through",
+        "breakthrough"
       ]
     },
     {
@@ -403,7 +427,12 @@
       "translation": "Tiêu đề gây hiểu lầm vì bỏ qua một chi tiết quan trọng.",
       "teacherSelected": true,
       "questions": [
+        34,
         37
+      ],
+      "aliases": [
+        "lead",
+        "misleading"
       ]
     },
     {
@@ -446,6 +475,10 @@
       "teacherSelected": true,
       "questions": [
         41
+      ],
+      "aliases": [
+        "production",
+        "productivity"
       ]
     },
     {
@@ -460,6 +493,10 @@
       "teacherSelected": true,
       "questions": [
         42
+      ],
+      "aliases": [
+        "largely",
+        "mainly"
       ]
     },
     {
@@ -516,6 +553,10 @@
       "teacherSelected": true,
       "questions": [
         45
+      ],
+      "aliases": [
+        "recede",
+        "economic recession"
       ]
     },
     {
@@ -530,6 +571,10 @@
       "teacherSelected": true,
       "questions": [
         47
+      ],
+      "aliases": [
+        "in the end",
+        "at the end of"
       ]
     },
     {
@@ -544,6 +589,10 @@
       "teacherSelected": true,
       "questions": [
         49
+      ],
+      "aliases": [
+        "memorize",
+        "commemorate"
       ]
     },
     {
@@ -612,7 +661,9 @@
       "example": "The noise deprived the residents of a peaceful evening.",
       "translation": "Tiếng ồn khiến cư dân không có được một buổi tối yên tĩnh.",
       "aliases": [
-        "deprive sb of st"
+        "deprive sb of st",
+        "deprive (v) sb of",
+        "sleep deprivation"
       ],
       "teacherSelected": true,
       "questions": [
@@ -644,7 +695,8 @@
       "translation": "Cả nhóm làm việc suốt ngày đêm để khôi phục dịch vụ.",
       "teacherSelected": true,
       "questions": [
-        71
+        71,
+        73
       ]
     },
     {
@@ -686,7 +738,8 @@
       "translation": "Thị trấn đối mặt với tình trạng thiếu nhà ở giá phù hợp kéo dài.",
       "teacherSelected": true,
       "questions": [
-        71
+        71,
+        79
       ]
     },
     {
@@ -701,6 +754,11 @@
       "teacherSelected": true,
       "questions": [
         71
+      ],
+      "aliases": [
+        "on call",
+        "on duty",
+        "on night call"
       ]
     },
     {
@@ -729,6 +787,11 @@
       "teacherSelected": true,
       "questions": [
         71
+      ],
+      "aliases": [
+        "irritate",
+        "annoy",
+        "irritable"
       ]
     },
     {
@@ -808,6 +871,10 @@
       "translation": "Cô ấy nộp bài sớm, nhờ đó chúng tôi có thời gian xem lại.",
       "teacherSelected": true,
       "questions": [
+        2,
+        29,
+        42,
+        66,
         85
       ]
     },
@@ -824,6 +891,118 @@
       "questions": [
         90
       ]
+    },
+    {
+      "term": "in case",
+      "meaning": "phòng khi, đề phòng khả năng",
+      "usage": "in case + mệnh đề",
+      "example": "Take an umbrella in case it rains.",
+      "translation": "Hãy mang ô phòng khi trời mưa.",
+      "family": "case (n); in case of + danh từ",
+      "meta": "PHRASE",
+      "note": "in the event of… = in case of…: phòng khi",
+      "aliases": [],
+      "question": 10,
+      "questions": [
+        10
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 81,
+      "term": "dawn on somebody",
+      "meta": "PHRASAL VERB",
+      "meaning": "khiến ai chợt nhận ra",
+      "note": "Chủ ngữ thường là it hoặc một ý nghĩ: it dawned on me that…. Người nhận ra đứng sau on; không nói I dawned that….",
+      "usage": "It dawns on somebody that/how…",
+      "example": "It finally dawned on me that I had the wrong address.",
+      "translation": "Cuối cùng tôi mới nhận ra mình đã có nhầm địa chỉ.",
+      "family": "dawn (n: bình minh; v: bắt đầu/hiện rõ); realization (n)",
+      "teacherSelected": true,
+      "questions": [
+        81
+      ],
+      "aliases": []
+    },
+    {
+      "question": 81,
+      "term": "be taken in by",
+      "meta": "PHRASAL VERB",
+      "meaning": "bị lừa bởi",
+      "note": "Take somebody in nghĩa là lừa ai. Chủ ngữ principal là người bị lừa nên dùng to be taken in by, kết hợp với too ... to. Không dùng to take in vì sẽ biến hiệu trưởng thành người đi lừa.",
+      "usage": "be taken in by a story/promise",
+      "example": "She was not taken in by his promises.",
+      "translation": "Cô ấy không bị những lời hứa của anh ta đánh lừa.",
+      "family": "take – took – taken; deceive (v); deception (n)",
+      "teacherSelected": true,
+      "questions": [
+        81
+      ],
+      "aliases": []
+    },
+    {
+      "term": "have difficulty",
+      "meaning": "gặp khó khăn",
+      "usage": "have difficulty (in) + V-ing",
+      "example": "I have difficulty remembering names.",
+      "translation": "Tôi gặp khó khăn khi nhớ tên người khác.",
+      "family": "difficult (adj); difficulty/difficulties (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have difficulty (in) + V-ing nghĩa là gặp khó khăn khi làm gì. Persuade somebody to do something giữ nguyên cấu trúc ở phần sau.",
+      "aliases": [],
+      "question": 88,
+      "questions": [
+        88
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 89,
+      "term": "not breathe a word",
+      "meta": "idiom",
+      "meaning": "không hé một lời",
+      "note": "Dùng khi yêu cầu giữ kín thông tin. Breathe ở đây không chỉ hành động thở mà thuộc thành ngữ tiết lộ dù chỉ một lời.",
+      "usage": "not breathe a word of/about something to anyone",
+      "example": "Don’t breathe a word of this to anyone.",
+      "translation": "Đừng hé chuyện này với bất cứ ai.",
+      "family": "breathe (v): thở; breath (n): hơi thở; confidential (a): bí mật.",
+      "teacherSelected": true,
+      "questions": [
+        89
+      ],
+      "aliases": []
+    },
+    {
+      "question": 92,
+      "term": "come to terms with",
+      "meta": "idiom",
+      "meaning": "chấp nhận thực tế khó chịu",
+      "note": "Come to terms with = chấp nhận một thực tế khó chịu. Their friendship is over là tình bạn đã chấm dứt; không hiểu come to terms là quay lại làm bạn.",
+      "usage": "come to terms with a loss/the fact that…",
+      "family": "accept (v); acceptance (n); không có nghĩa nối lại quan hệ",
+      "example": "She slowly came to terms with the change.",
+      "translation": "Cô ấy dần chấp nhận sự thay đổi.",
+      "questions": [
+        92
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "succeed in",
+      "meaning": "thành công trong việc",
+      "usage": "succeed in + V-ing",
+      "example": "She succeeded in solving the problem.",
+      "translation": "Cô ấy đã giải quyết được vấn đề.",
+      "family": "succeed (v); success (n); successful (adj); successfully (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Manage to persuade được chuyển sang succeed in + V-ing: succeeded in persuading. Cấu trúc persuade somebody to do something được giữ nguyên.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"

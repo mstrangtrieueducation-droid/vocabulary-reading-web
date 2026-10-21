@@ -39,7 +39,8 @@
       "example": "Students may wear casual clothes, but the ceremony requires formal dress.",
       "translation": "Học sinh có thể mặc đồ thường ngày, nhưng buổi lễ yêu cầu trang phục trang trọng.",
       "aliases": [
-        "casual clothes"
+        "casual clothes",
+        "formal clothes"
       ],
       "teacherSelected": true,
       "questions": [
@@ -72,6 +73,11 @@
       "teacherSelected": true,
       "questions": [
         18
+      ],
+      "aliases": [
+        "by and large",
+        "in general",
+        "on the whole"
       ]
     },
     {
@@ -114,6 +120,9 @@
       "teacherSelected": true,
       "questions": [
         24
+      ],
+      "aliases": [
+        "pace"
       ]
     },
     {
@@ -128,6 +137,10 @@
       "teacherSelected": true,
       "questions": [
         32
+      ],
+      "aliases": [
+        "need + doing",
+        "need to be done"
       ]
     },
     {
@@ -155,7 +168,10 @@
       "translation": "Nhà văn giàu trí tưởng tượng tạo ra một thế giới không có thật.",
       "aliases": [
         "unimaginable",
-        "(un)imaginable"
+        "(un)imaginable",
+        "imaginary",
+        "imaginative",
+        "un)imaginable"
       ],
       "teacherSelected": true,
       "questions": [
@@ -174,6 +190,10 @@
       "teacherSelected": true,
       "questions": [
         36
+      ],
+      "aliases": [
+        "unharmed",
+        "harmless"
       ]
     },
     {
@@ -273,6 +293,10 @@
       "teacherSelected": true,
       "questions": [
         53
+      ],
+      "aliases": [
+        "basics",
+        "basis"
       ]
     },
     {
@@ -286,7 +310,17 @@
       "translation": "Cô ấy làm hướng dẫn viên và nói chuyện giống một giáo viên giàu kinh nghiệm.",
       "teacherSelected": true,
       "questions": [
-        55
+        7,
+        11,
+        19,
+        55,
+        62,
+        83
+      ],
+      "aliases": [
+        "like",
+        "as",
+        "As"
       ]
     },
     {
@@ -297,7 +331,14 @@
       "usage": "make a start at/on doing; make a start on a report; get started on something.",
       "family": "start (n/v); starting (dạng -ing); starter (n, nghĩa tùy ngữ cảnh).",
       "example": "We made a start on collecting data for the project.",
-      "translation": "Chúng tôi bắt đầu thu thập dữ liệu cho dự án."
+      "translation": "Chúng tôi bắt đầu thu thập dữ liệu cho dự án.",
+      "teacherSelected": true,
+      "questions": [
+        59
+      ],
+      "aliases": [
+        "make a start at"
+      ]
     },
     {
       "term": "answer / key / solution to",
@@ -307,7 +348,16 @@
       "usage": "the answer to a question; the key to success; a solution to a problem; the key to improving results.",
       "family": "answer (n/v); key (n/adj); solve (v), solution (n).",
       "example": "Regular practice is the key to improving reading speed.",
-      "translation": "Luyện tập đều đặn là chìa khóa để cải thiện tốc độ đọc."
+      "translation": "Luyện tập đều đặn là chìa khóa để cải thiện tốc độ đọc.",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ],
+      "aliases": [
+        "answer",
+        "key",
+        "solution to"
+      ]
     },
     {
       "term": "bribe",
@@ -334,7 +384,13 @@
       "translation": "Tiếng Pháp của tôi hơi mai một vì nhiều năm không sử dụng.",
       "teacherSelected": true,
       "questions": [
-        71
+        71,
+        75
+      ],
+      "aliases": [
+        "rust",
+        "rusty",
+        "Rusty"
       ]
     },
     {
@@ -380,7 +436,8 @@
       ],
       "teacherSelected": true,
       "questions": [
-        83
+        83,
+        86
       ]
     },
     {
@@ -411,11 +468,15 @@
       "translation": "Tôi đang sắp rời đi thì điện thoại reo.",
       "aliases": [
         "be on the point of doing st",
-        "be about to do st"
+        "be about to do st",
+        "be on the point of doing",
+        "be about to do",
+        "Be on the point of"
       ],
       "teacherSelected": true,
       "questions": [
-        88
+        88,
+        100
       ]
     },
     {
@@ -462,6 +523,208 @@
       "questions": [
         95
       ]
+    },
+    {
+      "question": 6,
+      "term": "under guarantee",
+      "meta": "PHRASE",
+      "meaning": "còn trong thời hạn bảo hành",
+      "note": "Under guarantee nghĩa là còn trong thời hạn bảo hành. Đây là cách kết hợp cố định; below, beneath và down đều không dùng thay under trong cụm này. Ngữ cảnh mua một chiếc máy rẻ khiến việc kiểm tra bảo hành hợp lý, không cần hiểu tiếng lóng về đồ trộm cắp.",
+      "usage": "be under guarantee; a two-year guarantee",
+      "example": "The laptop is still under guarantee.",
+      "translation": "Máy tính xách tay vẫn còn bảo hành.",
+      "family": "guarantee (n/v); guaranteed (adj)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ],
+      "aliases": []
+    },
+    {
+      "question": 25,
+      "term": "come up with",
+      "meta": "PHRASAL VERB",
+      "meaning": "nghĩ ra; tìm ra",
+      "note": "Thường đi với ý tưởng, kế hoạch hoặc giải pháp. Cụm nhấn mạnh việc tạo ra hoặc nghĩ ra thứ cần thiết; không phải come up to là tiến lại gần.",
+      "usage": "come up with an idea/a solution",
+      "example": "Mai came up with a simple solution.",
+      "translation": "Mai nghĩ ra một giải pháp đơn giản.",
+      "family": "come – came – come; idea (n); inventive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ],
+      "aliases": []
+    },
+    {
+      "term": "have a lot to offer",
+      "meaning": "có nhiều điều hấp dẫn hoặc hữu ích",
+      "usage": "have a lot to offer somebody",
+      "example": "The city has a lot to offer visitors.",
+      "translation": "Thành phố có nhiều điều hấp dẫn dành cho du khách.",
+      "family": "offer (v/n); offered; offering (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have a lot to offer in terms of natural resources diễn tả khu vực có nhiều giá trị/lợi thế về tài nguyên thiên nhiên.",
+      "aliases": [],
+      "question": 86,
+      "questions": [
+        86
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "prevent from",
+      "meaning": "ngăn ai/điều gì làm gì",
+      "usage": "prevent somebody/something from + V-ing",
+      "example": "The rain prevented us from leaving.",
+      "translation": "Mưa khiến chúng tôi không thể rời đi.",
+      "family": "prevent (v); prevention (n); preventive (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Prevent something from becoming ... diễn tả giá của cuốn sách có thể ngăn nó trở thành bestseller.",
+      "aliases": [
+        "prevent somebody from",
+        "prevent something from"
+      ],
+      "question": 87,
+      "questions": [
+        87,
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "It was … that …",
+      "meta": "GRAMMAR PATTERN",
+      "meaning": "chính… là…; câu chẻ để nhấn mạnh",
+      "note": "Mẫu này tách một thành phần ra để làm nổi bật người, vật, thời điểm hoặc nơi chốn. Khi nhấn mạnh người, có thể dùng who thay that. Giữ đúng ý và thì của câu gốc; phần được nhấn mạnh đứng sau It is/was.",
+      "usage": "It is/was + phần nhấn mạnh + that + phần còn lại; It was + người + who…",
+      "family": "emphasis (n): sự nhấn mạnh; emphasize (v): nhấn mạnh; cleft sentence: câu chẻ",
+      "example": "It was the final example that helped me understand the rule.",
+      "translation": "Chính ví dụ cuối cùng đã giúp tôi hiểu quy tắc.",
+      "teacherSelected": true,
+      "questions": [
+        89
+      ],
+      "question": 89,
+      "aliases": []
+    },
+    {
+      "term": "make a name for oneself as",
+      "meta": "IDIOM",
+      "meaning": "gây dựng tên tuổi với tư cách là",
+      "note": "Cụm này nói về việc trở nên được biết đến nhờ năng lực hoặc thành tích. As giới thiệu vai trò, còn in giới thiệu lĩnh vực. Đại từ phản thân phải khớp chủ ngữ: herself, himself, themselves…",
+      "usage": "make a name for oneself as + nghề/vai trò; make a name for oneself in + lĩnh vực",
+      "family": "name (n): tên, danh tiếng; reputation (n): danh tiếng; renowned (adj): nổi tiếng",
+      "example": "She made a name for herself as a talented designer.",
+      "translation": "Cô ấy gây dựng tên tuổi với tư cách một nhà thiết kế tài năng.",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ],
+      "question": 92,
+      "aliases": []
+    },
+    {
+      "term": "make somebody do",
+      "meaning": "khiến hoặc bắt ai làm gì",
+      "usage": "make somebody + V; bị động be made to + V",
+      "example": "They made us wait outside.",
+      "translation": "Họ bắt chúng tôi chờ bên ngoài.",
+      "family": "make → made → made; chủ động không to, bị động có to",
+      "meta": "VERB PHRASE",
+      "note": "Make somebody do ở chủ động chuyển sang be made to do ở bị động, nên dùng I was often made to carry…",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put up with",
+      "meaning": "chịu đựng",
+      "usage": "put up with + danh từ/V-ing",
+      "example": "I cannot put up with this noise.",
+      "translation": "Tôi không thể chịu nổi tiếng ồn này.",
+      "family": "put → put → put; putting",
+      "meta": "VERB PHRASE",
+      "note": "Put up with something nghĩa là chịu đựng. Be not willing to put up with tương đương would no longer tolerate.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be willing to",
+      "meaning": "sẵn lòng làm gì",
+      "usage": "be willing to + V",
+      "example": "She is willing to help us.",
+      "translation": "Cô ấy sẵn lòng giúp chúng tôi.",
+      "family": "willing/unwilling (adj); willingness (n)",
+      "meta": "VERB PHRASE",
+      "note": "Put up with something nghĩa là chịu đựng. Be not willing to put up with tương đương would no longer tolerate.",
+      "aliases": [
+        "willing to"
+      ],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "afford",
+      "meaning": "có đủ tiền hoặc điều kiện để làm gì",
+      "usage": "can/could afford + danh từ/to V",
+      "example": "We cannot afford to buy a new car.",
+      "translation": "Chúng tôi không đủ tiền mua xe mới.",
+      "family": "afford (v); affordable (adj); affordability (n)",
+      "meta": "VERB",
+      "note": "Can afford this holiday giữ ý kỳ nghỉ nằm trong khả năng chi trả; as long as nêu điều kiện phải tránh các nhà hàng đắt tiền.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "as long as / so long as / provided / providing",
+      "meta": "CONJUNCTIONS",
+      "meaning": "miễn là; với điều kiện là",
+      "note": "Các từ nối này đặt ra điều kiện để việc khác được thực hiện. Provided và providing có thể thêm that. As long as còn có nghĩa chỉ thời gian là trong suốt khoảng thời gian; hãy xem câu đang nói về điều kiện hay độ dài thời gian.",
+      "usage": "as/so long as + S + V; provided/providing (that) + S + V",
+      "family": "condition (n): điều kiện; conditional (adj): có điều kiện; provide (v): cung cấp",
+      "example": "You may borrow the book as long as you return it on Friday.",
+      "translation": "Bạn có thể mượn sách miễn là trả lại vào thứ Sáu.",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ],
+      "question": 98,
+      "aliases": [
+        "as long as"
+      ]
+    },
+    {
+      "term": "have almost no chance of",
+      "meaning": "hầu như không có khả năng làm gì",
+      "usage": "have (almost) no chance of + V-ing",
+      "example": "We have almost no chance of winning.",
+      "translation": "Chúng tôi hầu như không có khả năng thắng.",
+      "family": "chance (n); chances (số nhiều)",
+      "meta": "VERB PHRASE",
+      "note": "Have almost no chance of + V-ing nghĩa là hầu như không có khả năng làm gì, tương đương very unlikely.",
+      "aliases": [
+        "have no chance of"
+      ],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"

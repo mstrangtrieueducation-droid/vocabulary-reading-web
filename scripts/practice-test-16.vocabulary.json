@@ -28,7 +28,8 @@
       "family": "practice (n/v); practical (adj); practicality (n)",
       "teacherSelected": true,
       "questions": [
-        5
+        5,
+        65
       ]
     },
     {
@@ -449,7 +450,77 @@
       "teacherSelected": true,
       "questions": [
         98
+      ],
+      "aliases": [
+        "Shed/throw/cast light on"
       ]
+    },
+    {
+      "term": "in all likelihood",
+      "meaning": "rất có thể",
+      "usage": "in all likelihood; in all probability",
+      "example": "In all likelihood, she will arrive tomorrow.",
+      "translation": "Rất có thể ngày mai cô ấy sẽ đến.",
+      "family": "likely (adj); likelihood (n); probable → probability",
+      "meta": "PHRASE",
+      "note": "In all likelihood/in all probability nghĩa là rất có thể, tương đương seems likely trong câu gốc. Sau cụm mở đầu cần một mệnh đề đầy đủ. Giữ mốc in the next century và không đổi khả năng thành chắc chắn; there will be a rise cũng tương đương temperature will rise.",
+      "aliases": [
+        "in all probability",
+        "in all probability/likelihood"
+      ],
+      "question": 87,
+      "questions": [
+        87
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have a word with",
+      "meaning": "nói chuyện ngắn với ai",
+      "usage": "have a word with somebody about something",
+      "example": "Could I have a word with you about the report?",
+      "translation": "Tôi có thể trao đổi với bạn một chút về báo cáo không?",
+      "family": "word (n); have → had",
+      "meta": "VERB PHRASE",
+      "note": "Have a word with somebody about something nghĩa là nói chuyện ngắn với ai về một việc. Tried to have giữ ý đã cố nói chuyện nhưng Jack quá bận.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "do somebody good",
+      "meaning": "có lợi cho ai",
+      "usage": "do somebody good",
+      "example": "A short break will do you good.",
+      "translation": "Nghỉ một lát sẽ có lợi cho bạn.",
+      "family": "do → did → done; good (n trong cụm này)",
+      "meta": "VERB PHRASE",
+      "note": "Do somebody good nghĩa là có lợi, giúp ai khỏe hơn/cảm thấy tốt hơn. A quiet holiday would do you good giữ ý giả định bạn sẽ cảm thấy dễ chịu hơn nếu nghỉ yên tĩnh.",
+      "aliases": [],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 100,
+      "term": "rule out",
+      "meta": "PHRASAL VERB",
+      "meaning": "loại trừ, bác bỏ khả năng",
+      "note": "Khi đã rule out một khả năng, người xem xét cho rằng nó không thể hoặc không đáng xét tiếp. Not rule out nghĩa là vẫn để ngỏ, chưa khẳng định nó đúng. Có thể dùng ở bị động.",
+      "usage": "rule out a possibility; be ruled out",
+      "example": "The investigators have not ruled out an accident.",
+      "translation": "Điều tra viên chưa loại trừ khả năng tai nạn.",
+      "family": "rule (n/v); ruled (V2/V3); exclusion (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ],
+      "aliases": []
     }
   ]
 }

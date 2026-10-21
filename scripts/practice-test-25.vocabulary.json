@@ -313,7 +313,8 @@
       "family": "affect (v); affected (participle); effect (n/v, đối chiếu)",
       "teacherSelected": true,
       "questions": [
-        30
+        30,
+        46
       ]
     },
     {
@@ -358,7 +359,8 @@
       "family": "expert (n/adj); expertly (adv); expertise (n); expertness (n, ít thông dụng)",
       "teacherSelected": true,
       "questions": [
-        37
+        37,
+        38
       ]
     },
     {
@@ -450,6 +452,273 @@
       "questions": [
         60
       ]
+    },
+    {
+      "question": 7,
+      "term": "must have + V3",
+      "meta": "GRAMMAR PHRASE",
+      "meaning": "hẳn đã; chắc đã",
+      "note": "Dùng khi suy luận chắc chắn về quá khứ dựa trên dấu hiệu. Khác had to là đã phải làm vì nghĩa vụ; must have không tự xác nhận sự việc đã được chứng kiến.",
+      "usage": "must have lost/forgotten/lacked",
+      "example": "She must have left before noon.",
+      "translation": "Hẳn cô ấy đã rời đi trước buổi trưa.",
+      "family": "must (modal); deduction (n); deduce (v)",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ],
+      "aliases": []
+    },
+    {
+      "question": 50,
+      "term": "take responsibility for",
+      "meta": "verb phrase",
+      "meaning": "nhận trách nhiệm về",
+      "note": "Nhấn mạnh việc nhận phần việc hoặc nhận trách nhiệm với kết quả mình gây ra. Trong câu, nhân vật thừa nhận sai sót là của mình.",
+      "usage": "take responsibility for + N/V-ing; be responsible for",
+      "family": "responsibility (n); responsible (adj); responsibly (adv)",
+      "example": "He took responsibility for the mistake.",
+      "translation": "Anh ấy nhận trách nhiệm về sai sót đó.",
+      "teacherSelected": true,
+      "questions": [
+        50
+      ],
+      "aliases": []
+    },
+    {
+      "term": "lack of",
+      "meaning": "sự thiếu hụt",
+      "usage": "a lack of something; lack something",
+      "example": "The project failed through lack of funding.",
+      "translation": "Dự án thất bại do thiếu kinh phí.",
+      "family": "lack (n/v); lacking (adj); động từ lack không cần of",
+      "meta": "PHRASE",
+      "note": "A serious lack of facilities là sự thiếu hụt nghiêm trọng các tiện nghi. Necessary là cần thiết, anxious/worried mô tả lo âu, không chỉ mức độ thiếu. Số người chen chúc và nhà vệ sinh không đủ làm rõ serious.",
+      "aliases": [],
+      "question": 58,
+      "questions": [
+        58
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "make a difference",
+      "meaning": "tạo sự khác biệt, có tác động",
+      "usage": "make a difference to somebody/something",
+      "example": "Your help makes a big difference to us.",
+      "translation": "Sự giúp đỡ của bạn có tác động lớn với chúng tôi.",
+      "family": "differ (v); difference (n); different (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Make no difference to somebody nghĩa là không có ý nghĩa/ảnh hưởng đáng kể đối với người đó. Câu diễn đạt thái độ không quan tâm của I do not care. Whether ... or not hoặc whether or not đều được; me phải giữ đúng người nói.",
+      "aliases": [
+        "make little difference",
+        "make no difference",
+        "Make no difference"
+      ],
+      "question": 83,
+      "questions": [
+        83
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be on the point of / be about to",
+      "meta": "verb phrases",
+      "meaning": "sắp sửa, ngay trước lúc làm gì",
+      "note": "Hai mẫu đều nói việc sắp xảy ra ngay. Cấu trúc khác nhau: on the point of + V-ing, about to + động từ nguyên mẫu. Khi một việc khác xen vào, thường nối bằng when.",
+      "usage": "be on the point of leaving; be about to leave; was about to do when something happened.",
+      "family": "point (n), about (trong cụm cố định). Đây là mẫu cấu trúc, không thay of bằng to rồi giữ V-ing.",
+      "example": "I was on the point of leaving when the phone rang.",
+      "translation": "Tôi đang sắp rời đi thì điện thoại reo.",
+      "aliases": [
+        "be on the point of doing st",
+        "be about to do st",
+        "Be on the point of doing",
+        "be about to do"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        84
+      ],
+      "question": 84
+    },
+    {
+      "term": "in all likelihood",
+      "meaning": "rất có thể",
+      "usage": "in all likelihood; in all probability",
+      "example": "In all likelihood, she will arrive tomorrow.",
+      "translation": "Rất có thể ngày mai cô ấy sẽ đến.",
+      "family": "likely (adj); likelihood (n); probable → probability",
+      "meta": "PHRASE",
+      "note": "In all probability/likelihood tương đương probably, nghĩa là rất có thể. Giữ you will experience a range of emotions rồi nối với throughout your life đã cho. Không bỏ a range of vì câu nói nhiều loại cảm xúc, không chỉ một cảm xúc đơn lẻ.",
+      "aliases": [
+        "in all probability",
+        "in all probability/likelihood",
+        "In all probability/likelihood"
+      ],
+      "question": 89,
+      "questions": [
+        89
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 92,
+      "term": "fall on deaf ears",
+      "meta": "IDIOM",
+      "meaning": "bị bỏ ngoài tai, không được hưởng ứng",
+      "note": "Chủ ngữ thường là lời khuyên, lời cảnh báo hoặc đề nghị. Thành ngữ nói người nghe không phản hồi hoặc không làm theo, không mô tả khả năng thính giác thật.",
+      "usage": "warnings fall on deaf ears",
+      "example": "Her warnings fell on deaf ears.",
+      "translation": "Những lời cảnh báo của cô ấy bị bỏ ngoài tai.",
+      "family": "fall–fell–fallen; deaf (adj); ear (n)",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ],
+      "aliases": []
+    },
+    {
+      "term": "hand in one’s resignation",
+      "meaning": "nộp đơn xin nghỉ việc",
+      "usage": "hand in one’s resignation",
+      "example": "She handed in her resignation on Monday.",
+      "translation": "Cô ấy nộp đơn nghỉ việc vào thứ Hai.",
+      "family": "resign (v); resignation (n)",
+      "meta": "VERB PHRASE",
+      "note": "Hand in one's resignation nghĩa là nộp đơn xin từ chức. Was asked to giữ câu bị động anh ấy được yêu cầu làm việc đó; không đổi thành he handed in vì sẽ khẳng định đã nộp, trong khi câu gốc mới nói yêu cầu.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have no recollection of",
+      "meaning": "không nhớ về việc gì",
+      "usage": "have no recollection of + danh từ/V-ing",
+      "example": "I have no recollection of meeting him.",
+      "translation": "Tôi không nhớ đã từng gặp anh ấy.",
+      "family": "recollect (v); recollection (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have no recollection of doing something nghĩa là không nhớ đã làm gì. Of là giới từ, nên theo sau bằng meeting.",
+      "aliases": [
+        "have a recollection of"
+      ],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "get on somebody’s nerves",
+      "meaning": "làm ai bực mình",
+      "usage": "get on somebody’s nerves",
+      "example": "That noise is getting on my nerves.",
+      "translation": "Tiếng ồn đó đang làm tôi bực mình.",
+      "family": "nerve (n); nerves (số nhiều trong cụm)",
+      "meta": "VERB PHRASE",
+      "note": "Get on somebody's nerves nghĩa là khiến người đó bực bội, phù hợp makes me really uptight. Chủ ngữ it số ít nên dùng gets; my giữ đúng người khó chịu.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be subject to",
+      "meaning": "có thể chịu sự thay đổi/chi phối",
+      "usage": "be subject to change/approval",
+      "example": "The timetable is subject to change.",
+      "translation": "Thời khóa biểu có thể thay đổi.",
+      "family": "subject (adj trong cụm này); change (n/v)",
+      "meta": "VERB PHRASE",
+      "note": "Be subject to change/alteration nghĩa là có thể bị thay đổi. Trong câu, lịch phà phụ thuộc thời tiết nên không cố định hoàn toàn.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "stand to reason",
+      "meaning": "là điều hợp lý, hiển nhiên",
+      "usage": "it stands to reason that + mệnh đề",
+      "example": "It stands to reason that more practice helps.",
+      "translation": "Rõ ràng luyện tập nhiều hơn sẽ có ích.",
+      "family": "reason (n/v); reasonable (adj); stand → stood",
+      "meta": "VERB PHRASE",
+      "note": "It stands to reason that … nghĩa là có cơ sở hợp lý để cho rằng. With the increasing popularity … nêu căn cứ cho dự đoán.",
+      "aliases": [
+        "it stands to reason",
+        "It stands to reason"
+      ],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "work out",
+      "meaning": "tìm ra, tính ra; tập thể dục",
+      "usage": "work out an answer/a solution",
+      "example": "We finally worked out the answer.",
+      "translation": "Cuối cùng chúng tôi tìm ra câu trả lời.",
+      "family": "work (v/n); worked; workout (n, buổi tập)",
+      "meta": "VERB PHRASE",
+      "note": "Work out/figure out the answers to problems nghĩa là tìm ra lời giải; work out/figure out problems cũng được dùng. Help users phải giữ để không biến thành phần mềm tự giải mọi việc.",
+      "aliases": [
+        "work out/figure out",
+        "Work out/figure out"
+      ],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take account of",
+      "meaning": "tính đến, xem xét",
+      "usage": "take (proper/full) account of something",
+      "example": "The plan takes account of local needs.",
+      "translation": "Kế hoạch có tính đến nhu cầu địa phương.",
+      "family": "account (n); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Take proper account of hoặc take something properly/fully into account là xem xét đầy đủ, đúng mức. Due consideration nói sự cân nhắc thích đáng, nên thêm proper/properly/fully để giữ sắc thái này.",
+      "aliases": [
+        "take proper account of",
+        "Take proper account of"
+      ],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "set the record straight",
+      "meaning": "đính chính, làm rõ sự thật",
+      "usage": "set/put the record straight",
+      "example": "She spoke out to set the record straight.",
+      "translation": "Cô ấy lên tiếng để đính chính sự thật.",
+      "family": "record (n/v); set → set → set",
+      "meta": "VERB PHRASE",
+      "note": "Set/put the record straight nghĩa là làm rõ sự thật, đính chính hiểu lầm. To mở mục đích viết cho báo chí và phủ nhận liên quan.",
+      "aliases": [
+        "set/put the record straight",
+        "Set/put the record straight"
+      ],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ]
 }

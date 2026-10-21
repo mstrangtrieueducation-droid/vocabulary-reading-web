@@ -208,7 +208,8 @@
       "family": "earth (n): đất; unearthed (V2/V3); discovery (n)",
       "teacherSelected": true,
       "questions": [
-        32
+        32,
+        37
       ]
     },
     {
@@ -419,6 +420,9 @@
       "teacherSelected": true,
       "questions": [
         87
+      ],
+      "aliases": [
+        "Go into detail/details about"
       ]
     },
     {
@@ -450,6 +454,137 @@
       "questions": [
         100
       ]
+    },
+    {
+      "term": "attribute",
+      "meaning": "cho rằng kết quả là do nguyên nhân nào",
+      "usage": "attribute A to B",
+      "example": "She attributed her success to hard work.",
+      "translation": "Cô ấy cho rằng thành công của mình là nhờ chăm chỉ.",
+      "family": "attribute (v); attribution (n)",
+      "meta": "VERB",
+      "note": "Attribute one’s success to something = cho rằng thành công có được nhờ điều gì. The company là chủ ngữ số ít nên attributes phù hợp. Các lựa chọn còn lại sai kết hợp từ hoặc không tạo vị ngữ hoàn chỉnh.",
+      "aliases": [],
+      "question": 13,
+      "questions": [
+        13
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "by accident",
+      "meaning": "vô tình, không cố ý",
+      "usage": "do something by accident",
+      "example": "I broke the cup by accident.",
+      "translation": "Tôi vô tình làm vỡ chiếc cốc.",
+      "family": "accident (n); accidental (adj); accidentally (adv)",
+      "meta": "PHRASE",
+      "note": "By accident = vô tình, không cố ý. Người nói mất tập trung nên cho nhầm muối vào cà phê. Cụm đối lập là on purpose = cố ý; không ghép on/in/with accident trong câu này.",
+      "aliases": [],
+      "question": 20,
+      "questions": [
+        20
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 23,
+      "term": "give off",
+      "meta": "phrasal verb",
+      "meaning": "tỏa ra mùi, nhiệt hoặc ánh sáng",
+      "note": "Give off a smell nghĩa là tỏa ra mùi. It’s giving off cho biết hóa chất đang phát mùi khó chịu; give up là từ bỏ và các cụm còn lại không diễn đạt sự phát mùi.",
+      "usage": "give off heat/light/a smell",
+      "family": "give up: từ bỏ; give out: phát ra/phân phát",
+      "example": "The flowers give off a sweet scent.",
+      "translation": "Hoa tỏa hương thơm ngọt.",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ],
+      "aliases": []
+    },
+    {
+      "question": 38,
+      "term": "long-standing",
+      "meta": "ADJECTIVE",
+      "meaning": "đã có hoặc tồn tại từ lâu",
+      "note": "Nói một thói quen, mối quan hệ hay vấn đề đã được duy trì nhiều năm. Long-range lại nói tầm xa/dài hạn trong kế hoạch; không thay thế nhau tự động.",
+      "usage": "a long-standing arrangement/tradition/problem",
+      "example": "They have a long-standing friendship.",
+      "translation": "Họ có một tình bạn lâu năm.",
+      "family": "standing (n/adj); established (adj); long-term (adj)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ],
+      "aliases": []
+    },
+    {
+      "question": 48,
+      "term": "resort to",
+      "meta": "verb phrase",
+      "meaning": "dùng đến như giải pháp cuối cùng",
+      "note": "Resort to violence nghĩa là dùng đến bạo lực như một giải pháp cuối cùng. To ở đây là giới từ; resist là chống lại, refuse là từ chối và resolve là giải quyết/quyết tâm.",
+      "usage": "resort to force; resort to doing something",
+      "family": "a last resort (n: giải pháp cuối); resolve (v: giải quyết)",
+      "example": "They resolved the dispute without resorting to threats.",
+      "translation": "Họ giải quyết bất đồng mà không phải đe dọa.",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ],
+      "aliases": []
+    },
+    {
+      "question": 86,
+      "term": "must have + V3",
+      "meta": "GRAMMAR PHRASE",
+      "meaning": "hẳn đã; chắc đã",
+      "note": "Dùng khi suy luận chắc chắn về quá khứ dựa trên dấu hiệu. Khác had to là đã phải làm vì nghĩa vụ; must have không tự xác nhận sự việc đã được chứng kiến.",
+      "usage": "must have lost/forgotten/lacked",
+      "example": "She must have left before noon.",
+      "translation": "Hẳn cô ấy đã rời đi trước buổi trưa.",
+      "family": "must (modal); deduction (n); deduce (v)",
+      "teacherSelected": true,
+      "questions": [
+        86
+      ],
+      "aliases": []
+    },
+    {
+      "term": "put down to",
+      "meaning": "cho rằng điều gì là do nguyên nhân nào",
+      "usage": "put A down to B",
+      "example": "He put his mistake down to tiredness.",
+      "translation": "Anh ấy cho rằng sai lầm của mình là do mệt mỏi.",
+      "family": "put → put → put",
+      "meta": "VERB PHRASE",
+      "note": "Put something down to something = quy một kết quả cho nguyên nhân. Chuyển sang bị động với Sue’s success: is put down to.",
+      "aliases": [
+        "put A down to B",
+        "put something down to something"
+      ],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "remain impartial",
+      "meaning": "giữ thái độ công bằng, không thiên vị",
+      "usage": "remain impartial",
+      "example": "A judge must remain impartial.",
+      "translation": "Thẩm phán phải giữ thái độ không thiên vị.",
+      "family": "partial/impartial (adj); impartiality (n)",
+      "meta": "PHRASE",
+      "note": "Remain impartial = giữ trung lập, không đứng về bên nào. Try not to take sides in/try to avoid taking sides in đều giữ từ SIDES và ý câu.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
     }
   ]
 }

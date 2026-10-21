@@ -104,6 +104,9 @@
       "teacherSelected": true,
       "questions": [
         17
+      ],
+      "aliases": [
+        "Commit something to memory"
       ]
     },
     {
@@ -450,6 +453,243 @@
       "questions": [
         96
       ]
+    },
+    {
+      "question": 7,
+      "term": "but for",
+      "meta": "PHRASE",
+      "meaning": "nếu không có; nếu không nhờ",
+      "note": "Nêu điều kiện giả định bằng danh từ sau for. Thường dùng khi nhờ một người/vật mà tình huống xấu đã không xảy ra; không theo trực tiếp bằng một mệnh đề đầy đủ.",
+      "usage": "but for + noun, S + would have + V3",
+      "example": "But for your advice, I would have made a costly mistake.",
+      "translation": "Nếu không nhờ lời khuyên của bạn, tôi đã mắc sai lầm tốn kém.",
+      "family": "without; if it had not been for",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ],
+      "aliases": []
+    },
+    {
+      "term": "take into account",
+      "meaning": "tính đến, cân nhắc",
+      "usage": "take something into account/consideration",
+      "example": "We must take the cost into account.",
+      "translation": "Chúng ta phải tính đến chi phí.",
+      "family": "account/consideration (n); consider (v); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Take into consideration nghĩa là cân nhắc, tính đến một yếu tố trước khi nhận xét. Câu nói phải xét việc chỉ ít vận động viên đạt danh tiếng lâu dài. Attention đi với pay attention to, không tạo take into attention.",
+      "aliases": [
+        "take something into account",
+        "take something into consideration",
+        "take something into account/consideration",
+        "Take into consideration"
+      ],
+      "question": 51,
+      "questions": [
+        51
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be worth",
+      "meaning": "đáng để làm gì",
+      "usage": "be worth + danh từ/V-ing",
+      "example": "This book is worth reading.",
+      "translation": "Cuốn sách này đáng đọc.",
+      "family": "worth (adj); worthwhile (adj); worth không đi với to V",
+      "meta": "VERB PHRASE",
+      "note": "Be worth its weight in gold là có giá trị rất lớn. Sau was said to dùng nguyên mẫu be, không dùng is/was. Worth là tính từ nên không đứng một mình như động từ sau to trong cấu trúc này.",
+      "aliases": [],
+      "question": 63,
+      "questions": [
+        63
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 74,
+      "term": "pick up signals",
+      "meta": "VERB PHRASE",
+      "meaning": "nhận ra hoặc nắm bắt tín hiệu",
+      "note": "Có thể là tín hiệu cảm xúc/cử chỉ hoặc tín hiệu điện tử tùy ngữ cảnh. Trong bài là nhận biết người khác muốn nói gì; việc nhận ra vẫn có thể sai nên cần xét hoàn cảnh.",
+      "usage": "pick up on a signal; pick up signals from someone",
+      "example": "She picked up signals that the guest wanted to leave.",
+      "translation": "Cô ấy nhận ra vài dấu hiệu cho thấy vị khách muốn ra về.",
+      "family": "signal (n/v); perception (n); perceive (v)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ],
+      "aliases": []
+    },
+    {
+      "term": "at somebody’s request",
+      "meaning": "theo yêu cầu của ai",
+      "usage": "at somebody’s request; at the request of somebody",
+      "example": "The meeting was postponed at her request.",
+      "translation": "Cuộc họp được hoãn theo yêu cầu của cô ấy.",
+      "family": "request (n/v); requested",
+      "meta": "PHRASE",
+      "note": "At somebody’s request nghĩa là theo yêu cầu của ai. Câu chẻ It is at…that… nhấn người yêu cầu viết thư. Trong ngữ cảnh lá thư hiện tại, am writing tự nhiên; wrote cũng được chấp nhận nếu đang nhắc hành động viết đã hoàn tất.",
+      "aliases": [],
+      "question": 81,
+      "questions": [
+        81
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "make no claim to",
+      "meaning": "không tự nhận mình có phẩm chất gì",
+      "usage": "make no claim to + danh từ/V-ing",
+      "example": "I make no claim to being an expert.",
+      "translation": "Tôi không tự nhận mình là chuyên gia.",
+      "family": "claim (n/v); claimant (n)",
+      "meta": "VERB PHRASE",
+      "note": "Make no claim to… hoặc make no pretence/pretense of… diễn đạt không tự nhận có tài năng. Pretence là cách viết Anh, pretense là cách viết Mỹ. Nếu dùng of, theo sau bằng having, không phải have.",
+      "aliases": [],
+      "question": 82,
+      "questions": [
+        82
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "flatly refuse",
+      "meaning": "kiên quyết từ chối",
+      "usage": "flatly refuse to + V",
+      "example": "He flatly refused to sign.",
+      "translation": "Anh ấy kiên quyết từ chối ký.",
+      "family": "refuse (v); refusal (n); flatly (adv)",
+      "meta": "PHRASE",
+      "note": "Flatly refuse to do something là kiên quyết từ chối làm gì, tương đương khẳng định không gì thuyết phục được mình làm. Câu tường thuật quá khứ dùng refused; sau refused là to sleep, không phải sleeping.",
+      "aliases": [],
+      "question": 83,
+      "questions": [
+        83
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "lacking in",
+      "meaning": "thiếu một phẩm chất",
+      "usage": "be lacking in something",
+      "example": "The explanation was lacking in clarity.",
+      "translation": "Lời giải thích thiếu rõ ràng.",
+      "family": "lack (n/v); lacking (adj); clear → clarity",
+      "meta": "PHRASE",
+      "note": "Lacking in clarity nghĩa là thiếu rõ ràng, tương đương unclear. In places nói chỉ ở một số chỗ, không phải toàn bộ báo cáo. Rather/somewhat giữ mức độ tương đối của câu gốc; dùng câu trực tiếp rather unclear cũng đúng.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "mistake A for B",
+      "meaning": "nhầm A thành B",
+      "usage": "mistake somebody/something for somebody/something",
+      "example": "I mistook him for his brother.",
+      "translation": "Tôi nhầm anh ấy với anh trai của anh ấy.",
+      "family": "mistake → mistook → mistaken",
+      "meta": "PHRASE",
+      "note": "Mistake A for B là nhầm A thành B. Quá khứ mistook đã có trong câu, nên điền you for somebody/someone else. Không dùng mistake with hoặc thay you bằng người khác vì sẽ đảo đối tượng bị nhận nhầm.",
+      "aliases": [],
+      "question": 87,
+      "questions": [
+        87
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come down to",
+      "meaning": "rốt cuộc phụ thuộc vào, quy về",
+      "usage": "come down to something",
+      "example": "The choice comes down to cost.",
+      "translation": "Rốt cuộc việc lựa chọn phụ thuộc vào chi phí.",
+      "family": "come → came → come",
+      "meta": "VERB PHRASE",
+      "note": "Come down to something nghĩa là rốt cuộc điều quyết định nằm ở đó. It all comes down to money tương đương tiền là điều duy nhất thật sự quan trọng. Comes đã có trước ô nên không lặp lại động từ.",
+      "aliases": [],
+      "question": 88,
+      "questions": [
+        88
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "rack one’s brains",
+      "meaning": "vắt óc suy nghĩ",
+      "usage": "rack one’s brain/brains",
+      "example": "I racked my brains for an answer.",
+      "translation": "Tôi vắt óc tìm câu trả lời.",
+      "family": "rack (v); racked; racking; brain/brains (n)",
+      "meta": "VERB PHRASE",
+      "note": "Rack one’s brain/brains là vắt óc suy nghĩ; cả số ít và số nhiều đều dùng được. Phải giữ ý vẫn không nhớ ra, bằng couldn’t manage hoặc in vain trying.",
+      "aliases": [
+        "rack one’s brain/brains",
+        "rack one’s brain",
+        "Rack one’s brain/brains"
+      ],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "fall for",
+      "meaning": "mắc lừa; bị cuốn hút",
+      "usage": "fall for a trick; fall for somebody",
+      "example": "Do not fall for that trick.",
+      "translation": "Đừng mắc mưu đó.",
+      "family": "fall → fell → fallen",
+      "meta": "PHRASE",
+      "note": "Fall for a trick là bị lừa bởi một mánh khóe. Quá khứ fell giữ thời của was taken in.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put somebody at ease",
+      "meaning": "khiến ai cảm thấy thoải mái",
+      "usage": "put somebody at ease; make somebody feel at ease",
+      "example": "Her smile put me at ease.",
+      "translation": "Nụ cười của cô ấy khiến tôi thấy thoải mái.",
+      "family": "ease (n/v); easy/uneasy (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Put somebody at ease hoặc make somebody feel at ease là khiến ai thoải mái. With/through/because of nối cảm giác đó với sự tiếp đón nồng hậu.",
+      "aliases": [
+        "make somebody feel at ease"
+      ],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come to the conclusion",
+      "meaning": "đi đến kết luận",
+      "usage": "come to the conclusion that + mệnh đề",
+      "example": "We came to the conclusion that the plan was too costly.",
+      "translation": "Chúng tôi đi đến kết luận rằng kế hoạch quá tốn kém.",
+      "family": "conclude (v); conclusion (n); conclusive (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Come to the conclusion that… nghĩa là đi đến kết luận rằng. Quá khứ của come là came, giữ nguyên từ khóa.",
+      "aliases": [
+        "come to/arrive at/reach the conclusion"
+      ],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ]
 }

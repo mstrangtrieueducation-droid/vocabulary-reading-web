@@ -450,6 +450,157 @@
       "questions": [
         97
       ]
+    },
+    {
+      "term": "have difficulty",
+      "meaning": "gặp khó khăn",
+      "usage": "have difficulty (in) + V-ing",
+      "example": "I have difficulty remembering names.",
+      "translation": "Tôi gặp khó khăn khi nhớ tên người khác.",
+      "family": "difficult (adj); difficulty/difficulties (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have difficulty + V-ing là cấu trúc gặp khó khăn khi làm gì. No difficulty passing the exam nghĩa là không gặp khó khăn trong việc thi đỗ. Không dùng to pass sau difficulty trong mẫu này, cũng không cần of trước passing.",
+      "aliases": [],
+      "question": 16,
+      "questions": [
+        16
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be taken aback",
+      "meaning": "bất ngờ, sửng sốt",
+      "usage": "be taken aback by/at something",
+      "example": "I was taken aback by her reaction.",
+      "translation": "Tôi sửng sốt trước phản ứng của cô ấy.",
+      "family": "take → took → taken; aback dùng trong cụm này",
+      "meta": "VERB PHRASE",
+      "note": "Be taken aback by something nghĩa là bị ngạc nhiên, sửng sốt trước việc gì. Lời nói quá thẳng của Michael khiến người khác bất ngờ nên chọn taken aback. Taken in là bị lừa; taken apart là tháo rời/phê bình; taken off không có nghĩa này.",
+      "aliases": [
+        "taken aback"
+      ],
+      "question": 25,
+      "questions": [
+        25
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "call for",
+      "meta": "phrasal verb",
+      "meaning": "đòi hỏi; kêu gọi",
+      "note": "Call for patience = đòi hỏi sự kiên nhẫn. Call for change = kêu gọi thay đổi. Không dịch là gọi điện nếu chủ ngữ là công việc hoặc tình huống cần một điều kiện. Trong nghĩa “đòi hỏi”, call for gần nghĩa require: this job calls for patience = this job requires patience.",
+      "usage": "a job calls for patience/skill; call for action/a change; require something gần nghĩa ở nghĩa đòi hỏi.",
+      "family": "call (n/v); called/calling (dạng động từ). For là phần cần giữ trong cụm.",
+      "example": "Teaching young children calls for patience and careful preparation.",
+      "translation": "Dạy trẻ nhỏ đòi hỏi sự kiên nhẫn và chuẩn bị kỹ.",
+      "aliases": [
+        "require"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        53
+      ],
+      "question": 53
+    },
+    {
+      "term": "make oneself understood",
+      "meaning": "diễn đạt để người khác hiểu mình",
+      "usage": "make oneself understood",
+      "example": "He could make himself understood in French.",
+      "translation": "Anh ấy có thể diễn đạt bằng tiếng Pháp để người khác hiểu.",
+      "family": "understand → understood → understood",
+      "meta": "VERB PHRASE",
+      "note": "Make oneself understood nghĩa là diễn đạt để người khác hiểu mình. Dùng himself vì chủ ngữ Tom là nam số ít; understood là quá khứ phân từ với nghĩa được hiểu. Không viết make himself understand vì sẽ chuyển sang việc Tom tự hiểu.",
+      "aliases": [],
+      "question": 81,
+      "questions": [
+        81
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be responsible for",
+      "meaning": "chịu trách nhiệm, là nguyên nhân của",
+      "usage": "be responsible for + danh từ/V-ing",
+      "example": "She is responsible for organising the event.",
+      "translation": "Cô ấy chịu trách nhiệm tổ chức sự kiện.",
+      "family": "responsible (adj); responsibility (n); responsibly (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Have caused được đổi sang be responsible for/be to blame for/the cause of để giữ quan hệ nguyên nhân. Sau for cần cụm danh từ chỉ hậu quả. Ngữ cảnh là thị trấn giả định trong đề; không biến câu thành kết luận về mọi vấn đề của một địa điểm có thật.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be to blame for",
+      "meaning": "có lỗi, phải chịu trách nhiệm về",
+      "usage": "be to blame for something",
+      "example": "Who is to blame for the mistake?",
+      "translation": "Ai có lỗi trong sai sót này?",
+      "family": "blame (n/v); blameworthy (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Have caused được đổi sang be responsible for/be to blame for/the cause of để giữ quan hệ nguyên nhân. Sau for cần cụm danh từ chỉ hậu quả. Ngữ cảnh là thị trấn giả định trong đề; không biến câu thành kết luận về mọi vấn đề của một địa điểm có thật.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 90,
+      "term": "forget to do",
+      "meta": "VERB PATTERN",
+      "meaning": "quên thực hiện một việc",
+      "note": "Forget to do something là quên thực hiện một việc; lá thư vẫn trên bàn cho thấy việc gửi chưa xảy ra. Forget doing something là không nhớ một việc đã làm, không phù hợp. Sau forgot không dùng posted hoặc post đứng một mình.",
+      "usage": "forget to post/check/bring",
+      "example": "I forgot to post the letter.",
+      "translation": "Tôi quên gửi lá thư.",
+      "family": "forget – forgot – forgotten; forgetful (adj)",
+      "teacherSelected": true,
+      "questions": [
+        90
+      ],
+      "aliases": []
+    },
+    {
+      "term": "contrary to",
+      "meaning": "trái với",
+      "usage": "contrary to + danh từ/mệnh đề danh từ",
+      "example": "Contrary to expectations, sales increased.",
+      "translation": "Trái với dự đoán, doanh số đã tăng.",
+      "family": "contrary (adj); on the contrary dùng để bác bỏ ý trước",
+      "meta": "PHRASE",
+      "note": "Contrary to + danh từ nghĩa là trái với. Dùng its harmless appearance để đối chiếu vẻ bề ngoài vô hại với thực tế nguy hiểm, giữ ý nhượng bộ của although.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "to the best of my knowledge",
+      "meaning": "theo những gì tôi biết",
+      "usage": "to my knowledge; to the best of my knowledge",
+      "example": "To the best of my knowledge, the shop is closed.",
+      "translation": "Theo những gì tôi biết, cửa hàng đã đóng cửa.",
+      "family": "know (v); knowledge (n); knowledgeable (adj)",
+      "meta": "PHRASE",
+      "note": "To my knowledge/to the best of my knowledge nghĩa là theo những gì tôi biết, tương đương as far as I know. Cần giữ still để thể hiện việc tiếp tục làm ở Bristol.",
+      "aliases": [
+        "to my knowledge",
+        "To my knowledge"
+      ],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ]
 }

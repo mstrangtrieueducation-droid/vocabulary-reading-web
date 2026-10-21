@@ -29,6 +29,9 @@
       "teacherSelected": true,
       "questions": [
         10
+      ],
+      "aliases": [
+        "Result from"
       ]
     },
     {
@@ -43,7 +46,8 @@
       "family": "imagine (v); imagination (n); imaginary/imaginative (adj)",
       "teacherSelected": true,
       "questions": [
-        11
+        11,
+        32
       ]
     },
     {
@@ -450,6 +454,115 @@
       "questions": [
         100
       ]
+    },
+    {
+      "term": "economise on / economize on",
+      "meta": "verb phrase",
+      "meaning": "tiết kiệm, giảm chi tiêu hoặc mức sử dụng",
+      "note": "Cụm này nhấn mạnh dùng ít hơn để tiết kiệm tiền hoặc nguồn lực. Giữ on trước thứ cần tiết kiệm. Economical là tiết kiệm; economic là thuộc kinh tế, không thay thế máy móc.",
+      "usage": "economise on fuel/food/expenses; an economical method = cách tiết kiệm; economic growth = tăng trưởng kinh tế.",
+      "family": "economise/economize (v); economy (n); economical (adj); economically (adv).",
+      "example": "We can economise on electricity by switching off unused lights.",
+      "translation": "Chúng ta có thể tiết kiệm điện bằng cách tắt đèn không dùng.",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ],
+      "question": 35,
+      "aliases": [
+        "economise on"
+      ]
+    },
+    {
+      "term": "in case",
+      "meaning": "phòng khi, đề phòng khả năng",
+      "usage": "in case + mệnh đề",
+      "example": "Take an umbrella in case it rains.",
+      "translation": "Hãy mang ô phòng khi trời mưa.",
+      "family": "case (n); in case of + danh từ",
+      "meta": "PHRASE",
+      "note": "In case + mệnh đề diễn tả phòng trường hợp có thể xảy ra. Câu kể quá khứ nên dùng I ran out of cash.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 93,
+      "term": "talk somebody into / out of",
+      "meta": "verb phrases",
+      "meaning": "thuyết phục ai làm / không làm",
+      "note": "Should not have + V3 phê bình việc đã làm. Talk somebody into doing something là thuyết phục ai làm; câu nói đáng lẽ không nên thuyết phục tham gia, không đồng nghĩa phải chủ động khuyên rút lui.",
+      "usage": "talk somebody into/out of + V-ing",
+      "family": "persuade (v); persuasion (n); chú ý nghĩa đối lập",
+      "example": "She talked me into joining the workshop.",
+      "translation": "Cô ấy thuyết phục tôi tham gia buổi học.",
+      "questions": [
+        93
+      ],
+      "aliases": [
+        "out of"
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "make one’s getaway",
+      "meaning": "tẩu thoát",
+      "usage": "make one’s getaway",
+      "example": "The thief made his getaway on a bike.",
+      "translation": "Tên trộm tẩu thoát bằng xe đạp.",
+      "family": "getaway (n); make → made",
+      "meta": "VERB PHRASE",
+      "note": "Make one’s getaway nghĩa là trốn thoát. Sau may dùng have + V3 để suy đoán về quá khứ, nên may have made their getaway.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take into account",
+      "meaning": "tính đến, cân nhắc",
+      "usage": "take something into account/consideration",
+      "example": "We must take the cost into account.",
+      "translation": "Chúng ta phải tính đến chi phí.",
+      "family": "account/consideration (n); consider (v); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Take something into account/consideration = cân nhắc điều gì. Đưa wishes lên làm chủ ngữ thì dùng to be taken, giữ rarely seem và tác nhân town council.",
+      "aliases": [
+        "take something into account",
+        "take something into consideration",
+        "take something into account/consideration",
+        "Take something into account/consideration"
+      ],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put the blame on",
+      "meaning": "quy trách nhiệm, đổ lỗi cho ai",
+      "usage": "put the blame on somebody for something",
+      "example": "Do not put the blame on me for the delay.",
+      "translation": "Đừng đổ lỗi cho tôi về sự chậm trễ.",
+      "family": "blame (n/v); blameworthy (adj); blameless (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Place the blame on somebody for something/V-ing = đổ trách nhiệm cho ai về điều gì. Câu gốc đã nói rõ mẹ trách Carrie, nên không được đổi thành người mẹ tự nhận lỗi.",
+      "aliases": [
+        "place the blame on",
+        "place the blame for",
+        "Place the blame on"
+      ],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
     }
   ]
 }

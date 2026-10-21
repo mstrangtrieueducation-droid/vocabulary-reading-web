@@ -450,6 +450,274 @@
       "questions": [
         95
       ]
+    },
+    {
+      "term": "have an effect on",
+      "meaning": "có tác động đến",
+      "usage": "have an effect on somebody/something",
+      "example": "The weather has an effect on our mood.",
+      "translation": "Thời tiết có tác động đến tâm trạng của chúng ta.",
+      "family": "effect (n); affect (v); effective (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Have an effect on/upon somebody/something là có ảnh hưởng đến. Câu nói thời gian xem ảnh hưởng hành vi và thái độ của trẻ. On thông dụng hơn, upon cũng đúng; không dùng to trong cụm này.",
+      "aliases": [],
+      "question": 69,
+      "questions": [
+        69
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 76,
+      "term": "participate in",
+      "meta": "verb phrase",
+      "meaning": "tham gia vào",
+      "note": "Participate in nhấn mạnh việc trực tiếp góp mặt hoặc đóng góp vào một hoạt động. Trong bài, người dân tham gia quá trình nghiên cứu, chứ không chỉ đọc kết quả.",
+      "usage": "participate in a project; participate actively; take part in",
+      "family": "participation (n); participant (n); participatory (adj)",
+      "example": "Students participated in a local research project.",
+      "translation": "Học sinh tham gia một dự án nghiên cứu tại địa phương.",
+      "teacherSelected": true,
+      "questions": [
+        76
+      ],
+      "aliases": []
+    },
+    {
+      "question": 79,
+      "term": "contribute to / stem from",
+      "meta": "verb phrases",
+      "meaning": "góp phần vào / bắt nguồn từ",
+      "note": "Contribute to global warming nghĩa là góp phần gây nóng lên toàn cầu. Stem from chỉ nguồn gốc; attribute A to B là quy A cho B; spark thường nhận tân ngữ trực tiếp, không dùng spark to.",
+      "usage": "contribute to a problem; stem from a cause",
+      "family": "contribution (n); contributor (n)",
+      "example": "Poor planning contributed to the delay.",
+      "translation": "Việc lập kế hoạch kém góp phần gây chậm trễ.",
+      "teacherSelected": true,
+      "questions": [
+        79
+      ],
+      "aliases": [
+        "contribute to"
+      ]
+    },
+    {
+      "term": "send one’s apologies",
+      "meaning": "gửi lời xin lỗi",
+      "usage": "send one’s apologies for + danh từ/V-ing",
+      "example": "She sent her apologies for missing the meeting.",
+      "translation": "Cô ấy gửi lời xin lỗi vì vắng cuộc họp.",
+      "family": "apologise/apologize (v); apology/apologies (n)",
+      "meta": "VERB PHRASE",
+      "note": "Send one’s apologies for + V-ing là gửi lời xin lỗi vì việc gì. Not attending hoặc not having attended đều giữ ý không dự cuộc họp hôm qua. Dùng her theo Mrs. Wilson và giữ yesterday để đúng thời điểm.",
+      "aliases": [],
+      "question": 82,
+      "questions": [
+        82
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "live up to / fall short of expectations",
+      "meta": "verb phrases",
+      "meaning": "đáp ứng / không đạt kỳ vọng",
+      "note": "Live/come up to expectations nói kết quả đạt mức mong đợi. Fall short of expectations nói kết quả thấp hơn mong đợi, không nhất thiết hoàn toàn thất bại. Chú ý to ở cụm đầu và of ở cụm sau.",
+      "usage": "live/come up to one’s expectations; fall short of one’s expectations; exceed expectations = vượt kỳ vọng.",
+      "family": "expect (v); expectation (n); expected/unexpected (adj). Expectations thường dùng số nhiều trong các cụm này.",
+      "example": "The service was pleasant, but the food fell short of our expectations.",
+      "translation": "Dịch vụ dễ chịu nhưng đồ ăn không đạt kỳ vọng của chúng tôi.",
+      "aliases": [
+        "come/live up to one’s expectations",
+        "fall short of one’s expectations",
+        "Fall short of expectations"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        84
+      ],
+      "question": 84
+    },
+    {
+      "term": "at no time",
+      "meaning": "không lúc nào",
+      "usage": "at no time + trợ động từ + S + V",
+      "example": "At no time did I agree to this.",
+      "translation": "Tôi chưa lúc nào đồng ý với việc này.",
+      "family": "time (n); cụm phủ định đứng đầu câu cần đảo ngữ",
+      "meta": "PHRASE",
+      "note": "At no time mang nghĩa phủ định và đứng đầu câu nên đảo trợ động từ did lên trước the two sides. Sau did dùng look nguyên mẫu. Phải giữ likely to reach an agreement, không đổi thành đã đạt thỏa thuận.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be used to",
+      "meaning": "đã quen với",
+      "usage": "be used to + danh từ/V-ing",
+      "example": "I am used to getting up early.",
+      "translation": "Tôi đã quen dậy sớm.",
+      "family": "used to + V chỉ thói quen quá khứ; be used to + V-ing chỉ đã quen",
+      "meta": "VERB PHRASE",
+      "note": "Be used to/be accustomed to + V-ing là đã quen với việc gì. Câu gốc đã chỉnh rõ chưa quen, nên dùng not (yet) used to hoặc unaccustomed to. To ở đây là giới từ, không dùng getting thành get.",
+      "aliases": [
+        "be used to/be accustomed to",
+        "Be used to/be accustomed to"
+      ],
+      "question": 86,
+      "questions": [
+        86
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have an excellent command of",
+      "meaning": "sử dụng rất thành thạo",
+      "usage": "have a good/excellent command of a language",
+      "example": "She has an excellent command of English.",
+      "translation": "Cô ấy sử dụng tiếng Anh rất thành thạo.",
+      "family": "command (n/v); excellent (adj); excellence (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have an excellent command of a language nghĩa là sử dụng ngôn ngữ đó rất tốt. Excellent hoặc very/extremely good giữ mức độ extremely well. Dùng of sau command; không dùng command in German theo cấu trúc này.",
+      "aliases": [],
+      "question": 88,
+      "questions": [
+        88
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put down to",
+      "meaning": "cho rằng điều gì là do nguyên nhân nào",
+      "usage": "put A down to B",
+      "example": "He put his mistake down to tiredness.",
+      "translation": "Anh ấy cho rằng sai lầm của mình là do mệt mỏi.",
+      "family": "put → put → put",
+      "meta": "VERB PHRASE",
+      "note": "Put A down to B nghĩa là cho rằng A xảy ra nhờ hoặc vì B. A là his success, B là incredible luck. Put có dạng quá khứ vẫn là put; không thêm -ed và không đảo vị trí nguyên nhân với kết quả.",
+      "aliases": [
+        "put A down to B",
+        "put something down to something"
+      ],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in the balance",
+      "meaning": "chưa ngã ngũ, chưa biết kết quả",
+      "usage": "hang/be in the balance",
+      "example": "The future of the project is in the balance.",
+      "translation": "Tương lai của dự án vẫn chưa ngã ngũ.",
+      "family": "balance (n/v); balanced (adj); hang → hung",
+      "meta": "PHRASE",
+      "note": "Hang/be in the balance nghĩa là chưa được quyết định, còn bấp bênh. Cụm giữ đúng ý chưa chắc chuyến lưu diễn có diễn ra.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 92,
+      "term": "give off",
+      "meta": "phrasal verb",
+      "meaning": "tỏa ra mùi, nhiệt hoặc ánh sáng",
+      "note": "Give off a smell nghĩa là tỏa ra mùi. It’s giving off cho biết hóa chất đang phát mùi khó chịu; give up là từ bỏ và các cụm còn lại không diễn đạt sự phát mùi.",
+      "usage": "give off heat/light/a smell",
+      "family": "give up: từ bỏ; give out: phát ra/phân phát",
+      "example": "The flowers give off a sweet scent.",
+      "translation": "Hoa tỏa hương thơm ngọt.",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ],
+      "aliases": []
+    },
+    {
+      "term": "take one’s eyes off",
+      "meaning": "rời mắt khỏi",
+      "usage": "cannot take one’s eyes off somebody/something",
+      "example": "I could not take my eyes off the painting.",
+      "translation": "Tôi không thể rời mắt khỏi bức tranh.",
+      "family": "eye (n); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Cannot take one’s eyes off somebody nghĩa là không thể rời mắt khỏi người đó. Quá khứ dùng couldn’t/could not; one’s đổi thành my theo chủ ngữ I.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 94,
+      "term": "keep somebody in the dark",
+      "meta": "idiom",
+      "meaning": "giấu thông tin, không cho ai biết",
+      "note": "Nghĩa bóng là để ai không biết sự việc. Không chỉ việc để người đó ở trong phòng tối.",
+      "usage": "keep somebody in the dark about something",
+      "example": "They kept us in the dark about the changes.",
+      "translation": "Họ không cho chúng tôi biết về những thay đổi.",
+      "family": "dark (a/n): tối/bóng tối; unaware (a): không biết; awareness (n): nhận thức.",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ],
+      "aliases": []
+    },
+    {
+      "term": "make a start",
+      "meaning": "bắt đầu làm",
+      "usage": "make a start on something",
+      "example": "Let us make a start on the report.",
+      "translation": "Chúng ta hãy bắt đầu làm báo cáo.",
+      "family": "start (n/v); make → made → made",
+      "meta": "VERB PHRASE",
+      "note": "Make a start on/at doing something là bắt đầu làm việc gì. It’s time + chủ ngữ + quá khứ đơn nên dùng made, dù ý là đã đến lúc bắt đầu bây giờ.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "no point",
+      "meaning": "không có ích, không đáng làm",
+      "usage": "there is no point (in) + V-ing",
+      "example": "There is no point in arguing now.",
+      "translation": "Bây giờ tranh cãi cũng không có ích.",
+      "family": "point (n); pointless (adj)",
+      "meta": "PHRASE",
+      "note": "There is no point (in) doing something nghĩa là không ích gì khi làm việc đó, tương đương not worth doing. In có thể có hoặc lược bỏ.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "keep a sharp eye on",
+      "meaning": "theo dõi sát, để ý kỹ",
+      "usage": "keep a sharp eye on somebody/something",
+      "example": "Keep a sharp eye on the children near the pool.",
+      "translation": "Hãy trông kỹ bọn trẻ ở gần hồ bơi.",
+      "family": "sharp (adj); sharply (adv); keep → kept",
+      "meta": "VERB PHRASE",
+      "note": "Keep a sharp eye on somebody là theo dõi ai sát sao. Sau need to dùng keep nguyên mẫu; on nối với Lauren.",
+      "aliases": [],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ]
 }

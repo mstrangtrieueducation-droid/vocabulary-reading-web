@@ -269,6 +269,9 @@
       "teacherSelected": true,
       "questions": [
         24
+      ],
+      "aliases": [
+        "Cut something short"
       ]
     },
     {
@@ -450,6 +453,228 @@
       "questions": [
         45
       ]
+    },
+    {
+      "question": 54,
+      "term": "an alternative to",
+      "meta": "noun phrase",
+      "meaning": "phương án thay thế cho",
+      "note": "Alternative dùng như danh từ đếm được; nhớ to. As an alternative = như một phương án khác. Cycling is an alternative to driving. → Đi xe đạp là một lựa chọn thay cho lái xe.",
+      "usage": "Alternative dùng như danh từ đếm được; nhớ to. As an alternative = như một phương án khác.",
+      "example": "Cycling is an alternative to driving.",
+      "translation": "Đi xe đạp là một lựa chọn thay cho lái xe.",
+      "family": "alternative (n/a), alternatively (adv): hoặc, theo cách khác.",
+      "teacherSelected": true,
+      "questions": [
+        54
+      ],
+      "aliases": []
+    },
+    {
+      "question": 81,
+      "term": "cannot have + V3",
+      "meta": "STRUCTURE",
+      "meaning": "suy luận rằng một việc không thể đã xảy ra",
+      "note": "Cannot have + phân từ II diễn tả suy luận một việc khó có thể đã xảy ra: nhìn John kiệt sức, người nói cho rằng anh ấy không thể đã ngủ ngon. Must have slept well diễn tả suy luận ngược lại. Need và would không diễn đạt sự suy luận phủ định dựa trên dấu hiệu này.",
+      "usage": "cannot have slept/seen/known",
+      "example": "He looks exhausted. He cannot have slept well.",
+      "translation": "Anh ấy trông kiệt sức. Chắc anh ấy đã không ngủ ngon.",
+      "family": "can; cannot; cannot have + past participle",
+      "teacherSelected": true,
+      "questions": [
+        81
+      ],
+      "aliases": []
+    },
+    {
+      "question": 83,
+      "term": "but for",
+      "meta": "PHRASE",
+      "meaning": "nếu không có; nếu không nhờ",
+      "note": "Nêu điều kiện giả định bằng danh từ sau for. Thường dùng khi nhờ một người/vật mà tình huống xấu đã không xảy ra; không theo trực tiếp bằng một mệnh đề đầy đủ.",
+      "usage": "but for + noun, S + would have + V3",
+      "example": "But for your advice, I would have made a costly mistake.",
+      "translation": "Nếu không nhờ lời khuyên của bạn, tôi đã mắc sai lầm tốn kém.",
+      "family": "without; if it had not been for",
+      "teacherSelected": true,
+      "questions": [
+        83
+      ],
+      "aliases": []
+    },
+    {
+      "term": "fly into a temper",
+      "meaning": "đột nhiên nổi nóng",
+      "usage": "fly into a temper/rage",
+      "example": "He flew into a temper when he heard the news.",
+      "translation": "Anh ấy nổi nóng khi nghe tin.",
+      "family": "fly → flew → flown; temper/rage (n)",
+      "meta": "VERB PHRASE",
+      "note": "Fly off the handle hoặc fly into a temper/rage là nổi nóng, mất bình tĩnh. Flies đã có sẵn ở hiện tại đơn nên chỉ điền phần còn lại. Phải giữ ý ngay cả điều nhỏ nhặt cũng khiến anh ấy nổi giận; không dùng flied, vừa sai dạng vừa đổi thì.",
+      "aliases": [
+        "fly into a temper/rage",
+        "fly into a rage"
+      ],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "a little bird told me",
+      "meaning": "tôi nghe phong thanh từ một người không tiện nêu tên",
+      "usage": "a little bird told me that + mệnh đề",
+      "example": "A little bird told me that you are moving.",
+      "translation": "Tôi nghe phong thanh rằng bạn sắp chuyển nhà.",
+      "family": "tell → told → told; bird (n)",
+      "meta": "PHRASE",
+      "note": "A little bird told me là cách nói có người tiết lộ nhưng không nêu người đó là ai. Came as no surprise nghĩa là không gây ngạc nhiên, còn had told thể hiện thông tin đã có trước.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "a glimpse of",
+      "meaning": "một thoáng nhìn thấy",
+      "usage": "catch/get a glimpse of somebody/something",
+      "example": "I caught a glimpse of her in the crowd.",
+      "translation": "Tôi thoáng thấy cô ấy trong đám đông.",
+      "family": "glimpse (n/v); catch → caught",
+      "meta": "PHRASE",
+      "note": "Catch/get/have a glimpse of someone là nhìn thấy ai đó thoáng qua trong thời gian rất ngắn. Glimpse giữ dạng danh từ theo từ cho sẵn.",
+      "aliases": [
+        "catch/get/have a glimpse of",
+        "Catch/get/have a glimpse of"
+      ],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "with a view to",
+      "meta": "PREPOSITIONAL PHRASE",
+      "meaning": "nhằm mục đích",
+      "note": "Cụm này nêu mục tiêu của một hành động và thường dùng trong văn viết trang trọng. To ở đây là giới từ nên theo sau là danh từ hoặc V-ing, không phải động từ nguyên mẫu.",
+      "usage": "with a view to + N/V-ing; with a view to improving something",
+      "family": "view (n): cách nhìn, quan điểm; a view to trong cụm này chỉ mục đích",
+      "example": "The school revised its timetable with a view to reducing student stress.",
+      "translation": "Trường điều chỉnh thời khóa biểu nhằm giảm căng thẳng cho học sinh.",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ],
+      "question": 93,
+      "aliases": []
+    },
+    {
+      "term": "get somebody down",
+      "meaning": "làm ai buồn, nản lòng",
+      "usage": "get somebody down",
+      "example": "Do not let this mistake get you down.",
+      "translation": "Đừng để sai lầm này làm bạn nản lòng.",
+      "family": "get → got → got/gotten; down (adj/adv)",
+      "meta": "VERB PHRASE",
+      "note": "Get someone down nghĩa là làm ai buồn bã, chán nản, nên giữ đúng makes me feel unhappy. Get on someone's nerves chủ yếu là làm bực mình và không tương đương hoàn toàn.",
+      "aliases": [
+        "get someone down"
+      ],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "with the exception of",
+      "meaning": "ngoại trừ",
+      "usage": "with the exception of somebody/something",
+      "example": "Everyone came with the exception of John.",
+      "translation": "Mọi người đều đến, ngoại trừ John.",
+      "family": "except (giới từ); exception (n); exceptional (adj)",
+      "meta": "PHRASE",
+      "note": "With the exception of somebody nghĩa là ngoại trừ người đó. Phần điền phải có cả all the students làm chủ ngữ cho handed in.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come to light",
+      "meaning": "được phát hiện, được biết đến",
+      "usage": "come to light",
+      "example": "New evidence came to light yesterday.",
+      "translation": "Hôm qua có bằng chứng mới được phát hiện.",
+      "family": "come → came → come; light (n)",
+      "meta": "VERB PHRASE",
+      "note": "Come to light nghĩa là bị phát hiện hoặc được biết đến. Pay the price ở đây là chịu hậu quả, tương ứng you will be punished.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "burst your bubble",
+      "meaning": "làm ai mất đi ảo tưởng hoặc hy vọng thiếu thực tế",
+      "usage": "burst somebody’s bubble",
+      "example": "I hate to burst your bubble, but the tickets are sold out.",
+      "translation": "Tôi không muốn làm bạn hụt hẫng, nhưng vé đã bán hết rồi.",
+      "family": "burst → burst → burst; bubble (n)",
+      "meta": "PHRASE",
+      "note": "Burst your bubble là nói điều làm người khác mất sự kỳ vọng hoặc thất vọng. I hate to … diễn tả sự ái ngại khi báo tin; hate + V-ing cũng dùng được.",
+      "aliases": [
+        "burst somebody’s bubble"
+      ],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 99,
+      "term": "on a whim",
+      "meta": "IDIOM",
+      "meaning": "theo ý thích bộc phát",
+      "note": "Nêu quyết định bất chợt không cân nhắc kỹ. Không phải mọi quyết định nhanh đều là on a whim; câu đã làm rõ tính bốc đồng.",
+      "usage": "buy/decide/do something on a whim",
+      "example": "She booked the trip on a whim.",
+      "translation": "Cô ấy đặt chuyến đi theo ý thích bộc phát.",
+      "family": "whim (n); impulsive (adj); impulsively (adv); on impulse",
+      "teacherSelected": true,
+      "questions": [
+        99
+      ],
+      "aliases": []
+    },
+    {
+      "term": "catch in the act",
+      "meaning": "bắt quả tang",
+      "usage": "catch somebody in the act of + V-ing",
+      "example": "They caught him in the act of stealing.",
+      "translation": "Họ bắt quả tang anh ta đang trộm đồ.",
+      "family": "catch → caught → caught; act (n/v)",
+      "meta": "VERB PHRASE",
+      "note": "Catch somebody in the act of doing something nghĩa là bắt gặp đúng lúc người đó đang làm việc gì. Sau of dùng trying; to remove phụ thuộc vào try.",
+      "aliases": [
+        "catch someone in the act of",
+        "catch somebody in the act of",
+        "Catch somebody in the act of"
+      ],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ]
 }

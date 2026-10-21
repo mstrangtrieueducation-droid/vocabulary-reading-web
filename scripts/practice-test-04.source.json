@@ -155,7 +155,9 @@
         "PRACTICE TEST 4 > ĐÁP ÁN > Q4",
         "Latest question and answer sources read 2026-09-26"
       ],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Face up to"
+      ]
     },
     {
       "globalNumber": 5,
@@ -343,7 +345,8 @@
       "teacherHighlights": [
         "barely",
         "hardly",
-        "scarcely"
+        "scarcely",
+        "Barely"
       ]
     },
     {
@@ -520,6 +523,7 @@
         "Latest question and answer sources read 2026-09-26"
       ],
       "teacherHighlights": [
+        "irrespective of",
         "criteria"
       ]
     },
@@ -617,7 +621,9 @@
         "PRACTICE TEST 4 > ĐÁP ÁN > Q31",
         "Latest question and answer sources read 2026-09-26"
       ],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "take responsibility for"
+      ]
     },
     {
       "globalNumber": 32,
@@ -734,7 +740,9 @@
         "PRACTICE TEST 4 > ĐÁP ÁN > Q38",
         "Latest question and answer sources read 2026-09-26"
       ],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "an alternative to"
+      ]
     },
     {
       "globalNumber": 39,
@@ -994,7 +1002,7 @@
         "Latest question and answer sources read 2026-09-26"
       ],
       "teacherHighlights": [
-        "upon"
+        "agree on / upon"
       ]
     },
     {
@@ -1028,8 +1036,7 @@
         "Latest question and answer sources read 2026-09-26"
       ],
       "teacherHighlights": [
-        "appeal",
-        "to",
+        "appeal to",
         "appealing"
       ]
     },
@@ -1541,7 +1548,9 @@
         "PRACTICE TEST 4 > ĐÁP ÁN > Q86",
         "Latest question and answer sources read 2026-09-26"
       ],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "have no intention of"
+      ]
     },
     {
       "globalNumber": 87,
@@ -1597,7 +1606,9 @@
         "PRACTICE TEST 4 > ĐÁP ÁN > Q89",
         "Latest question and answer sources read 2026-09-26"
       ],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "no point"
+      ]
     },
     {
       "globalNumber": 90,
@@ -1735,7 +1746,9 @@
       "suffix": ", he is still working in Ho Chi Minh City",
       "blankAnswer": "To my knowledge",
       "fullSentence": "To my knowledge, he is still working in Ho Chi Minh City",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "to (the best of) my knowledge"
+      ]
     },
     {
       "globalNumber": 95,
@@ -1760,7 +1773,9 @@
       "suffix": "home",
       "blankAnswer": "eating us out of house and",
       "fullSentence": "The kids' non-stop snacking is eating us out of house and home",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "out of"
+      ]
     },
     {
       "globalNumber": 96,
@@ -1864,6 +1879,7 @@
       "blankAnswer": "to put in",
       "fullSentence": "You have to put in your pay claims before the end of the month",
       "teacherHighlights": [
+        "claim",
         "claim (v,n)"
       ]
     },
@@ -1907,5 +1923,6 @@
   },
   "contentRevision": "2026-10-21-word-limits",
   "readingSources": [],
-  "answerDocumentId": "1EKFb7d91SKlQEUF0XztylZll2wYvrpTHbbjTyhBs3QA"
+  "answerDocumentId": "1EKFb7d91SKlQEUF0XztylZll2wYvrpTHbbjTyhBs3QA",
+  "explanationStyle": "student-copy-concise-v1"
 }

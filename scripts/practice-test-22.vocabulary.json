@@ -450,6 +450,195 @@
       "questions": [
         99
       ]
+    },
+    {
+      "question": 1,
+      "term": "talk somebody into / out of",
+      "meta": "verb phrases",
+      "meaning": "thuyết phục ai làm / không làm",
+      "note": "Should not have + V3 phê bình việc đã làm. Talk somebody into doing something là thuyết phục ai làm; câu nói đáng lẽ không nên thuyết phục tham gia, không đồng nghĩa phải chủ động khuyên rút lui.",
+      "usage": "talk somebody into/out of + V-ing",
+      "family": "persuade (v); persuasion (n); chú ý nghĩa đối lập",
+      "example": "She talked me into joining the workshop.",
+      "translation": "Cô ấy thuyết phục tôi tham gia buổi học.",
+      "questions": [
+        1
+      ],
+      "aliases": [
+        "out of"
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 22,
+      "term": "adopt a plan",
+      "meta": "verb phrase",
+      "meaning": "thông qua hoặc áp dụng kế hoạch",
+      "note": "Adopt là chấp nhận một kế hoạch, chính sách hay phương pháp để sử dụng. Adapt là điều chỉnh cho phù hợp, khác nghĩa.",
+      "usage": "adopt a plan/policy/approach",
+      "example": "The school adopted a new teaching approach.",
+      "translation": "Nhà trường áp dụng một cách dạy mới.",
+      "family": "adoption (n): sự thông qua/áp dụng; adaptive thuộc adapt, không phải adopt.",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ],
+      "aliases": []
+    },
+    {
+      "question": 32,
+      "term": "search high and low",
+      "meta": "IDIOM",
+      "meaning": "tìm khắp nơi, tìm rất kỹ",
+      "note": "Cụm nhấn mạnh phạm vi và nỗ lực tìm kiếm, không phải chỉ tìm ở chỗ cao và thấp. Thường theo sau bằng for + thứ cần tìm. Có thể dùng look high and low for.",
+      "usage": "search/look high and low for something",
+      "example": "We searched high and low for the missing notebook.",
+      "translation": "Chúng tôi tìm khắp nơi cuốn vở bị thất lạc.",
+      "family": "search (v/n); searched (V2/V3); searcher (n)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ],
+      "aliases": []
+    },
+    {
+      "term": "become second nature to someone",
+      "meta": "IDIOM",
+      "meaning": "trở thành việc làm tự nhiên, không cần nghĩ nhiều",
+      "note": "Một kỹ năng trở thành second nature sau khi được thực hiện đủ quen đến mức gần như tự động. Cụm này thường nói về thói quen do rèn luyện, không nhất thiết là khả năng bẩm sinh. Không thêm a trước second nature trong mẫu này.",
+      "usage": "be/become second nature to someone; doing something becomes second nature",
+      "family": "nature (n): bản chất, tự nhiên; natural (adj): tự nhiên; naturally (adv): một cách tự nhiên",
+      "example": "With practice, checking your work becomes second nature.",
+      "translation": "Nhờ luyện tập, việc kiểm tra lại bài trở thành một thói quen tự nhiên.",
+      "aliases": [
+        "become second nature to sb"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        35
+      ],
+      "question": 35
+    },
+    {
+      "term": "lack of",
+      "meaning": "sự thiếu hụt",
+      "usage": "a lack of something; lack something",
+      "example": "The project failed through lack of funding.",
+      "translation": "Dự án thất bại do thiếu kinh phí.",
+      "family": "lack (n/v); lacking (adj); động từ lack không cần of",
+      "meta": "PHRASE",
+      "note": "A lack of suitable study space là sự thiếu chỗ học phù hợp. Lack dùng như danh từ thường đi với of để chỉ thứ thiếu. Lack cũng có thể là động từ không cần giới từ, nhưng câu này đã có a nên phải sửa mẫu danh từ.",
+      "aliases": [],
+      "question": 48,
+      "questions": [
+        48
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 83,
+      "term": "make out",
+      "meta": "phrasal verb",
+      "meaning": "nghe/nhìn ra; hiểu được",
+      "note": "Make out trong ngữ cảnh lời nói là nghe/hiểu được. Giọng lạ khiến người nghe không hiểu; make up là bịa ra/tạo thành, còn make by/on không đúng cụm này.",
+      "usage": "make out a word/number; make it out",
+      "family": "make up: bịa ra; make–made–made",
+      "example": "I could not make out the last word.",
+      "translation": "Tôi không nghe rõ từ cuối.",
+      "teacherSelected": true,
+      "questions": [
+        83
+      ],
+      "aliases": []
+    },
+    {
+      "term": "come round to",
+      "meaning": "dần đổi ý, đồng ý với",
+      "usage": "come round/around to an idea/point of view",
+      "example": "He finally came round to our point of view.",
+      "translation": "Cuối cùng anh ấy cũng đổi ý và đồng tình với chúng tôi.",
+      "family": "come → came → come",
+      "meta": "VERB PHRASE",
+      "note": "Come round/around to a point of view nghĩa là dần đổi ý để đồng ý với quan điểm đó. Giữ điều kiện cần thêm thời gian bằng given a bit of time. Come round còn có nghĩa ghé thăm hoặc tỉnh lại, nhưng không phải ở ngữ cảnh này.",
+      "aliases": [
+        "come round/around to",
+        "Come round/around to"
+      ],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have yet to",
+      "meaning": "vẫn chưa làm gì",
+      "usage": "have/has yet to + V",
+      "example": "They have yet to announce the result.",
+      "translation": "Họ vẫn chưa công bố kết quả.",
+      "family": "have → had; yet (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Have yet to do nghĩa là vẫn chưa từng/chưa làm. Andrew là người hào phóng nhất đã gặp, nên chưa gặp ai more generous than Andrew. Không viết chưa gặp ai as generous as Andrew vì người nói đã gặp chính Andrew.",
+      "aliases": [],
+      "question": 86,
+      "questions": [
+        86
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "feel like",
+      "meaning": "muốn, có hứng làm gì",
+      "usage": "feel like + danh từ/V-ing",
+      "example": "I feel like going for a walk.",
+      "translation": "Tôi muốn đi dạo.",
+      "family": "feel → felt → felt; feeling (n)",
+      "meta": "VERB PHRASE",
+      "note": "Feel like doing something nghĩa là muốn làm gì ở một thời điểm. Wanted ở quá khứ nên chuyển thành felt like joining.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put pressure on",
+      "meaning": "gây áp lực cho",
+      "usage": "put pressure on somebody; put somebody under pressure",
+      "example": "Do not put pressure on her to decide now.",
+      "translation": "Đừng gây áp lực buộc cô ấy quyết định ngay.",
+      "family": "press (v); pressure (n/v)",
+      "meta": "VERB PHRASE",
+      "note": "Put somebody under pressure hoặc put pressure on somebody là đặt ai vào tình thế khó khăn/căng thẳng. Much greater giữ ý mức độ khó khăn tăng lên.",
+      "aliases": [
+        "put somebody under pressure",
+        "Put somebody under pressure"
+      ],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "prevent from",
+      "meaning": "ngăn ai/điều gì làm gì",
+      "usage": "prevent somebody/something from + V-ing",
+      "example": "The rain prevented us from leaving.",
+      "translation": "Mưa khiến chúng tôi không thể rời đi.",
+      "family": "prevent (v); prevention (n); preventive (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Prevent somebody from doing something tương đương stop somebody from doing something. Sau from dùng travelling; us là người bị cản trở.",
+      "aliases": [
+        "prevent somebody from",
+        "prevent something from"
+      ],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
     }
   ]
 }

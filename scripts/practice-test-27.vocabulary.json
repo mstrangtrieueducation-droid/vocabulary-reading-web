@@ -163,7 +163,8 @@
       "family": "facility (n số ít); facilities (số nhiều); facilitate (v, tạo thuận lợi)",
       "teacherSelected": true,
       "questions": [
-        19
+        19,
+        47
       ]
     },
     {
@@ -450,6 +451,143 @@
       "questions": [
         45
       ]
+    },
+    {
+      "question": 49,
+      "term": "result from / result in",
+      "meta": "VERB PHRASES",
+      "meaning": "do… gây ra / dẫn đến…",
+      "note": "From đi sau kết quả và trước nguyên nhân; in đi sau nguyên nhân và trước kết quả. Đổi giới từ có thể đảo chiều ý nghĩa của cả câu.",
+      "usage": "Kết quả + result from + nguyên nhân; nguyên nhân + result in + kết quả",
+      "example": "The delay resulted from heavy rain.",
+      "translation": "Sự chậm trễ là do mưa lớn.",
+      "family": "result (v/n: có kết quả/kết quả); resulting (phát sinh)",
+      "teacherSelected": true,
+      "questions": [
+        49
+      ],
+      "aliases": [
+        "Result in"
+      ]
+    },
+    {
+      "term": "lose no time in",
+      "meta": "verb phrase",
+      "meaning": "làm ngay, không chậm trễ",
+      "note": "Lose no time in doing nghĩa là bắt đầu ngay khi có thể. No tạo nghĩa không lãng phí thời gian; không hiểu thành mất sạch thời gian. Sau in phải dùng V-ing.",
+      "usage": "lose no time in doing; waste no time in doing; act without delay.",
+      "family": "lose–lost–lost (v); loss (n). Cả cụm dùng để nhấn mạnh hành động nhanh chóng.",
+      "example": "The team lost no time in contacting the affected families.",
+      "translation": "Nhóm lập tức liên hệ với các gia đình bị ảnh hưởng.",
+      "teacherSelected": true,
+      "questions": [
+        86
+      ],
+      "question": 86,
+      "aliases": []
+    },
+    {
+      "term": "have no choice but",
+      "meaning": "không còn lựa chọn nào ngoài",
+      "usage": "have no choice/option/alternative but to + V",
+      "example": "We had no choice but to wait.",
+      "translation": "Chúng tôi không còn cách nào khác ngoài chờ đợi.",
+      "family": "choose (v); choice (n); alternative (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have no choice/alternative/option but to do something nghĩa là không có lựa chọn nào khác ngoài việc phải làm. Nó diễn đạt việc bị buộc từ chức mà không cần giữ bị động was forced. Phải giữ after the scandal; không dùng but resigning trong mẫu này.",
+      "aliases": [
+        "have no choice/alternative/option but",
+        "Have no choice/alternative/option but"
+      ],
+      "question": 87,
+      "questions": [
+        87
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "get to grips with",
+      "meaning": "bắt đầu hiểu và xử lý được",
+      "usage": "get to grips with something",
+      "example": "I am getting to grips with the new software.",
+      "translation": "Tôi đang dần nắm được cách dùng phần mềm mới.",
+      "family": "grip (n/v); grips (số nhiều trong cụm)",
+      "meta": "VERB PHRASE",
+      "note": "Get to grips with something là bắt đầu hiểu và xử lý được một điều mới hoặc khó. Getting to understand/know cũng diễn đạt quá trình dần nắm được các quy trình. Grips ở số nhiều và cần with; không dùng getting to grip with trong thành ngữ này.",
+      "aliases": [],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "weigh up",
+      "meaning": "cân nhắc kỹ",
+      "usage": "weigh up the pros and cons",
+      "example": "We need to weigh up the pros and cons.",
+      "translation": "Chúng ta cần cân nhắc các mặt lợi và hại.",
+      "family": "weigh (v); weight (n); weighed",
+      "meta": "VERB PHRASE",
+      "note": "Weigh up/weigh the pros and cons là cân nhắc mặt lợi và mặt hại. Có thể giữ advantages and disadvantages vì cùng nghĩa.",
+      "aliases": [
+        "weigh (up)",
+        "weigh up/weigh the pros and cons",
+        "Weigh up/weigh the pros and cons"
+      ],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 93,
+      "term": "have butterflies in one’s stomach",
+      "meta": "idiom",
+      "meaning": "hồi hộp, bồn chồn",
+      "note": "Chỉ cảm giác lo lắng hoặc háo hức trước một việc quan trọng; không phải cảm giác đau bụng theo nghĩa đen.",
+      "usage": "have/had butterflies in my/her/his stomach",
+      "example": "I had butterflies in my stomach before the interview.",
+      "translation": "Tôi rất hồi hộp trước cuộc phỏng vấn.",
+      "family": "butterfly → butterflies; nervous (a): lo lắng; nervousness (n): sự lo lắng.",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ],
+      "aliases": []
+    },
+    {
+      "term": "on a larger scale",
+      "meaning": "ở quy mô lớn hơn",
+      "usage": "on a large/larger scale",
+      "example": "The experiment will be repeated on a larger scale.",
+      "translation": "Thí nghiệm sẽ được lặp lại ở quy mô lớn hơn.",
+      "family": "scale (n); large-scale (adj trước danh từ)",
+      "meta": "PHRASE",
+      "note": "On a larger scale than any previous … diễn tả quy mô lớn hơn mọi lễ hội trước. On a scale never seen before cũng đúng, nhưng bắt buộc có ý chưa từng/so sánh lớn hơn.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "from scratch",
+      "meta": "IDIOM",
+      "meaning": "từ đầu, từ con số không",
+      "note": "Làm việc gì from scratch là bắt đầu mà không dựa vào một sản phẩm hoặc phần việc đã có sẵn. Build something from scratch nhấn mạnh tự xây dựng từ nền tảng; start again from scratch là làm lại hoàn toàn từ đầu.",
+      "usage": "start/build/create something from scratch; start again from scratch",
+      "family": "scratch (n/v): vết xước, cào; from scratch là một cụm nghĩa riêng",
+      "example": "We built the website from scratch.",
+      "translation": "Chúng tôi xây dựng trang web từ đầu.",
+      "teacherSelected": true,
+      "questions": [
+        97
+      ],
+      "question": 97,
+      "aliases": []
     }
   ]
 }

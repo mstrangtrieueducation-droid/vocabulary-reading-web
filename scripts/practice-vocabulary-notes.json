@@ -31,6 +31,10 @@
           "teacherSelected": true,
           "questions": [
             3
+          ],
+          "aliases": [
+            "used to",
+            "acquainted with"
           ]
         },
         {
@@ -60,7 +64,8 @@
           "translation": "Tin nhắn đó là một phần của vụ lừa lấy thông tin.",
           "teacherSelected": true,
           "questions": [
-            71
+            71,
+            76
           ]
         },
         {
@@ -97,7 +102,8 @@
           "example": "The director categorically rejected the accusation.",
           "translation": "Giám đốc bác bỏ dứt khoát lời cáo buộc.",
           "aliases": [
-            "categorically reject"
+            "categorically reject",
+            "category"
           ],
           "teacherSelected": true,
           "questions": [
@@ -130,6 +136,9 @@
           "teacherSelected": true,
           "questions": [
             39
+          ],
+          "aliases": [
+            "economize on"
           ]
         },
         {
@@ -144,6 +153,10 @@
           "teacherSelected": true,
           "questions": [
             40
+          ],
+          "aliases": [
+            "technologist",
+            "technician"
           ]
         },
         {
@@ -320,6 +333,72 @@
           "questions": [
             95
           ]
+        },
+        {
+          "term": "be worth",
+          "meaning": "đáng để làm gì",
+          "usage": "be worth + danh từ/V-ing",
+          "example": "This book is worth reading.",
+          "translation": "Cuốn sách này đáng đọc.",
+          "family": "worth (adj); worthwhile (adj); worth không đi với to V",
+          "meta": "VERB PHRASE",
+          "note": "be worth + số tiền: trị giá bao nhiêu.",
+          "aliases": [],
+          "question": 10,
+          "questions": [
+            10
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "take for granted",
+          "meaning": "mặc nhiên cho là đúng; không biết trân trọng",
+          "usage": "take it for granted that…; take somebody for granted",
+          "example": "Do not take your friends for granted.",
+          "translation": "Đừng coi sự có mặt của bạn bè là điều đương nhiên mà không trân trọng.",
+          "family": "grant (v/n); granted (V3); take → took → taken",
+          "meta": "VERB PHRASE",
+          "note": "take it for granted that…: mặc nhiên cho rằng…",
+          "aliases": [
+            "take it for granted"
+          ],
+          "question": 16,
+          "questions": [
+            16
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "as / like",
+          "meta": "preposition / conjunction",
+          "meaning": "trong vai trò là, như / giống như",
+          "note": "As + danh từ có thể chỉ vai trò thực sự: work as a teacher là làm giáo viên. Like + danh từ nói sự giống nhau: work like a teacher là làm giống giáo viên, chưa chắc có nghề đó.",
+          "usage": "use A as B = dùng A làm B; like someone/something = giống ai/cái gì; as + mệnh đề còn có nhiều nghĩa theo câu.",
+          "family": "As và like là từ ngữ pháp; cần học theo cấu trúc, không có họ từ chung cho nghĩa này.",
+          "example": "She works as a guide and speaks like an experienced teacher.",
+          "translation": "Cô ấy làm hướng dẫn viên và nói chuyện giống một giáo viên giàu kinh nghiệm.",
+          "teacherSelected": true,
+          "questions": [
+            50
+          ],
+          "question": 50,
+          "aliases": []
+        },
+        {
+          "term": "on arrival",
+          "meaning": "ngay khi đến",
+          "usage": "on arrival; on arriving at/in somewhere",
+          "example": "Please call me on arrival.",
+          "translation": "Hãy gọi cho tôi ngay khi đến.",
+          "family": "arrive (v); arrival (n)",
+          "meta": "PHRASE",
+          "note": "On arrival at… → when + S + arrived at…: khi đến nơi. Goods số nhiều → they. inspect: kiểm tra.",
+          "aliases": [],
+          "question": 95,
+          "questions": [
+            95
+          ],
+          "teacherSelected": true
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"
@@ -382,6 +461,10 @@
           "teacherSelected": true,
           "questions": [
             9
+          ],
+          "aliases": [
+            "make room for",
+            "give way to"
           ]
         },
         {
@@ -424,6 +507,10 @@
           "teacherSelected": true,
           "questions": [
             13
+          ],
+          "aliases": [
+            "forge",
+            "forgery"
           ]
         },
         {
@@ -434,7 +521,11 @@
           "usage": "bring in money/revenue; bring in a new rule; bring in an expert",
           "family": "bring – brought – brought; income (n): thu nhập; revenue (n): doanh thu",
           "example": "The new service brings in extra income for the company.",
-          "translation": "Dịch vụ mới mang lại thêm thu nhập cho công ty."
+          "translation": "Dịch vụ mới mang lại thêm thu nhập cho công ty.",
+          "teacherSelected": true,
+          "questions": [
+            14
+          ]
         },
         {
           "term": "half-hearted / wholehearted",
@@ -446,7 +537,8 @@
           "example": "His half-hearted apology did little to improve the situation.",
           "translation": "Lời xin lỗi thiếu thành ý của anh ấy không giúp tình hình khá hơn bao nhiêu.",
           "aliases": [
-            "whole-hearted"
+            "whole-hearted",
+            "half-hearted"
           ],
           "teacherSelected": true,
           "questions": [
@@ -477,7 +569,8 @@
           "example": "“That journey was exhausting.” “You can say that again!”",
           "translation": "“Chuyến đi đó mệt thật.” “Đúng quá còn gì!”",
           "aliases": [
-            "I agree with you."
+            "I agree with you.",
+            "I agree with you"
           ],
           "teacherSelected": true,
           "questions": [
@@ -496,6 +589,12 @@
           "teacherSelected": true,
           "questions": [
             19
+          ],
+          "aliases": [
+            "as long as",
+            "so long as",
+            "provided",
+            "providing"
           ]
         },
         {
@@ -644,6 +743,10 @@
           "teacherSelected": true,
           "questions": [
             30
+          ],
+          "aliases": [
+            "break through",
+            "breakthrough"
           ]
         },
         {
@@ -730,7 +833,12 @@
           "translation": "Tiêu đề gây hiểu lầm vì bỏ qua một chi tiết quan trọng.",
           "teacherSelected": true,
           "questions": [
+            34,
             37
+          ],
+          "aliases": [
+            "lead",
+            "misleading"
           ]
         },
         {
@@ -773,6 +881,10 @@
           "teacherSelected": true,
           "questions": [
             41
+          ],
+          "aliases": [
+            "production",
+            "productivity"
           ]
         },
         {
@@ -787,6 +899,10 @@
           "teacherSelected": true,
           "questions": [
             42
+          ],
+          "aliases": [
+            "largely",
+            "mainly"
           ]
         },
         {
@@ -843,6 +959,10 @@
           "teacherSelected": true,
           "questions": [
             45
+          ],
+          "aliases": [
+            "recede",
+            "economic recession"
           ]
         },
         {
@@ -857,6 +977,10 @@
           "teacherSelected": true,
           "questions": [
             47
+          ],
+          "aliases": [
+            "in the end",
+            "at the end of"
           ]
         },
         {
@@ -871,6 +995,10 @@
           "teacherSelected": true,
           "questions": [
             49
+          ],
+          "aliases": [
+            "memorize",
+            "commemorate"
           ]
         },
         {
@@ -939,7 +1067,9 @@
           "example": "The noise deprived the residents of a peaceful evening.",
           "translation": "Tiếng ồn khiến cư dân không có được một buổi tối yên tĩnh.",
           "aliases": [
-            "deprive sb of st"
+            "deprive sb of st",
+            "deprive (v) sb of",
+            "sleep deprivation"
           ],
           "teacherSelected": true,
           "questions": [
@@ -971,7 +1101,8 @@
           "translation": "Cả nhóm làm việc suốt ngày đêm để khôi phục dịch vụ.",
           "teacherSelected": true,
           "questions": [
-            71
+            71,
+            73
           ]
         },
         {
@@ -1013,7 +1144,8 @@
           "translation": "Thị trấn đối mặt với tình trạng thiếu nhà ở giá phù hợp kéo dài.",
           "teacherSelected": true,
           "questions": [
-            71
+            71,
+            79
           ]
         },
         {
@@ -1028,6 +1160,11 @@
           "teacherSelected": true,
           "questions": [
             71
+          ],
+          "aliases": [
+            "on call",
+            "on duty",
+            "on night call"
           ]
         },
         {
@@ -1056,6 +1193,11 @@
           "teacherSelected": true,
           "questions": [
             71
+          ],
+          "aliases": [
+            "irritate",
+            "annoy",
+            "irritable"
           ]
         },
         {
@@ -1135,6 +1277,10 @@
           "translation": "Cô ấy nộp bài sớm, nhờ đó chúng tôi có thời gian xem lại.",
           "teacherSelected": true,
           "questions": [
+            2,
+            29,
+            42,
+            66,
             85
           ]
         },
@@ -1151,6 +1297,118 @@
           "questions": [
             90
           ]
+        },
+        {
+          "term": "in case",
+          "meaning": "phòng khi, đề phòng khả năng",
+          "usage": "in case + mệnh đề",
+          "example": "Take an umbrella in case it rains.",
+          "translation": "Hãy mang ô phòng khi trời mưa.",
+          "family": "case (n); in case of + danh từ",
+          "meta": "PHRASE",
+          "note": "in the event of… = in case of…: phòng khi",
+          "aliases": [],
+          "question": 10,
+          "questions": [
+            10
+          ],
+          "teacherSelected": true
+        },
+        {
+          "question": 81,
+          "term": "dawn on somebody",
+          "meta": "PHRASAL VERB",
+          "meaning": "khiến ai chợt nhận ra",
+          "note": "Chủ ngữ thường là it hoặc một ý nghĩ: it dawned on me that…. Người nhận ra đứng sau on; không nói I dawned that….",
+          "usage": "It dawns on somebody that/how…",
+          "example": "It finally dawned on me that I had the wrong address.",
+          "translation": "Cuối cùng tôi mới nhận ra mình đã có nhầm địa chỉ.",
+          "family": "dawn (n: bình minh; v: bắt đầu/hiện rõ); realization (n)",
+          "teacherSelected": true,
+          "questions": [
+            81
+          ],
+          "aliases": []
+        },
+        {
+          "question": 81,
+          "term": "be taken in by",
+          "meta": "PHRASAL VERB",
+          "meaning": "bị lừa bởi",
+          "note": "Take somebody in nghĩa là lừa ai. Chủ ngữ principal là người bị lừa nên dùng to be taken in by, kết hợp với too ... to. Không dùng to take in vì sẽ biến hiệu trưởng thành người đi lừa.",
+          "usage": "be taken in by a story/promise",
+          "example": "She was not taken in by his promises.",
+          "translation": "Cô ấy không bị những lời hứa của anh ta đánh lừa.",
+          "family": "take – took – taken; deceive (v); deception (n)",
+          "teacherSelected": true,
+          "questions": [
+            81
+          ],
+          "aliases": []
+        },
+        {
+          "term": "have difficulty",
+          "meaning": "gặp khó khăn",
+          "usage": "have difficulty (in) + V-ing",
+          "example": "I have difficulty remembering names.",
+          "translation": "Tôi gặp khó khăn khi nhớ tên người khác.",
+          "family": "difficult (adj); difficulty/difficulties (n)",
+          "meta": "VERB PHRASE",
+          "note": "Have difficulty (in) + V-ing nghĩa là gặp khó khăn khi làm gì. Persuade somebody to do something giữ nguyên cấu trúc ở phần sau.",
+          "aliases": [],
+          "question": 88,
+          "questions": [
+            88
+          ],
+          "teacherSelected": true
+        },
+        {
+          "question": 89,
+          "term": "not breathe a word",
+          "meta": "idiom",
+          "meaning": "không hé một lời",
+          "note": "Dùng khi yêu cầu giữ kín thông tin. Breathe ở đây không chỉ hành động thở mà thuộc thành ngữ tiết lộ dù chỉ một lời.",
+          "usage": "not breathe a word of/about something to anyone",
+          "example": "Don’t breathe a word of this to anyone.",
+          "translation": "Đừng hé chuyện này với bất cứ ai.",
+          "family": "breathe (v): thở; breath (n): hơi thở; confidential (a): bí mật.",
+          "teacherSelected": true,
+          "questions": [
+            89
+          ],
+          "aliases": []
+        },
+        {
+          "question": 92,
+          "term": "come to terms with",
+          "meta": "idiom",
+          "meaning": "chấp nhận thực tế khó chịu",
+          "note": "Come to terms with = chấp nhận một thực tế khó chịu. Their friendship is over là tình bạn đã chấm dứt; không hiểu come to terms là quay lại làm bạn.",
+          "usage": "come to terms with a loss/the fact that…",
+          "family": "accept (v); acceptance (n); không có nghĩa nối lại quan hệ",
+          "example": "She slowly came to terms with the change.",
+          "translation": "Cô ấy dần chấp nhận sự thay đổi.",
+          "questions": [
+            92
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "succeed in",
+          "meaning": "thành công trong việc",
+          "usage": "succeed in + V-ing",
+          "example": "She succeeded in solving the problem.",
+          "translation": "Cô ấy đã giải quyết được vấn đề.",
+          "family": "succeed (v); success (n); successful (adj); successfully (adv)",
+          "meta": "VERB PHRASE",
+          "note": "Manage to persuade được chuyển sang succeed in + V-ing: succeeded in persuading. Cấu trúc persuade somebody to do something được giữ nguyên.",
+          "aliases": [],
+          "question": 93,
+          "questions": [
+            93
+          ],
+          "teacherSelected": true
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"
@@ -1197,7 +1455,8 @@
           "example": "Students may wear casual clothes, but the ceremony requires formal dress.",
           "translation": "Học sinh có thể mặc đồ thường ngày, nhưng buổi lễ yêu cầu trang phục trang trọng.",
           "aliases": [
-            "casual clothes"
+            "casual clothes",
+            "formal clothes"
           ],
           "teacherSelected": true,
           "questions": [
@@ -1230,6 +1489,11 @@
           "teacherSelected": true,
           "questions": [
             18
+          ],
+          "aliases": [
+            "by and large",
+            "in general",
+            "on the whole"
           ]
         },
         {
@@ -1272,6 +1536,9 @@
           "teacherSelected": true,
           "questions": [
             24
+          ],
+          "aliases": [
+            "pace"
           ]
         },
         {
@@ -1286,6 +1553,10 @@
           "teacherSelected": true,
           "questions": [
             32
+          ],
+          "aliases": [
+            "need + doing",
+            "need to be done"
           ]
         },
         {
@@ -1313,7 +1584,10 @@
           "translation": "Nhà văn giàu trí tưởng tượng tạo ra một thế giới không có thật.",
           "aliases": [
             "unimaginable",
-            "(un)imaginable"
+            "(un)imaginable",
+            "imaginary",
+            "imaginative",
+            "un)imaginable"
           ],
           "teacherSelected": true,
           "questions": [
@@ -1332,6 +1606,10 @@
           "teacherSelected": true,
           "questions": [
             36
+          ],
+          "aliases": [
+            "unharmed",
+            "harmless"
           ]
         },
         {
@@ -1431,6 +1709,10 @@
           "teacherSelected": true,
           "questions": [
             53
+          ],
+          "aliases": [
+            "basics",
+            "basis"
           ]
         },
         {
@@ -1444,7 +1726,17 @@
           "translation": "Cô ấy làm hướng dẫn viên và nói chuyện giống một giáo viên giàu kinh nghiệm.",
           "teacherSelected": true,
           "questions": [
-            55
+            7,
+            11,
+            19,
+            55,
+            62,
+            83
+          ],
+          "aliases": [
+            "like",
+            "as",
+            "As"
           ]
         },
         {
@@ -1455,7 +1747,14 @@
           "usage": "make a start at/on doing; make a start on a report; get started on something.",
           "family": "start (n/v); starting (dạng -ing); starter (n, nghĩa tùy ngữ cảnh).",
           "example": "We made a start on collecting data for the project.",
-          "translation": "Chúng tôi bắt đầu thu thập dữ liệu cho dự án."
+          "translation": "Chúng tôi bắt đầu thu thập dữ liệu cho dự án.",
+          "teacherSelected": true,
+          "questions": [
+            59
+          ],
+          "aliases": [
+            "make a start at"
+          ]
         },
         {
           "term": "answer / key / solution to",
@@ -1465,7 +1764,16 @@
           "usage": "the answer to a question; the key to success; a solution to a problem; the key to improving results.",
           "family": "answer (n/v); key (n/adj); solve (v), solution (n).",
           "example": "Regular practice is the key to improving reading speed.",
-          "translation": "Luyện tập đều đặn là chìa khóa để cải thiện tốc độ đọc."
+          "translation": "Luyện tập đều đặn là chìa khóa để cải thiện tốc độ đọc.",
+          "teacherSelected": true,
+          "questions": [
+            60
+          ],
+          "aliases": [
+            "answer",
+            "key",
+            "solution to"
+          ]
         },
         {
           "term": "bribe",
@@ -1492,7 +1800,13 @@
           "translation": "Tiếng Pháp của tôi hơi mai một vì nhiều năm không sử dụng.",
           "teacherSelected": true,
           "questions": [
-            71
+            71,
+            75
+          ],
+          "aliases": [
+            "rust",
+            "rusty",
+            "Rusty"
           ]
         },
         {
@@ -1538,7 +1852,8 @@
           ],
           "teacherSelected": true,
           "questions": [
-            83
+            83,
+            86
           ]
         },
         {
@@ -1569,11 +1884,15 @@
           "translation": "Tôi đang sắp rời đi thì điện thoại reo.",
           "aliases": [
             "be on the point of doing st",
-            "be about to do st"
+            "be about to do st",
+            "be on the point of doing",
+            "be about to do",
+            "Be on the point of"
           ],
           "teacherSelected": true,
           "questions": [
-            88
+            88,
+            100
           ]
         },
         {
@@ -1620,6 +1939,208 @@
           "questions": [
             95
           ]
+        },
+        {
+          "question": 6,
+          "term": "under guarantee",
+          "meta": "PHRASE",
+          "meaning": "còn trong thời hạn bảo hành",
+          "note": "Under guarantee nghĩa là còn trong thời hạn bảo hành. Đây là cách kết hợp cố định; below, beneath và down đều không dùng thay under trong cụm này. Ngữ cảnh mua một chiếc máy rẻ khiến việc kiểm tra bảo hành hợp lý, không cần hiểu tiếng lóng về đồ trộm cắp.",
+          "usage": "be under guarantee; a two-year guarantee",
+          "example": "The laptop is still under guarantee.",
+          "translation": "Máy tính xách tay vẫn còn bảo hành.",
+          "family": "guarantee (n/v); guaranteed (adj)",
+          "teacherSelected": true,
+          "questions": [
+            6
+          ],
+          "aliases": []
+        },
+        {
+          "question": 25,
+          "term": "come up with",
+          "meta": "PHRASAL VERB",
+          "meaning": "nghĩ ra; tìm ra",
+          "note": "Thường đi với ý tưởng, kế hoạch hoặc giải pháp. Cụm nhấn mạnh việc tạo ra hoặc nghĩ ra thứ cần thiết; không phải come up to là tiến lại gần.",
+          "usage": "come up with an idea/a solution",
+          "example": "Mai came up with a simple solution.",
+          "translation": "Mai nghĩ ra một giải pháp đơn giản.",
+          "family": "come – came – come; idea (n); inventive (adj)",
+          "teacherSelected": true,
+          "questions": [
+            25
+          ],
+          "aliases": []
+        },
+        {
+          "term": "have a lot to offer",
+          "meaning": "có nhiều điều hấp dẫn hoặc hữu ích",
+          "usage": "have a lot to offer somebody",
+          "example": "The city has a lot to offer visitors.",
+          "translation": "Thành phố có nhiều điều hấp dẫn dành cho du khách.",
+          "family": "offer (v/n); offered; offering (n)",
+          "meta": "VERB PHRASE",
+          "note": "Have a lot to offer in terms of natural resources diễn tả khu vực có nhiều giá trị/lợi thế về tài nguyên thiên nhiên.",
+          "aliases": [],
+          "question": 86,
+          "questions": [
+            86
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "prevent from",
+          "meaning": "ngăn ai/điều gì làm gì",
+          "usage": "prevent somebody/something from + V-ing",
+          "example": "The rain prevented us from leaving.",
+          "translation": "Mưa khiến chúng tôi không thể rời đi.",
+          "family": "prevent (v); prevention (n); preventive (adj)",
+          "meta": "VERB PHRASE",
+          "note": "Prevent something from becoming ... diễn tả giá của cuốn sách có thể ngăn nó trở thành bestseller.",
+          "aliases": [
+            "prevent somebody from",
+            "prevent something from"
+          ],
+          "question": 87,
+          "questions": [
+            87,
+            96
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "It was … that …",
+          "meta": "GRAMMAR PATTERN",
+          "meaning": "chính… là…; câu chẻ để nhấn mạnh",
+          "note": "Mẫu này tách một thành phần ra để làm nổi bật người, vật, thời điểm hoặc nơi chốn. Khi nhấn mạnh người, có thể dùng who thay that. Giữ đúng ý và thì của câu gốc; phần được nhấn mạnh đứng sau It is/was.",
+          "usage": "It is/was + phần nhấn mạnh + that + phần còn lại; It was + người + who…",
+          "family": "emphasis (n): sự nhấn mạnh; emphasize (v): nhấn mạnh; cleft sentence: câu chẻ",
+          "example": "It was the final example that helped me understand the rule.",
+          "translation": "Chính ví dụ cuối cùng đã giúp tôi hiểu quy tắc.",
+          "teacherSelected": true,
+          "questions": [
+            89
+          ],
+          "question": 89,
+          "aliases": []
+        },
+        {
+          "term": "make a name for oneself as",
+          "meta": "IDIOM",
+          "meaning": "gây dựng tên tuổi với tư cách là",
+          "note": "Cụm này nói về việc trở nên được biết đến nhờ năng lực hoặc thành tích. As giới thiệu vai trò, còn in giới thiệu lĩnh vực. Đại từ phản thân phải khớp chủ ngữ: herself, himself, themselves…",
+          "usage": "make a name for oneself as + nghề/vai trò; make a name for oneself in + lĩnh vực",
+          "family": "name (n): tên, danh tiếng; reputation (n): danh tiếng; renowned (adj): nổi tiếng",
+          "example": "She made a name for herself as a talented designer.",
+          "translation": "Cô ấy gây dựng tên tuổi với tư cách một nhà thiết kế tài năng.",
+          "teacherSelected": true,
+          "questions": [
+            92
+          ],
+          "question": 92,
+          "aliases": []
+        },
+        {
+          "term": "make somebody do",
+          "meaning": "khiến hoặc bắt ai làm gì",
+          "usage": "make somebody + V; bị động be made to + V",
+          "example": "They made us wait outside.",
+          "translation": "Họ bắt chúng tôi chờ bên ngoài.",
+          "family": "make → made → made; chủ động không to, bị động có to",
+          "meta": "VERB PHRASE",
+          "note": "Make somebody do ở chủ động chuyển sang be made to do ở bị động, nên dùng I was often made to carry…",
+          "aliases": [],
+          "question": 93,
+          "questions": [
+            93
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "put up with",
+          "meaning": "chịu đựng",
+          "usage": "put up with + danh từ/V-ing",
+          "example": "I cannot put up with this noise.",
+          "translation": "Tôi không thể chịu nổi tiếng ồn này.",
+          "family": "put → put → put; putting",
+          "meta": "VERB PHRASE",
+          "note": "Put up with something nghĩa là chịu đựng. Be not willing to put up with tương đương would no longer tolerate.",
+          "aliases": [],
+          "question": 97,
+          "questions": [
+            97
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "be willing to",
+          "meaning": "sẵn lòng làm gì",
+          "usage": "be willing to + V",
+          "example": "She is willing to help us.",
+          "translation": "Cô ấy sẵn lòng giúp chúng tôi.",
+          "family": "willing/unwilling (adj); willingness (n)",
+          "meta": "VERB PHRASE",
+          "note": "Put up with something nghĩa là chịu đựng. Be not willing to put up with tương đương would no longer tolerate.",
+          "aliases": [
+            "willing to"
+          ],
+          "question": 97,
+          "questions": [
+            97
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "afford",
+          "meaning": "có đủ tiền hoặc điều kiện để làm gì",
+          "usage": "can/could afford + danh từ/to V",
+          "example": "We cannot afford to buy a new car.",
+          "translation": "Chúng tôi không đủ tiền mua xe mới.",
+          "family": "afford (v); affordable (adj); affordability (n)",
+          "meta": "VERB",
+          "note": "Can afford this holiday giữ ý kỳ nghỉ nằm trong khả năng chi trả; as long as nêu điều kiện phải tránh các nhà hàng đắt tiền.",
+          "aliases": [],
+          "question": 98,
+          "questions": [
+            98
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "as long as / so long as / provided / providing",
+          "meta": "CONJUNCTIONS",
+          "meaning": "miễn là; với điều kiện là",
+          "note": "Các từ nối này đặt ra điều kiện để việc khác được thực hiện. Provided và providing có thể thêm that. As long as còn có nghĩa chỉ thời gian là trong suốt khoảng thời gian; hãy xem câu đang nói về điều kiện hay độ dài thời gian.",
+          "usage": "as/so long as + S + V; provided/providing (that) + S + V",
+          "family": "condition (n): điều kiện; conditional (adj): có điều kiện; provide (v): cung cấp",
+          "example": "You may borrow the book as long as you return it on Friday.",
+          "translation": "Bạn có thể mượn sách miễn là trả lại vào thứ Sáu.",
+          "teacherSelected": true,
+          "questions": [
+            98
+          ],
+          "question": 98,
+          "aliases": [
+            "as long as"
+          ]
+        },
+        {
+          "term": "have almost no chance of",
+          "meaning": "hầu như không có khả năng làm gì",
+          "usage": "have (almost) no chance of + V-ing",
+          "example": "We have almost no chance of winning.",
+          "translation": "Chúng tôi hầu như không có khả năng thắng.",
+          "family": "chance (n); chances (số nhiều)",
+          "meta": "VERB PHRASE",
+          "note": "Have almost no chance of + V-ing nghĩa là hầu như không có khả năng làm gì, tương đương very unlikely.",
+          "aliases": [
+            "have no chance of"
+          ],
+          "question": 99,
+          "questions": [
+            99
+          ],
+          "teacherSelected": true
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"
@@ -1640,6 +2161,10 @@
           "teacherSelected": true,
           "questions": [
             12
+          ],
+          "aliases": [
+            "respectable",
+            "respectful"
           ]
         },
         {
@@ -1653,7 +2178,8 @@
           "translation": "Tất cả ứng viên đều được xem xét bất kể tuổi tác.",
           "teacherSelected": true,
           "questions": [
-            12
+            12,
+            25
           ]
         },
         {
@@ -1668,6 +2194,11 @@
           "teacherSelected": true,
           "questions": [
             13
+          ],
+          "aliases": [
+            "take in",
+            "absorb",
+            "intake"
           ]
         },
         {
@@ -1682,6 +2213,12 @@
           "teacherSelected": true,
           "questions": [
             15
+          ],
+          "aliases": [
+            "barely",
+            "hardly",
+            "scarcely",
+            "Barely"
           ]
         },
         {
@@ -1710,6 +2247,10 @@
           "teacherSelected": true,
           "questions": [
             20
+          ],
+          "aliases": [
+            "take effect",
+            "In effect"
           ]
         },
         {
@@ -1752,6 +2293,10 @@
           "teacherSelected": true,
           "questions": [
             23
+          ],
+          "aliases": [
+            "jot down",
+            "note down"
           ]
         },
         {
@@ -1766,6 +2311,10 @@
           "teacherSelected": true,
           "questions": [
             24
+          ],
+          "aliases": [
+            "green",
+            "inexperienced"
           ]
         },
         {
@@ -1780,6 +2329,9 @@
           "teacherSelected": true,
           "questions": [
             25
+          ],
+          "aliases": [
+            "criteria"
           ]
         },
         {
@@ -1794,6 +2346,10 @@
           "teacherSelected": true,
           "questions": [
             36
+          ],
+          "aliases": [
+            "enduring",
+            "endure"
           ]
         },
         {
@@ -1836,6 +2392,9 @@
           "teacherSelected": true,
           "questions": [
             56
+          ],
+          "aliases": [
+            "appealing"
           ]
         },
         {
@@ -1850,6 +2409,10 @@
           "teacherSelected": true,
           "questions": [
             57
+          ],
+          "aliases": [
+            "prose",
+            "poem"
           ]
         },
         {
@@ -1864,6 +2427,11 @@
           "teacherSelected": true,
           "questions": [
             57
+          ],
+          "aliases": [
+            "literary",
+            "literate",
+            "literal"
           ]
         },
         {
@@ -1892,6 +2460,9 @@
           "teacherSelected": true,
           "questions": [
             59
+          ],
+          "aliases": [
+            "move"
           ]
         },
         {
@@ -1962,6 +2533,10 @@
           "teacherSelected": true,
           "questions": [
             85
+          ],
+          "aliases": [
+            "amass",
+            "accumulate"
           ]
         },
         {
@@ -1976,6 +2551,10 @@
           "teacherSelected": true,
           "questions": [
             91
+          ],
+          "aliases": [
+            "fall prey to",
+            "fall victim to"
           ]
         },
         {
@@ -1988,7 +2567,8 @@
           "example": "A rational decision should be based on evidence rather than fear.",
           "translation": "Quyết định hợp lý nên dựa trên bằng chứng thay vì nỗi sợ.",
           "aliases": [
-            "rational = reasonable"
+            "rational = reasonable",
+            "rational"
           ],
           "teacherSelected": true,
           "questions": [
@@ -2025,6 +2605,10 @@
           "teacherSelected": true,
           "questions": [
             98
+          ],
+          "aliases": [
+            "economic climate",
+            "climate"
           ]
         },
         {
@@ -2040,6 +2624,140 @@
           "questions": [
             99
           ]
+        },
+        {
+          "question": 4,
+          "term": "face up to",
+          "meta": "phrasal verb",
+          "meaning": "đối diện và chấp nhận",
+          "note": "Theo sau là danh từ hoặc V-ing; to là giới từ. Face up to a problem/the truth. We must face up to our mistakes. → Chúng ta phải thừa nhận và đối diện sai lầm.",
+          "usage": "Theo sau là danh từ hoặc V-ing; to là giới từ. Face up to a problem/the truth.",
+          "example": "We must face up to our mistakes.",
+          "translation": "Chúng ta phải thừa nhận và đối diện sai lầm.",
+          "family": "face (v): đối mặt; faced, facing. Giữ đủ up to.",
+          "teacherSelected": true,
+          "questions": [
+            4
+          ],
+          "aliases": []
+        },
+        {
+          "question": 31,
+          "term": "take responsibility for",
+          "meta": "verb phrase",
+          "meaning": "nhận trách nhiệm về",
+          "note": "Nhấn mạnh việc nhận phần việc hoặc nhận trách nhiệm với kết quả mình gây ra. Trong câu, nhân vật thừa nhận sai sót là của mình.",
+          "usage": "take responsibility for + N/V-ing; be responsible for",
+          "family": "responsibility (n); responsible (adj); responsibly (adv)",
+          "example": "He took responsibility for the mistake.",
+          "translation": "Anh ấy nhận trách nhiệm về sai sót đó.",
+          "teacherSelected": true,
+          "questions": [
+            31
+          ],
+          "aliases": []
+        },
+        {
+          "question": 38,
+          "term": "an alternative to",
+          "meta": "noun phrase",
+          "meaning": "phương án thay thế cho",
+          "note": "Alternative dùng như danh từ đếm được; nhớ to. As an alternative = như một phương án khác. Cycling is an alternative to driving. → Đi xe đạp là một lựa chọn thay cho lái xe.",
+          "usage": "Alternative dùng như danh từ đếm được; nhớ to. As an alternative = như một phương án khác.",
+          "example": "Cycling is an alternative to driving.",
+          "translation": "Đi xe đạp là một lựa chọn thay cho lái xe.",
+          "family": "alternative (n/a), alternatively (adv): hoặc, theo cách khác.",
+          "teacherSelected": true,
+          "questions": [
+            38
+          ],
+          "aliases": []
+        },
+        {
+          "term": "appeal to",
+          "meaning": "hấp dẫn ai; kêu gọi ai",
+          "usage": "appeal to somebody; appeal to somebody for something",
+          "example": "The idea appeals to young people.",
+          "translation": "Ý tưởng đó hấp dẫn người trẻ.",
+          "family": "appeal (n/v); appealing (adj)",
+          "meta": "VERB PHRASE",
+          "note": "appeal to: tác động, khơi gợi sự quan tâm. appealing = attractive: hấp dẫn.",
+          "aliases": [],
+          "question": 56,
+          "questions": [
+            56
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "have no intention of",
+          "meaning": "không có ý định làm gì",
+          "usage": "have no intention of + V-ing",
+          "example": "I have no intention of selling the house.",
+          "translation": "Tôi không có ý định bán ngôi nhà.",
+          "family": "intend (v); intention (n); intentional (adj)",
+          "meta": "VERB PHRASE",
+          "note": "have no intention of + V-ing: không có ý định làm gì.",
+          "aliases": [
+            "no intention of"
+          ],
+          "question": 86,
+          "questions": [
+            86
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "no point",
+          "meaning": "không có ích, không đáng làm",
+          "usage": "there is no point (in) + V-ing",
+          "example": "There is no point in arguing now.",
+          "translation": "Bây giờ tranh cãi cũng không có ích.",
+          "family": "point (n); pointless (adj)",
+          "meta": "PHRASE",
+          "note": "see no point in + V-ing: không thấy ích lợi của việc gì.",
+          "aliases": [],
+          "question": 89,
+          "questions": [
+            89
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "to the best of my knowledge",
+          "meaning": "theo những gì tôi biết",
+          "usage": "to my knowledge; to the best of my knowledge",
+          "example": "To the best of my knowledge, the shop is closed.",
+          "translation": "Theo những gì tôi biết, cửa hàng đã đóng cửa.",
+          "family": "know (v); knowledge (n); knowledgeable (adj)",
+          "meta": "PHRASE",
+          "note": "to (the best of) my knowledge: theo những gì tôi biết.",
+          "aliases": [
+            "to my knowledge"
+          ],
+          "question": 94,
+          "questions": [
+            94
+          ],
+          "teacherSelected": true
+        },
+        {
+          "question": 95,
+          "term": "talk somebody into / out of",
+          "meta": "verb phrases",
+          "meaning": "thuyết phục ai làm / không làm",
+          "note": "Should not have + V3 phê bình việc đã làm. Talk somebody into doing something là thuyết phục ai làm; câu nói đáng lẽ không nên thuyết phục tham gia, không đồng nghĩa phải chủ động khuyên rút lui.",
+          "usage": "talk somebody into/out of + V-ing",
+          "family": "persuade (v); persuasion (n); chú ý nghĩa đối lập",
+          "example": "She talked me into joining the workshop.",
+          "translation": "Cô ấy thuyết phục tôi tham gia buổi học.",
+          "questions": [
+            95
+          ],
+          "aliases": [
+            "out of"
+          ],
+          "teacherSelected": true
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"

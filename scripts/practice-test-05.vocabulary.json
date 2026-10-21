@@ -14,6 +14,9 @@
       "teacherSelected": true,
       "questions": [
         4
+      ],
+      "aliases": [
+        "Interact"
       ]
     },
     {
@@ -149,6 +152,9 @@
       "teacherSelected": true,
       "questions": [
         21
+      ],
+      "aliases": [
+        "Contribute to"
       ]
     },
     {
@@ -194,6 +200,9 @@
       "teacherSelected": true,
       "questions": [
         24
+      ],
+      "aliases": [
+        "at risk"
       ]
     },
     {
@@ -209,6 +218,9 @@
       "teacherSelected": true,
       "questions": [
         26
+      ],
+      "aliases": [
+        "Give something serious consideration"
       ]
     },
     {
@@ -359,6 +371,9 @@
       "teacherSelected": true,
       "questions": [
         46
+      ],
+      "aliases": [
+        "reunite"
       ]
     },
     {
@@ -415,7 +430,11 @@
       "usage": "fall short of one’s expectations",
       "family": "expect (v); expectation (n); live up to: đáp ứng",
       "example": "The service fell short of our expectations.",
-      "translation": "Dịch vụ không đạt kỳ vọng của chúng tôi."
+      "translation": "Dịch vụ không đạt kỳ vọng của chúng tôi.",
+      "teacherSelected": true,
+      "questions": [
+        90
+      ]
     },
     {
       "question": 91,
@@ -426,7 +445,14 @@
       "usage": "talk somebody into/out of + V-ing",
       "family": "persuade (v); persuasion (n); chú ý nghĩa đối lập",
       "example": "She talked me into joining the workshop.",
-      "translation": "Cô ấy thuyết phục tôi tham gia buổi học."
+      "translation": "Cô ấy thuyết phục tôi tham gia buổi học.",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ],
+      "aliases": [
+        "Talk somebody into"
+      ]
     },
     {
       "question": 99,
@@ -437,7 +463,215 @@
       "usage": "be/leave somebody at sixes and sevens",
       "family": "confused: bối rối; disorganised: thiếu tổ chức",
       "example": "We were at sixes and sevens after the sudden move.",
-      "translation": "Chúng tôi rất rối sau lần chuyển chỗ đột ngột."
+      "translation": "Chúng tôi rất rối sau lần chuyển chỗ đột ngột.",
+      "teacherSelected": true,
+      "questions": [
+        99
+      ]
+    },
+    {
+      "term": "contrary to",
+      "meaning": "trái với",
+      "usage": "contrary to + danh từ/mệnh đề danh từ",
+      "example": "Contrary to expectations, sales increased.",
+      "translation": "Trái với dự đoán, doanh số đã tăng.",
+      "family": "contrary (adj); on the contrary dùng để bác bỏ ý trước",
+      "meta": "PHRASE",
+      "note": "Contrary to what… nghĩa là trái với điều mà…: thông tin thật khác điều báo chí khẳng định. Owing to/thanks to chỉ nguyên nhân; regardless phải đi với of và mang nghĩa bất kể.",
+      "aliases": [],
+      "question": 11,
+      "questions": [
+        11
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 22,
+      "term": "be charged with",
+      "meta": "verb phrase",
+      "meaning": "bị buộc tội",
+      "note": "Charged with nói việc bị cáo buộc một tội, chưa tự có nghĩa đã bị kết án. Accused đi với of, không phải with.",
+      "usage": "be charged with a crime/doing something",
+      "example": "He was charged with theft.",
+      "translation": "Anh ta bị buộc tội trộm cắp.",
+      "family": "charge (n/v); accusation (n): lời cáo buộc; conviction (n): sự kết án.",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ],
+      "aliases": []
+    },
+    {
+      "term": "with a view to",
+      "meta": "PREPOSITIONAL PHRASE",
+      "meaning": "nhằm mục đích",
+      "note": "Cụm này nêu mục tiêu của một hành động và thường dùng trong văn viết trang trọng. To ở đây là giới từ nên theo sau là danh từ hoặc V-ing, không phải động từ nguyên mẫu.",
+      "usage": "with a view to + N/V-ing; with a view to improving something",
+      "family": "view (n): cách nhìn, quan điểm; a view to trong cụm này chỉ mục đích",
+      "example": "The school revised its timetable with a view to reducing student stress.",
+      "translation": "Trường điều chỉnh thời khóa biểu nhằm giảm căng thẳng cho học sinh.",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ],
+      "question": 30,
+      "aliases": []
+    },
+    {
+      "term": "lack of",
+      "meaning": "sự thiếu hụt",
+      "usage": "a lack of something; lack something",
+      "example": "The project failed through lack of funding.",
+      "translation": "Dự án thất bại do thiếu kinh phí.",
+      "family": "lack (n/v); lacking (adj); động từ lack không cần of",
+      "meta": "PHRASE",
+      "note": "Lack of experience = sự thiếu kinh nghiệm; prevent somebody from doing something = ngăn ai làm gì. Giữ dạng câu hỏi Will Glyn’s lack… và danh từ riêng Glyn đúng đề.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "prevent from",
+      "meaning": "ngăn ai/điều gì làm gì",
+      "usage": "prevent somebody/something from + V-ing",
+      "example": "The rain prevented us from leaving.",
+      "translation": "Mưa khiến chúng tôi không thể rời đi.",
+      "family": "prevent (v); prevention (n); preventive (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Lack of experience = sự thiếu kinh nghiệm; prevent somebody from doing something = ngăn ai làm gì. Giữ dạng câu hỏi Will Glyn’s lack… và danh từ riêng Glyn đúng đề.",
+      "aliases": [
+        "prevent somebody from",
+        "prevent something from"
+      ],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "give up",
+      "meaning": "từ bỏ, ngừng làm",
+      "usage": "give up + danh từ/V-ing",
+      "example": "He gave up smoking last year.",
+      "translation": "Anh ấy bỏ thuốc lá năm ngoái.",
+      "family": "give → gave → given",
+      "meta": "VERB PHRASE",
+      "note": "Give up thinking/give up hope of finding diễn đạt không còn tin có thể tìm việc. Has given đã có nên bắt đầu up; giữ before the end of the year để không mất giới hạn thời gian.",
+      "aliases": [],
+      "question": 86,
+      "questions": [
+        86,
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "insist on",
+      "meaning": "khăng khăng, nhất quyết",
+      "usage": "insist on + danh từ/V-ing",
+      "example": "She insisted on paying for lunch.",
+      "translation": "Cô ấy nhất quyết trả tiền bữa trưa.",
+      "family": "insist (v); insistence (n); insistent (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Insist on + V-ing diễn đạt nhất quyết làm gì. See somebody off là tiễn ai; đặt Peter giữa see và off, và giữ at the airport theo câu nguồn.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "see off",
+      "meaning": "tiễn ai lên đường",
+      "usage": "see somebody off",
+      "example": "We went to the station to see her off.",
+      "translation": "Chúng tôi ra ga tiễn cô ấy.",
+      "family": "see → saw → seen",
+      "meta": "VERB PHRASE",
+      "note": "Insist on + V-ing diễn đạt nhất quyết làm gì. See somebody off là tiễn ai; đặt Peter giữa see và off, và giữ at the airport theo câu nguồn.",
+      "aliases": [
+        "see somebody off",
+        "see someone off"
+      ],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be in danger of",
+      "meaning": "có nguy cơ",
+      "usage": "be in danger of + danh từ/V-ing",
+      "example": "The village is in danger of flooding.",
+      "translation": "Ngôi làng có nguy cơ bị ngập.",
+      "family": "danger (n); dangerous (adj); endanger (v)",
+      "meta": "VERB PHRASE",
+      "note": "In danger of + V-ing = có nguy cơ. Người này có thể bị sa thải nên cần bị động being sacked/fired/dismissed; from his job đã in sẵn ở phần đuôi.",
+      "aliases": [
+        "in danger of",
+        "In danger of"
+      ],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "pay attention to",
+      "meaning": "chú ý đến",
+      "usage": "pay attention to + danh từ/V-ing",
+      "example": "Please pay attention to the instructions.",
+      "translation": "Hãy chú ý đến hướng dẫn.",
+      "family": "attention (n); attentive (adj); attentively (adv); pay → paid",
+      "meta": "VERB PHRASE",
+      "note": "Pay attention to = chú ý/lắng nghe. Weren’t paying attention giữ ý không lắng nghe lúc giáo viên nói; what the teacher was nối với saying đã có, tránh nhập lặp saying.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 98,
+      "term": "put one’s foot in it",
+      "meta": "IDIOM",
+      "meaning": "lỡ lời gây ngượng hoặc xúc phạm",
+      "note": "Nói một điều thiếu tế nhị mà thường không cố ý, như hỏi về người thân đã mất. Đại từ sở hữu thay theo chủ ngữ: you put your foot in it. Put có quá khứ và phân từ vẫn là put.",
+      "usage": "put my/your/his/her foot in it",
+      "example": "I put my foot in it by mentioning the cancelled wedding.",
+      "translation": "Tôi lỡ lời khi nhắc đến đám cưới đã bị hủy.",
+      "family": "put–put–put; foot/feet (n); tactful/tactless (adj, liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ],
+      "aliases": [
+        "Put your foot in it"
+      ]
+    },
+    {
+      "term": "do somebody a good turn",
+      "meaning": "giúp ai một việc tốt",
+      "usage": "do somebody a good turn",
+      "example": "You did me a good turn by carrying my bag.",
+      "translation": "Bạn đã giúp tôi một việc tốt khi xách túi giúp tôi.",
+      "family": "do → did → done; turn (n)",
+      "meta": "VERB PHRASE",
+      "note": "Do somebody a good turn = giúp ai một việc tốt. Sandie trông trẻ giúp người nói nên did me a good turn; did là quá khứ, turn phải giữ nguyên từ khóa.",
+      "aliases": [],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"

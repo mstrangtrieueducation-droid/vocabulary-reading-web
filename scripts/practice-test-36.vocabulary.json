@@ -450,6 +450,221 @@
       "questions": [
         100
       ]
+    },
+    {
+      "question": 2,
+      "term": "contribute to / stem from",
+      "meta": "verb phrases",
+      "meaning": "góp phần vào / bắt nguồn từ",
+      "note": "Contribute to global warming nghĩa là góp phần gây nóng lên toàn cầu. Stem from chỉ nguồn gốc; attribute A to B là quy A cho B; spark thường nhận tân ngữ trực tiếp, không dùng spark to.",
+      "usage": "contribute to a problem; stem from a cause",
+      "family": "contribution (n); contributor (n)",
+      "example": "Poor planning contributed to the delay.",
+      "translation": "Việc lập kế hoạch kém góp phần gây chậm trễ.",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ],
+      "aliases": [
+        "Contribute to"
+      ]
+    },
+    {
+      "question": 51,
+      "term": "strike a match",
+      "meta": "COLLOCATION",
+      "meaning": "quẹt một que diêm",
+      "note": "Strike trong cụm này là quẹt để tạo lửa, không phải đánh ai hoặc đình công. Quá khứ là struck; không viết striked.",
+      "usage": "strike a match; struck a match",
+      "example": "He struck a match and lit the candle.",
+      "translation": "Anh ấy quẹt diêm rồi thắp nến.",
+      "family": "strike – struck – struck; match (n: que diêm/trận đấu)",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ],
+      "aliases": []
+    },
+    {
+      "question": 83,
+      "term": "oppose / object to",
+      "meta": "verbs",
+      "meaning": "phản đối",
+      "note": "Oppose the plan là phản đối kế hoạch, nhận tân ngữ trực tiếp. Object và disagree phải đi với to/with; differ nghĩa là khác nhau, không dùng differ the plan.",
+      "usage": "oppose a plan; object to a plan/V-ing",
+      "family": "opposition (n); objection (n); không thêm to sau oppose",
+      "example": "Several residents objected to the proposal.",
+      "translation": "Một số cư dân phản đối đề xuất.",
+      "teacherSelected": true,
+      "questions": [
+        83
+      ],
+      "aliases": [
+        "Object to"
+      ]
+    },
+    {
+      "term": "put the blame on",
+      "meaning": "quy trách nhiệm, đổ lỗi cho ai",
+      "usage": "put the blame on somebody for something",
+      "example": "Do not put the blame on me for the delay.",
+      "translation": "Đừng đổ lỗi cho tôi về sự chậm trễ.",
+      "family": "blame (n/v); blameworthy (adj); blameless (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Put the blame on somebody for something = quy trách nhiệm cho ai về việc gì. Put something down to somebody cũng diễn đạt quy nguyên nhân. Cần giữ Tom và sự thất bại của kế hoạch; không đổi người phát ngôn Lisa thành người bị trách.",
+      "aliases": [
+        "place the blame on",
+        "place the blame for"
+      ],
+      "question": 84,
+      "questions": [
+        84
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be in competition for",
+      "meaning": "đang cạnh tranh để giành",
+      "usage": "be in competition/contention for something",
+      "example": "Several teams are in competition for the prize.",
+      "translation": "Một số đội đang cạnh tranh để giành giải thưởng.",
+      "family": "compete (v); competition (n); competitive (adj); competitor (n)",
+      "meta": "VERB PHRASE",
+      "note": "Be in competition/contention for = đang cạnh tranh để giành được. Sau in cần danh từ, không competing. Giữ five actors, leading role và in the play để đủ người, vị trí và ngữ cảnh.",
+      "aliases": [
+        "be in competition/contention for",
+        "Be in competition/contention for"
+      ],
+      "question": 86,
+      "questions": [
+        86
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "weather permitting",
+      "meaning": "nếu thời tiết cho phép",
+      "usage": "weather permitting, + mệnh đề",
+      "example": "We will eat outside, weather permitting.",
+      "translation": "Chúng tôi sẽ ăn ngoài trời nếu thời tiết cho phép.",
+      "family": "permit (v); permission (n); permitting (V-ing)",
+      "meta": "PHRASE",
+      "note": "Weather permitting là cụm tuyệt đối thay if the weather is fine/if weather allows. Dùng permitting, không permitted. May cần giữ để thể hiện khả năng, không nâng thành will chắc chắn.",
+      "aliases": [],
+      "question": 88,
+      "questions": [
+        88
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be of no consequence",
+      "meaning": "không quan trọng, không ảnh hưởng",
+      "usage": "be of no consequence/importance/significance to somebody",
+      "example": "The cost is of no consequence to him.",
+      "translation": "Chi phí không quan trọng với anh ấy.",
+      "family": "consequence (n); importance (n); significance (n)",
+      "meta": "VERB PHRASE",
+      "note": "Be of no consequence/importance/significance to somebody = không quan trọng đối với ai. Which phải nằm trong chỗ trống vì nối với make of car you choose có sẵn. Chỉ viết no consequence to me sẽ làm câu thiếu từ nối.",
+      "aliases": [
+        "be of no consequence/importance/significance",
+        "Be of no consequence/importance/significance"
+      ],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 91,
+      "term": "speak one’s mind",
+      "meta": "idiom",
+      "meaning": "nói thẳng ý nghĩ của mình",
+      "note": "Nhấn sự thẳng thắn, có thể dù ý kiến không làm người khác hài lòng. Không thay speak bằng say trong thành ngữ này.",
+      "usage": "speak my/her/his mind",
+      "example": "She is never afraid to speak her mind.",
+      "translation": "Cô ấy không bao giờ ngại nói thẳng suy nghĩ.",
+      "family": "speak → spoke → spoken; outspoken (a): thẳng thắn; candid (a): thật lòng.",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ],
+      "aliases": []
+    },
+    {
+      "term": "tempt into",
+      "meaning": "dụ dỗ, khiến ai muốn làm",
+      "usage": "tempt somebody into V-ing/to V",
+      "example": "The offer tempted me into buying more.",
+      "translation": "Lời chào hàng khiến tôi muốn mua thêm.",
+      "family": "tempt (v); temptation (n); tempting (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Tempt somebody into doing/to do = khiến ai muốn và quyết định làm điều gì. Có thể dùng cả into buying và to buy.",
+      "aliases": [
+        "tempt somebody into",
+        "tempt somebody into doing/to do",
+        "Tempt somebody into doing/to do"
+      ],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "bring home to",
+      "meaning": "làm ai hiểu rõ, thấm thía",
+      "usage": "bring something home to somebody",
+      "example": "The accident brought home to him the need for caution.",
+      "translation": "Tai nạn khiến anh ấy thấm thía sự cần thiết phải cẩn thận.",
+      "family": "bring → brought → brought",
+      "meta": "VERB PHRASE",
+      "note": "Bring something home to somebody = làm ai hiểu rõ, thấm thía điều gì. Với mệnh đề how dài, dùng brought home to me how … .",
+      "aliases": [
+        "bring something home to somebody"
+      ],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "drive somebody round the bend",
+      "meaning": "làm ai cực kỳ bực bội",
+      "usage": "drive somebody round/around the bend",
+      "example": "That constant noise is driving me round the bend.",
+      "translation": "Tiếng ồn liên tục đó làm tôi bực phát điên.",
+      "family": "drive → drove → driven; bend (n/v)",
+      "meta": "VERB PHRASE",
+      "note": "Drive somebody round/around the bend = làm ai bực phát điên. What … is … làm nổi bật việc khiến khó chịu.",
+      "aliases": [
+        "drive somebody round/around the bend",
+        "drive somebody around the bend",
+        "Drive somebody round/around the bend"
+      ],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in deep water",
+      "meaning": "gặp rắc rối nghiêm trọng",
+      "usage": "be in deep water",
+      "example": "He is in deep water after losing the documents.",
+      "translation": "Anh ấy gặp rắc rối lớn sau khi làm mất tài liệu.",
+      "family": "deep (adj); deeply (adv); depth (n)",
+      "meta": "PHRASE",
+      "note": "Be in deep water = gặp rắc rối nghiêm trọng; nợ nần xác định rắc rối tài chính. I suspect chỉ suy đoán nên may/might/could have been phù hợp quá khứ.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
     }
   ]
 }

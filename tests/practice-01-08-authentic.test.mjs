@@ -31,7 +31,9 @@ for(const [number,[student,correction]] of Object.entries(routes)){
  assert.equal(ctx.buildReview(reversed).score,100);
  assert.equal(ctx.buildReview({...reversed,47:reversed[46]}).score,99);
  const vocab=JSON.parse(page.match(/<script[^>]*id="correction-vocabulary-data"[^>]*>([\s\S]*?)<\/script>/)[1]);
- assert.equal(vocab.words.length,[22,58,32,29,30,30,30,30][n-1]);
+ const vocabularySource=JSON.parse(await read(`scripts/practice-test-0${n}.vocabulary.json`));
+ assert.deepEqual(vocab.words,vocabularySource.words);
+ assert(vocab.words.length>=[22,58,32,29,30,30,30,30][n-1]);
  assert.equal((page.match(/class="word-card"/g)||[]).length,vocab.words.length);
  assert(vocab.words.every(w=>['term','meaning','note','usage','family','example','translation'].every(k=>typeof w[k]==='string'&&w[k].length>3)));
  assert.equal(app.test.readingSources.length,sources[n].length);

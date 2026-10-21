@@ -31,7 +31,13 @@ for(let n=1;n<=39;n++){
  }
  for(const a of src.answers){
   if(!a.explanation.trim()||!a.acceptedAnswers.length)throw Error(`Test ${n}/${a.globalNumber}: empty answer`);
-  if(/đáp án chính thức|khóa nguồn|đáp án cũ|hệ thống (?:nhận|chấp nhận|chưa)/i.test(a.explanation))throw Error(`Test ${n}/${a.globalNumber}: internal editorial text`);
+  if(/đáp án chính thức|khóa nguồn|đáp án cũ|hệ thống (?:nhận|chấp nhận|chưa)|cô duyệt|lựa chọn [A-D] đã sửa|đáp án mẫu/i.test(a.explanation))throw Error(`Test ${n}/${a.globalNumber}: internal editorial text`);
+  if(src.explanationStyle==='student-copy-concise-v1'){
+   const lines=a.explanation.split('\n').filter(Boolean);
+   const vocabularyList=lines.length>=4&&lines.every(line=>line.length<120);
+   if(a.explanation.length>320&&!vocabularyList)throw Error(`Test ${n}/${a.globalNumber}: explanation needs a concise editorial review`);
+   if(/Câu hoàn chỉnh:|Từ vựng trọng tâm:/.test(a.explanation))throw Error(`Test ${n}/${a.globalNumber}: duplicated answer or vocabulary label`);
+  }
   if(a.globalNumber>=91)for(const value of a.acceptedAnswers){
    const tokens=value.trim().split(/\s+/);
    if(tokens.length<2||tokens.length>6||!tokens.some(t=>t.toLowerCase().replace(/[.,;!?]/g,'')===a.keyword.toLowerCase()))throw Error(`Test ${n}/${a.globalNumber}: keyword/word limit`);

@@ -403,7 +403,8 @@
       "family": "punctuate (v); punctuation (n); punctuated (V2/V3)",
       "teacherSelected": true,
       "questions": [
-        61
+        61,
+        65
       ]
     },
     {
@@ -450,6 +451,276 @@
       "questions": [
         100
       ]
+    },
+    {
+      "term": "get somebody down",
+      "meaning": "làm ai buồn, nản lòng",
+      "usage": "get somebody down",
+      "example": "Do not let this mistake get you down.",
+      "translation": "Đừng để sai lầm này làm bạn nản lòng.",
+      "family": "get → got → got/gotten; down (adj/adv)",
+      "meta": "VERB PHRASE",
+      "note": "Get someone down nghĩa là khiến ai buồn, nản hoặc mệt mỏi. Ô nhiễm ngày càng xấu tác động tiêu cực tới mọi người. Get round là tránh/vượt qua trở ngại hoặc lan truyền; get over là hồi phục; get together là tụ họp, không đúng cấu trúc và nghĩa ở đây.",
+      "aliases": [
+        "get someone down"
+      ],
+      "question": 57,
+      "questions": [
+        57
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "lack of",
+      "meaning": "sự thiếu hụt",
+      "usage": "a lack of something; lack something",
+      "example": "The project failed through lack of funding.",
+      "translation": "Dự án thất bại do thiếu kinh phí.",
+      "family": "lack (n/v); lacking (adj); động từ lack không cần of",
+      "meta": "PHRASE",
+      "note": "Relentless drive là động lực bền bỉ, không ngừng thúc đẩy cố gắng. Đối lập rõ là a lack of motivation, thiếu động lực. Tireless effort gần nghĩa chứ không trái; serious decision và constant support nói những khái niệm khác, không phải mức độ quyết tâm.",
+      "aliases": [],
+      "question": 75,
+      "questions": [
+        75
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "as long as / so long as / provided / providing",
+      "meta": "CONJUNCTIONS",
+      "meaning": "miễn là; với điều kiện là",
+      "note": "Các từ nối này đặt ra điều kiện để việc khác được thực hiện. Provided và providing có thể thêm that. As long as còn có nghĩa chỉ thời gian là trong suốt khoảng thời gian; hãy xem câu đang nói về điều kiện hay độ dài thời gian.",
+      "usage": "as/so long as + S + V; provided/providing (that) + S + V",
+      "family": "condition (n): điều kiện; conditional (adj): có điều kiện; provide (v): cung cấp",
+      "example": "You may borrow the book as long as you return it on Friday.",
+      "translation": "Bạn có thể mượn sách miễn là trả lại vào thứ Sáu.",
+      "teacherSelected": true,
+      "questions": [
+        82
+      ],
+      "question": 82,
+      "aliases": [
+        "So long as"
+      ]
+    },
+    {
+      "term": "make somebody do",
+      "meaning": "khiến hoặc bắt ai làm gì",
+      "usage": "make somebody + V; bị động be made to + V",
+      "example": "They made us wait outside.",
+      "translation": "Họ bắt chúng tôi chờ bên ngoài.",
+      "family": "make → made → made; chủ động không to, bị động có to",
+      "meta": "VERB PHRASE",
+      "note": "Make someone do something chuyển sang bị động be made to do something: bị bắt làm gì. To phải được thêm vào sau was made dù câu chủ động không có. Giữ by his father để không mất người buộc học và Latin là môn học.",
+      "aliases": [],
+      "question": 84,
+      "questions": [
+        84
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "out of the question",
+      "meaning": "không thể thực hiện, không được cân nhắc",
+      "usage": "be out of the question",
+      "example": "Buying a new car is out of the question.",
+      "translation": "Mua xe mới là điều không thể tính đến.",
+      "family": "question (n/v); không nhầm out of question và out of the question",
+      "meta": "PHRASE",
+      "note": "Out of the question nghĩa là không thể thực hiện hoặc không được chấp nhận. Ở đây nguồn đã nói impossible nên cách viết giữ nghĩa không thể chuẩn bị bữa tối đúng hạn. By 8 o’clock là chậm nhất 8 giờ, khác at 8 o’clock chỉ đúng thời điểm.",
+      "aliases": [],
+      "question": 87,
+      "questions": [
+        87
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 89,
+      "term": "the extent to which",
+      "meta": "PHRASE",
+      "meaning": "mức độ mà",
+      "note": "Dùng để nói một sự việc ảnh hưởng hoặc xảy ra đến đâu. To what extent cũng hỏi mức độ; trong câu gián tiếp không đảo trợ động từ lên trước chủ ngữ.",
+      "usage": "the extent to which something changes",
+      "example": "We examined the extent to which the plan had worked.",
+      "translation": "Chúng tôi xem xét mức độ kế hoạch đã phát huy hiệu quả.",
+      "family": "extent (n); extend (v); extensive (adj); extensively (adv)",
+      "teacherSelected": true,
+      "questions": [
+        89
+      ],
+      "aliases": []
+    },
+    {
+      "term": "no idea",
+      "meaning": "hoàn toàn không biết",
+      "usage": "have no/the slightest/faintest idea",
+      "example": "I have no idea where he is.",
+      "translation": "Tôi hoàn toàn không biết anh ấy ở đâu.",
+      "family": "idea (n); slightest/faintest nhấn mạnh phủ định",
+      "meta": "PHRASE",
+      "note": "Not have the slightest/faintest idea là hoàn toàn không biết. Cụm how to get there giữ nội dung cần hỏi đường. Có thể dùng of/about hoặc không có giới từ trước how; không đổi thành a slight idea vì sẽ làm yếu nghĩa phủ định của thành ngữ.",
+      "aliases": [
+        "not have the slightest/faintest idea",
+        "have the slightest idea",
+        "have the faintest idea",
+        "Not have the slightest/faintest idea"
+      ],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "by accident",
+      "meaning": "vô tình, không cố ý",
+      "usage": "do something by accident",
+      "example": "I broke the cup by accident.",
+      "translation": "Tôi vô tình làm vỡ chiếc cốc.",
+      "family": "accident (n); accidental (adj); accidentally (adv)",
+      "meta": "PHRASE",
+      "note": "Do something by accident nghĩa là làm vô ý, không có chủ định. Mean to do something là định làm, nên didn’t mean to break giữ ý tai nạn.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "turn down",
+      "meaning": "từ chối; vặn nhỏ",
+      "usage": "turn down an offer; turn something down",
+      "example": "She turned down the job offer.",
+      "translation": "Cô ấy từ chối lời mời làm việc.",
+      "family": "turn (v/n); turned; turning",
+      "meta": "VERB PHRASE",
+      "note": "Turn down an offer là từ chối lời đề nghị. It was a mistake chỉ lỗi trong quá khứ nên dùng shouldn’t have + V3.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "cut short",
+      "meaning": "cắt ngắn, kết thúc sớm",
+      "usage": "cut something short",
+      "example": "We had to cut our holiday short.",
+      "translation": "Chúng tôi phải kết thúc kỳ nghỉ sớm.",
+      "family": "cut → cut → cut; short (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Cut something short là kết thúc sớm hơn dự định. Cụm chuyển brought their picnic to an abrupt end thành hành động phải dừng chuyến picnic.",
+      "aliases": [
+        "Cut something short"
+      ],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "succeed in",
+      "meaning": "thành công trong việc",
+      "usage": "succeed in + V-ing",
+      "example": "She succeeded in solving the problem.",
+      "translation": "Cô ấy đã giải quyết được vấn đề.",
+      "family": "succeed (v); success (n); successful (adj); successfully (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Succeed in + V-ing tương đương manage/be able to làm việc có kết quả. Giữ hiện tại hoàn thành has succeeded vì in the last year là khoảng thời gian đến hiện tại.",
+      "aliases": [],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "pride oneself on",
+      "meaning": "tự hào về",
+      "usage": "pride oneself on + danh từ/V-ing",
+      "example": "He prides himself on being punctual.",
+      "translation": "Anh ấy tự hào về việc luôn đúng giờ.",
+      "family": "pride (n/v); proud (adj); proudly (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Pride oneself on something tương đương be proud of something. Chủ ngữ she dùng herself; able chuyển thành danh từ ability đúng từ bắt buộc.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "common knowledge",
+      "meaning": "điều ai cũng biết",
+      "usage": "it is common knowledge that + mệnh đề",
+      "example": "It is common knowledge that exercise benefits health.",
+      "translation": "Ai cũng biết tập thể dục có lợi cho sức khỏe.",
+      "family": "know (v); knowledge (n); knowledgeable (adj)",
+      "meta": "PHRASE",
+      "note": "It is common knowledge that… nghĩa là điều được nhiều người biết. Sau that cần chủ ngữ the island’s economy, còn is heavily dependent… đã nằm ngoài ô.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "hold out hope",
+      "meaning": "vẫn nuôi hy vọng",
+      "usage": "hold out hope for something; hold out hope that…",
+      "example": "They still hold out hope for a rescue.",
+      "translation": "Họ vẫn hy vọng được giải cứu.",
+      "family": "hope (n/v); hopeful/hopeless (adj); hold → held",
+      "meta": "VERB PHRASE",
+      "note": "Hold out hope for something là còn đặt hy vọng vào điều đó. Don’t … much hope diễn tả ít kỳ vọng sống sót, không nhất thiết khẳng định chắc chắn đã chết.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "work miracles",
+      "meaning": "tạo ra kết quả tốt đến bất ngờ",
+      "usage": "work/perform miracles",
+      "example": "A little encouragement can work miracles.",
+      "translation": "Một chút động viên có thể đem lại kết quả tốt bất ngờ.",
+      "family": "miracle (n); miraculous (adj); miraculously (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Work/perform miracles là tạo điều kỳ diệu, ở đây chỉ khả năng chữa được mọi thứ. Phải có phủ định để đối lập với lợi ích giảm đau có giới hạn.",
+      "aliases": [
+        "work/perform miracles",
+        "Work/perform miracles"
+      ],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take a dark view of",
+      "meaning": "nhìn nhận bi quan hoặc không tán thành",
+      "usage": "take a dark view of something",
+      "example": "She takes a dark view of their chances.",
+      "translation": "Cô ấy khá bi quan về cơ hội của họ.",
+      "family": "view (n/v); dark (adj); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Take a dark view of something là nhìn nhận theo hướng bi quan. Cũng có thể dùng look on the dark side of, tập trung vào mặt tiêu cực.",
+      "aliases": [],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
     }
   ]
 }

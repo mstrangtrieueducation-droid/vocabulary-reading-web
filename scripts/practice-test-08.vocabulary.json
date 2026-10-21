@@ -89,6 +89,9 @@
       "teacherSelected": true,
       "questions": [
         12
+      ],
+      "aliases": [
+        "Lend somebody a hand"
       ]
     },
     {
@@ -239,6 +242,9 @@
       "teacherSelected": true,
       "questions": [
         29
+      ],
+      "aliases": [
+        "Private"
       ]
     },
     {
@@ -284,6 +290,9 @@
       "teacherSelected": true,
       "questions": [
         32
+      ],
+      "aliases": [
+        "Affect"
       ]
     },
     {
@@ -314,6 +323,10 @@
       "teacherSelected": true,
       "questions": [
         40
+      ],
+      "aliases": [
+        "addictive",
+        "addicted"
       ]
     },
     {
@@ -418,7 +431,14 @@
       "translation": "Lực đẩy lên cân bằng trọng lượng của vật đang nổi.",
       "teacherSelected": true,
       "questions": [
+        72,
+        74,
         78
+      ],
+      "aliases": [
+        "Volume",
+        "density",
+        "Upthrust"
       ]
     },
     {
@@ -430,7 +450,11 @@
       "usage": "come to terms with a loss/the fact that…",
       "family": "accept (v); acceptance (n); không có nghĩa nối lại quan hệ",
       "example": "She slowly came to terms with the change.",
-      "translation": "Cô ấy dần chấp nhận sự thay đổi."
+      "translation": "Cô ấy dần chấp nhận sự thay đổi.",
+      "teacherSelected": true,
+      "questions": [
+        89
+      ]
     },
     {
       "question": 100,
@@ -441,7 +465,281 @@
       "usage": "bite my/your/his head off",
       "family": "bite–bit–bitten; nghĩa bóng, không phải hành động cắn",
       "example": "There is no need to bite my head off.",
-      "translation": "Không cần quát mắng tôi như vậy."
+      "translation": "Không cần quát mắng tôi như vậy.",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
+    },
+    {
+      "question": 3,
+      "term": "resort to",
+      "meta": "verb phrase",
+      "meaning": "dùng đến như giải pháp cuối cùng",
+      "note": "Resort to violence nghĩa là dùng đến bạo lực như một giải pháp cuối cùng. To ở đây là giới từ; resist là chống lại, refuse là từ chối và resolve là giải quyết/quyết tâm.",
+      "usage": "resort to force; resort to doing something",
+      "family": "a last resort (n: giải pháp cuối); resolve (v: giải quyết)",
+      "example": "They resolved the dispute without resorting to threats.",
+      "translation": "Họ giải quyết bất đồng mà không phải đe dọa.",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ],
+      "aliases": []
+    },
+    {
+      "question": 22,
+      "term": "make out",
+      "meta": "phrasal verb",
+      "meaning": "nghe/nhìn ra; hiểu được",
+      "note": "Make out trong ngữ cảnh lời nói là nghe/hiểu được. Giọng lạ khiến người nghe không hiểu; make up là bịa ra/tạo thành, còn make by/on không đúng cụm này.",
+      "usage": "make out a word/number; make it out",
+      "family": "make up: bịa ra; make–made–made",
+      "example": "I could not make out the last word.",
+      "translation": "Tôi không nghe rõ từ cuối.",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ],
+      "aliases": []
+    },
+    {
+      "question": 23,
+      "term": "in the light of",
+      "meta": "PREPOSITIONAL PHRASE",
+      "meaning": "sau khi cân nhắc; dựa trên",
+      "note": "Nêu thông tin hoặc tình hình được dùng để xem lại một quyết định. Không mang nghĩa ánh sáng vật lý trong cụm này.",
+      "usage": "in the light of new evidence/comments",
+      "example": "We changed the plan in the light of new evidence.",
+      "translation": "Chúng tôi đổi kế hoạch sau khi xem xét bằng chứng mới.",
+      "family": "in light of (biến thể); reconsider (v); revise (v)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ],
+      "aliases": []
+    },
+    {
+      "term": "be subject to",
+      "meaning": "có thể chịu sự thay đổi/chi phối",
+      "usage": "be subject to change/approval",
+      "example": "The timetable is subject to change.",
+      "translation": "Thời khóa biểu có thể thay đổi.",
+      "family": "subject (adj trong cụm này); change (n/v)",
+      "meta": "VERB PHRASE",
+      "note": "Be subject to inspections = chịu sự kiểm tra/có thể được kiểm tra. Subject to là cụm cố định; to là giới từ trước danh từ inspections.",
+      "aliases": [],
+      "question": 65,
+      "questions": [
+        65
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 65,
+      "term": "subject to",
+      "meta": "ADJECTIVE PHRASE",
+      "meaning": "tùy thuộc vào điều kiện",
+      "note": "Trong hợp đồng/kế hoạch, subject to approval nghĩa là chỉ thực hiện nếu được phê duyệt. To là giới từ nên dùng danh từ hoặc V-ing sau nó; đây không phải to V chỉ mục đích.",
+      "usage": "subject to approval/agreement/change",
+      "example": "The trip is subject to parental approval.",
+      "translation": "Chuyến đi tùy thuộc vào sự đồng ý của phụ huynh.",
+      "family": "subject (n/v/adj); conditional (adj); approval (n)",
+      "teacherSelected": true,
+      "questions": [
+        65
+      ],
+      "aliases": []
+    },
+    {
+      "term": "have no intention of",
+      "meaning": "không có ý định làm gì",
+      "usage": "have no intention of + V-ing",
+      "example": "I have no intention of selling the house.",
+      "translation": "Tôi không có ý định bán ngôi nhà.",
+      "family": "intend (v); intention (n); intentional (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Have no intention of + V-ing/to V = không có ý định. Cả of lending và to lend được nhận theo khóa; giữ any more money để nói không cho vay thêm.",
+      "aliases": [
+        "no intention of"
+      ],
+      "question": 84,
+      "questions": [
+        84
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "as long as / so long as / provided / providing",
+      "meta": "CONJUNCTIONS",
+      "meaning": "miễn là; với điều kiện là",
+      "note": "Các từ nối này đặt ra điều kiện để việc khác được thực hiện. Provided và providing có thể thêm that. As long as còn có nghĩa chỉ thời gian là trong suốt khoảng thời gian; hãy xem câu đang nói về điều kiện hay độ dài thời gian.",
+      "usage": "as/so long as + S + V; provided/providing (that) + S + V",
+      "family": "condition (n): điều kiện; conditional (adj): có điều kiện; provide (v): cung cấp",
+      "example": "You may borrow the book as long as you return it on Friday.",
+      "translation": "Bạn có thể mượn sách miễn là trả lại vào thứ Sáu.",
+      "teacherSelected": true,
+      "questions": [
+        86
+      ],
+      "question": 86,
+      "aliases": [
+        "So long as"
+      ]
+    },
+    {
+      "term": "put the blame on",
+      "meaning": "quy trách nhiệm, đổ lỗi cho ai",
+      "usage": "put the blame on somebody for something",
+      "example": "Do not put the blame on me for the delay.",
+      "translation": "Đừng đổ lỗi cho tôi về sự chậm trễ.",
+      "family": "blame (n/v); blameworthy (adj); blameless (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Put the blame on somebody for something = đổ trách nhiệm cho ai về điều gì. Lisa trách Tom vì kế hoạch thất bại; hai trật tự cụm giới từ đều giữ đúng người bị trách và sự việc.",
+      "aliases": [
+        "place the blame on",
+        "place the blame for"
+      ],
+      "question": 88,
+      "questions": [
+        88
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take somebody by surprise",
+      "meaning": "khiến ai bất ngờ",
+      "usage": "take somebody by surprise",
+      "example": "The news took us by surprise.",
+      "translation": "Tin đó khiến chúng tôi bất ngờ.",
+      "family": "surprise (n/v); surprised/surprising (adj); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Take somebody by surprise = làm ai bất ngờ. Took đã cho sẵn; by shock không phải biến thể của thành ngữ. Giữ cả tình huống hát khi được mời phát biểu.",
+      "aliases": [
+        "take someone by surprise",
+        "be taken by surprise"
+      ],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put off",
+      "meaning": "hoãn lại",
+      "usage": "put off + danh từ/V-ing",
+      "example": "We put off the meeting until Friday.",
+      "translation": "Chúng tôi hoãn cuộc họp đến thứ Sáu.",
+      "family": "put → put → put; postponement (n, nghĩa gần)",
+      "meta": "VERB PHRASE",
+      "note": "Put off = hoãn lại, dùng bị động was put off vì match là sự kiện bị hoãn. Until further notice là đến khi có thông báo mới; câu nguồn đã đồng bộ đúng điều kiện này.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take pride in",
+      "meaning": "tự hào về",
+      "usage": "take pride in + danh từ/V-ing",
+      "example": "She takes pride in her work.",
+      "translation": "Cô ấy tự hào về công việc của mình.",
+      "family": "pride (n); proud (adj); proudly (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Take pride in = tự hào về. He số ít nên takes; giữ the quality of his work vì đối tượng tự hào là chất lượng công việc chứ không chỉ nghề nghiệp nói chung.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "give an account of",
+      "meaning": "kể lại, thuật lại",
+      "usage": "give an account of something",
+      "example": "He gave an account of the accident.",
+      "translation": "Anh ấy thuật lại vụ tai nạn.",
+      "family": "account (n); give → gave → given",
+      "meta": "VERB PHRASE",
+      "note": "Give/provide a vivid account of = mô tả sống động về. Book là chủ ngữ số ít nên gives/provides; his childhood đã in sau ô trống, tránh lặp lại.",
+      "aliases": [
+        "give/provide a vivid account of",
+        "an account of",
+        "Give/provide a vivid account of"
+      ],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "to everyone’s surprise",
+      "meaning": "trước sự ngạc nhiên của mọi người",
+      "usage": "to somebody’s surprise",
+      "example": "To everyone’s surprise, he won.",
+      "translation": "Trước sự ngạc nhiên của mọi người, anh ấy đã thắng.",
+      "family": "surprise (n/v); surprised/surprising (adj)",
+      "meta": "PHRASE",
+      "note": "To everyone’s surprise = khiến mọi người ngạc nhiên. Surprise là danh từ và everyone’s là sở hữu; phần còn lại John left… đã có, chỉ điền cụm này.",
+      "aliases": [],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "lose one’s appetite",
+      "meaning": "mất cảm giác muốn ăn",
+      "usage": "lose one’s appetite",
+      "example": "The smell made me lose my appetite.",
+      "translation": "Mùi đó khiến tôi không còn muốn ăn.",
+      "family": "appetite (n); appetising/appetizing (adj); lose → lost",
+      "meta": "VERB PHRASE",
+      "note": "Lose one’s appetite = hết cảm giác muốn ăn. The moment giữ đúng nghĩa ngay khi, còn when chỉ chung thời điểm.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be prone to",
+      "meaning": "dễ mắc, dễ chịu một điều thường không tốt",
+      "usage": "be prone to + danh từ/V-ing",
+      "example": "This area is prone to flooding.",
+      "translation": "Khu vực này dễ bị ngập.",
+      "family": "prone (adj); proneness (n)",
+      "meta": "VERB PHRASE",
+      "note": "Be prone to + danh từ/V-ing = dễ gặp/chịu điều gì. Cây bị côn trùng tấn công nên being attacked là bị động; attack dạng danh từ cũng diễn đạt nguy cơ bị tấn công.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 98,
+      "term": "dawn on somebody",
+      "meta": "PHRASAL VERB",
+      "meaning": "khiến ai chợt nhận ra",
+      "note": "Chủ ngữ thường là it hoặc một ý nghĩ: it dawned on me that…. Người nhận ra đứng sau on; không nói I dawned that….",
+      "usage": "It dawns on somebody that/how…",
+      "example": "It finally dawned on me that I had the wrong address.",
+      "translation": "Cuối cùng tôi mới nhận ra mình đã có nhầm địa chỉ.",
+      "family": "dawn (n: bình minh; v: bắt đầu/hiện rõ); realization (n)",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ],
+      "aliases": []
     }
   ],
   "revision": "2026-10-17-authentic"

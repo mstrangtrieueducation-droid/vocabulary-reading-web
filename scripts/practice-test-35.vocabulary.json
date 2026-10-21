@@ -89,6 +89,10 @@
       "teacherSelected": true,
       "questions": [
         8
+      ],
+      "aliases": [
+        "boring",
+        "bored"
       ]
     },
     {
@@ -133,7 +137,8 @@
       "family": "precious (adj); little (quantifier); precious few + plural noun",
       "teacherSelected": true,
       "questions": [
-        12
+        12,
+        61
       ]
     },
     {
@@ -449,7 +454,152 @@
       "teacherSelected": true,
       "questions": [
         100
+      ],
+      "aliases": [
+        "Take something out of"
       ]
+    },
+    {
+      "term": "no idea",
+      "meaning": "hoàn toàn không biết",
+      "usage": "have no/the slightest/faintest idea",
+      "example": "I have no idea where he is.",
+      "translation": "Tôi hoàn toàn không biết anh ấy ở đâu.",
+      "family": "idea (n); slightest/faintest nhấn mạnh phủ định",
+      "meta": "PHRASE",
+      "note": "Not have the faintest idea hoặc few ... had the faintest idea nghĩa là hầu như không biết chút nào. Faintest là dạng so sánh nhất trong cụm cố định. Slimmest thường đi với chance; simplest và vainest không tạo thành ngữ tương ứng.",
+      "aliases": [
+        "not have the slightest/faintest idea",
+        "have the slightest idea",
+        "have the faintest idea"
+      ],
+      "question": 5,
+      "questions": [
+        5
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "lose one’s appetite",
+      "meaning": "mất cảm giác muốn ăn",
+      "usage": "lose one’s appetite",
+      "example": "The smell made me lose my appetite.",
+      "translation": "Mùi đó khiến tôi không còn muốn ăn.",
+      "family": "appetite (n); appetising/appetizing (adj); lose → lost",
+      "meta": "VERB PHRASE",
+      "note": "Lose one’s appetite là mất cảm giác muốn ăn. The moment/as soon as diễn tả ngay khi nhìn thấy bếp bẩn. Không dùng lose my hunger vì appetite mới là danh từ tự nhiên trong cụm này; lost giữ thì quá khứ.",
+      "aliases": [],
+      "question": 84,
+      "questions": [
+        84
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "fly into a temper",
+      "meaning": "đột nhiên nổi nóng",
+      "usage": "fly into a temper/rage",
+      "example": "He flew into a temper when he heard the news.",
+      "translation": "Anh ấy nổi nóng khi nghe tin.",
+      "family": "fly → flew → flown; temper/rage (n)",
+      "meta": "VERB PHRASE",
+      "note": "Fly into a temper/rage nghĩa là đột nhiên nổi giận. Chủ ngữ he, thói quen hiện tại nên dùng flies đã có trong đề. Whenever giữ nghĩa mỗi lần có người chất vấn quyết định, không phải chỉ một lần trong quá khứ.",
+      "aliases": [
+        "fly into a temper/rage",
+        "fly into a rage",
+        "Fly into a temper/rage"
+      ],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "let it be known",
+      "meaning": "công khai cho biết",
+      "usage": "let it be known that + mệnh đề",
+      "example": "She let it be known that she wanted to leave.",
+      "translation": "Cô ấy công khai cho biết mình muốn rời đi.",
+      "family": "let → let → let; know → knew → known",
+      "meta": "VERB PHRASE",
+      "note": "Let it be known that ... nghĩa là cho mọi người biết/công khai. Sau let it dùng be nguyên mẫu rồi known ở bị động. Declared her opposition chuyển thành was opposed to hoặc opposed, đều giữ quan điểm phản đối.",
+      "aliases": [
+        "let it be known that",
+        "Let it be known that"
+      ],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take somebody in",
+      "meaning": "lừa ai; cho ai ở nhờ",
+      "usage": "take somebody in; be taken in by somebody",
+      "example": "I was taken in by his story.",
+      "translation": "Tôi bị câu chuyện của anh ta đánh lừa.",
+      "family": "take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Take somebody in nghĩa là lừa ai. Chủ ngữ principal là người bị lừa nên dùng to be taken in by, kết hợp với too … to.",
+      "aliases": [
+        "take someone in",
+        "be taken in"
+      ],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "of late",
+      "meaning": "gần đây",
+      "usage": "of late",
+      "example": "She has been very busy of late.",
+      "translation": "Gần đây cô ấy rất bận.",
+      "family": "late (adj/adv); lately (adv, nghĩa gần)",
+      "meta": "PHRASE",
+      "note": "Of late nghĩa là gần đây, thường dùng với hiện tại hoàn thành khi nói tình trạng trong thời gian vừa qua. Câu đã có have not seen nên chỉ cần điền cụm thời gian.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be due to",
+      "meaning": "là do, có nguyên nhân từ",
+      "usage": "be due to + danh từ/V-ing",
+      "example": "The delay was due to heavy rain.",
+      "translation": "Sự chậm trễ là do mưa lớn.",
+      "family": "due (adj); be due to + V cũng có thể chỉ lịch dự kiến",
+      "meta": "VERB PHRASE",
+      "note": "Be due to + cụm danh từ diễn tả nguyên nhân. Explanations là danh từ chuyển từ explains, còn clearly đổi thành clear.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "breach of confidentiality",
+      "meaning": "sự vi phạm nghĩa vụ giữ bí mật",
+      "usage": "a breach of confidentiality",
+      "example": "Sharing the file was a breach of confidentiality.",
+      "translation": "Việc chia sẻ tệp đó đã vi phạm nghĩa vụ giữ bí mật.",
+      "family": "breach (n/v); confidential (adj); confidentiality (n)",
+      "meta": "PHRASE",
+      "note": "Breach of confidentiality là việc làm lộ thông tin phải giữ kín. Act as/be a catalyst for là thúc đẩy một quyết định/thay đổi.",
+      "aliases": [],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
     }
   ]
 }

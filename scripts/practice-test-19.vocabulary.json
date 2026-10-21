@@ -450,6 +450,181 @@
       "questions": [
         99
       ]
+    },
+    {
+      "term": "as far as … is concerned",
+      "meta": "phrase",
+      "meaning": "xét về; về mặt",
+      "note": "Cụm này giới hạn chủ đề đang bàn. Sau as far as đặt chủ đề rồi dùng is/are concerned phù hợp. As far as I am concerned còn nghĩa theo ý kiến của tôi, không chỉ nói phạm vi chủ đề. Có thể diễn đạt gần nghĩa bằng regarding + N hoặc in terms of + N. Regarding nêu chủ đề đang bàn; in terms of nhấn mạnh phương diện dùng để đánh giá.",
+      "usage": "As far as punctuality is concerned, …; in terms of + N; regarding + N. Không thêm about sau regarding.",
+      "family": "concern (n/v); concerned (adj/phân từ); concerning (giới từ: về).",
+      "example": "As far as cost is concerned, the first option is better.",
+      "translation": "Xét về chi phí, phương án thứ nhất tốt hơn.",
+      "aliases": [
+        "in terms of",
+        "regarding",
+        "In terms of"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        48
+      ],
+      "question": 48
+    },
+    {
+      "term": "there is no truth in",
+      "meaning": "không có sự thật trong, hoàn toàn sai",
+      "usage": "there is no truth in a rumour/claim",
+      "example": "There is no truth in the rumour.",
+      "translation": "Lời đồn đó hoàn toàn không đúng.",
+      "family": "true (adj); truth (n); truthful (adj)",
+      "meta": "PHRASE",
+      "note": "There is no truth in a rumour nghĩa là lời đồn không có căn cứ sự thật. Absolutely hoặc whatsoever giữ mức nhấn mạnh của absolutely false. Rumor/rumour là hai cách viết Mỹ/Anh; không đổi lời đồn thành một cáo buộc được người nói xác nhận.",
+      "aliases": [],
+      "question": 82,
+      "questions": [
+        82
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 87,
+      "term": "but for",
+      "meta": "PHRASE",
+      "meaning": "nếu không có; nếu không nhờ",
+      "note": "Nêu điều kiện giả định bằng danh từ sau for. Thường dùng khi nhờ một người/vật mà tình huống xấu đã không xảy ra; không theo trực tiếp bằng một mệnh đề đầy đủ.",
+      "usage": "but for + noun, S + would have + V3",
+      "example": "But for your advice, I would have made a costly mistake.",
+      "translation": "Nếu không nhờ lời khuyên của bạn, tôi đã mắc sai lầm tốn kém.",
+      "family": "without; if it had not been for",
+      "teacherSelected": true,
+      "questions": [
+        87
+      ],
+      "aliases": []
+    },
+    {
+      "term": "have an objection to",
+      "meaning": "phản đối điều gì",
+      "usage": "have an/any objection to + danh từ/V-ing",
+      "example": "Do you have any objection to opening the window?",
+      "translation": "Bạn có phản đối việc mở cửa sổ không?",
+      "family": "object (v); objection (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have an objection to + danh từ/V-ing diễn tả phản đối điều gì. My opening the window là việc tôi mở cửa sổ; to là giới từ nên không dùng to open. Câu hỏi giữ tính chất xin phép của câu gốc, không khẳng định người nghe phản đối.",
+      "aliases": [
+        "have any objection to"
+      ],
+      "question": 88,
+      "questions": [
+        88
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "with the aim of",
+      "meaning": "nhằm mục đích",
+      "usage": "with the aim/intention/purpose of + V-ing",
+      "example": "They met with the aim of reaching an agreement.",
+      "translation": "Họ gặp nhau nhằm đạt được thỏa thuận.",
+      "family": "aim (n/v); intend → intention; purpose (n)",
+      "meta": "PHRASE",
+      "note": "With the aim/intention/goal/objective of + V-ing diễn đạt mục đích. Further dùng như động từ phát triển/tiếp tục việc học; his studies số nhiều tự nhiên trong ngữ cảnh học tiếp. Giữ has been taking để không đổi thời gian quá trình học tiếng Anh.",
+      "aliases": [
+        "with the aim/intention/goal/purpose of",
+        "with the aim/intention/goal/objective of",
+        "With the aim/intention/goal/objective of"
+      ],
+      "question": 89,
+      "questions": [
+        89
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be restricted to",
+      "meaning": "bị giới hạn ở, chỉ dành cho",
+      "usage": "be restricted to somebody/something",
+      "example": "Access is restricted to members.",
+      "translation": "Chỉ thành viên mới được truy cập.",
+      "family": "restrict (v); restriction (n); restricted (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Be restricted to nghĩa là được giới hạn cho một nhóm. Access là danh từ không đếm được nên dùng is. To nối với members of the research team; phải giữ nhóm người được quyền truy cập để tương đương với only trong câu gốc.",
+      "aliases": [],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "pick on",
+      "meaning": "bắt nạt, kiếm chuyện với",
+      "usage": "pick on somebody",
+      "example": "Stop picking on your little brother.",
+      "translation": "Đừng kiếm chuyện với em trai nữa.",
+      "family": "pick (v); picked; picking",
+      "meta": "VERB PHRASE",
+      "note": "Pick on someone là nhắm vào ai để đối xử hoặc phê phán không công bằng. Câu gốc đã nêu rõ unfairly singles me out nên cụm này giữ đúng nghĩa.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "with the exception of",
+      "meaning": "ngoại trừ",
+      "usage": "with the exception of somebody/something",
+      "example": "Everyone came with the exception of John.",
+      "translation": "Mọi người đều đến, ngoại trừ John.",
+      "family": "except (giới từ); exception (n); exceptional (adj)",
+      "meta": "PHRASE",
+      "note": "With the exception of + danh từ loại một người/việc khỏi phát biểu chung. Giáo viên âm nhạc là người duy nhất vắng nên tất cả những người còn lại đều dự.",
+      "aliases": [],
+      "question": 94,
+      "questions": [
+        94,
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "there is no comparison",
+      "meaning": "không thể so sánh vì quá khác biệt",
+      "usage": "there is no comparison between A and B",
+      "example": "There is no comparison between the two players.",
+      "translation": "Hai cầu thủ chênh lệch quá lớn, không thể so sánh được.",
+      "family": "compare (v); comparison (n)",
+      "meta": "PHRASE",
+      "note": "There is no comparison between A and B diễn đạt hai thứ không thể đem so theo ý câu gốc. Central heating không đếm được nên bỏ a trong bản cũ.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "catch in the act",
+      "meaning": "bắt quả tang",
+      "usage": "catch somebody in the act of + V-ing",
+      "example": "They caught him in the act of stealing.",
+      "translation": "Họ bắt quả tang anh ta đang trộm đồ.",
+      "family": "catch → caught → caught; act (n/v)",
+      "meta": "VERB PHRASE",
+      "note": "Catch someone in the act of + V-ing nghĩa là bắt gặp ai đang làm việc gì. Dùng bị động Being caught vì he là người bị bắt gặp.",
+      "aliases": [
+        "catch someone in the act of",
+        "catch somebody in the act of",
+        "Catch someone in the act of"
+      ],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ]
 }

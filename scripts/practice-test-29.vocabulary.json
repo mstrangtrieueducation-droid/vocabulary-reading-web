@@ -450,6 +450,230 @@
       "questions": [
         93
       ]
+    },
+    {
+      "term": "accustomed to / used to / acquainted with",
+      "meta": "adjective phrases",
+      "meaning": "quen với / quen với / biết, quen biết",
+      "note": "Be accustomed to và be used to nói một điều đã trở nên quen thuộc. Be acquainted with nói đã biết một người hoặc vấn đề. Acquainted đi với with, không dùng to như hai cụm đầu.",
+      "usage": "be/get accustomed to + N/V-ing; be/get used to + N/V-ing; be acquainted with + người/vấn đề. Used to + V lại chỉ thói quen trước đây.",
+      "family": "accustom (v), accustomed (adj); acquaint (v), acquaintance (n). Used trong be used to là quen với.",
+      "example": "She is used to working late and is acquainted with the new procedure.",
+      "translation": "Cô ấy quen làm việc muộn và đã biết quy trình mới.",
+      "teacherSelected": true,
+      "questions": [
+        32,
+        47
+      ],
+      "question": 32,
+      "aliases": [
+        "used to"
+      ]
+    },
+    {
+      "term": "with a view to",
+      "meta": "PREPOSITIONAL PHRASE",
+      "meaning": "nhằm mục đích",
+      "note": "Cụm này nêu mục tiêu của một hành động và thường dùng trong văn viết trang trọng. To ở đây là giới từ nên theo sau là danh từ hoặc V-ing, không phải động từ nguyên mẫu.",
+      "usage": "with a view to + N/V-ing; with a view to improving something",
+      "family": "view (n): cách nhìn, quan điểm; a view to trong cụm này chỉ mục đích",
+      "example": "The school revised its timetable with a view to reducing student stress.",
+      "translation": "Trường điều chỉnh thời khóa biểu nhằm giảm căng thẳng cho học sinh.",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ],
+      "question": 48,
+      "aliases": []
+    },
+    {
+      "term": "make a difference",
+      "meaning": "tạo sự khác biệt, có tác động",
+      "usage": "make a difference to somebody/something",
+      "example": "Your help makes a big difference to us.",
+      "translation": "Sự giúp đỡ của bạn có tác động lớn với chúng tôi.",
+      "family": "differ (v); difference (n); different (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Make a difference là tạo ra tác động có ích, dù chưa giải quyết hoàn toàn FOMO. Make a change cũng có thể nói tạo một thay đổi trong bối cảnh này. A cần danh từ đếm được số ít; different là tính từ nên không dùng.",
+      "aliases": [
+        "make little difference",
+        "make no difference"
+      ],
+      "question": 67,
+      "questions": [
+        67
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "at no time",
+      "meaning": "không lúc nào",
+      "usage": "at no time + trợ động từ + S + V",
+      "example": "At no time did I agree to this.",
+      "translation": "Tôi chưa lúc nào đồng ý với việc này.",
+      "family": "time (n); cụm phủ định đứng đầu câu cần đảo ngữ",
+      "meta": "PHRASE",
+      "note": "At no time/point đứng đầu câu là trạng ngữ phủ định, nên đảo did trước the accused. Express giữ nguyên mẫu sau did. What he had done vẫn ở quá khứ hoàn thành để chỉ hành động có trước việc không hối tiếc; không đảo riêng phần had done.",
+      "aliases": [],
+      "question": 81,
+      "questions": [
+        81,
+        100
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 82,
+      "term": "give off",
+      "meta": "phrasal verb",
+      "meaning": "tỏa ra mùi, nhiệt hoặc ánh sáng",
+      "note": "Give off a smell nghĩa là tỏa ra mùi. It’s giving off cho biết hóa chất đang phát mùi khó chịu; give up là từ bỏ và các cụm còn lại không diễn đạt sự phát mùi.",
+      "usage": "give off heat/light/a smell",
+      "family": "give up: từ bỏ; give out: phát ra/phân phát",
+      "example": "The flowers give off a sweet scent.",
+      "translation": "Hoa tỏa hương thơm ngọt.",
+      "teacherSelected": true,
+      "questions": [
+        82
+      ],
+      "aliases": []
+    },
+    {
+      "term": "pluck up courage",
+      "meaning": "lấy hết can đảm",
+      "usage": "pluck up (the) courage to + V",
+      "example": "He plucked up the courage to ask.",
+      "translation": "Anh ấy lấy hết can đảm để hỏi.",
+      "family": "courage (n); courageous (adj); pluck (v)",
+      "meta": "VERB PHRASE",
+      "note": "Pluck up (the) courage là lấy hết can đảm để làm việc mình ngại. To ask her to marry him hoặc to propose to her cùng nghĩa cầu hôn. Phải giữ chi tiết despite being worried/although he was worried, không bỏ yếu tố lo lắng của câu gốc.",
+      "aliases": [
+        "pluck up (the) courage",
+        "Pluck up (the) courage"
+      ],
+      "question": 84,
+      "questions": [
+        84
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be taken aback",
+      "meaning": "bất ngờ, sửng sốt",
+      "usage": "be taken aback by/at something",
+      "example": "I was taken aback by her reaction.",
+      "translation": "Tôi sửng sốt trước phản ứng của cô ấy.",
+      "family": "take → took → taken; aback dùng trong cụm này",
+      "meta": "VERB PHRASE",
+      "note": "Be taken aback by/at something nghĩa là rất bất ngờ trước điều gì. Chuyển người cảm thấy ngạc nhiên thành chủ ngữ bị động; taken là V3 của take.",
+      "aliases": [
+        "taken aback"
+      ],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "there is no comparison",
+      "meaning": "không thể so sánh vì quá khác biệt",
+      "usage": "there is no comparison between A and B",
+      "example": "There is no comparison between the two players.",
+      "translation": "Hai cầu thủ chênh lệch quá lớn, không thể so sánh được.",
+      "family": "compare (v); comparison (n)",
+      "meta": "PHRASE",
+      "note": "There is no comparison between A and B nhấn mạnh sự khác biệt lớn, ở đây kỹ năng hiện tại tốt hơn rất nhiều. Former phải đặt trước presentation skills để chỉ kỹ năng trước đây.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "make no attempt",
+      "meaning": "không hề cố gắng",
+      "usage": "make no attempt to V/at V-ing",
+      "example": "He made no attempt to explain.",
+      "translation": "Anh ấy không hề cố giải thích.",
+      "family": "attempt (n/v); make → made",
+      "meta": "VERB PHRASE",
+      "note": "Make no attempt to do/at doing something là không cố làm việc gì. Hide/conceal her anger tương đương che giấu tức giận.",
+      "aliases": [],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be worth",
+      "meaning": "đáng để làm gì",
+      "usage": "be worth + danh từ/V-ing",
+      "example": "This book is worth reading.",
+      "translation": "Cuốn sách này đáng đọc.",
+      "family": "worth (adj); worthwhile (adj); worth không đi với to V",
+      "meta": "VERB PHRASE",
+      "note": "Be worth + V-ing là đáng làm việc gì; not worth repairing giữ ý sửa chiếc máy này không đem lại giá trị xứng đáng. Repairing có nghĩa bị động theo ngữ cảnh dù hình thức V-ing chủ động.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "out of the ordinary",
+      "meaning": "khác thường",
+      "usage": "be out of the ordinary",
+      "example": "There was nothing out of the ordinary.",
+      "translation": "Không có gì khác thường cả.",
+      "family": "ordinary (adj); ordinarily (adv); extraordinary (adj)",
+      "meta": "PHRASE",
+      "note": "Out of the ordinary là khác thường. Nothing out of the ordinary happens nghĩa là không có gì lạ xảy ra, tương đương chỉ có những việc thường ngày.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in one’s power",
+      "meaning": "trong khả năng của mình",
+      "usage": "do everything in one’s power to + V",
+      "example": "I will do everything in my power to help.",
+      "translation": "Tôi sẽ làm mọi việc trong khả năng để giúp.",
+      "family": "power (n); powerful/powerless (adj)",
+      "meta": "PHRASE",
+      "note": "Do everything in one's power là làm mọi điều nằm trong khả năng. To save chỉ mục đích giữ cuộc hôn nhân.",
+      "aliases": [
+        "in one's power"
+      ],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "give one’s word",
+      "meaning": "hứa, cam kết",
+      "usage": "give somebody one’s word that + mệnh đề",
+      "example": "I give you my word that I will return.",
+      "translation": "Tôi hứa với bạn rằng tôi sẽ quay lại.",
+      "family": "give → gave → given; word (n)",
+      "meta": "VERB PHRASE",
+      "note": "Give someone one's word là hứa chắc với ai. Gave chuyển về quá khứ của promised; there would be là lùi thì tương ứng với lời hứa về tương lai.",
+      "aliases": [
+        "give someone one's word"
+      ],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
     }
   ]
 }

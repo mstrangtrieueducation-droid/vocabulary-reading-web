@@ -101,7 +101,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "I’d sooner + chủ ngữ + quá khứ hoàn thành diễn tả mong muốn trái với việc đã xảy ra. Yesterday xác định người kia đã dùng điện thoại, nên cần hadn’t used. Didn’t use thường hướng tới hiện tại/tương lai; wouldn’t use và haven’t used không phù hợp mẫu này.",
+      "explanation": "I’d sooner + chủ ngữ + quá khứ hoàn thành diễn tả mong muốn trái với việc đã xảy ra.",
       "teacherHighlights": []
     },
     {
@@ -112,8 +112,10 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Contribute to = góp phần vào; to ở đây là giới từ, nên theo sau là cụm engineers improving ... . Engineers là chủ thể của improving. Không dùng to engineers to improve hoặc bỏ giới từ to sau contributed.",
-      "teacherHighlights": []
+      "explanation": "Contribute to = góp phần vào; to ở đây là giới từ, nên theo sau là cụm engineers improving ... .",
+      "teacherHighlights": [
+        "Contribute to"
+      ]
     },
     {
       "globalNumber": 3,
@@ -123,7 +125,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Much as + mệnh đề mang nghĩa nhượng bộ: dù rất ngưỡng mộ kiến trúc, anh ấy vẫn không đầu tư. As though diễn tả như thể; however/no matter không thể đứng ngay trước mệnh đề này mà không có phần bổ sung thích hợp.",
+      "explanation": "Much as + mệnh đề mang nghĩa nhượng bộ: dù rất ngưỡng mộ kiến trúc, anh ấy vẫn không đầu tư.",
       "teacherHighlights": []
     },
     {
@@ -134,7 +136,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Sau it is imperative dùng that + chủ ngữ + động từ nguyên mẫu không to để nêu yêu cầu: that everyone understand. Everyone không khiến understand thêm -s trong thức giả định. Bản đề đã loại phương án indicative cũng có thể được dùng trong một số ngữ cảnh.",
+      "explanation": "Sau it is imperative dùng that + chủ ngữ + động từ nguyên mẫu không to để nêu yêu cầu: that everyone understand.",
       "teacherHighlights": []
     },
     {
@@ -145,7 +147,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Was to have received diễn tả một việc đã được lên lịch nhưng không xảy ra như dự kiến. Vế sau nói dịch vụ chuyển phát bị chậm. Had received lại khẳng định đã nhận; is supposed to receive không diễn đạt rõ kế hoạch quá khứ bị lỡ.",
+      "explanation": "Was to have received diễn tả một việc đã được lên lịch nhưng không xảy ra như dự kiến.",
       "teacherHighlights": []
     },
     {
@@ -156,7 +158,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Virtually no one = gần như không ai. Câu sau cho biết nội dung rất khó khiến người học nản, nên ý phủ định phù hợp. Everyone/someone mang ý có người hiểu; anyone không tự tạo nghĩa phủ định trong cấu trúc khẳng định này.",
+      "explanation": "Virtually no one = gần như không ai.",
       "teacherHighlights": []
     },
     {
@@ -167,7 +169,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Đảo ngữ so + tính từ + be + chủ ngữ + that: So complex was the algorithm that ... = thuật toán phức tạp đến mức... . Such cần danh từ theo đúng mẫu such a complex algorithm; các cách sắp xếp A/B không hoàn chỉnh.",
+      "explanation": "Đảo ngữ so + tính từ + be + chủ ngữ + that: So complex was the algorithm that ... = thuật toán phức tạp đến mức... .",
       "teacherHighlights": []
     },
     {
@@ -178,7 +180,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Điều kiện hỗn hợp: Had she saved ... = If she had saved ... nêu điều trái quá khứ; now chỉ kết quả hiện tại. Vì vậy dùng wouldn’t have financial problems, trong đó have là động từ 'có', không phải trợ động từ hoàn thành.",
+      "explanation": "Điều kiện hỗn hợp: Had she saved ... = If she had saved ... nêu điều trái quá khứ; now chỉ kết quả hiện tại.",
       "teacherHighlights": []
     },
     {
@@ -189,7 +191,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Lest (anyone should) overhear = để tránh có người nghe lỏm. Lest đã mang ý phòng tránh nên không thêm not. Lowered his voice phù hợp mục đích này; until, now that và provided diễn tả các quan hệ khác.",
+      "explanation": "Lest (anyone should) overhear = để tránh có người nghe lỏm.",
       "teacherHighlights": []
     },
     {
@@ -200,7 +202,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Chủ ngữ chính là the manager, số ít. Along with the assistants là thành phần bổ sung, không biến chủ ngữ thành số nhiều, nên dùng is responsible. Is being responsible thường nhấn mạnh cách hành xử nhất thời, không hợp việc phân công trách nhiệm trong câu.",
+      "explanation": "Chủ ngữ the manager số ít → is responsible; along with… không làm thay đổi số của chủ ngữ.",
       "teacherHighlights": []
     },
     {
@@ -211,9 +213,9 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Aroma là mùi thơm, đặc biệt của thức ăn, thảo mộc và gia vị. Herbs and spices tạo mùi đặc trưng gây ấn tượng với giám khảo. Weight, structure và temperature không diễn đạt đặc điểm mùi đang được mô tả.\n\nTừ vựng trọng tâm: aroma",
+      "explanation": "Aroma là mùi thơm, đặc biệt của thức ăn, thảo mộc và gia vị.",
       "teacherHighlights": [
-        "aroma"
+        "Aroma"
       ]
     },
     {
@@ -224,7 +226,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Perfectly capable = hoàn toàn có khả năng; perfectly là trạng từ nhấn mạnh tự nhiên với capable. Bitterly thường đi với disappointed, widely với known; utterly không phải kết hợp thông dụng ở đây.",
+      "explanation": "Perfectly capable = hoàn toàn có khả năng; perfectly là trạng từ nhấn mạnh tự nhiên với capable.",
       "teacherHighlights": []
     },
     {
@@ -235,9 +237,9 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Raise capital = huy động vốn. Investors và finance its expansion làm rõ công ty huy động tiền đầu tư để mở rộng. Investor là người, saving dạng số ít không phải thuật ngữ vốn cần huy động; income là thu nhập từ hoạt động.\n\nTừ vựng trọng tâm: raise capital",
+      "explanation": "Raise capital = huy động vốn.",
       "teacherHighlights": [
-        "raise capital"
+        "Raise capital"
       ]
     },
     {
@@ -248,9 +250,9 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Live and let live = sống khoan dung, để người khác sống theo lựa chọn của họ. Vế không phán xét lối sống giải thích thành ngữ. Turn a blind eye là cố tình làm ngơ một sai phạm, khác với tôn trọng lựa chọn cá nhân.\n\nTừ vựng trọng tâm: live and let live",
+      "explanation": "Live and let live = sống khoan dung, để người khác sống theo lựa chọn của họ.",
       "teacherHighlights": [
-        "live and let live"
+        "Live and let live"
       ]
     },
     {
@@ -261,9 +263,9 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Lend weight to something = làm tăng sức thuyết phục/cơ sở cho điều gì. Kết quả khảo sát củng cố mối lo học sinh có quá nhiều bài tập. Giới từ cố định là to; lent là quá khứ của lend.\n\nTừ vựng trọng tâm: lend weight to",
+      "explanation": "Lend weight to something = làm tăng sức thuyết phục/cơ sở cho điều gì.",
       "teacherHighlights": [
-        "lend weight to"
+        "Lend weight to"
       ]
     },
     {
@@ -274,7 +276,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Be riddled with = đầy rẫy điều không tốt, ở đây là lỗi nhỏ trong báo cáo. Không dùng riddled of/in/by cho kết hợp này. Cấu trúc nhấn mạnh lỗi xuất hiện nhiều đến mức ảnh hưởng chất lượng.\n\nTừ vựng trọng tâm: riddled with",
+      "explanation": "Be riddled with = đầy rẫy điều không tốt, ở đây là lỗi nhỏ trong báo cáo.",
       "teacherHighlights": [
         "riddled with"
       ]
@@ -287,9 +289,9 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Circulate a document = chuyển/phát tài liệu cho nhiều người trong một nhóm. Disperse và scatter thường chỉ phân tán người/vật; transfer chủ yếu là chuyển từ nơi/người này sang nơi/người khác, không nhấn mạnh phổ biến rộng trong phòng ban.\n\nTừ vựng trọng tâm: circulate",
+      "explanation": "Circulate a document = chuyển/phát tài liệu cho nhiều người trong một nhóm.",
       "teacherHighlights": [
-        "circulate"
+        "Circulate"
       ]
     },
     {
@@ -300,9 +302,9 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Tap into opportunities = tiếp cận, tận dụng các cơ hội sẵn có. Lay into là chỉ trích/tấn công; check over là kiểm tra; tie up là buộc hoặc khiến một nguồn lực bận. Chỉ C phù hợp mong muốn tham gia hoạt động.\n\nTừ vựng trọng tâm: tap into",
+      "explanation": "Tap into opportunities = tiếp cận, tận dụng các cơ hội sẵn có.",
       "teacherHighlights": [
-        "tap into"
+        "Tap into"
       ]
     },
     {
@@ -313,9 +315,9 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Deal a blow to somebody/something = giáng một đòn, gây tổn hại. Trận thua ảnh hưởng mạnh đến sự tự tin của đội. Collocation là a serious blow, không thay tùy ý bằng stroke/hit/knock sau dealt a.\n\nTừ vựng trọng tâm: deal a blow to",
+      "explanation": "Deal a blow to somebody/something = giáng một đòn, gây tổn hại.",
       "teacherHighlights": [
-        "deal a blow to"
+        "Deal a blow to"
       ]
     },
     {
@@ -326,9 +328,9 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Incentivize somebody to do something = tạo động lực hoặc khuyến khích bằng lợi ích. Incite thường là kích động hành động tiêu cực; ignite là châm ngòi; dictate là áp đặt. Chương trình cộng đồng hướng tới sự tham gia tích cực.\n\nTừ vựng trọng tâm: incentivize",
+      "explanation": "Incentivize somebody to do something = tạo động lực hoặc khuyến khích bằng lợi ích.",
       "teacherHighlights": [
-        "incentivize"
+        "Incentivize"
       ]
     },
     {
@@ -339,7 +341,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Take a good look at = nhìn thật kỹ. Người nói muốn Alice quan sát đôi mắt trong chân dung. Near/short/strong không tạo cụm tương đương; muốn nói nhìn gần thường dùng take a close look.",
+      "explanation": "Take a good look at = nhìn thật kỹ.",
       "teacherHighlights": []
     },
     {
@@ -350,7 +352,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Progressively declined = giảm dần theo thời gian, phù hợp over the past year. Perceptively là một cách sâu sắc/tinh ý, respectively là lần lượt; perceptibility là danh từ nên không bổ nghĩa cho động từ declined.",
+      "explanation": "Progressively declined = giảm dần theo thời gian, phù hợp over the past year.",
       "teacherHighlights": []
     },
     {
@@ -361,7 +363,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Feel là động từ nối nên theo sau bằng tính từ guilty: cảm thấy có lỗi. Guiltily là trạng từ, guilt và guiltiness là danh từ. Apologised cho thấy tâm trạng áy náy, giúp chọn cả đúng từ loại lẫn nghĩa; không cần biết tính từ văn chương dissolute.\n\nTừ vựng trọng tâm: feel guilty about",
+      "explanation": "Feel là động từ nối nên theo sau bằng tính từ guilty: cảm thấy có lỗi.\nfeel guilty about = cảm thấy có lỗi về.",
       "teacherHighlights": [
         "feel guilty about"
       ]
@@ -374,9 +376,9 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Once and for all = dứt khoát, một lần cho xong. John muốn Sarah chấm dứt phân vân và quyết định. Trật tự của thành ngữ là cố định; các phương án còn lại là cách ghép sai.\n\nTừ vựng trọng tâm: once and for all",
+      "explanation": "Once and for all = dứt khoát, một lần cho xong.",
       "teacherHighlights": [
-        "once and for all"
+        "Once and for all"
       ]
     },
     {
@@ -387,9 +389,9 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Learn the hard way = rút ra bài học qua sai lầm hoặc trải nghiệm khó khăn. Không nghe lời khuyên khiến trẻ phải tự trải nghiệm hậu quả. Taking the floor là bắt đầu phát biểu; coming under the hammer là được đem đấu giá.\n\nTừ vựng trọng tâm: learn the hard way",
+      "explanation": "Learn the hard way = rút ra bài học qua sai lầm hoặc trải nghiệm khó khăn.",
       "teacherHighlights": [
-        "learn the hard way"
+        "Learn the hard way"
       ]
     },
     {
@@ -400,7 +402,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Except to phone us = ngoại trừ việc dừng lại để gọi cho chúng tôi. To phone chỉ mục đích của stop. Apart from phoning không diễn đạt tự nhiên ngoại lệ của hành động dừng; but for và were it not for nêu điều kiện giả định.",
+      "explanation": "Except to phone us = ngoại trừ việc dừng lại để gọi cho chúng tôi.",
       "teacherHighlights": []
     },
     {
@@ -411,7 +413,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Trật tự tính từ: đánh giá (exquisite) → hình dạng (rectangular) → xuất xứ (Italian) → chất liệu (marble) → danh từ (dining table). Đây là bàn đá cẩm thạch Ý hình chữ nhật tinh xảo; không đặt exquisite giữa chất liệu và danh từ.",
+      "explanation": "Trật tự tính từ: đánh giá (exquisite) → hình dạng (rectangular) → xuất xứ (Italian) → chất liệu (marble) → danh từ (dining table).",
       "teacherHighlights": []
     },
     {
@@ -422,7 +424,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Mind you = tuy vậy/nói thế nhưng, dùng thêm một ý điều chỉnh điều vừa nói. Dù chương trình khó tin, nó vẫn thú vị hơn phần lớn chương trình khác. Same again dùng yêu cầu lặp lại; even as cần mệnh đề theo sau.\n\nTừ vựng trọng tâm: Mind you",
+      "explanation": "Mind you = tuy vậy/nói thế nhưng, dùng thêm một ý điều chỉnh điều vừa nói.",
       "teacherHighlights": [
         "Mind you"
       ]
@@ -435,9 +437,9 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Savour the memories = tận hưởng, trân trọng những kỷ niệm. Bemoan mang nghĩa than tiếc; indulge thường cần in khi nói hưởng thụ; remind cần người được nhắc hoặc cấu trúc remind someone of, không phù hợp câu này.\n\nTừ vựng trọng tâm: savour",
+      "explanation": "Savour the memories = tận hưởng, trân trọng những kỷ niệm.",
       "teacherHighlights": [
-        "savour"
+        "Savour"
       ]
     },
     {
@@ -448,9 +450,9 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "A whirlwind of activity = một loạt hoạt động diễn ra dồn dập, tất bật. Việc bác sĩ khẩn trương chữa người bị thương phù hợp hình ảnh này. Curfew là giờ giới nghiêm, respite là sự tạm nghỉ, flash là tia/chớp thoáng qua.\n\nTừ vựng trọng tâm: a whirlwind of activity",
+      "explanation": "A whirlwind of activity = một loạt hoạt động diễn ra dồn dập, tất bật.",
       "teacherHighlights": [
-        "a whirlwind of activity"
+        "A whirlwind of activity"
       ]
     },
     {
@@ -461,9 +463,9 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Bottle up your emotions = kìm nén, không bộc lộ cảm xúc. Câu cảnh báo việc kìm nén kéo dài có thể khiến dễ cáu. Make off là bỏ chạy; fix on là chọn/tập trung vào; twist up không diễn đạt nghĩa này.\n\nTừ vựng trọng tâm: bottle up",
+      "explanation": "Bottle up your emotions = kìm nén, không bộc lộ cảm xúc.",
       "teacherHighlights": [
-        "bottle up"
+        "Bottle up"
       ]
     },
     {
@@ -474,7 +476,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Scarcely any of the data = hầu như không có dữ liệu nào. Data được dùng như danh từ khối trong was; ý phương pháp quá tệ dẫn tới rất ít dữ liệu dùng được. Every bit trái nghĩa; but a few cần danh từ đếm được số nhiều.",
+      "explanation": "Scarcely any of the data = hầu như không có dữ liệu nào.",
       "teacherHighlights": []
     },
     {
@@ -485,7 +487,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "All negotiations concluded là cụm tuyệt đối: danh từ + quá khứ phân từ, nghĩa là sau khi mọi cuộc đàm phán kết thúc. A tạo hai mệnh đề độc lập nối bằng dấu phẩy; C sai vị trí tân ngữ/chủ thể; D mang nghĩa mục đích không phù hợp.",
+      "explanation": "All negotiations concluded là cụm tuyệt đối: danh từ + quá khứ phân từ, = sau khi mọi cuộc đàm phán kết thúc.",
       "teacherHighlights": []
     },
     {
@@ -496,7 +498,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "A great number of whose photos = một số lượng lớn ảnh của người nhiếp ảnh gia đó. Whose thể hiện sở hữu và photos là danh từ đếm được số nhiều. A large amount dùng cho danh từ không đếm được; which không thể thay whose trực tiếp trước photos.",
+      "explanation": "A great number of whose photos = một số lượng lớn ảnh của người nhiếp ảnh gia đó.",
       "teacherHighlights": []
     },
     {
@@ -507,9 +509,9 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "No mean feat = một thành tích đáng nể, chẳng hề dễ dàng. Người nói vừa hồi phục chấn thương và lâu rồi chưa leo núi. Mean ở đây là nhỏ bé/tầm thường, không phải 'có ý định'; cấu trúc phủ định làm nổi bật thành tựu.\n\nTừ vựng trọng tâm: no mean feat",
+      "explanation": "No mean feat = một thành tích đáng nể, chẳng hề dễ dàng.",
       "teacherHighlights": [
-        "no mean feat"
+        "No mean feat"
       ]
     },
     {
@@ -520,7 +522,7 @@
         "undifferentiated"
       ],
       "displayAnswer": "undifferentiated",
-      "explanation": "Cần tính từ sau were, mang ý không có điểm khác biệt so với đối thủ. Differ → differentiated → undifferentiated. From đi với ý phân biệt; chính việc giống đối thủ làm khách hàng không có lý do chuyển đổi.\n\nTừ vựng trọng tâm: undifferentiated",
+      "explanation": "Cần tính từ sau were, mang ý không có điểm khác biệt so với đối thủ.\nundifferentiated = không được phân biệt, thiếu điểm khác biệt.",
       "teacherHighlights": [
         "undifferentiated"
       ]
@@ -533,7 +535,7 @@
         "standees"
       ],
       "displayAnswer": "standees",
-      "explanation": "More ... than seated passengers đối chiếu người đứng và người ngồi. Standee là hành khách phải đứng; dùng số nhiều standees. Standing đơn thuần không gọi tên một nhóm người trong cấu trúc này.",
+      "explanation": "More ... than seated passengers đối chiếu người đứng và người ngồi.",
       "teacherHighlights": []
     },
     {
@@ -544,7 +546,7 @@
         "cornerstone"
       ],
       "displayAnswer": "cornerstone",
-      "explanation": "The cornerstone of society = nền tảng/trụ cột của xã hội. Ghép corner + stone tạo danh từ, nghĩa bóng chỉ thành phần thiết yếu. Không dùng corners vì cần một danh từ số ít sau the theo ý family unit.\n\nTừ vựng trọng tâm: cornerstone",
+      "explanation": "The cornerstone of society = nền tảng/trụ cột của xã hội.",
       "teacherHighlights": [
         "cornerstone"
       ]
@@ -558,7 +560,7 @@
         "malpractices"
       ],
       "displayAnswer": "malpractice / malpractices",
-      "explanation": "Alleged malpractice = hành vi sai trái trong chuyên môn/nghề nghiệp. Malpractice có thể không đếm được khi nói chung; malpractices chấp nhận khi nói nhiều hành vi cụ thể. Practice đơn thuần là sự thực hành, thiếu nghĩa sai phạm.\n\nTừ vựng trọng tâm: malpractice",
+      "explanation": "Alleged malpractice = hành vi sai trái trong chuyên môn/nghề nghiệp.",
       "teacherHighlights": [
         "malpractice"
       ]
@@ -571,7 +573,7 @@
         "enlivened"
       ],
       "displayAnswer": "enlivened",
-      "explanation": "Was much enlivened là bị động: trận đấu được làm sôi động hơn nhờ hai đội ghi bàn liên tiếp. Live → enliven → enlivened. Lively là tính từ nhưng không đi tự nhiên với much và by trong cấu trúc này.\n\nTừ vựng trọng tâm: enliven",
+      "explanation": "Was much enlivened là bị động: trận đấu được làm sôi động hơn nhờ hai đội ghi bàn liên tiếp.",
       "teacherHighlights": [
         "enliven"
       ]
@@ -584,7 +586,7 @@
         "mouthfuls"
       ],
       "displayAnswer": "mouthfuls",
-      "explanation": "A few cần danh từ đếm được số nhiều. Mouthful = lượng vừa một miệng/ngụm; vài ngụm nước sạch quý như phép màu sau ba ngày lạc rừng. Số nhiều thêm -s ở cuối: mouthfuls, không mouthsful.",
+      "explanation": "A few + danh từ số nhiều → mouthfuls = vài ngụm; thêm -s ở cuối từ.",
       "teacherHighlights": []
     },
     {
@@ -595,7 +597,7 @@
         "disobedience"
       ],
       "displayAnswer": "disobedience",
-      "explanation": "His constant ... cần danh từ, và hậu quả ở trường cho thấy nghĩa không vâng lời. Obey → obedience → disobedience. Disobedient là tính từ, không thể đứng một mình làm danh từ sau constant.",
+      "explanation": "His constant ... cần danh từ, và hậu quả ở trường cho thấy nghĩa không vâng lời.",
       "teacherHighlights": []
     },
     {
@@ -606,7 +608,7 @@
         "unsupervised"
       ],
       "displayAnswer": "unsupervised",
-      "explanation": "Be left unsupervised = bị để một mình mà không có người giám sát. Cần tính từ/quá khứ phân từ mô tả tình trạng của trẻ. Supervision là danh từ; unsupervised thể hiện đúng nguyên nhân hàng xóm lo lắng.",
+      "explanation": "Be left unsupervised = bị để một mình mà không có người giám sát.",
       "teacherHighlights": []
     },
     {
@@ -617,7 +619,7 @@
         "handout"
       ],
       "displayAnswer": "handout",
-      "explanation": "A handout là đồ hoặc tiền được cho người cần hỗ trợ; ngữ cảnh từ thiện xác định nghĩa này. A yêu cầu danh từ số ít. Handout cũng có thể là tài liệu phát tay, nhưng không phải nghĩa trong câu.",
+      "explanation": "A handout là đồ hoặc tiền được cho người cần hỗ trợ; ngữ cảnh từ thiện xác định nghĩa này.",
       "teacherHighlights": []
     },
     {
@@ -628,7 +630,7 @@
         "commendably"
       ],
       "displayAnswer": "commendably",
-      "explanation": "Cần trạng từ bổ nghĩa handled: xử lý một cách đáng khen. Commend → commendable → commendably, đổi -able thành -ably. Commendable là tính từ; commendation là danh từ.",
+      "explanation": "Cần trạng từ bổ nghĩa handled: commendably = một cách đáng khen (commend → commendable → commendably).",
       "teacherHighlights": []
     },
     {
@@ -641,7 +643,7 @@
         "little"
       ],
       "displayAnswer": "few → little",
-      "explanation": "Sleep là danh từ không đếm được nên nói so little sleep, không so few sleep. Few đi với danh từ đếm được số nhiều. Đây là sửa lượng từ, không thay đổi nội dung cảnh báo thiếu ngủ.",
+      "explanation": "Sleep là danh từ không đếm được nên nói so little sleep, không so few sleep.",
       "teacherHighlights": []
     },
     {
@@ -662,7 +664,7 @@
         "yet"
       ],
       "displayAnswer": "so → but",
-      "explanation": "Hai mệnh đề đối chiếu nhu cầu ngủ của người lớn và thanh thiếu niên, không phải quan hệ nguyên nhân–kết quả. Dùng but/while/whereas (cũng chấp nhận whilst/yet phù hợp). So làm sai quan hệ logic giữa hai nhóm tuổi.",
+      "explanation": "Hai mệnh đề đối chiếu nhu cầu ngủ của người lớn và thanh thiếu niên, không phải quan hệ nguyên nhân–kết quả.",
       "teacherHighlights": []
     },
     {
@@ -675,7 +677,7 @@
         "raises"
       ],
       "displayAnswer": "rises → raises",
-      "explanation": "Raise questions = đặt ra/gợi lên vấn đề, là động từ có tân ngữ. Rise = tăng/lên, nội động từ, không đi trực tiếp với serious questions. Chủ ngữ This số ít nên raises thêm -s.",
+      "explanation": "Raise questions = đặt ra/gợi lên vấn đề, là động từ có tân ngữ.",
       "teacherHighlights": []
     },
     {
@@ -688,7 +690,7 @@
         "established"
       ],
       "displayAnswer": "establishing → established",
-      "explanation": "Be well established = đã được xác lập vững chắc. Connection là điều được xác lập, nên dùng phân từ bị động established. Establishing diễn tả chủ thể đang thiết lập một cái khác và cần tân ngữ.",
+      "explanation": "Be well established = đã được xác lập vững chắc.",
       "teacherHighlights": []
     },
     {
@@ -701,7 +703,7 @@
         "that"
       ],
       "displayAnswer": "when → that",
-      "explanation": "Câu chẻ nhấn mạnh thời điểm dùng It is + while-clause + that + mệnh đề. While children are asleep đã nêu thời gian; từ nối cấu trúc câu chẻ phải là that, không when.",
+      "explanation": "Câu chẻ nhấn mạnh thời điểm dùng It is + while-clause + that + mệnh đề.",
       "teacherHighlights": []
     },
     {
@@ -712,8 +714,10 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Strike a match = quẹt diêm; struck là quá khứ của strike. If a researcher struck ... could be registered nêu tình huống giả định. Hit/beat đều có thể nghĩa đánh nhưng không dùng cho thao tác quẹt diêm.",
-      "teacherHighlights": []
+      "explanation": "Strike a match = quẹt diêm; struck là quá khứ của strike.",
+      "teacherHighlights": [
+        "Strike a match"
+      ]
     },
     {
       "globalNumber": 52,
@@ -723,9 +727,9 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Infer = suy ra từ bằng chứng. Nhà thiên văn suy ra đặc điểm hành tinh từ phép đo ánh sáng, không quan sát trực tiếp mọi thông số. Prefer = thích hơn, refer = đề cập/tham khảo, defer = trì hoãn/nhường quyết định.\n\nTừ vựng trọng tâm: infer",
+      "explanation": "Infer = suy ra từ bằng chứng.",
       "teacherHighlights": [
-        "infer"
+        "Infer"
       ]
     },
     {
@@ -736,7 +740,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Radio telescope = kính thiên văn vô tuyến, thu sóng từ đối tượng vũ trụ. Endoscope là ống nội soi, microscope là kính hiển vi, kaleidoscope là kính vạn hoa. Chỉ telescope phù hợp ngành thiên văn.",
+      "explanation": "Radio telescope = kính thiên văn vô tuyến, thu sóng từ đối tượng vũ trụ.",
       "teacherHighlights": []
     },
     {
@@ -747,7 +751,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Wisps gợi những vệt/mẩu rất nhỏ, mỏng, ở đây dùng hình ảnh cho tín hiệu yếu. Wimps là người yếu đuối, wasps là ong bắp cày, wads là cục/bó vật liệu. Ngữ cảnh weak signals định hướng wisps.",
+      "explanation": "Wisps gợi những vệt/mẩu rất nhỏ, mỏng, ở đây dùng hình ảnh cho tín hiệu yếu.",
       "teacherHighlights": []
     },
     {
@@ -758,7 +762,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "In everyday words = diễn đạt bằng những từ thông thường, dễ hiểu. Maxims là châm ngôn; citations và quotes là trích dẫn. Câu sau tóm tắt việc suy luận từ ánh sáng rất yếu nên words phù hợp.",
+      "explanation": "In everyday words = diễn đạt bằng những từ thông thường, dễ hiểu.",
       "teacherHighlights": []
     },
     {
@@ -769,7 +773,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "In short = tóm lại, dùng để rút ý chính của đoạn trước. At/by/on short không tạo cụm liên kết tương đương. Cần nhìn cả cụm thay vì dịch từng giới từ.",
+      "explanation": "In short = tóm lại, dùng để rút ý chính của đoạn trước.",
       "teacherHighlights": []
     },
     {
@@ -780,7 +784,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Have a goal in mind = có sẵn mục tiêu trong đầu. Mind diễn tả ý định nhận thức; notion/head/hand không tạo thành ngữ đúng với goal in ... trong câu.",
+      "explanation": "Have a goal in mind = có sẵn mục tiêu trong đầu.",
       "teacherHighlights": []
     },
     {
@@ -791,7 +795,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Reflect that ... = suy ngẫm/nhận thấy rằng..., ở đây là điều đáng suy nghĩ về các hành tinh từng bị bỏ sót. Detract là làm giảm giá trị, deflect là làm chệch hướng, refract là khúc xạ.",
+      "explanation": "Reflect that ... = suy ngẫm/nhận thấy rằng..., ở đây là điều đáng suy nghĩ về các hành tinh từng bị bỏ sót.",
       "teacherHighlights": []
     },
     {
@@ -802,7 +806,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Make an examination of data = tiến hành xem xét dữ liệu. Quest là cuộc tìm kiếm, spectacle là cảnh tượng, autopsy là khám nghiệm tử thi. Dữ liệu quang phổ được kiểm tra thường lệ nên examination chính xác.",
+      "explanation": "Make an examination of data = tiến hành xem xét dữ liệu.",
       "teacherHighlights": []
     },
     {
@@ -813,7 +817,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Blurry = chưa rõ nét, mờ nhòe; đi cùng uncertain diễn tả dấu hiệu còn khó xác định. Bloated = sưng phồng/quá lớn, bleak = ảm đạm, blotched = loang đốm. Blurry phù hợp đối lập với definitely real.",
+      "explanation": "Blurry = chưa rõ nét, mờ nhòe; đi cùng uncertain diễn tả dấu hiệu còn khó xác định.",
       "teacherHighlights": []
     },
     {
@@ -825,7 +829,7 @@
         "contradiction"
       ],
       "displayAnswer": "paradox / contradiction",
-      "explanation": "Hai đặc điểm densely populated nhưng isolating tạo nghịch lý/mâu thuẫn bề ngoài. This central paradox/contradiction quy chiếu lại câu trước. Cần danh từ số ít, một từ; paradox bám trực tiếp paradoxical.",
+      "explanation": "Hai đặc điểm densely populated nhưng isolating tạo nghịch lý/mâu thuẫn bề ngoài.",
       "teacherHighlights": []
     },
     {
@@ -836,9 +840,9 @@
         "premium"
       ],
       "displayAnswer": "premium",
-      "explanation": "At a premium = khan hiếm và vì vậy quý giá/khó có được. Những không gian chung ít được dùng nên kết nối thực sự thiếu hụt. Không dịch premium ở đây là khoản bảo hiểm hoặc giá phụ thu.\n\nTừ vựng trọng tâm: at a premium",
+      "explanation": "At a premium = khan hiếm và vì vậy quý giá/khó có được.",
       "teacherHighlights": [
-        "at a premium"
+        "At a premium"
       ]
     },
     {
@@ -849,9 +853,9 @@
         "cracks"
       ],
       "displayAnswer": "cracks",
-      "explanation": "Paper over the cracks = che đậy vấn đề mà không xử lý gốc rễ. Xây khu sang trọng chỉ che mặt ngoài của suy giảm gắn kết xã hội. Thành ngữ dùng cracks số nhiều.\n\nTừ vựng trọng tâm: paper over the cracks",
+      "explanation": "Paper over the cracks = che đậy vấn đề mà không xử lý gốc rễ.",
       "teacherHighlights": [
-        "paper over the cracks"
+        "Paper over the cracks"
       ]
     },
     {
@@ -862,8 +866,9 @@
         "devices"
       ],
       "displayAnswer": "devices",
-      "explanation": "Leave somebody to their own devices = để họ tự xoay xở. Trong đoạn này cư dân ở lại phải tự lo giữa hàng xóm luôn thay đổi. Devices là thành ngữ, không nói họ được cấp thiết bị điện tử.\n\nTừ vựng trọng tâm: leave someone to their own devices",
+      "explanation": "Leave somebody to their own devices = để họ tự xoay xở.\nleave someone to their own devices = để ai tự xoay xở.",
       "teacherHighlights": [
+        "Leave somebody to their own devices",
         "leave someone to their own devices"
       ]
     },
@@ -875,7 +880,7 @@
         "which"
       ],
       "displayAnswer": "which",
-      "explanation": "Through which residents ... là mệnh đề quan hệ sau giới từ through, bổ nghĩa local grassroots initiatives. Không dùng that sau giới từ đặt trước; which chỉ các sáng kiến giúp cư dân lấy lại không gian chung.",
+      "explanation": "Through which residents ... là mệnh đề quan hệ sau giới từ through, bổ nghĩa local grassroots initiatives.",
       "teacherHighlights": []
     },
     {
@@ -890,7 +895,7 @@
         "officials"
       ],
       "displayAnswer": "planners / councils / authorities / governments / officials",
-      "explanation": "City planners/councils/authorities/governments/officials đều chỉ chủ thể có thể triển khai chương trình đô thị. Cần danh từ phù hợp với city và động từ tried. Planners được nhắc trước nên là đáp án mẫu; các chủ thể quản lý tương đương được chấp nhận.",
+      "explanation": "City planners/councils/authorities/governments/officials đều chỉ chủ thể có thể triển khai chương trình đô thị.",
       "teacherHighlights": []
     },
     {
@@ -901,7 +906,7 @@
         "with"
       ],
       "displayAnswer": "with",
-      "explanation": "Equip somebody/something with resources = trang bị nguồn lực cho ai/việc gì. Them chỉ các chương trình cần hồi sinh. Giới từ with nối đối tượng được trang bị với thứ được cung cấp.",
+      "explanation": "Equip somebody/something with resources = trang bị nguồn lực cho ai/việc gì.",
       "teacherHighlights": []
     },
     {
@@ -914,7 +919,7 @@
         "life"
       ],
       "displayAnswer": "living / existence / life",
-      "explanation": "Solitary living/existence/life đều có thể chỉ cuộc sống cô độc. Cụm làm chủ ngữ của is nên cần danh từ hoặc danh động từ, không phải live. Các phương án vẫn giữ ý cô lập trở thành tình trạng phổ biến.",
+      "explanation": "Solitary living/existence/life đều có thể chỉ cuộc sống cô độc.",
       "teacherHighlights": []
     },
     {
@@ -925,7 +930,7 @@
         "latter"
       ],
       "displayAnswer": "latter",
-      "explanation": "The latter chỉ lựa chọn thứ hai trong cặp: atomised individuals. Đoạn văn phản đối việc ưu tiên sự phân rã này. Former sẽ chỉ vibrant communities và đảo ngược lập luận.",
+      "explanation": "The latter chỉ lựa chọn thứ hai trong cặp: atomised individuals.",
       "teacherHighlights": []
     },
     {
@@ -936,7 +941,7 @@
         "of"
       ],
       "displayAnswer": "of",
-      "explanation": "The likes of which = loại/tầm vóc mà..., trong câu là một bức tranh xã hội tồi tệ chưa từng thấy. Of thuộc cụm the likes of; which mở mệnh đề quan hệ sau giới từ.",
+      "explanation": "The likes of which = loại/tầm vóc mà..., trong câu là một bức tranh xã hội tồi tệ chưa từng thấy.",
       "teacherHighlights": []
     },
     {
@@ -947,9 +952,9 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Pernicious = có hại nghiêm trọng, đối lập beneficial = có lợi. Extensive là rộng lớn, fascinating là hấp dẫn, destructive gần nghĩa gây hại. Yêu cầu OPPOSITE nên không chọn từ đồng nghĩa.\n\nTừ vựng trọng tâm: pernicious",
+      "explanation": "Pernicious = có hại nghiêm trọng, đối lập beneficial = có lợi. Extensive là rộng lớn, fascinating là hấp dẫn, destructive gần nghĩa gây hại.",
       "teacherHighlights": [
-        "pernicious"
+        "Pernicious"
       ]
     },
     {
@@ -960,7 +965,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Đoạn 2 kết nối việc tiếp xúc nội dung bạo lực với trách nhiệm nền tảng và tác động thuật toán, đặc biệt phơi nhiễm ngoài ý muốn. B bao quát điểm chính. A/C đảo lập trường NSPCC; D trái việc không ai trong mẫu truy cập phần nội dung cực đoan nhất.",
+      "explanation": "Đoạn 2 kết nối việc tiếp xúc nội dung bạo lực với trách nhiệm nền tảng và tác động thuật toán, đặc biệt phơi nhiễm ngoài ý muốn. B bao quát điểm chính.",
       "teacherHighlights": []
     },
     {
@@ -971,7 +976,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "B bao quát nghiên cứu về tiếp xúc bạo lực trực tuyến và yêu cầu công ty công nghệ bảo vệ trẻ tốt hơn. 'Widespread' nói hiện tượng phổ biến được nghiên cứu, không khẳng định mọi trẻ ở Anh. Các lựa chọn còn lại xuyên tạc thái độ hoặc kết luận không có trong bài.",
+      "explanation": "Bài nói về trẻ tiếp xúc bạo lực trực tuyến và yêu cầu công ty công nghệ bảo vệ trẻ tốt hơn.",
       "teacherHighlights": []
     },
     {
@@ -982,7 +987,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Đoạn 2 dẫn phát biểu trẻ kể rằng vô tình thấy nội dung bạo lực đã thành bình thường trong đời sống trực tuyến của họ. A dùng some children đúng phạm vi bằng chứng. B/C nói đã bảo vệ tốt hoặc không có tác động; D tuyệt đối hóa mọi trẻ chủ động tìm kiếm.",
+      "explanation": "Đoạn 2 dẫn phát biểu trẻ kể rằng vô tình thấy nội dung bạo lực đã thành bình thường trong đời sống trực tuyến của họ. A dùng some children đúng phạm vi bằng chứng.",
       "teacherHighlights": []
     },
     {
@@ -993,7 +998,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Should not feel ... an unavoidable part tương đương should not have to accept ... an inevitable part. A giữ lời kêu gọi không bình thường hóa nội dung gây hại. B/C/D đều biến phủ định thành yêu cầu chấp nhận.",
+      "explanation": "Should not feel ... an unavoidable part tương đương should not have to accept ... an inevitable part. A giữ lời kêu gọi không bình thường hóa nội dung gây hại.",
       "teacherHighlights": []
     },
     {
@@ -1004,7 +1009,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Available trong ngữ cảnh nội dung có trên web nghĩa là có thể tiếp cận, gần accessible. Curable = chữa được, exciting = thú vị, durable = bền. Không suy ra available nghĩa là phù hợp hoặc an toàn.",
+      "explanation": "Available trong ngữ cảnh nội dung có trên web = có thể tiếp cận, gần accessible. Curable = chữa được, exciting = thú vị, durable = bền.",
       "teacherHighlights": []
     },
     {
@@ -1015,7 +1020,7 @@
         "D"
       ],
       "displayAnswer": "D",
-      "explanation": "Những lời lo ngại về pernicious mental and emotional consequences và đòi hỏi bảo vệ trẻ hỗ trợ suy luận D. A trái phê bình công ty; B không phù hợp việc trẻ đã gặp nội dung; C quy phần lớn lỗi cho tìm kiếm chủ động trong khi bài nhấn mạnh phơi nhiễm ngoài ý muốn.",
+      "explanation": "Lo ngại hậu quả tinh thần và đòi hỏi bảo vệ trẻ cho thấy người được dẫn lời quan ngại tác hại của nội dung bạo lực.",
       "teacherHighlights": []
     },
     {
@@ -1026,7 +1031,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "Đoạn 2 nói không người tham gia nào báo cáo đã truy cập phần nội dung cực đoan nhất ở sâu trên web. Vì vậy B không phải nguyên nhân được nêu cho nhóm đó. A/C/D đều được mô tả hoặc phản ánh việc nền tảng không bảo vệ trẻ.",
+      "explanation": "Đoạn 2 nói không người tham gia nào báo cáo đã truy cập phần nội dung cực đoan nhất ở sâu trên web. Vì vậy B không phải nguyên nhân được nêu cho nhóm đó.",
       "teacherHighlights": []
     },
     {
@@ -1037,7 +1042,7 @@
         "A"
       ],
       "displayAnswer": "A",
-      "explanation": "Đặt ở [II]: câu đầu giới thiệu nghiên cứu và nhóm trẻ, câu chèn nói tất cả trẻ trong mẫu đã gặp nội dung bạo lực, rồi 'This shared experience' quy chiếu trực tiếp lại trải nghiệm chung ấy. Chèn ở vị trí khác làm mối liên kết này thiếu hoặc bị ngắt.",
+      "explanation": "Đặt tại [II]: câu chèn nêu trải nghiệm chung của nhóm trẻ; This shared experience ở sau quy chiếu lại ý đó.",
       "teacherHighlights": []
     },
     {
@@ -1063,7 +1068,7 @@
       "prefix": "What",
       "suffix": "",
       "fullSentence": "What annoyed me was her constant interruptions during the meeting.",
-      "explanation": "What annoyed me was her constant interruptions during the meeting.\n\nCâu chẻ What annoyed me was ... đưa nguyên nhân gây khó chịu ra sau was. Giữ her constant interruptions và during the meeting để không mất thông tin. Was hòa hợp với mệnh đề What annoyed me, không phải danh từ interruptions phía sau.",
+      "explanation": "Câu chẻ What annoyed me was… nhấn mạnh điều gây khó chịu: việc cô ấy liên tục ngắt lời.",
       "teacherHighlights": []
     },
     {
@@ -1080,7 +1085,7 @@
       "prefix": "Nothing",
       "suffix": "",
       "fullSentence": "Nothing can be compared with his dedication to the project.",
-      "explanation": "Nothing can be compared with his dedication to the project.\n\nNothing can be compared with/to ... nhấn mạnh không gì sánh được. Compare with/to đều dùng được khi đánh giá sự tương đồng. Không viết nothing cannot vì tạo phủ định kép, đổi ý câu.",
+      "explanation": "Nothing can be compared with/to ... nhấn mạnh không gì sánh được.",
       "teacherHighlights": []
     },
     {
@@ -1097,8 +1102,10 @@
       "prefix": "My parents don’t object",
       "suffix": "",
       "fullSentence": "My parents don’t object to my travelling alone as long as I keep in touch.",
-      "explanation": "My parents don’t object to my travelling alone as long as I keep in touch.\n\nObject to + danh từ/V-ing = phản đối. To là giới từ nên dùng travelling/traveling, không to travel. My trang trọng hơn me trước danh động từ; đều chấp nhận. Giữ điều kiện as long as I keep in touch.",
-      "teacherHighlights": []
+      "explanation": "Object to + danh từ/V-ing = phản đối.",
+      "teacherHighlights": [
+        "Object to"
+      ]
     },
     {
       "globalNumber": 84,
@@ -1114,8 +1121,10 @@
       "prefix": "Lisa put",
       "suffix": "",
       "fullSentence": "Lisa put the blame on Tom for the failure of the plan.",
-      "explanation": "Lisa put the blame on Tom for the failure of the plan.\n\nPut the blame on somebody for something = quy trách nhiệm cho ai về việc gì. Put something down to somebody cũng diễn đạt quy nguyên nhân. Cần giữ Tom và sự thất bại của kế hoạch; không đổi người phát ngôn Lisa thành người bị trách.",
-      "teacherHighlights": []
+      "explanation": "Put the blame on somebody for something = quy trách nhiệm cho ai về việc gì.",
+      "teacherHighlights": [
+        "Put the blame on"
+      ]
     },
     {
       "globalNumber": 85,
@@ -1128,7 +1137,7 @@
       "prefix": "The driver shouldn’t",
       "suffix": "",
       "fullSentence": "The driver shouldn’t have ignored the traffic signals.",
-      "explanation": "The driver shouldn’t have ignored the traffic signals.\n\nShouldn’t have + V3 dùng phê bình việc đã xảy ra trong quá khứ. Ignored là hành động sai của tài xế. Shouldn’t ignore chỉ khuyên hiện tại/tương lai, không diễn đạt rõ sự việc đã làm.",
+      "explanation": "Shouldn’t have + V3 dùng phê bình việc đã xảy ra trong quá khứ.",
       "teacherHighlights": []
     },
     {
@@ -1143,8 +1152,10 @@
       "prefix": "There were five actors in",
       "suffix": "",
       "fullSentence": "There were five actors in competition for the leading role in the play.",
-      "explanation": "There were five actors in competition for the leading role in the play.\n\nBe in competition/contention for = đang cạnh tranh để giành được. Sau in cần danh từ, không competing. Giữ five actors, leading role và in the play để đủ người, vị trí và ngữ cảnh.",
-      "teacherHighlights": []
+      "explanation": "Be in competition/contention for = đang cạnh tranh để giành được.",
+      "teacherHighlights": [
+        "Be in competition/contention for"
+      ]
     },
     {
       "globalNumber": 87,
@@ -1158,7 +1169,7 @@
       "prefix": "There is nothing",
       "suffix": "",
       "fullSentence": "There is nothing Anna hates more than posing for photos at these school reunions.",
-      "explanation": "There is nothing Anna hates more than posing for photos at these school reunions.\n\nHates most chuyển thành nothing ... hates more than: không có điều gì bị ghét hơn việc tạo dáng chụp ảnh. Than theo so sánh hơn; posing giữ dạng danh động từ. That sau nothing có thể lược vì là tân ngữ.",
+      "explanation": "Hates most chuyển thành nothing ... hates more than: không có điều gì bị ghét hơn việc tạo dáng chụp ảnh.",
       "teacherHighlights": []
     },
     {
@@ -1172,8 +1183,10 @@
       "prefix": "Weather",
       "suffix": "",
       "fullSentence": "Weather permitting, we may go camping at the weekend.",
-      "explanation": "Weather permitting, we may go camping at the weekend.\n\nWeather permitting là cụm tuyệt đối thay if the weather is fine/if weather allows. Dùng permitting, không permitted. May cần giữ để thể hiện khả năng, không nâng thành will chắc chắn.",
-      "teacherHighlights": []
+      "explanation": "Weather permitting là cụm tuyệt đối thay if the weather is fine/if weather allows.",
+      "teacherHighlights": [
+        "Weather permitting"
+      ]
     },
     {
       "globalNumber": 89,
@@ -1188,7 +1201,7 @@
       "prefix": "A rise",
       "suffix": "",
       "fullSentence": "A rise in the cost of boat rides from 10p to 15p was proposed by Councilor Williamson.",
-      "explanation": "A rise in the cost of boat rides from 10p to 15p was proposed by Councilor Williamson.\n\nProposed that ... be increased được danh từ hóa thành a rise ... was proposed. From 10p to 15p phải giữ đúng mức cũ và mới. Councilor/Councillor là hai cách chính tả; không đổi 'đề xuất' thành khẳng định giá đã tăng.",
+      "explanation": "Proposed that ... be increased được danh từ hóa thành a rise ... was proposed.",
       "teacherHighlights": []
     },
     {
@@ -1204,8 +1217,10 @@
       "prefix": "It is of",
       "suffix": "make of car you choose.",
       "fullSentence": "It is of no consequence to me which make of car you choose.",
-      "explanation": "It is of no consequence to me which make of car you choose.\n\nBe of no consequence/importance/significance to somebody = không quan trọng đối với ai. Which phải nằm trong chỗ trống vì nối với make of car you choose có sẵn. Chỉ viết no consequence to me sẽ làm câu thiếu từ nối.",
-      "teacherHighlights": []
+      "explanation": "Be of no consequence/importance/significance to somebody = không quan trọng đối với ai.",
+      "teacherHighlights": [
+        "Be of no consequence/importance/significance"
+      ]
     },
     {
       "globalNumber": 91,
@@ -1227,7 +1242,9 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "to always speak her mind",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Speak one’s mind"
+      ]
     },
     {
       "globalNumber": 92,
@@ -1268,7 +1285,9 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "tempted me into buying",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Tempt somebody into doing/to do"
+      ]
     },
     {
       "globalNumber": 94,
@@ -1288,7 +1307,9 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "brought home to me",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Bring something home to"
+      ]
     },
     {
       "globalNumber": 95,
@@ -1304,7 +1325,7 @@
       "prefix": "The committee",
       "suffix": "his explanation",
       "fullSentence": "The committee was not at all impressed by his explanation",
-      "explanation": "Chuyển chủ động did not impress thành bị động was/were not impressed by. At all giữ mức độ hoàn toàn không.\nTừ vựng trọng tâm: be impressed by",
+      "explanation": "Be impressed by = bị gây ấn tượng; bị động phủ định: was/were not impressed by…at all.",
       "keyword": "IMPRESSED",
       "answerPrefix": "The committee",
       "answerSuffix": "his explanation",
@@ -1312,7 +1333,7 @@
       "maxWords": 6,
       "blankAnswer": "was not at all impressed by",
       "teacherHighlights": [
-        "be impressed by"
+        "Be impressed by"
       ]
     },
     {
@@ -1357,7 +1378,9 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "drives me round the bend",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Drive somebody round/around the bend"
+      ]
     },
     {
       "globalNumber": 98,
@@ -1372,14 +1395,16 @@
       "prefix": "The company",
       "suffix": "given its heavy debts last year",
       "fullSentence": "The company may have been in deep water given its heavy debts last year",
-      "explanation": "Be in deep water = gặp rắc rối nghiêm trọng; nợ nần xác định rắc rối tài chính. I suspect chỉ suy đoán nên may/might/could have been phù hợp quá khứ.",
+      "explanation": "Be in deep water = gặp rắc rối nghiêm trọng; nợ nần xác định rắc rối tài chính.",
       "keyword": "water",
       "answerPrefix": "The company",
       "answerSuffix": "given its heavy debts last year",
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "may have been in deep water",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "in deep water"
+      ]
     },
     {
       "globalNumber": 99,
@@ -1428,5 +1453,6 @@
   ],
   "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017",
-  "answerDocumentId": "1KoOYAg3DzKl2ipmmITH0L24O0oQIPEKV9QCeUcSUCn0"
+  "answerDocumentId": "1KoOYAg3DzKl2ipmmITH0L24O0oQIPEKV9QCeUcSUCn0",
+  "explanationStyle": "student-copy-concise-v1"
 }

@@ -450,6 +450,227 @@
       "questions": [
         100
       ]
+    },
+    {
+      "question": 3,
+      "term": "must have + V3",
+      "meta": "GRAMMAR PHRASE",
+      "meaning": "hẳn đã; chắc đã",
+      "note": "Dùng khi suy luận chắc chắn về quá khứ dựa trên dấu hiệu. Khác had to là đã phải làm vì nghĩa vụ; must have không tự xác nhận sự việc đã được chứng kiến.",
+      "usage": "must have lost/forgotten/lacked",
+      "example": "She must have left before noon.",
+      "translation": "Hẳn cô ấy đã rời đi trước buổi trưa.",
+      "family": "must (modal); deduction (n); deduce (v)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ],
+      "aliases": []
+    },
+    {
+      "term": "as far as … is concerned",
+      "meta": "phrase",
+      "meaning": "xét về; về mặt",
+      "note": "Cụm này giới hạn chủ đề đang bàn. Sau as far as đặt chủ đề rồi dùng is/are concerned phù hợp. As far as I am concerned còn nghĩa theo ý kiến của tôi, không chỉ nói phạm vi chủ đề. Có thể diễn đạt gần nghĩa bằng regarding + N hoặc in terms of + N. Regarding nêu chủ đề đang bàn; in terms of nhấn mạnh phương diện dùng để đánh giá.",
+      "usage": "As far as punctuality is concerned, …; in terms of + N; regarding + N. Không thêm about sau regarding.",
+      "family": "concern (n/v); concerned (adj/phân từ); concerning (giới từ: về).",
+      "example": "As far as cost is concerned, the first option is better.",
+      "translation": "Xét về chi phí, phương án thứ nhất tốt hơn.",
+      "aliases": [
+        "in terms of",
+        "regarding",
+        "In terms of"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        47
+      ],
+      "question": 47
+    },
+    {
+      "term": "come as a surprise",
+      "meaning": "gây ngạc nhiên",
+      "usage": "come as a surprise to somebody",
+      "example": "The result came as a surprise to us.",
+      "translation": "Kết quả khiến chúng tôi ngạc nhiên.",
+      "family": "surprise (n/v); surprised/surprising (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Come as a surprise to someone là gây ngạc nhiên cho ai. To nối surprise với người tiếp nhận thông tin. Đây là cụm cố định; không chọn for chỉ vì tiếng Việt thường nói bất ngờ đối với.",
+      "aliases": [],
+      "question": 51,
+      "questions": [
+        51
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come as a shock / surprise to",
+      "meta": "verb phrase",
+      "meaning": "khiến ai sốc hoặc bất ngờ",
+      "note": "Chủ ngữ thường là tin tức hoặc sự kiện; người cảm thấy bất ngờ đứng sau to. Shock mạnh hơn surprise và thường gắn với điều không vui. Cụm này không diễn tả chuyển động đến nơi nào.",
+      "usage": "something comes as a shock/surprise to someone; come as no surprise = không có gì lạ.",
+      "family": "shock/surprise (n/v); shocked/surprised (cảm xúc); shocking/surprising (gây cảm xúc).",
+      "example": "The sudden cancellation came as a surprise to everyone.",
+      "translation": "Việc hủy đột ngột khiến mọi người bất ngờ.",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ],
+      "question": 51,
+      "aliases": [
+        "surprise to"
+      ]
+    },
+    {
+      "term": "look forward to",
+      "meaning": "mong chờ với sự háo hức",
+      "usage": "look forward to + danh từ/V-ing",
+      "example": "I look forward to meeting you.",
+      "translation": "Tôi mong được gặp bạn.",
+      "family": "look (v); forward (adv); to là giới từ nên theo sau bằng V-ing",
+      "meta": "VERB PHRASE",
+      "note": "Look forward to something là mong chờ một việc với cảm xúc tích cực. To ở cuối cụm liên kết activity với động từ trong mệnh đề quan hệ: an activity that the child looks forward to. Không thêm it vì that đã thay cho activity.",
+      "aliases": [],
+      "question": 70,
+      "questions": [
+        70
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 72,
+      "term": "bring about",
+      "meta": "PHRASAL VERB",
+      "meaning": "gây ra, làm cho xảy ra",
+      "note": "Thường dùng với thay đổi, cải thiện hoặc một kết quả. Bring about changes nói điều gì tạo nên thay đổi, không phải mang vật đến. Bring up a topic lại là nêu một chủ đề.",
+      "usage": "bring about change/improvement",
+      "example": "The new policy brought about major changes.",
+      "translation": "Chính sách mới tạo ra những thay đổi lớn.",
+      "family": "bring–brought–brought; change (n/v, từ thường đi kèm)",
+      "teacherSelected": true,
+      "questions": [
+        72
+      ],
+      "aliases": []
+    },
+    {
+      "term": "pride oneself on",
+      "meaning": "tự hào về",
+      "usage": "pride oneself on + danh từ/V-ing",
+      "example": "He prides himself on being punctual.",
+      "translation": "Anh ấy tự hào về việc luôn đúng giờ.",
+      "family": "pride (n/v); proud (adj); proudly (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Pride oneself on + danh từ/V-ing là tự hào về điều gì. Gary là nam nên dùng himself; never being late giữ đúng nội dung chưa bao giờ đi làm muộn. Không dùng prides him vì đại từ phải quay lại cùng chủ thể Gary.",
+      "aliases": [],
+      "question": 81,
+      "questions": [
+        81
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 91,
+      "term": "take on",
+      "meta": "phrasal verb",
+      "meaning": "nhận, đảm nhận công việc hoặc trách nhiệm",
+      "note": "Take on extra work nghĩa là nhận thêm việc. Ở đây tân ngữ là work, không phải một người; vì vậy cụm này không mang nghĩa tuyển dụng.",
+      "usage": "take on extra work/responsibility/a task",
+      "family": "take – took – taken; take somebody on: tuyển dụng ai",
+      "example": "She cannot take on any more work this week.",
+      "translation": "Tuần này cô ấy không thể nhận thêm việc nữa.",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ],
+      "aliases": [
+        "Take on"
+      ]
+    },
+    {
+      "term": "run low on",
+      "meaning": "sắp hết, còn ít",
+      "usage": "run low on something",
+      "example": "We are running low on fuel.",
+      "translation": "Chúng tôi sắp hết nhiên liệu.",
+      "family": "run → ran → run; low (adj/adv)",
+      "meta": "VERB PHRASE",
+      "note": "Run low on something nghĩa là nguồn dự trữ sắp hết, phù hợp will soon be finished. Are running diễn tả tình trạng đang tiến gần mức cạn.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be mixed up in",
+      "meaning": "dính líu đến, thường là việc xấu",
+      "usage": "be mixed up in something",
+      "example": "He denied being mixed up in the fraud.",
+      "translation": "Anh ấy phủ nhận việc dính líu đến vụ gian lận.",
+      "family": "mix (v/n); mixed (V3/adj); mixture (n)",
+      "meta": "VERB PHRASE",
+      "note": "Be mixed up in something là dính líu vào một việc, thường là rắc rối hoặc phạm pháp. Not giữ lời khẳng định con trai không liên quan; I can assure you thể hiện sự chắc chắn.",
+      "aliases": [
+        "mixed up in"
+      ],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "let it be known",
+      "meaning": "công khai cho biết",
+      "usage": "let it be known that + mệnh đề",
+      "example": "She let it be known that she wanted to leave.",
+      "translation": "Cô ấy công khai cho biết mình muốn rời đi.",
+      "family": "let → let → let; know → knew → known",
+      "meta": "VERB PHRASE",
+      "note": "Let it be known that … là công khai/cho mọi người biết một điều. Let theo sau tân ngữ it + be nguyên mẫu; known là phân từ bị động.",
+      "aliases": [
+        "let it be known that",
+        "Let it be known that"
+      ],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be cut out for",
+      "meaning": "có phẩm chất phù hợp với",
+      "usage": "be cut out for something; be cut out to + V",
+      "example": "She is cut out for teaching.",
+      "translation": "Cô ấy có tố chất phù hợp với nghề dạy học.",
+      "family": "cut → cut → cut",
+      "meta": "VERB PHRASE",
+      "note": "Be cut out for + danh từ hoặc be cut out to do là phù hợp/có phẩm chất để theo nghề. Not giữ ý đời diễn viên không dành cho William.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 98,
+      "term": "in awe of",
+      "meta": "phrase",
+      "meaning": "kính phục, choáng ngợp trước",
+      "note": "Awe có yếu tố ngưỡng mộ mạnh, đôi khi xen sợ hãi; không chỉ là bất ngờ đơn thuần. Dùng với điều lớn lao hoặc đáng nể.",
+      "usage": "be/stand in awe of somebody/something",
+      "example": "We were in awe of her achievements.",
+      "translation": "Chúng tôi vô cùng kính phục các thành tựu của cô ấy.",
+      "family": "awe (n/v); awe-inspiring (a): đáng kinh ngạc/kính phục; awestruck (a).",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ],
+      "aliases": []
     }
   ]
 }

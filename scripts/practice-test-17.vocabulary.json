@@ -434,6 +434,9 @@
       "teacherSelected": true,
       "questions": [
         97
+      ],
+      "aliases": [
+        "Make one’s getaway"
       ]
     },
     {
@@ -449,7 +452,161 @@
       "teacherSelected": true,
       "questions": [
         98
+      ],
+      "aliases": [
+        "Take something into account"
       ]
+    },
+    {
+      "question": 3,
+      "term": "ward off",
+      "meta": "PHRASAL VERB",
+      "meaning": "phòng tránh; ngăn nguy cơ đến gần",
+      "note": "Dùng cho bệnh tật, nguy hiểm hoặc tác động không mong muốn. Không đồng nghĩa hoàn toàn với cure: ward off thiên về ngăn xảy ra, cure là chữa khỏi.",
+      "usage": "ward off illness/an attack",
+      "example": "Warm clothing helps ward off the cold.",
+      "translation": "Quần áo ấm giúp chống lại cái lạnh.",
+      "family": "ward (n/v); ward off + noun; prevention (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ],
+      "aliases": []
+    },
+    {
+      "question": 11,
+      "term": "strictly forbidden",
+      "meta": "adjective phrase",
+      "meaning": "bị nghiêm cấm",
+      "note": "Strictly forbidden nghĩa là bị nghiêm cấm, là kết hợp tự nhiên với quy định bảo tàng. Deeply/highly/seriously không phải trạng từ phù hợp trong cụm này.",
+      "usage": "be strictly forbidden; strictly prohibit something",
+      "family": "strict (adj); strictly (adv); forbid–forbade–forbidden",
+      "example": "Smoking is strictly forbidden in this room.",
+      "translation": "Hút thuốc bị nghiêm cấm trong phòng này.",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ],
+      "aliases": []
+    },
+    {
+      "question": 44,
+      "term": "be tempted by",
+      "meta": "passive verb phrase",
+      "meaning": "bị hấp dẫn, bị cám dỗ bởi",
+      "note": "Tempted mô tả cảm giác của người muốn làm điều hấp dẫn nhưng có thể không có lợi. Tempting mô tả thứ gây ra cảm giác đó.",
+      "usage": "be tempted by something; be tempted to do something; resist temptation",
+      "family": "tempt (v); temptation (n); tempted/tempting (adj)",
+      "example": "I was tempted to buy another snack.",
+      "translation": "Tôi đã muốn mua thêm một món ăn nhẹ dù không thật sự cần.",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ],
+      "aliases": []
+    },
+    {
+      "term": "reassure",
+      "meaning": "trấn an ai",
+      "usage": "reassure somebody that + mệnh đề",
+      "example": "She reassured me that everything was fine.",
+      "translation": "Cô ấy trấn an tôi rằng mọi thứ đều ổn.",
+      "family": "reassure (v); reassurance (n); reassuring (adj)",
+      "meta": "VERB",
+      "note": "Reassure somebody that… là trấn an ai rằng một việc được bảo đảm. Đổi you thành I theo người thuật lại và can thành could theo said. A month’s paid leave là một tháng nghỉ hưởng lương; dấu sở hữu thuộc month số ít, không phải months’.",
+      "aliases": [],
+      "question": 87,
+      "questions": [
+        87
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "insist on",
+      "meaning": "khăng khăng, nhất quyết",
+      "usage": "insist on + danh từ/V-ing",
+      "example": "She insisted on paying for lunch.",
+      "translation": "Cô ấy nhất quyết trả tiền bữa trưa.",
+      "family": "insist (v); insistence (n); insistent (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Insistence on đổi sang động từ insist on + V-ing. Cần giữ dropping out at the last minute và ý không ai ngạc nhiên. To nobody’s surprise/which surprised nobody diễn đạt rõ hơn no shock to everybody vốn dễ gây hiểu sai phạm vi phủ định.",
+      "aliases": [],
+      "question": 88,
+      "questions": [
+        88
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "make an attempt",
+      "meaning": "thử, cố gắng làm gì",
+      "usage": "make an attempt to V/at V-ing",
+      "example": "He made an attempt to repair the bike.",
+      "translation": "Anh ấy đã thử sửa chiếc xe đạp.",
+      "family": "attempt (n/v); attempted; make → made",
+      "meta": "VERB PHRASE",
+      "note": "Another attempt/effort diễn đạt thêm một lần thử nữa, tương đương try again. Make an attempt to V hoặc have an attempt at V-ing đều dùng được.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have no recollection of",
+      "meaning": "không nhớ về việc gì",
+      "usage": "have no recollection of + danh từ/V-ing",
+      "example": "I have no recollection of meeting him.",
+      "translation": "Tôi không nhớ đã từng gặp anh ấy.",
+      "family": "recollect (v); recollection (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have a recollection of something là có ký ức về điều gì. Sau Haven’t có thể dùng you got any recollection…, hoặc kiểu Anh trang trọng you any recollection….",
+      "aliases": [
+        "have a recollection of",
+        "Have a recollection of"
+      ],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put the blame on",
+      "meaning": "quy trách nhiệm, đổ lỗi cho ai",
+      "usage": "put the blame on somebody for something",
+      "example": "Do not put the blame on me for the delay.",
+      "translation": "Đừng đổ lỗi cho tôi về sự chậm trễ.",
+      "family": "blame (n/v); blameworthy (adj); blameless (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Place the blame for something on somebody/something là quy trách nhiệm về một sự việc cho một đối tượng. For đi với breakdown, on đi với poor maintenance.",
+      "aliases": [
+        "place the blame on",
+        "place the blame for",
+        "Place the blame for"
+      ],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take back",
+      "meaning": "rút lại lời nói; trả lại",
+      "usage": "take back a statement; take something back",
+      "example": "I take back what I said.",
+      "translation": "Tôi rút lại điều mình vừa nói.",
+      "family": "take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Take back a statement/criticism nghĩa là rút lại điều đã nói. Câu ở hiện tại nên dùng take, không phải took.",
+      "aliases": [],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ]
 }

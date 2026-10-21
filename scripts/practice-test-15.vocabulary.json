@@ -450,6 +450,204 @@
       "questions": [
         94
       ]
+    },
+    {
+      "term": "at a rate / pace",
+      "meta": "preposition phrases",
+      "meaning": "với mức/tốc độ",
+      "note": "Rate thường dùng cho tỷ lệ hoặc tốc độ được đo; pace thường nói nhịp độ diễn ra. Giới từ trong các cụm mô tả tốc độ là at. Không đổi mọi rate thành pace, như unemployment rate.",
+      "usage": "at a rapid rate; at a steady pace; grow at a rate of 5% a year; at one’s own pace.",
+      "family": "rate (n/v); pace (n/v). Rapid/steady/slow là các tính từ thường đi kèm.",
+      "example": "The population grew at a steady rate over the decade.",
+      "translation": "Dân số tăng với tốc độ ổn định trong thập kỷ đó.",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ],
+      "question": 39,
+      "aliases": [
+        "At a rate"
+      ]
+    },
+    {
+      "term": "few and far between",
+      "meta": "idiom",
+      "meaning": "rất hiếm; ít và thưa thớt",
+      "note": "Cả cụm nhấn mạnh số lượng ít và khó gặp. Dùng cho cơ hội, sự kiện hay vật có số lượng ít; không cần dịch riêng “few” và “far”. Thường đứng sau be.",
+      "usage": "opportunities are few and far between; buses are few and far between; near synonym: rare.",
+      "family": "few (từ chỉ lượng) + far between; ghi nguyên cụm, không có một họ từ chung.",
+      "example": "Jobs in that small town were few and far between.",
+      "translation": "Việc làm ở thị trấn nhỏ đó rất hiếm.",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ],
+      "question": 51,
+      "aliases": []
+    },
+    {
+      "term": "on arrival",
+      "meaning": "ngay khi đến",
+      "usage": "on arrival; on arriving at/in somewhere",
+      "example": "Please call me on arrival.",
+      "translation": "Hãy gọi cho tôi ngay khi đến.",
+      "family": "arrive (v); arrival (n)",
+      "meta": "PHRASE",
+      "note": "On + V-ing hoặc on arrival diễn tả ngay khi đến. Nếu dùng arriving/getting, chủ thể vế chính phải là I để tránh mệnh đề rút gọn sai chủ ngữ. Bị động I was told giữ việc một người khác báo thông tin hủy chuyến bay.",
+      "aliases": [],
+      "question": 82,
+      "questions": [
+        82
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "look forward to",
+      "meaning": "mong chờ với sự háo hức",
+      "usage": "look forward to + danh từ/V-ing",
+      "example": "I look forward to meeting you.",
+      "translation": "Tôi mong được gặp bạn.",
+      "family": "look (v); forward (adv); to là giới từ nên theo sau bằng V-ing",
+      "meta": "VERB PHRASE",
+      "note": "Look forward to + danh từ/V-ing là mong đợi một việc với niềm vui. To là giới từ nên dùng seeing, không phải see. Again giữ ý gặp lại, không chỉ gặp lần đầu.",
+      "aliases": [],
+      "question": 83,
+      "questions": [
+        83
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come as no surprise",
+      "meaning": "không gây ngạc nhiên",
+      "usage": "come as no surprise to somebody",
+      "example": "His decision came as no surprise to me.",
+      "translation": "Quyết định của anh ấy không làm tôi ngạc nhiên.",
+      "family": "surprise (n/v); surprised/surprising (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Come as no surprise/shock to somebody nghĩa là hoàn toàn không khiến ai ngạc nhiên. Câu giữ tên Jenifer như đề gốc, đồng thời giữ quá khứ hoàn thành had failed để thể hiện kết quả thi xảy ra trước phản ứng của cô ấy.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "succeed in",
+      "meaning": "thành công trong việc",
+      "usage": "succeed in + V-ing",
+      "example": "She succeeded in solving the problem.",
+      "translation": "Cô ấy đã giải quyết được vấn đề.",
+      "family": "succeed (v); success (n); successful (adj); successfully (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Succeed in + V-ing = thành công trong việc gì. Succeeded in putting out/extinguishing thay cho managed to put out.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "accuse of",
+      "meaning": "buộc tội, cáo buộc ai",
+      "usage": "accuse somebody of + danh từ/V-ing",
+      "example": "They accused him of lying.",
+      "translation": "Họ cáo buộc anh ấy nói dối.",
+      "family": "accuse (v); accusation (n); accused (V3)",
+      "meta": "VERB PHRASE",
+      "note": "Accuse somebody of doing/having done something là buộc tội ai làm gì. Tom là người bị buộc tội; his wallet quy chiếu ví của Mr.",
+      "aliases": [
+        "accuse somebody of"
+      ],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 93,
+      "term": "on the verge of",
+      "meta": "PHRASE",
+      "meaning": "sắp; bên bờ của",
+      "note": "Nhấn mạnh một việc sắp xảy ra. Hay gặp với nguy cơ như extinction/collapse, nhưng cũng có thể dùng với thành tựu như success/discovery, không chỉ nghĩa xấu.",
+      "usage": "on the verge of + danh từ/V-ing",
+      "example": "The team is on the verge of making an important discovery.",
+      "translation": "Nhóm đang tiến rất gần đến một phát hiện quan trọng.",
+      "family": "verge (n/v); brink (n); imminent (adj gần nghĩa: sắp xảy ra)",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ],
+      "aliases": []
+    },
+    {
+      "term": "make complaints",
+      "meaning": "đưa ra lời phàn nàn",
+      "usage": "make a complaint/complaints about something",
+      "example": "Residents made complaints about the noise.",
+      "translation": "Người dân phàn nàn về tiếng ồn.",
+      "family": "complain (v); complaint (n)",
+      "meta": "VERB PHRASE",
+      "note": "Make complaints là đưa ra lời phàn nàn; frequent là tính từ diễn tả tần suất. Phải giữ far too và for my liking = nhiều hơn mức tôi thấy chấp nhận được.",
+      "aliases": [],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "beyond control",
+      "meaning": "ngoài tầm kiểm soát",
+      "usage": "beyond somebody’s control; beyond our control",
+      "example": "The delay was beyond our control.",
+      "translation": "Sự chậm trễ nằm ngoài tầm kiểm soát của chúng tôi.",
+      "family": "control (n/v); controlled; controlling",
+      "meta": "VERB PHRASE",
+      "note": "Beyond our control nghĩa là nằm ngoài khả năng kiểm soát của chúng tôi. At the moment phải được giữ vì việc không thể can thiệp chỉ nói ở thời điểm hiện tại.",
+      "aliases": [
+        "beyond our control"
+      ],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in case",
+      "meaning": "phòng khi, đề phòng khả năng",
+      "usage": "in case + mệnh đề",
+      "example": "Take an umbrella in case it rains.",
+      "translation": "Hãy mang ô phòng khi trời mưa.",
+      "family": "case (n); in case of + danh từ",
+      "meta": "PHRASE",
+      "note": "In case diễn tả sự phòng ngừa cho một khả năng có thể xảy ra. Mốc saved ở quá khứ nên dùng needed trong câu này.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 99,
+      "term": "fall through",
+      "meta": "PHRASAL VERB",
+      "meaning": "không thành, đổ vỡ kế hoạch",
+      "note": "Dùng khi kế hoạch hoặc thỏa thuận không thực hiện được. Không dịch thành rơi xuyên qua theo nghĩa đen trong ngữ cảnh lịch hẹn, chuyến đi hoặc hợp đồng.",
+      "usage": "a plan/deal falls through; have fallen through",
+      "example": "Our travel plans fell through at the last minute.",
+      "translation": "Kế hoạch du lịch của chúng tôi đổ vỡ vào phút chót.",
+      "family": "fall–fell–fallen; fail (v: thất bại); failure (n)",
+      "teacherSelected": true,
+      "questions": [
+        99
+      ],
+      "aliases": []
     }
   ]
 }

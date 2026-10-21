@@ -102,8 +102,7 @@
       "displayAnswer": "C",
       "explanation": "persist in + N/V-ing: kiên trì làm gì.",
       "teacherHighlights": [
-        "persist",
-        "in"
+        "persist in"
       ]
     },
     {
@@ -208,7 +207,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "be worth + số tiền: trị giá bao nhiêu.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "be worth"
+      ]
     },
     {
       "globalNumber": 11,
@@ -274,7 +275,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "take it for granted that…: mặc nhiên cho rằng…",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "take it for granted"
+      ]
     },
     {
       "globalNumber": 17,
@@ -443,6 +446,8 @@
       "displayAnswer": "C",
       "explanation": "advise + V-ing; phủ định: advise not + V-ing. Có tân ngữ người: advise someone not to + V.",
       "teacherHighlights": [
+        "advise",
+        "advise",
         "advise"
       ]
     },
@@ -544,7 +549,7 @@
       "displayAnswer": "economize",
       "explanation": "economize on: tiết kiệm. Sau don’t dùng động từ nguyên mẫu.",
       "teacherHighlights": [
-        "economize"
+        "economize on"
       ]
     },
     {
@@ -604,6 +609,7 @@
       "displayAnswer": "outnumbered",
       "explanation": "outnumber: vượt về số lượng. Has + V3 → outnumbered.",
       "teacherHighlights": [
+        "outnumber",
         "outnumber"
       ]
     },
@@ -679,7 +685,9 @@
       ],
       "displayAnswer": "Line 7: as → such as / like",
       "explanation": "such as / like: chẳng hạn như, dùng để nêu ví dụ.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "as / like"
+      ]
     },
     {
       "globalNumber": 51,
@@ -851,6 +859,7 @@
       "displayAnswer": "as",
       "explanation": "recruit someone as: tuyển ai làm…; recruit: tuyển dụng, tuyển mộ.",
       "teacherHighlights": [
+        "recruit",
         "recruit"
       ]
     },
@@ -1008,7 +1017,9 @@
       "displayAnswer": "D",
       "explanation": "They thay cho Phishing emails ở câu trước.",
       "focusVocabulary": [],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Phishing"
+      ]
     },
     {
       "globalNumber": 77,
@@ -1289,6 +1300,7 @@
       "blankAnswer": "the goods arrived at the warehouse",
       "fullSentence": "When the goods arrived at the warehouse, they were inspected very carefully",
       "teacherHighlights": [
+        "On arrival",
         "inspect"
       ]
     },
@@ -1408,5 +1420,6 @@
       "accessed": "2026-10-17"
     }
   ],
-  "answerDocumentId": "1d20D8Y3E3wSqhl16Fr7Wdmwd7_yc-Hd0YmJSJZ0UBoc"
+  "answerDocumentId": "1d20D8Y3E3wSqhl16Fr7Wdmwd7_yc-Hd0YmJSJZ0UBoc",
+  "explanationStyle": "student-copy-concise-v1"
 }

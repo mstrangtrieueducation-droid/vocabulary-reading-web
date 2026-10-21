@@ -448,8 +448,227 @@
       "family": "although/though + clause; despite/in spite of + noun or V-ing",
       "teacherSelected": true,
       "questions": [
+        44,
         100
       ]
+    },
+    {
+      "question": 19,
+      "term": "must have + V3",
+      "meta": "GRAMMAR PHRASE",
+      "meaning": "hẳn đã; chắc đã",
+      "note": "Dùng khi suy luận chắc chắn về quá khứ dựa trên dấu hiệu. Khác had to là đã phải làm vì nghĩa vụ; must have không tự xác nhận sự việc đã được chứng kiến.",
+      "usage": "must have lost/forgotten/lacked",
+      "example": "She must have left before noon.",
+      "translation": "Hẳn cô ấy đã rời đi trước buổi trưa.",
+      "family": "must (modal); deduction (n); deduce (v)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ],
+      "aliases": []
+    },
+    {
+      "term": "be used to",
+      "meaning": "đã quen với",
+      "usage": "be used to + danh từ/V-ing",
+      "example": "I am used to getting up early.",
+      "translation": "Tôi đã quen dậy sớm.",
+      "family": "used to + V chỉ thói quen quá khứ; be used to + V-ing chỉ đã quen",
+      "meta": "VERB PHRASE",
+      "note": "Be used to + danh từ/V-ing = quen với việc gì; starting chỉ việc bắt đầu làm sớm. To là giới từ, không phải to-infinitive. Khác used to start = từng bắt đầu trong quá khứ.",
+      "aliases": [
+        "be used to/be accustomed to"
+      ],
+      "question": 29,
+      "questions": [
+        29
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in the end / at the end of",
+      "meta": "ADVERBIAL PHRASES",
+      "meaning": "cuối cùng / ở cuối một khoảng hoặc một vật",
+      "note": "In the end nêu kết quả sau một quá trình, gần nghĩa eventually. At the end of xác định vị trí hoặc thời điểm cuối của thứ được nêu sau of. Không viết in the end of the month khi muốn nói vào cuối tháng.",
+      "usage": "in the end, + clause; at the end of the lesson/road/month",
+      "family": "end (n/v): phần cuối, kết thúc; ending (n): đoạn kết; endless (adj): vô tận",
+      "example": "In the end, we agreed to meet at the end of the month.",
+      "translation": "Cuối cùng, chúng tôi thống nhất gặp nhau vào cuối tháng.",
+      "teacherSelected": true,
+      "questions": [
+        69
+      ],
+      "question": 69,
+      "aliases": [
+        "At the end of"
+      ]
+    },
+    {
+      "term": "make somebody do",
+      "meaning": "khiến hoặc bắt ai làm gì",
+      "usage": "make somebody + V; bị động be made to + V",
+      "example": "They made us wait outside.",
+      "translation": "Họ bắt chúng tôi chờ bên ngoài.",
+      "family": "make → made → made; chủ động không to, bị động có to",
+      "meta": "VERB PHRASE",
+      "note": "Make somebody do something khi chuyển sang bị động trở thành be made to do something. Us chuyển thành chủ ngữ we, và quá khứ dùng were made. Phải thêm to trước wait; giữ until the room was ready để bảo toàn điều kiện kết thúc việc chờ.",
+      "aliases": [],
+      "question": 84,
+      "questions": [
+        84
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "as far as … is concerned",
+      "meta": "phrase",
+      "meaning": "xét về; về mặt",
+      "note": "Cụm này giới hạn chủ đề đang bàn. Sau as far as đặt chủ đề rồi dùng is/are concerned phù hợp. As far as I am concerned còn nghĩa theo ý kiến của tôi, không chỉ nói phạm vi chủ đề. Có thể diễn đạt gần nghĩa bằng regarding + N hoặc in terms of + N. Regarding nêu chủ đề đang bàn; in terms of nhấn mạnh phương diện dùng để đánh giá.",
+      "usage": "As far as punctuality is concerned, …; in terms of + N; regarding + N. Không thêm about sau regarding.",
+      "family": "concern (n/v); concerned (adj/phân từ); concerning (giới từ: về).",
+      "example": "As far as cost is concerned, the first option is better.",
+      "translation": "Xét về chi phí, phương án thứ nhất tốt hơn.",
+      "aliases": [
+        "in terms of",
+        "regarding"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        88
+      ],
+      "question": 88
+    },
+    {
+      "term": "take one’s hat off to",
+      "meaning": "khâm phục, công nhận ai",
+      "usage": "take one’s hat off to somebody",
+      "example": "I take my hat off to you for finishing so quickly.",
+      "translation": "Tôi khâm phục bạn vì hoàn thành nhanh như vậy.",
+      "family": "take → took → taken; hat (n)",
+      "meta": "VERB PHRASE",
+      "note": "Take one’s hat off to somebody = ngưỡng mộ, bày tỏ sự khâm phục. Chủ ngữ I đi với my hat, to you chỉ người được khen.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "give vent to",
+      "meaning": "bộc lộ cảm xúc mạnh",
+      "usage": "give vent to anger/feelings",
+      "example": "She gave vent to her frustration.",
+      "translation": "Cô ấy bộc lộ sự bực bội của mình.",
+      "family": "vent (n/v); give → gave → given",
+      "meta": "VERB PHRASE",
+      "note": "Give vent to feelings là bộc lộ cảm xúc, tương đương không kìm nén. Vì bottle up mang nghĩa kìm nén nên phải thêm not.",
+      "aliases": [
+        "give vent to feelings",
+        "Give vent to feelings"
+      ],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 93,
+      "term": "bottle up",
+      "meta": "PHRASAL VERB",
+      "meaning": "kìm nén cảm xúc, không bộc lộ",
+      "note": "Hình ảnh nhốt cảm xúc vào chai; thường đi với anger, feelings, emotions. Có thể tách tân ngữ: bottle your feelings up; đại từ phải ở giữa: bottle them up.",
+      "usage": "bottle up anger; bottle your feelings up",
+      "example": "Don’t bottle up your worries; talk to someone.",
+      "translation": "Đừng giữ kín lo lắng; hãy nói chuyện với ai đó.",
+      "family": "bottle (n/v); bottled-up (adj)",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ],
+      "aliases": []
+    },
+    {
+      "term": "second to none",
+      "meaning": "không thua kém ai, thuộc loại tốt nhất",
+      "usage": "be second to none",
+      "example": "Their service is second to none.",
+      "translation": "Dịch vụ của họ không thua kém nơi nào.",
+      "family": "second (số thứ tự); none (đại từ)",
+      "meta": "PHRASE",
+      "note": "Be second to none = không thua ai, giỏi nhất. When it comes to + V-ing = khi nói về việc gì; comes đã cho sẵn nên điền when it trước đó.",
+      "aliases": [],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "compliment somebody on",
+      "meaning": "khen ai về điều gì",
+      "usage": "compliment somebody on something",
+      "example": "He complimented her on her presentation.",
+      "translation": "Anh ấy khen bài thuyết trình của cô ấy.",
+      "family": "compliment (n/v); complimentary (adj); không nhầm complement",
+      "meta": "PHRASE",
+      "note": "Compliment somebody on something = khen ai về điều gì. Complimented ở quá khứ theo said; on là từ bắt buộc trong đề.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "afford",
+      "meaning": "có đủ tiền hoặc điều kiện để làm gì",
+      "usage": "can/could afford + danh từ/to V",
+      "example": "We cannot afford to buy a new car.",
+      "translation": "Chúng tôi không đủ tiền mua xe mới.",
+      "family": "afford (v); affordable (adj); affordability (n)",
+      "meta": "VERB",
+      "note": "Can/could afford to do something là có đủ khả năng tài chính để làm gì. Câu ở quá khứ nên dùng could not afford; to pay đi sau afford.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have an effect on",
+      "meaning": "có tác động đến",
+      "usage": "have an effect on somebody/something",
+      "example": "The weather has an effect on our mood.",
+      "translation": "Thời tiết có tác động đến tâm trạng của chúng ta.",
+      "family": "effect (n); affect (v); effective (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Have an effect on somebody/something diễn tả tác động đến đối tượng. Harm chuyển thành harmful hoặc negative; seriously/very/serious giữ mức độ đáng kể.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "by no means",
+      "meaning": "hoàn toàn không",
+      "usage": "be by no means + tính từ",
+      "example": "The task is by no means easy.",
+      "translation": "Nhiệm vụ này hoàn toàn không dễ.",
+      "family": "means giữ dạng có -s trong cụm cố định",
+      "meta": "PHRASE",
+      "note": "By no means = hoàn toàn không; đặt đầu câu buộc đảo is she. Giữ an experienced archaeologist để phủ nhận kinh nghiệm, không phủ nhận cô ấy là nhà khảo cổ.",
+      "aliases": [],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
     }
   ]
 }

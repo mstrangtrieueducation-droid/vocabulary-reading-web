@@ -28,7 +28,11 @@
       "family": "take–took–taken; grant (v/n); gratitude (n, nghĩa liên quan)",
       "teacherSelected": true,
       "questions": [
-        4
+        4,
+        88
+      ],
+      "aliases": [
+        "Take it for granted"
       ]
     },
     {
@@ -450,6 +454,136 @@
       "questions": [
         98
       ]
+    },
+    {
+      "term": "do somebody good",
+      "meaning": "có lợi cho ai",
+      "usage": "do somebody good",
+      "example": "A short break will do you good.",
+      "translation": "Nghỉ một lát sẽ có lợi cho bạn.",
+      "family": "do → did → done; good (n trong cụm này)",
+      "meta": "VERB PHRASE",
+      "note": "Do someone good là có lợi cho ai. Sau has cần V3 done: has really done me good. Given/had/taken không tạo thành cụm cố định này. Câu là lời người nói kể trải nghiệm cá nhân cảm thấy khỏe hơn.",
+      "aliases": [],
+      "question": 16,
+      "questions": [
+        16
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "contrary to",
+      "meaning": "trái với",
+      "usage": "contrary to + danh từ/mệnh đề danh từ",
+      "example": "Contrary to expectations, sales increased.",
+      "translation": "Trái với dự đoán, doanh số đã tăng.",
+      "family": "contrary (adj); on the contrary dùng để bác bỏ ý trước",
+      "meta": "PHRASE",
+      "note": "Contrary to + danh từ/mệnh đề danh từ nghĩa là trái với điều gì. What you think tương ứng nhận định của người nghe. Not always better phủ định sự tuyệt đối luôn tốt hơn; không viết always not better hoặc never better vì sẽ thành luôn kém/không bao giờ tốt hơn.",
+      "aliases": [],
+      "question": 82,
+      "questions": [
+        82
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "look as if",
+      "meaning": "trông như thể",
+      "usage": "look as if/as though + mệnh đề",
+      "example": "It looks as if it is going to rain.",
+      "translation": "Trời trông như sắp mưa.",
+      "family": "look (v); as if/as though (cụm liên từ)",
+      "meta": "VERB PHRASE",
+      "note": "Look as if/as though + mệnh đề tương đương seem, nói dấu hiệu hiện tại cho thấy nhà không có người ở. Are unoccupied giữ hiện tại của seem to be. Không cần đổi sang quá khứ vì câu không đặt tình huống trái thực tế hay tường thuật quá khứ.",
+      "aliases": [],
+      "question": 83,
+      "questions": [
+        83
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have no intention of",
+      "meaning": "không có ý định làm gì",
+      "usage": "have no intention of + V-ing",
+      "example": "I have no intention of selling the house.",
+      "translation": "Tôi không có ý định bán ngôi nhà.",
+      "family": "intend (v); intention (n); intentional (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Have no intention of + V-ing là không có ý định làm việc gì. Intention to + nguyên mẫu cũng chấp nhận, còn of finding là mẫu thông dụng nhất với have no intention. Giữ this summer và part-time để bảo toàn thời gian, loại công việc.",
+      "aliases": [
+        "no intention of"
+      ],
+      "question": 84,
+      "questions": [
+        84
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "at no time",
+      "meaning": "không lúc nào",
+      "usage": "at no time + trợ động từ + S + V",
+      "example": "At no time did I agree to this.",
+      "translation": "Tôi chưa lúc nào đồng ý với việc này.",
+      "family": "time (n); cụm phủ định đứng đầu câu cần đảo ngữ",
+      "meta": "PHRASE",
+      "note": "At no time tương đương never, đặt đầu câu yêu cầu đảo do trước chủ ngữ số nhiều the two sides. Câu gốc hiện tại đơn nên do, không đổi sang did.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be on good terms with",
+      "meaning": "có quan hệ tốt với ai",
+      "usage": "be on good terms with somebody",
+      "example": "I am on good terms with my neighbours.",
+      "translation": "Tôi có quan hệ tốt với hàng xóm.",
+      "family": "terms (danh từ số nhiều trong cụm này)",
+      "meta": "VERB PHRASE",
+      "note": "Be on good terms with someone là có quan hệ tốt với ai. Not on good terms giữ đúng nghĩa does not get on well; on bad terms cũng diễn đạt quan hệ không tốt.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "act on impulse",
+      "meaning": "hành động bốc đồng",
+      "usage": "act on impulse",
+      "example": "He bought it on impulse.",
+      "translation": "Anh ấy mua món đó một cách bốc đồng.",
+      "family": "impulse (n); impulsive (adj); impulsively (adv)",
+      "meta": "PHRASE",
+      "note": "Act on impulse là hành động theo ý chợt nảy ra, không lên kế hoạch kỹ. Spontaneous decisions được chuyển thành cụm này.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 99,
+      "term": "fall on deaf ears",
+      "meta": "IDIOM",
+      "meaning": "bị bỏ ngoài tai, không được hưởng ứng",
+      "note": "Chủ ngữ thường là lời khuyên, lời cảnh báo hoặc đề nghị. Thành ngữ nói người nghe không phản hồi hoặc không làm theo, không mô tả khả năng thính giác thật.",
+      "usage": "warnings fall on deaf ears",
+      "example": "Her warnings fell on deaf ears.",
+      "translation": "Những lời cảnh báo của cô ấy bị bỏ ngoài tai.",
+      "family": "fall–fell–fallen; deaf (adj); ear (n)",
+      "teacherSelected": true,
+      "questions": [
+        99
+      ],
+      "aliases": []
     }
   ]
 }

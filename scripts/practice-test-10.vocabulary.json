@@ -450,6 +450,138 @@
       "questions": [
         99
       ]
+    },
+    {
+      "question": 54,
+      "term": "come about",
+      "meta": "PHRASAL VERB",
+      "meaning": "xảy ra, xuất hiện",
+      "note": "Come about không cần tân ngữ; bring about cần tân ngữ và nghĩa là gây ra. A change comes about nhưng a decision brings about a change.",
+      "usage": "How did it come about?; changes come about",
+      "example": "How did this misunderstanding come about?",
+      "translation": "Sự hiểu lầm này đã xảy ra như thế nào?",
+      "family": "come – came – come; occurrence (n gần nghĩa); occur (v gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        54
+      ],
+      "aliases": []
+    },
+    {
+      "term": "contrary to",
+      "meaning": "trái với",
+      "usage": "contrary to + danh từ/mệnh đề danh từ",
+      "example": "Contrary to expectations, sales increased.",
+      "translation": "Trái với dự đoán, doanh số đã tăng.",
+      "family": "contrary (adj); on the contrary dùng để bác bỏ ý trước",
+      "meta": "PHRASE",
+      "note": "Contrary to… nghĩa là trái với điều thể hiện hoặc được nghĩ tới. Câu cần giữ ý vẻ ngoài thờ ơ nhưng thực chất thân thiện. Sau to dùng cụm danh từ rồi thêm mệnh đề she is quite friendly, không bỏ mất sự đối lập.",
+      "aliases": [],
+      "question": 82,
+      "questions": [
+        82
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in comparison with",
+      "meaning": "so với, khi so sánh với",
+      "usage": "in comparison with/to something",
+      "example": "This room is small in comparison with the other one.",
+      "translation": "Phòng này nhỏ so với phòng kia.",
+      "family": "compare (v); comparison (n); comparative (adj)",
+      "meta": "PHRASE",
+      "note": "In comparison with/to nghĩa là khi so sánh với. In đã có trước ô, vì vậy chỉ điền comparison with/to…; nếu điền thêm in sẽ lặp giới từ. Second novel ở câu gốc đã thay school novel để ý so sánh hai cuốn rõ ràng.",
+      "aliases": [],
+      "question": 89,
+      "questions": [
+        89
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in the event of",
+      "meta": "PREPOSITIONAL PHRASE",
+      "meaning": "nếu xảy ra; trong trường hợp có",
+      "note": "Cụm này đưa ra cách xử lý nếu một sự việc xảy ra, thường xuất hiện trong hướng dẫn hoặc thông báo. Theo sau of là danh từ; muốn dùng một mệnh đề đầy đủ, viết in the event that.",
+      "usage": "in the event of + N; in the event that + S + V",
+      "family": "event (n): sự kiện, sự việc; eventual (adj): cuối cùng xảy ra",
+      "example": "In the event of a power cut, the backup lights will switch on.",
+      "translation": "Nếu mất điện, hệ thống đèn dự phòng sẽ bật lên.",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ],
+      "question": 91,
+      "aliases": []
+    },
+    {
+      "term": "lacking in",
+      "meaning": "thiếu một phẩm chất",
+      "usage": "be lacking in something",
+      "example": "The explanation was lacking in clarity.",
+      "translation": "Lời giải thích thiếu rõ ràng.",
+      "family": "lack (n/v); lacking (adj); clear → clarity",
+      "meta": "PHRASE",
+      "note": "Lacking phải được giữ nguyên. Có thể dùng be lacking in something hoặc lacking làm dạng V-ing sau despite/in spite of.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be restricted to",
+      "meaning": "bị giới hạn ở, chỉ dành cho",
+      "usage": "be restricted to somebody/something",
+      "example": "Access is restricted to members.",
+      "translation": "Chỉ thành viên mới được truy cập.",
+      "family": "restrict (v); restriction (n); restricted (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Be restricted to nghĩa là chỉ giới hạn cho một nhóm. In possession of là có/sở hữu; possession of… đã được in nên phần điền kết thúc bằng in.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "a source of embarrassment",
+      "meaning": "điều khiến ai xấu hổ",
+      "usage": "be a source of embarrassment to somebody",
+      "example": "The error was a source of embarrassment to him.",
+      "translation": "Lỗi đó khiến anh ấy xấu hổ.",
+      "family": "embarrass (v); embarrassment (n); embarrassed/embarrassing (adj)",
+      "meta": "PHRASE",
+      "note": "A source of embarrassment là điều khiến ai xấu hổ. Father’s jokes số nhiều nên dùng were, giữ always để tương ứng was always embarrassed.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "as far as … is concerned",
+      "meta": "phrase",
+      "meaning": "xét về; về mặt",
+      "note": "Cụm này giới hạn chủ đề đang bàn. Sau as far as đặt chủ đề rồi dùng is/are concerned phù hợp. As far as I am concerned còn nghĩa theo ý kiến của tôi, không chỉ nói phạm vi chủ đề. Có thể diễn đạt gần nghĩa bằng regarding + N hoặc in terms of + N. Regarding nêu chủ đề đang bàn; in terms of nhấn mạnh phương diện dùng để đánh giá.",
+      "usage": "As far as punctuality is concerned, …; in terms of + N; regarding + N. Không thêm about sau regarding.",
+      "family": "concern (n/v); concerned (adj/phân từ); concerning (giới từ: về).",
+      "example": "As far as cost is concerned, the first option is better.",
+      "translation": "Xét về chi phí, phương án thứ nhất tốt hơn.",
+      "aliases": [
+        "in terms of",
+        "regarding",
+        "As far as somebody is concerned"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        100
+      ],
+      "question": 100
     }
   ]
 }

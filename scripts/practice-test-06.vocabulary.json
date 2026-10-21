@@ -14,6 +14,9 @@
       "teacherSelected": true,
       "questions": [
         1
+      ],
+      "aliases": [
+        "Oppose"
       ]
     },
     {
@@ -148,7 +151,8 @@
       "translation": "Tôi không nghe rõ từ cuối.",
       "teacherSelected": true,
       "questions": [
-        21
+        21,
+        62
       ]
     },
     {
@@ -194,6 +198,10 @@
       "teacherSelected": true,
       "questions": [
         28
+      ],
+      "aliases": [
+        "Numerate",
+        "literate"
       ]
     },
     {
@@ -224,6 +232,9 @@
       "teacherSelected": true,
       "questions": [
         31
+      ],
+      "aliases": [
+        "Lend somebody an ear"
       ]
     },
     {
@@ -239,6 +250,9 @@
       "teacherSelected": true,
       "questions": [
         36
+      ],
+      "aliases": [
+        "Tasteless"
       ]
     },
     {
@@ -314,6 +328,9 @@
       "teacherSelected": true,
       "questions": [
         47
+      ],
+      "aliases": [
+        "Historical"
       ]
     },
     {
@@ -373,7 +390,9 @@
       "translation": "Bạn có thể cải thiện kĩ năng viết bằng cách đọc thường xuyên.",
       "teacherSelected": true,
       "questions": [
-        59
+        46,
+        59,
+        89
       ]
     },
     {
@@ -415,7 +434,11 @@
       "usage": "appeal to readers; an appealing idea",
       "family": "appeal (n/v); appealing (adj); còn có nghĩa kêu gọi/kháng cáo",
       "example": "The exhibition appeals to visitors of all ages.",
-      "translation": "Triển lãm hấp dẫn khách ở mọi lứa tuổi."
+      "translation": "Triển lãm hấp dẫn khách ở mọi lứa tuổi.",
+      "teacherSelected": true,
+      "questions": [
+        88
+      ]
     },
     {
       "question": 91,
@@ -437,7 +460,194 @@
       "usage": "make a name for oneself as an artist",
       "family": "make–made–made; famous/fame là tính từ/danh từ",
       "example": "He made a name for himself as a designer.",
-      "translation": "Anh ấy tạo dựng tên tuổi với nghề thiết kế."
+      "translation": "Anh ấy tạo dựng tên tuổi với nghề thiết kế.",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
+    },
+    {
+      "question": 6,
+      "term": "talk somebody into / out of",
+      "meta": "verb phrases",
+      "meaning": "thuyết phục ai làm / không làm",
+      "note": "Should not have + V3 phê bình việc đã làm. Talk somebody into doing something là thuyết phục ai làm; câu nói đáng lẽ không nên thuyết phục tham gia, không đồng nghĩa phải chủ động khuyên rút lui.",
+      "usage": "talk somebody into/out of + V-ing",
+      "family": "persuade (v); persuasion (n); chú ý nghĩa đối lập",
+      "example": "She talked me into joining the workshop.",
+      "translation": "Cô ấy thuyết phục tôi tham gia buổi học.",
+      "questions": [
+        6,
+        62
+      ],
+      "aliases": [
+        "out of"
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 73,
+      "term": "adapt to",
+      "meta": "PHRASAL VERB",
+      "meaning": "thích nghi với",
+      "note": "Adapt to nhấn thay đổi bản thân để phù hợp hoàn cảnh. Adopt là áp dụng/chấp nhận một chính sách hoặc nhận nuôi, thường dùng trực tiếp với tân ngữ.",
+      "usage": "adapt to + danh từ/V-ing",
+      "example": "It took her time to adapt to working at night.",
+      "translation": "Cô ấy mất một thời gian để quen với việc làm ban đêm.",
+      "family": "adapt (v); adaptation (n); adaptable (adj); adaptability (n)",
+      "teacherSelected": true,
+      "questions": [
+        73
+      ],
+      "aliases": []
+    },
+    {
+      "term": "have no recollection of",
+      "meaning": "không nhớ về việc gì",
+      "usage": "have no recollection of + danh từ/V-ing",
+      "example": "I have no recollection of meeting him.",
+      "translation": "Tôi không nhớ đã từng gặp anh ấy.",
+      "family": "recollect (v); recollection (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have no recollection of + V-ing = không nhớ đã làm việc gì. Didn’t đã cho sẵn nên dùng have any…, tránh thêm no tạo phủ định kép; last night thuộc hành động gọi.",
+      "aliases": [
+        "have a recollection of"
+      ],
+      "question": 90,
+      "questions": [
+        90
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be on good terms with",
+      "meaning": "có quan hệ tốt với ai",
+      "usage": "be on good terms with somebody",
+      "example": "I am on good terms with my neighbours.",
+      "translation": "Tôi có quan hệ tốt với hàng xóm.",
+      "family": "terms (danh từ số nhiều trong cụm này)",
+      "meta": "VERB PHRASE",
+      "note": "Be on good terms with somebody = có quan hệ tốt với ai. I’m đã chứa be; điền on good terms with và giữ everyone at work ở phần đuôi.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 93,
+      "term": "attribute something to",
+      "meta": "verb pattern",
+      "meaning": "cho rằng điều gì là do",
+      "note": "Dùng để nêu nguyên nhân của kết quả, thường là thành công/thất bại. Tân ngữ kết quả đứng trước to, nguyên nhân đứng sau to.",
+      "usage": "attribute success to hard work",
+      "example": "She attributes her progress to regular practice.",
+      "translation": "Cô ấy cho rằng mình tiến bộ nhờ luyện tập đều đặn.",
+      "family": "attribute (v); attribution (n): việc quy nguyên nhân; attributable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ],
+      "aliases": [
+        "Attribute A to"
+      ]
+    },
+    {
+      "term": "no point",
+      "meaning": "không có ích, không đáng làm",
+      "usage": "there is no point (in) + V-ing",
+      "example": "There is no point in arguing now.",
+      "translation": "Bây giờ tranh cãi cũng không có ích.",
+      "family": "point (n); pointless (adj)",
+      "meta": "PHRASE",
+      "note": "There was no point (in) + V-ing nghĩa là làm việc đó vô ích. Arguing giữ ý hành động tranh luận đã xảy ra; không dùng to argue sau in.",
+      "aliases": [],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "make an attempt",
+      "meaning": "thử, cố gắng làm gì",
+      "usage": "make an attempt to V/at V-ing",
+      "example": "He made an attempt to repair the bike.",
+      "translation": "Anh ấy đã thử sửa chiếc xe đạp.",
+      "family": "attempt (n/v); attempted; make → made",
+      "meta": "VERB PHRASE",
+      "note": "Make an attempt at + V-ing = thử/cố làm gì. Didn’t even đã cho nên dùng make nguyên mẫu; giữ at theo từ khóa và answering trước the question đã có.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 96,
+      "term": "take notice of",
+      "meta": "verb phrase",
+      "meaning": "để ý, chú ý đến",
+      "note": "Take little notice = ít chú ý; not take much notice cũng là không chú ý nhiều. Not take any notice mạnh hơn: hoàn toàn không để ý.",
+      "usage": "take notice of somebody/something",
+      "example": "He did not take much notice of the warning.",
+      "translation": "Anh ấy không chú ý nhiều tới lời cảnh báo.",
+      "family": "notice (n/v): sự chú ý/thông báo; noticeable (a): dễ nhận thấy.",
+      "teacherSelected": true,
+      "questions": [
+        96
+      ],
+      "aliases": []
+    },
+    {
+      "term": "be highly thought of",
+      "meaning": "được đánh giá cao",
+      "usage": "be highly thought of by somebody",
+      "example": "She is highly thought of by her colleagues.",
+      "translation": "Cô ấy được đồng nghiệp đánh giá cao.",
+      "family": "think → thought → thought; high → highly",
+      "meta": "VERB PHRASE",
+      "note": "Be highly thought of = được đánh giá cao/có uy tín. Of nằm sẵn sau ô trống nên chỉ điền is highly thought; không lặp of hoặc bỏ dạng bị động.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "a matter of time",
+      "meaning": "chỉ là vấn đề thời gian",
+      "usage": "it is only a matter of time before + mệnh đề",
+      "example": "It is only a matter of time before they find out.",
+      "translation": "Chỉ còn là vấn đề thời gian trước khi họ phát hiện.",
+      "family": "matter (n); time (n)",
+      "meta": "PHRASE",
+      "note": "It’s only a matter of time before… = chỉ còn là vấn đề thời gian trước khi điều gì xảy ra. Dùng a matter, không phải the matter; thể hiện niềm tin sự việc sẽ đến.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be in no doubt",
+      "meaning": "hoàn toàn chắc chắn",
+      "usage": "be in no doubt that/about something",
+      "example": "I am in no doubt that she can succeed.",
+      "translation": "Tôi hoàn toàn chắc chắn rằng cô ấy có thể thành công.",
+      "family": "doubt (n/v); doubtful (adj); doubtless (adv)",
+      "meta": "VERB PHRASE",
+      "note": "Be in no doubt that… diễn đạt chắc chắn. That đã in sau ô trống; in no doubt đơn giản nhất.",
+      "aliases": [],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"

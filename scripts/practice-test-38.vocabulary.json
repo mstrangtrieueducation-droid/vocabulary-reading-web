@@ -89,6 +89,9 @@
       "teacherSelected": true,
       "questions": [
         7
+      ],
+      "aliases": [
+        "Through no fault of his own"
       ]
     },
     {
@@ -450,6 +453,204 @@
       "questions": [
         95
       ]
+    },
+    {
+      "question": 15,
+      "term": "take a rain check",
+      "meta": "idiom",
+      "meaning": "xin hẹn dịp khác",
+      "note": "Cách từ chối lời mời nhẹ nhàng vì hiện tại chưa tham gia được, đồng thời ngỏ ý lần khác. Cụm này không có nghĩa kiểm tra dự báo mưa.",
+      "usage": "take a rain check on an invitation",
+      "example": "Can I take a rain check on dinner? I have to work late.",
+      "translation": "Cho tôi hẹn bữa tối vào dịp khác nhé? Tôi phải làm muộn.",
+      "family": "invitation (n): lời mời; postpone (v): hoãn",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ],
+      "aliases": []
+    },
+    {
+      "term": "take into account",
+      "meaning": "tính đến, cân nhắc",
+      "usage": "take something into account/consideration",
+      "example": "We must take the cost into account.",
+      "translation": "Chúng ta phải tính đến chi phí.",
+      "family": "account/consideration (n); consider (v); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Take something into account = tính đến, cân nhắc một yếu tố khi quyết định. Cost of maintenance là chi phí bảo trì cần xét trước khi mua. Into effect thường đi với put/come, còn into practice đi với put; không dùng với take theo nghĩa này.",
+      "aliases": [
+        "take something into account",
+        "take something into consideration",
+        "take something into account/consideration"
+      ],
+      "question": 19,
+      "questions": [
+        19
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 20,
+      "term": "oppose / object to",
+      "meta": "verbs",
+      "meaning": "phản đối",
+      "note": "Oppose the plan là phản đối kế hoạch, nhận tân ngữ trực tiếp. Object và disagree phải đi với to/with; differ nghĩa là khác nhau, không dùng differ the plan.",
+      "usage": "oppose a plan; object to a plan/V-ing",
+      "family": "opposition (n); objection (n); không thêm to sau oppose",
+      "example": "Several residents objected to the proposal.",
+      "translation": "Một số cư dân phản đối đề xuất.",
+      "teacherSelected": true,
+      "questions": [
+        20,
+        94
+      ],
+      "aliases": [
+        "Object to",
+        "object to"
+      ]
+    },
+    {
+      "question": 30,
+      "term": "fall through",
+      "meta": "PHRASAL VERB",
+      "meaning": "không thành, đổ vỡ kế hoạch",
+      "note": "Dùng khi kế hoạch hoặc thỏa thuận không thực hiện được. Không dịch thành rơi xuyên qua theo nghĩa đen trong ngữ cảnh lịch hẹn, chuyến đi hoặc hợp đồng.",
+      "usage": "a plan/deal falls through; have fallen through",
+      "example": "Our travel plans fell through at the last minute.",
+      "translation": "Kế hoạch du lịch của chúng tôi đổ vỡ vào phút chót.",
+      "family": "fall–fell–fallen; fail (v: thất bại); failure (n)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ],
+      "aliases": []
+    },
+    {
+      "term": "give one’s word",
+      "meaning": "hứa, cam kết",
+      "usage": "give somebody one’s word that + mệnh đề",
+      "example": "I give you my word that I will return.",
+      "translation": "Tôi hứa với bạn rằng tôi sẽ quay lại.",
+      "family": "give → gave → given; word (n)",
+      "meta": "VERB PHRASE",
+      "note": "Give one’s word = hứa chắc chắn. Lời hứa của Mai dùng her word; will chuyển would trong lời tường thuật quá khứ.",
+      "aliases": [
+        "give someone one's word"
+      ],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have difficulty",
+      "meaning": "gặp khó khăn",
+      "usage": "have difficulty (in) + V-ing",
+      "example": "I have difficulty remembering names.",
+      "translation": "Tôi gặp khó khăn khi nhớ tên người khác.",
+      "family": "difficult (adj); difficulty/difficulties (n)",
+      "meta": "VERB PHRASE",
+      "note": "Have difficulty (in) doing something = khó làm gì; make ends meet = kiếm đủ để trang trải. Without thể hiện thiếu hỗ trợ của bố mẹ.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put off",
+      "meaning": "hoãn lại",
+      "usage": "put off + danh từ/V-ing",
+      "example": "We put off the meeting until Friday.",
+      "translation": "Chúng tôi hoãn cuộc họp đến thứ Sáu.",
+      "family": "put → put → put; postponement (n, nghĩa gần)",
+      "meta": "VERB PHRASE",
+      "note": "Put off = hoãn. Sau decided dùng to V; có thể đặt tân ngữ giữa put và off hoặc sau off.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "occur to",
+      "meaning": "chợt nảy ra trong đầu",
+      "usage": "it occurs to somebody that/how…",
+      "example": "It occurred to me that she might be lost.",
+      "translation": "Tôi chợt nghĩ rằng cô ấy có thể đã bị lạc.",
+      "family": "occur → occurred; occurrence (n)",
+      "meta": "PHRASE",
+      "note": "It occurs to someone that/how … = ai chợt nghĩ hoặc nhận ra điều gì. Dạng phủ định giữ ý tôi đã không nhận ra chi phí sửa chữa sẽ cao đến đâu.",
+      "aliases": [
+        "it occurs to someone",
+        "it occurs to somebody",
+        "It occurs to"
+      ],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "press on with",
+      "meaning": "tiếp tục kiên trì làm",
+      "usage": "press on/ahead with something",
+      "example": "They pressed on with the project despite the delays.",
+      "translation": "Họ tiếp tục dự án dù gặp chậm trễ.",
+      "family": "press (v/n); pressed; pressing",
+      "meta": "VERB PHRASE",
+      "note": "Press on/ahead with something = tiếp tục kiên trì thực hiện dù gặp khó khăn. Câu kể quá khứ nên dùng pressed.",
+      "aliases": [
+        "press on/ahead with",
+        "Press on/ahead with"
+      ],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be taken aback",
+      "meaning": "bất ngờ, sửng sốt",
+      "usage": "be taken aback by/at something",
+      "example": "I was taken aback by her reaction.",
+      "translation": "Tôi sửng sốt trước phản ứng của cô ấy.",
+      "family": "take → took → taken; aback dùng trong cụm này",
+      "meta": "VERB PHRASE",
+      "note": "Be taken aback/be taken by surprise = bị bất ngờ. Nobody expected … có thể diễn đạt là everyone was taken aback/by surprise.",
+      "aliases": [
+        "taken aback"
+      ],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take somebody by surprise",
+      "meaning": "khiến ai bất ngờ",
+      "usage": "take somebody by surprise",
+      "example": "The news took us by surprise.",
+      "translation": "Tin đó khiến chúng tôi bất ngờ.",
+      "family": "surprise (n/v); surprised/surprising (adj); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Be taken aback/be taken by surprise = bị bất ngờ. Nobody expected … có thể diễn đạt là everyone was taken aback/by surprise.",
+      "aliases": [
+        "take someone by surprise",
+        "be taken by surprise"
+      ],
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "teacherSelected": true
     }
   ]
 }

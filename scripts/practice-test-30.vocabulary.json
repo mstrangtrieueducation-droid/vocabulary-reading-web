@@ -224,6 +224,9 @@
       "teacherSelected": true,
       "questions": [
         26
+      ],
+      "aliases": [
+        "Give something serious consideration"
       ]
     },
     {
@@ -403,6 +406,7 @@
       "family": "term (n); terms (n plural); terminology (n, thuật ngữ)",
       "teacherSelected": true,
       "questions": [
+        52,
         68
       ]
     },
@@ -450,6 +454,302 @@
       "questions": [
         95
       ]
+    },
+    {
+      "question": 6,
+      "term": "must have + V3",
+      "meta": "GRAMMAR PHRASE",
+      "meaning": "hẳn đã; chắc đã",
+      "note": "Dùng khi suy luận chắc chắn về quá khứ dựa trên dấu hiệu. Khác had to là đã phải làm vì nghĩa vụ; must have không tự xác nhận sự việc đã được chứng kiến.",
+      "usage": "must have lost/forgotten/lacked",
+      "example": "She must have left before noon.",
+      "translation": "Hẳn cô ấy đã rời đi trước buổi trưa.",
+      "family": "must (modal); deduction (n); deduce (v)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ],
+      "aliases": []
+    },
+    {
+      "term": "insist on",
+      "meaning": "khăng khăng, nhất quyết",
+      "usage": "insist on + danh từ/V-ing",
+      "example": "She insisted on paying for lunch.",
+      "translation": "Cô ấy nhất quyết trả tiền bữa trưa.",
+      "family": "insist (v); insistence (n); insistent (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Insist on + danh từ/V-ing nghĩa là nhất quyết yêu cầu hoặc kiên quyết duy trì điều gì. Vì sau chỗ trống là maintaining, chọn on maintaining. Không dùng insist to maintain; nếu dùng mệnh đề có thể viết insist that full transparency be maintained.",
+      "aliases": [],
+      "question": 14,
+      "questions": [
+        14
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "no point",
+      "meaning": "không có ích, không đáng làm",
+      "usage": "there is no point (in) + V-ing",
+      "example": "There is no point in arguing now.",
+      "translation": "Bây giờ tranh cãi cũng không có ích.",
+      "family": "point (n); pointless (adj)",
+      "meta": "PHRASE",
+      "note": "At no point là cụm phủ định đặt đầu câu nên phải đảo trợ động từ lên trước chủ ngữ. The general public was informed là bị động quá khứ, thành was the general public informed. Will/can cần be và had cần been; đứng riêng như các lựa chọn thì không hoàn chỉnh.",
+      "aliases": [],
+      "question": 19,
+      "questions": [
+        19
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 21,
+      "term": "contribute to / stem from",
+      "meta": "verb phrases",
+      "meaning": "góp phần vào / bắt nguồn từ",
+      "note": "Contribute to global warming nghĩa là góp phần gây nóng lên toàn cầu. Stem from chỉ nguồn gốc; attribute A to B là quy A cho B; spark thường nhận tân ngữ trực tiếp, không dùng spark to.",
+      "usage": "contribute to a problem; stem from a cause",
+      "family": "contribution (n); contributor (n)",
+      "example": "Poor planning contributed to the delay.",
+      "translation": "Việc lập kế hoạch kém góp phần gây chậm trễ.",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ],
+      "aliases": [
+        "Contribute to"
+      ]
+    },
+    {
+      "question": 24,
+      "term": "at risk / in danger",
+      "meta": "adjective phrases",
+      "meaning": "có nguy cơ; đang gặp nguy hiểm",
+      "note": "Be at risk from disease là có nguy cơ bị bệnh đe dọa. Giới từ at quyết định risk; ta nói in danger và under threat. Unless urgent aid reaches them nghĩa là trừ khi viện trợ khẩn cấp đến kịp.",
+      "usage": "at risk from disease; in danger of losing something",
+      "family": "risky (adj); dangerous (adj); under threat",
+      "example": "The village is at risk from flooding.",
+      "translation": "Ngôi làng có nguy cơ bị lũ đe dọa.",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ],
+      "aliases": [
+        "At risk"
+      ]
+    },
+    {
+      "question": 29,
+      "term": "in the interest of",
+      "meta": "preposition phrase",
+      "meaning": "vì lợi ích của",
+      "note": "In the interest of public health nghĩa là vì lợi ích sức khỏe cộng đồng. Cấm nhập sữa giả nhằm bảo vệ người dân; to the best of và on the safe side không nối đúng nghĩa với public health.",
+      "usage": "in the interest of public safety",
+      "family": "interest: lợi ích/sự quan tâm; interested: thấy hứng thú",
+      "example": "The road was closed in the interest of public safety.",
+      "translation": "Đường được đóng vì an toàn cộng đồng.",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ],
+      "aliases": []
+    },
+    {
+      "question": 30,
+      "term": "in view of",
+      "meta": "preposition phrase",
+      "meaning": "xét đến; vì có",
+      "note": "In view of + danh từ nghĩa là xét đến/vì có. The hard evidence là cụm danh từ; Given that cần cả mệnh đề, with a view to chỉ mục đích và thường theo sau bằng V-ing.",
+      "usage": "in view of + danh từ",
+      "family": "with a view to + V-ing: nhằm mục đích",
+      "example": "In view of the evidence, we changed our decision.",
+      "translation": "Xét bằng chứng, chúng tôi đổi quyết định.",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ],
+      "aliases": []
+    },
+    {
+      "question": 32,
+      "term": "stand by one’s word",
+      "meta": "verb phrase",
+      "meaning": "giữ lời",
+      "note": "Stand by one’s word là giữ lời hứa. Người nói vui vì nhận đúng điều được hứa; go back on one’s word lại là nuốt lời, nên trái với ngữ cảnh.",
+      "usage": "stand by one’s word; go back on one’s word",
+      "family": "stand–stood–stood; promise (n/v)",
+      "example": "She stood by her word and paid on time.",
+      "translation": "Cô ấy giữ lời và thanh toán đúng hạn.",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ],
+      "aliases": []
+    },
+    {
+      "question": 63,
+      "term": "in-depth",
+      "meta": "ADJECTIVE",
+      "meaning": "chuyên sâu; kỹ lưỡng",
+      "note": "Dùng trước danh từ để nói việc nghiên cứu hoặc hiểu biết sâu, không chỉ bề mặt. Thường có gạch nối trước danh từ; khi đứng sau động từ dùng in depth không cần nối.",
+      "usage": "in-depth knowledge/analysis; study something in depth",
+      "example": "The report provides an in-depth analysis of the issue.",
+      "translation": "Báo cáo đưa ra phân tích chuyên sâu về vấn đề.",
+      "family": "deep (adj); depth (n); deepen (v); deeply (adv)",
+      "teacherSelected": true,
+      "questions": [
+        63
+      ],
+      "aliases": [
+        "in depth"
+      ]
+    },
+    {
+      "question": 84,
+      "term": "but for",
+      "meta": "PHRASE",
+      "meaning": "nếu không có; nếu không nhờ",
+      "note": "Nêu điều kiện giả định bằng danh từ sau for. Thường dùng khi nhờ một người/vật mà tình huống xấu đã không xảy ra; không theo trực tiếp bằng một mệnh đề đầy đủ.",
+      "usage": "but for + noun, S + would have + V3",
+      "example": "But for your advice, I would have made a costly mistake.",
+      "translation": "Nếu không nhờ lời khuyên của bạn, tôi đã mắc sai lầm tốn kém.",
+      "family": "without; if it had not been for",
+      "teacherSelected": true,
+      "questions": [
+        84
+      ],
+      "aliases": []
+    },
+    {
+      "term": "be on the point of",
+      "meaning": "sắp sửa làm gì",
+      "usage": "be on the point of + V-ing; be about to + V",
+      "example": "I was on the point of leaving when she called.",
+      "translation": "Tôi vừa định rời đi thì cô ấy gọi.",
+      "family": "point (n); be: am/is/are → was/were → been",
+      "meta": "VERB PHRASE",
+      "note": "Be on the point of + V-ing tương đương be just about to + nguyên mẫu: sắp sửa làm gì. Sau of phải dùng cancelling/canceling. Giữ when và thời điểm phê duyệt bất ngờ; dùng had cancelled sẽ biến ý sắp hủy thành đã hủy.",
+      "aliases": [
+        "on the point of"
+      ],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be restricted to",
+      "meaning": "bị giới hạn ở, chỉ dành cho",
+      "usage": "be restricted to somebody/something",
+      "example": "Access is restricted to members.",
+      "translation": "Chỉ thành viên mới được truy cập.",
+      "family": "restrict (v); restriction (n); restricted (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Be restricted to nghĩa là chỉ dành cho hoặc bị giới hạn ở một nhóm. Permission là danh từ không đếm được nên dùng is. Registered users giữ điều kiện đã đăng ký; chỉ giới hạn quyền tải tài liệu, không tự mở rộng thành mọi hình thức tiếp cận tài liệu.",
+      "aliases": [],
+      "question": 86,
+      "questions": [
+        86
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "reassure",
+      "meaning": "trấn an ai",
+      "usage": "reassure somebody that + mệnh đề",
+      "example": "She reassured me that everything was fine.",
+      "translation": "Cô ấy trấn an tôi rằng mọi thứ đều ổn.",
+      "family": "reassure (v); reassurance (n); reassuring (adj)",
+      "meta": "VERB",
+      "note": "Reassure somebody that... là trấn an ai rằng. Khi tường thuật ở quá khứ, will chuyển thành would, we thành they, you thành me và tomorrow thành the following/next day. Cần giữ người nhận kết quả là me.",
+      "aliases": [],
+      "question": 87,
+      "questions": [
+        87
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put off",
+      "meaning": "hoãn lại",
+      "usage": "put off + danh từ/V-ing",
+      "example": "We put off the meeting until Friday.",
+      "translation": "Chúng tôi hoãn cuộc họp đến thứ Sáu.",
+      "family": "put → put → put; postponement (n, nghĩa gần)",
+      "meta": "VERB PHRASE",
+      "note": "Put off nghĩa là hoãn, tương đương postpone. They’ve postponed ở hiện tại hoàn thành chủ động chuyển thành has been put off ở bị động với meeting số ít.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have no regrets",
+      "meaning": "không hối tiếc",
+      "usage": "have no regrets about/over + V-ing",
+      "example": "I have no regrets about moving here.",
+      "translation": "Tôi không hối tiếc về việc chuyển đến đây.",
+      "family": "regret (n/v); regretful (adj); regrettable (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Have no regrets about/over + V-ing là không hối tiếc vì việc đã làm. Người nói thấy quyết định học đúng nên phải có no.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "with a view to",
+      "meta": "PREPOSITIONAL PHRASE",
+      "meaning": "nhằm mục đích",
+      "note": "Cụm này nêu mục tiêu của một hành động và thường dùng trong văn viết trang trọng. To ở đây là giới từ nên theo sau là danh từ hoặc V-ing, không phải động từ nguyên mẫu.",
+      "usage": "with a view to + N/V-ing; with a view to improving something",
+      "family": "view (n): cách nhìn, quan điểm; a view to trong cụm này chỉ mục đích",
+      "example": "The school revised its timetable with a view to reducing student stress.",
+      "translation": "Trường điều chỉnh thời khóa biểu nhằm giảm căng thẳng cho học sinh.",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ],
+      "question": 93,
+      "aliases": []
+    },
+    {
+      "term": "hold one’s breath",
+      "meaning": "nín thở",
+      "usage": "hold one’s breath",
+      "example": "She held her breath as she waited for the result.",
+      "translation": "Cô ấy nín thở chờ kết quả.",
+      "family": "breathe (v); breath (n); hold → held",
+      "meta": "VERB PHRASE",
+      "note": "Hold one’s breath là nín thở; trong ngữ cảnh chờ kết quả còn diễn tả hồi hộp. Quá khứ của hold là held và đại từ sở hữu của she là her.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "on no account",
+      "meaning": "trong bất cứ trường hợp nào cũng không",
+      "usage": "on no account + trợ động từ + S + V",
+      "example": "On no account should you open this door.",
+      "translation": "Trong bất cứ trường hợp nào bạn cũng không được mở cửa này.",
+      "family": "account (n); cụm mang nghĩa phủ định",
+      "meta": "PHRASE",
+      "note": "On no account nghĩa là không vì bất cứ lý do gì. Cụm phủ định đứng đầu kéo theo đảo should trước the house; vế bị động be left unlocked giữ nguyên.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
     }
   ]
 }

@@ -13,6 +13,10 @@
       "teacherSelected": true,
       "questions": [
         12
+      ],
+      "aliases": [
+        "respectable",
+        "respectful"
       ]
     },
     {
@@ -26,7 +30,8 @@
       "translation": "Tất cả ứng viên đều được xem xét bất kể tuổi tác.",
       "teacherSelected": true,
       "questions": [
-        12
+        12,
+        25
       ]
     },
     {
@@ -41,6 +46,11 @@
       "teacherSelected": true,
       "questions": [
         13
+      ],
+      "aliases": [
+        "take in",
+        "absorb",
+        "intake"
       ]
     },
     {
@@ -55,6 +65,12 @@
       "teacherSelected": true,
       "questions": [
         15
+      ],
+      "aliases": [
+        "barely",
+        "hardly",
+        "scarcely",
+        "Barely"
       ]
     },
     {
@@ -83,6 +99,10 @@
       "teacherSelected": true,
       "questions": [
         20
+      ],
+      "aliases": [
+        "take effect",
+        "In effect"
       ]
     },
     {
@@ -125,6 +145,10 @@
       "teacherSelected": true,
       "questions": [
         23
+      ],
+      "aliases": [
+        "jot down",
+        "note down"
       ]
     },
     {
@@ -139,6 +163,10 @@
       "teacherSelected": true,
       "questions": [
         24
+      ],
+      "aliases": [
+        "green",
+        "inexperienced"
       ]
     },
     {
@@ -153,6 +181,9 @@
       "teacherSelected": true,
       "questions": [
         25
+      ],
+      "aliases": [
+        "criteria"
       ]
     },
     {
@@ -167,6 +198,10 @@
       "teacherSelected": true,
       "questions": [
         36
+      ],
+      "aliases": [
+        "enduring",
+        "endure"
       ]
     },
     {
@@ -209,6 +244,9 @@
       "teacherSelected": true,
       "questions": [
         56
+      ],
+      "aliases": [
+        "appealing"
       ]
     },
     {
@@ -223,6 +261,10 @@
       "teacherSelected": true,
       "questions": [
         57
+      ],
+      "aliases": [
+        "prose",
+        "poem"
       ]
     },
     {
@@ -237,6 +279,11 @@
       "teacherSelected": true,
       "questions": [
         57
+      ],
+      "aliases": [
+        "literary",
+        "literate",
+        "literal"
       ]
     },
     {
@@ -265,6 +312,9 @@
       "teacherSelected": true,
       "questions": [
         59
+      ],
+      "aliases": [
+        "move"
       ]
     },
     {
@@ -335,6 +385,10 @@
       "teacherSelected": true,
       "questions": [
         85
+      ],
+      "aliases": [
+        "amass",
+        "accumulate"
       ]
     },
     {
@@ -349,6 +403,10 @@
       "teacherSelected": true,
       "questions": [
         91
+      ],
+      "aliases": [
+        "fall prey to",
+        "fall victim to"
       ]
     },
     {
@@ -361,7 +419,8 @@
       "example": "A rational decision should be based on evidence rather than fear.",
       "translation": "Quyết định hợp lý nên dựa trên bằng chứng thay vì nỗi sợ.",
       "aliases": [
-        "rational = reasonable"
+        "rational = reasonable",
+        "rational"
       ],
       "teacherSelected": true,
       "questions": [
@@ -398,6 +457,10 @@
       "teacherSelected": true,
       "questions": [
         98
+      ],
+      "aliases": [
+        "economic climate",
+        "climate"
       ]
     },
     {
@@ -413,6 +476,140 @@
       "questions": [
         99
       ]
+    },
+    {
+      "question": 4,
+      "term": "face up to",
+      "meta": "phrasal verb",
+      "meaning": "đối diện và chấp nhận",
+      "note": "Theo sau là danh từ hoặc V-ing; to là giới từ. Face up to a problem/the truth. We must face up to our mistakes. → Chúng ta phải thừa nhận và đối diện sai lầm.",
+      "usage": "Theo sau là danh từ hoặc V-ing; to là giới từ. Face up to a problem/the truth.",
+      "example": "We must face up to our mistakes.",
+      "translation": "Chúng ta phải thừa nhận và đối diện sai lầm.",
+      "family": "face (v): đối mặt; faced, facing. Giữ đủ up to.",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ],
+      "aliases": []
+    },
+    {
+      "question": 31,
+      "term": "take responsibility for",
+      "meta": "verb phrase",
+      "meaning": "nhận trách nhiệm về",
+      "note": "Nhấn mạnh việc nhận phần việc hoặc nhận trách nhiệm với kết quả mình gây ra. Trong câu, nhân vật thừa nhận sai sót là của mình.",
+      "usage": "take responsibility for + N/V-ing; be responsible for",
+      "family": "responsibility (n); responsible (adj); responsibly (adv)",
+      "example": "He took responsibility for the mistake.",
+      "translation": "Anh ấy nhận trách nhiệm về sai sót đó.",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ],
+      "aliases": []
+    },
+    {
+      "question": 38,
+      "term": "an alternative to",
+      "meta": "noun phrase",
+      "meaning": "phương án thay thế cho",
+      "note": "Alternative dùng như danh từ đếm được; nhớ to. As an alternative = như một phương án khác. Cycling is an alternative to driving. → Đi xe đạp là một lựa chọn thay cho lái xe.",
+      "usage": "Alternative dùng như danh từ đếm được; nhớ to. As an alternative = như một phương án khác.",
+      "example": "Cycling is an alternative to driving.",
+      "translation": "Đi xe đạp là một lựa chọn thay cho lái xe.",
+      "family": "alternative (n/a), alternatively (adv): hoặc, theo cách khác.",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ],
+      "aliases": []
+    },
+    {
+      "term": "appeal to",
+      "meaning": "hấp dẫn ai; kêu gọi ai",
+      "usage": "appeal to somebody; appeal to somebody for something",
+      "example": "The idea appeals to young people.",
+      "translation": "Ý tưởng đó hấp dẫn người trẻ.",
+      "family": "appeal (n/v); appealing (adj)",
+      "meta": "VERB PHRASE",
+      "note": "appeal to: tác động, khơi gợi sự quan tâm. appealing = attractive: hấp dẫn.",
+      "aliases": [],
+      "question": 56,
+      "questions": [
+        56
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "have no intention of",
+      "meaning": "không có ý định làm gì",
+      "usage": "have no intention of + V-ing",
+      "example": "I have no intention of selling the house.",
+      "translation": "Tôi không có ý định bán ngôi nhà.",
+      "family": "intend (v); intention (n); intentional (adj)",
+      "meta": "VERB PHRASE",
+      "note": "have no intention of + V-ing: không có ý định làm gì.",
+      "aliases": [
+        "no intention of"
+      ],
+      "question": 86,
+      "questions": [
+        86
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "no point",
+      "meaning": "không có ích, không đáng làm",
+      "usage": "there is no point (in) + V-ing",
+      "example": "There is no point in arguing now.",
+      "translation": "Bây giờ tranh cãi cũng không có ích.",
+      "family": "point (n); pointless (adj)",
+      "meta": "PHRASE",
+      "note": "see no point in + V-ing: không thấy ích lợi của việc gì.",
+      "aliases": [],
+      "question": 89,
+      "questions": [
+        89
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "to the best of my knowledge",
+      "meaning": "theo những gì tôi biết",
+      "usage": "to my knowledge; to the best of my knowledge",
+      "example": "To the best of my knowledge, the shop is closed.",
+      "translation": "Theo những gì tôi biết, cửa hàng đã đóng cửa.",
+      "family": "know (v); knowledge (n); knowledgeable (adj)",
+      "meta": "PHRASE",
+      "note": "to (the best of) my knowledge: theo những gì tôi biết.",
+      "aliases": [
+        "to my knowledge"
+      ],
+      "question": 94,
+      "questions": [
+        94
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 95,
+      "term": "talk somebody into / out of",
+      "meta": "verb phrases",
+      "meaning": "thuyết phục ai làm / không làm",
+      "note": "Should not have + V3 phê bình việc đã làm. Talk somebody into doing something là thuyết phục ai làm; câu nói đáng lẽ không nên thuyết phục tham gia, không đồng nghĩa phải chủ động khuyên rút lui.",
+      "usage": "talk somebody into/out of + V-ing",
+      "family": "persuade (v); persuasion (n); chú ý nghĩa đối lập",
+      "example": "She talked me into joining the workshop.",
+      "translation": "Cô ấy thuyết phục tôi tham gia buổi học.",
+      "questions": [
+        95
+      ],
+      "aliases": [
+        "out of"
+      ],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"

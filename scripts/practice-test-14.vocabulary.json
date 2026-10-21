@@ -28,7 +28,11 @@
       "family": "draw–drew–drawn; attention (n); attentive (adj)",
       "teacherSelected": true,
       "questions": [
-        2
+        2,
+        100
+      ],
+      "aliases": [
+        "Draw somebody’s attention to"
       ]
     },
     {
@@ -193,7 +197,12 @@
       "family": "put–put–put; attribute/ascribe A to B (đồng nghĩa)",
       "teacherSelected": true,
       "questions": [
-        21
+        21,
+        95
+      ],
+      "aliases": [
+        "Put A down to",
+        "Put something down to"
       ]
     },
     {
@@ -239,6 +248,9 @@
       "teacherSelected": true,
       "questions": [
         24
+      ],
+      "aliases": [
+        "Take it for granted"
       ]
     },
     {
@@ -254,6 +266,9 @@
       "teacherSelected": true,
       "questions": [
         25
+      ],
+      "aliases": [
+        "It occurs to"
       ]
     },
     {
@@ -283,7 +298,8 @@
       "family": "sure (adj); assurance (n); insurance (n)",
       "teacherSelected": true,
       "questions": [
-        30
+        30,
+        45
       ]
     },
     {
@@ -450,6 +466,89 @@
       "questions": [
         98
       ]
+    },
+    {
+      "term": "prevent from",
+      "meaning": "ngăn ai/điều gì làm gì",
+      "usage": "prevent somebody/something from + V-ing",
+      "example": "The rain prevented us from leaving.",
+      "translation": "Mưa khiến chúng tôi không thể rời đi.",
+      "family": "prevent (v); prevention (n); preventive (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Prevent somebody from doing something là ngăn ai làm việc gì. From là giới từ nên access cần chuyển thành accessing. Access ở đây là động từ tiếp cận giáo dục/chăm sóc y tế/việc làm, không dùng như danh từ.",
+      "aliases": [
+        "prevent somebody from",
+        "prevent something from"
+      ],
+      "question": 43,
+      "questions": [
+        43
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "the long and short of it",
+      "meaning": "tóm lại, điều cốt yếu",
+      "usage": "the long and short of it is that + mệnh đề",
+      "example": "The long and short of it is that we need more time.",
+      "translation": "Tóm lại là chúng ta cần thêm thời gian.",
+      "family": "long/short (adj), giữ nguyên trong cụm này",
+      "meta": "PHRASE",
+      "note": "The long and short of it is… là thành ngữ tóm lại là, tương đương in a nutshell. Up to the job nghĩa là đủ khả năng đảm nhận công việc. Cần giữ phủ định not để không đảo ý đánh giá về Scott.",
+      "aliases": [],
+      "question": 81,
+      "questions": [
+        81
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be blamed for",
+      "meaning": "bị quy trách nhiệm về",
+      "usage": "be blamed for something",
+      "example": "He was blamed for the delay.",
+      "translation": "Anh ấy bị quy trách nhiệm về sự chậm trễ.",
+      "family": "blame (n/v); blamed (V3); blameless (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Be blamed for something hoặc be said to have caused something chuyển lời quy trách nhiệm sang bị động. Giữ by everyone để không mất thông tin mọi người đều nói vậy. To have caused thể hiện tai nạn xảy ra trước lời nhận định.",
+      "aliases": [],
+      "question": 89,
+      "questions": [
+        89
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "nothing wrong with",
+      "meaning": "không có gì sai hoặc không ổn",
+      "usage": "there is nothing wrong with + danh từ/V-ing",
+      "example": "There is nothing wrong with asking for help.",
+      "translation": "Nhờ giúp đỡ không có gì sai cả.",
+      "family": "wrong (adj); wrongly (adv)",
+      "meta": "PHRASE",
+      "note": "There is nothing wrong with + V-ing nghĩa là làm việc đó không có gì sai/không có vấn đề. Bring đổi thành bringing vì đứng sau giới từ with.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 96,
+      "term": "hold up",
+      "meta": "PHRASAL VERB",
+      "meaning": "làm chậm; trì hoãn",
+      "note": "Trong giao thông, be held up là bị chậm vì một trở ngại. Cụm còn có nghĩa giơ lên hoặc cướp có vũ khí ở ngữ cảnh khác, nên cần nhìn cả câu.",
+      "usage": "be held up in traffic; hold someone up",
+      "example": "We were held up by roadworks.",
+      "translation": "Chúng tôi bị chậm vì đường đang sửa.",
+      "family": "hold – held – held; hold-up (n); delay (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        96
+      ],
+      "aliases": []
     }
   ]
 }

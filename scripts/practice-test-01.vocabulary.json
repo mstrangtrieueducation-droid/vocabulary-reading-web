@@ -27,6 +27,10 @@
       "teacherSelected": true,
       "questions": [
         3
+      ],
+      "aliases": [
+        "used to",
+        "acquainted with"
       ]
     },
     {
@@ -56,7 +60,8 @@
       "translation": "Tin nhắn đó là một phần của vụ lừa lấy thông tin.",
       "teacherSelected": true,
       "questions": [
-        71
+        71,
+        76
       ]
     },
     {
@@ -93,7 +98,8 @@
       "example": "The director categorically rejected the accusation.",
       "translation": "Giám đốc bác bỏ dứt khoát lời cáo buộc.",
       "aliases": [
-        "categorically reject"
+        "categorically reject",
+        "category"
       ],
       "teacherSelected": true,
       "questions": [
@@ -126,6 +132,9 @@
       "teacherSelected": true,
       "questions": [
         39
+      ],
+      "aliases": [
+        "economize on"
       ]
     },
     {
@@ -140,6 +149,10 @@
       "teacherSelected": true,
       "questions": [
         40
+      ],
+      "aliases": [
+        "technologist",
+        "technician"
       ]
     },
     {
@@ -316,6 +329,72 @@
       "questions": [
         95
       ]
+    },
+    {
+      "term": "be worth",
+      "meaning": "đáng để làm gì",
+      "usage": "be worth + danh từ/V-ing",
+      "example": "This book is worth reading.",
+      "translation": "Cuốn sách này đáng đọc.",
+      "family": "worth (adj); worthwhile (adj); worth không đi với to V",
+      "meta": "VERB PHRASE",
+      "note": "be worth + số tiền: trị giá bao nhiêu.",
+      "aliases": [],
+      "question": 10,
+      "questions": [
+        10
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take for granted",
+      "meaning": "mặc nhiên cho là đúng; không biết trân trọng",
+      "usage": "take it for granted that…; take somebody for granted",
+      "example": "Do not take your friends for granted.",
+      "translation": "Đừng coi sự có mặt của bạn bè là điều đương nhiên mà không trân trọng.",
+      "family": "grant (v/n); granted (V3); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "take it for granted that…: mặc nhiên cho rằng…",
+      "aliases": [
+        "take it for granted"
+      ],
+      "question": 16,
+      "questions": [
+        16
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "as / like",
+      "meta": "preposition / conjunction",
+      "meaning": "trong vai trò là, như / giống như",
+      "note": "As + danh từ có thể chỉ vai trò thực sự: work as a teacher là làm giáo viên. Like + danh từ nói sự giống nhau: work like a teacher là làm giống giáo viên, chưa chắc có nghề đó.",
+      "usage": "use A as B = dùng A làm B; like someone/something = giống ai/cái gì; as + mệnh đề còn có nhiều nghĩa theo câu.",
+      "family": "As và like là từ ngữ pháp; cần học theo cấu trúc, không có họ từ chung cho nghĩa này.",
+      "example": "She works as a guide and speaks like an experienced teacher.",
+      "translation": "Cô ấy làm hướng dẫn viên và nói chuyện giống một giáo viên giàu kinh nghiệm.",
+      "teacherSelected": true,
+      "questions": [
+        50
+      ],
+      "question": 50,
+      "aliases": []
+    },
+    {
+      "term": "on arrival",
+      "meaning": "ngay khi đến",
+      "usage": "on arrival; on arriving at/in somewhere",
+      "example": "Please call me on arrival.",
+      "translation": "Hãy gọi cho tôi ngay khi đến.",
+      "family": "arrive (v); arrival (n)",
+      "meta": "PHRASE",
+      "note": "On arrival at… → when + S + arrived at…: khi đến nơi. Goods số nhiều → they. inspect: kiểm tra.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"

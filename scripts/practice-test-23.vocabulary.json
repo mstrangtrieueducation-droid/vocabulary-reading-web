@@ -403,6 +403,7 @@
       "family": "retrieve (v); retrieval (n); retrievable (adj)",
       "teacherSelected": true,
       "questions": [
+        77,
         78
       ]
     },
@@ -450,6 +451,226 @@
       "questions": [
         100
       ]
+    },
+    {
+      "term": "be likely to",
+      "meaning": "có khả năng xảy ra hoặc làm gì",
+      "usage": "be likely/unlikely to + V",
+      "example": "It is likely to rain tonight.",
+      "translation": "Tối nay có khả năng trời sẽ mưa.",
+      "family": "likely/unlikely (adj); likelihood (n)",
+      "meta": "VERB PHRASE",
+      "note": "Be likely to do something nghĩa là có khả năng sẽ làm/xảy ra việc gì. A child ... may be more likely to struggle nói trẻ thiếu điều kiện có thể gặp khó khăn hơn. Possible không dùng theo mẫu a child is possible to ... với nghĩa này.",
+      "aliases": [
+        "be not likely to"
+      ],
+      "question": 56,
+      "questions": [
+        56
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 63,
+      "term": "far from",
+      "meta": "PHRASE",
+      "meaning": "hoàn toàn không; còn xa mới đạt",
+      "note": "Far from satisfactory là rất chưa đạt yêu cầu. Cụm có thể đi với tính từ, danh từ hoặc V-ing; không chỉ nói khoảng cách vật lý.",
+      "usage": "far from perfect/satisfactory; far from being easy",
+      "example": "The results were far from satisfactory.",
+      "translation": "Các kết quả còn xa mới đạt yêu cầu.",
+      "family": "satisfy (v); satisfactory (adj); satisfaction (n)",
+      "teacherSelected": true,
+      "questions": [
+        63
+      ],
+      "aliases": []
+    },
+    {
+      "question": 76,
+      "term": "in the long run",
+      "meta": "PHRASE",
+      "meaning": "về lâu dài",
+      "note": "Đánh giá kết quả qua thời gian dài, thay vì lợi ích ngay trước mắt. In the long term cũng dùng được. Không có nghĩa chạy một quãng dài trong ngữ cảnh công việc.",
+      "usage": "save time/money in the long run",
+      "example": "Careful planning saves time in the long run.",
+      "translation": "Lập kế hoạch kỹ giúp tiết kiệm thời gian về lâu dài.",
+      "family": "run (n/v); long-term (adj); short-term (adj, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        76
+      ],
+      "aliases": []
+    },
+    {
+      "term": "make oneself understood",
+      "meaning": "diễn đạt để người khác hiểu mình",
+      "usage": "make oneself understood",
+      "example": "He could make himself understood in French.",
+      "translation": "Anh ấy có thể diễn đạt bằng tiếng Pháp để người khác hiểu.",
+      "family": "understand → understood → understood",
+      "meta": "VERB PHRASE",
+      "note": "Make oneself understood là làm cho người khác hiểu điều mình nói. Himself phải phù hợp chủ ngữ he; understood là V3 vì người nói được hiểu. Giữ by most people để không làm mất giới hạn most people của câu gốc.",
+      "aliases": [],
+      "question": 81,
+      "questions": [
+        81
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "give an explanation of",
+      "meaning": "giải thích điều gì",
+      "usage": "give an explanation of/for something",
+      "example": "He gave an explanation of the process.",
+      "translation": "Anh ấy giải thích quy trình.",
+      "family": "explain (v); explanation (n); explanatory (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Give an explanation of ... chuyển explained thành cụm động từ với danh từ explanation. The requirement for students to avoid plagiarism giữ ý học sinh bắt buộc tránh đạo văn. Không chỉ viết an explanation rồi bỏ nội dung lời giải thích.",
+      "aliases": [],
+      "question": 89,
+      "questions": [
+        89
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 90,
+      "term": "must have + V3",
+      "meta": "GRAMMAR PHRASE",
+      "meaning": "hẳn đã; chắc đã",
+      "note": "Dùng khi suy luận chắc chắn về quá khứ dựa trên dấu hiệu. Khác had to là đã phải làm vì nghĩa vụ; must have không tự xác nhận sự việc đã được chứng kiến.",
+      "usage": "must have lost/forgotten/lacked",
+      "example": "She must have left before noon.",
+      "translation": "Hẳn cô ấy đã rời đi trước buổi trưa.",
+      "family": "must (modal); deduction (n); deduce (v)",
+      "teacherSelected": true,
+      "questions": [
+        90
+      ],
+      "aliases": []
+    },
+    {
+      "term": "within walking distance",
+      "meaning": "ở gần đến mức có thể đi bộ",
+      "usage": "within walking distance of/from somewhere",
+      "example": "The school is within walking distance of my home.",
+      "translation": "Trường ở gần nhà tôi đến mức có thể đi bộ tới.",
+      "family": "walk (v/n); walking (dạng -ing); distance (n)",
+      "meta": "PHRASE",
+      "note": "Within walking distance of/from nghĩa là đủ gần để đi bộ đến. Giữ dạng câu hỏi với Is ở đầu và từ WITHIN không thay đổi.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "derive pleasure from",
+      "meaning": "cảm thấy thích thú từ",
+      "usage": "derive pleasure from + danh từ/V-ing",
+      "example": "She derives pleasure from gardening.",
+      "translation": "Cô ấy tìm thấy niềm vui trong việc làm vườn.",
+      "family": "derive (v); pleasure (n); pleasurable (adj)",
+      "meta": "PHRASE",
+      "note": "Derive pleasure from something nghĩa là nhận được niềm vui từ hoạt động đó. From là giới từ nên dùng carving.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "give an account of",
+      "meaning": "kể lại, thuật lại",
+      "usage": "give an account of something",
+      "example": "He gave an account of the accident.",
+      "translation": "Anh ấy thuật lại vụ tai nạn.",
+      "family": "account (n); give → gave → given",
+      "meta": "VERB PHRASE",
+      "note": "An account of là sự kể lại hoặc mô tả, nên gives/provides an interesting account of tương đương interestingly describes. Phải giữ giai đoạn as a young man; chỉ viết Marx's life sẽ mở rộng thành cả cuộc đời, khác câu gốc.",
+      "aliases": [
+        "give/provide a vivid account of",
+        "an account of",
+        "An account of"
+      ],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in touch with",
+      "meaning": "có liên lạc với",
+      "usage": "be/get/keep in touch with somebody",
+      "example": "We still keep in touch with our old teacher.",
+      "translation": "Chúng tôi vẫn giữ liên lạc với giáo viên cũ.",
+      "family": "touch (n/v); contact (n/v, nghĩa gần)",
+      "meta": "PHRASE",
+      "note": "Put/get somebody in touch with somebody là giúp hai người liên hệ với nhau. Who là chủ ngữ nên không thêm did trong câu hỏi này.",
+      "aliases": [
+        "put/get somebody in touch with",
+        "Put/get somebody in touch with"
+      ],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "on arrival",
+      "meaning": "ngay khi đến",
+      "usage": "on arrival; on arriving at/in somewhere",
+      "example": "Please call me on arrival.",
+      "translation": "Hãy gọi cho tôi ngay khi đến.",
+      "family": "arrive (v); arrival (n)",
+      "meta": "PHRASE",
+      "note": "On arrival/on arriving nghĩa là ngay khi đến. Give someone a warm welcome đổi sang bị động he was given a warm welcome, giữ từ GIVEN.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in somebody’s bad books",
+      "meaning": "bị ai không hài lòng",
+      "usage": "be in somebody’s bad books",
+      "example": "I am in my mum’s bad books for being late.",
+      "translation": "Mẹ đang không hài lòng với tôi vì tôi về muộn.",
+      "family": "book giữ số nhiều: bad books",
+      "meta": "PHRASE",
+      "note": "Be in somebody's bad books nghĩa là đang làm người đó không hài lòng, mất thiện cảm của họ. Chủ ngữ I cần am; dùng my dad's để giữ đúng người cha.",
+      "aliases": [
+        "be in somebody's bad books",
+        "Be in somebody's bad books"
+      ],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "add fuel to the fire",
+      "meaning": "làm tình hình căng thẳng hơn",
+      "usage": "add fuel to the fire",
+      "example": "His remarks added fuel to the fire.",
+      "translation": "Những lời nói của anh ấy khiến tình hình càng căng thẳng.",
+      "family": "fuel (n/v); add (v); addition (n)",
+      "meta": "PHRASE",
+      "note": "Add fuel to the fire là làm tình hình vốn xấu trở nên tệ hơn, tương đương making … worse. Were adding giữ đúng quá khứ tiếp diễn của were making.",
+      "aliases": [],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
     }
   ]
 }

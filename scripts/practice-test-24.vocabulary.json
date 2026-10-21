@@ -254,6 +254,9 @@
       "teacherSelected": true,
       "questions": [
         28
+      ],
+      "aliases": [
+        "Be in somebody's bad books"
       ]
     },
     {
@@ -450,6 +453,319 @@
       "questions": [
         100
       ]
+    },
+    {
+      "question": 27,
+      "term": "make up for",
+      "meta": "PHRASAL VERB",
+      "meaning": "bù đắp cho",
+      "note": "Dùng khi một điều tốt giúp bù lại mất mát, khó khăn hoặc thiếu sót trước đó. Không nhầm make up for với make up (bịa chuyện/trang điểm).",
+      "usage": "make up for + danh từ/V-ing",
+      "example": "A kind apology cannot always make up for a broken promise.",
+      "translation": "Một lời xin lỗi tử tế không phải lúc nào cũng bù đắp được việc thất hứa.",
+      "family": "make – made – made; compensation (n); compensate for (v)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ],
+      "aliases": []
+    },
+    {
+      "term": "with respect",
+      "meaning": "với sự tôn trọng",
+      "usage": "treat somebody with respect",
+      "example": "We should treat others with respect.",
+      "translation": "Chúng ta nên đối xử với người khác một cách tôn trọng.",
+      "family": "respect (n/v); respectful (adj); respectfully (adv)",
+      "meta": "PHRASE",
+      "note": "With respect to nghĩa là liên quan đến/về vấn đề. Câu đáp lại mối lo về lịch bằng đề nghị giờ làm linh hoạt. Không nhầm với out of respect for là vì kính trọng; by means of chỉ phương tiện, on behalf of chỉ sự đại diện.",
+      "aliases": [],
+      "question": 29,
+      "questions": [
+        29
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "pay attention to",
+      "meaning": "chú ý đến",
+      "usage": "pay attention to + danh từ/V-ing",
+      "example": "Please pay attention to the instructions.",
+      "translation": "Hãy chú ý đến hướng dẫn.",
+      "family": "attention (n); attentive (adj); attentively (adv); pay → paid",
+      "meta": "VERB PHRASE",
+      "note": "Pay attention to something là chú ý đến điều đó. Trong câu, người phỏng vấn đôi khi quan sát cách ứng viên bước vào hoặc ngồi xuống. Have/show/make không thay pay để tạo đúng cụm pay attention to.",
+      "aliases": [],
+      "question": 54,
+      "questions": [
+        54
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "keep a sharp eye on",
+      "meaning": "theo dõi sát, để ý kỹ",
+      "usage": "keep a sharp eye on somebody/something",
+      "example": "Keep a sharp eye on the children near the pool.",
+      "translation": "Hãy trông kỹ bọn trẻ ở gần hồ bơi.",
+      "family": "sharp (adj); sharply (adv); keep → kept",
+      "meta": "VERB PHRASE",
+      "note": "Keep a sharp eye on something nghĩa là theo dõi sát điều gì. Người kể quan tâm các tiến bộ trong xây dựng nên dùng on developments. A sharp eye nhấn mạnh sự tinh ý, không phải đôi mắt có hình dạng sắc nhọn.",
+      "aliases": [],
+      "question": 61,
+      "questions": [
+        61
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "under the cover of darkness",
+      "meaning": "lợi dụng bóng tối để tránh bị thấy",
+      "usage": "under (the) cover of darkness",
+      "example": "They escaped under the cover of darkness.",
+      "translation": "Họ lợi dụng bóng tối để trốn thoát.",
+      "family": "cover (n/v); dark (adj); darkness (n)",
+      "meta": "PHRASE",
+      "note": "Under (the) cover of darkness nghĩa là lợi dụng bóng tối để tránh bị nhìn thấy. Bản đề nói rõ binh lính dùng bóng tối để che giấu việc tiến vào lâu đài, nên thành ngữ giữ đúng ý. Không chỉ dùng under darkness.",
+      "aliases": [
+        "under (the) cover of darkness"
+      ],
+      "question": 81,
+      "questions": [
+        81
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "put words in somebody’s mouth",
+      "meaning": "gán cho ai lời họ không nói",
+      "usage": "put words in/into somebody’s mouth",
+      "example": "Do not put words in my mouth.",
+      "translation": "Đừng gán cho tôi những lời tôi không nói.",
+      "family": "word (n); put → put → put",
+      "meta": "VERB PHRASE",
+      "note": "Put words in/into somebody's mouth nghĩa là gán cho người đó lời họ không nói. Giữ my vì người nói đang phản đối việc bị trích sai. Cần giữ cả câu I never said I hated ballet để bảo toàn nội dung phủ nhận cụ thể.",
+      "aliases": [
+        "put words in/into somebody's mouth",
+        "Put words in/into somebody's mouth"
+      ],
+      "question": 82,
+      "questions": [
+        82
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 84,
+      "term": "but for",
+      "meta": "PHRASE",
+      "meaning": "nếu không có; nếu không nhờ",
+      "note": "Nêu điều kiện giả định bằng danh từ sau for. Thường dùng khi nhờ một người/vật mà tình huống xấu đã không xảy ra; không theo trực tiếp bằng một mệnh đề đầy đủ.",
+      "usage": "but for + noun, S + would have + V3",
+      "example": "But for your advice, I would have made a costly mistake.",
+      "translation": "Nếu không nhờ lời khuyên của bạn, tôi đã mắc sai lầm tốn kém.",
+      "family": "without; if it had not been for",
+      "teacherSelected": true,
+      "questions": [
+        84
+      ],
+      "aliases": []
+    },
+    {
+      "term": "a matter of time",
+      "meaning": "chỉ là vấn đề thời gian",
+      "usage": "it is only a matter of time before + mệnh đề",
+      "example": "It is only a matter of time before they find out.",
+      "translation": "Chỉ còn là vấn đề thời gian trước khi họ phát hiện.",
+      "family": "matter (n); time (n)",
+      "meta": "PHRASE",
+      "note": "A matter of time before ... nghĩa là chỉ còn là vấn đề thời gian trước khi điều đó xảy ra. Sau before nói tương lai thường dùng hiện tại đơn get, không cần will get. Mạo từ của cụm là a, không phải the như bản câu dẫn cũ.",
+      "aliases": [],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "no point",
+      "meaning": "không có ích, không đáng làm",
+      "usage": "there is no point (in) + V-ing",
+      "example": "There is no point in arguing now.",
+      "translation": "Bây giờ tranh cãi cũng không có ích.",
+      "family": "point (n); pointless (adj)",
+      "meta": "PHRASE",
+      "note": "There is no point (in) doing something nghĩa là làm việc đó không có ích, tương đương a waste of time. Sau point dùng denying, không dùng to deny. Mệnh đề về việc đã có bằng chứng phải được giữ để đủ điều kiện của câu gốc.",
+      "aliases": [],
+      "question": 88,
+      "questions": [
+        88
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come as a surprise",
+      "meaning": "gây ngạc nhiên",
+      "usage": "come as a surprise to somebody",
+      "example": "The result came as a surprise to us.",
+      "translation": "Kết quả khiến chúng tôi ngạc nhiên.",
+      "family": "surprise (n/v); surprised/surprising (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Come as a surprise to somebody nghĩa là khiến người đó bất ngờ. Came giữ thì quá khứ; had become giữ việc Brian đã trở thành tu sĩ trước khi chúng tôi biết. To us không được bỏ nếu muốn giữ rõ nhóm người cảm thấy ngạc nhiên.",
+      "aliases": [],
+      "question": 89,
+      "questions": [
+        89
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "come as a shock / surprise to",
+      "meta": "verb phrase",
+      "meaning": "khiến ai sốc hoặc bất ngờ",
+      "note": "Chủ ngữ thường là tin tức hoặc sự kiện; người cảm thấy bất ngờ đứng sau to. Shock mạnh hơn surprise và thường gắn với điều không vui. Cụm này không diễn tả chuyển động đến nơi nào.",
+      "usage": "something comes as a shock/surprise to someone; come as no surprise = không có gì lạ.",
+      "family": "shock/surprise (n/v); shocked/surprised (cảm xúc); shocking/surprising (gây cảm xúc).",
+      "example": "The sudden cancellation came as a surprise to everyone.",
+      "translation": "Việc hủy đột ngột khiến mọi người bất ngờ.",
+      "teacherSelected": true,
+      "questions": [
+        89
+      ],
+      "question": 89,
+      "aliases": [
+        "surprise to"
+      ]
+    },
+    {
+      "term": "lack of",
+      "meaning": "sự thiếu hụt",
+      "usage": "a lack of something; lack something",
+      "example": "The project failed through lack of funding.",
+      "translation": "Dự án thất bại do thiếu kinh phí.",
+      "family": "lack (n/v); lacking (adj); động từ lack không cần of",
+      "meta": "PHRASE",
+      "note": "A lack of efficiency là sự thiếu hiệu quả. Reflect badly/poorly on somebody/something nghĩa là làm hình ảnh của đối tượng đó xấu đi.",
+      "aliases": [],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "flair for",
+      "meaning": "năng khiếu về",
+      "usage": "have a flair for + danh từ/V-ing",
+      "example": "She has a flair for drawing.",
+      "translation": "Cô ấy có năng khiếu vẽ.",
+      "family": "flair (n); talent (n, nghĩa gần)",
+      "meta": "PHRASE",
+      "note": "Flair for doing something là năng khiếu làm việc gì. Not very good được diễn đạt bằng little flair hoặc not much flair, giữ mức độ không giỏi lắm.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "with the utmost care",
+      "meaning": "hết sức cẩn thận",
+      "usage": "with (the) utmost care",
+      "example": "Handle the glass with the utmost care.",
+      "translation": "Hãy cầm món đồ thủy tinh hết sức cẩn thận.",
+      "family": "care (n/v); careful (adj); carefully (adv)",
+      "meta": "PHRASE",
+      "note": "With (the) utmost care nghĩa là với sự cẩn trọng cao nhất, tương đương as carefully as they could possibly have done. Everything was planned là bị động; giữ by the organizers/organisers để chỉ đúng người tổ chức, không làm mất tác nhân của câu gốc.",
+      "aliases": [
+        "with (the) utmost care"
+      ],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "model oneself on",
+      "meaning": "noi theo ai",
+      "usage": "model oneself on somebody",
+      "example": "She models herself on her favourite athlete.",
+      "translation": "Cô ấy noi theo vận động viên mình yêu thích.",
+      "family": "model (n/v); modelled/modeled",
+      "meta": "PHRASE",
+      "note": "Model oneself on somebody nghĩa là noi theo, cố trở nên giống người đó. Với Tim dùng himself và giữ modeled đúng từ đã cho.",
+      "aliases": [],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "rise to fame",
+      "meaning": "trở nên nổi tiếng",
+      "usage": "rise to fame",
+      "example": "The singer rose to fame at eighteen.",
+      "translation": "Ca sĩ đó nổi tiếng khi mới mười tám tuổi.",
+      "family": "rise → rose → risen; fame (n); famous (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Rise to fame là quá trình trở nên nổi tiếng. At the expense of something nghĩa là phải đánh đổi thứ đó.",
+      "aliases": [],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 96,
+      "term": "at the expense of",
+      "meta": "PHRASE",
+      "meaning": "đánh đổi bằng, gây tổn hại cho",
+      "note": "Một lợi ích đạt được bằng cách làm mất hoặc giảm một lợi ích khác. Trong đề, làm việc nhiều phải trả giá bằng sức khỏe. Expense ở đây không chỉ tiền bạc.",
+      "usage": "succeed at the expense of health/family life",
+      "example": "Do not gain speed at the expense of accuracy.",
+      "translation": "Đừng tăng tốc độ bằng cách đánh đổi độ chính xác.",
+      "family": "expense (n); expensive (adj); expend (v)",
+      "teacherSelected": true,
+      "questions": [
+        96
+      ],
+      "aliases": []
+    },
+    {
+      "term": "make reference to",
+      "meaning": "đề cập đến",
+      "usage": "make reference to something",
+      "example": "The report makes reference to earlier research.",
+      "translation": "Báo cáo đề cập đến nghiên cứu trước đó.",
+      "family": "refer (v); reference (n)",
+      "meta": "VERB PHRASE",
+      "note": "Make reference to something nghĩa là nhắc đến điều đó. No reference hoặc didn't make any reference giữ ý didn't mention … at all.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "be aware of",
+      "meaning": "biết, nhận thức được",
+      "usage": "be aware of something; be aware that…",
+      "example": "Are you aware of the risks?",
+      "translation": "Bạn có biết những rủi ro không?",
+      "family": "aware/unaware (adj); awareness (n)",
+      "meta": "VERB PHRASE",
+      "note": "Be aware of something nghĩa là biết/nhận thức được điều đó. Most people là chủ ngữ số nhiều nên dùng are; of đi với aware.",
+      "aliases": [],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
     }
   ]
 }

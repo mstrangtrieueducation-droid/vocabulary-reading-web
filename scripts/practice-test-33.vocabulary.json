@@ -450,6 +450,189 @@
       "questions": [
         100
       ]
+    },
+    {
+      "question": 7,
+      "term": "must have + V3",
+      "meta": "GRAMMAR PHRASE",
+      "meaning": "hẳn đã; chắc đã",
+      "note": "Dùng khi suy luận chắc chắn về quá khứ dựa trên dấu hiệu. Khác had to là đã phải làm vì nghĩa vụ; must have không tự xác nhận sự việc đã được chứng kiến.",
+      "usage": "must have lost/forgotten/lacked",
+      "example": "She must have left before noon.",
+      "translation": "Hẳn cô ấy đã rời đi trước buổi trưa.",
+      "family": "must (modal); deduction (n); deduce (v)",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ],
+      "aliases": []
+    },
+    {
+      "term": "answer / key / solution to",
+      "meta": "noun phrases",
+      "meaning": "câu trả lời / chìa khóa / giải pháp cho",
+      "note": "Ba danh từ thường đi với to để giới thiệu vấn đề liên quan. To ở đây là giới từ, nên khi theo sau là hành động, dùng V-ing. Không đổi sang for chỉ vì bản dịch tiếng Việt có chữ “cho”.",
+      "usage": "the answer to a question; the key to success; a solution to a problem; the key to improving results.",
+      "family": "answer (n/v); key (n/adj); solve (v), solution (n).",
+      "example": "Regular practice is the key to improving reading speed.",
+      "translation": "Luyện tập đều đặn là chìa khóa để cải thiện tốc độ đọc.",
+      "question": 24,
+      "questions": [
+        24
+      ],
+      "aliases": [
+        "solution to"
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 69,
+      "term": "come up with",
+      "meta": "PHRASAL VERB",
+      "meaning": "nghĩ ra; tìm ra",
+      "note": "Thường đi với ý tưởng, kế hoạch hoặc giải pháp. Cụm nhấn mạnh việc tạo ra hoặc nghĩ ra thứ cần thiết; không phải come up to là tiến lại gần.",
+      "usage": "come up with an idea/a solution",
+      "example": "Mai came up with a simple solution.",
+      "translation": "Mai nghĩ ra một giải pháp đơn giản.",
+      "family": "come – came – come; idea (n); inventive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        69
+      ],
+      "aliases": []
+    },
+    {
+      "question": 80,
+      "term": "a double-edged sword",
+      "meta": "IDIOM",
+      "meaning": "con dao hai lưỡi, có cả mặt lợi lẫn mặt hại",
+      "note": "Dùng khi cùng một công cụ hoặc thay đổi tạo tác dụng tốt và xấu. Double-edged/two-edged là tính từ ghép trước sword; không chỉ đơn giản là có hai lựa chọn.",
+      "usage": "be a double-edged sword; a two-edged sword",
+      "example": "Instant communication can be a double-edged sword.",
+      "translation": "Việc liên lạc tức thời có thể là con dao hai lưỡi.",
+      "family": "edge (n/v); edged (adj); double-edged/two-edged (adj)",
+      "teacherSelected": true,
+      "questions": [
+        80
+      ],
+      "aliases": []
+    },
+    {
+      "question": 92,
+      "term": "see eye to eye",
+      "meta": "IDIOM",
+      "meaning": "đồng quan điểm",
+      "note": "Thường theo sau with + người và on/about + vấn đề. Eye giữ số ít ở cả hai vị trí. Không có nghĩa nhìn thẳng vào mắt ai, vốn là look someone in the eye.",
+      "usage": "see eye to eye with someone on something",
+      "example": "We do not see eye to eye on this proposal.",
+      "translation": "Chúng tôi không đồng quan điểm về đề xuất này.",
+      "family": "agree (v); agreement (n); disagreement (n)",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ],
+      "aliases": []
+    },
+    {
+      "term": "on no account",
+      "meaning": "trong bất cứ trường hợp nào cũng không",
+      "usage": "on no account + trợ động từ + S + V",
+      "example": "On no account should you open this door.",
+      "translation": "Trong bất cứ trường hợp nào bạn cũng không được mở cửa này.",
+      "family": "account (n); cụm mang nghĩa phủ định",
+      "meta": "PHRASE",
+      "note": "On no account nghĩa là không trong bất kỳ trường hợp nào và kéo theo đảo ngữ must/should + you. Must you là mẫu sát mức bắt buộc của câu gốc nhất; should you cũng là lời cấm mạnh trong thành ngữ.",
+      "aliases": [],
+      "question": 93,
+      "questions": [
+        93
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 94,
+      "term": "come in for criticism",
+      "meta": "verb phrase",
+      "meaning": "hứng chịu chỉ trích",
+      "note": "Come in for criticism nghĩa là hứng chịu chỉ trích. Came in for nối việc bị phê phán với những nhận xét đã đưa ra trên truyền hình; come out of, come off và come over mang nghĩa khác.",
+      "usage": "come in for criticism/praise",
+      "family": "criticise/criticize (v); criticism (n); critical (adj)",
+      "example": "The plan came in for criticism from residents.",
+      "translation": "Kế hoạch bị người dân chỉ trích.",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ],
+      "aliases": []
+    },
+    {
+      "term": "stand a chance of",
+      "meaning": "có khả năng, có cơ hội",
+      "usage": "stand a good/strong chance of + V-ing",
+      "example": "She stands a good chance of winning.",
+      "translation": "Cô ấy có nhiều khả năng thắng.",
+      "family": "chance (n); stand → stood → stood",
+      "meta": "VERB PHRASE",
+      "note": "Stand a good/strong chance of doing something là có khả năng cao làm hoặc gặp điều gì. She được chọn nên sau of cần being chosen ở dạng bị động V-ing.",
+      "aliases": [
+        "stand a good/strong chance of",
+        "stand a good chance of",
+        "stand a strong chance of",
+        "Stand a good/strong chance of"
+      ],
+      "question": 96,
+      "questions": [
+        96
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "ill at ease",
+      "meaning": "không thoải mái, bối rối",
+      "usage": "feel/be ill at ease",
+      "example": "He felt ill at ease among strangers.",
+      "translation": "Anh ấy thấy không thoải mái giữa những người lạ.",
+      "family": "ease (n/v); easy (adj); uneasy (adj)",
+      "meta": "PHRASE",
+      "note": "Ill at ease là không thoải mái, bồn chồn trong tình huống xã hội. Not at ease cũng giữ đúng nghĩa uncomfortable.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in a different league",
+      "meaning": "ở đẳng cấp khác hẳn",
+      "usage": "be in a different league from somebody",
+      "example": "Her performance was in a different league from ours.",
+      "translation": "Màn trình diễn của cô ấy ở đẳng cấp khác hẳn chúng tôi.",
+      "family": "league (n); different (adj); difference (n)",
+      "meta": "PHRASE",
+      "note": "Be in a different league from someone nghĩa là ở trình độ khác hẳn, thường vượt trội trong ngữ cảnh khen tài năng. From đã có ở phần cố định nên dùng different/another league.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "second to none",
+      "meaning": "không thua kém ai, thuộc loại tốt nhất",
+      "usage": "be second to none",
+      "example": "Their service is second to none.",
+      "translation": "Dịch vụ của họ không thua kém nơi nào.",
+      "family": "second (số thứ tự); none (đại từ)",
+      "meta": "PHRASE",
+      "note": "Second to none nghĩa là không thua ai, tương đương the best. When it comes to + danh từ/V-ing nghĩa là khi nói đến lĩnh vực nào, nên theo sau là designing đã có sẵn.",
+      "aliases": [],
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "teacherSelected": true
     }
   ]
 }

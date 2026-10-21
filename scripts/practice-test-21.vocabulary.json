@@ -343,7 +343,8 @@
       "family": "urge (n/v); urgent (adj); urgency (n)",
       "teacherSelected": true,
       "questions": [
-        56
+        56,
+        57
       ]
     },
     {
@@ -450,6 +451,180 @@
       "questions": [
         99
       ]
+    },
+    {
+      "question": 42,
+      "term": "exception to",
+      "meta": "NOUN PHRASE",
+      "meaning": "ngoại lệ của",
+      "note": "Exception to a rule là trường hợp không tuân theo quy tắc chung. Exceptional có thể mang nghĩa xuất sắc, khác với việc chỉ là một ngoại lệ.",
+      "usage": "an exception to the rule; without exception",
+      "example": "This case is an exception to the rule.",
+      "translation": "Trường hợp này là ngoại lệ của quy tắc.",
+      "family": "except (giới từ/liên từ); exception (n); exceptional (adj)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ],
+      "aliases": []
+    },
+    {
+      "term": "let it be known",
+      "meaning": "công khai cho biết",
+      "usage": "let it be known that + mệnh đề",
+      "example": "She let it be known that she wanted to leave.",
+      "translation": "Cô ấy công khai cho biết mình muốn rời đi.",
+      "family": "let → let → let; know → knew → known",
+      "meta": "VERB PHRASE",
+      "note": "Let it be known that là công khai cho mọi người biết điều gì. Disapproval of được chuyển thành disapproved of trong mệnh đề. Sau let dùng nguyên thể không to; be known là bị động, không viết let it to be known.",
+      "aliases": [
+        "let it be known that",
+        "Let it be known that"
+      ],
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take into account",
+      "meaning": "tính đến, cân nhắc",
+      "usage": "take something into account/consideration",
+      "example": "We must take the cost into account.",
+      "translation": "Chúng ta phải tính đến chi phí.",
+      "family": "account/consideration (n); consider (v); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Take into account hoặc take account of nghĩa là xem xét/tính đến. How much bắt đầu câu hỏi gián tiếp về số tiền; much đã nằm sau ô trống nên chỉ điền đến how.",
+      "aliases": [
+        "take something into account",
+        "take something into consideration",
+        "take something into account/consideration"
+      ],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "take account of",
+      "meaning": "tính đến, xem xét",
+      "usage": "take (proper/full) account of something",
+      "example": "The plan takes account of local needs.",
+      "translation": "Kế hoạch có tính đến nhu cầu địa phương.",
+      "family": "account (n); take → took → taken",
+      "meta": "VERB PHRASE",
+      "note": "Take into account hoặc take account of nghĩa là xem xét/tính đến. How much bắt đầu câu hỏi gián tiếp về số tiền; much đã nằm sau ô trống nên chỉ điền đến how.",
+      "aliases": [
+        "take proper account of"
+      ],
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in the field of",
+      "meaning": "trong lĩnh vực",
+      "usage": "an expert in the field of something",
+      "example": "She is an expert in the field of medicine.",
+      "translation": "Cô ấy là chuyên gia trong lĩnh vực y học.",
+      "family": "field (n); expert (n/adj); expertise (n)",
+      "meta": "PHRASE",
+      "note": "Expert in the field of là chuyên gia trong lĩnh vực. Renowned/well-known giữ ý nổi tiếng của câu gốc.",
+      "aliases": [],
+      "question": 92,
+      "questions": [
+        92
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "see off",
+      "meaning": "tiễn ai lên đường",
+      "usage": "see somebody off",
+      "example": "We went to the station to see her off.",
+      "translation": "Chúng tôi ra ga tiễn cô ấy.",
+      "family": "see → saw → seen",
+      "meta": "VERB PHRASE",
+      "note": "See someone off là tiễn ai lúc khởi hành. Đại từ him đứng giữa see và off; at đi với sân bay là địa điểm tiễn.",
+      "aliases": [
+        "see somebody off",
+        "see someone off"
+      ],
+      "question": 95,
+      "questions": [
+        95
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 96,
+      "term": "see eye to eye",
+      "meta": "IDIOM",
+      "meaning": "đồng quan điểm",
+      "note": "Thường theo sau with + người và on/about + vấn đề. Eye giữ số ít ở cả hai vị trí. Không có nghĩa nhìn thẳng vào mắt ai, vốn là look someone in the eye.",
+      "usage": "see eye to eye with someone on something",
+      "example": "We do not see eye to eye on this proposal.",
+      "translation": "Chúng tôi không đồng quan điểm về đề xuất này.",
+      "family": "agree (v); agreement (n); disagreement (n)",
+      "teacherSelected": true,
+      "questions": [
+        96
+      ],
+      "aliases": []
+    },
+    {
+      "term": "beyond belief",
+      "meaning": "khó tin đến mức không thể tin nổi",
+      "usage": "be beyond belief",
+      "example": "The damage was beyond belief.",
+      "translation": "Mức thiệt hại thật khó tin.",
+      "family": "believe (v); belief (n); believable/unbelievable (adj)",
+      "meta": "VERB PHRASE",
+      "note": "Beyond belief nghĩa là không thể tin nổi, tương đương unbelievable trong câu. Beyond là giới từ nên theo sau bằng danh từ belief, không phải believe.",
+      "aliases": [],
+      "question": 97,
+      "questions": [
+        97
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "out of the question",
+      "meaning": "không thể thực hiện, không được cân nhắc",
+      "usage": "be out of the question",
+      "example": "Buying a new car is out of the question.",
+      "translation": "Mua xe mới là điều không thể tính đến.",
+      "family": "question (n/v); không nhầm out of question và out of the question",
+      "meta": "PHRASE",
+      "note": "There is no question of + V-ing hoặc be out of the question diễn tả chắc chắn không thể xảy ra/không được xem xét. No question that lại có thể khẳng định chắc chắn một việc có thật nên không dùng nhầm với of trong câu này.",
+      "aliases": [],
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "teacherSelected": true
+    },
+    {
+      "question": 99,
+      "term": "talk somebody into / out of",
+      "meta": "verb phrases",
+      "meaning": "thuyết phục ai làm / không làm",
+      "note": "Should not have + V3 phê bình việc đã làm. Talk somebody into doing something là thuyết phục ai làm; câu nói đáng lẽ không nên thuyết phục tham gia, không đồng nghĩa phải chủ động khuyên rút lui.",
+      "usage": "talk somebody into/out of + V-ing",
+      "family": "persuade (v); persuasion (n); chú ý nghĩa đối lập",
+      "example": "She talked me into joining the workshop.",
+      "translation": "Cô ấy thuyết phục tôi tham gia buổi học.",
+      "questions": [
+        99
+      ],
+      "aliases": [
+        "talk someone into"
+      ],
+      "teacherSelected": true
     }
   ]
 }
