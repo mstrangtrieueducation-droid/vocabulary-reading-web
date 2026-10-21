@@ -10,7 +10,11 @@
       "usage": "put in a good word for/about someone",
       "example": "I will put in a good word for you when I meet the manager.",
       "translation": "Tôi sẽ nói tốt giúp bạn khi gặp người quản lý.",
-      "family": "put–put–put; recommendation (n, lời giới thiệu, nghĩa liên quan)"
+      "family": "put–put–put; recommendation (n, lời giới thiệu, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 2,
@@ -21,7 +25,11 @@
       "usage": "be conversant with a subject; fully conversant with regulations",
       "example": "Applicants should be conversant with basic accounting principles.",
       "translation": "Ứng viên cần nắm vững các nguyên tắc kế toán cơ bản.",
-      "family": "conversant (adj); converse (v, trò chuyện, cùng gốc nhưng khác cách dùng); conversation (n)"
+      "family": "conversant (adj); converse (v, trò chuyện, cùng gốc nhưng khác cách dùng); conversation (n)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 3,
@@ -32,7 +40,11 @@
       "usage": "evaluate the evidence; evaluate reliability; evaluate a proposal",
       "example": "Students evaluated the evidence before accepting the claim.",
       "translation": "Học sinh đánh giá bằng chứng trước khi chấp nhận nhận định.",
-      "family": "evaluation (n); evaluative (adj); evaluator (n)"
+      "family": "evaluation (n); evaluative (adj); evaluator (n)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 5,
@@ -43,7 +55,11 @@
       "usage": "bury your head in the sand; stop burying your head in the sand",
       "example": "Ignoring the warnings is just burying your head in the sand.",
       "translation": "Phớt lờ các cảnh báo chỉ là trốn tránh vấn đề.",
-      "family": "bury–buried–buried; denial (n, sự phủ nhận, nghĩa liên quan)"
+      "family": "bury–buried–buried; denial (n, sự phủ nhận, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 8,
@@ -54,7 +70,11 @@
       "usage": "make out a shape; make out what someone is saying",
       "example": "I could barely make out the sign through the fog.",
       "translation": "Tôi gần như không nhìn rõ tấm biển qua sương mù.",
-      "family": "make–made–made; distinguish (v, nhận ra sự khác biệt, nghĩa gần)"
+      "family": "make–made–made; distinguish (v, nhận ra sự khác biệt, nghĩa gần)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -65,7 +85,11 @@
       "usage": "put someone up for the night; put a guest up",
       "example": "My aunt put me up for two nights while I looked for a flat.",
       "translation": "Dì cho tôi ở nhờ hai đêm trong lúc tôi tìm căn hộ.",
-      "family": "put–put–put; accommodation (n, chỗ ở, thường không đếm được)"
+      "family": "put–put–put; accommodation (n, chỗ ở, thường không đếm được)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 11,
@@ -76,7 +100,11 @@
       "usage": "push in at the front of a queue; don't push in",
       "example": "Everyone was waiting patiently until a man pushed in.",
       "translation": "Mọi người đang kiên nhẫn chờ thì một người đàn ông chen ngang.",
-      "family": "push (v/n); queue (n/v, hàng chờ/xếp hàng); queue-jumping (n)"
+      "family": "push (v/n); queue (n/v, hàng chờ/xếp hàng); queue-jumping (n)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 12,
@@ -87,7 +115,11 @@
       "usage": "cry out in pain; cry out for help",
       "example": "She cried out in pain when the heavy box fell on her foot.",
       "translation": "Cô ấy kêu lên vì đau khi chiếc hộp nặng rơi vào chân.",
-      "family": "cry–cried–cried; cry (n, tiếng kêu); outcry (n, sự phản đối mạnh mẽ)"
+      "family": "cry–cried–cried; cry (n, tiếng kêu); outcry (n, sự phản đối mạnh mẽ)",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 13,
@@ -98,7 +130,11 @@
       "usage": "normal wear and tear; signs of wear and tear",
       "example": "The sofa shows signs of normal wear and tear.",
       "translation": "Chiếc ghế sofa có dấu hiệu hao mòn thông thường.",
-      "family": "wear (n/v, hao mòn); wear–wore–worn; tear (n, vết rách; v, xé/rách)"
+      "family": "wear (n/v, hao mòn); wear–wore–worn; tear (n, vết rách; v, xé/rách)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 15,
@@ -109,7 +145,11 @@
       "usage": "conform to regulations; conform to a standard",
       "example": "All new equipment must conform to the safety standards.",
       "translation": "Mọi thiết bị mới phải đáp ứng các tiêu chuẩn an toàn.",
-      "family": "conformity (n); conformist (n/adj); nonconformist (n/adj)"
+      "family": "conformity (n); conformist (n/adj); nonconformist (n/adj)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 17,
@@ -120,7 +160,11 @@
       "usage": "butt in on a conversation; stop butting in",
       "example": "Please don't butt in while Lan is explaining.",
       "translation": "Xin đừng ngắt lời khi Lan đang giải thích.",
-      "family": "butt–butted–butted; interruption (n, từ gần nghĩa); interrupt (v)"
+      "family": "butt–butted–butted; interruption (n, từ gần nghĩa); interrupt (v)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 18,
@@ -131,7 +175,11 @@
       "usage": "the height of stupidity; at the height of success",
       "example": "Leaving the door unlocked would be the height of carelessness.",
       "translation": "Để cửa không khóa sẽ là cực kỳ bất cẩn.",
-      "family": "high (adj); height (n); heighten (v, làm tăng)"
+      "family": "high (adj); height (n); heighten (v, làm tăng)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 19,
@@ -142,7 +190,11 @@
       "usage": "commit tax evasion; investigate tax evasion",
       "example": "The report described a scheme involving tax evasion.",
       "translation": "Báo cáo mô tả một kế hoạch có hành vi trốn thuế.",
-      "family": "evade (v); evasion (n); evasive (adj, né tránh); tax (n/v)"
+      "family": "evade (v); evasion (n); evasive (adj, né tránh); tax (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -153,7 +205,11 @@
       "usage": "irrespective of age; irrespective of the outcome",
       "example": "Every applicant receives feedback, irrespective of the result.",
       "translation": "Mỗi ứng viên đều nhận phản hồi, bất kể kết quả.",
-      "family": "irrespective (adj trong cụm); regardless of (cụm gần nghĩa); respective (adj khác nghĩa)"
+      "family": "irrespective (adj trong cụm); regardless of (cụm gần nghĩa); respective (adj khác nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 25,
@@ -164,7 +220,11 @@
       "usage": "make a fuss about something; make a fuss over a delay",
       "example": "He made a fuss about a five-minute delay.",
       "translation": "Anh ấy làm ầm lên vì bị chậm năm phút.",
-      "family": "fuss (n/v); fussy (adj, cầu kỳ/khó tính); fussily (adv)"
+      "family": "fuss (n/v); fussy (adj, cầu kỳ/khó tính); fussily (adv)",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 28,
@@ -175,7 +235,11 @@
       "usage": "be made up of several parts; consist of several parts",
       "example": "The committee is made up of teachers and parents.",
       "translation": "Ủy ban gồm giáo viên và phụ huynh.",
-      "family": "make–made–made; composition (n, thành phần); constitute (v, cấu thành)"
+      "family": "make–made–made; composition (n, thành phần); constitute (v, cấu thành)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 31,
@@ -186,7 +250,11 @@
       "usage": "admire somebody for doing something",
       "example": "I admire her for remaining calm.",
       "translation": "Tôi ngưỡng mộ cô ấy vì vẫn giữ được bình tĩnh.",
-      "family": "admire (v); admiration (n); admirable (adj)"
+      "family": "admire (v); admiration (n); admirable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 32,
@@ -197,7 +265,11 @@
       "usage": "get used to living/working somewhere",
       "example": "He is getting used to living in a quiet village.",
       "translation": "Anh ấy đang dần quen với cuộc sống ở một ngôi làng yên tĩnh.",
-      "family": "be used to = đã quen; get used to = dần quen; used to + V = từng thường làm"
+      "family": "be used to = đã quen; get used to = dần quen; used to + V = từng thường làm",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 33,
@@ -208,7 +280,11 @@
       "usage": "accompany a release; accompany someone; be accompanied by",
       "example": "A short guide accompanied the new software.",
       "translation": "Một hướng dẫn ngắn được cung cấp kèm phần mềm mới.",
-      "family": "accompany–accompanied–accompanied; accompaniment (n); accompanying (adj)"
+      "family": "accompany–accompanied–accompanied; accompaniment (n); accompanying (adj)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 34,
@@ -219,7 +295,11 @@
       "usage": "arguably the best; arguably more effective",
       "example": "This is arguably the clearest explanation in the book.",
       "translation": "Có thể cho rằng đây là lời giải thích rõ nhất trong cuốn sách.",
-      "family": "argue (v); argument (n); arguable (adj); arguably (adv)"
+      "family": "argue (v); argument (n); arguable (adj); arguably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 36,
@@ -230,7 +310,11 @@
       "usage": "an unedited draft; unedited comments; leave text unedited",
       "example": "The website displayed the readers' unedited comments.",
       "translation": "Trang web hiển thị nguyên các bình luận chưa biên tập của độc giả.",
-      "family": "edit (v/n); editor (n); editing (n); edited/unedited (adj)"
+      "family": "edit (v/n); editor (n); editing (n); edited/unedited (adj)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 38,
@@ -241,7 +325,11 @@
       "usage": "a reliable source; reliable information; rely on evidence",
       "example": "We checked whether the article used reliable sources.",
       "translation": "Chúng tôi kiểm tra xem bài viết có dùng nguồn đáng tin không.",
-      "family": "rely (v); reliability (n); reliable (adj); reliably (adv); unreliable (adj)"
+      "family": "rely (v); reliability (n); reliable (adj); reliably (adv); unreliable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 39,
@@ -252,7 +340,11 @@
       "usage": "give/provide feedback; feedback on a draft",
       "example": "The teacher gave detailed feedback on my paragraph.",
       "translation": "Giáo viên đưa phản hồi chi tiết về đoạn văn của tôi.",
-      "family": "feed (v, gốc từ); feed back (cụm động từ); feedback (n)"
+      "family": "feed (v, gốc từ); feed back (cụm động từ); feedback (n)",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 42,
@@ -263,7 +355,11 @@
       "usage": "be a double-edged sword; a two-edged sword",
       "example": "Instant communication can be a double-edged sword.",
       "translation": "Việc liên lạc tức thời có thể là con dao hai lưỡi.",
-      "family": "edge (n/v); edged (adj); double-edged/two-edged (adj)"
+      "family": "edge (n/v); edged (adj); double-edged/two-edged (adj)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 43,
@@ -274,7 +370,11 @@
       "usage": "develop digital literacy; digital literacy skills",
       "example": "Digital literacy helps students question unreliable online claims.",
       "translation": "Năng lực thông tin số giúp học sinh biết đặt câu hỏi với nhận định trực tuyến thiếu tin cậy.",
-      "family": "literate (adj); literacy (n); illiterate (adj); digital (adj)"
+      "family": "literate (adj); literacy (n); illiterate (adj); digital (adj)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 45,
@@ -285,7 +385,11 @@
       "usage": "irretrievably lost; irretrievably damaged",
       "example": "Without a backup, the deleted files may be irretrievably lost.",
       "translation": "Nếu không có bản sao lưu, các tệp đã xóa có thể mất không thể khôi phục.",
-      "family": "retrieve (v); retrieval (n); retrievable/irretrievable (adj); irretrievably (adv)"
+      "family": "retrieve (v); retrieval (n); retrievable/irretrievable (adj); irretrievably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 54,
@@ -296,7 +400,11 @@
       "usage": "incorporate A into B; incorporate new ideas",
       "example": "She incorporated local examples into the history lesson.",
       "translation": "Cô ấy lồng các ví dụ địa phương vào bài học lịch sử.",
-      "family": "incorporation (n); incorporated (V3/adj); incorporating (V-ing)"
+      "family": "incorporation (n); incorporated (V3/adj); incorporating (V-ing)",
+      "teacherSelected": true,
+      "questions": [
+        54
+      ]
     },
     {
       "question": 56,
@@ -307,7 +415,11 @@
       "usage": "shed light on a problem; shed new light on an event",
       "example": "The letters shed light on the reasons behind the decision.",
       "translation": "Những bức thư làm sáng tỏ lý do đằng sau quyết định.",
-      "family": "shed (v); light (n); illuminate (v, nghĩa gần trong nghĩa bóng)"
+      "family": "shed (v); light (n); illuminate (v, nghĩa gần trong nghĩa bóng)",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 75,
@@ -318,7 +430,11 @@
       "usage": "be deleterious to something; a deleterious effect on something",
       "example": "The chemical had a deleterious effect on the seedlings.",
       "translation": "Hóa chất gây ảnh hưởng có hại cho các cây con.",
-      "family": "deleteriously (adv); deleteriousness (n, ít dùng); harmful (adj, nghĩa gần)"
+      "family": "deleteriously (adv); deleteriousness (n, ít dùng); harmful (adj, nghĩa gần)",
+      "teacherSelected": true,
+      "questions": [
+        75
+      ]
     },
     {
       "question": 93,
@@ -329,7 +445,11 @@
       "usage": "resign yourself to something; resign himself to doing something",
       "example": "He resigned himself to waiting another week.",
       "translation": "Anh ấy đành chấp nhận phải chờ thêm một tuần.",
-      "family": "resign (v); resignation (n); resigned (adj); resignedly (adv)"
+      "family": "resign (v); resignation (n); resigned (adj); resignedly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ]
     }
   ]
 }

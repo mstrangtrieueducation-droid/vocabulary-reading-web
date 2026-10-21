@@ -10,7 +10,11 @@
       "usage": "spill the beans about a surprise",
       "example": "Please do not spill the beans about the party.",
       "translation": "Xin đừng tiết lộ bí mật về bữa tiệc.",
-      "family": "spill–spilled/spilt–spilled/spilt; bean (n)"
+      "family": "spill–spilled/spilt–spilled/spilt; bean (n)",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 4,
@@ -21,7 +25,11 @@
       "usage": "lest anyone should misunderstand",
       "example": "I wrote it down lest I should forget.",
       "translation": "Tôi ghi lại để khỏi quên.",
-      "family": "lest (conjunction); for fear that (cụm gần nghĩa)"
+      "family": "lest (conjunction); for fear that (cụm gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -32,7 +40,11 @@
       "usage": "do/check/write something carelessly",
       "example": "He completed the work carelessly.",
       "translation": "Anh ấy làm xong công việc một cách cẩu thả.",
-      "family": "care (n/v); careful/careless (adj); carefully/carelessly (adv)"
+      "family": "care (n/v); careful/careless (adj); carefully/carelessly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -43,7 +55,11 @@
       "usage": "ask for help if need be",
       "example": "We can postpone the meeting if need be.",
       "translation": "Chúng ta có thể hoãn cuộc họp nếu cần.",
-      "family": "need (n/v); necessary (adj); necessity (n)"
+      "family": "need (n/v); necessary (adj); necessity (n)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 9,
@@ -54,7 +70,11 @@
       "usage": "avoid/remove unnecessary details",
       "example": "The designer avoids unnecessary details.",
       "translation": "Nhà thiết kế tránh các chi tiết không cần thiết.",
-      "family": "necessary/unnecessary (adj); necessity (n); unnecessarily (adv)"
+      "family": "necessary/unnecessary (adj); necessity (n); unnecessarily (adv)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 10,
@@ -65,7 +85,11 @@
       "usage": "crowds pour out of a stadium",
       "example": "Fans poured out of the stadium after the match.",
       "translation": "Người hâm mộ ùa ra khỏi sân sau trận đấu.",
-      "family": "pour (v); outpouring (n); pouring (participle)"
+      "family": "pour (v); outpouring (n); pouring (participle)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 12,
@@ -76,7 +100,11 @@
       "usage": "defy all odds to succeed",
       "example": "The small team defied all odds and won.",
       "translation": "Đội nhỏ đã thắng dù ban đầu ít ai tin họ có thể.",
-      "family": "defy (v); defiance (n); defiant (adj); odds (plural noun)"
+      "family": "defy (v); defiance (n); defiant (adj); odds (plural noun)",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 13,
@@ -87,7 +115,11 @@
       "usage": "adhere to rules/guidelines",
       "example": "All visitors must adhere to the park rules.",
       "translation": "Mọi khách tham quan phải tuân thủ nội quy công viên.",
-      "family": "adhere (v); adherence (n); adherent (n/adj)"
+      "family": "adhere (v); adherence (n); adherent (n/adj)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -98,7 +130,11 @@
       "usage": "be balanced on a knife-edge",
       "example": "The future of the project is on a knife-edge.",
       "translation": "Tương lai dự án đang rất bấp bênh.",
-      "family": "knife–knives (n); edge (n); knife-edge (n/adj)"
+      "family": "knife–knives (n); edge (n); knife-edge (n/adj)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 16,
@@ -109,7 +145,11 @@
       "usage": "narrowly win; narrowly avoid defeat",
       "example": "Our team narrowly won by one point.",
       "translation": "Đội chúng tôi thắng sát nút với cách biệt một điểm.",
-      "family": "narrow (adj/v); narrowly (adv); narrowness (n)"
+      "family": "narrow (adj/v); narrowly (adv); narrowness (n)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 18,
@@ -120,7 +160,11 @@
       "usage": "weather a crisis/the storm",
       "example": "The business weathered the storm and recovered.",
       "translation": "Doanh nghiệp vượt qua giai đoạn khó khăn rồi hồi phục.",
-      "family": "weather (n/v); storm (n/v); recovery (n, nghĩa liên quan)"
+      "family": "weather (n/v); storm (n/v); recovery (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 20,
@@ -131,7 +175,11 @@
       "usage": "exchange ideas with colleagues",
       "example": "Teachers met to exchange ideas about lessons.",
       "translation": "Các giáo viên gặp nhau để trao đổi ý tưởng về bài học.",
-      "family": "exchange (n/v); exchangeable (adj); interchange (n/v)"
+      "family": "exchange (n/v); exchangeable (adj); interchange (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 24,
@@ -142,7 +190,11 @@
       "usage": "trace the history of transport",
       "example": "The exhibition traces the history of rail travel.",
       "translation": "Triển lãm lần theo lịch sử đi lại bằng đường sắt.",
-      "family": "trace (n/v); traceable (adj); tracing (n)"
+      "family": "trace (n/v); traceable (adj); tracing (n)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 27,
@@ -153,7 +205,11 @@
       "usage": "be at pains to explain/prevent",
       "example": "She was at pains to explain the new rule clearly.",
       "translation": "Cô ấy cố gắng giải thích quy tắc mới thật rõ.",
-      "family": "pain (n/v); painstaking (adj, nghĩa liên quan); pains (plural noun)"
+      "family": "pain (n/v); painstaking (adj, nghĩa liên quan); pains (plural noun)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -164,7 +220,11 @@
       "usage": "have a field day discussing a scandal",
       "example": "The newspapers had a field day with the scandal.",
       "translation": "Các báo có dịp khai thác thỏa sức vụ bê bối.",
-      "family": "field (n); day (n); have–had–had"
+      "family": "field (n); day (n); have–had–had",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 29,
@@ -175,7 +235,11 @@
       "usage": "keep your cool under pressure",
       "example": "Try to keep your cool during a difficult interview.",
       "translation": "Hãy cố giữ bình tĩnh trong một buổi phỏng vấn khó.",
-      "family": "cool (adj/n/v); coolly (adv); cool-headed (adj)"
+      "family": "cool (adj/n/v); coolly (adv); cool-headed (adj)",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 30,
@@ -186,7 +250,11 @@
       "usage": "moderate performance/growth/exercise",
       "example": "The team improved after several moderate performances.",
       "translation": "Đội đã tiến bộ sau vài màn thể hiện chỉ ở mức trung bình.",
-      "family": "moderate (adj/v); moderation (n); moderately (adv)"
+      "family": "moderate (adj/v); moderation (n); moderately (adv)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 33,
@@ -197,7 +265,11 @@
       "usage": "pseudo-intellectual language/arguments",
       "example": "The review criticised the book’s pseudo-intellectual language.",
       "translation": "Bài phê bình chỉ trích lối diễn đạt giả vẻ uyên bác của cuốn sách.",
-      "family": "intellect (n); intellectual (adj/n); intellectually (adv); pseudo- (prefix)"
+      "family": "intellect (n); intellectual (adj/n); intellectually (adv); pseudo- (prefix)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 36,
@@ -208,7 +280,11 @@
       "usage": "a counterproductive approach",
       "example": "Too much pressure can be counterproductive.",
       "translation": "Áp lực quá lớn có thể gây tác dụng ngược.",
-      "family": "produce (v); productive (adj); productivity (n); counterproductively (adv)"
+      "family": "produce (v); productive (adj); productivity (n); counterproductively (adv)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 38,
@@ -219,7 +295,11 @@
       "usage": "professional/medical malpractice",
       "example": "The inquiry uncovered several malpractices.",
       "translation": "Cuộc điều tra phát hiện một số hành vi sai trái trong công việc.",
-      "family": "practice (n); practise/practice (v); malpractice (n)"
+      "family": "practice (n); practise/practice (v); malpractice (n)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 39,
@@ -230,7 +310,11 @@
       "usage": "preconceived ideas/notions about",
       "example": "Travel can challenge our preconceived ideas.",
       "translation": "Du lịch có thể khiến ta xem lại những ý nghĩ có sẵn.",
-      "family": "conceive (v); conception (n); preconception (n); preconceived (adj)"
+      "family": "conceive (v); conception (n); preconception (n); preconceived (adj)",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 41,
@@ -241,7 +325,11 @@
       "usage": "necessitate changes/a review",
       "example": "The error necessitated a review of the results.",
       "translation": "Sai sót khiến việc xem lại kết quả trở nên cần thiết.",
-      "family": "necessary (adj); necessity (n); necessitate (v); necessarily (adv)"
+      "family": "necessary (adj); necessity (n); necessitate (v); necessarily (adv)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 42,
@@ -252,7 +340,11 @@
       "usage": "a system has outlived its usefulness",
       "example": "The old filing system has outlived its usefulness.",
       "translation": "Hệ thống lưu hồ sơ cũ không còn hữu ích nữa.",
-      "family": "live (v); outlive (v); useful (adj); usefulness (n)"
+      "family": "live (v); outlive (v); useful (adj); usefulness (n)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 43,
@@ -263,7 +355,11 @@
       "usage": "a complimentary remark; complimentary tickets",
       "example": "He made a complimentary remark about the design.",
       "translation": "Anh ấy đưa ra lời khen về thiết kế.",
-      "family": "compliment (n/v); complimentary (adj); complementary (từ dễ nhầm)"
+      "family": "compliment (n/v); complimentary (adj); complementary (từ dễ nhầm)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 44,
@@ -274,7 +370,11 @@
       "usage": "improve immeasurably",
       "example": "Her support helped me immeasurably.",
       "translation": "Sự hỗ trợ của cô ấy đã giúp tôi rất nhiều.",
-      "family": "measure (n/v); measurable/immeasurable (adj); measurably (adv)"
+      "family": "measure (n/v); measurable/immeasurable (adj); measurably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 56,
@@ -285,7 +385,11 @@
       "usage": "books, maps and the like",
       "example": "The shop sells notebooks, pens and the like.",
       "translation": "Cửa hàng bán sổ, bút và các đồ tương tự.",
-      "family": "like (n/adj/v/prep); alike (adj/adv); similar (adj)"
+      "family": "like (n/adj/v/prep); alike (adj/adv); similar (adj)",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 75,
@@ -296,7 +400,11 @@
       "usage": "disparities between groups",
       "example": "The report highlighted disparities in access to training.",
       "translation": "Báo cáo nhấn mạnh sự chênh lệch trong khả năng tiếp cận đào tạo.",
-      "family": "disparity–disparities (n); disparate (adj); parity (n)"
+      "family": "disparity–disparities (n); disparate (adj); parity (n)",
+      "teacherSelected": true,
+      "questions": [
+        75
+      ]
     },
     {
       "question": 92,
@@ -307,7 +415,11 @@
       "usage": "warnings fall on deaf ears",
       "example": "Her warnings fell on deaf ears.",
       "translation": "Những lời cảnh báo của cô ấy bị bỏ ngoài tai.",
-      "family": "fall–fell–fallen; deaf (adj); ear (n)"
+      "family": "fall–fell–fallen; deaf (adj); ear (n)",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ]
     },
     {
       "question": 95,
@@ -318,7 +430,11 @@
       "usage": "struggle to make ends meet",
       "example": "The family struggled to make ends meet.",
       "translation": "Gia đình chật vật trang trải cuộc sống.",
-      "family": "end (n/v); meet–met–met; living expenses (cụm liên quan)"
+      "family": "end (n/v); meet–met–met; living expenses (cụm liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     },
     {
       "question": 100,
@@ -329,7 +445,11 @@
       "usage": "an organization falls into disrepute",
       "example": "The organisation fell into disrepute after the scandal.",
       "translation": "Tổ chức mất uy tín sau vụ bê bối.",
-      "family": "repute/disrepute (n); reputable/disreputable (adj); reputation (n)"
+      "family": "repute/disrepute (n); reputable/disreputable (adj); reputation (n)",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
     }
   ]
 }

@@ -10,7 +10,11 @@
       "usage": "oppose a plan; object to a plan/V-ing",
       "family": "opposition (n); objection (n); không thêm to sau oppose",
       "example": "Several residents objected to the proposal.",
-      "translation": "Một số cư dân phản đối đề xuất."
+      "translation": "Một số cư dân phản đối đề xuất.",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 7,
@@ -21,7 +25,11 @@
       "usage": "take responsibility for + N/V-ing; be responsible for",
       "family": "responsibility (n); responsible (adj); responsibly (adv)",
       "example": "He took responsibility for the mistake.",
-      "translation": "Anh ấy nhận trách nhiệm về sai sót đó."
+      "translation": "Anh ấy nhận trách nhiệm về sai sót đó.",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 8,
@@ -32,7 +40,11 @@
       "usage": "hinder somebody from doing something",
       "family": "hindrance (n); prevent: ngăn; protect: bảo vệ",
       "example": "Noise hindered us from concentrating.",
-      "translation": "Tiếng ồn cản trở chúng tôi tập trung."
+      "translation": "Tiếng ồn cản trở chúng tôi tập trung.",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -43,7 +55,11 @@
       "usage": "say something in the heat of the moment",
       "family": "on the spur of the moment: quyết định bất chợt",
       "example": "He apologised for words spoken in the heat of the moment.",
-      "translation": "Anh ấy xin lỗi về những lời nói lúc nóng giận."
+      "translation": "Anh ấy xin lỗi về những lời nói lúc nóng giận.",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 10,
@@ -54,7 +70,11 @@
       "usage": "keep something spotlessly clean; a spotless room",
       "family": "spot (n: vết); spotless (adj); spotlessly (adv)",
       "example": "They keep the kitchen spotlessly clean.",
-      "translation": "Họ giữ căn bếp sạch không một vết bẩn."
+      "translation": "Họ giữ căn bếp sạch không một vết bẩn.",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 16,
@@ -65,7 +85,11 @@
       "usage": "take after one’s mother/father",
       "family": "resemble (v) không cần giới từ; take–took–taken",
       "example": "Mai takes after her father in appearance.",
-      "translation": "Mai giống bố về ngoại hình."
+      "translation": "Mai giống bố về ngoại hình.",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 18,
@@ -76,7 +100,11 @@
       "usage": "get over shyness/an illness",
       "family": "get through: vượt qua giai đoạn; overcome (v)",
       "example": "He gradually got over his fear of speaking.",
-      "translation": "Anh ấy dần vượt qua nỗi sợ nói trước người khác."
+      "translation": "Anh ấy dần vượt qua nỗi sợ nói trước người khác.",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 19,
@@ -87,7 +115,11 @@
       "usage": "excessive use/exploitation",
       "family": "excess (n); excessively (adv)",
       "example": "Excessive packaging creates unnecessary waste.",
-      "translation": "Đóng gói quá mức tạo rác không cần thiết."
+      "translation": "Đóng gói quá mức tạo rác không cần thiết.",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -98,7 +130,11 @@
       "usage": "a celebrated artist/writer",
       "family": "celebrity (n); celebrate (v: ăn mừng/kỷ niệm)",
       "example": "A celebrated violinist will perform tonight.",
-      "translation": "Một nghệ sĩ violin nổi tiếng sẽ biểu diễn tối nay."
+      "translation": "Một nghệ sĩ violin nổi tiếng sẽ biểu diễn tối nay.",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 21,
@@ -109,7 +145,11 @@
       "usage": "make out a word/number; make it out",
       "family": "make up: bịa ra; make–made–made",
       "example": "I could not make out the last word.",
-      "translation": "Tôi không nghe rõ từ cuối."
+      "translation": "Tôi không nghe rõ từ cuối.",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 24,
@@ -120,7 +160,11 @@
       "usage": "let something take its course",
       "family": "course: tiến trình; không phải chỉ khóa học",
       "example": "We decided to let events take their course.",
-      "translation": "Chúng tôi quyết định để sự việc diễn tiến tự nhiên."
+      "translation": "Chúng tôi quyết định để sự việc diễn tiến tự nhiên.",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 26,
@@ -131,7 +175,11 @@
       "usage": "domestic poultry; poultry farming",
       "family": "domestic: trong nước/được thuần nuôi; poultry là danh từ tập hợp",
       "example": "The farm raises domestic poultry.",
-      "translation": "Trang trại nuôi gia cầm."
+      "translation": "Trang trại nuôi gia cầm.",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 28,
@@ -142,7 +190,11 @@
       "usage": "be numerate and literate",
       "family": "numeracy/literacy (n); numerous: nhiều",
       "example": "The course helps adults become more numerate.",
-      "translation": "Khóa học giúp người lớn giỏi tính toán cơ bản hơn."
+      "translation": "Khóa học giúp người lớn giỏi tính toán cơ bản hơn.",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 29,
@@ -153,7 +205,11 @@
       "usage": "be part and parcel of a job",
       "family": "không dùng packet thay parcel trong thành ngữ",
       "example": "Teamwork is part and parcel of this job.",
-      "translation": "Làm việc nhóm là phần không thể thiếu của công việc này."
+      "translation": "Làm việc nhóm là phần không thể thiếu của công việc này.",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 31,
@@ -164,7 +220,11 @@
       "usage": "lend somebody an ear; lend an ear to somebody",
       "family": "lend–lent–lent; listener (n)",
       "example": "She lent me an ear when I needed support.",
-      "translation": "Cô ấy lắng nghe khi tôi cần hỗ trợ."
+      "translation": "Cô ấy lắng nghe khi tôi cần hỗ trợ.",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 36,
@@ -175,7 +235,11 @@
       "usage": "tasteless food; tasteful decoration; tasty soup",
       "family": "taste (n/v); tastefully (adv); không đồng nhất ba tính từ",
       "example": "The room was tasteful, but the meal was tasteless.",
-      "translation": "Căn phòng có gu nhưng bữa ăn nhạt nhẽo."
+      "translation": "Căn phòng có gu nhưng bữa ăn nhạt nhẽo.",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 39,
@@ -186,7 +250,11 @@
       "usage": "an improvement in quality; make improvements",
       "family": "improve (v); improved (adj)",
       "example": "We noticed an improvement in service.",
-      "translation": "Chúng tôi nhận thấy dịch vụ cải thiện."
+      "translation": "Chúng tôi nhận thấy dịch vụ cải thiện.",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 41,
@@ -197,7 +265,11 @@
       "usage": "skilfully prepared; skillfully handled",
       "family": "skill (n); skilful/skillful (adj); Anh–Mỹ",
       "example": "The chef skilfully prepared the fish.",
-      "translation": "Đầu bếp khéo léo chế biến cá."
+      "translation": "Đầu bếp khéo léo chế biến cá.",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 44,
@@ -208,7 +280,11 @@
       "usage": "an adventurous eater/traveller",
       "family": "adventure (n); adventurously (adv)",
       "example": "Be adventurous and try a new dish.",
-      "translation": "Hãy mạnh dạn thử một món mới."
+      "translation": "Hãy mạnh dạn thử một món mới.",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 45,
@@ -219,7 +295,11 @@
       "usage": "have a reputation for quality",
       "family": "reputable (adj: có uy tín); reputed (adj: được cho là)",
       "example": "The school has a reputation for good teaching.",
-      "translation": "Trường có tiếng về chất lượng giảng dạy."
+      "translation": "Trường có tiếng về chất lượng giảng dạy.",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 47,
@@ -230,7 +310,11 @@
       "usage": "a historic decision; a historical exhibition",
       "family": "history (n); historian (n); historically (adv)",
       "example": "The museum displays historical documents.",
-      "translation": "Bảo tàng trưng bày tài liệu lịch sử."
+      "translation": "Bảo tàng trưng bày tài liệu lịch sử.",
+      "teacherSelected": true,
+      "questions": [
+        47
+      ]
     },
     {
       "question": 49,
@@ -241,7 +325,11 @@
       "usage": "a sense of patriotism; inspire patriotism",
       "family": "patriot (n: người yêu nước); patriotic (adj)",
       "example": "The ceremony inspired a sense of patriotism.",
-      "translation": "Buổi lễ khơi dậy lòng yêu nước."
+      "translation": "Buổi lễ khơi dậy lòng yêu nước.",
+      "teacherSelected": true,
+      "questions": [
+        49
+      ]
     },
     {
       "question": 53,
@@ -252,7 +340,11 @@
       "usage": "participate in a project; participate actively; take part in",
       "family": "participation (n); participant (n); participatory (adj)",
       "example": "Students participated in a local research project.",
-      "translation": "Học sinh tham gia một dự án nghiên cứu tại địa phương."
+      "translation": "Học sinh tham gia một dự án nghiên cứu tại địa phương.",
+      "teacherSelected": true,
+      "questions": [
+        53
+      ]
     },
     {
       "question": 55,
@@ -263,7 +355,11 @@
       "usage": "work in collaboration with somebody; collaborate with somebody on something",
       "family": "collaborate (v); collaboration (n); collaborative (adj)",
       "example": "The school worked in collaboration with a local museum.",
-      "translation": "Trường phối hợp với một bảo tàng địa phương."
+      "translation": "Trường phối hợp với một bảo tàng địa phương.",
+      "teacherSelected": true,
+      "questions": [
+        55
+      ]
     },
     {
       "question": 59,
@@ -274,7 +370,11 @@
       "usage": "learn by doing; improve by practising; by training participants",
       "family": "by: giới từ chỉ cách thức; V-ing: dạng động từ sau giới từ",
       "example": "You can improve your writing by reading regularly.",
-      "translation": "Bạn có thể cải thiện kĩ năng viết bằng cách đọc thường xuyên."
+      "translation": "Bạn có thể cải thiện kĩ năng viết bằng cách đọc thường xuyên.",
+      "teacherSelected": true,
+      "questions": [
+        59
+      ]
     },
     {
       "question": 60,
@@ -285,7 +385,11 @@
       "usage": "an opportunity to do something; an opportunity for somebody to do something",
       "family": "opportunity (n); opportunities (plural); chance (near synonym)",
       "example": "The project gives students an opportunity to collect real data.",
-      "translation": "Dự án cho học sinh cơ hội thu thập dữ liệu thật."
+      "translation": "Dự án cho học sinh cơ hội thu thập dữ liệu thật.",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 71,
@@ -296,7 +400,11 @@
       "usage": "acquire knowledge/skills; language acquisition",
       "family": "acquired (phân từ); acquire không đồng nghĩa require",
       "example": "Children acquire new skills through practice.",
-      "translation": "Trẻ thu nhận kỹ năng mới qua luyện tập."
+      "translation": "Trẻ thu nhận kỹ năng mới qua luyện tập.",
+      "teacherSelected": true,
+      "questions": [
+        71
+      ]
     },
     {
       "question": 88,

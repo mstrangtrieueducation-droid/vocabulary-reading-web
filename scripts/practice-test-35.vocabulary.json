@@ -10,7 +10,11 @@
       "usage": "pretentious language/behaviour",
       "example": "The review called the film pretentious.",
       "translation": "Bài phê bình cho rằng bộ phim cố tỏ ra sâu sắc hơn thực tế.",
-      "family": "pretension (n); pretentious (adj); pretentiously (adv)"
+      "family": "pretension (n); pretentious (adj); pretentiously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 4,
@@ -21,7 +25,11 @@
       "usage": "an opinionated person; highly opinionated",
       "example": "He is so opinionated that compromise is difficult.",
       "translation": "Anh ấy khăng khăng đến mức khó đạt thỏa hiệp.",
-      "family": "opinion (n); opinionated (adj); opinionatedly (adv)"
+      "family": "opinion (n); opinionated (adj); opinionatedly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -32,7 +40,11 @@
       "usage": "not have the faintest idea about",
       "example": "I did not have the faintest idea what to expect.",
       "translation": "Tôi hoàn toàn không biết nên chờ đợi điều gì.",
-      "family": "faint (adj/v); faintly (adv); faintest (superlative)"
+      "family": "faint (adj/v); faintly (adv); faintest (superlative)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -43,7 +55,11 @@
       "usage": "tacky souvenirs/decorations",
       "example": "She disliked the tacky plastic decorations.",
       "translation": "Cô ấy không thích những đồ trang trí nhựa lòe loẹt.",
-      "family": "tacky (adj); tackiness (n); tackily (adv)"
+      "family": "tacky (adj); tackiness (n); tackily (adv)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 7,
@@ -54,7 +70,11 @@
       "usage": "distraught parents; be distraught over",
       "example": "The family was distraught over the missing child.",
       "translation": "Gia đình vô cùng lo lắng vì đứa trẻ mất tích.",
-      "family": "distraught (adj); distress (n/v); distressed (adj, nghĩa gần)"
+      "family": "distraught (adj); distress (n/v); distressed (adj, nghĩa gần)",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 8,
@@ -65,7 +85,11 @@
       "usage": "a boring task; feel bored",
       "example": "The task was boring, so the students felt bored.",
       "translation": "Nhiệm vụ gây nhàm chán nên các học sinh cảm thấy chán.",
-      "family": "bore (v); boredom (n); boring/bored (adj)"
+      "family": "bore (v); boredom (n); boring/bored (adj)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -76,7 +100,11 @@
       "usage": "a strong possibility of rain/a delay",
       "example": "There is a strong possibility of heavy rain.",
       "translation": "Có khả năng khá lớn trời sẽ mưa to.",
-      "family": "possible (adj); possibly (adv); possibility (n)"
+      "family": "possible (adj); possibly (adv); possibility (n)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 10,
@@ -87,7 +115,11 @@
       "usage": "remove a bottleneck; procedural bottlenecks",
       "example": "The new system removed a major bottleneck.",
       "translation": "Hệ thống mới đã loại bỏ một điểm nghẽn lớn.",
-      "family": "bottleneck (n/v); bottle (n); neck (n)"
+      "family": "bottleneck (n/v); bottle (n); neck (n)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 12,
@@ -98,7 +130,11 @@
       "usage": "precious little evidence/time",
       "example": "We had precious little time to prepare.",
       "translation": "Chúng tôi có rất ít thời gian chuẩn bị.",
-      "family": "precious (adj); little (quantifier); precious few + plural noun"
+      "family": "precious (adj); little (quantifier); precious few + plural noun",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 19,
@@ -109,7 +145,11 @@
       "usage": "be thrown for a loop by news",
       "example": "The unexpected question threw me for a loop.",
       "translation": "Câu hỏi bất ngờ khiến tôi bối rối.",
-      "family": "throw–threw–thrown; loop (n/v); in the loop (cụm khác)"
+      "family": "throw–threw–thrown; loop (n/v); in the loop (cụm khác)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -120,7 +160,11 @@
       "usage": "iron out the teething problems in a system",
       "example": "We need a week to iron out the teething problems.",
       "translation": "Chúng tôi cần một tuần để xử lý các trục trặc ban đầu.",
-      "family": "iron (n/v); teethe (v); teething (n/modifier)"
+      "family": "iron (n/v); teethe (v); teething (n/modifier)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 21,
@@ -131,7 +175,11 @@
       "usage": "refuse to throw in the towel",
       "example": "She refused to throw in the towel after one failure.",
       "translation": "Cô ấy không chịu bỏ cuộc sau một lần thất bại.",
-      "family": "throw–threw–thrown; towel (n); give up (cụm gần nghĩa)"
+      "family": "throw–threw–thrown; towel (n); give up (cụm gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 23,
@@ -142,7 +190,11 @@
       "usage": "an off-the-cuff speech; speak off the cuff",
       "example": "His off-the-cuff remarks were surprisingly clear.",
       "translation": "Những nhận xét ứng khẩu của anh ấy rõ ràng đến bất ngờ.",
-      "family": "cuff (n); off-the-cuff (adj); off the cuff (adverbial phrase)"
+      "family": "cuff (n); off-the-cuff (adj); off the cuff (adverbial phrase)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -153,7 +205,11 @@
       "usage": "be a roaring success",
       "example": "The school concert was a roaring success.",
       "translation": "Buổi hòa nhạc của trường thành công vang dội.",
-      "family": "roar (n/v); roaring (adj); success (n); successful (adj)"
+      "family": "roar (n/v); roaring (adj); success (n); successful (adj)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 25,
@@ -164,7 +220,11 @@
       "usage": "a long-winded explanation/speech",
       "example": "The explanation was long-winded and hard to follow.",
       "translation": "Lời giải thích dài dòng và khó theo dõi.",
-      "family": "long-winded (adj); long-windedness (n); concise (adj, trái nghĩa)"
+      "family": "long-winded (adj); long-windedness (n); concise (adj, trái nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 28,
@@ -175,7 +235,11 @@
       "usage": "piano technique; a teaching technique",
       "example": "Her piano technique is excellent.",
       "translation": "Kỹ thuật chơi piano của cô ấy rất xuất sắc.",
-      "family": "technique (n); technical (adj); technically (adv); technician (n)"
+      "family": "technique (n); technical (adj); technically (adv); technician (n)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 31,
@@ -186,7 +250,11 @@
       "usage": "recent technological developments",
       "example": "Technological developments have improved access to information.",
       "translation": "Sự phát triển công nghệ đã cải thiện khả năng tiếp cận thông tin.",
-      "family": "technology (n); technological (adj); technologically (adv)"
+      "family": "technology (n); technological (adj); technologically (adv)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 34,
@@ -197,7 +265,11 @@
       "usage": "local manufacturers; manufacturers of bottles",
       "example": "Local manufacturers produced reusable bottles.",
       "translation": "Các nhà sản xuất địa phương làm ra những chai có thể dùng lại.",
-      "family": "manufacture (v/n); manufacturer (n); manufacturing (n)"
+      "family": "manufacture (v/n); manufacturer (n); manufacturing (n)",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 36,
@@ -208,7 +280,11 @@
       "usage": "a clickable link/button/image",
       "example": "The page contains clickable links to examples.",
       "translation": "Trang có các liên kết có thể nhấp để mở ví dụ.",
-      "family": "click (n/v); clickable (adj); click on a link"
+      "family": "click (n/v); clickable (adj); click on a link",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 38,
@@ -219,7 +295,11 @@
       "usage": "content behind a paywall",
       "example": "The article is behind a paywall.",
       "translation": "Bài viết yêu cầu trả phí để truy cập.",
-      "family": "pay–paid–paid; payment (n); paywall (n)"
+      "family": "pay–paid–paid; payment (n); paywall (n)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 42,
@@ -230,7 +310,11 @@
       "usage": "be demoralised by a setback",
       "example": "The repeated delays demoralised the team.",
       "translation": "Những lần chậm trễ liên tiếp làm cả nhóm nản lòng.",
-      "family": "morale (n); demoralise/demoralize (v); demoralised (adj)"
+      "family": "morale (n); demoralise/demoralize (v); demoralised (adj)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 44,
@@ -241,7 +325,11 @@
       "usage": "an uninhabitable house/area",
       "example": "The storm left the house uninhabitable.",
       "translation": "Cơn bão khiến ngôi nhà không còn ở được.",
-      "family": "inhabit (v); inhabitant (n); habitable/inhabitable/uninhabitable (adj)"
+      "family": "inhabit (v); inhabitant (n); habitable/inhabitable/uninhabitable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 48,
@@ -252,7 +340,11 @@
       "usage": "be steeped in history/symbolism",
       "example": "The ceremony is steeped in symbolism.",
       "translation": "Nghi lễ thấm đẫm ý nghĩa biểu tượng.",
-      "family": "steep (v/adj); steeped (participle); symbolism (n, từ đi kèm)"
+      "family": "steep (v/adj); steeped (participle); symbolism (n, từ đi kèm)",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ]
     },
     {
       "question": 54,
@@ -263,7 +355,11 @@
       "usage": "supersede an old system",
       "example": "Digital records superseded many paper files.",
       "translation": "Hồ sơ số đã thay thế nhiều hồ sơ giấy.",
-      "family": "supersede (v); superseded (participle); replacement (n, nghĩa liên quan)"
+      "family": "supersede (v); superseded (participle); replacement (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        54
+      ]
     },
     {
       "question": 60,
@@ -274,7 +370,11 @@
       "usage": "information at your fingertips",
       "example": "The guide puts useful information at your fingertips.",
       "translation": "Cẩm nang giúp bạn tra được thông tin hữu ích ngay khi cần.",
-      "family": "finger (n); fingertip (n); accessible (adj, nghĩa liên quan)"
+      "family": "finger (n); fingertip (n); accessible (adj, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 64,
@@ -285,7 +385,11 @@
       "usage": "well worth the effort; well worth seeing",
       "example": "The view was well worth the long walk.",
       "translation": "Cảnh đẹp rất xứng đáng với quãng đi bộ dài.",
-      "family": "worth (adj/n); worthwhile (adj); worthy (adj)"
+      "family": "worth (adj/n); worthwhile (adj); worthy (adj)",
+      "teacherSelected": true,
+      "questions": [
+        64
+      ]
     },
     {
       "question": 92,
@@ -296,7 +400,11 @@
       "usage": "be taken in by a story/promise",
       "example": "She was not taken in by his promises.",
       "translation": "Cô ấy không bị những lời hứa của anh ta đánh lừa.",
-      "family": "take – took – taken; deceive (v); deception (n)"
+      "family": "take – took – taken; deceive (v); deception (n)",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ]
     },
     {
       "question": 95,
@@ -307,7 +415,11 @@
       "usage": "leave + object + adjective",
       "example": "His contradictory statements left us confused.",
       "translation": "Những phát biểu mâu thuẫn của anh ấy khiến chúng tôi bối rối.",
-      "family": "confuse (v); confused/confusing (adj); confusion (n)"
+      "family": "confuse (v); confused/confusing (adj); confusion (n)",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     },
     {
       "question": 97,
@@ -318,7 +430,11 @@
       "usage": "have no intention of doing something",
       "example": "They have no intention of joining the club.",
       "translation": "Họ không có ý định tham gia câu lạc bộ.",
-      "family": "intend (v); intention (n); intentional (adj)"
+      "family": "intend (v); intention (n); intentional (adj)",
+      "teacherSelected": true,
+      "questions": [
+        97
+      ]
     },
     {
       "question": 100,
@@ -329,7 +445,11 @@
       "usage": "take a detail out of a passage",
       "example": "The teacher took an irrelevant detail out of the passage.",
       "translation": "Giáo viên bỏ một chi tiết không liên quan khỏi đoạn văn.",
-      "family": "take – took – taken; remove (v); removal (n)"
+      "family": "take – took – taken; remove (v); removal (n)",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
     }
   ]
 }

@@ -1054,43 +1054,59 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "to have a word with Jack about the problem but he was too busy"
+        "to have a word with Jack"
       ],
-      "displayAnswer": "to have a word with Jack about the problem but he was too busy",
-      "explanation": "Have a word with somebody about something nghĩa là nói chuyện ngắn với ai về một việc. Tried to have giữ ý đã cố nói chuyện nhưng Jack quá bận. Từ word phải giữ nguyên ở số ít; have words with thường là cãi vã, không đúng ý câu gốc.",
+      "displayAnswer": "to have a word with Jack",
+      "explanation": "Have a word with somebody about something nghĩa là nói chuyện ngắn với ai về một việc. Tried to have giữ ý đã cố nói chuyện nhưng Jack quá bận.",
       "prefix": "I tried",
-      "suffix": "",
-      "fullSentence": "I tried to have a word with Jack about the problem but he was too busy."
+      "suffix": "about the problem but he was too busy",
+      "fullSentence": "I tried to have a word with Jack about the problem but he was too busy",
+      "keyword": "word",
+      "answerPrefix": "I tried",
+      "answerSuffix": "about the problem but he was too busy",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to have a word with Jack"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "moment I decided to get up and dance, the band decided to stop playing",
-        "moment that I decided to get up and dance, the band decided to stop playing"
+        "moment I decided",
+        "moment that I decided"
       ],
-      "displayAnswer": "moment I decided to get up and dance, the band decided to stop playing / moment that I decided to get up and dance, the band decided to stop playing",
-      "explanation": "The moment (that) + mệnh đề nghĩa là ngay lúc…, diễn tả hai quyết định trùng thời điểm. Giữ decided ở cả hai vế vì câu gốc nói quyết định, chưa khẳng định cả hai hành động đã thực hiện. Không thay moment bằng moments vì phải giữ nguyên từ cho sẵn.",
+      "displayAnswer": "moment I decided / moment that I decided",
+      "explanation": "The moment (that) + mệnh đề nghĩa là ngay lúc…, diễn tả hai quyết định trùng thời điểm. Giữ decided ở cả hai vế vì câu gốc nói quyết định, chưa khẳng định cả hai hành động đã thực hiện.",
       "prefix": "The",
-      "suffix": "",
-      "fullSentence": "The moment I decided to get up and dance, the band decided to stop playing."
+      "suffix": "to get up and dance, the band decided to stop playing",
+      "fullSentence": "The moment I decided to get up and dance, the band decided to stop playing",
+      "keyword": "moment",
+      "answerPrefix": "The",
+      "answerSuffix": "to get up and dance, the band decided to stop playing",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "moment I decided"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "number of travelers are being stopped by customs officials this week",
-        "number of travellers are being stopped by customs officials this week",
-        "number of travelers are being stopped this week by customs officials",
-        "number of travellers are being stopped this week by customs officials"
+        "number of travelers are being stopped",
+        "number of travellers are being stopped"
       ],
-      "displayAnswer": "number of travelers are being stopped by customs officials this week / number of travellers are being stopped by customs officials this week / number of travelers are being stopped this week by customs officials / number of travellers are being stopped this week by customs officials",
-      "explanation": "An increasing number of + danh từ số nhiều đi với động từ số nhiều are. Chuyển chủ ngữ từ customs officials sang travelers nên dùng bị động hiện tại tiếp diễn are being stopped. Câu gốc đã chỉnh rõ số người đang tăng; chỉ more than usual chưa đủ để suy ra xu hướng tăng.",
+      "displayAnswer": "number of travelers are being stopped / number of travellers are being stopped",
+      "explanation": "An increasing number of + danh từ số nhiều đi với động từ số nhiều are. Chuyển chủ ngữ từ customs officials sang travelers nên dùng bị động hiện tại tiếp diễn are being stopped.",
       "prefix": "An increasing",
-      "suffix": "",
-      "fullSentence": "An increasing number of travelers are being stopped by customs officials this week."
+      "suffix": "by customs officials this week",
+      "fullSentence": "An increasing number of travelers are being stopped by customs officials this week",
+      "keyword": "number",
+      "answerPrefix": "An increasing",
+      "answerSuffix": "by customs officials this week",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "number of travelers are being stopped"
     },
     {
       "globalNumber": 94,
@@ -1100,103 +1116,138 @@
         "would do you good"
       ],
       "displayAnswer": "would do you good",
-      "explanation": "Do somebody good nghĩa là có lợi, giúp ai khỏe hơn/cảm thấy tốt hơn. A quiet holiday would do you good giữ ý giả định bạn sẽ cảm thấy dễ chịu hơn nếu nghỉ yên tĩnh. Good là danh từ trong thành ngữ này; không đổi thành well.",
+      "explanation": "Do somebody good nghĩa là có lợi, giúp ai khỏe hơn/cảm thấy tốt hơn. A quiet holiday would do you good giữ ý giả định bạn sẽ cảm thấy dễ chịu hơn nếu nghỉ yên tĩnh.",
       "prefix": "A quiet holiday",
       "suffix": "",
-      "fullSentence": "A quiet holiday would do you good."
+      "fullSentence": "A quiet holiday would do you good",
+      "keyword": "do",
+      "answerPrefix": "A quiet holiday",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "would do you good"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "agreement among the teachers to introduce the new testing methods",
-        "agreement among the teachers on introducing the new testing methods",
-        "agreement among the teachers that they would introduce the new testing methods"
+        "agreement among the teachers"
       ],
-      "displayAnswer": "agreement among the teachers to introduce the new testing methods / agreement among the teachers on introducing the new testing methods / agreement among the teachers that they would introduce the new testing methods",
-      "explanation": "Agreement là danh từ của agree; among the teachers xác định sự đồng thuận giữa các giáo viên. Có thể dùng agreement to introduce hoặc agreement on introducing. Sau on phải là V-ing, còn to introduce là động từ nguyên mẫu; giữ đúng từ among theo yêu cầu.",
+      "displayAnswer": "agreement among the teachers",
+      "explanation": "Agreement là danh từ của agree; among the teachers xác định sự đồng thuận giữa các giáo viên. Có thể dùng agreement to introduce hoặc agreement on introducing.",
       "prefix": "There was",
-      "suffix": "",
-      "fullSentence": "There was agreement among the teachers to introduce the new testing methods."
+      "suffix": "to introduce the new testing methods",
+      "fullSentence": "There was agreement among the teachers to introduce the new testing methods",
+      "keyword": "among",
+      "answerPrefix": "There was",
+      "answerSuffix": "to introduce the new testing methods",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "agreement among the teachers"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "he is at last beginning to come round to my point of view",
-        "he is at last beginning to come round to my way of thinking",
-        "he is at last coming round to my point of view",
-        "he is at last coming round to my way of thinking"
+        "beginning to come round to",
+        "coming round to"
       ],
-      "displayAnswer": "he is at last beginning to come round to my point of view / he is at last beginning to come round to my way of thinking / he is at last coming round to my point of view / he is at last coming round to my way of thinking",
-      "explanation": "Come round to somebody’s point of view là dần bị thuyết phục để đồng ý với quan điểm của người đó. At last nghĩa là cuối cùng, đúng câu gốc; at least nghĩa là ít nhất và là lỗi trong đáp án cũ. Giữ round nguyên dạng và diễn đạt quá trình đang thay đổi bằng is coming/beginning to come.",
-      "prefix": "I suppose",
-      "suffix": "",
-      "fullSentence": "I suppose he is at last beginning to come round to my point of view."
+      "displayAnswer": "beginning to come round to / coming round to",
+      "explanation": "Come round to somebody’s point of view là dần bị thuyết phục để đồng ý với quan điểm của người đó. At last nghĩa là cuối cùng, đúng câu gốc; at least nghĩa là ít nhất và là lỗi trong đáp án cũ.",
+      "prefix": "I suppose he is at last",
+      "suffix": "my point of view",
+      "fullSentence": "I suppose he is at last beginning to come round to my point of view",
+      "keyword": "round",
+      "answerPrefix": "I suppose he is at last",
+      "answerSuffix": "my point of view",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "beginning to come round to"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "to dawn on Alan how lucky he was"
+        "to dawn on Alan"
       ],
-      "displayAnswer": "to dawn on Alan how lucky he was",
-      "explanation": "It dawns on somebody that/how… nghĩa là ai bắt đầu nhận ra điều gì. Sau began dùng to dawn, còn on Alan xác định người nhận ra. How lucky he was là mệnh đề gián tiếp nên không đảo was trước he; không dùng Alan dawned vì cấu trúc này có chủ ngữ it.",
+      "displayAnswer": "to dawn on Alan",
+      "explanation": "It dawns on somebody that/how… nghĩa là ai bắt đầu nhận ra điều gì. Sau began dùng to dawn, còn on Alan xác định người nhận ra.\nTừ vựng trọng tâm: dawn on somebody",
       "prefix": "When he won the scholarship, it began",
-      "suffix": "",
-      "fullSentence": "When he won the scholarship, it began to dawn on Alan how lucky he was."
+      "suffix": "how lucky he was",
+      "fullSentence": "When he won the scholarship, it began to dawn on Alan how lucky he was",
+      "keyword": "dawn",
+      "answerPrefix": "When he won the scholarship, it began",
+      "answerSuffix": "how lucky he was",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to dawn on Alan"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "shed any light on how Jack made enough money",
-        "throw any light on how Jack made enough money",
-        "cast any light on how Jack made enough money",
-        "shed light on how Jack made enough money",
-        "throw light on how Jack made enough money",
-        "cast light on how Jack made enough money"
+        "shed any light on",
+        "throw any light on",
+        "cast any light on",
+        "shed light on",
+        "throw light on",
+        "cast light on"
       ],
-      "displayAnswer": "shed any light on how Jack made enough money / throw any light on how Jack made enough money / cast any light on how Jack made enough money / shed light on how Jack made enough money / throw light on how Jack made enough money / cast light on how Jack made enough money",
-      "explanation": "Shed/throw/cast light on something là giúp làm sáng tỏ một việc. Giữ enough money để thể hiện đủ tiền mua xe, không chỉ có kiếm tiền nói chung. Phần to buy that new sports car đã in sẵn nên chỗ trống dừng ở money; any tự nhiên trong câu hỏi nhưng có thể bỏ.",
+      "displayAnswer": "shed any light on / throw any light on / cast any light on / shed light on / throw light on / cast light on",
+      "explanation": "Shed/throw/cast light on something là giúp làm sáng tỏ một việc. Giữ enough money để thể hiện đủ tiền mua xe, không chỉ có kiếm tiền nói chung.\nTừ vựng trọng tâm: shed light on",
       "prefix": "Can you",
-      "suffix": "to buy that new sports car?",
-      "fullSentence": "Can you shed any light on how Jack made enough money to buy that new sports car?"
+      "suffix": "how Jack made enough money to buy that new sports car",
+      "fullSentence": "Can you shed any light on how Jack made enough money to buy that new sports car",
+      "keyword": "light",
+      "answerPrefix": "Can you",
+      "answerSuffix": "how Jack made enough money to buy that new sports car",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "shed any light on"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "spent the entire holiday complaining about the weather",
-        "spent her entire holiday complaining about the weather",
-        "complained about the weather during the entire holiday",
-        "complained about the weather throughout the entire holiday"
+        "spent the entire holiday complaining",
+        "spent her entire holiday complaining"
       ],
-      "displayAnswer": "spent the entire holiday complaining about the weather / spent her entire holiday complaining about the weather / complained about the weather during the entire holiday / complained about the weather throughout the entire holiday",
-      "explanation": "Entire nghĩa là toàn bộ, tương đương throughout the holiday. Có thể dùng spent the entire holiday + V-ing để diễn tả việc cô ấy liên tục than phiền suốt kỳ nghỉ. Complain about the weather là phàn nàn về thời tiết; phải giữ entire, không đổi thành entirely.",
+      "displayAnswer": "spent the entire holiday complaining / spent her entire holiday complaining",
+      "explanation": "Entire nghĩa là toàn bộ, tương đương throughout the holiday. Có thể dùng spent the entire holiday + V-ing để diễn tả việc cô ấy liên tục than phiền suốt kỳ nghỉ.",
       "prefix": "Anne",
-      "suffix": "",
-      "fullSentence": "Anne spent the entire holiday complaining about the weather."
+      "suffix": "about the weather",
+      "fullSentence": "Anne spent the entire holiday complaining about the weather",
+      "keyword": "entire",
+      "answerPrefix": "Anne",
+      "answerSuffix": "about the weather",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "spent the entire holiday complaining"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "ruled out the possibility of the government",
-        "ruled out any possibility of the government",
         "ruled out the government"
       ],
-      "displayAnswer": "ruled out the possibility of the government / ruled out any possibility of the government / ruled out the government",
-      "explanation": "Rule out nghĩa là loại trừ khả năng xảy ra. Ruled out the possibility of the government + V-ing giữ ý ông cho rằng chính phủ sẽ không gửi viện trợ. Phần sending financial aid… đã có sẵn nên không viết lặp. The government là chủ thể của sending, không phải người nhận viện trợ.",
+      "displayAnswer": "ruled out the government",
+      "explanation": "Rule out nghĩa là loại trừ khả năng xảy ra. Ruled out the possibility of the government + V-ing giữ ý ông cho rằng chính phủ sẽ không gửi viện trợ.",
       "prefix": "He",
-      "suffix": "sending financial aid to the region.",
-      "fullSentence": "He ruled out the possibility of the government sending financial aid to the region."
+      "suffix": "sending financial aid to the region",
+      "fullSentence": "He ruled out the government sending financial aid to the region",
+      "keyword": "ruled",
+      "answerPrefix": "He",
+      "answerSuffix": "sending financial aid to the region",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "ruled out the government"
     }
-  ]
+  ],
+  "contentRevision": "2026-10-21-word-limits"
 }

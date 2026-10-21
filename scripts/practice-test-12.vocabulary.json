@@ -10,7 +10,11 @@
       "usage": "not breathe a word of/about something to anyone",
       "example": "Don’t breathe a word of this to anyone.",
       "translation": "Đừng hé chuyện này với bất cứ ai.",
-      "family": "breathe (v): thở; breath (n): hơi thở; confidential (a): bí mật."
+      "family": "breathe (v): thở; breath (n): hơi thở; confidential (a): bí mật.",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 3,
@@ -21,7 +25,11 @@
       "usage": "give somebody a blank look",
       "example": "He gave me a blank look when I asked.",
       "translation": "Anh ấy nhìn tôi ngơ ngác khi tôi hỏi.",
-      "family": "blank (a/n): trống/chỗ trống; blankly (adv): ngơ ngác, vô cảm."
+      "family": "blank (a/n): trống/chỗ trống; blankly (adv): ngơ ngác, vô cảm.",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 6,
@@ -32,7 +40,11 @@
       "usage": "A takes priority over B",
       "example": "Safety takes priority over speed.",
       "translation": "An toàn được ưu tiên hơn tốc độ.",
-      "family": "priority (n): sự ưu tiên; prioritize (v): ưu tiên; prior (a): trước đó."
+      "family": "priority (n): sự ưu tiên; prioritize (v): ưu tiên; prior (a): trước đó.",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 7,
@@ -43,7 +55,11 @@
       "usage": "show solidarity with somebody",
       "example": "The team showed great solidarity.",
       "translation": "Đội thể hiện sự đoàn kết cao.",
-      "family": "solid (a): vững chắc; solidarity (n); unity (n): sự thống nhất."
+      "family": "solid (a): vững chắc; solidarity (n); unity (n): sự thống nhất.",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 13,
@@ -54,7 +70,11 @@
       "usage": "prohibitive costs/prices; prohibitively expensive",
       "example": "The cost of repairs was prohibitive.",
       "translation": "Chi phí sửa chữa cao đến mức không thể chấp nhận.",
-      "family": "prohibit (v): cấm; prohibition (n): lệnh cấm; prohibitively (adv)."
+      "family": "prohibit (v): cấm; prohibition (n): lệnh cấm; prohibitively (adv).",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -65,7 +85,11 @@
       "usage": "increase/reduce spending power",
       "example": "Inflation reduced their spending power.",
       "translation": "Lạm phát làm giảm sức mua của họ.",
-      "family": "spend → spent → spent; expenditure (n): chi tiêu; purchasing power: sức mua."
+      "family": "spend → spent → spent; expenditure (n): chi tiêu; purchasing power: sức mua.",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 17,
@@ -76,7 +100,11 @@
       "usage": "commit something to memory",
       "example": "She committed the poem to memory.",
       "translation": "Cô ấy học thuộc bài thơ.",
-      "family": "commit → committed/committing; memory (n): trí nhớ; memorize (v): ghi nhớ."
+      "family": "commit → committed/committing; memory (n): trí nhớ; memorize (v): ghi nhớ.",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 18,
@@ -87,7 +115,11 @@
       "usage": "order troops to fall back",
       "example": "The captain ordered the soldiers to fall back.",
       "translation": "Đội trưởng ra lệnh cho binh lính rút lui.",
-      "family": "fall → fell → fallen; retreat (v/n): rút lui/sự rút lui."
+      "family": "fall → fell → fallen; retreat (v/n): rút lui/sự rút lui.",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 19,
@@ -98,7 +130,11 @@
       "usage": "always have one’s nose in a book",
       "example": "She always has her nose in a book.",
       "translation": "Cô ấy lúc nào cũng chăm chú đọc sách.",
-      "family": "nose (n): mũi; bookworm (n): mọt sách; avid reader: người rất ham đọc."
+      "family": "nose (n): mũi; bookworm (n): mọt sách; avid reader: người rất ham đọc.",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -109,7 +145,11 @@
       "usage": "take on work/responsibility",
       "example": "Don’t take on more work than you can manage.",
       "translation": "Đừng nhận nhiều việc hơn khả năng xử lý.",
-      "family": "take → took → taken; taking; workload (n): khối lượng công việc."
+      "family": "take → took → taken; taking; workload (n): khối lượng công việc.",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 21,
@@ -120,7 +160,11 @@
       "usage": "consider something in the context of something",
       "example": "The decision must be seen in the context of falling demand.",
       "translation": "Cần nhìn quyết định trong bối cảnh nhu cầu giảm.",
-      "family": "context (n): bối cảnh; contextual (a); contextualize (v): đặt vào bối cảnh."
+      "family": "context (n): bối cảnh; contextual (a); contextualize (v): đặt vào bối cảnh.",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 22,
@@ -131,7 +175,11 @@
       "usage": "a manifestation of support/anger",
       "example": "The gift was a manifestation of their support.",
       "translation": "Món quà là một biểu hiện của sự ủng hộ từ họ.",
-      "family": "manifest (v/a): thể hiện/rõ ràng; manifestation (n); manifestly (adv): rõ ràng."
+      "family": "manifest (v/a): thể hiện/rõ ràng; manifestation (n); manifestly (adv): rõ ràng.",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -142,7 +190,11 @@
       "usage": "keep somebody in the dark about something",
       "example": "They kept us in the dark about the changes.",
       "translation": "Họ không cho chúng tôi biết về những thay đổi.",
-      "family": "dark (a/n): tối/bóng tối; unaware (a): không biết; awareness (n): nhận thức."
+      "family": "dark (a/n): tối/bóng tối; unaware (a): không biết; awareness (n): nhận thức.",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 25,
@@ -153,7 +205,11 @@
       "usage": "have/keep your wits about you",
       "example": "You need to have your wits about you in a busy market.",
       "translation": "Bạn cần tỉnh táo, chú ý khi ở chợ đông.",
-      "family": "wit (n): sự nhanh trí/hài hước; witty (a): dí dỏm; witless: ngớ ngẩn."
+      "family": "wit (n): sự nhanh trí/hài hước; witty (a): dí dỏm; witless: ngớ ngẩn.",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 28,
@@ -164,7 +220,11 @@
       "usage": "distort the truth/facts/an image",
       "example": "The report distorted the facts.",
       "translation": "Báo cáo đã bóp méo các sự kiện.",
-      "family": "distortion (n): sự méo mó/sai lệch; distorted (a): bị bóp méo."
+      "family": "distortion (n): sự méo mó/sai lệch; distorted (a): bị bóp méo.",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 29,
@@ -175,7 +235,11 @@
       "usage": "have/show great potential; potential for growth",
       "example": "The young musician has great potential.",
       "translation": "Nhạc sĩ trẻ có tiềm năng lớn.",
-      "family": "potentially (adv): có khả năng; develop/fulfil one’s potential: phát huy tiềm năng."
+      "family": "potentially (adv): có khả năng; develop/fulfil one’s potential: phát huy tiềm năng.",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 30,
@@ -186,7 +250,11 @@
       "usage": "be deprived of sleep/opportunities",
       "example": "The students were deprived of sleep.",
       "translation": "Các học sinh bị thiếu ngủ.",
-      "family": "deprive (v): tước đi; deprivation (n): sự thiếu thốn; sleep-deprived: thiếu ngủ."
+      "family": "deprive (v): tước đi; deprivation (n): sự thiếu thốn; sleep-deprived: thiếu ngủ.",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 31,
@@ -197,7 +265,11 @@
       "usage": "waltz through an exam/audition",
       "example": "She waltzed through the interview.",
       "translation": "Cô ấy vượt qua cuộc phỏng vấn rất dễ dàng.",
-      "family": "waltz (n/v): điệu van/nhảy van; effortless (a): dễ dàng, không tốn sức."
+      "family": "waltz (n/v): điệu van/nhảy van; effortless (a): dễ dàng, không tốn sức.",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 33,
@@ -208,7 +280,11 @@
       "usage": "speak my/her/his mind",
       "example": "She is never afraid to speak her mind.",
       "translation": "Cô ấy không bao giờ ngại nói thẳng suy nghĩ.",
-      "family": "speak → spoke → spoken; outspoken (a): thẳng thắn; candid (a): thật lòng."
+      "family": "speak → spoke → spoken; outspoken (a): thẳng thắn; candid (a): thật lòng.",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 34,
@@ -219,7 +295,11 @@
       "usage": "be/stand in awe of somebody/something",
       "example": "We were in awe of her achievements.",
       "translation": "Chúng tôi vô cùng kính phục các thành tựu của cô ấy.",
-      "family": "awe (n/v); awe-inspiring (a): đáng kinh ngạc/kính phục; awestruck (a)."
+      "family": "awe (n/v); awe-inspiring (a): đáng kinh ngạc/kính phục; awestruck (a).",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 35,
@@ -230,7 +310,11 @@
       "usage": "lend somebody a sympathetic ear",
       "example": "He lent me a sympathetic ear.",
       "translation": "Anh ấy lắng nghe tôi với sự cảm thông.",
-      "family": "sympathy (n): sự cảm thông; sympathetic (a); sympathetically (adv)."
+      "family": "sympathy (n): sự cảm thông; sympathetic (a); sympathetically (adv).",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 38,
@@ -241,7 +325,11 @@
       "usage": "student input; provide input on something",
       "example": "We welcome input from every student.",
       "translation": "Chúng tôi hoan nghênh ý kiến của mọi học sinh.",
-      "family": "input (n/v): đầu vào/nhập; output (n/v): đầu ra/xuất; contribution: đóng góp."
+      "family": "input (n/v): đầu vào/nhập; output (n/v): đầu ra/xuất; contribution: đóng góp.",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 40,
@@ -252,7 +340,11 @@
       "usage": "literary genres/works/criticism",
       "example": "The course covers several literary genres.",
       "translation": "Khóa học bao quát một số thể loại văn học.",
-      "family": "literature (n): văn học; literate (a); literacy (n): khả năng đọc viết; literal (a)."
+      "family": "literature (n): văn học; literate (a); literacy (n): khả năng đọc viết; literal (a).",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 43,
@@ -263,7 +355,11 @@
       "usage": "independence from somebody; gain independence",
       "example": "The trip gave her a sense of independence.",
       "translation": "Chuyến đi cho cô ấy cảm giác tự chủ.",
-      "family": "independent (a); independently (adv); dependent: phụ thuộc; depend on: phụ thuộc vào."
+      "family": "independent (a); independently (adv); dependent: phụ thuộc; depend on: phụ thuộc vào.",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 45,
@@ -274,7 +370,11 @@
       "usage": "offer/provide greater flexibility",
       "example": "Working from home gives her more flexibility.",
       "translation": "Làm việc ở nhà giúp cô ấy linh hoạt hơn.",
-      "family": "flexible (a); flexibly (adv); inflexible (a): cứng nhắc; flexibility (n)."
+      "family": "flexible (a); flexibly (adv); inflexible (a): cứng nhắc; flexibility (n).",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 55,
@@ -285,7 +385,11 @@
       "usage": "an accomplished musician/athlete",
       "example": "He is an accomplished pianist.",
       "translation": "Anh ấy là một nghệ sĩ piano tài giỏi.",
-      "family": "accomplish (v): hoàn thành; accomplishment (n): thành tựu/kỹ năng."
+      "family": "accomplish (v): hoàn thành; accomplishment (n): thành tựu/kỹ năng.",
+      "teacherSelected": true,
+      "questions": [
+        55
+      ]
     },
     {
       "question": 84,
@@ -296,7 +400,11 @@
       "usage": "make a good/lasting impression on somebody",
       "example": "Her confidence made a strong impression on us.",
       "translation": "Sự tự tin của cô ấy gây ấn tượng mạnh với chúng tôi.",
-      "family": "impress (v); impression (n); impressive: gây ấn tượng; impressed: cảm thấy ấn tượng."
+      "family": "impress (v); impression (n); impressive: gây ấn tượng; impressed: cảm thấy ấn tượng.",
+      "teacherSelected": true,
+      "questions": [
+        84
+      ]
     },
     {
       "question": 86,
@@ -307,7 +415,11 @@
       "usage": "give/receive a standing ovation",
       "example": "The orchestra received a standing ovation.",
       "translation": "Dàn nhạc nhận được tràng vỗ tay tán thưởng khi khán giả đứng dậy.",
-      "family": "ovation (n): sự hoan hô; applaud (v): vỗ tay; applause (n): tiếng vỗ tay."
+      "family": "ovation (n): sự hoan hô; applaud (v): vỗ tay; applause (n): tiếng vỗ tay.",
+      "teacherSelected": true,
+      "questions": [
+        86
+      ]
     },
     {
       "question": 94,
@@ -318,7 +430,11 @@
       "usage": "talk somebody out of doing something",
       "example": "She talked me out of quitting.",
       "translation": "Cô ấy thuyết phục tôi đừng bỏ cuộc.",
-      "family": "persuade somebody not to do: thuyết phục đừng làm; persuasion (n): sự thuyết phục."
+      "family": "persuade somebody not to do: thuyết phục đừng làm; persuasion (n): sự thuyết phục.",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ]
     },
     {
       "question": 96,
@@ -329,7 +445,11 @@
       "usage": "make little difference to an opinion/result",
       "example": "His excuse made little difference to her opinion.",
       "translation": "Lời giải thích của anh ấy hầu như không làm cô ấy đổi ý.",
-      "family": "differ (v); different (adj); difference (n)"
+      "family": "differ (v); different (adj); difference (n)",
+      "teacherSelected": true,
+      "questions": [
+        96
+      ]
     }
   ]
 }

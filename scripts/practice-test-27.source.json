@@ -1095,33 +1095,44 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "was driving at such a high speed that there was no way he was going to stop",
-        "was driving at such a fast speed that there was no way he was going to stop",
-        "was driving at such high speed that there was no way he was going to stop",
-        "was driving at such a fast pace that there was no way he was going to stop"
+        "at such a high speed",
+        "at such a fast speed",
+        "at such high speed",
+        "at such a fast pace"
       ],
-      "displayAnswer": "was driving at such a high speed that there was no way he was going to stop / was driving at such a fast speed that there was no way he was going to stop / was driving at such high speed that there was no way he was going to stop / was driving at such a fast pace that there was no way he was going to stop",
-      "prefix": "The drunken man",
-      "suffix": "",
-      "fullSentence": "The drunken man was driving at such a high speed that there was no way he was going to stop.",
-      "explanation": "Đổi so fast that thành at such a high speed that: such bổ nghĩa cụm danh từ thay cho so bổ nghĩa trạng từ fast. Giữ was driving và toàn bộ kết quả không thể dừng. Such high speed cũng được dùng khi speed mang nghĩa không đếm được."
+      "displayAnswer": "at such a high speed / at such a fast speed / at such high speed / at such a fast pace",
+      "prefix": "The drunken man was driving",
+      "suffix": "that there was no way he was going to stop",
+      "fullSentence": "The drunken man was driving at such a high speed that there was no way he was going to stop",
+      "explanation": "Đổi so fast that thành at such a high speed that: such bổ nghĩa cụm danh từ thay cho so bổ nghĩa trạng từ fast. Giữ was driving và toàn bộ kết quả không thể dừng.",
+      "keyword": "SUCH",
+      "answerPrefix": "The drunken man was driving",
+      "answerSuffix": "that there was no way he was going to stop",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "at such a high speed"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "weighed up the pros and cons, and I’ve decided not to go",
-        "weighed the pros and cons, and I’ve decided not to go",
-        "weighed up the advantages and disadvantages, and I’ve decided not to go",
-        "weighed the advantages and disadvantages, and I’ve decided not to go",
-        "weighed up the pros and cons and decided not to go"
+        "weighed up the pros and cons",
+        "weighed the pros and cons",
+        "weighed up the advantages and disadvantages",
+        "weighed the advantages and disadvantages"
       ],
-      "displayAnswer": "weighed up the pros and cons, and I’ve decided not to go / weighed the pros and cons, and I’ve decided not to go / weighed up the advantages and disadvantages, and I’ve decided not to go / weighed the advantages and disadvantages, and I’ve decided not to go / weighed up the pros and cons and decided not to go",
-      "prefix": "I’ve",
-      "suffix": "",
-      "fullSentence": "I’ve weighed up the pros and cons, and I’ve decided not to go.",
-      "explanation": "Weigh up/weigh the pros and cons là cân nhắc mặt lợi và mặt hại. Có thể giữ advantages and disadvantages vì cùng nghĩa. I've đã cho nên chỉ điền weighed ...; quyết định cuối vẫn là not to go, không được làm mất phủ định."
+      "displayAnswer": "weighed up the pros and cons / weighed the pros and cons / weighed up the advantages and disadvantages / weighed the advantages and disadvantages",
+      "prefix": "I've",
+      "suffix": ", and I've decided not to go",
+      "fullSentence": "I've weighed up the pros and cons, and I've decided not to go",
+      "explanation": "Weigh up/weigh the pros and cons là cân nhắc mặt lợi và mặt hại. Có thể giữ advantages and disadvantages vì cùng nghĩa.",
+      "keyword": "WEIGHED",
+      "answerPrefix": "I've",
+      "answerSuffix": ", and I've decided not to go",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "weighed up the pros and cons"
     },
     {
       "globalNumber": 93,
@@ -1132,55 +1143,74 @@
       ],
       "displayAnswer": "butterflies in my stomach",
       "prefix": "I had",
-      "suffix": "while waiting to give my first speech.",
-      "fullSentence": "I had butterflies in my stomach while waiting to give my first speech.",
-      "explanation": "Have butterflies in one’s stomach là cảm giác hồi hộp trước một sự kiện quan trọng. Chủ ngữ I đi với my, sự việc quá khứ nên had đã có sẵn. Chỉ điền butterflies in my stomach; không thêm had hoặc đổi stomach thành heart."
+      "suffix": "while waiting to give my first speech",
+      "fullSentence": "I had butterflies in my stomach while waiting to give my first speech",
+      "explanation": "Have butterflies in one’s stomach là cảm giác hồi hộp trước một sự kiện quan trọng. Chủ ngữ I đi với my, sự việc quá khứ nên had đã có sẵn.",
+      "keyword": "BUTTERFLIES",
+      "answerPrefix": "I had",
+      "answerSuffix": "while waiting to give my first speech",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "butterflies in my stomach"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "two laptops, neither of which I liked very much",
-        "two laptops, neither of which I particularly liked",
-        "two laptops, but I liked neither of them very much",
-        "two laptops, but I particularly liked neither of them"
+        "neither of which I liked",
+        "but I liked neither of them"
       ],
-      "displayAnswer": "two laptops, neither of which I liked very much / two laptops, neither of which I particularly liked / two laptops, but I liked neither of them very much / two laptops, but I particularly liked neither of them",
-      "prefix": "The assistant showed me",
-      "suffix": "",
-      "fullSentence": "The assistant showed me two laptops, neither of which I liked very much.",
-      "explanation": "Neither of which nối mệnh đề quan hệ nói cả hai chiếc đều không được thích lắm. Liked very much/particularly liked giữ mức độ của didn't particularly like, không biến thành hoàn toàn không thích. Nếu dùng but, viết I liked neither of them; không đảo thành neither of them I liked trong cấu trúc thông thường."
+      "displayAnswer": "neither of which I liked / but I liked neither of them",
+      "prefix": "The assistant showed me two laptops,",
+      "suffix": "very much",
+      "fullSentence": "The assistant showed me two laptops, neither of which I liked very much",
+      "explanation": "Neither of which nối mệnh đề quan hệ nói cả hai chiếc đều không được thích lắm. Liked very much/particularly liked giữ mức độ của didn't particularly like, không biến thành hoàn toàn không thích.",
+      "keyword": "NEITHER",
+      "answerPrefix": "The assistant showed me two laptops,",
+      "answerSuffix": "very much",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "neither of which I liked"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "would sooner I hadn’t taken her motorbike to school yesterday",
-        "would sooner I had not taken her motorbike to school yesterday"
+        "would sooner I hadn't taken",
+        "would sooner I had not taken"
       ],
-      "displayAnswer": "would sooner I hadn’t taken her motorbike to school yesterday / would sooner I had not taken her motorbike to school yesterday",
+      "displayAnswer": "would sooner I hadn't taken / would sooner I had not taken",
       "prefix": "My sister",
-      "suffix": "",
-      "fullSentence": "My sister would sooner I hadn’t taken her motorbike to school yesterday.",
-      "explanation": "Would sooner + chủ ngữ + quá khứ hoàn thành diễn tả mong muốn khác với việc đã xảy ra trong quá khứ. Câu gốc xác nhận tôi đã lấy xe và chị muốn tôi đừng làm thế. Hadn't taken giữ đúng sự tiếc nuối; didn't take sẽ dễ chuyển sang mong muốn hiện tại/tương lai."
+      "suffix": "her motorbike to school yesterday",
+      "fullSentence": "My sister would sooner I hadn't taken her motorbike to school yesterday",
+      "explanation": "Would sooner + chủ ngữ + quá khứ hoàn thành diễn tả mong muốn khác với việc đã xảy ra trong quá khứ. Câu gốc xác nhận tôi đã lấy xe và chị muốn tôi đừng làm thế.",
+      "keyword": "SOONER",
+      "answerPrefix": "My sister",
+      "answerSuffix": "her motorbike to school yesterday",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "would sooner I hadn't taken"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "on a larger scale than any previous rock festival",
-        "on a scale never seen before",
-        "on a scale that has never been seen before",
-        "on a bigger scale than any previous rock festival"
+        "on a scale never seen before"
       ],
-      "displayAnswer": "on a larger scale than any previous rock festival / on a scale never seen before / on a scale that has never been seen before / on a bigger scale than any previous rock festival",
+      "displayAnswer": "on a scale never seen before",
       "prefix": "This year's rock festival is",
-      "suffix": "in this country.",
-      "fullSentence": "This year's rock festival is on a larger scale than any previous rock festival in this country.",
-      "explanation": "On a larger scale than any previous ... diễn tả quy mô lớn hơn mọi lễ hội trước. On a scale never seen before cũng đúng, nhưng bắt buộc có ý chưa từng/so sánh lớn hơn. On a scale seen before sẽ đảo nghĩa, nên không được bỏ never khỏi đáp án đó."
+      "suffix": "in this country",
+      "fullSentence": "This year's rock festival is on a scale never seen before in this country",
+      "explanation": "On a larger scale than any previous … diễn tả quy mô lớn hơn mọi lễ hội trước. On a scale never seen before cũng đúng, nhưng bắt buộc có ý chưa từng/so sánh lớn hơn.",
+      "keyword": "SCALE",
+      "answerPrefix": "This year's rock festival is",
+      "answerSuffix": "in this country",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "on a scale never seen before"
     },
     {
       "globalNumber": 97,
@@ -1196,58 +1226,77 @@
       ],
       "displayAnswer": "be started again from scratch / be restarted from scratch / be started from scratch / should be started again from scratch / should be restarted from scratch / should be started from scratch",
       "prefix": "It was Peter's suggestion that the project",
-      "suffix": "to ensure perfection.",
-      "fullSentence": "It was Peter's suggestion that the project be started again from scratch to ensure perfection.",
-      "explanation": "From scratch là từ đầu hoàn toàn. Sau suggestion that có thể dùng bị động giả định be started/restarted hoặc should be started. Project là thứ được thực hiện nên cần bị động; again/restarted thể hiện làm lại, còn from scratch đã nhấn mạnh bắt đầu lại từ đầu trong ngữ cảnh."
+      "suffix": "to ensure perfection",
+      "fullSentence": "It was Peter's suggestion that the project be started again from scratch to ensure perfection",
+      "explanation": "From scratch là từ đầu hoàn toàn. Sau suggestion that có thể dùng bị động giả định be started/restarted hoặc should be started.",
+      "keyword": "SCRATCH",
+      "answerPrefix": "It was Peter's suggestion that the project",
+      "answerSuffix": "to ensure perfection",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "be started again from scratch"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "circumstances should you get the boss’s back up",
-        "circumstances should you put the boss’s back up",
-        "circumstances must you get the boss’s back up",
-        "circumstances should you get the boss's back up",
-        "circumstances should you put the boss's back up"
+        "get the boss's back up",
+        "put the boss's back up"
       ],
-      "displayAnswer": "circumstances should you get the boss’s back up / circumstances should you put the boss’s back up / circumstances must you get the boss’s back up / circumstances should you get the boss's back up / circumstances should you put the boss's back up",
-      "prefix": "Under no",
-      "suffix": "when we ask for a rise.",
-      "fullSentence": "Under no circumstances should you get the boss’s back up when we ask for a rise.",
-      "explanation": "Under no circumstances đặt đầu câu yêu cầu đảo trợ động từ trước chủ ngữ: should you/must you. Get/put someone's back up nghĩa là làm người đó khó chịu. Phải giữ phủ định trong Under no, không thêm not sau should vì sẽ làm sai ý cấm gây bực."
+      "displayAnswer": "get the boss's back up / put the boss's back up",
+      "prefix": "Under no circumstances should you",
+      "suffix": "when we ask for a rise",
+      "fullSentence": "Under no circumstances should you get the boss's back up when we ask for a rise",
+      "explanation": "Under no circumstances đặt đầu câu yêu cầu đảo trợ động từ trước chủ ngữ: should you/must you. Get/put someone's back up nghĩa là làm người đó khó chịu.",
+      "keyword": "BACK",
+      "answerPrefix": "Under no circumstances should you",
+      "answerSuffix": "when we ask for a rise",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "get the boss's back up"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "of money, she went on a shopping spree",
-        "of money, she embarked on a shopping spree"
+        "went on a shopping spree",
+        "embarked on a shopping spree"
       ],
-      "displayAnswer": "of money, she went on a shopping spree / of money, she embarked on a shopping spree",
-      "prefix": "Despite her lack",
-      "suffix": "with her credit card.",
-      "fullSentence": "Despite her lack of money, she went on a shopping spree with her credit card.",
-      "explanation": "Despite + cụm danh từ diễn tả nhượng bộ: dù thiếu tiền vẫn mua sắm. Lack of money hoàn tất danh từ lack; go on a shopping spree là mua sắm nhiều theo hứng. Không viết despite of, và with her credit card đã cho nên không cần lặp trong ô trả lời."
+      "displayAnswer": "went on a shopping spree / embarked on a shopping spree",
+      "prefix": "Despite her lack of money, she",
+      "suffix": "with her credit card",
+      "fullSentence": "Despite her lack of money, she went on a shopping spree with her credit card",
+      "explanation": "Despite + cụm danh từ diễn tả nhượng bộ: dù thiếu tiền vẫn mua sắm. Lack of money hoàn tất danh từ lack; go on a shopping spree là mua sắm nhiều theo hứng.",
+      "keyword": "SPREE",
+      "answerPrefix": "Despite her lack of money, she",
+      "answerSuffix": "with her credit card",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "went on a shopping spree"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "is amazing is how she is managing to keep her chin up",
-        "is amazing is how she’s managing to keep her chin up",
-        "amazes me is how she is managing to keep her chin up",
-        "is amazing is how she is managing to keep her spirits up"
+        "to keep her chin up",
+        "to keep her spirits up"
       ],
-      "displayAnswer": "is amazing is how she is managing to keep her chin up / is amazing is how she’s managing to keep her chin up / amazes me is how she is managing to keep her chin up / is amazing is how she is managing to keep her spirits up",
-      "prefix": "What",
-      "suffix": "during this difficult time.",
-      "fullSentence": "What is amazing is how she is managing to keep her chin up during this difficult time.",
-      "explanation": "Keep one's chin up hoặc keep one's spirits up là duy trì sự tích cực, tinh thần vững vàng khi khó khăn. Câu chẻ What is amazing is how ... nhấn mạnh điều đáng ngạc nhiên. Giữ is managing để thể hiện đang nỗ lực duy trì trạng thái, không chỉ một thói quen chung."
+      "displayAnswer": "to keep her chin up / to keep her spirits up",
+      "prefix": "What is amazing is how she is managing",
+      "suffix": "during this difficult time",
+      "fullSentence": "What is amazing is how she is managing to keep her chin up during this difficult time",
+      "explanation": "Keep one's chin up hoặc keep one's spirits up là duy trì sự tích cực, tinh thần vững vàng khi khó khăn. Câu chẻ What is amazing is how … nhấn mạnh điều đáng ngạc nhiên.",
+      "keyword": "UP",
+      "answerPrefix": "What is amazing is how she is managing",
+      "answerSuffix": "during this difficult time",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to keep her chin up"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

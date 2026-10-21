@@ -10,7 +10,11 @@
       "usage": "the unemployed have/need ...",
       "example": "The centre offers training for the unemployed.",
       "translation": "Trung tâm cung cấp đào tạo cho người thất nghiệp.",
-      "family": "employ (v); employment (n); unemployed (adj); unemployment (n)"
+      "family": "employ (v); employment (n); unemployed (adj); unemployment (n)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 5,
@@ -21,7 +25,11 @@
       "usage": "an elaborate system/plan; elaborate on an idea",
       "example": "They designed an elaborate system of signals.",
       "translation": "Họ thiết kế một hệ thống tín hiệu tinh vi.",
-      "family": "elaborate (adj/v); elaborately (adv); elaboration (n)"
+      "family": "elaborate (adj/v); elaborately (adv); elaboration (n)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 10,
@@ -32,7 +40,11 @@
       "usage": "a dependable person/source/service",
       "example": "He is a dependable colleague who keeps his promises.",
       "translation": "Anh ấy là đồng nghiệp đáng tin, luôn giữ lời.",
-      "family": "depend (v); dependable (adj); dependability (n); dependent (adj, đối chiếu)"
+      "family": "depend (v); dependable (adj); dependability (n); dependent (adj, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 11,
@@ -43,7 +55,11 @@
       "usage": "visit/check/call every so often",
       "example": "I check the timetable every so often.",
       "translation": "Thỉnh thoảng tôi kiểm tra thời khóa biểu.",
-      "family": "often (adv); occasionally (adv); frequency (n)"
+      "family": "often (adv); occasionally (adv); frequency (n)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 12,
@@ -54,7 +70,11 @@
       "usage": "during prime time; a prime-time programme",
       "example": "The drama was moved to a prime-time slot.",
       "translation": "Bộ phim được chuyển sang khung giờ vàng.",
-      "family": "prime (adj); prime time (n); prime-time (adj)"
+      "family": "prime (adj); prime time (n); prime-time (adj)",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 13,
@@ -65,7 +85,11 @@
       "usage": "A and B are X and Y, respectively",
       "example": "Mai and Lan scored eight and nine, respectively.",
       "translation": "Mai và Lan lần lượt đạt tám và chín điểm.",
-      "family": "respective (adj); respectively (adv); respectfully (adv, đối chiếu)"
+      "family": "respective (adj); respectively (adv); respectfully (adv, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -76,7 +100,11 @@
       "usage": "agree to split the difference",
       "example": "We split the difference and agreed on fifty dollars.",
       "translation": "Chúng tôi chọn mức trung gian và thống nhất năm mươi đô la.",
-      "family": "split – split – split; difference (n); compromise (n/v)"
+      "family": "split – split – split; difference (n); compromise (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 15,
@@ -87,7 +115,11 @@
       "usage": "a hot favourite to win/for the title",
       "example": "She was the hot favourite to win the contest.",
       "translation": "Cô ấy là ứng viên được đánh giá có khả năng thắng cuộc thi cao nhất.",
-      "family": "favour/favor (n/v); favourite/favorite (n/adj)"
+      "family": "favour/favor (n/v); favourite/favorite (n/adj)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -98,7 +130,11 @@
       "usage": "a future/chance hangs by a thread",
       "example": "The project's future was hanging by a thread.",
       "translation": "Tương lai của dự án đang rất bấp bênh.",
-      "family": "hang – hung – hung; thread (n); precarious (adj)"
+      "family": "hang – hung – hung; thread (n); precarious (adj)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 17,
@@ -109,7 +145,11 @@
       "usage": "rise/rose to the occasion",
       "example": "Despite her nerves, she rose to the occasion.",
       "translation": "Dù lo lắng, cô ấy vẫn thể hiện rất tốt khi cần.",
-      "family": "rise – rose – risen; occasion (n); challenge (n/v)"
+      "family": "rise – rose – risen; occasion (n); challenge (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 18,
@@ -120,7 +160,11 @@
       "usage": "Don't count your chickens before they hatch.",
       "example": "We haven't won yet, so don't count your chickens before they hatch.",
       "translation": "Chúng ta chưa thắng, nên đừng vội tính trước thành quả.",
-      "family": "hatch (v); outcome (n); expectation (n)"
+      "family": "hatch (v); outcome (n); expectation (n)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 19,
@@ -131,7 +175,11 @@
       "usage": "turn up late/early; turn up at a party",
       "example": "Only five people turned up for the meeting.",
       "translation": "Chỉ năm người đến dự cuộc họp.",
-      "family": "turn (v/n); arrival (n); arrive (v)"
+      "family": "turn (v/n); arrival (n); arrive (v)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -142,7 +190,11 @@
       "usage": "fall back on a plan/savings/support",
       "example": "We fell back on our original indoor plan.",
       "translation": "Chúng tôi quay lại phương án trong nhà ban đầu.",
-      "family": "fall – fell – fallen; fallback (n/adj)"
+      "family": "fall – fell – fallen; fallback (n/adj)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 21,
@@ -153,7 +205,11 @@
       "usage": "take/get/give credit for an achievement",
       "example": "She refused to take all the credit for the project.",
       "translation": "Cô ấy từ chối nhận hết công lao của dự án.",
-      "family": "credit (n/v); creditable (adj); recognition (n)"
+      "family": "credit (n/v); creditable (adj); recognition (n)",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 22,
@@ -164,7 +220,11 @@
       "usage": "Why don't you mind your own business?",
       "example": "He told the nosy neighbour to mind his own business.",
       "translation": "Anh ấy bảo người hàng xóm tò mò đừng xen vào chuyện của mình.",
-      "family": "mind (v/n); business (n); interference (n)"
+      "family": "mind (v/n); business (n); interference (n)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -175,7 +235,11 @@
       "usage": "as the day/evening wears on",
       "example": "As the evening wore on, the children became tired.",
       "translation": "Khi buổi tối kéo dài, bọn trẻ bắt đầu mệt.",
-      "family": "wear – wore – worn; elapsed (participle, đối chiếu)"
+      "family": "wear – wore – worn; elapsed (participle, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -186,7 +250,11 @@
       "usage": "a considerable amount/number; considerable effort",
       "example": "The task required considerable effort.",
       "translation": "Nhiệm vụ đòi hỏi nỗ lực đáng kể.",
-      "family": "consider (v); considerable (adj); considerably (adv); considerate (adj, đối chiếu)"
+      "family": "consider (v); considerable (adj); considerably (adv); considerate (adj, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 26,
@@ -197,7 +265,11 @@
       "usage": "strike gold with an idea/product",
       "example": "The designer struck gold with her first collection.",
       "translation": "Nhà thiết kế đạt thành công lớn ngay với bộ sưu tập đầu tiên.",
-      "family": "strike – struck – struck; success (n); successful (adj)"
+      "family": "strike – struck – struck; success (n); successful (adj)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 27,
@@ -208,7 +280,11 @@
       "usage": "drain energy/resources; feel drained",
       "example": "The long journey drained my energy.",
       "translation": "Chuyến đi dài làm tôi kiệt sức.",
-      "family": "drain (n/v); drained (adj); draining (adj); drainage (n)"
+      "family": "drain (n/v); drained (adj); draining (adj); drainage (n)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -219,7 +295,11 @@
       "usage": "an award in recognition of someone's work",
       "example": "She received an award in recognition of her service.",
       "translation": "Cô ấy nhận giải thưởng ghi nhận những đóng góp của mình.",
-      "family": "recognize/recognise (v); recognition (n); recognized/recognised (adj)"
+      "family": "recognize/recognise (v); recognition (n); recognized/recognised (adj)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 30,
@@ -230,7 +310,11 @@
       "usage": "affect people/results/decisions",
       "example": "The delay affected our plans.",
       "translation": "Sự chậm trễ ảnh hưởng đến kế hoạch của chúng tôi.",
-      "family": "affect (v); affected (participle); effect (n/v, đối chiếu)"
+      "family": "affect (v); affected (participle); effect (n/v, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 31,
@@ -241,7 +325,11 @@
       "usage": "set/have unrealistic expectations",
       "example": "Expecting a perfect result immediately is unrealistic.",
       "translation": "Mong có kết quả hoàn hảo ngay lập tức là thiếu thực tế.",
-      "family": "real (adj); realistic (adj); realistically (adv); unrealistic (adj)"
+      "family": "real (adj); realistic (adj); realistically (adv); unrealistic (adj)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 32,
@@ -252,7 +340,11 @@
       "usage": "in desperation; in one's desperation to do something",
       "example": "In desperation, he called everyone he knew.",
       "translation": "Trong lúc tuyệt vọng, anh ấy gọi tất cả những người mình quen.",
-      "family": "desperate (adj); desperately (adv); desperation (n)"
+      "family": "desperate (adj); desperately (adv); desperation (n)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 37,
@@ -263,7 +355,11 @@
       "usage": "expertise in a field; technical expertise",
       "example": "She has considerable expertise in editing.",
       "translation": "Cô ấy có chuyên môn đáng kể trong việc biên tập.",
-      "family": "expert (n/adj); expertly (adv); expertise (n); expertness (n, ít thông dụng)"
+      "family": "expert (n/adj); expertly (adv); expertise (n); expertness (n, ít thông dụng)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 41,
@@ -274,7 +370,11 @@
       "usage": "become a celebrity; a local celebrity",
       "example": "The chef became a local celebrity.",
       "translation": "Đầu bếp trở thành một người nổi tiếng ở địa phương.",
-      "family": "celebrate (v); celebrated (adj); celebrity (n); celebration (n, đối chiếu)"
+      "family": "celebrate (v); celebrated (adj); celebrity (n); celebration (n, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 43,
@@ -285,7 +385,11 @@
       "usage": "disastrous results/consequences",
       "example": "My first attempt at baking was disastrous.",
       "translation": "Lần thử làm bánh đầu tiên của tôi thất bại thảm hại.",
-      "family": "disaster (n); disastrous (adj); disastrously (adv)"
+      "family": "disaster (n); disastrous (adj); disastrously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 52,
@@ -296,7 +400,11 @@
       "usage": "while away the time/hours doing something",
       "example": "We whiled away the afternoon listening to music.",
       "translation": "Chúng tôi thư thả nghe nhạc suốt buổi chiều.",
-      "family": "while (v/n/conjunction); whiled (past); leisure (n)"
+      "family": "while (v/n/conjunction); whiled (past); leisure (n)",
+      "teacherSelected": true,
+      "questions": [
+        52
+      ]
     },
     {
       "question": 55,
@@ -307,7 +415,11 @@
       "usage": "roads choked (up) with traffic",
       "example": "The narrow lane was choked up with traffic.",
       "translation": "Con đường hẹp bị xe cộ làm ùn tắc.",
-      "family": "choke (v); choking (adj/participle); congestion (n)"
+      "family": "choke (v); choking (adj/participle); congestion (n)",
+      "teacherSelected": true,
+      "questions": [
+        55
+      ]
     },
     {
       "question": 57,
@@ -318,7 +430,11 @@
       "usage": "a dispute/problem comes to a head",
       "example": "The disagreement came to a head at the meeting.",
       "translation": "Bất đồng lên đến điểm căng thẳng trong cuộc họp.",
-      "family": "head (n); crisis (n); critical (adj)"
+      "family": "head (n); crisis (n); critical (adj)",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ]
     },
     {
       "question": 60,
@@ -329,7 +445,11 @@
       "usage": "a stone's throw from/away from a place",
       "example": "The café is a stone's throw from the station.",
       "translation": "Quán cà phê nằm rất gần nhà ga.",
-      "family": "stone (n); throw (n/v); nearby (adj/adv)"
+      "family": "stone (n); throw (n/v); nearby (adj/adv)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     }
   ]
 }

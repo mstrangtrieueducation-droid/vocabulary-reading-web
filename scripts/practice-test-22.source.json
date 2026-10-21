@@ -1088,9 +1088,15 @@
       ],
       "displayAnswer": "risk losing all his savings",
       "prefix": "He would",
-      "suffix": "if he invested in that business.",
-      "fullSentence": "He would risk losing all his savings if he invested in that business.",
-      "explanation": "Risk đi với V-ing: risk losing, nghĩa là có nguy cơ mất. Would risk đi với điều kiện if he invested, diễn tả quyết định giả định. Không dùng risk to lose; phải giữ all his savings vì câu gốc nói toàn bộ tiền tiết kiệm."
+      "suffix": "if he invested in that business",
+      "fullSentence": "He would risk losing all his savings if he invested in that business",
+      "explanation": "Risk đi với V-ing: risk losing, nghĩa là có nguy cơ mất. Would risk đi với điều kiện if he invested, diễn tả quyết định giả định.",
+      "keyword": "RISK",
+      "answerPrefix": "He would",
+      "answerSuffix": "if he invested in that business",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "risk losing all his savings"
     },
     {
       "globalNumber": 92,
@@ -1100,11 +1106,17 @@
         "provided you complete",
         "provided that you complete"
       ],
-      "displayAnswer": "provided you complete",
+      "displayAnswer": "provided you complete / provided that you complete",
       "prefix": "You can join the course",
-      "suffix": "the registration form.",
-      "fullSentence": "You can join the course provided you complete the registration form.",
-      "explanation": "Provided (that) nghĩa là với điều kiện là. Sau provided dùng mệnh đề hiện tại đơn you complete để nói điều kiện cho phép tham gia. Không cần will complete. That có thể có hoặc không, nên cả hai cách đều được chấp nhận."
+      "suffix": "the registration form",
+      "fullSentence": "You can join the course provided you complete the registration form",
+      "explanation": "Provided (that) nghĩa là với điều kiện là. Sau provided dùng mệnh đề hiện tại đơn you complete để nói điều kiện cho phép tham gia.",
+      "keyword": "PROVIDED",
+      "answerPrefix": "You can join the course",
+      "answerSuffix": "the registration form",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "provided you complete"
     },
     {
       "globalNumber": 93,
@@ -1114,11 +1126,17 @@
         "until he has calmed down",
         "until he calms down"
       ],
-      "displayAnswer": "until he has calmed down",
+      "displayAnswer": "until he has calmed down / until he calms down",
       "prefix": "Please do not discuss the problem with Jimmy",
-      "suffix": ".",
-      "fullSentence": "Please do not discuss the problem with Jimmy until he has calmed down.",
-      "explanation": "Not ... until nghĩa là chưa làm việc gì cho đến khi một điều kiện xảy ra. Until he calms down dùng hiện tại đơn trong mệnh đề thời gian; until he has calmed down nhấn mạnh việc bình tĩnh đã hoàn tất. Cả hai đều phù hợp với lời đề nghị chờ rồi mới nói chuyện."
+      "suffix": "",
+      "fullSentence": "Please do not discuss the problem with Jimmy until he has calmed down",
+      "explanation": "Not … until nghĩa là chưa làm việc gì cho đến khi một điều kiện xảy ra. Until he calms down dùng hiện tại đơn trong mệnh đề thời gian; until he has calmed down nhấn mạnh việc bình tĩnh đã hoàn tất.",
+      "keyword": "UNTIL",
+      "answerPrefix": "Please do not discuss the problem with Jimmy",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "until he has calmed down"
     },
     {
       "globalNumber": 94,
@@ -1128,10 +1146,16 @@
         "made it harder to solve"
       ],
       "displayAnswer": "made it harder to solve",
-      "prefix": "The director’s refusal to negotiate",
-      "suffix": "the problem.",
-      "fullSentence": "The director’s refusal to negotiate made it harder to solve the problem.",
-      "explanation": "Make it + tính từ so sánh hơn + to do diễn tả làm việc gì trở nên khó hơn. It là tân ngữ giả, chỉ việc giải quyết vấn đề. Made giữ thì quá khứ; harder là dạng so sánh hơn của hard. Không dùng more harder vì lặp dấu hiệu so sánh."
+      "prefix": "The director's refusal to negotiate",
+      "suffix": "the problem",
+      "fullSentence": "The director's refusal to negotiate made it harder to solve the problem",
+      "explanation": "Make it + tính từ so sánh hơn + to do diễn tả làm việc gì trở nên khó hơn. It là tân ngữ giả, chỉ việc giải quyết vấn đề.\nTừ vựng trọng tâm: make it harder to",
+      "keyword": "HARDER",
+      "answerPrefix": "The director's refusal to negotiate",
+      "answerSuffix": "the problem",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "made it harder to solve"
     },
     {
       "globalNumber": 95,
@@ -1142,23 +1166,34 @@
       ],
       "displayAnswer": "felt like joining",
       "prefix": "Daniel suddenly",
-      "suffix": "the debate.",
-      "fullSentence": "Daniel suddenly felt like joining the debate.",
-      "explanation": "Feel like doing something nghĩa là muốn làm gì ở một thời điểm. Wanted ở quá khứ nên chuyển thành felt like joining. Sau like trong cụm này dùng V-ing, không dùng to join. Cần giữ suddenly để bảo toàn ý muốn nảy ra bất chợt."
+      "suffix": "the debate",
+      "fullSentence": "Daniel suddenly felt like joining the debate",
+      "explanation": "Feel like doing something nghĩa là muốn làm gì ở một thời điểm. Wanted ở quá khứ nên chuyển thành felt like joining.",
+      "keyword": "FELT",
+      "answerPrefix": "Daniel suddenly",
+      "answerSuffix": "the debate",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "felt like joining"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "put these families under much greater pressure",
-        "put much greater pressure on these families"
+        "under much greater pressure"
       ],
-      "displayAnswer": "put these families under much greater pressure",
-      "prefix": "The economic slowdown will",
-      "suffix": ".",
-      "fullSentence": "The economic slowdown will put these families under much greater pressure.",
-      "explanation": "Put somebody under pressure hoặc put pressure on somebody là đặt ai vào tình thế khó khăn/căng thẳng. Much greater giữ ý mức độ khó khăn tăng lên. Sau will dùng put nguyên mẫu; không dùng putted vì put là động từ bất quy tắc có ba dạng giống nhau."
+      "displayAnswer": "under much greater pressure",
+      "prefix": "The economic slowdown will put these families",
+      "suffix": "",
+      "fullSentence": "The economic slowdown will put these families under much greater pressure",
+      "explanation": "Put somebody under pressure hoặc put pressure on somebody là đặt ai vào tình thế khó khăn/căng thẳng. Much greater giữ ý mức độ khó khăn tăng lên.",
+      "keyword": "PRESSURE",
+      "answerPrefix": "The economic slowdown will put these families",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "under much greater pressure"
     },
     {
       "globalNumber": 97,
@@ -1168,27 +1203,37 @@
         "prevent us from travelling",
         "prevent us from traveling"
       ],
-      "displayAnswer": "prevent us from travelling",
+      "displayAnswer": "prevent us from travelling / prevent us from traveling",
       "prefix": "I hope the storm will not",
-      "suffix": ".",
-      "fullSentence": "I hope the storm will not prevent us from travelling.",
-      "explanation": "Prevent somebody from doing something tương đương stop somebody from doing something. Sau from dùng travelling; us là người bị cản trở. Will not đã có trong đề, không lặp lại phủ định trong phần điền. Traveling theo chính tả Mỹ cũng được chấp nhận."
+      "suffix": "",
+      "fullSentence": "I hope the storm will not prevent us from travelling",
+      "explanation": "Prevent somebody from doing something tương đương stop somebody from doing something. Sau from dùng travelling; us là người bị cản trở.",
+      "keyword": "PREVENT",
+      "answerPrefix": "I hope the storm will not",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "prevent us from travelling"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "she had not turned on the waterworks with a view",
-        "she hadn’t turned on the waterworks with a view",
-        "she had not turned on the waterworks with an eye",
-        "she hadn’t turned on the waterworks with an eye"
+        "had not turned on the waterworks",
+        "hadn't turned on the waterworks"
       ],
-      "displayAnswer": "she had not turned on the waterworks with a view / she hadn’t turned on the waterworks with a view / she had not turned on the waterworks with an eye / she hadn’t turned on the waterworks with an eye",
-      "prefix": "I would rather",
-      "suffix": "to avoiding punishment.",
-      "fullSentence": "I would rather she had not turned on the waterworks with a view to avoiding punishment.",
-      "explanation": "Would rather + chủ ngữ + quá khứ hoàn thành nói mong một việc đã qua không xảy ra. Turn on the waterworks là bắt đầu khóc nhiều, thường hàm ý cố tác động người khác. With a view/an eye to + V-ing nêu mục đích; to avoiding đã có sẵn."
+      "displayAnswer": "had not turned on the waterworks / hadn't turned on the waterworks",
+      "prefix": "I would rather she",
+      "suffix": "with a view to avoiding punishment",
+      "fullSentence": "I would rather she had not turned on the waterworks with a view to avoiding punishment",
+      "explanation": "Would rather + chủ ngữ + quá khứ hoàn thành nói mong một việc đã qua không xảy ra. Turn on the waterworks là bắt đầu khóc nhiều, thường hàm ý cố tác động người khác.",
+      "keyword": "waterworks",
+      "answerPrefix": "I would rather she",
+      "answerSuffix": "with a view to avoiding punishment",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "had not turned on the waterworks"
     },
     {
       "globalNumber": 99,
@@ -1199,25 +1244,36 @@
       ],
       "displayAnswer": "are said to have been found",
       "prefix": "The two missing hikers",
-      "suffix": ".",
-      "fullSentence": "The two missing hikers are said to have been found.",
-      "explanation": "Bị động tường thuật: people say chuyển thành are said. Việc được tìm thấy đã xảy ra trước lúc đưa tin nên dùng to have been found, vừa là nguyên mẫu hoàn thành vừa mang nghĩa bị động. Hikers số nhiều nên không dùng is said."
+      "suffix": "",
+      "fullSentence": "The two missing hikers are said to have been found",
+      "explanation": "Bị động tường thuật: people say chuyển thành are said. Việc được tìm thấy đã xảy ra trước lúc đưa tin nên dùng to have been found, vừa là nguyên mẫu hoàn thành vừa mang nghĩa bị động.\nTừ vựng trọng tâm: be said to have been",
+      "keyword": "SAID",
+      "answerPrefix": "The two missing hikers",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "are said to have been found"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "as a result of the ineffective policy",
-        "as a result of the policy being ineffective"
+        "as a result of"
       ],
-      "displayAnswer": "as a result of the ineffective policy",
+      "displayAnswer": "as a result of",
       "prefix": "The team lost enthusiasm",
-      "suffix": ".",
-      "fullSentence": "The team lost enthusiasm as a result of the ineffective policy.",
-      "explanation": "As a result of + cụm danh từ/V-ing diễn tả nguyên nhân dẫn đến kết quả. The ineffective policy và the policy being ineffective đều giữ đúng ý chính sách không hiệu quả. Không viết as a result the policy vì thiếu of trước cụm danh từ."
+      "suffix": "the ineffective policy",
+      "fullSentence": "The team lost enthusiasm as a result of the ineffective policy",
+      "explanation": "As a result of + cụm danh từ/V-ing diễn tả nguyên nhân dẫn đến kết quả. The ineffective policy và the policy being ineffective đều giữ đúng ý chính sách không hiệu quả.",
+      "keyword": "RESULT",
+      "answerPrefix": "The team lost enthusiasm",
+      "answerSuffix": "the ineffective policy",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "as a result of"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

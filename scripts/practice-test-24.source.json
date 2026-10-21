@@ -1058,17 +1058,23 @@
       "globalNumber": 91,
       "sectionCode": "III.2",
       "localNumber": 1,
-      "prefix": "Treating customers with a lack",
-      "suffix": "",
+      "prefix": "Treating customers with a lack of efficiency",
+      "suffix": "the company",
       "acceptedAnswers": [
-        "of efficiency reflects badly on the company",
-        "of efficiency reflects poorly on the company",
-        "of efficiency reflects unfavourably on the company",
-        "of efficiency reflects unfavorably on the company"
+        "reflects badly on",
+        "reflects poorly on",
+        "reflects unfavourably on",
+        "reflects unfavorably on"
       ],
-      "fullSentence": "Treating customers with a lack of efficiency reflects badly on the company.",
-      "explanation": "A lack of efficiency là sự thiếu hiệu quả. Reflect badly/poorly on somebody/something nghĩa là làm hình ảnh của đối tượng đó xấu đi. Treating ... là một cụm V-ing làm chủ ngữ số ít, nên dùng reflects đúng như từ cho sẵn.",
-      "displayAnswer": "of efficiency reflects badly on the company / of efficiency reflects poorly on the company / of efficiency reflects unfavourably on the company / of efficiency reflects unfavorably on the company"
+      "fullSentence": "Treating customers with a lack of efficiency reflects badly on the company",
+      "explanation": "A lack of efficiency là sự thiếu hiệu quả. Reflect badly/poorly on somebody/something nghĩa là làm hình ảnh của đối tượng đó xấu đi.",
+      "displayAnswer": "reflects badly on / reflects poorly on / reflects unfavourably on / reflects unfavorably on",
+      "keyword": "REFLECTS",
+      "answerPrefix": "Treating customers with a lack of efficiency",
+      "answerSuffix": "the company",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "reflects badly on"
     },
     {
       "globalNumber": 92,
@@ -1077,13 +1083,17 @@
       "prefix": "He",
       "suffix": "",
       "acceptedAnswers": [
-        "has little flair for mending things",
-        "does not have much flair for mending things",
-        "doesn’t have much flair for mending things"
+        "has little flair for mending things"
       ],
-      "fullSentence": "He has little flair for mending things.",
-      "explanation": "Flair for doing something là năng khiếu làm việc gì. Not very good được diễn đạt bằng little flair hoặc not much flair, giữ mức độ không giỏi lắm. No flair khẳng định hoàn toàn không có năng khiếu, mạnh hơn câu gốc nên không dùng làm đáp án chuẩn.",
-      "displayAnswer": "has little flair for mending things / does not have much flair for mending things / doesn’t have much flair for mending things"
+      "fullSentence": "He has little flair for mending things",
+      "explanation": "Flair for doing something là năng khiếu làm việc gì. Not very good được diễn đạt bằng little flair hoặc not much flair, giữ mức độ không giỏi lắm.",
+      "displayAnswer": "has little flair for mending things",
+      "keyword": "FLAIR",
+      "answerPrefix": "He",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "has little flair for mending things"
     },
     {
       "globalNumber": 93,
@@ -1092,113 +1102,157 @@
       "prefix": "Everything was planned",
       "suffix": "",
       "acceptedAnswers": [
-        "with the utmost care by the organizers",
         "with utmost care by the organizers",
-        "by the organizers with the utmost care",
-        "with the utmost care by the organisers",
         "with utmost care by the organisers",
-        "by the organisers with the utmost care",
         "by the organizers with utmost care",
         "by the organisers with utmost care"
       ],
-      "fullSentence": "Everything was planned with the utmost care by the organizers.",
+      "fullSentence": "Everything was planned with utmost care by the organizers",
       "explanation": "With (the) utmost care nghĩa là với sự cẩn trọng cao nhất, tương đương as carefully as they could possibly have done. Everything was planned là bị động; giữ by the organizers/organisers để chỉ đúng người tổ chức, không làm mất tác nhân của câu gốc.",
-      "displayAnswer": "with the utmost care by the organizers / with utmost care by the organizers / by the organizers with the utmost care / with the utmost care by the organisers / with utmost care by the organisers / by the organisers with the utmost care / by the organizers with utmost care / by the organisers with utmost care"
+      "displayAnswer": "with utmost care by the organizers / with utmost care by the organisers / by the organizers with utmost care / by the organisers with utmost care",
+      "keyword": "UTMOST",
+      "answerPrefix": "Everything was planned",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "with utmost care by the organizers"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "prefix": "It",
-      "suffix": "",
+      "suffix": "he was never going to see her again",
       "acceptedAnswers": [
-        "suddenly dawned on him that he was never going to see her again"
+        "suddenly dawned on him that"
       ],
-      "fullSentence": "It suddenly dawned on him that he was never going to see her again.",
-      "explanation": "It dawned on somebody that ... nghĩa là người đó chợt nhận ra điều gì. Giới từ là on, theo sau him. Suddenly và never ... again cần được giữ để thể hiện cả sự nhận ra bất ngờ lẫn việc không còn cơ hội gặp lại.",
-      "displayAnswer": "suddenly dawned on him that he was never going to see her again"
+      "fullSentence": "It suddenly dawned on him that he was never going to see her again",
+      "explanation": "It dawned on somebody that … nghĩa là người đó chợt nhận ra điều gì. Giới từ là on, theo sau him.\nTừ vựng trọng tâm: dawn on someone",
+      "displayAnswer": "suddenly dawned on him that",
+      "keyword": "DAWNED",
+      "answerPrefix": "It",
+      "answerSuffix": "he was never going to see her again",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "suddenly dawned on him that"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
-      "prefix": "As",
-      "suffix": "",
+      "prefix": "As a young musician,",
+      "suffix": "one of his heroes",
       "acceptedAnswers": [
-        "a young musician, Tim modeled himself on one of his heroes"
+        "Tim modeled himself on"
       ],
-      "fullSentence": "As a young musician, Tim modeled himself on one of his heroes.",
-      "explanation": "Model oneself on somebody nghĩa là noi theo, cố trở nên giống người đó. Với Tim dùng himself và giữ modeled đúng từ đã cho. As a young musician diễn đạt đúng thời kỳ trong câu gốc; as a boy sẽ tự đổi thành thời thơ ấu.",
-      "displayAnswer": "a young musician, Tim modeled himself on one of his heroes"
+      "fullSentence": "As a young musician, Tim modeled himself on one of his heroes",
+      "explanation": "Model oneself on somebody nghĩa là noi theo, cố trở nên giống người đó. Với Tim dùng himself và giữ modeled đúng từ đã cho.",
+      "displayAnswer": "Tim modeled himself on",
+      "keyword": "MODELED",
+      "answerPrefix": "As a young musician,",
+      "answerSuffix": "one of his heroes",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "Tim modeled himself on"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "prefix": "His rise",
-      "suffix": "of his privacy.",
+      "suffix": "of his privacy",
       "acceptedAnswers": [
         "to fame came at the expense",
         "to fame was at the expense"
       ],
-      "fullSentence": "His rise to fame came at the expense of his privacy.",
-      "explanation": "Rise to fame là quá trình trở nên nổi tiếng. At the expense of something nghĩa là phải đánh đổi thứ đó. Dùng to fame, không phải in fame; of his privacy đã có sẵn ở cuối nên không chép lặp vào phần điền.",
-      "displayAnswer": "to fame came at the expense / to fame was at the expense"
+      "fullSentence": "His rise to fame came at the expense of his privacy",
+      "explanation": "Rise to fame là quá trình trở nên nổi tiếng. At the expense of something nghĩa là phải đánh đổi thứ đó.",
+      "displayAnswer": "to fame came at the expense / to fame was at the expense",
+      "keyword": "EXPENSE",
+      "answerPrefix": "His rise",
+      "answerSuffix": "of his privacy",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to fame came at the expense"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "prefix": "Clara",
-      "suffix": "the missing letter.",
+      "suffix": "the missing letter",
       "acceptedAnswers": [
         "denied having seen"
       ],
-      "fullSentence": "Clara denied having seen the missing letter.",
-      "explanation": "Deny + V-ing nghĩa là phủ nhận đã làm điều gì. Having seen là danh động từ hoàn thành, nhấn mạnh việc nhìn thấy được nhắc đến trước lời phủ nhận. Denied đã mang nghĩa phủ định nên không thêm not sau having.",
-      "displayAnswer": "denied having seen"
+      "fullSentence": "Clara denied having seen the missing letter",
+      "explanation": "Deny + V-ing nghĩa là phủ nhận đã làm điều gì. Having seen là danh động từ hoàn thành, nhấn mạnh việc nhìn thấy được nhắc đến trước lời phủ nhận.",
+      "displayAnswer": "denied having seen",
+      "keyword": "HAVING",
+      "answerPrefix": "Clara",
+      "answerSuffix": "the missing letter",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "denied having seen"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "prefix": "Jack",
-      "suffix": "our previous conversation.",
+      "suffix": "our previous conversation",
       "acceptedAnswers": [
         "made no reference to",
         "did not make any reference to",
-        "didn’t make any reference to"
+        "didn't make any reference to"
       ],
-      "fullSentence": "Jack made no reference to our previous conversation.",
-      "explanation": "Make reference to something nghĩa là nhắc đến điều đó. No reference hoặc didn't make any reference giữ ý didn't mention ... at all. Giới từ bắt buộc ở đây là to, không dùng about sau reference trong mẫu make reference to.",
-      "displayAnswer": "made no reference to / did not make any reference to / didn’t make any reference to"
+      "fullSentence": "Jack made no reference to our previous conversation",
+      "explanation": "Make reference to something nghĩa là nhắc đến điều đó. No reference hoặc didn't make any reference giữ ý didn't mention … at all.",
+      "displayAnswer": "made no reference to / did not make any reference to / didn't make any reference to",
+      "keyword": "REFERENCE",
+      "answerPrefix": "Jack",
+      "answerSuffix": "our previous conversation",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "made no reference to"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "prefix": "Most people",
-      "suffix": "caused by wasting water.",
+      "suffix": "caused by wasting water",
       "acceptedAnswers": [
         "are aware of the problems"
       ],
-      "fullSentence": "Most people are aware of the problems caused by wasting water.",
-      "explanation": "Be aware of something nghĩa là biết/nhận thức được điều đó. Most people là chủ ngữ số nhiều nên dùng are; of đi với aware. The problems là tân ngữ cần có trước cụm caused by wasting water đã cho sẵn.",
-      "displayAnswer": "are aware of the problems"
+      "fullSentence": "Most people are aware of the problems caused by wasting water",
+      "explanation": "Be aware of something nghĩa là biết/nhận thức được điều đó. Most people là chủ ngữ số nhiều nên dùng are; of đi với aware.",
+      "displayAnswer": "are aware of the problems",
+      "keyword": "AWARE",
+      "answerPrefix": "Most people",
+      "answerSuffix": "caused by wasting water",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "are aware of the problems"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
-      "prefix": "I left my last job because",
-      "suffix": "with my manager.",
+      "prefix": "I left my last job because I did not really",
+      "suffix": "my manager",
       "acceptedAnswers": [
-        "I did not really see eye to eye",
-        "I didn’t really see eye to eye"
+        "see eye to eye with"
       ],
-      "fullSentence": "I left my last job because I didn't really see eye to eye with my manager.",
-      "explanation": "See eye to eye with somebody nghĩa là đồng quan điểm với người đó. Didn't really giữ mức độ phủ định của câu gốc. Cụm with my manager đã cho sẵn; không thay eye thành eyes hoặc bỏ phần to eye của thành ngữ.",
-      "displayAnswer": "I did not really see eye to eye / I didn’t really see eye to eye"
+      "fullSentence": "I left my last job because I did not really see eye to eye with my manager",
+      "explanation": "See eye to eye with somebody nghĩa là đồng quan điểm với người đó. Didn't really giữ mức độ phủ định của câu gốc.",
+      "displayAnswer": "see eye to eye with",
+      "keyword": "EYE",
+      "answerPrefix": "I left my last job because I did not really",
+      "answerSuffix": "my manager",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "see eye to eye with"
     }
-  ]
+  ],
+  "contentRevision": "2026-10-21-word-limits"
 }

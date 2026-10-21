@@ -10,7 +10,11 @@
       "usage": "in view of the low rainfall",
       "example": "In view of the drought, we should save water.",
       "translation": "Xét tình trạng hạn hán, chúng ta nên tiết kiệm nước.",
-      "family": "view (n/v); viewpoint (n); in view of + noun"
+      "family": "view (n/v); viewpoint (n); in view of + noun",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 2,
@@ -21,7 +25,11 @@
       "usage": "take precautions against fire",
       "example": "The school took precautions against fire.",
       "translation": "Nhà trường đã thực hiện biện pháp phòng cháy.",
-      "family": "precaution (n); precautionary (adj); take–took–taken"
+      "family": "precaution (n); precautionary (adj); take–took–taken",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 3,
@@ -32,7 +40,11 @@
       "usage": "ward off illness/an attack",
       "example": "Warm clothing helps ward off the cold.",
       "translation": "Quần áo ấm giúp chống lại cái lạnh.",
-      "family": "ward (n/v); ward off + noun; prevention (n, nghĩa liên quan)"
+      "family": "ward (n/v); ward off + noun; prevention (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 4,
@@ -43,7 +55,11 @@
       "usage": "have a chip on one’s shoulder about something",
       "example": "He has a chip on his shoulder about his background.",
       "translation": "Anh ấy dễ tự ái vì cảm thấy bị đánh giá qua xuất thân.",
-      "family": "chip (n); shoulder (n); have–had–had"
+      "family": "chip (n); shoulder (n); have–had–had",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 6,
@@ -54,7 +70,11 @@
       "usage": "give someone/something a new lease of life",
       "example": "The renovation gave the library a new lease of life.",
       "translation": "Việc cải tạo đã mang lại sức sống mới cho thư viện.",
-      "family": "lease (n/v); life (n); alive (adj)"
+      "family": "lease (n/v); life (n); alive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 10,
@@ -65,7 +85,11 @@
       "usage": "be on pins and needles while waiting",
       "example": "We were on pins and needles before the results arrived.",
       "translation": "Chúng tôi thấp thỏm trước khi có kết quả.",
-      "family": "pin (n); needle (n); nervous (adj, nghĩa liên quan)"
+      "family": "pin (n); needle (n); nervous (adj, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 11,
@@ -76,7 +100,11 @@
       "usage": "be painfully aware of a weakness",
       "example": "I was painfully aware of my lack of experience.",
       "translation": "Tôi nhận rõ một cách ngượng ngùng rằng mình thiếu kinh nghiệm.",
-      "family": "pain (n); painful (adj); painfully (adv); awareness (n)"
+      "family": "pain (n); painful (adj); painfully (adv); awareness (n)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 13,
@@ -87,7 +115,11 @@
       "usage": "indulge in chocolate/a little luxury",
       "example": "She occasionally indulges in a rich dessert.",
       "translation": "Thỉnh thoảng cô ấy tự thưởng một món tráng miệng béo ngậy.",
-      "family": "indulge (v); indulgence (n); indulgent (adj)"
+      "family": "indulge (v); indulgence (n); indulgent (adj)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -98,7 +130,11 @@
       "usage": "give someone a blank look",
       "example": "He gave me a blank look when I mentioned the plan.",
       "translation": "Anh ấy nhìn tôi ngơ ngác khi tôi nhắc đến kế hoạch.",
-      "family": "blank (adj/n); blankly (adv); blankness (n)"
+      "family": "blank (adj/n); blankly (adv); blankness (n)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 17,
@@ -109,7 +145,11 @@
       "usage": "outgrow clothes/an interest/a habit",
       "example": "She outgrew those simple picture books.",
       "translation": "Cô bé đã vượt qua giai đoạn thích những cuốn truyện tranh đơn giản ấy.",
-      "family": "outgrow–outgrew–outgrown; growth (n); grown (adj)"
+      "family": "outgrow–outgrew–outgrown; growth (n); grown (adj)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 18,
@@ -120,7 +160,11 @@
       "usage": "live in the lap of luxury",
       "example": "They lived in the lap of luxury after the sale.",
       "translation": "Sau thương vụ đó, họ sống rất xa hoa.",
-      "family": "luxury (n); luxurious (adj); luxuriously (adv)"
+      "family": "luxury (n); luxurious (adj); luxuriously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 19,
@@ -131,7 +175,11 @@
       "usage": "everyone must pull their weight",
       "example": "A successful team needs everyone to pull their weight.",
       "translation": "Một nhóm thành công cần mọi người làm tròn phần việc.",
-      "family": "pull (v); weight (n); contribution (n, nghĩa liên quan)"
+      "family": "pull (v); weight (n); contribution (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -142,7 +190,11 @@
       "usage": "set back a project; be set back by delays",
       "example": "The funding cut set back the project.",
       "translation": "Việc cắt vốn làm dự án chậm lại.",
-      "family": "set–set–set; setback (n, viết liền)"
+      "family": "set–set–set; setback (n, viết liền)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 23,
@@ -153,7 +205,11 @@
       "usage": "hand something down from mother to daughter",
       "example": "These stories were handed down through generations.",
       "translation": "Những câu chuyện này được truyền qua nhiều thế hệ.",
-      "family": "hand (n/v); hand-me-down (n/adj); inheritance (n, nghĩa liên quan)"
+      "family": "hand (n/v); hand-me-down (n/adj); inheritance (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 26,
@@ -164,7 +220,11 @@
       "usage": "a detailed/travel itinerary",
       "example": "Our itinerary includes a museum visit on Monday.",
       "translation": "Lịch trình của chúng tôi có chuyến thăm bảo tàng vào thứ Hai.",
-      "family": "itinerary–itineraries (n); itinerary planning (noun phrase)"
+      "family": "itinerary–itineraries (n); itinerary planning (noun phrase)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 28,
@@ -175,7 +235,11 @@
       "usage": "success rests on careful planning",
       "example": "The decision rests on the evidence.",
       "translation": "Quyết định dựa trên bằng chứng.",
-      "family": "rest (n/v); basis (n, nghĩa liên quan); depend on (tương đương theo ngữ cảnh)"
+      "family": "rest (n/v); basis (n, nghĩa liên quan); depend on (tương đương theo ngữ cảnh)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 29,
@@ -186,7 +250,11 @@
       "usage": "make amends for a mistake",
       "example": "He offered to repair the fence to make amends.",
       "translation": "Anh ấy đề nghị sửa hàng rào để bù đắp lỗi mình gây ra.",
-      "family": "amend (v); amendment (n); amends (plural noun)"
+      "family": "amend (v); amendment (n); amends (plural noun)",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 30,
@@ -197,7 +265,11 @@
       "usage": "raise concerns about safety/working hours",
       "example": "The workers raised concerns about the extra hours.",
       "translation": "Người lao động nêu lo ngại về số giờ làm thêm.",
-      "family": "raise (v); concern (n/v); concerned (adj)"
+      "family": "raise (v); concern (n/v); concerned (adj)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 33,
@@ -208,7 +280,11 @@
       "usage": "test your knowledge of a subject",
       "example": "The quiz tests your knowledge of wildlife.",
       "translation": "Bài đố kiểm tra kiến thức của bạn về động vật hoang dã.",
-      "family": "test (n/v); knowledge (n); knowledgeable (adj)"
+      "family": "test (n/v); knowledge (n); knowledgeable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 34,
@@ -219,7 +295,11 @@
       "usage": "be beset by financial problems",
       "example": "The project was beset by delays.",
       "translation": "Dự án liên tục gặp trở ngại do chậm trễ.",
-      "family": "beset–beset–beset; besetting (participle); difficulty (n, nghĩa liên quan)"
+      "family": "beset–beset–beset; besetting (participle); difficulty (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 35,
@@ -230,7 +310,11 @@
       "usage": "be self-sufficient in food",
       "example": "The farm is largely self-sufficient in energy.",
       "translation": "Trang trại phần lớn tự đáp ứng nhu cầu năng lượng.",
-      "family": "suffice (v); sufficient (adj); self-sufficiency (n)"
+      "family": "suffice (v); sufficient (adj); self-sufficiency (n)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 38,
@@ -241,7 +325,11 @@
       "usage": "an extraordinary object/achievement",
       "example": "The museum contains some extraordinary objects.",
       "translation": "Bảo tàng có một số hiện vật rất khác thường.",
-      "family": "ordinary/extraordinary (adj); extraordinarily (adv)"
+      "family": "ordinary/extraordinary (adj); extraordinarily (adv)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 42,
@@ -252,7 +340,11 @@
       "usage": "national legislators; lawmakers",
       "example": "Legislators debated the proposed changes.",
       "translation": "Các nhà lập pháp tranh luận về những thay đổi được đề xuất.",
-      "family": "legislate (v); legislator (n); legislation (n); legislative (adj)"
+      "family": "legislate (v); legislator (n); legislation (n); legislative (adj)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 56,
@@ -263,7 +355,11 @@
       "usage": "a temporary/major setback",
       "example": "The failed experiment was a setback, not the end.",
       "translation": "Thí nghiệm thất bại là một trở ngại, chưa phải kết thúc.",
-      "family": "setback (n); set back (phrasal verb); recovery (n, nghĩa liên quan)"
+      "family": "setback (n); set back (phrasal verb); recovery (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 58,
@@ -274,7 +370,11 @@
       "usage": "pick up on a mistake/a clue",
       "example": "The teacher picked up on a recurring mistake.",
       "translation": "Giáo viên nhận ra một lỗi lặp lại nhiều lần.",
-      "family": "pick (v); pick up on + noun; notice (v, nghĩa liên quan)"
+      "family": "pick (v); pick up on + noun; notice (v, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        58
+      ]
     },
     {
       "question": 60,
@@ -285,7 +385,11 @@
       "usage": "turn a setback to your advantage",
       "example": "She turned the criticism to her advantage by improving.",
       "translation": "Cô ấy biến lời phê bình thành lợi thế bằng cách cải thiện.",
-      "family": "advantage (n); advantageous (adj); disadvantage (n)"
+      "family": "advantage (n); advantageous (adj); disadvantage (n)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 70,
@@ -296,7 +400,11 @@
       "usage": "it dawns on someone that + clause",
       "example": "It dawned on me that I had the wrong address.",
       "translation": "Tôi chợt nhận ra mình đã ghi sai địa chỉ.",
-      "family": "dawn (n/v); realization (n, nghĩa liên quan); dawn upon (variant)"
+      "family": "dawn (n/v); realization (n, nghĩa liên quan); dawn upon (variant)",
+      "teacherSelected": true,
+      "questions": [
+        70
+      ]
     },
     {
       "question": 91,
@@ -307,7 +415,11 @@
       "usage": "have something to fall back on",
       "example": "We have savings to fall back on in an emergency.",
       "translation": "Chúng tôi có khoản tiết kiệm để dựa vào khi khẩn cấp.",
-      "family": "fall–fell–fallen; fallback (n/adj, viết liền)"
+      "family": "fall–fell–fallen; fallback (n/adj, viết liền)",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ]
     },
     {
       "question": 95,
@@ -318,7 +430,11 @@
       "usage": "burn the midnight oil before an exam",
       "example": "She burned the midnight oil to finish the report.",
       "translation": "Cô ấy thức khuya để hoàn thành báo cáo.",
-      "family": "burn–burned/burnt–burned/burnt; midnight (n); oil (n)"
+      "family": "burn–burned/burnt–burned/burnt; midnight (n); oil (n)",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     },
     {
       "question": 100,
@@ -329,7 +445,11 @@
       "usage": "get to grips with a problem/new software",
       "example": "The team is getting to grips with the new system.",
       "translation": "Cả nhóm đang làm quen để sử dụng hiệu quả hệ thống mới.",
-      "family": "grip (n/v); get–got–got; grasp (v/n, nghĩa liên quan)"
+      "family": "grip (n/v); get–got–got; grasp (v/n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
     }
   ]
 }

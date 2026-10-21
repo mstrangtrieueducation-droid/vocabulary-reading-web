@@ -10,7 +10,11 @@
       "usage": "be under strain; put a strain on someone",
       "example": "Their relationship was under strain after months of arguments.",
       "translation": "Mối quan hệ của họ căng thẳng sau nhiều tháng tranh cãi.",
-      "family": "strain (n/v); strained (adj); straining (V-ing)"
+      "family": "strain (n/v); strained (adj); straining (V-ing)",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 3,
@@ -21,7 +25,11 @@
       "usage": "receive/get a golden handshake",
       "example": "The departing executive received a golden handshake.",
       "translation": "Vị quản lý rời công ty nhận một khoản tiền thôi việc lớn.",
-      "family": "handshake (n); shake–shook–shaken; severance pay (cụm liên quan)"
+      "family": "handshake (n); shake–shook–shaken; severance pay (cụm liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 6,
@@ -32,7 +40,11 @@
       "usage": "be considerate of others; considerate of someone to do something",
       "example": "It was considerate of you to save me a seat.",
       "translation": "Bạn thật chu đáo khi giữ cho tôi một chỗ.",
-      "family": "consider (v); considerate/inconsiderate (adj); considerately (adv)"
+      "family": "consider (v); considerate/inconsiderate (adj); considerately (adv)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 8,
@@ -43,7 +55,11 @@
       "usage": "coin a term/phrase/nickname",
       "example": "The students coined a nickname for their new club.",
       "translation": "Học sinh nghĩ ra một biệt danh cho câu lạc bộ mới.",
-      "family": "coin (n/v); coinage (n); nickname (n/v)"
+      "family": "coin (n/v); coinage (n); nickname (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -54,7 +70,11 @@
       "usage": "in the face of opposition/competition",
       "example": "She remained calm in the face of criticism.",
       "translation": "Cô ấy vẫn bình tĩnh trước những lời chỉ trích.",
-      "family": "face (n/v); face up to (phrasal v); opposition (n, từ đi kèm)"
+      "family": "face (n/v); face up to (phrasal v); opposition (n, từ đi kèm)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 10,
@@ -65,7 +85,11 @@
       "usage": "a leopard cannot/can’t change its spots",
       "example": "He promised to stop lying, but she thought a leopard couldn’t change its spots.",
       "translation": "Anh ấy hứa thôi nói dối, nhưng cô ấy nghĩ bản tính khó đổi.",
-      "family": "leopard (n); spot (n/v); spotted (adj)"
+      "family": "leopard (n); spot (n/v); spotted (adj)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 12,
@@ -76,7 +100,11 @@
       "usage": "not enough for A, let alone B",
       "example": "I cannot afford a bicycle, let alone a car.",
       "translation": "Tôi còn không đủ tiền mua xe đạp, huống chi ô tô.",
-      "family": "let–let–let; alone (adj/adv); let alone (cụm cố định)"
+      "family": "let–let–let; alone (adj/adv); let alone (cụm cố định)",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 14,
@@ -87,7 +115,11 @@
       "usage": "be inextricably linked to/with something",
       "example": "Education and opportunity are inextricably linked.",
       "translation": "Giáo dục và cơ hội gắn bó chặt chẽ với nhau.",
-      "family": "inextricable (adj); inextricably (adv); link (n/v)"
+      "family": "inextricable (adj); inextricably (adv); link (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 15,
@@ -98,7 +130,11 @@
       "usage": "condone cheating/violence; cannot condone a behaviour",
       "example": "Understanding his frustration does not mean condoning his rudeness.",
       "translation": "Hiểu sự bực bội của anh ấy không có nghĩa chấp nhận sự thô lỗ.",
-      "family": "condone (v); condoned (V2/V3); condemn (v, từ dễ nhầm)"
+      "family": "condone (v); condoned (V2/V3); condemn (v, từ dễ nhầm)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 17,
@@ -109,7 +145,11 @@
       "usage": "succeed at the expense of health/family life",
       "example": "Do not gain speed at the expense of accuracy.",
       "translation": "Đừng tăng tốc độ bằng cách đánh đổi độ chính xác.",
-      "family": "expense (n); expensive (adj); expend (v)"
+      "family": "expense (n); expensive (adj); expend (v)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 19,
@@ -120,7 +160,11 @@
       "usage": "a run-of-the-mill performance/product",
       "example": "The film was entertaining but rather run-of-the-mill.",
       "translation": "Bộ phim xem vui nhưng khá bình thường, thiếu đặc sắc.",
-      "family": "run (v/n); mill (n); ordinary (adj, gần nghĩa)"
+      "family": "run (v/n); mill (n); ordinary (adj, gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -131,7 +175,11 @@
       "usage": "rule out a possibility; be ruled out",
       "example": "The investigators have not ruled out an accident.",
       "translation": "Điều tra viên chưa loại trừ khả năng tai nạn.",
-      "family": "rule (n/v); ruled (V2/V3); exclusion (n, nghĩa liên quan)"
+      "family": "rule (n/v); ruled (V2/V3); exclusion (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 22,
@@ -142,7 +190,11 @@
       "usage": "a springboard to/for success",
       "example": "The scholarship became a springboard to her research career.",
       "translation": "Học bổng trở thành bàn đạp cho sự nghiệp nghiên cứu của cô ấy.",
-      "family": "springboard (n); spring–sprang–sprung; board (n)"
+      "family": "springboard (n); spring–sprang–sprung; board (n)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -153,7 +205,11 @@
       "usage": "grow/improve by leaps and bounds",
       "example": "Her confidence grew by leaps and bounds.",
       "translation": "Sự tự tin của cô ấy tăng lên rõ rệt và nhanh chóng.",
-      "family": "leap (n/v); bound (n/v); growth (n, từ đi kèm)"
+      "family": "leap (n/v); bound (n/v); growth (n, từ đi kèm)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -164,7 +220,11 @@
       "usage": "feel despondent about something",
       "example": "He felt despondent about missing the final.",
       "translation": "Anh ấy chán nản vì bỏ lỡ trận chung kết.",
-      "family": "despondent (adj); despondency (n); despondently (adv)"
+      "family": "despondent (adj); despondency (n); despondently (adv)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 27,
@@ -175,7 +235,11 @@
       "usage": "wait/await something with bated breath",
       "example": "They waited with bated breath for the results.",
       "translation": "Họ hồi hộp chờ kết quả.",
-      "family": "bate (v, giảm/kìm lại); breath (n); breathe (v)"
+      "family": "bate (v, giảm/kìm lại); breath (n); breathe (v)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 29,
@@ -186,7 +250,11 @@
       "usage": "funds/enthusiasm/noise peter out",
       "example": "The applause gradually petered out.",
       "translation": "Tiếng vỗ tay nhỏ dần rồi dứt.",
-      "family": "peter out (phrasal v); petered out (quá khứ); run out (cụm gần nghĩa)"
+      "family": "peter out (phrasal v); petered out (quá khứ); run out (cụm gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 31,
@@ -197,7 +265,11 @@
       "usage": "the popularity of something; gain popularity",
       "example": "Online courses have gained popularity.",
       "translation": "Các khóa học trực tuyến ngày càng được ưa chuộng.",
-      "family": "popular/unpopular (adj); popularity (n); popularly (adv)"
+      "family": "popular/unpopular (adj); popularity (n); popularly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 33,
@@ -208,7 +280,11 @@
       "usage": "the likelihood of doing something; a strong likelihood that",
       "example": "Regular practice increases the likelihood of success.",
       "translation": "Luyện tập đều đặn làm tăng khả năng thành công.",
-      "family": "likely/unlikely (adj); likelihood (n); likeliness (n, ít dùng hơn)"
+      "family": "likely/unlikely (adj); likelihood (n); likeliness (n, ít dùng hơn)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 36,
@@ -219,7 +295,11 @@
       "usage": "stabilise/stabilize the temperature/prices",
       "example": "The system helps stabilise the room temperature.",
       "translation": "Hệ thống giúp giữ nhiệt độ phòng ổn định.",
-      "family": "stable/unstable (adj); stability (n); stabilise/stabilize (v)"
+      "family": "stable/unstable (adj); stability (n); stabilise/stabilize (v)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 38,
@@ -230,7 +310,11 @@
       "usage": "energy efficiency; improve efficiency",
       "example": "Better insulation can improve energy efficiency.",
       "translation": "Cách nhiệt tốt hơn có thể cải thiện hiệu quả sử dụng năng lượng.",
-      "family": "efficient/inefficient (adj); efficiency (n); efficiently (adv)"
+      "family": "efficient/inefficient (adj); efficiency (n); efficiently (adv)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 43,
@@ -241,7 +325,11 @@
       "usage": "give someone a competitive edge over rivals",
       "example": "Reliable service gives the company a competitive edge.",
       "translation": "Dịch vụ đáng tin cậy đem lại lợi thế cạnh tranh cho công ty.",
-      "family": "compete (v); competition (n); competitive (adj); competitor (n)"
+      "family": "compete (v); competition (n); competitive (adj); competitor (n)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 44,
@@ -252,7 +340,11 @@
       "usage": "a deceased person; the deceased",
       "example": "The exhibition honours a deceased artist.",
       "translation": "Triển lãm tưởng nhớ một nghệ sĩ đã qua đời.",
-      "family": "decease (n/v, trang trọng); deceased (adj/n); death (n); dead (adj)"
+      "family": "decease (n/v, trang trọng); deceased (adj/n); death (n); dead (adj)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 49,
@@ -263,7 +355,11 @@
       "usage": "be here to stay; seem to be here to stay",
       "example": "Remote collaboration seems to be here to stay.",
       "translation": "Cộng tác từ xa dường như sẽ còn tồn tại lâu dài.",
-      "family": "stay (v/n); staying (V-ing); permanence (n, nghĩa liên quan)"
+      "family": "stay (v/n); staying (V-ing); permanence (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        49
+      ]
     },
     {
       "question": 51,
@@ -274,7 +370,11 @@
       "usage": "be/get fed up with something/doing something",
       "example": "I am fed up with waiting in traffic.",
       "translation": "Tôi chán ngấy việc chờ trong dòng xe ùn tắc.",
-      "family": "feed–fed–fed; fed up (adj phrase); frustration (n, nghĩa liên quan)"
+      "family": "feed–fed–fed; fed up (adj phrase); frustration (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ]
     },
     {
       "question": 56,
@@ -285,7 +385,11 @@
       "usage": "envy someone; feel envy; be envious of",
       "example": "She felt a little envy when she saw his free schedule.",
       "translation": "Cô ấy hơi ghen tị khi thấy lịch của anh ấy thảnh thơi.",
-      "family": "envy (n/v); envious (adj); enviously (adv)"
+      "family": "envy (n/v); envious (adj); enviously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 61,
@@ -296,7 +400,11 @@
       "usage": "punctuation marks; correct punctuation",
       "example": "Clear punctuation makes a sentence easier to understand.",
       "translation": "Dấu câu rõ ràng giúp câu dễ hiểu hơn.",
-      "family": "punctuate (v); punctuation (n); punctuated (V2/V3)"
+      "family": "punctuate (v); punctuation (n); punctuated (V2/V3)",
+      "teacherSelected": true,
+      "questions": [
+        61
+      ]
     },
     {
       "question": 72,
@@ -307,7 +415,11 @@
       "usage": "a spark of interest; spark curiosity",
       "example": "The experiment sparked her curiosity about science.",
       "translation": "Thí nghiệm khơi dậy sự tò mò của cô ấy về khoa học.",
-      "family": "spark (n/v); sparked (V2/V3); sparkling (adj)"
+      "family": "spark (n/v); sparked (V2/V3); sparkling (adj)",
+      "teacherSelected": true,
+      "questions": [
+        72
+      ]
     },
     {
       "question": 75,
@@ -318,7 +430,11 @@
       "usage": "a relentless drive to succeed",
       "example": "His relentless drive helped him overcome repeated setbacks.",
       "translation": "Quyết tâm bền bỉ giúp anh ấy vượt qua những thất bại liên tiếp.",
-      "family": "relentless (adj); relentlessly (adv); drive (n/v); driven (adj)"
+      "family": "relentless (adj); relentlessly (adv); drive (n/v); driven (adj)",
+      "teacherSelected": true,
+      "questions": [
+        75
+      ]
     },
     {
       "question": 100,
@@ -329,7 +445,11 @@
       "usage": "put my/your/his/her foot in it",
       "example": "I put my foot in it by mentioning the cancelled wedding.",
       "translation": "Tôi lỡ lời khi nhắc đến đám cưới đã bị hủy.",
-      "family": "put–put–put; foot/feet (n); tactful/tactless (adj, liên quan)"
+      "family": "put–put–put; foot/feet (n); tactful/tactless (adj, liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
     }
   ]
 }

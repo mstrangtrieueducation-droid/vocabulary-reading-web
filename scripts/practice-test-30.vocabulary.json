@@ -10,7 +10,11 @@
       "usage": "invest in data security; improve data security",
       "example": "The company invested in data security to protect customer records.",
       "translation": "Công ty đầu tư vào bảo mật dữ liệu để bảo vệ hồ sơ khách hàng.",
-      "family": "secure (adj/v); securely (adv); security (n); insecurity (n)"
+      "family": "secure (adj/v); securely (adv); security (n); insecurity (n)",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 2,
@@ -21,7 +25,11 @@
       "usage": "search/look high and low for something",
       "example": "We searched high and low for the missing notebook.",
       "translation": "Chúng tôi tìm khắp nơi cuốn vở bị thất lạc.",
-      "family": "search (v/n); searched (V2/V3); searcher (n)"
+      "family": "search (v/n); searched (V2/V3); searcher (n)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 3,
@@ -32,7 +40,11 @@
       "usage": "a corruption scandal; combat corruption",
       "example": "The investigation uncovered corruption in the organisation.",
       "translation": "Cuộc điều tra phanh phui nạn tham nhũng trong tổ chức.",
-      "family": "corrupt (adj/v); corruption (n); incorruptible (adj)"
+      "family": "corrupt (adj/v); corruption (n); incorruptible (adj)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 4,
@@ -43,7 +55,11 @@
       "usage": "dip into savings/reserves",
       "example": "She had to dip into her savings to repair the roof.",
       "translation": "Cô ấy phải lấy tiền tiết kiệm để sửa mái nhà.",
-      "family": "dip–dipped–dipped; savings (n plural); save (v)"
+      "family": "dip–dipped–dipped; savings (n plural); save (v)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -54,7 +70,11 @@
       "usage": "be beyond doubt; prove something beyond doubt",
       "example": "His honesty is beyond doubt.",
       "translation": "Sự trung thực của anh ấy là điều không còn nghi ngờ.",
-      "family": "doubt (n/v); doubtful (adj); undoubtedly (adv)"
+      "family": "doubt (n/v); doubtful (adj); undoubtedly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 8,
@@ -65,7 +85,11 @@
       "usage": "bring about change/improvement",
       "example": "The new policy brought about major changes.",
       "translation": "Chính sách mới tạo ra những thay đổi lớn.",
-      "family": "bring–brought–brought; change (n/v, từ thường đi kèm)"
+      "family": "bring–brought–brought; change (n/v, từ thường đi kèm)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 12,
@@ -76,7 +100,11 @@
       "usage": "seal off an area/road/building",
       "example": "Police sealed off the street after the accident.",
       "translation": "Cảnh sát phong tỏa con phố sau tai nạn.",
-      "family": "seal (v/n); sealed (V2/V3); sealing (V-ing)"
+      "family": "seal (v/n); sealed (V2/V3); sealing (V-ing)",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 13,
@@ -87,7 +115,11 @@
       "usage": "remain resilient; resilient to shocks",
       "example": "Small firms can become more resilient by diversifying suppliers.",
       "translation": "Doanh nghiệp nhỏ có thể tăng sức chống chịu bằng cách đa dạng hóa nhà cung cấp.",
-      "family": "resilience (n); resilient (adj); resiliently (adv)"
+      "family": "resilience (n); resilient (adj); resiliently (adv)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -98,7 +130,11 @@
       "usage": "ensure/maintain transparency; transparency in decision-making",
       "example": "The committee demanded greater transparency in spending.",
       "translation": "Ủy ban yêu cầu việc chi tiêu minh bạch hơn.",
-      "family": "transparent (adj); transparency (n); transparently (adv)"
+      "family": "transparent (adj); transparency (n); transparently (adv)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 15,
@@ -109,7 +145,11 @@
       "usage": "decide/refuse to throw in the towel",
       "example": "She refused to throw in the towel after one failure.",
       "translation": "Cô ấy không chịu bỏ cuộc chỉ sau một lần thất bại.",
-      "family": "throw – threw – thrown; give up (phrasal verb)"
+      "family": "throw – threw – thrown; give up (phrasal verb)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -120,7 +160,11 @@
       "usage": "take effect on a date; come into effect",
       "example": "The new rules will take effect on Monday.",
       "translation": "Quy định mới sẽ có hiệu lực vào thứ Hai.",
-      "family": "effect (n); effective (adj); effectively (adv); affect (v)"
+      "family": "effect (n); effective (adj); effectively (adv); affect (v)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 20,
@@ -131,7 +175,11 @@
       "usage": "integrate A with B; integrate A into B",
       "example": "The course integrates language practice with critical thinking.",
       "translation": "Khóa học kết hợp luyện ngôn ngữ với tư duy phản biện.",
-      "family": "integrate (v); integrated (adj); integration (n)"
+      "family": "integrate (v); integrated (adj); integration (n)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 23,
@@ -142,7 +190,11 @@
       "usage": "reap the benefits/rewards of something",
       "example": "Students will reap the benefits of regular reading.",
       "translation": "Học sinh sẽ hưởng thành quả từ việc đọc thường xuyên.",
-      "family": "reap (v); reaped (V2/V3); benefit (n/v); reward (n)"
+      "family": "reap (v); reaped (V2/V3); benefit (n/v); reward (n)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 25,
@@ -153,7 +205,11 @@
       "usage": "a strict/happy upbringing; a child’s upbringing",
       "example": "Her upbringing taught her to respect other people.",
       "translation": "Cách nuôi dạy thời nhỏ giúp cô ấy biết tôn trọng người khác.",
-      "family": "bring up (phrasal v); upbringing (n); bring–brought–brought"
+      "family": "bring up (phrasal v); upbringing (n); bring–brought–brought",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 26,
@@ -164,7 +220,11 @@
       "usage": "give something serious consideration",
       "example": "We will give your suggestion serious consideration.",
       "translation": "Chúng tôi sẽ cân nhắc thật kỹ đề xuất của bạn.",
-      "family": "consider (v); consideration (n); considered (adj); considerate (adj, chu đáo)"
+      "family": "consider (v); consideration (n); considered (adj); considerate (adj, chu đáo)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 33,
@@ -175,7 +235,11 @@
       "usage": "make/achieve a breakthrough; a breakthrough in research",
       "example": "The discovery was a breakthrough in cancer research.",
       "translation": "Khám phá ấy là một bước đột phá trong nghiên cứu ung thư.",
-      "family": "breakthrough (n); break through (phrasal v); break–broke–broken"
+      "family": "breakthrough (n); break through (phrasal v); break–broke–broken",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 36,
@@ -186,7 +250,11 @@
       "usage": "differentiate A from B; differentiate between A and B",
       "example": "Readers need to differentiate fact from opinion.",
       "translation": "Người đọc cần phân biệt sự thật với ý kiến.",
-      "family": "different (adj); difference (n); differ (v); differentiate (v)"
+      "family": "different (adj); difference (n); differ (v); differentiate (v)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 38,
@@ -197,7 +265,11 @@
       "usage": "an addictive game; be addicted to something",
       "example": "He found the game addictive and set a daily limit.",
       "translation": "Anh ấy thấy trò chơi khiến mình khó dừng nên đặt giới hạn mỗi ngày.",
-      "family": "addict (n/v); addiction (n); addicted/addictive (adj)"
+      "family": "addict (n/v); addiction (n); addicted/addictive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 39,
@@ -208,7 +280,11 @@
       "usage": "open the floodgates to complaints/requests",
       "example": "The exception opened the floodgates to similar requests.",
       "translation": "Ngoại lệ ấy mở đường cho hàng loạt yêu cầu tương tự.",
-      "family": "flood (n/v); floodgate (n); flooding (n)"
+      "family": "flood (n/v); floodgate (n); flooding (n)",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 41,
@@ -219,7 +295,11 @@
       "usage": "unforeseeable risks/events/circumstances",
       "example": "The plan must allow for unforeseeable difficulties.",
       "translation": "Kế hoạch phải tính đến những khó khăn không thể dự đoán trước.",
-      "family": "foresee–foresaw–foreseen; foreseeable/unforeseeable (adj)"
+      "family": "foresee–foresaw–foreseen; foreseeable/unforeseeable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 42,
@@ -230,7 +310,11 @@
       "usage": "displays of incivility; workplace incivility",
       "example": "Repeated incivility can damage trust within a team.",
       "translation": "Thái độ thô lỗ lặp lại có thể làm mất lòng tin trong nhóm.",
-      "family": "civil/uncivil (adj); civility/incivility (n); civilian (n/adj)"
+      "family": "civil/uncivil (adj); civility/incivility (n); civilian (n/adj)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 43,
@@ -241,7 +325,11 @@
       "usage": "waterlogged ground/pitch/soil",
       "example": "The match was cancelled because the pitch was waterlogged.",
       "translation": "Trận đấu bị hủy vì sân sũng nước.",
-      "family": "water (n/v); waterlog (v); waterlogged (adj)"
+      "family": "water (n/v); waterlog (v); waterlogged (adj)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 44,
@@ -252,7 +340,11 @@
       "usage": "promote/deepen economic integration",
       "example": "Lower tariffs can support economic integration.",
       "translation": "Thuế quan thấp hơn có thể hỗ trợ hội nhập kinh tế.",
-      "family": "economy (n); economic (adj); integrate (v); integration (n)"
+      "family": "economy (n); economic (adj); integrate (v); integration (n)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 45,
@@ -263,7 +355,11 @@
       "usage": "an unmanageable workload; become unmanageable",
       "example": "The workload became unmanageable after two colleagues left.",
       "translation": "Khối lượng việc vượt khả năng xử lý sau khi hai đồng nghiệp nghỉ.",
-      "family": "manage (v); management (n); manager (n); manageable/unmanageable (adj)"
+      "family": "manage (v); management (n); manager (n); manageable/unmanageable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 53,
@@ -274,7 +370,11 @@
       "usage": "weigh up options/evidence/pros and cons",
       "example": "We should weigh up the risks before making a decision.",
       "translation": "Chúng ta nên cân nhắc các rủi ro trước khi quyết định.",
-      "family": "weigh (v); weight (n); weighed (V2/V3)"
+      "family": "weigh (v); weight (n); weighed (V2/V3)",
+      "teacherSelected": true,
+      "questions": [
+        53
+      ]
     },
     {
       "question": 60,
@@ -285,7 +385,11 @@
       "usage": "have important implications for something",
       "example": "The findings have implications for how children are taught.",
       "translation": "Những phát hiện này có ý nghĩa đối với cách dạy trẻ.",
-      "family": "imply (v); implication (n); implicit (adj, hàm ẩn)"
+      "family": "imply (v); implication (n); implicit (adj, hàm ẩn)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 68,
@@ -296,7 +400,11 @@
       "usage": "assess/compare something in terms of cost or quality",
       "example": "The plans differ in terms of cost and convenience.",
       "translation": "Các kế hoạch khác nhau xét về chi phí và sự tiện lợi.",
-      "family": "term (n); terms (n plural); terminology (n, thuật ngữ)"
+      "family": "term (n); terms (n plural); terminology (n, thuật ngữ)",
+      "teacherSelected": true,
+      "questions": [
+        68
+      ]
     },
     {
       "question": 74,
@@ -307,7 +415,11 @@
       "usage": "be overloaded with work/information",
       "example": "Students felt overloaded with assignments that week.",
       "translation": "Tuần ấy học sinh cảm thấy quá tải vì bài tập.",
-      "family": "load (n/v); overload (n/v); overloaded (adj)"
+      "family": "load (n/v); overload (n/v); overloaded (adj)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ]
     },
     {
       "question": 94,
@@ -318,7 +430,11 @@
       "usage": "a glimmer of hope of doing something",
       "example": "There is still a glimmer of hope that we can finish on time.",
       "translation": "Vẫn còn một tia hy vọng rằng chúng ta có thể hoàn thành đúng hạn.",
-      "family": "glimmer (n/v); hope (n/v); hopeful (adj); hopeless (adj)"
+      "family": "glimmer (n/v); hope (n/v); hopeful (adj); hopeless (adj)",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ]
     },
     {
       "question": 95,
@@ -329,7 +445,11 @@
       "usage": "take offence at a remark/being criticised",
       "example": "She took offence at his dismissive remark.",
       "translation": "Cô ấy cảm thấy bị xúc phạm bởi lời nhận xét coi thường của anh ấy.",
-      "family": "offend (v); offended/offensive (adj); offence/offense (n)"
+      "family": "offend (v); offended/offensive (adj); offence/offense (n)",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     }
   ]
 }

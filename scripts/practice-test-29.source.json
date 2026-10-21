@@ -1066,12 +1066,18 @@
       ],
       "displayAnswer": "was taken aback by / was taken aback at",
       "prefix": "The sportsman",
-      "suffix": "the amount of praise that he received from the community.",
-      "fullSentence": "The sportsman was taken aback by the amount of praise that he received from the community.",
-      "explanation": "Be taken aback by/at something nghĩa là rất bất ngờ trước điều gì. Chuyển người cảm thấy ngạc nhiên thành chủ ngữ bị động; taken là V3 của take. Aback giữ nguyên theo từ khóa, không viết back vì sẽ đổi thành nghĩa đưa về phía sau.",
+      "suffix": "the amount of praise that he received from the community",
+      "fullSentence": "The sportsman was taken aback by the amount of praise that he received from the community",
+      "explanation": "Be taken aback by/at something nghĩa là rất bất ngờ trước điều gì. Chuyển người cảm thấy ngạc nhiên thành chủ ngữ bị động; taken là V3 của take.",
       "globalNumber": 91,
       "sectionCode": "III.2",
-      "localNumber": 1
+      "localNumber": 1,
+      "keyword": "ABACK",
+      "answerPrefix": "The sportsman",
+      "answerSuffix": "the amount of praise that he received from the community",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "was taken aback by"
     },
     {
       "acceptedAnswers": [
@@ -1080,43 +1086,60 @@
       ],
       "displayAnswer": "comparison between Susan's former presentation skills / comparing Susan's former presentation skills",
       "prefix": "There is no",
-      "suffix": "and her current ones.",
-      "fullSentence": "There is no comparison between Susan's former presentation skills and her current ones.",
-      "explanation": "There is no comparison between A and B nhấn mạnh sự khác biệt lớn, ở đây kỹ năng hiện tại tốt hơn rất nhiều. Former phải đặt trước presentation skills để chỉ kỹ năng trước đây. There is no comparing A and B cũng dùng để nhấn mạnh hai mức chất lượng quá khác nhau.",
+      "suffix": "and her current ones",
+      "fullSentence": "There is no comparison between Susan's former presentation skills and her current ones",
+      "explanation": "There is no comparison between A and B nhấn mạnh sự khác biệt lớn, ở đây kỹ năng hiện tại tốt hơn rất nhiều. Former phải đặt trước presentation skills để chỉ kỹ năng trước đây.",
       "globalNumber": 92,
       "sectionCode": "III.2",
-      "localNumber": 2
+      "localNumber": 2,
+      "keyword": "FORMER",
+      "answerPrefix": "There is no",
+      "answerSuffix": "and her current ones",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "comparison between Susan's former presentation skills"
     },
     {
       "acceptedAnswers": [
         "resigned himself to never becoming",
-        "resigned himself to not becoming",
-        "resigned himself to the fact that he will never become"
+        "resigned himself to not becoming"
       ],
-      "displayAnswer": "resigned himself to never becoming / resigned himself to not becoming / resigned himself to the fact that he will never become",
+      "displayAnswer": "resigned himself to never becoming / resigned himself to not becoming",
       "prefix": "David has",
-      "suffix": "a professional tennis player.",
-      "fullSentence": "David has resigned himself to never becoming a professional tennis player.",
-      "explanation": "Resign oneself to something là chấp nhận một thực tế không mong muốn sau khi hiểu khó thay đổi nó. To trong resign himself to là giới từ nên dùng becoming, hoặc the fact that + mệnh đề. Himself phải phù hợp David; không viết resigned to become vì đảo ý thành có thể trở thành.",
+      "suffix": "a professional tennis player",
+      "fullSentence": "David has resigned himself to never becoming a professional tennis player",
+      "explanation": "Resign oneself to something là chấp nhận một thực tế không mong muốn sau khi hiểu khó thay đổi nó. To trong resign himself to là giới từ nên dùng becoming, hoặc the fact that + mệnh đề.",
       "globalNumber": 93,
       "sectionCode": "III.2",
-      "localNumber": 3
+      "localNumber": 3,
+      "keyword": "RESIGNED",
+      "answerPrefix": "David has",
+      "answerSuffix": "a professional tennis player",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "resigned himself to never becoming"
     },
     {
       "acceptedAnswers": [
-        "no attempt to hide her anger at",
-        "no attempt at hiding her anger at",
-        "no attempt to conceal her anger at",
-        "no attempt at concealing her anger at"
+        "no attempt to hide her anger",
+        "no attempt at hiding her anger",
+        "no attempt to conceal her anger",
+        "no attempt at concealing her anger"
       ],
-      "displayAnswer": "no attempt to hide her anger at / no attempt at hiding her anger at / no attempt to conceal her anger at / no attempt at concealing her anger at",
+      "displayAnswer": "no attempt to hide her anger / no attempt at hiding her anger / no attempt to conceal her anger / no attempt at concealing her anger",
       "prefix": "She made",
-      "suffix": "her son's disobedience.",
-      "fullSentence": "She made no attempt to hide her anger at her son's disobedience.",
-      "explanation": "Make no attempt to do/at doing something là không cố làm việc gì. Hide/conceal her anger tương đương che giấu tức giận. Giữ at trước her son's disobedience để thể hiện điều khiến cô ấy giận; sau attempt có thể dùng to hide hoặc at hiding.",
+      "suffix": "at her son's disobedience",
+      "fullSentence": "She made no attempt to hide her anger at her son's disobedience",
+      "explanation": "Make no attempt to do/at doing something là không cố làm việc gì. Hide/conceal her anger tương đương che giấu tức giận.",
       "globalNumber": 94,
       "sectionCode": "III.2",
-      "localNumber": 4
+      "localNumber": 4,
+      "keyword": "ATTEMPT",
+      "answerPrefix": "She made",
+      "answerSuffix": "at her son's disobedience",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "no attempt to hide her anger"
     },
     {
       "acceptedAnswers": [
@@ -1125,12 +1148,18 @@
       ],
       "displayAnswer": "not worth repairing / not worth having someone repair",
       "prefix": "It is",
-      "suffix": "that old typewriter.",
-      "fullSentence": "It is not worth repairing that old typewriter.",
-      "explanation": "Be worth + V-ing là đáng làm việc gì; not worth repairing giữ ý sửa chiếc máy này không đem lại giá trị xứng đáng. Repairing có nghĩa bị động theo ngữ cảnh dù hình thức V-ing chủ động. Không dùng worth to repair; phương án having someone repair cũng diễn đạt việc nhờ người khác sửa.",
+      "suffix": "that old typewriter",
+      "fullSentence": "It is not worth repairing that old typewriter",
+      "explanation": "Be worth + V-ing là đáng làm việc gì; not worth repairing giữ ý sửa chiếc máy này không đem lại giá trị xứng đáng. Repairing có nghĩa bị động theo ngữ cảnh dù hình thức V-ing chủ động.",
       "globalNumber": 95,
       "sectionCode": "III.2",
-      "localNumber": 5
+      "localNumber": 5,
+      "keyword": "WORTH",
+      "answerPrefix": "It is",
+      "answerSuffix": "that old typewriter",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "not worth repairing"
     },
     {
       "acceptedAnswers": [
@@ -1140,41 +1169,58 @@
       ],
       "displayAnswer": "out of the ordinary happens / out of the ordinary ever happens / out of the ordinary takes place",
       "prefix": "Nothing",
-      "suffix": "here.",
-      "fullSentence": "Nothing out of the ordinary happens here.",
-      "explanation": "Out of the ordinary là khác thường. Nothing out of the ordinary happens nghĩa là không có gì lạ xảy ra, tương đương chỉ có những việc thường ngày. Nothing là chủ ngữ số ít nên động từ happens/takes có -s; không đổi thành everything vì sẽ đảo nghĩa.",
+      "suffix": "here",
+      "fullSentence": "Nothing out of the ordinary happens here",
+      "explanation": "Out of the ordinary là khác thường. Nothing out of the ordinary happens nghĩa là không có gì lạ xảy ra, tương đương chỉ có những việc thường ngày.",
       "globalNumber": 96,
       "sectionCode": "III.2",
-      "localNumber": 6
+      "localNumber": 6,
+      "keyword": "OUT",
+      "answerPrefix": "Nothing",
+      "answerSuffix": "here",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "out of the ordinary happens"
     },
     {
       "acceptedAnswers": [
         "everything in his power to",
-        "all in his power to",
-        "all that was in his power to"
+        "all in his power to"
       ],
-      "displayAnswer": "everything in his power to / all in his power to / all that was in his power to",
+      "displayAnswer": "everything in his power to / all in his power to",
       "prefix": "He did",
-      "suffix": "save his marriage.",
-      "fullSentence": "He did everything in his power to save his marriage.",
-      "explanation": "Do everything in one's power là làm mọi điều nằm trong khả năng. To save chỉ mục đích giữ cuộc hôn nhân. Power ở đây là khả năng/quyền hành động, không phải điện năng; his phù hợp với chủ ngữ he.",
+      "suffix": "save his marriage",
+      "fullSentence": "He did everything in his power to save his marriage",
+      "explanation": "Do everything in one's power là làm mọi điều nằm trong khả năng. To save chỉ mục đích giữ cuộc hôn nhân.",
       "globalNumber": 97,
       "sectionCode": "III.2",
-      "localNumber": 7
+      "localNumber": 7,
+      "keyword": "POWER",
+      "answerPrefix": "He did",
+      "answerSuffix": "save his marriage",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "everything in his power to"
     },
     {
       "acceptedAnswers": [
-        "gave her my word that there would be",
-        "gave her my word there would be"
+        "gave her my word that",
+        "gave her my word"
       ],
-      "displayAnswer": "gave her my word that there would be / gave her my word there would be",
+      "displayAnswer": "gave her my word that / gave her my word",
       "prefix": "I",
-      "suffix": "no repetition of the situation in the future.",
-      "fullSentence": "I gave her my word that there would be no repetition of the situation in the future.",
-      "explanation": "Give someone one's word là hứa chắc với ai. Gave chuyển về quá khứ của promised; there would be là lùi thì tương ứng với lời hứa về tương lai. That có thể lược. Không cần thêm not trước no repetition vì sẽ gây phủ định kép sai nghĩa.",
+      "suffix": "there would be no repetition of the situation in the future",
+      "fullSentence": "I gave her my word that there would be no repetition of the situation in the future",
+      "explanation": "Give someone one's word là hứa chắc với ai. Gave chuyển về quá khứ của promised; there would be là lùi thì tương ứng với lời hứa về tương lai.",
       "globalNumber": 98,
       "sectionCode": "III.2",
-      "localNumber": 8
+      "localNumber": 8,
+      "keyword": "WORD",
+      "answerPrefix": "I",
+      "answerSuffix": "there would be no repetition of the situation in the future",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "gave her my word that"
     },
     {
       "acceptedAnswers": [
@@ -1182,12 +1228,18 @@
       ],
       "displayAnswer": "no circumstances will Jane ever forgive",
       "prefix": "Under",
-      "suffix": "Mark for what he did.",
-      "fullSentence": "Under no circumstances will Jane ever forgive Mark for what he did.",
-      "explanation": "Under no circumstances đứng đầu câu mang nghĩa trong bất kỳ tình huống nào cũng không, nên đảo will trước Jane. Ever giữ từ khóa và nhấn mạnh không bao giờ. Phải giữ will để bám đúng lời khẳng định chắc chắn về tương lai trong câu gốc.",
+      "suffix": "Mark for what he did",
+      "fullSentence": "Under no circumstances will Jane ever forgive Mark for what he did",
+      "explanation": "Under no circumstances đứng đầu câu mang nghĩa trong bất kỳ tình huống nào cũng không, nên đảo will trước Jane. Ever giữ từ khóa và nhấn mạnh không bao giờ.",
       "globalNumber": 99,
       "sectionCode": "III.2",
-      "localNumber": 9
+      "localNumber": 9,
+      "keyword": "EVER",
+      "answerPrefix": "Under",
+      "answerSuffix": "Mark for what he did",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "no circumstances will Jane ever forgive"
     },
     {
       "acceptedAnswers": [
@@ -1195,14 +1247,20 @@
       ],
       "displayAnswer": "no time were they aware",
       "prefix": "At",
-      "suffix": "that something was wrong.",
-      "fullSentence": "At no time were they aware that something was wrong.",
-      "explanation": "At no time diễn tả không một lúc nào và yêu cầu đảo ngữ: were they aware. Giữ quá khứ đơn như were trong câu gốc. Không dùng did they aware vì aware là tính từ, cần be chứ không phải động từ nguyên mẫu; cũng không thêm never sau no time.",
+      "suffix": "that something was wrong",
+      "fullSentence": "At no time were they aware that something was wrong",
+      "explanation": "At no time diễn tả không một lúc nào và yêu cầu đảo ngữ: were they aware. Giữ quá khứ đơn như were trong câu gốc.",
       "globalNumber": 100,
       "sectionCode": "III.2",
-      "localNumber": 10
+      "localNumber": 10,
+      "keyword": "TIME",
+      "answerPrefix": "At",
+      "answerSuffix": "that something was wrong",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "no time were they aware"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

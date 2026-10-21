@@ -1084,70 +1084,96 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "Linda apologized to me for not attending the meeting",
-        "Linda apologized to me for not having attended the meeting"
+        "Linda apologized to me for"
       ],
-      "displayAnswer": "Linda apologized to me for not attending the meeting / Linda apologized to me for not having attended the meeting",
+      "displayAnswer": "Linda apologized to me for",
       "prefix": "",
-      "suffix": "",
-      "fullSentence": "Linda apologized to me for not having attended the meeting.",
-      "explanation": "Apologize to someone for + danh từ/V-ing là xin lỗi ai về việc gì. Dùng not attending/not having attended để giữ ý Linda đã vắng mặt; giữ từ APOLOGIZED theo đề, không đổi sang regretted dù gần nghĩa."
+      "suffix": "not attending the meeting",
+      "fullSentence": "Linda apologized to me for not attending the meeting",
+      "explanation": "Apologize to someone for + danh từ/V-ing là xin lỗi ai về việc gì. Dùng not attending/not having attended để giữ ý Linda đã vắng mặt; giữ từ APOLOGIZED theo đề, không đổi sang regretted dù gần nghĩa.",
+      "keyword": "APOLOGIZED",
+      "answerPrefix": "",
+      "answerSuffix": "not attending the meeting",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "Linda apologized to me for"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "Could you stand in for me while I visit the doctor this afternoon?"
+        "Could you stand in for me"
       ],
-      "displayAnswer": "Could you stand in for me while I visit the doctor this afternoon?",
+      "displayAnswer": "Could you stand in for me",
       "prefix": "",
-      "suffix": "",
-      "fullSentence": "Could you stand in for me while I visit the doctor this afternoon?",
-      "explanation": "Stand in for someone là làm thay công việc của người đó tạm thời. Cần đủ in for; stand for mang nghĩa đại diện hoặc chịu đựng. Sau while vẫn dùng visit ở hiện tại để nói thời gian dự định trong buổi chiều."
+      "suffix": "while I visit the doctor this afternoon",
+      "fullSentence": "Could you stand in for me while I visit the doctor this afternoon",
+      "explanation": "Stand in for someone là làm thay công việc của người đó tạm thời. Cần đủ in for; stand for mang nghĩa đại diện hoặc chịu đựng.",
+      "keyword": "STAND",
+      "answerPrefix": "",
+      "answerSuffix": "while I visit the doctor this afternoon",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "Could you stand in for me"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "Are they in favour of national service?"
+        "Are they in favour of"
       ],
-      "displayAnswer": "Are they in favour of national service?",
+      "displayAnswer": "Are they in favour of",
       "prefix": "",
-      "suffix": "",
-      "fullSentence": "Are they in favour of national service?",
-      "explanation": "Be in favour of + danh từ/V-ing nghĩa là tán thành hoặc ủng hộ. Do they agree đổi thành Are they in favour; không giữ do trước tính từ/cụm giới từ. Đề cho FAVOUR nên giữ nguyên cách viết này."
+      "suffix": "national service",
+      "fullSentence": "Are they in favour of national service",
+      "explanation": "Be in favour of + danh từ/V-ing nghĩa là tán thành hoặc ủng hộ. Do they agree đổi thành Are they in favour; không giữ do trước tính từ/cụm giới từ.",
+      "keyword": "FAVOUR",
+      "answerPrefix": "",
+      "answerSuffix": "national service",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "Are they in favour of"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "I may have forgotten to mention that the deadline is Tuesday"
+        "I may have forgotten to mention"
       ],
-      "displayAnswer": "I may have forgotten to mention that the deadline is Tuesday",
+      "displayAnswer": "I may have forgotten to mention",
       "prefix": "",
-      "suffix": "",
-      "fullSentence": "I may have forgotten to mention that the deadline is Tuesday.",
-      "explanation": "May have + V3 diễn tả khả năng về việc trong quá khứ. Quá khứ phân từ của forget là forgotten, không phải forgot. Đề dùng it is possible để phù hợp mức độ chưa chắc của may, thay cho probably vốn thiên về khả năng cao."
+      "suffix": "that the deadline is Tuesday",
+      "fullSentence": "I may have forgotten to mention that the deadline is Tuesday",
+      "explanation": "May have + V3 diễn tả khả năng về việc trong quá khứ. Quá khứ phân từ của forget là forgotten, không phải forgot.",
+      "keyword": "MAY",
+      "answerPrefix": "",
+      "answerSuffix": "that the deadline is Tuesday",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "I may have forgotten to mention"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "Apply yourself to studying harder or you won’t pass your exams",
-        "Apply yourself to studying harder or you will not pass your exams",
-        "Apply yourself or you won’t pass your exams",
-        "You must apply yourself if you want to pass your exams",
-        "You must apply yourself to your studies if you want to pass your exams"
+        "Apply yourself to studying harder",
+        "Apply yourself"
       ],
-      "displayAnswer": "Apply yourself to studying harder or you won’t pass your exams / Apply yourself to studying harder or you will not pass your exams / Apply yourself or you won’t pass your exams / You must apply yourself if you want to pass your exams / You must apply yourself to your studies if you want to pass your exams",
+      "displayAnswer": "Apply yourself to studying harder / Apply yourself",
       "prefix": "",
-      "suffix": "",
-      "fullSentence": "Apply yourself to studying harder or you won’t pass your exams.",
-      "explanation": "Apply oneself là tập trung nỗ lực làm việc/học tập, không phải nộp đơn trong ngữ cảnh này. Dùng yourself theo chủ ngữ you; nếu có to studying thì to là giới từ nên studying ở dạng V-ing. Giữ ý phải cố gắng mới đỗ."
+      "suffix": "or you won't pass your exams",
+      "fullSentence": "Apply yourself to studying harder or you won't pass your exams",
+      "explanation": "Apply oneself là tập trung nỗ lực làm việc/học tập, không phải nộp đơn trong ngữ cảnh này. Dùng yourself theo chủ ngữ you; nếu có to studying thì to là giới từ nên studying ở dạng V-ing.",
+      "keyword": "APPLY",
+      "answerPrefix": "",
+      "answerSuffix": "or you won't pass your exams",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "Apply yourself to studying harder"
     },
     {
       "globalNumber": 96,
@@ -1160,10 +1186,16 @@
         "breathe a single word of this"
       ],
       "displayAnswer": "breathe a word of this / breathe a word about this / breathe a single word about this / breathe a single word of this",
-      "prefix": "Don’t",
-      "suffix": "to your colleagues.",
-      "fullSentence": "Don’t breathe a word of this to your colleagues.",
-      "explanation": "Not breathe a word là không hé lộ dù một lời. A word of/about this đều tự nhiên; sau phần trống đã có to your colleagues nên không lặp lại. Giữ từ BREATHE là động từ, khác breath là danh từ hơi thở."
+      "prefix": "Don't",
+      "suffix": "to your colleagues",
+      "fullSentence": "Don't breathe a word of this to your colleagues",
+      "explanation": "Not breathe a word là không hé lộ dù một lời. A word of/about this đều tự nhiên; sau phần trống đã có to your colleagues nên không lặp lại.",
+      "keyword": "BREATHE",
+      "answerPrefix": "Don't",
+      "answerSuffix": "to your colleagues",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "breathe a word of this"
     },
     {
       "globalNumber": 97,
@@ -1173,10 +1205,16 @@
         "feel up to going"
       ],
       "displayAnswer": "feel up to going",
-      "prefix": "John doesn’t",
-      "suffix": "out.",
-      "fullSentence": "John doesn’t feel up to going out.",
-      "explanation": "Feel up to + danh từ/V-ing là thấy đủ sức làm việc gì. John hơi ốm nên không đủ khoẻ để ra ngoài. To là giới từ trong cụm cố định, vì vậy dùng going; out đã có sẵn phía sau ô trả lời."
+      "prefix": "John doesn't",
+      "suffix": "out",
+      "fullSentence": "John doesn't feel up to going out",
+      "explanation": "Feel up to + danh từ/V-ing là thấy đủ sức làm việc gì. John hơi ốm nên không đủ khoẻ để ra ngoài.",
+      "keyword": "UP",
+      "answerPrefix": "John doesn't",
+      "answerSuffix": "out",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "feel up to going"
     },
     {
       "globalNumber": 98,
@@ -1189,9 +1227,15 @@
       ],
       "displayAnswer": "up in arms about the closure / up in arms over the closure / up in arms at the closure",
       "prefix": "The residents were",
-      "suffix": "of the local library.",
-      "fullSentence": "The residents were up in arms about the closure of the local library.",
-      "explanation": "Be up in arms about/over/at something nghĩa là rất tức giận và phản đối mạnh. Đây là thành ngữ, không có nghĩa cư dân thật sự cầm vũ khí. Closure là danh từ việc đóng cửa; phần of the local library đã cho sẵn."
+      "suffix": "of the local library",
+      "fullSentence": "The residents were up in arms about the closure of the local library",
+      "explanation": "Be up in arms about/over/at something nghĩa là rất tức giận và phản đối mạnh. Đây là thành ngữ, không có nghĩa cư dân thật sự cầm vũ khí.",
+      "keyword": "ARMS",
+      "answerPrefix": "The residents were",
+      "answerSuffix": "of the local library",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "up in arms about the closure"
     },
     {
       "globalNumber": 99,
@@ -1202,9 +1246,15 @@
       ],
       "displayAnswer": "our absolute astonishment, our team",
       "prefix": "To",
-      "suffix": "lost in the final match.",
-      "fullSentence": "To our absolute astonishment, our team lost in the final match.",
-      "explanation": "To one’s astonishment mở đầu câu để nói điều khiến ai kinh ngạc. Absolutely ở câu gốc đổi thành tính từ absolute trước danh từ astonishment. Điền cả our team làm chủ ngữ cho lost; nếu chỉ viết cụm chỉ cảm xúc, câu sẽ thiếu chủ ngữ."
+      "suffix": "lost in the final match",
+      "fullSentence": "To our absolute astonishment, our team lost in the final match",
+      "explanation": "To one’s astonishment mở đầu câu để nói điều khiến ai kinh ngạc. Absolutely ở câu gốc đổi thành tính từ absolute trước danh từ astonishment.",
+      "keyword": "ABSOLUTE",
+      "answerPrefix": "To",
+      "answerSuffix": "lost in the final match",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "our absolute astonishment, our team"
     },
     {
       "globalNumber": 100,
@@ -1217,11 +1267,17 @@
       ],
       "displayAnswer": "without giving enough thought / without giving sufficient thought / without giving adequate thought",
       "prefix": "Harry made a very quick decision",
-      "suffix": "to the matter.",
-      "fullSentence": "Harry made a very quick decision without giving enough thought to the matter.",
-      "explanation": "Without là giới từ nên theo sau bằng giving. Give thought to something nghĩa là cân nhắc điều gì; enough/sufficient/adequate thought giữ ý đã không suy nghĩ đủ. Không dùng without thinking to vì think đi với about trong nghĩa này."
+      "suffix": "to the matter",
+      "fullSentence": "Harry made a very quick decision without giving enough thought to the matter",
+      "explanation": "Without là giới từ nên theo sau bằng giving. Give thought to something nghĩa là cân nhắc điều gì; enough/sufficient/adequate thought giữ ý đã không suy nghĩ đủ.",
+      "keyword": "WITHOUT",
+      "answerPrefix": "Harry made a very quick decision",
+      "answerSuffix": "to the matter",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "without giving enough thought"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

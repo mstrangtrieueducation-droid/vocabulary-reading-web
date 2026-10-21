@@ -1071,9 +1071,15 @@
       ],
       "displayAnswer": "to fall back on",
       "prefix": "We need a Plan B",
-      "suffix": "in an emergency.",
-      "fullSentence": "We need a Plan B to fall back on in an emergency.",
-      "explanation": "Fall back on something là dùng một phương án dự phòng khi cách chính không thực hiện được. To fall back on bổ nghĩa Plan B, giải thích mục đích. Giữ BACK nguyên dạng và giữ on vì đây là cụm động từ ba thành phần."
+      "suffix": "in an emergency",
+      "fullSentence": "We need a Plan B to fall back on in an emergency",
+      "explanation": "Fall back on something là dùng một phương án dự phòng khi cách chính không thực hiện được. To fall back on bổ nghĩa Plan B, giải thích mục đích.",
+      "keyword": "BACK",
+      "answerPrefix": "We need a Plan B",
+      "answerSuffix": "in an emergency",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to fall back on"
     },
     {
       "globalNumber": 92,
@@ -1084,9 +1090,15 @@
       ],
       "displayAnswer": "never see eye to eye",
       "prefix": "My brother and I",
-      "suffix": "with each other.",
-      "fullSentence": "My brother and I never see eye to eye with each other.",
-      "explanation": "See eye to eye with someone nghĩa là đồng ý hoặc cùng quan điểm. Never giữ ý never agree trong câu gốc; eye ở số ít và xuất hiện hai lần trong thành ngữ. Không dùng eyes hoặc bỏ to."
+      "suffix": "with each other",
+      "fullSentence": "My brother and I never see eye to eye with each other",
+      "explanation": "See eye to eye with someone nghĩa là đồng ý hoặc cùng quan điểm. Never giữ ý never agree trong câu gốc; eye ở số ít và xuất hiện hai lần trong thành ngữ.",
+      "keyword": "EYE",
+      "answerPrefix": "My brother and I",
+      "answerSuffix": "with each other",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "never see eye to eye"
     },
     {
       "globalNumber": 93,
@@ -1098,9 +1110,15 @@
       ],
       "displayAnswer": "on no account must you / on no account should you",
       "prefix": "Despite the difficulty of the exercise,",
-      "suffix": "give up.",
-      "fullSentence": "Despite the difficulty of the exercise, on no account must you give up.",
-      "explanation": "On no account nghĩa là không trong bất kỳ trường hợp nào và kéo theo đảo ngữ must/should + you. Must you là mẫu sát mức bắt buộc của câu gốc nhất; should you cũng là lời cấm mạnh trong thành ngữ. Không dùng you must sau cụm phủ định đặt đầu mệnh đề."
+      "suffix": "give up",
+      "fullSentence": "Despite the difficulty of the exercise, on no account must you give up",
+      "explanation": "On no account nghĩa là không trong bất kỳ trường hợp nào và kéo theo đảo ngữ must/should + you. Must you là mẫu sát mức bắt buộc của câu gốc nhất; should you cũng là lời cấm mạnh trong thành ngữ.",
+      "keyword": "ACCOUNT",
+      "answerPrefix": "Despite the difficulty of the exercise,",
+      "answerSuffix": "give up",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "on no account must you"
     },
     {
       "globalNumber": 94,
@@ -1112,9 +1130,15 @@
       ],
       "displayAnswer": "in for unfair criticism / in for unjust criticism",
       "prefix": "Ali feels that he came",
-      "suffix": "after the loss of the key client.",
-      "fullSentence": "Ali feels that he came in for unfair criticism after the loss of the key client.",
-      "explanation": "Come in for criticism là nhận/chịu sự chỉ trích. Criticised unjustly chuyển thành unfair/unjust criticism để giữ ý bị phê bình không công bằng. Chỗ trống bắt đầu bằng in vì came đã có sẵn, và phải giữ FOR."
+      "suffix": "after the loss of the key client",
+      "fullSentence": "Ali feels that he came in for unfair criticism after the loss of the key client",
+      "explanation": "Come in for criticism là nhận/chịu sự chỉ trích. Criticised unjustly chuyển thành unfair/unjust criticism để giữ ý bị phê bình không công bằng.",
+      "keyword": "FOR",
+      "answerPrefix": "Ali feels that he came",
+      "answerSuffix": "after the loss of the key client",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "in for unfair criticism"
     },
     {
       "globalNumber": 95,
@@ -1125,9 +1149,15 @@
       ],
       "displayAnswer": "burning the midnight oil",
       "prefix": "Although it sounds like a good idea,",
-      "suffix": "can be counterproductive.",
-      "fullSentence": "Although it sounds like a good idea, burning the midnight oil can be counterproductive.",
-      "explanation": "Burn the midnight oil là học hoặc làm việc đến khuya. Dùng burning để cả cụm làm chủ ngữ của can be. Counterproductive nghĩa là gây tác dụng ngược, khớp do more harm than good trong câu gốc; không chỉ là không đạt đủ kết quả."
+      "suffix": "can be counterproductive",
+      "fullSentence": "Although it sounds like a good idea, burning the midnight oil can be counterproductive",
+      "explanation": "Burn the midnight oil là học hoặc làm việc đến khuya. Dùng burning để cả cụm làm chủ ngữ của can be.",
+      "keyword": "BURNING",
+      "answerPrefix": "Although it sounds like a good idea,",
+      "answerSuffix": "can be counterproductive",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "burning the midnight oil"
     },
     {
       "globalNumber": 96,
@@ -1139,9 +1169,15 @@
       ],
       "displayAnswer": "stands a good chance of being / stands a strong chance of being",
       "prefix": "She",
-      "suffix": "chosen for the beauty contest.",
-      "fullSentence": "She stands a good chance of being chosen for the beauty contest.",
-      "explanation": "Stand a good/strong chance of doing something là có khả năng cao làm hoặc gặp điều gì. She được chọn nên sau of cần being chosen ở dạng bị động V-ing. Stands hòa hợp với she; không dùng to be sau chance of."
+      "suffix": "chosen for the beauty contest",
+      "fullSentence": "She stands a good chance of being chosen for the beauty contest",
+      "explanation": "Stand a good/strong chance of doing something là có khả năng cao làm hoặc gặp điều gì. She được chọn nên sau of cần being chosen ở dạng bị động V-ing.",
+      "keyword": "STANDS",
+      "answerPrefix": "She",
+      "answerSuffix": "chosen for the beauty contest",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "stands a good chance of being"
     },
     {
       "globalNumber": 97,
@@ -1153,9 +1189,15 @@
       ],
       "displayAnswer": "ill at ease / not at ease",
       "prefix": "She felt",
-      "suffix": "during the meeting because everyone was staring at her.",
-      "fullSentence": "She felt ill at ease during the meeting because everyone was staring at her.",
-      "explanation": "Ill at ease là không thoải mái, bồn chồn trong tình huống xã hội. Not at ease cũng giữ đúng nghĩa uncomfortable. Không nhầm at ease là thoải mái, nghĩa ngược với câu gốc; ease là danh từ trong cụm cố định."
+      "suffix": "during the meeting because everyone was staring at her",
+      "fullSentence": "She felt ill at ease during the meeting because everyone was staring at her",
+      "explanation": "Ill at ease là không thoải mái, bồn chồn trong tình huống xã hội. Not at ease cũng giữ đúng nghĩa uncomfortable.",
+      "keyword": "EASE",
+      "answerPrefix": "She felt",
+      "answerSuffix": "during the meeting because everyone was staring at her",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "ill at ease"
     },
     {
       "globalNumber": 98,
@@ -1169,9 +1211,15 @@
       ],
       "displayAnswer": "in a different league / in a completely different league / in another league / in an entirely different league",
       "prefix": "She is",
-      "suffix": "from the rest of the team.",
-      "fullSentence": "She is in a different league from the rest of the team.",
-      "explanation": "Be in a different league from someone nghĩa là ở trình độ khác hẳn, thường vượt trội trong ngữ cảnh khen tài năng. From đã có ở phần cố định nên dùng different/another league. In a league of her own không ghép trực tiếp với from; his còn sai đại từ chỉ she."
+      "suffix": "from the rest of the team",
+      "fullSentence": "She is in a different league from the rest of the team",
+      "explanation": "Be in a different league from someone nghĩa là ở trình độ khác hẳn, thường vượt trội trong ngữ cảnh khen tài năng. From đã có ở phần cố định nên dùng different/another league.",
+      "keyword": "LEAGUE",
+      "answerPrefix": "She is",
+      "answerSuffix": "from the rest of the team",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "in a different league"
     },
     {
       "globalNumber": 99,
@@ -1182,9 +1230,15 @@
       ],
       "displayAnswer": "to none when it comes to",
       "prefix": "The company is second",
-      "suffix": "designing pocket-sized devices.",
-      "fullSentence": "The company is second to none when it comes to designing pocket-sized devices.",
-      "explanation": "Second to none nghĩa là không thua ai, tương đương the best. When it comes to + danh từ/V-ing nghĩa là khi nói đến lĩnh vực nào, nên theo sau là designing đã có sẵn. Giữ COMES nguyên dạng; không dùng come hoặc bỏ to cuối cụm."
+      "suffix": "designing pocket-sized devices",
+      "fullSentence": "The company is second to none when it comes to designing pocket-sized devices",
+      "explanation": "Second to none nghĩa là không thua ai, tương đương the best. When it comes to + danh từ/V-ing nghĩa là khi nói đến lĩnh vực nào, nên theo sau là designing đã có sẵn.",
+      "keyword": "COMES",
+      "answerPrefix": "The company is second",
+      "answerSuffix": "designing pocket-sized devices",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to none when it comes to"
     },
     {
       "globalNumber": 100,
@@ -1195,11 +1249,17 @@
       ],
       "displayAnswer": "get to grips with",
       "prefix": "The new principal will have to",
-      "suffix": "the problems facing this school without delay.",
-      "fullSentence": "The new principal will have to get to grips with the problems facing this school without delay.",
-      "explanation": "Get to grips with something là bắt đầu nắm bắt và xử lý một vấn đề khó. With nối cụm động từ với problems. Without delay ở cuối giữ ý urgent, nên câu không chỉ yêu cầu xử lý vào một lúc nào đó; sau have to dùng get nguyên mẫu."
+      "suffix": "the problems facing this school without delay",
+      "fullSentence": "The new principal will have to get to grips with the problems facing this school without delay",
+      "explanation": "Get to grips with something là bắt đầu nắm bắt và xử lý một vấn đề khó. With nối cụm động từ với problems.",
+      "keyword": "GRIPS",
+      "answerPrefix": "The new principal will have to",
+      "answerSuffix": "the problems facing this school without delay",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "get to grips with"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

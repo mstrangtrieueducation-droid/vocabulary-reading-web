@@ -1071,9 +1071,15 @@
       ],
       "displayAnswer": "to take into account how / to take account of how",
       "prefix": "She needs",
-      "suffix": "much the holiday is going to cost.",
-      "fullSentence": "She needs to take into account how much the holiday is going to cost.",
-      "explanation": "Take into account hoặc take account of nghĩa là xem xét/tính đến. How much bắt đầu câu hỏi gián tiếp về số tiền; much đã nằm sau ô trống nên chỉ điền đến how. Không đảo thành how much is the holiday going to cost."
+      "suffix": "much the holiday is going to cost",
+      "fullSentence": "She needs to take into account how much the holiday is going to cost",
+      "explanation": "Take into account hoặc take account of nghĩa là xem xét/tính đến. How much bắt đầu câu hỏi gián tiếp về số tiền; much đã nằm sau ô trống nên chỉ điền đến how.",
+      "keyword": "ACCOUNT",
+      "answerPrefix": "She needs",
+      "answerSuffix": "much the holiday is going to cost",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to take into account how"
     },
     {
       "globalNumber": 92,
@@ -1087,9 +1093,15 @@
       ],
       "displayAnswer": "renowned expert in the field / well-known expert in the field / recognised expert in the field / recognized expert in the field",
       "prefix": "Susan is a",
-      "suffix": "of human psychology.",
-      "fullSentence": "Susan is a renowned expert in the field of human psychology.",
-      "explanation": "Expert in the field of là chuyên gia trong lĩnh vực. Renowned/well-known giữ ý nổi tiếng của câu gốc. Chỗ trống phải chứa field theo yêu cầu; of human psychology đã cho sẵn nên không lặp lại."
+      "suffix": "of human psychology",
+      "fullSentence": "Susan is a renowned expert in the field of human psychology",
+      "explanation": "Expert in the field of là chuyên gia trong lĩnh vực. Renowned/well-known giữ ý nổi tiếng của câu gốc.",
+      "keyword": "FIELD",
+      "answerPrefix": "Susan is a",
+      "answerSuffix": "of human psychology",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "renowned expert in the field"
     },
     {
       "globalNumber": 93,
@@ -1100,10 +1112,16 @@
         "when other people tell him"
       ],
       "displayAnswer": "it when other people tell him / when other people tell him",
-      "prefix": "John doesn’t like",
-      "suffix": "what to do at work.",
-      "fullSentence": "John doesn’t like it when other people tell him what to do at work.",
-      "explanation": "Like it when + mệnh đề là cấu trúc tự nhiên để nói thích/không thích một tình huống; it làm tân ngữ hình thức. Cách bỏ it cũng gặp và được chấp nhận. Phải giữ other people tell him để John là người bị chỉ bảo."
+      "prefix": "John doesn't like",
+      "suffix": "what to do at work",
+      "fullSentence": "John doesn't like it when other people tell him what to do at work",
+      "explanation": "Like it when + mệnh đề là cấu trúc tự nhiên để nói thích/không thích một tình huống; it làm tân ngữ hình thức. Cách bỏ it cũng gặp và được chấp nhận.",
+      "keyword": "WHEN",
+      "answerPrefix": "John doesn't like",
+      "answerSuffix": "what to do at work",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "it when other people tell him"
     },
     {
       "globalNumber": 94,
@@ -1115,9 +1133,15 @@
       ],
       "displayAnswer": "the extent to which / to what extent",
       "prefix": "I didn't realise",
-      "suffix": "he was influenced by his brother.",
-      "fullSentence": "I didn’t realise the extent to which he was influenced by his brother.",
-      "explanation": "The extent to which và to what extent đều nói mức độ ảnh hưởng. Extent đi với giới từ to trong cấu trúc này. Đây là mệnh đề gián tiếp nên giữ he was, không đảo was he như một câu hỏi trực tiếp."
+      "suffix": "he was influenced by his brother",
+      "fullSentence": "I didn't realise the extent to which he was influenced by his brother",
+      "explanation": "The extent to which và to what extent đều nói mức độ ảnh hưởng. Extent đi với giới từ to trong cấu trúc này.",
+      "keyword": "EXTENT",
+      "answerPrefix": "I didn't realise",
+      "answerSuffix": "he was influenced by his brother",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "the extent to which"
     },
     {
       "globalNumber": 95,
@@ -1128,83 +1152,115 @@
       ],
       "displayAnswer": "see him off at",
       "prefix": "We decided not to",
-      "suffix": "the airport after all.",
-      "fullSentence": "We decided not to see him off at the airport after all.",
-      "explanation": "See someone off là tiễn ai lúc khởi hành. Đại từ him đứng giữa see và off; at đi với sân bay là địa điểm tiễn. Không bỏ off vì see him at the airport chỉ là gặp anh ấy, chưa giữ nghĩa đi tiễn."
+      "suffix": "the airport after all",
+      "fullSentence": "We decided not to see him off at the airport after all",
+      "explanation": "See someone off là tiễn ai lúc khởi hành. Đại từ him đứng giữa see và off; at đi với sân bay là địa điểm tiễn.",
+      "keyword": "SEE",
+      "answerPrefix": "We decided not to",
+      "answerSuffix": "the airport after all",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "see him off at"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "Mr and Mrs Smith never see eye to eye on how to bring up their children",
-        "Mr and Mrs Smith never see eye to eye about how to bring up their children",
-        "Mr and Mrs Smith never see eye to eye over how to bring up their children"
+        "never see eye to eye on",
+        "never see eye to eye about",
+        "never see eye to eye over"
       ],
-      "displayAnswer": "Mr and Mrs Smith never see eye to eye on how to bring up their children / Mr and Mrs Smith never see eye to eye about how to bring up their children / Mr and Mrs Smith never see eye to eye over how to bring up their children",
-      "prefix": "",
-      "suffix": "",
-      "fullSentence": "Mr and Mrs Smith never see eye to eye on how to bring up their children.",
-      "explanation": "See eye to eye nghĩa là đồng quan điểm, thường theo sau bằng on/about/over một vấn đề. Never giữ mức phủ định hoàn toàn. Bring up their children là nuôi dạy con, không đổi thành đưa con tới một nơi theo nghĩa đen."
+      "displayAnswer": "never see eye to eye on / never see eye to eye about / never see eye to eye over",
+      "prefix": "Mr and Mrs Smith",
+      "suffix": "how to bring up their children",
+      "fullSentence": "Mr and Mrs Smith never see eye to eye on how to bring up their children",
+      "explanation": "See eye to eye nghĩa là đồng quan điểm, thường theo sau bằng on/about/over một vấn đề. Never giữ mức phủ định hoàn toàn.",
+      "keyword": "EYE",
+      "answerPrefix": "Mr and Mrs Smith",
+      "answerSuffix": "how to bring up their children",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "never see eye to eye on"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "The stories he tells about his school days are beyond belief"
+        "are beyond belief"
       ],
-      "displayAnswer": "The stories he tells about his school days are beyond belief",
-      "prefix": "",
+      "displayAnswer": "are beyond belief",
+      "prefix": "The stories he tells about his school days",
       "suffix": "",
-      "fullSentence": "The stories he tells about his school days are beyond belief.",
-      "explanation": "Beyond belief nghĩa là không thể tin nổi, tương đương unbelievable trong câu. Beyond là giới từ nên theo sau bằng danh từ belief, không phải believe. Giữ stories số nhiều nên dùng are và không đổi người kể chuyện."
+      "fullSentence": "The stories he tells about his school days are beyond belief",
+      "explanation": "Beyond belief nghĩa là không thể tin nổi, tương đương unbelievable trong câu. Beyond là giới từ nên theo sau bằng danh từ belief, không phải believe.",
+      "keyword": "BEYOND",
+      "answerPrefix": "The stories he tells about his school days",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "are beyond belief"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "There is no question of his father giving him any more money",
-        "His father giving him any more money is out of the question",
-        "It is out of the question for his father to give him any more money"
+        "There is no question of"
       ],
-      "displayAnswer": "There is no question of his father giving him any more money / His father giving him any more money is out of the question / It is out of the question for his father to give him any more money",
+      "displayAnswer": "There is no question of",
       "prefix": "",
-      "suffix": "",
-      "fullSentence": "There is no question of his father giving him any more money.",
-      "explanation": "There is no question of + V-ing hoặc be out of the question diễn tả chắc chắn không thể xảy ra/không được xem xét. No question that lại có thể khẳng định chắc chắn một việc có thật nên không dùng nhầm với of trong câu này."
+      "suffix": "his father giving him any more money",
+      "fullSentence": "There is no question of his father giving him any more money",
+      "explanation": "There is no question of + V-ing hoặc be out of the question diễn tả chắc chắn không thể xảy ra/không được xem xét. No question that lại có thể khẳng định chắc chắn một việc có thật nên không dùng nhầm với of trong câu này.",
+      "keyword": "QUESTION",
+      "answerPrefix": "",
+      "answerSuffix": "his father giving him any more money",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "There is no question of"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "George talked me out of selling my house"
+        "George talked me out of selling"
       ],
-      "displayAnswer": "George talked me out of selling my house",
+      "displayAnswer": "George talked me out of selling",
       "prefix": "",
-      "suffix": "",
-      "fullSentence": "George talked me out of selling my house.",
-      "explanation": "Talk someone out of + V-ing là thuyết phục ai đừng làm việc gì. Ngược lại talk someone into là thuyết phục làm. Me là người được thuyết phục, my house giữ quan hệ sở hữu của người nói."
+      "suffix": "my house",
+      "fullSentence": "George talked me out of selling my house",
+      "explanation": "Talk someone out of + V-ing là thuyết phục ai đừng làm việc gì. Ngược lại talk someone into là thuyết phục làm.",
+      "keyword": "OUT",
+      "answerPrefix": "",
+      "answerSuffix": "my house",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "George talked me out of selling"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "I hope you will enjoy yourself during your stay with Janet’s family",
-        "I hope you will enjoy yourself during your stay with Janet's family",
-        "I hope you have a good time during your stay with Janet’s family",
-        "I hope you have a good time during your stay with Janet's family"
+        "you will enjoy yourself during",
+        "you have a good time during"
       ],
-      "displayAnswer": "I hope you will enjoy yourself during your stay with Janet’s family / I hope you will enjoy yourself during your stay with Janet's family / I hope you have a good time during your stay with Janet’s family / I hope you have a good time during your stay with Janet's family",
-      "prefix": "",
-      "suffix": "",
-      "fullSentence": "I hope you will enjoy yourself during your stay with Janet’s family.",
-      "explanation": "During + danh từ chỉ thời gian, nên while you stay chuyển thành during your stay. Enjoy yourself tương đương have a good time. Không viết during you stay vì during không nối trực tiếp một mệnh đề có chủ ngữ và động từ."
+      "displayAnswer": "you will enjoy yourself during / you have a good time during",
+      "prefix": "I hope",
+      "suffix": "your stay with Janet's family",
+      "fullSentence": "I hope you will enjoy yourself during your stay with Janet's family",
+      "explanation": "During + danh từ chỉ thời gian, nên while you stay chuyển thành during your stay. Enjoy yourself tương đương have a good time.",
+      "keyword": "DURING",
+      "answerPrefix": "I hope",
+      "answerSuffix": "your stay with Janet's family",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "you will enjoy yourself during"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

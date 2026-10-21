@@ -1056,34 +1056,40 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "is difficult for people with disabilities to shop",
-        "is hard for people with disabilities to shop",
-        "is difficult for disabled people to shop",
-        "is hard for disabled people to shop"
+        "for people with disabilities to shop",
+        "for disabled people to shop"
       ],
-      "displayAnswer": "is difficult for people with disabilities to shop / is hard for people with disabilities to shop / is difficult for disabled people to shop / is hard for disabled people to shop",
-      "explanation": "It is difficult for somebody to do something chuyển nhận xét việc mua sắm khó sang chủ ngữ hình thức it. Giữ shop nguyên dạng sau to và in supermarkets đã có. Bản đề dùng people with disabilities để diễn đạt tôn trọng hơn.",
-      "prefix": "It",
-      "suffix": "in supermarkets.",
-      "fullSentence": "It is difficult for people with disabilities to shop in supermarkets."
+      "displayAnswer": "for people with disabilities to shop / for disabled people to shop",
+      "explanation": "It is difficult for somebody to do something chuyển nhận xét việc mua sắm khó sang chủ ngữ hình thức it. Giữ shop nguyên dạng sau to và in supermarkets đã có.",
+      "prefix": "It is difficult",
+      "suffix": "in supermarkets",
+      "fullSentence": "It is difficult for people with disabilities to shop in supermarkets",
+      "keyword": "SHOP",
+      "answerPrefix": "It is difficult",
+      "answerSuffix": "in supermarkets",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "for people with disabilities to shop"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "racked my brain but couldn’t manage",
-        "racked my brains but couldn’t manage",
-        "racked my brain but could not manage",
-        "racked my brains but could not manage",
         "racked my brains in vain trying",
         "racked my brain in vain trying"
       ],
-      "displayAnswer": "racked my brain but couldn’t manage / racked my brains but couldn’t manage / racked my brain but could not manage / racked my brains but could not manage / racked my brains in vain trying / racked my brain in vain trying",
-      "explanation": "Rack one’s brain/brains là vắt óc suy nghĩ; cả số ít và số nhiều đều dùng được. Phải giữ ý vẫn không nhớ ra, bằng couldn’t manage hoặc in vain trying. To remember the answer đã có sau ô nên không chép lặp.",
+      "displayAnswer": "racked my brains in vain trying / racked my brain in vain trying",
+      "explanation": "Rack one’s brain/brains là vắt óc suy nghĩ; cả số ít và số nhiều đều dùng được. Phải giữ ý vẫn không nhớ ra, bằng couldn’t manage hoặc in vain trying.",
       "prefix": "I",
-      "suffix": "to remember the answer.",
-      "fullSentence": "I racked my brain but couldn’t manage to remember the answer."
+      "suffix": "to remember the answer",
+      "fullSentence": "I racked my brains in vain trying to remember the answer",
+      "keyword": "RACKED",
+      "answerPrefix": "I",
+      "answerSuffix": "to remember the answer",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "racked my brains in vain trying"
     },
     {
       "globalNumber": 93,
@@ -1093,10 +1099,16 @@
         "the teacher fell for it"
       ],
       "displayAnswer": "the teacher fell for it",
-      "explanation": "Fall for a trick là bị lừa bởi một mánh khóe. Quá khứ fell giữ thời của was taken in. It thay cho the trick; không bỏ it vì fell for cần đối tượng trong câu. Phần đầu phải giữ It was, không đổi thành I was như lỗi cũ.",
+      "explanation": "Fall for a trick là bị lừa bởi một mánh khóe. Quá khứ fell giữ thời của was taken in.",
       "prefix": "It was a simple trick, but",
       "suffix": "",
-      "fullSentence": "It was a simple trick, but the teacher fell for it."
+      "fullSentence": "It was a simple trick, but the teacher fell for it",
+      "keyword": "FOR",
+      "answerPrefix": "It was a simple trick, but",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "the teacher fell for it"
     },
     {
       "globalNumber": 94,
@@ -1106,26 +1118,38 @@
         "me out of selling my house"
       ],
       "displayAnswer": "me out of selling my house",
-      "explanation": "Talk somebody out of doing something là thuyết phục ai đừng làm gì. Out of theo sau bằng V-ing nên dùng selling. Talk somebody into doing lại nghĩa là thuyết phục thực hiện, trái với not to sell.",
+      "explanation": "Talk somebody out of doing something là thuyết phục ai đừng làm gì. Out of theo sau bằng V-ing nên dùng selling.\nTừ vựng trọng tâm: talk somebody out of",
       "prefix": "Janet talked",
       "suffix": "",
-      "fullSentence": "Janet talked me out of selling my house."
+      "fullSentence": "Janet talked me out of selling my house",
+      "keyword": "OUT",
+      "answerPrefix": "Janet talked",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "me out of selling my house"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "Selena know how difficult it is to",
-        "Selena realise how difficult it is to",
-        "Selena realize how difficult it is to",
-        "Selena understand how difficult it is to"
+        "know how difficult it is",
+        "realise how difficult it is",
+        "realize how difficult it is",
+        "understand how difficult it is"
       ],
-      "displayAnswer": "Selena know how difficult it is to / Selena realise how difficult it is to / Selena realize how difficult it is to / Selena understand how difficult it is to",
+      "displayAnswer": "know how difficult it is / realise how difficult it is / realize how difficult it is / understand how difficult it is",
       "explanation": "Little does… đứng đầu câu mang nghĩa phủ định và đã có trợ động từ does, nên sau Selena dùng know/realise/understand nguyên mẫu. How difficult it is giữ trật tự câu gián tiếp, không đảo thành how difficult is it.",
-      "prefix": "Little does",
-      "suffix": "find a parking place.",
-      "fullSentence": "Little does Selena know how difficult it is to find a parking place."
+      "prefix": "Little does Selena",
+      "suffix": "to find a parking place",
+      "fullSentence": "Little does Selena know how difficult it is to find a parking place",
+      "keyword": "HOW",
+      "answerPrefix": "Little does Selena",
+      "answerSuffix": "to find a parking place",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "know how difficult it is"
     },
     {
       "globalNumber": 96,
@@ -1136,11 +1160,17 @@
         "makes very little difference to",
         "makes hardly any difference to"
       ],
-      "displayAnswer": "makes little difference to",
-      "explanation": "Make little difference to something nghĩa là hầu như không làm thay đổi điều gì. Chủ ngữ his excuse số ít nên dùng makes; to nối với her opinion đã có sau chỗ trống. Little hoặc hardly any giữ nghĩa phủ định nhẹ của hardly changes.",
+      "displayAnswer": "makes little difference to / makes very little difference to / makes hardly any difference to",
+      "explanation": "Make little difference to something nghĩa là hầu như không làm thay đổi điều gì. Chủ ngữ his excuse số ít nên dùng makes; to nối với her opinion đã có sau chỗ trống.",
       "prefix": "His excuse",
-      "suffix": "her opinion of him.",
-      "fullSentence": "His excuse makes little difference to her opinion of him."
+      "suffix": "her opinion of him",
+      "fullSentence": "His excuse makes little difference to her opinion of him",
+      "keyword": "DIFFERENCE",
+      "answerPrefix": "His excuse",
+      "answerSuffix": "her opinion of him",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "makes little difference to"
     },
     {
       "globalNumber": 97,
@@ -1149,14 +1179,19 @@
       "acceptedAnswers": [
         "put me at ease with",
         "made me feel at ease with",
-        "made me feel at ease through",
-        "made me feel at ease because of"
+        "made me feel at ease through"
       ],
-      "displayAnswer": "put me at ease with / made me feel at ease with / made me feel at ease through / made me feel at ease because of",
-      "explanation": "Put somebody at ease hoặc make somebody feel at ease là khiến ai thoải mái. With/through/because of nối cảm giác đó với sự tiếp đón nồng hậu. The warmth of their greeting đã có, nên không lặp trong ô.",
-      "prefix": "Gita’s parents",
-      "suffix": "the warmth of their greeting.",
-      "fullSentence": "Gita’s parents put me at ease with the warmth of their greeting."
+      "displayAnswer": "put me at ease with / made me feel at ease with / made me feel at ease through",
+      "explanation": "Put somebody at ease hoặc make somebody feel at ease là khiến ai thoải mái. With/through/because of nối cảm giác đó với sự tiếp đón nồng hậu.",
+      "prefix": "Gita's parents",
+      "suffix": "the warmth of their greeting",
+      "fullSentence": "Gita's parents put me at ease with the warmth of their greeting",
+      "keyword": "EASE",
+      "answerPrefix": "Gita's parents",
+      "answerSuffix": "the warmth of their greeting",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "put me at ease with"
     },
     {
       "globalNumber": 98,
@@ -1166,23 +1201,35 @@
         "was no vegetation whatsoever in"
       ],
       "displayAnswer": "was no vegetation whatsoever in",
-      "explanation": "No…whatsoever nhấn mạnh hoàn toàn không có, tương đương completely devoid of. Vegetation là danh từ không đếm được nên dùng was. In nối với the area đã in sẵn; không dùng were vì không phải danh từ số nhiều.",
+      "explanation": "No…whatsoever nhấn mạnh hoàn toàn không có, tương đương completely devoid of. Vegetation là danh từ không đếm được nên dùng was.",
       "prefix": "There",
-      "suffix": "the area.",
-      "fullSentence": "There was no vegetation whatsoever in the area."
+      "suffix": "the area",
+      "fullSentence": "There was no vegetation whatsoever in the area",
+      "keyword": "WHATSOEVER",
+      "answerPrefix": "There",
+      "answerSuffix": "the area",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "was no vegetation whatsoever in"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "no circumstances will we ever do business"
+        "will we ever do business"
       ],
-      "displayAnswer": "no circumstances will we ever do business",
-      "explanation": "Under no circumstances đứng đầu câu cần đảo will lên trước we. Phải giữ ever và cụm do business with. Đáp án cũ thiếu business trong câu đầy đủ làm sai nghĩa; phần điền phải kết thúc bằng business.",
-      "prefix": "Under",
-      "suffix": "with that firm again.",
-      "fullSentence": "Under no circumstances will we ever do business with that firm again."
+      "displayAnswer": "will we ever do business",
+      "explanation": "Under no circumstances đứng đầu câu cần đảo will lên trước we. Phải giữ ever và cụm do business with.",
+      "prefix": "Under no circumstances",
+      "suffix": "with that firm again",
+      "fullSentence": "Under no circumstances will we ever do business with that firm again",
+      "keyword": "EVER",
+      "answerPrefix": "Under no circumstances",
+      "answerSuffix": "with that firm again",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "will we ever do business"
     },
     {
       "globalNumber": 100,
@@ -1192,12 +1239,18 @@
         "came to the conclusion that"
       ],
       "displayAnswer": "came to the conclusion that",
-      "explanation": "Come to the conclusion that… nghĩa là đi đến kết luận rằng. Quá khứ của come là came, giữ nguyên từ khóa. That nối với he should take the job đã in; không đổi should thành must vì sẽ tăng mức độ bắt buộc.",
+      "explanation": "Come to the conclusion that… nghĩa là đi đến kết luận rằng. Quá khứ của come là came, giữ nguyên từ khóa.",
       "prefix": "John",
-      "suffix": "he should take the job.",
-      "fullSentence": "John came to the conclusion that he should take the job."
+      "suffix": "he should take the job",
+      "fullSentence": "John came to the conclusion that he should take the job",
+      "keyword": "CAME",
+      "answerPrefix": "John",
+      "answerSuffix": "he should take the job",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "came to the conclusion that"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

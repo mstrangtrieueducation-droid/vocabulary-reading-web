@@ -10,7 +10,11 @@
       "usage": "an impartial judge/referee; remain impartial",
       "example": "The referee must remain impartial throughout the match.",
       "translation": "Trọng tài phải giữ sự công bằng suốt trận đấu.",
-      "family": "partial/impartial (adj); impartiality (n); impartially (adv)"
+      "family": "partial/impartial (adj); impartiality (n); impartially (adv)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 4,
@@ -21,7 +25,11 @@
       "usage": "take a friend’s help for granted",
       "example": "Do not take your parents’ support for granted.",
       "translation": "Đừng xem sự hỗ trợ của cha mẹ là điều đương nhiên.",
-      "family": "take–took–taken; grant (v/n); gratitude (n, nghĩa liên quan)"
+      "family": "take–took–taken; grant (v/n); gratitude (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 6,
@@ -32,7 +40,11 @@
       "usage": "not have a leg to stand on in an argument",
       "example": "Without records, we did not have a leg to stand on.",
       "translation": "Không có hồ sơ, chúng tôi không có cơ sở để bảo vệ lập luận.",
-      "family": "leg (n); stand–stood–stood; evidence (n, từ liên quan)"
+      "family": "leg (n); stand–stood–stood; evidence (n, từ liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 7,
@@ -43,7 +55,11 @@
       "usage": "confidential documents/information; keep confidential",
       "example": "Please keep these documents confidential.",
       "translation": "Vui lòng giữ kín những tài liệu này.",
-      "family": "confidence (n); confidential (adj); confidentiality (n); confidentially (adv)"
+      "family": "confidence (n); confidential (adj); confidentiality (n); confidentially (adv)",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 10,
@@ -54,7 +70,11 @@
       "usage": "dedication to medicine/teaching",
       "example": "Her dedication to teaching inspired the whole team.",
       "translation": "Sự tận tâm với nghề dạy của cô ấy truyền cảm hứng cho cả nhóm.",
-      "family": "dedicate (v); dedicated (adj); dedication (n)"
+      "family": "dedicate (v); dedicated (adj); dedication (n)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 13,
@@ -65,7 +85,11 @@
       "usage": "be at a loose end this weekend",
       "example": "If you are at a loose end, come over for lunch.",
       "translation": "Nếu bạn đang rảnh, hãy qua ăn trưa.",
-      "family": "loose (adj); loosen (v); end (n/v)"
+      "family": "loose (adj); loosen (v); end (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 18,
@@ -76,7 +100,11 @@
       "usage": "far/much/a lot more expensive than",
       "example": "This coat is far more expensive than that one.",
       "translation": "Chiếc áo khoác này đắt hơn chiếc kia nhiều.",
-      "family": "expensive (adj); more expensive (comparative); expense (n)"
+      "family": "expensive (adj); more expensive (comparative); expense (n)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 22,
@@ -87,7 +115,11 @@
       "usage": "give/receive preferential treatment",
       "example": "No applicant should receive preferential treatment.",
       "translation": "Không ứng viên nào nên được ưu ái hơn người khác.",
-      "family": "prefer (v); preference (n); preferential/preferable (adj)"
+      "family": "prefer (v); preference (n); preferential/preferable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -98,7 +130,11 @@
       "usage": "further a career/one’s interests",
       "example": "She took the course to further her career.",
       "translation": "Cô ấy học khóa này để thúc đẩy sự nghiệp.",
-      "family": "further (v/adj/adv); furtherance (n, sự thúc đẩy); career (n)"
+      "family": "further (v/adj/adv); furtherance (n, sự thúc đẩy); career (n)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -109,7 +145,11 @@
       "usage": "back out of a deal/promise",
       "example": "He backed out of the agreement at the last minute.",
       "translation": "Anh ấy rút khỏi thỏa thuận vào phút chót.",
-      "family": "back (v/n/adv); backed out (quá khứ); back down (cụm dễ nhầm)"
+      "family": "back (v/n/adv); backed out (quá khứ); back down (cụm dễ nhầm)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 26,
@@ -120,7 +160,11 @@
       "usage": "have a good head for figures/numbers",
       "example": "She has a good head for numbers and checks the accounts.",
       "translation": "Cô ấy giỏi xử lý con số và kiểm tra sổ sách.",
-      "family": "head (n/v); number (n/v); numerical (adj)"
+      "family": "head (n/v); number (n/v); numerical (adj)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 27,
@@ -131,7 +175,11 @@
       "usage": "not take kindly to criticism/being interrupted",
       "example": "He does not take kindly to being interrupted.",
       "translation": "Anh ấy không thích bị ngắt lời.",
-      "family": "kind (adj/n); kindly (adv/adj); kindness (n)"
+      "family": "kind (adj/n); kindly (adv/adj); kindness (n)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -142,7 +190,11 @@
       "usage": "clam up during questioning",
       "example": "She clammed up when asked about the missing file.",
       "translation": "Cô ấy im bặt khi bị hỏi về hồ sơ thất lạc.",
-      "family": "clam (n/v); clammed (V2/V3); clamming (V-ing)"
+      "family": "clam (n/v); clammed (V2/V3); clamming (V-ing)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 30,
@@ -153,7 +205,11 @@
       "usage": "a weather-beaten face; weather-beaten skin",
       "example": "The sailor had a weather-beaten face.",
       "translation": "Người thủy thủ có gương mặt dãi dầu nắng gió.",
-      "family": "weather (n/v); beat–beat–beaten; weather-proof (adj, dễ nhầm)"
+      "family": "weather (n/v); beat–beat–beaten; weather-proof (adj, dễ nhầm)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 31,
@@ -164,7 +220,11 @@
       "usage": "a handful of people/examples",
       "example": "Only a handful of students stayed after class.",
       "translation": "Chỉ một số ít học sinh ở lại sau giờ học.",
-      "family": "hand (n/v); handful (n); hands (n plural)"
+      "family": "hand (n/v); handful (n); hands (n plural)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 33,
@@ -175,7 +235,11 @@
       "usage": "food additives; contain additives",
       "example": "The label lists the additives used in the product.",
       "translation": "Nhãn liệt kê các chất phụ gia dùng trong sản phẩm.",
-      "family": "add (v); addition (n); additive (n/adj); additional (adj)"
+      "family": "add (v); addition (n); additive (n/adj); additional (adj)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 35,
@@ -186,7 +250,11 @@
       "usage": "successive matches/years/generations",
       "example": "The team won three successive matches.",
       "translation": "Đội thắng ba trận liên tiếp.",
-      "family": "succeed (v); succession (n); successive (adj); successively (adv)"
+      "family": "succeed (v); succession (n); successive (adj); successively (adv)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 38,
@@ -197,7 +265,11 @@
       "usage": "social inequality; reduce inequalities",
       "example": "The policy aims to reduce inequality in access to education.",
       "translation": "Chính sách hướng tới giảm bất bình đẳng trong tiếp cận giáo dục.",
-      "family": "equal/unequal (adj); equality/inequality (n); equally (adv)"
+      "family": "equal/unequal (adj); equality/inequality (n); equally (adv)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 40,
@@ -208,7 +280,11 @@
       "usage": "outnumber someone by two to one",
       "example": "Local supporters outnumbered visiting fans.",
       "translation": "Người cổ vũ địa phương đông hơn cổ động viên đội khách.",
-      "family": "number (n/v); outnumber (v); outnumbered (V2/V3)"
+      "family": "number (n/v); outnumber (v); outnumbered (V2/V3)",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 51,
@@ -219,7 +295,11 @@
       "usage": "receive/win accolades for something",
       "example": "The film received accolades for its screenplay.",
       "translation": "Bộ phim được tán dương nhờ kịch bản.",
-      "family": "accolade (n); accolades (plural); acclaim (n/v, gần nghĩa)"
+      "family": "accolade (n); accolades (plural); acclaim (n/v, gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ]
     },
     {
       "question": 54,
@@ -230,7 +310,11 @@
       "usage": "an influential artist; influential in shaping opinions",
       "example": "She became an influential voice in modern music.",
       "translation": "Cô ấy trở thành một tiếng nói có ảnh hưởng trong âm nhạc hiện đại.",
-      "family": "influence (n/v); influential (adj); influenced (V2/V3)"
+      "family": "influence (n/v); influential (adj); influenced (V2/V3)",
+      "teacherSelected": true,
+      "questions": [
+        54
+      ]
     },
     {
       "question": 57,
@@ -241,7 +325,11 @@
       "usage": "give someone the cold shoulder",
       "example": "He felt that the organisers had given him the cold shoulder.",
       "translation": "Anh ấy cảm thấy ban tổ chức đã lạnh nhạt với mình.",
-      "family": "give–gave–given; shoulder (n/v); coldly (adv)"
+      "family": "give–gave–given; shoulder (n/v); coldly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ]
     },
     {
       "question": 59,
@@ -252,7 +340,11 @@
       "usage": "keep your/her/their feet on the ground",
       "example": "Despite her success, she kept her feet on the ground.",
       "translation": "Dù thành công, cô ấy vẫn giữ sự thực tế.",
-      "family": "foot/feet (n); ground (n/v); grounded (adj, thực tế)"
+      "family": "foot/feet (n); ground (n/v); grounded (adj, thực tế)",
+      "teacherSelected": true,
+      "questions": [
+        59
+      ]
     },
     {
       "question": 64,
@@ -263,7 +355,11 @@
       "usage": "take a short-cut/shortcut; look for shortcuts",
       "example": "There is no reliable shortcut to mastering a language.",
       "translation": "Không có đường tắt đáng tin cậy để thành thạo một ngôn ngữ.",
-      "family": "short (adj); shorten (v); shortcut/short-cut (n)"
+      "family": "short (adj); shorten (v); shortcut/short-cut (n)",
+      "teacherSelected": true,
+      "questions": [
+        64
+      ]
     },
     {
       "question": 67,
@@ -274,7 +370,11 @@
       "usage": "try to multitask; multitask at work",
       "example": "I make more mistakes when I try to multitask.",
       "translation": "Tôi mắc nhiều lỗi hơn khi cố xử lý nhiều việc cùng lúc.",
-      "family": "task (n/v); multitask (v); multitasking (n)"
+      "family": "task (n/v); multitask (v); multitasking (n)",
+      "teacherSelected": true,
+      "questions": [
+        67
+      ]
     },
     {
       "question": 68,
@@ -285,7 +385,11 @@
       "usage": "save time/money in the long run",
       "example": "Careful planning saves time in the long run.",
       "translation": "Lập kế hoạch kỹ giúp tiết kiệm thời gian về lâu dài.",
-      "family": "run (n/v); long-term (adj); short-term (adj, đối chiếu)"
+      "family": "run (n/v); long-term (adj); short-term (adj, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        68
+      ]
     },
     {
       "question": 71,
@@ -296,7 +400,11 @@
       "usage": "excessive noise/pressure/spending",
       "example": "Excessive noise makes conversation difficult.",
       "translation": "Tiếng ồn quá mức khiến việc trò chuyện khó khăn.",
-      "family": "excess (n); excessive (adj); excessively (adv)"
+      "family": "excess (n); excessive (adj); excessively (adv)",
+      "teacherSelected": true,
+      "questions": [
+        71
+      ]
     },
     {
       "question": 95,
@@ -307,7 +415,11 @@
       "usage": "get into the swing of a routine/job",
       "example": "After a week, she got into the swing of the new routine.",
       "translation": "Sau một tuần, cô ấy bắt nhịp được với lịch sinh hoạt mới.",
-      "family": "get–got–got/gotten; swing (n/v); swing–swung–swung"
+      "family": "get–got–got/gotten; swing (n/v); swing–swung–swung",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     },
     {
       "question": 97,
@@ -318,7 +430,11 @@
       "usage": "come to terms with a loss/change",
       "example": "It took him time to come to terms with the change.",
       "translation": "Anh ấy cần thời gian để chấp nhận sự thay đổi.",
-      "family": "come–came–come; terms (n plural); acceptance (n, liên quan)"
+      "family": "come–came–come; terms (n plural); acceptance (n, liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        97
+      ]
     },
     {
       "question": 98,
@@ -329,7 +445,11 @@
       "usage": "decide/buy something on the spur of the moment",
       "example": "We booked the trip on the spur of the moment.",
       "translation": "Chúng tôi đặt chuyến đi một cách ngẫu hứng.",
-      "family": "spur (n/v); moment (n); spontaneous (adj, gần nghĩa)"
+      "family": "spur (n/v); moment (n); spontaneous (adj, gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ]
     }
   ]
 }

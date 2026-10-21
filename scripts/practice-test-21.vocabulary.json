@@ -10,7 +10,11 @@
       "usage": "a distant/close relative",
       "example": "She discovered that he was a distant relative.",
       "translation": "Cô ấy phát hiện anh ấy là họ hàng xa.",
-      "family": "relate (v); relation/relative (n); related (adj)"
+      "family": "relate (v); relation/relative (n); related (adj)",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 8,
@@ -21,7 +25,11 @@
       "usage": "take out a loan/an insurance policy",
       "example": "They took out a loan to repair the house.",
       "translation": "Họ vay một khoản tiền để sửa nhà.",
-      "family": "loan (n/v); lend – lent – lent; borrower (n)"
+      "family": "loan (n/v); lend – lent – lent; borrower (n)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 11,
@@ -32,7 +40,11 @@
       "usage": "must have lost/forgotten/lacked",
       "example": "She must have left before noon.",
       "translation": "Hẳn cô ấy đã rời đi trước buổi trưa.",
-      "family": "must (modal); deduction (n); deduce (v)"
+      "family": "must (modal); deduction (n); deduce (v)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 13,
@@ -43,7 +55,11 @@
       "usage": "far from perfect/satisfactory; far from being easy",
       "example": "The results were far from satisfactory.",
       "translation": "Các kết quả còn xa mới đạt yêu cầu.",
-      "family": "satisfy (v); satisfactory (adj); satisfaction (n)"
+      "family": "satisfy (v); satisfactory (adj); satisfaction (n)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -54,7 +70,11 @@
       "usage": "an exam invigilator; invigilate an exam",
       "example": "The invigilator explained the exam rules.",
       "translation": "Giám thị giải thích quy định của kỳ thi.",
-      "family": "invigilate (v); invigilation (n); invigilator (n)"
+      "family": "invigilate (v); invigilation (n); invigilator (n)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 18,
@@ -65,7 +85,11 @@
       "usage": "remain/be seated; find someone seated",
       "example": "Please remain seated until the doors open.",
       "translation": "Vui lòng tiếp tục ngồi cho đến khi cửa mở.",
-      "family": "seat (n/v); seated (adj); sit – sat – sat"
+      "family": "seat (n/v); seated (adj); sit – sat – sat",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 21,
@@ -76,7 +100,11 @@
       "usage": "propose a plan; propose that something be done",
       "example": "They proposed that the meeting be postponed.",
       "translation": "Họ đề xuất hoãn cuộc họp.",
-      "family": "propose (v); proposal (n); proposed (adj)"
+      "family": "propose (v); proposal (n); proposed (adj)",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 26,
@@ -87,7 +115,11 @@
       "usage": "a long-standing arrangement/tradition/problem",
       "example": "They have a long-standing friendship.",
       "translation": "Họ có một tình bạn lâu năm.",
-      "family": "standing (n/adj); established (adj); long-term (adj)"
+      "family": "standing (n/adj); established (adj); long-term (adj)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 27,
@@ -98,7 +130,11 @@
       "usage": "fall into disuse; be in disuse",
       "example": "The old station had fallen into disuse.",
       "translation": "Nhà ga cũ đã không còn được sử dụng.",
-      "family": "use (n/v); disuse (n); disused (adj); reusable (adj)"
+      "family": "use (n/v); disuse (n); disused (adj); reusable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -109,7 +145,11 @@
       "usage": "make for the exit/door",
       "example": "When the rain began, we made for the shelter.",
       "translation": "Khi trời bắt đầu mưa, chúng tôi chạy về phía chỗ trú.",
-      "family": "make – made – made; head for; destination (n)"
+      "family": "make – made – made; head for; destination (n)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 29,
@@ -120,7 +160,11 @@
       "usage": "an unpalatable truth/fact",
       "example": "The report revealed an unpalatable truth.",
       "translation": "Báo cáo hé lộ một sự thật khó chấp nhận.",
-      "family": "palatable/unpalatable (adj); palate (n)"
+      "family": "palatable/unpalatable (adj); palate (n)",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 30,
@@ -131,7 +175,11 @@
       "usage": "excel oneself; excel at a sport",
       "example": "The team excelled themselves in the final.",
       "translation": "Đội đã thi đấu xuất sắc hơn hẳn thường lệ trong trận chung kết.",
-      "family": "excel (v); excellent (adj); excellence (n)"
+      "family": "excel (v); excellent (adj); excellence (n)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 32,
@@ -142,7 +190,11 @@
       "usage": "with a view to improving/reducing",
       "example": "We met with a view to solving the problem.",
       "translation": "Chúng tôi gặp nhau nhằm giải quyết vấn đề.",
-      "family": "view (n/v); aim (n/v); purpose (n)"
+      "family": "view (n/v); aim (n/v); purpose (n)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 33,
@@ -153,7 +205,11 @@
       "usage": "the predominant view/feeling/colour",
       "example": "The predominant view was that more time was needed.",
       "translation": "Ý kiến chiếm ưu thế là cần thêm thời gian.",
-      "family": "predominate (v); predominant (adj); predominantly (adv)"
+      "family": "predominate (v); predominant (adj); predominantly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 34,
@@ -164,7 +220,11 @@
       "usage": "look over a house/report; look it over",
       "example": "Could you look over my report?",
       "translation": "Bạn có thể xem qua báo cáo của tôi không?",
-      "family": "look (v/n); inspect (v); inspection (n)"
+      "family": "look (v/n); inspect (v); inspection (n)",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 35,
@@ -175,7 +235,11 @@
       "usage": "have an affinity with/for something",
       "example": "She has a natural affinity with animals.",
       "translation": "Cô ấy có sự gắn bó tự nhiên với động vật.",
-      "family": "affinity (n); rapport (n); connection (n)"
+      "family": "affinity (n); rapport (n); connection (n)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 36,
@@ -186,7 +250,11 @@
       "usage": "economic growth/policy/basis",
       "example": "Tourism is important to the town’s economic development.",
       "translation": "Du lịch quan trọng đối với phát triển kinh tế của thị trấn.",
-      "family": "economy (n); economic/economical (adj); economically (adv)"
+      "family": "economy (n); economic/economical (adj); economically (adv)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 37,
@@ -197,7 +265,11 @@
       "usage": "a profitable business; become profitable",
       "example": "The small shop became profitable after a year.",
       "translation": "Cửa hàng nhỏ bắt đầu có lãi sau một năm.",
-      "family": "profit (n/v); profitable (adj); profitably (adv)"
+      "family": "profit (n/v); profitable (adj); profitably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 41,
@@ -208,7 +280,11 @@
       "usage": "to someone’s annoyance; an added annoyance",
       "example": "The delay caused considerable annoyance.",
       "translation": "Sự chậm trễ gây nhiều khó chịu.",
-      "family": "annoy (v); annoyance (n); annoyed/annoying (adj)"
+      "family": "annoy (v); annoyance (n); annoyed/annoying (adj)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 44,
@@ -219,7 +295,11 @@
       "usage": "a persuasive argument/speaker/advertisement",
       "example": "She gave a persuasive explanation.",
       "translation": "Cô ấy đưa ra một lời giải thích có sức thuyết phục.",
-      "family": "persuade (v); persuasion (n); persuasive (adj); persuasively (adv)"
+      "family": "persuade (v); persuasion (n); persuasive (adj); persuasively (adv)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 46,
@@ -230,7 +310,11 @@
       "usage": "know/recognize one’s worth",
       "example": "One mistake does not define your worth.",
       "translation": "Một lỗi lầm không quyết định giá trị của bạn.",
-      "family": "worth (n/adj); worthy/worthwhile (adj)"
+      "family": "worth (n/adj); worthy/worthwhile (adj)",
+      "teacherSelected": true,
+      "questions": [
+        46
+      ]
     },
     {
       "question": 48,
@@ -241,7 +325,11 @@
       "usage": "face a problem; be faced with a problem",
       "example": "We were faced with a difficult choice.",
       "translation": "Chúng tôi đối mặt với một lựa chọn khó khăn.",
-      "family": "face (n/v); challenge (n/v); challenging (adj)"
+      "family": "face (n/v); challenge (n/v); challenging (adj)",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ]
     },
     {
       "question": 56,
@@ -252,7 +340,11 @@
       "usage": "an urge to laugh; urge someone to act",
       "example": "He felt an urge to laugh.",
       "translation": "Anh ấy thấy rất muốn bật cười.",
-      "family": "urge (n/v); urgent (adj); urgency (n)"
+      "family": "urge (n/v); urgent (adj); urgency (n)",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 60,
@@ -263,7 +355,11 @@
       "usage": "building materials; raw materials",
       "example": "The bridge was built from local materials.",
       "translation": "Cây cầu được xây bằng vật liệu địa phương.",
-      "family": "material (n/adj); substance (n); manufacture (v)"
+      "family": "material (n/adj); substance (n); manufacture (v)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 61,
@@ -274,7 +370,11 @@
       "usage": "a threat to wildlife; face a threat from",
       "example": "Pollution is a threat to river wildlife.",
       "translation": "Ô nhiễm là mối đe doạ với sinh vật ở sông.",
-      "family": "threat (n); threaten (v); threatening/threatened (adj)"
+      "family": "threat (n); threaten (v); threatening/threatened (adj)",
+      "teacherSelected": true,
+      "questions": [
+        61
+      ]
     },
     {
       "question": 65,
@@ -285,7 +385,11 @@
       "usage": "the level/concentration of dissolved oxygen",
       "example": "The team measured dissolved oxygen in the lake.",
       "translation": "Nhóm đo lượng oxy hoà tan trong hồ.",
-      "family": "dissolve (v); dissolved (adj); oxygen (n)"
+      "family": "dissolve (v); dissolved (adj); oxygen (n)",
+      "teacherSelected": true,
+      "questions": [
+        65
+      ]
     },
     {
       "question": 71,
@@ -296,7 +400,11 @@
       "usage": "someone’s predecessor; predecessors from the same homeland",
       "example": "She learned from her predecessor’s experience.",
       "translation": "Cô ấy học từ kinh nghiệm của người tiền nhiệm.",
-      "family": "precede (v); predecessor (n); successor (n)"
+      "family": "precede (v); predecessor (n); successor (n)",
+      "teacherSelected": true,
+      "questions": [
+        71
+      ]
     },
     {
       "question": 74,
@@ -307,7 +415,11 @@
       "usage": "pay payroll taxes; payroll-tax revenue",
       "example": "The passage explains the role of payroll taxes.",
       "translation": "Đoạn văn giải thích vai trò của các khoản thuế gắn với tiền lương.",
-      "family": "payroll (n); tax (n/v); taxation (n)"
+      "family": "payroll (n); tax (n/v); taxation (n)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ]
     },
     {
       "question": 94,
@@ -318,7 +430,11 @@
       "usage": "the extent to which something changes",
       "example": "We examined the extent to which the plan had worked.",
       "translation": "Chúng tôi xem xét mức độ kế hoạch đã phát huy hiệu quả.",
-      "family": "extent (n); extend (v); extensive (adj); extensively (adv)"
+      "family": "extent (n); extend (v); extensive (adj); extensively (adv)",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ]
     },
     {
       "question": 99,
@@ -329,7 +445,11 @@
       "usage": "talk someone out of selling/leaving",
       "example": "Mai talked me out of buying the expensive bag.",
       "translation": "Mai thuyết phục tôi đừng mua chiếc túi đắt tiền.",
-      "family": "persuade (v); persuasion (n); dissuade (v)"
+      "family": "persuade (v); persuasion (n); dissuade (v)",
+      "teacherSelected": true,
+      "questions": [
+        99
+      ]
     }
   ]
 }

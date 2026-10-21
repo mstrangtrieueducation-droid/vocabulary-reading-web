@@ -1064,16 +1064,20 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "you have now come to your senses",
         "you have come to your senses",
-        "you’ve now come to your senses",
-        "you’ve come to your senses"
+        "you've come to your senses"
       ],
-      "displayAnswer": "you have now come to your senses / you have come to your senses / you’ve now come to your senses / you’ve come to your senses",
-      "explanation": "Come to your senses là tỉnh ra, biết suy xét hợp lý. Senses phải giữ số nhiều như từ khóa. Đề đã thống nhất thời hiện tại hoàn thành, nên phần điền là you have (now) come to your senses.",
-      "prefix": "I’m glad",
-      "suffix": "and agree that your parents are right.",
-      "fullSentence": "I’m glad you have now come to your senses and agree that your parents are right."
+      "displayAnswer": "you have come to your senses / you've come to your senses",
+      "explanation": "Come to your senses là tỉnh ra, biết suy xét hợp lý. Senses phải giữ số nhiều như từ khóa.",
+      "prefix": "I'm glad",
+      "suffix": "and agree that your parents are right",
+      "fullSentence": "I'm glad you have come to your senses and agree that your parents are right",
+      "keyword": "senses",
+      "answerPrefix": "I'm glad",
+      "answerSuffix": "and agree that your parents are right",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "you have come to your senses"
     },
     {
       "globalNumber": 92,
@@ -1086,9 +1090,15 @@
       ],
       "displayAnswer": "come to the conclusion / arrived at the conclusion / reached the conclusion",
       "explanation": "Come to/arrive at/reach the conclusion that… là đi đến kết luận rằng… I’ve đã có nên dùng phân từ come/arrived/reached. Giữ nguyên từ khóa conclusion và không lặp that sau ô.",
-      "prefix": "I’ve",
-      "suffix": "that teaching is not the right profession for me.",
-      "fullSentence": "I’ve come to the conclusion that teaching is not the right profession for me."
+      "prefix": "I've",
+      "suffix": "that teaching is not the right profession for me",
+      "fullSentence": "I've come to the conclusion that teaching is not the right profession for me",
+      "keyword": "conclusion",
+      "answerPrefix": "I've",
+      "answerSuffix": "that teaching is not the right profession for me",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "come to the conclusion"
     },
     {
       "globalNumber": 93,
@@ -1098,10 +1108,16 @@
         "give an account of"
       ],
       "displayAnswer": "give an account of",
-      "explanation": "Give an account of something nghĩa là thuật lại hoặc giải thích chi tiết điều gì. Your whereabouts là nơi ông ở; sau could dùng give nguyên mẫu. Không thêm where vì phần sau đã là một cụm danh từ.",
+      "explanation": "Give an account of something nghĩa là thuật lại hoặc giải thích chi tiết điều gì. Your whereabouts là nơi ông ở; sau could dùng give nguyên mẫu.",
       "prefix": "Could you",
-      "suffix": "your whereabouts last night, Mr. Johnson?",
-      "fullSentence": "Could you give an account of your whereabouts last night, Mr. Johnson?"
+      "suffix": "your whereabouts last night, Mr. Johnson",
+      "fullSentence": "Could you give an account of your whereabouts last night, Mr. Johnson",
+      "keyword": "account",
+      "answerPrefix": "Could you",
+      "answerSuffix": "your whereabouts last night, Mr. Johnson",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "give an account of"
     },
     {
       "globalNumber": 94,
@@ -1111,10 +1127,16 @@
         "likes being made fun of"
       ],
       "displayAnswer": "likes being made fun of",
-      "explanation": "Like + V-ing diễn đạt thích việc gì; người đó bị trêu chọc nên dùng bị động being made fun of. Nobody là chủ ngữ số ít nên động từ là likes. Giữ nguyên từ khóa being.",
+      "explanation": "Like + V-ing diễn đạt thích việc gì; người đó bị trêu chọc nên dùng bị động being made fun of. Nobody là chủ ngữ số ít nên động từ là likes.",
       "prefix": "Surely nobody",
-      "suffix": "in public.",
-      "fullSentence": "Surely nobody likes being made fun of in public."
+      "suffix": "in public",
+      "fullSentence": "Surely nobody likes being made fun of in public",
+      "keyword": "being",
+      "answerPrefix": "Surely nobody",
+      "answerSuffix": "in public",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "likes being made fun of"
     },
     {
       "globalNumber": 95,
@@ -1124,37 +1146,55 @@
         "by no means poor"
       ],
       "displayAnswer": "by no means poor",
-      "explanation": "By no means nghĩa là hoàn toàn không. By no means poor giữ đúng ý not poor at all và phù hợp với thông tin thực tế cô ấy khá giàu. Cụm đứng sau is đã có trong câu.",
+      "explanation": "By no means nghĩa là hoàn toàn không. By no means poor giữ đúng ý not poor at all và phù hợp với thông tin thực tế cô ấy khá giàu.",
       "prefix": "She is",
-      "suffix": "; in fact, she is quite rich.",
-      "fullSentence": "She is by no means poor ; in fact, she is quite rich."
+      "suffix": "; in fact, she is quite rich",
+      "fullSentence": "She is by no means poor; in fact, she is quite rich",
+      "keyword": "means",
+      "answerPrefix": "She is",
+      "answerSuffix": "; in fact, she is quite rich",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "by no means poor"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "jumped down my throat when he found",
-        "was at my throat when he found"
+        "jumped down my throat",
+        "was at my throat"
       ],
-      "displayAnswer": "jumped down my throat when he found / was at my throat when he found",
-      "explanation": "Jump down somebody’s throat diễn đạt quát mắng hoặc phản ứng giận dữ. Phải có chủ ngữ he trong when he found out; đáp án cũ when found out thiếu chủ ngữ. Out đã được in sau ô nên phần điền kết thúc bằng found.",
+      "displayAnswer": "jumped down my throat / was at my throat",
+      "explanation": "Jump down somebody’s throat diễn đạt quát mắng hoặc phản ứng giận dữ. Phải có chủ ngữ he trong when he found out; đáp án cũ when found out thiếu chủ ngữ.\nTừ vựng trọng tâm: jump down somebody’s throat",
       "prefix": "The manager",
-      "suffix": "out I’d been on a social networking site while at work.",
-      "fullSentence": "The manager jumped down my throat when he found out I’d been on a social networking site while at work."
+      "suffix": "when he found out I'd been on a social networking site while at work",
+      "fullSentence": "The manager jumped down my throat when he found out I'd been on a social networking site while at work",
+      "keyword": "throat",
+      "answerPrefix": "The manager",
+      "answerSuffix": "when he found out I'd been on a social networking site while at work",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "jumped down my throat"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "pulled herself together and explained her problem to her parents"
+        "pulled herself together"
       ],
-      "displayAnswer": "pulled herself together and explained her problem to her parents",
-      "explanation": "Pull oneself together là lấy lại bình tĩnh. Julia là nữ, số ít nên dùng herself; câu kể quá khứ nên dùng pulled và explained. Phải giữ cả ý giải thích vấn đề với cha mẹ.",
+      "displayAnswer": "pulled herself together",
+      "explanation": "Pull oneself together là lấy lại bình tĩnh. Julia là nữ, số ít nên dùng herself; câu kể quá khứ nên dùng pulled và explained.",
       "prefix": "Julia soon",
-      "suffix": "",
-      "fullSentence": "Julia soon pulled herself together and explained her problem to her parents"
+      "suffix": "and explained her problem to her parents",
+      "fullSentence": "Julia soon pulled herself together and explained her problem to her parents",
+      "keyword": "pulled",
+      "answerPrefix": "Julia soon",
+      "answerSuffix": "and explained her problem to her parents",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "pulled herself together"
     },
     {
       "globalNumber": 98,
@@ -1164,10 +1204,16 @@
         "draw the line at"
       ],
       "displayAnswer": "draw the line at",
-      "explanation": "Draw the line at something nghĩa là đặt giới hạn, không chấp nhận điều gì. Sau should dùng draw nguyên mẫu. At đi trước such behaviour đã in sẵn; không đổi thành draw a line on.",
+      "explanation": "Draw the line at something nghĩa là đặt giới hạn, không chấp nhận điều gì. Sau should dùng draw nguyên mẫu.",
       "prefix": "Generally, we should",
-      "suffix": "such behaviors.",
-      "fullSentence": "Generally, we should draw the line at such behaviors."
+      "suffix": "such behaviors",
+      "fullSentence": "Generally, we should draw the line at such behaviors",
+      "keyword": "draw",
+      "answerPrefix": "Generally, we should",
+      "answerSuffix": "such behaviors",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "draw the line at"
     },
     {
       "globalNumber": 99,
@@ -1180,10 +1226,16 @@
         "Brian left his mark on"
       ],
       "displayAnswer": "Brian made an important mark on / Brian left an important mark on / Brian made his mark on / Brian left his mark on",
-      "explanation": "Make/leave one’s mark on something là để lại dấu ấn hay ảnh hưởng đáng kể. Despite not working… đã diễn đạt sự nhượng bộ; cần mệnh đề chính có Brian và động từ quá khứ. On nối với the company sau ô.",
+      "explanation": "Make/leave one’s mark on something là để lại dấu ấn hay ảnh hưởng đáng kể. Despite not working… đã diễn đạt sự nhượng bộ; cần mệnh đề chính có Brian và động từ quá khứ.",
       "prefix": "Despite not working here for very long,",
-      "suffix": "the company.",
-      "fullSentence": "Despite not working here for very long, Brian made an important mark on the company."
+      "suffix": "the company",
+      "fullSentence": "Despite not working here for very long, Brian made an important mark on the company",
+      "keyword": "mark",
+      "answerPrefix": "Despite not working here for very long,",
+      "answerSuffix": "the company",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "Brian made an important mark on"
     },
     {
       "globalNumber": 100,
@@ -1194,10 +1246,17 @@
         "get my head round"
       ],
       "displayAnswer": "get my head around / get my head round",
-      "explanation": "Get one’s head around/round something là hiểu một điều phức tạp. Can’t đã có nên dùng get nguyên mẫu và my theo chủ ngữ I. Câu gốc đã chỉnh về hiện tại để khớp thời của câu viết lại.",
-      "prefix": "I can’t",
-      "suffix": "the plot of the book.",
-      "fullSentence": "I can’t get my head around the plot of the book."
+      "explanation": "Get one’s head around/round something là hiểu một điều phức tạp. Can’t đã có nên dùng get nguyên mẫu và my theo chủ ngữ I.\nTừ vựng trọng tâm: get one’s head around",
+      "prefix": "I can't",
+      "suffix": "the plot of the book",
+      "fullSentence": "I can't get my head around the plot of the book",
+      "keyword": "head",
+      "answerPrefix": "I can't",
+      "answerSuffix": "the plot of the book",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "get my head around"
     }
-  ]
+  ],
+  "contentRevision": "2026-10-21-word-limits"
 }

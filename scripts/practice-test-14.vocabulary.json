@@ -10,7 +10,11 @@
       "usage": "be indifferent to/about something",
       "example": "He seemed indifferent to the result.",
       "translation": "Anh ấy có vẻ thờ ơ với kết quả.",
-      "family": "indifference (n); indifferently (adv)"
+      "family": "indifference (n); indifferently (adv)",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 2,
@@ -21,7 +25,11 @@
       "usage": "draw somebody’s attention to a detail/problem",
       "example": "The teacher drew our attention to a spelling error.",
       "translation": "Giáo viên hướng sự chú ý của chúng tôi đến một lỗi chính tả.",
-      "family": "draw–drew–drawn; attention (n); attentive (adj)"
+      "family": "draw–drew–drawn; attention (n); attentive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 5,
@@ -32,7 +40,11 @@
       "usage": "could do with + danh từ",
       "example": "I could do with a short break.",
       "translation": "Tôi đang cần một quãng nghỉ ngắn.",
-      "family": "do–did–done; need (v/n: cần/nhu cầu)"
+      "family": "do–did–done; need (v/n: cần/nhu cầu)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -43,7 +55,11 @@
       "usage": "see light at the end of the tunnel",
       "example": "After months of work, we could see light at the end of the tunnel.",
       "translation": "Sau nhiều tháng làm việc, chúng tôi đã thấy hy vọng công việc sắp hoàn tất.",
-      "family": "light (n); tunnel (n); hopeful (adj: có hy vọng)"
+      "family": "light (n); tunnel (n); hopeful (adj: có hy vọng)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 12,
@@ -54,7 +70,11 @@
       "usage": "be on call; an on-call doctor",
       "example": "A technician is on call tonight.",
       "translation": "Một kỹ thuật viên đang trực tối nay.",
-      "family": "call (n/v); on-call (tính từ đứng trước danh từ)"
+      "family": "call (n/v); on-call (tính từ đứng trước danh từ)",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 13,
@@ -65,7 +85,11 @@
       "usage": "a priceless painting/collection",
       "example": "The archive contains priceless historical records.",
       "translation": "Kho lưu trữ chứa những tư liệu lịch sử vô giá.",
-      "family": "price (n/v); priceless (adj); worthless (adj: vô giá trị)"
+      "family": "price (n/v); priceless (adj); worthless (adj: vô giá trị)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -76,7 +100,11 @@
       "usage": "dismiss somebody for misconduct; be dismissed",
       "example": "He was dismissed for serious misconduct.",
       "translation": "Anh ấy bị sa thải vì hành vi sai phạm nghiêm trọng.",
-      "family": "dismissal (n); conduct/misconduct (n); misbehave (v)"
+      "family": "dismissal (n); conduct/misconduct (n); misbehave (v)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 16,
@@ -87,7 +115,11 @@
       "usage": "dispose of waste/rubbish safely",
       "example": "Please dispose of these batteries safely.",
       "translation": "Hãy xử lý những viên pin này một cách an toàn.",
-      "family": "disposal (n); disposable (adj: dùng một lần/có thể bỏ)"
+      "family": "disposal (n); disposable (adj: dùng một lần/có thể bỏ)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 17,
@@ -98,7 +130,11 @@
       "usage": "tell somebody a hard luck story",
       "example": "He told us a hard luck story about losing his job.",
       "translation": "Anh ấy kể với chúng tôi một câu chuyện không may về việc mất việc.",
-      "family": "luck (n); lucky/unlucky (adj); hard-luck (adj)"
+      "family": "luck (n); lucky/unlucky (adj); hard-luck (adj)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 18,
@@ -109,7 +145,11 @@
       "usage": "video/news/archive footage; footage of an event",
       "example": "The report included footage of the storm.",
       "translation": "Bản tin có cảnh quay về cơn bão.",
-      "family": "footage (n); film (n/v); filming (n)"
+      "family": "footage (n); film (n/v); filming (n)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 19,
@@ -120,7 +160,11 @@
       "usage": "depose a ruler; be deposed in a coup",
       "example": "The ruler was deposed after the uprising.",
       "translation": "Người cai trị bị phế truất sau cuộc nổi dậy.",
-      "family": "deposition (n: sự phế truất/lời khai); deposed (adj)"
+      "family": "deposition (n: sự phế truất/lời khai); deposed (adj)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -131,7 +175,11 @@
       "usage": "become/be left destitute; financially destitute",
       "example": "The losses left the family destitute.",
       "translation": "Những tổn thất khiến gia đình lâm cảnh túng quẫn.",
-      "family": "destitution (n); poverty (n); impoverished (adj)"
+      "family": "destitution (n); poverty (n); impoverished (adj)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 21,
@@ -142,7 +190,11 @@
       "usage": "put a mistake down to tiredness",
       "example": "She put the mistake down to tiredness.",
       "translation": "Cô ấy cho rằng lỗi đó là do mệt mỏi.",
-      "family": "put–put–put; attribute/ascribe A to B (đồng nghĩa)"
+      "family": "put–put–put; attribute/ascribe A to B (đồng nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 22,
@@ -153,7 +205,11 @@
       "usage": "an exception to the rule; without exception",
       "example": "This case is an exception to the rule.",
       "translation": "Trường hợp này là ngoại lệ của quy tắc.",
-      "family": "except (giới từ/liên từ); exception (n); exceptional (adj)"
+      "family": "except (giới từ/liên từ); exception (n); exceptional (adj)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -164,7 +220,11 @@
       "usage": "live up to expectations/a reputation",
       "example": "The film lived up to our expectations.",
       "translation": "Bộ phim đáp ứng kỳ vọng của chúng tôi.",
-      "family": "live (v); expectation (n); expected (adj)"
+      "family": "live (v); expectation (n); expected (adj)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -175,7 +235,11 @@
       "usage": "take it for granted that…; take somebody for granted",
       "example": "I took it for granted that the shop was open.",
       "translation": "Tôi mặc nhiên nghĩ rằng cửa hàng đang mở.",
-      "family": "take–took–taken; grant (v: trao/cấp)"
+      "family": "take–took–taken; grant (v: trao/cấp)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 25,
@@ -186,7 +250,11 @@
       "usage": "It occurs to somebody that/to do…",
       "example": "It never occurred to me to check the date.",
       "translation": "Tôi chưa hề nghĩ đến việc kiểm tra ngày.",
-      "family": "occur–occurred; occurrence (n: sự xảy ra)"
+      "family": "occur–occurred; occurrence (n: sự xảy ra)",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 28,
@@ -197,7 +265,11 @@
       "usage": "the simplicity of a design/process",
       "example": "I like the simplicity of this recipe.",
       "translation": "Tôi thích sự đơn giản của công thức này.",
-      "family": "simple (adj); simply (adv); simplify (v); simplification (n)"
+      "family": "simple (adj); simply (adv); simplify (v); simplification (n)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 30,
@@ -208,7 +280,11 @@
       "usage": "ensure safety; ensure that…",
       "example": "Check the list to ensure that nothing is missing.",
       "translation": "Kiểm tra danh sách để bảo đảm không thiếu thứ gì.",
-      "family": "sure (adj); assurance (n); insurance (n)"
+      "family": "sure (adj); assurance (n); insurance (n)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 31,
@@ -219,7 +295,11 @@
       "usage": "numerous examples/questions/tips",
       "example": "The book contains numerous useful examples.",
       "translation": "Cuốn sách có nhiều ví dụ hữu ích.",
-      "family": "number (n/v); numerous (adj); innumerable (adj: vô số)"
+      "family": "number (n/v); numerous (adj); innumerable (adj: vô số)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 34,
@@ -230,7 +310,11 @@
       "usage": "validate a course/result/method",
       "example": "The university validated the new course.",
       "translation": "Trường đại học đã thẩm định và công nhận khóa học mới.",
-      "family": "valid/invalid (adj); validation (n); validated (V3)"
+      "family": "valid/invalid (adj); validation (n); validated (V3)",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 36,
@@ -241,7 +325,11 @@
       "usage": "prospective students/employers/buyers",
       "example": "Prospective students can visit the campus.",
       "translation": "Những người có thể trở thành sinh viên được đến tham quan trường.",
-      "family": "prospect (n); prospective (adj); perspective (n: góc nhìn)"
+      "family": "prospect (n); prospective (adj); perspective (n: góc nhìn)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 38,
@@ -252,7 +340,11 @@
       "usage": "offer/have a wide choice of something",
       "example": "The school offers a wide choice of subjects.",
       "translation": "Nhà trường cung cấp nhiều môn học để lựa chọn.",
-      "family": "choose–chose–chosen; choice (n); choosy (adj)"
+      "family": "choose–chose–chosen; choice (n); choosy (adj)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 47,
@@ -263,7 +355,11 @@
       "usage": "eradicate a disease/problem",
       "example": "The programme aims to eradicate the disease.",
       "translation": "Chương trình đặt mục tiêu loại bỏ căn bệnh.",
-      "family": "eradication (n); eradicated (V3); reduce (v: giảm)"
+      "family": "eradication (n); eradicated (V3); reduce (v: giảm)",
+      "teacherSelected": true,
+      "questions": [
+        47
+      ]
     },
     {
       "question": 50,
@@ -274,7 +370,11 @@
       "usage": "unravel a mystery; unravel the causes",
       "example": "Scientists are trying to unravel the mystery.",
       "translation": "Các nhà khoa học đang cố giải mã bí ẩn.",
-      "family": "unravel–unravelled/unraveled; unravelling/unraveling (V-ing)"
+      "family": "unravel–unravelled/unraveled; unravelling/unraveling (V-ing)",
+      "teacherSelected": true,
+      "questions": [
+        50
+      ]
     },
     {
       "question": 52,
@@ -285,7 +385,11 @@
       "usage": "be conditioned by circumstances/evidence",
       "example": "Our decision is conditioned by the available evidence.",
       "translation": "Quyết định của chúng tôi phụ thuộc vào bằng chứng hiện có.",
-      "family": "condition (n/v); conditional (adj); conditioning (n)"
+      "family": "condition (n/v); conditional (adj); conditioning (n)",
+      "teacherSelected": true,
+      "questions": [
+        52
+      ]
     },
     {
       "question": 55,
@@ -296,7 +400,11 @@
       "usage": "make headway with/on/in something",
       "example": "We are finally making headway with the repairs.",
       "translation": "Cuối cùng chúng tôi cũng đạt tiến triển trong việc sửa chữa.",
-      "family": "headway (n); progress (n/v); advance (n/v)"
+      "family": "headway (n); progress (n/v); advance (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        55
+      ]
     },
     {
       "question": 56,
@@ -307,7 +415,11 @@
       "usage": "be conducive to learning/research",
       "example": "A quiet room is conducive to concentration.",
       "translation": "Một căn phòng yên tĩnh thuận lợi cho việc tập trung.",
-      "family": "conducive (adj); conduct (v: dẫn/tổ chức); conducive to (cụm)"
+      "family": "conducive (adj); conduct (v: dẫn/tổ chức); conducive to (cụm)",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 59,
@@ -318,7 +430,11 @@
       "usage": "be plagued with/by problems",
       "example": "The project was plagued with delays.",
       "translation": "Dự án liên tục gặp tình trạng chậm trễ.",
-      "family": "plague (n/v); plagued (V3); troublesome (adj)"
+      "family": "plague (n/v); plagued (V3); troublesome (adj)",
+      "teacherSelected": true,
+      "questions": [
+        59
+      ]
     },
     {
       "question": 98,
@@ -329,7 +445,11 @@
       "usage": "subject to approval/agreement/change",
       "example": "The trip is subject to parental approval.",
       "translation": "Chuyến đi tùy thuộc vào sự đồng ý của phụ huynh.",
-      "family": "subject (n/v/adj); conditional (adj); approval (n)"
+      "family": "subject (n/v/adj); conditional (adj); approval (n)",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ]
     }
   ]
 }

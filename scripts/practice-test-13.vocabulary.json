@@ -10,7 +10,11 @@
       "usage": "be second only to + người/vật đứng đầu",
       "example": "Her results are second only to Minh’s.",
       "translation": "Kết quả của cô ấy chỉ đứng sau Minh.",
-      "family": "second (thứ hai); second-best (tốt thứ nhì)"
+      "family": "second (thứ hai); second-best (tốt thứ nhì)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 10,
@@ -21,7 +25,11 @@
       "usage": "Kết quả + result from + nguyên nhân; nguyên nhân + result in + kết quả",
       "example": "The delay resulted from heavy rain.",
       "translation": "Sự chậm trễ là do mưa lớn.",
-      "family": "result (v/n: có kết quả/kết quả); resulting (phát sinh)"
+      "family": "result (v/n: có kết quả/kết quả); resulting (phát sinh)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 11,
@@ -32,7 +40,11 @@
       "usage": "an imaginary friend/world/character",
       "example": "The child described an imaginary island.",
       "translation": "Đứa trẻ mô tả một hòn đảo tưởng tượng.",
-      "family": "imagine (v); imagination (n); imaginary/imaginative (adj)"
+      "family": "imagine (v); imagination (n); imaginary/imaginative (adj)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 12,
@@ -43,7 +55,11 @@
       "usage": "the potential of something; potential for growth",
       "example": "The team has enormous potential.",
       "translation": "Đội có tiềm năng rất lớn.",
-      "family": "potential (n/adj); potentially (adv: có khả năng)"
+      "family": "potential (n/adj); potentially (adv: có khả năng)",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 13,
@@ -54,7 +70,11 @@
       "usage": "take on staff/work/responsibility",
       "example": "The shop took on two assistants.",
       "translation": "Cửa hàng tuyển thêm hai nhân viên phụ.",
-      "family": "take–took–taken; take over (tiếp quản)"
+      "family": "take–took–taken; take over (tiếp quản)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -65,7 +85,11 @@
       "usage": "be overwhelmed by/with something",
       "example": "I was overwhelmed by their kindness.",
       "translation": "Tôi rất xúc động trước lòng tốt của họ.",
-      "family": "overwhelm (v); overwhelming (adj); overwhelmingly (adv)"
+      "family": "overwhelm (v); overwhelming (adj); overwhelmingly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 15,
@@ -76,7 +100,11 @@
       "usage": "accelerate growth/development; a car accelerates",
       "example": "The new system accelerates the process.",
       "translation": "Hệ thống mới làm quy trình diễn ra nhanh hơn.",
-      "family": "acceleration (n); accelerator (n); accelerated (adj)"
+      "family": "acceleration (n); accelerator (n); accelerated (adj)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -87,7 +115,11 @@
       "usage": "be receptive to ideas/advice/feedback",
       "example": "The manager is receptive to new ideas.",
       "translation": "Người quản lý sẵn lòng tiếp nhận ý tưởng mới.",
-      "family": "receive (v); reception (n); receptive (adj); receptiveness (n)"
+      "family": "receive (v); reception (n); receptive (adj); receptiveness (n)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 17,
@@ -98,7 +130,11 @@
       "usage": "like-minded people/individuals",
       "example": "The club brings like-minded readers together.",
       "translation": "Câu lạc bộ kết nối những người đọc có cùng mối quan tâm.",
-      "family": "mind (n/v); open-minded (cởi mở); narrow-minded (hẹp hòi)"
+      "family": "mind (n/v); open-minded (cởi mở); narrow-minded (hẹp hòi)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 22,
@@ -109,7 +145,11 @@
       "usage": "available in + màu/kích cỡ; available to + người",
       "example": "The jacket is available in three colours.",
       "translation": "Áo khoác có ba màu để chọn.",
-      "family": "availability (n: sự có sẵn); unavailable (adj)"
+      "family": "availability (n: sự có sẵn); unavailable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -120,7 +160,11 @@
       "usage": "a rare/ancient artifact; archaeological artifacts",
       "example": "The museum displays ancient artifacts.",
       "translation": "Bảo tàng trưng bày những hiện vật cổ.",
-      "family": "artifact/artefact (n); artifacts/artefacts (số nhiều)"
+      "family": "artifact/artefact (n); artifacts/artefacts (số nhiều)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -131,7 +175,11 @@
       "usage": "evacuate somebody from somewhere; be evacuated",
       "example": "Residents were evacuated before the storm.",
       "translation": "Cư dân được sơ tán trước cơn bão.",
-      "family": "evacuation (n); evacuee (n: người được sơ tán)"
+      "family": "evacuation (n); evacuee (n: người được sơ tán)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 25,
@@ -142,7 +190,11 @@
       "usage": "carry/wear a lucky charm",
       "example": "She keeps a lucky charm in her bag.",
       "translation": "Cô ấy giữ một vật may mắn trong túi.",
-      "family": "charm (n/v); charming (adj: duyên dáng)"
+      "family": "charm (n/v); charming (adj: duyên dáng)",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 26,
@@ -153,7 +205,11 @@
       "usage": "a sparsely furnished room; sparsely populated",
       "example": "The flat was small and sparsely furnished.",
       "translation": "Căn hộ nhỏ và có rất ít đồ nội thất.",
-      "family": "sparse (adj); sparsely (adv); sparsity (n)"
+      "family": "sparse (adj); sparsely (adv); sparsity (n)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 28,
@@ -164,7 +220,11 @@
       "usage": "have every right to + V",
       "example": "You have every right to ask for an explanation.",
       "translation": "Bạn hoàn toàn có quyền yêu cầu được giải thích.",
-      "family": "right (n: quyền); rights (các quyền); rightful (adj)"
+      "family": "right (n: quyền); rights (các quyền); rightful (adj)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 30,
@@ -175,7 +235,11 @@
       "usage": "cut down on + danh từ/V-ing",
       "example": "I’m cutting down on screen time.",
       "translation": "Tôi đang giảm thời gian dùng màn hình.",
-      "family": "cut–cut–cut; reduction (n: sự giảm)"
+      "family": "cut–cut–cut; reduction (n: sự giảm)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 33,
@@ -186,7 +250,11 @@
       "usage": "make a withdrawal from an account",
       "example": "I made a small withdrawal from my savings account.",
       "translation": "Tôi rút một khoản nhỏ từ tài khoản tiết kiệm.",
-      "family": "withdraw–withdrew–withdrawn; withdrawal (n)"
+      "family": "withdraw–withdrew–withdrawn; withdrawal (n)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 35,
@@ -197,7 +265,11 @@
       "usage": "economize on fuel/water/electricity",
       "example": "We need to economize on electricity.",
       "translation": "Chúng ta cần tiết kiệm điện.",
-      "family": "economy (n); economical/economic (adj); economize/economise (v)"
+      "family": "economy (n); economical/economic (adj); economize/economise (v)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 37,
@@ -208,7 +280,11 @@
       "usage": "indispensable for/to something",
       "example": "Clear instructions are indispensable for this task.",
       "translation": "Hướng dẫn rõ ràng là điều không thể thiếu cho nhiệm vụ này.",
-      "family": "dispense (v); dispensable (adj); indispensability (n)"
+      "family": "dispense (v); dispensable (adj); indispensability (n)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 38,
@@ -219,7 +295,11 @@
       "usage": "behave/act irresponsibly",
       "example": "He acted irresponsibly and ignored the warning.",
       "translation": "Anh ấy hành xử thiếu trách nhiệm và phớt lờ cảnh báo.",
-      "family": "responsible/irresponsible (adj); responsibility (n)"
+      "family": "responsible/irresponsible (adj); responsibility (n)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 39,
@@ -230,7 +310,11 @@
       "usage": "differentiate between A and B; differentiate A from B",
       "example": "Children learn to differentiate between fact and opinion.",
       "translation": "Trẻ học cách phân biệt sự thật với ý kiến.",
-      "family": "different (adj); difference (n); differentiation (n)"
+      "family": "different (adj); difference (n); differentiation (n)",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 40,
@@ -241,7 +325,11 @@
       "usage": "show good sportsmanship",
       "example": "She congratulated her opponent and showed good sportsmanship.",
       "translation": "Cô ấy chúc mừng đối thủ và thể hiện tinh thần thể thao tốt.",
-      "family": "sport (n/v); sporting (adj); unsportsmanlike (thiếu tinh thần thể thao)"
+      "family": "sport (n/v); sporting (adj); unsportsmanlike (thiếu tinh thần thể thao)",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 43,
@@ -252,7 +340,11 @@
       "usage": "a laborious task/process; become less laborious",
       "example": "Checking every entry by hand was laborious.",
       "translation": "Kiểm tra từng mục bằng tay rất tốn công sức.",
-      "family": "labor/labour (n/v); laboriously (adv)"
+      "family": "labor/labour (n/v); laboriously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 44,
@@ -263,7 +355,11 @@
       "usage": "leave somebody/something unattended",
       "example": "Never leave a small child unattended near water.",
       "translation": "Không bao giờ để trẻ nhỏ không có người trông nom gần nước.",
-      "family": "attend (v); attendant (n); unattended (adj)"
+      "family": "attend (v); attendant (n); unattended (adj)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 46,
@@ -274,7 +370,11 @@
       "usage": "an innovative approach/solution/design",
       "example": "The team proposed an innovative solution.",
       "translation": "Nhóm đề xuất một giải pháp có tính đổi mới.",
-      "family": "innovate (v); innovation (n); innovator (n)"
+      "family": "innovate (v); innovation (n); innovator (n)",
+      "teacherSelected": true,
+      "questions": [
+        46
+      ]
     },
     {
       "question": 74,
@@ -285,7 +385,11 @@
       "usage": "supplies/numbers dwindle; dwindling resources",
       "example": "Our supplies dwindled during the journey.",
       "translation": "Nguồn dự trữ của chúng tôi giảm dần trong chuyến đi.",
-      "family": "dwindle (v); dwindling (phân từ/tính từ)"
+      "family": "dwindle (v); dwindling (phân từ/tính từ)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ]
     },
     {
       "question": 78,
@@ -296,7 +400,11 @@
       "usage": "cause coral bleaching; recover from bleaching",
       "example": "Some corals can recover after a bleaching event.",
       "translation": "Một số san hô có thể hồi phục sau một đợt tẩy trắng.",
-      "family": "coral (n); bleach (v); bleached (adj); bleaching (n)"
+      "family": "coral (n); bleach (v); bleached (adj); bleaching (n)",
+      "teacherSelected": true,
+      "questions": [
+        78
+      ]
     },
     {
       "question": 86,
@@ -307,7 +415,11 @@
       "usage": "reassure somebody that…; reassure somebody about…",
       "example": "The nurse reassured me that the procedure was routine.",
       "translation": "Y tá trấn an tôi rằng đây là thủ thuật thường quy.",
-      "family": "reassurance (n); reassuring (adj); reassuringly (adv)"
+      "family": "reassurance (n); reassuring (adj); reassuringly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        86
+      ]
     },
     {
       "question": 94,
@@ -318,7 +430,11 @@
       "usage": "a plan/deal falls through; have fallen through",
       "example": "Our travel plans fell through at the last minute.",
       "translation": "Kế hoạch du lịch của chúng tôi đổ vỡ vào phút chót.",
-      "family": "fall–fell–fallen; fail (v: thất bại); failure (n)"
+      "family": "fall–fell–fallen; fail (v: thất bại); failure (n)",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ]
     },
     {
       "question": 100,
@@ -329,7 +445,11 @@
       "usage": "take back a remark/claim; take back what one said",
       "example": "I take back my comment about your work.",
       "translation": "Tôi rút lại nhận xét đã nói về công việc của bạn.",
-      "family": "take–took–taken; retraction (n: lời rút lại)"
+      "family": "take–took–taken; retraction (n: lời rút lại)",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
     }
   ]
 }

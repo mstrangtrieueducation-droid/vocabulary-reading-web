@@ -10,7 +10,11 @@
       "usage": "select/promote someone on merit",
       "example": "The candidates were selected on merit.",
       "translation": "Các ứng viên được chọn dựa trên năng lực và thành tích.",
-      "family": "merit (n/v); meritorious (adj); merits (n, các ưu điểm)"
+      "family": "merit (n/v); meritorious (adj); merits (n, các ưu điểm)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 3,
@@ -21,7 +25,11 @@
       "usage": "have information at your fingertips",
       "example": "The app puts the timetable at your fingertips.",
       "translation": "Ứng dụng giúp bạn dễ dàng tra cứu thời khóa biểu.",
-      "family": "finger (n); fingertip (n); accessible (adj)"
+      "family": "finger (n); fingertip (n); accessible (adj)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 4,
@@ -32,7 +40,11 @@
       "usage": "go/be round the bend; drive someone round the bend",
       "example": "The constant noise was driving him round the bend.",
       "translation": "Tiếng ồn liên tục khiến anh ấy phát cáu đến mức không chịu nổi.",
-      "family": "bend (n/v); irrational (adj); annoy (v)"
+      "family": "bend (n/v); irrational (adj); annoy (v)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -43,7 +55,11 @@
       "usage": "in pursuit of a suspect/a goal",
       "example": "The runners set off in pursuit of the leader.",
       "translation": "Các vận động viên bắt đầu đuổi theo người dẫn đầu.",
-      "family": "pursue (v); pursuit (n); pursuer (n)"
+      "family": "pursue (v); pursuit (n); pursuer (n)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 7,
@@ -54,7 +70,11 @@
       "usage": "be readily available to/from",
       "example": "Fresh fruit is readily available at the market.",
       "translation": "Trái cây tươi rất dễ mua ở chợ.",
-      "family": "ready (adj); readily (adv); availability (n)"
+      "family": "ready (adj); readily (adv); availability (n)",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 8,
@@ -65,7 +85,11 @@
       "usage": "catch up on work/sleep/reading",
       "example": "I used the weekend to catch up on my reading.",
       "translation": "Tôi dùng cuối tuần để đọc bù phần còn thiếu.",
-      "family": "catch – caught – caught; catch-up (n/adj)"
+      "family": "catch – caught – caught; catch-up (n/adj)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -76,7 +100,11 @@
       "usage": "pick out a dress; pick it out",
       "example": "She picked out a blue coat.",
       "translation": "Cô ấy chọn một chiếc áo khoác màu xanh.",
-      "family": "pick (v/n); selection (n); selective (adj)"
+      "family": "pick (v/n); selection (n); selective (adj)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 10,
@@ -87,7 +115,11 @@
       "usage": "time elapses; two years have elapsed",
       "example": "Several minutes elapsed before anyone replied.",
       "translation": "Vài phút trôi qua trước khi có người trả lời.",
-      "family": "elapse (v); elapsed (participle); lapse (n/v, đối chiếu)"
+      "family": "elapse (v); elapsed (participle); lapse (n/v, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 11,
@@ -98,7 +130,11 @@
       "usage": "the odds against an event are ... to ...",
       "example": "In the exercise, the odds against success are two to one.",
       "translation": "Trong bài tập, tỷ lệ không thành công so với thành công là hai trên một.",
-      "family": "odds (plural n); probability (n); probable (adj)"
+      "family": "odds (plural n); probability (n); probable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 14,
@@ -109,7 +145,11 @@
       "usage": "use common sense; be devoid of common sense",
       "example": "A little common sense would have prevented the mistake.",
       "translation": "Chỉ cần suy xét thực tế một chút đã có thể tránh sai lầm ấy.",
-      "family": "sense (n); sensible (adj); sensibly (adv)"
+      "family": "sense (n); sensible (adj); sensibly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 16,
@@ -120,7 +160,11 @@
       "usage": "be in a quandary about/as to ...",
       "example": "She was in a quandary about which course to choose.",
       "translation": "Cô ấy băn khoăn không biết nên chọn khóa học nào.",
-      "family": "quandary (n); dilemma (n); undecided (adj)"
+      "family": "quandary (n); dilemma (n); undecided (adj)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 17,
@@ -131,7 +175,11 @@
       "usage": "the effect/excitement wears off",
       "example": "The initial excitement soon wore off.",
       "translation": "Sự hào hứng ban đầu nhanh chóng lắng xuống.",
-      "family": "wear – wore – worn; wear off; wear out (đối chiếu)"
+      "family": "wear – wore – worn; wear off; wear out (đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 18,
@@ -142,7 +190,11 @@
       "usage": "put skills/knowledge to (good) use",
       "example": "She put her language skills to good use.",
       "translation": "Cô ấy vận dụng tốt kỹ năng ngoại ngữ của mình.",
-      "family": "use (n/v); useful (adj); usefulness (n)"
+      "family": "use (n/v); useful (adj); usefulness (n)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 19,
@@ -153,7 +205,11 @@
       "usage": "a fire/safety hazard; pose a hazard",
       "example": "The blocked exit was a safety hazard.",
       "translation": "Lối thoát bị chặn là một mối nguy về an toàn.",
-      "family": "hazard (n/v); hazardous (adj); hazardously (adv)"
+      "family": "hazard (n/v); hazardous (adj); hazardously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -164,7 +220,11 @@
       "usage": "an easy-going person/attitude",
       "example": "Her easy-going manner helped everyone relax.",
       "translation": "Cách cư xử thoải mái của cô ấy giúp mọi người bớt căng thẳng.",
-      "family": "easy (adj); easily (adv); easy-going/easygoing (adj)"
+      "family": "easy (adj); easily (adv); easy-going/easygoing (adj)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 26,
@@ -175,7 +235,11 @@
       "usage": "have/admit a grudging respect for someone",
       "example": "He admitted a grudging respect for his rival.",
       "translation": "Anh ấy miễn cưỡng thừa nhận sự tôn trọng dành cho đối thủ.",
-      "family": "grudge (n/v); grudging (adj); grudgingly (adv)"
+      "family": "grudge (n/v); grudging (adj); grudgingly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 28,
@@ -186,7 +250,11 @@
       "usage": "be/get in someone's bad books",
       "example": "I was in her bad books after missing the meeting.",
       "translation": "Cô ấy không hài lòng với tôi sau khi tôi bỏ lỡ cuộc họp.",
-      "family": "book (n); in someone's good books (cụm đối chiếu)"
+      "family": "book (n); in someone's good books (cụm đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 30,
@@ -197,7 +265,11 @@
       "usage": "hold/visit an exhibition of photographs",
       "example": "The gallery is holding an exhibition of local art.",
       "translation": "Phòng tranh đang tổ chức triển lãm nghệ thuật địa phương.",
-      "family": "exhibit (v/n); exhibition (n); exhibitor (n)"
+      "family": "exhibit (v/n); exhibition (n); exhibitor (n)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 35,
@@ -208,7 +280,11 @@
       "usage": "diversify into a new field/market",
       "example": "The publisher diversified into educational games.",
       "translation": "Nhà xuất bản mở rộng sang trò chơi giáo dục.",
-      "family": "diverse (adj); diversity (n); diversify (v); diversification (n)"
+      "family": "diverse (adj); diversity (n); diversify (v); diversification (n)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 37,
@@ -219,7 +295,11 @@
       "usage": "be a perfectionist; a demanding perfectionist",
       "example": "As a perfectionist, she revised every paragraph carefully.",
       "translation": "Là người cầu toàn, cô ấy sửa kỹ từng đoạn văn.",
-      "family": "perfect (adj/v); perfection (n); perfectionist (n); perfectionism (n)"
+      "family": "perfect (adj/v); perfection (n); perfectionist (n); perfectionism (n)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 39,
@@ -230,7 +310,11 @@
       "usage": "an unmissable event/performance",
       "example": "The review described the play as unmissable.",
       "translation": "Bài nhận xét mô tả vở kịch là rất đáng xem.",
-      "family": "miss (v); missed (participle); unmissable (adj)"
+      "family": "miss (v); missed (participle); unmissable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 51,
@@ -241,7 +325,11 @@
       "usage": "pick up on a signal; pick up signals from someone",
       "example": "She picked up signals that the guest wanted to leave.",
       "translation": "Cô ấy nhận ra vài dấu hiệu cho thấy vị khách muốn ra về.",
-      "family": "signal (n/v); perception (n); perceive (v)"
+      "family": "signal (n/v); perception (n); perceive (v)",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ]
     },
     {
       "question": 55,
@@ -252,7 +340,11 @@
       "usage": "a positive/negative character trait",
       "example": "Patience is a useful character trait in a teacher.",
       "translation": "Kiên nhẫn là một nét tính cách hữu ích đối với giáo viên.",
-      "family": "character (n); characteristic (n/adj); trait (n)"
+      "family": "character (n); characteristic (n/adj); trait (n)",
+      "teacherSelected": true,
+      "questions": [
+        55
+      ]
     },
     {
       "question": 57,
@@ -263,7 +355,11 @@
       "usage": "reliable results/information/equipment",
       "example": "We need reliable information before deciding.",
       "translation": "Chúng ta cần thông tin đáng tin cậy trước khi quyết định.",
-      "family": "rely (v); reliable (adj); reliably (adv); reliability (n)"
+      "family": "rely (v); reliable (adj); reliably (adv); reliability (n)",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ]
     },
     {
       "question": 58,
@@ -274,7 +370,11 @@
       "usage": "an intrusion into someone's privacy/private life",
       "example": "He regarded the question as an intrusion into his private life.",
       "translation": "Anh ấy coi câu hỏi đó là sự xâm phạm đời sống riêng.",
-      "family": "intrude (v); intrusion (n); intrusive (adj)"
+      "family": "intrude (v); intrusion (n); intrusive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        58
+      ]
     },
     {
       "question": 60,
@@ -285,7 +385,11 @@
       "usage": "a conscientious employee/student",
       "example": "She is conscientious about checking every detail.",
       "translation": "Cô ấy rất có trách nhiệm trong việc kiểm tra từng chi tiết.",
-      "family": "conscience (n); conscientious (adj); conscientiously (adv)"
+      "family": "conscience (n); conscientious (adj); conscientiously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 64,
@@ -296,7 +400,11 @@
       "usage": "a window into the world/life of ...",
       "example": "The interview offered a window into the artist's working life.",
       "translation": "Cuộc phỏng vấn giúp hiểu thêm đời sống làm việc của nghệ sĩ.",
-      "family": "window (n); insight (n); insightful (adj)"
+      "family": "window (n); insight (n); insightful (adj)",
+      "teacherSelected": true,
+      "questions": [
+        64
+      ]
     },
     {
       "question": 78,
@@ -307,7 +415,11 @@
       "usage": "the brain's two hemispheres; the Northern Hemisphere",
       "example": "The diagram labels the brain's two hemispheres.",
       "translation": "Sơ đồ ghi tên hai bán cầu não.",
-      "family": "sphere (n); hemisphere (n); hemispheric (adj)"
+      "family": "sphere (n); hemisphere (n); hemispheric (adj)",
+      "teacherSelected": true,
+      "questions": [
+        78
+      ]
     },
     {
       "question": 94,
@@ -318,7 +430,11 @@
       "usage": "it dawns/dawned on someone that ...",
       "example": "It dawned on me that I had the wrong address.",
       "translation": "Tôi chợt nhận ra mình đã có nhầm địa chỉ.",
-      "family": "dawn (n/v); realization (n); realize/realise (v)"
+      "family": "dawn (n/v); realization (n); realize/realise (v)",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ]
     },
     {
       "question": 100,
@@ -329,7 +445,11 @@
       "usage": "see eye to eye with someone on something",
       "example": "We do not see eye to eye on this proposal.",
       "translation": "Chúng tôi không đồng quan điểm về đề xuất này.",
-      "family": "agree (v); agreement (n); disagreement (n)"
+      "family": "agree (v); agreement (n); disagreement (n)",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
     }
   ]
 }

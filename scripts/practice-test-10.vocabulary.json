@@ -10,7 +10,11 @@
       "usage": "by far + the + so sánh nhất",
       "example": "This is by far the best solution.",
       "translation": "Đây là giải pháp tốt nhất, vượt xa các giải pháp khác.",
-      "family": "far → farther/further → farthest/furthest; by far là cụm nhấn mạnh."
+      "family": "far → farther/further → farthest/furthest; by far là cụm nhấn mạnh.",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 6,
@@ -21,7 +25,11 @@
       "usage": "with a view to doing something",
       "example": "She saved money with a view to studying abroad.",
       "translation": "Cô ấy tiết kiệm tiền để đi du học.",
-      "family": "view (n): quan điểm/tầm nhìn; in view of: xét đến, vì."
+      "family": "view (n): quan điểm/tầm nhìn; in view of: xét đến, vì.",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 9,
@@ -32,7 +40,11 @@
       "usage": "turn up at a place; turn up late",
       "example": "Only ten students turned up.",
       "translation": "Chỉ có mười học sinh đến.",
-      "family": "turn up còn là vặn lớn âm lượng; turn down: vặn nhỏ/từ chối."
+      "family": "turn up còn là vặn lớn âm lượng; turn down: vặn nhỏ/từ chối.",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 11,
@@ -43,7 +55,11 @@
       "usage": "A and B are X and Y respectively",
       "example": "Mai and Nam are twelve and thirteen respectively.",
       "translation": "Mai và Nam lần lượt mười hai và mười ba tuổi.",
-      "family": "respective (a): tương ứng; respectively (adv); respectful: kính trọng."
+      "family": "respective (a): tương ứng; respectively (adv); respectful: kính trọng.",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 12,
@@ -54,7 +70,11 @@
       "usage": "buy clothes off the peg; off-the-peg clothes",
       "example": "I bought this suit off the peg.",
       "translation": "Tôi mua bộ vest này may sẵn.",
-      "family": "peg (n): móc/chốt; tailor-made: được may hoặc thiết kế riêng."
+      "family": "peg (n): móc/chốt; tailor-made: được may hoặc thiết kế riêng.",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 13,
@@ -65,7 +85,11 @@
       "usage": "make room for somebody/something",
       "example": "We moved the chairs to make room for a table.",
       "translation": "Chúng tôi chuyển ghế để dành chỗ cho một chiếc bàn.",
-      "family": "room (n): phòng/khoảng trống; roomy (a): rộng rãi."
+      "family": "room (n): phòng/khoảng trống; roomy (a): rộng rãi.",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 15,
@@ -76,7 +100,11 @@
       "usage": "apply for a post; hold a post",
       "example": "She applied for a teaching post at the college.",
       "translation": "Cô ấy ứng tuyển vị trí giảng dạy tại trường cao đẳng.",
-      "family": "post (n): vị trí; appointment (n): sự bổ nhiệm/chức vụ."
+      "family": "post (n): vị trí; appointment (n): sự bổ nhiệm/chức vụ.",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -87,7 +115,11 @@
       "usage": "not be in the least worried; Not in the least.",
       "example": "I was not in the least offended.",
       "translation": "Tôi hoàn toàn không thấy bị xúc phạm.",
-      "family": "little → less → least; at least: ít nhất, là một cụm khác."
+      "family": "little → less → least; at least: ít nhất, là một cụm khác.",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 21,
@@ -98,7 +130,11 @@
       "usage": "a tiresome task; find something tiresome",
       "example": "His repeated excuses became tiresome.",
       "translation": "Những lời bào chữa lặp đi lặp lại của anh ấy trở nên phiền phức.",
-      "family": "tire (v): làm mệt; tired: cảm thấy mệt; tiring: gây mệt về sức lực."
+      "family": "tire (v): làm mệt; tired: cảm thấy mệt; tiring: gây mệt về sức lực.",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 22,
@@ -109,7 +145,11 @@
       "usage": "accomplish a task/goal; accomplish something",
       "example": "We accomplished everything on the list.",
       "translation": "Chúng tôi đã hoàn thành mọi việc trong danh sách.",
-      "family": "accomplishment (n): thành tựu; accomplished (a): tài giỏi, thành thạo."
+      "family": "accomplishment (n): thành tựu; accomplished (a): tài giỏi, thành thạo.",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -120,7 +160,11 @@
       "usage": "be free of/from contamination",
       "example": "The water must be free of harmful chemicals.",
       "translation": "Nước phải không chứa hóa chất có hại.",
-      "family": "free (a/v); freedom (n): sự tự do; freely (adv): một cách tự do."
+      "family": "free (a/v); freedom (n): sự tự do; freely (adv): một cách tự do.",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 25,
@@ -131,7 +175,11 @@
       "usage": "delicate skin; a delicate issue",
       "example": "Use a mild soap on delicate skin.",
       "translation": "Hãy dùng xà phòng dịu nhẹ cho da nhạy cảm.",
-      "family": "delicately (adv): nhẹ nhàng/khéo léo; delicacy (n): sự tinh tế/món ngon."
+      "family": "delicately (adv): nhẹ nhàng/khéo léo; delicacy (n): sự tinh tế/món ngon.",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 26,
@@ -142,7 +190,11 @@
       "usage": "feel nostalgic about/for something",
       "example": "The song made me nostalgic for my school days.",
       "translation": "Bài hát khiến tôi bồi hồi nhớ thời đi học.",
-      "family": "nostalgia (n): nỗi hoài niệm; nostalgically (adv): đầy hoài niệm."
+      "family": "nostalgia (n): nỗi hoài niệm; nostalgically (adv): đầy hoài niệm.",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 29,
@@ -153,7 +205,11 @@
       "usage": "do/conduct fieldwork",
       "example": "The students conducted fieldwork in a coastal village.",
       "translation": "Các học sinh tiến hành nghiên cứu thực địa tại một làng ven biển.",
-      "family": "field (n): lĩnh vực/hiện trường; fieldworker (n): người làm việc thực địa."
+      "family": "field (n): lĩnh vực/hiện trường; fieldworker (n): người làm việc thực địa.",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 32,
@@ -164,7 +220,11 @@
       "usage": "adopt a plan/policy/approach",
       "example": "The school adopted a new teaching approach.",
       "translation": "Nhà trường áp dụng một cách dạy mới.",
-      "family": "adoption (n): sự thông qua/áp dụng; adaptive thuộc adapt, không phải adopt."
+      "family": "adoption (n): sự thông qua/áp dụng; adaptive thuộc adapt, không phải adopt.",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 33,
@@ -175,7 +235,11 @@
       "usage": "a grim future/outlook; grim news",
       "example": "The report paints a grim picture of the economy.",
       "translation": "Báo cáo vẽ ra bức tranh u ám về nền kinh tế.",
-      "family": "grimly (adv): nghiêm nghị/u ám; grimness (n): tính khắc nghiệt."
+      "family": "grimly (adv): nghiêm nghị/u ám; grimness (n): tính khắc nghiệt.",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 34,
@@ -186,7 +250,11 @@
       "usage": "an idea catches on; catch on to a joke",
       "example": "The new trend soon caught on.",
       "translation": "Xu hướng mới nhanh chóng trở nên phổ biến.",
-      "family": "catch → caught → caught; catching on không có nghĩa bắt một vật."
+      "family": "catch → caught → caught; catching on không có nghĩa bắt một vật.",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 36,
@@ -197,7 +265,11 @@
       "usage": "a monotonous voice/job/routine",
       "example": "The monotonous task required great patience.",
       "translation": "Công việc đơn điệu đòi hỏi rất nhiều kiên nhẫn.",
-      "family": "monotony (n): sự đơn điệu; monotonously (adv): một cách đều đều, nhàm chán."
+      "family": "monotony (n): sự đơn điệu; monotonously (adv): một cách đều đều, nhàm chán.",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 39,
@@ -208,7 +280,11 @@
       "usage": "the complexity of a problem/character",
       "example": "We underestimated the complexity of the problem.",
       "translation": "Chúng tôi đã đánh giá thấp mức độ phức tạp của vấn đề.",
-      "family": "complex (a): phức tạp; complexity (n); complexly (adv, ít dùng)."
+      "family": "complex (a): phức tạp; complexity (n); complexly (adv, ít dùng).",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 41,
@@ -219,7 +295,11 @@
       "usage": "an influential figure; influential in doing something",
       "example": "She became an influential voice in education.",
       "translation": "Bà trở thành một tiếng nói có ảnh hưởng trong giáo dục.",
-      "family": "influence (n/v): ảnh hưởng/tác động; influential (a)."
+      "family": "influence (n/v): ảnh hưởng/tác động; influential (a).",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 43,
@@ -230,7 +310,11 @@
       "usage": "Mercifully, + mệnh đề",
       "example": "Mercifully, nobody was seriously injured.",
       "translation": "May thay, không ai bị thương nặng.",
-      "family": "mercy (n): lòng thương; merciful (a): nhân từ; merciless: tàn nhẫn."
+      "family": "mercy (n): lòng thương; merciful (a): nhân từ; merciless: tàn nhẫn.",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 44,
@@ -241,7 +325,11 @@
       "usage": "an unconventional approach/upbringing",
       "example": "They chose an unconventional design.",
       "translation": "Họ chọn một thiết kế khác thông lệ.",
-      "family": "convention (n): thông lệ; conventional: thông thường; conventionally (adv)."
+      "family": "convention (n): thông lệ; conventional: thông thường; conventionally (adv).",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 45,
@@ -252,7 +340,11 @@
       "usage": "a wealthy patron; a patron of the arts",
       "example": "A wealthy patron funded the young composer.",
       "translation": "Một người bảo trợ giàu có tài trợ cho nhà soạn nhạc trẻ.",
-      "family": "patronage (n): sự bảo trợ; patronize có nhiều nghĩa, gồm bảo trợ hoặc kẻ cả."
+      "family": "patronage (n): sự bảo trợ; patronize có nhiều nghĩa, gồm bảo trợ hoặc kẻ cả.",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 49,
@@ -263,7 +355,11 @@
       "usage": "resistant to antibiotics/chemicals",
       "example": "Some bacteria are resistant to antibiotics.",
       "translation": "Một số vi khuẩn kháng thuốc kháng sinh.",
-      "family": "resist (v): chống lại; resistance (n): sức kháng; resistant (a)."
+      "family": "resist (v): chống lại; resistance (n): sức kháng; resistant (a).",
+      "teacherSelected": true,
+      "questions": [
+        49
+      ]
     },
     {
       "question": 56,
@@ -274,7 +370,11 @@
       "usage": "avert a disaster/crisis",
       "example": "Early action helped avert a crisis.",
       "translation": "Hành động sớm giúp ngăn một cuộc khủng hoảng.",
-      "family": "averted, averting; avert one’s eyes: quay mắt tránh nhìn."
+      "family": "averted, averting; avert one’s eyes: quay mắt tránh nhìn.",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 59,
@@ -285,7 +385,11 @@
       "usage": "trigger/set off a chain reaction",
       "example": "One error triggered a chain reaction of failures.",
       "translation": "Một lỗi gây ra hàng loạt thất bại nối tiếp.",
-      "family": "chain (n): chuỗi; react (v): phản ứng; reaction (n): phản ứng."
+      "family": "chain (n): chuỗi; react (v): phản ứng; reaction (n): phản ứng.",
+      "teacherSelected": true,
+      "questions": [
+        59
+      ]
     },
     {
       "question": 74,
@@ -296,7 +400,11 @@
       "usage": "It is inconceivable that…; inconceivable to somebody",
       "example": "Such rapid progress was once inconceivable.",
       "translation": "Tiến bộ nhanh như vậy từng là điều không thể hình dung.",
-      "family": "conceive (v): hình dung; conceivable (a); inconceivably (adv)."
+      "family": "conceive (v): hình dung; conceivable (a); inconceivably (adv).",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ]
     },
     {
       "question": 84,
@@ -307,7 +415,11 @@
       "usage": "be over the moon about/with something",
       "example": "She was over the moon about the results.",
       "translation": "Cô ấy vô cùng vui sướng trước kết quả.",
-      "family": "elated (a): vui sướng; elation (n): niềm hân hoan; moon (n): mặt trăng."
+      "family": "elated (a): vui sướng; elation (n): niềm hân hoan; moon (n): mặt trăng.",
+      "teacherSelected": true,
+      "questions": [
+        84
+      ]
     },
     {
       "question": 92,
@@ -318,7 +430,11 @@
       "usage": "have/had butterflies in my/her/his stomach",
       "example": "I had butterflies in my stomach before the interview.",
       "translation": "Tôi rất hồi hộp trước cuộc phỏng vấn.",
-      "family": "butterfly → butterflies; nervous (a): lo lắng; nervousness (n): sự lo lắng."
+      "family": "butterfly → butterflies; nervous (a): lo lắng; nervousness (n): sự lo lắng.",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ]
     },
     {
       "question": 99,
@@ -329,7 +445,11 @@
       "usage": "take notice of somebody/something",
       "example": "He did not take much notice of the warning.",
       "translation": "Anh ấy không chú ý nhiều tới lời cảnh báo.",
-      "family": "notice (n/v): sự chú ý/thông báo; noticeable (a): dễ nhận thấy."
+      "family": "notice (n/v): sự chú ý/thông báo; noticeable (a): dễ nhận thấy.",
+      "teacherSelected": true,
+      "questions": [
+        99
+      ]
     }
   ]
 }

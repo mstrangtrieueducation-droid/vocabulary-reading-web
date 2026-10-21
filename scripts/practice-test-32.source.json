@@ -1082,27 +1082,38 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "not until the teacher explained the results that the children realised how hard",
-        "not until the teacher explained the results that the children realized how hard"
+        "not until the teacher explained"
       ],
-      "displayAnswer": "not until the teacher explained the results that the children realised how hard / not until the teacher explained the results that the children realized how hard",
+      "displayAnswer": "not until the teacher explained",
       "prefix": "It was",
-      "suffix": "the exam was.",
-      "fullSentence": "It was not until the teacher explained the results that the children realised how hard the exam was.",
-      "explanation": "It was not until ... that ... là câu chẻ nhấn mạnh thời điểm muộn mà học sinh mới nhận ra. Không đảo did the children sau that; kiểu đảo ngữ chỉ dùng ở Not until ... did the children realise. How hard thuộc câu hỏi gián tiếp nên the exam was ở cuối đã đúng."
+      "suffix": "the results that the children realised how hard the exam was",
+      "fullSentence": "It was not until the teacher explained the results that the children realised how hard the exam was",
+      "explanation": "It was not until … that … là câu chẻ nhấn mạnh thời điểm muộn mà học sinh mới nhận ra. Không đảo did the children sau that; kiểu đảo ngữ chỉ dùng ở Not until … did the children realise.",
+      "keyword": "UNTIL",
+      "answerPrefix": "It was",
+      "answerSuffix": "the results that the children realised how hard the exam was",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "not until the teacher explained"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "no time do the two sides reach"
+        "At no time do"
       ],
-      "displayAnswer": "no time do the two sides reach",
-      "prefix": "At",
-      "suffix": "an agreement.",
-      "fullSentence": "At no time do the two sides reach an agreement.",
-      "explanation": "At no time tương đương never, đặt đầu câu yêu cầu đảo do trước chủ ngữ số nhiều the two sides. Câu gốc hiện tại đơn nên do, không đổi sang did. Reach giữ nguyên mẫu sau trợ động từ; time phải đi kèm no để giữ nghĩa phủ định."
+      "displayAnswer": "At no time do",
+      "prefix": "",
+      "suffix": "the two sides reach an agreement",
+      "fullSentence": "At no time do the two sides reach an agreement",
+      "explanation": "At no time tương đương never, đặt đầu câu yêu cầu đảo do trước chủ ngữ số nhiều the two sides. Câu gốc hiện tại đơn nên do, không đổi sang did.",
+      "keyword": "TIME",
+      "answerPrefix": "",
+      "answerSuffix": "the two sides reach an agreement",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "At no time do"
     },
     {
       "globalNumber": 93,
@@ -1114,23 +1125,35 @@
       ],
       "displayAnswer": "not on good terms with / on bad terms with",
       "prefix": "Tony is",
-      "suffix": "his colleagues.",
-      "fullSentence": "Tony is not on good terms with his colleagues.",
-      "explanation": "Be on good terms with someone là có quan hệ tốt với ai. Not on good terms giữ đúng nghĩa does not get on well; on bad terms cũng diễn đạt quan hệ không tốt. Terms dùng số nhiều trong thành ngữ, không viết on a good term."
+      "suffix": "his colleagues",
+      "fullSentence": "Tony is not on good terms with his colleagues",
+      "explanation": "Be on good terms with someone là có quan hệ tốt với ai. Not on good terms giữ đúng nghĩa does not get on well; on bad terms cũng diễn đạt quan hệ không tốt.",
+      "keyword": "TERMS",
+      "answerPrefix": "Tony is",
+      "answerSuffix": "his colleagues",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "not on good terms with"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "odds of the team winning the championship this year",
-        "odds on the team winning the championship this year"
+        "odds of the team winning",
+        "odds on the team winning"
       ],
-      "displayAnswer": "odds of the team winning the championship this year / odds on the team winning the championship this year",
+      "displayAnswer": "odds of the team winning / odds on the team winning",
       "prefix": "The",
-      "suffix": "are very slim.",
-      "fullSentence": "The odds of the team winning the championship this year are very slim.",
-      "explanation": "The odds of/on + danh từ/V-ing là khả năng xảy ra. Very slim tương ứng extremely unlikely, nên không thêm phủ định nữa. Odds là danh từ số nhiều, đúng với are đã có ngoài ô; the team winning là cụm có chủ thể team và hành động winning."
+      "suffix": "the championship this year are very slim",
+      "fullSentence": "The odds of the team winning the championship this year are very slim",
+      "explanation": "The odds of/on + danh từ/V-ing là khả năng xảy ra. Very slim tương ứng extremely unlikely, nên không thêm phủ định nữa.",
+      "keyword": "ODDS",
+      "answerPrefix": "The",
+      "answerSuffix": "the championship this year are very slim",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "odds of the team winning"
     },
     {
       "globalNumber": 95,
@@ -1142,9 +1165,15 @@
       ],
       "displayAnswer": "got into the swing of / got in the swing of",
       "prefix": "He finally",
-      "suffix": "the new work routine.",
-      "fullSentence": "He finally got into the swing of the new work routine.",
-      "explanation": "Get into the swing of something là quen nhịp và bắt đầu làm việc trôi chảy. Quá khứ got tương ứng was finally able to adjust. In cũng dùng được trong thành ngữ; không bỏ of vì nó nối với the new work routine."
+      "suffix": "the new work routine",
+      "fullSentence": "He finally got into the swing of the new work routine",
+      "explanation": "Get into the swing of something là quen nhịp và bắt đầu làm việc trôi chảy. Quá khứ got tương ứng was finally able to adjust.",
+      "keyword": "SWING",
+      "answerPrefix": "He finally",
+      "answerSuffix": "the new work routine",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "got into the swing of"
     },
     {
       "globalNumber": 96,
@@ -1155,9 +1184,15 @@
       ],
       "displayAnswer": "acts on impulse",
       "prefix": "Zoe always",
-      "suffix": "when making her travel plans.",
-      "fullSentence": "Zoe always acts on impulse when making her travel plans.",
-      "explanation": "Act on impulse là hành động theo ý chợt nảy ra, không lên kế hoạch kỹ. Spontaneous decisions được chuyển thành cụm này. Zoe là chủ ngữ số ít nên acts có -s; từ acts phải được giữ đúng như từ khóa."
+      "suffix": "when making her travel plans",
+      "fullSentence": "Zoe always acts on impulse when making her travel plans",
+      "explanation": "Act on impulse là hành động theo ý chợt nảy ra, không lên kế hoạch kỹ. Spontaneous decisions được chuyển thành cụm này.",
+      "keyword": "ACTS",
+      "answerPrefix": "Zoe always",
+      "answerSuffix": "when making her travel plans",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "acts on impulse"
     },
     {
       "globalNumber": 97,
@@ -1168,9 +1203,15 @@
       ],
       "displayAnswer": "come to terms with",
       "prefix": "You must",
-      "suffix": "the fact that she has left you.",
-      "fullSentence": "You must come to terms with the fact that she has left you.",
-      "explanation": "Come to terms with something nghĩa là dần chấp nhận một thực tế khó chịu. Must theo sau nguyên mẫu come. Terms giữ số nhiều; không nhầm be on good terms with, vốn nói quan hệ giữa người với người."
+      "suffix": "the fact that she has left you",
+      "fullSentence": "You must come to terms with the fact that she has left you",
+      "explanation": "Come to terms with something nghĩa là dần chấp nhận một thực tế khó chịu. Must theo sau nguyên mẫu come.",
+      "keyword": "TERMS",
+      "answerPrefix": "You must",
+      "answerSuffix": "the fact that she has left you",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "come to terms with"
     },
     {
       "globalNumber": 98,
@@ -1181,9 +1222,15 @@
       ],
       "displayAnswer": "on the spur of",
       "prefix": "We decided to go away for the weekend",
-      "suffix": "the moment.",
-      "fullSentence": "We decided to go away for the weekend on the spur of the moment.",
-      "explanation": "On the spur of the moment nghĩa là ngẫu hứng, quyết định ngay lúc đó không chuẩn bị trước. Cụm tương ứng suddenly decided. The moment đã có sẵn nên chỉ nhập on the spur of, không lặp phần cuối."
+      "suffix": "the moment",
+      "fullSentence": "We decided to go away for the weekend on the spur of the moment",
+      "explanation": "On the spur of the moment nghĩa là ngẫu hứng, quyết định ngay lúc đó không chuẩn bị trước. Cụm tương ứng suddenly decided.",
+      "keyword": "SPUR",
+      "answerPrefix": "We decided to go away for the weekend",
+      "answerSuffix": "the moment",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "on the spur of"
     },
     {
       "globalNumber": 99,
@@ -1194,9 +1241,15 @@
       ],
       "displayAnswer": "fell on deaf ears",
       "prefix": "Repeated requests for a safer crossing",
-      "suffix": ".",
-      "fullSentence": "Repeated requests for a safer crossing fell on deaf ears.",
-      "explanation": "Fall on deaf ears là lời đề nghị/cảnh báo không được lắng nghe. Câu gốc ở quá khứ nên dùng fell; ears luôn ở số nhiều trong thành ngữ này. Chủ ngữ đã là các yêu cầu, nên không điền thêm the committee vào sau cụm."
+      "suffix": "",
+      "fullSentence": "Repeated requests for a safer crossing fell on deaf ears",
+      "explanation": "Fall on deaf ears là lời đề nghị/cảnh báo không được lắng nghe. Câu gốc ở quá khứ nên dùng fell; ears luôn ở số nhiều trong thành ngữ này.",
+      "keyword": "EARS",
+      "answerPrefix": "Repeated requests for a safer crossing",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "fell on deaf ears"
     },
     {
       "globalNumber": 100,
@@ -1205,16 +1258,21 @@
       "acceptedAnswers": [
         "did a count of the class",
         "made a count of the students",
-        "did a head count of the class",
         "did a count of the students"
       ],
-      "displayAnswer": "did a count of the class / made a count of the students / did a head count of the class / did a count of the students",
+      "displayAnswer": "did a count of the class / made a count of the students / did a count of the students",
       "prefix": "We assembled at school punctually and Ms Tan",
-      "suffix": "before we boarded the bus.",
-      "fullSentence": "We assembled at school punctually and Ms Tan did a count of the class before we boarded the bus.",
-      "explanation": "Do/make a count of the class là đếm số học sinh có mặt, phù hợp việc kiểm tra trước khi lên xe. Giữ quá khứ did/made và từ COUNT nguyên dạng. Headcount viết liền là một từ khác hình thức từ khóa, nên đáp án mẫu dùng a count of để tuân thủ yêu cầu giữ từ."
+      "suffix": "before we boarded the bus",
+      "fullSentence": "We assembled at school punctually and Ms Tan did a count of the class before we boarded the bus",
+      "explanation": "Do/make a count of the class là đếm số học sinh có mặt, phù hợp việc kiểm tra trước khi lên xe. Giữ quá khứ did/made và từ COUNT nguyên dạng.",
+      "keyword": "COUNT",
+      "answerPrefix": "We assembled at school punctually and Ms Tan",
+      "answerSuffix": "before we boarded the bus",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "did a count of the class"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

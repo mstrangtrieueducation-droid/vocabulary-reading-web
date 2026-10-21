@@ -10,7 +10,11 @@
       "usage": "come under fire for/over something",
       "example": "The plan came under fire for its high cost.",
       "translation": "Kế hoạch bị chỉ trích gay gắt vì chi phí cao.",
-      "family": "criticize (v): chỉ trích; criticism (n): lời chỉ trích; critical (a)."
+      "family": "criticize (v): chỉ trích; criticism (n): lời chỉ trích; critical (a).",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 4,
@@ -21,7 +25,11 @@
       "usage": "be charged with a crime/doing something",
       "example": "He was charged with theft.",
       "translation": "Anh ta bị buộc tội trộm cắp.",
-      "family": "charge (n/v); accusation (n): lời cáo buộc; conviction (n): sự kết án."
+      "family": "charge (n/v); accusation (n): lời cáo buộc; conviction (n): sự kết án.",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -32,7 +40,11 @@
       "usage": "thoroughly enjoy/check/understand",
       "example": "We thoroughly enjoyed the performance.",
       "translation": "Chúng tôi rất thích buổi biểu diễn.",
-      "family": "thorough (a): kỹ lưỡng; thoroughness (n): sự kỹ lưỡng; through là từ khác."
+      "family": "thorough (a): kỹ lưỡng; thoroughness (n): sự kỹ lưỡng; through là từ khác.",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -43,7 +55,11 @@
       "usage": "It is typical of somebody to do something",
       "example": "It is typical of him to arrive early.",
       "translation": "Đến sớm là thói quen đặc trưng của anh ấy.",
-      "family": "typical (a); typically (adv): thường, một cách điển hình; atypical: không điển hình."
+      "family": "typical (a); typically (adv): thường, một cách điển hình; atypical: không điển hình.",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 8,
@@ -54,7 +70,11 @@
       "usage": "be dismissed/sacked for misconduct",
       "example": "The employee was dismissed for serious misconduct.",
       "translation": "Nhân viên bị sa thải vì hành vi sai trái nghiêm trọng.",
-      "family": "conduct (n): hành vi; conduct oneself: cư xử; mis- thêm nghĩa sai/lệch."
+      "family": "conduct (n): hành vi; conduct oneself: cư xử; mis- thêm nghĩa sai/lệch.",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -65,7 +85,11 @@
       "usage": "continual interruptions/complaints",
       "example": "Continual interruptions made the task difficult.",
       "translation": "Những lần gián đoạn liên tiếp khiến công việc khó thực hiện.",
-      "family": "continually (adv); continue (v); continuity (n): sự liên tục."
+      "family": "continually (adv); continue (v); continuity (n): sự liên tục.",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 12,
@@ -76,7 +100,11 @@
       "usage": "be/stay wide awake",
       "example": "I was still wide awake at midnight.",
       "translation": "Nửa đêm tôi vẫn hoàn toàn tỉnh táo.",
-      "family": "awake (a/v): tỉnh/thức dậy; awaken (v): đánh thức; asleep (a): đang ngủ."
+      "family": "awake (a/v): tỉnh/thức dậy; awaken (v): đánh thức; asleep (a): đang ngủ.",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 13,
@@ -87,7 +115,11 @@
       "usage": "absorb water/heat/information",
       "example": "The dry soil absorbed the water quickly.",
       "translation": "Đất khô nhanh chóng hút nước.",
-      "family": "absorption (n): sự hấp thụ; absorbent (a): có khả năng thấm hút."
+      "family": "absorption (n): sự hấp thụ; absorbent (a): có khả năng thấm hút.",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 18,
@@ -98,7 +130,11 @@
       "usage": "drive me/him/her up the wall",
       "example": "The constant noise drives me up the wall.",
       "translation": "Tiếng ồn không ngừng khiến tôi phát cáu.",
-      "family": "drive → drove → driven; annoying (a): gây khó chịu; annoyed: thấy bực."
+      "family": "drive → drove → driven; annoying (a): gây khó chịu; annoyed: thấy bực.",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 22,
@@ -109,7 +145,11 @@
       "usage": "put an item on one side for somebody",
       "example": "Could you put this coat on one side for me?",
       "translation": "Bạn có thể giữ riêng chiếc áo này cho tôi không?",
-      "family": "put → put → put; set aside: dành riêng/tạm gác; reserve: giữ chỗ, để dành."
+      "family": "put → put → put; set aside: dành riêng/tạm gác; reserve: giữ chỗ, để dành.",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 27,
@@ -120,7 +160,11 @@
       "usage": "move/run/do something at the double",
       "example": "Please bring the supplies at the double.",
       "translation": "Hãy mang vật tư tới thật nhanh.",
-      "family": "double (a/v/n): gấp đôi; quickly/rapidly: nhanh chóng."
+      "family": "double (a/v/n): gấp đôi; quickly/rapidly: nhanh chóng.",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -131,7 +175,11 @@
       "usage": "part with money/a possession",
       "example": "She was reluctant to part with her old books.",
       "translation": "Cô ấy không muốn chia tay những cuốn sách cũ.",
-      "family": "part (n/v): phần/chia tay; parted, parting; reluctant: miễn cưỡng."
+      "family": "part (n/v): phần/chia tay; parted, parting; reluctant: miễn cưỡng.",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 31,
@@ -142,7 +190,11 @@
       "usage": "cater for somebody’s needs/tastes",
       "example": "The library caters for readers of all ages.",
       "translation": "Thư viện phục vụ nhu cầu của độc giả mọi lứa tuổi.",
-      "family": "catering (n): dịch vụ cung cấp đồ ăn; caterer (n): người/đơn vị cung cấp."
+      "family": "catering (n): dịch vụ cung cấp đồ ăn; caterer (n): người/đơn vị cung cấp.",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 32,
@@ -153,7 +205,11 @@
       "usage": "assess a risk/situation/speed",
       "example": "We need to assess the risks first.",
       "translation": "Chúng ta cần đánh giá rủi ro trước.",
-      "family": "assessment (n): sự đánh giá; assessor (n): người đánh giá; access là từ khác."
+      "family": "assessment (n): sự đánh giá; assessor (n): người đánh giá; access là từ khác.",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 33,
@@ -164,7 +220,11 @@
       "usage": "be beneficial to/for somebody",
       "example": "Regular exercise is beneficial to health.",
       "translation": "Tập thể dục đều đặn có lợi cho sức khỏe.",
-      "family": "benefit (n/v): lợi ích/được lợi; beneficially (adv); beneficiary: người thụ hưởng."
+      "family": "benefit (n/v): lợi ích/được lợi; beneficially (adv); beneficiary: người thụ hưởng.",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 34,
@@ -175,7 +235,11 @@
       "usage": "a long-winded speech/explanation",
       "example": "We were tired of his long-winded explanation.",
       "translation": "Chúng tôi chán lời giải thích dài dòng của anh ấy.",
-      "family": "winded thường liên quan hụt hơi; concise (a): súc tích, gần nghĩa trái ngược."
+      "family": "winded thường liên quan hụt hơi; concise (a): súc tích, gần nghĩa trái ngược.",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 35,
@@ -186,7 +250,11 @@
       "usage": "laugh off criticism; laugh it off",
       "example": "She laughed off the embarrassing mistake.",
       "translation": "Cô ấy cười cho qua lỗi đáng ngượng đó.",
-      "family": "laugh (n/v): tiếng cười/cười; laughter (n): tiếng cười; laughable: đáng cười."
+      "family": "laugh (n/v): tiếng cười/cười; laughter (n): tiếng cười; laughable: đáng cười.",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 36,
@@ -197,7 +265,11 @@
       "usage": "a charitable foundation; establish a foundation",
       "example": "The foundation supports educational projects.",
       "translation": "Quỹ hỗ trợ các dự án giáo dục.",
-      "family": "found (v): thành lập; founded; founder (n): người sáng lập; find → found là động từ khác."
+      "family": "found (v): thành lập; founded; founder (n): người sáng lập; find → found là động từ khác.",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 37,
@@ -208,7 +280,11 @@
       "usage": "the effectiveness of a method",
       "example": "The study assessed the effectiveness of the programme.",
       "translation": "Nghiên cứu đánh giá hiệu quả đạt mục tiêu của chương trình.",
-      "family": "effect (n): tác động; effective (a); effectively (adv); ineffective: không hiệu quả."
+      "family": "effect (n): tác động; effective (a); effectively (adv); ineffective: không hiệu quả.",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 39,
@@ -219,7 +295,11 @@
       "usage": "travel/read/research extensively",
       "example": "She has travelled extensively in Asia.",
       "translation": "Cô ấy đã đi nhiều nơi ở châu Á.",
-      "family": "extend (v): mở rộng; extensive (a): rộng; extension (n): sự mở rộng."
+      "family": "extend (v): mở rộng; extensive (a): rộng; extension (n): sự mở rộng.",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 40,
@@ -230,7 +310,11 @@
       "usage": "improve energy efficiency; energy-efficient equipment",
       "example": "The new windows improve energy efficiency.",
       "translation": "Cửa sổ mới giúp sử dụng năng lượng hiệu quả hơn.",
-      "family": "efficient (a); efficiently (adv); efficiency (n); inefficient: kém hiệu quả."
+      "family": "efficient (a); efficiently (adv); efficiency (n); inefficient: kém hiệu quả.",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 41,
@@ -241,7 +325,11 @@
       "usage": "rise to stardom; achieve stardom",
       "example": "Her first film brought her international stardom.",
       "translation": "Bộ phim đầu tay đưa cô ấy tới danh tiếng quốc tế.",
-      "family": "star (n/v): ngôi sao/đóng vai chính; starring: đóng vai chính."
+      "family": "star (n/v): ngôi sao/đóng vai chính; starring: đóng vai chính.",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 44,
@@ -252,7 +340,11 @@
       "usage": "insufficient time/funds; insufficient to do something",
       "example": "Talent alone may be insufficient.",
       "translation": "Chỉ tài năng thôi có thể chưa đủ.",
-      "family": "sufficient: đủ; sufficiently (adv); insufficiency (n): tình trạng thiếu."
+      "family": "sufficient: đủ; sufficiently (adv); insufficiency (n): tình trạng thiếu.",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 45,
@@ -263,7 +355,11 @@
       "usage": "learn/master the basics of something",
       "example": "We learned the basics of photography.",
       "translation": "Chúng tôi học các kiến thức cơ bản về nhiếp ảnh.",
-      "family": "basic (a): cơ bản; basically (adv): về cơ bản; basis (n): nền tảng/căn cứ."
+      "family": "basic (a): cơ bản; basically (adv): về cơ bản; basis (n): nền tảng/căn cứ.",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 49,
@@ -274,7 +370,11 @@
       "usage": "a problem persists; persist in doing something",
       "example": "The problem persisted despite repeated repairs.",
       "translation": "Vấn đề vẫn tồn tại dù đã sửa nhiều lần.",
-      "family": "persistent (a): dai dẳng/kiên trì; persistence (n): sự kiên trì/tồn tại dai dẳng."
+      "family": "persistent (a): dai dẳng/kiên trì; persistence (n): sự kiên trì/tồn tại dai dẳng.",
+      "teacherSelected": true,
+      "questions": [
+        49
+      ]
     },
     {
       "question": 53,
@@ -285,7 +385,11 @@
       "usage": "a mere + số lượng; a mere child",
       "example": "The task took a mere five minutes.",
       "translation": "Công việc chỉ mất năm phút.",
-      "family": "merely (adv): chỉ, đơn thuần; sheer (a): hoàn toàn, không luôn thay được mere."
+      "family": "merely (adv): chỉ, đơn thuần; sheer (a): hoàn toàn, không luôn thay được mere.",
+      "teacherSelected": true,
+      "questions": [
+        53
+      ]
     },
     {
       "question": 77,
@@ -296,7 +400,11 @@
       "usage": "infertile land/soil",
       "example": "The dry, infertile soil produced little food.",
       "translation": "Đất khô, cằn cỗi tạo ra rất ít lương thực.",
-      "family": "fertile (a): màu mỡ; fertility (n): độ phì; fertilize (v); fertilizer (n): phân bón."
+      "family": "fertile (a): màu mỡ; fertility (n): độ phì; fertilize (v); fertilizer (n): phân bón.",
+      "teacherSelected": true,
+      "questions": [
+        77
+      ]
     },
     {
       "question": 84,
@@ -307,7 +415,11 @@
       "usage": "fall short of expectations/a target",
       "example": "The results fell short of our expectations.",
       "translation": "Kết quả không đạt kỳ vọng của chúng tôi.",
-      "family": "shortfall (n): mức thiếu hụt; expectation (n): kỳ vọng; come up to: đạt tới."
+      "family": "shortfall (n): mức thiếu hụt; expectation (n): kỳ vọng; come up to: đạt tới.",
+      "teacherSelected": true,
+      "questions": [
+        84
+      ]
     },
     {
       "question": 91,
@@ -318,7 +430,11 @@
       "usage": "a future/tour/outcome hangs in the balance",
       "example": "The future of the project hangs in the balance.",
       "translation": "Tương lai của dự án vẫn chưa ngã ngũ.",
-      "family": "balance (n/v): sự cân bằng/cân đối; hang → hung → hung trong nghĩa này."
+      "family": "balance (n/v): sự cân bằng/cân đối; hang → hung → hung trong nghĩa này.",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ]
     },
     {
       "question": 95,
@@ -329,7 +445,11 @@
       "usage": "take exception to a remark/being treated unfairly",
       "example": "She took exception to his rude comment.",
       "translation": "Cô ấy thấy bị xúc phạm bởi lời bình luận thô lỗ của anh ấy.",
-      "family": "exception (n): ngoại lệ/sự phản đối; exceptional: đặc biệt, không cùng nghĩa cả cụm."
+      "family": "exception (n): ngoại lệ/sự phản đối; exceptional: đặc biệt, không cùng nghĩa cả cụm.",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     }
   ]
 }

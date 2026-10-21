@@ -1115,9 +1115,15 @@
       ],
       "displayAnswer": "didn't mean to break / did not mean to break",
       "prefix": "My son",
-      "suffix": "the teapot.",
-      "fullSentence": "My son didn’t mean to break the teapot.",
-      "explanation": "Do something by accident nghĩa là làm vô ý, không có chủ định. Mean to do something là định làm, nên didn’t mean to break giữ ý tai nạn. Mean giữ nguyên mẫu sau didn’t đúng từ cho sẵn; không dùng meant sau did."
+      "suffix": "the teapot",
+      "fullSentence": "My son didn't mean to break the teapot",
+      "explanation": "Do something by accident nghĩa là làm vô ý, không có chủ định. Mean to do something là định làm, nên didn’t mean to break giữ ý tai nạn.",
+      "keyword": "MEAN",
+      "answerPrefix": "My son",
+      "answerSuffix": "the teapot",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "didn't mean to break"
     },
     {
       "globalNumber": 92,
@@ -1127,10 +1133,16 @@
         "have turned down"
       ],
       "displayAnswer": "have turned down",
-      "prefix": "I shouldn’t",
-      "suffix": "her offer.",
-      "fullSentence": "I shouldn’t have turned down her offer.",
-      "explanation": "Turn down an offer là từ chối lời đề nghị. It was a mistake chỉ lỗi trong quá khứ nên dùng shouldn’t have + V3. Turn chuyển thành turned; chỉ viết shouldn’t turn down sẽ trở thành lời khuyên cho hiện tại/tương lai."
+      "prefix": "I shouldn't",
+      "suffix": "her offer",
+      "fullSentence": "I shouldn't have turned down her offer",
+      "explanation": "Turn down an offer là từ chối lời đề nghị. It was a mistake chỉ lỗi trong quá khứ nên dùng shouldn’t have + V3.",
+      "keyword": "DOWN",
+      "answerPrefix": "I shouldn't",
+      "answerSuffix": "her offer",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "have turned down"
     },
     {
       "globalNumber": 93,
@@ -1141,9 +1153,15 @@
       ],
       "displayAnswer": "cut their picnic short",
       "prefix": "They had to",
-      "suffix": "because of the heavy downpour.",
-      "fullSentence": "They had to cut their picnic short because of the heavy downpour.",
-      "explanation": "Cut something short là kết thúc sớm hơn dự định. Cụm chuyển brought their picnic to an abrupt end thành hành động phải dừng chuyến picnic. Sau had to dùng cut nguyên mẫu; short đứng sau tân ngữ their picnic, không dùng shortly."
+      "suffix": "because of the heavy downpour",
+      "fullSentence": "They had to cut their picnic short because of the heavy downpour",
+      "explanation": "Cut something short là kết thúc sớm hơn dự định. Cụm chuyển brought their picnic to an abrupt end thành hành động phải dừng chuyến picnic.",
+      "keyword": "SHORT",
+      "answerPrefix": "They had to",
+      "answerSuffix": "because of the heavy downpour",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "cut their picnic short"
     },
     {
       "globalNumber": 94,
@@ -1154,9 +1172,15 @@
       ],
       "displayAnswer": "has succeeded in cutting",
       "prefix": "The factory",
-      "suffix": "back its CO2 emissions by 50% in the last year.",
-      "fullSentence": "The factory has succeeded in cutting back its CO2 emissions by 50% in the last year.",
-      "explanation": "Succeed in + V-ing tương đương manage/be able to làm việc có kết quả. Giữ hiện tại hoàn thành has succeeded vì in the last year là khoảng thời gian đến hiện tại. Back có sẵn ngoài ô trống, nên chỉ điền cutting, không lặp cutting back."
+      "suffix": "back its CO2 emissions by 50% in the last year",
+      "fullSentence": "The factory has succeeded in cutting back its CO2 emissions by 50% in the last year",
+      "explanation": "Succeed in + V-ing tương đương manage/be able to làm việc có kết quả. Giữ hiện tại hoàn thành has succeeded vì in the last year là khoảng thời gian đến hiện tại.",
+      "keyword": "SUCCEEDED",
+      "answerPrefix": "The factory",
+      "answerSuffix": "back its CO2 emissions by 50% in the last year",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "has succeeded in cutting"
     },
     {
       "globalNumber": 95,
@@ -1167,9 +1191,15 @@
       ],
       "displayAnswer": "herself on her ability",
       "prefix": "She prides",
-      "suffix": "to write persuasive essays.",
-      "fullSentence": "She prides herself on her ability to write persuasive essays.",
-      "explanation": "Pride oneself on something tương đương be proud of something. Chủ ngữ she dùng herself; able chuyển thành danh từ ability đúng từ bắt buộc. Ability to write diễn tả năng lực viết; không dùng pride herself of hoặc prides her."
+      "suffix": "to write persuasive essays",
+      "fullSentence": "She prides herself on her ability to write persuasive essays",
+      "explanation": "Pride oneself on something tương đương be proud of something. Chủ ngữ she dùng herself; able chuyển thành danh từ ability đúng từ bắt buộc.",
+      "keyword": "ABILITY",
+      "answerPrefix": "She prides",
+      "answerSuffix": "to write persuasive essays",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "herself on her ability"
     },
     {
       "globalNumber": 96,
@@ -1179,25 +1209,37 @@
         "common knowledge that the island's economy"
       ],
       "displayAnswer": "common knowledge that the island's economy",
-      "prefix": "It’s",
-      "suffix": "is heavily dependent on tourism.",
-      "fullSentence": "It’s common knowledge that the island’s economy is heavily dependent on tourism.",
-      "explanation": "It is common knowledge that... nghĩa là điều được nhiều người biết. Sau that cần chủ ngữ the island’s economy, còn is heavily dependent... đã nằm ngoài ô. Knowledge không đếm được nên không thêm a; giữ common đúng từ được cho."
+      "prefix": "It's",
+      "suffix": "is heavily dependent on tourism",
+      "fullSentence": "It's common knowledge that the island's economy is heavily dependent on tourism",
+      "explanation": "It is common knowledge that… nghĩa là điều được nhiều người biết. Sau that cần chủ ngữ the island’s economy, còn is heavily dependent… đã nằm ngoài ô.",
+      "keyword": "COMMON",
+      "answerPrefix": "It's",
+      "answerSuffix": "is heavily dependent on tourism",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "common knowledge that the island's economy"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "hold out much hope for the survival of",
-        "hold out much hope of the survival of",
-        "hold much hope for the survival of"
+        "hold out much hope for",
+        "hold out much hope of",
+        "hold much hope for"
       ],
-      "displayAnswer": "hold out much hope for the survival of / hold out much hope of the survival of / hold much hope for the survival of",
-      "prefix": "We don’t",
-      "suffix": "the missing climbers.",
-      "fullSentence": "We don’t hold out much hope for the survival of the missing climbers.",
-      "explanation": "Hold out hope for something là còn đặt hy vọng vào điều đó. Don’t ... much hope diễn tả ít kỳ vọng sống sót, không nhất thiết khẳng định chắc chắn đã chết. Have survived chuyển thành the survival of; giữ missing climbers ở phần cuối có sẵn."
+      "displayAnswer": "hold out much hope for / hold out much hope of / hold much hope for",
+      "prefix": "We don't",
+      "suffix": "the survival of the missing climbers",
+      "fullSentence": "We don't hold out much hope for the survival of the missing climbers",
+      "explanation": "Hold out hope for something là còn đặt hy vọng vào điều đó. Don’t … much hope diễn tả ít kỳ vọng sống sót, không nhất thiết khẳng định chắc chắn đã chết.",
+      "keyword": "HOLD",
+      "answerPrefix": "We don't",
+      "answerSuffix": "the survival of the missing climbers",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "hold out much hope for"
     },
     {
       "globalNumber": 98,
@@ -1213,9 +1255,15 @@
       ],
       "displayAnswer": "will not work miracles / won't work miracles / will not perform miracles / won't perform miracles / cannot work miracles / can't work miracles",
       "prefix": "This medicine",
-      "suffix": "but it will bring some pain relief.",
-      "fullSentence": "This medicine will not work miracles but it will bring some pain relief.",
-      "explanation": "Work/perform miracles là tạo điều kỳ diệu, ở đây chỉ khả năng chữa được mọi thứ. Phải có phủ định để đối lập với lợi ích giảm đau có giới hạn. Miracles giữ số nhiều như đề cho; câu là cách diễn đạt thành ngữ, không phải lời khuyên dùng một thuốc cụ thể."
+      "suffix": "but it will bring some pain relief",
+      "fullSentence": "This medicine will not work miracles but it will bring some pain relief",
+      "explanation": "Work/perform miracles là tạo điều kỳ diệu, ở đây chỉ khả năng chữa được mọi thứ. Phải có phủ định để đối lập với lợi ích giảm đau có giới hạn.",
+      "keyword": "MIRACLES",
+      "answerPrefix": "This medicine",
+      "answerSuffix": "but it will bring some pain relief",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "will not work miracles"
     },
     {
       "globalNumber": 99,
@@ -1227,9 +1275,15 @@
       ],
       "displayAnswer": "takes a dark view of / looks on the dark side of",
       "prefix": "The trouble with Thomas is that he always",
-      "suffix": "everything.",
-      "fullSentence": "The trouble with Thomas is that he always takes a dark view of everything.",
-      "explanation": "Take a dark view of something là nhìn nhận theo hướng bi quan. Cũng có thể dùng look on the dark side of, tập trung vào mặt tiêu cực. He số ít nên takes/looks có -s; giữ of vì everything là đối tượng của thái độ ấy."
+      "suffix": "everything",
+      "fullSentence": "The trouble with Thomas is that he always takes a dark view of everything",
+      "explanation": "Take a dark view of something là nhìn nhận theo hướng bi quan. Cũng có thể dùng look on the dark side of, tập trung vào mặt tiêu cực.",
+      "keyword": "DARK",
+      "answerPrefix": "The trouble with Thomas is that he always",
+      "answerSuffix": "everything",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "takes a dark view of"
     },
     {
       "globalNumber": 100,
@@ -1240,11 +1294,17 @@
       ],
       "displayAnswer": "put your foot in",
       "prefix": "You",
-      "suffix": "it when you asked him where his wife was. Didn’t you realize she was dead?",
-      "fullSentence": "You put your foot in it when you asked him where his wife was. Didn’t you realize she was dead?",
-      "explanation": "Put one’s foot in it là lỡ lời gây ngượng hoặc chạm vào điều nhạy cảm. You dùng your foot, và put có dạng quá khứ giống nguyên mẫu. It đã có ngoài ô trống nên chỉ nhập put your foot in, không lặp it."
+      "suffix": "it when you asked him where his wife was. Didn't you realize she was dead",
+      "fullSentence": "You put your foot in it when you asked him where his wife was. Didn't you realize she was dead",
+      "explanation": "Put one’s foot in it là lỡ lời gây ngượng hoặc chạm vào điều nhạy cảm. You dùng your foot, và put có dạng quá khứ giống nguyên mẫu.",
+      "keyword": "FOOT",
+      "answerPrefix": "You",
+      "answerSuffix": "it when you asked him where his wife was. Didn't you realize she was dead",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "put your foot in"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

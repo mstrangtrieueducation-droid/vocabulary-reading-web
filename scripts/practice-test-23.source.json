@@ -1048,154 +1048,205 @@
       "globalNumber": 91,
       "sectionCode": "III.2",
       "localNumber": 1,
-      "prefix": "",
-      "suffix": "?",
+      "prefix": "Is the bus station",
+      "suffix": "the hotel",
       "acceptedAnswers": [
-        "Is the bus station within walking distance of the hotel",
-        "Is the hotel within walking distance of the bus station",
-        "Is the bus station within walking distance from the hotel",
-        "Is the hotel within walking distance from the bus station"
+        "within walking distance of",
+        "within walking distance from"
       ],
-      "fullSentence": "Is the bus station within walking distance of the hotel?",
-      "explanation": "Within walking distance of/from nghĩa là đủ gần để đi bộ đến. Giữ dạng câu hỏi với Is ở đầu và từ WITHIN không thay đổi. Hai địa điểm có thể đổi vị trí vì câu hỏi xét khoảng cách đi bộ giữa chúng.",
-      "displayAnswer": "Is the bus station within walking distance of the hotel / Is the hotel within walking distance of the bus station / Is the bus station within walking distance from the hotel / Is the hotel within walking distance from the bus station"
+      "fullSentence": "Is the bus station within walking distance of the hotel",
+      "explanation": "Within walking distance of/from nghĩa là đủ gần để đi bộ đến. Giữ dạng câu hỏi với Is ở đầu và từ WITHIN không thay đổi.",
+      "displayAnswer": "within walking distance of / within walking distance from",
+      "keyword": "WITHIN",
+      "answerPrefix": "Is the bus station",
+      "answerSuffix": "the hotel",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "within walking distance of"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "prefix": "",
-      "suffix": ".",
+      "suffix": "from carving eggshells",
       "acceptedAnswers": [
-        "I derive a lot of pleasure from carving eggshells",
-        "I derive great pleasure from carving eggshells"
+        "I derive a lot of pleasure",
+        "I derive great pleasure"
       ],
-      "fullSentence": "I derive a lot of pleasure from carving eggshells.",
-      "explanation": "Derive pleasure from something nghĩa là nhận được niềm vui từ hoạt động đó. From là giới từ nên dùng carving. A lot of/great giữ mức độ vui nhiều của câu gốc; không dùng derive ... of hoặc bỏ chủ ngữ I.",
-      "displayAnswer": "I derive a lot of pleasure from carving eggshells / I derive great pleasure from carving eggshells"
+      "fullSentence": "I derive a lot of pleasure from carving eggshells",
+      "explanation": "Derive pleasure from something nghĩa là nhận được niềm vui từ hoạt động đó. From là giới từ nên dùng carving.",
+      "displayAnswer": "I derive a lot of pleasure / I derive great pleasure",
+      "keyword": "DERIVE",
+      "answerPrefix": "",
+      "answerSuffix": "from carving eggshells",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "I derive a lot of pleasure"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
-      "prefix": "",
-      "suffix": ".",
+      "prefix": "The book",
+      "suffix": "the life of Marx as a young man",
       "acceptedAnswers": [
-        "The book gives an interesting account of the life of Marx as a young man",
-        "The book provides an interesting account of the life of Marx as a young man",
-        "The book offers an interesting account of Marx’s life as a young man",
-        "The book gives an interesting account of Marx’s life as a young man"
+        "gives an interesting account of",
+        "provides an interesting account of"
       ],
-      "fullSentence": "The book gives an interesting account of the life of Marx as a young man.",
+      "fullSentence": "The book gives an interesting account of the life of Marx as a young man",
       "explanation": "An account of là sự kể lại hoặc mô tả, nên gives/provides an interesting account of tương đương interestingly describes. Phải giữ giai đoạn as a young man; chỉ viết Marx's life sẽ mở rộng thành cả cuộc đời, khác câu gốc.",
-      "displayAnswer": "The book gives an interesting account of the life of Marx as a young man / The book provides an interesting account of the life of Marx as a young man / The book offers an interesting account of Marx’s life as a young man / The book gives an interesting account of Marx’s life as a young man"
+      "displayAnswer": "gives an interesting account of / provides an interesting account of",
+      "keyword": "ACCOUNT",
+      "answerPrefix": "The book",
+      "answerSuffix": "the life of Marx as a young man",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "gives an interesting account of"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "prefix": "",
-      "suffix": ".",
+      "suffix": "with the background to the problem before I can comment",
       "acceptedAnswers": [
-        "I will have to acquaint myself with the background to the problem before I can comment",
-        "I’ll have to acquaint myself with the background to the problem before I can comment",
-        "I will have to acquaint myself with the background of the problem before I can comment",
-        "I’ll have to acquaint myself with the background of the problem before I can comment"
+        "I will have to acquaint myself",
+        "I'll have to acquaint myself"
       ],
-      "fullSentence": "I'll have to acquaint myself with the background to the problem before I can comment.",
-      "explanation": "Acquaint oneself with something là tìm hiểu để nắm được điều đó. Với I, dùng myself. Phải giữ cả before I can comment vì câu gốc nói việc tìm hiểu là điều kiện trước khi nhận xét; đáp án dừng ở problem sẽ thiếu ý.",
-      "displayAnswer": "I will have to acquaint myself with the background to the problem before I can comment / I’ll have to acquaint myself with the background to the problem before I can comment / I will have to acquaint myself with the background of the problem before I can comment / I’ll have to acquaint myself with the background of the problem before I can comment"
+      "fullSentence": "I will have to acquaint myself with the background to the problem before I can comment",
+      "explanation": "Acquaint oneself with something là tìm hiểu để nắm được điều đó. Với I, dùng myself.",
+      "displayAnswer": "I will have to acquaint myself / I'll have to acquaint myself",
+      "keyword": "ACQUAINT",
+      "answerPrefix": "",
+      "answerSuffix": "with the background to the problem before I can comment",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "I will have to acquaint myself"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "prefix": "",
-      "suffix": "?",
+      "suffix": "me",
       "acceptedAnswers": [
-        "Who put you in touch with me",
-        "Who got you in touch with me"
+        "Who put you in touch with",
+        "Who got you in touch with"
       ],
-      "fullSentence": "Who put you in touch with me?",
-      "explanation": "Put/get somebody in touch with somebody là giúp hai người liên hệ với nhau. Who là chủ ngữ nên không thêm did trong câu hỏi này. Bản đề hỏi ai thu xếp cho bạn liên hệ với tôi, đúng nghĩa của thành ngữ.",
-      "displayAnswer": "Who put you in touch with me / Who got you in touch with me"
+      "fullSentence": "Who put you in touch with me",
+      "explanation": "Put/get somebody in touch with somebody là giúp hai người liên hệ với nhau. Who là chủ ngữ nên không thêm did trong câu hỏi này.",
+      "displayAnswer": "Who put you in touch with / Who got you in touch with",
+      "keyword": "TOUCH",
+      "answerPrefix": "",
+      "answerSuffix": "me",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "Who put you in touch with"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
-      "prefix": "On",
-      "suffix": "by his family.",
+      "prefix": "On arrival at the airport,",
+      "suffix": "by his family",
       "acceptedAnswers": [
-        "arrival at the airport, he was given a warm welcome",
-        "his arrival at the airport, he was given a warm welcome",
-        "arriving at the airport, he was given a warm welcome"
+        "he was given a warm welcome"
       ],
-      "fullSentence": "On his arrival at the airport, he was given a warm welcome by his family.",
-      "explanation": "On arrival/on arriving nghĩa là ngay khi đến. Give someone a warm welcome đổi sang bị động he was given a warm welcome, giữ từ GIVEN. Gia đình là tác nhân nằm sẵn ở cuối câu; không lặp by his family vào chỗ trống.",
-      "displayAnswer": "arrival at the airport, he was given a warm welcome / his arrival at the airport, he was given a warm welcome / arriving at the airport, he was given a warm welcome"
+      "fullSentence": "On arrival at the airport, he was given a warm welcome by his family",
+      "explanation": "On arrival/on arriving nghĩa là ngay khi đến. Give someone a warm welcome đổi sang bị động he was given a warm welcome, giữ từ GIVEN.",
+      "displayAnswer": "he was given a warm welcome",
+      "keyword": "GIVEN",
+      "answerPrefix": "On arrival at the airport,",
+      "answerSuffix": "by his family",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "he was given a warm welcome"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "prefix": "We missed the match",
-      "suffix": "this morning.",
+      "suffix": "this morning",
       "acceptedAnswers": [
         "as a consequence of oversleeping",
         "as a consequence of our oversleeping",
         "in consequence of oversleeping",
         "in consequence of our oversleeping"
       ],
-      "fullSentence": "We missed the match as a consequence of oversleeping this morning.",
-      "explanation": "As/in consequence of + danh từ hoặc V-ing nghĩa là do/hệ quả của. Oversleeping diễn đạt ngủ quá giờ, làm lỡ trận đấu. Giữ consequence nguyên dạng như đề yêu cầu; không viết because of consequence hoặc thêm had trước V-ing.",
-      "displayAnswer": "as a consequence of oversleeping / as a consequence of our oversleeping / in consequence of oversleeping / in consequence of our oversleeping"
+      "fullSentence": "We missed the match as a consequence of oversleeping this morning",
+      "explanation": "As/in consequence of + danh từ hoặc V-ing nghĩa là do/hệ quả của. Oversleeping diễn đạt ngủ quá giờ, làm lỡ trận đấu.",
+      "displayAnswer": "as a consequence of oversleeping / as a consequence of our oversleeping / in consequence of oversleeping / in consequence of our oversleeping",
+      "keyword": "CONSEQUENCE",
+      "answerPrefix": "We missed the match",
+      "answerSuffix": "this morning",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "as a consequence of oversleeping"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "prefix": "I",
-      "suffix": "because he heard me swearing.",
+      "suffix": "because he heard me swearing",
       "acceptedAnswers": [
-        "am in my dad’s bad books",
-        "am in my father's bad books",
-        "am in my dad's bad books"
+        "am in my dad's bad books",
+        "am in my father's bad books"
       ],
-      "fullSentence": "I am in my dad's bad books because he heard me swearing.",
-      "explanation": "Be in somebody's bad books nghĩa là đang làm người đó không hài lòng, mất thiện cảm của họ. Chủ ngữ I cần am; dùng my dad's để giữ đúng người cha. Bad books là thành ngữ, không phải các quyển sách có nội dung xấu.",
-      "displayAnswer": "am in my dad’s bad books / am in my father's bad books / am in my dad's bad books"
+      "fullSentence": "I am in my dad's bad books because he heard me swearing",
+      "explanation": "Be in somebody's bad books nghĩa là đang làm người đó không hài lòng, mất thiện cảm của họ. Chủ ngữ I cần am; dùng my dad's để giữ đúng người cha.",
+      "displayAnswer": "am in my dad's bad books / am in my father's bad books",
+      "keyword": "BOOKS",
+      "answerPrefix": "I",
+      "answerSuffix": "because he heard me swearing",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "am in my dad's bad books"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "prefix": "Rising food prices",
-      "suffix": "of inflation.",
+      "suffix": "of inflation",
       "acceptedAnswers": [
         "were adding fuel to the fire",
         "were adding fuel to the problem"
       ],
-      "fullSentence": "Rising food prices were adding fuel to the fire of inflation.",
-      "explanation": "Add fuel to the fire là làm tình hình vốn xấu trở nên tệ hơn, tương đương making ... worse. Were adding giữ đúng quá khứ tiếp diễn của were making. Fire of inflation là hình ảnh ngọn lửa lạm phát; fuel giữ nguyên dạng danh từ.",
-      "displayAnswer": "were adding fuel to the fire / were adding fuel to the problem"
+      "fullSentence": "Rising food prices were adding fuel to the fire of inflation",
+      "explanation": "Add fuel to the fire là làm tình hình vốn xấu trở nên tệ hơn, tương đương making … worse. Were adding giữ đúng quá khứ tiếp diễn của were making.",
+      "displayAnswer": "were adding fuel to the fire / were adding fuel to the problem",
+      "keyword": "FUEL",
+      "answerPrefix": "Rising food prices",
+      "answerSuffix": "of inflation",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "were adding fuel to the fire"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "prefix": "We need to",
-      "suffix": "before making this important decision.",
+      "suffix": "before making this important decision",
       "acceptedAnswers": [
         "weigh up all the risks",
         "weigh all the risks",
         "weigh all the risks up"
       ],
-      "fullSentence": "We need to weigh up all the risks before making this important decision.",
-      "explanation": "Weigh (up) something nghĩa là cân nhắc cẩn thận, không phải cân khối lượng trong ngữ cảnh quyết định. Sau need to dùng weigh nguyên mẫu và giữ all the risks. Cả weigh all the risks và weigh up all the risks đều đúng.",
-      "displayAnswer": "weigh up all the risks / weigh all the risks / weigh all the risks up"
+      "fullSentence": "We need to weigh up all the risks before making this important decision",
+      "explanation": "Weigh (up) something nghĩa là cân nhắc cẩn thận, không phải cân khối lượng trong ngữ cảnh quyết định. Sau need to dùng weigh nguyên mẫu và giữ all the risks.\nTừ vựng trọng tâm: weigh up",
+      "displayAnswer": "weigh up all the risks / weigh all the risks / weigh all the risks up",
+      "keyword": "WEIGH",
+      "answerPrefix": "We need to",
+      "answerSuffix": "before making this important decision",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "weigh up all the risks"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

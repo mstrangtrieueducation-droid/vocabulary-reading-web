@@ -1077,8 +1077,14 @@
       "displayAnswer": "to always speak her mind / always to speak her mind / to speak her mind",
       "prefix": "You can rely on Emma",
       "suffix": "",
-      "fullSentence": "You can rely on Emma to always speak her mind.",
-      "explanation": "Speak one’s mind = nói thẳng ý kiến thật của mình. Rely on somebody to do something là tin cậy ai sẽ làm gì. Her phải tương ứng Emma; mind giữ nguyên từ gợi ý. Always có thể nêu rõ hoặc hàm trong cách tin cậy về tính cách."
+      "fullSentence": "You can rely on Emma to always speak her mind",
+      "explanation": "Speak one’s mind = nói thẳng ý kiến thật của mình. Rely on somebody to do something là tin cậy ai sẽ làm gì.",
+      "keyword": "mind",
+      "answerPrefix": "You can rely on Emma",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to always speak her mind"
     },
     {
       "globalNumber": 92,
@@ -1090,8 +1096,14 @@
       "displayAnswer": "drop us a line immediately",
       "prefix": "Should any issues arise during the event,",
       "suffix": "",
-      "fullSentence": "Should any issues arise during the event, drop us a line immediately.",
-      "explanation": "Should + chủ ngữ + động từ là đảo ngữ điều kiện thay if. Drop somebody a line = gửi tin/viết vài dòng cho ai. Giữ us và immediately; sự kiện đã được giữ ở phần cho sẵn."
+      "fullSentence": "Should any issues arise during the event, drop us a line immediately",
+      "explanation": "Should + chủ ngữ + động từ là đảo ngữ điều kiện thay if. Drop somebody a line = gửi tin/viết vài dòng cho ai.",
+      "keyword": "line",
+      "answerPrefix": "Should any issues arise during the event,",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "drop us a line immediately"
     },
     {
       "globalNumber": 93,
@@ -1103,9 +1115,15 @@
       ],
       "displayAnswer": "tempted me into buying / tempted me to buy",
       "prefix": "My younger sister",
-      "suffix": "that Lego set.",
-      "fullSentence": "My younger sister tempted me into buying that Lego set.",
-      "explanation": "Tempt somebody into doing/to do = khiến ai muốn và quyết định làm điều gì. Có thể dùng cả into buying và to buy. Không bỏ me vì đó là người được thuyết phục; that Lego set đã cho sẵn."
+      "suffix": "that Lego set",
+      "fullSentence": "My younger sister tempted me into buying that Lego set",
+      "explanation": "Tempt somebody into doing/to do = khiến ai muốn và quyết định làm điều gì. Có thể dùng cả into buying và to buy.",
+      "keyword": "tempted",
+      "answerPrefix": "My younger sister",
+      "answerSuffix": "that Lego set",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "tempted me into buying"
     },
     {
       "globalNumber": 94,
@@ -1116,9 +1134,15 @@
       ],
       "displayAnswer": "brought home to me",
       "prefix": "His reaction",
-      "suffix": "how dangerous the situation was.",
-      "fullSentence": "His reaction brought home to me how dangerous the situation was.",
-      "explanation": "Bring something home to somebody = làm ai hiểu rõ, thấm thía điều gì. Với mệnh đề how dài, dùng brought home to me how ... . Brought là quá khứ, phù hợp realized; không đảo how dangerous was the situation."
+      "suffix": "how dangerous the situation was",
+      "fullSentence": "His reaction brought home to me how dangerous the situation was",
+      "explanation": "Bring something home to somebody = làm ai hiểu rõ, thấm thía điều gì. Với mệnh đề how dài, dùng brought home to me how … .",
+      "keyword": "home",
+      "answerPrefix": "His reaction",
+      "answerSuffix": "how dangerous the situation was",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "brought home to me"
     },
     {
       "globalNumber": 95,
@@ -1130,41 +1154,57 @@
         "was not impressed at all by",
         "were not impressed at all by"
       ],
-      "displayAnswer": "was not at all impressed by",
+      "displayAnswer": "was not at all impressed by / were not at all impressed by / was not impressed at all by / were not impressed at all by",
       "prefix": "The committee",
-      "suffix": "his explanation.",
-      "fullSentence": "The committee was not at all impressed by his explanation.",
-      "explanation": "Chuyển chủ động did not impress thành bị động was/were not impressed by. At all giữ mức độ hoàn toàn không. Committee có thể coi là một tập thể số ít hoặc các thành viên theo cách dùng Anh-Anh, nên chấp nhận was và were; không dùng impressive để tả cảm nhận của họ."
+      "suffix": "his explanation",
+      "fullSentence": "The committee was not at all impressed by his explanation",
+      "explanation": "Chuyển chủ động did not impress thành bị động was/were not impressed by. At all giữ mức độ hoàn toàn không.\nTừ vựng trọng tâm: be impressed by",
+      "keyword": "IMPRESSED",
+      "answerPrefix": "The committee",
+      "answerSuffix": "his explanation",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "was not at all impressed by"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "private life under media scrutiny, he became",
-        "private life under scrutiny by the media, he became"
+        "under media scrutiny",
+        "under scrutiny by the media"
       ],
-      "displayAnswer": "private life under media scrutiny, he became / private life under scrutiny by the media, he became",
-      "prefix": "With his",
-      "suffix": "increasingly resentful.",
-      "fullSentence": "With his private life under media scrutiny, he became increasingly resentful.",
-      "explanation": "Under scrutiny = bị soi xét kỹ. With + danh từ + cụm giới từ nêu hoàn cảnh dẫn đến cảm xúc. Dấu phẩy ngăn cụm with với mệnh đề he became; không để his private life làm chủ ngữ của became resentful."
+      "displayAnswer": "under media scrutiny / under scrutiny by the media",
+      "prefix": "With his private life",
+      "suffix": ", he became increasingly resentful",
+      "fullSentence": "With his private life under media scrutiny, he became increasingly resentful",
+      "explanation": "Under scrutiny = bị soi xét kỹ. With + danh từ + cụm giới từ nêu hoàn cảnh dẫn đến cảm xúc.",
+      "keyword": "under",
+      "answerPrefix": "With his private life",
+      "answerSuffix": ", he became increasingly resentful",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "under media scrutiny"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "drives me round the bend is seeing people parking",
-        "drives me around the bend is seeing people parking",
-        "drives me round the bend is to see people parking",
-        "drives me around the bend is to see people parking"
+        "drives me round the bend",
+        "drives me around the bend"
       ],
-      "displayAnswer": "drives me round the bend is seeing people parking / drives me around the bend is seeing people parking / drives me round the bend is to see people parking / drives me around the bend is to see people parking",
+      "displayAnswer": "drives me round the bend / drives me around the bend",
       "prefix": "What",
-      "suffix": "on zebra crossings.",
-      "fullSentence": "What drives me round the bend is seeing people parking on zebra crossings.",
-      "explanation": "Drive somebody round/around the bend = làm ai bực phát điên. What ... is ... làm nổi bật việc khiến khó chịu. Me là tân ngữ của drives; seeing/to see đều có thể làm phần giải thích sau is."
+      "suffix": "is seeing people parking on zebra crossings",
+      "fullSentence": "What drives me round the bend is seeing people parking on zebra crossings",
+      "explanation": "Drive somebody round/around the bend = làm ai bực phát điên. What … is … làm nổi bật việc khiến khó chịu.",
+      "keyword": "bend",
+      "answerPrefix": "What",
+      "answerSuffix": "is seeing people parking on zebra crossings",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "drives me round the bend"
     },
     {
       "globalNumber": 98,
@@ -1177,38 +1217,55 @@
       ],
       "displayAnswer": "may have been in deep water / might have been in deep water / could have been in deep water",
       "prefix": "The company",
-      "suffix": "given its heavy debts last year.",
-      "fullSentence": "The company may have been in deep water given its heavy debts last year.",
-      "explanation": "Be in deep water = gặp rắc rối nghiêm trọng; nợ nần xác định rắc rối tài chính. I suspect chỉ suy đoán nên may/might/could have been phù hợp quá khứ. Must have been nâng mức chắc chắn, không giữ đúng sắc thái gốc."
+      "suffix": "given its heavy debts last year",
+      "fullSentence": "The company may have been in deep water given its heavy debts last year",
+      "explanation": "Be in deep water = gặp rắc rối nghiêm trọng; nợ nần xác định rắc rối tài chính. I suspect chỉ suy đoán nên may/might/could have been phù hợp quá khứ.",
+      "keyword": "water",
+      "answerPrefix": "The company",
+      "answerSuffix": "given its heavy debts last year",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "may have been in deep water"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "unexpectedness of his resignation that it came as a bolt from the blue to"
+        "as a bolt from the blue"
       ],
-      "displayAnswer": "unexpectedness of his resignation that it came as a bolt from the blue to",
-      "prefix": "Such was the",
-      "suffix": "everyone in the office.",
-      "fullSentence": "Such was the unexpectedness of his resignation that it came as a bolt from the blue to everyone in the office.",
-      "explanation": "Such was the unexpectedness ... that ... danh từ hóa so unexpectedly. A bolt from the blue = cú sốc hoàn toàn bất ngờ. Cần it came sau that để có mệnh đề đầy đủ; bỏ it khiến cấu trúc kết quả thiếu chủ ngữ."
+      "displayAnswer": "as a bolt from the blue",
+      "prefix": "Such was the unexpectedness of his resignation that it came",
+      "suffix": "to everyone in the office",
+      "fullSentence": "Such was the unexpectedness of his resignation that it came as a bolt from the blue to everyone in the office",
+      "explanation": "Such was the unexpectedness … that … danh từ hóa so unexpectedly. A bolt from the blue = cú sốc hoàn toàn bất ngờ.",
+      "keyword": "bolt",
+      "answerPrefix": "Such was the unexpectedness of his resignation that it came",
+      "answerSuffix": "to everyone in the office",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "as a bolt from the blue"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "matter how little money Simon has, he buys his mother a generous birthday present",
-        "matter how little money he has, Simon buys his mother a generous birthday present"
+        "matter how little money Simon has"
       ],
-      "displayAnswer": "matter how little money Simon has, he buys his mother a generous birthday present",
+      "displayAnswer": "matter how little money Simon has",
       "prefix": "No",
-      "suffix": ".",
-      "fullSentence": "No matter how little money Simon has, he buys his mother a generous birthday present.",
-      "explanation": "No matter how little + danh từ không đếm được diễn tả bất kể có ít tiền đến đâu. Money dùng little, không dùng few. Mệnh đề chính giữ buys ở hiện tại để nói thói quen; câu không đòi hỏi thành ngữ địa phương push the boat out."
+      "suffix": ", he buys his mother a generous birthday present",
+      "fullSentence": "No matter how little money Simon has, he buys his mother a generous birthday present",
+      "explanation": "No matter how little + danh từ không đếm được diễn tả bất kể có ít tiền đến đâu. Money dùng little, không dùng few.",
+      "keyword": "MATTER",
+      "answerPrefix": "No",
+      "answerSuffix": ", he buys his mother a generous birthday present",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "matter how little money Simon has"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

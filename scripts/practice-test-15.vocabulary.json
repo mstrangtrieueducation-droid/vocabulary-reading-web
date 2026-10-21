@@ -10,7 +10,11 @@
       "usage": "be accustomed to doing something",
       "example": "She is accustomed to waking up early.",
       "translation": "Cô ấy đã quen thức dậy sớm.",
-      "family": "accustom (v); accustomed (adj); unaccustomed (adj)"
+      "family": "accustom (v); accustomed (adj); unaccustomed (adj)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 3,
@@ -21,7 +25,11 @@
       "usage": "coincidentally + mệnh đề; happen coincidentally",
       "example": "Coincidentally, we booked the same hotel.",
       "translation": "Tình cờ, chúng tôi đặt cùng một khách sạn.",
-      "family": "coincidence (n); coincidental (adj); coincide (v)"
+      "family": "coincidence (n); coincidental (adj); coincide (v)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 4,
@@ -32,7 +40,11 @@
       "usage": "ask a favour of somebody",
       "example": "Could I ask a favour of you?",
       "translation": "Tôi có thể nhờ bạn một việc không?",
-      "family": "favour/favor (n/v); favourable/favorable (adj)"
+      "family": "favour/favor (n/v); favourable/favorable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -43,7 +55,11 @@
       "usage": "be on display; put something on display",
       "example": "The drawings are on display in the hall.",
       "translation": "Các bức vẽ đang được trưng bày ở sảnh.",
-      "family": "display (n/v); exhibition (n); exhibit (v/n)"
+      "family": "display (n/v); exhibition (n); exhibit (v/n)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -54,7 +70,11 @@
       "usage": "see/tell/check at a glance",
       "example": "The chart shows the results at a glance.",
       "translation": "Biểu đồ cho thấy kết quả chỉ qua một cái nhìn.",
-      "family": "glance (n/v); glimpse (n/v); stare (n/v)"
+      "family": "glance (n/v); glimpse (n/v); stare (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 8,
@@ -65,7 +85,11 @@
       "usage": "be saved by the bell",
       "example": "The teacher changed the question, and I was saved by the bell.",
       "translation": "Giáo viên đổi câu hỏi, thế là tôi thoát tình huống khó vào phút chót.",
-      "family": "save (v); saved (V3); rescue (n/v)"
+      "family": "save (v); saved (V3); rescue (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 10,
@@ -76,7 +100,11 @@
       "usage": "What does…stand for?; stand for a principle",
       "example": "What does this abbreviation stand for?",
       "translation": "Chữ viết tắt này là viết tắt của những từ nào?",
-      "family": "stand–stood–stood; abbreviation (n); abbreviate (v)"
+      "family": "stand–stood–stood; abbreviation (n); abbreviate (v)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 12,
@@ -87,7 +115,11 @@
       "usage": "an effect wears off; begin to wear off",
       "example": "The excitement soon wore off.",
       "translation": "Sự hào hứng nhanh chóng giảm đi.",
-      "family": "wear–wore–worn; effect (n); effective (adj)"
+      "family": "wear–wore–worn; effect (n); effective (adj)",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 13,
@@ -98,7 +130,11 @@
       "usage": "take/accept a statement at face value",
       "example": "I accepted her explanation at face value.",
       "translation": "Tôi tin lời giải thích của cô ấy đúng như những gì được nói ra.",
-      "family": "face (n); value (n/v); face value (giá trị danh nghĩa)"
+      "family": "face (n); value (n/v); face value (giá trị danh nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -109,7 +145,11 @@
       "usage": "put my/your/his foot in my/your/his mouth",
       "example": "I put my foot in my mouth by mentioning the surprise party.",
       "translation": "Tôi lỡ lời khi nhắc đến bữa tiệc bất ngờ.",
-      "family": "put–put–put; tactful/tactless (adj: tế nhị/thiếu tế nhị)"
+      "family": "put–put–put; tactful/tactless (adj: tế nhị/thiếu tế nhị)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 16,
@@ -120,7 +160,11 @@
       "usage": "one’s heart pounds; pound on a door",
       "example": "My heart was pounding before the interview.",
       "translation": "Tim tôi đập thình thịch trước cuộc phỏng vấn.",
-      "family": "pound (v/n); pounding (V-ing/n); heartbeat (n)"
+      "family": "pound (v/n); pounding (V-ing/n); heartbeat (n)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 20,
@@ -131,7 +175,11 @@
       "usage": "tighten our belts; need to tighten one’s belt",
       "example": "We need to tighten our belts this month.",
       "translation": "Tháng này chúng ta cần thắt chặt chi tiêu.",
-      "family": "tight (adj); tighten (v); tight budget (ngân sách eo hẹp)"
+      "family": "tight (adj); tighten (v); tight budget (ngân sách eo hẹp)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 21,
@@ -142,7 +190,11 @@
       "usage": "intrinsically valuable/important",
       "example": "The task is intrinsically interesting.",
       "translation": "Bản thân nhiệm vụ này đã thú vị.",
-      "family": "intrinsic (adj); intrinsic value (giá trị nội tại); extrinsic (adj)"
+      "family": "intrinsic (adj); intrinsic value (giá trị nội tại); extrinsic (adj)",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 22,
@@ -153,7 +205,11 @@
       "usage": "in light of new evidence/circumstances",
       "example": "We changed the plan in light of the new information.",
       "translation": "Chúng tôi đổi kế hoạch sau khi xét thông tin mới.",
-      "family": "light (n); in the light of (biến thể cùng nghĩa)"
+      "family": "light (n); in the light of (biến thể cùng nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -164,7 +220,11 @@
       "usage": "an irrevocable decision/commitment",
       "example": "The decision is irrevocable.",
       "translation": "Quyết định này không thể thu hồi.",
-      "family": "revoke (v); revocation (n); revocable (adj)"
+      "family": "revoke (v); revocation (n); revocable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -175,7 +235,11 @@
       "usage": "differentiate between A and B; differentiate A from B",
       "example": "Children learn to differentiate between fact and opinion.",
       "translation": "Trẻ học cách phân biệt sự thật với ý kiến.",
-      "family": "different (adj); difference (n); differentiation (n)"
+      "family": "different (adj); difference (n); differentiation (n)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 26,
@@ -186,7 +250,11 @@
       "usage": "personify an object; be personified in poetry",
       "example": "The wind is personified as a restless traveller.",
       "translation": "Gió được nhân hóa thành một lữ khách không yên.",
-      "family": "person (n); personification (n); personified (V3)"
+      "family": "person (n); personification (n); personified (V3)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 27,
@@ -197,7 +265,11 @@
       "usage": "shrinkproof fabric; shrink-resistant material",
       "example": "The label says the fabric is shrink-resistant.",
       "translation": "Nhãn ghi rằng vải có khả năng chống co rút.",
-      "family": "shrink–shrank–shrunk; shrinkage (n); shrinkproof/shrink-proof (adj)"
+      "family": "shrink–shrank–shrunk; shrinkage (n); shrinkproof/shrink-proof (adj)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -208,7 +280,11 @@
       "usage": "an outspoken critic/member; outspoken about something",
       "example": "She is outspoken about problems at work.",
       "translation": "Cô ấy thẳng thắn nói về những vấn đề ở nơi làm việc.",
-      "family": "speak–spoke–spoken; speech (n); outspokenness (n)"
+      "family": "speak–spoke–spoken; speech (n); outspokenness (n)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 29,
@@ -219,7 +295,11 @@
       "usage": "impoverish the soil; an impoverished region",
       "example": "Poor farming practices can impoverish the soil.",
       "translation": "Cách canh tác kém có thể làm đất suy kiệt.",
-      "family": "poverty (n); poor (adj); impoverishment (n); impoverished (adj)"
+      "family": "poverty (n); poor (adj); impoverishment (n); impoverished (adj)",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 30,
@@ -230,7 +310,11 @@
       "usage": "a foolhardy attempt/decision",
       "example": "It was foolhardy to climb without proper equipment.",
       "translation": "Leo mà không có thiết bị phù hợp là liều lĩnh thiếu suy xét.",
-      "family": "fool (n/v); foolish (adj); foolhardiness (n)"
+      "family": "fool (n/v); foolish (adj); foolhardiness (n)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 47,
@@ -241,7 +325,11 @@
       "usage": "conjure up memories/images",
       "example": "The smell conjured up memories of home.",
       "translation": "Mùi hương gợi lại những ký ức về nhà.",
-      "family": "conjure (v); memory (n); memorable (adj)"
+      "family": "conjure (v); memory (n); memorable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        47
+      ]
     },
     {
       "question": 48,
@@ -252,7 +340,11 @@
       "usage": "toss and turn all night",
       "example": "I tossed and turned before the exam.",
       "translation": "Tôi trằn trọc trước kỳ thi.",
-      "family": "toss (v); turn (v/n); restless (adj)"
+      "family": "toss (v); turn (v/n); restless (adj)",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ]
     },
     {
       "question": 49,
@@ -263,7 +355,11 @@
       "usage": "undergo treatment/a change/an assessment",
       "example": "The building underwent major repairs.",
       "translation": "Tòa nhà đã trải qua một đợt sửa chữa lớn.",
-      "family": "undergo–underwent–undergone; undertake–undertook–undertaken"
+      "family": "undergo–underwent–undergone; undertake–undertook–undertaken",
+      "teacherSelected": true,
+      "questions": [
+        49
+      ]
     },
     {
       "question": 52,
@@ -274,7 +370,11 @@
       "usage": "substantiate a claim/allegation",
       "example": "The report provides evidence to substantiate the claim.",
       "translation": "Báo cáo đưa ra bằng chứng để chứng minh nhận định.",
-      "family": "substantiation (n); substantiated/unsubstantiated (adj)"
+      "family": "substantiation (n); substantiated/unsubstantiated (adj)",
+      "teacherSelected": true,
+      "questions": [
+        52
+      ]
     },
     {
       "question": 54,
@@ -285,7 +385,11 @@
       "usage": "compel somebody to act; be compelled to do",
       "example": "The evidence compelled us to reconsider.",
       "translation": "Bằng chứng buộc chúng tôi phải cân nhắc lại.",
-      "family": "compel–compelled; compelling (adj: thuyết phục mạnh); compulsion (n)"
+      "family": "compel–compelled; compelling (adj: thuyết phục mạnh); compulsion (n)",
+      "teacherSelected": true,
+      "questions": [
+        54
+      ]
     },
     {
       "question": 58,
@@ -296,7 +400,11 @@
       "usage": "engender trust/fear/conflict",
       "example": "Clear communication can engender trust.",
       "translation": "Giao tiếp rõ ràng có thể tạo dựng lòng tin.",
-      "family": "engender (v); engendered (V3); cause (n/v)"
+      "family": "engender (v); engendered (V3); cause (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        58
+      ]
     },
     {
       "question": 61,
@@ -307,7 +415,11 @@
       "usage": "speak a language as one’s mother tongue",
       "example": "Vietnamese is her mother tongue.",
       "translation": "Tiếng Việt là tiếng mẹ đẻ của cô ấy.",
-      "family": "tongue (n: lưỡi/ngôn ngữ); native language (cụm gần nghĩa)"
+      "family": "tongue (n: lưỡi/ngôn ngữ); native language (cụm gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        61
+      ]
     },
     {
       "question": 73,
@@ -318,7 +430,11 @@
       "usage": "check the growth/spread of something",
       "example": "The barrier helped check the spread of the fire.",
       "translation": "Vật chắn giúp kìm hãm sự lan rộng của đám cháy.",
-      "family": "check (n/v); unchecked (adj: không được kiểm soát)"
+      "family": "check (n/v); unchecked (adj: không được kiểm soát)",
+      "teacherSelected": true,
+      "questions": [
+        73
+      ]
     },
     {
       "question": 94,
@@ -329,7 +445,11 @@
       "usage": "frequent complaints/visits; too frequent for my liking",
       "example": "The interruptions are too frequent for my liking.",
       "translation": "Việc bị ngắt quãng xảy ra quá thường xuyên so với mức tôi chấp nhận.",
-      "family": "frequency (n); frequently (adv); infrequent (adj)"
+      "family": "frequency (n); frequently (adv); infrequent (adj)",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ]
     }
   ]
 }

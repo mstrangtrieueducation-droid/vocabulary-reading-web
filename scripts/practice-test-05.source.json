@@ -1067,14 +1067,19 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "not have talked Adrian into participating",
-        "not have talked Adrian into taking part"
+        "not have talked Adrian into participating"
       ],
-      "displayAnswer": "You should not have talked Adrian into participating in your project.",
+      "displayAnswer": "not have talked Adrian into participating",
       "explanation": "Should not have + V3 phê bình việc đã làm. Talk somebody into doing something là thuyết phục ai làm; câu nói đáng lẽ không nên thuyết phục tham gia, không đồng nghĩa phải chủ động khuyên rút lui.",
       "prefix": "You should",
-      "suffix": "in your project.",
-      "blankAnswer": "not have talked Adrian into participating"
+      "suffix": "in your project",
+      "blankAnswer": "not have talked Adrian into participating",
+      "keyword": "TALKED",
+      "answerPrefix": "You should",
+      "answerSuffix": "in your project",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "You should not have talked Adrian into participating in your project"
     },
     {
       "globalNumber": 92,
@@ -1083,11 +1088,17 @@
       "acceptedAnswers": [
         "has given up encouraging"
       ],
-      "displayAnswer": "Sally has given up encouraging Joe to take exercise.",
+      "displayAnswer": "has given up encouraging",
       "explanation": "Give up + V-ing là thôi làm việc gì. Sally has given đã cần hoàn thành hiện tại; ô trống kết thúc bằng encouraging vì Joe to take exercise đã có phía sau.",
       "prefix": "Sally",
-      "suffix": "Joe to take exercise.",
-      "blankAnswer": "has given up encouraging"
+      "suffix": "Joe to take exercise",
+      "blankAnswer": "has given up encouraging",
+      "keyword": "GIVEN",
+      "answerPrefix": "Sally",
+      "answerSuffix": "Joe to take exercise",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Sally has given up encouraging Joe to take exercise"
     },
     {
       "globalNumber": 93,
@@ -1096,11 +1107,17 @@
       "acceptedAnswers": [
         "under no circumstances are"
       ],
-      "displayAnswer": "I’d like to remind you that under no circumstances are employees allowed to leave early.",
+      "displayAnswer": "under no circumstances are",
       "explanation": "Under no circumstances đặt đầu mệnh đề yêu cầu đảo trợ động từ: are employees allowed…. Cụm này nghĩa là không trong bất kỳ hoàn cảnh nào; giữ nguyên từ khóa circumstances.",
-      "prefix": "I’d like to remind you that",
-      "suffix": "employees allowed to leave early.",
-      "blankAnswer": "under no circumstances are"
+      "prefix": "I'd like to remind you that",
+      "suffix": "employees allowed to leave early",
+      "blankAnswer": "under no circumstances are",
+      "keyword": "CIRCUMSTANCES",
+      "answerPrefix": "I'd like to remind you that",
+      "answerSuffix": "employees allowed to leave early",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "I'd like to remind you that under no circumstances are employees allowed to leave early"
     },
     {
       "globalNumber": 94,
@@ -1109,24 +1126,36 @@
       "acceptedAnswers": [
         "her against becoming a model"
       ],
-      "displayAnswer": "Jane’s teacher advised her against becoming a model.",
-      "explanation": "Advise somebody against + V-ing = khuyên ai đừng làm. Her chỉ Jane; becoming phải giữ nguyên từ khóa. Không dùng advised her becoming hoặc against become.",
-      "prefix": "Jane’s teacher advised",
+      "displayAnswer": "her against becoming a model",
+      "explanation": "Advise somebody against + V-ing = khuyên ai đừng làm. Her chỉ Jane; becoming phải giữ nguyên từ khóa.",
+      "prefix": "Jane's teacher advised",
       "suffix": "",
-      "blankAnswer": "her against becoming a model"
+      "blankAnswer": "her against becoming a model",
+      "keyword": "BECOMING",
+      "answerPrefix": "Jane's teacher advised",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Jane's teacher advised her against becoming a model"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "on seeing Peter off at the airport"
+        "on seeing Peter off"
       ],
-      "displayAnswer": "Helen insisted on seeing Peter off at the airport.",
+      "displayAnswer": "on seeing Peter off",
       "explanation": "Insist on + V-ing diễn đạt nhất quyết làm gì. See somebody off là tiễn ai; đặt Peter giữa see và off, và giữ at the airport theo câu nguồn.",
       "prefix": "Helen insisted",
-      "suffix": "",
-      "blankAnswer": "on seeing Peter off at the airport"
+      "suffix": "at the airport",
+      "blankAnswer": "on seeing Peter off",
+      "keyword": "OFF",
+      "answerPrefix": "Helen insisted",
+      "answerSuffix": "at the airport",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Helen insisted on seeing Peter off at the airport"
     },
     {
       "globalNumber": 96,
@@ -1137,27 +1166,37 @@
         "in danger of being fired",
         "in danger of being dismissed"
       ],
-      "displayAnswer": "If he keeps disagreeing with his boss, he’s in danger of being sacked from his job.",
+      "displayAnswer": "in danger of being sacked / in danger of being fired / in danger of being dismissed",
       "explanation": "In danger of + V-ing = có nguy cơ. Người này có thể bị sa thải nên cần bị động being sacked/fired/dismissed; from his job đã in sẵn ở phần đuôi.",
-      "prefix": "If he keeps disagreeing with his boss, he’s",
-      "suffix": "from his job.",
-      "blankAnswer": "in danger of being sacked"
+      "prefix": "If he keeps disagreeing with his boss, he's",
+      "suffix": "from his job",
+      "blankAnswer": "in danger of being sacked",
+      "keyword": "DANGER",
+      "answerPrefix": "If he keeps disagreeing with his boss, he's",
+      "answerSuffix": "from his job",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "If he keeps disagreeing with his boss, he's in danger of being sacked from his job"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "weren’t paying attention to what the teacher was",
-        "were not paying attention to what the teacher was",
-        "weren’t paying attention to what she was",
-        "weren’t paying attention to what he was"
+        "weren't paying attention to",
+        "were not paying attention to"
       ],
-      "displayAnswer": "Although the children weren’t paying attention to what the teacher was saying, the teacher didn’t get angry.",
+      "displayAnswer": "weren't paying attention to / were not paying attention to",
       "explanation": "Pay attention to = chú ý/lắng nghe. Weren’t paying attention giữ ý không lắng nghe lúc giáo viên nói; what the teacher was nối với saying đã có, tránh nhập lặp saying.",
       "prefix": "Although the children",
-      "suffix": "saying, the teacher didn’t get angry.",
-      "blankAnswer": "weren’t paying attention to what the teacher was"
+      "suffix": "what the teacher was saying, the teacher didn't get angry",
+      "blankAnswer": "weren't paying attention to",
+      "keyword": "ATTENTION",
+      "answerPrefix": "Although the children",
+      "answerSuffix": "what the teacher was saying, the teacher didn't get angry",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Although the children weren't paying attention to what the teacher was saying, the teacher didn't get angry"
     },
     {
       "globalNumber": 98,
@@ -1166,11 +1205,17 @@
       "acceptedAnswers": [
         "put your foot"
       ],
-      "displayAnswer": "Well, you really put your foot in it; that was our new boss.",
+      "displayAnswer": "put your foot",
       "explanation": "Put your foot in it là lỡ nói điều không nên nói khiến khó xử. Phần in it có sẵn; chỉ điền put your foot, giữ ngôi your phù hợp you.",
       "prefix": "Well, you really",
-      "suffix": "in it; that was our new boss.",
-      "blankAnswer": "put your foot"
+      "suffix": "in it; that was our new boss",
+      "blankAnswer": "put your foot",
+      "keyword": "FOOT",
+      "answerPrefix": "Well, you really",
+      "answerSuffix": "in it; that was our new boss",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Well, you really put your foot in it; that was our new boss"
     },
     {
       "globalNumber": 99,
@@ -1180,11 +1225,17 @@
         "was at sixes and sevens",
         "was left at sixes and sevens"
       ],
-      "displayAnswer": "Following the sudden department restructuring, everyone was at sixes and sevens.",
+      "displayAnswer": "was at sixes and sevens / was left at sixes and sevens",
       "explanation": "At sixes and sevens = rối loạn, không biết sắp xếp ra sao. Everyone là số ít nên was; thêm left được chấp nhận để nhấn hệ quả việc tái cơ cấu.",
       "prefix": "Following the sudden department restructuring, everyone",
       "suffix": "",
-      "blankAnswer": "was at sixes and sevens"
+      "blankAnswer": "was at sixes and sevens",
+      "keyword": "SIXES",
+      "answerPrefix": "Following the sudden department restructuring, everyone",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Following the sudden department restructuring, everyone was at sixes and sevens"
     },
     {
       "globalNumber": 100,
@@ -1193,11 +1244,17 @@
       "acceptedAnswers": [
         "did me a good turn"
       ],
-      "displayAnswer": "Sandie did me a good turn when she looked after the kids.",
+      "displayAnswer": "did me a good turn",
       "explanation": "Do somebody a good turn = giúp ai một việc tốt. Sandie trông trẻ giúp người nói nên did me a good turn; did là quá khứ, turn phải giữ nguyên từ khóa.",
       "prefix": "Sandie",
-      "suffix": "when she looked after the kids.",
-      "blankAnswer": "did me a good turn"
+      "suffix": "when she looked after the kids",
+      "blankAnswer": "did me a good turn",
+      "keyword": "TURN",
+      "answerPrefix": "Sandie",
+      "answerSuffix": "when she looked after the kids",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Sandie did me a good turn when she looked after the kids"
     }
   ],
   "reviewApproved": true,
@@ -1205,7 +1262,7 @@
   "scienceReferences": [
     "https://science.nasa.gov/resource/the-life-cycle-of-a-sun-like-star-annotated/"
   ],
-  "contentRevision": "2026-10-17-authentic",
+  "contentRevision": "2026-10-21-word-limits",
   "readingSources": [
     {
       "part": "II.1",

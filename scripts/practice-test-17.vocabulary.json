@@ -10,7 +10,11 @@
       "usage": "be on leave; take sick/paid leave",
       "example": "The manager is on leave until Monday.",
       "translation": "Quản lý đang nghỉ phép đến thứ Hai.",
-      "family": "leave (n/v); paid leave (nghỉ hưởng lương); sick leave (nghỉ ốm)"
+      "family": "leave (n/v); paid leave (nghỉ hưởng lương); sick leave (nghỉ ốm)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -21,7 +25,11 @@
       "usage": "turn over a new leaf after + sự việc",
       "example": "After missing several deadlines, he decided to turn over a new leaf.",
       "translation": "Sau vài lần trễ hạn, anh ấy quyết định thay đổi cách làm việc.",
-      "family": "turn (v); leaf – leaves (n); reform (v/n gần nghĩa)"
+      "family": "turn (v); leaf – leaves (n); reform (v/n gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -32,7 +40,11 @@
       "usage": "give preference to + người/vật",
       "example": "The programme gives preference to applicants with relevant experience.",
       "translation": "Chương trình ưu tiên ứng viên có kinh nghiệm phù hợp.",
-      "family": "prefer (v); preference (n); preferable (adj); preferably (adv)"
+      "family": "prefer (v); preference (n); preferable (adj); preferably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 8,
@@ -43,7 +55,11 @@
       "usage": "in view of + danh từ",
       "example": "In view of the heavy rain, the match was postponed.",
       "translation": "Vì mưa lớn, trận đấu được hoãn lại.",
-      "family": "view (n/v); viewpoint (n); review (n/v)"
+      "family": "view (n/v); viewpoint (n); review (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -54,7 +70,11 @@
       "usage": "sheer madness/luck/determination",
       "example": "Driving without lights in this fog is sheer madness.",
       "translation": "Lái xe không bật đèn trong màn sương này là hết sức liều lĩnh.",
-      "family": "sheer (adj); mad (adj); madness (n); madly (adv)"
+      "family": "sheer (adj); mad (adj); madness (n); madly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 15,
@@ -65,7 +85,11 @@
       "usage": "evacuate people from an area; evacuate a building",
       "example": "Residents were evacuated from the coastal village.",
       "translation": "Người dân được sơ tán khỏi làng ven biển.",
-      "family": "evacuate (v); evacuation (n); evacuee (n)"
+      "family": "evacuate (v); evacuation (n); evacuee (n)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -76,7 +100,11 @@
       "usage": "prepare for an interview/exam",
       "example": "She prepared carefully for the interview.",
       "translation": "Cô ấy chuẩn bị kỹ cho buổi phỏng vấn.",
-      "family": "prepare (v); preparation (n); prepared (adj)"
+      "family": "prepare (v); preparation (n); prepared (adj)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 17,
@@ -87,7 +115,11 @@
       "usage": "print faintly; hear something faintly",
       "example": "The notice was printed too faintly to read.",
       "translation": "Thông báo được in quá mờ nên không đọc được.",
-      "family": "faint (adj); faintly (adv); faintness (n)"
+      "family": "faint (adj); faintly (adv); faintness (n)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 19,
@@ -98,7 +130,11 @@
       "usage": "By and large, + mệnh đề",
       "example": "By and large, the students enjoyed the project.",
       "translation": "Nhìn chung, học sinh thích dự án.",
-      "family": "large (adj); largely (adv); generally (adv gần nghĩa)"
+      "family": "large (adj); largely (adv); generally (adv gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 22,
@@ -109,7 +145,11 @@
       "usage": "a temperamental actor; be temperamental",
       "example": "The old printer is rather temperamental.",
       "translation": "Chiếc máy in cũ hoạt động khá thất thường.",
-      "family": "temperament (n); temperamental (adj); temperamentally (adv)"
+      "family": "temperament (n); temperamental (adj); temperamentally (adv)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 24,
@@ -120,7 +160,11 @@
       "usage": "an imaginative solution/person",
       "example": "They found an imaginative way to reuse the materials.",
       "translation": "Họ tìm được một cách sáng tạo để tái sử dụng vật liệu.",
-      "family": "imagine (v); imagination (n); imaginative (adj); imaginary (adj)"
+      "family": "imagine (v); imagination (n); imaginative (adj); imaginary (adj)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 27,
@@ -131,7 +175,11 @@
       "usage": "managerial duties/skills/responsibilities",
       "example": "She has both artistic and managerial responsibilities.",
       "translation": "Cô ấy có cả trách nhiệm nghệ thuật lẫn quản lý.",
-      "family": "manage (v); manager (n); management (n); managerial (adj)"
+      "family": "manage (v); manager (n); management (n); managerial (adj)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -142,7 +190,11 @@
       "usage": "a distinctive style/voice/design",
       "example": "The building has a distinctive curved roof.",
       "translation": "Tòa nhà có mái cong rất đặc trưng.",
-      "family": "distinct (adj); distinctive (adj); distinction (n); distinctly (adv)"
+      "family": "distinct (adj); distinctive (adj); distinction (n); distinctly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 30,
@@ -153,7 +205,11 @@
       "usage": "enlarge on a point/topic",
       "example": "Could you enlarge on your last point?",
       "translation": "Bạn có thể giải thích thêm ý cuối không?",
-      "family": "large (adj); enlarge (v); enlargement (n); largely (adv)"
+      "family": "large (adj); enlarge (v); enlargement (n); largely (adv)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 33,
@@ -164,7 +220,11 @@
       "usage": "the originality of an idea; show originality",
       "example": "The judges praised the originality of her design.",
       "translation": "Ban giám khảo khen tính độc đáo trong thiết kế của cô ấy.",
-      "family": "original (adj/n); originality (n); originally (adv)"
+      "family": "original (adj/n); originality (n); originally (adv)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 35,
@@ -175,7 +235,11 @@
       "usage": "comprehensive/up-to-date coverage of a topic",
       "example": "The guide offers detailed coverage of local history.",
       "translation": "Cuốn hướng dẫn trình bày khá đầy đủ lịch sử địa phương.",
-      "family": "cover (v/n); coverage (n); covered (V2/V3)"
+      "family": "cover (v/n); coverage (n); covered (V2/V3)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 40,
@@ -186,7 +250,11 @@
       "usage": "adapt to + danh từ/V-ing",
       "example": "It took her time to adapt to working at night.",
       "translation": "Cô ấy mất một thời gian để quen với việc làm ban đêm.",
-      "family": "adapt (v); adaptation (n); adaptable (adj); adaptability (n)"
+      "family": "adapt (v); adaptation (n); adaptable (adj); adaptability (n)",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 41,
@@ -197,7 +265,11 @@
       "usage": "pose a hazard/risk to somebody",
       "example": "Loose cables can pose a hazard to visitors.",
       "translation": "Dây cáp để lỏng có thể gây nguy hiểm cho khách.",
-      "family": "pose (v); hazard (n/v); hazardous (adj)"
+      "family": "pose (v); hazard (n/v); hazardous (adj)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 48,
@@ -208,7 +280,11 @@
       "usage": "put/place emphasis on + danh từ/V-ing",
       "example": "The course puts emphasis on clear communication.",
       "translation": "Khóa học chú trọng giao tiếp rõ ràng.",
-      "family": "emphasis (n); emphasize/emphasise (v); emphatic (adj)"
+      "family": "emphasis (n); emphasize/emphasise (v); emphatic (adj)",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ]
     },
     {
       "question": 51,
@@ -219,7 +295,11 @@
       "usage": "put resources at somebody’s disposal",
       "example": "The team has several useful tools at its disposal.",
       "translation": "Nhóm có sẵn một số công cụ hữu ích để sử dụng.",
-      "family": "dispose (v); disposal (n); disposable (adj)"
+      "family": "dispose (v); disposal (n); disposable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ]
     },
     {
       "question": 53,
@@ -230,7 +310,11 @@
       "usage": "be engrossed in a book/work/reading",
       "example": "She was so engrossed in the book that she missed the announcement.",
       "translation": "Cô ấy mải đọc đến mức không nghe thông báo.",
-      "family": "engross (v); engrossed (adj); engrossing (adj)"
+      "family": "engross (v); engrossed (adj); engrossing (adj)",
+      "teacherSelected": true,
+      "questions": [
+        53
+      ]
     },
     {
       "question": 54,
@@ -241,7 +325,11 @@
       "usage": "enrich knowledge/experience/cultural life",
       "example": "Discussing different views can enrich our understanding.",
       "translation": "Thảo luận các góc nhìn khác nhau có thể làm phong phú hiểu biết của chúng ta.",
-      "family": "rich (adj); enrich (v); enrichment (n); richness (n)"
+      "family": "rich (adj); enrich (v); enrichment (n); richness (n)",
+      "teacherSelected": true,
+      "questions": [
+        54
+      ]
     },
     {
       "question": 57,
@@ -252,7 +340,11 @@
       "usage": "scrupulously maintain/check/clean",
       "example": "The old wooden house has been scrupulously maintained.",
       "translation": "Ngôi nhà gỗ cổ được bảo dưỡng rất cẩn thận.",
-      "family": "scruple (n); scrupulous (adj); scrupulously (adv); unscrupulous (adj)"
+      "family": "scruple (n); scrupulous (adj); scrupulously (adv); unscrupulous (adj)",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ]
     },
     {
       "question": 59,
@@ -263,7 +355,11 @@
       "usage": "come into view; disappear from view",
       "example": "The castle came into view as we reached the hilltop.",
       "translation": "Lâu đài hiện ra khi chúng tôi lên tới đỉnh đồi.",
-      "family": "come – came – come; view (n/v); visible (adj)"
+      "family": "come – came – come; view (n/v); visible (adj)",
+      "teacherSelected": true,
+      "questions": [
+        59
+      ]
     },
     {
       "question": 79,
@@ -274,7 +370,11 @@
       "usage": "institutional/university autonomy; have autonomy to do something",
       "example": "The department has autonomy to design its own projects.",
       "translation": "Bộ phận có quyền tự chủ thiết kế các dự án của mình.",
-      "family": "autonomy (n); autonomous (adj); autonomously (adv)"
+      "family": "autonomy (n); autonomous (adj); autonomously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        79
+      ]
     },
     {
       "question": 86,
@@ -285,7 +385,11 @@
       "usage": "exquisite craftsmanship/detail/design",
       "example": "The museum displays exquisite handmade jewellery.",
       "translation": "Bảo tàng trưng bày đồ trang sức thủ công rất tinh xảo.",
-      "family": "exquisite (adj); exquisitely (adv); exquisiteness (n)"
+      "family": "exquisite (adj); exquisitely (adv); exquisiteness (n)",
+      "teacherSelected": true,
+      "questions": [
+        86
+      ]
     },
     {
       "question": 91,
@@ -296,7 +400,11 @@
       "usage": "set one's heart on becoming/doing something",
       "example": "She has set her heart on becoming a surgeon.",
       "translation": "Cô ấy quyết tâm trở thành bác sĩ phẫu thuật.",
-      "family": "heart (n); heartfelt (adj); determination (n gần nghĩa)"
+      "family": "heart (n); heartfelt (adj); determination (n gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ]
     },
     {
       "question": 95,
@@ -307,7 +415,11 @@
       "usage": "take priority over + việc khác",
       "example": "Safety must take priority over speed.",
       "translation": "An toàn phải được ưu tiên hơn tốc độ.",
-      "family": "priority (n); prioritise/prioritize (v); prioritisation/prioritization (n)"
+      "family": "priority (n); prioritise/prioritize (v); prioritisation/prioritization (n)",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     },
     {
       "question": 97,
@@ -318,7 +430,11 @@
       "usage": "make a/one's getaway in a vehicle",
       "example": "The thieves made their getaway in a small van.",
       "translation": "Những tên trộm tẩu thoát bằng một xe tải nhỏ.",
-      "family": "getaway (n); get away (phrasal verb); escape (n/v)"
+      "family": "getaway (n); get away (phrasal verb); escape (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        97
+      ]
     },
     {
       "question": 98,
@@ -329,7 +445,11 @@
       "usage": "take something into account; take into account + danh từ",
       "example": "The plan takes students’ different needs into account.",
       "translation": "Kế hoạch có cân nhắc những nhu cầu khác nhau của học sinh.",
-      "family": "account (n/v); consideration (n); consider (v)"
+      "family": "account (n/v); consideration (n); consider (v)",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ]
     }
   ]
 }

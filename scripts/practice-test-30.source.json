@@ -1091,9 +1091,15 @@
       ],
       "displayAnswer": "has been put off",
       "prefix": "The meeting",
-      "suffix": "until January to give the management team longer to decide.",
-      "fullSentence": "The meeting has been put off until January to give the management team longer to decide.",
-      "explanation": "Put off nghĩa là hoãn, tương đương postpone. They’ve postponed ở hiện tại hoàn thành chủ động chuyển thành has been put off ở bị động với meeting số ít. Put có ba dạng giống nhau; không viết putted và không bỏ been."
+      "suffix": "until January to give the management team longer to decide",
+      "fullSentence": "The meeting has been put off until January to give the management team longer to decide",
+      "explanation": "Put off nghĩa là hoãn, tương đương postpone. They’ve postponed ở hiện tại hoàn thành chủ động chuyển thành has been put off ở bị động với meeting số ít.",
+      "keyword": "OFF",
+      "answerPrefix": "The meeting",
+      "answerSuffix": "until January to give the management team longer to decide",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "has been put off"
     },
     {
       "globalNumber": 92,
@@ -1107,9 +1113,15 @@
       ],
       "displayAnswer": "no regrets about taking / no regrets over taking / no regrets at having taken / no regrets about having taken",
       "prefix": "In the end, I had",
-      "suffix": "an English course last summer.",
-      "fullSentence": "In the end, I had no regrets about taking an English course last summer.",
-      "explanation": "Have no regrets about/over + V-ing là không hối tiếc vì việc đã làm. Người nói thấy quyết định học đúng nên phải có no. Regrets phải giữ số nhiều như từ cho sẵn; taking/having taken đều có thể dùng vì việc học đã xảy ra mùa hè trước."
+      "suffix": "an English course last summer",
+      "fullSentence": "In the end, I had no regrets about taking an English course last summer",
+      "explanation": "Have no regrets about/over + V-ing là không hối tiếc vì việc đã làm. Người nói thấy quyết định học đúng nên phải có no.",
+      "keyword": "REGRETS",
+      "answerPrefix": "In the end, I had",
+      "answerSuffix": "an English course last summer",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "no regrets about taking"
     },
     {
       "globalNumber": 93,
@@ -1120,9 +1132,15 @@
       ],
       "displayAnswer": "with a view to opening",
       "prefix": "Alison bought the big house",
-      "suffix": "a hotel.",
-      "fullSentence": "Alison bought the big house with a view to opening a hotel.",
-      "explanation": "With a view to + V-ing diễn tả mục đích hoặc dự định. To ở đây là giới từ nên opening, không phải open. Cụm thay cho because she wanted to open và giữ mục đích mua căn nhà lớn để mở khách sạn."
+      "suffix": "a hotel",
+      "fullSentence": "Alison bought the big house with a view to opening a hotel",
+      "explanation": "With a view to + V-ing diễn tả mục đích hoặc dự định. To ở đây là giới từ nên opening, không phải open.",
+      "keyword": "VIEW",
+      "answerPrefix": "Alison bought the big house",
+      "answerSuffix": "a hotel",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "with a view to opening"
     },
     {
       "globalNumber": 94,
@@ -1132,29 +1150,39 @@
         "glimmer of hope of finalising",
         "glimmer of hope of finalizing",
         "glimmer of hope for finalising",
-        "glimmer of hope for finalizing",
-        "glimmer of hope that we can finalise",
-        "glimmer of hope that we can finalize"
+        "glimmer of hope for finalizing"
       ],
-      "displayAnswer": "glimmer of hope of finalising / glimmer of hope of finalizing / glimmer of hope for finalising / glimmer of hope for finalizing / glimmer of hope that we can finalise / glimmer of hope that we can finalize",
-      "prefix": "There’s still a",
-      "suffix": "the deal in time for tomorrow’s deadline.",
-      "fullSentence": "There’s still a glimmer of hope of finalising the deal in time for tomorrow’s deadline.",
-      "explanation": "A glimmer of hope là tia hy vọng nhỏ nhoi, tương ứng a faint possibility. Sau hope có thể dùng of/for + V-ing hoặc that + mệnh đề. Phần cố định đã có the deal nên không lặp lại cụm này trong ô trống; giữ khả năng hoàn tất đúng hạn ngày mai."
+      "displayAnswer": "glimmer of hope of finalising / glimmer of hope of finalizing / glimmer of hope for finalising / glimmer of hope for finalizing",
+      "prefix": "There's still a",
+      "suffix": "the deal in time for tomorrow's deadline",
+      "fullSentence": "There's still a glimmer of hope of finalising the deal in time for tomorrow's deadline",
+      "explanation": "A glimmer of hope là tia hy vọng nhỏ nhoi, tương ứng a faint possibility. Sau hope có thể dùng of/for + V-ing hoặc that + mệnh đề.",
+      "keyword": "GLIMMER",
+      "answerPrefix": "There's still a",
+      "answerSuffix": "the deal in time for tomorrow's deadline",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "glimmer of hope of finalising"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "offence at being accused by the teacher of",
-        "offense at being accused by the teacher of"
+        "offence at being accused",
+        "offense at being accused"
       ],
-      "displayAnswer": "offence at being accused by the teacher of / offense at being accused by the teacher of",
+      "displayAnswer": "offence at being accused / offense at being accused",
       "prefix": "Brian took",
-      "suffix": "disrupting the lesson.",
-      "fullSentence": "Brian took offence at being accused by the teacher of disrupting the lesson.",
-      "explanation": "Take offence at là cảm thấy bị xúc phạm. Being accused là dạng bị động sau giới từ at; accuse someone of doing something nên giữ of trước disrupting. Đáp án cần giữ by the teacher để không mất tác nhân đã nêu; offence và offense là hai cách viết Anh–Anh/Anh–Mỹ."
+      "suffix": "by the teacher of disrupting the lesson",
+      "fullSentence": "Brian took offence at being accused by the teacher of disrupting the lesson",
+      "explanation": "Take offence at là cảm thấy bị xúc phạm. Being accused là dạng bị động sau giới từ at; accuse someone of doing something nên giữ of trước disrupting.",
+      "keyword": "BEING",
+      "answerPrefix": "Brian took",
+      "answerSuffix": "by the teacher of disrupting the lesson",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "offence at being accused"
     },
     {
       "globalNumber": 96,
@@ -1166,10 +1194,16 @@
         "accepted that you had grown out"
       ],
       "displayAnswer": "accepted that you have grown out / accepted that you've grown out / accepted that you had grown out",
-      "prefix": "It’s time you",
-      "suffix": "of that sort of activity.",
-      "fullSentence": "It’s time you accepted that you have grown out of that sort of activity.",
-      "explanation": "It’s time + chủ ngữ + quá khứ đơn diễn tả đã đến lúc cần làm gì, nên accepted dù ý hướng tới hiện tại. Grow out of nói không còn phù hợp/hứng thú với hoạt động khi lớn lên. Grown phải giữ nguyên từ cho sẵn; have/had grown đều có thể dùng theo điểm nhìn."
+      "prefix": "It's time you",
+      "suffix": "of that sort of activity",
+      "fullSentence": "It's time you accepted that you have grown out of that sort of activity",
+      "explanation": "It’s time + chủ ngữ + quá khứ đơn diễn tả đã đến lúc cần làm gì, nên accepted dù ý hướng tới hiện tại. Grow out of nói không còn phù hợp/hứng thú với hoạt động khi lớn lên.",
+      "keyword": "GROWN",
+      "answerPrefix": "It's time you",
+      "answerSuffix": "of that sort of activity",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "accepted that you have grown out"
     },
     {
       "globalNumber": 97,
@@ -1180,58 +1214,79 @@
       ],
       "displayAnswer": "held her breath",
       "prefix": "She",
-      "suffix": "while the results were read out.",
-      "fullSentence": "She held her breath while the results were read out.",
-      "explanation": "Hold one’s breath là nín thở; trong ngữ cảnh chờ kết quả còn diễn tả hồi hộp. Quá khứ của hold là held và đại từ sở hữu của she là her. Đề đã nêu hardly daring to breathe để kết nối rõ với hình ảnh nín thở, thay vì chỉ nói lo lắng chung chung."
+      "suffix": "while the results were read out",
+      "fullSentence": "She held her breath while the results were read out",
+      "explanation": "Hold one’s breath là nín thở; trong ngữ cảnh chờ kết quả còn diễn tả hồi hộp. Quá khứ của hold là held và đại từ sở hữu của she là her.",
+      "keyword": "BREATH",
+      "answerPrefix": "She",
+      "answerSuffix": "while the results were read out",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "held her breath"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "On no account should the house",
-        "On no account ought the house to"
+        "On no account should the house"
       ],
-      "displayAnswer": "On no account should the house / On no account ought the house to",
+      "displayAnswer": "On no account should the house",
       "prefix": "",
-      "suffix": "be left unlocked.",
-      "fullSentence": "On no account should the house be left unlocked.",
-      "explanation": "On no account nghĩa là không vì bất cứ lý do gì. Cụm phủ định đứng đầu kéo theo đảo should trước the house; vế bị động be left unlocked giữ nguyên. Không dùng On any account trong câu khẳng định vì sẽ làm mất ý cấm tuyệt đối."
+      "suffix": "be left unlocked",
+      "fullSentence": "On no account should the house be left unlocked",
+      "explanation": "On no account nghĩa là không vì bất cứ lý do gì. Cụm phủ định đứng đầu kéo theo đảo should trước the house; vế bị động be left unlocked giữ nguyên.",
+      "keyword": "ACCOUNT",
+      "answerPrefix": "",
+      "answerSuffix": "be left unlocked",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "On no account should the house"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "found herself so interested in her book",
-        "found her book so interesting",
-        "found the book she was reading so interesting"
+        "found her book so interesting"
       ],
-      "displayAnswer": "found herself so interested in her book / found her book so interesting / found the book she was reading so interesting",
+      "displayAnswer": "found her book so interesting",
       "prefix": "She",
-      "suffix": "that she didn’t even hear me.",
-      "fullSentence": "She found herself so interested in her book that she didn’t even hear me.",
-      "explanation": "Find oneself + tính từ là nhận thấy mình ở trạng thái nào; interested mô tả người đọc bị cuốn hút. Cũng có thể viết found her book so interesting: interesting mô tả cuốn sách gây hứng thú. Cả hai giữ cấu trúc so ... that và kết quả cô ấy không nghe thấy người nói."
+      "suffix": "that she didn't even hear me",
+      "fullSentence": "She found her book so interesting that she didn't even hear me",
+      "explanation": "Find oneself + tính từ là nhận thấy mình ở trạng thái nào; interested mô tả người đọc bị cuốn hút. Cũng có thể viết found her book so interesting: interesting mô tả cuốn sách gây hứng thú.",
+      "keyword": "FOUND",
+      "answerPrefix": "She",
+      "answerSuffix": "that she didn't even hear me",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "found her book so interesting"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "Much as Laura practiced playing the instrument",
-        "Much as Laura practised playing the instrument",
-        "However much Laura practiced playing the instrument",
-        "However much Laura practised playing the instrument",
-        "No matter how much Laura practiced playing the instrument",
-        "No matter how much Laura practised playing the instrument"
+        "Much as Laura practiced",
+        "Much as Laura practised",
+        "However much Laura practiced",
+        "However much Laura practised",
+        "No matter how much Laura practiced",
+        "No matter how much Laura practised"
       ],
-      "displayAnswer": "Much as Laura practiced playing the instrument / Much as Laura practised playing the instrument / However much Laura practiced playing the instrument / However much Laura practised playing the instrument / No matter how much Laura practiced playing the instrument / No matter how much Laura practised playing the instrument",
+      "displayAnswer": "Much as Laura practiced / Much as Laura practised / However much Laura practiced / However much Laura practised / No matter how much Laura practiced / No matter how much Laura practised",
       "prefix": "",
-      "suffix": ", she could hardly improve her performance.",
-      "fullSentence": "Much as Laura practiced playing the instrument, she could hardly improve her performance.",
-      "explanation": "Much as/However much/No matter how much diễn tả nhượng bộ: dù luyện tập rất nhiều vẫn gần như không tiến bộ. Giữ much đúng từ cho sẵn và hardly ở phần cố định. Practiced và practised đều đúng theo Anh–Mỹ/Anh–Anh; không chuyển sang so much ... that vì sẽ thành quan hệ kết quả."
+      "suffix": "playing the instrument , she could hardly improve her performance",
+      "fullSentence": "Much as Laura practiced playing the instrument, she could hardly improve her performance",
+      "explanation": "Much as/However much/No matter how much diễn tả nhượng bộ: dù luyện tập rất nhiều vẫn gần như không tiến bộ. Giữ much đúng từ cho sẵn và hardly ở phần cố định.",
+      "keyword": "MUCH",
+      "answerPrefix": "",
+      "answerSuffix": "playing the instrument , she could hardly improve her performance",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "Much as Laura practiced"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

@@ -1076,15 +1076,19 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "all her recall of the seminar, she did not realise",
-        "all her recall of the seminar, she didn't realise",
-        "all her recall of the seminar, she did not realize"
+        "all her recall of the seminar"
       ],
-      "displayAnswer": "all her recall of the seminar, she did not realise / all her recall of the seminar, she didn't realise / all her recall of the seminar, she did not realize",
+      "displayAnswer": "all her recall of the seminar",
       "prefix": "For",
-      "suffix": "the error of her ways.",
-      "fullSentence": "For all her recall of the seminar, she did not realise the error of her ways.",
-      "explanation": "For all + danh từ diễn tả mặc dù, nên her recall of the seminar thay việc Trang nhớ buổi hội thảo. The error of her ways là sai lầm trong cách hành xử. Giữ RECALL ở dạng danh từ; không dùng recalling vì yêu cầu không đổi từ khóa."
+      "suffix": ", she did not realise the error of her ways",
+      "fullSentence": "For all her recall of the seminar, she did not realise the error of her ways",
+      "explanation": "For all + danh từ diễn tả mặc dù, nên her recall of the seminar thay việc Trang nhớ buổi hội thảo. The error of her ways là sai lầm trong cách hành xử.",
+      "keyword": "recall",
+      "answerPrefix": "For",
+      "answerSuffix": ", she did not realise the error of her ways",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "all her recall of the seminar"
     },
     {
       "globalNumber": 92,
@@ -1095,9 +1099,15 @@
       ],
       "displayAnswer": "to be taken in by",
       "prefix": "The principal was too experienced",
-      "suffix": "the salesman’s promises.",
-      "fullSentence": "The principal was too experienced to be taken in by the salesman’s promises.",
-      "explanation": "Take somebody in nghĩa là lừa ai. Chủ ngữ principal là người bị lừa nên dùng to be taken in by, kết hợp với too ... to. Không dùng to take in vì sẽ biến hiệu trưởng thành người đi lừa."
+      "suffix": "the salesman's promises",
+      "fullSentence": "The principal was too experienced to be taken in by the salesman's promises",
+      "explanation": "Take somebody in nghĩa là lừa ai. Chủ ngữ principal là người bị lừa nên dùng to be taken in by, kết hợp với too … to.",
+      "keyword": "TAKEN",
+      "answerPrefix": "The principal was too experienced",
+      "answerSuffix": "the salesman's promises",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to be taken in by"
     },
     {
       "globalNumber": 93,
@@ -1108,9 +1118,15 @@
       ],
       "displayAnswer": "of late",
       "prefix": "We have not seen her",
-      "suffix": "because she has been very busy.",
-      "fullSentence": "We have not seen her of late because she has been very busy.",
-      "explanation": "Of late nghĩa là gần đây, thường dùng với hiện tại hoàn thành khi nói tình trạng trong thời gian vừa qua. Câu đã có have not seen nên chỉ cần điền cụm thời gian. Không thêm các thành ngữ khác về bận rộn hoặc vắng mặt; chúng không cần thiết để giữ nghĩa câu gốc."
+      "suffix": "because she has been very busy",
+      "fullSentence": "We have not seen her of late because she has been very busy",
+      "explanation": "Of late nghĩa là gần đây, thường dùng với hiện tại hoàn thành khi nói tình trạng trong thời gian vừa qua. Câu đã có have not seen nên chỉ cần điền cụm thời gian.",
+      "keyword": "LATE",
+      "answerPrefix": "We have not seen her",
+      "answerSuffix": "because she has been very busy",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "of late"
     },
     {
       "globalNumber": 94,
@@ -1120,11 +1136,17 @@
         "should not have spent so much",
         "should not have spent that much"
       ],
-      "displayAnswer": "should not have spent so much",
+      "displayAnswer": "should not have spent so much / should not have spent that much",
       "prefix": "They",
-      "suffix": "money on the campaign.",
-      "fullSentence": "They should not have spent so much money on the campaign.",
-      "explanation": "Should not have + V3 dùng để nhận xét một việc đã làm là không nên. Too much chuyển thành so much/that much trong câu phê bình đã tiêu quá nhiều. Không dùng should not spend vì câu gốc nói việc chi tiền đã xảy ra."
+      "suffix": "money on the campaign",
+      "fullSentence": "They should not have spent so much money on the campaign",
+      "explanation": "Should not have + V3 dùng để nhận xét một việc đã làm là không nên. Too much chuyển thành so much/that much trong câu phê bình đã tiêu quá nhiều.",
+      "keyword": "SHOULD",
+      "answerPrefix": "They",
+      "answerSuffix": "money on the campaign",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "should not have spent so much"
     },
     {
       "globalNumber": 95,
@@ -1134,24 +1156,36 @@
         "left the audience confused"
       ],
       "displayAnswer": "left the audience confused",
-      "prefix": "The spokesperson’s contradictory statements",
-      "suffix": ".",
-      "fullSentence": "The spokesperson’s contradictory statements left the audience confused.",
-      "explanation": "Leave + tân ngữ + tính từ diễn tả khiến ai ở trạng thái nào đó. Contradictory statements là các phát biểu mâu thuẫn, còn confused tả cảm giác của khán giả. Dùng left để giữ thì quá khứ; không dùng confusing, vì khi đó sẽ tả khán giả gây khó hiểu."
+      "prefix": "The spokesperson's contradictory statements",
+      "suffix": "",
+      "fullSentence": "The spokesperson's contradictory statements left the audience confused",
+      "explanation": "Leave + tân ngữ + tính từ diễn tả khiến ai ở trạng thái nào đó. Contradictory statements là các phát biểu mâu thuẫn, còn confused tả cảm giác của khán giả.\nTừ vựng trọng tâm: leave somebody confused",
+      "keyword": "LEFT",
+      "answerPrefix": "The spokesperson's contradictory statements",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "left the audience confused"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "our pleading with her not to resign, she took",
-        "all our pleading with her not to resign, she took"
+        "our pleading with her",
+        "all our pleading with her"
       ],
-      "displayAnswer": "our pleading with her not to resign, she took / all our pleading with her not to resign, she took",
+      "displayAnswer": "our pleading with her / all our pleading with her",
       "prefix": "Despite",
-      "suffix": "the plunge and opened her own clinic.",
-      "fullSentence": "Despite our pleading with her not to resign, she took the plunge and opened her own clinic.",
-      "explanation": "Despite theo sau danh từ/cụm V-ing: our pleading with her. Plead with someone to do/not to do là nài nỉ ai. Take the plunge là quyết định làm việc lớn sau do dự; took hòa hợp quá khứ opened phía sau."
+      "suffix": "not to resign, she took the plunge and opened her own clinic",
+      "fullSentence": "Despite our pleading with her not to resign, she took the plunge and opened her own clinic",
+      "explanation": "Despite theo sau danh từ/cụm V-ing: our pleading with her. Plead with someone to do/not to do là nài nỉ ai.",
+      "keyword": "pleading",
+      "answerPrefix": "Despite",
+      "answerSuffix": "not to resign, she took the plunge and opened her own clinic",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "our pleading with her"
     },
     {
       "globalNumber": 97,
@@ -1162,37 +1196,54 @@
       ],
       "displayAnswer": "have no intention of joining",
       "prefix": "He and his classmates",
-      "suffix": "the club.",
-      "fullSentence": "He and his classmates have no intention of joining the club.",
-      "explanation": "Have no intention of doing something nghĩa là không có ý định làm việc gì. Chủ ngữ he and his classmates số nhiều nên dùng have. Sau of dùng joining; không dùng to join trong cụm này. No giữ ý phủ định cả anh ấy lẫn các bạn cùng lớp."
+      "suffix": "the club",
+      "fullSentence": "He and his classmates have no intention of joining the club",
+      "explanation": "Have no intention of doing something nghĩa là không có ý định làm việc gì. Chủ ngữ he and his classmates số nhiều nên dùng have.",
+      "keyword": "INTENTION",
+      "answerPrefix": "He and his classmates",
+      "answerSuffix": "the club",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "have no intention of joining"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "is due to her clear explanations of her ideas",
         "is due to her clear explanations"
       ],
-      "displayAnswer": "is due to her clear explanations of her ideas",
-      "prefix": "People’s support for her",
-      "suffix": ".",
-      "fullSentence": "People’s support for her is due to her clear explanations of her ideas.",
-      "explanation": "Be due to + cụm danh từ diễn tả nguyên nhân. Explanations là danh từ chuyển từ explains, còn clearly đổi thành clear. Support ở đây không đếm được nên dùng is."
+      "displayAnswer": "is due to her clear explanations",
+      "prefix": "People's support for her",
+      "suffix": "",
+      "fullSentence": "People's support for her is due to her clear explanations",
+      "explanation": "Be due to + cụm danh từ diễn tả nguyên nhân. Explanations là danh từ chuyển từ explains, còn clearly đổi thành clear.",
+      "keyword": "DUE",
+      "answerPrefix": "People's support for her",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is due to her clear explanations"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "of confidentiality acted as a catalyst for her decision to reject the proposal out",
-        "of confidentiality was a catalyst for her decision to reject the proposal out"
+        "acted as a catalyst for",
+        "was a catalyst for"
       ],
-      "displayAnswer": "of confidentiality acted as a catalyst for her decision to reject the proposal out / of confidentiality was a catalyst for her decision to reject the proposal out",
-      "prefix": "The breach",
-      "suffix": "of hand.",
-      "fullSentence": "The breach of confidentiality acted as a catalyst for her decision to reject the proposal out of hand.",
-      "explanation": "Breach of confidentiality là việc làm lộ thông tin phải giữ kín. Act as/be a catalyst for là thúc đẩy một quyết định/thay đổi. Reject something out of hand là bác bỏ ngay không cân nhắc; phải có the proposal làm tân ngữ, không để reject trống."
+      "displayAnswer": "acted as a catalyst for / was a catalyst for",
+      "prefix": "The breach of confidentiality",
+      "suffix": "her decision to reject the proposal out of hand",
+      "fullSentence": "The breach of confidentiality acted as a catalyst for her decision to reject the proposal out of hand",
+      "explanation": "Breach of confidentiality là việc làm lộ thông tin phải giữ kín. Act as/be a catalyst for là thúc đẩy một quyết định/thay đổi.",
+      "keyword": "catalyst",
+      "answerPrefix": "The breach of confidentiality",
+      "answerSuffix": "her decision to reject the proposal out of hand",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "acted as a catalyst for"
     },
     {
       "globalNumber": 100,
@@ -1203,11 +1254,17 @@
       ],
       "displayAnswer": "was taken out of",
       "prefix": "An irrelevant detail",
-      "suffix": "the passage.",
-      "fullSentence": "An irrelevant detail was taken out of the passage.",
-      "explanation": "Take something out of something là bỏ một phần ra khỏi một tổng thể. An irrelevant detail là đối tượng bị loại nên chuyển thành was taken out of. Was giữ quá khứ và số ít; không dùng took out ở câu bị động."
+      "suffix": "the passage",
+      "fullSentence": "An irrelevant detail was taken out of the passage",
+      "explanation": "Take something out of something là bỏ một phần ra khỏi một tổng thể. An irrelevant detail là đối tượng bị loại nên chuyển thành was taken out of.\nTừ vựng trọng tâm: take out of",
+      "keyword": "TAKEN",
+      "answerPrefix": "An irrelevant detail",
+      "answerSuffix": "the passage",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "was taken out of"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

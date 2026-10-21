@@ -1065,145 +1065,196 @@
       "localNumber": 1,
       "acceptedAnswers": [
         "died without finishing his last novel",
-        "died without having finished his last novel",
         "died without completing his last novel"
       ],
-      "displayAnswer": "died without finishing his last novel / died without having finished his last novel / died without completing his last novel",
-      "explanation": "Without + V-ing diễn đạt một việc đã không được làm khi sự việc chính xảy ra. Câu nói tác phẩm cuối còn dang dở lúc Dickens mất nên died without finishing là tương đương. Tên Dickens đã được sửa lại; không viết without finish vì sau giới từ cần danh từ/V-ing.",
+      "displayAnswer": "died without finishing his last novel / died without completing his last novel",
+      "explanation": "Without + V-ing diễn đạt một việc đã không được làm khi sự việc chính xảy ra. Câu nói tác phẩm cuối còn dang dở lúc Dickens mất nên died without finishing là tương đương.",
       "prefix": "Dickens",
       "suffix": "",
-      "fullSentence": "Dickens died without finishing his last novel."
+      "fullSentence": "Dickens died without finishing his last novel",
+      "keyword": "WITHOUT",
+      "answerPrefix": "Dickens",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "died without finishing his last novel"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "new manager is always picking on me whenever anything goes wrong",
-        "new manager is always picking on me for everything that goes wrong",
-        "new manager keeps picking on me whenever anything goes wrong"
+        "is always picking on",
+        "keeps picking on"
       ],
-      "displayAnswer": "new manager is always picking on me whenever anything goes wrong / new manager is always picking on me for everything that goes wrong / new manager keeps picking on me whenever anything goes wrong",
-      "explanation": "Pick on someone là nhắm vào ai để đối xử hoặc phê phán không công bằng. Câu gốc đã nêu rõ unfairly singles me out nên cụm này giữ đúng nghĩa. Is always picking/keeps picking diễn đạt thói quen gây khó chịu; không dùng picking me thiếu on.",
-      "prefix": "The",
-      "suffix": "",
-      "fullSentence": "The new manager is always picking on me whenever anything goes wrong."
+      "displayAnswer": "is always picking on / keeps picking on",
+      "explanation": "Pick on someone là nhắm vào ai để đối xử hoặc phê phán không công bằng. Câu gốc đã nêu rõ unfairly singles me out nên cụm này giữ đúng nghĩa.",
+      "prefix": "The new manager",
+      "suffix": "me whenever anything goes wrong",
+      "fullSentence": "The new manager is always picking on me whenever anything goes wrong",
+      "keyword": "PICKING",
+      "answerPrefix": "The new manager",
+      "answerSuffix": "me whenever anything goes wrong",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is always picking on"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "missed the beginning of the concert as a consequence of oversleeping",
-        "missed the beginning of the concert as a consequence of having overslept",
-        "missed the beginning of the concert in consequence of oversleeping"
+        "as a consequence of oversleeping",
+        "as a consequence of having overslept",
+        "in consequence of oversleeping"
       ],
-      "displayAnswer": "missed the beginning of the concert as a consequence of oversleeping / missed the beginning of the concert as a consequence of having overslept / missed the beginning of the concert in consequence of oversleeping",
-      "explanation": "As a consequence of/in consequence of + danh từ hoặc V-ing nêu nguyên nhân dẫn đến kết quả. Oversleeping/having overslept đều diễn đạt ngủ quá giờ trước khi bỏ lỡ phần đầu. Cần giữ beginning, vì câu không nói bỏ lỡ toàn bộ buổi hoà nhạc.",
-      "prefix": "We",
+      "displayAnswer": "as a consequence of oversleeping / as a consequence of having overslept / in consequence of oversleeping",
+      "explanation": "As a consequence of/in consequence of + danh từ hoặc V-ing nêu nguyên nhân dẫn đến kết quả. Oversleeping/having overslept đều diễn đạt ngủ quá giờ trước khi bỏ lỡ phần đầu.",
+      "prefix": "We missed the beginning of the concert",
       "suffix": "",
-      "fullSentence": "We missed the beginning of the concert as a consequence of oversleeping."
+      "fullSentence": "We missed the beginning of the concert as a consequence of oversleeping",
+      "keyword": "CONSEQUENCE",
+      "answerPrefix": "We missed the beginning of the concert",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "as a consequence of oversleeping"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "the exception of the music teacher, all the staff attended the concert",
-        "the exception of the music teacher, all the members of staff attended the concert",
-        "the exception of the music teacher, every member of staff attended the concert"
+        "With the exception of"
       ],
-      "displayAnswer": "the exception of the music teacher, all the staff attended the concert / the exception of the music teacher, all the members of staff attended the concert / the exception of the music teacher, every member of staff attended the concert",
-      "explanation": "With the exception of + danh từ loại một người/việc khỏi phát biểu chung. Giáo viên âm nhạc là người duy nhất vắng nên tất cả những người còn lại đều dự. Không viết everyone did not attend, vì sẽ thành không ai tham dự.",
-      "prefix": "With",
-      "suffix": "",
-      "fullSentence": "With the exception of the music teacher, all the staff attended the concert."
+      "displayAnswer": "With the exception of",
+      "explanation": "With the exception of + danh từ loại một người/việc khỏi phát biểu chung. Giáo viên âm nhạc là người duy nhất vắng nên tất cả những người còn lại đều dự.",
+      "prefix": "",
+      "suffix": "the music teacher, all the staff attended the concert",
+      "fullSentence": "With the exception of the music teacher, all the staff attended the concert",
+      "keyword": "EXCEPTION",
+      "answerPrefix": "",
+      "answerSuffix": "the music teacher, all the staff attended the concert",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "With the exception of"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "is no comparison between an open fire and central heating"
+        "is no comparison between"
       ],
-      "displayAnswer": "is no comparison between an open fire and central heating",
-      "explanation": "There is no comparison between A and B diễn đạt hai thứ không thể đem so theo ý câu gốc. Central heating không đếm được nên bỏ a trong bản cũ. Between nối đúng hai đối tượng; không thêm ý thứ nào tốt hơn vì đề chưa xác định hướng đánh giá.",
+      "displayAnswer": "is no comparison between",
+      "explanation": "There is no comparison between A and B diễn đạt hai thứ không thể đem so theo ý câu gốc. Central heating không đếm được nên bỏ a trong bản cũ.",
       "prefix": "There",
-      "suffix": "",
-      "fullSentence": "There is no comparison between an open fire and central heating."
+      "suffix": "an open fire and central heating",
+      "fullSentence": "There is no comparison between an open fire and central heating",
+      "keyword": "COMPARISON",
+      "answerPrefix": "There",
+      "answerSuffix": "an open fire and central heating",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is no comparison between"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "came to my farewell party with the exception of Leo",
-        "with the exception of Leo came to my farewell party"
+        "with the exception of"
       ],
-      "displayAnswer": "came to my farewell party with the exception of Leo / with the exception of Leo came to my farewell party",
-      "explanation": "Leo là người duy nhất không đến nên everyone… with the exception of Leo giữ đúng thông tin. Phần Everyone in the street đã có sẵn trước ô; chỉ điền came… hoặc with the exception… rồi vị ngữ, không lặp lại in the street như đáp án cũ.",
-      "prefix": "Everyone in the street",
-      "suffix": "",
-      "fullSentence": "Everyone in the street came to my farewell party with the exception of Leo."
+      "displayAnswer": "with the exception of",
+      "explanation": "with the exception of: ngoại trừ. Leo là người duy nhất không đến dự tiệc.",
+      "prefix": "Everyone in the street came to my farewell party",
+      "suffix": "Leo",
+      "fullSentence": "Everyone in the street came to my farewell party with the exception of Leo",
+      "keyword": "EXCEPTION",
+      "answerPrefix": "Everyone in the street came to my farewell party",
+      "answerSuffix": "Leo",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "with the exception of"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "treat them with a bit more respect, Edward",
-        "treat them a bit more respectfully, Edward",
-        "treat them with a little more respect, Edward"
+        "treat them with a bit more",
+        "treat them with a little more"
       ],
-      "displayAnswer": "treat them with a bit more respect, Edward / treat them a bit more respectfully, Edward / treat them with a little more respect, Edward",
-      "explanation": "Be more respectful đổi thành treat someone with more respect hoặc treat someone more respectfully. Sau should dùng treat nguyên thể và giữ từ cho sẵn. Respect là danh từ sau with; respectfully là trạng từ bổ nghĩa treat, không dùng respectful sau động từ này.",
-      "prefix": "Don’t you think you should",
-      "suffix": "",
-      "fullSentence": "Don’t you think you should treat them with a bit more respect, Edward?"
+      "displayAnswer": "treat them with a bit more / treat them with a little more",
+      "explanation": "Be more respectful đổi thành treat someone with more respect hoặc treat someone more respectfully. Sau should dùng treat nguyên thể và giữ từ cho sẵn.",
+      "prefix": "Don't you think you should",
+      "suffix": "respect, Edward",
+      "fullSentence": "Don't you think you should treat them with a bit more respect, Edward",
+      "keyword": "TREAT",
+      "answerPrefix": "Don't you think you should",
+      "answerSuffix": "respect, Edward",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "treat them with a bit more"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "working against the clock to do this work, so don't waste time",
-        "working against the clock to complete this work, so do not waste time",
-        "up against the clock with this work, so don't waste time"
+        "working against the clock"
       ],
-      "displayAnswer": "working against the clock to do this work, so don't waste time / working against the clock to complete this work, so do not waste time / up against the clock with this work, so don't waste time",
-      "explanation": "Work against the clock là làm gấp để kịp thời hạn rất ngắn. Cụm giữ ý thiếu thời gian; vế so don’t waste time giữ lời nhắc không lãng phí. Có thể dùng up against the clock để nhấn mạnh áp lực thời gian, nhưng không dùng against a clock.",
+      "displayAnswer": "working against the clock",
+      "explanation": "Work against the clock là làm gấp để kịp thời hạn rất ngắn. Cụm giữ ý thiếu thời gian; vế so don’t waste time giữ lời nhắc không lãng phí.",
       "prefix": "You are",
-      "suffix": "",
-      "fullSentence": "You are working against the clock to do this work, so don’t waste time."
+      "suffix": "to do this work, so don't waste time",
+      "fullSentence": "You are working against the clock to do this work, so don't waste time",
+      "keyword": "CLOCK",
+      "answerPrefix": "You are",
+      "answerSuffix": "to do this work, so don't waste time",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "working against the clock"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "decided to buy it on a whim",
-        "made the decision to buy it on a whim"
+        "to buy it on a whim"
       ],
-      "displayAnswer": "decided to buy it on a whim / made the decision to buy it on a whim",
-      "explanation": "On a whim nghĩa là theo ý thích bộc phát, không cân nhắc kỹ. Dùng decided to buy it để giữ đúng việc câu gốc chỉ nói quyết định mua, chưa khẳng định đã mua. Phần and now I really regret it đã có sẵn sau ô nên không chép lặp lại.",
-      "prefix": "I",
-      "suffix": "and now I really regret it!",
-      "fullSentence": "I decided to buy it on a whim and now I really regret it!"
+      "displayAnswer": "to buy it on a whim",
+      "explanation": "On a whim nghĩa là theo ý thích bộc phát, không cân nhắc kỹ. Dùng decided to buy it để giữ đúng việc câu gốc chỉ nói quyết định mua, chưa khẳng định đã mua.",
+      "prefix": "I decided",
+      "suffix": "and now I really regret it",
+      "fullSentence": "I decided to buy it on a whim and now I really regret it",
+      "keyword": "WHIM",
+      "answerPrefix": "I decided",
+      "answerSuffix": "and now I really regret it",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to buy it on a whim"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "caught in the act of driving a stolen vehicle, he was arrested"
+        "caught in the act of driving"
       ],
-      "displayAnswer": "caught in the act of driving a stolen vehicle, he was arrested",
-      "explanation": "Catch someone in the act of + V-ing nghĩa là bắt gặp ai đang làm việc gì. Dùng bị động Being caught vì he là người bị bắt gặp. Chủ thể của cụm phân từ và mệnh đề chính đều là he, tránh lỗi cụm đầu câu gắn nhầm với they.",
+      "displayAnswer": "caught in the act of driving",
+      "explanation": "Catch someone in the act of + V-ing nghĩa là bắt gặp ai đang làm việc gì. Dùng bị động Being caught vì he là người bị bắt gặp.",
       "prefix": "Being",
-      "suffix": "",
-      "fullSentence": "Being caught in the act of driving a stolen vehicle, he was arrested."
+      "suffix": "a stolen vehicle, he was arrested",
+      "fullSentence": "Being caught in the act of driving a stolen vehicle, he was arrested",
+      "keyword": "ACT",
+      "answerPrefix": "Being",
+      "answerSuffix": "a stolen vehicle, he was arrested",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "caught in the act of driving"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

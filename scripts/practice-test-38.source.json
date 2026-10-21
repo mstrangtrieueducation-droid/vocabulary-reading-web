@@ -1078,10 +1078,16 @@
         "nowhere near as talkative as"
       ],
       "displayAnswer": "nowhere near as talkative as",
-      "explanation": "Nowhere near as + tính từ + as = còn lâu mới... bằng, thể hiện chênh lệch lớn. Talkative chuyển talks a lot sang tính từ. Chỗ trống có 5 từ, bao gồm NOWHERE, đúng giới hạn 2–6 từ.",
+      "explanation": "Nowhere near as + tính từ + as = còn lâu mới… bằng, thể hiện chênh lệch lớn. Talkative chuyển talks a lot sang tính từ.",
       "prefix": "Lan is",
-      "suffix": "her brother.",
-      "fullSentence": "Lan is nowhere near as talkative as her brother."
+      "suffix": "her brother",
+      "fullSentence": "Lan is nowhere near as talkative as her brother",
+      "keyword": "NOWHERE",
+      "answerPrefix": "Lan is",
+      "answerSuffix": "her brother",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "nowhere near as talkative as"
     },
     {
       "globalNumber": 92,
@@ -1091,10 +1097,16 @@
         "gave her word that she would"
       ],
       "displayAnswer": "gave her word that she would",
-      "explanation": "Give one’s word = hứa chắc chắn. Lời hứa của Mai dùng her word; will chuyển would trong lời tường thuật quá khứ. Cụm điền có đúng 6 từ; never đã cho sẵn nên không lặp lại.",
+      "explanation": "Give one’s word = hứa chắc chắn. Lời hứa của Mai dùng her word; will chuyển would trong lời tường thuật quá khứ.",
       "prefix": "Mai",
-      "suffix": "never tell anyone about the missing files.",
-      "fullSentence": "Mai gave her word that she would never tell anyone about the missing files."
+      "suffix": "never tell anyone about the missing files",
+      "fullSentence": "Mai gave her word that she would never tell anyone about the missing files",
+      "keyword": "WORD",
+      "answerPrefix": "Mai",
+      "answerSuffix": "never tell anyone about the missing files",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "gave her word that she would"
     },
     {
       "globalNumber": 93,
@@ -1104,10 +1116,16 @@
         "we had set aside"
       ],
       "displayAnswer": "we had set aside",
-      "explanation": "Wish + quá khứ hoàn thành diễn tả tiếc nuối việc đã không làm. Set aside money = để dành tiền; set có quá khứ/phân từ vẫn là set. Điền 4 từ, giữ we chứ không đổi I theo chủ ngữ wish.",
+      "explanation": "Wish + quá khứ hoàn thành diễn tả tiếc nuối việc đã không làm. Set aside money = để dành tiền; set có quá khứ/phân từ vẫn là set.",
       "prefix": "I wish",
-      "suffix": "a bit more money for the summer holidays.",
-      "fullSentence": "I wish we had set aside a bit more money for the summer holidays."
+      "suffix": "a bit more money for the summer holidays",
+      "fullSentence": "I wish we had set aside a bit more money for the summer holidays",
+      "keyword": "SET",
+      "answerPrefix": "I wish",
+      "answerSuffix": "a bit more money for the summer holidays",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "we had set aside"
     },
     {
       "globalNumber": 94,
@@ -1118,10 +1136,16 @@
         "was Nam that objected to tidying"
       ],
       "displayAnswer": "was Nam who objected to tidying / was Nam that objected to tidying",
-      "explanation": "Câu chẻ It was Nam who/that nhấn mạnh người phản đối. Object to + V-ing nên tidying, không tidy. Hai cách đều 6 từ, gồm OBJECTED; up đã cho sẵn, không lặp lại.",
+      "explanation": "Câu chẻ It was Nam who/that nhấn mạnh người phản đối. Object to + V-ing nên tidying, không tidy.",
       "prefix": "It",
-      "suffix": "up after the party.",
-      "fullSentence": "It was Nam who objected to tidying up after the party."
+      "suffix": "up after the party",
+      "fullSentence": "It was Nam who objected to tidying up after the party",
+      "keyword": "OBJECTED",
+      "answerPrefix": "It",
+      "answerSuffix": "up after the party",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "was Nam who objected to tidying"
     },
     {
       "globalNumber": 95,
@@ -1132,10 +1156,16 @@
         "difficulty in making ends meet without"
       ],
       "displayAnswer": "difficulty making ends meet without / difficulty in making ends meet without",
-      "explanation": "Have difficulty (in) doing something = khó làm gì; make ends meet = kiếm đủ để trang trải. Without thể hiện thiếu hỗ trợ của bố mẹ. Cụm 5 hoặc 6 từ, chứa ENDS và không đổi nghĩa thành hoàn toàn không thể sống.",
+      "explanation": "Have difficulty (in) doing something = khó làm gì; make ends meet = kiếm đủ để trang trải. Without thể hiện thiếu hỗ trợ của bố mẹ.",
       "prefix": "Like many other students, Phong would have great",
-      "suffix": "the help of his parents.",
-      "fullSentence": "Like many other students, Phong would have great difficulty making ends meet without the help of his parents."
+      "suffix": "the help of his parents",
+      "fullSentence": "Like many other students, Phong would have great difficulty making ends meet without the help of his parents",
+      "keyword": "ENDS",
+      "answerPrefix": "Like many other students, Phong would have great",
+      "answerSuffix": "the help of his parents",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "difficulty making ends meet without"
     },
     {
       "globalNumber": 96,
@@ -1148,10 +1178,16 @@
         "to put off making a decision"
       ],
       "displayAnswer": "to put off its decision / to put its decision off / to put off making its decision / to put off making a decision",
-      "explanation": "Put off = hoãn. Sau decided dùng to V; có thể đặt tân ngữ giữa put và off hoặc sau off. Các cụm mẫu có 5–6 từ, giữ nguyên PUT và nghĩa hoãn quyết định tới thứ Sáu.",
+      "explanation": "Put off = hoãn. Sau decided dùng to V; có thể đặt tân ngữ giữa put và off hoặc sau off.",
       "prefix": "The committee decided",
-      "suffix": "until Friday.",
-      "fullSentence": "The committee decided to put off its decision until Friday."
+      "suffix": "until Friday",
+      "fullSentence": "The committee decided to put off its decision until Friday",
+      "keyword": "PUT",
+      "answerPrefix": "The committee decided",
+      "answerSuffix": "until Friday",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to put off its decision"
     },
     {
       "globalNumber": 97,
@@ -1163,10 +1199,16 @@
         "never occurred to me"
       ],
       "displayAnswer": "had not occurred to me / had never occurred to me / never occurred to me",
-      "explanation": "It occurs to someone that/how ... = ai chợt nghĩ hoặc nhận ra điều gì. Dạng phủ định giữ ý tôi đã không nhận ra chi phí sửa chữa sẽ cao đến đâu. Các cụm có 4–5 từ, nhưng phải giữ OCCURRED nguyên dạng; vì vậy did not occur to me không đáp ứng từ khóa và không được tính.",
+      "explanation": "It occurs to someone that/how … = ai chợt nghĩ hoặc nhận ra điều gì. Dạng phủ định giữ ý tôi đã không nhận ra chi phí sửa chữa sẽ cao đến đâu.",
       "prefix": "It",
-      "suffix": "how expensive the repairs would be.",
-      "fullSentence": "It had not occurred to me how expensive the repairs would be."
+      "suffix": "how expensive the repairs would be",
+      "fullSentence": "It had not occurred to me how expensive the repairs would be",
+      "keyword": "OCCURRED",
+      "answerPrefix": "It",
+      "answerSuffix": "how expensive the repairs would be",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "had not occurred to me"
     },
     {
       "globalNumber": 98,
@@ -1175,15 +1217,20 @@
       "acceptedAnswers": [
         "little chance of Hoa forgetting",
         "little chance of Hoa's forgetting",
-        "little chance of Hoa’s forgetting",
         "little chance that Hoa will forget",
         "not much chance of Hoa forgetting"
       ],
-      "displayAnswer": "little chance of Hoa forgetting / little chance of Hoa's forgetting / little chance of Hoa’s forgetting / little chance that Hoa will forget / not much chance of Hoa forgetting",
-      "explanation": "Little chance of + danh từ/V-ing hoặc little chance that + mệnh đề diễn tả khả năng thấp. Không dùng no chance vì sẽ chuyển unlikely thành hoàn toàn không thể xảy ra. Các phương án mẫu có 5–6 từ và giữ CHANCE.",
+      "displayAnswer": "little chance of Hoa forgetting / little chance of Hoa's forgetting / little chance that Hoa will forget / not much chance of Hoa forgetting",
+      "explanation": "Little chance of + danh từ/V-ing hoặc little chance that + mệnh đề diễn tả khả năng thấp. Không dùng no chance vì sẽ chuyển unlikely thành hoàn toàn không thể xảy ra.",
       "prefix": "There is",
-      "suffix": "such an important appointment.",
-      "fullSentence": "There is little chance of Hoa forgetting such an important appointment."
+      "suffix": "such an important appointment",
+      "fullSentence": "There is little chance of Hoa forgetting such an important appointment",
+      "keyword": "CHANCE",
+      "answerPrefix": "There is",
+      "answerSuffix": "such an important appointment",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "little chance of Hoa forgetting"
     },
     {
       "globalNumber": 99,
@@ -1194,10 +1241,16 @@
         "pressed ahead with"
       ],
       "displayAnswer": "pressed on with / pressed ahead with",
-      "explanation": "Press on/ahead with something = tiếp tục kiên trì thực hiện dù gặp khó khăn. Câu kể quá khứ nên dùng pressed. Điền 3 từ, giữ nguyên PRESSED; không lặp the project đã có sẵn.",
+      "explanation": "Press on/ahead with something = tiếp tục kiên trì thực hiện dù gặp khó khăn. Câu kể quá khứ nên dùng pressed.",
       "prefix": "Despite many setbacks, the team",
-      "suffix": "the project.",
-      "fullSentence": "Despite many setbacks, the team pressed on with the project."
+      "suffix": "the project",
+      "fullSentence": "Despite many setbacks, the team pressed on with the project",
+      "keyword": "PRESSED",
+      "answerPrefix": "Despite many setbacks, the team",
+      "answerSuffix": "the project",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "pressed on with"
     },
     {
       "globalNumber": 100,
@@ -1208,12 +1261,18 @@
         "was taken by surprise"
       ],
       "displayAnswer": "was taken aback / was taken by surprise",
-      "explanation": "Be taken aback/be taken by surprise = bị bất ngờ. Nobody expected ... có thể diễn đạt là everyone was taken aback/by surprise. Everyone là chủ ngữ số ít nên dùng was; hai cách điền có 3 hoặc 5 từ và giữ TAKEN.",
+      "explanation": "Be taken aback/be taken by surprise = bị bất ngờ. Nobody expected … có thể diễn đạt là everyone was taken aback/by surprise.",
       "prefix": "Everyone",
-      "suffix": "by the sudden change in the rules.",
-      "fullSentence": "Everyone was taken aback by the sudden change in the rules."
+      "suffix": "by the sudden change in the rules",
+      "fullSentence": "Everyone was taken aback by the sudden change in the rules",
+      "keyword": "TAKEN",
+      "answerPrefix": "Everyone",
+      "answerSuffix": "by the sudden change in the rules",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "was taken aback"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

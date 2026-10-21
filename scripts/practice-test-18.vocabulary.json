@@ -10,7 +10,11 @@
       "usage": "cannot have slept/seen/known",
       "example": "He looks exhausted. He cannot have slept well.",
       "translation": "Anh ấy trông kiệt sức. Chắc anh ấy đã không ngủ ngon.",
-      "family": "can; cannot; cannot have + past participle"
+      "family": "can; cannot; cannot have + past participle",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -21,7 +25,11 @@
       "usage": "go in for an exam/a competition",
       "example": "She is going in for a language exam next month.",
       "translation": "Cô ấy sẽ dự một kỳ thi ngôn ngữ vào tháng tới.",
-      "family": "enter/sit an exam; take part in a competition"
+      "family": "enter/sit an exam; take part in a competition",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 8,
@@ -32,7 +40,11 @@
       "usage": "narrow down the options/list; narrow it down to…",
       "example": "We narrowed the list down to three candidates.",
       "translation": "Chúng tôi rút danh sách xuống còn ba ứng viên.",
-      "family": "narrow (adj/v); narrowing (n); shortlist (n/v)"
+      "family": "narrow (adj/v); narrowing (n); shortlist (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -43,7 +55,11 @@
       "usage": "but for + noun, S + would have + V3",
       "example": "But for your advice, I would have made a costly mistake.",
       "translation": "Nếu không nhờ lời khuyên của bạn, tôi đã mắc sai lầm tốn kém.",
-      "family": "without; if it had not been for"
+      "family": "without; if it had not been for",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 10,
@@ -54,7 +70,11 @@
       "usage": "work closely with a team/organisation",
       "example": "The teachers work closely with parents.",
       "translation": "Các giáo viên phối hợp chặt chẽ với phụ huynh.",
-      "family": "close (adj); closely (adv); cooperation (n)"
+      "family": "close (adj); closely (adv); cooperation (n)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 13,
@@ -65,7 +85,11 @@
       "usage": "irrespective of age/background/cost",
       "example": "All members can vote, irrespective of age.",
       "translation": "Mọi thành viên đều có thể bỏ phiếu, bất kể tuổi tác.",
-      "family": "regardless of; irrespective (adj trong cụm cố định)"
+      "family": "regardless of; irrespective (adj trong cụm cố định)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 20,
@@ -76,7 +100,11 @@
       "usage": "an electrical/household appliance",
       "example": "The shop repairs household appliances.",
       "translation": "Cửa hàng sửa các thiết bị gia dụng.",
-      "family": "appliance – appliances; equipment (n không đếm được)"
+      "family": "appliance – appliances; equipment (n không đếm được)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 24,
@@ -87,7 +115,11 @@
       "usage": "the restoration of a building; a restoration project",
       "example": "The restoration of the old theatre took two years.",
       "translation": "Việc trùng tu nhà hát cũ kéo dài hai năm.",
-      "family": "restore (v); restoration (n); restorative (adj)"
+      "family": "restore (v); restoration (n); restorative (adj)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 25,
@@ -98,7 +130,11 @@
       "usage": "be taken aback by/at something",
       "example": "I was taken aback by her sudden resignation.",
       "translation": "Tôi sửng sốt trước việc cô ấy đột ngột từ chức.",
-      "family": "take – took – taken; surprised (adj); astonished (adj)"
+      "family": "take – took – taken; surprised (adj); astonished (adj)",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 26,
@@ -109,7 +145,11 @@
       "usage": "on the grounds that + clause",
       "example": "The request was refused on the grounds that it was incomplete.",
       "translation": "Yêu cầu bị từ chối vì chưa đầy đủ.",
-      "family": "grounds (n số nhiều: lý do); groundless (adj: vô căn cứ)"
+      "family": "grounds (n số nhiều: lý do); groundless (adj: vô căn cứ)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 27,
@@ -120,7 +160,11 @@
       "usage": "meet the needs of someone; meet requirements",
       "example": "The course meets the needs of beginners.",
       "translation": "Khoá học đáp ứng nhu cầu của người mới bắt đầu.",
-      "family": "meet – met – met; need (n/v); requirement (n)"
+      "family": "meet – met – met; need (n/v); requirement (n)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -131,7 +175,11 @@
       "usage": "weigh up the pros and cons of something",
       "example": "We discussed the pros and cons of moving.",
       "translation": "Chúng tôi bàn về các mặt lợi và hại của việc chuyển nhà.",
-      "family": "advantage/disadvantage; benefit/drawback"
+      "family": "advantage/disadvantage; benefit/drawback",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 30,
@@ -142,7 +190,11 @@
       "usage": "an irrigation system; irrigation water",
       "example": "The farm installed a new irrigation system.",
       "translation": "Trang trại lắp đặt một hệ thống tưới mới.",
-      "family": "irrigate (v); irrigation (n); irrigated (adj)"
+      "family": "irrigate (v); irrigation (n); irrigated (adj)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 31,
@@ -153,7 +205,11 @@
       "usage": "almost invariably; invariably happen/follow",
       "example": "The meeting almost invariably starts late.",
       "translation": "Cuộc họp gần như lần nào cũng bắt đầu muộn.",
-      "family": "vary (v); variable (adj); variation (n); invariable (adj)"
+      "family": "vary (v); variable (adj); variation (n); invariable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 32,
@@ -164,7 +220,11 @@
       "usage": "an environmental pressure group; pressure groups campaign for…",
       "example": "The pressure group called for cleaner transport.",
       "translation": "Nhóm vận động kêu gọi giao thông sạch hơn.",
-      "family": "press (v); pressure (n/v); campaign (n/v)"
+      "family": "press (v); pressure (n/v); campaign (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 33,
@@ -175,7 +235,11 @@
       "usage": "excessive demand/costs/noise",
       "example": "Excessive noise made it hard to concentrate.",
       "translation": "Tiếng ồn quá mức khiến việc tập trung trở nên khó khăn.",
-      "family": "exceed (v); excess (n); excessive (adj); excessively (adv)"
+      "family": "exceed (v); excess (n); excessive (adj); excessively (adv)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 35,
@@ -186,7 +250,11 @@
       "usage": "face/receive scathing criticism",
       "example": "The plan faced scathing criticism from residents.",
       "translation": "Kế hoạch vấp phải sự chỉ trích gay gắt từ cư dân.",
-      "family": "critic (n); criticise/criticize (v); criticism (n); critical (adj)"
+      "family": "critic (n); criticise/criticize (v); criticism (n); critical (adj)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 36,
@@ -197,7 +265,11 @@
       "usage": "an unbiased report/opinion/assessment",
       "example": "We need an unbiased assessment of both proposals.",
       "translation": "Chúng ta cần đánh giá không thiên vị cả hai đề xuất.",
-      "family": "bias (n/v); biased/unbiased (adj)"
+      "family": "bias (n/v); biased/unbiased (adj)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 37,
@@ -208,7 +280,11 @@
       "usage": "untangle a problem; untangle the facts",
       "example": "The article helps readers untangle the debate.",
       "translation": "Bài viết giúp độc giả hiểu rõ cuộc tranh luận phức tạp.",
-      "family": "tangle (n/v); tangled (adj); untangle (v)"
+      "family": "tangle (n/v); tangled (adj); untangle (v)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 39,
@@ -219,7 +295,11 @@
       "usage": "in-depth knowledge/analysis; study something in depth",
       "example": "The report provides an in-depth analysis of the issue.",
       "translation": "Báo cáo đưa ra phân tích chuyên sâu về vấn đề.",
-      "family": "deep (adj); depth (n); deepen (v); deeply (adv)"
+      "family": "deep (adj); depth (n); deepen (v); deeply (adv)",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 40,
@@ -230,7 +310,11 @@
       "usage": "unsurpassed quality; unsurpassed for something",
       "example": "The guide praised the hotel's unsurpassed service.",
       "translation": "Cuốn hướng dẫn ca ngợi dịch vụ khó có gì sánh bằng của khách sạn.",
-      "family": "surpass (v); surpassed (V3); unsurpassed (adj)"
+      "family": "surpass (v); surpassed (V3); unsurpassed (adj)",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 41,
@@ -241,7 +325,11 @@
       "usage": "a contentious issue/debate/proposal",
       "example": "The new parking rule became a contentious issue.",
       "translation": "Quy định đỗ xe mới trở thành vấn đề gây tranh cãi.",
-      "family": "contend (v); contention (n); contentious (adj); contender (n)"
+      "family": "contend (v); contention (n); contentious (adj); contender (n)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 42,
@@ -252,7 +340,11 @@
       "usage": "refugees seek safety; support refugees",
       "example": "Volunteers provided language lessons for refugees.",
       "translation": "Tình nguyện viên tổ chức lớp học ngôn ngữ cho người tị nạn.",
-      "family": "refuge (n); refugee (n); shelter (n/v)"
+      "family": "refuge (n); refugee (n); shelter (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 43,
@@ -263,7 +355,11 @@
       "usage": "a subscription to a magazine; renew a subscription",
       "example": "She renewed her subscription to the magazine.",
       "translation": "Cô ấy gia hạn đăng ký tạp chí.",
-      "family": "subscribe (v); subscriber (n); subscription (n)"
+      "family": "subscribe (v); subscriber (n); subscription (n)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 53,
@@ -274,7 +370,11 @@
       "usage": "make a fuss about/over something",
       "example": "He made a fuss about the small delay.",
       "translation": "Anh ấy làm ầm lên vì sự chậm trễ nhỏ.",
-      "family": "fuss (n/v); fussy (adj); fussily (adv)"
+      "family": "fuss (n/v); fussy (adj); fussily (adv)",
+      "teacherSelected": true,
+      "questions": [
+        53
+      ]
     },
     {
       "question": 60,
@@ -285,7 +385,11 @@
       "usage": "customary practice; it is customary to…",
       "example": "She greeted us with her customary smile.",
       "translation": "Cô ấy chào chúng tôi bằng nụ cười quen thuộc.",
-      "family": "custom (n); customary (adj); customarily (adv)"
+      "family": "custom (n); customary (adj); customarily (adv)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 91,
@@ -296,7 +400,11 @@
       "usage": "It goes without saying that + clause",
       "example": "It goes without saying that everyone deserves respect.",
       "translation": "Hiển nhiên là ai cũng xứng đáng được tôn trọng.",
-      "family": "say – said – said; saying (n); unspoken (adj)"
+      "family": "say – said – said; saying (n); unspoken (adj)",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ]
     },
     {
       "question": 93,
@@ -307,7 +415,11 @@
       "usage": "be all ears when someone speaks",
       "example": "Tell me your idea—I'm all ears.",
       "translation": "Hãy kể ý tưởng của bạn đi, tôi đang chăm chú nghe đây.",
-      "family": "ear (n); listen (v); attentive (adj); attentively (adv)"
+      "family": "ear (n); listen (v); attentive (adj); attentively (adv)",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ]
     },
     {
       "question": 96,
@@ -318,7 +430,11 @@
       "usage": "make allowances for someone's inexperience",
       "example": "We should make allowances for his lack of experience.",
       "translation": "Chúng ta nên thông cảm vì anh ấy còn thiếu kinh nghiệm.",
-      "family": "allow (v); allowance (n); allowable (adj)"
+      "family": "allow (v); allowance (n); allowable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        96
+      ]
     },
     {
       "question": 97,
@@ -329,7 +445,11 @@
       "usage": "be bound to succeed/fail/happen",
       "example": "With so little time, mistakes are bound to happen.",
       "translation": "Với quá ít thời gian như vậy, sai sót rất dễ xảy ra.",
-      "family": "bind – bound – bound; bound (adj); binding (adj)"
+      "family": "bind – bound – bound; bound (adj); binding (adj)",
+      "teacherSelected": true,
+      "questions": [
+        97
+      ]
     }
   ]
 }

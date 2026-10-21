@@ -10,7 +10,11 @@
       "usage": "All things considered, + nhận xét",
       "example": "All things considered, the plan is worth trying.",
       "translation": "Xét mọi mặt, kế hoạch này đáng để thử.",
-      "family": "consider (v); consideration (n); considered (adj)"
+      "family": "consider (v); consideration (n); considered (adj)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 7,
@@ -21,7 +25,11 @@
       "usage": "buy/take enough provisions for a trip",
       "example": "We packed provisions for the weekend.",
       "translation": "Chúng tôi chuẩn bị lương thực và đồ dùng cho cuối tuần.",
-      "family": "provide (v); provision (n/v); provisions (n, plural)"
+      "family": "provide (v); provision (n/v); provisions (n, plural)",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 8,
@@ -32,7 +40,11 @@
       "usage": "in celebration of a birthday/an anniversary",
       "example": "They held a dinner in celebration of her success.",
       "translation": "Họ tổ chức một bữa tối để chúc mừng thành công của cô ấy.",
-      "family": "celebrate (v); celebration (n); celebratory (adj)"
+      "family": "celebrate (v); celebration (n); celebratory (adj)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -43,7 +55,11 @@
       "usage": "a problem stems from a lack of information",
       "example": "The confusion stemmed from unclear instructions.",
       "translation": "Sự nhầm lẫn bắt nguồn từ hướng dẫn không rõ ràng.",
-      "family": "stem (v/n); origin (n); originate (v)"
+      "family": "stem (v/n); origin (n); originate (v)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 10,
@@ -54,7 +70,11 @@
       "usage": "be caught in / break a vicious circle",
       "example": "Borrowing to repay interest trapped him in a vicious circle.",
       "translation": "Vay tiền để trả lãi khiến anh ấy mắc vào vòng luẩn quẩn.",
-      "family": "vicious (adj); viciously (adv); circle (n)"
+      "family": "vicious (adj); viciously (adv); circle (n)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 11,
@@ -65,7 +85,11 @@
       "usage": "at the outset of a project/course",
       "example": "The goals were explained at the outset of the course.",
       "translation": "Các mục tiêu được giải thích ngay đầu khóa học.",
-      "family": "outset (n); start (n/v); beginning (n)"
+      "family": "outset (n); start (n/v); beginning (n)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 15,
@@ -76,7 +100,11 @@
       "usage": "normal wear and tear; signs of wear and tear",
       "example": "The old chairs showed signs of wear and tear.",
       "translation": "Những chiếc ghế cũ có dấu hiệu hao mòn.",
-      "family": "wear – wore – worn; tear – tore – torn; worn (adj)"
+      "family": "wear – wore – worn; tear – tore – torn; worn (adj)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 19,
@@ -87,7 +115,11 @@
       "usage": "be born with a silver spoon in his/her mouth",
       "example": "She was not born with a silver spoon in her mouth.",
       "translation": "Cô ấy không sinh ra trong gia đình giàu có.",
-      "family": "birth (n); born (participle); privilege (n)"
+      "family": "birth (n); born (participle); privilege (n)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 21,
@@ -98,7 +130,11 @@
       "usage": "have not ... as yet; as yet unknown",
       "example": "We have received no reply as yet.",
       "translation": "Cho đến nay chúng tôi vẫn chưa nhận được trả lời.",
-      "family": "yet (adv); so far (phrase); up to now (phrase)"
+      "family": "yet (adv); so far (phrase); up to now (phrase)",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 22,
@@ -109,7 +145,11 @@
       "usage": "need to / have to pull up your socks",
       "example": "You need to pull up your socks before the next test.",
       "translation": "Bạn cần cố gắng hơn trước bài kiểm tra tiếp theo.",
-      "family": "effort (n); improve (v); improvement (n)"
+      "family": "effort (n); improve (v); improvement (n)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -120,7 +160,11 @@
       "usage": "feel self-conscious about something",
       "example": "He felt self-conscious about his new haircut.",
       "translation": "Anh ấy thấy ngượng về kiểu tóc mới của mình.",
-      "family": "self-consciousness (n); self-consciously (adv); self-confident (adj, đối chiếu)"
+      "family": "self-consciousness (n); self-consciously (adv); self-confident (adj, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -131,7 +175,11 @@
       "usage": "come into money/a fortune/an inheritance",
       "example": "She came into a fortune after her uncle died.",
       "translation": "Cô ấy thừa hưởng một tài sản lớn sau khi chú mất.",
-      "family": "come – came – come; inherit (v); inheritance (n)"
+      "family": "come – came – come; inherit (v); inheritance (n)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 26,
@@ -142,7 +190,11 @@
       "usage": "keep/adopt a low profile",
       "example": "He kept a low profile after the dispute.",
       "translation": "Anh ấy hạn chế xuất hiện nổi bật sau cuộc tranh cãi.",
-      "family": "profile (n); low-profile (adj); high-profile (adj)"
+      "family": "profile (n); low-profile (adj); high-profile (adj)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 27,
@@ -153,7 +205,11 @@
       "usage": "never put a foot wrong",
       "example": "During the performance, she never put a foot wrong.",
       "translation": "Trong buổi biểu diễn, cô ấy không mắc một lỗi nào.",
-      "family": "foot (n), plural feet; mistake (n); faultless (adj)"
+      "family": "foot (n), plural feet; mistake (n); faultless (adj)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -164,7 +220,11 @@
       "usage": "give someone / receive a clean bill of health",
       "example": "The vet gave the dog a clean bill of health.",
       "translation": "Bác sĩ thú y xác nhận chú chó có sức khỏe tốt sau kiểm tra.",
-      "family": "health (n); healthy (adj); check-up (n)"
+      "family": "health (n); healthy (adj); check-up (n)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 30,
@@ -175,7 +235,11 @@
       "usage": "experience / go through growing pains",
       "example": "The small company experienced growing pains as it expanded.",
       "translation": "Công ty nhỏ gặp những khó khăn trong quá trình mở rộng.",
-      "family": "grow – grew – grown; growth (n); growing (adj/participle)"
+      "family": "grow – grew – grown; growth (n); growing (adj/participle)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 33,
@@ -186,7 +250,11 @@
       "usage": "a slim chance of success/finding work",
       "example": "There is only a slim chance of success.",
       "translation": "Chỉ có một khả năng thành công rất nhỏ.",
-      "family": "slim (adj); chance (n); possibility (n)"
+      "family": "slim (adj); chance (n); possibility (n)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 37,
@@ -197,7 +265,11 @@
       "usage": "a disinterested observer/adviser/third party",
       "example": "They asked a disinterested adviser to review the dispute.",
       "translation": "Họ nhờ một cố vấn vô tư xem xét tranh chấp.",
-      "family": "interest (n/v); disinterestedness (n); uninterested (adj, đối chiếu)"
+      "family": "interest (n/v); disinterestedness (n); uninterested (adj, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 38,
@@ -208,7 +280,11 @@
       "usage": "be immaterial to; it is immaterial whether ...",
       "example": "The colour is immaterial to my decision.",
       "translation": "Màu sắc không ảnh hưởng đến quyết định của tôi.",
-      "family": "material (adj); immaterial (adj); materiality (n)"
+      "family": "material (adj); immaterial (adj); materiality (n)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 41,
@@ -219,7 +295,11 @@
       "usage": "disunity within a group; overcome disunity",
       "example": "Disunity within the team slowed the project.",
       "translation": "Sự thiếu đoàn kết trong nhóm làm dự án chậm lại.",
-      "family": "unite (v); unity (n); united (adj); disunity (n)"
+      "family": "unite (v); unity (n); united (adj); disunity (n)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 42,
@@ -230,7 +310,11 @@
       "usage": "a clear restatement of a policy/an argument",
       "example": "The final paragraph is a restatement of the main argument.",
       "translation": "Đoạn cuối diễn đạt lại lập luận chính.",
-      "family": "state (v); statement (n); restate (v); restatement (n)"
+      "family": "state (v); statement (n); restate (v); restatement (n)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 43,
@@ -241,7 +325,11 @@
       "usage": "a praiseworthy attempt/effort",
       "example": "Their attempt to help was praiseworthy.",
       "translation": "Nỗ lực giúp đỡ của họ đáng được khen ngợi.",
-      "family": "praise (n/v); praiseworthy (adj); worthy (adj)"
+      "family": "praise (n/v); praiseworthy (adj); worthy (adj)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 44,
@@ -252,7 +340,11 @@
       "usage": "a misdiagnosis of a fault/problem",
       "example": "The initial misdiagnosis delayed the repair.",
       "translation": "Việc xác định sai lỗi ban đầu làm chậm quá trình sửa chữa.",
-      "family": "diagnose (v); diagnosis (n); misdiagnose (v); misdiagnosis (n)"
+      "family": "diagnose (v); diagnosis (n); misdiagnose (v); misdiagnosis (n)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 45,
@@ -263,7 +355,11 @@
       "usage": "a train derails; derail a plan/project",
       "example": "A last-minute disagreement derailed the plan.",
       "translation": "Một bất đồng phút cuối khiến kế hoạch đổ vỡ.",
-      "family": "rail (n); derail (v); derailment (n)"
+      "family": "rail (n); derail (v); derailment (n)",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 65,
@@ -274,7 +370,11 @@
       "usage": "not ... , let alone ...",
       "example": "He cannot afford a bicycle, let alone a car.",
       "translation": "Anh ấy không đủ tiền mua xe đạp, huống chi ô tô.",
-      "family": "alone (adv/adj); not to mention (phrase, nghĩa tùy ngữ cảnh)"
+      "family": "alone (adv/adj); not to mention (phrase, nghĩa tùy ngữ cảnh)",
+      "teacherSelected": true,
+      "questions": [
+        65
+      ]
     },
     {
       "question": 67,
@@ -285,7 +385,11 @@
       "usage": "ill-equipped for life / to handle a problem",
       "example": "They felt ill-equipped to manage the new system.",
       "translation": "Họ cảm thấy chưa đủ kỹ năng để quản lý hệ thống mới.",
-      "family": "equip (v); equipment (n); well-equipped (adj, trái nghĩa)"
+      "family": "equip (v); equipment (n); well-equipped (adj, trái nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        67
+      ]
     },
     {
       "question": 78,
@@ -296,7 +400,11 @@
       "usage": "retrievable information/data; be readily retrievable",
       "example": "The files are stored in a retrievable form.",
       "translation": "Các tệp được lưu ở dạng có thể truy xuất lại.",
-      "family": "retrieve (v); retrieval (n); retrievable (adj)"
+      "family": "retrieve (v); retrieval (n); retrievable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        78
+      ]
     },
     {
       "question": 87,
@@ -307,7 +415,11 @@
       "usage": "distance himself/herself/themselves from a policy",
       "example": "She distanced herself from the proposal.",
       "translation": "Cô ấy thể hiện mình không liên quan đến đề xuất đó.",
-      "family": "distance (n/v); distant (adj); distancing (n/participle)"
+      "family": "distance (n/v); distant (adj); distancing (n/participle)",
+      "teacherSelected": true,
+      "questions": [
+        87
+      ]
     },
     {
       "question": 94,
@@ -318,7 +430,11 @@
       "usage": "acquaint yourself with the rules/background",
       "example": "Please acquaint yourself with the instructions first.",
       "translation": "Hãy tìm hiểu các hướng dẫn trước.",
-      "family": "acquaint (v); acquainted (adj); acquaintance (n)"
+      "family": "acquaint (v); acquainted (adj); acquaintance (n)",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ]
     },
     {
       "question": 100,
@@ -329,7 +445,11 @@
       "usage": "weigh up the risks/options/pros and cons",
       "example": "We need to weigh up the risks before investing time.",
       "translation": "Chúng ta cần cân nhắc rủi ro trước khi dành thời gian vào việc đó.",
-      "family": "weigh (v); weight (n); consideration (n)"
+      "family": "weigh (v); weight (n); consideration (n)",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
     }
   ]
 }

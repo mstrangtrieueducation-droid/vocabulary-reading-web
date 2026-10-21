@@ -1,5 +1,5 @@
 {
-  "revision": "2026-10-04-detailed-vocabulary",
+  "revision": "2026-10-21-preserve-teacher-vocabulary",
   "tests": [
     {
       "test": 1,
@@ -13,7 +13,11 @@
           "usage": "persist in + N/V-ing; persist in trying = kiên trì thử; persist in a mistake = cứ tiếp tục sai.",
           "family": "persist (v); persistence (n: sự kiên trì); persistent (adj); persistently (adv).",
           "example": "She persisted in looking for a solution despite repeated failures.",
-          "translation": "Cô ấy kiên trì tìm giải pháp dù thất bại nhiều lần."
+          "translation": "Cô ấy kiên trì tìm giải pháp dù thất bại nhiều lần.",
+          "teacherSelected": true,
+          "questions": [
+            1
+          ]
         },
         {
           "term": "accustomed to / used to / acquainted with",
@@ -23,27 +27,41 @@
           "usage": "be/get accustomed to + N/V-ing; be/get used to + N/V-ing; be acquainted with + người/vấn đề. Used to + V lại chỉ thói quen trước đây.",
           "family": "accustom (v), accustomed (adj); acquaint (v), acquaintance (n). Used trong be used to là quen với.",
           "example": "She is used to working late and is acquainted with the new procedure.",
-          "translation": "Cô ấy quen làm việc muộn và đã biết quy trình mới."
+          "translation": "Cô ấy quen làm việc muộn và đã biết quy trình mới.",
+          "teacherSelected": true,
+          "questions": [
+            3
+          ]
         },
         {
-          "term": "(a) fat chance",
-          "meta": "idiom",
-          "meaning": "hầu như không có cơ hội",
-          "note": "Đây là cách nói thân mật, thường mang ý mỉa mai. Fat chance không có nghĩa “cơ hội lớn”; nó gần với little chance. Tránh dịch riêng từng từ theo nghĩa đen.",
-          "usage": "a fat chance of + N/V-ing; Fat chance! = Khó có chuyện đó lắm! Không nên dùng trong văn học thuật trang trọng.",
-          "family": "chance (n); chance of doing = khả năng làm được. Fat chance là thành ngữ cố định.",
-          "example": "There is a fat chance of finishing all this work in ten minutes.",
-          "translation": "Hầu như không có cơ hội làm xong toàn bộ việc này trong mười phút."
+          "question": 19,
+          "term": "a slim chance",
+          "meta": "noun phrase",
+          "meaning": "cơ hội rất nhỏ",
+          "note": "Slim đi với chance để nói khả năng xảy ra thấp. Ngữ cảnh các nhà máy đã đóng cửa cho thấy cơ hội tìm việc gần đó không lớn.",
+          "usage": "a slim chance of + N/V-ing; a slim chance that + mệnh đề",
+          "family": "chance (n); slim (adj); a good chance: cơ hội cao",
+          "example": "There is only a slim chance of finding a seat on this train.",
+          "translation": "Chỉ có một cơ hội rất nhỏ tìm được chỗ ngồi trên chuyến tàu này.",
+          "teacherSelected": true,
+          "questions": [
+            19
+          ]
         },
         {
-          "term": "asset",
-          "meta": "noun",
-          "meaning": "tài sản; người hoặc phẩm chất có giá trị",
-          "note": "Asset không chỉ là tiền hay nhà đất. Một kỹ năng hoặc người đóng góp tích cực cũng là an asset. Nghĩa được xác định qua đối tượng được nói đến.",
-          "usage": "financial assets = tài sản tài chính; be an asset to a team = có giá trị cho nhóm; a valuable asset.",
-          "family": "asset (n đếm được); assets (số nhiều). Liability có thể là gánh nặng hoặc khoản nợ, tùy ngữ cảnh.",
-          "example": "Her language skills are a valuable asset to the company.",
-          "translation": "Khả năng ngoại ngữ của cô ấy là một lợi thế quý giá cho công ty."
+          "question": 71,
+          "term": "phishing",
+          "meta": "uncountable noun",
+          "meaning": "lừa lấy thông tin qua email hoặc tin nhắn giả",
+          "note": "Kẻ lừa đảo giả làm một tổ chức đáng tin để dụ người nhận cung cấp mật khẩu hoặc thông tin tài khoản. Đây là chủ đề chính của bài, không phải mọi thư quảng cáo đều là phishing.",
+          "usage": "a phishing email; a phishing scam; recognise phishing attempts",
+          "family": "phish (v); scam (n/v); scammer (n)",
+          "example": "The message was part of a phishing scam.",
+          "translation": "Tin nhắn đó là một phần của vụ lừa lấy thông tin.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "launch",
@@ -63,17 +81,28 @@
           "usage": "allege that + mệnh đề; be alleged to do/have done; an allegation of fraud = cáo buộc gian lận.",
           "family": "allege (v); allegation (n); alleged (adj: bị cho là); allegedly (adv).",
           "example": "The report alleged that the company had ignored safety rules.",
-          "translation": "Báo cáo cáo buộc công ty đã phớt lờ quy định an toàn."
+          "translation": "Báo cáo cáo buộc công ty đã phớt lờ quy định an toàn.",
+          "teacherSelected": true,
+          "questions": [
+            24
+          ]
         },
         {
-          "term": "category / categorical / categorically",
+          "term": "category / categorical / categorically reject",
           "meta": "noun / adjective / adverb",
           "meaning": "nhóm, loại / dứt khoát / một cách dứt khoát",
-          "note": "Category chỉ cách phân nhóm. Categorical trong cụm categorical denial lại nghĩa là rõ ràng, dứt khoát, không phải “thuộc một nhóm”. Categorically thường bổ nghĩa cho deny hoặc reject.",
-          "usage": "fall into a category = thuộc một nhóm; a categorical denial = lời phủ nhận dứt khoát; categorically reject a claim.",
+          "note": "Category chỉ cách phân nhóm. Categorical trong cụm categorical denial lại nghĩa là rõ ràng, dứt khoát, không phải “thuộc một nhóm”. Categorically thường bổ nghĩa cho deny hoặc reject. Categorically reject/deny nghĩa là bác bỏ/phủ nhận dứt khoát; categorically bổ nghĩa cho động từ, không dùng categorical ở vị trí này.",
+          "usage": "fall into a category = thuộc một nhóm; a categorical denial = lời phủ nhận dứt khoát; categorically reject a claim. categorically reject a claim/an allegation: bác bỏ dứt khoát một lời khẳng định/cáo buộc.",
           "family": "category (n), categories (số nhiều), categorise/categorize (v); categorical (adj), categorically (adv).",
           "example": "The director categorically rejected the accusation.",
-          "translation": "Giám đốc bác bỏ dứt khoát lời cáo buộc."
+          "translation": "Giám đốc bác bỏ dứt khoát lời cáo buộc.",
+          "aliases": [
+            "categorically reject"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            24
+          ]
         },
         {
           "term": "advise",
@@ -83,7 +112,11 @@
           "usage": "advise someone to do; advise doing; advise against doing = khuyên không nên; a piece of advice = một lời khuyên.",
           "family": "advise (v); advice (n); adviser/advisor (n); advisable (adj: nên làm).",
           "example": "The teacher advised us to check our answers carefully.",
-          "translation": "Giáo viên khuyên chúng tôi kiểm tra kỹ đáp án."
+          "translation": "Giáo viên khuyên chúng tôi kiểm tra kỹ đáp án.",
+          "teacherSelected": true,
+          "questions": [
+            30
+          ]
         },
         {
           "term": "economise on / economize on",
@@ -93,7 +126,11 @@
           "usage": "economise on fuel/food/expenses; an economical method = cách tiết kiệm; economic growth = tăng trưởng kinh tế.",
           "family": "economise/economize (v); economy (n); economical (adj); economically (adv).",
           "example": "We can economise on electricity by switching off unused lights.",
-          "translation": "Chúng ta có thể tiết kiệm điện bằng cách tắt đèn không dùng."
+          "translation": "Chúng ta có thể tiết kiệm điện bằng cách tắt đèn không dùng.",
+          "teacherSelected": true,
+          "questions": [
+            39
+          ]
         },
         {
           "term": "technician / technologist",
@@ -103,7 +140,11 @@
           "usage": "a laboratory technician; a food technologist; technical skills = kỹ năng kỹ thuật; technological change = thay đổi công nghệ.",
           "family": "technique (n), technical (adj), technician (n); technology (n), technological (adj), technologist (n).",
           "example": "A technician repaired the equipment used by the food technologist.",
-          "translation": "Kỹ thuật viên sửa thiết bị mà chuyên gia công nghệ thực phẩm sử dụng."
+          "translation": "Kỹ thuật viên sửa thiết bị mà chuyên gia công nghệ thực phẩm sử dụng.",
+          "teacherSelected": true,
+          "questions": [
+            40
+          ]
         },
         {
           "term": "outnumber",
@@ -113,7 +154,11 @@
           "usage": "A outnumbers B; be outnumbered by; outnumber someone two to one = đông gấp đôi.",
           "family": "number (n/v); outnumber (v); outnumbered/outnumbering (dạng động từ).",
           "example": "Visitors outnumbered local residents during the festival.",
-          "translation": "Trong lễ hội, du khách đông hơn người dân địa phương."
+          "translation": "Trong lễ hội, du khách đông hơn người dân địa phương.",
+          "teacherSelected": true,
+          "questions": [
+            44
+          ]
         },
         {
           "term": "issue",
@@ -123,7 +168,11 @@
           "usage": "issue a warning/report/passport; address an issue = xử lý vấn đề; the latest issue of a magazine.",
           "family": "issue (n/v); issued (quá khứ); issuing (dạng -ing).",
           "example": "The authorities issued a warning about the approaching storm.",
-          "translation": "Nhà chức trách đưa ra cảnh báo về cơn bão đang đến."
+          "translation": "Nhà chức trách đưa ra cảnh báo về cơn bão đang đến.",
+          "teacherSelected": true,
+          "questions": [
+            58
+          ]
         },
         {
           "term": "give a second thought to",
@@ -133,7 +182,11 @@
           "usage": "give a second thought to + N/V-ing; give something a second thought; without a second thought = không đắn đo.",
           "family": "think–thought–thought (v); thought (n). Cụm này cần ghi nguyên cấu trúc.",
           "example": "Please give a second thought to leaving school so early.",
-          "translation": "Hãy cân nhắc thêm việc rời trường sớm như vậy."
+          "translation": "Hãy cân nhắc thêm việc rời trường sớm như vậy.",
+          "teacherSelected": true,
+          "questions": [
+            60
+          ]
         },
         {
           "term": "patrol",
@@ -143,7 +196,11 @@
           "usage": "patrol an area/street/border; be on patrol = đang tuần tra; a police patrol.",
           "family": "patrol (n/v); patrolled (quá khứ); patrolling (dạng -ing).",
           "example": "Officers patrol the park at night to keep visitors safe.",
-          "translation": "Nhân viên tuần tra công viên ban đêm để bảo vệ khách tham quan."
+          "translation": "Nhân viên tuần tra công viên ban đêm để bảo vệ khách tham quan.",
+          "teacherSelected": true,
+          "questions": [
+            64
+          ]
         },
         {
           "term": "recruit",
@@ -153,47 +210,71 @@
           "usage": "recruit staff/volunteers; recruit someone to do something; a new recruit.",
           "family": "recruit (v/n); recruitment (n); recruiter (n: người tuyển dụng).",
           "example": "The organisation recruited volunteers to help local families.",
-          "translation": "Tổ chức tuyển tình nguyện viên để giúp các gia đình địa phương."
+          "translation": "Tổ chức tuyển tình nguyện viên để giúp các gia đình địa phương.",
+          "teacherSelected": true,
+          "questions": [
+            65
+          ]
         },
         {
-          "term": "indispensable",
+          "question": 73,
+          "term": "get access to",
+          "meta": "verb phrase",
+          "meaning": "có được khả năng hoặc quyền truy cập",
+          "note": "Access chỉ khả năng đi vào hay sử dụng một nơi, dịch vụ hoặc thông tin. Trong bài, kẻ lừa đảo có thể vào tài khoản của nạn nhân sau khi lấy được thông tin.",
+          "usage": "get/gain access to an account; have access to information",
+          "family": "access (n/v); accessible (adj); inaccessible (adj)",
+          "example": "Students can get access to the online library.",
+          "translation": "Học sinh có thể truy cập thư viện trực tuyến.",
+          "teacherSelected": true,
+          "questions": [
+            73
+          ]
+        },
+        {
+          "question": 75,
+          "term": "legitimate",
           "meta": "adjective",
-          "meaning": "không thể thiếu",
-          "note": "Từ này mạnh hơn useful: thiếu điều đó thì công việc rất khó hoặc không thể thực hiện tốt. Người, kỹ năng hoặc dụng cụ đều có thể được mô tả là indispensable.",
-          "usage": "be indispensable to someone/something; be indispensable for doing; an indispensable tool.",
-          "family": "indispensable (adj); indispensable không đồng nghĩa với dispensable (có thể thiếu/bỏ được).",
-          "example": "Reliable information is indispensable for making sound decisions.",
-          "translation": "Thông tin đáng tin cậy là yếu tố không thể thiếu để quyết định đúng đắn."
+          "meaning": "thật, hợp pháp; chính đáng",
+          "note": "Legitimate companies là những công ty thật và hợp pháp, đối lập với người giả mạo họ. Trong ngữ cảnh này, genuine là từ gần nghĩa; không có nghĩa công ty lớn hay giàu.",
+          "usage": "a legitimate company; a legitimate reason; legitimate concerns",
+          "family": "legitimacy (n); legitimately (adv); illegitimate (adj)",
+          "example": "Use the company’s legitimate website to check the message.",
+          "translation": "Hãy dùng trang web thật của công ty để kiểm tra tin nhắn.",
+          "teacherSelected": true,
+          "questions": [
+            75
+          ]
         },
         {
-          "term": "lethal / fatal",
-          "meta": "adjectives",
-          "meaning": "có khả năng gây chết người / gây tử vong",
-          "note": "Lethal thường nhấn mạnh khả năng giết chết, như một liều độc hoặc vũ khí. Fatal thường mô tả hậu quả dẫn tới cái chết. Fatal còn có nghĩa bóng tai hại đến mức làm việc gì thất bại.",
-          "usage": "a lethal dose/weapon; a fatal accident/injury; a fatal mistake = sai lầm chí mạng.",
-          "family": "lethal (adj), lethally (adv); fatal (adj), fatally (adv), fatality (n: ca tử vong).",
-          "example": "The report identified a potentially lethal defect in the device.",
-          "translation": "Báo cáo phát hiện một lỗi của thiết bị có thể gây chết người."
+          "question": 78,
+          "term": "back up",
+          "meta": "phrasal verb",
+          "meaning": "sao lưu dữ liệu",
+          "note": "Back up là tạo thêm bản sao để có thể khôi phục dữ liệu khi bản chính mất hoặc hỏng. Với đại từ, đặt tân ngữ vào giữa: back it up.",
+          "usage": "back up your files; back them up; a backup copy",
+          "family": "backup (n/adj); data (n); restore (v: khôi phục)",
+          "example": "Remember to back up your files regularly.",
+          "translation": "Hãy nhớ sao lưu các tệp thường xuyên.",
+          "teacherSelected": true,
+          "questions": [
+            78
+          ]
         },
         {
-          "term": "radiation",
-          "meta": "noun",
-          "meaning": "bức xạ; sự phát xạ",
-          "note": "Radiation chỉ năng lượng truyền đi dưới dạng sóng hoặc hạt. Trong bài đọc, từ này nói hiện tượng bức xạ; tự bản thân từ không cho biết loại, liều hay mức nguy hiểm. Không dịch mặc định thành “chất phóng xạ”.",
-          "usage": "exposure to radiation = tiếp xúc bức xạ; emit radiation = phát bức xạ; solar radiation.",
-          "family": "radiate (v); radiation (n); radiant (adj). Radioactive là có tính phóng xạ, phạm vi nghĩa khác.",
-          "example": "The instrument measures radiation emitted by the material.",
-          "translation": "Thiết bị đo bức xạ do vật liệu phát ra."
-        },
-        {
-          "term": "innovation",
-          "meta": "noun",
-          "meaning": "sự đổi mới; một cải tiến",
-          "note": "Innovation có thể là cách làm mới hoặc ứng dụng mới giúp cải thiện điều có sẵn. Invention thiên về tạo ra thứ mới. Một đổi mới có thể dựa trên công nghệ đã tồn tại, không nhất thiết là phát minh hoàn toàn mới.",
-          "usage": "technological innovation; introduce an innovation; encourage innovation.",
-          "family": "innovate (v); innovation (n); innovative (adj); innovator (n).",
-          "example": "The new design is an innovation that makes the device easier to use.",
-          "translation": "Thiết kế mới là một cải tiến giúp thiết bị dễ sử dụng hơn."
+          "question": 72,
+          "term": "identity theft",
+          "meta": "noun phrase",
+          "meaning": "hành vi đánh cắp và sử dụng thông tin nhận dạng",
+          "note": "Kẻ xấu dùng thông tin cá nhân của người khác để giả danh hoặc thực hiện giao dịch. Theft là hành vi trộm cắp; không phải việc chủ tài khoản đơn thuần quên mật khẩu.",
+          "usage": "protect yourself from identity theft; a victim of identity theft",
+          "family": "identity (n); identify (v); theft (n); thief (n)",
+          "example": "Stolen personal details can lead to identity theft.",
+          "translation": "Thông tin cá nhân bị lấy cắp có thể dẫn đến việc bị mạo danh.",
+          "teacherSelected": true,
+          "questions": [
+            72
+          ]
         },
         {
           "term": "claim",
@@ -203,7 +284,11 @@
           "usage": "claim that + mệnh đề; claim to do; claim to have done; make a claim; claim compensation.",
           "family": "claim (n/v); claimant (n: người yêu cầu quyền lợi); unclaimed (adj).",
           "example": "He claimed to have sent the documents the previous day.",
-          "translation": "Anh ấy khẳng định đã gửi tài liệu hôm trước."
+          "translation": "Anh ấy khẳng định đã gửi tài liệu hôm trước.",
+          "teacherSelected": true,
+          "questions": [
+            90
+          ]
         },
         {
           "term": "give someone an introduction to",
@@ -213,7 +298,14 @@
           "usage": "give someone an introduction to a topic/group; introduce A to B; an introduction to biology.",
           "family": "introduce (v); introduction (n); introductory (adj: mang tính mở đầu).",
           "example": "The guide gave us a brief introduction to the research team.",
-          "translation": "Người hướng dẫn giới thiệu ngắn gọn cho chúng tôi về nhóm nghiên cứu."
+          "translation": "Người hướng dẫn giới thiệu ngắn gọn cho chúng tôi về nhóm nghiên cứu.",
+          "aliases": [
+            "give sb an introduction to sb"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            93
+          ]
         },
         {
           "term": "inspect",
@@ -223,7 +315,11 @@
           "usage": "inspect goods/equipment/a building; carry out an inspection; inspect something for damage.",
           "family": "inspect (v); inspection (n); inspector (n).",
           "example": "The goods were inspected for damage before delivery.",
-          "translation": "Hàng hóa được kiểm tra hư hại trước khi giao."
+          "translation": "Hàng hóa được kiểm tra hư hại trước khi giao.",
+          "teacherSelected": true,
+          "questions": [
+            95
+          ]
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"
@@ -240,7 +336,11 @@
           "usage": "a live broadcast; perform live; watch something live",
           "family": "live (v): sống; alive (adj): còn sống; lively (adj): sôi nổi",
           "example": "We watched the concert live on television.",
-          "translation": "Chúng tôi xem buổi hòa nhạc được truyền hình trực tiếp."
+          "translation": "Chúng tôi xem buổi hòa nhạc được truyền hình trực tiếp.",
+          "teacherSelected": true,
+          "questions": [
+            6
+          ]
         },
         {
           "term": "modest",
@@ -250,7 +350,11 @@
           "usage": "be modest about something; a modest house; a modest increase",
           "family": "modesty (n): sự khiêm tốn; modestly (adv): một cách khiêm tốn, ở mức vừa phải",
           "example": "Despite her success, she still lives in a modest house.",
-          "translation": "Dù thành công, cô ấy vẫn sống trong một căn nhà giản dị."
+          "translation": "Dù thành công, cô ấy vẫn sống trong một căn nhà giản dị.",
+          "teacherSelected": true,
+          "questions": [
+            8
+          ]
         },
         {
           "term": "reserved",
@@ -260,7 +364,11 @@
           "usage": "a reserved person; be reserved with strangers; a reserved seat",
           "family": "reserve (v): đặt trước, dành riêng; reservation (n): sự đặt chỗ; reserved (adj): kín đáo hoặc đã được đặt",
           "example": "He seems reserved at first, but he is very friendly once you know him.",
-          "translation": "Thoạt đầu anh ấy có vẻ ít nói, nhưng khi quen rồi thì rất thân thiện."
+          "translation": "Thoạt đầu anh ấy có vẻ ít nói, nhưng khi quen rồi thì rất thân thiện.",
+          "teacherSelected": true,
+          "questions": [
+            8
+          ]
         },
         {
           "term": "make room for / give way to",
@@ -270,7 +378,11 @@
           "usage": "make room for someone/something; give way to traffic; A gives way to B",
           "family": "room (n không đếm được): chỗ trống; way (n): đường, lối",
           "example": "We moved the chairs to make room for another table.",
-          "translation": "Chúng tôi dịch các ghế để có chỗ đặt thêm một chiếc bàn."
+          "translation": "Chúng tôi dịch các ghế để có chỗ đặt thêm một chiếc bàn.",
+          "teacherSelected": true,
+          "questions": [
+            9
+          ]
         },
         {
           "term": "with a view to",
@@ -280,7 +392,11 @@
           "usage": "with a view to + N/V-ing; with a view to improving something",
           "family": "view (n): cách nhìn, quan điểm; a view to trong cụm này chỉ mục đích",
           "example": "The school revised its timetable with a view to reducing student stress.",
-          "translation": "Trường điều chỉnh thời khóa biểu nhằm giảm căng thẳng cho học sinh."
+          "translation": "Trường điều chỉnh thời khóa biểu nhằm giảm căng thẳng cho học sinh.",
+          "teacherSelected": true,
+          "questions": [
+            10
+          ]
         },
         {
           "term": "in the event of",
@@ -290,7 +406,11 @@
           "usage": "in the event of + N; in the event that + S + V",
           "family": "event (n): sự kiện, sự việc; eventual (adj): cuối cùng xảy ra",
           "example": "In the event of a power cut, the backup lights will switch on.",
-          "translation": "Nếu mất điện, hệ thống đèn dự phòng sẽ bật lên."
+          "translation": "Nếu mất điện, hệ thống đèn dự phòng sẽ bật lên.",
+          "teacherSelected": true,
+          "questions": [
+            10
+          ]
         },
         {
           "term": "forge / forgery",
@@ -300,7 +420,11 @@
           "usage": "forge a signature/document; commit forgery; forge a relationship",
           "family": "forge (v): làm giả, gây dựng; forgery (n): sự giả mạo; forger (n): người làm giả",
           "example": "The document was rejected because someone had forged the signature.",
-          "translation": "Tài liệu bị từ chối vì có người đã giả mạo chữ ký."
+          "translation": "Tài liệu bị từ chối vì có người đã giả mạo chữ ký.",
+          "teacherSelected": true,
+          "questions": [
+            13
+          ]
         },
         {
           "term": "bring in",
@@ -320,7 +444,14 @@
           "usage": "a half-hearted attempt/apology; wholehearted support; support something wholeheartedly",
           "family": "half-heartedly (adv): hời hợt; wholeheartedly (adv): hết lòng",
           "example": "His half-hearted apology did little to improve the situation.",
-          "translation": "Lời xin lỗi thiếu thành ý của anh ấy không giúp tình hình khá hơn bao nhiêu."
+          "translation": "Lời xin lỗi thiếu thành ý của anh ấy không giúp tình hình khá hơn bao nhiêu.",
+          "aliases": [
+            "whole-hearted"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            15
+          ]
         },
         {
           "term": "come down with",
@@ -330,7 +461,11 @@
           "usage": "come down with a cold/the flu; come – came – come",
           "family": "ill (adj): ốm; illness (n): bệnh, tình trạng bị ốm",
           "example": "Several students came down with the flu last week.",
-          "translation": "Tuần trước, một số học sinh bắt đầu bị cúm."
+          "translation": "Tuần trước, một số học sinh bắt đầu bị cúm.",
+          "teacherSelected": true,
+          "questions": [
+            17
+          ]
         },
         {
           "term": "You can say that again.",
@@ -340,7 +475,14 @@
           "usage": "A: That exam was difficult. B: You can say that again!",
           "family": "agree (v): đồng ý; agreement (n): sự đồng ý; agreeable (adj): dễ chịu hoặc sẵn lòng đồng ý",
           "example": "“That journey was exhausting.” “You can say that again!”",
-          "translation": "“Chuyến đi đó mệt thật.” “Đúng quá còn gì!”"
+          "translation": "“Chuyến đi đó mệt thật.” “Đúng quá còn gì!”",
+          "aliases": [
+            "I agree with you."
+          ],
+          "teacherSelected": true,
+          "questions": [
+            18
+          ]
         },
         {
           "term": "as long as / so long as / provided / providing",
@@ -350,17 +492,26 @@
           "usage": "as/so long as + S + V; provided/providing (that) + S + V",
           "family": "condition (n): điều kiện; conditional (adj): có điều kiện; provide (v): cung cấp",
           "example": "You may borrow the book as long as you return it on Friday.",
-          "translation": "Bạn có thể mượn sách miễn là trả lại vào thứ Sáu."
+          "translation": "Bạn có thể mượn sách miễn là trả lại vào thứ Sáu.",
+          "teacherSelected": true,
+          "questions": [
+            19
+          ]
         },
         {
-          "term": "carry the can",
-          "meta": "IDIOM",
-          "meaning": "chịu trách nhiệm hoặc bị đổ lỗi",
-          "note": "Cụm này thường nói về người phải nhận lỗi cho một việc thất bại, đôi khi cả lỗi do người khác gây ra. Sắc thái thường là người ấy phải gánh phần trách nhiệm không công bằng; không chỉ đơn giản là phụ trách công việc.",
-          "usage": "carry the can for something/someone; be left to carry the can",
-          "family": "blame (n/v): lỗi, đổ lỗi; responsibility (n): trách nhiệm",
-          "example": "The assistant was left to carry the can for the manager’s mistake.",
-          "translation": "Người trợ lý bị để lại gánh trách nhiệm cho sai lầm của quản lý."
+          "question": 21,
+          "term": "take the blame for",
+          "meta": "verb phrase",
+          "meaning": "chịu lỗi; bị quy trách nhiệm về",
+          "note": "Take the blame nhấn mạnh việc gánh lỗi khi có kết quả xấu. Người chịu lỗi có thể thực sự gây ra việc đó hoặc bị đổ lỗi không công bằng.",
+          "usage": "take the blame for + N/V-ing; blame somebody for something",
+          "family": "blame (n/v); be to blame: có lỗi",
+          "example": "She refused to take the blame for someone else’s mistake.",
+          "translation": "Cô ấy không chịu nhận lỗi thay cho sai sót của người khác.",
+          "teacherSelected": true,
+          "questions": [
+            21
+          ]
         },
         {
           "term": "give someone a standing ovation",
@@ -370,7 +521,14 @@
           "usage": "give someone a standing ovation; receive/get a standing ovation",
           "family": "ovation (n): sự hoan hô nhiệt liệt; applaud (v): vỗ tay tán thưởng; applause (n): tiếng vỗ tay",
           "example": "The audience gave the young pianist a standing ovation.",
-          "translation": "Khán giả đứng dậy vỗ tay tán thưởng nghệ sĩ piano trẻ."
+          "translation": "Khán giả đứng dậy vỗ tay tán thưởng nghệ sĩ piano trẻ.",
+          "aliases": [
+            "give sb a standing ovation"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            22
+          ]
         },
         {
           "term": "keep something at bay",
@@ -380,7 +538,14 @@
           "usage": "keep/hold something at bay; keep worries at bay",
           "family": "keep – kept – kept; hold – held – held; bay nằm trong thành ngữ cố định này",
           "example": "A clear plan helped her keep her worries at bay.",
-          "translation": "Một kế hoạch rõ ràng giúp cô ấy kiểm soát những lo lắng của mình."
+          "translation": "Một kế hoạch rõ ràng giúp cô ấy kiểm soát những lo lắng của mình.",
+          "aliases": [
+            "keep st at bay"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            23
+          ]
         },
         {
           "term": "spend money like water",
@@ -390,7 +555,11 @@
           "usage": "spend money like water; spend money on something",
           "family": "spend – spent – spent; spending (n): việc chi tiêu; spender (n): người chi tiêu",
           "example": "He spent money like water during his first month abroad.",
-          "translation": "Anh ấy tiêu tiền như nước trong tháng đầu ở nước ngoài."
+          "translation": "Anh ấy tiêu tiền như nước trong tháng đầu ở nước ngoài.",
+          "teacherSelected": true,
+          "questions": [
+            24
+          ]
         },
         {
           "term": "take the bull by the horns",
@@ -400,7 +569,11 @@
           "usage": "take the bull by the horns and + V; take – took – taken",
           "family": "tackle (v): bắt tay giải quyết; confront (v): đối mặt; decisive (adj): quyết đoán",
           "example": "She took the bull by the horns and discussed the problem with her boss.",
-          "translation": "Cô ấy chủ động đối mặt với khó khăn và trao đổi vấn đề với sếp."
+          "translation": "Cô ấy chủ động đối mặt với khó khăn và trao đổi vấn đề với sếp.",
+          "teacherSelected": true,
+          "questions": [
+            25
+          ]
         },
         {
           "term": "put the cat among the pigeons",
@@ -410,7 +583,11 @@
           "usage": "put/set the cat among the pigeons; put – put – put",
           "family": "controversy (n): sự tranh cãi; controversial (adj): gây tranh cãi",
           "example": "His proposal to cancel the trip put the cat among the pigeons.",
-          "translation": "Đề xuất hủy chuyến đi của anh ấy khiến cả nhóm xôn xao tranh cãi."
+          "translation": "Đề xuất hủy chuyến đi của anh ấy khiến cả nhóm xôn xao tranh cãi.",
+          "teacherSelected": true,
+          "questions": [
+            25
+          ]
         },
         {
           "term": "rat race",
@@ -420,17 +597,26 @@
           "usage": "the rat race; escape/get out of the rat race",
           "family": "race (n/v): cuộc đua, chạy đua; competitive (adj): có tính cạnh tranh",
           "example": "They moved to the countryside to escape the rat race.",
-          "translation": "Họ chuyển về nông thôn để thoát khỏi cuộc chạy đua mệt mỏi vì công việc và tiền bạc."
+          "translation": "Họ chuyển về nông thôn để thoát khỏi cuộc chạy đua mệt mỏi vì công việc và tiền bạc.",
+          "teacherSelected": true,
+          "questions": [
+            25
+          ]
         },
         {
-          "term": "be that as it may",
-          "meta": "FIXED EXPRESSION",
-          "meaning": "dù vậy; cho dù điều đó đúng",
-          "note": "Người nói thừa nhận điều vừa được nêu có thể đúng, nhưng vẫn giữ ý kiến hoặc đưa ra một điểm khác cần xem xét. Cụm này thường đứng đầu câu, theo sau là dấu phẩy; sắc thái khá trang trọng.",
-          "usage": "Be that as it may, + S + V; dùng để chuyển sang ý nhượng bộ",
-          "family": "may (modal verb): có thể; nevertheless (adv): tuy vậy",
-          "example": "The plan is expensive. Be that as it may, we still need a reliable solution.",
-          "translation": "Kế hoạch này tốn kém. Dù vậy, chúng ta vẫn cần một giải pháp đáng tin cậy."
+          "question": 27,
+          "term": "nevertheless",
+          "meta": "linking adverb",
+          "meaning": "tuy vậy; dù thế",
+          "note": "Nevertheless nối ý sau trái với điều người đọc có thể chờ đợi từ ý trước. Thường đứng đầu câu, có dấu phẩy theo sau.",
+          "usage": "Sentence. Nevertheless, sentence.; tương đương however trong nhiều ngữ cảnh",
+          "family": "nonetheless: tuy vậy; therefore: vì thế, chỉ kết quả",
+          "example": "The task was difficult. Nevertheless, we completed it.",
+          "translation": "Nhiệm vụ khó. Tuy vậy, chúng tôi đã hoàn thành.",
+          "teacherSelected": true,
+          "questions": [
+            27
+          ]
         },
         {
           "term": "parliament",
@@ -440,7 +626,11 @@
           "usage": "a member of parliament; parliament debates/passes a law; a parliamentary debate",
           "family": "parliament (n): nghị viện; parliamentary (adj): thuộc nghị viện; parliamentarian (n): nghị sĩ",
           "example": "The proposal was discussed in parliament.",
-          "translation": "Đề xuất được thảo luận tại nghị viện."
+          "translation": "Đề xuất được thảo luận tại nghị viện.",
+          "teacherSelected": true,
+          "questions": [
+            30
+          ]
         },
         {
           "term": "break through / breakthrough",
@@ -450,7 +640,11 @@
           "usage": "break through a barrier; make/achieve a breakthrough; a breakthrough in something",
           "family": "break – broke – broken; breakthrough (n): bước đột phá",
           "example": "The research team made a breakthrough in battery design.",
-          "translation": "Nhóm nghiên cứu đạt một bước đột phá trong thiết kế pin."
+          "translation": "Nhóm nghiên cứu đạt một bước đột phá trong thiết kế pin.",
+          "teacherSelected": true,
+          "questions": [
+            30
+          ]
         },
         {
           "term": "a long-range plan",
@@ -460,7 +654,11 @@
           "usage": "a long-range plan/strategy; long-range planning; a long-term goal",
           "family": "range (n): phạm vi; planning (n): việc lập kế hoạch; planner (n): người lập kế hoạch",
           "example": "The city needs a long-range plan for public transport.",
-          "translation": "Thành phố cần một kế hoạch dài hạn cho giao thông công cộng."
+          "translation": "Thành phố cần một kế hoạch dài hạn cho giao thông công cộng.",
+          "teacherSelected": true,
+          "questions": [
+            31
+          ]
         },
         {
           "term": "from scratch",
@@ -470,7 +668,11 @@
           "usage": "start/build/create something from scratch; start again from scratch",
           "family": "scratch (n/v): vết xước, cào; from scratch là một cụm nghĩa riêng",
           "example": "We built the website from scratch.",
-          "translation": "Chúng tôi xây dựng trang web từ đầu."
+          "translation": "Chúng tôi xây dựng trang web từ đầu.",
+          "teacherSelected": true,
+          "questions": [
+            32
+          ]
         },
         {
           "term": "an old flame",
@@ -480,7 +682,11 @@
           "usage": "meet an old flame; an old flame of someone’s",
           "family": "flame (n): ngọn lửa; former (adj): trước đây, cũ",
           "example": "She unexpectedly met an old flame at the reunion.",
-          "translation": "Cô ấy bất ngờ gặp lại người yêu cũ tại buổi họp mặt."
+          "translation": "Cô ấy bất ngờ gặp lại người yêu cũ tại buổi họp mặt.",
+          "teacherSelected": true,
+          "questions": [
+            33
+          ]
         },
         {
           "term": "take the initiative",
@@ -490,7 +696,11 @@
           "usage": "take the initiative in doing something; take the initiative to do something; show initiative",
           "family": "initiative (n): tính chủ động, sáng kiến; initiate (v): khởi xướng; initial (adj): ban đầu",
           "example": "He took the initiative and organised a study group.",
-          "translation": "Anh ấy chủ động tổ chức một nhóm học tập."
+          "translation": "Anh ấy chủ động tổ chức một nhóm học tập.",
+          "teacherSelected": true,
+          "questions": [
+            34
+          ]
         },
         {
           "term": "become second nature to someone",
@@ -500,7 +710,14 @@
           "usage": "be/become second nature to someone; doing something becomes second nature",
           "family": "nature (n): bản chất, tự nhiên; natural (adj): tự nhiên; naturally (adv): một cách tự nhiên",
           "example": "With practice, checking your work becomes second nature.",
-          "translation": "Nhờ luyện tập, việc kiểm tra lại bài trở thành một thói quen tự nhiên."
+          "translation": "Nhờ luyện tập, việc kiểm tra lại bài trở thành một thói quen tự nhiên.",
+          "aliases": [
+            "become second nature to sb"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            35
+          ]
         },
         {
           "term": "lead / misleading",
@@ -510,7 +727,11 @@
           "usage": "lead to + N/V-ing; mislead someone about something; misleading information",
           "family": "lead – led – led; mislead – misled – misled; misleading (adj): gây hiểu lầm",
           "example": "The headline was misleading because it left out an important detail.",
-          "translation": "Tiêu đề gây hiểu lầm vì bỏ qua một chi tiết quan trọng."
+          "translation": "Tiêu đề gây hiểu lầm vì bỏ qua một chi tiết quan trọng.",
+          "teacherSelected": true,
+          "questions": [
+            37
+          ]
         },
         {
           "term": "be characterized by",
@@ -520,7 +741,11 @@
           "usage": "be characterized by + N; something characterizes a period; a characteristic of something",
           "family": "characterize (v): là đặc trưng của; characteristic (n/adj): đặc điểm, đặc trưng; character (n): tính cách, đặc tính",
           "example": "The region is characterized by long, dry summers.",
-          "translation": "Khu vực này có đặc trưng là mùa hè dài và khô."
+          "translation": "Khu vực này có đặc trưng là mùa hè dài và khô.",
+          "teacherSelected": true,
+          "questions": [
+            39
+          ]
         },
         {
           "term": "industrial revolution",
@@ -530,7 +755,11 @@
           "usage": "the Industrial Revolution; industrial development; an industrious worker",
           "family": "industry (n): ngành công nghiệp; industrial (adj): thuộc công nghiệp; industrialize (v): công nghiệp hóa",
           "example": "The Industrial Revolution transformed the way goods were produced.",
-          "translation": "Cách mạng công nghiệp làm thay đổi cách hàng hóa được sản xuất."
+          "translation": "Cách mạng công nghiệp làm thay đổi cách hàng hóa được sản xuất.",
+          "teacherSelected": true,
+          "questions": [
+            40
+          ]
         },
         {
           "term": "production / productivity",
@@ -540,7 +769,11 @@
           "usage": "increase production/productivity; food production; labour productivity",
           "family": "produce (v): sản xuất; product (n): sản phẩm; productive (adj): có năng suất, hữu ích",
           "example": "Better equipment increased productivity without extending working hours.",
-          "translation": "Thiết bị tốt hơn giúp tăng năng suất mà không kéo dài giờ làm."
+          "translation": "Thiết bị tốt hơn giúp tăng năng suất mà không kéo dài giờ làm.",
+          "teacherSelected": true,
+          "questions": [
+            41
+          ]
         },
         {
           "term": "largely / mainly",
@@ -550,7 +783,11 @@
           "usage": "largely due to something; largely unchanged; mainly because; consist mainly of",
           "family": "large (adj): lớn; largely (adv): phần lớn; main (adj): chính; mainly (adv): chủ yếu",
           "example": "The delay was largely due to bad weather.",
-          "translation": "Sự chậm trễ chủ yếu là do thời tiết xấu."
+          "translation": "Sự chậm trễ chủ yếu là do thời tiết xấu.",
+          "teacherSelected": true,
+          "questions": [
+            42
+          ]
         },
         {
           "term": "capability / capacity",
@@ -560,7 +797,11 @@
           "usage": "the capability to do something; be capable of doing something; capacity for something; at full capacity",
           "family": "capable (adj): có khả năng; capability (n): năng lực; capacity (n): khả năng, sức chứa",
           "example": "The hall has a capacity of two hundred people.",
-          "translation": "Hội trường có sức chứa hai trăm người."
+          "translation": "Hội trường có sức chứa hai trăm người.",
+          "teacherSelected": true,
+          "questions": [
+            44
+          ]
         },
         {
           "term": "diminish",
@@ -570,7 +811,11 @@
           "usage": "diminish in importance; diminish someone’s confidence; diminishing resources",
           "family": "diminish (v): giảm; diminished (adj): đã suy giảm; diminution (n, trang trọng): sự giảm bớt",
           "example": "Her confidence did not diminish after the setback.",
-          "translation": "Sự tự tin của cô ấy không giảm sau trở ngại đó."
+          "translation": "Sự tự tin của cô ấy không giảm sau trở ngại đó.",
+          "teacherSelected": true,
+          "questions": [
+            44
+          ]
         },
         {
           "term": "purchasing power / spending power",
@@ -580,7 +825,11 @@
           "usage": "consumer purchasing power; increase/reduce purchasing power; spending power",
           "family": "purchase (n/v): sự mua, mua; purchaser (n): người mua; spending (n): việc chi tiêu",
           "example": "When prices rise faster than incomes, purchasing power falls.",
-          "translation": "Khi giá tăng nhanh hơn thu nhập, sức mua giảm."
+          "translation": "Khi giá tăng nhanh hơn thu nhập, sức mua giảm.",
+          "teacherSelected": true,
+          "questions": [
+            44
+          ]
         },
         {
           "term": "recede / economic recession",
@@ -590,7 +839,11 @@
           "usage": "floodwater recedes; a receding hairline; go into/be in recession",
           "family": "recede (v): rút, lùi; recession (n): sự suy thoái; recessionary (adj): liên quan đến suy thoái",
           "example": "The floodwater gradually receded after the rain stopped.",
-          "translation": "Nước lũ dần rút sau khi mưa ngừng."
+          "translation": "Nước lũ dần rút sau khi mưa ngừng.",
+          "teacherSelected": true,
+          "questions": [
+            45
+          ]
         },
         {
           "term": "in the end / at the end of",
@@ -600,7 +853,11 @@
           "usage": "in the end, + clause; at the end of the lesson/road/month",
           "family": "end (n/v): phần cuối, kết thúc; ending (n): đoạn kết; endless (adj): vô tận",
           "example": "In the end, we agreed to meet at the end of the month.",
-          "translation": "Cuối cùng, chúng tôi thống nhất gặp nhau vào cuối tháng."
+          "translation": "Cuối cùng, chúng tôi thống nhất gặp nhau vào cuối tháng.",
+          "teacherSelected": true,
+          "questions": [
+            47
+          ]
         },
         {
           "term": "memorize / commemorate",
@@ -610,7 +867,11 @@
           "usage": "memorize a poem/list; commemorate an event; a ceremony to commemorate someone",
           "family": "memory (n): trí nhớ, ký ức; memorization (n): việc học thuộc; commemoration (n): sự tưởng niệm",
           "example": "The ceremony commemorates the founding of the school.",
-          "translation": "Buổi lễ kỷ niệm ngày thành lập trường."
+          "translation": "Buổi lễ kỷ niệm ngày thành lập trường.",
+          "teacherSelected": true,
+          "questions": [
+            49
+          ]
         },
         {
           "term": "sacred",
@@ -620,7 +881,11 @@
           "usage": "a sacred place/text; be sacred to someone; hold something sacred",
           "family": "sacred (adj): thiêng liêng; sacredness (n): tính thiêng liêng; scared (adj): sợ hãi",
           "example": "This mountain is sacred to the local community.",
-          "translation": "Ngọn núi này có ý nghĩa thiêng liêng đối với cộng đồng địa phương."
+          "translation": "Ngọn núi này có ý nghĩa thiêng liêng đối với cộng đồng địa phương.",
+          "teacherSelected": true,
+          "questions": [
+            50
+          ]
         },
         {
           "term": "accumulate",
@@ -630,7 +895,11 @@
           "usage": "accumulate knowledge/wealth/debt; dust accumulates; an accumulation of something",
           "family": "accumulation (n): sự tích tụ; accumulated (adj): đã tích lũy; cumulative (adj): có tính cộng dồn",
           "example": "Dust accumulated on the shelves while the house was empty.",
-          "translation": "Bụi dần bám trên các kệ trong thời gian căn nhà không có người ở."
+          "translation": "Bụi dần bám trên các kệ trong thời gian căn nhà không có người ở.",
+          "teacherSelected": true,
+          "questions": [
+            50
+          ]
         },
         {
           "term": "prominent",
@@ -640,7 +909,11 @@
           "usage": "a prominent figure; play a prominent role; in a prominent position",
           "family": "prominence (n): sự nổi bật, vị thế quan trọng; prominently (adv): ở vị trí nổi bật",
           "example": "The notice was placed in a prominent position near the entrance.",
-          "translation": "Thông báo được đặt ở vị trí dễ thấy gần lối vào."
+          "translation": "Thông báo được đặt ở vị trí dễ thấy gần lối vào.",
+          "teacherSelected": true,
+          "questions": [
+            50
+          ]
         },
         {
           "term": "discipline",
@@ -650,7 +923,11 @@
           "usage": "self-discipline; maintain discipline; an academic discipline; discipline someone for something",
           "family": "disciplined (adj): có kỷ luật; disciplinary (adj): thuộc việc kỷ luật; interdisciplinary (adj): liên ngành",
           "example": "Completing a long project requires self-discipline.",
-          "translation": "Hoàn thành một dự án dài đòi hỏi tính tự giác và kỷ luật."
+          "translation": "Hoàn thành một dự án dài đòi hỏi tính tự giác và kỷ luật.",
+          "teacherSelected": true,
+          "questions": [
+            51
+          ]
         },
         {
           "term": "deprive someone of / sleep deprivation",
@@ -660,7 +937,14 @@
           "usage": "deprive someone of something; be deprived of something; sleep deprivation",
           "family": "deprive (v): tước đi; deprivation (n): sự thiếu thốn, bị tước mất; deprived (adj): thiếu thốn",
           "example": "The noise deprived the residents of a peaceful evening.",
-          "translation": "Tiếng ồn khiến cư dân không có được một buổi tối yên tĩnh."
+          "translation": "Tiếng ồn khiến cư dân không có được một buổi tối yên tĩnh.",
+          "aliases": [
+            "deprive sb of st"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "invent",
@@ -670,7 +954,11 @@
           "usage": "invent a device; invent an excuse; discover a fact",
           "family": "invention (n): phát minh; inventor (n): nhà phát minh; inventive (adj): sáng tạo",
           "example": "He invented an excuse for missing the meeting.",
-          "translation": "Anh ấy bịa ra một lý do cho việc vắng mặt trong cuộc họp."
+          "translation": "Anh ấy bịa ra một lý do cho việc vắng mặt trong cuộc họp.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "round the clock",
@@ -680,7 +968,11 @@
           "usage": "work round/around the clock; round-the-clock support",
           "family": "clock (n): đồng hồ; continuous (adj): liên tục; continuously (adv): một cách liên tục",
           "example": "The team worked round the clock to restore the service.",
-          "translation": "Cả nhóm làm việc suốt ngày đêm để khôi phục dịch vụ."
+          "translation": "Cả nhóm làm việc suốt ngày đêm để khôi phục dịch vụ.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "tempt",
@@ -690,7 +982,11 @@
           "usage": "tempt someone to do something; be tempted to do something; a tempting offer",
           "family": "temptation (n): sự cám dỗ; tempting (adj): hấp dẫn; tempted (adj): cảm thấy bị hấp dẫn",
           "example": "The low price tempted me to buy another book.",
-          "translation": "Giá rẻ khiến tôi muốn mua thêm một cuốn sách."
+          "translation": "Giá rẻ khiến tôi muốn mua thêm một cuốn sách.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "symptom",
@@ -700,7 +996,11 @@
           "usage": "a symptom of something; show/experience symptoms; a symptom of a wider problem",
           "family": "symptomatic (adj): có triệu chứng, biểu hiện của; asymptomatic (adj): không có triệu chứng",
           "example": "Repeated delays were a symptom of poor organisation.",
-          "translation": "Những lần chậm trễ lặp lại là dấu hiệu của cách tổ chức yếu kém."
+          "translation": "Những lần chậm trễ lặp lại là dấu hiệu của cách tổ chức yếu kém.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "chronic",
@@ -710,7 +1010,11 @@
           "usage": "a chronic condition; chronic pain; a chronic shortage/problem",
           "family": "chronically (adv): một cách kéo dài, thường xuyên; chronic (adj): dai dẳng",
           "example": "The town faces a chronic shortage of affordable housing.",
-          "translation": "Thị trấn đối mặt với tình trạng thiếu nhà ở giá phù hợp kéo dài."
+          "translation": "Thị trấn đối mặt với tình trạng thiếu nhà ở giá phù hợp kéo dài.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "on call / on duty / on night call",
@@ -720,7 +1024,11 @@
           "usage": "be on call; be on duty; be on night call; an on-call doctor",
           "family": "call (n/v): cuộc gọi, gọi; duty (n): nhiệm vụ, ca trực; off duty: ngoài ca",
           "example": "The technician is on call tonight in case the system fails.",
-          "translation": "Kỹ thuật viên trực chờ tối nay để xử lý nếu hệ thống gặp sự cố."
+          "translation": "Kỹ thuật viên trực chờ tối nay để xử lý nếu hệ thống gặp sự cố.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "ironic",
@@ -730,7 +1038,11 @@
           "usage": "It is ironic that + clause; an ironic remark; an ironic smile",
           "family": "irony (n): sự trớ trêu, phép mỉa mai; ironically (adv): trớ trêu thay",
           "example": "It was ironic that the time-management workshop started late.",
-          "translation": "Thật trớ trêu khi buổi tập huấn quản lý thời gian lại bắt đầu muộn."
+          "translation": "Thật trớ trêu khi buổi tập huấn quản lý thời gian lại bắt đầu muộn.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "irritate / annoy / irritable",
@@ -740,7 +1052,11 @@
           "usage": "irritate/annoy someone; be irritated by something; an irritating noise; feel irritable",
           "family": "irritation (n): sự khó chịu, kích ứng; irritated (adj): bực mình; irritating (adj): gây bực; annoyance (n): sự bực mình",
           "example": "The repeated interruptions irritated everyone in the room.",
-          "translation": "Những lần ngắt lời liên tiếp khiến mọi người trong phòng khó chịu."
+          "translation": "Những lần ngắt lời liên tiếp khiến mọi người trong phòng khó chịu.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "give an account of",
@@ -750,7 +1066,11 @@
           "usage": "give/provide an account of something; a detailed/brief account of something",
           "family": "account (n): lời kể, bản tường thuật, tài khoản; recount (v): kể lại",
           "example": "The witness gave a detailed account of the incident.",
-          "translation": "Nhân chứng thuật lại chi tiết sự việc."
+          "translation": "Nhân chứng thuật lại chi tiết sự việc.",
+          "teacherSelected": true,
+          "questions": [
+            72
+          ]
         },
         {
           "term": "captivating",
@@ -760,7 +1080,11 @@
           "usage": "a captivating story/performance; be captivated by something",
           "family": "captivate (v): cuốn hút; captivating (adj): gây cuốn hút; captivated (adj): bị cuốn hút",
           "example": "Her captivating story held the audience’s attention.",
-          "translation": "Câu chuyện cuốn hút của cô ấy khiến khán giả chăm chú lắng nghe."
+          "translation": "Câu chuyện cuốn hút của cô ấy khiến khán giả chăm chú lắng nghe.",
+          "teacherSelected": true,
+          "questions": [
+            87
+          ]
         },
         {
           "term": "grant",
@@ -770,7 +1094,11 @@
           "usage": "grant someone permission; grant permission to do something; a research grant",
           "family": "grant (n/v): khoản tài trợ, cấp; grantee (n, trang trọng): người được cấp tài trợ hoặc quyền",
           "example": "The organisation gave her a grant to continue her research.",
-          "translation": "Tổ chức cấp cho cô ấy một khoản tài trợ để tiếp tục nghiên cứu."
+          "translation": "Tổ chức cấp cho cô ấy một khoản tài trợ để tiếp tục nghiên cứu.",
+          "teacherSelected": true,
+          "questions": [
+            96
+          ]
         },
         {
           "term": "make a name for oneself as",
@@ -780,7 +1108,11 @@
           "usage": "make a name for oneself as + nghề/vai trò; make a name for oneself in + lĩnh vực",
           "family": "name (n): tên, danh tiếng; reputation (n): danh tiếng; renowned (adj): nổi tiếng",
           "example": "She made a name for herself as a talented designer.",
-          "translation": "Cô ấy gây dựng tên tuổi với tư cách một nhà thiết kế tài năng."
+          "translation": "Cô ấy gây dựng tên tuổi với tư cách một nhà thiết kế tài năng.",
+          "teacherSelected": true,
+          "questions": [
+            97
+          ]
         },
         {
           "term": "It is vital that …",
@@ -800,7 +1132,11 @@
           "usage": "S + V, which + V…; dấu phẩy tách mệnh đề bổ sung",
           "family": "which: đại từ quan hệ; clause (n): mệnh đề; relative clause: mệnh đề quan hệ",
           "example": "She submitted the work early, which gave us time to review it.",
-          "translation": "Cô ấy nộp bài sớm, nhờ đó chúng tôi có thời gian xem lại."
+          "translation": "Cô ấy nộp bài sớm, nhờ đó chúng tôi có thời gian xem lại.",
+          "teacherSelected": true,
+          "questions": [
+            85
+          ]
         },
         {
           "term": "It was … that …",
@@ -810,7 +1146,11 @@
           "usage": "It is/was + phần nhấn mạnh + that + phần còn lại; It was + người + who…",
           "family": "emphasis (n): sự nhấn mạnh; emphasize (v): nhấn mạnh; cleft sentence: câu chẻ",
           "example": "It was the final example that helped me understand the rule.",
-          "translation": "Chính ví dụ cuối cùng đã giúp tôi hiểu quy tắc."
+          "translation": "Chính ví dụ cuối cùng đã giúp tôi hiểu quy tắc.",
+          "teacherSelected": true,
+          "questions": [
+            90
+          ]
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"
@@ -827,7 +1167,11 @@
           "usage": "deter someone from doing; deter crime; high costs deter investment. Không viết deter someone to do.",
           "family": "deter (v); deterrent (n/adj: yếu tố có tác dụng răn đe); deterrence (n).",
           "example": "The high cost deterred many families from applying.",
-          "translation": "Chi phí cao khiến nhiều gia đình chùn bước, không nộp đơn."
+          "translation": "Chi phí cao khiến nhiều gia đình chùn bước, không nộp đơn.",
+          "teacherSelected": true,
+          "questions": [
+            5
+          ]
         },
         {
           "term": "bombard someone with",
@@ -837,7 +1181,11 @@
           "usage": "bombard someone with questions/messages/advertisements; be bombarded with information.",
           "family": "bombard (v); bombardment (n). With đứng trước thứ được gửi/hỏi dồn dập.",
           "example": "The students bombarded the guest speaker with questions.",
-          "translation": "Học sinh dồn dập đặt câu hỏi cho diễn giả khách mời."
+          "translation": "Học sinh dồn dập đặt câu hỏi cho diễn giả khách mời.",
+          "teacherSelected": true,
+          "questions": [
+            9
+          ]
         },
         {
           "term": "casual / formal clothes",
@@ -847,7 +1195,14 @@
           "usage": "wear casual/formal clothes; casual dress; formal occasions; dress casually/formally.",
           "family": "casual (adj), casually (adv); formal (adj), formally (adv), formality (n).",
           "example": "Students may wear casual clothes, but the ceremony requires formal dress.",
-          "translation": "Học sinh có thể mặc đồ thường ngày, nhưng buổi lễ yêu cầu trang phục trang trọng."
+          "translation": "Học sinh có thể mặc đồ thường ngày, nhưng buổi lễ yêu cầu trang phục trang trọng.",
+          "aliases": [
+            "casual clothes"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            14
+          ]
         },
         {
           "term": "bring out",
@@ -857,7 +1212,11 @@
           "usage": "bring out a book/product; bring out the flavour; bring out the best in someone.",
           "family": "bring–brought–brought; output (n: sản lượng/kết quả) không phải từ thay thế cho mọi nghĩa bring out.",
           "example": "The publisher brought out a new edition of the dictionary.",
-          "translation": "Nhà xuất bản phát hành một ấn bản từ điển mới."
+          "translation": "Nhà xuất bản phát hành một ấn bản từ điển mới.",
+          "teacherSelected": true,
+          "questions": [
+            16
+          ]
         },
         {
           "term": "by and large / in general / on the whole",
@@ -867,7 +1226,11 @@
           "usage": "By and large, …; In general, …; On the whole, … . By and large hơi thiên về cách nói thành ngữ.",
           "family": "general (adj), generally (adv); whole (n/adj). Ba cụm gần nghĩa nhưng không cùng họ từ.",
           "example": "On the whole, the new timetable works well for students.",
-          "translation": "Nhìn chung, thời khóa biểu mới phù hợp với học sinh."
+          "translation": "Nhìn chung, thời khóa biểu mới phù hợp với học sinh.",
+          "teacherSelected": true,
+          "questions": [
+            18
+          ]
         },
         {
           "term": "come as a shock / surprise to",
@@ -877,7 +1240,11 @@
           "usage": "something comes as a shock/surprise to someone; come as no surprise = không có gì lạ.",
           "family": "shock/surprise (n/v); shocked/surprised (cảm xúc); shocking/surprising (gây cảm xúc).",
           "example": "The sudden cancellation came as a surprise to everyone.",
-          "translation": "Việc hủy đột ngột khiến mọi người bất ngờ."
+          "translation": "Việc hủy đột ngột khiến mọi người bất ngờ.",
+          "teacherSelected": true,
+          "questions": [
+            21
+          ]
         },
         {
           "term": "beyond repair",
@@ -887,7 +1254,11 @@
           "usage": "be damaged/broken beyond repair; repair a machine; replace a broken part.",
           "family": "repair (n/v); repairable/irreparable (adj); replacement (n) thuộc replace.",
           "example": "The old machine was damaged beyond repair.",
-          "translation": "Chiếc máy cũ hỏng đến mức không thể sửa được."
+          "translation": "Chiếc máy cũ hỏng đến mức không thể sửa được.",
+          "teacherSelected": true,
+          "questions": [
+            23
+          ]
         },
         {
           "term": "at a rate / pace",
@@ -897,7 +1268,11 @@
           "usage": "at a rapid rate; at a steady pace; grow at a rate of 5% a year; at one’s own pace.",
           "family": "rate (n/v); pace (n/v). Rapid/steady/slow là các tính từ thường đi kèm.",
           "example": "The population grew at a steady rate over the decade.",
-          "translation": "Dân số tăng với tốc độ ổn định trong thập kỷ đó."
+          "translation": "Dân số tăng với tốc độ ổn định trong thập kỷ đó.",
+          "teacherSelected": true,
+          "questions": [
+            24
+          ]
         },
         {
           "term": "need doing / need to be done",
@@ -907,7 +1282,11 @@
           "usage": "The room needs cleaning = The room needs to be cleaned. I need to clean the room là câu chủ động.",
           "family": "need (n/v); needed (phân từ); needy (adj) là thiếu thốn, không dùng thay needed.",
           "example": "The windows need cleaning before the guests arrive.",
-          "translation": "Cửa sổ cần được lau trước khi khách đến."
+          "translation": "Cửa sổ cần được lau trước khi khách đến.",
+          "teacherSelected": true,
+          "questions": [
+            32
+          ]
         },
         {
           "term": "countless",
@@ -917,17 +1296,29 @@
           "usage": "countless examples/problems/opportunities; countless times; much information là cách nói với danh từ không đếm được.",
           "family": "count (n/v); countless (adj); countable/uncountable (adj).",
           "example": "The library offers countless opportunities to explore new ideas.",
-          "translation": "Thư viện mang lại vô số cơ hội tìm hiểu ý tưởng mới."
+          "translation": "Thư viện mang lại vô số cơ hội tìm hiểu ý tưởng mới.",
+          "teacherSelected": true,
+          "questions": [
+            33
+          ]
         },
         {
-          "term": "imaginary / imaginative / imaginable",
+          "term": "imaginary / imaginative / imaginable / unimaginable",
           "meta": "adjectives",
-          "meaning": "tưởng tượng, không có thật / giàu tưởng tượng / có thể tưởng tượng được",
-          "note": "Imaginary tả thứ chỉ tồn tại trong trí tưởng tượng. Imaginative tả người/ý tưởng sáng tạo. Imaginable tả điều có thể hình dung; unimaginable là khó hoặc không thể hình dung. Không đổi ba tính từ chỉ vì cùng gốc imagine.",
-          "usage": "an imaginary friend; an imaginative solution; every imaginable problem; unimaginable damage.",
+          "meaning": "tưởng tượng, không có thật / giàu tưởng tượng / có thể tưởng tượng được; unimaginable: không thể tưởng tượng nổi",
+          "note": "Imaginary tả thứ chỉ tồn tại trong trí tưởng tượng. Imaginative tả người/ý tưởng sáng tạo. Imaginable tả điều có thể hình dung; unimaginable là khó hoặc không thể hình dung. Không đổi ba tính từ chỉ vì cùng gốc imagine. Unimaginable là quá lớn, quá tệ hoặc quá khác thường đến mức khó tưởng tượng; không có nghĩa là không có thật như imaginary.",
+          "usage": "an imaginary friend; an imaginative solution; every imaginable problem; unimaginable damage. unimaginable suffering: nỗi đau khổ không thể tưởng tượng nổi.",
           "family": "imagine (v); imagination (n); imaginary/imaginative/imaginable/unimaginable (adj).",
           "example": "The imaginative writer created an imaginary world.",
-          "translation": "Nhà văn giàu trí tưởng tượng tạo ra một thế giới không có thật."
+          "translation": "Nhà văn giàu trí tưởng tượng tạo ra một thế giới không có thật.",
+          "aliases": [
+            "unimaginable",
+            "(un)imaginable"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            34
+          ]
         },
         {
           "term": "unharmed / harmless",
@@ -937,7 +1328,11 @@
           "usage": "escape/remain unharmed; a harmless insect/joke; harmful to someone/something.",
           "family": "harm (n/v); harmful/harmless (adj); unharmed (adj).",
           "example": "The children escaped unharmed, although the accident was serious.",
-          "translation": "Bọn trẻ thoát ra không bị thương dù tai nạn nghiêm trọng."
+          "translation": "Bọn trẻ thoát ra không bị thương dù tai nạn nghiêm trọng.",
+          "teacherSelected": true,
+          "questions": [
+            36
+          ]
         },
         {
           "term": "parentage",
@@ -947,17 +1342,26 @@
           "usage": "of mixed parentage; someone’s parentage; parentage is known/unknown.",
           "family": "parent (n/v); parental (adj); parentage (n); parenting (n: việc nuôi dạy con).",
           "example": "The biography describes the writer’s parentage and early life.",
-          "translation": "Cuốn tiểu sử mô tả nguồn gốc gia đình và thời thơ ấu của nhà văn."
+          "translation": "Cuốn tiểu sử mô tả nguồn gốc gia đình và thời thơ ấu của nhà văn.",
+          "teacherSelected": true,
+          "questions": [
+            43
+          ]
         },
         {
-          "term": "single / singular",
-          "meta": "adjectives",
-          "meaning": "một, đơn lẻ / khác thường, độc đáo; số ít",
-          "note": "Single thường nhấn mạnh chỉ một hoặc độc thân. Singular có thể là số ít trong ngữ pháp, nhưng singular charm trong bài là nét hấp dẫn khác thường, độc đáo. Không dịch singular chỉ là “có đúng một”.",
-          "usage": "a single person/object; singular charm/beauty; a singular noun; plural nouns.",
-          "family": "single (adj), singly (adv); singular (adj), singularly (adv).",
-          "example": "The village has a singular charm that attracts artists.",
-          "translation": "Ngôi làng có nét duyên độc đáo thu hút giới nghệ sĩ."
+          "question": 49,
+          "term": "be vital for",
+          "meta": "adjective phrase",
+          "meaning": "rất quan trọng, thiết yếu đối với",
+          "note": "Vital nhấn mạnh điều cần thiết cho sự phát triển hay hoạt động bình thường. Trong bài, chơi và trò chuyện rất quan trọng cho sự phát triển ngôn ngữ của trẻ.",
+          "usage": "be vital for development; be vital to success; it is vital to do something",
+          "family": "vital (adj); vitally (adv); vitality (n: sức sống)",
+          "example": "Sleep is vital for children’s development.",
+          "translation": "Giấc ngủ rất quan trọng đối với sự phát triển của trẻ.",
+          "teacherSelected": true,
+          "questions": [
+            49
+          ]
         },
         {
           "term": "novel",
@@ -967,7 +1371,11 @@
           "usage": "a novel approach/solution; read/write a novel; introduce a novel method.",
           "family": "novel (adj/n); novelty (n: sự mới lạ); novelist (n: tiểu thuyết gia).",
           "example": "The team proposed a novel approach to teaching mathematics.",
-          "translation": "Nhóm đề xuất cách tiếp cận mới lạ trong dạy toán."
+          "translation": "Nhóm đề xuất cách tiếp cận mới lạ trong dạy toán.",
+          "teacherSelected": true,
+          "questions": [
+            51
+          ]
         },
         {
           "term": "influx",
@@ -977,7 +1385,11 @@
           "usage": "an influx of tourists/investment; an influx into a city; a sudden/large influx.",
           "family": "influx (n); influxes (số nhiều). Outflow là dòng đi ra, không cùng họ từ.",
           "example": "The festival brought a sudden influx of visitors to the town.",
-          "translation": "Lễ hội khiến một lượng lớn du khách đột ngột đổ về thị trấn."
+          "translation": "Lễ hội khiến một lượng lớn du khách đột ngột đổ về thị trấn.",
+          "teacherSelected": true,
+          "questions": [
+            51
+          ]
         },
         {
           "term": "cognitive",
@@ -987,7 +1399,11 @@
           "usage": "cognitive development/skills/processes; improve cognitive ability; cognitive and emotional needs.",
           "family": "cognition (n); cognitive (adj); cognitively (adv).",
           "example": "Reading can help children develop cognitive skills.",
-          "translation": "Đọc sách có thể giúp trẻ phát triển kỹ năng nhận thức."
+          "translation": "Đọc sách có thể giúp trẻ phát triển kỹ năng nhận thức.",
+          "teacherSelected": true,
+          "questions": [
+            51
+          ]
         },
         {
           "term": "embrace",
@@ -997,7 +1413,11 @@
           "usage": "embrace someone; embrace change/technology/an opportunity; a warm embrace.",
           "family": "embrace (v/n); embraced/embracing (dạng động từ).",
           "example": "Teachers need support to embrace new methods confidently.",
-          "translation": "Giáo viên cần hỗ trợ để tự tin đón nhận phương pháp mới."
+          "translation": "Giáo viên cần hỗ trợ để tự tin đón nhận phương pháp mới.",
+          "teacherSelected": true,
+          "questions": [
+            51
+          ]
         },
         {
           "term": "basics / basis",
@@ -1007,7 +1427,11 @@
           "usage": "learn the basics of a subject; the basis for a decision; on a daily basis = hằng ngày.",
           "family": "basic (adj), basically (adv), basics (n số nhiều); basis (n), bases (số nhiều).",
           "example": "Students learn the basics before using them as a basis for further study.",
-          "translation": "Học sinh học kiến thức cơ bản rồi dùng chúng làm nền tảng để học tiếp."
+          "translation": "Học sinh học kiến thức cơ bản rồi dùng chúng làm nền tảng để học tiếp.",
+          "teacherSelected": true,
+          "questions": [
+            53
+          ]
         },
         {
           "term": "as / like",
@@ -1017,7 +1441,11 @@
           "usage": "use A as B = dùng A làm B; like someone/something = giống ai/cái gì; as + mệnh đề còn có nhiều nghĩa theo câu.",
           "family": "As và like là từ ngữ pháp; cần học theo cấu trúc, không có họ từ chung cho nghĩa này.",
           "example": "She works as a guide and speaks like an experienced teacher.",
-          "translation": "Cô ấy làm hướng dẫn viên và nói chuyện giống một giáo viên giàu kinh nghiệm."
+          "translation": "Cô ấy làm hướng dẫn viên và nói chuyện giống một giáo viên giàu kinh nghiệm.",
+          "teacherSelected": true,
+          "questions": [
+            55
+          ]
         },
         {
           "term": "make a start at / on",
@@ -1047,7 +1475,11 @@
           "usage": "bribe someone to do; bribe someone with something; offer/accept a bribe.",
           "family": "bribe (n/v); bribery (n: hành vi hối lộ); bribed/bribing (dạng động từ).",
           "example": "He tried to bribe the children with sweets to make them sit quietly.",
-          "translation": "Anh ấy thử dùng kẹo để dụ bọn trẻ ngồi yên."
+          "translation": "Anh ấy thử dùng kẹo để dụ bọn trẻ ngồi yên.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "rust / rusty",
@@ -1057,7 +1489,11 @@
           "usage": "metal rusts; a rusty gate; be/get rusty at a skill; rusty English.",
           "family": "rust (n/v); rusty (adj); rusting (dạng -ing); rustproof (adj: chống gỉ).",
           "example": "My French is a little rusty because I have not used it for years.",
-          "translation": "Tiếng Pháp của tôi hơi mai một vì nhiều năm không sử dụng."
+          "translation": "Tiếng Pháp của tôi hơi mai một vì nhiều năm không sử dụng.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "linger",
@@ -1067,7 +1503,11 @@
           "usage": "linger in a place; linger over a meal; a smell/memory lingers; lingering doubts.",
           "family": "linger (v); lingering (adj: còn kéo dài); lingered (quá khứ).",
           "example": "The smell of coffee lingered in the room after the meeting.",
-          "translation": "Mùi cà phê vẫn còn trong phòng sau cuộc họp."
+          "translation": "Mùi cà phê vẫn còn trong phòng sau cuộc họp.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "frown",
@@ -1077,27 +1517,46 @@
           "usage": "frown at someone; a worried frown; frown on/upon a behaviour = không tán thành hành vi đó.",
           "family": "frown (n/v); frowned/frowning (dạng động từ).",
           "example": "She frowned at the confusing instructions and read them again.",
-          "translation": "Cô ấy cau mày trước hướng dẫn khó hiểu rồi đọc lại."
+          "translation": "Cô ấy cau mày trước hướng dẫn khó hiểu rồi đọc lại.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ]
         },
         {
           "term": "as far as … is concerned",
           "meta": "phrase",
           "meaning": "xét về; về mặt",
-          "note": "Cụm này giới hạn chủ đề đang bàn. Sau as far as đặt chủ đề rồi dùng is/are concerned phù hợp. As far as I am concerned còn nghĩa theo ý kiến của tôi, không chỉ nói phạm vi chủ đề.",
+          "note": "Cụm này giới hạn chủ đề đang bàn. Sau as far as đặt chủ đề rồi dùng is/are concerned phù hợp. As far as I am concerned còn nghĩa theo ý kiến của tôi, không chỉ nói phạm vi chủ đề. Có thể diễn đạt gần nghĩa bằng regarding + N hoặc in terms of + N. Regarding nêu chủ đề đang bàn; in terms of nhấn mạnh phương diện dùng để đánh giá.",
           "usage": "As far as punctuality is concerned, …; in terms of + N; regarding + N. Không thêm about sau regarding.",
           "family": "concern (n/v); concerned (adj/phân từ); concerning (giới từ: về).",
           "example": "As far as cost is concerned, the first option is better.",
-          "translation": "Xét về chi phí, phương án thứ nhất tốt hơn."
+          "translation": "Xét về chi phí, phương án thứ nhất tốt hơn.",
+          "aliases": [
+            "in terms of",
+            "regarding"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            83
+          ]
         },
         {
           "term": "call for",
           "meta": "phrasal verb",
           "meaning": "đòi hỏi; kêu gọi",
-          "note": "Call for patience = đòi hỏi sự kiên nhẫn. Call for change = kêu gọi thay đổi. Không dịch là gọi điện nếu chủ ngữ là công việc hoặc tình huống cần một điều kiện.",
+          "note": "Call for patience = đòi hỏi sự kiên nhẫn. Call for change = kêu gọi thay đổi. Không dịch là gọi điện nếu chủ ngữ là công việc hoặc tình huống cần một điều kiện. Trong nghĩa “đòi hỏi”, call for gần nghĩa require: this job calls for patience = this job requires patience.",
           "usage": "a job calls for patience/skill; call for action/a change; require something gần nghĩa ở nghĩa đòi hỏi.",
           "family": "call (n/v); called/calling (dạng động từ). For là phần cần giữ trong cụm.",
           "example": "Teaching young children calls for patience and careful preparation.",
-          "translation": "Dạy trẻ nhỏ đòi hỏi sự kiên nhẫn và chuẩn bị kỹ."
+          "translation": "Dạy trẻ nhỏ đòi hỏi sự kiên nhẫn và chuẩn bị kỹ.",
+          "aliases": [
+            "require"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            84
+          ]
         },
         {
           "term": "be on the point of / be about to",
@@ -1107,7 +1566,15 @@
           "usage": "be on the point of leaving; be about to leave; was about to do when something happened.",
           "family": "point (n), about (trong cụm cố định). Đây là mẫu cấu trúc, không thay of bằng to rồi giữ V-ing.",
           "example": "I was on the point of leaving when the phone rang.",
-          "translation": "Tôi đang sắp rời đi thì điện thoại reo."
+          "translation": "Tôi đang sắp rời đi thì điện thoại reo.",
+          "aliases": [
+            "be on the point of doing st",
+            "be about to do st"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            88
+          ]
         },
         {
           "term": "have a recollection of",
@@ -1117,7 +1584,14 @@
           "usage": "have a clear/vague/no recollection of something/doing; recollect doing; a childhood recollection.",
           "family": "recollect (v); recollection (n). Remember là từ gần nghĩa.",
           "example": "She had no recollection of meeting him before.",
-          "translation": "Cô ấy không nhớ đã từng gặp anh ấy trước đó."
+          "translation": "Cô ấy không nhớ đã từng gặp anh ấy trước đó.",
+          "aliases": [
+            "have … recollection of …"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            91
+          ]
         },
         {
           "term": "allocate",
@@ -1127,7 +1601,11 @@
           "usage": "allocate money/time to a task; allocate resources for a project; allocate someone something.",
           "family": "allocate (v); allocation (n); allocated (phân từ).",
           "example": "The school allocated more time to reading practice.",
-          "translation": "Trường dành thêm thời gian cho việc luyện đọc."
+          "translation": "Trường dành thêm thời gian cho việc luyện đọc.",
+          "teacherSelected": true,
+          "questions": [
+            94
+          ]
         },
         {
           "term": "lose no time in",
@@ -1137,7 +1615,11 @@
           "usage": "lose no time in doing; waste no time in doing; act without delay.",
           "family": "lose–lost–lost (v); loss (n). Cả cụm dùng để nhấn mạnh hành động nhanh chóng.",
           "example": "The team lost no time in contacting the affected families.",
-          "translation": "Nhóm lập tức liên hệ với các gia đình bị ảnh hưởng."
+          "translation": "Nhóm lập tức liên hệ với các gia đình bị ảnh hưởng.",
+          "teacherSelected": true,
+          "questions": [
+            95
+          ]
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"
@@ -1154,7 +1636,11 @@
           "usage": "a respectable person; be respectful to/towards someone; their respective roles; A and B are 10 and 12 respectively.",
           "family": "respect (n/v); respectable, respectful, respective (adj); respectively (adv); disrespectful (adj).",
           "example": "The students were respectful to their teachers and returned to their respective classrooms.",
-          "translation": "Học sinh thể hiện sự tôn trọng giáo viên rồi trở về lớp học riêng của mình."
+          "translation": "Học sinh thể hiện sự tôn trọng giáo viên rồi trở về lớp học riêng của mình.",
+          "teacherSelected": true,
+          "questions": [
+            12
+          ]
         },
         {
           "term": "irrespective of",
@@ -1164,7 +1650,11 @@
           "usage": "irrespective of age/background; regardless of cost; irrespective of whether + mệnh đề.",
           "family": "respective (adj) và irrespective of khác cách dùng; regardless of là cụm gần nghĩa.",
           "example": "All applicants are considered irrespective of their age.",
-          "translation": "Tất cả ứng viên đều được xem xét bất kể tuổi tác."
+          "translation": "Tất cả ứng viên đều được xem xét bất kể tuổi tác.",
+          "teacherSelected": true,
+          "questions": [
+            12
+          ]
         },
         {
           "term": "take in / absorb / intake",
@@ -1174,7 +1664,11 @@
           "usage": "take in information; absorb knowledge/water; food/water intake; be taken in by a story = bị câu chuyện lừa.",
           "family": "take–took–taken; absorb (v), absorption (n); intake (n).",
           "example": "There was too much information for me to take in at once.",
-          "translation": "Có quá nhiều thông tin để tôi tiếp thu cùng lúc."
+          "translation": "Có quá nhiều thông tin để tôi tiếp thu cùng lúc.",
+          "teacherSelected": true,
+          "questions": [
+            13
+          ]
         },
         {
           "term": "barely / hardly / scarcely",
@@ -1184,7 +1678,11 @@
           "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
           "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
           "example": "She could barely hear the speaker over the noise.",
-          "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn."
+          "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn.",
+          "teacherSelected": true,
+          "questions": [
+            15
+          ]
         },
         {
           "term": "save for a rainy day",
@@ -1194,7 +1692,11 @@
           "usage": "save money for a rainy day; put something aside for a rainy day; emergency savings = tiền dự phòng.",
           "family": "save (v); savings (n số nhiều: tiền tiết kiệm). Rainy day là thành ngữ trong cụm này.",
           "example": "She saves a little each month for a rainy day.",
-          "translation": "Cô ấy để dành một ít mỗi tháng phòng lúc khó khăn."
+          "translation": "Cô ấy để dành một ít mỗi tháng phòng lúc khó khăn.",
+          "teacherSelected": true,
+          "questions": [
+            18
+          ]
         },
         {
           "term": "take effect / in effect",
@@ -1204,7 +1706,11 @@
           "usage": "a rule takes effect; a rule is in effect; in effect, … = thực chất là…; come into effect cũng là bắt đầu có hiệu lực.",
           "family": "effect (n); effective (adj); effectively (adv). Take effect khác affect (v: ảnh hưởng).",
           "example": "The new rules take effect on Monday and remain in effect for a year.",
-          "translation": "Quy định mới có hiệu lực từ thứ Hai và được áp dụng trong một năm."
+          "translation": "Quy định mới có hiệu lực từ thứ Hai và được áp dụng trong một năm.",
+          "teacherSelected": true,
+          "questions": [
+            20
+          ]
         },
         {
           "term": "few and far between",
@@ -1214,7 +1720,11 @@
           "usage": "opportunities are few and far between; buses are few and far between; near synonym: rare.",
           "family": "few (từ chỉ lượng) + far between; ghi nguyên cụm, không có một họ từ chung.",
           "example": "Jobs in that small town were few and far between.",
-          "translation": "Việc làm ở thị trấn nhỏ đó rất hiếm."
+          "translation": "Việc làm ở thị trấn nhỏ đó rất hiếm.",
+          "teacherSelected": true,
+          "questions": [
+            21
+          ]
         },
         {
           "term": "pull through",
@@ -1224,7 +1734,11 @@
           "usage": "pull through an illness/crisis; help someone pull through; support pulls someone through.",
           "family": "pull (v); pulled/pulling (dạng động từ). Pull through gần survive/recover trong ngữ cảnh phù hợp.",
           "example": "The business pulled through the crisis with support from local customers.",
-          "translation": "Doanh nghiệp vượt qua khủng hoảng nhờ khách hàng địa phương hỗ trợ."
+          "translation": "Doanh nghiệp vượt qua khủng hoảng nhờ khách hàng địa phương hỗ trợ.",
+          "teacherSelected": true,
+          "questions": [
+            22
+          ]
         },
         {
           "term": "jot down / note down",
@@ -1234,7 +1748,11 @@
           "usage": "jot down an address / jot an address down; jot it down; note down key points.",
           "family": "jot → jotted, jotting; note (n/v); notes (n số nhiều: ghi chú).",
           "example": "Jot down the main points before you forget them.",
-          "translation": "Ghi nhanh các ý chính trước khi quên."
+          "translation": "Ghi nhanh các ý chính trước khi quên.",
+          "teacherSelected": true,
+          "questions": [
+            23
+          ]
         },
         {
           "term": "green / inexperienced",
@@ -1244,7 +1762,11 @@
           "usage": "be green at a job; an inexperienced worker; lack experience; gain experience.",
           "family": "experience (n/v); experienced/inexperienced (adj). Green là từ gần nghĩa trong ngữ cảnh kinh nghiệm.",
           "example": "The new assistant was still green but eager to learn.",
-          "translation": "Trợ lý mới còn non kinh nghiệm nhưng ham học hỏi."
+          "translation": "Trợ lý mới còn non kinh nghiệm nhưng ham học hỏi.",
+          "teacherSelected": true,
+          "questions": [
+            24
+          ]
         },
         {
           "term": "criterion / criteria",
@@ -1254,7 +1776,11 @@
           "usage": "a selection criterion; meet the criteria; criteria for admission; one important criterion.",
           "family": "criterion (số ít) → criteria (số nhiều). Không dùng a criteria khi chỉ một tiêu chí.",
           "example": "Applicants must meet all the selection criteria.",
-          "translation": "Ứng viên phải đáp ứng tất cả tiêu chí tuyển chọn."
+          "translation": "Ứng viên phải đáp ứng tất cả tiêu chí tuyển chọn.",
+          "teacherSelected": true,
+          "questions": [
+            25
+          ]
         },
         {
           "term": "endure / enduring",
@@ -1264,7 +1790,11 @@
           "usage": "endure pain/hardship; a tradition endures; enduring influence/popularity; an enduring friendship.",
           "family": "endure (v); endurance (n: sức chịu đựng); enduring (adj); endurable (adj: chịu được).",
           "example": "The novel has had an enduring influence on later writers.",
-          "translation": "Cuốn tiểu thuyết có ảnh hưởng lâu bền đến các nhà văn sau này."
+          "translation": "Cuốn tiểu thuyết có ảnh hưởng lâu bền đến các nhà văn sau này.",
+          "teacherSelected": true,
+          "questions": [
+            36
+          ]
         },
         {
           "term": "family reunion",
@@ -1274,7 +1804,11 @@
           "usage": "hold/attend a family reunion; reunite with family; be reunited with someone.",
           "family": "reunite (v); reunion (n); reunited (dạng phân từ).",
           "example": "Relatives travelled from different cities for the family reunion.",
-          "translation": "Họ hàng từ các thành phố khác nhau đến dự buổi đoàn tụ gia đình."
+          "translation": "Họ hàng từ các thành phố khác nhau đến dự buổi đoàn tụ gia đình.",
+          "teacherSelected": true,
+          "questions": [
+            48
+          ]
         },
         {
           "term": "agree on / upon",
@@ -1284,7 +1818,11 @@
           "usage": "agree on/upon a date/plan; agree with someone; agree to do something; reach an agreement.",
           "family": "agree (v); agreement (n); disagree (v); disagreement (n).",
           "example": "After a long discussion, we agreed on a date for the event.",
-          "translation": "Sau cuộc thảo luận dài, chúng tôi thống nhất ngày tổ chức sự kiện."
+          "translation": "Sau cuộc thảo luận dài, chúng tôi thống nhất ngày tổ chức sự kiện.",
+          "teacherSelected": true,
+          "questions": [
+            54
+          ]
         },
         {
           "term": "appeal / appealing",
@@ -1294,7 +1832,11 @@
           "usage": "appeal to readers; have broad appeal; an appealing story; an appeal for help là lời kêu gọi giúp đỡ.",
           "family": "appeal (n/v); appealing (adj); unappealing (adj).",
           "example": "Stories about friendship appeal to readers of different ages.",
-          "translation": "Truyện về tình bạn hấp dẫn độc giả ở nhiều độ tuổi."
+          "translation": "Truyện về tình bạn hấp dẫn độc giả ở nhiều độ tuổi.",
+          "teacherSelected": true,
+          "questions": [
+            56
+          ]
         },
         {
           "term": "prose / poem / poetry",
@@ -1304,7 +1846,11 @@
           "usage": "write prose; read a poem; a collection of poems; modern poetry; prose and poetry.",
           "family": "poem (n đếm được); poetry (n); poet (n: nhà thơ); poetic (adj); prose (n).",
           "example": "The collection contains both short prose pieces and poems.",
-          "translation": "Tuyển tập gồm cả những bài văn xuôi ngắn và các bài thơ."
+          "translation": "Tuyển tập gồm cả những bài văn xuôi ngắn và các bài thơ.",
+          "teacherSelected": true,
+          "questions": [
+            57
+          ]
         },
         {
           "term": "literate / literary / literal",
@@ -1314,7 +1860,11 @@
           "usage": "a literate population; literary works; the literal meaning; a literal translation.",
           "family": "literacy (n), literate/illiterate (adj); literature (n), literary (adj); literal (adj), literally (adv).",
           "example": "A literary text may use words beyond their literal meanings.",
-          "translation": "Một văn bản văn học có thể dùng từ vượt ra ngoài nghĩa đen."
+          "translation": "Một văn bản văn học có thể dùng từ vượt ra ngoài nghĩa đen.",
+          "teacherSelected": true,
+          "questions": [
+            57
+          ]
         },
         {
           "term": "convey",
@@ -1324,7 +1874,11 @@
           "usage": "convey an idea/message/emotion; convey something to someone; convey that + mệnh đề.",
           "family": "convey (v); conveyed/conveying (dạng động từ). Conveyance (n) thường dùng ở nghĩa vận chuyển/chuyển giao.",
           "example": "The poem conveys a strong sense of loss.",
-          "translation": "Bài thơ truyền tải cảm giác mất mát sâu sắc."
+          "translation": "Bài thơ truyền tải cảm giác mất mát sâu sắc.",
+          "teacherSelected": true,
+          "questions": [
+            58
+          ]
         },
         {
           "term": "move someone / moving",
@@ -1334,7 +1888,11 @@
           "usage": "a story moves someone; be deeply moved by; a moving film; move someone to tears.",
           "family": "move (v); moving (adj: gây xúc động); moved (adj: cảm thấy xúc động).",
           "example": "The moving speech brought several listeners to tears.",
-          "translation": "Bài phát biểu xúc động khiến một số người nghe rơi nước mắt."
+          "translation": "Bài phát biểu xúc động khiến một số người nghe rơi nước mắt.",
+          "teacherSelected": true,
+          "questions": [
+            59
+          ]
         },
         {
           "term": "vulgar",
@@ -1344,7 +1902,11 @@
           "usage": "vulgar language/remarks/behaviour; a vulgar joke; avoid vulgar expressions.",
           "family": "vulgar (adj); vulgarity (n); vulgarly (adv).",
           "example": "The editor removed the vulgar expressions from the article.",
-          "translation": "Biên tập viên bỏ những cách diễn đạt thô tục khỏi bài viết."
+          "translation": "Biên tập viên bỏ những cách diễn đạt thô tục khỏi bài viết.",
+          "teacherSelected": true,
+          "questions": [
+            60
+          ]
         },
         {
           "term": "status",
@@ -1354,7 +1916,11 @@
           "usage": "social/legal status; achieve high status; a status symbol; check the status of an application.",
           "family": "status (n); statuses (số nhiều khi nói nhiều loại/tình trạng).",
           "example": "Education helped improve her social status.",
-          "translation": "Giáo dục giúp nâng cao địa vị xã hội của cô ấy."
+          "translation": "Giáo dục giúp nâng cao địa vị xã hội của cô ấy.",
+          "teacherSelected": true,
+          "questions": [
+            72
+          ]
         },
         {
           "term": "pioneer",
@@ -1364,7 +1930,11 @@
           "usage": "a pioneer in a field; pioneer a method; pioneering research; an early pioneer.",
           "family": "pioneer (n/v); pioneering (adj).",
           "example": "The institute pioneered a new method of collecting data.",
-          "translation": "Viện đi tiên phong trong phát triển một phương pháp thu thập dữ liệu mới."
+          "translation": "Viện đi tiên phong trong phát triển một phương pháp thu thập dữ liệu mới.",
+          "teacherSelected": true,
+          "questions": [
+            73
+          ]
         },
         {
           "term": "issue",
@@ -1374,7 +1944,11 @@
           "usage": "issue a report/statistics/a statement; discuss an issue; the latest issue of a journal.",
           "family": "issue (n/v); issued (quá khứ); issuing (dạng -ing).",
           "example": "The organisation issued a report on employment trends.",
-          "translation": "Tổ chức công bố báo cáo về xu hướng việc làm."
+          "translation": "Tổ chức công bố báo cáo về xu hướng việc làm.",
+          "teacherSelected": true,
+          "questions": [
+            75
+          ]
         },
         {
           "term": "amass / accumulate",
@@ -1384,7 +1958,11 @@
           "usage": "amass wealth/evidence/qualifications; accumulate experience/debt; dust accumulates.",
           "family": "amass (v); accumulate (v), accumulation (n), accumulated (adj).",
           "example": "Over the years, she amassed a large collection of historical records.",
-          "translation": "Qua nhiều năm, cô ấy tích lũy được bộ sưu tập tư liệu lịch sử lớn."
+          "translation": "Qua nhiều năm, cô ấy tích lũy được bộ sưu tập tư liệu lịch sử lớn.",
+          "teacherSelected": true,
+          "questions": [
+            85
+          ]
         },
         {
           "term": "fall prey to / fall victim to",
@@ -1394,17 +1972,28 @@
           "usage": "fall prey to fear/fraud; fall victim to a scam; prey on someone = lợi dụng ai.",
           "family": "fall–fell–fallen; prey (n/v); victim (n). Giữ to trước nguyên nhân gây hại.",
           "example": "Without checking the facts, people may fall prey to false rumours.",
-          "translation": "Nếu không kiểm tra sự thật, người ta có thể bị tin đồn sai chi phối."
+          "translation": "Nếu không kiểm tra sự thật, người ta có thể bị tin đồn sai chi phối.",
+          "teacherSelected": true,
+          "questions": [
+            91
+          ]
         },
         {
           "term": "rational / irrational",
           "meta": "adjectives",
           "meaning": "hợp lý, dựa trên lý trí / phi lý",
-          "note": "Rational nói suy nghĩ dựa trên lý lẽ; irrational nói không hợp lý hoặc bị cảm xúc chi phối. Reasonable có thể gần nghĩa hợp lý, nhưng còn có nghĩa vừa phải như reasonable prices.",
+          "note": "Rational nói suy nghĩ dựa trên lý lẽ; irrational nói không hợp lý hoặc bị cảm xúc chi phối. Reasonable có thể gần nghĩa hợp lý, nhưng còn có nghĩa vừa phải như reasonable prices. Rational gần nghĩa reasonable khi nhận xét suy nghĩ hoặc quyết định hợp lý. Reasonable còn có nghĩa “vừa phải/chấp nhận được”, như a reasonable price; không thay bằng rational trong cụm này.",
           "usage": "rational thinking/decision; irrational fears; behave rationally; a reasonable explanation.",
           "family": "rational (adj), rationally (adv), rationality (n); irrational (adj), irrationally (adv).",
           "example": "A rational decision should be based on evidence rather than fear.",
-          "translation": "Quyết định hợp lý nên dựa trên bằng chứng thay vì nỗi sợ."
+          "translation": "Quyết định hợp lý nên dựa trên bằng chứng thay vì nỗi sợ.",
+          "aliases": [
+            "rational = reasonable"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            91
+          ]
         },
         {
           "term": "live up to / fall short of expectations",
@@ -1414,7 +2003,15 @@
           "usage": "live/come up to one’s expectations; fall short of one’s expectations; exceed expectations = vượt kỳ vọng.",
           "family": "expect (v); expectation (n); expected/unexpected (adj). Expectations thường dùng số nhiều trong các cụm này.",
           "example": "The service was pleasant, but the food fell short of our expectations.",
-          "translation": "Dịch vụ dễ chịu nhưng đồ ăn không đạt kỳ vọng của chúng tôi."
+          "translation": "Dịch vụ dễ chịu nhưng đồ ăn không đạt kỳ vọng của chúng tôi.",
+          "aliases": [
+            "come/live up to one’s expectations",
+            "fall short of one’s expectations"
+          ],
+          "teacherSelected": true,
+          "questions": [
+            93
+          ]
         },
         {
           "term": "climate / economic climate",
@@ -1424,7 +2021,11 @@
           "usage": "a tropical climate; the current economic climate; a climate of uncertainty; business climate.",
           "family": "climate (n); climatic (adj ở nghĩa khí hậu). Weather là thời tiết ngắn hạn.",
           "example": "Small firms face difficulties in the current economic climate.",
-          "translation": "Doanh nghiệp nhỏ gặp khó khăn trong tình hình kinh tế hiện nay."
+          "translation": "Doanh nghiệp nhỏ gặp khó khăn trong tình hình kinh tế hiện nay.",
+          "teacherSelected": true,
+          "questions": [
+            98
+          ]
         },
         {
           "term": "claim",
@@ -1434,7 +2035,11 @@
           "usage": "claim that + mệnh đề; claim to do/have done; support a claim with evidence; make an insurance claim.",
           "family": "claim (n/v); claimant (n); claimed/unclaimed (dạng phân từ/tính từ).",
           "example": "The company claimed that its new product used less energy.",
-          "translation": "Công ty khẳng định sản phẩm mới tiêu thụ ít năng lượng hơn."
+          "translation": "Công ty khẳng định sản phẩm mới tiêu thụ ít năng lượng hơn.",
+          "teacherSelected": true,
+          "questions": [
+            99
+          ]
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"

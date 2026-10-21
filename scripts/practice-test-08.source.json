@@ -1084,24 +1084,36 @@
       "acceptedAnswers": [
         "was put off until"
       ],
-      "displayAnswer": "Due to the weather, the match was put off until further notice.",
+      "displayAnswer": "was put off until",
       "explanation": "Put off = hoãn lại, dùng bị động was put off vì match là sự kiện bị hoãn. Until further notice là đến khi có thông báo mới; câu nguồn đã đồng bộ đúng điều kiện này.",
       "prefix": "Due to the weather, the match",
-      "suffix": "further notice.",
-      "blankAnswer": "was put off until"
+      "suffix": "further notice",
+      "blankAnswer": "was put off until",
+      "keyword": "off",
+      "answerPrefix": "Due to the weather, the match",
+      "answerSuffix": "further notice",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Due to the weather, the match was put off until further notice"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "takes pride in the quality of his work"
+        "takes pride in"
       ],
-      "displayAnswer": "He always takes pride in the quality of his work as a dedicated craftsman.",
+      "displayAnswer": "takes pride in",
       "explanation": "Take pride in = tự hào về. He số ít nên takes; giữ the quality of his work vì đối tượng tự hào là chất lượng công việc chứ không chỉ nghề nghiệp nói chung.",
       "prefix": "He always",
-      "suffix": "as a dedicated craftsman.",
-      "blankAnswer": "takes pride in the quality of his work"
+      "suffix": "the quality of his work as a dedicated craftsman",
+      "blankAnswer": "takes pride in",
+      "keyword": "takes",
+      "answerPrefix": "He always",
+      "answerSuffix": "the quality of his work as a dedicated craftsman",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "He always takes pride in the quality of his work as a dedicated craftsman"
     },
     {
       "globalNumber": 93,
@@ -1111,24 +1123,36 @@
         "gives a vivid account of",
         "provides a vivid account of"
       ],
-      "displayAnswer": "The author’s book gives a vivid account of his childhood.",
+      "displayAnswer": "gives a vivid account of / provides a vivid account of",
       "explanation": "Give/provide a vivid account of = mô tả sống động về. Book là chủ ngữ số ít nên gives/provides; his childhood đã in sau ô trống, tránh lặp lại.",
-      "prefix": "The author’s book",
-      "suffix": "his childhood.",
-      "blankAnswer": "gives a vivid account of"
+      "prefix": "The author's book",
+      "suffix": "his childhood",
+      "blankAnswer": "gives a vivid account of",
+      "keyword": "account",
+      "answerPrefix": "The author's book",
+      "answerSuffix": "his childhood",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "The author's book gives a vivid account of his childhood"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "everyone’s surprise"
+        "everyone's surprise"
       ],
-      "displayAnswer": "To everyone’s surprise, John left the meeting early.",
+      "displayAnswer": "everyone's surprise",
       "explanation": "To everyone’s surprise = khiến mọi người ngạc nhiên. Surprise là danh từ và everyone’s là sở hữu; phần còn lại John left… đã có, chỉ điền cụm này.",
       "prefix": "To",
-      "suffix": ", John left the meeting early.",
-      "blankAnswer": "everyone’s surprise"
+      "suffix": ", John left the meeting early",
+      "blankAnswer": "everyone's surprise",
+      "keyword": "surprise",
+      "answerPrefix": "To",
+      "answerSuffix": ", John left the meeting early",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "To everyone's surprise, John left the meeting early"
     },
     {
       "globalNumber": 95,
@@ -1137,11 +1161,17 @@
       "acceptedAnswers": [
         "lost my appetite the moment"
       ],
-      "displayAnswer": "I lost my appetite the moment I saw the dirty state of the restaurant kitchen.",
-      "explanation": "Lose one’s appetite = hết cảm giác muốn ăn. The moment giữ đúng nghĩa ngay khi, còn when chỉ chung thời điểm. Đuôi về restaurant kitchen đã có sẵn nên không bỏ kitchen.",
+      "displayAnswer": "lost my appetite the moment",
+      "explanation": "Lose one’s appetite = hết cảm giác muốn ăn. The moment giữ đúng nghĩa ngay khi, còn when chỉ chung thời điểm.",
       "prefix": "I",
-      "suffix": "I saw the dirty state of the restaurant kitchen.",
-      "blankAnswer": "lost my appetite the moment"
+      "suffix": "I saw the dirty state of the restaurant kitchen",
+      "blankAnswer": "lost my appetite the moment",
+      "keyword": "lost",
+      "answerPrefix": "I",
+      "answerSuffix": "I saw the dirty state of the restaurant kitchen",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "I lost my appetite the moment I saw the dirty state of the restaurant kitchen"
     },
     {
       "globalNumber": 96,
@@ -1151,11 +1181,17 @@
         "is nothing like as interesting as",
         "was nothing like as interesting as"
       ],
-      "displayAnswer": "Her new novel is nothing like as interesting as her previous one.",
+      "displayAnswer": "is nothing like as interesting as / was nothing like as interesting as",
       "explanation": "Nothing like as…as = kém xa về mức độ. Đổi chiều so sánh từ previous novel far more interesting sang new novel kém thú vị; phải giữ nothing theo từ khóa.",
       "prefix": "Her new novel",
-      "suffix": "her previous one.",
-      "blankAnswer": "is nothing like as interesting as"
+      "suffix": "her previous one",
+      "blankAnswer": "is nothing like as interesting as",
+      "keyword": "nothing",
+      "answerPrefix": "Her new novel",
+      "answerSuffix": "her previous one",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Her new novel is nothing like as interesting as her previous one"
     },
     {
       "globalNumber": 97,
@@ -1165,11 +1201,17 @@
         "is prone to being attacked",
         "is prone to attack"
       ],
-      "displayAnswer": "This plant is prone to being attacked by insects.",
+      "displayAnswer": "is prone to being attacked / is prone to attack",
       "explanation": "Be prone to + danh từ/V-ing = dễ gặp/chịu điều gì. Cây bị côn trùng tấn công nên being attacked là bị động; attack dạng danh từ cũng diễn đạt nguy cơ bị tấn công.",
       "prefix": "This plant",
-      "suffix": "by insects.",
-      "blankAnswer": "is prone to being attacked"
+      "suffix": "by insects",
+      "blankAnswer": "is prone to being attacked",
+      "keyword": "prone",
+      "answerPrefix": "This plant",
+      "answerSuffix": "by insects",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "This plant is prone to being attacked by insects"
     },
     {
       "globalNumber": 98,
@@ -1178,24 +1220,36 @@
       "acceptedAnswers": [
         "to dawn on him"
       ],
-      "displayAnswer": "When he won the scholarship, it began to dawn on him how lucky he was.",
+      "displayAnswer": "to dawn on him",
       "explanation": "It begins to dawn on somebody… = ai bắt đầu nhận ra. Began đã cho, theo sau bằng to dawn on him; không đổi dawn thành realise vì phải giữ từ khóa.",
       "prefix": "When he won the scholarship, it began",
-      "suffix": "how lucky he was.",
-      "blankAnswer": "to dawn on him"
+      "suffix": "how lucky he was",
+      "blankAnswer": "to dawn on him",
+      "keyword": "dawn",
+      "answerPrefix": "When he won the scholarship, it began",
+      "answerSuffix": "how lucky he was",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "When he won the scholarship, it began to dawn on him how lucky he was"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "would rather not have spent his holidays"
+        "would rather not have spent"
       ],
-      "displayAnswer": "Michael would rather not have spent his holidays in London.",
+      "displayAnswer": "would rather not have spent",
       "explanation": "Would rather not have + V3 diễn đạt mong muốn trái với việc thực tế đã làm trong quá khứ. Michael đã nghỉ ở London dù không muốn; would rather not spend chỉ mong muốn hiện tại/tương lai.",
       "prefix": "Michael",
-      "suffix": "in London.",
-      "blankAnswer": "would rather not have spent his holidays"
+      "suffix": "his holidays in London",
+      "blankAnswer": "would rather not have spent",
+      "keyword": "rather",
+      "answerPrefix": "Michael",
+      "answerSuffix": "his holidays in London",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Michael would rather not have spent his holidays in London"
     },
     {
       "globalNumber": 100,
@@ -1204,17 +1258,23 @@
       "acceptedAnswers": [
         "bite my head off"
       ],
-      "displayAnswer": "You don’t have to bite my head off if you don’t like what I’m saying.",
+      "displayAnswer": "bite my head off",
       "explanation": "Bite somebody’s head off là quát mắng ai gay gắt, không phải nghĩa đen. Người nói là me nên dùng my head; bite nguyên mẫu theo sau don’t have to.",
-      "prefix": "You don’t have to",
-      "suffix": "if you don’t like what I’m saying.",
-      "blankAnswer": "bite my head off"
+      "prefix": "You don't have to",
+      "suffix": "if you don't like what I'm saying",
+      "blankAnswer": "bite my head off",
+      "keyword": "head",
+      "answerPrefix": "You don't have to",
+      "answerSuffix": "if you don't like what I'm saying",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "You don't have to bite my head off if you don't like what I'm saying"
     }
   ],
   "reviewApproved": true,
   "updated": "2026-10-16",
   "scienceReferences": [],
-  "contentRevision": "2026-10-17-authentic",
+  "contentRevision": "2026-10-21-word-limits",
   "readingSources": [
     {
       "part": "II.2",

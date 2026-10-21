@@ -10,7 +10,11 @@
       "usage": "lay up a ship; be laid up",
       "example": "Two ships were laid up during the quiet season.",
       "translation": "Hai con tàu tạm ngừng hoạt động trong mùa vắng khách.",
-      "family": "lay – laid – laid; idle (adj/v)"
+      "family": "lay – laid – laid; idle (adj/v)",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 2,
@@ -21,7 +25,11 @@
       "usage": "be worn away by weather/water",
       "example": "Rain had worn away the inscription.",
       "translation": "Mưa đã làm mòn dòng chữ khắc.",
-      "family": "wear – wore – worn; erosion (n); erode (v)"
+      "family": "wear – wore – worn; erosion (n); erode (v)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 3,
@@ -32,7 +40,11 @@
       "usage": "On second thoughts, + quyết định mới",
       "example": "On second thoughts, I’ll stay at home.",
       "translation": "Nghĩ lại thì tôi sẽ ở nhà.",
-      "family": "think – thought – thought; reconsider (v)"
+      "family": "think – thought – thought; reconsider (v)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 4,
@@ -43,7 +55,11 @@
       "usage": "comply with rules/standards/requirements",
       "example": "All equipment must comply with the safety rules.",
       "translation": "Mọi thiết bị phải tuân thủ quy định an toàn.",
-      "family": "comply (v); compliance (n); compliant (adj)"
+      "family": "comply (v); compliance (n); compliant (adj)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -54,7 +70,11 @@
       "usage": "government censorship; subject to censorship",
       "example": "The novel was affected by censorship.",
       "translation": "Cuốn tiểu thuyết bị ảnh hưởng bởi việc kiểm duyệt.",
-      "family": "censor (n/v); censorship (n); censored (adj)"
+      "family": "censor (n/v); censorship (n); censored (adj)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -65,7 +85,11 @@
       "usage": "acquit someone of a charge; be acquitted",
       "example": "The defendant was acquitted of the charge.",
       "translation": "Bị cáo được tuyên không có tội đối với cáo buộc đó.",
-      "family": "acquit (v); acquittal (n); acquitted (V3)"
+      "family": "acquit (v); acquittal (n); acquitted (V3)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 7,
@@ -76,7 +100,11 @@
       "usage": "an eminent scientist/authority",
       "example": "An eminent historian reviewed the book.",
       "translation": "Một sử gia có uy tín đã nhận xét cuốn sách.",
-      "family": "eminence (n); eminent (adj); eminently (adv)"
+      "family": "eminence (n); eminent (adj); eminently (adv)",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 8,
@@ -87,7 +115,11 @@
       "usage": "scrap metal; sell a car for scrap",
       "example": "The damaged machine was sold for scrap.",
       "translation": "Chiếc máy hỏng được bán làm phế liệu.",
-      "family": "scrap (n/v); scrapyard (n); recycle (v)"
+      "family": "scrap (n/v); scrapyard (n); recycle (v)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 10,
@@ -98,7 +130,11 @@
       "usage": "feel/be out of sorts",
       "example": "I felt out of sorts after the long journey.",
       "translation": "Tôi thấy khó chịu trong người sau chuyến đi dài.",
-      "family": "under the weather; unwell (adj); irritable (adj)"
+      "family": "under the weather; unwell (adj); irritable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 11,
@@ -109,7 +145,11 @@
       "usage": "an outbreak of disease/violence",
       "example": "The story describes an outbreak of fever.",
       "translation": "Câu chuyện mô tả một đợt sốt bùng phát.",
-      "family": "break out (phrasal v); outbreak (n)"
+      "family": "break out (phrasal v); outbreak (n)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 13,
@@ -120,7 +160,11 @@
       "usage": "begin/start in earnest",
       "example": "Rehearsals began in earnest on Monday.",
       "translation": "Các buổi tập bắt đầu được tiến hành nghiêm túc từ thứ Hai.",
-      "family": "earnest (adj); earnestly (adv); earnestness (n)"
+      "family": "earnest (adj); earnestly (adv); earnestness (n)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -131,7 +175,11 @@
       "usage": "ride out a storm/crisis",
       "example": "The shop managed to ride out the storm.",
       "translation": "Cửa hàng đã xoay xở vượt qua giai đoạn khó khăn.",
-      "family": "ride – rode – ridden; resilience (n)"
+      "family": "ride – rode – ridden; resilience (n)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 15,
@@ -142,7 +190,11 @@
       "usage": "scattered all over/across",
       "example": "Papers lay scattered across the desk.",
       "translation": "Giấy tờ nằm rải rác khắp bàn.",
-      "family": "scatter (v); scattered (adj); scattering (n)"
+      "family": "scatter (v); scattered (adj); scattering (n)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -153,7 +205,11 @@
       "usage": "give off heat/light/a smell/gas",
       "example": "The flowers gave off a sweet smell.",
       "translation": "Những bông hoa toả ra mùi thơm dịu.",
-      "family": "give – gave – given; emission (n); emit (v)"
+      "family": "give – gave – given; emission (n); emit (v)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 23,
@@ -164,7 +220,11 @@
       "usage": "a grim future/outlook; grim news",
       "example": "The novel presents a grim future.",
       "translation": "Cuốn tiểu thuyết miêu tả một tương lai u ám.",
-      "family": "grim (adj); grimly (adv); grimness (n)"
+      "family": "grim (adj); grimly (adv); grimness (n)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -175,7 +235,11 @@
       "usage": "a trend catches on; be slow to catch on",
       "example": "The new game quickly caught on.",
       "translation": "Trò chơi mới nhanh chóng trở nên phổ biến.",
-      "family": "catch – caught – caught; popular (adj); popularity (n)"
+      "family": "catch – caught – caught; popular (adj); popularity (n)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 26,
@@ -186,7 +250,11 @@
       "usage": "cause/create a storm in a teacup",
       "example": "The argument turned out to be a storm in a teacup.",
       "translation": "Cuộc tranh cãi hoá ra chỉ là chuyện nhỏ bị làm ầm lên.",
-      "family": "make a fuss; exaggerate (v); exaggeration (n)"
+      "family": "make a fuss; exaggerate (v); exaggeration (n)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 27,
@@ -197,7 +265,11 @@
       "usage": "bolt down food/a meal",
       "example": "He bolted down his lunch before class.",
       "translation": "Cậu ấy ăn vội bữa trưa trước giờ học.",
-      "family": "bolt (v/n); gulp down; hurriedly (adv)"
+      "family": "bolt (v/n); gulp down; hurriedly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -208,7 +280,11 @@
       "usage": "be/prove a roaring success",
       "example": "The charity show was a roaring success.",
       "translation": "Buổi diễn từ thiện thành công vang dội.",
-      "family": "roar (n/v); success (n); successful (adj)"
+      "family": "roar (n/v); success (n); successful (adj)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 31,
@@ -219,7 +295,11 @@
       "usage": "a business/marriage on the rocks",
       "example": "Their business was on the rocks.",
       "translation": "Công việc kinh doanh của họ đang bên bờ thất bại.",
-      "family": "trouble (n); failure (n); unstable (adj)"
+      "family": "trouble (n); failure (n); unstable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 32,
@@ -230,7 +310,11 @@
       "usage": "search/look high and low for",
       "example": "We searched high and low for the key.",
       "translation": "Chúng tôi tìm chiếc chìa khoá khắp nơi.",
-      "family": "search (n/v); thorough (adj); thoroughly (adv)"
+      "family": "search (n/v); thorough (adj); thoroughly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 34,
@@ -241,7 +325,11 @@
       "usage": "Don’t count your chickens before they hatch.",
       "example": "Don’t count your chickens before they hatch—we haven’t won yet.",
       "translation": "Đừng tính trước thành quả; chúng ta chưa thắng đâu.",
-      "family": "hatch (v); assume (v); assumption (n)"
+      "family": "hatch (v); assume (v); assumption (n)",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 35,
@@ -252,7 +340,11 @@
       "usage": "become second nature to someone",
       "example": "Checking the details became second nature to her.",
       "translation": "Việc kiểm tra chi tiết trở thành thói quen tự nhiên với cô ấy.",
-      "family": "nature (n); natural (adj); naturally (adv)"
+      "family": "nature (n); natural (adj); naturally (adv)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 37,
@@ -263,7 +355,11 @@
       "usage": "confidential information; keep something confidential",
       "example": "Please keep this information confidential.",
       "translation": "Vui lòng giữ thông tin này trong phạm vi bảo mật.",
-      "family": "confidence (n); confidential (adj); confidentiality (n)"
+      "family": "confidence (n); confidential (adj); confidentiality (n)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 41,
@@ -274,7 +370,11 @@
       "usage": "a negligible error/difference/effect",
       "example": "The difference between the two readings was negligible.",
       "translation": "Chênh lệch giữa hai số đo là không đáng kể.",
-      "family": "neglect (n/v); negligible/negligent (adj); negligibly (adv)"
+      "family": "neglect (n/v); negligible/negligent (adj); negligibly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 42,
@@ -285,7 +385,11 @@
       "usage": "a domineering person/attitude",
       "example": "His domineering manner made discussion difficult.",
       "translation": "Cách cư xử áp đặt của anh ấy khiến việc thảo luận khó khăn.",
-      "family": "dominate (v); domination (n); dominant/domineering (adj)"
+      "family": "dominate (v); domination (n); dominant/domineering (adj)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 43,
@@ -296,7 +400,11 @@
       "usage": "without provocation; react to provocation",
       "example": "The character shouted without any provocation.",
       "translation": "Nhân vật quát lên dù không ai khiêu khích.",
-      "family": "provoke (v); provocation (n); provocative (adj)"
+      "family": "provoke (v); provocation (n); provocative (adj)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 45,
@@ -307,7 +415,11 @@
       "usage": "decriminalize an offence; decriminalise (BrE)",
       "example": "The debate concerned whether to decriminalize the offence.",
       "translation": "Cuộc tranh luận xoay quanh việc có bỏ xử lý hình sự hành vi đó hay không.",
-      "family": "crime (n); criminal (n/adj); criminalize/decriminalize (v)"
+      "family": "crime (n); criminal (n/adj); criminalize/decriminalize (v)",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 94,
@@ -318,7 +430,11 @@
       "usage": "make it harder to solve/understand",
       "example": "The noise made it harder to concentrate.",
       "translation": "Tiếng ồn khiến việc tập trung trở nên khó hơn.",
-      "family": "hard (adj/adv); harder (comparative); difficulty (n)"
+      "family": "hard (adj/adv); harder (comparative); difficulty (n)",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ]
     },
     {
       "question": 99,
@@ -329,7 +445,11 @@
       "usage": "be said to have been found/taken",
       "example": "The missing painting is said to have been found.",
       "translation": "Người ta nói rằng bức tranh thất lạc đã được tìm thấy.",
-      "family": "say – said – said; report (v/n); reported (adj)"
+      "family": "say – said – said; report (v/n); reported (adj)",
+      "teacherSelected": true,
+      "questions": [
+        99
+      ]
     }
   ]
 }

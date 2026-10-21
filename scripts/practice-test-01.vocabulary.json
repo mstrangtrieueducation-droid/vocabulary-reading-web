@@ -9,7 +9,11 @@
       "usage": "persist in + N/V-ing; persist in trying = kiên trì thử; persist in a mistake = cứ tiếp tục sai.",
       "family": "persist (v); persistence (n: sự kiên trì); persistent (adj); persistently (adv).",
       "example": "She persisted in looking for a solution despite repeated failures.",
-      "translation": "Cô ấy kiên trì tìm giải pháp dù thất bại nhiều lần."
+      "translation": "Cô ấy kiên trì tìm giải pháp dù thất bại nhiều lần.",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "term": "accustomed to / used to / acquainted with",
@@ -19,7 +23,11 @@
       "usage": "be/get accustomed to + N/V-ing; be/get used to + N/V-ing; be acquainted with + người/vấn đề. Used to + V lại chỉ thói quen trước đây.",
       "family": "accustom (v), accustomed (adj); acquaint (v), acquaintance (n). Used trong be used to là quen với.",
       "example": "She is used to working late and is acquainted with the new procedure.",
-      "translation": "Cô ấy quen làm việc muộn và đã biết quy trình mới."
+      "translation": "Cô ấy quen làm việc muộn và đã biết quy trình mới.",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 19,
@@ -30,7 +38,11 @@
       "usage": "a slim chance of + N/V-ing; a slim chance that + mệnh đề",
       "family": "chance (n); slim (adj); a good chance: cơ hội cao",
       "example": "There is only a slim chance of finding a seat on this train.",
-      "translation": "Chỉ có một cơ hội rất nhỏ tìm được chỗ ngồi trên chuyến tàu này."
+      "translation": "Chỉ có một cơ hội rất nhỏ tìm được chỗ ngồi trên chuyến tàu này.",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 71,
@@ -41,7 +53,11 @@
       "usage": "a phishing email; a phishing scam; recognise phishing attempts",
       "family": "phish (v); scam (n/v); scammer (n)",
       "example": "The message was part of a phishing scam.",
-      "translation": "Tin nhắn đó là một phần của vụ lừa lấy thông tin."
+      "translation": "Tin nhắn đó là một phần của vụ lừa lấy thông tin.",
+      "teacherSelected": true,
+      "questions": [
+        71
+      ]
     },
     {
       "term": "launch",
@@ -61,17 +77,28 @@
       "usage": "allege that + mệnh đề; be alleged to do/have done; an allegation of fraud = cáo buộc gian lận.",
       "family": "allege (v); allegation (n); alleged (adj: bị cho là); allegedly (adv).",
       "example": "The report alleged that the company had ignored safety rules.",
-      "translation": "Báo cáo cáo buộc công ty đã phớt lờ quy định an toàn."
+      "translation": "Báo cáo cáo buộc công ty đã phớt lờ quy định an toàn.",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
-      "term": "category / categorical / categorically",
+      "term": "category / categorical / categorically reject",
       "meta": "noun / adjective / adverb",
       "meaning": "nhóm, loại / dứt khoát / một cách dứt khoát",
-      "note": "Category chỉ cách phân nhóm. Categorical trong cụm categorical denial lại nghĩa là rõ ràng, dứt khoát, không phải “thuộc một nhóm”. Categorically thường bổ nghĩa cho deny hoặc reject.",
-      "usage": "fall into a category = thuộc một nhóm; a categorical denial = lời phủ nhận dứt khoát; categorically reject a claim.",
+      "note": "Category chỉ cách phân nhóm. Categorical trong cụm categorical denial lại nghĩa là rõ ràng, dứt khoát, không phải “thuộc một nhóm”. Categorically thường bổ nghĩa cho deny hoặc reject. Categorically reject/deny nghĩa là bác bỏ/phủ nhận dứt khoát; categorically bổ nghĩa cho động từ, không dùng categorical ở vị trí này.",
+      "usage": "fall into a category = thuộc một nhóm; a categorical denial = lời phủ nhận dứt khoát; categorically reject a claim. categorically reject a claim/an allegation: bác bỏ dứt khoát một lời khẳng định/cáo buộc.",
       "family": "category (n), categories (số nhiều), categorise/categorize (v); categorical (adj), categorically (adv).",
       "example": "The director categorically rejected the accusation.",
-      "translation": "Giám đốc bác bỏ dứt khoát lời cáo buộc."
+      "translation": "Giám đốc bác bỏ dứt khoát lời cáo buộc.",
+      "aliases": [
+        "categorically reject"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "term": "advise",
@@ -81,7 +108,11 @@
       "usage": "advise someone to do; advise doing; advise against doing = khuyên không nên; a piece of advice = một lời khuyên.",
       "family": "advise (v); advice (n); adviser/advisor (n); advisable (adj: nên làm).",
       "example": "The teacher advised us to check our answers carefully.",
-      "translation": "Giáo viên khuyên chúng tôi kiểm tra kỹ đáp án."
+      "translation": "Giáo viên khuyên chúng tôi kiểm tra kỹ đáp án.",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "term": "economise on / economize on",
@@ -91,7 +122,11 @@
       "usage": "economise on fuel/food/expenses; an economical method = cách tiết kiệm; economic growth = tăng trưởng kinh tế.",
       "family": "economise/economize (v); economy (n); economical (adj); economically (adv).",
       "example": "We can economise on electricity by switching off unused lights.",
-      "translation": "Chúng ta có thể tiết kiệm điện bằng cách tắt đèn không dùng."
+      "translation": "Chúng ta có thể tiết kiệm điện bằng cách tắt đèn không dùng.",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "term": "technician / technologist",
@@ -101,7 +136,11 @@
       "usage": "a laboratory technician; a food technologist; technical skills = kỹ năng kỹ thuật; technological change = thay đổi công nghệ.",
       "family": "technique (n), technical (adj), technician (n); technology (n), technological (adj), technologist (n).",
       "example": "A technician repaired the equipment used by the food technologist.",
-      "translation": "Kỹ thuật viên sửa thiết bị mà chuyên gia công nghệ thực phẩm sử dụng."
+      "translation": "Kỹ thuật viên sửa thiết bị mà chuyên gia công nghệ thực phẩm sử dụng.",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "term": "outnumber",
@@ -111,7 +150,11 @@
       "usage": "A outnumbers B; be outnumbered by; outnumber someone two to one = đông gấp đôi.",
       "family": "number (n/v); outnumber (v); outnumbered/outnumbering (dạng động từ).",
       "example": "Visitors outnumbered local residents during the festival.",
-      "translation": "Trong lễ hội, du khách đông hơn người dân địa phương."
+      "translation": "Trong lễ hội, du khách đông hơn người dân địa phương.",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "term": "issue",
@@ -121,7 +164,11 @@
       "usage": "issue a warning/report/passport; address an issue = xử lý vấn đề; the latest issue of a magazine.",
       "family": "issue (n/v); issued (quá khứ); issuing (dạng -ing).",
       "example": "The authorities issued a warning about the approaching storm.",
-      "translation": "Nhà chức trách đưa ra cảnh báo về cơn bão đang đến."
+      "translation": "Nhà chức trách đưa ra cảnh báo về cơn bão đang đến.",
+      "teacherSelected": true,
+      "questions": [
+        58
+      ]
     },
     {
       "term": "give a second thought to",
@@ -131,7 +178,11 @@
       "usage": "give a second thought to + N/V-ing; give something a second thought; without a second thought = không đắn đo.",
       "family": "think–thought–thought (v); thought (n). Cụm này cần ghi nguyên cấu trúc.",
       "example": "Please give a second thought to leaving school so early.",
-      "translation": "Hãy cân nhắc thêm việc rời trường sớm như vậy."
+      "translation": "Hãy cân nhắc thêm việc rời trường sớm như vậy.",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "term": "patrol",
@@ -141,7 +192,11 @@
       "usage": "patrol an area/street/border; be on patrol = đang tuần tra; a police patrol.",
       "family": "patrol (n/v); patrolled (quá khứ); patrolling (dạng -ing).",
       "example": "Officers patrol the park at night to keep visitors safe.",
-      "translation": "Nhân viên tuần tra công viên ban đêm để bảo vệ khách tham quan."
+      "translation": "Nhân viên tuần tra công viên ban đêm để bảo vệ khách tham quan.",
+      "teacherSelected": true,
+      "questions": [
+        64
+      ]
     },
     {
       "term": "recruit",
@@ -151,7 +206,11 @@
       "usage": "recruit staff/volunteers; recruit someone to do something; a new recruit.",
       "family": "recruit (v/n); recruitment (n); recruiter (n: người tuyển dụng).",
       "example": "The organisation recruited volunteers to help local families.",
-      "translation": "Tổ chức tuyển tình nguyện viên để giúp các gia đình địa phương."
+      "translation": "Tổ chức tuyển tình nguyện viên để giúp các gia đình địa phương.",
+      "teacherSelected": true,
+      "questions": [
+        65
+      ]
     },
     {
       "question": 73,
@@ -162,7 +221,11 @@
       "usage": "get/gain access to an account; have access to information",
       "family": "access (n/v); accessible (adj); inaccessible (adj)",
       "example": "Students can get access to the online library.",
-      "translation": "Học sinh có thể truy cập thư viện trực tuyến."
+      "translation": "Học sinh có thể truy cập thư viện trực tuyến.",
+      "teacherSelected": true,
+      "questions": [
+        73
+      ]
     },
     {
       "question": 75,
@@ -173,7 +236,11 @@
       "usage": "a legitimate company; a legitimate reason; legitimate concerns",
       "family": "legitimacy (n); legitimately (adv); illegitimate (adj)",
       "example": "Use the company’s legitimate website to check the message.",
-      "translation": "Hãy dùng trang web thật của công ty để kiểm tra tin nhắn."
+      "translation": "Hãy dùng trang web thật của công ty để kiểm tra tin nhắn.",
+      "teacherSelected": true,
+      "questions": [
+        75
+      ]
     },
     {
       "question": 78,
@@ -184,7 +251,11 @@
       "usage": "back up your files; back them up; a backup copy",
       "family": "backup (n/adj); data (n); restore (v: khôi phục)",
       "example": "Remember to back up your files regularly.",
-      "translation": "Hãy nhớ sao lưu các tệp thường xuyên."
+      "translation": "Hãy nhớ sao lưu các tệp thường xuyên.",
+      "teacherSelected": true,
+      "questions": [
+        78
+      ]
     },
     {
       "question": 72,
@@ -195,7 +266,11 @@
       "usage": "protect yourself from identity theft; a victim of identity theft",
       "family": "identity (n); identify (v); theft (n); thief (n)",
       "example": "Stolen personal details can lead to identity theft.",
-      "translation": "Thông tin cá nhân bị lấy cắp có thể dẫn đến việc bị mạo danh."
+      "translation": "Thông tin cá nhân bị lấy cắp có thể dẫn đến việc bị mạo danh.",
+      "teacherSelected": true,
+      "questions": [
+        72
+      ]
     },
     {
       "term": "claim",
@@ -205,7 +280,11 @@
       "usage": "claim that + mệnh đề; claim to do; claim to have done; make a claim; claim compensation.",
       "family": "claim (n/v); claimant (n: người yêu cầu quyền lợi); unclaimed (adj).",
       "example": "He claimed to have sent the documents the previous day.",
-      "translation": "Anh ấy khẳng định đã gửi tài liệu hôm trước."
+      "translation": "Anh ấy khẳng định đã gửi tài liệu hôm trước.",
+      "teacherSelected": true,
+      "questions": [
+        90
+      ]
     },
     {
       "term": "give someone an introduction to",
@@ -215,7 +294,14 @@
       "usage": "give someone an introduction to a topic/group; introduce A to B; an introduction to biology.",
       "family": "introduce (v); introduction (n); introductory (adj: mang tính mở đầu).",
       "example": "The guide gave us a brief introduction to the research team.",
-      "translation": "Người hướng dẫn giới thiệu ngắn gọn cho chúng tôi về nhóm nghiên cứu."
+      "translation": "Người hướng dẫn giới thiệu ngắn gọn cho chúng tôi về nhóm nghiên cứu.",
+      "aliases": [
+        "give sb an introduction to sb"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        93
+      ]
     },
     {
       "term": "inspect",
@@ -225,7 +311,11 @@
       "usage": "inspect goods/equipment/a building; carry out an inspection; inspect something for damage.",
       "family": "inspect (v); inspection (n); inspector (n).",
       "example": "The goods were inspected for damage before delivery.",
-      "translation": "Hàng hóa được kiểm tra hư hại trước khi giao."
+      "translation": "Hàng hóa được kiểm tra hư hại trước khi giao.",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     }
   ],
   "revision": "2026-10-17-authentic"

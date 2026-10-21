@@ -1075,144 +1075,199 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "as no surprise because a little bird had told me that he",
-        "as no surprise since a little bird had told me that he",
-        "as no surprise as a little bird had told me that he",
-        "as no surprise because a little bird told me that he",
-        "as no surprise since a little bird told me that he"
+        "a little bird had told me",
+        "a little bird told me"
       ],
-      "displayAnswer": "as no surprise because a little bird had told me that he / as no surprise since a little bird had told me that he / as no surprise as a little bird had told me that he / as no surprise because a little bird told me that he / as no surprise since a little bird told me that he",
-      "prefix": "It came",
-      "suffix": "was dismissed.",
-      "fullSentence": "It came as no surprise because a little bird had told me that he was dismissed.",
-      "explanation": "A little bird told me là cách nói có người tiết lộ nhưng không nêu người đó là ai. Came as no surprise nghĩa là không gây ngạc nhiên, còn had told thể hiện thông tin đã có trước. Không thay bằng straight from the horse's mouth vì cụm đó nhấn mạnh nguồn trực tiếp, khác ý người kể giấu danh tính."
+      "displayAnswer": "a little bird had told me / a little bird told me",
+      "prefix": "It came as no surprise because",
+      "suffix": "that he was dismissed",
+      "fullSentence": "It came as no surprise because a little bird had told me that he was dismissed",
+      "explanation": "A little bird told me là cách nói có người tiết lộ nhưng không nêu người đó là ai. Came as no surprise nghĩa là không gây ngạc nhiên, còn had told thể hiện thông tin đã có trước.",
+      "keyword": "BIRD",
+      "answerPrefix": "It came as no surprise because",
+      "answerSuffix": "that he was dismissed",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "a little bird had told me"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "caught a glimpse of Jude Law in the street",
-        "got a glimpse of Jude Law in the street",
-        "had a glimpse of Jude Law in the street"
+        "caught a glimpse of",
+        "got a glimpse of",
+        "had a glimpse of"
       ],
-      "displayAnswer": "caught a glimpse of Jude Law in the street / got a glimpse of Jude Law in the street / had a glimpse of Jude Law in the street",
+      "displayAnswer": "caught a glimpse of / got a glimpse of / had a glimpse of",
       "prefix": "I",
-      "suffix": "",
-      "fullSentence": "I caught a glimpse of Jude Law in the street.",
-      "explanation": "Catch/get/have a glimpse of someone là nhìn thấy ai đó thoáng qua trong thời gian rất ngắn. Glimpse giữ dạng danh từ theo từ cho sẵn. Cần mạo từ a và giới từ of; in the street giữ địa điểm gặp, không được bỏ nếu muốn bảo toàn thông tin câu gốc."
+      "suffix": "Jude Law in the street",
+      "fullSentence": "I caught a glimpse of Jude Law in the street",
+      "explanation": "Catch/get/have a glimpse of someone là nhìn thấy ai đó thoáng qua trong thời gian rất ngắn. Glimpse giữ dạng danh từ theo từ cho sẵn.",
+      "keyword": "GLIMPSE",
+      "answerPrefix": "I",
+      "answerSuffix": "Jude Law in the street",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "caught a glimpse of"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "the club with a view to fostering better relations within the community",
-        "the club with a view to promoting better relations within the community",
-        "the club with a view to improving relations within the community"
+        "with a view to fostering",
+        "with a view to promoting"
       ],
-      "displayAnswer": "the club with a view to fostering better relations within the community / the club with a view to promoting better relations within the community / the club with a view to improving relations within the community",
-      "prefix": "These people joined",
-      "suffix": "",
-      "fullSentence": "These people joined the club with a view to fostering better relations within the community.",
-      "explanation": "With a view to nghĩa là nhằm mục đích; to ở đây là giới từ nên cần V-ing: fostering/promoting/improving. Không dùng to foster trong cụm này. Câu gốc nói động cơ gia nhập câu lạc bộ là cải thiện quan hệ trong cộng đồng, không phải chỉ tạo lợi ích cá nhân."
+      "displayAnswer": "with a view to fostering / with a view to promoting",
+      "prefix": "These people joined the club",
+      "suffix": "better relations within the community",
+      "fullSentence": "These people joined the club with a view to fostering better relations within the community",
+      "explanation": "With a view to nghĩa là nhằm mục đích; to ở đây là giới từ nên cần V-ing: fostering/promoting/improving. Không dùng to foster trong cụm này.",
+      "keyword": "VIEW",
+      "answerPrefix": "These people joined the club",
+      "answerSuffix": "better relations within the community",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "with a view to fostering"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "gets me down is this continual wet weather",
-        "gets me down is the continual wet weather"
+        "gets me down"
       ],
-      "displayAnswer": "gets me down is this continual wet weather / gets me down is the continual wet weather",
+      "displayAnswer": "gets me down",
       "prefix": "What really",
-      "suffix": "",
-      "fullSentence": "What really gets me down is this continual wet weather.",
-      "explanation": "Get someone down nghĩa là làm ai buồn bã, chán nản, nên giữ đúng makes me feel unhappy. Get on someone's nerves chủ yếu là làm bực mình và không tương đương hoàn toàn. Chủ ngữ What really gets me down đi với is; weather là danh từ không đếm được."
+      "suffix": "is this continual wet weather",
+      "fullSentence": "What really gets me down is this continual wet weather",
+      "explanation": "Get someone down nghĩa là làm ai buồn bã, chán nản, nên giữ đúng makes me feel unhappy. Get on someone's nerves chủ yếu là làm bực mình và không tương đương hoàn toàn.",
+      "keyword": "GETS",
+      "answerPrefix": "What really",
+      "answerSuffix": "is this continual wet weather",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "gets me down"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "to find his subject matter very inspiring"
+        "to find his subject matter"
       ],
-      "displayAnswer": "to find his subject matter very inspiring",
+      "displayAnswer": "to find his subject matter",
       "prefix": "The artist appeared",
-      "suffix": "",
-      "fullSentence": "The artist appeared to find his subject matter very inspiring.",
-      "explanation": "Appear to find + tân ngữ + tính từ nghĩa là có vẻ nhận thấy điều gì có tính chất nào đó. Inspiring mô tả đề tài tạo cảm hứng; inspired mô tả người nghệ sĩ được truyền cảm hứng. Phải giữ very để không làm nhẹ mức độ trong câu gốc."
+      "suffix": "very inspiring",
+      "fullSentence": "The artist appeared to find his subject matter very inspiring",
+      "explanation": "Appear to find + tân ngữ + tính từ nghĩa là có vẻ nhận thấy điều gì có tính chất nào đó. Inspiring mô tả đề tài tạo cảm hứng; inspired mô tả người nghệ sĩ được truyền cảm hứng.",
+      "keyword": "FIND",
+      "answerPrefix": "The artist appeared",
+      "answerSuffix": "very inspiring",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to find his subject matter"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "the exception of Minh, all the students"
+        "With the exception of Minh"
       ],
-      "displayAnswer": "the exception of Minh, all the students",
-      "prefix": "With",
-      "suffix": "handed in their essays.",
-      "fullSentence": "With the exception of Minh, all the students handed in their essays.",
-      "explanation": "With the exception of somebody nghĩa là ngoại trừ người đó. Phần điền phải có cả all the students làm chủ ngữ cho handed in. Không dùng except of; đây là cách diễn đạt bằng cụm danh từ exception, khác vị trí except ở câu gốc."
+      "displayAnswer": "With the exception of Minh",
+      "prefix": "",
+      "suffix": ", all the students handed in their essays",
+      "fullSentence": "With the exception of Minh, all the students handed in their essays",
+      "explanation": "With the exception of somebody nghĩa là ngoại trừ người đó. Phần điền phải có cả all the students làm chủ ngữ cho handed in.",
+      "keyword": "EXCEPTION",
+      "answerPrefix": "",
+      "answerSuffix": ", all the students handed in their essays",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "With the exception of Minh"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "in the incident ever comes to light, you will pay",
-        "in the incident comes to light, you will pay",
-        "in the incident should ever come to light, you will pay"
+        "ever comes to light",
+        "comes to light",
+        "should ever come to light"
       ],
-      "displayAnswer": "in the incident ever comes to light, you will pay / in the incident comes to light, you will pay / in the incident should ever come to light, you will pay",
-      "prefix": "If your role",
-      "suffix": "the price.",
-      "fullSentence": "If your role in the incident ever comes to light, you will pay the price.",
-      "explanation": "Come to light nghĩa là bị phát hiện hoặc được biết đến. Pay the price ở đây là chịu hậu quả, tương ứng you will be punished. Sau if thường dùng hiện tại đơn comes, còn kết quả dùng will pay; in the incident giữ đúng sự việc mà vai trò của bạn liên quan."
+      "displayAnswer": "ever comes to light / comes to light / should ever come to light",
+      "prefix": "If your role in the incident",
+      "suffix": ", you will pay the price",
+      "fullSentence": "If your role in the incident ever comes to light, you will pay the price",
+      "explanation": "Come to light nghĩa là bị phát hiện hoặc được biết đến. Pay the price ở đây là chịu hậu quả, tương ứng you will be punished.",
+      "keyword": "LIGHT",
+      "answerPrefix": "If your role in the incident",
+      "answerSuffix": ", you will pay the price",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "ever comes to light"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "to burst your bubble, but the event has been",
-        "bursting your bubble, but the event has been"
+        "to burst your bubble",
+        "bursting your bubble"
       ],
-      "displayAnswer": "to burst your bubble, but the event has been / bursting your bubble, but the event has been",
+      "displayAnswer": "to burst your bubble / bursting your bubble",
       "prefix": "I hate",
-      "suffix": "canceled.",
-      "fullSentence": "I hate to burst your bubble, but the event has been canceled.",
-      "explanation": "Burst your bubble là nói điều làm người khác mất sự kỳ vọng hoặc thất vọng. I hate to ... diễn tả sự ái ngại khi báo tin; hate + V-ing cũng dùng được. Giữ but để nối lời báo trước với thông tin sự kiện đã bị hủy, và không đổi has been thành will be."
+      "suffix": ", but the event has been canceled",
+      "fullSentence": "I hate to burst your bubble, but the event has been canceled",
+      "explanation": "Burst your bubble là nói điều làm người khác mất sự kỳ vọng hoặc thất vọng. I hate to … diễn tả sự ái ngại khi báo tin; hate + V-ing cũng dùng được.",
+      "keyword": "BUBBLE",
+      "answerPrefix": "I hate",
+      "answerSuffix": ", but the event has been canceled",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "to burst your bubble"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "on a whim rather than after careful thought"
+        "on a whim"
       ],
-      "displayAnswer": "on a whim rather than after careful thought",
+      "displayAnswer": "on a whim",
       "prefix": "She chose the colour",
-      "suffix": ".",
-      "fullSentence": "She chose the colour on a whim rather than after careful thought.",
-      "explanation": "On a whim nghĩa là theo một ý thích bất chợt, không cân nhắc kỹ. Whim là danh từ đếm được số ít nên cần a. Rather than after careful thought giữ sự đối lập với quyết định có suy xét; không dùng in a whim."
+      "suffix": "rather than after careful thought",
+      "fullSentence": "She chose the colour on a whim rather than after careful thought",
+      "explanation": "On a whim nghĩa là theo một ý thích bất chợt, không cân nhắc kỹ. Whim là danh từ đếm được số ít nên cần a.",
+      "keyword": "WHIM",
+      "answerPrefix": "She chose the colour",
+      "answerSuffix": "rather than after careful thought",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "on a whim"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "a visitor in the act of trying to remove"
+        "in the act of trying"
       ],
-      "displayAnswer": "a visitor in the act of trying to remove",
-      "prefix": "The guard caught",
-      "suffix": "a painting.",
-      "fullSentence": "The guard caught a visitor in the act of trying to remove a painting.",
-      "explanation": "Catch somebody in the act of doing something nghĩa là bắt gặp đúng lúc người đó đang làm việc gì. Sau of dùng trying; to remove phụ thuộc vào try. Cần giữ trying vì câu gốc chưa khẳng định người khách đã tháo được bức tranh."
+      "displayAnswer": "in the act of trying",
+      "prefix": "The guard caught a visitor",
+      "suffix": "to remove a painting",
+      "fullSentence": "The guard caught a visitor in the act of trying to remove a painting",
+      "explanation": "Catch somebody in the act of doing something nghĩa là bắt gặp đúng lúc người đó đang làm việc gì. Sau of dùng trying; to remove phụ thuộc vào try.",
+      "keyword": "ACT",
+      "answerPrefix": "The guard caught a visitor",
+      "answerSuffix": "to remove a painting",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "in the act of trying"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

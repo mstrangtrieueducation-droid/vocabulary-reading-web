@@ -1481,156 +1481,242 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "She began to fall prey to irrational fears."
+        "began to fall prey to"
       ],
-      "displayAnswer": "She began to fall prey to irrational fears.",
-      "explanation": "She began to fall prey to irrational fears. Fall prey to something nghĩa là trở thành nạn nhân/chịu tác động xấu của điều gì, ở đây là nỗi sợ phi lý. Began giữ ý bắt đầu của câu gốc; prey phải được giữ nguyên như từ khóa. To trong fall prey to là giới từ đứng trước cụm danh từ irrational fears.\nfall victim to st\nrational = reasonable",
+      "displayAnswer": "began to fall prey to",
+      "explanation": "She began to fall prey to irrational fears. Fall prey to something nghĩa là trở thành nạn nhân/chịu tác động xấu của điều gì, ở đây là nỗi sợ phi lý.\nfall victim to st\nrational = reasonable",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q91",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "keyword": "prey",
+      "answerPrefix": "She",
+      "answerSuffix": "irrational fears",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "She",
+      "suffix": "irrational fears",
+      "blankAnswer": "began to fall prey to",
+      "fullSentence": "She began to fall prey to irrational fears"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "I would always take your advice."
+        "always take your advice"
       ],
-      "displayAnswer": "I would always take your advice.",
-      "explanation": "I would always take your advice. Take somebody's advice là làm theo lời khuyên của người đó. Advice là danh từ không đếm được, không thêm s. Would always được giữ để diễn tả thói quen/sự sẵn lòng làm theo lời khuyên trong bối cảnh của câu gốc.",
+      "displayAnswer": "always take your advice",
+      "explanation": "I would always take your advice. Take somebody's advice là làm theo lời khuyên của người đó.",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q92",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "keyword": "advice",
+      "answerPrefix": "I would",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "I would",
+      "suffix": "",
+      "blankAnswer": "always take your advice",
+      "fullSentence": "I would always take your advice"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "The book did not come up to his expectations.",
-        "The book did not live up to his expectations.",
-        "The book didn't come up to his expectations.",
-        "The book didn't live up to his expectations."
+        "not come up to his expectations",
+        "not live up to his expectations"
       ],
-      "displayAnswer": "The book did not come up to his expectations.",
-      "explanation": "The book did not live up to his expectations. Live up to/come up to one's expectations nghĩa là đạt như kỳ vọng. Vì sách không hay như mong đợi, cần phủ định did not; sau did dùng live/come nguyên mẫu. Expectations giữ dạng số nhiều và sở hữu his để xác định kỳ vọng của người đọc.\ncome/live up to one’s expectations: đúng với kỳ vọng\n>< fall short of one’s expectations: ko đúng với kỳ vọng",
+      "displayAnswer": "not come up to his expectations / not live up to his expectations",
+      "explanation": "The book did not live up to his expectations. Live up to/come up to one's expectations nghĩa là đạt như kỳ vọng.\ncome/live up to one’s expectations: đúng với kỳ vọng\n>< fall short of one’s expectations: ko đúng với kỳ vọng",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q93",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "keyword": "expectations",
+      "answerPrefix": "The book did",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "The book did",
+      "suffix": "",
+      "blankAnswer": "not come up to his expectations",
+      "fullSentence": "The book did not come up to his expectations"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "To my knowledge, he is still working in Ho Chi Minh City.",
-        "To the best of my knowledge, he is still working in Ho Chi Minh City."
+        "To my knowledge",
+        "To the best of my knowledge"
       ],
-      "displayAnswer": "To my knowledge, he is still working in Ho Chi Minh City.",
-      "explanation": "To the best of my knowledge, he is still working in Ho Chi Minh City. Cụm mở đầu giới hạn mức độ chắc chắn vào những gì người nói biết, tương đương as far as I know. To my knowledge cũng được chấp nhận. Giữ still working để không làm mất ý công việc vẫn tiếp diễn.",
+      "displayAnswer": "To my knowledge / To the best of my knowledge",
+      "explanation": "To the best of my knowledge, he is still working in Ho Chi Minh City. Cụm mở đầu giới hạn mức độ chắc chắn vào những gì người nói biết, tương đương as far as I know.",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q94",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "keyword": "knowledge",
+      "answerPrefix": "",
+      "answerSuffix": ", he is still working in Ho Chi Minh City",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "",
+      "suffix": ", he is still working in Ho Chi Minh City",
+      "blankAnswer": "To my knowledge",
+      "fullSentence": "To my knowledge, he is still working in Ho Chi Minh City"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "The kids' non-stop snacking is eating us out of house and home."
+        "eating us out of house and"
       ],
-      "displayAnswer": "The kids' non-stop snacking is eating us out of house and home.",
-      "explanation": "The kids' non-stop snacking is eating us out of house and home. Eat somebody out of house and home là thành ngữ nói việc ăn quá nhiều khiến chủ nhà tốn kém/cạn đồ ăn. Sau is cần eating theo đề; giữ us và cả cụm out of house and home, không dịch từng từ thành ăn ngôi nhà.",
+      "displayAnswer": "eating us out of house and",
+      "explanation": "The kids' non-stop snacking is eating us out of house and home. Eat somebody out of house and home là thành ngữ nói việc ăn quá nhiều khiến chủ nhà tốn kém/cạn đồ ăn.",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q95",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "keyword": "eating",
+      "answerPrefix": "The kids' non-stop snacking is",
+      "answerSuffix": "home",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "The kids' non-stop snacking is",
+      "suffix": "home",
+      "blankAnswer": "eating us out of house and",
+      "fullSentence": "The kids' non-stop snacking is eating us out of house and home"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "This project will go ahead according to plan.",
-        "The project will go ahead according to plan."
+        "go ahead according"
       ],
-      "displayAnswer": "This project will go ahead according to plan.",
-      "explanation": "This project will go ahead according to plan. Go ahead nghĩa là tiếp tục/được tiến hành, còn according to plan là theo đúng kế hoạch. Kết hợp hai cụm diễn tả dự án tiếp tục theo kế hoạch, không có thay đổi. Giữ This project đúng phần dẫn của đề; sau will dùng go nguyên mẫu.",
+      "displayAnswer": "go ahead according",
+      "explanation": "This project will go ahead according to plan. Go ahead nghĩa là tiếp tục/được tiến hành, còn according to plan là theo đúng kế hoạch.",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q96",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "keyword": "ahead",
+      "answerPrefix": "This project will",
+      "answerSuffix": "to plan",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "This project will",
+      "suffix": "to plan",
+      "blankAnswer": "go ahead according",
+      "fullSentence": "This project will go ahead according to plan"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "I'm not sure how I would have reacted in that situation.",
-        "I am not sure how I would have reacted in that situation."
+        "sure how I would have reacted"
       ],
-      "displayAnswer": "I'm not sure how I would have reacted in that situation.",
-      "explanation": "I'm not sure how I would have reacted in that situation. What my reaction would have been chuyển thành how I would have reacted: reaction là danh từ, react là động từ. Would have + V3 giữ tính giả định về quá khứ; how dẫn câu hỏi gián tiếp nên theo trật tự chủ ngữ I rồi động từ, không đảo như câu hỏi trực tiếp.",
+      "displayAnswer": "sure how I would have reacted",
+      "explanation": "I'm not sure how I would have reacted in that situation. What my reaction would have been chuyển thành how I would have reacted: reaction là danh từ, react là động từ.",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q97",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "keyword": "how",
+      "answerPrefix": "I'm not",
+      "answerSuffix": "in that situation",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "I'm not",
+      "suffix": "in that situation",
+      "blankAnswer": "sure how I would have reacted",
+      "fullSentence": "I'm not sure how I would have reacted in that situation"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "Given the economic climate, I will be surprised should the company make a profit this year."
+        "I will be surprised should"
       ],
-      "displayAnswer": "Given the economic climate, I will be surprised should the company make a profit this year.",
-      "explanation": "Given the economic climate, I will be surprised should the company make a profit this year. Should + chủ ngữ + V là đảo ngữ điều kiện, tương đương if the company should make a profit. Việc có lợi nhuận trái với kỳ vọng nên người nói sẽ ngạc nhiên. Đề đã in company make, vì vậy should trước chủ ngữ giúp giữ make ở nguyên mẫu.\nclimate (n) bối cảnh",
+      "displayAnswer": "I will be surprised should",
+      "explanation": "Given the economic climate, I will be surprised should the company make a profit this year. Should + chủ ngữ + V là đảo ngữ điều kiện, tương đương if the company should make a profit.\nclimate (n) bối cảnh",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q98",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "keyword": "surprised",
+      "answerPrefix": "Given the economic climate,",
+      "answerSuffix": "the company make a profit this year",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Given the economic climate,",
+      "suffix": "the company make a profit this year",
+      "blankAnswer": "I will be surprised should",
+      "fullSentence": "Given the economic climate, I will be surprised should the company make a profit this year"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "You have to put in your pay claims before the end of the month."
+        "to put in"
       ],
-      "displayAnswer": "You have to put in your pay claims before the end of the month.",
-      "explanation": "You have to put in your pay claims before the end of the month. Put in a claim nghĩa là nộp yêu cầu đòi/thanh toán một khoản tiền. Have to giữ nghĩa bắt buộc của must be submitted và chuyển bị động sang chủ động với you. Before the end of the month giữ nguyên hạn nộp; không dùng put off vì nghĩa là trì hoãn.\nclaim (v,n) đòi tiền (tiền bảo hiểm; tiền bù…)",
+      "displayAnswer": "to put in",
+      "explanation": "You have to put in your pay claims before the end of the month. Put in a claim nghĩa là nộp yêu cầu đòi/thanh toán một khoản tiền.\nclaim (v,n) đòi tiền (tiền bảo hiểm; tiền bù…)",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q99",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "keyword": "put",
+      "answerPrefix": "You have",
+      "answerSuffix": "your pay claims before the end of the month",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "You have",
+      "suffix": "your pay claims before the end of the month",
+      "blankAnswer": "to put in",
+      "fullSentence": "You have to put in your pay claims before the end of the month"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "Under no circumstances should your mobile phone be switched on during the performance."
+        "Under no circumstances should"
       ],
-      "displayAnswer": "Under no circumstances should your mobile phone be switched on during the performance.",
-      "explanation": "Under no circumstances should your mobile phone be switched on during the performance. Under no circumstances nghĩa là không trong bất kỳ trường hợp nào; đặt đầu câu yêu cầu đảo should lên trước chủ ngữ. Switched off at all times tương đương không bao giờ được switched on trong khoảng thời gian ấy. Giữ mobile phone số ít đúng câu gốc và phần đuôi cố định của đề.",
+      "displayAnswer": "Under no circumstances should",
+      "explanation": "Under no circumstances should your mobile phone be switched on during the performance. Under no circumstances nghĩa là không trong bất kỳ trường hợp nào; đặt đầu câu yêu cầu đảo should lên trước chủ ngữ.",
       "reviewStatus": "approved",
       "sourceRefs": [
         "PRACTICE TEST 4 > ĐÁP ÁN > Q100",
         "Latest question and answer sources read 2026-09-26"
-      ]
+      ],
+      "keyword": "Under",
+      "answerPrefix": "",
+      "answerSuffix": "your mobile phone be switched on during the performance",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "",
+      "suffix": "your mobile phone be switched on during the performance",
+      "blankAnswer": "Under no circumstances should",
+      "fullSentence": "Under no circumstances should your mobile phone be switched on during the performance"
     }
   ],
   "reviewNeeded": [],
@@ -1645,6 +1731,6 @@
       "96": "retain This project from fixed question stem; source The project accepted too"
     }
   },
-  "contentRevision": "2026-10-17-authentic",
+  "contentRevision": "2026-10-21-word-limits",
   "readingSources": []
 }

@@ -1054,10 +1054,16 @@
         "goes without saying"
       ],
       "displayAnswer": "goes without saying",
-      "explanation": "It goes without saying that… là điều hiển nhiên, không cần phải nói ra. Cụm cố định dùng saying đúng từ cho sẵn và goes theo chủ ngữ it. Chỉ điền goes without saying vì It và that… đã có sẵn ngoài ô trống.",
+      "explanation": "It goes without saying that… là điều hiển nhiên, không cần phải nói ra. Cụm cố định dùng saying đúng từ cho sẵn và goes theo chủ ngữ it.\nTừ vựng trọng tâm: go without saying",
       "prefix": "It",
-      "suffix": "that you’ll be paid handsomely for your work.",
-      "fullSentence": "It goes without saying that you’ll be paid handsomely for your work."
+      "suffix": "that you'll be paid handsomely for your work",
+      "fullSentence": "It goes without saying that you'll be paid handsomely for your work",
+      "keyword": "saying",
+      "answerPrefix": "It",
+      "answerSuffix": "that you'll be paid handsomely for your work",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "goes without saying"
     },
     {
       "globalNumber": 92,
@@ -1068,10 +1074,16 @@
         "ought to have asked for"
       ],
       "displayAnswer": "should have asked for / ought to have asked for",
-      "explanation": "Should have + V3 hoặc ought to have + V3 phê bình một việc đáng lẽ nên làm trong quá khứ nhưng đã không làm. Ask for permission là xin phép. Không dùng should ask vì chỉ đưa lời khuyên hiện tại/tương lai, không thể hiện lỗi đã xảy ra.",
+      "explanation": "Should have + V3 hoặc ought to have + V3 phê bình một việc đáng lẽ nên làm trong quá khứ nhưng đã không làm. Ask for permission là xin phép.",
       "prefix": "You",
-      "suffix": "my permission before borrowing my book.",
-      "fullSentence": "You should have asked for my permission before borrowing my book."
+      "suffix": "my permission before borrowing my book",
+      "fullSentence": "You should have asked for my permission before borrowing my book",
+      "keyword": "have",
+      "answerPrefix": "You",
+      "answerSuffix": "my permission before borrowing my book",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "should have asked for"
     },
     {
       "globalNumber": 93,
@@ -1081,10 +1093,16 @@
         "were all ears"
       ],
       "displayAnswer": "were all ears",
-      "explanation": "Be all ears là sẵn sàng và háo hức lắng nghe. Chủ ngữ they và thời điểm quá khứ cần were all ears. Đề đã chỉnh vế sau thành when… để tránh cách ghép all ears to the speech không tự nhiên trong đáp án cũ.",
+      "explanation": "Be all ears là sẵn sàng và háo hức lắng nghe. Chủ ngữ they và thời điểm quá khứ cần were all ears.",
       "prefix": "They",
-      "suffix": "when the president began speaking.",
-      "fullSentence": "They were all ears when the president began speaking."
+      "suffix": "when the president began speaking",
+      "fullSentence": "They were all ears when the president began speaking",
+      "keyword": "ears",
+      "answerPrefix": "They",
+      "answerSuffix": "when the president began speaking",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "were all ears"
     },
     {
       "globalNumber": 94,
@@ -1097,10 +1115,16 @@
         "left him"
       ],
       "displayAnswer": "left Simon feeling / left Simon / left him feeling / left him",
-      "explanation": "Leave somebody + tính từ hoặc leave somebody feeling + tính từ nói một sự việc khiến ai rơi vào trạng thái nào đó. Dùng left ở quá khứ để diễn đạt kết quả ca mổ. Him có thể thay Simon vì đã rõ người; không thêm was sau tân ngữ.",
+      "explanation": "Leave somebody + tính từ hoặc leave somebody feeling + tính từ nói một sự việc khiến ai rơi vào trạng thái nào đó. Dùng left ở quá khứ để diễn đạt kết quả ca mổ.",
       "prefix": "The operation",
-      "suffix": "much weaker than he expected.",
-      "fullSentence": "The operation left Simon feeling much weaker than he expected."
+      "suffix": "much weaker than he expected",
+      "fullSentence": "The operation left Simon feeling much weaker than he expected",
+      "keyword": "left",
+      "answerPrefix": "The operation",
+      "answerSuffix": "much weaker than he expected",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "left Simon feeling"
     },
     {
       "globalNumber": 95,
@@ -1115,54 +1139,73 @@
       "displayAnswer": "for what they have done in / for what they did in / for what they have contributed to / for what they contributed to",
       "explanation": "What they have done/contributed nghĩa là những việc họ đã làm/đóng góp, đóng vai trò danh từ sau for. Have done in preventing và have contributed to preventing đều đúng; to ở contributed to là giới từ nên theo sau bằng V-ing.",
       "prefix": "We are thankful to the doctors and nurses",
-      "suffix": "preventing infections.",
-      "fullSentence": "We are thankful to the doctors and nurses for what they have done in preventing infections."
+      "suffix": "preventing infections",
+      "fullSentence": "We are thankful to the doctors and nurses for what they have done in preventing infections",
+      "keyword": "what",
+      "answerPrefix": "We are thankful to the doctors and nurses",
+      "answerSuffix": "preventing infections",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "for what they have done in"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "Please make allowances for Jane's poor typing, as she has only been learning for a month",
-        "Please make allowances for Jane's poor typing because she has only been learning for a month",
-        "Please make allowances for Jane's poor typing since she has only been learning for a month",
-        "You should make allowances for Jane's poor typing as she has only been learning for a month"
+        "make allowances for"
       ],
-      "displayAnswer": "Please make allowances for Jane's poor typing, as she has only been learning for a month / Please make allowances for Jane's poor typing because she has only been learning for a month / Please make allowances for Jane's poor typing since she has only been learning for a month / You should make allowances for Jane's poor typing as she has only been learning for a month",
-      "explanation": "Make allowances for nghĩa là thông cảm và xét đến hoàn cảnh khi đánh giá một hạn chế. Cần giữ cả lý do mới học một tháng, có thể nối bằng as/because/since. Allowances dùng số nhiều trong thành ngữ; không đổi thành make an allowance nếu đang dùng mẫu cho sẵn này.",
-      "prefix": "",
-      "suffix": "",
-      "fullSentence": "Please make allowances for Jane’s poor typing, as she has only been learning for a month."
+      "displayAnswer": "make allowances for",
+      "explanation": "Make allowances for nghĩa là thông cảm và xét đến hoàn cảnh khi đánh giá một hạn chế. Cần giữ cả lý do mới học một tháng, có thể nối bằng as/because/since.",
+      "prefix": "Please",
+      "suffix": "Jane's poor typing, as she has only been learning for a month",
+      "fullSentence": "Please make allowances for Jane's poor typing, as she has only been learning for a month",
+      "keyword": "allowances",
+      "answerPrefix": "Please",
+      "answerSuffix": "Jane's poor typing, as she has only been learning for a month",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "make allowances for"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "That young man is bound to fail this test",
-        "That young man is bound to fail in this test",
-        "The young man is bound to fail this test"
+        "is bound to fail",
+        "is bound to fail in"
       ],
-      "displayAnswer": "That young man is bound to fail this test / That young man is bound to fail in this test / The young man is bound to fail this test",
-      "explanation": "Be bound to + động từ nguyên thể nghĩa là chắc chắn sẽ. Không thể thành công trong bài kiểm tra tương đương chắc chắn trượt, nên dùng bound to fail. Không viết bound failing hoặc bound that; to ở đây thuộc động từ nguyên thể.",
-      "prefix": "",
-      "suffix": "",
-      "fullSentence": "That young man is bound to fail this test."
+      "displayAnswer": "is bound to fail / is bound to fail in",
+      "explanation": "Be bound to + động từ nguyên thể nghĩa là chắc chắn sẽ. Không thể thành công trong bài kiểm tra tương đương chắc chắn trượt, nên dùng bound to fail.",
+      "prefix": "That young man",
+      "suffix": "this test",
+      "fullSentence": "That young man is bound to fail this test",
+      "keyword": "bound",
+      "answerPrefix": "That young man",
+      "answerSuffix": "this test",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is bound to fail"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "Contrary to its harmless appearance, the dog was in fact quite dangerous",
-        "Contrary to its harmless appearance, the dog was quite dangerous",
-        "Contrary to appearances, the dog was in fact quite dangerous"
+        "Contrary to its harmless appearance",
+        "Contrary to appearances"
       ],
-      "displayAnswer": "Contrary to its harmless appearance, the dog was in fact quite dangerous / Contrary to its harmless appearance, the dog was quite dangerous / Contrary to appearances, the dog was in fact quite dangerous",
-      "explanation": "Contrary to + danh từ nghĩa là trái với. Dùng its harmless appearance để đối chiếu vẻ bề ngoài vô hại với thực tế nguy hiểm, giữ ý nhượng bộ của although. Không dùng on the contrary vì cụm đó thường bác lại một nhận định trong câu trước.",
+      "displayAnswer": "Contrary to its harmless appearance / Contrary to appearances",
+      "explanation": "Contrary to + danh từ nghĩa là trái với. Dùng its harmless appearance để đối chiếu vẻ bề ngoài vô hại với thực tế nguy hiểm, giữ ý nhượng bộ của although.",
       "prefix": "",
-      "suffix": "",
-      "fullSentence": "Contrary to its harmless appearance, the dog was in fact quite dangerous."
+      "suffix": ", the dog was in fact quite dangerous",
+      "fullSentence": "Contrary to its harmless appearance, the dog was in fact quite dangerous",
+      "keyword": "contrary",
+      "answerPrefix": "",
+      "answerSuffix": ", the dog was in fact quite dangerous",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "Contrary to its harmless appearance"
     },
     {
       "globalNumber": 99,
@@ -1172,29 +1215,39 @@
         "not possible for visitors to use",
         "not possible to use"
       ],
-      "displayAnswer": "not possible for visitors to use",
-      "explanation": "It is not possible for somebody to do something là không thể để ai làm gì. Dùng visitors để giữ đúng đối tượng, hoặc bỏ for visitors khi ngữ cảnh đã rõ. During maintenance giới hạn thời gian không sử dụng được; không bỏ cụm này khi viết câu đầy đủ.",
+      "displayAnswer": "not possible for visitors to use / not possible to use",
+      "explanation": "It is not possible for somebody to do something là không thể để ai làm gì. Dùng visitors để giữ đúng đối tượng, hoặc bỏ for visitors khi ngữ cảnh đã rõ.",
       "prefix": "It is",
-      "suffix": "the lift during maintenance.",
-      "fullSentence": "It is not possible for visitors to use the lift during maintenance."
+      "suffix": "the lift during maintenance",
+      "fullSentence": "It is not possible for visitors to use the lift during maintenance",
+      "keyword": "POSSIBLE",
+      "answerPrefix": "It is",
+      "answerSuffix": "the lift during maintenance",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "not possible for visitors to use"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "To my knowledge, he is still working in Bristol",
-        "To the best of my knowledge, he is still working in Bristol",
-        "To my knowledge, he still works in Bristol",
-        "To the best of my knowledge, he still works in Bristol"
+        "To my knowledge",
+        "To the best of my knowledge"
       ],
-      "displayAnswer": "To my knowledge, he is still working in Bristol / To the best of my knowledge, he is still working in Bristol / To my knowledge, he still works in Bristol / To the best of my knowledge, he still works in Bristol",
-      "explanation": "To my knowledge/to the best of my knowledge nghĩa là theo những gì tôi biết, tương đương as far as I know. Cần giữ still để thể hiện việc tiếp tục làm ở Bristol. Không dùng in my knowledge vì đây không phải giới từ của cụm cố định.",
+      "displayAnswer": "To my knowledge / To the best of my knowledge",
+      "explanation": "To my knowledge/to the best of my knowledge nghĩa là theo những gì tôi biết, tương đương as far as I know. Cần giữ still để thể hiện việc tiếp tục làm ở Bristol.",
       "prefix": "",
-      "suffix": "",
-      "fullSentence": "To the best of my knowledge, he is still working in Bristol."
+      "suffix": ", he is still working in Bristol",
+      "fullSentence": "To my knowledge, he is still working in Bristol",
+      "keyword": "knowledge",
+      "answerPrefix": "",
+      "answerSuffix": ", he is still working in Bristol",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "To my knowledge"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

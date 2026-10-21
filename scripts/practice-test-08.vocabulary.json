@@ -10,7 +10,11 @@
       "usage": "be over the moon about something",
       "family": "in seventh heaven: rất hạnh phúc; over the hill: qua thời sung sức",
       "example": "She was over the moon about the result.",
-      "translation": "Cô ấy vô cùng vui sướng với kết quả."
+      "translation": "Cô ấy vô cùng vui sướng với kết quả.",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 5,
@@ -21,7 +25,11 @@
       "usage": "ask after somebody",
       "family": "ask for: yêu cầu gặp/xin; ask about cũng có thể hỏi thăm",
       "example": "My aunt asked after you yesterday.",
-      "translation": "Hôm qua dì tôi hỏi thăm bạn."
+      "translation": "Hôm qua dì tôi hỏi thăm bạn.",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -32,7 +40,11 @@
       "usage": "every bit as + tính từ + as",
       "family": "a bit: hơi/một chút; every bit nhấn mạnh mức ngang bằng",
       "example": "This version is every bit as useful as the original.",
-      "translation": "Bản này hữu ích không kém bản gốc."
+      "translation": "Bản này hữu ích không kém bản gốc.",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 7,
@@ -43,7 +55,11 @@
       "usage": "sheer pleasure/joy; sheer determination",
       "family": "pleasure (n); pleasant (adj); pleased (adj)",
       "example": "Walking in the garden was sheer pleasure.",
-      "translation": "Đi dạo trong vườn là một niềm vui trọn vẹn."
+      "translation": "Đi dạo trong vườn là một niềm vui trọn vẹn.",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 8,
@@ -54,7 +70,11 @@
       "usage": "on the basis of evidence",
       "family": "base (n/v); basis số ít, bases số nhiều",
       "example": "We judged the proposal on the basis of evidence.",
-      "translation": "Chúng tôi đánh giá đề xuất dựa trên bằng chứng."
+      "translation": "Chúng tôi đánh giá đề xuất dựa trên bằng chứng.",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 12,
@@ -65,7 +85,11 @@
       "usage": "lend somebody a hand with something",
       "family": "lend–lent–lent; give somebody a hand cũng có nghĩa giúp",
       "example": "Could you lend me a hand with these boxes?",
-      "translation": "Bạn giúp tôi một tay với các hộp này nhé?"
+      "translation": "Bạn giúp tôi một tay với các hộp này nhé?",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 13,
@@ -76,7 +100,11 @@
       "usage": "a reserved person; seem reserved",
       "family": "reserve (n/v); reservation (n) thường là đặt chỗ/sự dè dặt",
       "example": "He is reserved with people he has just met.",
-      "translation": "Anh ấy dè dặt với người mới gặp."
+      "translation": "Anh ấy dè dặt với người mới gặp.",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -87,7 +115,11 @@
       "usage": "struggle to make ends meet",
       "family": "make–made–made; không đổi ends thành end",
       "example": "The family worked hard to make ends meet.",
-      "translation": "Gia đình làm việc vất vả để đủ trang trải."
+      "translation": "Gia đình làm việc vất vả để đủ trang trải.",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 15,
@@ -98,7 +130,11 @@
       "usage": "improve a company’s competitiveness",
       "family": "compete (v); competition/competitor (n); competitive (adj)",
       "example": "Training improved the firm's competitiveness.",
-      "translation": "Đào tạo nâng cao năng lực cạnh tranh của công ty."
+      "translation": "Đào tạo nâng cao năng lực cạnh tranh của công ty.",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -109,7 +145,11 @@
       "usage": "find something mildly amusing",
       "family": "mild (adj); mildly (adv); amusement (n)",
       "example": "I found the story mildly amusing.",
-      "translation": "Tôi thấy câu chuyện hơi buồn cười."
+      "translation": "Tôi thấy câu chuyện hơi buồn cười.",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 19,
@@ -120,7 +160,11 @@
       "usage": "pursue an interest/a career",
       "family": "pursuit (n); in pursuit of: theo đuổi",
       "example": "The course gave her time to pursue her interests.",
-      "translation": "Khóa học cho cô ấy thời gian theo đuổi sở thích."
+      "translation": "Khóa học cho cô ấy thời gian theo đuổi sở thích.",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -131,7 +175,11 @@
       "usage": "reach the end of the line",
       "family": "line ở đây là hình ảnh hành trình, không phải chỉ hàng người",
       "example": "The defeat marked the end of the line for the team.",
-      "translation": "Thất bại đánh dấu kết thúc hành trình của đội."
+      "translation": "Thất bại đánh dấu kết thúc hành trình của đội.",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 21,
@@ -142,7 +190,11 @@
       "usage": "take on new staff; take them on",
       "family": "take–took–taken; take on còn là nhận trách nhiệm",
       "example": "The shop is taking on two assistants.",
-      "translation": "Cửa hàng đang tuyển hai phụ việc."
+      "translation": "Cửa hàng đang tuyển hai phụ việc.",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 24,
@@ -153,7 +205,11 @@
       "usage": "turn out to be a blessing in disguise",
       "family": "blessing (n); disguise (n/v: sự/ngụy trang)",
       "example": "The cancellation turned out to be a blessing in disguise.",
-      "translation": "Việc hủy bỏ hóa ra lại có mặt may mắn."
+      "translation": "Việc hủy bỏ hóa ra lại có mặt may mắn.",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 26,
@@ -164,7 +220,11 @@
       "usage": "apply a fresh coat of paint",
       "family": "coat (n/v); could do with: cần/sẽ tốt hơn nếu có",
       "example": "The door needs a fresh coat of paint.",
-      "translation": "Cửa cần một lớp sơn mới."
+      "translation": "Cửa cần một lớp sơn mới.",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 29,
@@ -175,7 +235,11 @@
       "usage": "private life; personal information; personnel records",
       "family": "privacy (n); personally (adv); personnel chỉ tập thể nhân viên",
       "example": "Please keep my personal information private.",
-      "translation": "Xin giữ kín thông tin cá nhân của tôi."
+      "translation": "Xin giữ kín thông tin cá nhân của tôi.",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 30,
@@ -186,7 +250,11 @@
       "usage": "a weather-beaten face",
       "family": "weatherproof: chống chịu thời tiết, thường nói đồ vật",
       "example": "The farmer had a weather-beaten face.",
-      "translation": "Người nông dân có gương mặt dạn dày nắng gió."
+      "translation": "Người nông dân có gương mặt dạn dày nắng gió.",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 31,
@@ -197,7 +265,11 @@
       "usage": "pit your wits against an opponent",
       "family": "wit/wits (n: sự lanh trí); witty (adj: dí dỏm)",
       "example": "The game lets you pit your wits against experts.",
-      "translation": "Trò chơi cho bạn đấu trí với chuyên gia."
+      "translation": "Trò chơi cho bạn đấu trí với chuyên gia.",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 32,
@@ -208,7 +280,11 @@
       "usage": "affect concentration; have an effect on something; effect a change",
       "family": "affected (adj); effective (adj: hiệu quả); effectively (adv)",
       "example": "Noise can affect concentration.",
-      "translation": "Tiếng ồn có thể ảnh hưởng đến khả năng tập trung."
+      "translation": "Tiếng ồn có thể ảnh hưởng đến khả năng tập trung.",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 39,
@@ -219,7 +295,11 @@
       "usage": "the availability of food/resources",
       "family": "available (adj); unavailable (adj)",
       "example": "Availability varies from one area to another.",
-      "translation": "Mức độ sẵn có khác nhau giữa các khu vực."
+      "translation": "Mức độ sẵn có khác nhau giữa các khu vực.",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 40,
@@ -230,7 +310,11 @@
       "usage": "an addictive activity; be addicted to something",
       "family": "addict (n); addiction (n); addictively (adv)",
       "example": "The game can be addictive for some players.",
-      "translation": "Trò chơi có thể gây nghiện với một số người."
+      "translation": "Trò chơi có thể gây nghiện với một số người.",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 43,
@@ -241,7 +325,11 @@
       "usage": "tastefully decorated/furnished",
       "family": "tasteful (adj); tasty: ngon; tasteless: nhạt/thiếu gu",
       "example": "The hotel was tastefully furnished.",
-      "translation": "Khách sạn được bài trí thanh nhã."
+      "translation": "Khách sạn được bài trí thanh nhã.",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 45,
@@ -252,7 +340,11 @@
       "usage": "a memorable visit/experience",
       "family": "memory (n); memorise/memorize (v); memorial: tưởng niệm",
       "example": "It was a memorable visit to the coast.",
-      "translation": "Đó là chuyến thăm bờ biển đáng nhớ."
+      "translation": "Đó là chuyến thăm bờ biển đáng nhớ.",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 53,
@@ -263,7 +355,11 @@
       "usage": "be set to + động từ nguyên mẫu",
       "family": "be set for + danh từ; set–set–set",
       "example": "The new service is set to open next month.",
-      "translation": "Dịch vụ mới dự kiến mở vào tháng tới."
+      "translation": "Dịch vụ mới dự kiến mở vào tháng tới.",
+      "teacherSelected": true,
+      "questions": [
+        53
+      ]
     },
     {
       "question": 57,
@@ -274,7 +370,11 @@
       "usage": "deplete reserves; depleted resources",
       "family": "depletion (n); decrease: giảm, không nhất thiết cạn kiệt",
       "example": "Overuse depleted the water supply.",
-      "translation": "Sử dụng quá mức làm cạn nguồn nước."
+      "translation": "Sử dụng quá mức làm cạn nguồn nước.",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ]
     },
     {
       "question": 60,
@@ -285,7 +385,11 @@
       "usage": "address an issue/problem directly",
       "family": "address (n: địa chỉ); cope/deal with cần with",
       "example": "The report addresses two urgent issues.",
-      "translation": "Báo cáo bàn cách xử lý hai vấn đề cấp bách."
+      "translation": "Báo cáo bàn cách xử lý hai vấn đề cấp bách.",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 67,
@@ -296,7 +400,11 @@
       "usage": "go through a process; go through several stages; go through training",
       "family": "go–went–gone; process (n); procedure (n)",
       "example": "Every application goes through the same review process.",
-      "translation": "Mỗi hồ sơ đều trải qua cùng một quy trình xét duyệt."
+      "translation": "Mỗi hồ sơ đều trải qua cùng một quy trình xét duyệt.",
+      "teacherSelected": true,
+      "questions": [
+        67
+      ]
     },
     {
       "question": 78,
@@ -307,7 +415,11 @@
       "usage": "experience upthrust; average density; a volume of water",
       "family": "dense (adj); densely (adv); volume còn là âm lượng",
       "example": "The upthrust balances the weight of a floating object.",
-      "translation": "Lực đẩy lên cân bằng trọng lượng của vật đang nổi."
+      "translation": "Lực đẩy lên cân bằng trọng lượng của vật đang nổi.",
+      "teacherSelected": true,
+      "questions": [
+        78
+      ]
     },
     {
       "question": 89,

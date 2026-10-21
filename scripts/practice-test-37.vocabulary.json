@@ -10,7 +10,11 @@
       "usage": "diminish the effect; diminish over time",
       "example": "The treatment diminished the pain.",
       "translation": "Phương pháp điều trị làm giảm cơn đau.",
-      "family": "diminish (v); diminished (adj); diminution (n)"
+      "family": "diminish (v); diminished (adj); diminution (n)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 4,
@@ -21,7 +25,11 @@
       "usage": "cement a reputation/status/relationship",
       "example": "The award cemented her reputation as a researcher.",
       "translation": "Giải thưởng củng cố uy tín của cô với tư cách nhà nghiên cứu.",
-      "family": "cement (n/v); cemented (past)"
+      "family": "cement (n/v); cemented (past)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -32,7 +40,11 @@
       "usage": "a tight-fisted employer; be tight-fisted",
       "example": "He is too tight-fisted to buy anyone lunch.",
       "translation": "Anh ấy quá keo kiệt để mời ai ăn trưa.",
-      "family": "tight-fisted (adj); tight-fistedness (n)"
+      "family": "tight-fisted (adj); tight-fistedness (n)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 8,
@@ -43,7 +55,11 @@
       "usage": "complaint — Tell me about it!",
       "example": "‘The trains are always late.’ ‘Tell me about it!’",
       "translation": "‘Tàu lúc nào cũng trễ.’ ‘Tôi biết quá rõ mà!’",
-      "family": "tell–told–told; telling (V-ing)"
+      "family": "tell–told–told; telling (V-ing)",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -54,7 +70,11 @@
       "usage": "make no bones about doing something",
       "example": "She made no bones about rejecting the plan.",
       "translation": "Cô thẳng thắn bác bỏ kế hoạch.",
-      "family": "make–made–made; bone (n)"
+      "family": "make–made–made; bone (n)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 16,
@@ -65,7 +85,11 @@
       "usage": "not/refuse ... , much less ...",
       "example": "He cannot walk, much less run.",
       "translation": "Anh ấy còn không đi được, huống chi chạy.",
-      "family": "much (adv/determiner); less (comparative)"
+      "family": "much (adv/determiner); less (comparative)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 18,
@@ -76,7 +100,11 @@
       "usage": "in view of the evidence/circumstances",
       "example": "In view of the drought, water use was restricted.",
       "translation": "Do tình hình hạn hán, việc dùng nước bị hạn chế.",
-      "family": "view (n/v); viewpoint (n)"
+      "family": "view (n/v); viewpoint (n)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 19,
@@ -87,7 +115,11 @@
       "usage": "trespass on private land; be caught trespassing",
       "example": "They were warned not to trespass on private land.",
       "translation": "Họ được cảnh báo không xâm nhập đất tư nhân.",
-      "family": "trespass (v/n); trespasser (n); trespassing (n)"
+      "family": "trespass (v/n); trespasser (n); trespassing (n)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 31,
@@ -98,7 +130,11 @@
       "usage": "a universally accepted definition/standard",
       "example": "There is no universally accepted answer.",
       "translation": "Chưa có câu trả lời nào được mọi người nhất trí.",
-      "family": "universe (n); universal (adj); universally (adv)"
+      "family": "universe (n); universal (adj); universally (adv)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 32,
@@ -109,7 +145,11 @@
       "usage": "average life expectancy; life expectancy at birth",
       "example": "Life expectancy varies between populations.",
       "translation": "Tuổi thọ kỳ vọng khác nhau giữa các quần thể.",
-      "family": "expect (v); expectancy (n); expectation (n)"
+      "family": "expect (v); expectancy (n); expectation (n)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 33,
@@ -120,7 +160,11 @@
       "usage": "an unprecedented increase/level",
       "example": "The city faced unprecedented demand for housing.",
       "translation": "Thành phố đối mặt nhu cầu nhà ở chưa từng có.",
-      "family": "precedent (n); precedented/unprecedented (adj)"
+      "family": "precedent (n); precedented/unprecedented (adj)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 35,
@@ -131,7 +175,11 @@
       "usage": "perceptual skills/abilities",
       "example": "The task tests children's perceptual skills.",
       "translation": "Bài tập kiểm tra kỹ năng tri giác của trẻ.",
-      "family": "perceive (v); perception (n); perceptual (adj); perceptive (adj)"
+      "family": "perceive (v); perception (n); perceptual (adj); perceptive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 38,
@@ -142,7 +190,11 @@
       "usage": "conclusive evidence/proof; an inconclusive result",
       "example": "The test did not provide conclusive evidence.",
       "translation": "Bài kiểm tra chưa cung cấp bằng chứng đủ để kết luận.",
-      "family": "conclude (v); conclusion (n); conclusive (adj)"
+      "family": "conclude (v); conclusion (n); conclusive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 40,
@@ -153,7 +205,11 @@
       "usage": "invalidate a claim/argument/result",
       "example": "New evidence invalidated the earlier claim.",
       "translation": "Bằng chứng mới bác bỏ nhận định trước đó.",
-      "family": "valid (adj); validity (n); validate/invalidate (v)"
+      "family": "valid (adj); validity (n); validate/invalidate (v)",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 51,
@@ -164,7 +220,11 @@
       "usage": "respond to/resist peer pressure",
       "example": "She resisted peer pressure to skip class.",
       "translation": "Cô chống lại áp lực bạn bè rủ trốn học.",
-      "family": "peer (n); pressure (n/v); peer group (n)"
+      "family": "peer (n); pressure (n/v); peer group (n)",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ]
     },
     {
       "question": 53,
@@ -175,7 +235,11 @@
       "usage": "fit in with a group; struggle to fit in",
       "example": "He found it hard to fit in at his new school.",
       "translation": "Cậu thấy khó hòa nhập ở trường mới.",
-      "family": "fit (v/adj); fitting (adj); fit in (phrase)"
+      "family": "fit (v/adj); fitting (adj); fit in (phrase)",
+      "teacherSelected": true,
+      "questions": [
+        53
+      ]
     },
     {
       "question": 55,
@@ -186,7 +250,11 @@
       "usage": "have a direct bearing on a decision",
       "example": "The costs have a bearing on our decision.",
       "translation": "Chi phí ảnh hưởng đến quyết định của chúng tôi.",
-      "family": "bear–bore–borne; bearing (n)"
+      "family": "bear–bore–borne; bearing (n)",
+      "teacherSelected": true,
+      "questions": [
+        55
+      ]
     },
     {
       "question": 57,
@@ -197,7 +265,11 @@
       "usage": "a sense of self-worth; damage self-worth",
       "example": "Her self-worth was not defined by exam results.",
       "translation": "Cảm nhận giá trị bản thân của cô không phụ thuộc vào kết quả thi.",
-      "family": "worth (n/adj); worthy (adj); self-worth (n)"
+      "family": "worth (n/adj); worthy (adj); self-worth (n)",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ]
     },
     {
       "question": 59,
@@ -208,7 +280,11 @@
       "usage": "run the risk of losing/rejection",
       "example": "You run the risk of losing your work without a backup.",
       "translation": "Bạn có nguy cơ mất công việc đã làm nếu không sao lưu.",
-      "family": "risk (n/v); risky (adj); run–ran–run"
+      "family": "risk (n/v); risky (adj); run–ran–run",
+      "teacherSelected": true,
+      "questions": [
+        59
+      ]
     },
     {
       "question": 60,
@@ -219,7 +295,11 @@
       "usage": "override a concern/decision/setting",
       "example": "Safety concerns overrode the need for speed.",
       "translation": "Lo ngại an toàn được đặt cao hơn nhu cầu làm nhanh.",
-      "family": "override–overrode–overridden; overriding (adj)"
+      "family": "override–overrode–overridden; overriding (adj)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 63,
@@ -230,7 +310,11 @@
       "usage": "be a sight for sore eyes",
       "example": "After the long journey, home was a sight for sore eyes.",
       "translation": "Sau hành trình dài, nhìn thấy nhà khiến tôi thật nhẹ nhõm.",
-      "family": "sight (n); sore (adj); eyesight (n)"
+      "family": "sight (n); sore (adj); eyesight (n)",
+      "teacherSelected": true,
+      "questions": [
+        63
+      ]
     },
     {
       "question": 68,
@@ -241,7 +325,11 @@
       "usage": "be only/just the tip of the iceberg",
       "example": "These examples are just the tip of the iceberg.",
       "translation": "Các ví dụ này mới chỉ là một phần nhỏ.",
-      "family": "tip (n); iceberg (n); ice (n)"
+      "family": "tip (n); iceberg (n); ice (n)",
+      "teacherSelected": true,
+      "questions": [
+        68
+      ]
     },
     {
       "question": 72,
@@ -252,7 +340,11 @@
       "usage": "unimpeded access/movement; move unimpeded",
       "example": "The agreement allowed unimpeded movement of goods.",
       "translation": "Thỏa thuận cho phép hàng hóa lưu chuyển không bị cản trở.",
-      "family": "impede (v); impediment (n); unimpeded (adj)"
+      "family": "impede (v); impediment (n); unimpeded (adj)",
+      "teacherSelected": true,
+      "questions": [
+        72
+      ]
     },
     {
       "question": 74,
@@ -263,7 +355,11 @@
       "usage": "trade protectionism; protectionist policies",
       "example": "The article debates the costs of protectionism.",
       "translation": "Bài viết bàn về chi phí của chính sách bảo hộ.",
-      "family": "protect (v); protection (n); protectionism (n); protectionist (adj/n)"
+      "family": "protect (v); protection (n); protectionism (n); protectionist (adj/n)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ]
     },
     {
       "question": 76,
@@ -274,7 +370,11 @@
       "usage": "protect/support infant industries",
       "example": "The policy supported infant industries.",
       "translation": "Chính sách hỗ trợ các ngành công nghiệp non trẻ.",
-      "family": "infant (n/adj); infancy (n); industry (n); industrial (adj)"
+      "family": "infant (n/adj); infancy (n); industry (n); industrial (adj)",
+      "teacherSelected": true,
+      "questions": [
+        76
+      ]
     },
     {
       "question": 89,
@@ -285,7 +385,11 @@
       "usage": "many a passenger has; many a student is",
       "example": "Many a passenger has complained about the delays.",
       "translation": "Nhiều hành khách đã phàn nàn về các lần chậm trễ.",
-      "family": "many + plural noun; many a + singular noun + singular verb"
+      "family": "many + plural noun; many a + singular noun + singular verb",
+      "teacherSelected": true,
+      "questions": [
+        89
+      ]
     },
     {
       "question": 91,
@@ -296,7 +400,11 @@
       "usage": "take criticism/a remark to heart",
       "example": "Don’t take his careless remark to heart.",
       "translation": "Đừng để bụng lời nói vô ý của anh ấy.",
-      "family": "heart (n); heartfelt (adj); take–took–taken"
+      "family": "heart (n); heartfelt (adj); take–took–taken",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ]
     },
     {
       "question": 95,
@@ -307,7 +415,11 @@
       "usage": "experienced enough for/to do something",
       "example": "She is experienced enough to lead the project.",
       "translation": "Cô ấy đủ kinh nghiệm để dẫn dắt dự án.",
-      "family": "experience (n/v); experienced/inexperienced (adj)"
+      "family": "experience (n/v); experienced/inexperienced (adj)",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     },
     {
       "question": 97,
@@ -318,7 +430,11 @@
       "usage": "can/cannot afford to buy/pay",
       "example": "He could not afford to pay the bills.",
       "translation": "Anh ấy không đủ tiền trả các hóa đơn.",
-      "family": "afford (v); affordable (adj); affordability (n)"
+      "family": "afford (v); affordable (adj); affordability (n)",
+      "teacherSelected": true,
+      "questions": [
+        97
+      ]
     },
     {
       "question": 100,
@@ -329,7 +445,11 @@
       "usage": "although + subject + verb",
       "example": "Although they looked sad, they were actually pleased.",
       "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
-      "family": "although/though + clause; despite/in spite of + noun or V-ing"
+      "family": "although/though + clause; despite/in spite of + noun or V-ing",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
     }
   ]
 }

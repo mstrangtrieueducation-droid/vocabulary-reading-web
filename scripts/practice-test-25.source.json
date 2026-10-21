@@ -1064,142 +1064,200 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "prefix": "There has",
-      "suffix": "in house prices this year.",
+      "suffix": "in house prices this year",
       "acceptedAnswers": [
         "been a dramatic increase"
       ],
-      "fullSentence": "There has been a dramatic increase in house prices this year.",
+      "fullSentence": "There has been a dramatic increase in house prices this year",
       "explanation": "Rise dramatically chuyển thành a dramatic increase: trạng từ dramatically đổi thành tính từ dramatic để bổ nghĩa danh từ increase. There has been giữ hiện tại hoàn thành của have risen; không dùng was vì câu gốc nói diễn biến trong năm đang xét.",
-      "displayAnswer": "been a dramatic increase"
+      "displayAnswer": "been a dramatic increase",
+      "keyword": "INCREASE",
+      "answerPrefix": "There has",
+      "answerSuffix": "in house prices this year",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "been a dramatic increase"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "prefix": "What the politician was saying",
-      "suffix": "last night.",
+      "suffix": "last night",
       "acceptedAnswers": [
         "fell on deaf ears"
       ],
-      "fullSentence": "What the politician was saying fell on deaf ears last night.",
-      "explanation": "Fall on deaf ears nghĩa là lời nói không được lắng nghe/chú ý, phù hợp no one listened. Last night yêu cầu quá khứ fell. Đây là thành ngữ, không kết luận người nghe thật sự không có khả năng nghe.",
-      "displayAnswer": "fell on deaf ears"
+      "fullSentence": "What the politician was saying fell on deaf ears last night",
+      "explanation": "Fall on deaf ears nghĩa là lời nói không được lắng nghe/chú ý, phù hợp no one listened. Last night yêu cầu quá khứ fell.",
+      "displayAnswer": "fell on deaf ears",
+      "keyword": "EARS",
+      "answerPrefix": "What the politician was saying",
+      "answerSuffix": "last night",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "fell on deaf ears"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "prefix": "After the scandal, he was",
-      "suffix": "his resignation.",
+      "suffix": "his resignation",
       "acceptedAnswers": [
         "asked to hand in",
         "requested to hand in"
       ],
-      "fullSentence": "After the scandal, he was asked to hand in his resignation.",
+      "fullSentence": "After the scandal, he was asked to hand in his resignation",
       "explanation": "Hand in one's resignation nghĩa là nộp đơn xin từ chức. Was asked to giữ câu bị động anh ấy được yêu cầu làm việc đó; không đổi thành he handed in vì sẽ khẳng định đã nộp, trong khi câu gốc mới nói yêu cầu.",
-      "displayAnswer": "asked to hand in / requested to hand in"
+      "displayAnswer": "asked to hand in / requested to hand in",
+      "keyword": "HAND",
+      "answerPrefix": "After the scandal, he was",
+      "answerSuffix": "his resignation",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "asked to hand in"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "prefix": "I have",
-      "suffix": "this author before.",
+      "suffix": "this author before",
       "acceptedAnswers": [
         "no recollection of meeting"
       ],
-      "fullSentence": "I have no recollection of meeting this author before.",
-      "explanation": "Have no recollection of doing something nghĩa là không nhớ đã làm gì. Of là giới từ, nên theo sau bằng meeting. Không dùng recollection to meet, vì sẽ sai cách kết hợp và chuyển thành hành động tương lai. Before giữ nghĩa trước đây.",
-      "displayAnswer": "no recollection of meeting"
+      "fullSentence": "I have no recollection of meeting this author before",
+      "explanation": "Have no recollection of doing something nghĩa là không nhớ đã làm gì. Of là giới từ, nên theo sau bằng meeting.",
+      "displayAnswer": "no recollection of meeting",
+      "keyword": "RECOLLECTION",
+      "answerPrefix": "I have",
+      "answerSuffix": "this author before",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "no recollection of meeting"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "prefix": "It really",
-      "suffix": "when they talk during a performance.",
+      "suffix": "when they talk during a performance",
       "acceptedAnswers": [
         "gets on my nerves"
       ],
-      "fullSentence": "It really gets on my nerves when they talk during a performance.",
-      "explanation": "Get on somebody's nerves nghĩa là khiến người đó bực bội, phù hợp makes me really uptight. Chủ ngữ it số ít nên dùng gets; my giữ đúng người khó chịu. Nerves phải ở số nhiều như thành ngữ.",
-      "displayAnswer": "gets on my nerves"
+      "fullSentence": "It really gets on my nerves when they talk during a performance",
+      "explanation": "Get on somebody's nerves nghĩa là khiến người đó bực bội, phù hợp makes me really uptight. Chủ ngữ it số ít nên dùng gets; my giữ đúng người khó chịu.",
+      "displayAnswer": "gets on my nerves",
+      "keyword": "NERVES",
+      "answerPrefix": "It really",
+      "answerSuffix": "when they talk during a performance",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "gets on my nerves"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "prefix": "The ferry timetable",
-      "suffix": "depending on the weather.",
+      "suffix": "depending on the weather",
       "acceptedAnswers": [
         "is subject to change",
         "is subject to alteration"
       ],
-      "fullSentence": "The ferry timetable is subject to change depending on the weather.",
-      "explanation": "Be subject to change/alteration nghĩa là có thể bị thay đổi. Trong câu, lịch phà phụ thuộc thời tiết nên không cố định hoàn toàn. To là giới từ; change ở đây có thể là danh từ, không phải nguyên mẫu sau một cấu trúc to V.",
-      "displayAnswer": "is subject to change / is subject to alteration"
+      "fullSentence": "The ferry timetable is subject to change depending on the weather",
+      "explanation": "Be subject to change/alteration nghĩa là có thể bị thay đổi. Trong câu, lịch phà phụ thuộc thời tiết nên không cố định hoàn toàn.",
+      "displayAnswer": "is subject to change / is subject to alteration",
+      "keyword": "SUBJECT",
+      "answerPrefix": "The ferry timetable",
+      "answerSuffix": "depending on the weather",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is subject to change"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
-      "prefix": "With the",
-      "suffix": "more charging stations will appear.",
+      "prefix": "With the increasing popularity of electric vehicles in the story,",
+      "suffix": "more charging stations will appear",
       "acceptedAnswers": [
-        "increasing popularity of electric vehicles in the story, it stands to reason that"
+        "it stands to reason that"
       ],
-      "fullSentence": "With the increasing popularity of electric vehicles in the story, it stands to reason that more charging stations will appear.",
-      "explanation": "It stands to reason that ... nghĩa là có cơ sở hợp lý để cho rằng. With the increasing popularity ... nêu căn cứ cho dự đoán. Giữ in the story để đây là suy luận trong tình huống giả định, không tự khẳng định một quy luật tất yếu của thị trường.",
-      "displayAnswer": "increasing popularity of electric vehicles in the story, it stands to reason that"
+      "fullSentence": "With the increasing popularity of electric vehicles in the story, it stands to reason that more charging stations will appear",
+      "explanation": "It stands to reason that … nghĩa là có cơ sở hợp lý để cho rằng. With the increasing popularity … nêu căn cứ cho dự đoán.",
+      "displayAnswer": "it stands to reason that",
+      "keyword": "STANDS",
+      "answerPrefix": "With the increasing popularity of electric vehicles in the story,",
+      "answerSuffix": "more charging stations will appear",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "it stands to reason that"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "prefix": "His new software can",
-      "suffix": "complex problems more efficiently.",
+      "suffix": "complex problems more efficiently",
       "acceptedAnswers": [
         "help users work out",
         "help users figure out",
         "help users sort out",
-        "help users work out the answers to",
-        "help users figure out the answers to",
         "help users work out solutions to"
       ],
-      "fullSentence": "His new software can help users work out the answers to complex problems more efficiently.",
-      "explanation": "Work out/figure out the answers to problems nghĩa là tìm ra lời giải; work out/figure out problems cũng được dùng. Help users phải giữ để không biến thành phần mềm tự giải mọi việc. More efficiently đã cho ở cuối và thể hiện lợi ích về hiệu quả.",
-      "displayAnswer": "help users work out / help users figure out / help users sort out / help users work out the answers to / help users figure out the answers to / help users work out solutions to"
+      "fullSentence": "His new software can help users work out complex problems more efficiently",
+      "explanation": "Work out/figure out the answers to problems nghĩa là tìm ra lời giải; work out/figure out problems cũng được dùng. Help users phải giữ để không biến thành phần mềm tự giải mọi việc.",
+      "displayAnswer": "help users work out / help users figure out / help users sort out / help users work out solutions to",
+      "keyword": "OUT",
+      "answerPrefix": "His new software can",
+      "answerSuffix": "complex problems more efficiently",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "help users work out"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
-      "prefix": "You fail",
-      "suffix": "in your essay.",
+      "prefix": "You fail to",
+      "suffix": "in your essay",
       "acceptedAnswers": [
-        "to take proper account of certain factors",
-        "to take certain factors properly into account",
-        "to take certain factors fully into account"
+        "take proper account of certain factors",
+        "take certain factors properly into account",
+        "take certain factors fully into account"
       ],
-      "fullSentence": "You fail to take proper account of certain factors in your essay.",
-      "explanation": "Take proper account of hoặc take something properly/fully into account là xem xét đầy đủ, đúng mức. Due consideration nói sự cân nhắc thích đáng, nên thêm proper/properly/fully để giữ sắc thái này. Fail to + V nêu thiếu sót trong bài luận.",
-      "displayAnswer": "to take proper account of certain factors / to take certain factors properly into account / to take certain factors fully into account"
+      "fullSentence": "You fail to take proper account of certain factors in your essay",
+      "explanation": "Take proper account of hoặc take something properly/fully into account là xem xét đầy đủ, đúng mức. Due consideration nói sự cân nhắc thích đáng, nên thêm proper/properly/fully để giữ sắc thái này.",
+      "displayAnswer": "take proper account of certain factors / take certain factors properly into account / take certain factors fully into account",
+      "keyword": "ACCOUNT",
+      "answerPrefix": "You fail to",
+      "answerSuffix": "in your essay",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "take proper account of certain factors"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "prefix": "To",
-      "suffix": ", he wrote to the press to deny any involvement in the affair.",
+      "suffix": ", he wrote to the press to deny any involvement in the affair",
       "acceptedAnswers": [
         "set the record straight",
         "put the record straight"
       ],
-      "fullSentence": "To set the record straight, he wrote to the press to deny any involvement in the affair.",
-      "explanation": "Set/put the record straight nghĩa là làm rõ sự thật, đính chính hiểu lầm. To mở mục đích viết cho báo chí và phủ nhận liên quan. Record ở đây là thông tin/lời tường thuật đã được biết tới, không phải phá một kỷ lục.",
-      "displayAnswer": "set the record straight / put the record straight"
+      "fullSentence": "To set the record straight, he wrote to the press to deny any involvement in the affair",
+      "explanation": "Set/put the record straight nghĩa là làm rõ sự thật, đính chính hiểu lầm. To mở mục đích viết cho báo chí và phủ nhận liên quan.",
+      "displayAnswer": "set the record straight / put the record straight",
+      "keyword": "RECORD",
+      "answerPrefix": "To",
+      "answerSuffix": ", he wrote to the press to deny any involvement in the affair",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "set the record straight"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

@@ -10,7 +10,11 @@
       "usage": "fill in for someone at a meeting",
       "example": "Mai will fill in for me at tomorrow's meeting.",
       "translation": "Mai sẽ dự cuộc họp ngày mai thay tôi.",
-      "family": "fill (v); fill-in (n/adj, người hoặc việc thay tạm); replacement (n, nghĩa gần)"
+      "family": "fill (v); fill-in (n/adj, người hoặc việc thay tạm); replacement (n, nghĩa gần)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -21,7 +25,11 @@
       "usage": "take my/your hat off to someone",
       "example": "I take my hat off to everyone who finished the difficult course.",
       "translation": "Tôi khâm phục tất cả những người đã hoàn thành khóa học khó ấy.",
-      "family": "take – took – taken; hat (n); admiration (n, nghĩa gần)"
+      "family": "take – took – taken; hat (n); admiration (n, nghĩa gần)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 7,
@@ -32,7 +40,11 @@
       "usage": "live life in the fast lane",
       "example": "The character soon grew tired of life in the fast lane.",
       "translation": "Nhân vật nhanh chóng chán cuộc sống quá sôi động ấy.",
-      "family": "life (n), lives (số nhiều); live (v); lane (n)"
+      "family": "life (n), lives (số nhiều); live (v); lane (n)",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 9,
@@ -43,7 +55,11 @@
       "usage": "pause/stop to catch one's breath",
       "example": "We stopped halfway up the hill to catch our breath.",
       "translation": "Chúng tôi dừng giữa dốc để lấy lại hơi thở.",
-      "family": "breath (n); breathe (v); breathless (adj); catch – caught – caught"
+      "family": "breath (n); breathe (v); breathless (adj); catch – caught – caught",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 11,
@@ -54,7 +70,11 @@
       "usage": "be a chicken; chicken out of + N/V-ing",
       "example": "In the comedy, he calls himself a chicken for refusing the dare.",
       "translation": "Trong vở hài, anh ấy tự gọi mình là kẻ nhát gan vì không dám nhận thử thách.",
-      "family": "chicken (n); chicken out (cụm động từ, rút lui vì sợ); coward (n, nghĩa gần)"
+      "family": "chicken (n); chicken out (cụm động từ, rút lui vì sợ); coward (n, nghĩa gần)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 14,
@@ -65,7 +85,11 @@
       "usage": "not have the heart to + V",
       "example": "I didn't have the heart to tell him his drawing had been lost.",
       "translation": "Tôi không nỡ nói với cậu ấy rằng bức vẽ đã bị thất lạc.",
-      "family": "heart (n); heartless (adj, nhẫn tâm); kind-hearted (adj, tốt bụng)"
+      "family": "heart (n); heartless (adj, nhẫn tâm); kind-hearted (adj, tốt bụng)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 15,
@@ -76,7 +100,11 @@
       "usage": "Speak for yourself!; speak for someone",
       "example": "'We all hate camping.' 'Speak for yourself — I love it.'",
       "translation": "'Ai trong chúng ta cũng ghét cắm trại.' 'Đó là bạn thôi — tôi thích lắm.'",
-      "family": "speak – spoke – spoken; speaker (n); yourself (đại từ phản thân)"
+      "family": "speak – spoke – spoken; speaker (n); yourself (đại từ phản thân)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -87,7 +115,11 @@
       "usage": "turn up the heat on someone to + V",
       "example": "The coach turned up the heat on the team to improve their preparation.",
       "translation": "Huấn luyện viên tăng sức ép để đội chuẩn bị tốt hơn.",
-      "family": "turn (v); heat (n/v); heated (adj, căng thẳng/sôi nổi trong tranh luận)"
+      "family": "turn (v); heat (n/v); heated (adj, căng thẳng/sôi nổi trong tranh luận)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 17,
@@ -98,7 +130,11 @@
       "usage": "muster (up) the courage to + V",
       "example": "She mustered up the courage to ask a question.",
       "translation": "Cô ấy lấy hết can đảm để đặt câu hỏi.",
-      "family": "muster (v); courage (n); courageous (adj); courageously (adv)"
+      "family": "muster (v); courage (n); courageous (adj); courageously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 18,
@@ -109,7 +145,11 @@
       "usage": "a fleck of paint/dust; flecks on a surface",
       "example": "A fleck of blue paint remained on the chair.",
       "translation": "Một đốm sơn xanh vẫn còn trên ghế.",
-      "family": "fleck (n/v); flecked (adj, có đốm); paint (n/v)"
+      "family": "fleck (n/v); flecked (adj, có đốm); paint (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 19,
@@ -120,7 +160,11 @@
       "usage": "sports/training/community facilities",
       "example": "The school has good facilities for indoor sports.",
       "translation": "Trường có cơ sở vật chất tốt cho thể thao trong nhà.",
-      "family": "facility (n số ít); facilities (số nhiều); facilitate (v, tạo thuận lợi)"
+      "family": "facility (n số ít); facilities (số nhiều); facilitate (v, tạo thuận lợi)",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -131,7 +175,11 @@
       "usage": "Scarcely had S + past participle when S + past simple",
       "example": "Scarcely had we sat down when the lights went out.",
       "translation": "Chúng tôi vừa ngồi xuống thì đèn tắt.",
-      "family": "scarce (adj, khan hiếm); scarcity (n); scarcely (adv)"
+      "family": "scarce (adj, khan hiếm); scarcity (n); scarcely (adv)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 22,
@@ -142,7 +190,11 @@
       "usage": "a salient feature/point/fact",
       "example": "Please summarise the salient points of the report.",
       "translation": "Hãy tóm tắt các điểm nổi bật của báo cáo.",
-      "family": "salient (adj); salience (n); saliently (adv, ít dùng)"
+      "family": "salient (adj); salience (n); saliently (adv, ít dùng)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -153,7 +205,11 @@
       "usage": "bask in praise/glory/attention",
       "example": "The young team basked in the praise after the performance.",
       "translation": "Nhóm trẻ tận hưởng những lời khen sau buổi biểu diễn.",
-      "family": "bask (v); basked (quá khứ); basking (V-ing); praise (n/v)"
+      "family": "bask (v); basked (quá khứ); basking (V-ing); praise (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -164,7 +220,11 @@
       "usage": "play/run events back to back; back-to-back + N",
       "example": "We watched two episodes back to back.",
       "translation": "Chúng tôi xem liền hai tập phim.",
-      "family": "back (n/adv); back to back (trạng ngữ); back-to-back (adj trước danh từ)"
+      "family": "back (n/adv); back to back (trạng ngữ); back-to-back (adj trước danh từ)",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 25,
@@ -175,7 +235,11 @@
       "usage": "an argument/team/strategy carries the day",
       "example": "Careful preparation carried the day in the final round.",
       "translation": "Sự chuẩn bị cẩn thận giúp giành chiến thắng ở vòng cuối.",
-      "family": "carry – carried – carried; victory (n, nghĩa gần); victorious (adj)"
+      "family": "carry – carried – carried; victory (n, nghĩa gần); victorious (adj)",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 26,
@@ -186,7 +250,11 @@
       "usage": "fluctuate between A and B; fluctuate from month to month",
       "example": "Attendance fluctuated throughout the term.",
       "translation": "Số người tham dự biến động trong suốt học kỳ.",
-      "family": "fluctuate (v); fluctuation (n); fluctuating (adj/V-ing)"
+      "family": "fluctuate (v); fluctuation (n); fluctuating (adj/V-ing)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 27,
@@ -197,7 +265,11 @@
       "usage": "be on the same wavelength as someone",
       "example": "We were on the same wavelength about how to organise the event.",
       "translation": "Chúng tôi có cùng cách nghĩ về việc tổ chức sự kiện.",
-      "family": "wave (n); wavelength (n); agreement (n, nghĩa liên quan)"
+      "family": "wave (n); wavelength (n); agreement (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 30,
@@ -208,7 +280,11 @@
       "usage": "patch up relations/a friendship/a disagreement",
       "example": "They met to patch up their friendship.",
       "translation": "Họ gặp nhau để hàn gắn tình bạn.",
-      "family": "patch (n/v); patched (quá khứ); patchwork (n, đồ ghép từ nhiều mảnh)"
+      "family": "patch (n/v); patched (quá khứ); patchwork (n, đồ ghép từ nhiều mảnh)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 31,
@@ -219,7 +295,11 @@
       "usage": "excuse someone from + N/V-ing",
       "example": "The teacher excused her from the activity because she was unwell.",
       "translation": "Giáo viên cho cô ấy được miễn tham gia hoạt động vì không khỏe.",
-      "family": "excuse (n/v); excused (quá khứ); excusable (adj); inexcusable (adj)"
+      "family": "excuse (n/v); excused (quá khứ); excusable (adj); inexcusable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 33,
@@ -230,7 +310,11 @@
       "usage": "be responsive to questions/feedback/needs",
       "example": "The tutor was responsive to the students' questions.",
       "translation": "Gia sư sẵn sàng giải đáp các câu hỏi của học sinh.",
-      "family": "respond (v); response (n); responsive/unresponsive (adj); responsiveness (n)"
+      "family": "respond (v); response (n); responsive/unresponsive (adj); responsiveness (n)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 36,
@@ -241,7 +325,11 @@
       "usage": "indifference to/towards something; show indifference",
       "example": "His indifference to the news surprised me.",
       "translation": "Sự thờ ơ của anh ấy với tin đó khiến tôi ngạc nhiên.",
-      "family": "indifferent (adj); indifference (n); indifferently (adv); differ (v)"
+      "family": "indifferent (adj); indifference (n); indifferently (adv); differ (v)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 37,
@@ -252,7 +340,11 @@
       "usage": "an inexplicable change/decision; seem inexplicable",
       "example": "Her sudden change of plan seemed inexplicable.",
       "translation": "Việc cô ấy đột ngột đổi kế hoạch có vẻ khó hiểu.",
-      "family": "explain (v); explanation (n); explicable/inexplicable (adj); inexplicably (adv)"
+      "family": "explain (v); explanation (n); explicable/inexplicable (adj); inexplicably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 38,
@@ -263,7 +355,11 @@
       "usage": "be contemptuous of someone/something; a contemptuous remark",
       "example": "He was contemptuous of suggestions from newcomers.",
       "translation": "Anh ấy tỏ thái độ coi thường đề xuất của người mới.",
-      "family": "contempt (n); contemptuous (adj); contemptuously (adv); contemptible (adj)"
+      "family": "contempt (n); contemptuous (adj); contemptuously (adv); contemptible (adj)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 39,
@@ -274,7 +370,11 @@
       "usage": "attract/receive press coverage; extensive media coverage",
       "example": "The exhibition received extensive press coverage.",
       "translation": "Triển lãm được báo chí đưa tin rộng rãi.",
-      "family": "cover (v); coverage (n); press (n); media (n số nhiều/tập hợp)"
+      "family": "cover (v); coverage (n); press (n); media (n số nhiều/tập hợp)",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 40,
@@ -285,7 +385,11 @@
       "usage": "defend/argue/compete ferociously",
       "example": "She defended her proposal ferociously.",
       "translation": "Cô ấy bảo vệ đề xuất của mình rất quyết liệt.",
-      "family": "ferocity (n); ferocious (adj); ferociously (adv)"
+      "family": "ferocity (n); ferocious (adj); ferociously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 41,
@@ -296,7 +400,11 @@
       "usage": "debunk a myth/claim; debunk the idea that ...",
       "example": "The experiment helped debunk the claim.",
       "translation": "Thí nghiệm giúp bác bỏ lời khẳng định đó.",
-      "family": "bunk (n, chuyện vô lý); debunk (v); debunking (n/V-ing); debunker (n)"
+      "family": "bunk (n, chuyện vô lý); debunk (v); debunking (n/V-ing); debunker (n)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 42,
@@ -307,7 +415,11 @@
       "usage": "a copycat; a copycat design/product",
       "example": "The designer complained that a copycat had copied the pattern.",
       "translation": "Nhà thiết kế phàn nàn rằng một người bắt chước đã sao chép họa tiết.",
-      "family": "copy (n/v); copycat (n/adj); copying (V-ing); copied (quá khứ)"
+      "family": "copy (n/v); copycat (n/adj); copying (V-ing); copied (quá khứ)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 44,
@@ -318,7 +430,11 @@
       "usage": "be embedded in something; embedded devices",
       "example": "A tiny sensor was embedded in the badge.",
       "translation": "Một cảm biến nhỏ được gắn bên trong huy hiệu.",
-      "family": "embed/imbed (v); embedded/imbedded (quá khứ phân từ); embedding (V-ing)"
+      "family": "embed/imbed (v); embedded/imbedded (quá khứ phân từ); embedding (V-ing)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 45,
@@ -329,7 +445,11 @@
       "usage": "an immersive experience/environment/performance",
       "example": "The exhibition offers an immersive experience.",
       "translation": "Triển lãm mang đến trải nghiệm khiến người xem như hòa vào không gian.",
-      "family": "immerse (v); immersion (n); immersive (adj); immersed (adj/quá khứ phân từ)"
+      "family": "immerse (v); immersion (n); immersive (adj); immersed (adj/quá khứ phân từ)",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     }
   ]
 }

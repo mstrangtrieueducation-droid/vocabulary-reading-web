@@ -1065,40 +1065,54 @@
         "is in the balance"
       ],
       "displayAnswer": "hangs in the balance / is in the balance",
-      "explanation": "Hang/be in the balance nghĩa là chưa được quyết định, còn bấp bênh. Cụm giữ đúng ý chưa chắc chuyến lưu diễn có diễn ra. Tour số ít nên dùng hangs hoặc is; giữ nguyên từ khóa balance.",
-      "prefix": "The band’s tour",
+      "explanation": "Hang/be in the balance nghĩa là chưa được quyết định, còn bấp bênh. Cụm giữ đúng ý chưa chắc chuyến lưu diễn có diễn ra.\nTừ vựng trọng tâm: hang in the balance",
+      "prefix": "The band's tour",
       "suffix": "",
-      "fullSentence": "The band’s tour hangs in the balance."
+      "fullSentence": "The band's tour hangs in the balance",
+      "keyword": "balance",
+      "answerPrefix": "The band's tour",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "hangs in the balance"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "gave off a faint smell of fish",
-        "gave off a faint fishy smell",
-        "gave off a faint odour of fish",
-        "gave off a faint odor of fish"
+        "gave off a faint fishy smell"
       ],
-      "displayAnswer": "gave off a faint smell of fish / gave off a faint fishy smell / gave off a faint odour of fish / gave off a faint odor of fish",
-      "explanation": "Give off a smell là tỏa ra mùi; quá khứ là gave off, có hai chữ f trong off. Faint nghĩa là nhẹ, thoang thoảng, giữ mức smelled faintly. Đáp án cũ gave of thiếu f đã được sửa.",
+      "displayAnswer": "gave off a faint fishy smell",
+      "explanation": "Give off a smell là tỏa ra mùi; quá khứ là gave off, có hai chữ f trong off. Faint nghĩa là nhẹ, thoang thoảng, giữ mức smelled faintly.",
       "prefix": "The box",
       "suffix": "",
-      "fullSentence": "The box gave off a faint smell of fish."
+      "fullSentence": "The box gave off a faint fishy smell",
+      "keyword": "gave",
+      "answerPrefix": "The box",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "gave off a faint fishy smell"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "so beautiful that I couldn’t take my eyes off her",
-        "so beautiful that I could not take my eyes off her"
+        "take my eyes off her"
       ],
-      "displayAnswer": "so beautiful that I couldn’t take my eyes off her / so beautiful that I could not take my eyes off her",
-      "explanation": "Cannot take one’s eyes off somebody nghĩa là không thể rời mắt khỏi người đó. Quá khứ dùng couldn’t/could not; one’s đổi thành my theo chủ ngữ I. Cấu trúc so beautiful that giữ nguyên quan hệ mức độ–kết quả.",
-      "prefix": "She was",
+      "displayAnswer": "take my eyes off her",
+      "explanation": "Cannot take one’s eyes off somebody nghĩa là không thể rời mắt khỏi người đó. Quá khứ dùng couldn’t/could not; one’s đổi thành my theo chủ ngữ I.",
+      "prefix": "She was so beautiful that I couldn't",
       "suffix": "",
-      "fullSentence": "She was so beautiful that I couldn’t take my eyes off her."
+      "fullSentence": "She was so beautiful that I couldn't take my eyes off her",
+      "keyword": "eyes",
+      "answerPrefix": "She was so beautiful that I couldn't",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "take my eyes off her"
     },
     {
       "globalNumber": 94,
@@ -1108,10 +1122,16 @@
         "in the dark for her own"
       ],
       "displayAnswer": "in the dark for her own",
-      "explanation": "Keep somebody in the dark là không cho ai biết thông tin. For her own reasons giữ ý cô ấy có lý do riêng. Reasons đã được in sau ô nên kết thúc phần điền bằng own, không lặp lại danh từ.",
+      "explanation": "Keep somebody in the dark là không cho ai biết thông tin. For her own reasons giữ ý cô ấy có lý do riêng.",
       "prefix": "As to her past, she kept us",
-      "suffix": "reasons.",
-      "fullSentence": "As to her past, she kept us in the dark for her own reasons."
+      "suffix": "reasons",
+      "fullSentence": "As to her past, she kept us in the dark for her own reasons",
+      "keyword": "dark",
+      "answerPrefix": "As to her past, she kept us",
+      "answerSuffix": "reasons",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "in the dark for her own"
     },
     {
       "globalNumber": 95,
@@ -1121,10 +1141,16 @@
         "took exception to"
       ],
       "displayAnswer": "took exception to",
-      "explanation": "Take exception to something nghĩa là cảm thấy bị xúc phạm hoặc phản đối điều gì. Quá khứ của take là took; to là giới từ cần đi trước some of the remarks đã có. Giữ đúng tên Dr Potter trong câu đầy đủ.",
+      "explanation": "Take exception to something nghĩa là cảm thấy bị xúc phạm hoặc phản đối điều gì. Quá khứ của take là took; to là giới từ cần đi trước some of the remarks đã có.\nTừ vựng trọng tâm: take exception to",
       "prefix": "Dr Potter",
-      "suffix": "some of the remarks that were made about her work.",
-      "fullSentence": "Dr Potter took exception to some of the remarks that were made about her work."
+      "suffix": "some of the remarks that were made about her work",
+      "fullSentence": "Dr Potter took exception to some of the remarks that were made about her work",
+      "keyword": "exception",
+      "answerPrefix": "Dr Potter",
+      "answerSuffix": "some of the remarks that were made about her work",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "took exception to"
     },
     {
       "globalNumber": 96,
@@ -1135,10 +1161,16 @@
         "made a start at sorting"
       ],
       "displayAnswer": "made a start on sorting / made a start at sorting",
-      "explanation": "Make a start on/at doing something là bắt đầu làm việc gì. It’s time + chủ ngữ + quá khứ đơn nên dùng made, dù ý là đã đến lúc bắt đầu bây giờ. Through these cupboards đã in sẵn, phần điền kết thúc ở sorting.",
-      "prefix": "It’s time we",
-      "suffix": "through these cupboards.",
-      "fullSentence": "It’s time we made a start on sorting through these cupboards."
+      "explanation": "Make a start on/at doing something là bắt đầu làm việc gì. It’s time + chủ ngữ + quá khứ đơn nên dùng made, dù ý là đã đến lúc bắt đầu bây giờ.",
+      "prefix": "It's time we",
+      "suffix": "through these cupboards",
+      "fullSentence": "It's time we made a start on sorting through these cupboards",
+      "keyword": "start",
+      "answerPrefix": "It's time we",
+      "answerSuffix": "through these cupboards",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "made a start on sorting"
     },
     {
       "globalNumber": 97,
@@ -1151,10 +1183,16 @@
         "not much chance of you winning"
       ],
       "displayAnswer": "little chance of you winning / little chance of your winning / little chance that you will win / not much chance of you winning",
-      "explanation": "Unlikely nghĩa là khả năng thấp, tương đương little/not much chance. No chance có nghĩa hoàn toàn không có cơ hội, mạnh hơn câu gốc nên không lấy làm đáp án chuẩn. Sau chance of dùng V-ing; sau chance that dùng mệnh đề.",
+      "explanation": "Unlikely nghĩa là khả năng thấp, tương đương little/not much chance. No chance có nghĩa hoàn toàn không có cơ hội, mạnh hơn câu gốc nên không lấy làm đáp án chuẩn.",
       "prefix": "I think there is",
-      "suffix": "the competition.",
-      "fullSentence": "I think there is little chance of you winning the competition."
+      "suffix": "the competition",
+      "fullSentence": "I think there is little chance of you winning the competition",
+      "keyword": "chance",
+      "answerPrefix": "I think there is",
+      "answerSuffix": "the competition",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "little chance of you winning"
     },
     {
       "globalNumber": 98,
@@ -1165,10 +1203,16 @@
         "no point waiting for"
       ],
       "displayAnswer": "no point in waiting for / no point waiting for",
-      "explanation": "There is no point (in) doing something nghĩa là không ích gì khi làm việc đó, tương đương not worth doing. In có thể có hoặc lược bỏ. Waiting for đi với the rest of the group đã được in sau ô.",
-      "prefix": "There’s",
-      "suffix": "the rest of the group.",
-      "fullSentence": "There’s no point in waiting for the rest of the group."
+      "explanation": "There is no point (in) doing something nghĩa là không ích gì khi làm việc đó, tương đương not worth doing. In có thể có hoặc lược bỏ.",
+      "prefix": "There's",
+      "suffix": "the rest of the group",
+      "fullSentence": "There's no point in waiting for the rest of the group",
+      "keyword": "point",
+      "answerPrefix": "There's",
+      "answerSuffix": "the rest of the group",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "no point in waiting for"
     },
     {
       "globalNumber": 99,
@@ -1178,10 +1222,16 @@
         "found myself standing"
       ],
       "displayAnswer": "found myself standing",
-      "explanation": "Find oneself doing something diễn đạt chợt nhận ra mình đang ở một tình huống hoặc đang làm việc gì. Câu kể quá khứ nên dùng found myself standing. Không dùng find myself stood theo mẫu diễn đạt hành động ở đây.",
+      "explanation": "Find oneself doing something diễn đạt chợt nhận ra mình đang ở một tình huống hoặc đang làm việc gì. Câu kể quá khứ nên dùng found myself standing.",
       "prefix": "I",
-      "suffix": "outside the house I was looking for.",
-      "fullSentence": "I found myself standing outside the house I was looking for."
+      "suffix": "outside the house I was looking for",
+      "fullSentence": "I found myself standing outside the house I was looking for",
+      "keyword": "myself",
+      "answerPrefix": "I",
+      "answerSuffix": "outside the house I was looking for",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "found myself standing"
     },
     {
       "globalNumber": 100,
@@ -1191,10 +1241,17 @@
         "keep a sharp eye on"
       ],
       "displayAnswer": "keep a sharp eye on",
-      "explanation": "Keep a sharp eye on somebody là theo dõi ai sát sao. Sau need to dùng keep nguyên mẫu; on nối với Lauren. Thành ngữ giữ đúng ý cần chú ý kỹ để đảm bảo cô ấy làm việc đúng, không chỉ nhìn thoáng qua.",
+      "explanation": "Keep a sharp eye on somebody là theo dõi ai sát sao. Sau need to dùng keep nguyên mẫu; on nối với Lauren.",
       "prefix": "You need to",
-      "suffix": "Lauren to make sure she does her work properly.",
-      "fullSentence": "You need to keep a sharp eye on Lauren to make sure she does her work properly."
+      "suffix": "Lauren to make sure she does her work properly",
+      "fullSentence": "You need to keep a sharp eye on Lauren to make sure she does her work properly",
+      "keyword": "sharp",
+      "answerPrefix": "You need to",
+      "answerSuffix": "Lauren to make sure she does her work properly",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "keep a sharp eye on"
     }
-  ]
+  ],
+  "contentRevision": "2026-10-21-word-limits"
 }

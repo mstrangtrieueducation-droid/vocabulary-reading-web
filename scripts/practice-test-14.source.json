@@ -1061,41 +1061,58 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "talented an artist that most critics look up to him"
+        "most critics look up to him"
       ],
-      "displayAnswer": "talented an artist that most critics look up to him",
-      "explanation": "So + tính từ + a/an + danh từ số ít + that diễn tả mức độ dẫn đến kết quả: so talented an artist. Look up to somebody = kính trọng ai, thay cho respect. Giữ most critics, không đổi thành all critics.",
-      "prefix": "Fred is so",
+      "displayAnswer": "most critics look up to him",
+      "explanation": "So + tính từ + a/an + danh từ số ít + that diễn tả mức độ dẫn đến kết quả: so talented an artist. Look up to somebody = kính trọng ai, thay cho respect.",
+      "prefix": "Fred is so talented an artist that",
       "suffix": "",
-      "fullSentence": "Fred is so talented an artist that most critics look up to him."
+      "fullSentence": "Fred is so talented an artist that most critics look up to him",
+      "keyword": "look",
+      "answerPrefix": "Fred is so talented an artist that",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "most critics look up to him"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "is no difference between Jane’s and John’s opinions on the matter",
-        "is no difference between Jane’s opinion on the matter and John’s"
+        "is no difference between"
       ],
-      "displayAnswer": "is no difference between Jane’s and John’s opinions on the matter / is no difference between Jane’s opinion on the matter and John’s",
-      "explanation": "No difference between A and B nghĩa là không có khác biệt, tương đương exactly the same. Difference số ít đi với is. Cần nói rõ hai ý kiến và giữ on the matter để giới hạn đúng vấn đề đang bàn.",
+      "displayAnswer": "is no difference between",
+      "explanation": "No difference between A and B nghĩa là không có khác biệt, tương đương exactly the same. Difference số ít đi với is.",
       "prefix": "There",
-      "suffix": "",
-      "fullSentence": "There is no difference between Jane’s and John’s opinions on the matter."
+      "suffix": "Jane's and John's opinions on the matter",
+      "fullSentence": "There is no difference between Jane's and John's opinions on the matter",
+      "keyword": "difference",
+      "answerPrefix": "There",
+      "answerSuffix": "Jane's and John's opinions on the matter",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is no difference between"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "there is nothing wrong with bringing your own water bottle",
-        "that there is nothing wrong with bringing your own water bottle"
+        "there is nothing wrong with",
+        "that there is nothing wrong with"
       ],
-      "displayAnswer": "there is nothing wrong with bringing your own water bottle / that there is nothing wrong with bringing your own water bottle",
-      "explanation": "There is nothing wrong with + V-ing nghĩa là làm việc đó không có gì sai/không có vấn đề. Bring đổi thành bringing vì đứng sau giới từ with. Câu đã dùng tình huống mang bình nước để tránh đưa nhận định sức khỏe thiếu căn cứ vào bài ngữ pháp.",
+      "displayAnswer": "there is nothing wrong with / that there is nothing wrong with",
+      "explanation": "There is nothing wrong with + V-ing nghĩa là làm việc đó không có gì sai/không có vấn đề. Bring đổi thành bringing vì đứng sau giới từ with.",
       "prefix": "The organisers are now saying",
-      "suffix": "",
-      "fullSentence": "The organisers are now saying there is nothing wrong with bringing your own water bottle."
+      "suffix": "bringing your own water bottle",
+      "fullSentence": "The organisers are now saying there is nothing wrong with bringing your own water bottle",
+      "keyword": "nothing",
+      "answerPrefix": "The organisers are now saying",
+      "answerSuffix": "bringing your own water bottle",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "there is nothing wrong with"
     },
     {
       "globalNumber": 94,
@@ -1106,10 +1123,16 @@
         "are more common than this lighter"
       ],
       "displayAnswer": "are more common than this one / are more common than this lighter",
-      "explanation": "Rarer than any other nghĩa là chiếc bật lửa này hiếm hơn tất cả chiếc còn lại. Đổi góc so sánh: các chiếc khác phổ biến hơn chiếc này, dùng more common than. Không viết more rare cho chủ ngữ other lighters vì sẽ đảo nghĩa.",
+      "explanation": "Rarer than any other nghĩa là chiếc bật lửa này hiếm hơn tất cả chiếc còn lại. Đổi góc so sánh: các chiếc khác phổ biến hơn chiếc này, dùng more common than.",
       "prefix": "The other lighters in my collection",
       "suffix": "",
-      "fullSentence": "The other lighters in my collection are more common than this one."
+      "fullSentence": "The other lighters in my collection are more common than this one",
+      "keyword": "more",
+      "answerPrefix": "The other lighters in my collection",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "are more common than this one"
     },
     {
       "globalNumber": 95,
@@ -1117,14 +1140,19 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "put down to his nervousness",
-        "put down to his being nervous",
-        "put down to the fact that he was nervous"
+        "put down to his being nervous"
       ],
-      "displayAnswer": "put down to his nervousness / put down to his being nervous / put down to the fact that he was nervous",
-      "explanation": "Put something down to something = quy một kết quả cho nguyên nhân. Chủ ngữ failure nhận hành động quy nguyên nhân nên dùng is put down to. Nervousness, his being nervous hoặc the fact that… đều giữ đúng ý do lo lắng.",
-      "prefix": "Tommy’s failure in his exam is",
+      "displayAnswer": "put down to his nervousness / put down to his being nervous",
+      "explanation": "Put something down to something = quy một kết quả cho nguyên nhân. Chủ ngữ failure nhận hành động quy nguyên nhân nên dùng is put down to.",
+      "prefix": "Tommy's failure in his exam is",
       "suffix": "",
-      "fullSentence": "Tommy’s failure in his exam is put down to his nervousness."
+      "fullSentence": "Tommy's failure in his exam is put down to his nervousness",
+      "keyword": "down",
+      "answerPrefix": "Tommy's failure in his exam is",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "put down to his nervousness"
     },
     {
       "globalNumber": 96,
@@ -1136,56 +1164,76 @@
         "was held up by unanticipated"
       ],
       "displayAnswer": "was held up by unforeseen / was held up by unexpected / was held up by unanticipated",
-      "explanation": "Hold up = trì hoãn; bị động quá khứ là was held up. Unforeseen/ unexpected/unanticipated bổ nghĩa problems = những vấn đề không được dự liệu. Problems đã nằm sau ô trống nên không viết lặp lại trong phần điền.",
+      "explanation": "Hold up = trì hoãn; bị động quá khứ là was held up. Unforeseen/ unexpected/unanticipated bổ nghĩa problems = những vấn đề không được dự liệu.",
       "prefix": "The manufacturing process",
-      "suffix": "problems.",
-      "fullSentence": "The manufacturing process was held up by unforeseen problems."
+      "suffix": "problems",
+      "fullSentence": "The manufacturing process was held up by unforeseen problems",
+      "keyword": "held",
+      "answerPrefix": "The manufacturing process",
+      "answerSuffix": "problems",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "was held up by unforeseen"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "without her brother’s advice when",
-        "without her brother’s advice while"
+        "without her brother's advice when",
+        "without her brother's advice while"
       ],
-      "displayAnswer": "without her brother’s advice when / without her brother’s advice while",
-      "explanation": "Without + cụm danh từ diễn tả điều kiện phủ định: nếu không có lời khuyên của anh trai. When/while completing… rút gọn mệnh đề thời gian có chủ thể Eliza. Advice không đếm được nên không viết an advice hoặc advices.",
+      "displayAnswer": "without her brother's advice when / without her brother's advice while",
+      "explanation": "Without + cụm danh từ diễn tả điều kiện phủ định: nếu không có lời khuyên của anh trai. When/while completing… rút gọn mệnh đề thời gian có chủ thể Eliza.",
       "prefix": "Eliza would never have got the job",
-      "suffix": "completing the application form.",
-      "fullSentence": "Eliza would never have got the job without her brother’s advice when completing the application form."
+      "suffix": "completing the application form",
+      "fullSentence": "Eliza would never have got the job without her brother's advice when completing the application form",
+      "keyword": "without",
+      "answerPrefix": "Eliza would never have got the job",
+      "answerSuffix": "completing the application form",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "without her brother's advice when"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "subject to the council’s agreeing",
+        "subject to the council's agreeing",
         "subject to the council agreeing",
-        "subject to the council’s agreement"
+        "subject to the council's agreement"
       ],
-      "displayAnswer": "subject to the council’s agreeing / subject to the council agreeing / subject to the council’s agreement",
-      "explanation": "Subject to + danh từ/V-ing nghĩa là phụ thuộc vào điều kiện. To trong subject to là giới từ, nên dùng agreeing hoặc agreement, không dùng agree nguyên mẫu. To our plans đã có sẵn sau chỗ trống.",
+      "displayAnswer": "subject to the council's agreeing / subject to the council agreeing / subject to the council's agreement",
+      "explanation": "Subject to + danh từ/V-ing nghĩa là phụ thuộc vào điều kiện. To trong subject to là giới từ, nên dùng agreeing hoặc agreement, không dùng agree nguyên mẫu.\nTừ vựng trọng tâm: subject to",
       "prefix": "The new cinema will be built",
-      "suffix": "to our plans for extra car parking space.",
-      "fullSentence": "The new cinema will be built subject to the council’s agreeing to our plans for extra car parking space."
+      "suffix": "to our plans for extra car parking space",
+      "fullSentence": "The new cinema will be built subject to the council's agreeing to our plans for extra car parking space",
+      "keyword": "subject",
+      "answerPrefix": "The new cinema will be built",
+      "answerSuffix": "to our plans for extra car parking space",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "subject to the council's agreeing"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "does Tim get the chance to play",
-        "does Tim get a chance to play",
-        "does Tim get the opportunity to play",
-        "does Tim get an opportunity to play",
         "does Tim get to play"
       ],
-      "displayAnswer": "does Tim get the chance to play / does Tim get a chance to play / does Tim get the opportunity to play / does Tim get an opportunity to play / does Tim get to play",
-      "explanation": "Very rarely đầu câu yêu cầu đảo trợ động từ does trước Tim. Từ khóa GET phải được giữ: get the chance/opportunity to play hoặc get to play. Đáp án cũ does Tim play thiếu GET nên không đáp ứng yêu cầu đề.",
+      "displayAnswer": "does Tim get to play",
+      "explanation": "Very rarely đầu câu yêu cầu đảo trợ động từ does trước Tim. Từ khóa GET phải được giữ: get the chance/opportunity to play hoặc get to play.",
       "prefix": "Very rarely",
-      "suffix": "the saxophone these days.",
-      "fullSentence": "Very rarely does Tim get the chance to play the saxophone these days."
+      "suffix": "the saxophone these days",
+      "fullSentence": "Very rarely does Tim get to play the saxophone these days",
+      "keyword": "get",
+      "answerPrefix": "Very rarely",
+      "answerSuffix": "the saxophone these days",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "does Tim get to play"
     },
     {
       "globalNumber": 100,
@@ -1197,10 +1245,16 @@
       "displayAnswer": "drew our attention to",
       "explanation": "Draw somebody’s attention to something = hướng sự chú ý của ai đến điều gì, tương đương pointed out trong ngữ cảnh hướng dẫn tham quan. Drew là quá khứ của draw và là từ khóa phải giữ; our thay cho us ở dạng sở hữu.",
       "prefix": "The guide",
-      "suffix": "the magnificent carvings above the windows.",
-      "fullSentence": "The guide drew our attention to the magnificent carvings above the windows."
+      "suffix": "the magnificent carvings above the windows",
+      "fullSentence": "The guide drew our attention to the magnificent carvings above the windows",
+      "keyword": "drew",
+      "answerPrefix": "The guide",
+      "answerSuffix": "the magnificent carvings above the windows",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "drew our attention to"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

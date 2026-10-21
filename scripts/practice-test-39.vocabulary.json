@@ -10,7 +10,11 @@
       "usage": "one's mind goes/went blank",
       "example": "My mind went blank when I saw the first question.",
       "translation": "Tôi bỗng không nghĩ được gì khi nhìn câu hỏi đầu tiên.",
-      "family": "blank (adj): trống; a blank (n): chỗ trống"
+      "family": "blank (adj): trống; a blank (n): chỗ trống",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 2,
@@ -21,7 +25,11 @@
       "usage": "be snowed under with work/emails",
       "example": "We are snowed under with orders this week.",
       "translation": "Tuần này chúng tôi ngập đầu vì đơn hàng.",
-      "family": "snow (n/v): tuyết/tuyết rơi; workload (n): khối lượng công việc"
+      "family": "snow (n/v): tuyết/tuyết rơi; workload (n): khối lượng công việc",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 4,
@@ -32,7 +40,11 @@
       "usage": "on account of + noun/V-ing",
       "example": "The match was cancelled on account of heavy rain.",
       "translation": "Trận đấu bị hủy vì mưa lớn.",
-      "family": "account (n): bản tường thuật/tài khoản; because of: vì"
+      "family": "account (n): bản tường thuật/tài khoản; because of: vì",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -43,7 +55,11 @@
       "usage": "catch up with a class; catch up on missed work",
       "example": "After a week off, Lan worked hard to catch up with her class.",
       "translation": "Sau một tuần nghỉ, Lan học chăm để theo kịp lớp.",
-      "family": "catch–caught–caught; catch-up (n/adj): việc bù lại"
+      "family": "catch–caught–caught; catch-up (n/adj): việc bù lại",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 6,
@@ -54,7 +70,11 @@
       "usage": "take a rain check on an invitation",
       "example": "Can I take a rain check on dinner? I have to work late.",
       "translation": "Cho tôi hẹn bữa tối vào dịp khác nhé? Tôi phải làm muộn.",
-      "family": "invitation (n): lời mời; postpone (v): hoãn"
+      "family": "invitation (n): lời mời; postpone (v): hoãn",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 13,
@@ -65,7 +85,11 @@
       "usage": "attribute success to hard work",
       "example": "She attributes her progress to regular practice.",
       "translation": "Cô ấy cho rằng mình tiến bộ nhờ luyện tập đều đặn.",
-      "family": "attribute (v); attribution (n): việc quy nguyên nhân; attributable (adj)"
+      "family": "attribute (v); attribution (n): việc quy nguyên nhân; attributable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 21,
@@ -76,7 +100,11 @@
       "usage": "throw/threw in the towel",
       "example": "After several failed attempts, he refused to throw in the towel.",
       "translation": "Sau vài lần thất bại, anh vẫn không chịu bỏ cuộc.",
-      "family": "throw–threw–thrown; give up: bỏ cuộc"
+      "family": "throw–threw–thrown; give up: bỏ cuộc",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 24,
@@ -87,7 +115,11 @@
       "usage": "every so often + clause; clause + every so often",
       "example": "Every so often, we visit our old school.",
       "translation": "Thỉnh thoảng chúng tôi về thăm trường cũ.",
-      "family": "occasionally (adv); from time to time: đôi lúc"
+      "family": "occasionally (adv); from time to time: đôi lúc",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 25,
@@ -98,7 +130,11 @@
       "usage": "be caught unawares by something",
       "example": "The sudden price increase caught shoppers unawares.",
       "translation": "Việc tăng giá bất ngờ khiến người mua không kịp trở tay.",
-      "family": "aware/unaware (adj); awareness (n): nhận thức"
+      "family": "aware/unaware (adj); awareness (n): nhận thức",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 26,
@@ -109,7 +145,11 @@
       "usage": "widen/narrow/bridge the gap between A and B",
       "example": "Better education can help narrow the gap between rich and poor.",
       "translation": "Giáo dục tốt hơn có thể giúp thu hẹp khoảng cách giàu nghèo.",
-      "family": "gap (n); inequality (n): sự bất bình đẳng"
+      "family": "gap (n); inequality (n): sự bất bình đẳng",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 27,
@@ -120,7 +160,11 @@
       "usage": "capture/grab/make the headlines",
       "example": "The discovery captured the headlines around the world.",
       "translation": "Phát hiện ấy trở thành tin nổi bật khắp thế giới.",
-      "family": "headline (n/v): tiêu đề/làm tin nổi bật; capture (v): thu hút"
+      "family": "headline (n/v): tiêu đề/làm tin nổi bật; capture (v): thu hút",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 30,
@@ -131,7 +175,11 @@
       "usage": "bite the bullet and do something",
       "example": "We finally bit the bullet and replaced the faulty system.",
       "translation": "Cuối cùng chúng tôi chấp nhận việc khó và thay hệ thống bị lỗi.",
-      "family": "bite–bit–bitten; face up to: đối mặt"
+      "family": "bite–bit–bitten; face up to: đối mặt",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 31,
@@ -142,7 +190,11 @@
       "usage": "be mystified by/about something",
       "example": "The researchers were mystified by the unexpected result.",
       "translation": "Các nhà nghiên cứu bối rối trước kết quả ngoài dự kiến.",
-      "family": "mystery (n); mystify (v); mystifying (adj)"
+      "family": "mystery (n); mystify (v); mystifying (adj)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 32,
@@ -153,7 +205,11 @@
       "usage": "unearth artifacts/evidence; be unearthed at a site",
       "example": "Archaeologists unearthed several ancient pots.",
       "translation": "Các nhà khảo cổ khai quật được vài chiếc bình cổ.",
-      "family": "earth (n): đất; unearthed (V2/V3); discovery (n)"
+      "family": "earth (n): đất; unearthed (V2/V3); discovery (n)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 33,
@@ -164,7 +220,11 @@
       "usage": "the spaciousness of a room/building",
       "example": "Large windows add to the spaciousness of the room.",
       "translation": "Các cửa sổ lớn làm căn phòng có cảm giác rộng rãi hơn.",
-      "family": "space (n); spacious (adj); spaciously (adv)"
+      "family": "space (n); spacious (adj); spaciously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 38,
@@ -175,7 +235,11 @@
       "usage": "a reputation as a centre; a reputation for quality",
       "example": "The town has a reputation for fine pottery.",
       "translation": "Thị trấn có tiếng về đồ gốm đẹp.",
-      "family": "reputed (adj): được cho là; reputable (adj): có uy tín"
+      "family": "reputed (adj): được cho là; reputable (adj): có uy tín",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 41,
@@ -186,7 +250,11 @@
       "usage": "identify a cause/ingredient; identify something as",
       "example": "The team identified the source of the unusual smell.",
       "translation": "Nhóm đã xác định nguồn của mùi lạ.",
-      "family": "identity (n); identification (n); identifiable (adj)"
+      "family": "identity (n); identification (n); identifiable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 43,
@@ -197,7 +265,11 @@
       "usage": "grind spices; grind something into powder",
       "example": "They ground the seeds before mixing them with oil.",
       "translation": "Họ nghiền hạt trước khi trộn với dầu.",
-      "family": "grind–ground–ground; grinder (n): máy xay"
+      "family": "grind–ground–ground; grinder (n): máy xay",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 44,
@@ -208,7 +280,11 @@
       "usage": "admittedly difficult/simple; Admittedly, ...",
       "example": "The method is admittedly slow, but it is reliable.",
       "translation": "Phải thừa nhận phương pháp này chậm, nhưng nó đáng tin cậy.",
-      "family": "admit (v); admission (n); admitted (V2/V3)"
+      "family": "admit (v); admission (n); admitted (V2/V3)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ]
     },
     {
       "question": 51,
@@ -219,7 +295,11 @@
       "usage": "the ramifications of a decision; ethical ramifications",
       "example": "We need to consider the social ramifications of this policy.",
       "translation": "Chúng ta cần xem xét các hệ quả xã hội của chính sách này.",
-      "family": "ramification (n); consequence (n); implication (n)"
+      "family": "ramification (n); consequence (n); implication (n)",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ]
     },
     {
       "question": 54,
@@ -230,7 +310,11 @@
       "usage": "be hemmed in by rules/pressure",
       "example": "Small firms are often hemmed in by tight budgets.",
       "translation": "Doanh nghiệp nhỏ thường bị bó buộc bởi ngân sách hạn hẹp.",
-      "family": "hem in (v); constraint (n): hạn chế; constrained (adj)"
+      "family": "hem in (v); constraint (n): hạn chế; constrained (adj)",
+      "teacherSelected": true,
+      "questions": [
+        54
+      ]
     },
     {
       "question": 55,
@@ -241,7 +325,11 @@
       "usage": "amplify a signal/effect/problem",
       "example": "Biased data can amplify existing inequalities.",
       "translation": "Dữ liệu thiên lệch có thể làm bất bình đẳng sẵn có trầm trọng hơn.",
-      "family": "amplification (n); amplifier (n): bộ khuếch đại"
+      "family": "amplification (n); amplifier (n): bộ khuếch đại",
+      "teacherSelected": true,
+      "questions": [
+        55
+      ]
     },
     {
       "question": 56,
@@ -252,7 +340,11 @@
       "usage": "spell out the reasons/rules; spell something out",
       "example": "Please spell out the steps before we start.",
       "translation": "Hãy giải thích rõ các bước trước khi chúng ta bắt đầu.",
-      "family": "spell–spelled/spelt; explanation (n): lời giải thích"
+      "family": "spell–spelled/spelt; explanation (n): lời giải thích",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 57,
@@ -263,7 +355,11 @@
       "usage": "be incompatible with a principle/system",
       "example": "This shortcut is incompatible with our safety rules.",
       "translation": "Cách làm tắt này không phù hợp với quy tắc an toàn của chúng ta.",
-      "family": "compatible/incompatible (adj); compatibility (n)"
+      "family": "compatible/incompatible (adj); compatibility (n)",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ]
     },
     {
       "question": 59,
@@ -274,7 +370,11 @@
       "usage": "stave off a crisis/risk/collapse",
       "example": "Early action may stave off a financial crisis.",
       "translation": "Hành động sớm có thể ngăn một cuộc khủng hoảng tài chính.",
-      "family": "stave off (v); prevention (n): sự phòng ngừa"
+      "family": "stave off (v); prevention (n): sự phòng ngừa",
+      "teacherSelected": true,
+      "questions": [
+        59
+      ]
     },
     {
       "question": 60,
@@ -285,7 +385,11 @@
       "usage": "a plan may fall flat on its face",
       "example": "The plan fell flat on its face because nobody tested it.",
       "translation": "Kế hoạch thất bại hoàn toàn vì không ai thử nghiệm nó.",
-      "family": "fall–fell–fallen; failure (n); fail (v)"
+      "family": "fall–fell–fallen; failure (n); fail (v)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 81,
@@ -296,7 +400,11 @@
       "usage": "an unfamiliar route; be unfamiliar with",
       "example": "The route was unfamiliar, but we arrived on time.",
       "translation": "Tuyến đường lạ, nhưng chúng tôi vẫn đến đúng giờ.",
-      "family": "familiar/unfamiliar (adj); familiarity (n); familiarise/familiarize (v)"
+      "family": "familiar/unfamiliar (adj); familiarity (n); familiarise/familiarize (v)",
+      "teacherSelected": true,
+      "questions": [
+        81
+      ]
     },
     {
       "question": 87,
@@ -307,7 +415,11 @@
       "usage": "go into detail/details about something",
       "example": "The report does not go into detail about the costs.",
       "translation": "Báo cáo không trình bày chi tiết về các chi phí.",
-      "family": "detail (n/v); detailed (adj): chi tiết"
+      "family": "detail (n/v); detailed (adj): chi tiết",
+      "teacherSelected": true,
+      "questions": [
+        87
+      ]
     },
     {
       "question": 97,
@@ -318,7 +430,11 @@
       "usage": "advice/warnings fall on deaf ears",
       "example": "Her warnings fell on deaf ears until the system failed.",
       "translation": "Không ai chú ý lời cảnh báo của cô ấy cho đến khi hệ thống hỏng.",
-      "family": "fall–fell–fallen; heed (v): chú ý/làm theo"
+      "family": "fall–fell–fallen; heed (v): chú ý/làm theo",
+      "teacherSelected": true,
+      "questions": [
+        97
+      ]
     },
     {
       "question": 100,
@@ -329,7 +445,11 @@
       "usage": "make a name for oneself as an artist/in a field",
       "example": "He is making a name for himself as a young designer.",
       "translation": "Anh ấy đang gây dựng tên tuổi với tư cách một nhà thiết kế trẻ.",
-      "family": "name (n): tên/tiếng tăm; renowned (adj): nổi tiếng"
+      "family": "name (n): tên/tiếng tăm; renowned (adj): nổi tiếng",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
     }
   ]
 }

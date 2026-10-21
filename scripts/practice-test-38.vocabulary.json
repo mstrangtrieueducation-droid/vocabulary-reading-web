@@ -10,7 +10,11 @@
       "usage": "be put out by/about something",
       "example": "She was put out by the last-minute change.",
       "translation": "Cô khó chịu vì sự thay đổi vào phút chót.",
-      "family": "put–put–put; put out (phrasal verb)"
+      "family": "put–put–put; put out (phrasal verb)",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 2,
@@ -21,7 +25,11 @@
       "usage": "as regards costs/payment/the schedule",
       "example": "As regards payment, we accept bank transfers.",
       "translation": "Về thanh toán, chúng tôi chấp nhận chuyển khoản.",
-      "family": "regard (n/v); regards (n); regarding (prep)"
+      "family": "regard (n/v); regards (n); regarding (prep)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 3,
@@ -32,7 +40,11 @@
       "usage": "It is inconceivable that ...",
       "example": "It is inconceivable that nobody noticed the error.",
       "translation": "Thật khó tin là không ai nhận thấy lỗi đó.",
-      "family": "conceive (v); conceivable/inconceivable (adj); inconceivably (adv)"
+      "family": "conceive (v); conceivable/inconceivable (adj); inconceivably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 4,
@@ -43,7 +55,11 @@
       "usage": "be widely criticised for something",
       "example": "The new rules were widely criticised.",
       "translation": "Những quy định mới bị nhiều người phê bình.",
-      "family": "wide (adj); widely (adv); width (n); widen (v)"
+      "family": "wide (adj); widely (adv); width (n); widen (v)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -54,7 +70,11 @@
       "usage": "pull off a deal/victory; pull it off",
       "example": "The task looked impossible, but they pulled it off.",
       "translation": "Nhiệm vụ tưởng bất khả thi nhưng họ đã làm được.",
-      "family": "pull (v/n); pulled (past); pull off (phrase)"
+      "family": "pull (v/n); pulled (past); pull off (phrase)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 7,
@@ -65,7 +85,11 @@
       "usage": "be late through no fault of one’s own",
       "example": "He lost his job through no fault of his own.",
       "translation": "Anh mất việc mà không do lỗi của mình.",
-      "family": "fault (n); faulty (adj); faultless (adj)"
+      "family": "fault (n); faulty (adj); faultless (adj)",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 10,
@@ -76,7 +100,11 @@
       "usage": "escape/leave/opt out of the rat race",
       "example": "She left the rat race to run a small farm.",
       "translation": "Cô rời cuộc đua danh lợi để điều hành một trang trại nhỏ.",
-      "family": "rat (n); race (n/v); rat race (compound noun)"
+      "family": "rat (n); race (n/v); rat race (compound noun)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 14,
@@ -87,7 +115,11 @@
       "usage": "a spate of films/complaints/accidents",
       "example": "There has been a spate of films about that period.",
       "translation": "Gần đây có một loạt phim về thời kỳ ấy.",
-      "family": "spate (n); a spate of (phrase)"
+      "family": "spate (n); a spate of (phrase)",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 24,
@@ -98,7 +130,11 @@
       "usage": "accept/take something at face value",
       "example": "We should not take every online review at face value.",
       "translation": "Chúng ta không nên tin ngay mọi đánh giá trên mạng.",
-      "family": "face (n): mặt/bề ngoài; value (n): giá trị; verify (v): kiểm chứng"
+      "family": "face (n): mặt/bề ngoài; value (n): giá trị; verify (v): kiểm chứng",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 26,
@@ -109,7 +145,11 @@
       "usage": "run counter to a policy/principle; ran counter to",
       "example": "The new rule runs counter to the aim of equal access.",
       "translation": "Quy định mới đi ngược mục tiêu tiếp cận bình đẳng.",
-      "family": "counter (adv): theo hướng ngược; contrary (adj); contradiction (n)"
+      "family": "counter (adv): theo hướng ngược; contrary (adj); contradiction (n)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 29,
@@ -120,7 +160,11 @@
       "usage": "infer something from evidence; infer that + clause",
       "example": "From her silence, I inferred that she disagreed.",
       "translation": "Từ sự im lặng của cô ấy, tôi suy ra rằng cô ấy không đồng ý.",
-      "family": "infer–inferred–inferred; inference (n): sự suy luận; inferential (adj)"
+      "family": "infer–inferred–inferred; inference (n): sự suy luận; inferential (adj)",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 31,
@@ -131,7 +175,11 @@
       "usage": "hazardous conditions/materials",
       "example": "Ice made the road hazardous.",
       "translation": "Băng khiến con đường trở nên nguy hiểm.",
-      "family": "hazard (n); hazardous (adj); hazardously (adv)"
+      "family": "hazard (n); hazardous (adj); hazardously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 32,
@@ -142,7 +190,11 @@
       "usage": "act senselessly; a senseless decision",
       "example": "He senselessly risked all his savings.",
       "translation": "Anh dại dột đem toàn bộ tiền tiết kiệm ra mạo hiểm.",
-      "family": "sense (n); sensible/senseless (adj); sensibly/senselessly (adv)"
+      "family": "sense (n); sensible/senseless (adj); sensibly/senselessly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 33,
@@ -153,7 +205,11 @@
       "usage": "remain/walk away unaffected; unaffected by",
       "example": "The village remained unaffected by the storm.",
       "translation": "Ngôi làng không bị cơn bão ảnh hưởng.",
-      "family": "affect (v); affected/unaffected (adj); effect (n)"
+      "family": "affect (v); affected/unaffected (adj); effect (n)",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 34,
@@ -164,7 +220,11 @@
       "usage": "a merciless attacker; merciless criticism",
       "example": "The merciless leader ignored their pleas.",
       "translation": "Kẻ lãnh đạo tàn nhẫn phớt lờ lời cầu xin của họ.",
-      "family": "mercy (n); merciful/merciless (adj); mercilessly (adv)"
+      "family": "mercy (n); merciful/merciless (adj); mercilessly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 36,
@@ -175,7 +235,11 @@
       "usage": "uncertainty about the future",
       "example": "The uncertainty about her safety frightened him.",
       "translation": "Việc không biết cô có an toàn hay không khiến anh sợ.",
-      "family": "certain/uncertain (adj); certainty/uncertainty (n)"
+      "family": "certain/uncertain (adj); certainty/uncertainty (n)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 37,
@@ -186,7 +250,11 @@
       "usage": "postpone/delay something indefinitely",
       "example": "The meeting was postponed indefinitely.",
       "translation": "Cuộc họp bị hoãn chưa rõ đến bao giờ.",
-      "family": "definite/indefinite (adj); definitely/indefinitely (adv)"
+      "family": "definite/indefinite (adj); definitely/indefinitely (adv)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 38,
@@ -197,7 +265,11 @@
       "usage": "an inexplicable event/decision",
       "example": "Her sudden disappearance was inexplicable.",
       "translation": "Việc cô đột ngột biến mất thật khó lý giải.",
-      "family": "explain (v); explanation (n); inexplicable (adj); inexplicably (adv)"
+      "family": "explain (v); explanation (n); inexplicable (adj); inexplicably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 41,
@@ -208,7 +280,11 @@
       "usage": "be sceptical about a claim; sceptical about whether ...",
       "example": "Some residents were sceptical about whether the plan would work.",
       "translation": "Một số cư dân còn hoài nghi liệu kế hoạch có hiệu quả hay không.",
-      "family": "sceptic/skeptic (n): người hoài nghi; scepticism/skepticism (n)"
+      "family": "sceptic/skeptic (n): người hoài nghi; scepticism/skepticism (n)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 51,
@@ -219,7 +295,11 @@
       "usage": "dispose of rubbish/waste safely",
       "example": "Dispose of batteries at a collection point.",
       "translation": "Hãy bỏ pin tại điểm thu gom.",
-      "family": "dispose (v); disposal (n); disposable (adj)"
+      "family": "dispose (v); disposal (n); disposable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ]
     },
     {
       "question": 53,
@@ -230,7 +310,11 @@
       "usage": "do something as a matter of course",
       "example": "We check the locks as a matter of course.",
       "translation": "Chúng tôi kiểm tra ổ khóa như một việc thường lệ.",
-      "family": "matter (n); course (n); of course (phrase)"
+      "family": "matter (n); course (n); of course (phrase)",
+      "teacherSelected": true,
+      "questions": [
+        53
+      ]
     },
     {
       "question": 56,
@@ -241,7 +325,11 @@
       "usage": "become accustomed to doing something",
       "example": "She became accustomed to working at night.",
       "translation": "Cô dần quen với làm việc ban đêm.",
-      "family": "accustom (v); accustomed (adj); unaccustomed (adj)"
+      "family": "accustom (v); accustomed (adj); unaccustomed (adj)",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 57,
@@ -252,7 +340,11 @@
       "usage": "feel/be inconvenienced by something",
       "example": "Passengers were inconvenienced by the delay.",
       "translation": "Hành khách bị bất tiện do chuyến đi chậm trễ.",
-      "family": "convenience/inconvenience (n); inconvenient (adj); inconvenience (v)"
+      "family": "convenience/inconvenience (n); inconvenient (adj); inconvenience (v)",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ]
     },
     {
       "question": 59,
@@ -263,7 +355,11 @@
       "usage": "a lighthearted remark/approach",
       "example": "The campaign used a lighthearted approach.",
       "translation": "Chiến dịch sử dụng cách tiếp cận vui vẻ, nhẹ nhàng.",
-      "family": "lighthearted/light-hearted (adj); lightheartedly (adv)"
+      "family": "lighthearted/light-hearted (adj); lightheartedly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        59
+      ]
     },
     {
       "question": 60,
@@ -274,7 +370,11 @@
       "usage": "That should do the trick.",
       "example": "A short rest should do the trick.",
       "translation": "Nghỉ một lát chắc sẽ giúp giải quyết được vấn đề.",
-      "family": "do–did–done; trick (n/v)"
+      "family": "do–did–done; trick (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 65,
@@ -285,7 +385,11 @@
       "usage": "damning evidence/report/criticism",
       "example": "The report contained damning evidence.",
       "translation": "Báo cáo chứa bằng chứng rất bất lợi khó bác bỏ.",
-      "family": "damn (v); damning (adj); damningly (adv)"
+      "family": "damn (v); damning (adj); damningly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        65
+      ]
     },
     {
       "question": 73,
@@ -296,7 +400,11 @@
       "usage": "juxtapose A with B; juxtaposed images",
       "example": "The artist juxtaposed old and new buildings.",
       "translation": "Nghệ sĩ đặt hình ảnh công trình cũ và mới cạnh nhau.",
-      "family": "juxtapose (v); juxtaposition (n); juxtaposed (participle)"
+      "family": "juxtapose (v); juxtaposition (n); juxtaposed (participle)",
+      "teacherSelected": true,
+      "questions": [
+        73
+      ]
     },
     {
       "question": 74,
@@ -307,7 +415,11 @@
       "usage": "a multimodal text/presentation",
       "example": "The lesson used a multimodal text with images and sound.",
       "translation": "Bài học dùng văn bản đa phương thức có hình ảnh và âm thanh.",
-      "family": "mode (n); modality (n); multimodal (adj); multimodality (n)"
+      "family": "mode (n); modality (n); multimodal (adj); multimodality (n)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ]
     },
     {
       "question": 93,
@@ -318,7 +430,11 @@
       "usage": "set aside money for a holiday",
       "example": "We set aside a little money every month.",
       "translation": "Chúng tôi để dành một ít tiền mỗi tháng.",
-      "family": "set–set–set; aside (adv); savings (n)"
+      "family": "set–set–set; aside (adv); savings (n)",
+      "teacherSelected": true,
+      "questions": [
+        93
+      ]
     },
     {
       "question": 95,
@@ -329,7 +445,11 @@
       "usage": "struggle to make ends meet",
       "example": "Without help, he struggled to make ends meet.",
       "translation": "Không có hỗ trợ, anh chật vật trang trải cuộc sống.",
-      "family": "make–made–made; end (n); meet–met–met"
+      "family": "make–made–made; end (n); meet–met–met",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     }
   ]
 }

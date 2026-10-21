@@ -1058,42 +1058,58 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "will be held indoors in the event of rain",
-        "will be held indoors in the event that it rains"
+        "in the event of rain",
+        "in the event that it rains"
       ],
-      "displayAnswer": "will be held indoors in the event of rain / will be held indoors in the event that it rains",
-      "explanation": "In the event of + danh từ hoặc in the event that + mệnh đề diễn đạt nếu xảy ra điều gì. Concert là đối tượng được tổ chức nên dùng bị động will be held. Phải giữ indoors và từ khóa event.",
-      "prefix": "The concert",
+      "displayAnswer": "in the event of rain / in the event that it rains",
+      "explanation": "In the event of + danh từ hoặc in the event that + mệnh đề diễn đạt nếu xảy ra điều gì. Concert là đối tượng được tổ chức nên dùng bị động will be held.",
+      "prefix": "The concert will be held indoors",
       "suffix": "",
-      "fullSentence": "The concert will be held indoors in the event of rain."
+      "fullSentence": "The concert will be held indoors in the event of rain",
+      "keyword": "EVENT",
+      "answerPrefix": "The concert will be held indoors",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "in the event of rain"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "had butterflies in her stomach before the audition"
+        "had butterflies in her stomach"
       ],
-      "displayAnswer": "had butterflies in her stomach before the audition",
-      "explanation": "Have butterflies in one’s stomach nghĩa là hồi hộp, lo lắng trước một việc quan trọng. Nữ diễn viên dùng her; thời quá khứ dùng had. Giữ before the audition để không mất mốc tình huống trong câu gốc.",
+      "displayAnswer": "had butterflies in her stomach",
+      "explanation": "Have butterflies in one’s stomach nghĩa là hồi hộp, lo lắng trước một việc quan trọng. Nữ diễn viên dùng her; thời quá khứ dùng had.\nTừ vựng trọng tâm: have butterflies in one’s stomach",
       "prefix": "The young actress",
-      "suffix": "",
-      "fullSentence": "The young actress had butterflies in her stomach before the audition."
+      "suffix": "before the audition",
+      "fullSentence": "The young actress had butterflies in her stomach before the audition",
+      "keyword": "BUTTERFLIES",
+      "answerPrefix": "The young actress",
+      "answerSuffix": "before the audition",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "had butterflies in her stomach"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "was good although they were lacking in time",
-        "was good despite their lacking time",
-        "was good in spite of their lacking time"
+        "was good despite their lacking time"
       ],
-      "displayAnswer": "was good although they were lacking in time / was good despite their lacking time / was good in spite of their lacking time",
-      "explanation": "Lacking phải được giữ nguyên. Có thể dùng be lacking in something hoặc lacking làm dạng V-ing sau despite/in spite of. Although cần mệnh đề đầy đủ; không viết although lacking time sau chủ ngữ preparation vì người thiếu thời gian là they.",
+      "displayAnswer": "was good despite their lacking time",
+      "explanation": "Lacking phải được giữ nguyên. Có thể dùng be lacking in something hoặc lacking làm dạng V-ing sau despite/in spite of.",
       "prefix": "Their preparation",
       "suffix": "",
-      "fullSentence": "Their preparation was good although they were lacking in time."
+      "fullSentence": "Their preparation was good despite their lacking time",
+      "keyword": "LACKING",
+      "answerPrefix": "Their preparation",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "was good despite their lacking time"
     },
     {
       "globalNumber": 94,
@@ -1104,10 +1120,16 @@
         "but a full bonus could satisfy"
       ],
       "displayAnswer": "but a full bonus would satisfy / but a full bonus could satisfy",
-      "explanation": "Nothing but + danh từ nghĩa là chỉ có, tương đương nothing except. Vì nhân viên nhất quyết đòi đủ tiền thưởng, chỉ khoản thưởng đầy đủ mới làm họ hài lòng. Satisfy nhận trực tiếp the employee đã in sau ô.",
+      "explanation": "Nothing but + danh từ nghĩa là chỉ có, tương đương nothing except. Vì nhân viên nhất quyết đòi đủ tiền thưởng, chỉ khoản thưởng đầy đủ mới làm họ hài lòng.",
       "prefix": "Nothing",
-      "suffix": "the employee.",
-      "fullSentence": "Nothing but a full bonus would satisfy the employee."
+      "suffix": "the employee",
+      "fullSentence": "Nothing but a full bonus would satisfy the employee",
+      "keyword": "BUT",
+      "answerPrefix": "Nothing",
+      "answerSuffix": "the employee",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "but a full bonus would satisfy"
     },
     {
       "globalNumber": 95,
@@ -1118,10 +1140,16 @@
         "is restricted to those in"
       ],
       "displayAnswer": "is restricted to passengers in / is restricted to those in",
-      "explanation": "Be restricted to nghĩa là chỉ giới hạn cho một nhóm. In possession of là có/sở hữu; possession of… đã được in nên phần điền kết thúc bằng in. Dùng passengers hoặc those để chỉ người có đúng loại vé.",
+      "explanation": "Be restricted to nghĩa là chỉ giới hạn cho một nhóm. In possession of là có/sở hữu; possession of… đã được in nên phần điền kết thúc bằng in.",
       "prefix": "Use of the executive lounge",
-      "suffix": "possession of Gold Star tickets.",
-      "fullSentence": "Use of the executive lounge is restricted to passengers in possession of Gold Star tickets."
+      "suffix": "possession of Gold Star tickets",
+      "fullSentence": "Use of the executive lounge is restricted to passengers in possession of Gold Star tickets",
+      "keyword": "RESTRICTED",
+      "answerPrefix": "Use of the executive lounge",
+      "answerSuffix": "possession of Gold Star tickets",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is restricted to passengers in"
     },
     {
       "globalNumber": 96,
@@ -1132,52 +1160,75 @@
         "no circumstances should the door be"
       ],
       "displayAnswer": "no circumstances should this door be / no circumstances should the door be",
-      "explanation": "Under no circumstances đứng đầu câu cần đảo should lên trước chủ ngữ. This door là vật bị khóa nên dùng should…be locked. Locked đã có sau ô; không điền lặp. Phải giữ open to the public, không đổi thành given to the public.",
+      "explanation": "Under no circumstances đứng đầu câu cần đảo should lên trước chủ ngữ. This door là vật bị khóa nên dùng should…be locked.",
       "prefix": "Under",
-      "suffix": "locked when the building is open to the public.",
-      "fullSentence": "Under no circumstances should this door be locked when the building is open to the public."
+      "suffix": "locked when the building is open to the public",
+      "fullSentence": "Under no circumstances should this door be locked when the building is open to the public",
+      "keyword": "CIRCUMSTANCES",
+      "answerPrefix": "Under",
+      "answerSuffix": "locked when the building is open to the public",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "no circumstances should this door be"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "were always a source of embarrassment to",
-        "were always a source of embarrassment for"
+        "a source of embarrassment to",
+        "a source of embarrassment for"
       ],
-      "displayAnswer": "were always a source of embarrassment to / were always a source of embarrassment for",
-      "explanation": "A source of embarrassment là điều khiến ai xấu hổ. Father’s jokes số nhiều nên dùng were, giữ always để tương ứng was always embarrassed. To hoặc for đều có thể nối người cảm thấy xấu hổ trong câu này.",
-      "prefix": "Helen’s father’s jokes",
-      "suffix": "her.",
-      "fullSentence": "Helen’s father’s jokes were always a source of embarrassment to her."
+      "displayAnswer": "a source of embarrassment to / a source of embarrassment for",
+      "explanation": "A source of embarrassment là điều khiến ai xấu hổ. Father’s jokes số nhiều nên dùng were, giữ always để tương ứng was always embarrassed.",
+      "prefix": "Helen's father's jokes were always",
+      "suffix": "her",
+      "fullSentence": "Helen's father's jokes were always a source of embarrassment to her",
+      "keyword": "SOURCE",
+      "answerPrefix": "Helen's father's jokes were always",
+      "answerSuffix": "her",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "a source of embarrassment to"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "are the prospects of the new venture getting",
-        "are the prospects for the new venture getting",
-        "are the prospects that the new venture will get"
+        "are the prospects of",
+        "are the prospects for"
       ],
-      "displayAnswer": "are the prospects of the new venture getting / are the prospects for the new venture getting / are the prospects that the new venture will get",
-      "explanation": "Prospects nói về khả năng thành công. Có thể dùng prospects of/for + danh từ/V-ing hoặc prospects that + mệnh đề. Off the ground đã in sẵn nên phần điền chỉ kết thúc bằng getting/get, không lặp off.",
+      "displayAnswer": "are the prospects of / are the prospects for",
+      "explanation": "Prospects nói về khả năng thành công. Có thể dùng prospects of/for + danh từ/V-ing hoặc prospects that + mệnh đề.",
       "prefix": "What",
-      "suffix": "off the ground?",
-      "fullSentence": "What are the prospects of the new venture getting off the ground?"
+      "suffix": "the new venture getting off the ground",
+      "fullSentence": "What are the prospects of the new venture getting off the ground",
+      "keyword": "PROSPECTS",
+      "answerPrefix": "What",
+      "answerSuffix": "the new venture getting off the ground",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "are the prospects of"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "take much notice of his brother’s"
+        "take much notice of his brother's"
       ],
-      "displayAnswer": "take much notice of his brother’s",
-      "explanation": "Pay little attention nghĩa là không chú ý nhiều, tương đương not take much notice. Not take any notice mạnh hơn, nghĩa là hoàn toàn không để ý, nên không dùng làm đáp án chuẩn. Giữ his brother’s trước warnings đã in sẵn.",
-      "prefix": "Damien didn’t",
-      "suffix": "warnings.",
-      "fullSentence": "Damien didn’t take much notice of his brother’s warnings."
+      "displayAnswer": "take much notice of his brother's",
+      "explanation": "Pay little attention nghĩa là không chú ý nhiều, tương đương not take much notice. Not take any notice mạnh hơn, nghĩa là hoàn toàn không để ý, nên không dùng làm đáp án chuẩn.\nTừ vựng trọng tâm: take notice of",
+      "prefix": "Damien didn't",
+      "suffix": "warnings",
+      "fullSentence": "Damien didn't take much notice of his brother's warnings",
+      "keyword": "NOTICE",
+      "answerPrefix": "Damien didn't",
+      "answerSuffix": "warnings",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "take much notice of his brother's"
     },
     {
       "globalNumber": 100,
@@ -1187,10 +1238,17 @@
         "far as Colin is concerned"
       ],
       "displayAnswer": "far as Colin is concerned",
-      "explanation": "As far as somebody is concerned nghĩa là theo quan điểm của người đó. As đã có trước ô nên bắt đầu far as. Cụm này không có nghĩa Colin lo lắng; concerned ở đây thuộc cấu trúc diễn đạt ý kiến.",
+      "explanation": "As far as somebody is concerned nghĩa là theo quan điểm của người đó. As đã có trước ô nên bắt đầu far as.",
       "prefix": "As",
-      "suffix": ", he hasn’t done anything he should apologise for.",
-      "fullSentence": "As far as Colin is concerned, he hasn’t done anything he should apologise for."
+      "suffix": ", he hasn't done anything he should apologise for",
+      "fullSentence": "As far as Colin is concerned, he hasn't done anything he should apologise for",
+      "keyword": "CONCERNED",
+      "answerPrefix": "As",
+      "answerSuffix": ", he hasn't done anything he should apologise for",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "far as Colin is concerned"
     }
-  ]
+  ],
+  "contentRevision": "2026-10-21-word-limits"
 }

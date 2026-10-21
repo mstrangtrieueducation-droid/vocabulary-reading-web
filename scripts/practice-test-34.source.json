@@ -1067,14 +1067,20 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "I had not agreed to take on extra work",
-        "I hadn't agreed to take on extra work"
+        "had not agreed to take on",
+        "hadn't agreed to take on"
       ],
-      "displayAnswer": "I had not agreed to take on extra work / I hadn't agreed to take on extra work",
-      "prefix": "If only",
-      "suffix": "",
-      "fullSentence": "If only I had not agreed to take on extra work.",
-      "explanation": "If only + quá khứ hoàn thành thể hiện tiếc nuối việc đã xảy ra. Take on extra work là nhận thêm việc, giữ từ ON. Agreed không nên bỏ vì câu gốc tiếc việc đồng ý nhận, chưa nhất thiết đã thực hiện toàn bộ việc đó."
+      "displayAnswer": "had not agreed to take on / hadn't agreed to take on",
+      "prefix": "If only I",
+      "suffix": "extra work",
+      "fullSentence": "If only I had not agreed to take on extra work",
+      "explanation": "If only + quá khứ hoàn thành thể hiện tiếc nuối việc đã xảy ra. Take on extra work là nhận thêm việc, giữ từ ON.",
+      "keyword": "on",
+      "answerPrefix": "If only I",
+      "answerSuffix": "extra work",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "had not agreed to take on"
     },
     {
       "globalNumber": 92,
@@ -1084,24 +1090,35 @@
         "fell on deaf ears"
       ],
       "displayAnswer": "fell on deaf ears",
-      "prefix": "The neighbours’ repeated requests for quieter music",
-      "suffix": ".",
-      "fullSentence": "The neighbours’ repeated requests for quieter music fell on deaf ears.",
-      "explanation": "Fall on deaf ears diễn tả lời yêu cầu bị phớt lờ. Fell là quá khứ của fall và deaf ears là phần cố định của cụm. Câu chuyển từ hành động asked sang danh từ requests, đồng thời giữ tính lặp lại bằng repeated."
+      "prefix": "The neighbours' repeated requests for quieter music",
+      "suffix": "",
+      "fullSentence": "The neighbours' repeated requests for quieter music fell on deaf ears",
+      "explanation": "Fall on deaf ears diễn tả lời yêu cầu bị phớt lờ. Fell là quá khứ của fall và deaf ears là phần cố định của cụm.",
+      "keyword": "EARS",
+      "answerPrefix": "The neighbours' repeated requests for quieter music",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "fell on deaf ears"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "are running low on firewood",
-        "are running low on our supplies of firewood"
+        "are running low on firewood"
       ],
-      "displayAnswer": "are running low on firewood / are running low on our supplies of firewood",
+      "displayAnswer": "are running low on firewood",
       "prefix": "We",
       "suffix": "",
-      "fullSentence": "We are running low on firewood.",
-      "explanation": "Run low on something nghĩa là nguồn dự trữ sắp hết, phù hợp will soon be finished. Are running diễn tả tình trạng đang tiến gần mức cạn. Không dùng have run out of vì sẽ khẳng định đã hết hoàn toàn."
+      "fullSentence": "We are running low on firewood",
+      "explanation": "Run low on something nghĩa là nguồn dự trữ sắp hết, phù hợp will soon be finished. Are running diễn tả tình trạng đang tiến gần mức cạn.",
+      "keyword": "low",
+      "answerPrefix": "We",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "are running low on firewood"
     },
     {
       "globalNumber": 94,
@@ -1114,9 +1131,15 @@
       ],
       "displayAnswer": "not mixed up in / certainly not mixed up in / definitely not mixed up in",
       "prefix": "My son was",
-      "suffix": "the robbery, I can assure you.",
-      "fullSentence": "My son was not mixed up in the robbery, I can assure you.",
-      "explanation": "Be mixed up in something là dính líu vào một việc, thường là rắc rối hoặc phạm pháp. Not giữ lời khẳng định con trai không liên quan; I can assure you thể hiện sự chắc chắn. Dùng in với sự việc, with thường nối người/nhóm."
+      "suffix": "the robbery, I can assure you",
+      "fullSentence": "My son was not mixed up in the robbery, I can assure you",
+      "explanation": "Be mixed up in something là dính líu vào một việc, thường là rắc rối hoặc phạm pháp. Not giữ lời khẳng định con trai không liên quan; I can assure you thể hiện sự chắc chắn.",
+      "keyword": "mixed",
+      "answerPrefix": "My son was",
+      "answerSuffix": "the robbery, I can assure you",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "not mixed up in"
     },
     {
       "globalNumber": 95,
@@ -1124,43 +1147,58 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "struggle to make ends meet",
-        "have difficulty making ends meet",
-        "find it difficult to make ends meet"
+        "have difficulty making ends meet"
       ],
-      "displayAnswer": "struggle to make ends meet / have difficulty making ends meet / find it difficult to make ends meet",
+      "displayAnswer": "struggle to make ends meet / have difficulty making ends meet",
       "prefix": "The Wrights",
       "suffix": "",
-      "fullSentence": "The Wrights struggle to make ends meet.",
-      "explanation": "Make ends meet là có đủ tiền trang trải chi phí sinh hoạt cơ bản. Struggle/have difficulty giữ ý chật vật trả chi phí, không khẳng định tuyệt đối không thể sống được. Không dùng live in luxury vì khác mức chi tiêu trong câu gốc đã chỉnh."
+      "fullSentence": "The Wrights struggle to make ends meet",
+      "explanation": "Make ends meet là có đủ tiền trang trải chi phí sinh hoạt cơ bản. Struggle/have difficulty giữ ý chật vật trả chi phí, không khẳng định tuyệt đối không thể sống được.",
+      "keyword": "ends",
+      "answerPrefix": "The Wrights",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "struggle to make ends meet"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "it be known that she was looking for a flat"
+        "it be known that"
       ],
-      "displayAnswer": "it be known that she was looking for a flat",
+      "displayAnswer": "it be known that",
       "prefix": "She let",
-      "suffix": "",
-      "fullSentence": "She let it be known that she was looking for a flat.",
-      "explanation": "Let it be known that ... là công khai/cho mọi người biết một điều. Let theo sau tân ngữ it + be nguyên mẫu; known là phân từ bị động. Was looking giữ thì quá khứ tiếp diễn trong thông tin được truyền đi."
+      "suffix": "she was looking for a flat",
+      "fullSentence": "She let it be known that she was looking for a flat",
+      "explanation": "Let it be known that … là công khai/cho mọi người biết một điều. Let theo sau tân ngữ it + be nguyên mẫu; known là phân từ bị động.",
+      "keyword": "known",
+      "answerPrefix": "She let",
+      "answerSuffix": "she was looking for a flat",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "it be known that"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "was not cut out to be an actor",
-        "wasn't cut out to be an actor",
-        "was not cut out for an actor's life",
-        "was not cut out for an actor’s life"
+        "cut out to be an actor",
+        "cut out for an actor's life"
       ],
-      "displayAnswer": "was not cut out to be an actor / wasn't cut out to be an actor / was not cut out for an actor's life / was not cut out for an actor’s life",
-      "prefix": "William decided that he",
+      "displayAnswer": "cut out to be an actor / cut out for an actor's life",
+      "prefix": "William decided that he was not",
       "suffix": "",
-      "fullSentence": "William decided that he was not cut out to be an actor.",
-      "explanation": "Be cut out for + danh từ hoặc be cut out to do là phù hợp/có phẩm chất để theo nghề. Not giữ ý đời diễn viên không dành cho William. Dùng was vì quyết định ở quá khứ; không đổi CUT sang dạng khác."
+      "fullSentence": "William decided that he was not cut out to be an actor",
+      "explanation": "Be cut out for + danh từ hoặc be cut out to do là phù hợp/có phẩm chất để theo nghề. Not giữ ý đời diễn viên không dành cho William.",
+      "keyword": "cut",
+      "answerPrefix": "William decided that he was not",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "cut out to be an actor"
     },
     {
       "globalNumber": 98,
@@ -1172,22 +1210,34 @@
       "displayAnswer": "in awe of the new computer",
       "prefix": "At first I was",
       "suffix": "",
-      "fullSentence": "At first I was in awe of the new computer.",
-      "explanation": "In awe of là cảm thấy kính nể, choáng ngợp, đôi khi xen chút sợ. Câu gốc đã nêu cả admiration và a little fear nên tương đương. Không dịch awe đơn giản là lúng túng hoặc sợ hãi trong mọi ngữ cảnh."
+      "fullSentence": "At first I was in awe of the new computer",
+      "explanation": "In awe of là cảm thấy kính nể, choáng ngợp, đôi khi xen chút sợ. Câu gốc đã nêu cả admiration và a little fear nên tương đương.",
+      "keyword": "awe",
+      "answerPrefix": "At first I was",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "in awe of the new computer"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "regard themselves as old enough to choose their classes",
-        "regard themselves as being old enough to choose their classes"
+        "regard themselves as old enough",
+        "regard themselves as being old enough"
       ],
-      "displayAnswer": "regard themselves as old enough to choose their classes / regard themselves as being old enough to choose their classes",
+      "displayAnswer": "regard themselves as old enough / regard themselves as being old enough",
       "prefix": "The senior students",
-      "suffix": "",
-      "fullSentence": "The senior students regard themselves as old enough to choose their classes.",
-      "explanation": "Regard someone as + danh từ/tính từ là xem ai là/như thế nào. Chủ ngữ tự đánh giá nên dùng themselves. Being có thể có hoặc không; enough theo sau old, và to choose giữ nội dung tự lựa chọn lớp."
+      "suffix": "to choose their classes",
+      "fullSentence": "The senior students regard themselves as old enough to choose their classes",
+      "explanation": "Regard someone as + danh từ/tính từ là xem ai là/như thế nào. Chủ ngữ tự đánh giá nên dùng themselves.",
+      "keyword": "regard",
+      "answerPrefix": "The senior students",
+      "answerSuffix": "to choose their classes",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "regard themselves as old enough"
     },
     {
       "globalNumber": 100,
@@ -1200,10 +1250,16 @@
       "displayAnswer": "it has fallen into disrepute / it has been brought into disrepute",
       "prefix": "Since the company was exposed in a newspaper,",
       "suffix": "",
-      "fullSentence": "Since the company was exposed in a newspaper, it has fallen into disrepute.",
-      "explanation": "Fall into disrepute là mất uy tín, bị đánh giá xấu. Since + mốc quá khứ đi với hiện tại hoàn thành has fallen cho sự thay đổi kéo dài đến nay. Has been brought into disrepute cũng diễn tả bị làm mất uy tín; không dùng disreputable vì phải giữ từ DISREPUTE."
+      "fullSentence": "Since the company was exposed in a newspaper, it has fallen into disrepute",
+      "explanation": "Fall into disrepute là mất uy tín, bị đánh giá xấu. Since + mốc quá khứ đi với hiện tại hoàn thành has fallen cho sự thay đổi kéo dài đến nay.",
+      "keyword": "disrepute",
+      "answerPrefix": "Since the company was exposed in a newspaper,",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "it has fallen into disrepute"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

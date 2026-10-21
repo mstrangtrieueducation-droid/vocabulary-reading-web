@@ -1069,10 +1069,16 @@
         "as he was"
       ],
       "displayAnswer": "as he was",
-      "explanation": "Tired as he was = Although he was tired. Đề bắt buộc từ AS nên điền as he was, không dùng though dù cấu trúc ấy cũng đúng ở bài không ràng buộc từ khóa. Không lặp tired hoặc phần sau dấu phẩy.",
+      "explanation": "Tired as he was = Although he was tired. Đề bắt buộc từ AS nên điền as he was, không dùng though dù cấu trúc ấy cũng đúng ở bài không ràng buộc từ khóa.",
       "prefix": "Tired",
-      "suffix": ", he agreed to play tennis.",
-      "fullSentence": "Tired as he was, he agreed to play tennis."
+      "suffix": ", he agreed to play tennis",
+      "fullSentence": "Tired as he was, he agreed to play tennis",
+      "keyword": "AS",
+      "answerPrefix": "Tired",
+      "answerSuffix": ", he agreed to play tennis",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "as he was"
     },
     {
       "globalNumber": 92,
@@ -1082,10 +1088,16 @@
         "is put down to"
       ],
       "displayAnswer": "is put down to",
-      "explanation": "Put something down to something = quy một kết quả cho nguyên nhân. Chuyển sang bị động với Sue’s success: is put down to. Is giữ đúng thời hiện tại của They believe; nguyên nhân sau to là the fact that she was hard-working.",
+      "explanation": "Put something down to something = quy một kết quả cho nguyên nhân. Chuyển sang bị động với Sue’s success: is put down to.",
       "prefix": "Sue's success",
-      "suffix": "the fact that she was hard-working.",
-      "fullSentence": "Sue's success is put down to the fact that she was hard-working."
+      "suffix": "the fact that she was hard-working",
+      "fullSentence": "Sue's success is put down to the fact that she was hard-working",
+      "keyword": "DOWN",
+      "answerPrefix": "Sue's success",
+      "answerSuffix": "the fact that she was hard-working",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is put down to"
     },
     {
       "globalNumber": 93,
@@ -1096,10 +1108,16 @@
         "took me fifteen minutes to"
       ],
       "displayAnswer": "took me 15 minutes to / took me fifteen minutes to",
-      "explanation": "It took + người + khoảng thời gian + to V = ai mất bao lâu làm gì. Câu kể quá khứ nên dùng took. Walk đã được cho sẵn sau chỗ trống, vì vậy không điền lặp lại.",
+      "explanation": "It took + người + khoảng thời gian + to V = ai mất bao lâu làm gì. Câu kể quá khứ nên dùng took.",
       "prefix": "It",
-      "suffix": "walk to my secondary school.",
-      "fullSentence": "It took me 15 minutes to walk to my secondary school."
+      "suffix": "walk to my secondary school",
+      "fullSentence": "It took me 15 minutes to walk to my secondary school",
+      "keyword": "TOOK",
+      "answerPrefix": "It",
+      "answerSuffix": "walk to my secondary school",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "took me 15 minutes to"
     },
     {
       "globalNumber": 94,
@@ -1111,10 +1129,16 @@
         "confessed that she had turned off"
       ],
       "displayAnswer": "confessed to turning off / confessed to having turned off / confessed that she had turned off",
-      "explanation": "Confess to + V-ing hoặc confess that + mệnh đề. To trong confess to là giới từ, nên dùng turning/having turned, không dùng turn. Having turned/had turned làm rõ việc tắt báo động xảy ra trước lời thú nhận.",
+      "explanation": "Confess to + V-ing hoặc confess that + mệnh đề. To trong confess to là giới từ, nên dùng turning/having turned, không dùng turn.",
       "prefix": "Helen",
-      "suffix": "the alarm system.",
-      "fullSentence": "Helen confessed to turning off the alarm system."
+      "suffix": "the alarm system",
+      "fullSentence": "Helen confessed to turning off the alarm system",
+      "keyword": "CONFESSED",
+      "answerPrefix": "Helen",
+      "answerSuffix": "the alarm system",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "confessed to turning off"
     },
     {
       "globalNumber": 95,
@@ -1122,14 +1146,19 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "the rejection of his proposal",
-        "his proposal's rejection",
-        "his proposal’s rejection"
+        "his proposal's rejection"
       ],
-      "displayAnswer": "the rejection of his proposal / his proposal's rejection / his proposal’s rejection",
-      "explanation": "Due to cần cụm danh từ chỉ nguyên nhân. The rejection of his proposal = việc đề xuất của anh ấy bị bác bỏ, giữ đúng nghĩa was turned down. Dùng từ REJECTION đã cho, không đổi thành rejected.",
+      "displayAnswer": "the rejection of his proposal / his proposal's rejection",
+      "explanation": "Due to cần cụm danh từ chỉ nguyên nhân. The rejection of his proposal = việc đề xuất của anh ấy bị bác bỏ, giữ đúng nghĩa was turned down.",
       "prefix": "Peter felt a great sense of embarrassment due to",
       "suffix": "",
-      "fullSentence": "Peter felt a great sense of embarrassment due to the rejection of his proposal."
+      "fullSentence": "Peter felt a great sense of embarrassment due to the rejection of his proposal",
+      "keyword": "REJECTION",
+      "answerPrefix": "Peter felt a great sense of embarrassment due to",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "the rejection of his proposal"
     },
     {
       "globalNumber": 96,
@@ -1140,10 +1169,16 @@
         "to avoid taking sides in"
       ],
       "displayAnswer": "not to take sides in / to avoid taking sides in",
-      "explanation": "Remain impartial = giữ trung lập, không đứng về bên nào. Try not to take sides in/try to avoid taking sides in đều giữ từ SIDES và ý câu. Không viết take a side ở đây vì từ khóa được cho là số nhiều sides.",
+      "explanation": "Remain impartial = giữ trung lập, không đứng về bên nào. Try not to take sides in/try to avoid taking sides in đều giữ từ SIDES và ý câu.",
       "prefix": "Khang tried",
-      "suffix": "the quarrel between his two sisters.",
-      "fullSentence": "Khang tried not to take sides in the quarrel between his two sisters."
+      "suffix": "the quarrel between his two sisters",
+      "fullSentence": "Khang tried not to take sides in the quarrel between his two sisters",
+      "keyword": "SIDES",
+      "answerPrefix": "Khang tried",
+      "answerSuffix": "the quarrel between his two sisters",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "not to take sides in"
     },
     {
       "globalNumber": 97,
@@ -1153,10 +1188,16 @@
         "fell on deaf ears"
       ],
       "displayAnswer": "fell on deaf ears",
-      "explanation": "Fall on deaf ears nghĩa là lời cảnh báo hoặc đề nghị bị bỏ ngoài tai. Câu gốc dùng were ignored ở quá khứ nên điền fell, không phải fall. Deaf ears ở số nhiều là cách kết hợp cố định; không thêm người nghe vì câu gốc không nêu cụ thể.",
+      "explanation": "Fall on deaf ears nghĩa là lời cảnh báo hoặc đề nghị bị bỏ ngoài tai. Câu gốc dùng were ignored ở quá khứ nên điền fell, không phải fall.",
       "prefix": "Our warnings about the unsafe bridge",
-      "suffix": ".",
-      "fullSentence": "Our warnings about the unsafe bridge fell on deaf ears."
+      "suffix": "",
+      "fullSentence": "Our warnings about the unsafe bridge fell on deaf ears",
+      "keyword": "EARS",
+      "answerPrefix": "Our warnings about the unsafe bridge",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "fell on deaf ears"
     },
     {
       "globalNumber": 98,
@@ -1166,10 +1207,16 @@
         "is believed to have been"
       ],
       "displayAnswer": "is believed to have been",
-      "explanation": "Bị động tường thuật: People believe ... → That poem is believed .... Bài thơ được viết trước niềm tin hiện tại nên dùng to have been written. Giữ HAVE nguyên dạng; không dùng to be written vì dễ hiểu là việc viết chưa xảy ra.",
+      "explanation": "Bị động tường thuật: People believe … → That poem is believed … Bài thơ được viết trước niềm tin hiện tại nên dùng to have been written. Giữ HAVE nguyên dạng; không dùng to be written vì dễ hiểu là việc viết chưa xảy ra.",
       "prefix": "That poem",
-      "suffix": "written about these beautiful hills.",
-      "fullSentence": "That poem is believed to have been written about these beautiful hills."
+      "suffix": "written about these beautiful hills",
+      "fullSentence": "That poem is believed to have been written about these beautiful hills",
+      "keyword": "HAVE",
+      "answerPrefix": "That poem",
+      "answerSuffix": "written about these beautiful hills",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is believed to have been"
     },
     {
       "globalNumber": 99,
@@ -1179,10 +1226,16 @@
         "from Simon, none of"
       ],
       "displayAnswer": "from Simon, none of",
-      "explanation": "Apart from Simon = ngoại trừ Simon; none of the students = không học sinh nào trong nhóm còn lại. Hai phần kết hợp diễn đạt only Simon. Cần of trước the students và phải giữ NONE theo yêu cầu.",
+      "explanation": "Apart from Simon = ngoại trừ Simon; none of the students = không học sinh nào trong nhóm còn lại. Hai phần kết hợp diễn đạt only Simon.",
       "prefix": "Apart",
-      "suffix": "the students applied for a scholarship.",
-      "fullSentence": "Apart from Simon, none of the students applied for a scholarship."
+      "suffix": "the students applied for a scholarship",
+      "fullSentence": "Apart from Simon, none of the students applied for a scholarship",
+      "keyword": "NONE",
+      "answerPrefix": "Apart",
+      "answerSuffix": "the students applied for a scholarship",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "from Simon, none of"
     },
     {
       "globalNumber": 100,
@@ -1192,12 +1245,18 @@
         "making a name for"
       ],
       "displayAnswer": "making a name for",
-      "explanation": "Make a name for oneself = trở nên nổi tiếng/có tên tuổi. Is đã cho sẵn nên điền making a name for để tạo hiện tại tiếp diễn, phù hợp is becoming. Himself phía sau hoàn thành cụm phản thân.",
-      "prefix": "Mr Uyen’s son is",
-      "suffix": "himself as an artist.",
-      "fullSentence": "Mr Uyen’s son is making a name for himself as an artist."
+      "explanation": "Make a name for oneself = trở nên nổi tiếng/có tên tuổi. Is đã cho sẵn nên điền making a name for để tạo hiện tại tiếp diễn, phù hợp is becoming.",
+      "prefix": "Mr Uyen's son is",
+      "suffix": "himself as an artist",
+      "fullSentence": "Mr Uyen's son is making a name for himself as an artist",
+      "keyword": "NAME",
+      "answerPrefix": "Mr Uyen's son is",
+      "answerSuffix": "himself as an artist",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "making a name for"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

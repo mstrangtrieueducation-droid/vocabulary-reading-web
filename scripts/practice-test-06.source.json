@@ -1085,11 +1085,17 @@
       "acceptedAnswers": [
         "on good terms with"
       ],
-      "displayAnswer": "I'm on good terms with everyone at work.",
+      "displayAnswer": "on good terms with",
       "explanation": "Be on good terms with somebody = có quan hệ tốt với ai. I’m đã chứa be; điền on good terms with và giữ everyone at work ở phần đuôi.",
       "prefix": "I'm",
-      "suffix": "everyone at work.",
-      "blankAnswer": "on good terms with"
+      "suffix": "everyone at work",
+      "blankAnswer": "on good terms with",
+      "keyword": "terms",
+      "answerPrefix": "I'm",
+      "answerSuffix": "everyone at work",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "I'm on good terms with everyone at work"
     },
     {
       "globalNumber": 92,
@@ -1101,24 +1107,36 @@
         "sooner had Yuri qualified than she",
         "sooner had Yuri qualified than he"
       ],
-      "displayAnswer": "No sooner had Yuri qualified than Yuri found a really good job.",
+      "displayAnswer": "sooner had Yuri qualified than Yuri / sooner had Yuri qualified than they / sooner had Yuri qualified than she / sooner had Yuri qualified than he",
       "explanation": "No sooner had Yuri qualified than… diễn tả vừa đủ điều kiện thì tìm được việc. Đề không xác định giới tính, nên mẫu dùng Yuri; nhận they và đại từ phù hợp thay vì ép dùng she.",
       "prefix": "No",
-      "suffix": "found a really good job.",
-      "blankAnswer": "sooner had Yuri qualified than Yuri"
+      "suffix": "found a really good job",
+      "blankAnswer": "sooner had Yuri qualified than Yuri",
+      "keyword": "than",
+      "answerPrefix": "No",
+      "answerSuffix": "found a really good job",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "No sooner had Yuri qualified than Yuri found a really good job"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "attributed his success to his parents’ support"
+        "attributed his success to"
       ],
-      "displayAnswer": "Mike attributed his success to his parents’ support.",
+      "displayAnswer": "attributed his success to",
       "explanation": "Attribute A to B = cho rằng A có được là nhờ B. A là his success, B là his parents’ support; phải giữ đúng thứ tự nguyên nhân và kết quả.",
       "prefix": "Mike",
-      "suffix": "",
-      "blankAnswer": "attributed his success to his parents’ support"
+      "suffix": "his parents' support",
+      "blankAnswer": "attributed his success to",
+      "keyword": "attributed",
+      "answerPrefix": "Mike",
+      "answerSuffix": "his parents' support",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Mike attributed his success to his parents' support"
     },
     {
       "globalNumber": 94,
@@ -1128,11 +1146,17 @@
         "no point in arguing with him",
         "no point arguing with him"
       ],
-      "displayAnswer": "There was no point in arguing with him.",
+      "displayAnswer": "no point in arguing with him / no point arguing with him",
       "explanation": "There was no point (in) + V-ing nghĩa là làm việc đó vô ích. Arguing giữ ý hành động tranh luận đã xảy ra; không dùng to argue sau in.",
       "prefix": "There was",
       "suffix": "",
-      "blankAnswer": "no point in arguing with him"
+      "blankAnswer": "no point in arguing with him",
+      "keyword": "point",
+      "answerPrefix": "There was",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "There was no point in arguing with him"
     },
     {
       "globalNumber": 95,
@@ -1141,11 +1165,17 @@
       "acceptedAnswers": [
         "make an attempt at answering"
       ],
-      "displayAnswer": "You didn’t even make an attempt at answering the question.",
+      "displayAnswer": "make an attempt at answering",
       "explanation": "Make an attempt at + V-ing = thử/cố làm gì. Didn’t even đã cho nên dùng make nguyên mẫu; giữ at theo từ khóa và answering trước the question đã có.",
-      "prefix": "You didn’t even",
-      "suffix": "the question.",
-      "blankAnswer": "make an attempt at answering"
+      "prefix": "You didn't even",
+      "suffix": "the question",
+      "blankAnswer": "make an attempt at answering",
+      "keyword": "at",
+      "answerPrefix": "You didn't even",
+      "answerSuffix": "the question",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "You didn't even make an attempt at answering the question"
     },
     {
       "globalNumber": 96,
@@ -1154,11 +1184,17 @@
       "acceptedAnswers": [
         "took notice of"
       ],
-      "displayAnswer": "Few of the children took notice of what the teacher had told them.",
+      "displayAnswer": "took notice of",
       "explanation": "Take notice of = chú ý tới. Most ignored đổi thành Few took notice of…, tức chỉ ít người chú ý; took giữ thì quá khứ và of nối nội dung lời giáo viên.",
       "prefix": "Few of the children",
-      "suffix": "what the teacher had told them.",
-      "blankAnswer": "took notice of"
+      "suffix": "what the teacher had told them",
+      "blankAnswer": "took notice of",
+      "keyword": "notice",
+      "answerPrefix": "Few of the children",
+      "answerSuffix": "what the teacher had told them",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Few of the children took notice of what the teacher had told them"
     },
     {
       "globalNumber": 97,
@@ -1167,11 +1203,17 @@
       "acceptedAnswers": [
         "is highly thought"
       ],
-      "displayAnswer": "The company is highly thought of in the local area.",
+      "displayAnswer": "is highly thought",
       "explanation": "Be highly thought of = được đánh giá cao/có uy tín. Of nằm sẵn sau ô trống nên chỉ điền is highly thought; không lặp of hoặc bỏ dạng bị động.",
       "prefix": "The company",
-      "suffix": "of in the local area.",
-      "blankAnswer": "is highly thought"
+      "suffix": "of in the local area",
+      "blankAnswer": "is highly thought",
+      "keyword": "highly",
+      "answerPrefix": "The company",
+      "answerSuffix": "of in the local area",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "The company is highly thought of in the local area"
     },
     {
       "globalNumber": 98,
@@ -1180,11 +1222,17 @@
       "acceptedAnswers": [
         "a matter of time before"
       ],
-      "displayAnswer": "I think it’s only a matter of time before Jemma becomes a famous model.",
+      "displayAnswer": "a matter of time before",
       "explanation": "It’s only a matter of time before… = chỉ còn là vấn đề thời gian trước khi điều gì xảy ra. Dùng a matter, không phải the matter; thể hiện niềm tin sự việc sẽ đến.",
-      "prefix": "I think it’s only",
-      "suffix": "Jemma becomes a famous model.",
-      "blankAnswer": "a matter of time before"
+      "prefix": "I think it's only",
+      "suffix": "Jemma becomes a famous model",
+      "blankAnswer": "a matter of time before",
+      "keyword": "matter",
+      "answerPrefix": "I think it's only",
+      "answerSuffix": "Jemma becomes a famous model",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "I think it's only a matter of time before Jemma becomes a famous model"
     },
     {
       "globalNumber": 99,
@@ -1196,11 +1244,17 @@
         "in no doubt about the fact",
         "in no doubt of the fact"
       ],
-      "displayAnswer": "Barbara’s parents were in no doubt that she would be a great tennis player.",
-      "explanation": "Be in no doubt that… diễn đạt chắc chắn. That đã in sau ô trống; in no doubt đơn giản nhất. Nếu thêm about/of phải có the fact trước that, không ghép in no doubt of that she….",
-      "prefix": "Barbara’s parents were",
-      "suffix": "that she would be a great tennis player.",
-      "blankAnswer": "in no doubt"
+      "displayAnswer": "in no doubt / not in any doubt / in no doubt about the fact / in no doubt of the fact",
+      "explanation": "Be in no doubt that… diễn đạt chắc chắn. That đã in sau ô trống; in no doubt đơn giản nhất.",
+      "prefix": "Barbara's parents were",
+      "suffix": "that she would be a great tennis player",
+      "blankAnswer": "in no doubt",
+      "keyword": "doubt",
+      "answerPrefix": "Barbara's parents were",
+      "answerSuffix": "that she would be a great tennis player",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Barbara's parents were in no doubt that she would be a great tennis player"
     },
     {
       "globalNumber": 100,
@@ -1209,17 +1263,23 @@
       "acceptedAnswers": [
         "made a name for"
       ],
-      "displayAnswer": "If Marc hadn’t taken up politics, he might have made a name for himself as an art historian.",
-      "explanation": "Make a name for oneself = trở nên nổi tiếng. Sau might have dùng made; himself đã có sau ô trống nên không lặp. Giữ điều kiện giả định quá khứ về việc không theo chính trị.",
-      "prefix": "If Marc hadn’t taken up politics, he might have",
-      "suffix": "himself as an art historian.",
-      "blankAnswer": "made a name for"
+      "displayAnswer": "made a name for",
+      "explanation": "Make a name for oneself = trở nên nổi tiếng. Sau might have dùng made; himself đã có sau ô trống nên không lặp.",
+      "prefix": "If Marc hadn't taken up politics, he might have",
+      "suffix": "himself as an art historian",
+      "blankAnswer": "made a name for",
+      "keyword": "name",
+      "answerPrefix": "If Marc hadn't taken up politics, he might have",
+      "answerSuffix": "himself as an art historian",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "If Marc hadn't taken up politics, he might have made a name for himself as an art historian"
     }
   ],
   "reviewApproved": true,
   "updated": "2026-10-16",
   "scienceReferences": [],
-  "contentRevision": "2026-10-17-authentic",
+  "contentRevision": "2026-10-21-word-limits",
   "readingSources": [
     {
       "part": "II.1",

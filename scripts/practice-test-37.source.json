@@ -1076,24 +1076,35 @@
         "take what she said to heart"
       ],
       "displayAnswer": "take what she said to heart",
-      "explanation": "Take something to heart = để bụng, bị lời nói tác động khiến buồn. Don’t đã cho sẵn nên chỉ điền cụm động từ. Không đổi thành take heart, vốn có nghĩa được động viên/lấy lại can đảm.",
-      "prefix": "Don’t",
+      "explanation": "Take something to heart = để bụng, bị lời nói tác động khiến buồn. Don’t đã cho sẵn nên chỉ điền cụm động từ.",
+      "prefix": "Don't",
       "suffix": "",
-      "fullSentence": "Don’t take what she said to heart."
+      "fullSentence": "Don't take what she said to heart",
+      "keyword": "HEART",
+      "answerPrefix": "Don't",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "take what she said to heart"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "I take my hat off to you for your improvement",
-        "I take my hat off to you for the improvement you have made"
+        "take my hat off to you"
       ],
-      "displayAnswer": "I take my hat off to you for your improvement / I take my hat off to you for the improvement you have made",
-      "explanation": "Take one’s hat off to somebody = ngưỡng mộ, bày tỏ sự khâm phục. Chủ ngữ I đi với my hat, to you chỉ người được khen. For nêu lý do tiến bộ; không bỏ I vì câu cần đầy đủ.",
-      "prefix": "",
-      "suffix": "",
-      "fullSentence": "I take my hat off to you for your improvement."
+      "displayAnswer": "take my hat off to you",
+      "explanation": "Take one’s hat off to somebody = ngưỡng mộ, bày tỏ sự khâm phục. Chủ ngữ I đi với my hat, to you chỉ người được khen.",
+      "prefix": "I",
+      "suffix": "for your improvement",
+      "fullSentence": "I take my hat off to you for your improvement",
+      "keyword": "HAT",
+      "answerPrefix": "I",
+      "answerSuffix": "for your improvement",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "take my hat off to you"
     },
     {
       "globalNumber": 93,
@@ -1104,10 +1115,16 @@
         "not to bottle your feelings up"
       ],
       "displayAnswer": "not to bottle up your feelings / not to bottle your feelings up",
-      "explanation": "Give vent to feelings là bộc lộ cảm xúc, tương đương không kìm nén. Vì bottle up mang nghĩa kìm nén nên phải thêm not. Có thể đặt feelings trước hoặc sau up; bottle giữ nguyên từ gợi ý.",
+      "explanation": "Give vent to feelings là bộc lộ cảm xúc, tương đương không kìm nén. Vì bottle up mang nghĩa kìm nén nên phải thêm not.",
       "prefix": "It is better",
       "suffix": "",
-      "fullSentence": "It is better not to bottle up your feelings."
+      "fullSentence": "It is better not to bottle up your feelings",
+      "keyword": "BOTTLE",
+      "answerPrefix": "It is better",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "not to bottle up your feelings"
     },
     {
       "globalNumber": 94,
@@ -1117,10 +1134,16 @@
         "is second to none when it"
       ],
       "displayAnswer": "is second to none when it",
-      "explanation": "Be second to none = không thua ai, giỏi nhất. When it comes to + V-ing = khi nói về việc gì; comes đã cho sẵn nên điền when it trước đó. Không viết second than none.",
+      "explanation": "Be second to none = không thua ai, giỏi nhất. When it comes to + V-ing = khi nói về việc gì; comes đã cho sẵn nên điền when it trước đó.",
       "prefix": "He",
-      "suffix": "comes to creating believable characters.",
-      "fullSentence": "He is second to none when it comes to creating believable characters."
+      "suffix": "comes to creating believable characters",
+      "fullSentence": "He is second to none when it comes to creating believable characters",
+      "keyword": "SECOND",
+      "answerPrefix": "He",
+      "answerSuffix": "comes to creating believable characters",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is second to none when it"
     },
     {
       "globalNumber": 95,
@@ -1130,11 +1153,17 @@
         "not experienced enough for",
         "not experienced enough to take on"
       ],
-      "displayAnswer": "not experienced enough for",
-      "explanation": "Not + tính từ + enough diễn tả chưa đủ một phẩm chất. Có thể dùng for + danh từ hoặc to take on + vai trò. Experienced là tính từ, đứng trước enough; không dùng enough experienced. Câu không suy diễn thêm rằng anh ấy chắc chắn sẽ thất bại thảm hại.",
+      "displayAnswer": "not experienced enough for / not experienced enough to take on",
+      "explanation": "Not + tính từ + enough diễn tả chưa đủ một phẩm chất. Có thể dùng for + danh từ hoặc to take on + vai trò.\nTừ vựng trọng tâm: experienced enough",
       "prefix": "He was",
-      "suffix": "such a demanding role.",
-      "fullSentence": "He was not experienced enough for such a demanding role."
+      "suffix": "such a demanding role",
+      "fullSentence": "He was not experienced enough for such a demanding role",
+      "keyword": "ENOUGH",
+      "answerPrefix": "He was",
+      "answerSuffix": "such a demanding role",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "not experienced enough for"
     },
     {
       "globalNumber": 96,
@@ -1144,24 +1173,36 @@
         "complimented William on"
       ],
       "displayAnswer": "complimented William on",
-      "explanation": "Compliment somebody on something = khen ai về điều gì. Complimented ở quá khứ theo said; on là từ bắt buộc trong đề. Không nhầm complement là bổ sung/làm hoàn thiện hoặc bỏ William là người được khen.",
+      "explanation": "Compliment somebody on something = khen ai về điều gì. Complimented ở quá khứ theo said; on là từ bắt buộc trong đề.",
       "prefix": "The teacher",
-      "suffix": "his excellent English.",
-      "fullSentence": "The teacher complimented William on his excellent English."
+      "suffix": "his excellent English",
+      "fullSentence": "The teacher complimented William on his excellent English",
+      "keyword": "ON",
+      "answerPrefix": "The teacher",
+      "answerSuffix": "his excellent English",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "complimented William on"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "could not afford to pay his bills",
-        "could no longer afford to pay his bills"
+        "could not afford to pay",
+        "could no longer afford to pay"
       ],
-      "displayAnswer": "could not afford to pay his bills",
-      "explanation": "Can/could afford to do something là có đủ khả năng tài chính để làm gì. Câu ở quá khứ nên dùng could not afford; to pay đi sau afford. Giữ his bills để nói rõ khoản chi không trả được, không tự suy rộng thành mất toàn bộ tiền bạc.",
+      "displayAnswer": "could not afford to pay / could no longer afford to pay",
+      "explanation": "Can/could afford to do something là có đủ khả năng tài chính để làm gì. Câu ở quá khứ nên dùng could not afford; to pay đi sau afford.",
       "prefix": "After losing so much money on the investment, he",
-      "suffix": ".",
-      "fullSentence": "After losing so much money on the investment, he could not afford to pay his bills."
+      "suffix": "his bills",
+      "fullSentence": "After losing so much money on the investment, he could not afford to pay his bills",
+      "keyword": "AFFORD",
+      "answerPrefix": "After losing so much money on the investment, he",
+      "answerSuffix": "his bills",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "could not afford to pay"
     },
     {
       "globalNumber": 98,
@@ -1172,24 +1213,36 @@
         "a very harmful effect on",
         "a serious negative effect on"
       ],
-      "displayAnswer": "a seriously harmful effect on",
-      "explanation": "Have an effect on somebody/something diễn tả tác động đến đối tượng. Harm chuyển thành harmful hoặc negative; seriously/very/serious giữ mức độ đáng kể. On là giới từ cần có. Không phải ghép thêm thành ngữ hanging by a thread để làm câu tương đương.",
+      "displayAnswer": "a seriously harmful effect on / a very harmful effect on / a serious negative effect on",
+      "explanation": "Have an effect on somebody/something diễn tả tác động đến đối tượng. Harm chuyển thành harmful hoặc negative; seriously/very/serious giữ mức độ đáng kể.",
       "prefix": "The new tax will have",
-      "suffix": "small businesses.",
-      "fullSentence": "The new tax will have a seriously harmful effect on small businesses."
+      "suffix": "small businesses",
+      "fullSentence": "The new tax will have a seriously harmful effect on small businesses",
+      "keyword": "EFFECT",
+      "answerPrefix": "The new tax will have",
+      "answerSuffix": "small businesses",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "a seriously harmful effect on"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "no means is she an experienced archaeologist"
+        "By no means is she"
       ],
-      "displayAnswer": "no means is she an experienced archaeologist",
-      "explanation": "By no means = hoàn toàn không; đặt đầu câu buộc đảo is she. Giữ an experienced archaeologist để phủ nhận kinh nghiệm, không phủ nhận cô ấy là nhà khảo cổ. No là từ khóa và không được thay not.",
-      "prefix": "By",
-      "suffix": "",
-      "fullSentence": "By no means is she an experienced archaeologist."
+      "displayAnswer": "By no means is she",
+      "explanation": "By no means = hoàn toàn không; đặt đầu câu buộc đảo is she. Giữ an experienced archaeologist để phủ nhận kinh nghiệm, không phủ nhận cô ấy là nhà khảo cổ.",
+      "prefix": "",
+      "suffix": "an experienced archaeologist",
+      "fullSentence": "By no means is she an experienced archaeologist",
+      "keyword": "NO",
+      "answerPrefix": "",
+      "answerSuffix": "an experienced archaeologist",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "By no means is she"
     },
     {
       "globalNumber": 100,
@@ -1199,12 +1252,18 @@
         "although they pretended to be sad"
       ],
       "displayAnswer": "although they pretended to be sad",
-      "explanation": "Although nối hai ý tương phản: bên ngoài tỏ ra buồn nhưng thực ra vui. Sau although cần mệnh đề có chủ ngữ và động từ. Had left chỉ việc rời đi xảy ra trước cảm giác pleased; không dùng despite they pretended vì despite không đi trực tiếp với mệnh đề như vậy.",
+      "explanation": "Although nối hai ý tương phản: bên ngoài tỏ ra buồn nhưng thực ra vui. Sau although cần mệnh đề có chủ ngữ và động từ.",
       "prefix": "They were actually pleased that he had left",
-      "suffix": ".",
-      "fullSentence": "They were actually pleased that he had left although they pretended to be sad."
+      "suffix": "",
+      "fullSentence": "They were actually pleased that he had left although they pretended to be sad",
+      "keyword": "ALTHOUGH",
+      "answerPrefix": "They were actually pleased that he had left",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "although they pretended to be sad"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

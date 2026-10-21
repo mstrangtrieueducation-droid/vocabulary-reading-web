@@ -1066,11 +1066,17 @@
       "acceptedAnswers": [
         "count on being"
       ],
-      "displayAnswer": "The company’s employees shouldn’t count on being allocated a car-parking space.",
+      "displayAnswer": "count on being",
       "explanation": "Count on + V-ing = trông cậy rằng điều gì sẽ xảy ra. Nhân viên là người được bố trí chỗ nên dùng being allocated; allocated đã có sau ô trống.",
-      "prefix": "The company’s employees shouldn’t",
-      "suffix": "allocated a car-parking space.",
-      "blankAnswer": "count on being"
+      "prefix": "The company's employees shouldn't",
+      "suffix": "allocated a car-parking space",
+      "blankAnswer": "count on being",
+      "keyword": "count",
+      "answerPrefix": "The company's employees shouldn't",
+      "answerSuffix": "allocated a car-parking space",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "The company's employees shouldn't count on being allocated a car-parking space"
     },
     {
       "globalNumber": 92,
@@ -1081,25 +1087,36 @@
         "to put up with rude behaviour",
         "to put up with rude behavior"
       ],
-      "displayAnswer": "‘I’m not willing to put up with rudeness from my colleagues any longer,’ said Delia.",
+      "displayAnswer": "to put up with rudeness / to put up with rude behaviour / to put up with rude behavior",
       "explanation": "Be willing to + V và put up with + danh từ/V-ing = sẵn lòng chịu đựng. Rudeness/rude behaviour thay hành động cư xử thô lỗ của đồng nghiệp; from my colleagues đã in sẵn.",
-      "prefix": "‘I’m not willing",
-      "suffix": "from my colleagues any longer,’ said Delia.",
-      "blankAnswer": "to put up with rudeness"
+      "prefix": "'I'm not willing",
+      "suffix": "from my colleagues any longer,' said Delia",
+      "blankAnswer": "to put up with rudeness",
+      "keyword": "put",
+      "answerPrefix": "'I'm not willing",
+      "answerSuffix": "from my colleagues any longer,' said Delia",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "'I'm not willing to put up with rudeness from my colleagues any longer,' said Delia"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "afford this holiday as long",
-        "afford to go on this holiday as long"
+        "afford this holiday as long"
       ],
-      "displayAnswer": "We can afford this holiday as long as we avoid the expensive restaurants in the tourist centre.",
+      "displayAnswer": "afford this holiday as long",
       "explanation": "Can afford this holiday là đủ tiền cho kỳ nghỉ; as long as = provided. Đuôi đã bắt đầu bằng as we avoid… nên ô trống kết thúc as long, không nhập lặp as hoặc đổi tourist centre.",
       "prefix": "We can",
-      "suffix": "as we avoid the expensive restaurants in the tourist centre.",
-      "blankAnswer": "afford this holiday as long"
+      "suffix": "as we avoid the expensive restaurants in the tourist centre",
+      "blankAnswer": "afford this holiday as long",
+      "keyword": "afford",
+      "answerPrefix": "We can",
+      "answerSuffix": "as we avoid the expensive restaurants in the tourist centre",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "We can afford this holiday as long as we avoid the expensive restaurants in the tourist centre"
     },
     {
       "globalNumber": 94,
@@ -1108,39 +1125,56 @@
       "acceptedAnswers": [
         "did away with"
       ],
-      "displayAnswer": "I’m not sure when they did away with capital punishment in this country.",
-      "explanation": "Do away with = bãi bỏ. Did away with là quá khứ; when they did… là câu gián tiếp nên không đảo did lên trước they. Giữ từ khóa did đúng dạng.",
-      "prefix": "I’m not sure when they",
-      "suffix": "capital punishment in this country.",
-      "blankAnswer": "did away with"
+      "displayAnswer": "did away with",
+      "explanation": "Do away with = bãi bỏ. Did away with là quá khứ; when they did… là câu gián tiếp nên không đảo did lên trước they.",
+      "prefix": "I'm not sure when they",
+      "suffix": "capital punishment in this country",
+      "blankAnswer": "did away with",
+      "keyword": "did",
+      "answerPrefix": "I'm not sure when they",
+      "answerSuffix": "capital punishment in this country",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "I'm not sure when they did away with capital punishment in this country"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "Having finished my dinner, I took a stroll around the neighbourhood",
-        "Having finished my dinner, I took a stroll around the neighborhood"
+        "Having finished my dinner"
       ],
-      "displayAnswer": "Having finished my dinner, I took a stroll around the neighbourhood.",
+      "displayAnswer": "Having finished my dinner",
       "explanation": "Having + V3 diễn tả hành động hoàn tất trước hành động chính và cùng chủ thể I. Ăn xong rồi đi dạo; neighbourhood/neighborhood là hai chính tả Anh–Mỹ.",
       "prefix": "",
-      "suffix": "",
-      "blankAnswer": "Having finished my dinner, I took a stroll around the neighbourhood"
+      "suffix": ", I took a stroll around the neighbourhood",
+      "blankAnswer": "Having finished my dinner",
+      "keyword": "having",
+      "answerPrefix": "",
+      "answerSuffix": ", I took a stroll around the neighbourhood",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Having finished my dinner, I took a stroll around the neighbourhood"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "Because my father is stamp-mad, he splashes out a lot of money on them every month",
-        "Because my father is stamp-mad, he splashes out on them every month"
+        "splashes out a lot of money",
+        "splashes out"
       ],
-      "displayAnswer": "Because my father is stamp-mad, he splashes out a lot of money on them every month.",
+      "displayAnswer": "splashes out a lot of money / splashes out",
       "explanation": "Splash out (money) on something = chi nhiều tiền cho thứ gì. Giữ splashes để hòa hợp he và đúng từ khóa; them chỉ stamps, còn every month giữ tần suất.",
-      "prefix": "",
-      "suffix": "",
-      "blankAnswer": "Because my father is stamp-mad, he splashes out a lot of money on them every month"
+      "prefix": "Because my father is stamp-mad, he",
+      "suffix": "on them every month",
+      "blankAnswer": "splashes out a lot of money",
+      "keyword": "splashes",
+      "answerPrefix": "Because my father is stamp-mad, he",
+      "answerSuffix": "on them every month",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Because my father is stamp-mad, he splashes out a lot of money on them every month"
     },
     {
       "globalNumber": 97,
@@ -1149,11 +1183,17 @@
       "acceptedAnswers": [
         "in case we need"
       ],
-      "displayAnswer": "Please don’t leave the building in case we need to speak to you again.",
+      "displayAnswer": "in case we need",
       "explanation": "In case + mệnh đề nói biện pháp phòng khi điều gì xảy ra. Nhờ ở lại để phòng khi cần nói tiếp; không dùng if vì đó chỉ là điều kiện, không thể hiện rõ sự chuẩn bị trước.",
-      "prefix": "Please don’t leave the building",
-      "suffix": "to speak to you again.",
-      "blankAnswer": "in case we need"
+      "prefix": "Please don't leave the building",
+      "suffix": "to speak to you again",
+      "blankAnswer": "in case we need",
+      "keyword": "case",
+      "answerPrefix": "Please don't leave the building",
+      "answerSuffix": "to speak to you again",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "Please don't leave the building in case we need to speak to you again"
     },
     {
       "globalNumber": 98,
@@ -1162,11 +1202,17 @@
       "acceptedAnswers": [
         "is not likely to go"
       ],
-      "displayAnswer": "The meeting is not likely to go on for more than a few minutes.",
-      "explanation": "Be not likely to + V = có lẽ sẽ không. Go on nghĩa là kéo dài; on đã cho sau ô trống. Điền is not likely to go để giữ nguyên từ khóa likely và nghĩa thời lượng của cuộc họp.",
+      "displayAnswer": "is not likely to go",
+      "explanation": "Be not likely to + V = có lẽ sẽ không. Go on nghĩa là kéo dài; on đã cho sau ô trống.",
       "prefix": "The meeting",
-      "suffix": "on for more than a few minutes.",
-      "blankAnswer": "is not likely to go"
+      "suffix": "on for more than a few minutes",
+      "blankAnswer": "is not likely to go",
+      "keyword": "likely",
+      "answerPrefix": "The meeting",
+      "answerSuffix": "on for more than a few minutes",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "The meeting is not likely to go on for more than a few minutes"
     },
     {
       "globalNumber": 99,
@@ -1175,11 +1221,17 @@
       "acceptedAnswers": [
         "keep a straight face when"
       ],
-      "displayAnswer": "I couldn’t keep a straight face when he told me of his plan.",
+      "displayAnswer": "keep a straight face when",
       "explanation": "Keep a straight face = không cười/giữ mặt nghiêm. Couldn’t giữ ý không nhịn được cười; when nối sự việc nghe kế hoạch, và he told… đã có phía sau.",
-      "prefix": "I couldn’t",
-      "suffix": "he told me of his plan.",
-      "blankAnswer": "keep a straight face when"
+      "prefix": "I couldn't",
+      "suffix": "he told me of his plan",
+      "blankAnswer": "keep a straight face when",
+      "keyword": "straight",
+      "answerPrefix": "I couldn't",
+      "answerSuffix": "he told me of his plan",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "I couldn't keep a straight face when he told me of his plan"
     },
     {
       "globalNumber": 100,
@@ -1188,17 +1240,23 @@
       "acceptedAnswers": [
         "is no guarantee that you"
       ],
-      "displayAnswer": "There is no guarantee that you will get the job.",
+      "displayAnswer": "is no guarantee that you",
       "explanation": "There is no guarantee that… = không có gì bảo đảm rằng…. Cần you trước will get the job đã cho; không dùng I guarantee vì sẽ đảo ngược ý không thể hứa.",
       "prefix": "There",
-      "suffix": "will get the job.",
-      "blankAnswer": "is no guarantee that you"
+      "suffix": "will get the job",
+      "blankAnswer": "is no guarantee that you",
+      "keyword": "guarantee",
+      "answerPrefix": "There",
+      "answerSuffix": "will get the job",
+      "minWords": 2,
+      "maxWords": 6,
+      "fullSentence": "There is no guarantee that you will get the job"
     }
   ],
   "reviewApproved": true,
   "updated": "2026-10-16",
   "scienceReferences": [],
-  "contentRevision": "2026-10-17-authentic",
+  "contentRevision": "2026-10-21-word-limits",
   "readingSources": [
     {
       "part": "II.2",

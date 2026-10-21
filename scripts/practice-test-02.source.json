@@ -1030,106 +1030,196 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "On no account are the contestants to be disturbed."
+        "no account are the contestants"
       ],
-      "displayAnswer": "On no account are the contestants to be disturbed.",
-      "explanation": "Cấu trúc trang trọng: to be + to V → sẽ làm gì / phải làm gì"
+      "displayAnswer": "no account are the contestants",
+      "explanation": "Cấu trúc trang trọng: to be + to V → sẽ làm gì / phải làm gì",
+      "keyword": "ACCOUNT",
+      "answerPrefix": "On",
+      "answerSuffix": "to be disturbed",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "On",
+      "suffix": "to be disturbed",
+      "blankAnswer": "no account are the contestants",
+      "fullSentence": "On no account are the contestants to be disturbed"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "Despite his nervousness, he came to terms with the situation."
+        "he came to terms with"
       ],
-      "displayAnswer": "Despite his nervousness, he came to terms with the situation.",
-      "explanation": "Come to terms with something nghĩa là chấp nhận và đối mặt với một tình huống khó khăn; giữ nguyên despite his nervousness để diễn tả tương phản."
+      "displayAnswer": "he came to terms with",
+      "explanation": "Come to terms with something nghĩa là chấp nhận và đối mặt với một tình huống khó khăn; giữ nguyên despite his nervousness để diễn tả tương phản.",
+      "keyword": "TERMS",
+      "answerPrefix": "Despite his nervousness,",
+      "answerSuffix": "the situation",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Despite his nervousness,",
+      "suffix": "the situation",
+      "blankAnswer": "he came to terms with",
+      "fullSentence": "Despite his nervousness, he came to terms with the situation"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "We finally succeeded in persuading my dad to let us go to the concert."
+        "succeeded in persuading my dad"
       ],
-      "displayAnswer": "We finally succeeded in persuading my dad to let us go to the concert.",
-      "explanation": "Manage to persuade được chuyển sang succeed in + V-ing: succeeded in persuading. Cấu trúc persuade somebody to do something được giữ nguyên."
+      "displayAnswer": "succeeded in persuading my dad",
+      "explanation": "Manage to persuade được chuyển sang succeed in + V-ing: succeeded in persuading. Cấu trúc persuade somebody to do something được giữ nguyên.",
+      "keyword": "IN",
+      "answerPrefix": "We finally",
+      "answerSuffix": "to let us go to the concert",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "We finally",
+      "suffix": "to let us go to the concert",
+      "blankAnswer": "succeeded in persuading my dad",
+      "fullSentence": "We finally succeeded in persuading my dad to let us go to the concert"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "The interviewee admitted having no knowledge about / of computer programming."
+        "having no knowledge of computer programming",
+        "having no knowledge about computer programming"
       ],
-      "displayAnswer": "The interviewee admitted having no knowledge about / of computer programming.",
-      "explanation": "Admit + V-ing diễn tả thừa nhận một việc; having no knowledge about/of tương đương know nothing about. Cả about và of đều đi được với knowledge trong ngữ cảnh này."
+      "displayAnswer": "having no knowledge of computer programming / having no knowledge about computer programming",
+      "explanation": "Admit + V-ing diễn tả thừa nhận một việc; having no knowledge about/of tương đương know nothing about. Cả about và of đều đi được với knowledge trong ngữ cảnh này.",
+      "keyword": "HAVING",
+      "answerPrefix": "The interviewee admitted",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "The interviewee admitted",
+      "suffix": "",
+      "blankAnswer": "having no knowledge of computer programming",
+      "fullSentence": "The interviewee admitted having no knowledge of computer programming"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "Our hotel booking hasn’t been confirmed yet."
+        "hasn't been confirmed yet"
       ],
-      "displayAnswer": "Our hotel booking hasn’t been confirmed yet.",
-      "explanation": "Present perfect passive của confirm là has not/hasn’t been confirmed. Yet được giữ ở cuối để nói việc xác nhận đến nay vẫn chưa xảy ra."
+      "displayAnswer": "hasn't been confirmed yet",
+      "explanation": "Present perfect passive của confirm là has not/hasn’t been confirmed. Yet được giữ ở cuối để nói việc xác nhận đến nay vẫn chưa xảy ra.",
+      "keyword": "BEEN",
+      "answerPrefix": "Our hotel booking",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Our hotel booking",
+      "suffix": "",
+      "blankAnswer": "hasn't been confirmed yet",
+      "fullSentence": "Our hotel booking hasn't been confirmed yet"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "There was a fall in the number of people applying for university grants last year."
+        "was a fall in the number"
       ],
-      "displayAnswer": "There was a fall in the number of people applying for university grants last year.",
-      "explanation": "grant (n): học bổng; khoản trợ cấp"
+      "displayAnswer": "was a fall in the number",
+      "explanation": "grant (n): học bổng; khoản trợ cấp",
+      "keyword": "FALL",
+      "answerPrefix": "There",
+      "answerSuffix": "of people applying for university grants last year",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "There",
+      "suffix": "of people applying for university grants last year",
+      "blankAnswer": "was a fall in the number",
+      "fullSentence": "There was a fall in the number of people applying for university grants last year"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "Mr Conrad's son is making a name for himself as an artist."
+        "a name for himself"
       ],
-      "displayAnswer": "Mr Conrad's son is making a name for himself as an artist.",
-      "explanation": "make a name for oneself as…: trở nên nổi tiếng như là…"
+      "displayAnswer": "a name for himself",
+      "explanation": "make a name for oneself as…: trở nên nổi tiếng như là…",
+      "keyword": "NAME",
+      "answerPrefix": "Mr Conrad's son is making",
+      "answerSuffix": "as an artist",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Mr Conrad's son is making",
+      "suffix": "as an artist",
+      "blankAnswer": "a name for himself",
+      "fullSentence": "Mr Conrad's son is making a name for himself as an artist"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "This box is really heavy so I'd be grateful if you could help me carry it to the car.",
-        "This box is really heavy so I would be grateful if you could help me carry it to the car.",
-        "This box is really heavy so I'd feel grateful if you could help me carry it to the car.",
-        "This box is really heavy so I would feel grateful if you could help me carry it to the car."
+        "be grateful if you could",
+        "feel grateful if you could"
       ],
-      "displayAnswer": "This box is really heavy so I'd be grateful if you could help me carry it to the car.\n/\nThis box is really heavy so I would be grateful if you could help me carry it to the car.\n/\nThis box is really heavy so I'd feel grateful if you could help me carry it to the car.\n/\nThis box is really heavy so I would feel grateful if you could help me carry it to the car.",
-      "explanation": "Ý cần giữ là người nói sẽ biết ơn nếu người nghe giúp. Dạng tự nhiên nhất là I’d be grateful if you could help me.... Các tổ hợp trong khóa nguồn cần được thu hẹp trước khi chấm."
+      "displayAnswer": "be grateful if you could / feel grateful if you could",
+      "explanation": "Ý cần giữ là người nói sẽ biết ơn nếu người nghe giúp. Dạng tự nhiên nhất là I’d be grateful if you could help me… Các tổ hợp trong khóa nguồn cần được thu hẹp trước khi chấm.",
+      "keyword": "GRATEFUL",
+      "answerPrefix": "This box is really heavy so I'd",
+      "answerSuffix": "help me carry it to the car",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "This box is really heavy so I'd",
+      "suffix": "help me carry it to the car",
+      "blankAnswer": "be grateful if you could",
+      "fullSentence": "This box is really heavy so I'd be grateful if you could help me carry it to the car"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "“Excuse me madam, but does this bag belong to you?” the policeman asked."
+        "does this bag belong to you"
       ],
-      "displayAnswer": "“Excuse me madam, but does this bag belong to you?” the policeman asked.",
-      "explanation": "Câu hỏi trực tiếp dùng belong to để diễn đạt sở hữu: Does this bag belong to you? Trật tự câu hỏi phải có does trước chủ ngữ this bag."
+      "displayAnswer": "does this bag belong to you",
+      "explanation": "Câu hỏi trực tiếp dùng belong to để diễn đạt sở hữu: Does this bag belong to you? Trật tự câu hỏi phải có does trước chủ ngữ this bag.",
+      "keyword": "BELONG",
+      "answerPrefix": "“Excuse me madam, but",
+      "answerSuffix": "?” the policeman asked",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "“Excuse me madam, but",
+      "suffix": "?” the policeman asked",
+      "blankAnswer": "does this bag belong to you",
+      "fullSentence": "“Excuse me madam, but does this bag belong to you ?” the policeman asked"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "By the time we got to the sale, there was [no single book] / [not a single book] left."
+        "was not a single book",
+        "was no single book"
       ],
-      "displayAnswer": "By the time we got to the sale, there was [no single book] / [not a single book] left.",
-      "explanation": "Every book had been sold tương đương there was no/not a single book left. Single nhấn mạnh rằng không còn dù chỉ một cuốn."
+      "displayAnswer": "was not a single book / was no single book",
+      "explanation": "Every book had been sold tương đương there was no/not a single book left. Single nhấn mạnh rằng không còn dù chỉ một cuốn.",
+      "keyword": "SINGLE",
+      "answerPrefix": "By the time we got to the sale, there",
+      "answerSuffix": "left",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "By the time we got to the sale, there",
+      "suffix": "left",
+      "blankAnswer": "was not a single book",
+      "fullSentence": "By the time we got to the sale, there was not a single book left"
     }
   ],
   "publishReady": true,
-  "contentRevision": "2026-10-17-authentic",
+  "contentRevision": "2026-10-21-word-limits",
   "readingSources": []
 }

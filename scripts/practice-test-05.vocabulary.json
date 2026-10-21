@@ -10,7 +10,11 @@
       "usage": "interact with somebody; intervene in a dispute",
       "family": "interaction (n); intervention (n)",
       "example": "Students interact with their partners during the task.",
-      "translation": "Học sinh tương tác với bạn cùng cặp trong hoạt động."
+      "translation": "Học sinh tương tác với bạn cùng cặp trong hoạt động.",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 7,
@@ -21,7 +25,11 @@
       "usage": "through an oversight; an accidental oversight",
       "family": "overlook (v: bỏ sót); oversight còn có nghĩa giám sát",
       "example": "The name was missing through an oversight.",
-      "translation": "Tên bị thiếu do sơ suất."
+      "translation": "Tên bị thiếu do sơ suất.",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ]
     },
     {
       "question": 9,
@@ -32,7 +40,11 @@
       "usage": "come in for criticism/praise",
       "family": "criticise/criticize (v); criticism (n); critical (adj)",
       "example": "The plan came in for criticism from residents.",
-      "translation": "Kế hoạch bị người dân chỉ trích."
+      "translation": "Kế hoạch bị người dân chỉ trích.",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 13,
@@ -43,7 +55,11 @@
       "usage": "pass an exam with flying colours",
       "family": "colours (Anh); colors (Mỹ); không dịch từng từ",
       "example": "She passed the entrance exam with flying colours.",
-      "translation": "Cô ấy thi đỗ đầu vào với thành tích xuất sắc."
+      "translation": "Cô ấy thi đỗ đầu vào với thành tích xuất sắc.",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ]
     },
     {
       "question": 14,
@@ -54,7 +70,11 @@
       "usage": "give/receive individual attention",
       "family": "individual (adj/n); individually (adv)",
       "example": "Each learner receives individual attention.",
-      "translation": "Mỗi học viên đều được quan tâm riêng."
+      "translation": "Mỗi học viên đều được quan tâm riêng.",
+      "teacherSelected": true,
+      "questions": [
+        14
+      ]
     },
     {
       "question": 15,
@@ -65,7 +85,11 @@
       "usage": "resort to force; resort to doing something",
       "family": "a last resort (n: giải pháp cuối); resolve (v: giải quyết)",
       "example": "They resolved the dispute without resorting to threats.",
-      "translation": "Họ giải quyết bất đồng mà không phải đe dọa."
+      "translation": "Họ giải quyết bất đồng mà không phải đe dọa.",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -76,7 +100,11 @@
       "usage": "be concerned with a subject",
       "family": "concerned about: lo lắng về; concerning: về",
       "example": "This chapter is concerned with the causes of pollution.",
-      "translation": "Chương này bàn về nguyên nhân ô nhiễm."
+      "translation": "Chương này bàn về nguyên nhân ô nhiễm.",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 17,
@@ -87,7 +115,11 @@
       "usage": "help yourself to some food",
       "family": "helpful (adj: hay giúp đỡ); helpless (adj: bất lực)",
       "example": "Please help yourself to some fruit.",
-      "translation": "Bạn cứ tự nhiên lấy hoa quả."
+      "translation": "Bạn cứ tự nhiên lấy hoa quả.",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 19,
@@ -98,7 +130,11 @@
       "usage": "a vitamin supplement; supplement an income",
       "family": "supplementary (adj); component (n: bộ phận cấu thành)",
       "example": "The appendix supplements the main report.",
-      "translation": "Phụ lục bổ sung cho báo cáo chính."
+      "translation": "Phụ lục bổ sung cho báo cáo chính.",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 21,
@@ -109,7 +145,11 @@
       "usage": "contribute to a problem; stem from a cause",
       "family": "contribution (n); contributor (n)",
       "example": "Poor planning contributed to the delay.",
-      "translation": "Việc lập kế hoạch kém góp phần gây chậm trễ."
+      "translation": "Việc lập kế hoạch kém góp phần gây chậm trễ.",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 22,
@@ -120,7 +160,11 @@
       "usage": "be charged with bribery; offer a bribe",
       "family": "bribe (n/v); bribery thường không đếm được",
       "example": "The official was charged with bribery.",
-      "translation": "Viên chức bị buộc tội hối lộ."
+      "translation": "Viên chức bị buộc tội hối lộ.",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -131,7 +175,11 @@
       "usage": "reap the rewards of hard work",
       "family": "reap (v); reward (n/v); bear fruit: có kết quả",
       "example": "The team is reaping the rewards of careful preparation.",
-      "translation": "Nhóm đang hưởng thành quả từ sự chuẩn bị kỹ."
+      "translation": "Nhóm đang hưởng thành quả từ sự chuẩn bị kỹ.",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -142,7 +190,11 @@
       "usage": "at risk from disease; in danger of losing something",
       "family": "risky (adj); dangerous (adj); under threat",
       "example": "The village is at risk from flooding.",
-      "translation": "Ngôi làng có nguy cơ bị lũ đe dọa."
+      "translation": "Ngôi làng có nguy cơ bị lũ đe dọa.",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 26,
@@ -153,7 +205,11 @@
       "usage": "give something serious consideration",
       "family": "consider (v); considerate: chu đáo; considerable: đáng kể",
       "example": "We will give your proposal serious consideration.",
-      "translation": "Chúng tôi sẽ cân nhắc kỹ đề xuất của bạn."
+      "translation": "Chúng tôi sẽ cân nhắc kỹ đề xuất của bạn.",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ]
     },
     {
       "question": 28,
@@ -164,7 +220,11 @@
       "usage": "be strictly forbidden; strictly prohibit something",
       "family": "strict (adj); strictly (adv); forbid–forbade–forbidden",
       "example": "Smoking is strictly forbidden in this room.",
-      "translation": "Hút thuốc bị nghiêm cấm trong phòng này."
+      "translation": "Hút thuốc bị nghiêm cấm trong phòng này.",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 29,
@@ -175,7 +235,11 @@
       "usage": "in the interest of public safety",
       "family": "interest: lợi ích/sự quan tâm; interested: thấy hứng thú",
       "example": "The road was closed in the interest of public safety.",
-      "translation": "Đường được đóng vì an toàn cộng đồng."
+      "translation": "Đường được đóng vì an toàn cộng đồng.",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 30,
@@ -186,7 +250,11 @@
       "usage": "in view of + danh từ",
       "family": "with a view to + V-ing: nhằm mục đích",
       "example": "In view of the evidence, we changed our decision.",
-      "translation": "Xét bằng chứng, chúng tôi đổi quyết định."
+      "translation": "Xét bằng chứng, chúng tôi đổi quyết định.",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 32,
@@ -197,7 +265,11 @@
       "usage": "stand by one’s word; go back on one’s word",
       "family": "stand–stood–stood; promise (n/v)",
       "example": "She stood by her word and paid on time.",
-      "translation": "Cô ấy giữ lời và thanh toán đúng hạn."
+      "translation": "Cô ấy giữ lời và thanh toán đúng hạn.",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 33,
@@ -208,7 +280,11 @@
       "usage": "a breakthrough in research; make a breakthrough",
       "family": "break through (v); break-in: vụ đột nhập",
       "example": "The discovery was a breakthrough in materials science.",
-      "translation": "Khám phá là bước đột phá trong khoa học vật liệu."
+      "translation": "Khám phá là bước đột phá trong khoa học vật liệu.",
+      "teacherSelected": true,
+      "questions": [
+        33
+      ]
     },
     {
       "question": 35,
@@ -219,7 +295,11 @@
       "usage": "pull out of a deal/competition",
       "family": "pull off: làm thành công; pull through: vượt nguy khó",
       "example": "The investor pulled out of the deal.",
-      "translation": "Nhà đầu tư rút khỏi thương vụ."
+      "translation": "Nhà đầu tư rút khỏi thương vụ.",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 36,
@@ -230,7 +310,11 @@
       "usage": "enthusiasm for learning; show enthusiasm",
       "family": "enthuse (v); enthusiastic (adj); enthusiastically (adv)",
       "example": "Her enthusiasm for history inspired the class.",
-      "translation": "Sự say mê lịch sử của cô ấy truyền cảm hứng cho lớp."
+      "translation": "Sự say mê lịch sử của cô ấy truyền cảm hứng cho lớp.",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 38,
@@ -241,7 +325,11 @@
       "usage": "a persuasive argument; persuade someone to do something",
       "family": "persuasion (n); persuasively (adv)",
       "example": "He gave a persuasive explanation of his plan.",
-      "translation": "Anh ấy giải thích kế hoạch một cách thuyết phục."
+      "translation": "Anh ấy giải thích kế hoạch một cách thuyết phục.",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 40,
@@ -252,7 +340,11 @@
       "usage": "a resourceful person; be resourceful in a crisis",
       "family": "resource (n: nguồn lực); resourcefulness (n)",
       "example": "The resourceful guide found another route.",
-      "translation": "Hướng dẫn viên tháo vát tìm được lối khác."
+      "translation": "Hướng dẫn viên tháo vát tìm được lối khác.",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 46,
@@ -263,7 +355,11 @@
       "usage": "reunite with family; a family reunion",
       "family": "reunify: tái thống nhất một quốc gia/tổ chức",
       "example": "The family reunited after years apart.",
-      "translation": "Gia đình đoàn tụ sau nhiều năm xa cách."
+      "translation": "Gia đình đoàn tụ sau nhiều năm xa cách.",
+      "teacherSelected": true,
+      "questions": [
+        46
+      ]
     },
     {
       "question": 48,
@@ -274,7 +370,11 @@
       "usage": "pay respects to somebody",
       "family": "respect (n/v); respectful: kính trọng; respectable: đáng kính",
       "example": "They visited the memorial to pay their respects.",
-      "translation": "Họ đến đài tưởng niệm để bày tỏ lòng thành kính."
+      "translation": "Họ đến đài tưởng niệm để bày tỏ lòng thành kính.",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ]
     },
     {
       "question": 56,
@@ -285,7 +385,11 @@
       "usage": "stock up on food/supplies; stock the cupboard with food",
       "family": "stock (n/v); supplies (plural noun: đồ dùng, nguồn dự trữ)",
       "example": "We stocked up on healthy snacks for the week.",
-      "translation": "Chúng tôi chuẩn bị sẵn đồ ăn nhẹ lành mạnh cho cả tuần."
+      "translation": "Chúng tôi chuẩn bị sẵn đồ ăn nhẹ lành mạnh cho cả tuần.",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 60,
@@ -296,7 +400,11 @@
       "usage": "be tempted by something; be tempted to do something; resist temptation",
       "family": "tempt (v); temptation (n); tempted/tempting (adj)",
       "example": "I was tempted to buy another snack.",
-      "translation": "Tôi đã muốn mua thêm một món ăn nhẹ dù không thật sự cần."
+      "translation": "Tôi đã muốn mua thêm một món ăn nhẹ dù không thật sự cần.",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 90,

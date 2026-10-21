@@ -10,7 +10,11 @@
       "usage": "piece together evidence/a story; không chỉ dùng cho đồ vật.",
       "example": "Detectives pieced together the events.",
       "translation": "Các thám tử ghép các dữ kiện để hiểu diễn biến.",
-      "family": "piece (n/v): mảnh; ghép lại; pieced, piecing."
+      "family": "piece (n/v): mảnh; ghép lại; pieced, piecing.",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 5,
@@ -21,7 +25,11 @@
       "usage": "Enlist the help of somebody; enlist somebody’s help. Recruit thiên về tuyển dụng.",
       "example": "She enlisted her friends’ help.",
       "translation": "Cô ấy nhờ bạn bè giúp.",
-      "family": "enlist (v): nhờ/huy động; enlistment (n): sự gia nhập/tuyển mộ."
+      "family": "enlist (v): nhờ/huy động; enlistment (n): sự gia nhập/tuyển mộ.",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 8,
@@ -32,7 +40,11 @@
       "usage": "Distinct = rõ ràng/khác biệt; distinctive = có nét đặc trưng, không phải xuất sắc.",
       "example": "There is a distinct possibility of rain.",
       "translation": "Có khả năng rõ rệt trời sẽ mưa.",
-      "family": "distinct (a), distinctly (adv), distinction (n); distinctive (a): có nét riêng."
+      "family": "distinct (a), distinctly (adv), distinction (n); distinctive (a): có nét riêng.",
+      "teacherSelected": true,
+      "questions": [
+        8
+      ]
     },
     {
       "question": 9,
@@ -43,7 +55,11 @@
       "usage": "Terms ở số nhiều trong cụm này. On speaking terms = vẫn nói chuyện được với nhau.",
       "example": "I am on good terms with my neighbours.",
       "translation": "Tôi có quan hệ tốt với hàng xóm.",
-      "family": "term (n) ở đây dùng số nhiều terms; không dịch là học kỳ."
+      "family": "term (n) ở đây dùng số nhiều terms; không dịch là học kỳ.",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 11,
@@ -54,7 +70,11 @@
       "usage": "Thường dùng trong câu phủ định: not…as yet; gần nghĩa so far.",
       "example": "We have not received a reply as yet.",
       "translation": "Đến lúc này chúng tôi chưa nhận hồi âm.",
-      "family": "yet (adv): vẫn chưa/cho đến nay; as yet là cụm cố định."
+      "family": "yet (adv): vẫn chưa/cho đến nay; as yet là cụm cố định.",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 12,
@@ -65,7 +85,11 @@
       "usage": "Nêu giới hạn hiểu biết. As far as I am concerned thường nêu quan điểm: về phần tôi.",
       "example": "As far as I am aware, nobody has left.",
       "translation": "Theo tôi biết thì chưa ai rời đi.",
-      "family": "aware (a): biết; awareness (n): sự nhận thức; unaware (a): không biết."
+      "family": "aware (a): biết; awareness (n): sự nhận thức; unaware (a): không biết.",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 17,
@@ -76,7 +100,11 @@
       "usage": "Theo sau là danh từ hoặc V-ing; to là giới từ. Face up to a problem/the truth.",
       "example": "We must face up to our mistakes.",
       "translation": "Chúng ta phải thừa nhận và đối diện sai lầm.",
-      "family": "face (v): đối mặt; faced, facing. Giữ đủ up to."
+      "family": "face (v): đối mặt; faced, facing. Giữ đủ up to.",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 20,
@@ -87,7 +115,11 @@
       "usage": "Come in for + criticism/praise; criticism thường không đếm được khi nói chung.",
       "example": "The plan came in for criticism.",
       "translation": "Kế hoạch bị chỉ trích.",
-      "family": "criticism (n), criticise/criticize (v), critical (a)."
+      "family": "criticism (n), criticise/criticize (v), critical (a).",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 21,
@@ -98,7 +130,11 @@
       "usage": "Dùng trước một đánh giá chung có thể có ngoại lệ; gần nghĩa generally/on the whole.",
       "example": "By and large, the project went well.",
       "translation": "Nhìn chung dự án diễn ra tốt.",
-      "family": "Cụm trạng từ cố định; không biến đổi and large."
+      "family": "Cụm trạng từ cố định; không biến đổi and large.",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 22,
@@ -109,7 +145,11 @@
       "usage": "Không đổi trật tự các từ. Gần nghĩa from time to time/occasionally.",
       "example": "Every so often, we eat out.",
       "translation": "Thỉnh thoảng chúng tôi ăn ngoài.",
-      "family": "often (adv): thường xuyên; every so often giảm tần suất thành thỉnh thoảng."
+      "family": "often (adv): thường xuyên; every so often giảm tần suất thành thỉnh thoảng.",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -120,7 +160,11 @@
       "usage": "A foolproof method/device. Phân biệt foolhardy = liều lĩnh; waterproof = chống nước.",
       "example": "The instructions are almost foolproof.",
       "translation": "Hướng dẫn dễ làm theo đến mức gần như không thể làm sai.",
-      "family": "fool (n): kẻ ngốc; foolproof (a): khó dùng sai; foolhardy (a): liều lĩnh."
+      "family": "fool (n): kẻ ngốc; foolproof (a): khó dùng sai; foolhardy (a): liều lĩnh.",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 24,
@@ -131,7 +175,11 @@
       "usage": "Thành ngữ diễn đạt nỗi buồn khi làm việc phải làm, như chia tay hoặc thông báo tin xấu.",
       "example": "She left with a heavy heart.",
       "translation": "Cô ấy rời đi với lòng nặng trĩu.",
-      "family": "heart (n): trái tim; heavy-hearted (a): buồn nặng lòng."
+      "family": "heart (n): trái tim; heavy-hearted (a): buồn nặng lòng.",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ]
     },
     {
       "question": 25,
@@ -142,7 +190,11 @@
       "usage": "An overdraft; an overdraft limit; extend an overdraft. Balance = số dư, không phải khoản được vay vượt số dư.",
       "example": "The bank increased his overdraft limit.",
       "translation": "Ngân hàng tăng hạn mức thấu chi của anh ấy.",
-      "family": "overdraw (v): rút quá số dư; overdrawn (a): đã thấu chi; overdraft (n)."
+      "family": "overdraw (v): rút quá số dư; overdrawn (a): đã thấu chi; overdraft (n).",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 27,
@@ -153,7 +205,11 @@
       "usage": "Go to the ends of the earth to V/for somebody. Earth đi với the trong thành ngữ.",
       "example": "She would go to the ends of the earth for her children.",
       "translation": "Cô ấy sẵn sàng làm mọi điều vì con.",
-      "family": "earth (n): Trái Đất; giữ the và ends ở số nhiều."
+      "family": "earth (n): Trái Đất; giữ the và ends ở số nhiều.",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ]
     },
     {
       "question": 28,
@@ -164,7 +220,11 @@
       "usage": "A blessing = điều may mắn; in disguise = dưới vẻ ngoài khác. Dùng khi nhìn lại một sự việc.",
       "example": "Missing the bus was a blessing in disguise.",
       "translation": "Lỡ xe buýt hóa ra lại là điều may.",
-      "family": "bless (v), blessing (n); disguise (n/v): sự ngụy trang/ngụy trang."
+      "family": "bless (v), blessing (n); disguise (n/v): sự ngụy trang/ngụy trang.",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 29,
@@ -175,7 +235,11 @@
       "usage": "Viết tắt GP; số nhiều general practitioners. Practice medicine = hành nghề y; practitioner = người hành nghề.",
       "example": "You should consult a general practitioner.",
       "translation": "Bạn nên hỏi ý kiến bác sĩ đa khoa.",
-      "family": "practice (n), practise (v, Anh)/practice (v, Mỹ), practitioner (n)."
+      "family": "practice (n), practise (v, Anh)/practice (v, Mỹ), practitioner (n).",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ]
     },
     {
       "question": 35,
@@ -186,7 +250,11 @@
       "usage": "Expectancy chỉ mức dự kiến; không thay bằng expectation trong cụm life expectancy.",
       "example": "Life expectancy has increased.",
       "translation": "Tuổi thọ kỳ vọng đã tăng.",
-      "family": "expect (v), expectancy (n), expectation (n)."
+      "family": "expect (v), expectancy (n), expectation (n).",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 37,
@@ -197,7 +265,11 @@
       "usage": "Rise to stardom; achieve stardom. Star là người nổi tiếng; stardom là trạng thái/địa vị.",
       "example": "The role brought her international stardom.",
       "translation": "Vai diễn giúp cô nổi tiếng toàn thế giới.",
-      "family": "star (n/v), stardom (n); stardom không đếm được."
+      "family": "star (n/v), stardom (n); stardom không đếm được.",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 38,
@@ -208,7 +280,11 @@
       "usage": "Phenomenal success/growth; phenomenon (số ít), phenomena (số nhiều) = hiện tượng.",
       "example": "The book enjoyed phenomenal success.",
       "translation": "Cuốn sách đạt thành công phi thường.",
-      "family": "phenomenon (n), phenomena (số nhiều), phenomenal (a), phenomenally (adv)."
+      "family": "phenomenon (n), phenomena (số nhiều), phenomenal (a), phenomenally (adv).",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 40,
@@ -219,7 +295,11 @@
       "usage": "A lasting impression/effect/relationship. Phân biệt lastly = cuối cùng, dùng để sắp xếp ý.",
       "example": "The visit left a lasting impression.",
       "translation": "Chuyến thăm để lại ấn tượng lâu dài.",
-      "family": "last (v): kéo dài; lasting (a); lastly (adv): cuối cùng."
+      "family": "last (v): kéo dài; lasting (a); lastly (adv): cuối cùng.",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 41,
@@ -230,7 +310,11 @@
       "usage": "Be suited/unsuited to a role/lifestyle. Suitable là tính từ khác: suitable for somebody/something.",
       "example": "He is unsuited to office work.",
       "translation": "Anh ấy không hợp với công việc văn phòng.",
-      "family": "suit (v), suited/unsuited (a), suitable/unsuitable (a)."
+      "family": "suit (v), suited/unsuited (a), suitable/unsuitable (a).",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ]
     },
     {
       "question": 42,
@@ -241,7 +325,11 @@
       "usage": "Danh từ số nhiều contemporaries. Nghĩa tính từ phụ thuộc ngữ cảnh: cùng thời hoặc hiện đại.",
       "example": "She was admired by her contemporaries.",
       "translation": "Cô ấy được những người cùng thời ngưỡng mộ.",
-      "family": "contemporary (n/a); contemporaries là số nhiều của danh từ."
+      "family": "contemporary (n/a); contemporaries là số nhiều của danh từ.",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 45,
@@ -252,7 +340,11 @@
       "usage": "Go + phân từ/tính từ mô tả tình trạng: go unnoticed = không được chú ý; unanswered khác unanswerable = không thể trả lời.",
       "example": "His questions went unanswered.",
       "translation": "Các câu hỏi của anh ấy không được trả lời.",
-      "family": "answer (n/v), answered/unanswered (phân từ), unanswerable (a)."
+      "family": "answer (n/v), answered/unanswered (phân từ), unanswerable (a).",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 60,
@@ -263,7 +355,11 @@
       "usage": "Improve (v), improvement (n). An improvement on last year = tốt hơn năm ngoái; improvement in quality = cải thiện về chất lượng.",
       "example": "This version is an improvement on the old one.",
       "translation": "Bản này tốt hơn bản cũ.",
-      "family": "improve (v), improvement (n), improved (a)."
+      "family": "improve (v), improvement (n), improved (a).",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 70,
@@ -274,7 +370,11 @@
       "usage": "Alternative dùng như danh từ đếm được; nhớ to. As an alternative = như một phương án khác.",
       "example": "Cycling is an alternative to driving.",
       "translation": "Đi xe đạp là một lựa chọn thay cho lái xe.",
-      "family": "alternative (n/a), alternatively (adv): hoặc, theo cách khác."
+      "family": "alternative (n/a), alternatively (adv): hoặc, theo cách khác.",
+      "teacherSelected": true,
+      "questions": [
+        70
+      ]
     },
     {
       "question": 74,
@@ -285,7 +385,11 @@
       "usage": "Precise information/measurements; precisely (adv), precision (n). Accurate nhấn mạnh đúng; precise nhấn mạnh sự cụ thể/chính xác.",
       "example": "Please give a precise location.",
       "translation": "Hãy cho biết vị trí chính xác.",
-      "family": "precise (a), precisely (adv), precision (n); imprecise (a): thiếu chính xác."
+      "family": "precise (a), precisely (adv), precision (n); imprecise (a): thiếu chính xác.",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ]
     },
     {
       "question": 77,
@@ -296,7 +400,11 @@
       "usage": "Indispensable to/for somebody/something; gần nghĩa essential. Dispensable = có thể bỏ hoặc thay thế.",
       "example": "Clean water is indispensable to life.",
       "translation": "Nước sạch là thứ không thể thiếu cho sự sống.",
-      "family": "indispensable (a), indispensability (n); dispensable (a): có thể thiếu."
+      "family": "indispensable (a), indispensability (n); dispensable (a): có thể thiếu.",
+      "teacherSelected": true,
+      "questions": [
+        77
+      ]
     },
     {
       "question": 83,
@@ -307,7 +415,11 @@
       "usage": "Be at a loss to explain/understand; be at a loss for words = không biết nói gì. Không hiểu loss là mất đồ theo nghĩa đen ở đây.",
       "example": "I am at a loss to explain the result.",
       "translation": "Tôi không biết giải thích kết quả thế nào.",
-      "family": "lose (v), lost (quá khứ/phân từ), loss (n); at a loss là cụm cố định."
+      "family": "lose (v), lost (quá khứ/phân từ), loss (n); at a loss là cụm cố định.",
+      "teacherSelected": true,
+      "questions": [
+        83
+      ]
     },
     {
       "question": 96,
@@ -318,7 +430,11 @@
       "usage": "Thường chỉ phản ứng quá gắt trước lời nói/hành động. Throat = cổ họng nhưng cả cụm mang nghĩa bóng.",
       "example": "Don’t jump down my throat; I was only asking.",
       "translation": "Đừng quát tôi; tôi chỉ hỏi thôi.",
-      "family": "jump (v): jumped/jumping; throat (n): cổ họng; nghĩa của cả cụm là bóng."
+      "family": "jump (v): jumped/jumping; throat (n): cổ họng; nghĩa của cả cụm là bóng.",
+      "teacherSelected": true,
+      "questions": [
+        96
+      ]
     },
     {
       "question": 100,
@@ -329,7 +445,11 @@
       "usage": "Get my/your/his head around/round something. Sau can/can’t dùng get nguyên mẫu; around và round đều dùng được.",
       "example": "I can’t get my head around this rule.",
       "translation": "Tôi chưa hiểu nổi quy tắc này.",
-      "family": "head (n): đầu; get/got/gotten tùy biến thể. Thay one’s bằng my/your/his…"
+      "family": "head (n): đầu; get/got/gotten tùy biến thể. Thay one’s bằng my/your/his…",
+      "teacherSelected": true,
+      "questions": [
+        100
+      ]
     }
   ]
 }

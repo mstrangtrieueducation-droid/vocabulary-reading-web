@@ -1059,70 +1059,99 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "in putting out the fire after five hours",
-        "in extinguishing the fire after five hours"
+        "succeeded in putting out the fire",
+        "succeeded in extinguishing the fire"
       ],
-      "displayAnswer": "in putting out the fire after five hours / in extinguishing the fire after five hours",
-      "explanation": "Succeed in + V-ing = thành công trong việc gì. Succeeded in putting out/extinguishing thay cho managed to put out. Cần giữ after five hours để không mất thông tin về thời gian dập lửa.",
+      "displayAnswer": "succeeded in putting out the fire / succeeded in extinguishing the fire",
+      "explanation": "Succeed in + V-ing = thành công trong việc gì. Succeeded in putting out/extinguishing thay cho managed to put out.",
       "prefix": "The firemen",
-      "suffix": "",
-      "fullSentence": "The firemen succeeded in putting out the fire after five hours."
+      "suffix": "after five hours",
+      "fullSentence": "The firemen succeeded in putting out the fire after five hours",
+      "keyword": "SUCCEEDED",
+      "answerPrefix": "The firemen",
+      "answerSuffix": "after five hours",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "succeeded in putting out the fire"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "Tom of stealing some money from his wallet",
-        "Tom of having stolen some money from his wallet"
+        "accused Tom of stealing",
+        "accused Tom of having stolen"
       ],
-      "displayAnswer": "Tom of stealing some money from his wallet / Tom of having stolen some money from his wallet",
-      "explanation": "Accuse somebody of doing/having done something là buộc tội ai làm gì. Tom là người bị buộc tội; his wallet quy chiếu ví của Mr. Smith trong câu. Không dùng accuse somebody for theo cấu trúc này.",
+      "displayAnswer": "accused Tom of stealing / accused Tom of having stolen",
+      "explanation": "Accuse somebody of doing/having done something là buộc tội ai làm gì. Tom là người bị buộc tội; his wallet quy chiếu ví của Mr.",
       "prefix": "Mr. Smith",
-      "suffix": "",
-      "fullSentence": "Mr. Smith accused Tom of stealing some money from his wallet."
+      "suffix": "some money from his wallet",
+      "fullSentence": "Mr. Smith accused Tom of stealing some money from his wallet",
+      "keyword": "ACCUSED",
+      "answerPrefix": "Mr. Smith",
+      "answerSuffix": "some money from his wallet",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "accused Tom of stealing"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "are on the verge of extinction",
-        "are on the verge of becoming extinct"
+        "are on the verge of extinction"
       ],
-      "displayAnswer": "are on the verge of extinction / are on the verge of becoming extinct",
-      "explanation": "On the verge of + danh từ/V-ing nghĩa là ở sát ngưỡng xảy ra điều gì. Câu gốc đã làm rõ close to becoming extinct, nên extinction hoặc becoming extinct giữ đúng mức nguy cấp. Không đánh đồng mọi nguy cơ với việc sắp xảy ra.",
+      "displayAnswer": "are on the verge of extinction",
+      "explanation": "On the verge of + danh từ/V-ing nghĩa là ở sát ngưỡng xảy ra điều gì. Câu gốc đã làm rõ close to becoming extinct, nên extinction hoặc becoming extinct giữ đúng mức nguy cấp.",
       "prefix": "Many species of wildlife",
       "suffix": "",
-      "fullSentence": "Many species of wildlife are on the verge of extinction."
+      "fullSentence": "Many species of wildlife are on the verge of extinction",
+      "keyword": "VERGE",
+      "answerPrefix": "Many species of wildlife",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "are on the verge of extinction"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "makes far too frequent complaints for my liking",
-        "makes complaints that are far too frequent for my liking"
+        "far too frequent complaints",
+        "complaints that are far too frequent"
       ],
-      "displayAnswer": "makes far too frequent complaints for my liking / makes complaints that are far too frequent for my liking",
-      "explanation": "Make complaints là đưa ra lời phàn nàn; frequent là tính từ diễn tả tần suất. Phải giữ far too và for my liking = nhiều hơn mức tôi thấy chấp nhận được. About my liking của đáp án cũ sẽ đổi đối tượng bị phàn nàn và sai nghĩa.",
-      "prefix": "She",
-      "suffix": "",
-      "fullSentence": "She makes far too frequent complaints for my liking."
+      "displayAnswer": "far too frequent complaints / complaints that are far too frequent",
+      "explanation": "Make complaints là đưa ra lời phàn nàn; frequent là tính từ diễn tả tần suất. Phải giữ far too và for my liking = nhiều hơn mức tôi thấy chấp nhận được.\nTừ vựng trọng tâm: frequent",
+      "prefix": "She makes",
+      "suffix": "for my liking",
+      "fullSentence": "She makes far too frequent complaints for my liking",
+      "keyword": "FREQUENT",
+      "answerPrefix": "She makes",
+      "answerSuffix": "for my liking",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "far too frequent complaints"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "delay to your flight is beyond our control at the moment",
-        "delay to your flight is beyond our power to remedy at the moment"
+        "is beyond our control",
+        "is beyond our power to remedy"
       ],
-      "displayAnswer": "delay to your flight is beyond our control at the moment / delay to your flight is beyond our power to remedy at the moment",
-      "explanation": "Beyond our control nghĩa là nằm ngoài khả năng kiểm soát của chúng tôi. At the moment phải được giữ vì việc không thể can thiệp chỉ nói ở thời điểm hiện tại. Không bỏ delay to your flight hoặc chuyển sang sự bất lực vĩnh viễn.",
-      "prefix": "I regret that the",
-      "suffix": "",
-      "fullSentence": "I regret that the delay to your flight is beyond our control at the moment."
+      "displayAnswer": "is beyond our control / is beyond our power to remedy",
+      "explanation": "Beyond our control nghĩa là nằm ngoài khả năng kiểm soát của chúng tôi. At the moment phải được giữ vì việc không thể can thiệp chỉ nói ở thời điểm hiện tại.",
+      "prefix": "I regret that the delay to your flight",
+      "suffix": "at the moment",
+      "fullSentence": "I regret that the delay to your flight is beyond our control at the moment",
+      "keyword": "BEYOND",
+      "answerPrefix": "I regret that the delay to your flight",
+      "answerSuffix": "at the moment",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is beyond our control"
     },
     {
       "globalNumber": 96,
@@ -1132,10 +1161,16 @@
         "whose research project impressed the judges"
       ],
       "displayAnswer": "whose research project impressed the judges",
-      "explanation": "Whose thay cho her và diễn tả sở hữu: whose research project. Mệnh đề quan hệ xác định đứng giữa the student và won a scholarship, giúp xác định sinh viên nào. Sau whose phải có danh từ research project, không dùng whose her project.",
+      "explanation": "Whose thay cho her và diễn tả sở hữu: whose research project. Mệnh đề quan hệ xác định đứng giữa the student và won a scholarship, giúp xác định sinh viên nào.",
       "prefix": "The student",
-      "suffix": "won a scholarship.",
-      "fullSentence": "The student whose research project impressed the judges won a scholarship."
+      "suffix": "won a scholarship",
+      "fullSentence": "The student whose research project impressed the judges won a scholarship",
+      "keyword": "WHOSE",
+      "answerPrefix": "The student",
+      "answerSuffix": "won a scholarship",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "whose research project impressed the judges"
     },
     {
       "globalNumber": 97,
@@ -1145,10 +1180,16 @@
         "is believed to be"
       ],
       "displayAnswer": "is believed to be",
-      "explanation": "Bị động với động từ tường thuật ở hiện tại: people believe that... chuyển thành chủ ngữ + is believed to + động từ. Trạng thái is unsafe đồng thời với niềm tin nên dùng to be, không dùng to have been, vốn lùi trạng thái về trước.",
+      "explanation": "Bị động với động từ tường thuật ở hiện tại: people believe that… chuyển thành chủ ngữ + is believed to + động từ. Trạng thái is unsafe đồng thời với niềm tin nên dùng to be, không dùng to have been, vốn lùi trạng thái về trước.",
       "prefix": "The old bridge",
-      "suffix": "unsafe.",
-      "fullSentence": "The old bridge is believed to be unsafe."
+      "suffix": "unsafe",
+      "fullSentence": "The old bridge is believed to be unsafe",
+      "keyword": "BELIEVED",
+      "answerPrefix": "The old bridge",
+      "answerSuffix": "unsafe",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is believed to be"
     },
     {
       "globalNumber": 98,
@@ -1158,10 +1199,16 @@
         "in case I needed"
       ],
       "displayAnswer": "in case I needed",
-      "explanation": "In case diễn tả sự phòng ngừa cho một khả năng có thể xảy ra. Mốc saved ở quá khứ nên dùng needed trong câu này. Giữ chủ ngữ I; không dùng in case of I needed vì in case of chỉ đi với danh từ hoặc V-ing.",
+      "explanation": "In case diễn tả sự phòng ngừa cho một khả năng có thể xảy ra. Mốc saved ở quá khứ nên dùng needed trong câu này.",
       "prefix": "I saved a copy of the file",
-      "suffix": "it later.",
-      "fullSentence": "I saved a copy of the file in case I needed it later."
+      "suffix": "it later",
+      "fullSentence": "I saved a copy of the file in case I needed it later",
+      "keyword": "CASE",
+      "answerPrefix": "I saved a copy of the file",
+      "answerSuffix": "it later",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "in case I needed"
     },
     {
       "globalNumber": 99,
@@ -1171,10 +1218,16 @@
         "have fallen through"
       ],
       "displayAnswer": "have fallen through",
-      "explanation": "Fall through nghĩa là kế hoạch không thực hiện được. Have fallen through dùng hiện tại hoàn thành để thông báo kết quả hiện tại; through là thành phần bắt buộc của cụm. Không dùng fallen down vì cụm đó thường diễn tả ngã hoặc sụp đổ vật lý.",
+      "explanation": "Fall through nghĩa là kế hoạch không thực hiện được. Have fallen through dùng hiện tại hoàn thành để thông báo kết quả hiện tại; through là thành phần bắt buộc của cụm.",
       "prefix": "Our plans for a school trip",
-      "suffix": "because we could not hire a coach.",
-      "fullSentence": "Our plans for a school trip have fallen through because we could not hire a coach."
+      "suffix": "because we could not hire a coach",
+      "fullSentence": "Our plans for a school trip have fallen through because we could not hire a coach",
+      "keyword": "FALLEN",
+      "answerPrefix": "Our plans for a school trip",
+      "answerSuffix": "because we could not hire a coach",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "have fallen through"
     },
     {
       "globalNumber": 100,
@@ -1184,13 +1237,19 @@
         "not possible to enter",
         "not possible for you to enter"
       ],
-      "displayAnswer": "not possible to enter",
-      "explanation": "It is not possible to + động từ diễn tả việc không thể làm. Có thể thêm for you để giữ rõ đối tượng. Possible là tính từ nên không dùng possibly hoặc possibility. Phần without permission phải được giữ để tránh biến thành cấm vào phòng trong mọi trường hợp.",
+      "displayAnswer": "not possible to enter / not possible for you to enter",
+      "explanation": "It is not possible to + động từ diễn tả việc không thể làm. Có thể thêm for you để giữ rõ đối tượng.",
       "prefix": "It is",
-      "suffix": "the laboratory without permission.",
-      "fullSentence": "It is not possible to enter the laboratory without permission."
+      "suffix": "the laboratory without permission",
+      "fullSentence": "It is not possible to enter the laboratory without permission",
+      "keyword": "POSSIBLE",
+      "answerPrefix": "It is",
+      "answerSuffix": "the laboratory without permission",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "not possible to enter"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

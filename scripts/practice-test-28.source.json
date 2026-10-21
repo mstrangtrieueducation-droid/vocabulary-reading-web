@@ -1101,9 +1101,15 @@
       ],
       "displayAnswer": "came to an end",
       "prefix": "The fighting",
-      "suffix": "when the police arrested the leaders.",
-      "fullSentence": "The fighting came to an end when the police arrested the leaders.",
-      "explanation": "Come to an end nghĩa là kết thúc, quá khứ came to an end. Câu gốc dùng cảnh sát làm chủ ngữ với ended the fighting; câu mới chuyển the fighting thành chủ ngữ nhưng giữ thời điểm kết thúc là khi các thủ lĩnh bị bắt."
+      "suffix": "when the police arrested the leaders",
+      "fullSentence": "The fighting came to an end when the police arrested the leaders",
+      "explanation": "Come to an end nghĩa là kết thúc, quá khứ came to an end. Câu gốc dùng cảnh sát làm chủ ngữ với ended the fighting; câu mới chuyển the fighting thành chủ ngữ nhưng giữ thời điểm kết thúc là khi các thủ lĩnh bị bắt.",
+      "keyword": "CAME",
+      "answerPrefix": "The fighting",
+      "answerSuffix": "when the police arrested the leaders",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "came to an end"
     },
     {
       "globalNumber": 92,
@@ -1115,42 +1121,54 @@
       ],
       "displayAnswer": "as a last resort does he / as the last resort does he",
       "prefix": "Only",
-      "suffix": "employ inexperienced staff.",
-      "fullSentence": "Only as a last resort does he employ inexperienced staff.",
-      "explanation": "As a last resort nghĩa là chỉ khi không còn lựa chọn khác. Only + cụm trạng ngữ đứng đầu câu dẫn đến đảo ngữ does he employ. Sau does giữ employ nguyên mẫu, không dùng employs. He avoids là thói quen hiện tại nên dùng does, không dùng did."
+      "suffix": "employ inexperienced staff",
+      "fullSentence": "Only as a last resort does he employ inexperienced staff",
+      "explanation": "As a last resort nghĩa là chỉ khi không còn lựa chọn khác. Only + cụm trạng ngữ đứng đầu câu dẫn đến đảo ngữ does he employ.",
+      "keyword": "RESORT",
+      "answerPrefix": "Only",
+      "answerSuffix": "employ inexperienced staff",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "as a last resort does he"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "as he was, he was unable to make ends meet",
-        "though he was, he was unable to make ends meet",
-        "as he was, he couldn't make ends meet",
-        "though he was, he could not make ends meet"
+        "unable to make ends meet"
       ],
-      "displayAnswer": "as he was, he was unable to make ends meet / though he was, he was unable to make ends meet / as he was, he couldn't make ends meet / though he was, he could not make ends meet",
-      "prefix": "Hard-working",
+      "displayAnswer": "unable to make ends meet",
+      "prefix": "Hard-working as he was, he was",
       "suffix": "",
-      "fullSentence": "Hard-working as he was, he was unable to make ends meet.",
-      "explanation": "Hard-working as/though he was diễn tả nhượng bộ, nghĩa là mặc dù rất chăm chỉ. Make ends meet là kiếm đủ để trang trải sinh hoạt. Phần sau dùng was unable to/couldn't để giữ ý không thể đủ sống; ends phải ở số nhiều theo thành ngữ."
+      "fullSentence": "Hard-working as he was, he was unable to make ends meet",
+      "explanation": "Hard-working as/though he was diễn tả nhượng bộ, nghĩa là mặc dù rất chăm chỉ. Make ends meet là kiếm đủ để trang trải sinh hoạt.",
+      "keyword": "ENDS",
+      "answerPrefix": "Hard-working as he was, he was",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "unable to make ends meet"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "fans adulate them that corrupts pop stars",
-        "in which fans adulate them that corrupts pop stars",
-        "fans adulate pop stars that corrupts them",
-        "in which fans adulate pop stars that corrupts them",
-        "that fans adulate pop stars that corrupts them"
+        "fans adulate them",
+        "in which fans adulate them"
       ],
-      "displayAnswer": "fans adulate them that corrupts pop stars / in which fans adulate them that corrupts pop stars / fans adulate pop stars that corrupts them / in which fans adulate pop stars that corrupts them / that fans adulate pop stars that corrupts them",
-      "prefix": "It’s the way",
-      "suffix": "",
-      "fullSentence": "It’s the way fans adulate them that corrupts pop stars.",
-      "explanation": "Dùng câu chẻ It's ... that ... để nhấn mạnh the way fans adulate .... Adulate là tôn sùng/quá ngưỡng mộ. Chủ ngữ của corrupts là the way số ít, không phải fans hoặc pop stars, nên phải có -s. The way có thể theo sau bởi mệnh đề trực tiếp, in which hoặc that."
+      "displayAnswer": "fans adulate them / in which fans adulate them",
+      "prefix": "It's the way",
+      "suffix": "that corrupts pop stars",
+      "fullSentence": "It's the way fans adulate them that corrupts pop stars",
+      "explanation": "Dùng câu chẻ It's … that … để nhấn mạnh the way fans adulate … Adulate là tôn sùng/quá ngưỡng mộ. Chủ ngữ của corrupts là the way số ít, không phải fans hoặc pop stars, nên phải có -s.",
+      "keyword": "ADULATE",
+      "answerPrefix": "It's the way",
+      "answerSuffix": "that corrupts pop stars",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "fans adulate them"
     },
     {
       "globalNumber": 95,
@@ -1164,9 +1182,15 @@
       ],
       "displayAnswer": "was overcome with fear / was overcome by fear / felt overcome with fear / felt overcome by fear",
       "prefix": "I",
-      "suffix": "when I worked out what had happened.",
-      "fullSentence": "I was overcome with fear when I worked out what had happened.",
-      "explanation": "Be overcome with/by fear là bị nỗi sợ choán ngợp, tương đương overwhelmed by fear trong câu đã sửa. Overcome giữ nguyên hình thức trong cụm bị động, không viết overcomed. Worked out nghĩa là hiểu ra, phù hợp với realized."
+      "suffix": "when I worked out what had happened",
+      "fullSentence": "I was overcome with fear when I worked out what had happened",
+      "explanation": "Be overcome with/by fear là bị nỗi sợ choán ngợp, tương đương overwhelmed by fear trong câu đã sửa. Overcome giữ nguyên hình thức trong cụm bị động, không viết overcomed.",
+      "keyword": "OVERCOME",
+      "answerPrefix": "I",
+      "answerSuffix": "when I worked out what had happened",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "was overcome with fear"
     },
     {
       "globalNumber": 96,
@@ -1177,9 +1201,15 @@
       ],
       "displayAnswer": "in charge of",
       "prefix": "Jim is now",
-      "suffix": "the new campaign.",
-      "fullSentence": "Jim is now in charge of the new campaign.",
-      "explanation": "Be in charge of something là chịu trách nhiệm phụ trách việc đó, tương đương be responsible for. Chỗ trống chỉ điền in charge of vì Jim is now và the new campaign đã có sẵn. In the charge of sẽ đổi sang được người khác quản lý."
+      "suffix": "the new campaign",
+      "fullSentence": "Jim is now in charge of the new campaign",
+      "explanation": "Be in charge of something là chịu trách nhiệm phụ trách việc đó, tương đương be responsible for. Chỗ trống chỉ điền in charge of vì Jim is now và the new campaign đã có sẵn.",
+      "keyword": "CHARGE",
+      "answerPrefix": "Jim is now",
+      "answerSuffix": "the new campaign",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "in charge of"
     },
     {
       "globalNumber": 97,
@@ -1190,10 +1220,16 @@
         "not any tea left"
       ],
       "displayAnswer": "no tea left / not any tea left",
-      "prefix": "I must go to the shop because there’s",
-      "suffix": "at home.",
-      "fullSentence": "I must go to the shop because there’s no tea left at home.",
-      "explanation": "Run out of tea là hết trà, chuyển thành there is no tea left hoặc there is not any tea left. Left ở đây nghĩa là còn lại, không phải động từ left mang nghĩa rời đi. Tea không đếm được nên dùng there's và không thêm -s."
+      "prefix": "I must go to the shop because there's",
+      "suffix": "at home",
+      "fullSentence": "I must go to the shop because there's no tea left at home",
+      "explanation": "Run out of tea là hết trà, chuyển thành there is no tea left hoặc there is not any tea left. Left ở đây nghĩa là còn lại, không phải động từ left mang nghĩa rời đi.",
+      "keyword": "LEFT",
+      "answerPrefix": "I must go to the shop because there's",
+      "answerSuffix": "at home",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "no tea left"
     },
     {
       "globalNumber": 98,
@@ -1202,14 +1238,19 @@
       "acceptedAnswers": [
         "as a result of staying",
         "as a result of her staying",
-        "as a result of having stayed",
-        "as a result of her having stayed"
+        "as a result of having stayed"
       ],
-      "displayAnswer": "as a result of staying / as a result of her staying / as a result of having stayed / as a result of her having stayed",
+      "displayAnswer": "as a result of staying / as a result of her staying / as a result of having stayed",
       "prefix": "Alice was exhausted",
-      "suffix": "up late yesterday.",
-      "fullSentence": "Alice was exhausted as a result of staying up late yesterday.",
-      "explanation": "As a result of + danh từ/V-ing nghĩa là do kết quả của việc gì. Chủ thể thức khuya là Alice, nên có thể viết staying hoặc her staying. Dùng him/his sẽ đổi người thực hiện và sai nghĩa. Having stayed nhấn mạnh việc thức khuya xảy ra trước trạng thái kiệt sức."
+      "suffix": "up late yesterday",
+      "fullSentence": "Alice was exhausted as a result of staying up late yesterday",
+      "explanation": "As a result of + danh từ/V-ing nghĩa là do kết quả của việc gì. Chủ thể thức khuya là Alice, nên có thể viết staying hoặc her staying.",
+      "keyword": "RESULT",
+      "answerPrefix": "Alice was exhausted",
+      "answerSuffix": "up late yesterday",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "as a result of staying"
     },
     {
       "globalNumber": 99,
@@ -1221,9 +1262,15 @@
       ],
       "displayAnswer": "has no intention of answering / has no intention to answer",
       "prefix": "Kelly",
-      "suffix": "any of the reporter’s questions.",
-      "fullSentence": "Kelly has no intention of answering any of the reporter’s questions.",
-      "explanation": "Have no intention of doing something nghĩa là không có ý định làm; đây là cách dùng tự nhiên nhất trong câu. Intention to answer cũng được chấp nhận về nghĩa và ngữ pháp. Giữ no theo từ cho sẵn; không dùng doesn't intend vì tuy cùng nghĩa nhưng không đáp ứng từ khóa."
+      "suffix": "any of the reporter's questions",
+      "fullSentence": "Kelly has no intention of answering any of the reporter's questions",
+      "explanation": "Have no intention of doing something nghĩa là không có ý định làm; đây là cách dùng tự nhiên nhất trong câu. Intention to answer cũng được chấp nhận về nghĩa và ngữ pháp.",
+      "keyword": "NO",
+      "answerPrefix": "Kelly",
+      "answerSuffix": "any of the reporter's questions",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "has no intention of answering"
     },
     {
       "globalNumber": 100,
@@ -1235,11 +1282,17 @@
       ],
       "displayAnswer": "don't feel like going / do not feel like going",
       "prefix": "I",
-      "suffix": "out this evening.",
-      "fullSentence": "I don't feel like going out this evening.",
-      "explanation": "Don't feel like + V-ing diễn tả không muốn hoặc không có hứng làm gì, phù hợp I'd rather not go out. Không dùng don't feel up to trong đáp án mẫu vì cụm ấy nhấn mạnh thiếu sức/không đủ khả năng, điều câu gốc không nói. Going là V-ing sau like."
+      "suffix": "out this evening",
+      "fullSentence": "I don't feel like going out this evening",
+      "explanation": "Don't feel like + V-ing diễn tả không muốn hoặc không có hứng làm gì, phù hợp I'd rather not go out. Không dùng don't feel up to trong đáp án mẫu vì cụm ấy nhấn mạnh thiếu sức/không đủ khả năng, điều câu gốc không nói.",
+      "keyword": "FEEL",
+      "answerPrefix": "I",
+      "answerSuffix": "out this evening",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "don't feel like going"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

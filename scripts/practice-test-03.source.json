@@ -1030,105 +1030,194 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "My grandfather didn't have any recollection of phoning me last night."
+        "have any recollection of phoning me"
       ],
-      "displayAnswer": "My grandfather didn't have any recollection of phoning me last night.",
-      "explanation": "have a recollection of…: nhớ lại; có ấn tượng về một việc trong quá khứ.\nhave … recollection of …: hồi tưởng; nhớ lại; có ấn tượng về việc gì trong quá khứ"
+      "displayAnswer": "have any recollection of phoning me",
+      "explanation": "have a recollection of…: nhớ lại; có ấn tượng về một việc trong quá khứ. have … recollection of …: hồi tưởng; nhớ lại; có ấn tượng về việc gì trong quá khứ",
+      "keyword": "recollection",
+      "answerPrefix": "My grandfather didn't",
+      "answerSuffix": "last night",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "My grandfather didn't",
+      "suffix": "last night",
+      "blankAnswer": "have any recollection of phoning me",
+      "fullSentence": "My grandfather didn't have any recollection of phoning me last night"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "If Mark hadn’t taken up politics, he might have made a name for himself as an art historian."
+        "a name for himself as an"
       ],
-      "displayAnswer": "If Mark hadn’t taken up politics, he might have made a name for himself as an art historian.",
-      "explanation": "Make a name for oneself as ... nghĩa là trở nên nổi tiếng với tư cách nào đó; với Mark dùng himself."
+      "displayAnswer": "a name for himself as an",
+      "explanation": "Make a name for oneself as … nghĩa là trở nên nổi tiếng với tư cách nào đó; với Mark dùng himself.",
+      "keyword": "name",
+      "answerPrefix": "If Mark hadn't taken up politics, he might have made",
+      "answerSuffix": "art historian",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "If Mark hadn't taken up politics, he might have made",
+      "suffix": "art historian",
+      "blankAnswer": "a name for himself as an",
+      "fullSentence": "If Mark hadn't taken up politics, he might have made a name for himself as an art historian"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "I was often made to carry his schoolbag when we lived in the country."
+        "was often made to carry"
       ],
-      "displayAnswer": "I was often made to carry his schoolbag when we lived in the country.",
-      "explanation": "Make somebody do ở chủ động chuyển sang be made to do ở bị động, nên dùng I was often made to carry...."
+      "displayAnswer": "was often made to carry",
+      "explanation": "Make somebody do ở chủ động chuyển sang be made to do ở bị động, nên dùng I was often made to carry…",
+      "keyword": "to",
+      "answerPrefix": "I",
+      "answerSuffix": "his schoolbag when we lived in the country",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "I",
+      "suffix": "his schoolbag when we lived in the country",
+      "blankAnswer": "was often made to carry",
+      "fullSentence": "I was often made to carry his schoolbag when we lived in the country"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "The company's employees shouldn't count on being allocated a car-parking space.",
-        "The company's employees should not count on being allocated a car-parking space."
+        "count on being allocated a car-parking"
       ],
-      "displayAnswer": "The company's employees shouldn't count on being allocated a car-parking space.\n/\nThe company's employees should not count on being allocated a car-parking space.",
-      "explanation": "allocate (v): phân bổ thời gian, tiền bạc hoặc nguồn lực cho một mục đích."
+      "displayAnswer": "count on being allocated a car-parking",
+      "explanation": "allocate (v): phân bổ thời gian, tiền bạc hoặc nguồn lực cho một mục đích.",
+      "keyword": "count",
+      "answerPrefix": "The company's employees shouldn't",
+      "answerSuffix": "space",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "The company's employees shouldn't",
+      "suffix": "space",
+      "blankAnswer": "count on being allocated a car-parking",
+      "fullSentence": "The company's employees shouldn't count on being allocated a car-parking space"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "We lost no time in getting started on the new project."
+        "no time in getting started"
       ],
-      "displayAnswer": "We lost no time in getting started on the new project.",
-      "explanation": "lose no time in doing something: làm ngay, không trì hoãn."
+      "displayAnswer": "no time in getting started",
+      "explanation": "lose no time in doing something: làm ngay, không trì hoãn.",
+      "keyword": "time",
+      "answerPrefix": "We lost",
+      "answerSuffix": "on the new project",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "We lost",
+      "suffix": "on the new project",
+      "blankAnswer": "no time in getting started",
+      "fullSentence": "We lost no time in getting started on the new project"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "The heavy snow prevented us from driving home."
+        "prevented us from driving home"
       ],
-      "displayAnswer": "The heavy snow prevented us from driving home.",
-      "explanation": "Prevent somebody from + V-ing nghĩa là ngăn ai làm gì. Heavy snow là nguyên nhân khiến chúng tôi không thể lái xe về nhà."
+      "displayAnswer": "prevented us from driving home",
+      "explanation": "Prevent somebody from + V-ing nghĩa là ngăn ai làm gì. Heavy snow là nguyên nhân khiến chúng tôi không thể lái xe về nhà.",
+      "keyword": "prevented",
+      "answerPrefix": "The heavy snow",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "The heavy snow",
+      "suffix": "",
+      "blankAnswer": "prevented us from driving home",
+      "fullSentence": "The heavy snow prevented us from driving home"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "I’m not willing to put up with rudeness from my colleagues any longer."
+        "to put up with rudeness"
       ],
-      "displayAnswer": "I’m not willing to put up with rudeness from my colleagues any longer.",
-      "explanation": "Put up with something nghĩa là chịu đựng. Be not willing to put up with tương đương would no longer tolerate."
+      "displayAnswer": "to put up with rudeness",
+      "explanation": "Put up with something nghĩa là chịu đựng. Be not willing to put up with tương đương would no longer tolerate.",
+      "keyword": "put",
+      "answerPrefix": "'I'm not willing",
+      "answerSuffix": "from my colleagues any longer,' said Delia",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "'I'm not willing",
+      "suffix": "from my colleagues any longer,' said Delia",
+      "blankAnswer": "to put up with rudeness",
+      "fullSentence": "'I'm not willing to put up with rudeness from my colleagues any longer,' said Delia"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "We can afford this holiday as long as we avoid the expensive restaurants in the tourist centre."
+        "can afford this holiday as long"
       ],
-      "displayAnswer": "We can afford this holiday as long as we avoid the expensive restaurants in the tourist centre.",
-      "explanation": "Can afford this holiday giữ ý kỳ nghỉ nằm trong khả năng chi trả; as long as nêu điều kiện phải tránh các nhà hàng đắt tiền."
+      "displayAnswer": "can afford this holiday as long",
+      "explanation": "Can afford this holiday giữ ý kỳ nghỉ nằm trong khả năng chi trả; as long as nêu điều kiện phải tránh các nhà hàng đắt tiền.",
+      "keyword": "afford",
+      "answerPrefix": "We",
+      "answerSuffix": "as we avoid the expensive restaurants in the tourist centre",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "We",
+      "suffix": "as we avoid the expensive restaurants in the tourist centre",
+      "blankAnswer": "can afford this holiday as long",
+      "fullSentence": "We can afford this holiday as long as we avoid the expensive restaurants in the tourist centre"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "Martin has almost no chance of winning the 100 metres."
+        "no chance of winning"
       ],
-      "displayAnswer": "Martin has almost no chance of winning the 100 metres.",
-      "explanation": "Have almost no chance of + V-ing nghĩa là hầu như không có khả năng làm gì, tương đương very unlikely."
+      "displayAnswer": "no chance of winning",
+      "explanation": "Have almost no chance of + V-ing nghĩa là hầu như không có khả năng làm gì, tương đương very unlikely.",
+      "keyword": "chance",
+      "answerPrefix": "Martin has almost",
+      "answerSuffix": "the 100 metres, as he's out of training",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Martin has almost",
+      "suffix": "the 100 metres, as he's out of training",
+      "blankAnswer": "no chance of winning",
+      "fullSentence": "Martin has almost no chance of winning the 100 metres, as he's out of training"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "Nadia was just on the point of leaving the restaurant when her friends arrived."
+        "on the point of leaving"
       ],
-      "displayAnswer": "Nadia was just on the point of leaving the restaurant when her friends arrived.",
-      "explanation": "Be on the point of + V-ing nghĩa là vừa sắp làm gì thì sự việc khác xảy ra; ở đây Nadia sắp rời nhà hàng khi bạn đến."
+      "displayAnswer": "on the point of leaving",
+      "explanation": "Be on the point of + V-ing nghĩa là vừa sắp làm gì thì sự việc khác xảy ra; ở đây Nadia sắp rời nhà hàng khi bạn đến.",
+      "keyword": "point",
+      "answerPrefix": "Nadia was just",
+      "answerSuffix": "the restaurant when her friends arrived",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Nadia was just",
+      "suffix": "the restaurant when her friends arrived",
+      "blankAnswer": "on the point of leaving",
+      "fullSentence": "Nadia was just on the point of leaving the restaurant when her friends arrived"
     }
   ],
   "publishReady": true,
-  "contentRevision": "2026-10-17-authentic",
+  "contentRevision": "2026-10-21-word-limits",
   "readingSources": [
     {
       "part": "I.3",

@@ -1058,110 +1058,198 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "Minh denied breaking the vase.",
-        "Minh denied having broken the vase."
+        "denied breaking the vase",
+        "denied having broken the vase"
       ],
-      "displayAnswer": "Minh denied breaking the vase / having broken the vase.",
-      "explanation": "Từ khóa DENIED phải được giữ nguyên và ‘deny’ đi với V-ing, không đi với ‘to + verb’. Vì vậy có thể viết ‘denied breaking the vase’ (4 từ trong chỗ trống) hoặc ‘denied having broken the vase’ (5 từ); dạng perfect gerund ‘having broken’ nhấn mạnh hành động làm vỡ xảy ra trước lời phủ nhận. Cả hai đều nằm trong giới hạn 3–6 từ của đề."
+      "displayAnswer": "denied breaking the vase / denied having broken the vase",
+      "explanation": "Từ khóa DENIED phải được giữ nguyên và ‘deny’ đi với V-ing, không đi với ‘to + verb’. Vì vậy có thể viết ‘denied breaking the vase’ (4 từ trong chỗ trống) hoặc ‘denied having broken the vase’ (5 từ); dạng perfect gerund ‘having broken’ nhấn mạnh hành động làm vỡ xảy ra trước lời phủ nhận.",
+      "keyword": "DENIED",
+      "answerPrefix": "Minh",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Minh",
+      "suffix": "",
+      "blankAnswer": "denied breaking the vase",
+      "fullSentence": "Minh denied breaking the vase"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "The old building is going to be pulled down soon."
+        "is going to be pulled down"
       ],
-      "displayAnswer": "The old building is going to be pulled down soon.",
-      "explanation": "‘Demolish’ được diễn đạt bằng cụm động từ ‘pull down’. Câu gốc ở dạng chủ động ‘They are going to demolish …’; đưa ‘the old building’ lên làm chủ ngữ thì cần bị động ‘is going to be pulled down’. Phần điền là ‘is going to be pulled down’ gồm đúng 6 từ và giữ nguyên từ PULLED."
+      "displayAnswer": "is going to be pulled down",
+      "explanation": "‘Demolish’ được diễn đạt bằng cụm động từ ‘pull down’. Câu gốc ở dạng chủ động ‘They are going to demolish …’; đưa ‘the old building’ lên làm chủ ngữ thì cần bị động ‘is going to be pulled down’.",
+      "keyword": "PULLED",
+      "answerPrefix": "The old building",
+      "answerSuffix": "soon",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "The old building",
+      "suffix": "soon",
+      "blankAnswer": "is going to be pulled down",
+      "fullSentence": "The old building is going to be pulled down soon"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "He gave me a brief introduction to the school’s teaching staff."
+        "me a brief introduction"
       ],
-      "displayAnswer": "He gave me a brief introduction to the school’s teaching staff.",
-      "explanation": "Đổi động từ ‘introduced’ thành cụm danh từ ‘gave … an introduction’. Trạng từ ‘briefly’ phải chuyển thành tính từ cho sẵn BRIEF để bổ nghĩa cho ‘introduction’: ‘a brief introduction’. Phần điền ‘me a brief introduction’ gồm 4 từ; ‘to the school’s teaching staff’ đã có sẵn sau chỗ trống.\ngive sb an introduction to sb"
+      "displayAnswer": "me a brief introduction",
+      "explanation": "Đổi động từ ‘introduced’ thành cụm danh từ ‘gave … an introduction’. Trạng từ ‘briefly’ phải chuyển thành tính từ cho sẵn BRIEF để bổ nghĩa cho ‘introduction’: ‘a brief introduction’.\ngive sb an introduction to sb",
+      "keyword": "BRIEF",
+      "answerPrefix": "He gave",
+      "answerSuffix": "to the school's teaching staff",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "He gave",
+      "suffix": "to the school's teaching staff",
+      "blankAnswer": "me a brief introduction",
+      "fullSentence": "He gave me a brief introduction to the school's teaching staff"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "You really should back up all your important digital files tonight.",
-        "You should definitely back up all your important digital files tonight.",
-        "You should really back up all your important digital files tonight."
+        "really should back up",
+        "should definitely back up",
+        "should really back up"
       ],
-      "displayAnswer": "You really should / should really / should definitely back up all your important digital files tonight.",
-      "explanation": "‘It is highly recommended that …’ được diễn đạt bằng ‘should’ kèm trạng từ nhấn mạnh. Khóa chính thức cho phép ‘really should back up’, ‘should really back up’ hoặc ‘should definitely back up’; mỗi phương án gồm 4 từ trong chỗ trống và giữ nguyên SHOULD. ‘Back up’ là cụm động từ nghĩa là tạo bản sao dự phòng cho dữ liệu, nên không được bỏ ‘up’."
+      "displayAnswer": "really should back up / should definitely back up / should really back up",
+      "explanation": "‘It is highly recommended that …’ được diễn đạt bằng ‘should’ kèm trạng từ nhấn mạnh. Khóa chính thức cho phép ‘really should back up’, ‘should really back up’ hoặc ‘should definitely back up’; mỗi phương án gồm 4 từ trong chỗ trống và giữ nguyên SHOULD.",
+      "keyword": "SHOULD",
+      "answerPrefix": "You",
+      "answerSuffix": "all your important digital files tonight",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "You",
+      "suffix": "all your important digital files tonight",
+      "blankAnswer": "really should back up",
+      "fullSentence": "You really should back up all your important digital files tonight"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "When the goods arrived at the warehouse, they were inspected very carefully."
+        "the goods arrived at the warehouse"
       ],
-      "displayAnswer": "When the goods arrived at the warehouse, they were inspected very carefully.",
-      "explanation": "On arrival at the warehouse được đổi thành mệnh đề thời gian When the goods arrived at the warehouse. Goods là danh từ số nhiều nên đại từ thay thế là they và động từ ở quá khứ là arrived. Vế sau they were inspected very carefully được giữ nguyên; warehouse là địa điểm kho hàng phù hợp với cả arrival at và arrived at."
+      "displayAnswer": "the goods arrived at the warehouse",
+      "explanation": "On arrival at… → when + chủ ngữ + arrived at…: khi đến nơi. Goods là số nhiều, thay bằng they.\ninspect: kiểm tra.",
+      "keyword": "ARRIVED",
+      "answerPrefix": "When",
+      "answerSuffix": ", they were inspected very carefully",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "When",
+      "suffix": ", they were inspected very carefully",
+      "blankAnswer": "the goods arrived at the warehouse",
+      "fullSentence": "When the goods arrived at the warehouse, they were inspected very carefully"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "Mauro says he would rather not do his homework with other people.",
-        "Mauro says he’d rather not do his homework with other people."
+        "he would rather not",
+        "he'd rather not"
       ],
-      "displayAnswer": "Mauro says he would rather not do his homework with other people.",
-      "explanation": "‘Prefer to do something on one’s own’ có nghĩa thích tự làm hơn là làm cùng người khác. Cấu trúc tương đương với RATHER là ‘would rather not do … with other people’. Trong câu đã cho, phần điền cốt lõi là ‘he would rather not’ gồm 4 từ; ‘would rather + bare infinitive’ nên sau đó dùng ‘do’, không dùng ‘to do’."
+      "displayAnswer": "he would rather not / he'd rather not",
+      "explanation": "‘Prefer to do something on one’s own’ có nghĩa thích tự làm hơn là làm cùng người khác. Cấu trúc tương đương với RATHER là ‘would rather not do … with other people’.",
+      "keyword": "RATHER",
+      "answerPrefix": "Mauro says that",
+      "answerSuffix": "do his homework with other people",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Mauro says that",
+      "suffix": "do his homework with other people",
+      "blankAnswer": "he would rather not",
+      "fullSentence": "Mauro says that he would rather not do his homework with other people"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "Clara denied having seen the missing letter."
+        "denied having seen"
       ],
-      "displayAnswer": "Clara denied having seen the missing letter.",
-      "explanation": "‘Said that she had not seen’ được chuyển sang động từ ‘denied’. ‘Deny’ đi với V-ing; đề bắt buộc dùng HAVING nên cần perfect gerund ‘having seen’ để chỉ việc nhìn thấy xảy ra trước lời phủ nhận. Phần điền ‘denied having seen’ gồm 3 từ, nằm trong giới hạn 3–6 từ và không thay đổi từ HAVING."
+      "displayAnswer": "denied having seen",
+      "explanation": "‘Said that she had not seen’ được chuyển sang động từ ‘denied’. ‘Deny’ đi với V-ing; đề bắt buộc dùng HAVING nên cần perfect gerund ‘having seen’ để chỉ việc nhìn thấy xảy ra trước lời phủ nhận.",
+      "keyword": "HAVING",
+      "answerPrefix": "Clara",
+      "answerSuffix": "the missing letter",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Clara",
+      "suffix": "the missing letter",
+      "blankAnswer": "denied having seen",
+      "fullSentence": "Clara denied having seen the missing letter"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "Today’s rehearsal will be followed by a short meeting of the cast."
+        "will be followed by"
       ],
-      "displayAnswer": "Today’s rehearsal will be followed by a short meeting of the cast.",
-      "explanation": "Câu gốc nói cuộc họp diễn ra sau buổi tập. Đổi thứ tự để ‘Today’s rehearsal’ làm chủ ngữ thì dùng cấu trúc bị động ‘A will be followed by B’, nghĩa là sau A sẽ đến B. Phần điền ‘will be followed by’ gồm 4 từ và giữ nguyên từ BY."
+      "displayAnswer": "will be followed by",
+      "explanation": "Câu gốc nói cuộc họp diễn ra sau buổi tập. Đổi thứ tự để ‘Today’s rehearsal’ làm chủ ngữ thì dùng cấu trúc bị động ‘A will be followed by B’, nghĩa là sau A sẽ đến B.",
+      "keyword": "BY",
+      "answerPrefix": "Today's rehearsal",
+      "answerSuffix": "a short meeting of the cast",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Today's rehearsal",
+      "suffix": "a short meeting of the cast",
+      "blankAnswer": "will be followed by",
+      "fullSentence": "Today's rehearsal will be followed by a short meeting of the cast"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "It will be a pleasure to take you on a sightseeing tour of my city when you come to visit me.",
         "pleasure to take you on a"
       ],
-      "displayAnswer": "It will be a pleasure to take you on a sightseeing tour of my city when you come to visit me.",
-      "explanation": "‘I’ll be happy to show you round …’ được chuyển sang cấu trúc vô nhân xưng ‘It will be a pleasure to …’. Để giữ đúng vai nghĩa người nói dẫn người nghe đi tham quan, dùng take you on a sightseeing tour. Phần điền ‘pleasure to take you on a’ có đúng 6 từ, giữ nguyên TAKE và nằm trong giới hạn 3–6 từ. Hệ thống chấp nhận cả câu hoàn chỉnh lẫn chính cụm cần điền."
+      "displayAnswer": "pleasure to take you on a",
+      "explanation": "‘I’ll be happy to show you round …’ được chuyển sang cấu trúc vô nhân xưng ‘It will be a pleasure to …’. Để giữ đúng vai nghĩa người nói dẫn người nghe đi tham quan, dùng take you on a sightseeing tour.",
+      "keyword": "TAKE",
+      "answerPrefix": "It will be a",
+      "answerSuffix": "sightseeing tour of my city when you come to visit me",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "It will be a",
+      "suffix": "sightseeing tour of my city when you come to visit me",
+      "blankAnswer": "pleasure to take you on a",
+      "fullSentence": "It will be a pleasure to take you on a sightseeing tour of my city when you come to visit me"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "Rousseau painted fabulous pictures of the rainforest in spite of never having travelled outside Europe.",
-        "Rousseau painted fabulous pictures of the rainforest in spite of never having traveled outside Europe."
+        "in spite of never having"
       ],
-      "displayAnswer": "Rousseau painted fabulous pictures of the rainforest in spite of never having travelled outside Europe.",
-      "explanation": "‘Although + clause’ được đổi sang ‘in spite of + noun/V-ing’. Vì việc chưa từng ra khỏi châu Âu xảy ra trước việc vẽ tranh, dùng perfect gerund ‘never having travelled/traveled’. Theo bố cục câu trong đề, phần điền ‘in spite of never having’ gồm 5 từ, giữ nguyên SPITE và nằm trong giới hạn 3–6 từ; từ ‘travelled’ đã được in sau chỗ trống."
+      "displayAnswer": "in spite of never having",
+      "explanation": "‘Although + clause’ được đổi sang ‘in spite of + noun/V-ing’. Vì việc chưa từng ra khỏi châu Âu xảy ra trước việc vẽ tranh, dùng perfect gerund ‘never having travelled/traveled’.",
+      "keyword": "SPITE",
+      "answerPrefix": "Rousseau painted fabulous pictures of the rainforest",
+      "answerSuffix": "travelled outside Europe",
+      "minWords": 2,
+      "maxWords": 6,
+      "prefix": "Rousseau painted fabulous pictures of the rainforest",
+      "suffix": "travelled outside Europe",
+      "blankAnswer": "in spite of never having",
+      "fullSentence": "Rousseau painted fabulous pictures of the rainforest in spite of never having travelled outside Europe"
     }
   ],
   "publishReady": true,
-  "contentRevision": "2026-10-17-authentic",
+  "contentRevision": "2026-10-21-word-limits",
   "readingSources": [
     {
       "part": "II.3",

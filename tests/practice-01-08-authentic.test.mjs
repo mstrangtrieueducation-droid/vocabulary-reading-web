@@ -11,7 +11,7 @@ for(const [number,[student,correction]] of Object.entries(routes)){
  const answers=app.test.answers;
  assert.equal(answers.length,100);
  assert.deepEqual(answers.map(a=>a.globalNumber),Array.from({length:100},(_,i)=>i+1));
- assert.equal(app.test.contentRevision,'2026-10-17-authentic');
+ assert.equal(app.test.contentRevision,'2026-10-21-word-limits');
  assert(html.includes('${TEST.contentRevision || "original"}:active:v1'));
  assert(html.includes('${TEST.contentRevision || "original"}:last:v1'));
  assert(html.includes('${TEST.contentRevision || "original"}:history:v1'));

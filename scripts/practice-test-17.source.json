@@ -1059,88 +1059,122 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "has set her heart on becoming a doctor",
-        "has her heart set on becoming a doctor"
+        "has set her heart on becoming",
+        "has her heart set on becoming"
       ],
-      "displayAnswer": "has set her heart on becoming a doctor / has her heart set on becoming a doctor",
-      "explanation": "Set one’s heart on something/V-ing nghĩa là rất quyết tâm muốn đạt điều gì. Become đổi thành becoming vì on là giới từ. Her phải khớp với she; heart giữ nguyên số ít theo từ khóa, không đổi thành hearts hoặc dùng set her heart to become.",
+      "displayAnswer": "has set her heart on becoming / has her heart set on becoming",
+      "explanation": "Set one’s heart on something/V-ing nghĩa là rất quyết tâm muốn đạt điều gì. Become đổi thành becoming vì on là giới từ.",
       "prefix": "She",
-      "suffix": "",
-      "fullSentence": "She has set her heart on becoming a doctor."
+      "suffix": "a doctor",
+      "fullSentence": "She has set her heart on becoming a doctor",
+      "keyword": "HEART",
+      "answerPrefix": "She",
+      "answerSuffix": "a doctor",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "has set her heart on becoming"
     },
     {
       "globalNumber": 92,
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "expressed their disapproval of the new traffic scheme",
-        "showed their disapproval of the new traffic scheme",
-        "voiced their disapproval of the new traffic scheme",
-        "expressed disapproval of the new traffic scheme"
+        "expressed their disapproval of",
+        "showed their disapproval of",
+        "voiced their disapproval of",
+        "expressed disapproval of"
       ],
-      "displayAnswer": "expressed their disapproval of the new traffic scheme / showed their disapproval of the new traffic scheme / voiced their disapproval of the new traffic scheme / expressed disapproval of the new traffic scheme",
-      "explanation": "Disapproval of something là sự phản đối/không tán thành điều gì. Express/show/voice disapproval chuyển ý said they were against sang cụm danh từ. Giữ quá khứ vì phát biểu đã xảy ra; dùng of sau disapproval, không phải about theo thói quen dịch tiếng Việt.",
+      "displayAnswer": "expressed their disapproval of / showed their disapproval of / voiced their disapproval of / expressed disapproval of",
+      "explanation": "Disapproval of something là sự phản đối/không tán thành điều gì. Express/show/voice disapproval chuyển ý said they were against sang cụm danh từ.",
       "prefix": "Local residents",
-      "suffix": "",
-      "fullSentence": "Local residents expressed their disapproval of the new traffic scheme."
+      "suffix": "the new traffic scheme",
+      "fullSentence": "Local residents expressed their disapproval of the new traffic scheme",
+      "keyword": "DISAPPROVAL",
+      "answerPrefix": "Local residents",
+      "answerSuffix": "the new traffic scheme",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "expressed their disapproval of"
     },
     {
       "globalNumber": 93,
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "will make another attempt to reach the summit in the morning",
-        "will make another effort to reach the summit in the morning",
-        "will have another attempt at reaching the summit in the morning"
+        "will make another attempt to reach",
+        "will make another effort to reach",
+        "will have another attempt at reaching"
       ],
-      "displayAnswer": "will make another attempt to reach the summit in the morning / will make another effort to reach the summit in the morning / will have another attempt at reaching the summit in the morning",
-      "explanation": "Another attempt/effort diễn đạt thêm một lần thử nữa, tương đương try again. Make an attempt to V hoặc have an attempt at V-ing đều dùng được. Summit là đỉnh núi; submit trong đáp án cũ là lỗi chính tả. Không cần thêm again vì another đã mang nghĩa lần nữa.",
+      "displayAnswer": "will make another attempt to reach / will make another effort to reach / will have another attempt at reaching",
+      "explanation": "Another attempt/effort diễn đạt thêm một lần thử nữa, tương đương try again. Make an attempt to V hoặc have an attempt at V-ing đều dùng được.",
       "prefix": "The climbers",
-      "suffix": "",
-      "fullSentence": "The climbers will make another attempt to reach the summit in the morning."
+      "suffix": "the summit in the morning",
+      "fullSentence": "The climbers will make another attempt to reach the summit in the morning",
+      "keyword": "ANOTHER",
+      "answerPrefix": "The climbers",
+      "answerSuffix": "the summit in the morning",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "will make another attempt to reach"
     },
     {
       "globalNumber": 94,
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "you got any recollection of your time in London as a child",
-        "you any recollection of your time in London as a child",
-        "you got any recollection of living in London as a child",
-        "you any recollection of living in London as a child"
+        "got any recollection of",
+        "any recollection of"
       ],
-      "displayAnswer": "you got any recollection of your time in London as a child / you any recollection of your time in London as a child / you got any recollection of living in London as a child / you any recollection of living in London as a child",
-      "explanation": "Have a recollection of something là có ký ức về điều gì. Sau Haven’t có thể dùng you got any recollection…, hoặc kiểu Anh trang trọng you any recollection…. Không dùng haven’t you had vì câu hỏi gốc hỏi ký ức hiện có, không hỏi đã từng có ký ức vào lúc nào.",
-      "prefix": "Haven’t",
-      "suffix": "",
-      "fullSentence": "Haven’t you got any recollection of your time in London as a child?"
+      "displayAnswer": "got any recollection of / any recollection of",
+      "explanation": "Have a recollection of something là có ký ức về điều gì. Sau Haven’t có thể dùng you got any recollection…, hoặc kiểu Anh trang trọng you any recollection….",
+      "prefix": "Haven't you",
+      "suffix": "your time in London as a child",
+      "fullSentence": "Haven't you got any recollection of your time in London as a child",
+      "keyword": "RECOLLECTION",
+      "answerPrefix": "Haven't you",
+      "answerSuffix": "your time in London as a child",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "got any recollection of"
     },
     {
       "globalNumber": 95,
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "correspondence from the Canberra office must take priority over other matters",
-        "correspondence from the Canberra office must be given priority over other matters"
+        "must take priority over",
+        "must be given priority over"
       ],
-      "displayAnswer": "correspondence from the Canberra office must take priority over other matters / correspondence from the Canberra office must be given priority over other matters",
-      "explanation": "Take priority over/be given priority over nghĩa là được ưu tiên xử lý trước. Correspondence là thư từ và là danh từ không đếm được, không thêm s. Giữ must để thể hiện yêu cầu bắt buộc, không hạ xuống should chỉ là lời khuyên.",
-      "prefix": "Any",
-      "suffix": "",
-      "fullSentence": "Any correspondence from the Canberra office must take priority over other matters."
+      "displayAnswer": "must take priority over / must be given priority over",
+      "explanation": "Take priority over/be given priority over nghĩa là được ưu tiên xử lý trước. Correspondence là thư từ và là danh từ không đếm được, không thêm s.",
+      "prefix": "Any correspondence from the Canberra office",
+      "suffix": "other matters",
+      "fullSentence": "Any correspondence from the Canberra office must take priority over other matters",
+      "keyword": "PRIORITY",
+      "answerPrefix": "Any correspondence from the Canberra office",
+      "answerSuffix": "other matters",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "must take priority over"
     },
     {
       "globalNumber": 96,
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "no matter how heavy the traffic is"
+        "no matter how heavy"
       ],
-      "displayAnswer": "no matter how heavy the traffic is",
-      "explanation": "No matter how + tính từ + chủ ngữ + động từ diễn tả nhượng bộ bất kể mức độ. Trật tự sau how là heavy the traffic is, không đảo is lên trước chủ ngữ. Will arrive on time đã có nên chỉ điền mệnh đề nhượng bộ.",
+      "displayAnswer": "no matter how heavy",
+      "explanation": "No matter how + tính từ + chủ ngữ + động từ diễn tả nhượng bộ bất kể mức độ. Trật tự sau how là heavy the traffic is, không đảo is lên trước chủ ngữ.",
       "prefix": "This train will arrive on time",
-      "suffix": ".",
-      "fullSentence": "This train will arrive on time no matter how heavy the traffic is."
+      "suffix": "the traffic is",
+      "fullSentence": "This train will arrive on time no matter how heavy the traffic is",
+      "keyword": "MATTER",
+      "answerPrefix": "This train will arrive on time",
+      "answerSuffix": "the traffic is",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "no matter how heavy"
     },
     {
       "globalNumber": 97,
@@ -1150,38 +1184,55 @@
         "made their getaway",
         "made a getaway"
       ],
-      "displayAnswer": "made their getaway",
-      "explanation": "Make one’s getaway nghĩa là trốn thoát. Chủ ngữ số nhiều the thieves dùng their; sự việc ở quá khứ nên dùng made. Escape là động từ; trong make one’s getaway, getaway là danh từ chỉ sự trốn thoát.",
+      "displayAnswer": "made their getaway / made a getaway",
+      "explanation": "Make one’s getaway nghĩa là trốn thoát. Chủ ngữ số nhiều the thieves dùng their; sự việc ở quá khứ nên dùng made.\nTừ vựng trọng tâm: make a getaway",
       "prefix": "The thieves",
-      "suffix": "through an open window.",
-      "fullSentence": "The thieves made their getaway through an open window."
+      "suffix": "through an open window",
+      "fullSentence": "The thieves made their getaway through an open window",
+      "keyword": "GETAWAY",
+      "answerPrefix": "The thieves",
+      "answerSuffix": "through an open window",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "made their getaway"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "the needs of younger pupils into account",
-        "into account the needs of younger pupils"
+        "needs of younger pupils into account"
       ],
-      "displayAnswer": "the needs of younger pupils into account",
-      "explanation": "Take something into account nghĩa là tính đến một yếu tố khi quyết định. Có thể đặt cụm danh từ trước hoặc sau into account; cả hai trật tự đều tự nhiên ở đây. Sau please dùng take nguyên mẫu; giữ rõ đối tượng là nhu cầu của học sinh nhỏ tuổi hơn.",
-      "prefix": "Please take",
-      "suffix": "when planning the activity.",
-      "fullSentence": "Please take the needs of younger pupils into account when planning the activity."
+      "displayAnswer": "needs of younger pupils into account",
+      "explanation": "Take something into account nghĩa là tính đến một yếu tố khi quyết định. Có thể đặt cụm danh từ trước hoặc sau into account; cả hai trật tự đều tự nhiên ở đây.\nTừ vựng trọng tâm: take into account",
+      "prefix": "Please take the",
+      "suffix": "when planning the activity",
+      "fullSentence": "Please take the needs of younger pupils into account when planning the activity",
+      "keyword": "INTO",
+      "answerPrefix": "Please take the",
+      "answerSuffix": "when planning the activity",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "needs of younger pupils into account"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "placed the blame for the breakdown on"
+        "placed the blame for the breakdown"
       ],
-      "displayAnswer": "placed the blame for the breakdown on",
-      "explanation": "Place the blame for something on somebody/something là quy trách nhiệm về một sự việc cho một đối tượng. For đi với breakdown, on đi với poor maintenance. Dùng placed để giữ thì quá khứ; không đảo hai giới từ vì sẽ đổi quan hệ nguyên nhân.",
+      "displayAnswer": "placed the blame for the breakdown",
+      "explanation": "Place the blame for something on somebody/something là quy trách nhiệm về một sự việc cho một đối tượng. For đi với breakdown, on đi với poor maintenance.",
       "prefix": "The report",
-      "suffix": "poor maintenance.",
-      "fullSentence": "The report placed the blame for the breakdown on poor maintenance."
+      "suffix": "on poor maintenance",
+      "fullSentence": "The report placed the blame for the breakdown on poor maintenance",
+      "keyword": "PLACED",
+      "answerPrefix": "The report",
+      "answerSuffix": "on poor maintenance",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "placed the blame for the breakdown"
     },
     {
       "globalNumber": 100,
@@ -1191,12 +1242,18 @@
         "take back my earlier criticism"
       ],
       "displayAnswer": "take back my earlier criticism",
-      "explanation": "Take back a statement/criticism nghĩa là rút lại điều đã nói. Câu ở hiện tại nên dùng take, không phải took. My earlier criticism giữ đủ ý lời phê bình trước đó; không dùng take my plan back vì đối tượng bị rút lại là lời phê bình.",
+      "explanation": "Take back a statement/criticism nghĩa là rút lại điều đã nói. Câu ở hiện tại nên dùng take, không phải took.",
       "prefix": "I",
-      "suffix": "of your plan.",
-      "fullSentence": "I take back my earlier criticism of your plan."
+      "suffix": "of your plan",
+      "fullSentence": "I take back my earlier criticism of your plan",
+      "keyword": "BACK",
+      "answerPrefix": "I",
+      "answerSuffix": "of your plan",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "take back my earlier criticism"
     }
   ],
-  "contentRevision": "2026-10-17-balanced",
+  "contentRevision": "2026-10-21-word-limits",
   "storageVersion": "v3-balanced-20261017"
 }

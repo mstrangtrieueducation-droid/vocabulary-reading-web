@@ -10,7 +10,11 @@
       "usage": "be damaged/broken beyond repair",
       "example": "The old radio was damaged beyond repair.",
       "translation": "Chiếc radio cũ hỏng đến mức không thể sửa.",
-      "family": "repair (v/n); repairable (adj); irreparable (adj)"
+      "family": "repair (v/n); repairable (adj); irreparable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 6,
@@ -21,7 +25,11 @@
       "usage": "come up with an idea/a solution",
       "example": "Mai came up with a simple solution.",
       "translation": "Mai nghĩ ra một giải pháp đơn giản.",
-      "family": "come – came – come; idea (n); inventive (adj)"
+      "family": "come – came – come; idea (n); inventive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        6
+      ]
     },
     {
       "question": 11,
@@ -32,7 +40,11 @@
       "usage": "be hidden from sight/view",
       "example": "The cottage was hidden from sight by trees.",
       "translation": "Ngôi nhà nhỏ bị cây che khuất.",
-      "family": "hide – hid – hidden; sight (n); visible (adj)"
+      "family": "hide – hid – hidden; sight (n); visible (adj)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 15,
@@ -43,7 +55,11 @@
       "usage": "individual needs/style; each individual",
       "example": "Each student has individual learning needs.",
       "translation": "Mỗi học sinh có nhu cầu học tập riêng.",
-      "family": "individual (n/adj); individually (adv); individuality (n)"
+      "family": "individual (n/adj); individually (adv); individuality (n)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -54,7 +70,11 @@
       "usage": "be engrossed in a book/reading",
       "example": "She was engrossed in her book.",
       "translation": "Cô ấy mải mê đọc sách.",
-      "family": "engross (v); engrossed/engrossing (adj)"
+      "family": "engross (v); engrossed/engrossing (adj)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 17,
@@ -65,7 +85,11 @@
       "usage": "particularly useful; particularly in winter",
       "example": "This advice is particularly useful for beginners.",
       "translation": "Lời khuyên này đặc biệt hữu ích cho người mới bắt đầu.",
-      "family": "particular (adj); particularly (adv)"
+      "family": "particular (adj); particularly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 18,
@@ -76,7 +100,11 @@
       "usage": "If you ask me, + nhận xét",
       "example": "If you ask me, we should leave earlier.",
       "translation": "Theo tôi, chúng ta nên đi sớm hơn.",
-      "family": "ask (v); opinion (n); personally (adv)"
+      "family": "ask (v); opinion (n); personally (adv)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 21,
@@ -87,7 +115,11 @@
       "usage": "be fond of; grow fonder of",
       "example": "She is fond of gardening.",
       "translation": "Cô ấy thích làm vườn.",
-      "family": "fond (adj); fonder/fondest; fondness (n); fondly (adv)"
+      "family": "fond (adj); fonder/fondest; fondness (n); fondly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ]
     },
     {
       "question": 22,
@@ -98,7 +130,11 @@
       "usage": "evacuate residents/a building",
       "example": "Firefighters evacuated the building.",
       "translation": "Lính cứu hoả sơ tán người trong toà nhà.",
-      "family": "evacuate (v); evacuation (n); evacuee (n)"
+      "family": "evacuate (v); evacuation (n); evacuee (n)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -109,7 +145,11 @@
       "usage": "talk to clear the air",
       "example": "We met after the argument to clear the air.",
       "translation": "Chúng tôi gặp nhau sau cuộc tranh cãi để giải toả hiểu lầm.",
-      "family": "clear (v/adj); misunderstanding (n); clarify (v)"
+      "family": "clear (v/adj); misunderstanding (n); clarify (v)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 25,
@@ -120,7 +160,11 @@
       "usage": "a difficult phase; a phase of development",
       "example": "The project has entered a new phase.",
       "translation": "Dự án đã bước sang giai đoạn mới.",
-      "family": "phase (n/v); phased (adj); stage (n)"
+      "family": "phase (n/v); phased (adj); stage (n)",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 28,
@@ -131,7 +175,11 @@
       "usage": "complete/fill in a questionnaire",
       "example": "Please complete the short questionnaire.",
       "translation": "Vui lòng hoàn thành bảng câu hỏi ngắn.",
-      "family": "question (n/v); questionnaire (n); respondent (n)"
+      "family": "question (n/v); questionnaire (n); respondent (n)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 30,
@@ -142,7 +190,11 @@
       "usage": "an act of selfishness; show selfishness",
       "example": "His refusal to share showed selfishness.",
       "translation": "Việc anh ấy không chịu chia sẻ thể hiện sự ích kỷ.",
-      "family": "self (n); selfish (adj); selfishly (adv); selfishness (n)"
+      "family": "self (n); selfish (adj); selfishly (adv); selfishness (n)",
+      "teacherSelected": true,
+      "questions": [
+        30
+      ]
     },
     {
       "question": 32,
@@ -153,7 +205,11 @@
       "usage": "be indistinguishable from",
       "example": "The copy was almost indistinguishable from the original.",
       "translation": "Bản sao gần như không thể phân biệt với bản gốc.",
-      "family": "distinguish (v); distinguishable/indistinguishable (adj)"
+      "family": "distinguish (v); distinguishable/indistinguishable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ]
     },
     {
       "question": 34,
@@ -164,7 +220,11 @@
       "usage": "an impractical plan/idea",
       "example": "The plan was too expensive and impractical.",
       "translation": "Kế hoạch quá tốn kém và không thực tế.",
-      "family": "practice (n); practical (adj); practically (adv); impractical (adj)"
+      "family": "practice (n); practical (adj); practically (adv); impractical (adj)",
+      "teacherSelected": true,
+      "questions": [
+        34
+      ]
     },
     {
       "question": 35,
@@ -175,7 +235,11 @@
       "usage": "an apologetic smile/tone; be apologetic about",
       "example": "He gave an apologetic smile after arriving late.",
       "translation": "Anh ấy cười áy náy sau khi đến muộn.",
-      "family": "apologize/apologise (v); apology (n); apologetic (adj)"
+      "family": "apologize/apologise (v); apology (n); apologetic (adj)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 36,
@@ -186,7 +250,11 @@
       "usage": "look/gaze heavenward(s)",
       "example": "She looked heavenwards at the stars.",
       "translation": "Cô ấy ngước lên trời nhìn những vì sao.",
-      "family": "heaven (n); heavenly (adj); heavenward(s) (adv)"
+      "family": "heaven (n); heavenly (adj); heavenward(s) (adv)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 37,
@@ -197,7 +265,11 @@
       "usage": "immobilize a vehicle/limb",
       "example": "The broken wheel immobilized the cart.",
       "translation": "Bánh xe hỏng khiến chiếc xe đẩy không thể di chuyển.",
-      "family": "mobile/immobile (adj); immobilize/immobilise (v); immobility (n)"
+      "family": "mobile/immobile (adj); immobilize/immobilise (v); immobility (n)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ]
     },
     {
       "question": 38,
@@ -208,7 +280,11 @@
       "usage": "stare/shake one’s head in disbelief",
       "example": "She stared at the result in disbelief.",
       "translation": "Cô ấy nhìn kết quả với vẻ không tin nổi.",
-      "family": "believe (v); belief/disbelief (n); unbelievable (adj)"
+      "family": "believe (v); belief/disbelief (n); unbelievable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 39,
@@ -219,7 +295,11 @@
       "usage": "the defendant in a case",
       "example": "The defendant answered the lawyer’s question.",
       "translation": "Người bị kiện hoặc bị cáo trả lời câu hỏi của luật sư.",
-      "family": "defend (v); defendant (n); defence/defense (n)"
+      "family": "defend (v); defendant (n); defence/defense (n)",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ]
     },
     {
       "question": 40,
@@ -230,7 +310,11 @@
       "usage": "a thoughtful gesture; thoughtful of someone",
       "example": "It was thoughtful of you to bring some water.",
       "translation": "Bạn thật chu đáo khi mang theo nước.",
-      "family": "think – thought – thought; thoughtful/thoughtless (adj)"
+      "family": "think – thought – thought; thoughtful/thoughtless (adj)",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ]
     },
     {
       "question": 42,
@@ -241,7 +325,11 @@
       "usage": "secretarial work/skills/training",
       "example": "She has strong secretarial skills.",
       "translation": "Cô ấy có kỹ năng thư ký tốt.",
-      "family": "secretary (n); secretarial (adj); secretariat (n)"
+      "family": "secretary (n); secretarial (adj); secretariat (n)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ]
     },
     {
       "question": 43,
@@ -252,7 +340,11 @@
       "usage": "an unmanageable workload; become unmanageable",
       "example": "The workload became unmanageable for one person.",
       "translation": "Khối lượng việc trở nên quá sức đối với một người.",
-      "family": "manage (v); management (n); manageable/unmanageable (adj)"
+      "family": "manage (v); management (n); manageable/unmanageable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ]
     },
     {
       "question": 45,
@@ -263,7 +355,11 @@
       "usage": "Alternatively, + phương án khác",
       "example": "We can walk. Alternatively, we can take a bus.",
       "translation": "Ta có thể đi bộ. Hoặc có thể đi xe buýt.",
-      "family": "alternative (n/adj); alternatively (adv); alternate (v/adj)"
+      "family": "alternative (n/adj); alternatively (adv); alternate (v/adj)",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ]
     },
     {
       "question": 54,
@@ -274,7 +370,11 @@
       "usage": "depict someone as; be depicted in a picture",
       "example": "The drawing depicts a quiet village.",
       "translation": "Bức vẽ khắc hoạ một ngôi làng yên bình.",
-      "family": "depict (v); depiction (n); descriptive (adj)"
+      "family": "depict (v); depiction (n); descriptive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        54
+      ]
     },
     {
       "question": 56,
@@ -285,7 +385,11 @@
       "usage": "a strict disciplinarian",
       "example": "The fictional headmaster is a strict disciplinarian.",
       "translation": "Hiệu trưởng trong truyện là người rất nghiêm về kỷ luật.",
-      "family": "discipline (n/v); disciplined (adj); disciplinarian (n)"
+      "family": "discipline (n/v); disciplined (adj); disciplinarian (n)",
+      "teacherSelected": true,
+      "questions": [
+        56
+      ]
     },
     {
       "question": 60,
@@ -296,7 +400,11 @@
       "usage": "a prominent feature/figure",
       "example": "The clock is a prominent feature of the tower.",
       "translation": "Chiếc đồng hồ là một đặc điểm nổi bật của toà tháp.",
-      "family": "prominent (adj); prominently (adv); prominence (n)"
+      "family": "prominent (adj); prominently (adv); prominence (n)",
+      "teacherSelected": true,
+      "questions": [
+        60
+      ]
     },
     {
       "question": 74,
@@ -307,7 +415,11 @@
       "usage": "preserve/protect anonymity; on condition of anonymity",
       "example": "The writer chose to preserve her anonymity.",
       "translation": "Người viết chọn giữ kín danh tính.",
-      "family": "anonymous (adj); anonymously (adv); anonymity (n)"
+      "family": "anonymous (adj); anonymously (adv); anonymity (n)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ]
     },
     {
       "question": 95,
@@ -318,7 +430,11 @@
       "usage": "apply oneself to a task/studying",
       "example": "You will improve if you apply yourself.",
       "translation": "Bạn sẽ tiến bộ nếu chuyên tâm cố gắng.",
-      "family": "apply (v); application (n); diligent (adj); diligence (n)"
+      "family": "apply (v); application (n); diligent (adj); diligence (n)",
+      "teacherSelected": true,
+      "questions": [
+        95
+      ]
     },
     {
       "question": 98,
@@ -329,7 +445,11 @@
       "usage": "be up in arms about/over/at something",
       "example": "Residents were up in arms over the sudden closure.",
       "translation": "Cư dân phản đối mạnh việc đóng cửa đột ngột.",
-      "family": "protest (n/v); opposition (n); object (v)"
+      "family": "protest (n/v); opposition (n); object (v)",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ]
     }
   ]
 }

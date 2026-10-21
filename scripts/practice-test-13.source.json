@@ -1054,10 +1054,16 @@
         "whose name had been left"
       ],
       "displayAnswer": "whose name was missed / whose name had been missed / whose name was left / whose name had been left",
-      "explanation": "Whose name thể hiện tên của Vicky; was/had been missed off the list nghĩa là đã bị bỏ sót khỏi danh sách. Mệnh đề bổ sung được ngăn bởi hai dấu phẩy có sẵn. Không điền lại off the list vì cụm này nằm sau chỗ trống.",
+      "explanation": "Whose name thể hiện tên của Vicky; was/had been missed off the list nghĩa là đã bị bỏ sót khỏi danh sách. Mệnh đề bổ sung được ngăn bởi hai dấu phẩy có sẵn.",
       "prefix": "Vicky,",
-      "suffix": "off the list, wasn’t very pleased.",
-      "fullSentence": "Vicky, whose name was missed off the list, wasn’t very pleased."
+      "suffix": "off the list, wasn't very pleased",
+      "fullSentence": "Vicky, whose name was missed off the list, wasn't very pleased",
+      "keyword": "WHOSE",
+      "answerPrefix": "Vicky,",
+      "answerSuffix": "off the list, wasn't very pleased",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "whose name was missed"
     },
     {
       "globalNumber": 92,
@@ -1067,10 +1073,16 @@
         "is believed to have been"
       ],
       "displayAnswer": "is believed to have been",
-      "explanation": "Sự tin tưởng của cảnh sát ở hiện tại nên dùng is believed. Việc đang mặc áo xảy ra trước thời điểm đó nên dùng to have been wearing. Không chỉ viết is believed to be vì sẽ mất quan hệ quá khứ của was wearing.",
+      "explanation": "Sự tin tưởng của cảnh sát ở hiện tại nên dùng is believed. Việc đang mặc áo xảy ra trước thời điểm đó nên dùng to have been wearing.",
       "prefix": "The robber",
-      "suffix": "wearing a dark-blue jacket.",
-      "fullSentence": "The robber is believed to have been wearing a dark-blue jacket."
+      "suffix": "wearing a dark-blue jacket",
+      "fullSentence": "The robber is believed to have been wearing a dark-blue jacket",
+      "keyword": "BELIEVED",
+      "answerPrefix": "The robber",
+      "answerSuffix": "wearing a dark-blue jacket",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "is believed to have been"
     },
     {
       "globalNumber": 93,
@@ -1080,10 +1092,16 @@
         "in case I ran"
       ],
       "displayAnswer": "in case I ran",
-      "explanation": "In case + mệnh đề diễn tả phòng trường hợp có thể xảy ra. Câu kể quá khứ nên dùng I ran out of cash. Phải có chủ ngữ I; đáp án cũ thiếu I là sai cấu trúc. Out of cash đã được cho sẵn sau ô trống.",
+      "explanation": "In case + mệnh đề diễn tả phòng trường hợp có thể xảy ra. Câu kể quá khứ nên dùng I ran out of cash.",
       "prefix": "I took my cheque-book with me",
-      "suffix": "out of cash.",
-      "fullSentence": "I took my cheque-book with me in case I ran out of cash."
+      "suffix": "out of cash",
+      "fullSentence": "I took my cheque-book with me in case I ran out of cash",
+      "keyword": "CASE",
+      "answerPrefix": "I took my cheque-book with me",
+      "answerSuffix": "out of cash",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "in case I ran"
     },
     {
       "globalNumber": 94,
@@ -1093,10 +1111,16 @@
         "for a picnic have fallen through"
       ],
       "displayAnswer": "for a picnic have fallen through",
-      "explanation": "Fall through nghĩa là kế hoạch không thực hiện được. Plans số nhiều dùng have fallen through, giữ hiện tại hoàn thành của have been spoiled. Không dùng fallen down vì cụm đó chỉ ngã/sụp, không diễn đạt kế hoạch thất bại.",
-      "prefix": "Linda’s plans",
-      "suffix": "due to the weather.",
-      "fullSentence": "Linda’s plans for a picnic have fallen through due to the weather."
+      "explanation": "Fall through nghĩa là kế hoạch không thực hiện được. Plans số nhiều dùng have fallen through, giữ hiện tại hoàn thành của have been spoiled.\nTừ vựng trọng tâm: fall through",
+      "prefix": "Linda's plans",
+      "suffix": "due to the weather",
+      "fullSentence": "Linda's plans for a picnic have fallen through due to the weather",
+      "keyword": "FALLEN",
+      "answerPrefix": "Linda's plans",
+      "answerSuffix": "due to the weather",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "for a picnic have fallen through"
     },
     {
       "globalNumber": 95,
@@ -1110,10 +1134,16 @@
         "not possible to get access to"
       ],
       "displayAnswer": "not possible to access / not possible to get to / not possible to reach / not possible to gain access to / not possible to get access to",
-      "explanation": "Inaccessible nghĩa là không thể tiếp cận hoặc đi tới. Đổi sang It is not possible to access/get to/reach… và giữ in winter. Possible là từ khóa bắt buộc; accessible hoặc impossible dù gần nghĩa vẫn không đáp ứng yêu cầu giữ từ.",
+      "explanation": "Inaccessible nghĩa là không thể tiếp cận hoặc đi tới. Đổi sang It is not possible to access/get to/reach… và giữ in winter.",
       "prefix": "It is",
-      "suffix": "this hotel in winter.",
-      "fullSentence": "It is not possible to access this hotel in winter."
+      "suffix": "this hotel in winter",
+      "fullSentence": "It is not possible to access this hotel in winter",
+      "keyword": "POSSIBLE",
+      "answerPrefix": "It is",
+      "answerSuffix": "this hotel in winter",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "not possible to access"
     },
     {
       "globalNumber": 96,
@@ -1123,70 +1153,97 @@
         "no matter how hard he studies"
       ],
       "displayAnswer": "no matter how hard he studies",
-      "explanation": "No matter how + tính từ/trạng từ + chủ ngữ + động từ diễn tả dù đến mức nào. No matter how hard he studies giữ ý dù học chăm. Matter là từ khóa; không thay toàn bộ bằng however hard nếu bài yêu cầu giữ nguyên matter.",
+      "explanation": "No matter how + tính từ/trạng từ + chủ ngữ + động từ diễn tả dù đến mức nào. No matter how hard he studies giữ ý dù học chăm.",
       "prefix": "Derek never does well in his exams",
       "suffix": "",
-      "fullSentence": "Derek never does well in his exams no matter how hard he studies."
+      "fullSentence": "Derek never does well in his exams no matter how hard he studies",
+      "keyword": "MATTER",
+      "answerPrefix": "Derek never does well in his exams",
+      "answerSuffix": "",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "no matter how hard he studies"
     },
     {
       "globalNumber": 97,
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "have made their getaway in a white Mercedes van"
+        "have made their getaway"
       ],
-      "displayAnswer": "have made their getaway in a white Mercedes van",
-      "explanation": "Make one’s getaway nghĩa là trốn thoát. Sau may dùng have + V3 để suy đoán về quá khứ, nên may have made their getaway. In a white Mercedes van nêu phương tiện đã dùng và phải giữ lại để đủ nghĩa câu gốc.",
+      "displayAnswer": "have made their getaway",
+      "explanation": "Make one’s getaway nghĩa là trốn thoát. Sau may dùng have + V3 để suy đoán về quá khứ, nên may have made their getaway.",
       "prefix": "The thieves may",
-      "suffix": "",
-      "fullSentence": "The thieves may have made their getaway in a white Mercedes van."
+      "suffix": "in a white Mercedes van",
+      "fullSentence": "The thieves may have made their getaway in a white Mercedes van",
+      "keyword": "GETAWAY",
+      "answerPrefix": "The thieves may",
+      "answerSuffix": "in a white Mercedes van",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "have made their getaway"
     },
     {
       "globalNumber": 98,
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "of the residents rarely seem to be taken into account by the town council",
-        "of the residents rarely seem to be taken into consideration by the town council"
+        "seem to be taken into account",
+        "seem to be taken into consideration"
       ],
-      "displayAnswer": "of the residents rarely seem to be taken into account by the town council / of the residents rarely seem to be taken into consideration by the town council",
-      "explanation": "Take something into account/consideration = cân nhắc điều gì. Đưa wishes lên làm chủ ngữ thì dùng to be taken, giữ rarely seem và tác nhân town council. Không dùng rarely are considered nếu bỏ từ khóa INTO mà đề yêu cầu.",
-      "prefix": "The wishes",
-      "suffix": "",
-      "fullSentence": "The wishes of the residents rarely seem to be taken into account by the town council."
+      "displayAnswer": "seem to be taken into account / seem to be taken into consideration",
+      "explanation": "Take something into account/consideration = cân nhắc điều gì. Đưa wishes lên làm chủ ngữ thì dùng to be taken, giữ rarely seem và tác nhân town council.",
+      "prefix": "The wishes of the residents rarely",
+      "suffix": "by the town council",
+      "fullSentence": "The wishes of the residents rarely seem to be taken into account by the town council",
+      "keyword": "INTO",
+      "answerPrefix": "The wishes of the residents rarely",
+      "answerSuffix": "by the town council",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "seem to be taken into account"
     },
     {
       "globalNumber": 99,
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "placed the blame on Carrie for the party being ruined",
-        "placed the blame on her daughter for the party being ruined",
-        "placed the blame on Carrie for ruining the party",
-        "placed the blame on her for the party being ruined",
-        "placed the blame for the party being ruined on Carrie"
+        "placed the blame on Carrie",
+        "placed the blame on her daughter",
+        "placed the blame on her"
       ],
-      "displayAnswer": "placed the blame on Carrie for the party being ruined / placed the blame on her daughter for the party being ruined / placed the blame on Carrie for ruining the party / placed the blame on her for the party being ruined / placed the blame for the party being ruined on Carrie",
-      "explanation": "Place the blame on somebody for something/V-ing = đổ trách nhiệm cho ai về điều gì. Câu gốc đã nói rõ mẹ trách Carrie, nên không được đổi thành người mẹ tự nhận lỗi. Phải giữ placed đúng từ khóa và thể quá khứ.",
-      "prefix": "Carrie’s mom",
-      "suffix": "",
-      "fullSentence": "Carrie’s mom placed the blame on Carrie for the party being ruined."
+      "displayAnswer": "placed the blame on Carrie / placed the blame on her daughter / placed the blame on her",
+      "explanation": "Place the blame on somebody for something/V-ing = đổ trách nhiệm cho ai về điều gì. Câu gốc đã nói rõ mẹ trách Carrie, nên không được đổi thành người mẹ tự nhận lỗi.",
+      "prefix": "Carrie's mom",
+      "suffix": "for the party being ruined",
+      "fullSentence": "Carrie's mom placed the blame on Carrie for the party being ruined",
+      "keyword": "PLACED",
+      "answerPrefix": "Carrie's mom",
+      "answerSuffix": "for the party being ruined",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "placed the blame on Carrie"
     },
     {
       "globalNumber": 100,
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "take back what I said about your new hat looking like a lampshade",
-        "take back my remark that your new hat looked like a lampshade",
-        "take back my words about your new hat looking like a lampshade",
-        "take back what I said about your new hat looking like a lamp shade"
+        "take back what I said",
+        "take back my words"
       ],
-      "displayAnswer": "take back what I said about your new hat looking like a lampshade / take back my remark that your new hat looked like a lampshade / take back my words about your new hat looking like a lampshade / take back what I said about your new hat looking like a lamp shade",
-      "explanation": "Take back what I said/my remark nghĩa là rút lại lời đã nói. Cần giữ nội dung lời nhận xét về chiếc mũ giống chao đèn. Back là thành phần bắt buộc của cụm; không đổi thành take off hoặc bỏ cụm nhìn giống chao đèn.",
+      "displayAnswer": "take back what I said / take back my words",
+      "explanation": "Take back what I said/my remark nghĩa là rút lại lời đã nói. Cần giữ nội dung lời nhận xét về chiếc mũ giống chao đèn.\nTừ vựng trọng tâm: take back",
       "prefix": "I",
-      "suffix": "",
-      "fullSentence": "I take back what I said about your new hat looking like a lampshade."
+      "suffix": "about your new hat looking like a lampshade",
+      "fullSentence": "I take back what I said about your new hat looking like a lampshade",
+      "keyword": "BACK",
+      "answerPrefix": "I",
+      "answerSuffix": "about your new hat looking like a lampshade",
+      "minWords": 2,
+      "maxWords": 6,
+      "blankAnswer": "take back what I said"
     }
-  ]
+  ],
+  "contentRevision": "2026-10-21-word-limits"
 }

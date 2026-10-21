@@ -10,7 +10,11 @@
       "usage": "prohibitive prices/costs; prohibitively expensive",
       "example": "The cost of repairs was prohibitive.",
       "translation": "Chi phí sửa chữa cao đến mức không thể thực hiện.",
-      "family": "prohibit (v); prohibition (n); prohibitive (adj); prohibitively (adv)"
+      "family": "prohibit (v); prohibition (n); prohibitive (adj); prohibitively (adv)",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ]
     },
     {
       "question": 2,
@@ -21,7 +25,11 @@
       "usage": "have to face the music",
       "example": "After breaking the window, he had to face the music.",
       "translation": "Sau khi làm vỡ cửa sổ, cậu ấy phải đối mặt với hậu quả.",
-      "family": "face (v/n); consequence (n); accountability (n)"
+      "family": "face (v/n); consequence (n); accountability (n)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ]
     },
     {
       "question": 3,
@@ -32,7 +40,11 @@
       "usage": "be under guarantee; a two-year guarantee",
       "example": "The laptop is still under guarantee.",
       "translation": "Máy tính xách tay vẫn còn bảo hành.",
-      "family": "guarantee (n/v); guaranteed (adj)"
+      "family": "guarantee (n/v); guaranteed (adj)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ]
     },
     {
       "question": 4,
@@ -43,7 +55,11 @@
       "usage": "a momentary lapse of concentration",
       "example": "A brief lapse of concentration caused the mistake.",
       "translation": "Một thoáng mất tập trung đã gây ra sai sót.",
-      "family": "lapse (n/v); concentrate (v); concentration (n)"
+      "family": "lapse (n/v); concentrate (v); concentration (n)",
+      "teacherSelected": true,
+      "questions": [
+        4
+      ]
     },
     {
       "question": 5,
@@ -54,7 +70,11 @@
       "usage": "be held up in traffic; hold someone up",
       "example": "We were held up by roadworks.",
       "translation": "Chúng tôi bị chậm vì đường đang sửa.",
-      "family": "hold – held – held; hold-up (n); delay (n/v)"
+      "family": "hold – held – held; hold-up (n); delay (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ]
     },
     {
       "question": 9,
@@ -65,7 +85,11 @@
       "usage": "rub salt into/in the wound",
       "example": "His joke rubbed salt into the wound after our defeat.",
       "translation": "Câu đùa của anh ấy khiến chúng tôi càng buồn sau thất bại.",
-      "family": "rub (v); wound (n/v); hurt (n/v)"
+      "family": "rub (v); wound (n/v); hurt (n/v)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ]
     },
     {
       "question": 10,
@@ -76,7 +100,11 @@
       "usage": "commitment to a goal; show commitment",
       "example": "Her commitment helped the team finish the project.",
       "translation": "Sự tận tâm của cô ấy giúp nhóm hoàn thành dự án.",
-      "family": "commit (v); committed (adj); commitment (n)"
+      "family": "commit (v); committed (adj); commitment (n)",
+      "teacherSelected": true,
+      "questions": [
+        10
+      ]
     },
     {
       "question": 11,
@@ -87,7 +115,11 @@
       "usage": "prior to departure; prior to signing",
       "example": "Please check the details prior to signing.",
       "translation": "Hãy kiểm tra các chi tiết trước khi ký.",
-      "family": "prior (adj); previously (adv); previous (adj)"
+      "family": "prior (adj); previously (adv); previous (adj)",
+      "teacherSelected": true,
+      "questions": [
+        11
+      ]
     },
     {
       "question": 12,
@@ -98,7 +130,11 @@
       "usage": "far-reaching consequences/changes",
       "example": "The decision had far-reaching consequences.",
       "translation": "Quyết định ấy có những hậu quả sâu rộng.",
-      "family": "reach (v/n); impact (n/v); influential (adj)"
+      "family": "reach (v/n); impact (n/v); influential (adj)",
+      "teacherSelected": true,
+      "questions": [
+        12
+      ]
     },
     {
       "question": 15,
@@ -109,7 +145,11 @@
       "usage": "take on new staff; take someone on",
       "example": "The bakery took on two new assistants.",
       "translation": "Tiệm bánh tuyển thêm hai nhân viên phụ giúp.",
-      "family": "take – took – taken; hire/employ (v); employee (n)"
+      "family": "take – took – taken; hire/employ (v); employee (n)",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ]
     },
     {
       "question": 16,
@@ -120,7 +160,11 @@
       "usage": "boast about achievements/possessions",
       "example": "He often boasts about his achievements.",
       "translation": "Anh ấy hay khoe khoang về thành tích của mình.",
-      "family": "boast (v/n); boastful (adj); boastfully (adv)"
+      "family": "boast (v/n); boastful (adj); boastfully (adv)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ]
     },
     {
       "question": 17,
@@ -131,7 +175,11 @@
       "usage": "in the light of new evidence/comments",
       "example": "We changed the plan in the light of new evidence.",
       "translation": "Chúng tôi đổi kế hoạch sau khi xem xét bằng chứng mới.",
-      "family": "in light of (biến thể); reconsider (v); revise (v)"
+      "family": "in light of (biến thể); reconsider (v); revise (v)",
+      "teacherSelected": true,
+      "questions": [
+        17
+      ]
     },
     {
       "question": 18,
@@ -142,7 +190,11 @@
       "usage": "be/prove a roaring success",
       "example": "The school fair was a roaring success.",
       "translation": "Hội chợ trường học thành công vang dội.",
-      "family": "succeed (v); success (n); successful (adj); successfully (adv)"
+      "family": "succeed (v); success (n); successful (adj); successfully (adv)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ]
     },
     {
       "question": 19,
@@ -153,7 +205,11 @@
       "usage": "completely forget to do something",
       "example": "I completely forgot to send the letter.",
       "translation": "Tôi quên hẳn việc gửi lá thư.",
-      "family": "complete (adj); completely (adv); forget – forgot – forgotten"
+      "family": "complete (adj); completely (adv); forget – forgot – forgotten",
+      "teacherSelected": true,
+      "questions": [
+        19
+      ]
     },
     {
       "question": 20,
@@ -164,7 +220,11 @@
       "usage": "quench a thirst; a thirst for knowledge",
       "example": "A glass of water quenched my thirst.",
       "translation": "Một cốc nước giúp tôi hết khát.",
-      "family": "quench (v); thirst (n/v); thirsty (adj)"
+      "family": "quench (v); thirst (n/v); thirsty (adj)",
+      "teacherSelected": true,
+      "questions": [
+        20
+      ]
     },
     {
       "question": 22,
@@ -175,7 +235,11 @@
       "usage": "adopt a policy/approach/solution",
       "example": "The team adopted a simpler approach.",
       "translation": "Nhóm chọn áp dụng một cách tiếp cận đơn giản hơn.",
-      "family": "adopt (v); adoption (n); adopted (adj); adapt (v khác nghĩa)"
+      "family": "adopt (v); adoption (n); adopted (adj); adapt (v khác nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        22
+      ]
     },
     {
       "question": 23,
@@ -186,7 +250,11 @@
       "usage": "elude capture/the police; a solution eludes someone",
       "example": "The answer continued to elude me.",
       "translation": "Tôi vẫn chưa tìm ra câu trả lời.",
-      "family": "elude (v); elusive (adj); elusiveness (n)"
+      "family": "elude (v); elusive (adj); elusiveness (n)",
+      "teacherSelected": true,
+      "questions": [
+        23
+      ]
     },
     {
       "question": 25,
@@ -197,7 +265,11 @@
       "usage": "increasingly difficult/popular; increasingly longer gaps",
       "example": "The instructions became increasingly clear.",
       "translation": "Các hướng dẫn ngày càng rõ ràng.",
-      "family": "increase (n/v); increasing (adj); increasingly (adv)"
+      "family": "increase (n/v); increasing (adj); increasingly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ]
     },
     {
       "question": 28,
@@ -208,7 +280,11 @@
       "usage": "a significant event/change; be significant to someone",
       "example": "It was a significant moment in her life.",
       "translation": "Đó là một khoảnh khắc có ý nghĩa trong đời cô ấy.",
-      "family": "signify (v); significance (n); significant (adj); significantly (adv)"
+      "family": "signify (v); significance (n); significant (adj); significantly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ]
     },
     {
       "question": 31,
@@ -219,7 +295,11 @@
       "usage": "underestimate someone's ability/the difficulty",
       "example": "Do not underestimate the time this task needs.",
       "translation": "Đừng đánh giá thấp thời gian công việc này cần.",
-      "family": "estimate (n/v); estimation (n); under-/overestimate (v)"
+      "family": "estimate (n/v); estimation (n); under-/overestimate (v)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ]
     },
     {
       "question": 35,
@@ -230,7 +310,11 @@
       "usage": "admission fee; free admission; admission to a museum",
       "example": "Admission to the exhibition is free.",
       "translation": "Vào xem triển lãm được miễn phí.",
-      "family": "admit (v); admission (n); admittance (n: quyền vào)"
+      "family": "admit (v); admission (n); admittance (n: quyền vào)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ]
     },
     {
       "question": 36,
@@ -241,7 +325,11 @@
       "usage": "additional information/donation/costs",
       "example": "No additional payment is required.",
       "translation": "Không cần trả thêm khoản nào.",
-      "family": "add (v); addition (n); additional (adj); additionally (adv)"
+      "family": "add (v); addition (n); additional (adj); additionally (adv)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ]
     },
     {
       "question": 38,
@@ -252,7 +340,11 @@
       "usage": "membership fee/benefits; apply for membership",
       "example": "Membership includes free entry to special events.",
       "translation": "Tư cách thành viên bao gồm quyền vào miễn phí các sự kiện đặc biệt.",
-      "family": "member (n); membership (n); non-member (n)"
+      "family": "member (n); membership (n); non-member (n)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ]
     },
     {
       "question": 49,
@@ -263,7 +355,11 @@
       "usage": "sustainable development/design/transport",
       "example": "The town is investing in sustainable transport.",
       "translation": "Thị trấn đang đầu tư vào giao thông bền vững.",
-      "family": "sustain (v); sustainability (n); sustainable (adj); sustainably (adv)"
+      "family": "sustain (v); sustainability (n); sustainable (adj); sustainably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        49
+      ]
     },
     {
       "question": 53,
@@ -274,7 +370,11 @@
       "usage": "transport/water infrastructure; maintain infrastructure",
       "example": "The city needs to upgrade its water infrastructure.",
       "translation": "Thành phố cần nâng cấp hạ tầng cấp nước.",
-      "family": "structure (n/v); infrastructure (n); infrastructural (adj)"
+      "family": "structure (n/v); infrastructure (n); infrastructural (adj)",
+      "teacherSelected": true,
+      "questions": [
+        53
+      ]
     },
     {
       "question": 58,
@@ -285,7 +385,11 @@
       "usage": "be exposed to sunlight/noise/allergens",
       "example": "The equipment should not be exposed to rain.",
       "translation": "Thiết bị không nên tiếp xúc với mưa.",
-      "family": "expose (v); exposure (n); exposed (adj)"
+      "family": "expose (v); exposure (n); exposed (adj)",
+      "teacherSelected": true,
+      "questions": [
+        58
+      ]
     },
     {
       "question": 74,
@@ -296,7 +400,11 @@
       "usage": "thermal insulation; add insulation to walls",
       "example": "Better insulation keeps the room warmer.",
       "translation": "Lớp cách nhiệt tốt hơn giúp phòng ấm hơn.",
-      "family": "insulate (v); insulation (n); insulated (adj); insulator (n)"
+      "family": "insulate (v); insulation (n); insulated (adj); insulator (n)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ]
     },
     {
       "question": 76,
@@ -307,7 +415,11 @@
       "usage": "be already under way; get under way",
       "example": "Construction is already under way.",
       "translation": "Việc xây dựng đã được triển khai.",
-      "family": "underway (biến thể); in progress; ongoing (adj)"
+      "family": "underway (biến thể); in progress; ongoing (adj)",
+      "teacherSelected": true,
+      "questions": [
+        76
+      ]
     },
     {
       "question": 98,
@@ -318,7 +430,11 @@
       "usage": "work/race against the clock",
       "example": "We worked against the clock to finish the display.",
       "translation": "Chúng tôi chạy đua với thời gian để hoàn thành phần trưng bày.",
-      "family": "deadline (n); time limit (n); urgent (adj)"
+      "family": "deadline (n); time limit (n); urgent (adj)",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ]
     },
     {
       "question": 99,
@@ -329,7 +445,11 @@
       "usage": "buy/decide/do something on a whim",
       "example": "She booked the trip on a whim.",
       "translation": "Cô ấy đặt chuyến đi theo ý thích bộc phát.",
-      "family": "whim (n); impulsive (adj); impulsively (adv); on impulse"
+      "family": "whim (n); impulsive (adj); impulsively (adv); on impulse",
+      "teacherSelected": true,
+      "questions": [
+        99
+      ]
     }
   ]
 }
