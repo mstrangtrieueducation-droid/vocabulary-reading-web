@@ -155,6 +155,7 @@
       "displayAnswer": "B",
       "explanation": "Be held up in traffic là bị chậm lại vì giao thông.\nhold up = làm chậm; trì hoãn.",
       "teacherHighlights": [
+        "Be held up",
         "hold up"
       ]
     },
@@ -451,7 +452,9 @@
       ],
       "displayAnswer": "memorising / memorizing",
       "explanation": "By + V-ing diễn đạt phương pháp, nên memory chuyển thành động từ memorise/memorize rồi thêm -ing.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "memorize"
+      ]
     },
     {
       "globalNumber": 30,
@@ -546,7 +549,9 @@
       ],
       "displayAnswer": "subscription",
       "explanation": "An annual subscription fee là phí đăng ký định kỳ hằng năm.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "subscription"
+      ]
     },
     {
       "globalNumber": 38,
@@ -710,7 +715,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Rather than + động từ diễn đạt lựa chọn việc này thay vì việc kia: save resources rather than deplete them.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "deplete"
+      ]
     },
     {
       "globalNumber": 52,
@@ -830,7 +837,9 @@
       ],
       "displayAnswer": "with",
       "explanation": "Come into contact with là tiếp xúc với.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Come into contact with"
+      ]
     },
     {
       "globalNumber": 62,
@@ -1369,7 +1378,10 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "treat them with a bit more",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "respectful",
+        "respectful"
+      ]
     },
     {
       "globalNumber": 98,

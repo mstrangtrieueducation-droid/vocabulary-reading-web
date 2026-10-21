@@ -740,6 +740,122 @@
         98
       ],
       "aliases": []
+    },
+    {
+      "term": "production / productivity",
+      "meta": "NOUNS",
+      "meaning": "sự sản xuất, sản lượng / năng suất",
+      "note": "Productivity and competitiveness là hai danh từ chỉ năng suất và năng lực cạnh tranh. increase production/productivity; food production; labour productivity.",
+      "usage": "increase production/productivity; food production; labour productivity",
+      "family": "produce (v): sản xuất; product (n): sản phẩm; productive (adj): có năng suất, hữu ích",
+      "example": "Better equipment increased productivity without extending working hours.",
+      "translation": "Thiết bị tốt hơn giúp tăng năng suất mà không kéo dài giờ làm.",
+      "teacherSelected": true,
+      "questions": [
+        15
+      ],
+      "aliases": [
+        "Productivity"
+      ],
+      "question": 15
+    },
+    {
+      "term": "imaginary / imaginative / imaginable / unimaginable",
+      "meta": "adjectives",
+      "meaning": "tưởng tượng, không có thật / giàu tưởng tượng / có thể tưởng tượng được; unimaginable: không thể tưởng tượng nổi",
+      "note": "An imaginative selection là sự lựa chọn sáng tạo, nhiều ý tưởng. an imaginary friend; an imaginative solution; every imaginable problem; unimaginable damage. unimaginable suffering: nỗi đau khổ không thể tưởng tượng nổi..",
+      "usage": "an imaginary friend; an imaginative solution; every imaginable problem; unimaginable damage. unimaginable suffering: nỗi đau khổ không thể tưởng tượng nổi.",
+      "family": "imagine (v); imagination (n); imaginary/imaginative/imaginable/unimaginable (adj).",
+      "example": "The imaginative writer created an imaginary world.",
+      "translation": "Nhà văn giàu trí tưởng tượng tạo ra một thế giới không có thật.",
+      "aliases": [
+        "imaginative"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        44
+      ],
+      "question": 44
+    },
+    {
+      "question": 44,
+      "term": "imaginative",
+      "meta": "ADJECTIVE",
+      "meaning": "giàu trí tưởng tượng, sáng tạo",
+      "note": "An imaginative selection là sự lựa chọn sáng tạo, nhiều ý tưởng. an imaginative solution/person.",
+      "usage": "an imaginative solution/person",
+      "example": "They found an imaginative way to reuse the materials.",
+      "translation": "Họ tìm được một cách sáng tạo để tái sử dụng vật liệu.",
+      "family": "imagine (v); imagination (n); imaginative (adj); imaginary (adj)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ],
+      "aliases": []
+    },
+    {
+      "term": "status",
+      "meta": "noun",
+      "meaning": "địa vị; tình trạng",
+      "note": "A shift in status là sự thay đổi vị thế. social/legal status; achieve high status; a status symbol; check the status of an application..",
+      "usage": "social/legal status; achieve high status; a status symbol; check the status of an application.",
+      "family": "status (n); statuses (số nhiều khi nói nhiều loại/tình trạng).",
+      "example": "Education helped improve her social status.",
+      "translation": "Giáo dục giúp nâng cao địa vị xã hội của cô ấy.",
+      "teacherSelected": true,
+      "questions": [
+        55
+      ],
+      "question": 55,
+      "aliases": []
+    },
+    {
+      "question": 64,
+      "term": "ensure",
+      "meta": "VERB",
+      "meaning": "bảo đảm một điều xảy ra",
+      "note": "Confirm/ensure/check/verify/see they still meet... đều diễn đạt kiểm tra, xác nhận hoặc bảo đảm cơ sở tiếp tục đạt tiêu chuẩn. ensure safety; ensure that….",
+      "usage": "ensure safety; ensure that…",
+      "example": "Check the list to ensure that nothing is missing.",
+      "translation": "Kiểm tra danh sách để bảo đảm không thiếu thứ gì.",
+      "family": "sure (adj); assurance (n); insurance (n)",
+      "teacherSelected": true,
+      "questions": [
+        64
+      ],
+      "aliases": []
+    },
+    {
+      "question": 64,
+      "term": "check",
+      "meta": "VERB",
+      "meaning": "kiểm tra, xác minh",
+      "note": "Check trong câu là kiểm tra xem cơ sở có còn đáp ứng tiêu chuẩn không. Check, verify và confirm đều liên quan đến việc xác minh thông tin.",
+      "usage": "check that + mệnh đề; check whether ...",
+      "example": "Inspectors check that the farms meet the standards.",
+      "translation": "Thanh tra kiểm tra xem các trang trại có đáp ứng tiêu chuẩn không.",
+      "family": "check (v/n); checked; checking; checklist (n)",
+      "teacherSelected": true,
+      "questions": [
+        64
+      ],
+      "aliases": []
+    },
+    {
+      "term": "lie behind",
+      "meaning": "là nguyên nhân hoặc cơ sở đằng sau",
+      "usage": "lie behind a decision",
+      "example": "Several reasons lie behind the change.",
+      "translation": "Có nhiều nguyên nhân đằng sau sự thay đổi.",
+      "family": "lie – lay – lain ở nghĩa nằm; không dùng lied",
+      "meta": "PHRASE",
+      "note": "Lie behind something = là nguyên nhân/nền tảng đằng sau. lie behind a decision.",
+      "question": 54,
+      "questions": [
+        54
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"

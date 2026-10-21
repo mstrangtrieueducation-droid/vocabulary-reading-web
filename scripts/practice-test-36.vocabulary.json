@@ -665,6 +665,184 @@
         98
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 9,
+      "term": "lest",
+      "meta": "CONJUNCTION",
+      "meaning": "để tránh việc; kẻo rằng",
+      "note": "Lest (anyone should) overhear = để tránh có người nghe lỏm. lest anyone should misunderstand.",
+      "usage": "lest anyone should misunderstand",
+      "example": "I wrote it down lest I should forget.",
+      "translation": "Tôi ghi lại để khỏi quên.",
+      "family": "lest (conjunction); for fear that (cụm gần nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        9
+      ],
+      "aliases": []
+    },
+    {
+      "question": 27,
+      "term": "exquisite",
+      "meta": "ADJECTIVE",
+      "meaning": "tinh xảo, rất đẹp",
+      "note": "Trật tự tính từ: đánh giá (exquisite) → hình dạng (rectangular) → xuất xứ (Italian) → chất liệu (marble) → danh từ (dining table). exquisite craftsmanship/detail/design.",
+      "usage": "exquisite craftsmanship/detail/design",
+      "example": "The museum displays exquisite handmade jewellery.",
+      "translation": "Bảo tàng trưng bày đồ trang sức thủ công rất tinh xảo.",
+      "family": "exquisite (adj); exquisitely (adv); exquisiteness (n)",
+      "teacherSelected": true,
+      "questions": [
+        27
+      ],
+      "aliases": []
+    },
+    {
+      "term": "barely / hardly / scarcely",
+      "meta": "adverbs",
+      "meaning": "hầu như không; chỉ vừa đủ",
+      "note": "Scarcely any of the data = hầu như không có dữ liệu nào. barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi..",
+      "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
+      "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
+      "example": "She could barely hear the speaker over the noise.",
+      "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn.",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ],
+      "aliases": [
+        "Scarcely"
+      ],
+      "question": 32
+    },
+    {
+      "question": 32,
+      "term": "scarcely",
+      "meta": "ADVERB",
+      "meaning": "hầu như không; vừa mới ... thì",
+      "note": "Scarcely any of the data = hầu như không có dữ liệu nào. Scarcely had S + past participle when S + past simple.",
+      "usage": "Scarcely had S + past participle when S + past simple",
+      "example": "Scarcely had we sat down when the lights went out.",
+      "translation": "Chúng tôi vừa ngồi xuống thì đèn tắt.",
+      "family": "scarce (adj, khan hiếm); scarcity (n); scarcely (adv)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ],
+      "aliases": []
+    },
+    {
+      "question": 71,
+      "term": "beneficial",
+      "meta": "adjective",
+      "meaning": "có lợi",
+      "note": "Pernicious = có hại nghiêm trọng, đối lập beneficial = có lợi. Extensive là rộng lớn, fascinating là hấp dẫn, destructive gần nghĩa gây hại. be beneficial to/for somebody.",
+      "usage": "be beneficial to/for somebody",
+      "example": "Regular exercise is beneficial to health.",
+      "translation": "Tập thể dục đều đặn có lợi cho sức khỏe.",
+      "family": "benefit (n/v): lợi ích/được lợi; beneficially (adv); beneficiary: người thụ hưởng.",
+      "teacherSelected": true,
+      "questions": [
+        71
+      ],
+      "aliases": []
+    },
+    {
+      "question": 76,
+      "term": "available",
+      "meta": "ADJECTIVE",
+      "meaning": "có sẵn; có thể sử dụng",
+      "note": "Available trong ngữ cảnh nội dung có trên web = có thể tiếp cận, gần accessible. Curable = chữa được, exciting = thú vị, durable = bền. available in + màu/kích cỡ; available to + người.",
+      "usage": "available in + màu/kích cỡ; available to + người",
+      "example": "The jacket is available in three colours.",
+      "translation": "Áo khoác có ba màu để chọn.",
+      "family": "availability (n: sự có sẵn); unavailable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        76
+      ],
+      "aliases": []
+    },
+    {
+      "question": 76,
+      "term": "accessible",
+      "meta": "ADJECTIVE",
+      "meaning": "dễ tiếp cận; dễ hiểu",
+      "note": "Available trong ngữ cảnh nội dung có trên web = có thể tiếp cận, gần accessible. Curable = chữa được, exciting = thú vị, durable = bền. accessible to someone; make something accessible.",
+      "usage": "accessible to someone; make something accessible",
+      "example": "The guide makes complex ideas accessible to beginners.",
+      "translation": "Cuốn hướng dẫn giúp người mới dễ hiểu những ý tưởng phức tạp.",
+      "family": "access (n/v); accessible/inaccessible (adj); accessibility (n)",
+      "teacherSelected": true,
+      "questions": [
+        76
+      ],
+      "aliases": []
+    },
+    {
+      "term": "take a good look at",
+      "meaning": "nhìn hoặc xem xét thật kỹ",
+      "usage": "take a good look at something",
+      "example": "Take a good look at the instructions.",
+      "translation": "Hãy xem thật kỹ hướng dẫn.",
+      "family": "take – took – taken; look là danh từ trong cụm",
+      "meta": "PHRASE",
+      "note": "Take a good look at = nhìn thật kỹ. take a good look at something.",
+      "question": 21,
+      "questions": [
+        21
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "raise questions",
+      "meaning": "đặt ra, làm nảy sinh câu hỏi",
+      "usage": "raise questions about something",
+      "example": "The results raise questions about the method.",
+      "translation": "Kết quả đặt ra nghi vấn về phương pháp.",
+      "family": "raise có tân ngữ; rise không nhận tân ngữ",
+      "meta": "PHRASE",
+      "note": "Raise questions = đặt ra/gợi lên vấn đề, là động từ có tân ngữ. raise questions about something.",
+      "question": 48,
+      "questions": [
+        48
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "in short",
+      "meaning": "tóm lại",
+      "usage": "in short, ...",
+      "example": "In short, the plan needs more work.",
+      "translation": "Tóm lại, kế hoạch cần được chỉnh thêm.",
+      "family": "dùng để tổng kết; short (adj): ngắn",
+      "meta": "PHRASE",
+      "note": "In short = tóm lại, dùng để rút ý chính của đoạn trước. in short, ....",
+      "question": 56,
+      "questions": [
+        56
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "have a goal in mind",
+      "meaning": "có sẵn mục tiêu trong đầu",
+      "usage": "have a clear goal in mind",
+      "example": "Start with a clear goal in mind.",
+      "translation": "Hãy bắt đầu với mục tiêu rõ ràng.",
+      "family": "goal: mục tiêu; keep something in mind: ghi nhớ",
+      "meta": "PHRASE",
+      "note": "Have a goal in mind = có sẵn mục tiêu trong đầu. have a clear goal in mind.",
+      "question": 57,
+      "questions": [
+        57
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

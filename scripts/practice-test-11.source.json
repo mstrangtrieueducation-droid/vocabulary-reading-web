@@ -182,7 +182,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Water containing excessive amounts of fluorides = nước chứa quá nhiều fluorua.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "excessive"
+      ]
     },
     {
       "globalNumber": 8,
@@ -381,7 +383,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "Nevertheless = tuy vậy, phù hợp đối lập giữa vai trò cách mạng của truyền hình cáp và việc nó đang bị vệ tinh đe dọa.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Nevertheless"
+      ]
     },
     {
       "globalNumber": 25,
@@ -555,7 +559,9 @@
       ],
       "displayAnswer": "management / managerial",
       "explanation": "Management skills và managerial skills đều có = kỹ năng quản lý.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "managerial"
+      ]
     },
     {
       "globalNumber": 39,
@@ -605,7 +611,9 @@
       ],
       "displayAnswer": "universal",
       "explanation": "Universal appeal = sức hấp dẫn rộng khắp, đối với nhiều người.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Universal appeal"
+      ]
     },
     {
       "globalNumber": 43,
@@ -801,7 +809,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "In actual fact là cụm nhấn mạnh = thực ra, trên thực tế.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "In actual fact"
+      ]
     },
     {
       "globalNumber": 60,
@@ -893,7 +903,9 @@
       ],
       "displayAnswer": "taking / adopting / introducing / implementing",
       "explanation": "Take measures là thực hiện biện pháp. Sau with + chủ ngữ, động từ có thể ở V-ing: with the government taking measures.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Take measures"
+      ]
     },
     {
       "globalNumber": 68,
@@ -957,7 +969,10 @@
       ],
       "displayAnswer": "A",
       "explanation": "Đoạn một nêu high population densities put stress on available resources. Vì thế nguồn tài nguyên sẵn có chịu áp lực.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "put stress on",
+        "available"
+      ]
     },
     {
       "globalNumber": 73,
@@ -1002,6 +1017,7 @@
       "displayAnswer": "D",
       "explanation": "Engage in an activity = tham gia hoặc làm một hoạt động, gần nghĩa participate in. Câu nói người dân làm nông nghiệp thủ công năng suất thấp.",
       "teacherHighlights": [
+        "Engage in",
         "participate in"
       ]
     },
@@ -1168,7 +1184,9 @@
       "prefix": "Much as",
       "suffix": "",
       "fullSentence": "Much as I like carrots, I don’t want to eat them every day.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "although"
+      ]
     },
     {
       "globalNumber": 88,
@@ -1215,7 +1233,7 @@
       "suffix": "",
       "fullSentence": "Bill put his success down to incredible luck.",
       "teacherHighlights": [
-        "Put A down to"
+        "Put A down to B"
       ]
     },
     {
@@ -1261,7 +1279,8 @@
       "maxWords": 6,
       "blankAnswer": "gave off a faint fishy smell",
       "teacherHighlights": [
-        "Give off"
+        "Give off",
+        "faintly"
       ]
     },
     {
@@ -1396,7 +1415,8 @@
       "maxWords": 6,
       "blankAnswer": "no point in waiting for",
       "teacherHighlights": [
-        "no point"
+        "no point",
+        "worth"
       ]
     },
     {
@@ -1417,7 +1437,9 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "found myself standing",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Find oneself doing"
+      ]
     },
     {
       "globalNumber": 100,

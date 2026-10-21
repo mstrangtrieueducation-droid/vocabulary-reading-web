@@ -319,7 +319,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Worth as much as so sánh giá trị: không đáng giá bằng chiếc ba lô đã mua.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Worth"
+      ]
     },
     {
       "globalNumber": 19,
@@ -330,7 +332,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Require that + chủ ngữ + động từ nguyên thể là cấu trúc giả định mang nghĩa yêu cầu. Vì vậy each player be responsible, không chia be theo số ít.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Require"
+      ]
     },
     {
       "globalNumber": 20,
@@ -452,7 +456,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Break a leg là lời chúc may mắn thân mật, phù hợp trước kỳ thi.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Break a leg"
+      ]
     },
     {
       "globalNumber": 30,
@@ -463,7 +469,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "You live and learn là cách thừa nhận mình vừa rút ra bài học từ trải nghiệm không hay.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "You live and learn"
+      ]
     },
     {
       "globalNumber": 31,
@@ -512,6 +520,7 @@
       "displayAnswer": "C",
       "explanation": "Count one’s chickens before they are hatched là tính trước thành quả khi chưa chắc có, tương tự tính cua trong lỗ.\ncount one’s chickens before they hatch = tính trước thành quả khi chưa chắc có.",
       "teacherHighlights": [
+        "Count one’s chickens before they are hatched",
         "count one’s chickens before they hatch"
       ]
     },
@@ -833,7 +842,9 @@
       ],
       "displayAnswer": "in / under",
       "explanation": "In the media spotlight là ở tâm điểm chú ý của truyền thông; under the media spotlight cũng được dùng và đúng nghĩa.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "In the media spotlight"
+      ]
     },
     {
       "globalNumber": 62,
@@ -846,7 +857,9 @@
       ],
       "displayAnswer": "making / hitting / grabbing",
       "explanation": "Make/hit/grab the headlines là trở thành nội dung nổi bật trên báo.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Make/hit/grab the headlines"
+      ]
     },
     {
       "globalNumber": 63,
@@ -884,7 +897,9 @@
       ],
       "displayAnswer": "lose",
       "explanation": "Lose one’s cool là mất bình tĩnh, khớp chủ đề tức giận nơi công cộng.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Lose one’s cool"
+      ]
     },
     {
       "globalNumber": 66,
@@ -1276,7 +1291,10 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "provided you complete",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Provided",
+        "provided"
+      ]
     },
     {
       "globalNumber": 93,

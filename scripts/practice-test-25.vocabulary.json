@@ -719,6 +719,140 @@
         100
       ],
       "teacherSelected": true
+    },
+    {
+      "term": "lead / misleading",
+      "meta": "VERB / ADJECTIVE",
+      "meaning": "dẫn dắt / gây hiểu lầm",
+      "note": "Có thể sửa thành is leading theo hiện tại tiếp diễn, hoặc đổi cả is lead thành leads ở hiện tại đơn. lead to + N/V-ing; mislead someone about something; misleading information.",
+      "usage": "lead to + N/V-ing; mislead someone about something; misleading information",
+      "family": "lead – led – led; mislead – misled – misled; misleading (adj): gây hiểu lầm",
+      "example": "The headline was misleading because it left out an important detail.",
+      "translation": "Tiêu đề gây hiểu lầm vì bỏ qua một chi tiết quan trọng.",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ],
+      "aliases": [
+        "lead"
+      ],
+      "question": 48
+    },
+    {
+      "question": 58,
+      "term": "facilities",
+      "meta": "PLURAL NOUN",
+      "meaning": "cơ sở vật chất; các tiện ích phục vụ hoạt động",
+      "note": "A serious lack of facilities là sự thiếu hụt nghiêm trọng các tiện nghi. sports/training/community facilities.",
+      "usage": "sports/training/community facilities",
+      "example": "The school has good facilities for indoor sports.",
+      "translation": "Trường có cơ sở vật chất tốt cho thể thao trong nhà.",
+      "family": "facility (n số ít); facilities (số nhiều); facilitate (v, tạo thuận lợi)",
+      "teacherSelected": true,
+      "questions": [
+        58
+      ],
+      "aliases": []
+    },
+    {
+      "term": "barely / hardly / scarcely",
+      "meta": "adverbs",
+      "meaning": "hầu như không; chỉ vừa đủ",
+      "note": "Hardly đặt đầu câu cần đảo had trước chủ ngữ và dùng quá khứ hoàn thành: had the concert ended. barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi..",
+      "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
+      "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
+      "example": "She could barely hear the speaker over the noise.",
+      "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn.",
+      "teacherSelected": true,
+      "questions": [
+        90
+      ],
+      "aliases": [
+        "Hardly"
+      ],
+      "question": 90
+    },
+    {
+      "question": 97,
+      "term": "popularity",
+      "meta": "NOUN",
+      "meaning": "sự phổ biến, mức độ được ưa chuộng",
+      "note": "It stands to reason that … nghĩa là có cơ sở hợp lý để cho rằng. With the increasing popularity … nêu căn cứ cho dự đoán. the popularity of something; gain popularity.",
+      "usage": "the popularity of something; gain popularity",
+      "example": "Online courses have gained popularity.",
+      "translation": "Các khóa học trực tuyến ngày càng được ưa chuộng.",
+      "family": "popular/unpopular (adj); popularity (n); popularly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        97
+      ],
+      "aliases": []
+    },
+    {
+      "term": "take the credit for",
+      "meaning": "nhận công về mình",
+      "usage": "take credit for something",
+      "example": "He took the credit for my idea.",
+      "translation": "Anh ấy nhận công về mình đối với ý tưởng của tôi.",
+      "family": "credit ở nghĩa công lao thường không đếm được",
+      "meta": "PHRASE",
+      "note": "Take the credit for something = nhận công lao về việc đó.\ntake credit for = nhận công lao về. take credit for something.",
+      "question": 21,
+      "questions": [
+        21
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "at the forefront of",
+      "meaning": "đi đầu trong một lĩnh vực",
+      "usage": "be at the forefront of research",
+      "example": "The team is at the forefront of medical research.",
+      "translation": "Nhóm này đi đầu trong nghiên cứu y học.",
+      "family": "front: phía trước; forefront: vị trí tiên phong",
+      "meta": "PHRASE",
+      "note": "At the forefront of research = đi đầu trong nghiên cứu. be at the forefront of research.",
+      "question": 67,
+      "questions": [
+        67
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "boost morale",
+      "meaning": "nâng cao tinh thần",
+      "usage": "boost staff/team morale",
+      "example": "The win boosted the team's morale.",
+      "translation": "Chiến thắng nâng cao tinh thần của đội.",
+      "family": "morale: tinh thần; không nhầm moral: đạo đức",
+      "meta": "PHRASE",
+      "note": "Boost morale = nâng cao tinh thần, nên boosted gần raised. Established là thiết lập, maintained là duy trì, influenced là tác động nói chung không chỉ rõ tăng lên. boost staff/team morale.",
+      "question": 75,
+      "questions": [
+        75
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "inhibit",
+      "meaning": "cản trở, kìm hãm",
+      "usage": "inhibit growth/development; be inhibited by something",
+      "family": "inhibition (n); inhibited (adj) còn có nghĩa rụt rè",
+      "example": "A lack of light can inhibit plant growth.",
+      "translation": "Thiếu ánh sáng có thể kìm hãm sự phát triển của cây.",
+      "meta": "VERB",
+      "note": "Inhibited = cản trở hoặc làm hoạt động khó thực hiện, gần hindered. Involved là liên quan/tham gia, exploited là khai thác và united là hợp nhất. inhibit growth/development; be inhibited by something.",
+      "question": 78,
+      "questions": [
+        78
+      ],
+      "aliases": [
+        "Inhibited"
+      ],
+      "teacherSelected": true
     }
   ]
 }

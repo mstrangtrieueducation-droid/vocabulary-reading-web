@@ -721,6 +721,118 @@
         99
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 28,
+      "term": "accordingly",
+      "meta": "ADVERB",
+      "meaning": "vì vậy; theo cách phù hợp với tình huống",
+      "note": "Accordingly ở đây = do đó, vì vậy. ..., accordingly, ...; act accordingly; adjust accordingly.",
+      "usage": "..., accordingly, ...; act accordingly; adjust accordingly",
+      "example": "The road was closed; accordingly, we chose another route.",
+      "translation": "Con đường bị đóng; vì vậy, chúng tôi chọn một lộ trình khác.",
+      "family": "accord (n/v); according to (cụm giới từ khác chức năng); accordingly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ],
+      "aliases": []
+    },
+    {
+      "question": 35,
+      "term": "considerable",
+      "meta": "ADJECTIVE",
+      "meaning": "đáng kể; khá lớn",
+      "note": "Increase cần trạng từ chỉ mức độ, nên considerable chuyển thành considerably: tăng đáng kể. a considerable amount/number; considerable effort.",
+      "usage": "a considerable amount/number; considerable effort",
+      "example": "The task required considerable effort.",
+      "translation": "Nhiệm vụ đòi hỏi nỗ lực đáng kể.",
+      "family": "consider (v); considerable (adj); considerably (adv); considerate (adj, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        35
+      ],
+      "aliases": []
+    },
+    {
+      "term": "countless",
+      "meta": "adjective",
+      "meaning": "vô số; rất nhiều",
+      "note": "Countless = vô số và đi với danh từ đếm được số nhiều. countless examples/problems/opportunities; countless times; much information là cách nói với danh từ không đếm được..",
+      "usage": "countless examples/problems/opportunities; countless times; much information là cách nói với danh từ không đếm được.",
+      "family": "count (n/v); countless (adj); countable/uncountable (adj).",
+      "example": "The library offers countless opportunities to explore new ideas.",
+      "translation": "Thư viện mang lại vô số cơ hội tìm hiểu ý tưởng mới.",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ],
+      "question": 45,
+      "aliases": []
+    },
+    {
+      "term": "in one’s right mind",
+      "meaning": "ở trạng thái tỉnh táo, suy xét bình thường",
+      "usage": "in one's right mind",
+      "example": "Nobody in their right mind would do that.",
+      "translation": "Không ai tỉnh táo lại làm như vậy.",
+      "family": "thường dùng trong câu phủ định hoặc câu hỏi tu từ",
+      "meta": "PHRASE",
+      "note": "In one’s right mind = tỉnh táo, có khả năng suy xét hợp lý. in one's right mind.",
+      "question": 13,
+      "questions": [
+        13
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "get about",
+      "meaning": "đi lại, di chuyển nhiều nơi",
+      "usage": "get about by bus",
+      "example": "It is easy to get about by bus here.",
+      "translation": "Ở đây đi lại bằng xe buýt rất thuận tiện.",
+      "family": "get around có thể dùng tương đương ở nghĩa đi lại",
+      "meta": "PHRASE",
+      "note": "Get about là đi lại quanh một khu vực, gần nghĩa get around. get about by bus.",
+      "question": 53,
+      "questions": [
+        53
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "tell the difference",
+      "meaning": "phân biệt sự khác nhau",
+      "usage": "tell the difference between A and B",
+      "example": "Can you tell the difference between these two sounds?",
+      "translation": "Bạn có phân biệt được hai âm này không?",
+      "family": "tell – told – told; different (adj); difference (n)",
+      "meta": "PHRASE",
+      "note": "Tell the difference between A and B là phân biệt A với B. tell the difference between A and B.",
+      "question": 63,
+      "questions": [
+        63
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "put stress on",
+      "meaning": "nhấn trọng âm hoặc nhấn mạnh",
+      "usage": "put stress on a syllable",
+      "example": "Put stress on the first syllable.",
+      "translation": "Hãy nhấn trọng âm vào âm tiết đầu.",
+      "family": "stress (n/v); stressed syllable: âm tiết có trọng âm",
+      "meta": "PHRASE",
+      "note": "Put stress on a word là nhấn mạnh vào một từ. put stress on a syllable.",
+      "question": 68,
+      "questions": [
+        68
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

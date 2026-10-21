@@ -766,6 +766,152 @@
         99
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 1,
+      "term": "assess",
+      "meta": "verb",
+      "meaning": "đánh giá, ước lượng",
+      "note": "Assess the situation = đánh giá tình hình để hiểu mức độ và nhu cầu hành động. assess a risk/situation/speed.",
+      "usage": "assess a risk/situation/speed",
+      "example": "We need to assess the risks first.",
+      "translation": "Chúng ta cần đánh giá rủi ro trước.",
+      "family": "assessment (n): sự đánh giá; assessor (n): người đánh giá; access là từ khác.",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ],
+      "aliases": []
+    },
+    {
+      "question": 38,
+      "term": "arguably",
+      "meta": "ADVERB",
+      "meaning": "có thể cho là, có cơ sở để lập luận rằng",
+      "note": "Arguably = có thể cho rằng, phù hợp nhận định đây là tác phẩm hay nhất của tác giả. arguably the best; arguably more effective.",
+      "usage": "arguably the best; arguably more effective",
+      "example": "This is arguably the clearest explanation in the book.",
+      "translation": "Có thể cho rằng đây là lời giải thích rõ nhất trong cuốn sách.",
+      "family": "argue (v); argument (n); arguable (adj); arguably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ],
+      "aliases": []
+    },
+    {
+      "question": 40,
+      "term": "admission",
+      "meta": "NOUN",
+      "meaning": "quyền vào cửa; tiền vào cửa",
+      "note": "Admission to an event là việc/quyền vào tham dự, thường dùng khi nói phí vào cửa. admission fee; free admission; admission to a museum.",
+      "usage": "admission fee; free admission; admission to a museum",
+      "example": "Admission to the exhibition is free.",
+      "translation": "Vào xem triển lãm được miễn phí.",
+      "family": "admit (v); admission (n); admittance (n: quyền vào)",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ],
+      "aliases": []
+    },
+    {
+      "question": 58,
+      "term": "private / personal / personnel",
+      "meta": "adjectives / noun",
+      "meaning": "riêng tư / cá nhân / nhân sự",
+      "note": "An intrusion into private lives là sự xâm phạm đời sống riêng tư. private life; personal information; personnel records.",
+      "usage": "private life; personal information; personnel records",
+      "family": "privacy (n); personally (adv); personnel chỉ tập thể nhân viên",
+      "example": "Please keep my personal information private.",
+      "translation": "Xin giữ kín thông tin cá nhân của tôi.",
+      "teacherSelected": true,
+      "questions": [
+        58
+      ],
+      "aliases": [
+        "private"
+      ]
+    },
+    {
+      "question": 70,
+      "term": "foundation",
+      "meta": "noun",
+      "meaning": "cơ sở, nền tảng của một nhận định",
+      "note": "Have no foundation nghĩa là không có căn cứ hoặc cơ sở. Ở đây foundation không mang nghĩa một quỹ hay tổ chức.",
+      "usage": "have no foundation; be without foundation",
+      "example": "The rumours have no foundation.",
+      "translation": "Những tin đồn này không có cơ sở.",
+      "family": "foundation (n); unfounded (adj): vô căn cứ",
+      "teacherSelected": true,
+      "questions": [
+        70
+      ],
+      "aliases": []
+    },
+    {
+      "question": 91,
+      "term": "efficiency",
+      "meta": "NOUN",
+      "meaning": "hiệu suất; hiệu quả sử dụng nguồn lực",
+      "note": "A lack of efficiency là sự thiếu hiệu quả. Reflect badly/poorly on somebody/something nghĩa là làm hình ảnh của đối tượng đó xấu đi. energy efficiency; improve efficiency.",
+      "usage": "energy efficiency; improve efficiency",
+      "example": "Better insulation can improve energy efficiency.",
+      "translation": "Cách nhiệt tốt hơn có thể cải thiện hiệu quả sử dụng năng lượng.",
+      "family": "efficient/inefficient (adj); efficiency (n); efficiently (adv)",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ],
+      "aliases": []
+    },
+    {
+      "term": "to make matters worse",
+      "meaning": "để tình hình tệ hơn nữa",
+      "usage": "to make matters worse, ...",
+      "example": "It was raining. To make matters worse, we missed the bus.",
+      "translation": "Trời đang mưa. Tệ hơn nữa, chúng tôi lỡ xe buýt.",
+      "family": "worse là dạng so sánh hơn của bad",
+      "meta": "PHRASE",
+      "note": "To make matters worse là cụm cố định = làm tình hình tệ hơn. to make matters worse, ....",
+      "question": 63,
+      "questions": [
+        63
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "a matter of opinion",
+      "meaning": "vấn đề tùy quan điểm cá nhân",
+      "usage": "be a matter of opinion",
+      "example": "Which film is best is a matter of opinion.",
+      "translation": "Bộ phim nào hay nhất là tùy quan điểm mỗi người.",
+      "family": "opinion (n); khác a matter of fact: vấn đề thực tế",
+      "meta": "PHRASE",
+      "note": "A matter of opinion = vấn đề tùy quan điểm, không có một nhận định duy nhất được mọi người đồng ý. be a matter of opinion.",
+      "question": 65,
+      "questions": [
+        65
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "smooth the way/path for",
+      "meaning": "tạo thuận lợi, dọn đường cho",
+      "usage": "smooth the way for something",
+      "example": "The agreement smoothed the way for further talks.",
+      "translation": "Thỏa thuận tạo thuận lợi cho các cuộc đàm phán tiếp.",
+      "family": "smooth ở đây là động từ; pave the way for có nghĩa gần giống",
+      "meta": "PHRASE",
+      "note": "Smooth the way/path for something = làm cho việc sắp tới thuận lợi hơn. smooth the way for something.",
+      "question": 67,
+      "questions": [
+        67
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

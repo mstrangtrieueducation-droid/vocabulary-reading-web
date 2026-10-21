@@ -407,7 +407,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "An answer to a question là một câu trả lời cho một câu hỏi.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "answer"
+      ]
     },
     {
       "globalNumber": 27,
@@ -442,7 +444,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "He’d finished = he had finished; hardly mang ý phủ định → câu hỏi đuôi had he?",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "hardly"
+      ]
     },
     {
       "globalNumber": 30,
@@ -492,6 +496,7 @@
       "displayAnswer": "accompanied",
       "explanation": "The promotional material là chủ ngữ số ít của mệnh đề quan hệ that accompanied the launch.\naccompany = đi kèm, xuất hiện cùng với.",
       "teacherHighlights": [
+        "launch",
         "accompany"
       ]
     },
@@ -734,7 +739,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Differentiate fact from opinion là phân biệt sự kiện với ý kiến.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Differentiate"
+      ]
     },
     {
       "globalNumber": 53,
@@ -769,7 +776,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Play a vital role in something = đóng vai trò quan trọng trong việc gì.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Play a vital role in"
+      ]
     },
     {
       "globalNumber": 56,
@@ -793,7 +802,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Understanding historical events ... là cụm V-ing làm chủ ngữ, được coi là một hoạt động số ít nên đi với requires.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "historical"
+      ]
     },
     {
       "globalNumber": 58,
@@ -804,7 +815,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "In essence = về bản chất, tóm lại ở điểm cốt lõi.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "In essence"
+      ]
     },
     {
       "globalNumber": 59,
@@ -837,7 +850,9 @@
       ],
       "displayAnswer": "out",
       "explanation": "Miss out là bỏ lỡ một cơ hội hoặc trải nghiệm; fear of missing out là tên đầy đủ của FOMO.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Miss out"
+      ]
     },
     {
       "globalNumber": 62,

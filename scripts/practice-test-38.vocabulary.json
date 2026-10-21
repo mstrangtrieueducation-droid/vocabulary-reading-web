@@ -651,6 +651,125 @@
         100
       ],
       "teacherSelected": true
+    },
+    {
+      "term": "barely / hardly / scarcely",
+      "meta": "adverbs",
+      "meaning": "hầu như không; chỉ vừa đủ",
+      "note": "Hardly had + S + V3 + when + S + V quá khứ: vừa mới ... thì .... Hardly đầu câu gây đảo ngữ had the speaker begun. barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi..",
+      "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
+      "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
+      "example": "She could barely hear the speaker over the noise.",
+      "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn.",
+      "teacherSelected": true,
+      "questions": [
+        27,
+        55
+      ],
+      "aliases": [
+        "Hardly"
+      ],
+      "question": 27
+    },
+    {
+      "term": "technician / technologist",
+      "meta": "nouns",
+      "meaning": "kỹ thuật viên / chuyên gia công nghệ",
+      "note": "A qualified technician = kỹ thuật viên có đủ chuyên môn/chứng chỉ cần thiết. a laboratory technician; a food technologist; technical skills = kỹ năng kỹ thuật; technological change = thay đổi công nghệ..",
+      "usage": "a laboratory technician; a food technologist; technical skills = kỹ năng kỹ thuật; technological change = thay đổi công nghệ.",
+      "family": "technique (n), technical (adj), technician (n); technology (n), technological (adj), technologist (n).",
+      "example": "A technician repaired the equipment used by the food technologist.",
+      "translation": "Kỹ thuật viên sửa thiết bị mà chuyên gia công nghệ thực phẩm sử dụng.",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ],
+      "aliases": [
+        "technician"
+      ],
+      "question": 43
+    },
+    {
+      "question": 44,
+      "term": "feedback",
+      "meta": "NOUN",
+      "meaning": "ý kiến phản hồi giúp biết chất lượng hoặc cải thiện",
+      "note": "Constructive feedback = góp ý mang tính xây dựng, giúp người nhận tiến bộ. give/provide feedback; feedback on a draft.",
+      "usage": "give/provide feedback; feedback on a draft",
+      "example": "The teacher gave detailed feedback on my paragraph.",
+      "translation": "Giáo viên đưa phản hồi chi tiết về đoạn văn của tôi.",
+      "family": "feed (v, gốc từ); feed back (cụm động từ); feedback (n)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ],
+      "aliases": []
+    },
+    {
+      "question": 70,
+      "term": "additional",
+      "meta": "ADJECTIVE",
+      "meaning": "thêm; bổ sung",
+      "note": "More/Further/Additional = thêm các chuyển đổi; Similar/Such = những chuyển đổi tương tự/như thế; Other/Future cũng phù hợp ý những thay đổi khác hoặc sau này có thể tiếp diễn. additional information/donation/costs.",
+      "usage": "additional information/donation/costs",
+      "example": "No additional payment is required.",
+      "translation": "Không cần trả thêm khoản nào.",
+      "family": "add (v); addition (n); additional (adj); additionally (adv)",
+      "teacherSelected": true,
+      "questions": [
+        70
+      ],
+      "aliases": []
+    },
+    {
+      "term": "as long as / so long as / provided / providing",
+      "meta": "CONJUNCTIONS",
+      "meaning": "miễn là; với điều kiện là",
+      "note": "Provided (that) = với điều kiện là. as/so long as + S + V; provided/providing (that) + S + V.",
+      "usage": "as/so long as + S + V; provided/providing (that) + S + V",
+      "family": "condition (n): điều kiện; conditional (adj): có điều kiện; provide (v): cung cấp",
+      "example": "You may borrow the book as long as you return it on Friday.",
+      "translation": "Bạn có thể mượn sách miễn là trả lại vào thứ Sáu.",
+      "teacherSelected": true,
+      "questions": [
+        84
+      ],
+      "aliases": [
+        "Provided"
+      ],
+      "question": 84
+    },
+    {
+      "term": "meet with opposition",
+      "meaning": "gặp phải sự phản đối",
+      "usage": "meet with strong opposition",
+      "example": "The plan met with strong opposition.",
+      "translation": "Kế hoạch gặp phải sự phản đối mạnh mẽ.",
+      "family": "oppose (v); opposition (n); meet – met – met",
+      "meta": "PHRASE",
+      "note": "Meet with opposition = gặp phải sự phản đối. meet with strong opposition.",
+      "question": 18,
+      "questions": [
+        18
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "call on somebody to",
+      "meaning": "kêu gọi ai làm gì",
+      "usage": "call on somebody to do something",
+      "example": "They called on the government to act.",
+      "translation": "Họ kêu gọi chính phủ hành động.",
+      "family": "call on còn có nghĩa ghé thăm; cần xem cấu trúc và ngữ cảnh",
+      "meta": "PHRASE",
+      "note": "Call on somebody to do something = kêu gọi ai làm gì. call on somebody to do something.",
+      "question": 52,
+      "questions": [
+        52
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

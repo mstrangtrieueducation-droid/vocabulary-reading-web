@@ -172,7 +172,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "Be composed of = được cấu tạo từ.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Be composed of"
+      ]
     },
     {
       "globalNumber": 8,
@@ -280,7 +282,10 @@
       ],
       "displayAnswer": "A",
       "explanation": "Mẫu so + tính từ + a/an + danh từ số ít + that: so boring a film that… Tương đương such a boring film that… Các phương án còn lại đặt a sai vị trí hoặc thiếu a.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "boring",
+        "boring"
+      ]
     },
     {
       "globalNumber": 17,
@@ -477,7 +482,9 @@
       ],
       "displayAnswer": "unimaginable",
       "explanation": "Trước developments cần tính từ: unimaginable = không thể tưởng tượng được.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "unimaginable"
+      ]
     },
     {
       "globalNumber": 33,
@@ -523,7 +530,10 @@
       ],
       "displayAnswer": "increasingly",
       "explanation": "Increasingly expensive = ngày càng đắt đỏ. Cần trạng từ bổ nghĩa cho tính từ expensive, vì vậy dùng increasingly; increasing chỉ là dạng tính từ hoặc phân từ.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Increasingly",
+        "increasingly"
+      ]
     },
     {
       "globalNumber": 37,
@@ -756,7 +766,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "How high sugar appears on the ingredient list hỏi đường đứng cao đến đâu trong danh sách thành phần.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "ingredient"
+      ]
     },
     {
       "globalNumber": 57,
@@ -828,7 +840,9 @@
       ],
       "displayAnswer": "on",
       "explanation": "Run on electricity là hoạt động bằng điện.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Run on electricity"
+      ]
     },
     {
       "globalNumber": 63,
@@ -888,7 +902,9 @@
       ],
       "displayAnswer": "on",
       "explanation": "Be on the move là đang di chuyển.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Be on the move"
+      ]
     },
     {
       "globalNumber": 68,
@@ -976,7 +992,8 @@
       "explanation": "Precise trong precise, representative sampling = chính xác, gần với accurate. Planned chỉ được lên kế hoạch; rational là hợp lý; required là được yêu cầu, không thể hiện nghĩa chính xác.",
       "teacherHighlights": [
         "Precise",
-        "precise"
+        "precise",
+        "rational"
       ]
     },
     {
@@ -1095,6 +1112,7 @@
       "suffix": "",
       "fullSentence": "I find myself at a loss to understand Harold’s behavior",
       "teacherHighlights": [
+        "at a loss",
         "be at a loss to"
       ]
     },
@@ -1422,7 +1440,9 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "Brian made an important mark on",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Make/leave one’s mark on"
+      ]
     },
     {
       "globalNumber": 100,

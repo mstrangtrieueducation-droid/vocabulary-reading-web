@@ -789,7 +789,8 @@
       ],
       "question": 93,
       "aliases": [
-        "as long as"
+        "as long as",
+        "provided"
       ]
     },
     {
@@ -854,6 +855,156 @@
       "questions": [
         100
       ],
+      "teacherSelected": true
+    },
+    {
+      "question": 50,
+      "term": "interact / intervene",
+      "meta": "verbs",
+      "meaning": "tương tác / can thiệp",
+      "note": "Interact with = tương tác với. interact with somebody; intervene in a dispute.",
+      "usage": "interact with somebody; intervene in a dispute",
+      "family": "interaction (n); intervention (n)",
+      "example": "Students interact with their partners during the task.",
+      "translation": "Học sinh tương tác với bạn cùng cặp trong hoạt động.",
+      "teacherSelected": true,
+      "questions": [
+        50
+      ],
+      "aliases": [
+        "Interact"
+      ]
+    },
+    {
+      "question": 61,
+      "term": "supplement",
+      "meta": "noun / verb",
+      "meaning": "sản phẩm hoặc phần bổ sung; bổ sung",
+      "note": "That/which thay cho method (vật), làm chủ ngữ của can supplement. a vitamin supplement; supplement an income.",
+      "usage": "a vitamin supplement; supplement an income",
+      "family": "supplementary (adj); component (n: bộ phận cấu thành)",
+      "example": "The appendix supplements the main report.",
+      "translation": "Phụ lục bổ sung cho báo cáo chính.",
+      "teacherSelected": true,
+      "questions": [
+        61
+      ],
+      "aliases": []
+    },
+    {
+      "term": "answer / key / solution to",
+      "meta": "noun phrases",
+      "meaning": "câu trả lời / chìa khóa / giải pháp cho",
+      "note": "The answer to a question = câu trả lời cho một câu hỏi. the answer to a question; the key to success; a solution to a problem; the key to improving results..",
+      "usage": "the answer to a question; the key to success; a solution to a problem; the key to improving results.",
+      "family": "answer (n/v); key (n/adj); solve (v), solution (n).",
+      "example": "Regular practice is the key to improving reading speed.",
+      "translation": "Luyện tập đều đặn là chìa khóa để cải thiện tốc độ đọc.",
+      "teacherSelected": true,
+      "questions": [
+        66
+      ],
+      "aliases": [
+        "answer"
+      ],
+      "question": 66
+    },
+    {
+      "term": "or else",
+      "meaning": "nếu không thì",
+      "usage": "do something, or else ...",
+      "example": "Hurry up, or else we will be late.",
+      "translation": "Nhanh lên, nếu không chúng ta sẽ muộn.",
+      "family": "otherwise: nếu không; or else thường hàm ý cảnh báo",
+      "meta": "PHRASE",
+      "note": "Or else = nếu không thì: cảnh báo hậu quả nếu tiếp tục làm việc quá sức. do something, or else ....",
+      "question": 8,
+      "questions": [
+        8
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "at the latest",
+      "meaning": "muộn nhất",
+      "usage": "by Friday at the latest",
+      "example": "Please reply by Monday at the latest.",
+      "translation": "Vui lòng trả lời muộn nhất vào thứ Hai.",
+      "family": "at the earliest: sớm nhất",
+      "meta": "PHRASE",
+      "note": "At the latest = muộn nhất. by Friday at the latest.",
+      "question": 16,
+      "questions": [
+        16
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "set up",
+      "meaning": "thành lập, thiết lập",
+      "usage": "set up a business; set it up",
+      "example": "They set up a small company.",
+      "translation": "Họ thành lập một công ty nhỏ.",
+      "family": "set – set – set; setting up; setup (n)",
+      "meta": "PHRASE",
+      "note": "Set up = thành lập, thiết lập; set up trading posts: lập các thương điếm. set up a business; set it up.",
+      "question": 55,
+      "questions": [
+        55
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "play an important part in",
+      "meaning": "đóng vai trò quan trọng trong",
+      "usage": "play a part/role in something",
+      "example": "Sleep plays an important part in learning.",
+      "translation": "Giấc ngủ đóng vai trò quan trọng trong học tập.",
+      "family": "part/role: vai trò; in + danh từ hoặc V-ing",
+      "meta": "PHRASE",
+      "note": "Play a role in = đóng vai trò trong. Within cũng phù hợp nghĩa trong môi trường. play a part/role in something.",
+      "question": 65,
+      "questions": [
+        65
+      ],
+      "aliases": [
+        "Play a role in"
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "tie something into/to something",
+      "meaning": "gắn kết điều gì với điều khác",
+      "usage": "tie a lesson into a wider topic",
+      "example": "The teacher tied the activity into the lesson.",
+      "translation": "Giáo viên gắn hoạt động này với bài học.",
+      "family": "tie – tied – tied; tying; link A to B",
+      "meta": "PHRASE",
+      "note": "Tie something into/to something = gắn điều gì với điều khác. tie a lesson into a wider topic.",
+      "question": 70,
+      "questions": [
+        70
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "go on",
+      "meaning": "tiếp diễn, kéo dài",
+      "usage": "go on for hours",
+      "example": "The meeting went on for three hours.",
+      "translation": "Cuộc họp kéo dài ba giờ.",
+      "family": "go – went – gone; go on to do: tiếp tục làm việc khác",
+      "meta": "PHRASE",
+      "note": "Be not likely to + V = có lẽ sẽ không; go on = kéo dài. go on for hours.",
+      "question": 98,
+      "questions": [
+        98
+      ],
+      "aliases": [],
       "teacherSelected": true
     }
   ],

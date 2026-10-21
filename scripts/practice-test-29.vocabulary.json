@@ -674,6 +674,142 @@
         98
       ],
       "teacherSelected": true
+    },
+    {
+      "term": "answer / key / solution to",
+      "meta": "noun phrases",
+      "meaning": "câu trả lời / chìa khóa / giải pháp cho",
+      "note": "An answer to a question là một câu trả lời cho một câu hỏi. the answer to a question; the key to success; a solution to a problem; the key to improving results..",
+      "usage": "the answer to a question; the key to success; a solution to a problem; the key to improving results.",
+      "family": "answer (n/v); key (n/adj); solve (v), solution (n).",
+      "example": "Regular practice is the key to improving reading speed.",
+      "translation": "Luyện tập đều đặn là chìa khóa để cải thiện tốc độ đọc.",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ],
+      "aliases": [
+        "answer"
+      ],
+      "question": 26
+    },
+    {
+      "term": "barely / hardly / scarcely",
+      "meta": "adverbs",
+      "meaning": "hầu như không; chỉ vừa đủ",
+      "note": "He’d finished = he had finished; hardly mang ý phủ định → câu hỏi đuôi had he? barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi..",
+      "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
+      "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
+      "example": "She could barely hear the speaker over the noise.",
+      "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn.",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ],
+      "aliases": [
+        "hardly"
+      ],
+      "question": 29
+    },
+    {
+      "term": "launch",
+      "meta": "verb / noun",
+      "meaning": "ra mắt; khởi động; phóng",
+      "note": "The promotional material là chủ ngữ số ít của mệnh đề quan hệ that accompanied the launch.\naccompany = đi kèm, xuất hiện cùng với. launch a product/campaign/project; a product launch = buổi/đợt ra mắt sản phẩm..",
+      "usage": "launch a product/campaign/project; a product launch = buổi/đợt ra mắt sản phẩm.",
+      "family": "launch (v/n); launched (quá khứ); launching (dạng -ing).",
+      "example": "The school launched a campaign to reduce plastic waste.",
+      "translation": "Trường khởi động chiến dịch giảm rác thải nhựa.",
+      "question": 33,
+      "questions": [
+        33
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "question": 52,
+      "term": "differentiate",
+      "meta": "VERB",
+      "meaning": "phân biệt, nhận ra điểm khác",
+      "note": "Differentiate fact from opinion là phân biệt sự kiện với ý kiến. differentiate A from B; differentiate between A and B.",
+      "usage": "differentiate A from B; differentiate between A and B",
+      "example": "Readers need to differentiate fact from opinion.",
+      "translation": "Người đọc cần phân biệt sự thật với ý kiến.",
+      "family": "different (adj); difference (n); differ (v); differentiate (v)",
+      "teacherSelected": true,
+      "questions": [
+        52
+      ],
+      "aliases": []
+    },
+    {
+      "question": 57,
+      "term": "historic / historical",
+      "meta": "adjectives",
+      "meaning": "có ý nghĩa lịch sử / thuộc về lịch sử",
+      "note": "Understanding historical events ... là cụm V-ing làm chủ ngữ, được coi là một hoạt động số ít nên đi với requires. a historic decision; a historical exhibition.",
+      "usage": "a historic decision; a historical exhibition",
+      "family": "history (n); historian (n); historically (adv)",
+      "example": "The museum displays historical documents.",
+      "translation": "Bảo tàng trưng bày tài liệu lịch sử.",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ],
+      "aliases": [
+        "historical"
+      ]
+    },
+    {
+      "term": "play an important part in",
+      "meaning": "đóng vai trò quan trọng trong",
+      "usage": "play a part/role in something",
+      "example": "Sleep plays an important part in learning.",
+      "translation": "Giấc ngủ đóng vai trò quan trọng trong học tập.",
+      "family": "part/role: vai trò; in + danh từ hoặc V-ing",
+      "meta": "PHRASE",
+      "note": "Play a vital role in something = đóng vai trò quan trọng trong việc gì. play a part/role in something.",
+      "question": 55,
+      "questions": [
+        55
+      ],
+      "aliases": [
+        "Play a vital role in"
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in essence",
+      "meaning": "về bản chất, về điểm cốt lõi",
+      "usage": "in essence, ...",
+      "example": "In essence, both plans have the same aim.",
+      "translation": "Về bản chất, cả hai kế hoạch có cùng mục tiêu.",
+      "family": "essence (n); essential (adj)",
+      "meta": "PHRASE",
+      "note": "In essence = về bản chất, tóm lại ở điểm cốt lõi. in essence, ....",
+      "question": 58,
+      "questions": [
+        58
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "miss out",
+      "meaning": "bỏ lỡ cơ hội hoặc trải nghiệm",
+      "usage": "miss out on something",
+      "example": "Book early so you don't miss out.",
+      "translation": "Hãy đặt sớm để không bỏ lỡ.",
+      "family": "miss out on + danh từ/V-ing; missing: bị thiếu, mất tích",
+      "meta": "PHRASE",
+      "note": "Miss out là bỏ lỡ một cơ hội hoặc trải nghiệm; fear of missing out là tên đầy đủ của FOMO. miss out on something.",
+      "question": 61,
+      "questions": [
+        61
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

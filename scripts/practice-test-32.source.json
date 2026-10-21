@@ -257,7 +257,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "The living image of someone là người trông giống hệt ai.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "The living image of"
+      ]
     },
     {
       "globalNumber": 15,
@@ -438,7 +440,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Be in the wrong = người có lỗi hoặc hành xử sai trong một tình huống.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Be in the wrong"
+      ]
     },
     {
       "globalNumber": 30,
@@ -785,7 +789,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "On the other hand là cụm chuyển sang mặt đối lập. Trước nói vinh dự khi đoạt giải, sau nói cảm giác bị tổn thương khi không được giải.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "On the other hand"
+      ]
     },
     {
       "globalNumber": 57,
@@ -855,7 +861,9 @@
       ],
       "displayAnswer": "leave",
       "explanation": "Leave someone behind là bỏ ai lại phía sau hoặc khiến họ không theo kịp.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Leave someone behind"
+      ]
     },
     {
       "globalNumber": 63,
@@ -919,6 +927,7 @@
       "displayAnswer": "look",
       "explanation": "Look up to someone là ngưỡng mộ hoặc kính trọng ai. Sau tend to cần động từ nguyên mẫu look; up to đã cho sẵn.\nmultitask = xử lý nhiều việc cùng lúc.",
       "teacherHighlights": [
+        "Look up to",
         "multitask"
       ]
     },
@@ -1448,7 +1457,9 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "did a count of the class",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Do/make a count of"
+      ]
     }
   ],
   "contentRevision": "2026-10-21-word-limits",

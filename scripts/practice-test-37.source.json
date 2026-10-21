@@ -222,7 +222,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Were going to launch nêu kế hoạch trong quá khứ bị cơn bão làm hủy.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "launch"
+      ]
     },
     {
       "globalNumber": 12,
@@ -244,7 +246,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "The region having been overwhelmed ... là cụm tuyệt đối có chủ ngữ riêng và phân từ hoàn thành bị động.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "overwhelmed"
+      ]
     },
     {
       "globalNumber": 14,
@@ -561,6 +565,7 @@
       "displayAnswer": "invalidated",
       "explanation": "Claim that older people cannot learn bị nghiên cứu về khả năng học tập bác bỏ, nên dùng invalidated, không validated.",
       "teacherHighlights": [
+        "Claim",
         "invalidate"
       ]
     },
@@ -605,7 +610,9 @@
       ],
       "displayAnswer": "consisted → composed",
       "explanation": "Consist of là nội động từ, không dùng bị động are consisted of.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Consist of"
+      ]
     },
     {
       "globalNumber": 44,
@@ -729,7 +736,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Stand out from the crowd = nổi bật/khác với số đông.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Stand out from the crowd"
+      ]
     },
     {
       "globalNumber": 53,
@@ -789,7 +798,7 @@
       "displayAnswer": "B",
       "explanation": "A sense of self-worth = cảm nhận về giá trị của bản thân.",
       "teacherHighlights": [
-        "self-worth"
+        "sense of self-worth"
       ]
     },
     {
@@ -852,7 +861,9 @@
       ],
       "displayAnswer": "a",
       "explanation": "A world apart = một thế giới khác hẳn, đối lập với các tòa tháp hiện đại xung quanh.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "A world apart"
+      ]
     },
     {
       "globalNumber": 63,
@@ -889,7 +900,9 @@
       ],
       "displayAnswer": "access / admission / entry",
       "explanation": "Free access/admission/entry to ... đều nói được vào miễn phí.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "admission"
+      ]
     },
     {
       "globalNumber": 66,
@@ -948,7 +961,9 @@
       ],
       "displayAnswer": "missed",
       "explanation": "Not to be missed = không nên bỏ lỡ, mô tả trải nghiệm đáng ghé.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Not to be missed"
+      ]
     },
     {
       "globalNumber": 71,
@@ -1081,7 +1096,9 @@
       "prefix": "Further information",
       "suffix": "",
       "fullSentence": "Further information can be obtained by sending a self-addressed envelope to the above address.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "available"
+      ]
     },
     {
       "globalNumber": 82,
@@ -1113,7 +1130,10 @@
       "prefix": "There was",
       "suffix": "",
       "fullSentence": "There was such a rapid improvement in his condition that he was discharged from the hospital early.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "improvement",
+        "improvement"
+      ]
     },
     {
       "globalNumber": 84,

@@ -584,6 +584,102 @@
         99
       ],
       "aliases": []
+    },
+    {
+      "term": "the living image of",
+      "meaning": "giống hệt một người về ngoại hình",
+      "usage": "be the living image of somebody",
+      "example": "She is the living image of her mother.",
+      "translation": "Cô ấy giống mẹ như đúc.",
+      "family": "image: hình ảnh; the spitting image of có nghĩa tương tự",
+      "meta": "PHRASE",
+      "note": "The living image of someone là người trông giống hệt ai. be the living image of somebody.",
+      "question": 14,
+      "questions": [
+        14
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "be in the wrong",
+      "meaning": "là người sai, có lỗi trong tình huống",
+      "usage": "admit being in the wrong",
+      "example": "He admitted he was in the wrong.",
+      "translation": "Anh ấy thừa nhận mình có lỗi.",
+      "family": "in the right: là người đúng; khác be wrong: sai nói chung",
+      "meta": "PHRASE",
+      "note": "Be in the wrong = người có lỗi hoặc hành xử sai trong một tình huống. admit being in the wrong.",
+      "question": 29,
+      "questions": [
+        29
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "on the other hand",
+      "meaning": "mặt khác, xét mặt đối lập",
+      "usage": "on the one hand ... on the other hand ...",
+      "example": "It is expensive. On the other hand, it lasts longer.",
+      "translation": "Nó đắt. Mặt khác, nó dùng được lâu hơn.",
+      "family": "dùng để đối chiếu hai mặt; không chỉ thêm ý cùng hướng",
+      "meta": "PHRASE",
+      "note": "On the other hand là cụm chuyển sang mặt đối lập. Trước nói vinh dự khi đoạt giải, sau nói cảm giác bị tổn thương khi không được giải. on the one hand ... on the other hand ....",
+      "question": 56,
+      "questions": [
+        56
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "leave someone behind",
+      "meaning": "bỏ ai lại phía sau, khiến không theo kịp",
+      "usage": "leave somebody behind",
+      "example": "The fast pace left some learners behind.",
+      "translation": "Tốc độ nhanh khiến một số học viên không theo kịp.",
+      "family": "leave – left – left; behind: phía sau",
+      "meta": "PHRASE",
+      "note": "Leave someone behind là bỏ ai lại phía sau hoặc khiến họ không theo kịp. leave somebody behind.",
+      "question": 62,
+      "questions": [
+        62
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "look up to",
+      "meaning": "ngưỡng mộ, kính trọng",
+      "usage": "look up to somebody",
+      "example": "I have always looked up to my sister.",
+      "translation": "Tôi luôn ngưỡng mộ chị gái mình.",
+      "family": "look down on: coi thường; không tách up to khỏi nhau",
+      "meta": "PHRASE",
+      "note": "Look up to someone là ngưỡng mộ hoặc kính trọng ai. Sau tend to cần động từ nguyên mẫu look; up to đã cho sẵn.\nmultitask = xử lý nhiều việc cùng lúc. look up to somebody.",
+      "question": 67,
+      "questions": [
+        67
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "do/make a count of",
+      "meaning": "đếm số lượng người hoặc vật",
+      "usage": "make a count of the group",
+      "example": "The guide made a count of the group.",
+      "translation": "Hướng dẫn viên đếm số người trong đoàn.",
+      "family": "count (n/v); do – did – done; make – made – made",
+      "meta": "PHRASE",
+      "note": "Do/make a count of the class là đếm số học sinh có mặt, phù hợp việc kiểm tra trước khi lên xe. Giữ quá khứ did/made và từ COUNT nguyên dạng. make a count of the group.",
+      "question": 100,
+      "questions": [
+        100
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

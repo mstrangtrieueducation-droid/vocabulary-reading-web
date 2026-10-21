@@ -154,7 +154,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "Not particularly keen on = không đặc biệt thích.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "particularly"
+      ]
     },
     {
       "globalNumber": 6,
@@ -646,7 +648,9 @@
       ],
       "displayAnswer": "creating → to create / creating -> to create / to create",
       "explanation": "Set out to do something = bắt đầu thực hiện một việc với mục tiêu rõ ràng.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Set out to"
+      ]
     },
     {
       "globalNumber": 46,
@@ -711,7 +715,9 @@
       ],
       "displayAnswer": "affirmation → affirmative / affirmation -> affirmative / affirmative",
       "explanation": "In the affirmative là cụm cố định = theo hướng khẳng định/có.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "In the affirmative"
+      ]
     },
     {
       "globalNumber": 51,
@@ -744,7 +750,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "Continual failure là thất bại lặp đi lặp lại trong một khoảng thời gian.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Continual"
+      ]
     },
     {
       "globalNumber": 54,
@@ -766,7 +774,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Regardless of how good it is = bất kể việc làm tốt đến đâu.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Regardless of"
+      ]
     },
     {
       "globalNumber": 56,
@@ -958,7 +968,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Đoạn 1 nêu ethical implications và privacy issues, nên C diễn đạt đúng hai mối lo. A trái ý solve complex problems; B không đúng vì đoạn 5 nêu lợi ích y tế; D không phải mối lo được trình bày về công nghệ AI.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "implications"
+      ]
     },
     {
       "globalNumber": 72,
@@ -991,7 +1003,10 @@
       ],
       "displayAnswer": "B",
       "explanation": "Trivial là nhỏ nhặt, ít quan trọng; từ trái = significant, quan trọng/đáng kể. Secondary và negligible gần nghĩa ít quan trọng hơn.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "significant",
+        "negligible"
+      ]
     },
     {
       "globalNumber": 75,
@@ -1002,7 +1017,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Blurred the lines = làm ranh giới hoặc sự phân biệt trở nên kém rõ. A diễn đạt đúng nghĩa này mà không khẳng định người và máy hoàn toàn giống nhau.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Blurred the lines"
+      ]
     },
     {
       "globalNumber": 76,
@@ -1046,7 +1063,10 @@
       ],
       "displayAnswer": "A",
       "explanation": "Embrace change ≈ adopt change = đón nhận thay đổi.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Embrace",
+        "adopt"
+      ]
     },
     {
       "globalNumber": 80,

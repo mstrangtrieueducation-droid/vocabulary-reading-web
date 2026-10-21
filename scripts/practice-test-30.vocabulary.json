@@ -750,6 +750,104 @@
         98
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 45,
+      "term": "increasingly",
+      "meta": "ADVERB",
+      "meaning": "ngày càng",
+      "note": "Become increasingly cần tính từ.\nunmanageable = quá khó để quản lý hoặc kiểm soát. increasingly difficult/popular; increasingly longer gaps.",
+      "usage": "increasingly difficult/popular; increasingly longer gaps",
+      "example": "The instructions became increasingly clear.",
+      "translation": "Các hướng dẫn ngày càng rõ ràng.",
+      "family": "increase (n/v); increasing (adj); increasingly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        45
+      ],
+      "aliases": []
+    },
+    {
+      "question": 69,
+      "term": "nevertheless",
+      "meta": "linking adverb",
+      "meaning": "tuy vậy; dù thế",
+      "note": "However/nevertheless/nonetheless đánh dấu sự đối lập giữa cảm giác yên tâm với thành phần tự nhiên và yêu cầu vẫn đọc kỹ nhãn. Sentence. Nevertheless, sentence.; tương đương however trong nhiều ngữ cảnh.",
+      "usage": "Sentence. Nevertheless, sentence.; tương đương however trong nhiều ngữ cảnh",
+      "family": "nonetheless: tuy vậy; therefore: vì thế, chỉ kết quả",
+      "example": "The task was difficult. Nevertheless, we completed it.",
+      "translation": "Nhiệm vụ khó. Tuy vậy, chúng tôi đã hoàn thành.",
+      "teacherSelected": true,
+      "questions": [
+        69
+      ],
+      "aliases": []
+    },
+    {
+      "term": "play an important part in",
+      "meaning": "đóng vai trò quan trọng trong",
+      "usage": "play a part/role in something",
+      "example": "Sleep plays an important part in learning.",
+      "translation": "Giấc ngủ đóng vai trò quan trọng trong học tập.",
+      "family": "part/role: vai trò; in + danh từ hoặc V-ing",
+      "meta": "PHRASE",
+      "note": "Play a crucial role là đóng vai trò thiết yếu. Vế sau nhấn mạnh cha mẹ là động lực chính nên crucial phù hợp hơn supporting, vốn chỉ vai trò hỗ trợ.\nupbringing = sự nuôi dạy trong thời thơ ấu. play a part/role in something.",
+      "question": 25,
+      "questions": [
+        25
+      ],
+      "aliases": [
+        "Play a crucial role"
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "stop off",
+      "meaning": "ghé dừng ở một nơi trên đường đi",
+      "usage": "stop off at/in a place",
+      "example": "We stopped off at a café on the way home.",
+      "translation": "Chúng tôi ghé một quán cà phê trên đường về.",
+      "family": "stop – stopped – stopped; không phải dừng hẳn hành trình",
+      "meta": "PHRASE",
+      "note": "Stop off at a place là dừng lại một nơi trong hành trình. stop off at/in a place.",
+      "question": 34,
+      "questions": [
+        34
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "have a good eye for",
+      "meaning": "có khả năng nhận ra, đánh giá tốt",
+      "usage": "have an eye for detail/colour",
+      "example": "She has a good eye for colour.",
+      "translation": "Cô ấy có khả năng cảm nhận màu sắc tốt.",
+      "family": "eye ở nghĩa bóng về khả năng nhận xét; thường số ít",
+      "meta": "PHRASE",
+      "note": "Have a good eye for something là có khả năng nhận ra hoặc đánh giá tốt thứ gì. have an eye for detail/colour.",
+      "question": 35,
+      "questions": [
+        35
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "right from wrong",
+      "meaning": "điều đúng và điều sai",
+      "usage": "tell/teach right from wrong",
+      "example": "Children need to learn right from wrong.",
+      "translation": "Trẻ cần học phân biệt đúng sai.",
+      "family": "tell A from B: phân biệt A với B",
+      "meta": "PHRASE",
+      "note": "Teach someone right from wrong là dạy ai phân biệt đúng sai. tell/teach right from wrong.",
+      "question": 51,
+      "questions": [
+        51
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

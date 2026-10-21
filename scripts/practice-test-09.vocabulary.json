@@ -642,6 +642,172 @@
         98
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 16,
+      "term": "boring / bored",
+      "meta": "ADJECTIVES",
+      "meaning": "gây nhàm chán / cảm thấy chán",
+      "note": "Mẫu so + tính từ + a/an + danh từ số ít + that: so boring a film that… Tương đương such a boring film that… Các phương án còn lại đặt a sai vị trí hoặc thiếu a. a boring task; feel bored.",
+      "usage": "a boring task; feel bored",
+      "example": "The task was boring, so the students felt bored.",
+      "translation": "Nhiệm vụ gây nhàm chán nên các học sinh cảm thấy chán.",
+      "family": "bore (v); boredom (n); boring/bored (adj)",
+      "teacherSelected": true,
+      "questions": [
+        16
+      ],
+      "aliases": [
+        "boring"
+      ]
+    },
+    {
+      "term": "imaginary / imaginative / imaginable / unimaginable",
+      "meta": "adjectives",
+      "meaning": "tưởng tượng, không có thật / giàu tưởng tượng / có thể tưởng tượng được; unimaginable: không thể tưởng tượng nổi",
+      "note": "Trước developments cần tính từ: unimaginable = không thể tưởng tượng được. an imaginary friend; an imaginative solution; every imaginable problem; unimaginable damage. unimaginable suffering: nỗi đau khổ không thể tưởng tượng nổi..",
+      "usage": "an imaginary friend; an imaginative solution; every imaginable problem; unimaginable damage. unimaginable suffering: nỗi đau khổ không thể tưởng tượng nổi.",
+      "family": "imagine (v); imagination (n); imaginary/imaginative/imaginable/unimaginable (adj).",
+      "example": "The imaginative writer created an imaginary world.",
+      "translation": "Nhà văn giàu trí tưởng tượng tạo ra một thế giới không có thật.",
+      "aliases": [
+        "unimaginable"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        32
+      ],
+      "question": 32
+    },
+    {
+      "question": 36,
+      "term": "increasingly",
+      "meta": "ADVERB",
+      "meaning": "ngày càng",
+      "note": "Increasingly expensive = ngày càng đắt đỏ. Cần trạng từ bổ nghĩa cho tính từ expensive, vì vậy dùng increasingly; increasing chỉ là dạng tính từ hoặc phân từ. increasingly difficult/popular; increasingly longer gaps.",
+      "usage": "increasingly difficult/popular; increasingly longer gaps",
+      "example": "The instructions became increasingly clear.",
+      "translation": "Các hướng dẫn ngày càng rõ ràng.",
+      "family": "increase (n/v); increasing (adj); increasingly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ],
+      "aliases": []
+    },
+    {
+      "term": "rational / irrational",
+      "meta": "adjectives",
+      "meaning": "hợp lý, dựa trên lý trí / phi lý",
+      "note": "Precise trong precise, representative sampling = chính xác, gần với accurate. Planned chỉ được lên kế hoạch; rational là hợp lý; required là được yêu cầu, không thể hiện nghĩa chính xác. rational thinking/decision; irrational fears; behave rationally; a reasonable explanation..",
+      "usage": "rational thinking/decision; irrational fears; behave rationally; a reasonable explanation.",
+      "family": "rational (adj), rationally (adv), rationality (n); irrational (adj), irrationally (adv).",
+      "example": "A rational decision should be based on evidence rather than fear.",
+      "translation": "Quyết định hợp lý nên dựa trên bằng chứng thay vì nỗi sợ.",
+      "aliases": [
+        "rational"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        74
+      ],
+      "question": 74
+    },
+    {
+      "term": "be composed of",
+      "meaning": "bao gồm, được tạo thành từ",
+      "usage": "be composed of several parts",
+      "example": "The team is composed of six students.",
+      "translation": "Đội gồm sáu học sinh.",
+      "family": "compose (v); composition (n); consist of không dùng bị động",
+      "meta": "PHRASE",
+      "note": "Be composed of = được cấu tạo từ. be composed of several parts.",
+      "question": 7,
+      "questions": [
+        7
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "ingredient",
+      "meaning": "nguyên liệu, thành phần",
+      "usage": "the ingredients in a dish",
+      "example": "Flour is the main ingredient.",
+      "translation": "Bột mì là nguyên liệu chính.",
+      "family": "ingredient thường đếm được: an ingredient, ingredients",
+      "meta": "NOUN",
+      "note": "How high sugar appears on the ingredient list hỏi đường đứng cao đến đâu trong danh sách thành phần. the ingredients in a dish.",
+      "question": 56,
+      "questions": [
+        56
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "run on electricity",
+      "meaning": "chạy bằng điện",
+      "usage": "run on electricity/gas",
+      "example": "The buses run on electricity.",
+      "translation": "Những xe buýt này chạy bằng điện.",
+      "family": "run – ran – run; on nêu nguồn năng lượng",
+      "meta": "PHRASE",
+      "note": "Run on electricity là hoạt động bằng điện. run on electricity/gas.",
+      "question": 62,
+      "questions": [
+        62
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "be on the move",
+      "meaning": "đang di chuyển hoặc luôn bận rộn",
+      "usage": "be constantly on the move",
+      "example": "She eats lunch while on the move.",
+      "translation": "Cô ấy ăn trưa khi đang di chuyển.",
+      "family": "move ở đây là chuyển động, không phải làm cảm động",
+      "meta": "PHRASE",
+      "note": "Be on the move là đang di chuyển. be constantly on the move.",
+      "question": 67,
+      "questions": [
+        67
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "at a loss",
+      "meaning": "bối rối, không biết phải làm gì",
+      "usage": "be at a loss to explain/understand",
+      "example": "I was at a loss to explain the delay.",
+      "translation": "Tôi không biết giải thích sự chậm trễ ra sao.",
+      "family": "loss (n); lose – lost – lost; không nhầm với thiệt hại tài chính",
+      "meta": "PHRASE",
+      "note": "Find myself at a loss to understand… = thấy mình không hiểu nổi…; unable to understand cũng giữ nghĩa của incomprehensible.\nbe at a loss to = không biết làm sao để. be at a loss to explain/understand.",
+      "question": 83,
+      "questions": [
+        83
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "make/leave one’s mark on",
+      "meaning": "để lại dấu ấn hoặc ảnh hưởng đáng kể",
+      "usage": "make/leave one's mark on something",
+      "example": "The teacher left her mark on generations of students.",
+      "translation": "Cô giáo để lại dấu ấn trong nhiều thế hệ học sinh.",
+      "family": "leave – left – left; mark ở đây là ảnh hưởng, không phải điểm số",
+      "meta": "PHRASE",
+      "note": "Make/leave one’s mark on something là để lại dấu ấn hay ảnh hưởng đáng kể. make/leave one's mark on something.",
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

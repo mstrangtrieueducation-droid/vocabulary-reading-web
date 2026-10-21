@@ -575,7 +575,9 @@
       ],
       "displayAnswer": "locally",
       "explanation": "Locally available ingredients = những nguyên liệu có sẵn tại địa phương.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "available"
+      ]
     },
     {
       "globalNumber": 41,
@@ -730,7 +732,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Affect human livelihoods = ảnh hưởng đến sinh kế của con người.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Affect"
+      ]
     },
     {
       "globalNumber": 53,
@@ -895,7 +899,10 @@
       ],
       "displayAnswer": "be / prove",
       "explanation": "Can be beneficial = có thể có ích; can prove beneficial = có thể cho thấy là có ích.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "beneficial",
+        "beneficial"
+      ]
     },
     {
       "globalNumber": 66,
@@ -1006,7 +1013,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Dự án Guatemala dùng viễn thám để lập tuyến du lịch sinh thái, tạo thu nhập cho cộng đồng. Nhờ đó bảo vệ rừng trở thành sensible economic decision: việc giữ rừng có lợi ích kinh tế.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "economic"
+      ]
     },
     {
       "globalNumber": 76,
@@ -1050,7 +1059,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "Câu cuối nêu long-term continuity to the Foundation’s objectives: bảo đảm mục tiêu được tiếp nối lâu dài. D diễn đạt đúng ý.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Foundation"
+      ]
     },
     {
       "globalNumber": 80,
@@ -1061,7 +1072,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Bài trình bày lý do thành lập quỹ, các dự án tiêu biểu và ý tưởng giải thưởng. Mục đích chính là giải thích bản chất hoạt động của Foundation.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Foundation"
+      ]
     },
     {
       "globalNumber": 81,
@@ -1240,7 +1253,9 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "as he was",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Although"
+      ]
     },
     {
       "globalNumber": 92,
@@ -1392,7 +1407,9 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "is believed to have been",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "poem"
+      ]
     },
     {
       "globalNumber": 99,

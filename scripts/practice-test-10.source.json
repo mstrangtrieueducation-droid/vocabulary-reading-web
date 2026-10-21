@@ -600,7 +600,9 @@
       ],
       "displayAnswer": "extraordinary",
       "explanation": "Extraordinary talent là tài năng phi thường.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Extraordinary"
+      ]
     },
     {
       "globalNumber": 43,
@@ -625,7 +627,8 @@
       "displayAnswer": "unconventional",
       "explanation": "Unconventional upbringing là cách nuôi dạy khác thường, được minh họa bằng việc bị bắt học nhạc giữa đêm.",
       "teacherHighlights": [
-        "Unconventional"
+        "Unconventional",
+        "upbringing"
       ]
     },
     {
@@ -718,7 +721,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "Loss of life là cụm chỉ thiệt hại về người.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Loss of life"
+      ]
     },
     {
       "globalNumber": 53,
@@ -788,7 +793,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "Trigger off something là gây ra hoặc khởi phát một chuỗi sự việc.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Trigger off"
+      ]
     },
     {
       "globalNumber": 59,
@@ -975,7 +982,8 @@
       "displayAnswer": "A",
       "explanation": "Inconceivable = không thể hình dung nổi, gần nghĩa unimaginable. Trong đoạn ba, cách công nghệ ràng buộc con người là điều vài năm trước khó tưởng tượng.",
       "teacherHighlights": [
-        "Inconceivable"
+        "Inconceivable",
+        "unimaginable"
       ]
     },
     {
@@ -1358,7 +1366,7 @@
       "maxWords": 6,
       "blankAnswer": "a source of embarrassment to",
       "teacherHighlights": [
-        "source of embarrassment"
+        "A source of embarrassment"
       ]
     },
     {

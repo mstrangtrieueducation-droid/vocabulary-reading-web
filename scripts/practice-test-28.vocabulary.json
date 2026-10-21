@@ -634,6 +634,125 @@
         100
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 7,
+      "term": "numerous",
+      "meta": "ADJECTIVE",
+      "meaning": "nhiều",
+      "note": "Numerous là tính từ = nhiều, đứng trước danh từ số nhiều inventions and technologies. numerous examples/questions/tips.",
+      "usage": "numerous examples/questions/tips",
+      "example": "The book contains numerous useful examples.",
+      "translation": "Cuốn sách có nhiều ví dụ hữu ích.",
+      "family": "number (n/v); numerous (adj); innumerable (adj: vô số)",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ],
+      "aliases": []
+    },
+    {
+      "term": "barely / hardly / scarcely",
+      "meta": "adverbs",
+      "meaning": "hầu như không; chỉ vừa đủ",
+      "note": "Hardly/scarcely/barely anyone = hầu như không có ai. barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi..",
+      "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
+      "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
+      "example": "She could barely hear the speaker over the noise.",
+      "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn.",
+      "teacherSelected": true,
+      "questions": [
+        61
+      ],
+      "aliases": [
+        "barely",
+        "Hardly",
+        "scarcely"
+      ],
+      "question": 61
+    },
+    {
+      "question": 61,
+      "term": "scarcely",
+      "meta": "ADVERB",
+      "meaning": "hầu như không; vừa mới ... thì",
+      "note": "Hardly/scarcely/barely anyone = hầu như không có ai. Scarcely had S + past participle when S + past simple.",
+      "usage": "Scarcely had S + past participle when S + past simple",
+      "example": "Scarcely had we sat down when the lights went out.",
+      "translation": "Chúng tôi vừa ngồi xuống thì đèn tắt.",
+      "family": "scarce (adj, khan hiếm); scarcity (n); scarcely (adv)",
+      "teacherSelected": true,
+      "questions": [
+        61
+      ],
+      "aliases": []
+    },
+    {
+      "term": "climate / economic climate",
+      "meta": "noun / noun phrase",
+      "meaning": "khí hậu; economic climate: tình hình kinh tế",
+      "note": "Trong các câu của đề này, climate chỉ khí hậu của Trái Đất. Climate change là biến đổi khí hậu; chỉ khi đi với economic thì cả cụm mới nói tình hình kinh tế.",
+      "usage": "climate change; climate science; the economic climate",
+      "family": "climate (n); climatic (adj ở nghĩa khí hậu). Weather là thời tiết ngắn hạn.",
+      "example": "Climate change affects communities worldwide.",
+      "translation": "Biến đổi khí hậu ảnh hưởng đến cộng đồng trên khắp thế giới.",
+      "teacherSelected": true,
+      "questions": [
+        76,
+        79
+      ],
+      "aliases": [
+        "climate"
+      ],
+      "question": 76
+    },
+    {
+      "question": 79,
+      "term": "arguably",
+      "meta": "ADVERB",
+      "meaning": "có thể cho là, có cơ sở để lập luận rằng",
+      "note": "Câu Yet greenwashing is arguably more insidious cần đứng sau chỗ vừa so sánh greenwashing với climate denial. Vị trí [IV] đáp ứng điều đó; câu tiếp Whereas denial ... giải thích vì sao greenwashing có thể âm thầm nguy hiểm hơn. arguably the best; arguably more effective.",
+      "usage": "arguably the best; arguably more effective",
+      "example": "This is arguably the clearest explanation in the book.",
+      "translation": "Có thể cho rằng đây là lời giải thích rõ nhất trong cuốn sách.",
+      "family": "argue (v); argument (n); arguable (adj); arguably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        79
+      ],
+      "aliases": []
+    },
+    {
+      "term": "under the terms of",
+      "meaning": "theo các điều khoản của",
+      "usage": "under the terms of an agreement",
+      "example": "Payment is due today under the terms of the contract.",
+      "translation": "Theo điều khoản hợp đồng, hôm nay là hạn thanh toán.",
+      "family": "terms thường số nhiều ở nghĩa điều khoản",
+      "meta": "PHRASE",
+      "note": "Under the terms of an agreement = theo các điều khoản của một thỏa thuận. under the terms of an agreement.",
+      "question": 12,
+      "questions": [
+        12
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "anything will do",
+      "meaning": "gì cũng được, không cần chọn kỹ",
+      "usage": "anything will do",
+      "example": "I don't need a special pen; anything will do.",
+      "translation": "Tôi không cần bút đặc biệt; loại nào cũng được.",
+      "family": "do ở đây = phù hợp, dùng được; không phải làm",
+      "meta": "PHRASE",
+      "note": "Anything will do = món nào cũng được, dùng khi không có lựa chọn ưu tiên. anything will do.",
+      "question": 32,
+      "questions": [
+        32
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

@@ -192,7 +192,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Lest (anyone should) overhear = để tránh có người nghe lỏm.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Lest"
+      ]
     },
     {
       "globalNumber": 10,
@@ -342,7 +344,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "Take a good look at = nhìn thật kỹ.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Take a good look at"
+      ]
     },
     {
       "globalNumber": 22,
@@ -414,7 +418,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Trật tự tính từ: đánh giá (exquisite) → hình dạng (rectangular) → xuất xứ (Italian) → chất liệu (marble) → danh từ (dining table).",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "exquisite"
+      ]
     },
     {
       "globalNumber": 28,
@@ -477,7 +483,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Scarcely any of the data = hầu như không có dữ liệu nào.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Scarcely"
+      ]
     },
     {
       "globalNumber": 33,
@@ -678,7 +686,9 @@
       ],
       "displayAnswer": "rises → raises",
       "explanation": "Raise questions = đặt ra/gợi lên vấn đề, là động từ có tân ngữ.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Raise questions"
+      ]
     },
     {
       "globalNumber": 49,
@@ -774,7 +784,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "In short = tóm lại, dùng để rút ý chính của đoạn trước.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "In short"
+      ]
     },
     {
       "globalNumber": 57,
@@ -785,7 +797,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Have a goal in mind = có sẵn mục tiêu trong đầu.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Have a goal in mind"
+      ]
     },
     {
       "globalNumber": 58,
@@ -954,7 +968,8 @@
       "displayAnswer": "A",
       "explanation": "Pernicious = có hại nghiêm trọng, đối lập beneficial = có lợi. Extensive là rộng lớn, fascinating là hấp dẫn, destructive gần nghĩa gây hại.",
       "teacherHighlights": [
-        "Pernicious"
+        "Pernicious",
+        "beneficial"
       ]
     },
     {
@@ -1010,7 +1025,10 @@
       ],
       "displayAnswer": "B",
       "explanation": "Available trong ngữ cảnh nội dung có trên web = có thể tiếp cận, gần accessible. Curable = chữa được, exciting = thú vị, durable = bền.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Available",
+        "accessible"
+      ]
     },
     {
       "globalNumber": 77,

@@ -648,6 +648,158 @@
         99
       ],
       "aliases": []
+    },
+    {
+      "question": 25,
+      "term": "individual",
+      "meta": "ADJECTIVE",
+      "meaning": "riêng của từng người hoặc từng vật",
+      "note": "Evaluation là việc đánh giá; emphasis on evaluation by individual schools nói việc mỗi trường thực hiện đánh giá. individual needs/style; each individual.",
+      "usage": "individual needs/style; each individual",
+      "example": "Each student has individual learning needs.",
+      "translation": "Mỗi học sinh có nhu cầu học tập riêng.",
+      "family": "individual (n/adj); individually (adv); individuality (n)",
+      "teacherSelected": true,
+      "questions": [
+        25
+      ],
+      "aliases": []
+    },
+    {
+      "question": 31,
+      "term": "affect / effect",
+      "meta": "verb / noun or verb",
+      "meaning": "ảnh hưởng đến / tác động; tạo ra",
+      "note": "Affect là động từ tác động đến; effect thường là danh từ ảnh hưởng hoặc động từ tạo ra. affect concentration; have an effect on something; effect a change.",
+      "usage": "affect concentration; have an effect on something; effect a change",
+      "family": "affected (adj); effective (adj: hiệu quả); effectively (adv)",
+      "example": "Noise can affect concentration.",
+      "translation": "Tiếng ồn có thể ảnh hưởng đến khả năng tập trung.",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ],
+      "aliases": [
+        "Affect"
+      ]
+    },
+    {
+      "question": 31,
+      "term": "affect",
+      "meta": "VERB",
+      "meaning": "ảnh hưởng, tác động đến",
+      "note": "Affect là động từ tác động đến; effect thường là danh từ ảnh hưởng hoặc động từ tạo ra. affect people/results/decisions.",
+      "usage": "affect people/results/decisions",
+      "example": "The delay affected our plans.",
+      "translation": "Sự chậm trễ ảnh hưởng đến kế hoạch của chúng tôi.",
+      "family": "affect (v); affected (participle); effect (n/v, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ],
+      "aliases": []
+    },
+    {
+      "term": "barely / hardly / scarcely",
+      "meta": "adverbs",
+      "meaning": "hầu như không; chỉ vừa đủ",
+      "note": "Hardly see any stars = hầu như không nhìn thấy sao, khớp ánh sáng thành phố che lấp bầu trời. barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi..",
+      "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
+      "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
+      "example": "She could barely hear the speaker over the noise.",
+      "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn.",
+      "teacherSelected": true,
+      "questions": [
+        38,
+        90
+      ],
+      "aliases": [
+        "Hardly",
+        "barely"
+      ],
+      "question": 38
+    },
+    {
+      "term": "claim",
+      "meta": "verb / noun",
+      "meaning": "khẳng định; lời khẳng định; yêu cầu quyền lợi",
+      "note": "Substantiate a claim là đưa bằng chứng đáng tin để chứng minh một khẳng định. claim that + mệnh đề; claim to do; claim to have done; make a claim; claim compensation..",
+      "usage": "claim that + mệnh đề; claim to do; claim to have done; make a claim; claim compensation.",
+      "family": "claim (n/v); claimant (n: người yêu cầu quyền lợi); unclaimed (adj).",
+      "example": "He claimed to have sent the documents the previous day.",
+      "translation": "Anh ấy khẳng định đã gửi tài liệu hôm trước.",
+      "teacherSelected": true,
+      "questions": [
+        52
+      ],
+      "question": 52,
+      "aliases": []
+    },
+    {
+      "question": 57,
+      "term": "beset",
+      "meta": "VERB",
+      "meaning": "gây khó khăn; vây bủa",
+      "note": "Beset somebody là gây khó khăn, đeo bám ai, phù hợp insomnia besets people. be beset by financial problems.",
+      "usage": "be beset by financial problems",
+      "example": "The project was beset by delays.",
+      "translation": "Dự án liên tục gặp trở ngại do chậm trễ.",
+      "family": "beset–beset–beset; besetting (participle); difficulty (n, nghĩa liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ],
+      "aliases": []
+    },
+    {
+      "term": "advise",
+      "meta": "verb",
+      "meaning": "khuyên; tư vấn",
+      "note": "Advise somebody to do something dùng để thuật lại lời khuyên. advise someone to do; advise doing; advise against doing = khuyên không nên; a piece of advice = một lời khuyên..",
+      "usage": "advise someone to do; advise doing; advise against doing = khuyên không nên; a piece of advice = một lời khuyên.",
+      "family": "advise (v); advice (n); adviser/advisor (n); advisable (adj: nên làm).",
+      "example": "The teacher advised us to check our answers carefully.",
+      "translation": "Giáo viên khuyên chúng tôi kiểm tra kỹ đáp án.",
+      "teacherSelected": true,
+      "questions": [
+        87
+      ],
+      "question": 87,
+      "aliases": []
+    },
+    {
+      "term": "tossing and turning",
+      "meaning": "trằn trọc, xoay trở vì khó ngủ",
+      "usage": "toss and turn in bed",
+      "example": "I spent the night tossing and turning.",
+      "translation": "Tôi trằn trọc suốt đêm.",
+      "family": "toss – tossed; turn – turned; thường đi thành cặp",
+      "meta": "PHRASE",
+      "note": "Tossing and turning là trở mình liên tục vì khó ngủ. Đây là cặp từ cố định thường đi cùng nhau.\ntoss and turn = trằn trọc, trở mình liên tục. toss and turn in bed.",
+      "question": 48,
+      "questions": [
+        48
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "put out",
+      "meaning": "dập tắt lửa hoặc thuốc đang cháy",
+      "usage": "put out a fire; put it out",
+      "example": "The firefighters put out the fire.",
+      "translation": "Lính cứu hỏa đã dập tắt đám cháy.",
+      "family": "put – put – put; be put out có thể mang nghĩa thấy bực",
+      "meta": "PHRASE",
+      "note": "Succeed in + V-ing = thành công trong việc gì. Succeeded in putting out/extinguishing thay cho managed to put out. put out a fire; put it out.",
+      "question": 91,
+      "questions": [
+        91
+      ],
+      "aliases": [
+        "putting out"
+      ],
+      "teacherSelected": true
     }
   ]
 }

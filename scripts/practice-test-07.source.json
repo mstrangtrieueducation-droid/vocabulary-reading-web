@@ -187,7 +187,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Or else = nếu không thì: cảnh báo hậu quả nếu tiếp tục làm việc quá sức.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Or else"
+      ]
     },
     {
       "globalNumber": 9,
@@ -282,7 +284,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "At the latest = muộn nhất.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "At the latest"
+      ]
     },
     {
       "globalNumber": 17,
@@ -715,7 +719,9 @@
       ],
       "displayAnswer": "to → with",
       "explanation": "Interact with = tương tác với.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Interact"
+      ]
     },
     {
       "globalNumber": 51,
@@ -760,7 +766,7 @@
       "displayAnswer": "C",
       "explanation": "Mistake A for B = nhầm A thành B.",
       "teacherHighlights": [
-        "Mistake A for"
+        "Mistake A for B"
       ]
     },
     {
@@ -772,7 +778,10 @@
       ],
       "displayAnswer": "D",
       "explanation": "Set up = thành lập, thiết lập; set up trading posts: lập các thương điếm.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Set up",
+        "set up"
+      ]
     },
     {
       "globalNumber": 56,
@@ -844,7 +853,9 @@
       "displayAnswer": "that / which",
       "explanation": "That/which thay cho method (vật), làm chủ ngữ của can supplement.",
       "focusVocabulary": [],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "supplement"
+      ]
     },
     {
       "globalNumber": 62,
@@ -893,7 +904,9 @@
       "displayAnswer": "in / within",
       "explanation": "Play a role in = đóng vai trò trong. Within cũng phù hợp nghĩa trong môi trường.",
       "focusVocabulary": [],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Play a role in"
+      ]
     },
     {
       "globalNumber": 66,
@@ -905,7 +918,9 @@
       "displayAnswer": "to",
       "explanation": "The answer to a question = câu trả lời cho một câu hỏi.",
       "focusVocabulary": [],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "answer"
+      ]
     },
     {
       "globalNumber": 67,
@@ -957,7 +972,9 @@
       "displayAnswer": "into / to",
       "explanation": "Tie something into/to something = gắn điều gì với điều khác.",
       "focusVocabulary": [],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Tie something into/to something"
+      ]
     },
     {
       "globalNumber": 71,
@@ -1307,7 +1324,8 @@
       "fullSentence": "We can afford this holiday as long as we avoid the expensive restaurants in the tourist centre",
       "teacherHighlights": [
         "afford",
-        "as long as"
+        "as long as",
+        "provided"
       ]
     },
     {
@@ -1416,7 +1434,8 @@
       "maxWords": 6,
       "fullSentence": "The meeting is not likely to go on for more than a few minutes",
       "teacherHighlights": [
-        "Be not likely to"
+        "Be not likely to",
+        "go on"
       ]
     },
     {

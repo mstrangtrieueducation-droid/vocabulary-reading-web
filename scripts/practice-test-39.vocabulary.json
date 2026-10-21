@@ -585,6 +585,139 @@
         96
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 40,
+      "term": "available",
+      "meta": "ADJECTIVE",
+      "meaning": "có sẵn; có thể sử dụng",
+      "note": "Locally available ingredients = những nguyên liệu có sẵn tại địa phương. available in + màu/kích cỡ; available to + người.",
+      "usage": "available in + màu/kích cỡ; available to + người",
+      "example": "The jacket is available in three colours.",
+      "translation": "Áo khoác có ba màu để chọn.",
+      "family": "availability (n: sự có sẵn); unavailable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ],
+      "aliases": []
+    },
+    {
+      "question": 52,
+      "term": "affect / effect",
+      "meta": "verb / noun or verb",
+      "meaning": "ảnh hưởng đến / tác động; tạo ra",
+      "note": "Affect human livelihoods = ảnh hưởng đến sinh kế của con người. affect concentration; have an effect on something; effect a change.",
+      "usage": "affect concentration; have an effect on something; effect a change",
+      "family": "affected (adj); effective (adj: hiệu quả); effectively (adv)",
+      "example": "Noise can affect concentration.",
+      "translation": "Tiếng ồn có thể ảnh hưởng đến khả năng tập trung.",
+      "teacherSelected": true,
+      "questions": [
+        52
+      ],
+      "aliases": [
+        "Affect"
+      ]
+    },
+    {
+      "question": 52,
+      "term": "affect",
+      "meta": "VERB",
+      "meaning": "ảnh hưởng, tác động đến",
+      "note": "Affect human livelihoods = ảnh hưởng đến sinh kế của con người. affect people/results/decisions.",
+      "usage": "affect people/results/decisions",
+      "example": "The delay affected our plans.",
+      "translation": "Sự chậm trễ ảnh hưởng đến kế hoạch của chúng tôi.",
+      "family": "affect (v); affected (participle); effect (n/v, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        52
+      ],
+      "aliases": []
+    },
+    {
+      "question": 65,
+      "term": "beneficial",
+      "meta": "adjective",
+      "meaning": "có lợi",
+      "note": "Can be beneficial = có thể có ích; can prove beneficial = có thể cho thấy là có ích. be beneficial to/for somebody.",
+      "usage": "be beneficial to/for somebody",
+      "example": "Regular exercise is beneficial to health.",
+      "translation": "Tập thể dục đều đặn có lợi cho sức khỏe.",
+      "family": "benefit (n/v): lợi ích/được lợi; beneficially (adv); beneficiary: người thụ hưởng.",
+      "teacherSelected": true,
+      "questions": [
+        65
+      ],
+      "aliases": []
+    },
+    {
+      "question": 75,
+      "term": "economic",
+      "meta": "ADJECTIVE",
+      "meaning": "thuộc kinh tế",
+      "note": "Dự án Guatemala dùng viễn thám để lập tuyến du lịch sinh thái, tạo thu nhập cho cộng đồng. Nhờ đó bảo vệ rừng trở thành sensible economic decision: việc giữ rừng có lợi ích kinh tế. economic growth/policy/basis.",
+      "usage": "economic growth/policy/basis",
+      "example": "Tourism is important to the town’s economic development.",
+      "translation": "Du lịch quan trọng đối với phát triển kinh tế của thị trấn.",
+      "family": "economy (n); economic/economical (adj); economically (adv)",
+      "teacherSelected": true,
+      "questions": [
+        75
+      ],
+      "aliases": []
+    },
+    {
+      "question": 79,
+      "term": "foundation",
+      "meta": "noun",
+      "meaning": "tổ chức hoặc quỹ; nền móng",
+      "note": "Câu cuối nêu long-term continuity to the Foundation’s objectives: bảo đảm mục tiêu được tiếp nối lâu dài. D diễn đạt đúng ý. a charitable foundation; establish a foundation.",
+      "usage": "a charitable foundation; establish a foundation",
+      "example": "The foundation supports educational projects.",
+      "translation": "Quỹ hỗ trợ các dự án giáo dục.",
+      "family": "found (v): thành lập; founded; founder (n): người sáng lập; find → found là động từ khác.",
+      "teacherSelected": true,
+      "questions": [
+        79,
+        80
+      ],
+      "aliases": []
+    },
+    {
+      "question": 91,
+      "term": "although",
+      "meta": "CONJUNCTION",
+      "meaning": "mặc dù; nối hai ý tương phản",
+      "note": "Tired as he was = Although he was tired. although + subject + verb.",
+      "usage": "although + subject + verb",
+      "example": "Although they looked sad, they were actually pleased.",
+      "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+      "family": "although/though + clause; despite/in spite of + noun or V-ing",
+      "teacherSelected": true,
+      "questions": [
+        91
+      ],
+      "aliases": []
+    },
+    {
+      "term": "prose / poem / poetry",
+      "meta": "nouns",
+      "meaning": "văn xuôi / bài thơ / thơ ca",
+      "note": "Bị động tường thuật: People believe … → That poem is believed … Bài thơ được viết trước niềm tin hiện tại nên dùng to have been written. write prose; read a poem; a collection of poems; modern poetry; prose and poetry..",
+      "usage": "write prose; read a poem; a collection of poems; modern poetry; prose and poetry.",
+      "family": "poem (n đếm được); poetry (n); poet (n: nhà thơ); poetic (adj); prose (n).",
+      "example": "The collection contains both short prose pieces and poems.",
+      "translation": "Tuyển tập gồm cả những bài văn xuôi ngắn và các bài thơ.",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ],
+      "aliases": [
+        "poem"
+      ],
+      "question": 98
     }
   ]
 }

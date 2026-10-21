@@ -146,7 +146,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "Too loyal to talk behind your back = quá trung thành để nói xấu sau lưng bạn.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "talk behind your back"
+      ]
     },
     {
       "globalNumber": 6,
@@ -910,7 +912,9 @@
       ],
       "displayAnswer": "personal / home",
       "explanation": "Personal computer là máy tính dành cho cá nhân, khớp lời giải thích a machine intended for an individual user.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "individual"
+      ]
     },
     {
       "globalNumber": 70,
@@ -1066,7 +1070,10 @@
       "prefix": "Jane advised",
       "suffix": "",
       "fullSentence": "Jane advised Peter not to lend Jim any more money.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Advise",
+        "advise"
+      ]
     },
     {
       "globalNumber": 83,
@@ -1111,7 +1118,9 @@
       "prefix": "I could hardly",
       "suffix": "",
       "fullSentence": "I could hardly understand what my teacher said.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "hardly"
+      ]
     },
     {
       "globalNumber": 86,

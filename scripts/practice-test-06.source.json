@@ -138,7 +138,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Or else nối hậu quả nếu không làm điều vừa nói: nếu không đi thật bình tĩnh, họ đã nghĩ tôi là kẻ trộm.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Or else"
+      ]
     },
     {
       "globalNumber": 5,
@@ -549,7 +551,10 @@
       ],
       "displayAnswer": "laughter",
       "explanation": "Roars of laughter là những tràng cười lớn. Sau of cần danh từ laughter; laugh có thể là danh từ đếm được nhưng không tạo cụm thông dụng roars of laughter.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Roars of laughter",
+        "roars of laughter"
+      ]
     },
     {
       "globalNumber": 38,
@@ -880,7 +885,8 @@
       "displayAnswer": "of",
       "explanation": "Make something out of a material = làm một vật từ vật liệu nào.",
       "teacherHighlights": [
-        "Make something out of"
+        "Make something out of",
+        "material"
       ]
     },
     {
@@ -1417,7 +1423,7 @@
       "maxWords": 6,
       "fullSentence": "I think it's only a matter of time before Jemma becomes a famous model",
       "teacherHighlights": [
-        "matter of time"
+        "a matter of time"
       ]
     },
     {
@@ -1464,7 +1470,7 @@
       "maxWords": 6,
       "fullSentence": "If Marc hadn't taken up politics, he might have made a name for himself as an art historian",
       "teacherHighlights": [
-        "Make a name for"
+        "Make a name for oneself"
       ]
     }
   ],

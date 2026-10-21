@@ -599,7 +599,8 @@
       "note": "Put A down to B nghĩa là cho rằng A xảy ra nhờ hoặc vì B. A là his success, B là incredible luck. Put có dạng quá khứ vẫn là put; không thêm -ed và không đảo vị trí nguyên nhân với kết quả.",
       "aliases": [
         "put A down to B",
-        "put something down to something"
+        "put something down to something",
+        "Put A down to B"
       ],
       "question": 90,
       "questions": [
@@ -717,6 +718,214 @@
       "questions": [
         100
       ],
+      "teacherSelected": true
+    },
+    {
+      "question": 7,
+      "term": "excessive",
+      "meta": "adjective",
+      "meaning": "quá mức",
+      "note": "Water containing excessive amounts of fluorides = nước chứa quá nhiều fluorua. excessive use/exploitation.",
+      "usage": "excessive use/exploitation",
+      "family": "excess (n); excessively (adv)",
+      "example": "Excessive packaging creates unnecessary waste.",
+      "translation": "Đóng gói quá mức tạo rác không cần thiết.",
+      "teacherSelected": true,
+      "questions": [
+        7
+      ],
+      "aliases": []
+    },
+    {
+      "question": 24,
+      "term": "nevertheless",
+      "meta": "linking adverb",
+      "meaning": "tuy vậy; dù thế",
+      "note": "Nevertheless = tuy vậy, phù hợp đối lập giữa vai trò cách mạng của truyền hình cáp và việc nó đang bị vệ tinh đe dọa. Sentence. Nevertheless, sentence.; tương đương however trong nhiều ngữ cảnh.",
+      "usage": "Sentence. Nevertheless, sentence.; tương đương however trong nhiều ngữ cảnh",
+      "family": "nonetheless: tuy vậy; therefore: vì thế, chỉ kết quả",
+      "example": "The task was difficult. Nevertheless, we completed it.",
+      "translation": "Nhiệm vụ khó. Tuy vậy, chúng tôi đã hoàn thành.",
+      "teacherSelected": true,
+      "questions": [
+        24
+      ],
+      "aliases": []
+    },
+    {
+      "question": 38,
+      "term": "managerial",
+      "meta": "ADJECTIVE",
+      "meaning": "thuộc về quản lý",
+      "note": "Management skills và managerial skills đều có = kỹ năng quản lý. managerial duties/skills/responsibilities.",
+      "usage": "managerial duties/skills/responsibilities",
+      "example": "She has both artistic and managerial responsibilities.",
+      "translation": "Cô ấy có cả trách nhiệm nghệ thuật lẫn quản lý.",
+      "family": "manage (v); manager (n); management (n); managerial (adj)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ],
+      "aliases": []
+    },
+    {
+      "question": 72,
+      "term": "available",
+      "meta": "ADJECTIVE",
+      "meaning": "có sẵn; có thể sử dụng",
+      "note": "Đoạn một nêu high population densities put stress on available resources. Vì thế nguồn tài nguyên sẵn có chịu áp lực. available in + màu/kích cỡ; available to + người.",
+      "usage": "available in + màu/kích cỡ; available to + người",
+      "example": "The jacket is available in three colours.",
+      "translation": "Áo khoác có ba màu để chọn.",
+      "family": "availability (n: sự có sẵn); unavailable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        72
+      ],
+      "aliases": []
+    },
+    {
+      "question": 87,
+      "term": "although",
+      "meta": "CONJUNCTION",
+      "meaning": "mặc dù; nối hai ý tương phản",
+      "note": "Much as + mệnh đề diễn đạt nhượng bộ, gần nghĩa although. although + subject + verb.",
+      "usage": "although + subject + verb",
+      "example": "Although they looked sad, they were actually pleased.",
+      "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+      "family": "although/though + clause; despite/in spite of + noun or V-ing",
+      "teacherSelected": true,
+      "questions": [
+        87
+      ],
+      "aliases": []
+    },
+    {
+      "question": 92,
+      "term": "faintly",
+      "meta": "ADVERB",
+      "meaning": "mờ nhạt; nhỏ hoặc yếu đến mức khó nhận ra",
+      "note": "Give off a smell là tỏa ra mùi; quá khứ là gave off, có hai chữ f trong off. Faint nghĩa là nhẹ, thoang thoảng, giữ mức smelled faintly. print faintly; hear something faintly.",
+      "usage": "print faintly; hear something faintly",
+      "example": "The notice was printed too faintly to read.",
+      "translation": "Thông báo được in quá mờ nên không đọc được.",
+      "family": "faint (adj); faintly (adv); faintness (n)",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ],
+      "aliases": []
+    },
+    {
+      "question": 98,
+      "term": "worth",
+      "meta": "ADJECTIVE",
+      "meaning": "đáng để làm, xứng với công sức bỏ ra",
+      "note": "Not worth doing nghĩa là không đáng công làm, tương đương there is no point in doing. Sau worth dùng V-ing, không dùng to V.",
+      "usage": "be worth + V-ing; not worth doing",
+      "example": "This book is worth reading.",
+      "translation": "Cuốn sách này đáng đọc.",
+      "family": "worth (n/adj); worthy/worthwhile (adj)",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ],
+      "aliases": []
+    },
+    {
+      "term": "universal appeal",
+      "meaning": "sức hấp dẫn rộng rãi đối với nhiều người",
+      "usage": "have universal appeal",
+      "example": "The story has universal appeal.",
+      "translation": "Câu chuyện có sức hấp dẫn với đông đảo người đọc.",
+      "family": "appeal (n/v); appealing (adj); universal (adj)",
+      "meta": "PHRASE",
+      "note": "Universal appeal = sức hấp dẫn rộng khắp, đối với nhiều người. have universal appeal.",
+      "question": 42,
+      "questions": [
+        42
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "in actual fact",
+      "meaning": "trên thực tế",
+      "usage": "in actual fact, ...",
+      "example": "It looks expensive, but in actual fact it is cheap.",
+      "translation": "Nó trông đắt nhưng thực ra lại rẻ.",
+      "family": "in fact; actually: thực ra",
+      "meta": "PHRASE",
+      "note": "In actual fact là cụm nhấn mạnh = thực ra, trên thực tế. in actual fact, ....",
+      "question": 59,
+      "questions": [
+        59
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "take measures",
+      "meaning": "thực hiện các biện pháp",
+      "usage": "take measures to do something",
+      "example": "We must take measures to reduce waste.",
+      "translation": "Chúng ta phải có biện pháp giảm rác thải.",
+      "family": "take steps/action: hành động; measure (n): biện pháp",
+      "meta": "PHRASE",
+      "note": "Take measures là thực hiện biện pháp. Sau with + chủ ngữ, động từ có thể ở V-ing: with the government taking measures. take measures to do something.",
+      "question": 67,
+      "questions": [
+        67
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "put stress on",
+      "meaning": "nhấn trọng âm hoặc nhấn mạnh",
+      "usage": "put stress on a syllable",
+      "example": "Put stress on the first syllable.",
+      "translation": "Hãy nhấn trọng âm vào âm tiết đầu.",
+      "family": "stress (n/v); stressed syllable: âm tiết có trọng âm",
+      "meta": "PHRASE",
+      "note": "Đoạn một nêu high population densities put stress on available resources. Vì thế nguồn tài nguyên sẵn có chịu áp lực. put stress on a syllable.",
+      "question": 72,
+      "questions": [
+        72
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "engage in",
+      "meaning": "tham gia vào một hoạt động",
+      "usage": "engage in research/sport",
+      "example": "Students engage in group discussions.",
+      "translation": "Học sinh tham gia thảo luận nhóm.",
+      "family": "engagement (n); không dùng engage on cho nghĩa này",
+      "meta": "PHRASE",
+      "note": "Engage in an activity = tham gia hoặc làm một hoạt động, gần nghĩa participate in. Câu nói người dân làm nông nghiệp thủ công năng suất thấp. engage in research/sport.",
+      "question": 76,
+      "questions": [
+        76
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "find oneself doing",
+      "meaning": "nhận ra mình đang làm điều gì",
+      "usage": "find oneself doing something",
+      "example": "I found myself thinking about the problem again.",
+      "translation": "Tôi nhận ra mình lại đang nghĩ về vấn đề ấy.",
+      "family": "find – found – found; oneself đổi theo chủ ngữ: myself, herself",
+      "meta": "PHRASE",
+      "note": "Find oneself doing something diễn đạt chợt nhận ra mình đang ở một tình huống hoặc đang làm việc gì. find oneself doing something.",
+      "question": 99,
+      "questions": [
+        99
+      ],
+      "aliases": [],
       "teacherSelected": true
     }
   ]

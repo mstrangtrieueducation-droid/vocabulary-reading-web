@@ -352,6 +352,7 @@
       "displayAnswer": "D",
       "explanation": "Take the credit for something = nhận công lao về việc đó.\ntake credit for = nhận công lao về.",
       "teacherHighlights": [
+        "Take the credit for",
         "take credit for"
       ]
     },
@@ -682,7 +683,11 @@
       ],
       "displayAnswer": "is lead → is leading / is lead → leads / lead → leading",
       "explanation": "Có thể sửa thành is leading theo hiện tại tiếp diễn, hoặc đổi cả is lead thành leads ở hiện tại đơn.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "lead",
+        "lead",
+        "lead"
+      ]
     },
     {
       "globalNumber": 49,
@@ -801,7 +806,8 @@
       "displayAnswer": "D",
       "explanation": "A serious lack of facilities là sự thiếu hụt nghiêm trọng các tiện nghi.",
       "teacherHighlights": [
-        "lack of"
+        "lack of",
+        "facilities"
       ]
     },
     {
@@ -918,7 +924,9 @@
       ],
       "displayAnswer": "at / in",
       "explanation": "At the forefront of research = đi đầu trong nghiên cứu.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "At the forefront of"
+      ]
     },
     {
       "globalNumber": 68,
@@ -1010,7 +1018,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Boost morale = nâng cao tinh thần, nên boosted gần raised. Established là thiết lập, maintained là duy trì, influenced là tác động nói chung không chỉ rõ tăng lên.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Boost morale"
+      ]
     },
     {
       "globalNumber": 76,
@@ -1043,7 +1053,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "Inhibited = cản trở hoặc làm hoạt động khó thực hiện, gần hindered. Involved là liên quan/tham gia, exploited là khai thác và united là hợp nhất.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Inhibited"
+      ]
     },
     {
       "globalNumber": 79,
@@ -1226,7 +1238,9 @@
       "fullSentence": "Hardly had the concert ended when the crowd surged towards the exits.",
       "explanation": "Hardly đặt đầu câu cần đảo had trước chủ ngữ và dùng quá khứ hoàn thành: had the concert ended.",
       "displayAnswer": "had the concert ended when the crowd surged",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Hardly"
+      ]
     },
     {
       "globalNumber": 91,
@@ -1379,7 +1393,8 @@
       "maxWords": 6,
       "blankAnswer": "it stands to reason that",
       "teacherHighlights": [
-        "It stands to reason"
+        "It stands to reason",
+        "popularity"
       ]
     },
     {

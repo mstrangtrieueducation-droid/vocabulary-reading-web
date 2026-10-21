@@ -102,7 +102,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Assess the situation = đánh giá tình hình để hiểu mức độ và nhu cầu hành động.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Assess"
+      ]
     },
     {
       "globalNumber": 2,
@@ -558,7 +560,9 @@
       ],
       "displayAnswer": "arguably / unarguably / inarguably",
       "explanation": "Arguably = có thể cho rằng, phù hợp nhận định đây là tác phẩm hay nhất của tác giả.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Arguably"
+      ]
     },
     {
       "globalNumber": 39,
@@ -583,7 +587,9 @@
       ],
       "displayAnswer": "admission / admittance",
       "explanation": "Admission to an event là việc/quyền vào tham dự, thường dùng khi nói phí vào cửa.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Admission"
+      ]
     },
     {
       "globalNumber": 41,
@@ -790,7 +796,8 @@
       "displayAnswer": "B",
       "explanation": "An intrusion into private lives là sự xâm phạm đời sống riêng tư.",
       "teacherHighlights": [
-        "intrusion into"
+        "intrusion into",
+        "private"
       ]
     },
     {
@@ -852,7 +859,9 @@
       ],
       "displayAnswer": "make",
       "explanation": "To make matters worse là cụm cố định = làm tình hình tệ hơn.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "To make matters worse"
+      ]
     },
     {
       "globalNumber": 64,
@@ -878,7 +887,9 @@
       ],
       "displayAnswer": "matter",
       "explanation": "A matter of opinion = vấn đề tùy quan điểm, không có một nhận định duy nhất được mọi người đồng ý.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "A matter of opinion"
+      ]
     },
     {
       "globalNumber": 66,
@@ -903,7 +914,9 @@
       ],
       "displayAnswer": "way / path",
       "explanation": "Smooth the way/path for something = làm cho việc sắp tới thuận lợi hơn.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Smooth the way/path for"
+      ]
     },
     {
       "globalNumber": 68,
@@ -937,7 +950,9 @@
       ],
       "displayAnswer": "had / have",
       "explanation": "Have no foundation = không có cơ sở.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "foundation"
+      ]
     },
     {
       "globalNumber": 71,
@@ -1139,7 +1154,7 @@
       "explanation": "A matter of time before ... = chỉ còn là vấn đề thời gian trước khi điều đó xảy ra.",
       "displayAnswer": "matter of time before we get what we want / matter of waiting long enough before we get what we want / matter of waiting long enough until we get what we want",
       "teacherHighlights": [
-        "matter of time"
+        "A matter of time"
       ]
     },
     {
@@ -1244,7 +1259,8 @@
       "maxWords": 6,
       "blankAnswer": "reflects badly on",
       "teacherHighlights": [
-        "lack of"
+        "lack of",
+        "efficiency"
       ]
     },
     {

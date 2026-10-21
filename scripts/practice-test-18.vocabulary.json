@@ -601,6 +601,125 @@
         100
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 1,
+      "term": "objective",
+      "meta": "NOUN / ADJECTIVE",
+      "meaning": "mục tiêu; khách quan",
+      "note": "It is advisable that… mang nghĩa đề nghị nên dùng giả định: that + chủ ngữ + động từ nguyên thể. Career objective là nội dung được viết nên cần bị động be written. achieve an objective; an objective assessment.",
+      "usage": "achieve an objective; an objective assessment",
+      "example": "Our main objective is to reduce waste.",
+      "translation": "Mục tiêu chính của chúng tôi là giảm rác thải.",
+      "family": "objective (n/adj); objectively (adv); objectivity (n)",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ],
+      "aliases": []
+    },
+    {
+      "question": 34,
+      "term": "although",
+      "meta": "CONJUNCTION",
+      "meaning": "mặc dù; nối hai ý tương phản",
+      "note": "Illogical as this might appear là cách đảo của although this might appear illogical. although + subject + verb.",
+      "usage": "although + subject + verb",
+      "example": "Although they looked sad, they were actually pleased.",
+      "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+      "family": "although/though + clause; despite/in spite of + noun or V-ing",
+      "teacherSelected": true,
+      "questions": [
+        34,
+        98
+      ],
+      "aliases": []
+    },
+    {
+      "term": "climate / economic climate",
+      "meta": "noun / noun phrase",
+      "meaning": "khí hậu; economic climate: tình hình kinh tế",
+      "note": "Trong các câu của đề này, climate chỉ khí hậu của Trái Đất. Climate change là biến đổi khí hậu; chỉ khi đi với economic thì cả cụm mới nói tình hình kinh tế.",
+      "usage": "climate change; climate science; the economic climate",
+      "family": "climate (n); climatic (adj ở nghĩa khí hậu). Weather là thời tiết ngắn hạn.",
+      "example": "Climate change affects communities worldwide.",
+      "translation": "Biến đổi khí hậu ảnh hưởng đến cộng đồng trên khắp thế giới.",
+      "teacherSelected": true,
+      "questions": [
+        50
+      ],
+      "aliases": [
+        "climate"
+      ],
+      "question": 50
+    },
+    {
+      "question": 50,
+      "term": "inequality",
+      "meta": "NOUN",
+      "meaning": "sự bất bình đẳng",
+      "note": "Chủ ngữ challenges là số nhiều; các cụm climate change và social inequality chỉ là ví dụ nằm trong such as. social inequality; reduce inequalities.",
+      "usage": "social inequality; reduce inequalities",
+      "example": "The policy aims to reduce inequality in access to education.",
+      "translation": "Chính sách hướng tới giảm bất bình đẳng trong tiếp cận giáo dục.",
+      "family": "equal/unequal (adj); equality/inequality (n); equally (adv)",
+      "teacherSelected": true,
+      "questions": [
+        50
+      ],
+      "aliases": []
+    },
+    {
+      "term": "barely / hardly / scarcely",
+      "meta": "adverbs",
+      "meaning": "hầu như không; chỉ vừa đủ",
+      "note": "Hardly… when… diễn đạt việc thứ hai xảy ra ngay sau việc thứ nhất. barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi..",
+      "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
+      "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
+      "example": "She could barely hear the speaker over the noise.",
+      "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn.",
+      "teacherSelected": true,
+      "questions": [
+        87
+      ],
+      "aliases": [
+        "Hardly"
+      ],
+      "question": 87
+    },
+    {
+      "term": "unharmed / harmless",
+      "meta": "adjectives",
+      "meaning": "không bị tổn hại / không gây hại",
+      "note": "Contrary to + danh từ = trái với. Dùng its harmless appearance để đối chiếu vẻ bề ngoài vô hại với thực tế nguy hiểm, giữ ý nhượng bộ của although. escape/remain unharmed; a harmless insect/joke; harmful to someone/something..",
+      "usage": "escape/remain unharmed; a harmless insect/joke; harmful to someone/something.",
+      "family": "harm (n/v); harmful/harmless (adj); unharmed (adj).",
+      "example": "The children escaped unharmed, although the accident was serious.",
+      "translation": "Bọn trẻ thoát ra không bị thương dù tai nạn nghiêm trọng.",
+      "teacherSelected": true,
+      "questions": [
+        98
+      ],
+      "aliases": [
+        "harmless"
+      ],
+      "question": 98
+    },
+    {
+      "term": "bring back memories",
+      "meaning": "gợi lại ký ức",
+      "usage": "bring back memories of something",
+      "example": "This song brings back memories of school.",
+      "translation": "Bài hát này gợi lại ký ức thời đi học.",
+      "family": "bring – brought – brought; memory – memories",
+      "meta": "PHRASE",
+      "note": "Bring back memories là gợi lại ký ức. bring back memories of something.",
+      "question": 17,
+      "questions": [
+        17
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

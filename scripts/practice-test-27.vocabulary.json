@@ -588,6 +588,185 @@
       ],
       "question": 97,
       "aliases": []
+    },
+    {
+      "term": "largely / mainly",
+      "meta": "ADVERBS",
+      "meaning": "chủ yếu; phần lớn",
+      "note": "Made mainly from ... là cụm quá khứ phân từ rút gọn từ this glass bottle is made ..., diễn tả vật được làm từ nguyên liệu. largely due to something; largely unchanged; mainly because; consist mainly of.",
+      "usage": "largely due to something; largely unchanged; mainly because; consist mainly of",
+      "family": "large (adj): lớn; largely (adv): phần lớn; main (adj): chính; mainly (adv): chủ yếu",
+      "example": "The delay was largely due to bad weather.",
+      "translation": "Sự chậm trễ chủ yếu là do thời tiết xấu.",
+      "teacherSelected": true,
+      "questions": [
+        21
+      ],
+      "aliases": [
+        "mainly"
+      ],
+      "question": 21
+    },
+    {
+      "question": 29,
+      "term": "feedback",
+      "meta": "NOUN",
+      "meaning": "ý kiến phản hồi giúp biết chất lượng hoặc cải thiện",
+      "note": "I’m open to feedback = tôi sẵn lòng nghe góp ý; đáp lại tôn trọng, không công kích. give/provide feedback; feedback on a draft.",
+      "usage": "give/provide feedback; feedback on a draft",
+      "example": "The teacher gave detailed feedback on my paragraph.",
+      "translation": "Giáo viên đưa phản hồi chi tiết về đoạn văn của tôi.",
+      "family": "feed (v, gốc từ); feed back (cụm động từ); feedback (n)",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ],
+      "aliases": []
+    },
+    {
+      "term": "claim",
+      "meta": "verb / noun",
+      "meaning": "khẳng định; lời khẳng định; yêu cầu quyền lợi",
+      "note": "To đứng trước và the false claim làm tân ngữ nên cần động từ.\ndebunk = vạch rõ sự sai lệch; bác bỏ điều được tin là đúng. claim that + mệnh đề; claim to do; claim to have done; make a claim; claim compensation..",
+      "usage": "claim that + mệnh đề; claim to do; claim to have done; make a claim; claim compensation.",
+      "family": "claim (n/v); claimant (n: người yêu cầu quyền lợi); unclaimed (adj).",
+      "example": "He claimed to have sent the documents the previous day.",
+      "translation": "Anh ấy khẳng định đã gửi tài liệu hôm trước.",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ],
+      "question": 41,
+      "aliases": []
+    },
+    {
+      "question": 47,
+      "term": "infrastructure",
+      "meta": "NOUN",
+      "meaning": "cơ sở hạ tầng",
+      "note": "Public utilities là các hệ thống dịch vụ công như điện, nước; public services/infrastructure/facilities cũng sửa được theo ngữ cảnh hạ tầng bị sức ép. transport/water infrastructure; maintain infrastructure.",
+      "usage": "transport/water infrastructure; maintain infrastructure",
+      "example": "The city needs to upgrade its water infrastructure.",
+      "translation": "Thành phố cần nâng cấp hạ tầng cấp nước.",
+      "family": "structure (n/v); infrastructure (n); infrastructural (adj)",
+      "teacherSelected": true,
+      "questions": [
+        47,
+        70
+      ],
+      "aliases": []
+    },
+    {
+      "question": 48,
+      "term": "moreover",
+      "meta": "LINKING ADVERB",
+      "meaning": "hơn nữa; bổ sung một ý cùng hướng",
+      "note": "Moreover là trạng từ nối bổ sung ý và không đi với of. sentence; moreover, sentence.",
+      "usage": "sentence; moreover, sentence",
+      "example": "The desk is expensive; moreover, it is too large.",
+      "translation": "Chiếc bàn đắt; hơn nữa, nó còn quá lớn.",
+      "family": "moreover; furthermore; in addition",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ],
+      "aliases": []
+    },
+    {
+      "question": 65,
+      "term": "improvement",
+      "meta": "noun",
+      "meaning": "sự cải thiện",
+      "note": "Had shown improvement since the year 2000 nói sự cải thiện tính từ mốc 2000 đến thời điểm 2015 đang xét. an improvement in quality; make improvements.",
+      "usage": "an improvement in quality; make improvements",
+      "family": "improve (v); improved (adj)",
+      "example": "We noticed an improvement in service.",
+      "translation": "Chúng tôi nhận thấy dịch vụ cải thiện.",
+      "teacherSelected": true,
+      "questions": [
+        65
+      ],
+      "aliases": []
+    },
+    {
+      "question": 74,
+      "term": "available",
+      "meta": "ADJECTIVE",
+      "meaning": "có sẵn; có thể sử dụng",
+      "note": "Accessible online = có thể truy cập hoặc sử dụng qua mạng; available gần nghĩa nhất. Dependable là đáng tin cậy, visible là nhìn thấy được và audible là nghe thấy được. available in + màu/kích cỡ; available to + người.",
+      "usage": "available in + màu/kích cỡ; available to + người",
+      "example": "The jacket is available in three colours.",
+      "translation": "Áo khoác có ba màu để chọn.",
+      "family": "availability (n: sự có sẵn); unavailable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ],
+      "aliases": []
+    },
+    {
+      "question": 74,
+      "term": "dependable",
+      "meta": "ADJECTIVE",
+      "meaning": "đáng tin cậy; có thể trông cậy",
+      "note": "Accessible online = có thể truy cập hoặc sử dụng qua mạng; available gần nghĩa nhất. Dependable là đáng tin cậy, visible là nhìn thấy được và audible là nghe thấy được. a dependable person/source/service.",
+      "usage": "a dependable person/source/service",
+      "example": "He is a dependable colleague who keeps his promises.",
+      "translation": "Anh ấy là đồng nghiệp đáng tin, luôn giữ lời.",
+      "family": "depend (v); dependable (adj); dependability (n); dependent (adj, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ],
+      "aliases": []
+    },
+    {
+      "question": 74,
+      "term": "accessible",
+      "meta": "ADJECTIVE",
+      "meaning": "dễ tiếp cận; dễ hiểu",
+      "note": "Accessible online = có thể truy cập hoặc sử dụng qua mạng; available gần nghĩa nhất. Dependable là đáng tin cậy, visible là nhìn thấy được và audible là nghe thấy được. accessible to someone; make something accessible.",
+      "usage": "accessible to someone; make something accessible",
+      "example": "The guide makes complex ideas accessible to beginners.",
+      "translation": "Cuốn hướng dẫn giúp người mới dễ hiểu những ý tưởng phức tạp.",
+      "family": "access (n/v); accessible/inaccessible (adj); accessibility (n)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ],
+      "aliases": []
+    },
+    {
+      "question": 75,
+      "term": "additional",
+      "meta": "ADJECTIVE",
+      "meaning": "thêm; bổ sung",
+      "note": "Another tool = thêm một công cụ hỗ trợ bên cạnh những biện pháp khác. C giữ đúng mức độ này bằng additional support. additional information/donation/costs.",
+      "usage": "additional information/donation/costs",
+      "example": "No additional payment is required.",
+      "translation": "Không cần trả thêm khoản nào.",
+      "family": "add (v); addition (n); additional (adj); additionally (adv)",
+      "teacherSelected": true,
+      "questions": [
+        75
+      ],
+      "aliases": []
+    },
+    {
+      "question": 81,
+      "term": "considerable",
+      "meta": "ADJECTIVE",
+      "meaning": "đáng kể; khá lớn",
+      "note": "Đổi has fallen considerably thành There has been a considerable fall ...: động từ fall chuyển thành danh từ và trạng từ considerably chuyển thành tính từ considerable. a considerable amount/number; considerable effort.",
+      "usage": "a considerable amount/number; considerable effort",
+      "example": "The task required considerable effort.",
+      "translation": "Nhiệm vụ đòi hỏi nỗ lực đáng kể.",
+      "family": "consider (v); considerable (adj); considerably (adv); considerate (adj, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        81
+      ],
+      "aliases": []
     }
   ]
 }

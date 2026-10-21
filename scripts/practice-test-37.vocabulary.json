@@ -669,6 +669,182 @@
         99
       ],
       "teacherSelected": true
+    },
+    {
+      "term": "launch",
+      "meta": "verb / noun",
+      "meaning": "ra mắt; khởi động; phóng",
+      "note": "Were going to launch nêu kế hoạch trong quá khứ bị cơn bão làm hủy. launch a product/campaign/project; a product launch = buổi/đợt ra mắt sản phẩm..",
+      "usage": "launch a product/campaign/project; a product launch = buổi/đợt ra mắt sản phẩm.",
+      "family": "launch (v/n); launched (quá khứ); launching (dạng -ing).",
+      "example": "The school launched a campaign to reduce plastic waste.",
+      "translation": "Trường khởi động chiến dịch giảm rác thải nhựa.",
+      "question": 11,
+      "questions": [
+        11
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "question": 13,
+      "term": "overwhelmed",
+      "meta": "ADJECTIVE",
+      "meaning": "choáng ngợp; quá tải",
+      "note": "The region having been overwhelmed ... là cụm tuyệt đối có chủ ngữ riêng và phân từ hoàn thành bị động. be overwhelmed by/with something.",
+      "usage": "be overwhelmed by/with something",
+      "example": "I was overwhelmed by their kindness.",
+      "translation": "Tôi rất xúc động trước lòng tốt của họ.",
+      "family": "overwhelm (v); overwhelming (adj); overwhelmingly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        13
+      ],
+      "aliases": []
+    },
+    {
+      "term": "claim",
+      "meta": "verb / noun",
+      "meaning": "khẳng định; lời khẳng định; yêu cầu quyền lợi",
+      "note": "Claim that older people cannot learn bị nghiên cứu về khả năng học tập bác bỏ, nên dùng invalidated, không validated. claim that + mệnh đề; claim to do; claim to have done; make a claim; claim compensation..",
+      "usage": "claim that + mệnh đề; claim to do; claim to have done; make a claim; claim compensation.",
+      "family": "claim (n/v); claimant (n: người yêu cầu quyền lợi); unclaimed (adj).",
+      "example": "He claimed to have sent the documents the previous day.",
+      "translation": "Anh ấy khẳng định đã gửi tài liệu hôm trước.",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ],
+      "question": 40,
+      "aliases": []
+    },
+    {
+      "question": 65,
+      "term": "admission",
+      "meta": "NOUN",
+      "meaning": "quyền vào cửa; tiền vào cửa",
+      "note": "Free access/admission/entry to ... đều nói được vào miễn phí. admission fee; free admission; admission to a museum.",
+      "usage": "admission fee; free admission; admission to a museum",
+      "example": "Admission to the exhibition is free.",
+      "translation": "Vào xem triển lãm được miễn phí.",
+      "family": "admit (v); admission (n); admittance (n: quyền vào)",
+      "teacherSelected": true,
+      "questions": [
+        65
+      ],
+      "aliases": []
+    },
+    {
+      "question": 81,
+      "term": "available",
+      "meta": "ADJECTIVE",
+      "meaning": "có sẵn; có thể sử dụng",
+      "note": "Chuyển sang chủ ngữ information cần bị động hoặc is available. available in + màu/kích cỡ; available to + người.",
+      "usage": "available in + màu/kích cỡ; available to + người",
+      "example": "The jacket is available in three colours.",
+      "translation": "Áo khoác có ba màu để chọn.",
+      "family": "availability (n: sự có sẵn); unavailable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        81
+      ],
+      "aliases": []
+    },
+    {
+      "question": 83,
+      "term": "improvement",
+      "meta": "noun",
+      "meaning": "sự cải thiện",
+      "note": "Improved so rapidly chuyển thành such a rapid improvement, danh từ improvement cần a. an improvement in quality; make improvements.",
+      "usage": "an improvement in quality; make improvements",
+      "family": "improve (v); improved (adj)",
+      "example": "We noticed an improvement in service.",
+      "translation": "Chúng tôi nhận thấy dịch vụ cải thiện.",
+      "teacherSelected": true,
+      "questions": [
+        83
+      ],
+      "aliases": []
+    },
+    {
+      "term": "consist of",
+      "meaning": "bao gồm",
+      "usage": "consist of several parts",
+      "example": "The course consists of ten units.",
+      "translation": "Khóa học gồm mười bài.",
+      "family": "consist không dùng bị động trong nghĩa bao gồm",
+      "meta": "PHRASE",
+      "note": "Consist of là nội động từ, không dùng bị động are consisted of. consist of several parts.",
+      "question": 43,
+      "questions": [
+        43
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "stand out from the crowd",
+      "meaning": "nổi bật, khác với số đông",
+      "usage": "stand out from the crowd",
+      "example": "Her original ideas made her stand out from the crowd.",
+      "translation": "Những ý tưởng độc đáo giúp cô ấy nổi bật.",
+      "family": "stand – stood – stood; outstanding: xuất sắc",
+      "meta": "PHRASE",
+      "note": "Stand out from the crowd = nổi bật/khác với số đông. stand out from the crowd.",
+      "question": 52,
+      "questions": [
+        52
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "sense of self",
+      "meaning": "nhận thức về bản thân, bản sắc cá nhân",
+      "usage": "develop a sense of self",
+      "example": "Children develop a stronger sense of self as they grow.",
+      "translation": "Trẻ hình thành nhận thức rõ hơn về bản thân khi lớn lên.",
+      "family": "self-awareness: sự tự nhận thức",
+      "meta": "PHRASE",
+      "note": "A sense of self-worth = cảm nhận về giá trị của bản thân. develop a sense of self.",
+      "question": 57,
+      "questions": [
+        57
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "a world apart",
+      "meaning": "hoàn toàn khác biệt",
+      "usage": "be a world apart from something",
+      "example": "The village is a world apart from the city.",
+      "translation": "Ngôi làng hoàn toàn khác thành phố.",
+      "family": "worlds apart cũng dùng để chỉ sự khác biệt rất lớn",
+      "meta": "PHRASE",
+      "note": "A world apart = một thế giới khác hẳn, đối lập với các tòa tháp hiện đại xung quanh. be a world apart from something.",
+      "question": 62,
+      "questions": [
+        62
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "not to be missed",
+      "meaning": "không nên bỏ lỡ",
+      "usage": "an event not to be missed",
+      "example": "This exhibition is not to be missed.",
+      "translation": "Triển lãm này rất đáng xem, không nên bỏ lỡ.",
+      "family": "miss (v); cấu trúc bị động nói điều đáng trải nghiệm",
+      "meta": "PHRASE",
+      "note": "Not to be missed = không nên bỏ lỡ, mô tả trải nghiệm đáng ghé. an event not to be missed.",
+      "question": 70,
+      "questions": [
+        70
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

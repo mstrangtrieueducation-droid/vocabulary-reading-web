@@ -600,6 +600,214 @@
         99
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 40,
+      "term": "individual",
+      "meta": "ADJECTIVE",
+      "meaning": "riêng của từng người hoặc từng vật",
+      "note": "Individual differences là những khác biệt giữa từng người. individual needs/style; each individual.",
+      "usage": "individual needs/style; each individual",
+      "example": "Each student has individual learning needs.",
+      "translation": "Mỗi học sinh có nhu cầu học tập riêng.",
+      "family": "individual (n/adj); individually (adv); individuality (n)",
+      "teacherSelected": true,
+      "questions": [
+        40
+      ],
+      "aliases": []
+    },
+    {
+      "question": 43,
+      "term": "immeasurably",
+      "meta": "ADVERB",
+      "meaning": "rất lớn, không thể đo hết",
+      "note": "An immeasurably profound impact = tác động sâu sắc rất lớn, khó đo hết. improve immeasurably.",
+      "usage": "improve immeasurably",
+      "example": "Her support helped me immeasurably.",
+      "translation": "Sự hỗ trợ của cô ấy đã giúp tôi rất nhiều.",
+      "family": "measure (n/v); measurable/immeasurable (adj); measurably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        43
+      ],
+      "aliases": []
+    },
+    {
+      "question": 59,
+      "term": "nevertheless",
+      "meta": "linking adverb",
+      "meaning": "tuy vậy; dù thế",
+      "note": "Nevertheless = tuy vậy, đối chiếu lời chê đồ chơi đắt tiền với việc đánh giá ấy dần khó bảo vệ. Sentence. Nevertheless, sentence.; tương đương however trong nhiều ngữ cảnh.",
+      "usage": "Sentence. Nevertheless, sentence.; tương đương however trong nhiều ngữ cảnh",
+      "family": "nonetheless: tuy vậy; therefore: vì thế, chỉ kết quả",
+      "example": "The task was difficult. Nevertheless, we completed it.",
+      "translation": "Nhiệm vụ khó. Tuy vậy, chúng tôi đã hoàn thành.",
+      "teacherSelected": true,
+      "questions": [
+        59
+      ],
+      "aliases": []
+    },
+    {
+      "question": 86,
+      "term": "likelihood",
+      "meta": "NOUN",
+      "meaning": "khả năng xảy ra",
+      "note": "Probably won’t chuyển thành there is little likelihood/chance: khả năng thấp. the likelihood of doing something; a strong likelihood that.",
+      "usage": "the likelihood of doing something; a strong likelihood that",
+      "example": "Regular practice increases the likelihood of success.",
+      "translation": "Luyện tập đều đặn làm tăng khả năng thành công.",
+      "family": "likely/unlikely (adj); likelihood (n); likeliness (n, ít dùng hơn)",
+      "teacherSelected": true,
+      "questions": [
+        86
+      ],
+      "aliases": []
+    },
+    {
+      "term": "by choice",
+      "meaning": "do tự lựa chọn, tự nguyện",
+      "usage": "do something by choice",
+      "example": "She lives alone by choice.",
+      "translation": "Cô ấy sống một mình do tự lựa chọn.",
+      "family": "choice (n); choose – chose – chosen",
+      "meta": "PHRASE",
+      "note": "By choice = do tự mình lựa chọn, tự nguyện. Vế not because I was forced to đối chiếu với việc bị ép. do something by choice.",
+      "question": 29,
+      "questions": [
+        29
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "bear a resemblance to",
+      "meaning": "giống, có nét tương đồng với",
+      "usage": "bear a strong resemblance to somebody",
+      "example": "He bears a strong resemblance to his father.",
+      "translation": "Anh ấy rất giống bố.",
+      "family": "bear – bore – borne; resemble (v) không dùng to",
+      "meta": "PHRASE",
+      "note": "Bear a resemblance to là giống, có nét tương đồng với. bear a strong resemblance to somebody.",
+      "question": 51,
+      "questions": [
+        51
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "for all intents and purposes",
+      "meaning": "xét trên thực tế, về cơ bản",
+      "usage": "for all intents and purposes, ...",
+      "example": "For all intents and purposes, the project is finished.",
+      "translation": "Xét trên thực tế, dự án đã hoàn thành.",
+      "family": "cụm cố định dùng intents số nhiều, không phải intensive purposes",
+      "meta": "PHRASE",
+      "note": "For all intents and purposes = xét trên thực tế, về mọi mặt thực dụng. for all intents and purposes, ....",
+      "question": 52,
+      "questions": [
+        52
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "stir up a buzz",
+      "meaning": "gây sự bàn tán hoặc hào hứng",
+      "usage": "stir up a buzz about something",
+      "example": "The trailer stirred up a buzz online.",
+      "translation": "Đoạn giới thiệu phim gây xôn xao trên mạng.",
+      "family": "stir – stirred – stirred; buzz: sự bàn tán, hào hứng",
+      "meta": "PHRASE",
+      "note": "Stir up a buzz là gây sự bàn tán/hào hứng; bị động a buzz was stirred up. stir up a buzz about something.",
+      "question": 56,
+      "questions": [
+        56
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "open the way to",
+      "meaning": "mở đường, tạo điều kiện cho",
+      "usage": "open the way to something",
+      "example": "The discovery opened the way to new treatments.",
+      "translation": "Phát hiện mở đường cho các phương pháp điều trị mới.",
+      "family": "way: cách, con đường; pave the way for có nghĩa tương tự",
+      "meta": "PHRASE",
+      "note": "Open the way to something là mở đường hoặc tạo điều kiện cho một khả năng mới. open the way to something.",
+      "question": 58,
+      "questions": [
+        58
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "be in operation",
+      "meaning": "đang hoạt động, được vận hành",
+      "usage": "be in operation",
+      "example": "The new service is now in operation.",
+      "translation": "Dịch vụ mới hiện đang hoạt động.",
+      "family": "operate (v); operation (n); operational (adj)",
+      "meta": "PHRASE",
+      "note": "Be in operation = đang hoạt động hoặc được vận hành. be in operation.",
+      "question": 63,
+      "questions": [
+        63
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "nothing short of",
+      "meaning": "hoàn toàn, không kém gì mức độ được nêu",
+      "usage": "nothing short of + danh từ/tính từ",
+      "example": "The view was nothing short of spectacular.",
+      "translation": "Cảnh đẹp thật sự ngoạn mục.",
+      "family": "cụm nhấn mạnh, không hiểu short theo nghĩa thiếu chiều dài",
+      "meta": "PHRASE",
+      "note": "Nothing short of breathtaking = hoàn toàn ngoạn mục, không kém gì mức độ đó. nothing short of + danh từ/tính từ.",
+      "question": 65,
+      "questions": [
+        65
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "only too willing",
+      "meaning": "rất sẵn lòng",
+      "usage": "be only too willing to do something",
+      "example": "She was only too willing to help.",
+      "translation": "Cô ấy rất sẵn lòng giúp đỡ.",
+      "family": "khác too ... to mang ý quá ... đến mức không thể",
+      "meta": "PHRASE",
+      "note": "Only too willing = rất sẵn lòng. be only too willing to do something.",
+      "question": 67,
+      "questions": [
+        67
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "owe something to someone",
+      "meaning": "có được điều gì nhờ ai",
+      "usage": "owe one's success to somebody",
+      "example": "I owe my success to my parents.",
+      "translation": "Tôi có được thành công nhờ bố mẹ.",
+      "family": "owe còn có nghĩa nợ; owing to: bởi vì",
+      "meta": "PHRASE",
+      "note": "owe something to someone: có được điều gì nhờ ai. Introduced → the introduction. owe one's success to somebody.",
+      "question": 83,
+      "questions": [
+        83
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

@@ -113,7 +113,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Provided that = miễn là, đặt điều kiện cho việc cho mượn xe: được dùng nếu biết giữ gìn.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Provided"
+      ]
     },
     {
       "globalNumber": 3,
@@ -160,7 +162,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Fly economy là đi máy bay hạng phổ thông; economy ở đây chỉ hạng vé.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Fly economy"
+      ]
     },
     {
       "globalNumber": 7,
@@ -184,7 +188,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Do a crossword là giải ô chữ. Đây là kết hợp động từ–danh từ cố định; không dùng make/write a crossword khi muốn nói người đọc giải ô chữ có sẵn trong báo.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Do a crossword"
+      ]
     },
     {
       "globalNumber": 9,
@@ -512,7 +518,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Stop off at a place là ghé dừng tại một điểm trên hành trình.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Stop off"
+      ]
     },
     {
       "globalNumber": 35,
@@ -573,7 +581,9 @@
       ],
       "displayAnswer": "increasingly",
       "explanation": "Cần trạng từ bổ nghĩa cho tính từ advanced: increasingly advanced technology = công nghệ ngày càng tiên tiến.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "increasingly"
+      ]
     },
     {
       "globalNumber": 40,
@@ -630,7 +640,9 @@
       ],
       "displayAnswer": "manufacturers",
       "explanation": "Manufacturers là những nhà sản xuất giấy, làm chủ ngữ của can offer.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Manufacturers"
+      ]
     },
     {
       "globalNumber": 45,
@@ -795,7 +807,9 @@
       "displayAnswer": "C",
       "explanation": "Get somebody involved = khiến/mời ai tham gia. Friends and loved ones là người được mời cùng hỗ trợ, nên dùng phân từ involved sau tân ngữ.",
       "focusVocabulary": [],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Get somebody involved"
+      ]
     },
     {
       "globalNumber": 58,
@@ -819,7 +833,9 @@
       "displayAnswer": "A",
       "explanation": "Stay on track = tiếp tục đúng hướng với mục tiêu. Câu khuyên nhờ bạn bè hỗ trợ, không nói một tuyến đường cụ thể, nên dùng thành ngữ track.",
       "focusVocabulary": [],
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Stay on track"
+      ]
     },
     {
       "globalNumber": 60,
@@ -897,7 +913,9 @@
       ],
       "displayAnswer": "made / had",
       "explanation": "make/have observations: quan sát, ghi nhận. Sau had dùng V3 → made/had.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "make/have observations"
+      ]
     },
     {
       "globalNumber": 66,
@@ -1010,7 +1028,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Khí được giải phóng ở cuối red-giant phase, trước khi phần lõi còn lại trở thành white dwarf. Câu hỏi hỏi giai đoạn mà Mặt Trời đang kết thúc, nên chọn red giant.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "phase"
+      ]
     },
     {
       "globalNumber": 76,
@@ -1306,7 +1326,9 @@
       "minWords": 2,
       "maxWords": 6,
       "fullSentence": "Jane's teacher advised her against becoming a model",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Advise"
+      ]
     },
     {
       "globalNumber": 95,

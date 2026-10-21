@@ -464,7 +464,8 @@
       "teacherSelected": true,
       "questions": [
         100
-      ]
+      ],
+      "aliases": []
     },
     {
       "question": 6,
@@ -647,6 +648,54 @@
       "questions": [
         99
       ],
+      "teacherSelected": true
+    },
+    {
+      "question": 62,
+      "term": "material",
+      "meta": "NOUN",
+      "meaning": "vật liệu; chất liệu",
+      "note": "Make something out of a material = làm một vật từ vật liệu nào. building materials; raw materials.",
+      "usage": "building materials; raw materials",
+      "example": "The bridge was built from local materials.",
+      "translation": "Cây cầu được xây bằng vật liệu địa phương.",
+      "family": "material (n/adj); substance (n); manufacture (v)",
+      "teacherSelected": true,
+      "questions": [
+        62
+      ],
+      "aliases": []
+    },
+    {
+      "term": "or else",
+      "meaning": "nếu không thì",
+      "usage": "do something, or else ...",
+      "example": "Hurry up, or else we will be late.",
+      "translation": "Nhanh lên, nếu không chúng ta sẽ muộn.",
+      "family": "otherwise: nếu không; or else thường hàm ý cảnh báo",
+      "meta": "PHRASE",
+      "note": "Or else nối hậu quả nếu không làm điều vừa nói: nếu không đi thật bình tĩnh, họ đã nghĩ tôi là kẻ trộm. do something, or else ....",
+      "question": 4,
+      "questions": [
+        4
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "roars of laughter",
+      "meaning": "những tràng cười lớn",
+      "usage": "hear roars of laughter",
+      "example": "The joke brought roars of laughter.",
+      "translation": "Câu chuyện đùa khiến mọi người cười vang.",
+      "family": "laughter không đếm được; roar: tiếng gầm hoặc tiếng rất lớn",
+      "meta": "PHRASE",
+      "note": "Roars of laughter là những tràng cười lớn. Sau of cần danh từ laughter; laugh có thể là danh từ đếm được nhưng không tạo cụm thông dụng roars of laughter. hear roars of laughter.",
+      "question": 37,
+      "questions": [
+        37
+      ],
+      "aliases": [],
       "teacherSelected": true
     }
   ],

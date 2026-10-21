@@ -563,6 +563,72 @@
         99
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 69,
+      "term": "individual",
+      "meta": "ADJECTIVE",
+      "meaning": "riêng của từng người hoặc từng vật",
+      "note": "Personal computer là máy tính dành cho cá nhân, khớp lời giải thích a machine intended for an individual user. individual needs/style; each individual.",
+      "usage": "individual needs/style; each individual",
+      "example": "Each student has individual learning needs.",
+      "translation": "Mỗi học sinh có nhu cầu học tập riêng.",
+      "family": "individual (n/adj); individually (adv); individuality (n)",
+      "teacherSelected": true,
+      "questions": [
+        69
+      ],
+      "aliases": []
+    },
+    {
+      "term": "advise",
+      "meta": "verb",
+      "meaning": "khuyên; tư vấn",
+      "note": "Advise somebody not to V hoặc advise somebody against V-ing chuyển lời khuyên If I were you… sang câu tường thuật. advise someone to do; advise doing; advise against doing = khuyên không nên; a piece of advice = một lời khuyên..",
+      "usage": "advise someone to do; advise doing; advise against doing = khuyên không nên; a piece of advice = một lời khuyên.",
+      "family": "advise (v); advice (n); adviser/advisor (n); advisable (adj: nên làm).",
+      "example": "The teacher advised us to check our answers carefully.",
+      "translation": "Giáo viên khuyên chúng tôi kiểm tra kỹ đáp án.",
+      "teacherSelected": true,
+      "questions": [
+        82
+      ],
+      "question": 82,
+      "aliases": []
+    },
+    {
+      "term": "barely / hardly / scarcely",
+      "meta": "adverbs",
+      "meaning": "hầu như không; chỉ vừa đủ",
+      "note": "Could hardly understand = hầu như không hiểu, tương đương only understood very little. barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi..",
+      "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
+      "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
+      "example": "She could barely hear the speaker over the noise.",
+      "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn.",
+      "teacherSelected": true,
+      "questions": [
+        85
+      ],
+      "aliases": [
+        "hardly"
+      ],
+      "question": 85
+    },
+    {
+      "term": "talk behind your back",
+      "meaning": "nói sau lưng ai",
+      "usage": "talk about someone behind their back",
+      "example": "It is unfair to talk about her behind her back.",
+      "translation": "Nói sau lưng cô ấy là không công bằng.",
+      "family": "behind someone's back: khi người đó không biết",
+      "meta": "PHRASE",
+      "note": "Too loyal to talk behind your back = quá trung thành để nói xấu sau lưng bạn. talk about someone behind their back.",
+      "question": 5,
+      "questions": [
+        5
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

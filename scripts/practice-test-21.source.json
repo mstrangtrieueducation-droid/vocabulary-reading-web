@@ -137,7 +137,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "In sight là trong tầm nhìn: người nói không nhìn thấy cảnh sát nào.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "In sight"
+      ]
     },
     {
       "globalNumber": 5,
@@ -267,7 +269,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Stolen from a private gallery rút gọn mệnh đề which was stolen: bức tranh là vật bị lấy cắp.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "private"
+      ]
     },
     {
       "globalNumber": 16,
@@ -521,7 +525,9 @@
       "displayAnswer": "economic",
       "explanation": "Cần tính từ trước basis: economic basis là nền tảng kinh tế, ở đây là nguồn tiền từ quảng cáo.",
       "teacherHighlights": [
-        "economic"
+        "basis",
+        "economic",
+        "basis"
       ]
     },
     {
@@ -546,7 +552,9 @@
       ],
       "displayAnswer": "production",
       "explanation": "The production of programmes là việc sản xuất chương trình, dùng danh từ sau the và trước of.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "production"
+      ]
     },
     {
       "globalNumber": 39,
@@ -882,7 +890,8 @@
       "displayAnswer": "level / concentration / amount / quantity / availability / supply",
       "explanation": "The level/concentration of dissolved oxygen nói mức/nồng độ oxy hoà tan; amount/quantity hoặc availability/supply cũng tạo ý phù hợp về lượng oxy có sẵn.",
       "teacherHighlights": [
-        "dissolved oxygen"
+        "dissolved oxygen",
+        "availability"
       ]
     },
     {
@@ -933,7 +942,9 @@
       ],
       "displayAnswer": "to / beyond",
       "explanation": "Stretched to the limit là bị khai thác/căng tới giới hạn.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Stretched to the limit"
+      ]
     },
     {
       "globalNumber": 70,
@@ -947,7 +958,9 @@
       ],
       "displayAnswer": "action / actions / steps / measures",
       "explanation": "Take action/steps/measures là hành động hoặc thực hiện biện pháp; practical actions cũng đúng khi nói các việc cụ thể.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Take action/steps/measures"
+      ]
     },
     {
       "globalNumber": 71,
@@ -1006,7 +1019,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Đoạn 2 đối lập some emergency measures were temporary với Social Security became a lasting institution. Vì vậy điểm khác là tính tạm thời so với lâu dài.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "lasting"
+      ]
     },
     {
       "globalNumber": 76,
@@ -1039,7 +1054,10 @@
       ],
       "displayAnswer": "D",
       "explanation": "Cụm in addition to government programmes yêu cầu nguồn ngoài chính phủ. Đoạn cuối nêu private charities and voluntary organizations, thuộc non-government agencies.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "in addition to",
+        "private"
+      ]
     },
     {
       "globalNumber": 79,
@@ -1120,7 +1138,9 @@
       "suffix": "",
       "fullSentence": "Exhausted as he was, he agreed to join the activity.",
       "explanation": "Đảo tính từ lên trước as/though tạo nghĩa nhượng bộ: Exhausted as he was = Although he was exhausted.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Although"
+      ]
     },
     {
       "globalNumber": 85,

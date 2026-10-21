@@ -1003,6 +1003,134 @@
         93
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 79,
+      "term": "lasting",
+      "meta": "adjective",
+      "meaning": "lâu dài, bền lâu",
+      "note": "Chronic mô tả tình trạng kéo dài, tái diễn trong thời gian dài; đáp án gần nghĩa nhất là lasting for a long time. A lasting impression/effect/relationship. Phân biệt lastly = cuối cùng, dùng để sắp xếp ý..",
+      "usage": "A lasting impression/effect/relationship. Phân biệt lastly = cuối cùng, dùng để sắp xếp ý.",
+      "example": "The visit left a lasting impression.",
+      "translation": "Chuyến thăm để lại ấn tượng lâu dài.",
+      "family": "last (v): kéo dài; lasting (a); lastly (adv): cuối cùng.",
+      "teacherSelected": true,
+      "questions": [
+        79
+      ],
+      "aliases": []
+    },
+    {
+      "term": "from my point of view",
+      "meaning": "theo quan điểm của tôi",
+      "usage": "from somebody's point of view",
+      "example": "From my point of view, the plan is fair.",
+      "translation": "Theo quan điểm của tôi, kế hoạch này công bằng.",
+      "family": "in my opinion: theo ý kiến của tôi",
+      "meta": "PHRASE",
+      "note": "From my point of view = theo quan điểm của tôi. from somebody's point of view.",
+      "question": 20,
+      "questions": [
+        20
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "bring the house down",
+      "meaning": "khiến khán giả vỗ tay hoặc cười vang",
+      "usage": "bring the house down with a performance",
+      "example": "Her final song brought the house down.",
+      "translation": "Bài hát cuối của cô ấy khiến khán giả vỗ tay vang dội.",
+      "family": "bring – brought – brought; thành ngữ về phản ứng nhiệt tình của khán giả",
+      "meta": "PHRASE",
+      "note": "bring the house down: (một buổi biểu diễn) khiến mọi người vỗ tay vang dội\ngive sb a standing ovation: đứng lên vỗ tay… bring the house down with a performance.",
+      "question": 22,
+      "questions": [
+        22
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "over and above",
+      "meaning": "ngoài ra, thêm vào",
+      "usage": "over and above something",
+      "example": "There are costs over and above the ticket price.",
+      "translation": "Có những chi phí ngoài giá vé.",
+      "family": "không nhầm với above dùng riêng để chỉ vị trí cao hơn",
+      "meta": "PHRASE",
+      "note": "Cụm cố định over and above nghĩa là ngoài ra, thêm vào đó; phù hợp với ý ngoài thiết kế cửa hàng và bao bì. over and above something.",
+      "question": 61,
+      "questions": [
+        61
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "with deadly accuracy",
+      "meaning": "với độ chính xác rất cao",
+      "usage": "hit/guide with deadly accuracy",
+      "example": "The player hit the target with deadly accuracy.",
+      "translation": "Người chơi bắn trúng mục tiêu rất chính xác.",
+      "family": "accurate (adj); accurately (adv); accuracy (n); deadly ở đây nhấn mạnh mức độ",
+      "meta": "PHRASE",
+      "note": "With deadly accuracy là cụm giới từ chỉ cách thức: khách hàng được dẫn hướng với độ chính xác gần như tuyệt đối. hit/guide with deadly accuracy.",
+      "question": 63,
+      "questions": [
+        63
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "make one’s way to",
+      "meaning": "đi, tiến đến một nơi",
+      "usage": "make one's way to a place",
+      "example": "We made our way to the station.",
+      "translation": "Chúng tôi đi đến nhà ga.",
+      "family": "make – made – made; find one's way: tìm đường",
+      "meta": "PHRASE",
+      "note": "Make one’s way to là cụm cố định nghĩa là tiến đến một nơi; quá khứ của make là made. make one's way to a place.",
+      "question": 65,
+      "questions": [
+        65
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "well and truly",
+      "meaning": "hoàn toàn, dứt khoát",
+      "usage": "be well and truly over",
+      "example": "The holiday is well and truly over.",
+      "translation": "Kỳ nghỉ đã thực sự kết thúc.",
+      "family": "cụm nhấn mạnh, không dịch riêng từng từ well và truly",
+      "meta": "PHRASE",
+      "note": "Well and truly over là cụm nhấn mạnh rằng thời kỳ đó đã hoàn toàn chấm dứt; đáp án là truly. be well and truly over.",
+      "question": 67,
+      "questions": [
+        67
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "keep one’s wits about oneself",
+      "meaning": "giữ tỉnh táo, nhanh trí và cảnh giác",
+      "usage": "keep your wits about you",
+      "example": "Keep your wits about you in a crowded market.",
+      "translation": "Hãy tỉnh táo và cảnh giác ở khu chợ đông người.",
+      "family": "wits ở dạng số nhiều; my wits about me, our wits about us",
+      "meta": "PHRASE",
+      "note": "Keep one’s wits about oneself nghĩa là luôn tỉnh táo/cảnh giác. Với chủ ngữ we dùng keep our wits about us. keep your wits about you.",
+      "question": 70,
+      "questions": [
+        70
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"

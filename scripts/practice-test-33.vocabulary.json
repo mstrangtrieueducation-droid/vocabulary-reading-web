@@ -633,6 +633,182 @@
         99
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 5,
+      "term": "particularly",
+      "meta": "ADVERB",
+      "meaning": "đặc biệt; nhất là",
+      "note": "Not particularly keen on = không đặc biệt thích. particularly useful; particularly in winter.",
+      "usage": "particularly useful; particularly in winter",
+      "example": "This advice is particularly useful for beginners.",
+      "translation": "Lời khuyên này đặc biệt hữu ích cho người mới bắt đầu.",
+      "family": "particular (adj); particularly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        5
+      ],
+      "aliases": []
+    },
+    {
+      "question": 53,
+      "term": "continual",
+      "meta": "adjective",
+      "meaning": "lặp đi lặp lại",
+      "note": "Continual failure là thất bại lặp đi lặp lại trong một khoảng thời gian. continual interruptions/complaints.",
+      "usage": "continual interruptions/complaints",
+      "example": "Continual interruptions made the task difficult.",
+      "translation": "Những lần gián đoạn liên tiếp khiến công việc khó thực hiện.",
+      "family": "continually (adv); continue (v); continuity (n): sự liên tục.",
+      "teacherSelected": true,
+      "questions": [
+        53
+      ],
+      "aliases": []
+    },
+    {
+      "question": 71,
+      "term": "implications",
+      "meta": "NOUN",
+      "meaning": "hệ quả, ảnh hưởng có thể kéo theo",
+      "note": "Đoạn 1 nêu ethical implications và privacy issues, nên C diễn đạt đúng hai mối lo. A trái ý solve complex problems; B không đúng vì đoạn 5 nêu lợi ích y tế; D không phải mối lo được trình bày về công nghệ AI. have important implications for something.",
+      "usage": "have important implications for something",
+      "example": "The findings have implications for how children are taught.",
+      "translation": "Những phát hiện này có ý nghĩa đối với cách dạy trẻ.",
+      "family": "imply (v); implication (n); implicit (adj, hàm ẩn)",
+      "teacherSelected": true,
+      "questions": [
+        71
+      ],
+      "aliases": []
+    },
+    {
+      "question": 74,
+      "term": "significant",
+      "meta": "ADJECTIVE",
+      "meaning": "có ý nghĩa; đáng kể",
+      "note": "Trivial là nhỏ nhặt, ít quan trọng; từ trái = significant, quan trọng/đáng kể. Secondary và negligible gần nghĩa ít quan trọng hơn. a significant event/change; be significant to someone.",
+      "usage": "a significant event/change; be significant to someone",
+      "example": "It was a significant moment in her life.",
+      "translation": "Đó là một khoảnh khắc có ý nghĩa trong đời cô ấy.",
+      "family": "signify (v); significance (n); significant (adj); significantly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ],
+      "aliases": []
+    },
+    {
+      "question": 74,
+      "term": "negligible",
+      "meta": "ADJECTIVE",
+      "meaning": "không đáng kể",
+      "note": "Trivial là nhỏ nhặt, ít quan trọng; từ trái = significant, quan trọng/đáng kể. Secondary và negligible gần nghĩa ít quan trọng hơn. a negligible error/difference/effect.",
+      "usage": "a negligible error/difference/effect",
+      "example": "The difference between the two readings was negligible.",
+      "translation": "Chênh lệch giữa hai số đo là không đáng kể.",
+      "family": "neglect (n/v); negligible/negligent (adj); negligibly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        74
+      ],
+      "aliases": []
+    },
+    {
+      "term": "embrace",
+      "meta": "verb / noun",
+      "meaning": "ôm; đón nhận, chấp nhận tích cực",
+      "note": "Embrace change ≈ adopt change = đón nhận thay đổi. embrace someone; embrace change/technology/an opportunity; a warm embrace..",
+      "usage": "embrace someone; embrace change/technology/an opportunity; a warm embrace.",
+      "family": "embrace (v/n); embraced/embracing (dạng động từ).",
+      "example": "Teachers need support to embrace new methods confidently.",
+      "translation": "Giáo viên cần hỗ trợ để tự tin đón nhận phương pháp mới.",
+      "teacherSelected": true,
+      "questions": [
+        79
+      ],
+      "question": 79,
+      "aliases": []
+    },
+    {
+      "question": 79,
+      "term": "adopt",
+      "meta": "VERB",
+      "meaning": "chọn và đưa vào sử dụng",
+      "note": "Embrace change ≈ adopt change = đón nhận thay đổi. adopt a policy/approach/solution.",
+      "usage": "adopt a policy/approach/solution",
+      "example": "The team adopted a simpler approach.",
+      "translation": "Nhóm chọn áp dụng một cách tiếp cận đơn giản hơn.",
+      "family": "adopt (v); adoption (n); adopted (adj); adapt (v khác nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        79
+      ],
+      "aliases": []
+    },
+    {
+      "term": "set out to",
+      "meaning": "bắt tay làm với mục đích rõ ràng",
+      "usage": "set out to do something",
+      "example": "They set out to improve local schools.",
+      "translation": "Họ bắt tay vào cải thiện các trường địa phương.",
+      "family": "set – set – set; set out còn là khởi hành",
+      "meta": "PHRASE",
+      "note": "Set out to do something = bắt đầu thực hiện một việc với mục tiêu rõ ràng. set out to do something.",
+      "question": 45,
+      "questions": [
+        45
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "in the affirmative",
+      "meaning": "theo hướng khẳng định, đồng ý",
+      "usage": "answer/reply in the affirmative",
+      "example": "She answered in the affirmative.",
+      "translation": "Cô ấy trả lời đồng ý.",
+      "family": "affirm (v); affirmative (adj); in the negative: phủ định",
+      "meta": "PHRASE",
+      "note": "In the affirmative là cụm cố định = theo hướng khẳng định/có. answer/reply in the affirmative.",
+      "question": 50,
+      "questions": [
+        50
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "regardless of",
+      "meaning": "bất kể, không phụ thuộc vào",
+      "usage": "regardless of + danh từ/mệnh đề danh từ",
+      "example": "Everyone is welcome regardless of age.",
+      "translation": "Mọi người đều được chào đón bất kể tuổi tác.",
+      "family": "regard (n/v); không dùng regardless to",
+      "meta": "PHRASE",
+      "note": "Regardless of how good it is = bất kể việc làm tốt đến đâu. regardless of + danh từ/mệnh đề danh từ.",
+      "question": 55,
+      "questions": [
+        55
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "blurred the lines",
+      "meaning": "làm mờ ranh giới hoặc sự phân biệt",
+      "usage": "blur the lines between A and B",
+      "example": "Technology has blurred the lines between work and home.",
+      "translation": "Công nghệ đã làm mờ ranh giới giữa công việc và gia đình.",
+      "family": "blur – blurred – blurred; blurry (adj): mờ",
+      "meta": "PHRASE",
+      "note": "Blurred the lines = làm ranh giới hoặc sự phân biệt trở nên kém rõ. A diễn đạt đúng nghĩa này mà không khẳng định người và máy hoàn toàn giống nhau. blur the lines between A and B.",
+      "question": 75,
+      "questions": [
+        75
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

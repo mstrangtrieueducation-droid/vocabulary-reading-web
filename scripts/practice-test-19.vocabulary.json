@@ -625,6 +625,106 @@
         100
       ],
       "teacherSelected": true
+    },
+    {
+      "term": "memorize / commemorate",
+      "meta": "VERBS",
+      "meaning": "học thuộc, ghi nhớ / tưởng niệm, kỷ niệm",
+      "note": "By + V-ing diễn đạt phương pháp, nên memory chuyển thành động từ memorise/memorize rồi thêm -ing. memorize a poem/list; commemorate an event; a ceremony to commemorate someone.",
+      "usage": "memorize a poem/list; commemorate an event; a ceremony to commemorate someone",
+      "family": "memory (n): trí nhớ, ký ức; memorization (n): việc học thuộc; commemoration (n): sự tưởng niệm",
+      "example": "The ceremony commemorates the founding of the school.",
+      "translation": "Buổi lễ kỷ niệm ngày thành lập trường.",
+      "teacherSelected": true,
+      "questions": [
+        29
+      ],
+      "aliases": [
+        "memorize"
+      ],
+      "question": 29
+    },
+    {
+      "question": 37,
+      "term": "subscription",
+      "meta": "NOUN",
+      "meaning": "việc đăng ký nhận hoặc sử dụng định kỳ",
+      "note": "An annual subscription fee là phí đăng ký định kỳ hằng năm. a subscription to a magazine; renew a subscription.",
+      "usage": "a subscription to a magazine; renew a subscription",
+      "example": "She renewed her subscription to the magazine.",
+      "translation": "Cô ấy gia hạn đăng ký tạp chí.",
+      "family": "subscribe (v); subscriber (n); subscription (n)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ],
+      "aliases": []
+    },
+    {
+      "question": 51,
+      "term": "deplete",
+      "meta": "verb",
+      "meaning": "làm cạn kiệt",
+      "note": "Rather than + động từ diễn đạt lựa chọn việc này thay vì việc kia: save resources rather than deplete them. deplete reserves; depleted resources.",
+      "usage": "deplete reserves; depleted resources",
+      "family": "depletion (n); decrease: giảm, không nhất thiết cạn kiệt",
+      "example": "Overuse depleted the water supply.",
+      "translation": "Sử dụng quá mức làm cạn nguồn nước.",
+      "teacherSelected": true,
+      "questions": [
+        51
+      ],
+      "aliases": []
+    },
+    {
+      "term": "respectable / respectful / respective",
+      "meta": "adjectives",
+      "meaning": "đáng kính / thể hiện sự tôn trọng / riêng, tương ứng của từng người",
+      "note": "Be more respectful đổi thành treat someone with more respect hoặc treat someone more respectfully. a respectable person; be respectful to/towards someone; their respective roles; A and B are 10 and 12 respectively..",
+      "usage": "a respectable person; be respectful to/towards someone; their respective roles; A and B are 10 and 12 respectively.",
+      "family": "respect (n/v); respectable, respectful, respective (adj); respectively (adv); disrespectful (adj).",
+      "example": "The students were respectful to their teachers and returned to their respective classrooms.",
+      "translation": "Học sinh thể hiện sự tôn trọng giáo viên rồi trở về lớp học riêng của mình.",
+      "teacherSelected": true,
+      "questions": [
+        97
+      ],
+      "aliases": [
+        "respectful"
+      ],
+      "question": 97
+    },
+    {
+      "term": "be held up",
+      "meaning": "bị chậm trễ, bị giữ lại",
+      "usage": "be held up in traffic",
+      "example": "We were held up in traffic.",
+      "translation": "Chúng tôi bị chậm trễ vì tắc đường.",
+      "family": "hold – held – held; hold up còn có nghĩa chống đỡ hoặc cướp",
+      "meta": "PHRASE",
+      "note": "Be held up in traffic là bị chậm lại vì giao thông.\nhold up = làm chậm; trì hoãn. be held up in traffic.",
+      "question": 5,
+      "questions": [
+        5
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "come into contact with",
+      "meaning": "tiếp xúc, gặp gỡ",
+      "usage": "come into contact with somebody/something",
+      "example": "The job brings her into contact with many people.",
+      "translation": "Công việc giúp cô ấy tiếp xúc với nhiều người.",
+      "family": "contact thường không đếm được ở nghĩa sự tiếp xúc",
+      "meta": "PHRASE",
+      "note": "Come into contact with là tiếp xúc với. come into contact with somebody/something.",
+      "question": 61,
+      "questions": [
+        61
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

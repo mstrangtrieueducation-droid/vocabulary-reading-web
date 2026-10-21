@@ -671,6 +671,86 @@
         98
       ],
       "aliases": []
+    },
+    {
+      "question": 78,
+      "term": "implications",
+      "meta": "NOUN",
+      "meaning": "hệ quả, ảnh hưởng có thể kéo theo",
+      "note": "Multifaceted = có nhiều khía cạnh; implications là những tác động/hệ quả; crucial là thiết yếu. D giữ đủ ba ý. have important implications for something.",
+      "usage": "have important implications for something",
+      "example": "The findings have implications for how children are taught.",
+      "translation": "Những phát hiện này có ý nghĩa đối với cách dạy trẻ.",
+      "family": "imply (v); implication (n); implicit (adj, hàm ẩn)",
+      "teacherSelected": true,
+      "questions": [
+        78
+      ],
+      "aliases": []
+    },
+    {
+      "question": 79,
+      "term": "sustainable",
+      "meta": "ADJECTIVE",
+      "meaning": "có thể duy trì lâu dài; bền vững",
+      "note": "Đoạn cuối đề xuất tập trung vào innovation và sustainable practices để kết hợp tăng trưởng với bảo vệ môi trường. Từ đó suy ra đổi mới có thể giúp giải quyết khó khăn chuyển đổi. sustainable development/design/transport.",
+      "usage": "sustainable development/design/transport",
+      "example": "The town is investing in sustainable transport.",
+      "translation": "Thị trấn đang đầu tư vào giao thông bền vững.",
+      "family": "sustain (v); sustainability (n); sustainable (adj); sustainably (adv)",
+      "teacherSelected": true,
+      "questions": [
+        79
+      ],
+      "aliases": []
+    },
+    {
+      "term": "flop down",
+      "meaning": "thả người ngồi hoặc nằm xuống vì mệt",
+      "usage": "flop down on a sofa",
+      "example": "He flopped down on the sofa after work.",
+      "translation": "Anh ấy thả người xuống ghế sau giờ làm.",
+      "family": "flop – flopped – flopped; flopping",
+      "meta": "PHRASE",
+      "note": "Flop down in front of the television là thả người ngồi xuống trước ti vi. flop down on a sofa.",
+      "question": 46,
+      "questions": [
+        46
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "be confined to",
+      "meaning": "bị giới hạn trong phạm vi",
+      "usage": "be confined to a room/area",
+      "example": "The problem is not confined to cities.",
+      "translation": "Vấn đề không chỉ giới hạn ở các thành phố.",
+      "family": "confine (v); confinement (n)",
+      "meta": "PHRASE",
+      "note": "Be confined to something là bị giới hạn trong phạm vi nào. be confined to a room/area.",
+      "question": 55,
+      "questions": [
+        55
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "set up",
+      "meaning": "thành lập, thiết lập",
+      "usage": "set up a business; set it up",
+      "example": "They set up a small company.",
+      "translation": "Họ thành lập một công ty nhỏ.",
+      "family": "set – set – set; setting up; setup (n)",
+      "meta": "PHRASE",
+      "note": "Set up a service là thành lập hoặc tổ chức một dịch vụ. set up a business; set it up.",
+      "question": 59,
+      "questions": [
+        59
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

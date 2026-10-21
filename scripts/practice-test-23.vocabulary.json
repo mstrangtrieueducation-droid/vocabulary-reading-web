@@ -671,6 +671,183 @@
         99
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 4,
+      "term": "although",
+      "meta": "CONJUNCTION",
+      "meaning": "mặc dù; nối hai ý tương phản",
+      "note": "Cấu trúc nhượng bộ là tính từ + as + chủ ngữ + động từ: Ugly looking as it is = Although it is ugly looking. although + subject + verb.",
+      "usage": "although + subject + verb",
+      "example": "Although they looked sad, they were actually pleased.",
+      "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+      "family": "although/though + clause; despite/in spite of + noun or V-ing",
+      "teacherSelected": true,
+      "questions": [
+        4,
+        85
+      ],
+      "aliases": []
+    },
+    {
+      "question": 26,
+      "term": "adopt",
+      "meta": "VERB",
+      "meaning": "chọn và đưa vào sử dụng",
+      "note": "Adopt/keep a low profile = hạn chế thu hút sự chú ý, nhất là trước công chúng. adopt a policy/approach/solution.",
+      "usage": "adopt a policy/approach/solution",
+      "example": "The team adopted a simpler approach.",
+      "translation": "Nhóm chọn áp dụng một cách tiếp cận đơn giản hơn.",
+      "family": "adopt (v); adoption (n); adopted (adj); adapt (v khác nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        26
+      ],
+      "aliases": []
+    },
+    {
+      "question": 32,
+      "term": "outbreak",
+      "meta": "NOUN",
+      "meaning": "sự bùng phát",
+      "note": "An outbreak of violence là sự bùng phát bạo lực. an outbreak of disease/violence.",
+      "usage": "an outbreak of disease/violence",
+      "example": "The story describes an outbreak of fever.",
+      "translation": "Câu chuyện mô tả một đợt sốt bùng phát.",
+      "family": "break out (phrasal v); outbreak (n)",
+      "teacherSelected": true,
+      "questions": [
+        32
+      ],
+      "aliases": []
+    },
+    {
+      "question": 46,
+      "term": "dedication",
+      "meta": "NOUN",
+      "meaning": "sự tận tâm, cống hiến",
+      "note": "Danh từ dedication đi với to khi nêu điều mình tận tâm theo đuổi: dedication to studying. dedication to medicine/teaching.",
+      "usage": "dedication to medicine/teaching",
+      "example": "Her dedication to teaching inspired the whole team.",
+      "translation": "Sự tận tâm với nghề dạy của cô ấy truyền cảm hứng cho cả nhóm.",
+      "family": "dedicate (v); dedicated (adj); dedication (n)",
+      "teacherSelected": true,
+      "questions": [
+        46
+      ],
+      "aliases": []
+    },
+    {
+      "term": "claim",
+      "meta": "verb / noun",
+      "meaning": "khẳng định; lời khẳng định; yêu cầu quyền lợi",
+      "note": "Claim that + mệnh đề là cho rằng hoặc khẳng định một điều. claim that + mệnh đề; claim to do; claim to have done; make a claim; claim compensation..",
+      "usage": "claim that + mệnh đề; claim to do; claim to have done; make a claim; claim compensation.",
+      "family": "claim (n/v); claimant (n: người yêu cầu quyền lợi); unclaimed (adj).",
+      "example": "He claimed to have sent the documents the previous day.",
+      "translation": "Anh ấy khẳng định đã gửi tài liệu hôm trước.",
+      "teacherSelected": true,
+      "questions": [
+        52
+      ],
+      "question": 52,
+      "aliases": []
+    },
+    {
+      "question": 72,
+      "term": "elapse",
+      "meta": "VERB",
+      "meaning": "trôi qua, thường nói về thời gian",
+      "note": "Elapse = trôi qua, thường có chủ ngữ chỉ thời gian. As time elapses tương đương as time passes. time elapses; two years have elapsed.",
+      "usage": "time elapses; two years have elapsed",
+      "example": "Several minutes elapsed before anyone replied.",
+      "translation": "Vài phút trôi qua trước khi có người trả lời.",
+      "family": "elapse (v); elapsed (participle); lapse (n/v, đối chiếu)",
+      "teacherSelected": true,
+      "questions": [
+        72
+      ],
+      "aliases": []
+    },
+    {
+      "question": 76,
+      "term": "lasting",
+      "meta": "adjective",
+      "meaning": "lâu dài, bền lâu",
+      "note": "Đoạn ba gọi repetition alone là an unreliable strategy for lasting learning. Điều đó phù hợp unreliable in the long run. A lasting impression/effect/relationship. Phân biệt lastly = cuối cùng, dùng để sắp xếp ý..",
+      "usage": "A lasting impression/effect/relationship. Phân biệt lastly = cuối cùng, dùng để sắp xếp ý.",
+      "example": "The visit left a lasting impression.",
+      "translation": "Chuyến thăm để lại ấn tượng lâu dài.",
+      "family": "last (v): kéo dài; lasting (a); lastly (adv): cuối cùng.",
+      "teacherSelected": true,
+      "questions": [
+        76
+      ],
+      "aliases": []
+    },
+    {
+      "term": "sense of self",
+      "meaning": "nhận thức về bản thân, bản sắc cá nhân",
+      "usage": "develop a sense of self",
+      "example": "Children develop a stronger sense of self as they grow.",
+      "translation": "Trẻ hình thành nhận thức rõ hơn về bản thân khi lớn lên.",
+      "family": "self-awareness: sự tự nhận thức",
+      "meta": "PHRASE",
+      "note": "Sense of self là nhận thức về bản thân: mình là ai, tin vào điều gì và có giá trị nào. develop a sense of self.",
+      "question": 34,
+      "questions": [
+        34
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "quality time",
+      "meaning": "thời gian dành trọn sự quan tâm cho người thân",
+      "usage": "spend quality time with somebody",
+      "example": "We spend quality time together at weekends.",
+      "translation": "Chúng tôi dành thời gian quan tâm nhau vào cuối tuần.",
+      "family": "quality nhấn mạnh chất lượng tương tác, không phải thời lượng dài",
+      "meta": "PHRASE",
+      "note": "Quality time là thời gian dành sự quan tâm thực sự cho người thân, không chỉ ở cạnh mà bận việc khác. spend quality time with somebody.",
+      "question": 35,
+      "questions": [
+        35
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "on the part of",
+      "meaning": "về phía, do một người hoặc nhóm",
+      "usage": "effort on the part of somebody",
+      "example": "Success requires effort on the part of everyone.",
+      "translation": "Thành công đòi hỏi sự nỗ lực từ phía mọi người.",
+      "family": "không nhầm với take part in: tham gia",
+      "meta": "PHRASE",
+      "note": "On the part of the teachers = từ phía các giáo viên. effort on the part of somebody.",
+      "question": 62,
+      "questions": [
+        62
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "somehow or other",
+      "meaning": "bằng cách nào đó, dù chưa rõ cách",
+      "usage": "somehow or other, ...",
+      "example": "Somehow or other, we will finish it.",
+      "translation": "Bằng cách nào đó, chúng ta sẽ hoàn thành.",
+      "family": "somehow: bằng cách nào đó; or other tăng ý không xác định",
+      "meta": "PHRASE",
+      "note": "Somehow or other = bằng cách nào đó, không rõ chính xác ra sao. somehow or other, ....",
+      "question": 66,
+      "questions": [
+        66
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

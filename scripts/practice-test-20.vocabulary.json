@@ -620,6 +620,153 @@
         96
       ],
       "aliases": []
+    },
+    {
+      "question": 24,
+      "term": "excessive",
+      "meta": "adjective",
+      "meaning": "quá mức",
+      "note": "Câu chẻ It is + phần nhấn mạnh + that + phần còn lại tạo câu đầy đủ: It is excessive logging… that has resulted… D khớp phần has có sẵn. excessive use/exploitation.",
+      "usage": "excessive use/exploitation",
+      "family": "excess (n); excessively (adv)",
+      "example": "Excessive packaging creates unnecessary waste.",
+      "translation": "Đóng gói quá mức tạo rác không cần thiết.",
+      "teacherSelected": true,
+      "questions": [
+        24,
+        76
+      ],
+      "aliases": []
+    },
+    {
+      "question": 47,
+      "term": "frequent",
+      "meta": "ADJECTIVE",
+      "meaning": "thường xuyên, xảy ra nhiều lần",
+      "note": "Chủ ngữ là short sessions số nhiều; with frequent breaks chỉ bổ sung mô tả. frequent complaints/visits; too frequent for my liking.",
+      "usage": "frequent complaints/visits; too frequent for my liking",
+      "example": "The interruptions are too frequent for my liking.",
+      "translation": "Việc bị ngắt quãng xảy ra quá thường xuyên so với mức tôi chấp nhận.",
+      "family": "frequency (n); frequently (adv); infrequent (adj)",
+      "teacherSelected": true,
+      "questions": [
+        47
+      ],
+      "aliases": []
+    },
+    {
+      "question": 52,
+      "term": "adopt",
+      "meta": "VERB",
+      "meaning": "chọn và đưa vào sử dụng",
+      "note": "Adopt customs = tiếp nhận phong tục và đưa vào thực hành. adopt a policy/approach/solution.",
+      "usage": "adopt a policy/approach/solution",
+      "example": "The team adopted a simpler approach.",
+      "translation": "Nhóm chọn áp dụng một cách tiếp cận đơn giản hơn.",
+      "family": "adopt (v); adoption (n); adopted (adj); adapt (v khác nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        52
+      ],
+      "aliases": []
+    },
+    {
+      "term": "prose / poem / poetry",
+      "meta": "nouns",
+      "meaning": "văn xuôi / bài thơ / thơ ca",
+      "note": "Which thay cho the poem và làm chủ ngữ của first appeared trong mệnh đề quan hệ không xác định sau dấu phẩy. write prose; read a poem; a collection of poems; modern poetry; prose and poetry..",
+      "usage": "write prose; read a poem; a collection of poems; modern poetry; prose and poetry.",
+      "family": "poem (n đếm được); poetry (n); poet (n: nhà thơ); poetic (adj); prose (n).",
+      "example": "The collection contains both short prose pieces and poems.",
+      "translation": "Tuyển tập gồm cả những bài văn xuôi ngắn và các bài thơ.",
+      "teacherSelected": true,
+      "questions": [
+        57
+      ],
+      "aliases": [
+        "poem"
+      ],
+      "question": 57
+    },
+    {
+      "question": 76,
+      "term": "withdrawal",
+      "meta": "NOUN",
+      "meaning": "sự thu mình, rút khỏi giao tiếp xã hội",
+      "note": "Trong câu này, withdrawal chỉ việc thu mình và giảm giao tiếp với cộng đồng, dẫn tới cô đơn. Không dùng nghĩa rút tiền trong ngữ cảnh này.",
+      "usage": "social withdrawal; withdrawal from social activities",
+      "example": "Long periods of isolation can lead to social withdrawal.",
+      "translation": "Thời gian cô lập kéo dài có thể khiến người ta thu mình khỏi giao tiếp xã hội.",
+      "family": "withdraw–withdrew–withdrawn; withdrawal (n)",
+      "teacherSelected": true,
+      "questions": [
+        76
+      ],
+      "aliases": []
+    },
+    {
+      "question": 78,
+      "term": "monotonous",
+      "meta": "adjective",
+      "meaning": "đơn điệu, nhàm chán",
+      "note": "Drab tả những khối nhà buồn tẻ, thiếu hấp dẫn; monotonous là lựa chọn gần nhất. Colourful trái nghĩa về sắc thái sinh động; trapped là bị mắc kẹt; inconsiderable là không đáng kể. a monotonous voice/job/routine.",
+      "usage": "a monotonous voice/job/routine",
+      "example": "The monotonous task required great patience.",
+      "translation": "Công việc đơn điệu đòi hỏi rất nhiều kiên nhẫn.",
+      "family": "monotony (n): sự đơn điệu; monotonously (adv): một cách đều đều, nhàm chán.",
+      "teacherSelected": true,
+      "questions": [
+        78
+      ],
+      "aliases": []
+    },
+    {
+      "term": "at an alarming rate",
+      "meaning": "với tốc độ đáng lo ngại",
+      "usage": "increase at an alarming rate",
+      "example": "Prices are rising at an alarming rate.",
+      "translation": "Giá cả đang tăng với tốc độ đáng lo ngại.",
+      "family": "alarm (n/v); alarming: gây lo; alarmed: thấy lo",
+      "meta": "PHRASE",
+      "note": "At an alarming rate = với tốc độ đáng lo ngại. increase at an alarming rate.",
+      "question": 5,
+      "questions": [
+        5
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "in all sincerity",
+      "meaning": "một cách hoàn toàn chân thành",
+      "usage": "say something in all sincerity",
+      "example": "I say this in all sincerity.",
+      "translation": "Tôi nói điều này hoàn toàn chân thành.",
+      "family": "sincere (adj); sincerely (adv); sincerity (n)",
+      "meta": "PHRASE",
+      "note": "In all sincerity là hoàn toàn chân thành/thật lòng. Sau giới từ in cần danh từ sincerity. say something in all sincerity.",
+      "question": 41,
+      "questions": [
+        41
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "have roots in",
+      "meaning": "bắt nguồn từ",
+      "usage": "have its roots in something",
+      "example": "The tradition has roots in village life.",
+      "translation": "Truyền thống này bắt nguồn từ đời sống làng quê.",
+      "family": "root (n): gốc, rễ; be rooted in",
+      "meta": "PHRASE",
+      "note": "Have roots in = có nguồn gốc từ. have its roots in something.",
+      "question": 53,
+      "questions": [
+        53
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

@@ -625,6 +625,175 @@
         "talk someone into"
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 15,
+      "term": "private / personal / personnel",
+      "meta": "adjectives / noun",
+      "meaning": "riêng tư / cá nhân / nhân sự",
+      "note": "Stolen from a private gallery rút gọn mệnh đề which was stolen: bức tranh là vật bị lấy cắp. private life; personal information; personnel records.",
+      "usage": "private life; personal information; personnel records",
+      "family": "privacy (n); personally (adv); personnel chỉ tập thể nhân viên",
+      "example": "Please keep my personal information private.",
+      "translation": "Xin giữ kín thông tin cá nhân của tôi.",
+      "teacherSelected": true,
+      "questions": [
+        15,
+        78
+      ],
+      "aliases": [
+        "private"
+      ]
+    },
+    {
+      "term": "basics / basis",
+      "meta": "nouns",
+      "meaning": "những kiến thức cơ bản / nền tảng, cơ sở",
+      "note": "Cần tính từ trước basis: economic basis là nền tảng kinh tế, ở đây là nguồn tiền từ quảng cáo. learn the basics of a subject; the basis for a decision; on a daily basis = hằng ngày..",
+      "usage": "learn the basics of a subject; the basis for a decision; on a daily basis = hằng ngày.",
+      "family": "basic (adj), basically (adv), basics (n số nhiều); basis (n), bases (số nhiều).",
+      "example": "Students learn the basics before using them as a basis for further study.",
+      "translation": "Học sinh học kiến thức cơ bản rồi dùng chúng làm nền tảng để học tiếp.",
+      "teacherSelected": true,
+      "questions": [
+        36
+      ],
+      "aliases": [
+        "basis"
+      ],
+      "question": 36
+    },
+    {
+      "term": "production / productivity",
+      "meta": "NOUNS",
+      "meaning": "sự sản xuất, sản lượng / năng suất",
+      "note": "The production of programmes là việc sản xuất chương trình, dùng danh từ sau the và trước of. increase production/productivity; food production; labour productivity.",
+      "usage": "increase production/productivity; food production; labour productivity",
+      "family": "produce (v): sản xuất; product (n): sản phẩm; productive (adj): có năng suất, hữu ích",
+      "example": "Better equipment increased productivity without extending working hours.",
+      "translation": "Thiết bị tốt hơn giúp tăng năng suất mà không kéo dài giờ làm.",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ],
+      "aliases": [
+        "production"
+      ],
+      "question": 38
+    },
+    {
+      "question": 65,
+      "term": "availability",
+      "meta": "noun",
+      "meaning": "sự sẵn có",
+      "note": "The level/concentration of dissolved oxygen nói mức/nồng độ oxy hoà tan; amount/quantity hoặc availability/supply cũng tạo ý phù hợp về lượng oxy có sẵn. the availability of food/resources.",
+      "usage": "the availability of food/resources",
+      "family": "available (adj); unavailable (adj)",
+      "example": "Availability varies from one area to another.",
+      "translation": "Mức độ sẵn có khác nhau giữa các khu vực.",
+      "teacherSelected": true,
+      "questions": [
+        65
+      ],
+      "aliases": []
+    },
+    {
+      "question": 75,
+      "term": "lasting",
+      "meta": "adjective",
+      "meaning": "lâu dài, bền lâu",
+      "note": "Đoạn 2 đối lập some emergency measures were temporary với Social Security became a lasting institution. Vì vậy điểm khác là tính tạm thời so với lâu dài. A lasting impression/effect/relationship. Phân biệt lastly = cuối cùng, dùng để sắp xếp ý..",
+      "usage": "A lasting impression/effect/relationship. Phân biệt lastly = cuối cùng, dùng để sắp xếp ý.",
+      "example": "The visit left a lasting impression.",
+      "translation": "Chuyến thăm để lại ấn tượng lâu dài.",
+      "family": "last (v): kéo dài; lasting (a); lastly (adv): cuối cùng.",
+      "teacherSelected": true,
+      "questions": [
+        75
+      ],
+      "aliases": []
+    },
+    {
+      "question": 84,
+      "term": "although",
+      "meta": "CONJUNCTION",
+      "meaning": "mặc dù; nối hai ý tương phản",
+      "note": "Đảo tính từ lên trước as/though tạo nghĩa nhượng bộ: Exhausted as he was = Although he was exhausted. although + subject + verb.",
+      "usage": "although + subject + verb",
+      "example": "Although they looked sad, they were actually pleased.",
+      "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+      "family": "although/though + clause; despite/in spite of + noun or V-ing",
+      "teacherSelected": true,
+      "questions": [
+        84
+      ],
+      "aliases": []
+    },
+    {
+      "term": "in sight",
+      "meaning": "ở trong tầm nhìn",
+      "usage": "be/come into sight",
+      "example": "There was no house in sight.",
+      "translation": "Không có ngôi nhà nào trong tầm mắt.",
+      "family": "out of sight: khuất tầm nhìn; catch sight of: thoáng thấy",
+      "meta": "PHRASE",
+      "note": "In sight là trong tầm nhìn: người nói không nhìn thấy cảnh sát nào. be/come into sight.",
+      "question": 4,
+      "questions": [
+        4
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "stretched to the limit",
+      "meaning": "bị sử dụng hoặc chịu sức ép đến giới hạn",
+      "usage": "be stretched to the limit",
+      "example": "Hospital resources were stretched to the limit.",
+      "translation": "Nguồn lực bệnh viện đã bị sử dụng đến giới hạn.",
+      "family": "stretch (v); limit (n); dùng cả nghĩa bóng về nguồn lực",
+      "meta": "PHRASE",
+      "note": "Stretched to the limit là bị khai thác/căng tới giới hạn. be stretched to the limit.",
+      "question": 69,
+      "questions": [
+        69
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "take measures",
+      "meaning": "thực hiện các biện pháp",
+      "usage": "take measures to do something",
+      "example": "We must take measures to reduce waste.",
+      "translation": "Chúng ta phải có biện pháp giảm rác thải.",
+      "family": "take steps/action: hành động; measure (n): biện pháp",
+      "meta": "PHRASE",
+      "note": "Take action/steps/measures là hành động hoặc thực hiện biện pháp; practical actions cũng đúng khi nói các việc cụ thể. take measures to do something.",
+      "question": 70,
+      "questions": [
+        70
+      ],
+      "aliases": [
+        "Take action/steps/measures"
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "in addition to",
+      "meaning": "ngoài điều gì ra",
+      "usage": "in addition to + danh từ/V-ing",
+      "example": "She works in addition to studying.",
+      "translation": "Cô ấy đi làm bên cạnh việc học.",
+      "family": "in addition: ngoài ra, dùng nối câu; additional (adj)",
+      "meta": "PHRASE",
+      "note": "Cụm in addition to government programmes yêu cầu nguồn ngoài chính phủ. Đoạn cuối nêu private charities and voluntary organizations, thuộc non-government agencies. in addition to + danh từ/V-ing.",
+      "question": 78,
+      "questions": [
+        78
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

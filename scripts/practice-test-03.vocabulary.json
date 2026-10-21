@@ -725,6 +725,86 @@
         99
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 1,
+      "term": "although",
+      "meta": "CONJUNCTION",
+      "meaning": "mặc dù; nối hai ý tương phản",
+      "note": "Each of us là chủ ngữ số ít, nên động từ hiện tại đơn phải là has. Although chỉ tạo quan hệ tương phản và không làm thay đổi sự hòa hợp chủ–vị. although + subject + verb.",
+      "usage": "although + subject + verb",
+      "example": "Although they looked sad, they were actually pleased.",
+      "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+      "family": "although/though + clause; despite/in spite of + noun or V-ing",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ],
+      "aliases": []
+    },
+    {
+      "question": 3,
+      "term": "material",
+      "meta": "NOUN",
+      "meaning": "vật liệu; chất liệu",
+      "note": "Trật tự tính từ tự nhiên là opinion → size/length → material → noun: a beautiful long silk dress, nên chọn B. building materials; raw materials.",
+      "usage": "building materials; raw materials",
+      "example": "The bridge was built from local materials.",
+      "translation": "Cây cầu được xây bằng vật liệu địa phương.",
+      "family": "material (n/adj); substance (n); manufacture (v)",
+      "teacherSelected": true,
+      "questions": [
+        3
+      ],
+      "aliases": []
+    },
+    {
+      "question": 71,
+      "term": "bribery",
+      "meta": "noun",
+      "meaning": "hành vi hối lộ",
+      "note": "Trẻ cần phần thưởng mới chịu học → động lực đến từ bên ngoài.\nbribe (v): hối lộ → bribery (n); rust (n): gỉ → rusty (adj); linger: nán lại; frown: nhăn mặt. be charged with bribery; offer a bribe.",
+      "usage": "be charged with bribery; offer a bribe",
+      "family": "bribe (n/v); bribery thường không đếm được",
+      "example": "The official was charged with bribery.",
+      "translation": "Viên chức bị buộc tội hối lộ.",
+      "teacherSelected": true,
+      "questions": [
+        71
+      ],
+      "aliases": []
+    },
+    {
+      "term": "hidden from view",
+      "meaning": "bị che khuất, không nhìn thấy",
+      "usage": "be hidden from view",
+      "example": "The house was hidden from view by trees.",
+      "translation": "Ngôi nhà bị cây cối che khuất.",
+      "family": "hide – hid – hidden; view (n): tầm nhìn",
+      "meta": "PHRASE",
+      "note": "hidden from view: bị che khuất, không nhìn thấy được. be hidden from view.",
+      "question": 30,
+      "questions": [
+        30
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "meet with no support",
+      "meaning": "không nhận được sự ủng hộ",
+      "usage": "meet with support/opposition",
+      "example": "His proposal met with no support.",
+      "translation": "Đề xuất của anh ấy không được ai ủng hộ.",
+      "family": "meet – met – met; meet with opposition: gặp phản đối",
+      "meta": "PHRASE",
+      "note": "meet with no support: không nhận được sự ủng hộ. meet with support/opposition.",
+      "question": 85,
+      "questions": [
+        85
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"

@@ -399,6 +399,330 @@
             95
           ],
           "teacherSelected": true
+        },
+        {
+          "question": 4,
+          "term": "although",
+          "meta": "CONJUNCTION",
+          "meaning": "mặc dù; nối hai ý tương phản",
+          "note": "Although + mệnh đề: mặc dù. Despite/because of + N/V-ing. although + subject + verb.",
+          "usage": "although + subject + verb",
+          "example": "Although they looked sad, they were actually pleased.",
+          "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+          "family": "although/though + clause; despite/in spite of + noun or V-ing",
+          "teacherSelected": true,
+          "questions": [
+            4,
+            81,
+            100
+          ],
+          "aliases": []
+        },
+        {
+          "question": 37,
+          "term": "membership",
+          "meta": "NOUN",
+          "meaning": "tư cách thành viên; việc tham gia thành viên",
+          "note": "renew one’s membership: gia hạn tư cách hội viên. Member là người, membership là tư cách hội viên. membership fee/benefits; apply for membership.",
+          "usage": "membership fee/benefits; apply for membership",
+          "example": "Membership includes free entry to special events.",
+          "translation": "Tư cách thành viên bao gồm quyền vào miễn phí các sự kiện đặc biệt.",
+          "family": "member (n); membership (n); non-member (n)",
+          "teacherSelected": true,
+          "questions": [
+            37
+          ],
+          "aliases": []
+        },
+        {
+          "term": "narrow-minded",
+          "meaning": "hẹp hòi, không cởi mở với ý kiến khác",
+          "usage": "a narrow-minded person",
+          "example": "He is too narrow-minded to accept new ideas.",
+          "translation": "Anh ấy quá hẹp hòi để chấp nhận ý tưởng mới.",
+          "family": "open-minded: cởi mở; broad-minded: có tư tưởng thoáng",
+          "meta": "ADJECTIVE",
+          "note": "narrow-minded: hẹp hòi, không chịu nghe ý kiến khác; open-minded: cởi mở. a narrow-minded person.",
+          "question": 7,
+          "questions": [
+            7
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "go over",
+          "meaning": "ôn lại, xem xét kỹ",
+          "usage": "go over a lesson/report",
+          "example": "Let's go over the lesson again.",
+          "translation": "Hãy ôn lại bài một lần nữa.",
+          "family": "go – went – gone; không nhầm với go through: trải qua",
+          "meta": "PHRASE",
+          "note": "go over one’s lessons: ôn lại bài. go over a lesson/report.",
+          "question": 11,
+          "questions": [
+            11
+          ],
+          "aliases": [
+            "go over one’s lessons"
+          ],
+          "teacherSelected": true
+        },
+        {
+          "term": "be in use",
+          "meaning": "đang được sử dụng",
+          "usage": "be in use; come into use",
+          "example": "This room is still in use.",
+          "translation": "Phòng này vẫn đang được sử dụng.",
+          "family": "use (n/v); useful (adj); unused (adj)",
+          "meta": "PHRASE",
+          "note": "be in use: đang được sử dụng. be in use; come into use.",
+          "question": 13,
+          "questions": [
+            13
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "recipe",
+          "meaning": "công thức nấu ăn",
+          "usage": "a recipe for soup",
+          "example": "This recipe needs only three ingredients.",
+          "translation": "Công thức này chỉ cần ba nguyên liệu.",
+          "family": "recipe for success: bí quyết thành công",
+          "meta": "NOUN",
+          "note": "recipe: công thức nấu ăn; ingredient: nguyên liệu. a recipe for soup.",
+          "question": 14,
+          "questions": [
+            14
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "ingredient",
+          "meaning": "nguyên liệu, thành phần",
+          "usage": "the ingredients in a dish",
+          "example": "Flour is the main ingredient.",
+          "translation": "Bột mì là nguyên liệu chính.",
+          "family": "ingredient thường đếm được: an ingredient, ingredients",
+          "meta": "NOUN",
+          "note": "recipe: công thức nấu ăn; ingredient: nguyên liệu. the ingredients in a dish.",
+          "question": 14,
+          "questions": [
+            14
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "single-sex school",
+          "meaning": "trường chỉ dành cho học sinh nam hoặc nữ",
+          "usage": "attend a single-sex school",
+          "example": "She attends a single-sex school.",
+          "translation": "Em ấy học tại một trường nữ sinh.",
+          "family": "co-educational school: trường có cả nam và nữ",
+          "meta": "PHRASE",
+          "note": "single-sex school: trường chỉ nhận nam hoặc chỉ nhận nữ. attend a single-sex school.",
+          "question": 15,
+          "questions": [
+            15
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "make (better) use of",
+          "meaning": "tận dụng (tốt hơn)",
+          "usage": "make use of something",
+          "example": "We should make better use of our time.",
+          "translation": "Chúng ta nên tận dụng thời gian tốt hơn.",
+          "family": "make – made – made; useful: hữu ích",
+          "meta": "PHRASE",
+          "note": "make (better) use of: tận dụng (tốt hơn). make use of something.",
+          "question": 17,
+          "questions": [
+            17
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "sense of self",
+          "meaning": "nhận thức về bản thân, bản sắc cá nhân",
+          "usage": "develop a sense of self",
+          "example": "Children develop a stronger sense of self as they grow.",
+          "translation": "Trẻ hình thành nhận thức rõ hơn về bản thân khi lớn lên.",
+          "family": "self-awareness: sự tự nhận thức",
+          "meta": "PHRASE",
+          "note": "sense of self: nhận thức/bản sắc của bản thân. develop a sense of self.",
+          "question": 20,
+          "questions": [
+            20
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "look around for",
+          "meaning": "tìm kiếm, xem xét các lựa chọn",
+          "usage": "look around for a job",
+          "example": "She is looking around for a new job.",
+          "translation": "Cô ấy đang tìm một công việc mới.",
+          "family": "look for: tìm kiếm; look around: nhìn quanh",
+          "meta": "PHRASE",
+          "note": "look around for: tìm kiếm, xem xét các lựa chọn. look around for a job.",
+          "question": 28,
+          "questions": [
+            28
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "call off",
+          "meaning": "hủy bỏ một sự kiện hoặc kế hoạch",
+          "usage": "call off a meeting; call it off",
+          "example": "They called off the match because of rain.",
+          "translation": "Họ hủy trận đấu vì mưa.",
+          "family": "call off = cancel; put off = postpone: hoãn",
+          "meta": "PHRASE",
+          "note": "call off: hủy một sự kiện. call off a meeting; call it off.",
+          "question": 34,
+          "questions": [
+            34
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "poisonous",
+          "meaning": "có độc",
+          "usage": "poisonous gas/plants",
+          "example": "Some mushrooms are poisonous.",
+          "translation": "Một số loại nấm có độc.",
+          "family": "poison (n/v); poison somebody: đầu độc ai",
+          "meta": "ADJECTIVE",
+          "note": "poisonous (adj): có độc; bổ nghĩa cho gas. poisonous gas/plants.",
+          "question": 36,
+          "questions": [
+            36
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "renew one’s membership",
+          "meaning": "gia hạn tư cách hội viên",
+          "usage": "renew one's membership annually",
+          "example": "I need to renew my membership this month.",
+          "translation": "Tôi cần gia hạn tư cách hội viên trong tháng này.",
+          "family": "member: hội viên; membership: tư cách hội viên; renewal: sự gia hạn",
+          "meta": "PHRASE",
+          "note": "renew one’s membership: gia hạn tư cách hội viên. Member là người, membership là tư cách hội viên. renew one's membership annually.",
+          "question": 37,
+          "questions": [
+            37
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "helpless",
+          "meaning": "bất lực, không thể tự giúp mình",
+          "usage": "feel helpless",
+          "example": "I felt helpless when the lift stopped.",
+          "translation": "Tôi cảm thấy bất lực khi thang máy dừng lại.",
+          "family": "helplessness (n); unhelpful: không hữu ích, không chịu giúp",
+          "meta": "ADJECTIVE",
+          "note": "helpless: bất lực; unhelpful: không hữu ích/không giúp đỡ. feel helpless.",
+          "question": 47,
+          "questions": [
+            47
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "cause damage",
+          "meaning": "gây thiệt hại",
+          "usage": "cause damage to something",
+          "example": "The storm caused damage to several houses.",
+          "translation": "Cơn bão gây thiệt hại cho một số ngôi nhà.",
+          "family": "damage thường không đếm được; không dùng a damage",
+          "meta": "PHRASE",
+          "note": "cause damage: gây thiệt hại. Bị động: damage was caused. cause damage to something.",
+          "question": 54,
+          "questions": [
+            54
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "think of A as B",
+          "meaning": "coi A là B",
+          "usage": "think of somebody as a friend",
+          "example": "I think of her as a close friend.",
+          "translation": "Tôi coi cô ấy là một người bạn thân.",
+          "family": "think – thought – thought; regard A as B",
+          "meta": "PHRASE",
+          "note": "think of A as B: coi A là B. think of somebody as a friend.",
+          "question": 55,
+          "questions": [
+            55
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "a reminder of",
+          "meaning": "điều nhắc nhở, gợi nhớ về",
+          "usage": "a reminder of the past",
+          "example": "The photo is a reminder of our trip.",
+          "translation": "Bức ảnh gợi nhớ chuyến đi của chúng tôi.",
+          "family": "remind somebody of something; reminder (n)",
+          "meta": "PHRASE",
+          "note": "a reminder of: điều nhắc nhở về… a reminder of the past.",
+          "question": 59,
+          "questions": [
+            59
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "in all directions",
+          "meaning": "theo mọi hướng",
+          "usage": "run/scatter in all directions",
+          "example": "The birds flew in all directions.",
+          "translation": "Đàn chim bay tản ra mọi hướng.",
+          "family": "direction (n); in the direction of: theo hướng về",
+          "meta": "PHRASE",
+          "note": "in all directions: theo mọi hướng. Directions là danh từ số nhiều. run/scatter in all directions.",
+          "question": 68,
+          "questions": [
+            68
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "pull down",
+          "meaning": "phá bỏ công trình",
+          "usage": "pull down a building; pull it down",
+          "example": "They pulled down the old factory.",
+          "translation": "Họ phá bỏ nhà máy cũ.",
+          "family": "demolish (v); demolition (n)",
+          "meta": "PHRASE",
+          "note": "pull down = demolish: phá bỏ. Bị động: is going to be pulled down. pull down a building; pull it down.",
+          "question": 92,
+          "questions": [
+            92
+          ],
+          "aliases": [],
+          "teacherSelected": true
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"
@@ -1409,6 +1733,134 @@
             93
           ],
           "teacherSelected": true
+        },
+        {
+          "question": 79,
+          "term": "lasting",
+          "meta": "adjective",
+          "meaning": "lâu dài, bền lâu",
+          "note": "Chronic mô tả tình trạng kéo dài, tái diễn trong thời gian dài; đáp án gần nghĩa nhất là lasting for a long time. A lasting impression/effect/relationship. Phân biệt lastly = cuối cùng, dùng để sắp xếp ý..",
+          "usage": "A lasting impression/effect/relationship. Phân biệt lastly = cuối cùng, dùng để sắp xếp ý.",
+          "example": "The visit left a lasting impression.",
+          "translation": "Chuyến thăm để lại ấn tượng lâu dài.",
+          "family": "last (v): kéo dài; lasting (a); lastly (adv): cuối cùng.",
+          "teacherSelected": true,
+          "questions": [
+            79
+          ],
+          "aliases": []
+        },
+        {
+          "term": "from my point of view",
+          "meaning": "theo quan điểm của tôi",
+          "usage": "from somebody's point of view",
+          "example": "From my point of view, the plan is fair.",
+          "translation": "Theo quan điểm của tôi, kế hoạch này công bằng.",
+          "family": "in my opinion: theo ý kiến của tôi",
+          "meta": "PHRASE",
+          "note": "From my point of view = theo quan điểm của tôi. from somebody's point of view.",
+          "question": 20,
+          "questions": [
+            20
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "bring the house down",
+          "meaning": "khiến khán giả vỗ tay hoặc cười vang",
+          "usage": "bring the house down with a performance",
+          "example": "Her final song brought the house down.",
+          "translation": "Bài hát cuối của cô ấy khiến khán giả vỗ tay vang dội.",
+          "family": "bring – brought – brought; thành ngữ về phản ứng nhiệt tình của khán giả",
+          "meta": "PHRASE",
+          "note": "bring the house down: (một buổi biểu diễn) khiến mọi người vỗ tay vang dội\ngive sb a standing ovation: đứng lên vỗ tay… bring the house down with a performance.",
+          "question": 22,
+          "questions": [
+            22
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "over and above",
+          "meaning": "ngoài ra, thêm vào",
+          "usage": "over and above something",
+          "example": "There are costs over and above the ticket price.",
+          "translation": "Có những chi phí ngoài giá vé.",
+          "family": "không nhầm với above dùng riêng để chỉ vị trí cao hơn",
+          "meta": "PHRASE",
+          "note": "Cụm cố định over and above nghĩa là ngoài ra, thêm vào đó; phù hợp với ý ngoài thiết kế cửa hàng và bao bì. over and above something.",
+          "question": 61,
+          "questions": [
+            61
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "with deadly accuracy",
+          "meaning": "với độ chính xác rất cao",
+          "usage": "hit/guide with deadly accuracy",
+          "example": "The player hit the target with deadly accuracy.",
+          "translation": "Người chơi bắn trúng mục tiêu rất chính xác.",
+          "family": "accurate (adj); accurately (adv); accuracy (n); deadly ở đây nhấn mạnh mức độ",
+          "meta": "PHRASE",
+          "note": "With deadly accuracy là cụm giới từ chỉ cách thức: khách hàng được dẫn hướng với độ chính xác gần như tuyệt đối. hit/guide with deadly accuracy.",
+          "question": 63,
+          "questions": [
+            63
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "make one’s way to",
+          "meaning": "đi, tiến đến một nơi",
+          "usage": "make one's way to a place",
+          "example": "We made our way to the station.",
+          "translation": "Chúng tôi đi đến nhà ga.",
+          "family": "make – made – made; find one's way: tìm đường",
+          "meta": "PHRASE",
+          "note": "Make one’s way to là cụm cố định nghĩa là tiến đến một nơi; quá khứ của make là made. make one's way to a place.",
+          "question": 65,
+          "questions": [
+            65
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "well and truly",
+          "meaning": "hoàn toàn, dứt khoát",
+          "usage": "be well and truly over",
+          "example": "The holiday is well and truly over.",
+          "translation": "Kỳ nghỉ đã thực sự kết thúc.",
+          "family": "cụm nhấn mạnh, không dịch riêng từng từ well và truly",
+          "meta": "PHRASE",
+          "note": "Well and truly over là cụm nhấn mạnh rằng thời kỳ đó đã hoàn toàn chấm dứt; đáp án là truly. be well and truly over.",
+          "question": 67,
+          "questions": [
+            67
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "keep one’s wits about oneself",
+          "meaning": "giữ tỉnh táo, nhanh trí và cảnh giác",
+          "usage": "keep your wits about you",
+          "example": "Keep your wits about you in a crowded market.",
+          "translation": "Hãy tỉnh táo và cảnh giác ở khu chợ đông người.",
+          "family": "wits ở dạng số nhiều; my wits about me, our wits about us",
+          "meta": "PHRASE",
+          "note": "Keep one’s wits about oneself nghĩa là luôn tỉnh táo/cảnh giác. Với chủ ngữ we dùng keep our wits about us. keep your wits about you.",
+          "question": 70,
+          "questions": [
+            70
+          ],
+          "aliases": [],
+          "teacherSelected": true
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"
@@ -2141,6 +2593,86 @@
             99
           ],
           "teacherSelected": true
+        },
+        {
+          "question": 1,
+          "term": "although",
+          "meta": "CONJUNCTION",
+          "meaning": "mặc dù; nối hai ý tương phản",
+          "note": "Each of us là chủ ngữ số ít, nên động từ hiện tại đơn phải là has. Although chỉ tạo quan hệ tương phản và không làm thay đổi sự hòa hợp chủ–vị. although + subject + verb.",
+          "usage": "although + subject + verb",
+          "example": "Although they looked sad, they were actually pleased.",
+          "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+          "family": "although/though + clause; despite/in spite of + noun or V-ing",
+          "teacherSelected": true,
+          "questions": [
+            1
+          ],
+          "aliases": []
+        },
+        {
+          "question": 3,
+          "term": "material",
+          "meta": "NOUN",
+          "meaning": "vật liệu; chất liệu",
+          "note": "Trật tự tính từ tự nhiên là opinion → size/length → material → noun: a beautiful long silk dress, nên chọn B. building materials; raw materials.",
+          "usage": "building materials; raw materials",
+          "example": "The bridge was built from local materials.",
+          "translation": "Cây cầu được xây bằng vật liệu địa phương.",
+          "family": "material (n/adj); substance (n); manufacture (v)",
+          "teacherSelected": true,
+          "questions": [
+            3
+          ],
+          "aliases": []
+        },
+        {
+          "question": 71,
+          "term": "bribery",
+          "meta": "noun",
+          "meaning": "hành vi hối lộ",
+          "note": "Trẻ cần phần thưởng mới chịu học → động lực đến từ bên ngoài.\nbribe (v): hối lộ → bribery (n); rust (n): gỉ → rusty (adj); linger: nán lại; frown: nhăn mặt. be charged with bribery; offer a bribe.",
+          "usage": "be charged with bribery; offer a bribe",
+          "family": "bribe (n/v); bribery thường không đếm được",
+          "example": "The official was charged with bribery.",
+          "translation": "Viên chức bị buộc tội hối lộ.",
+          "teacherSelected": true,
+          "questions": [
+            71
+          ],
+          "aliases": []
+        },
+        {
+          "term": "hidden from view",
+          "meaning": "bị che khuất, không nhìn thấy",
+          "usage": "be hidden from view",
+          "example": "The house was hidden from view by trees.",
+          "translation": "Ngôi nhà bị cây cối che khuất.",
+          "family": "hide – hid – hidden; view (n): tầm nhìn",
+          "meta": "PHRASE",
+          "note": "hidden from view: bị che khuất, không nhìn thấy được. be hidden from view.",
+          "question": 30,
+          "questions": [
+            30
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "meet with no support",
+          "meaning": "không nhận được sự ủng hộ",
+          "usage": "meet with support/opposition",
+          "example": "His proposal met with no support.",
+          "translation": "Đề xuất của anh ấy không được ai ủng hộ.",
+          "family": "meet – met – met; meet with opposition: gặp phản đối",
+          "meta": "PHRASE",
+          "note": "meet with no support: không nhận được sự ủng hộ. meet with support/opposition.",
+          "question": 85,
+          "questions": [
+            85
+          ],
+          "aliases": [],
+          "teacherSelected": true
         }
       ],
       "revision": "2026-10-04-detailed-vocabulary"
@@ -2757,6 +3289,342 @@
           "aliases": [
             "out of"
           ],
+          "teacherSelected": true
+        },
+        {
+          "question": 12,
+          "term": "respectively",
+          "meta": "adverb",
+          "meaning": "tương ứng theo thứ tự",
+          "note": "respectively: lần lượt; respectable: đáng kính; respectful: lễ phép, tôn trọng. A and B are X and Y respectively.",
+          "usage": "A and B are X and Y respectively",
+          "example": "Mai and Nam are twelve and thirteen respectively.",
+          "translation": "Mai và Nam lần lượt mười hai và mười ba tuổi.",
+          "family": "respective (a): tương ứng; respectively (adv); respectful: kính trọng.",
+          "teacherSelected": true,
+          "questions": [
+            12
+          ],
+          "aliases": []
+        },
+        {
+          "question": 29,
+          "term": "enthusiasm",
+          "meta": "noun",
+          "meaning": "sự nhiệt tình, say mê",
+          "note": "enthusiasm for: nhiệt huyết với…; cần danh từ sau a lot of. enthusiasm for learning; show enthusiasm.",
+          "usage": "enthusiasm for learning; show enthusiasm",
+          "family": "enthuse (v); enthusiastic (adj); enthusiastically (adv)",
+          "example": "Her enthusiasm for history inspired the class.",
+          "translation": "Sự say mê lịch sử của cô ấy truyền cảm hứng cho lớp.",
+          "teacherSelected": true,
+          "questions": [
+            29
+          ],
+          "aliases": []
+        },
+        {
+          "term": "invent",
+          "meta": "VERB",
+          "meaning": "phát minh; bịa ra",
+          "note": "invent words: sáng tạo ra từ ngữ. invent a device; invent an excuse; discover a fact.",
+          "usage": "invent a device; invent an excuse; discover a fact",
+          "family": "invention (n): phát minh; inventor (n): nhà phát minh; inventive (adj): sáng tạo",
+          "example": "He invented an excuse for missing the meeting.",
+          "translation": "Anh ấy bịa ra một lý do cho việc vắng mặt trong cuộc họp.",
+          "teacherSelected": true,
+          "questions": [
+            51
+          ],
+          "question": 51,
+          "aliases": []
+        },
+        {
+          "question": 81,
+          "term": "although",
+          "meta": "CONJUNCTION",
+          "meaning": "mặc dù; nối hai ý tương phản",
+          "note": "although + mệnh đề → despite + cụm danh từ. Severely disabled → his severe disability. although + subject + verb.",
+          "usage": "although + subject + verb",
+          "example": "Although they looked sad, they were actually pleased.",
+          "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+          "family": "although/though + clause; despite/in spite of + noun or V-ing",
+          "teacherSelected": true,
+          "questions": [
+            81
+          ],
+          "aliases": []
+        },
+        {
+          "term": "know somebody by sight",
+          "meaning": "nhận ra ai qua diện mạo nhưng chưa quen thân",
+          "usage": "know someone by sight",
+          "example": "I know her by sight, but we have never spoken.",
+          "translation": "Tôi nhận ra cô ấy nhưng chúng tôi chưa từng nói chuyện.",
+          "family": "know – knew – known; sight (n): thị giác, việc nhìn thấy",
+          "meta": "PHRASE",
+          "note": "know somebody by sight: nhận ra ai qua diện mạo. know someone by sight.",
+          "question": 1,
+          "questions": [
+            1
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "play an important part in",
+          "meaning": "đóng vai trò quan trọng trong",
+          "usage": "play a part/role in something",
+          "example": "Sleep plays an important part in learning.",
+          "translation": "Giấc ngủ đóng vai trò quan trọng trong học tập.",
+          "family": "part/role: vai trò; in + danh từ hoặc V-ing",
+          "meta": "PHRASE",
+          "note": "play an important part in: đóng vai trò quan trọng trong… play a part/role in something.",
+          "question": 2,
+          "questions": [
+            2
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "break down",
+          "meaning": "suy sụp tinh thần; máy móc hỏng",
+          "usage": "break down in tears",
+          "example": "She broke down when she heard the news.",
+          "translation": "Cô ấy suy sụp khi nghe tin.",
+          "family": "break – broke – broken; a breakdown: sự hỏng hóc hoặc suy sụp",
+          "meta": "PHRASE",
+          "note": "break down: suy sụp tinh thần; quá khứ: broke down. break down in tears.",
+          "question": 3,
+          "questions": [
+            3
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "a ray of hope",
+          "meaning": "một tia hy vọng",
+          "usage": "offer a ray of hope",
+          "example": "The new treatment offers a ray of hope.",
+          "translation": "Phương pháp điều trị mới đem lại một tia hy vọng.",
+          "family": "ray (n): tia; a glimmer of hope: chút hy vọng",
+          "meta": "PHRASE",
+          "note": "a ray of hope: một tia hy vọng. offer a ray of hope.",
+          "question": 6,
+          "questions": [
+            6
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "for the time being",
+          "meaning": "tạm thời, trong lúc này",
+          "usage": "stay here for the time being",
+          "example": "We will stay here for the time being.",
+          "translation": "Chúng tôi sẽ ở đây tạm thời.",
+          "family": "for now có nghĩa gần tương đương",
+          "meta": "PHRASE",
+          "note": "for the time being: tạm thời. stay here for the time being.",
+          "question": 19,
+          "questions": [
+            19
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "regardless of",
+          "meaning": "bất kể, không phụ thuộc vào",
+          "usage": "regardless of + danh từ/mệnh đề danh từ",
+          "example": "Everyone is welcome regardless of age.",
+          "translation": "Mọi người đều được chào đón bất kể tuổi tác.",
+          "family": "regard (n/v); không dùng regardless to",
+          "meta": "PHRASE",
+          "note": "irrespective of = regardless of: bất kể. criteria: tiêu chí đánh giá. regardless of + danh từ/mệnh đề danh từ.",
+          "question": 25,
+          "questions": [
+            25
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "in addition to",
+          "meaning": "ngoài điều gì ra",
+          "usage": "in addition to + danh từ/V-ing",
+          "example": "She works in addition to studying.",
+          "translation": "Cô ấy đi làm bên cạnh việc học.",
+          "family": "in addition: ngoài ra, dùng nối câu; additional (adj)",
+          "meta": "PHRASE",
+          "note": "in addition to: ngoài… ra. in addition to + danh từ/V-ing.",
+          "question": 30,
+          "questions": [
+            30
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "word processor",
+          "meaning": "phần mềm hoặc thiết bị xử lý văn bản",
+          "usage": "use a word processor",
+          "example": "I wrote the report using a word processor.",
+          "translation": "Tôi viết báo cáo bằng phần mềm xử lý văn bản.",
+          "family": "word processing: việc xử lý văn bản",
+          "meta": "PHRASE",
+          "note": "word processor: công cụ xử lý văn bản. use a word processor.",
+          "question": 41,
+          "questions": [
+            41
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "run on electricity",
+          "meaning": "chạy bằng điện",
+          "usage": "run on electricity/gas",
+          "example": "The buses run on electricity.",
+          "translation": "Những xe buýt này chạy bằng điện.",
+          "family": "run – ran – run; on nêu nguồn năng lượng",
+          "meta": "PHRASE",
+          "note": "run on electricity: chạy bằng điện. run on electricity/gas.",
+          "question": 42,
+          "questions": [
+            42
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "a reminder of",
+          "meaning": "điều nhắc nhở, gợi nhớ về",
+          "usage": "a reminder of the past",
+          "example": "The photo is a reminder of our trip.",
+          "translation": "Bức ảnh gợi nhớ chuyến đi của chúng tôi.",
+          "family": "remind somebody of something; reminder (n)",
+          "meta": "PHRASE",
+          "note": "a reminder of: điều nhắc nhở về…; cần danh từ sau a powerful. a reminder of the past.",
+          "question": 50,
+          "questions": [
+            50
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "settle into",
+          "meaning": "thích nghi và quen dần với",
+          "usage": "settle into a job/routine",
+          "example": "It took her a month to settle into the job.",
+          "translation": "Cô ấy mất một tháng để quen với công việc.",
+          "family": "settle in: ổn định ở nơi mới, không có tân ngữ theo sau",
+          "meta": "PHRASE",
+          "note": "settle into a job: ổn định/thích nghi với công việc. Song song: would enter… and settle… settle into a job/routine.",
+          "question": 62,
+          "questions": [
+            62
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "pit A against B",
+          "meaning": "đặt A và B vào thế cạnh tranh",
+          "usage": "pit somebody against somebody",
+          "example": "The contest pits young artists against one another.",
+          "translation": "Cuộc thi đặt các nghệ sĩ trẻ vào thế tranh tài với nhau.",
+          "family": "pit – pitted – pitted; against nêu đối thủ",
+          "meta": "PHRASE",
+          "note": "pit A against B: đặt A và B vào thế cạnh tranh/đối đầu. pit somebody against somebody.",
+          "question": 67,
+          "questions": [
+            67
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "not least because",
+          "meaning": "đặc biệt là bởi vì",
+          "usage": "not least because + mệnh đề",
+          "example": "The trip was memorable, not least because of the food.",
+          "translation": "Chuyến đi đáng nhớ, đặc biệt là nhờ đồ ăn.",
+          "family": "not least: đặc biệt, nhấn mạnh một lý do đáng kể",
+          "meta": "PHRASE",
+          "note": "not least because: đặc biệt là bởi vì… not least because + mệnh đề.",
+          "question": 70,
+          "questions": [
+            70
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "take somebody’s advice",
+          "meaning": "làm theo lời khuyên của ai",
+          "usage": "take/follow someone's advice",
+          "example": "You should take your doctor's advice.",
+          "translation": "Bạn nên làm theo lời khuyên của bác sĩ.",
+          "family": "advice không đếm được; advise là động từ",
+          "meta": "PHRASE",
+          "note": "take somebody’s advice: làm theo lời khuyên. take/follow someone's advice.",
+          "question": 92,
+          "questions": [
+            92
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "go ahead",
+          "meaning": "được tiến hành; cứ tiếp tục",
+          "usage": "go ahead with a plan",
+          "example": "The event will go ahead despite the rain.",
+          "translation": "Sự kiện vẫn diễn ra dù trời mưa.",
+          "family": "go – went – gone; ahead chỉ hướng tiến lên",
+          "meta": "PHRASE",
+          "note": "go ahead: được tiến hành; according to plan: theo kế hoạch. go ahead with a plan.",
+          "question": 96,
+          "questions": [
+            96
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "according to plan",
+          "meaning": "đúng như kế hoạch",
+          "usage": "go according to plan",
+          "example": "Everything went according to plan.",
+          "translation": "Mọi việc diễn ra đúng kế hoạch.",
+          "family": "according to somebody: theo lời hoặc thông tin của ai",
+          "meta": "PHRASE",
+          "note": "go ahead: được tiến hành; according to plan: theo kế hoạch. go according to plan.",
+          "question": 96,
+          "questions": [
+            96
+          ],
+          "aliases": [],
+          "teacherSelected": true
+        },
+        {
+          "term": "thoroughly",
+          "meaning": "một cách kỹ lưỡng, cẩn thận và hoàn toàn",
+          "usage": "clean/check/examine something thoroughly",
+          "family": "thorough (adj); thoroughness (n)",
+          "example": "Wash the vegetables thoroughly.",
+          "translation": "Hãy rửa rau thật kỹ.",
+          "meta": "ADVERB",
+          "note": "thoroughly (adv): kỹ lưỡng; bổ nghĩa cho động từ clean. clean/check/examine something thoroughly.",
+          "question": 46,
+          "questions": [
+            46
+          ],
+          "aliases": [],
           "teacherSelected": true
         }
       ],

@@ -102,7 +102,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "It is advisable that… mang nghĩa đề nghị nên dùng giả định: that + chủ ngữ + động từ nguyên thể. Career objective là nội dung được viết nên cần bị động be written.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "objective"
+      ]
     },
     {
       "globalNumber": 2,
@@ -292,7 +294,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Bring back memories là gợi lại ký ức.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Bring back memories"
+      ]
     },
     {
       "globalNumber": 18,
@@ -499,7 +503,9 @@
       ],
       "displayAnswer": "illogical",
       "explanation": "Illogical as this might appear là cách đảo của although this might appear illogical.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "although"
+      ]
     },
     {
       "globalNumber": 35,
@@ -697,7 +703,10 @@
       ],
       "displayAnswer": "remains → remain",
       "explanation": "Chủ ngữ challenges là số nhiều; các cụm climate change và social inequality chỉ là ví dụ nằm trong such as.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "climate",
+        "inequality"
+      ]
     },
     {
       "globalNumber": 51,
@@ -1151,7 +1160,9 @@
       "prefix": "Hardly",
       "suffix": "",
       "fullSentence": "Hardly had he arrived when things went wrong.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Hardly"
+      ]
     },
     {
       "globalNumber": 88,
@@ -1374,7 +1385,9 @@
       "maxWords": 6,
       "blankAnswer": "Contrary to its harmless appearance",
       "teacherHighlights": [
-        "Contrary to"
+        "Contrary to",
+        "harmless",
+        "although"
       ]
     },
     {

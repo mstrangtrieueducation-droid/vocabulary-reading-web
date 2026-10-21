@@ -675,6 +675,150 @@
         100
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 31,
+      "term": "joyful",
+      "meta": "ADJECTIVE",
+      "meaning": "vui tươi, tràn đầy niềm vui",
+      "note": "Sau were cần tính từ: overjoyed/joyful/joyous = vui mừng. a joyful atmosphere; a joyful reunion.",
+      "usage": "a joyful atmosphere; a joyful reunion",
+      "example": "The music created a joyful atmosphere.",
+      "translation": "Âm nhạc tạo nên bầu không khí vui tươi.",
+      "family": "joy (n); joyful/joyous (adj); joyfully/joyously (adv)",
+      "teacherSelected": true,
+      "questions": [
+        31
+      ],
+      "aliases": []
+    },
+    {
+      "question": 38,
+      "term": "invasion",
+      "meta": "NOUN",
+      "meaning": "cuộc xâm nhập; đợt người đổ đến",
+      "note": "Trước invasion cần tính từ phủ định: impermissible/unpermitted = không được phép. an invasion of tourists; invade an area.",
+      "usage": "an invasion of tourists; invade an area",
+      "example": "The small town faces an invasion of tourists every autumn.",
+      "translation": "Thị trấn nhỏ đón một làn sóng du khách đổ tới mỗi mùa thu.",
+      "family": "invade (v); invasion (n); invader (n); invasive (adj)",
+      "teacherSelected": true,
+      "questions": [
+        38
+      ],
+      "aliases": []
+    },
+    {
+      "question": 41,
+      "term": "unfamiliar",
+      "meta": "ADJECTIVE",
+      "meaning": "không quen thuộc",
+      "note": "Be unfamiliar with something là không quen hoặc chưa biết rõ điều gì. an unfamiliar route; be unfamiliar with.",
+      "usage": "an unfamiliar route; be unfamiliar with",
+      "example": "The route was unfamiliar, but we arrived on time.",
+      "translation": "Tuyến đường lạ, nhưng chúng tôi vẫn đến đúng giờ.",
+      "family": "familiar/unfamiliar (adj); familiarity (n); familiarise/familiarize (v)",
+      "teacherSelected": true,
+      "questions": [
+        41
+      ],
+      "aliases": []
+    },
+    {
+      "question": 48,
+      "term": "adopt",
+      "meta": "VERB",
+      "meaning": "chọn và đưa vào sử dụng",
+      "note": "Sửa widespread adopt thành widespread adoption. Sau tính từ widespread và trước of renewable technologies cần danh từ chỉ sự áp dụng. adopt a policy/approach/solution.",
+      "usage": "adopt a policy/approach/solution",
+      "example": "The team adopted a simpler approach.",
+      "translation": "Nhóm chọn áp dụng một cách tiếp cận đơn giản hơn.",
+      "family": "adopt (v); adoption (n); adopted (adj); adapt (v khác nghĩa)",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ],
+      "aliases": []
+    },
+    {
+      "question": 55,
+      "term": "available",
+      "meta": "ADJECTIVE",
+      "meaning": "có sẵn; có thể sử dụng",
+      "note": "Available to certain people = có sẵn cho hoặc chỉ một số người tiếp cận được. available in + màu/kích cỡ; available to + người.",
+      "usage": "available in + màu/kích cỡ; available to + người",
+      "example": "The jacket is available in three colours.",
+      "translation": "Áo khoác có ba màu để chọn.",
+      "family": "availability (n: sự có sẵn); unavailable (adj)",
+      "teacherSelected": true,
+      "questions": [
+        55
+      ],
+      "aliases": []
+    },
+    {
+      "question": 63,
+      "term": "although",
+      "meta": "CONJUNCTION",
+      "meaning": "mặc dù; nối hai ý tương phản",
+      "note": "Though/although mở mệnh đề nhượng bộ: dù mọi người có thể không nhận ra, tin nhắn vẫn có thể gây xao nhãng. although + subject + verb.",
+      "usage": "although + subject + verb",
+      "example": "Although they looked sad, they were actually pleased.",
+      "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+      "family": "although/though + clause; despite/in spite of + noun or V-ing",
+      "teacherSelected": true,
+      "questions": [
+        63
+      ],
+      "aliases": []
+    },
+    {
+      "question": 68,
+      "term": "threat",
+      "meta": "NOUN",
+      "meaning": "mối đe doạ; nguy cơ gây hại",
+      "note": "Under threat from something = bị điều gì đe dọa. a threat to wildlife; face a threat from.",
+      "usage": "a threat to wildlife; face a threat from",
+      "example": "Pollution is a threat to river wildlife.",
+      "translation": "Ô nhiễm là mối đe doạ với sinh vật ở sông.",
+      "family": "threat (n); threaten (v); threatening/threatened (adj)",
+      "teacherSelected": true,
+      "questions": [
+        68
+      ],
+      "aliases": []
+    },
+    {
+      "term": "under threat",
+      "meaning": "bị đe dọa",
+      "usage": "under threat from something",
+      "example": "The forest is under threat from logging.",
+      "translation": "Khu rừng đang bị nạn khai thác gỗ đe dọa.",
+      "family": "threat (n); threaten (v); threatening (adj)",
+      "meta": "PHRASE",
+      "note": "Under threat from something = bị điều gì đe dọa. under threat from something.",
+      "question": 68,
+      "questions": [
+        68
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "owe something to someone",
+      "meaning": "có được điều gì nhờ ai",
+      "usage": "owe one's success to somebody",
+      "example": "I owe my success to my parents.",
+      "translation": "Tôi có được thành công nhờ bố mẹ.",
+      "family": "owe còn có nghĩa nợ; owing to: bởi vì",
+      "meta": "PHRASE",
+      "note": "Owe something to someone hoặc owe someone something diễn tả có được điều gì là nhờ người đó. owe one's success to somebody.",
+      "question": 88,
+      "questions": [
+        88
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

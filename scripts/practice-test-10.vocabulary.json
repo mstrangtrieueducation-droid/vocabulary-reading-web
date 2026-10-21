@@ -582,6 +582,88 @@
         100
       ],
       "question": 100
+    },
+    {
+      "question": 42,
+      "term": "extraordinary",
+      "meta": "ADJECTIVE",
+      "meaning": "khác thường; đặc biệt đáng chú ý",
+      "note": "Extraordinary talent là tài năng phi thường. an extraordinary object/achievement.",
+      "usage": "an extraordinary object/achievement",
+      "example": "The museum contains some extraordinary objects.",
+      "translation": "Bảo tàng có một số hiện vật rất khác thường.",
+      "family": "ordinary/extraordinary (adj); extraordinarily (adv)",
+      "teacherSelected": true,
+      "questions": [
+        42
+      ],
+      "aliases": []
+    },
+    {
+      "question": 44,
+      "term": "upbringing",
+      "meta": "NOUN",
+      "meaning": "sự nuôi dạy trong thời thơ ấu",
+      "note": "Unconventional upbringing là cách nuôi dạy khác thường, được minh họa bằng việc bị bắt học nhạc giữa đêm. a strict/happy upbringing; a child’s upbringing.",
+      "usage": "a strict/happy upbringing; a child’s upbringing",
+      "example": "Her upbringing taught her to respect other people.",
+      "translation": "Cách nuôi dạy thời nhỏ giúp cô ấy biết tôn trọng người khác.",
+      "family": "bring up (phrasal v); upbringing (n); bring–brought–brought",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ],
+      "aliases": []
+    },
+    {
+      "term": "imaginary / imaginative / imaginable / unimaginable",
+      "meta": "adjectives",
+      "meaning": "tưởng tượng, không có thật / giàu tưởng tượng / có thể tưởng tượng được; unimaginable: không thể tưởng tượng nổi",
+      "note": "Inconceivable = không thể hình dung nổi, gần nghĩa unimaginable. Trong đoạn ba, cách công nghệ ràng buộc con người là điều vài năm trước khó tưởng tượng. an imaginary friend; an imaginative solution; every imaginable problem; unimaginable damage. unimaginable suffering: nỗi đau khổ không thể tưởng tượng nổi..",
+      "usage": "an imaginary friend; an imaginative solution; every imaginable problem; unimaginable damage. unimaginable suffering: nỗi đau khổ không thể tưởng tượng nổi.",
+      "family": "imagine (v); imagination (n); imaginary/imaginative/imaginable/unimaginable (adj).",
+      "example": "The imaginative writer created an imaginary world.",
+      "translation": "Nhà văn giàu trí tưởng tượng tạo ra một thế giới không có thật.",
+      "aliases": [
+        "unimaginable"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        74
+      ],
+      "question": 74
+    },
+    {
+      "term": "loss of life",
+      "meaning": "thiệt hại về người, số người chết",
+      "usage": "cause loss of life",
+      "example": "Early warnings can prevent loss of life.",
+      "translation": "Cảnh báo sớm có thể ngăn thiệt hại về người.",
+      "family": "lose (v); loss (n); life – lives",
+      "meta": "PHRASE",
+      "note": "Loss of life là cụm chỉ thiệt hại về người. cause loss of life.",
+      "question": 52,
+      "questions": [
+        52
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "trigger off",
+      "meaning": "gây ra, khơi mào",
+      "usage": "trigger off a reaction",
+      "example": "The announcement triggered off a debate.",
+      "translation": "Thông báo đã khơi mào một cuộc tranh luận.",
+      "family": "trigger (v/n); trigger a reaction cũng đúng",
+      "meta": "PHRASE",
+      "note": "Trigger off something là gây ra hoặc khởi phát một chuỗi sự việc. trigger off a reaction.",
+      "question": 58,
+      "questions": [
+        58
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

@@ -354,7 +354,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Made mainly from ... là cụm quá khứ phân từ rút gọn từ this glass bottle is made ..., diễn tả vật được làm từ nguyên liệu.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "mainly"
+      ]
     },
     {
       "globalNumber": 22,
@@ -454,7 +456,9 @@
       ],
       "displayAnswer": "A",
       "explanation": "I’m open to feedback = tôi sẵn lòng nghe góp ý; đáp lại tôn trọng, không công kích.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "feedback"
+      ]
     },
     {
       "globalNumber": 30,
@@ -607,6 +611,7 @@
       "displayAnswer": "debunk",
       "explanation": "To đứng trước và the false claim làm tân ngữ nên cần động từ.\ndebunk = vạch rõ sự sai lệch; bác bỏ điều được tin là đúng.",
       "teacherHighlights": [
+        "claim",
         "debunk"
       ]
     },
@@ -686,6 +691,7 @@
       "displayAnswer": "utilization → utilities / utilization → services / utilization → infrastructure / utilization → facilities",
       "explanation": "Public utilities là các hệ thống dịch vụ công như điện, nước; public services/infrastructure/facilities cũng sửa được theo ngữ cảnh hạ tầng bị sức ép.",
       "teacherHighlights": [
+        "infrastructure",
         "facilities"
       ]
     },
@@ -700,7 +706,9 @@
       ],
       "displayAnswer": "Moreover of → Moreover / Moreover of → Furthermore / Moreover of → Additionally",
       "explanation": "Moreover là trạng từ nối bổ sung ý và không đi với of.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Moreover"
+      ]
     },
     {
       "globalNumber": 49,
@@ -898,7 +906,9 @@
       ],
       "displayAnswer": "since",
       "explanation": "Had shown improvement since the year 2000 nói sự cải thiện tính từ mốc 2000 đến thời điểm 2015 đang xét.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "improvement"
+      ]
     },
     {
       "globalNumber": 66,
@@ -964,7 +974,9 @@
       ],
       "displayAnswer": "in / for",
       "explanation": "Investment in health and infrastructure là đầu tư vào y tế và hạ tầng.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "infrastructure"
+      ]
     },
     {
       "globalNumber": 71,
@@ -1008,7 +1020,11 @@
       ],
       "displayAnswer": "A",
       "explanation": "Accessible online = có thể truy cập hoặc sử dụng qua mạng; available gần nghĩa nhất. Dependable là đáng tin cậy, visible là nhìn thấy được và audible là nghe thấy được.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Accessible",
+        "available",
+        "Dependable"
+      ]
     },
     {
       "globalNumber": 75,
@@ -1019,7 +1035,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Another tool = thêm một công cụ hỗ trợ bên cạnh những biện pháp khác. C giữ đúng mức độ này bằng additional support.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "additional"
+      ]
     },
     {
       "globalNumber": 76,
@@ -1091,7 +1109,10 @@
       "suffix": "",
       "fullSentence": "There has been a considerable fall in the value of dollars in the past week.",
       "explanation": "Đổi has fallen considerably thành There has been a considerable fall ...: động từ fall chuyển thành danh từ và trạng từ considerably chuyển thành tính từ considerable.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "considerable",
+        "considerable"
+      ]
     },
     {
       "globalNumber": 82,

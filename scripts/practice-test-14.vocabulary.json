@@ -202,7 +202,8 @@
       ],
       "aliases": [
         "Put A down to",
-        "Put something down to"
+        "Put something down to",
+        "Put A down to B"
       ]
     },
     {
@@ -549,6 +550,74 @@
         96
       ],
       "aliases": []
+    },
+    {
+      "term": "largely / mainly",
+      "meta": "ADVERBS",
+      "meaning": "chủ yếu; phần lớn",
+      "note": "Cấu trúc chủ động distinguishes man from other animals đổi thành man is distinguished from…by… Từ mainly giữ ý yếu tố chủ yếu. largely due to something; largely unchanged; mainly because; consist mainly of.",
+      "usage": "largely due to something; largely unchanged; mainly because; consist mainly of",
+      "family": "large (adj): lớn; largely (adv): phần lớn; main (adj): chính; mainly (adv): chủ yếu",
+      "example": "The delay was largely due to bad weather.",
+      "translation": "Sự chậm trễ chủ yếu là do thời tiết xấu.",
+      "teacherSelected": true,
+      "questions": [
+        90
+      ],
+      "aliases": [
+        "mainly"
+      ],
+      "question": 90
+    },
+    {
+      "term": "make (better) use of",
+      "meaning": "tận dụng (tốt hơn)",
+      "usage": "make use of something",
+      "example": "We should make better use of our time.",
+      "translation": "Chúng ta nên tận dụng thời gian tốt hơn.",
+      "family": "make – made – made; useful: hữu ích",
+      "meta": "PHRASE",
+      "note": "Make creative use of something là sử dụng thứ gì theo cách sáng tạo. make use of something.",
+      "question": 29,
+      "questions": [
+        29
+      ],
+      "aliases": [
+        "Make creative use of"
+      ],
+      "teacherSelected": true
+    },
+    {
+      "term": "go to extremes",
+      "meaning": "hành động quá mức, đến cực đoan",
+      "usage": "go to extremes to do something",
+      "example": "Some people go to extremes to look younger.",
+      "translation": "Một số người làm mọi cách quá mức để trông trẻ hơn.",
+      "family": "extreme (adj/n); extremely (adv)",
+      "meta": "PHRASE",
+      "note": "Go to extremes là đi đến những mức nỗ lực rất lớn hoặc cực đoan. go to extremes to do something.",
+      "question": 49,
+      "questions": [
+        49
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "set foot on",
+      "meaning": "đặt chân lên, đến một nơi",
+      "usage": "set foot on/in a place",
+      "example": "It was the first time I had set foot on an island.",
+      "translation": "Đó là lần đầu tôi đặt chân lên một hòn đảo.",
+      "family": "set – set – set; foot số ít trong cụm này",
+      "meta": "PHRASE",
+      "note": "Set foot on a place = đặt chân đến nơi đó. Sau of trong the possibility of dùng V-ing: people setting foot on Mars. set foot on/in a place.",
+      "question": 67,
+      "questions": [
+        67
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

@@ -113,7 +113,9 @@
       ],
       "displayAnswer": "B",
       "explanation": "Not worth all that much = không đáng giá đến mức ấy, ở đây là mức 500 đô-la.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "worth"
+      ]
     },
     {
       "globalNumber": 3,
@@ -176,7 +178,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "There are plenty more fish in the sea là lời an ủi sau khi chia tay: vẫn còn nhiều người khác có thể phù hợp với bạn.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "There are plenty more fish in the sea"
+      ]
     },
     {
       "globalNumber": 8,
@@ -717,7 +721,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Raise public awareness of something là nâng cao nhận thức cộng đồng về một việc.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Raise public awareness"
+      ]
     },
     {
       "globalNumber": 53,
@@ -888,7 +894,9 @@
       ],
       "displayAnswer": "our",
       "explanation": "Make our way to the restaurant car = đi đến toa ăn.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Make our way to"
+      ]
     },
     {
       "globalNumber": 67,
@@ -1078,7 +1086,9 @@
       "prefix": "Scarcely",
       "suffix": "",
       "fullSentence": "Scarcely had the new editor been appointed to the post when he fell ill.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Scarcely"
+      ]
     },
     {
       "globalNumber": 83,
@@ -1250,7 +1260,10 @@
       "minWords": 2,
       "maxWords": 6,
       "blankAnswer": "expressed their disapproval of",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Disapproval",
+        "disapproval"
+      ]
     },
     {
       "globalNumber": 93,

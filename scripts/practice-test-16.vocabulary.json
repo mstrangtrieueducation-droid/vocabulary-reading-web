@@ -521,6 +521,102 @@
         100
       ],
       "aliases": []
+    },
+    {
+      "question": 1,
+      "term": "although",
+      "meta": "CONJUNCTION",
+      "meaning": "mặc dù; nối hai ý tương phản",
+      "note": "Although + mệnh đề diễn tả sự tương phản: một số từ phát âm giống nhau dù cách viết khác nhau. although + subject + verb.",
+      "usage": "although + subject + verb",
+      "example": "Although they looked sad, they were actually pleased.",
+      "translation": "Mặc dù trông buồn, thực ra họ lại vui.",
+      "family": "although/though + clause; despite/in spite of + noun or V-ing",
+      "teacherSelected": true,
+      "questions": [
+        1
+      ],
+      "aliases": []
+    },
+    {
+      "question": 28,
+      "term": "increasingly",
+      "meta": "ADVERB",
+      "meaning": "ngày càng",
+      "note": "Chỗ trống bổ nghĩa cho tính từ hot trong increasingly hot, dry summers, nên cần trạng từ increasingly = ngày càng. increasingly difficult/popular; increasingly longer gaps.",
+      "usage": "increasingly difficult/popular; increasingly longer gaps",
+      "example": "The instructions became increasingly clear.",
+      "translation": "Các hướng dẫn ngày càng rõ ràng.",
+      "family": "increase (n/v); increasing (adj); increasingly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        28
+      ],
+      "aliases": []
+    },
+    {
+      "term": "issue",
+      "meta": "verb / noun",
+      "meaning": "ban hành, phát hành; vấn đề; số báo",
+      "note": "Issue warnings = phát cảnh báo. issue a warning/report/passport; address an issue = xử lý vấn đề; the latest issue of a magazine..",
+      "usage": "issue a warning/report/passport; address an issue = xử lý vấn đề; the latest issue of a magazine.",
+      "family": "issue (n/v); issued (quá khứ); issuing (dạng -ing).",
+      "example": "The authorities issued a warning about the approaching storm.",
+      "translation": "Nhà chức trách đưa ra cảnh báo về cơn bão đang đến.",
+      "teacherSelected": true,
+      "questions": [
+        58
+      ],
+      "question": 58,
+      "aliases": []
+    },
+    {
+      "term": "put some money aside",
+      "meaning": "để dành tiền",
+      "usage": "put money aside for something",
+      "example": "I put some money aside every month.",
+      "translation": "Tôi để dành một ít tiền mỗi tháng.",
+      "family": "put – put – put; save up: tiết kiệm dần",
+      "meta": "PHRASE",
+      "note": "Put some money aside every month là dành một khoản tiền mỗi tháng để dùng sau này, ở đây cho nghỉ hưu.\nput money aside = để dành tiền. put money aside for something.",
+      "question": 8,
+      "questions": [
+        8
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "in advance",
+      "meaning": "trước, sớm hơn thời điểm cần",
+      "usage": "book/pay in advance",
+      "example": "You must book your seat in advance.",
+      "translation": "Bạn phải đặt chỗ trước.",
+      "family": "advance (n/v); beforehand có nghĩa tương tự",
+      "meta": "PHRASE",
+      "note": "In advance là cụm cố định, = trước, từ trước. book/pay in advance.",
+      "question": 33,
+      "questions": [
+        33
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "get hold of",
+      "meaning": "kiếm được, nắm được hoặc liên lạc được",
+      "usage": "get hold of a book/somebody",
+      "example": "I finally got hold of a copy of the book.",
+      "translation": "Cuối cùng tôi cũng kiếm được một bản cuốn sách.",
+      "family": "get – got – got; nghĩa phụ thuộc tân ngữ",
+      "meta": "PHRASE",
+      "note": "Get hold of something = có được/thu thập được thứ gì. get hold of a book/somebody.",
+      "question": 53,
+      "questions": [
+        53
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

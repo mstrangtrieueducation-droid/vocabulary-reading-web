@@ -607,6 +607,122 @@
         100
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 2,
+      "term": "worth",
+      "meta": "ADJECTIVE",
+      "meaning": "có giá trị, đáng giá",
+      "note": "Worth đứng sau be để nói giá trị. Khi so sánh giá tiền, dùng worth as much as; không dùng worth of trước số tiền.",
+      "usage": "be worth + số tiền; be worth as much as something",
+      "example": "The painting is worth five hundred dollars.",
+      "translation": "Bức tranh trị giá năm trăm đô-la.",
+      "family": "worth (n/adj); worthy/worthwhile (adj)",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ],
+      "aliases": []
+    },
+    {
+      "term": "barely / hardly / scarcely",
+      "meta": "adverbs",
+      "meaning": "hầu như không; chỉ vừa đủ",
+      "note": "Scarcely had + S + V3 + when + quá khứ đơn: vừa mới…thì…; được bổ nhiệm → had been appointed. barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi..",
+      "usage": "barely enough = chỉ vừa đủ; hardly/scarcely any = gần như không có; hardly ever = hiếm khi.",
+      "family": "bare → barely; scarce → scarcely. Hard và hardly khác nghĩa trong cách dùng thông thường.",
+      "example": "She could barely hear the speaker over the noise.",
+      "translation": "Cô ấy gần như không nghe được người nói vì tiếng ồn.",
+      "teacherSelected": true,
+      "questions": [
+        82
+      ],
+      "aliases": [
+        "Scarcely"
+      ],
+      "question": 82
+    },
+    {
+      "question": 82,
+      "term": "scarcely",
+      "meta": "ADVERB",
+      "meaning": "hầu như không; vừa mới ... thì",
+      "note": "Scarcely had + S + V3 + when + quá khứ đơn: vừa mới…thì…; được bổ nhiệm → had been appointed. Scarcely had S + past participle when S + past simple.",
+      "usage": "Scarcely had S + past participle when S + past simple",
+      "example": "Scarcely had we sat down when the lights went out.",
+      "translation": "Chúng tôi vừa ngồi xuống thì đèn tắt.",
+      "family": "scarce (adj, khan hiếm); scarcity (n); scarcely (adv)",
+      "teacherSelected": true,
+      "questions": [
+        82
+      ],
+      "aliases": []
+    },
+    {
+      "question": 92,
+      "term": "disapproval",
+      "meta": "noun",
+      "meaning": "sự không tán thành",
+      "note": "Disapproval of something là sự phản đối/không tán thành điều gì. Express/show/voice disapproval chuyển ý said they were against sang cụm danh từ. show disapproval; disapprove of something.",
+      "usage": "show disapproval; disapprove of something",
+      "family": "approve (v); approval (n); approving (adj)",
+      "example": "Her silence showed her disapproval.",
+      "translation": "Sự im lặng cho thấy cô ấy không tán thành.",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ],
+      "aliases": []
+    },
+    {
+      "term": "there are plenty more fish in the sea",
+      "meaning": "vẫn còn nhiều người hoặc cơ hội khác",
+      "usage": "there are plenty more fish in the sea",
+      "example": "Don't worry about the rejection; there are plenty more fish in the sea.",
+      "translation": "Đừng buồn vì bị từ chối; vẫn còn nhiều cơ hội khác.",
+      "family": "thành ngữ thường dùng để an ủi sau khi một mối quan hệ kết thúc",
+      "meta": "PHRASE",
+      "note": "There are plenty more fish in the sea là lời an ủi sau khi chia tay: vẫn còn nhiều người khác có thể phù hợp với bạn. there are plenty more fish in the sea.",
+      "question": 7,
+      "questions": [
+        7
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "raise public awareness",
+      "meaning": "nâng cao nhận thức của công chúng",
+      "usage": "raise awareness of something",
+      "example": "The campaign raises public awareness of pollution.",
+      "translation": "Chiến dịch nâng cao nhận thức cộng đồng về ô nhiễm.",
+      "family": "aware (adj); awareness (n); raise – raised",
+      "meta": "PHRASE",
+      "note": "Raise public awareness of something là nâng cao nhận thức cộng đồng về một việc. raise awareness of something.",
+      "question": 52,
+      "questions": [
+        52
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "make one’s way to",
+      "meaning": "đi, tiến đến một nơi",
+      "usage": "make one's way to a place",
+      "example": "We made our way to the station.",
+      "translation": "Chúng tôi đi đến nhà ga.",
+      "family": "make – made – made; find one's way: tìm đường",
+      "meta": "PHRASE",
+      "note": "Make our way to the restaurant car = đi đến toa ăn. make one's way to a place.",
+      "question": 66,
+      "questions": [
+        66
+      ],
+      "aliases": [
+        "Make our way to"
+      ],
+      "teacherSelected": true
     }
   ]
 }

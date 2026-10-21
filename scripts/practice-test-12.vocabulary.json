@@ -690,6 +690,168 @@
         100
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 37,
+      "term": "expertise",
+      "meta": "UNCOUNTABLE NOUN",
+      "meaning": "kiến thức hoặc kỹ năng chuyên môn",
+      "note": "Practical musical expertise là chuyên môn âm nhạc mang tính thực hành. expertise in a field; technical expertise.",
+      "usage": "expertise in a field; technical expertise",
+      "example": "She has considerable expertise in editing.",
+      "translation": "Cô ấy có chuyên môn đáng kể trong việc biên tập.",
+      "family": "expert (n/adj); expertly (adv); expertise (n); expertness (n, ít thông dụng)",
+      "teacherSelected": true,
+      "questions": [
+        37
+      ],
+      "aliases": []
+    },
+    {
+      "question": 48,
+      "term": "greenwashing",
+      "meta": "NOUN",
+      "meaning": "tô xanh hình ảnh bằng tuyên bố môi trường gây hiểu lầm",
+      "note": "Claiming to be eco-friendly là cụm V-ing bổ sung cách các công ty thực hiện greenwashing. accuse a company of greenwashing; misleading green claims.",
+      "usage": "accuse a company of greenwashing; misleading green claims",
+      "example": "Clear evidence helps consumers distinguish genuine progress from greenwashing.",
+      "translation": "Bằng chứng rõ ràng giúp người tiêu dùng phân biệt tiến bộ thật với việc tô xanh hình ảnh.",
+      "family": "greenwash (v/n); greenwashing (n); environmental claim (cụm danh từ liên quan)",
+      "teacherSelected": true,
+      "questions": [
+        48
+      ],
+      "aliases": []
+    },
+    {
+      "question": 66,
+      "term": "beneficial",
+      "meta": "adjective",
+      "meaning": "có lợi",
+      "note": "May + động từ nguyên mẫu diễn đạt khả năng: may have/produce/exert/offer beneficial effects. be beneficial to/for somebody.",
+      "usage": "be beneficial to/for somebody",
+      "example": "Regular exercise is beneficial to health.",
+      "translation": "Tập thể dục đều đặn có lợi cho sức khỏe.",
+      "family": "benefit (n/v): lợi ích/được lợi; beneficially (adv); beneficiary: người thụ hưởng.",
+      "teacherSelected": true,
+      "questions": [
+        66
+      ],
+      "aliases": []
+    },
+    {
+      "term": "call for",
+      "meta": "phrasal verb",
+      "meaning": "đòi hỏi; kêu gọi",
+      "note": "Require more than traditional beliefs = cần nhiều hơn niềm tin truyền thống: phải dựa vào nghiên cứu được thiết kế cẩn thận. a job calls for patience/skill; call for action/a change; require something gần nghĩa ở nghĩa đòi hỏi..",
+      "usage": "a job calls for patience/skill; call for action/a change; require something gần nghĩa ở nghĩa đòi hỏi.",
+      "family": "call (n/v); called/calling (dạng động từ). For là phần cần giữ trong cụm.",
+      "example": "Teaching young children calls for patience and careful preparation.",
+      "translation": "Dạy trẻ nhỏ đòi hỏi sự kiên nhẫn và chuẩn bị kỹ.",
+      "aliases": [
+        "Require"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        70
+      ],
+      "question": 70
+    },
+    {
+      "term": "have your wits about you",
+      "meaning": "giữ tỉnh táo, nhanh trí",
+      "usage": "have your wits about you",
+      "example": "You need to have your wits about you when driving.",
+      "translation": "Bạn cần luôn tỉnh táo khi lái xe.",
+      "family": "wits dùng số nhiều; keep one's wits about oneself",
+      "meta": "PHRASE",
+      "note": "Have your wits about you là tỉnh táo, nhanh trí và chú ý để xử lý tình huống.\nhave one’s wits about one = tỉnh táo, nhanh trí. have your wits about you.",
+      "question": 25,
+      "questions": [
+        25
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "in somebody’s absence",
+      "meaning": "khi ai vắng mặt",
+      "usage": "in my/her/their absence",
+      "example": "Please deal with calls in my absence.",
+      "translation": "Xin hãy xử lý cuộc gọi khi tôi vắng mặt.",
+      "family": "absent (adj); absence (n); present: có mặt",
+      "meta": "PHRASE",
+      "note": "In somebody’s absence = khi người đó vắng mặt. in my/her/their absence.",
+      "question": 44,
+      "questions": [
+        44
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "reach one’s prime",
+      "meaning": "đạt thời kỳ đỉnh cao",
+      "usage": "reach/be in one's prime",
+      "example": "The athlete reached her prime at twenty-five.",
+      "translation": "Vận động viên đạt đỉnh cao ở tuổi hai mươi lăm.",
+      "family": "prime (n): thời kỳ sung sức nhất",
+      "meta": "PHRASE",
+      "note": "Reach one’s prime là đạt giai đoạn sung sức hoặc đỉnh cao. reach/be in one's prime.",
+      "question": 53,
+      "questions": [
+        53
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "voice a protest",
+      "meaning": "lên tiếng phản đối",
+      "usage": "voice a protest/concern",
+      "example": "Residents voiced a protest against the plan.",
+      "translation": "Cư dân lên tiếng phản đối kế hoạch.",
+      "family": "voice ở đây là động từ, không chỉ danh từ giọng nói",
+      "meta": "PHRASE",
+      "note": "Voice a protest là bày tỏ sự phản đối. voice a protest/concern.",
+      "question": 57,
+      "questions": [
+        57
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "ingredient",
+      "meaning": "nguyên liệu, thành phần",
+      "usage": "the ingredients in a dish",
+      "example": "Flour is the main ingredient.",
+      "translation": "Bột mì là nguyên liệu chính.",
+      "family": "ingredient thường đếm được: an ingredient, ingredients",
+      "meta": "NOUN",
+      "note": "Be used as an ingredient = được dùng làm một thành phần. the ingredients in a dish.",
+      "question": 61,
+      "questions": [
+        61
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "make an immediate impression on",
+      "meaning": "gây ấn tượng ngay với ai",
+      "usage": "make an impression on somebody",
+      "example": "Her confidence made an immediate impression on us.",
+      "translation": "Sự tự tin của cô ấy lập tức gây ấn tượng với chúng tôi.",
+      "family": "impress (v); impression (n); impressive (adj)",
+      "meta": "PHRASE",
+      "note": "Make an immediate impression on somebody là gây ấn tượng ngay với ai.\nmake an impression on = gây ấn tượng với. make an impression on somebody.",
+      "question": 84,
+      "questions": [
+        84
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

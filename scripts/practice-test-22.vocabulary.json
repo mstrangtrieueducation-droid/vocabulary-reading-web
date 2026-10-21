@@ -639,6 +639,155 @@
         97
       ],
       "teacherSelected": true
+    },
+    {
+      "question": 18,
+      "term": "worth",
+      "meta": "ADJECTIVE",
+      "meaning": "có giá trị, đáng giá",
+      "note": "Worth đứng sau be để nói giá trị. Khi so sánh giá tiền, dùng worth as much as; không dùng worth of trước số tiền.",
+      "usage": "be worth + số tiền; be worth as much as something",
+      "example": "The painting is worth five hundred dollars.",
+      "translation": "Bức tranh trị giá năm trăm đô-la.",
+      "family": "worth (n/adj); worthy/worthwhile (adj)",
+      "teacherSelected": true,
+      "questions": [
+        18
+      ],
+      "aliases": []
+    },
+    {
+      "term": "call for",
+      "meta": "phrasal verb",
+      "meaning": "đòi hỏi; kêu gọi",
+      "note": "Require that + chủ ngữ + động từ nguyên thể là cấu trúc giả định mang nghĩa yêu cầu. Vì vậy each player be responsible, không chia be theo số ít. a job calls for patience/skill; call for action/a change; require something gần nghĩa ở nghĩa đòi hỏi..",
+      "usage": "a job calls for patience/skill; call for action/a change; require something gần nghĩa ở nghĩa đòi hỏi.",
+      "family": "call (n/v); called/calling (dạng động từ). For là phần cần giữ trong cụm.",
+      "example": "Teaching young children calls for patience and careful preparation.",
+      "translation": "Dạy trẻ nhỏ đòi hỏi sự kiên nhẫn và chuẩn bị kỹ.",
+      "aliases": [
+        "Require"
+      ],
+      "teacherSelected": true,
+      "questions": [
+        19
+      ],
+      "question": 19
+    },
+    {
+      "term": "as long as / so long as / provided / providing",
+      "meta": "CONJUNCTIONS",
+      "meaning": "miễn là; với điều kiện là",
+      "note": "Provided (that) nghĩa là với điều kiện là. Sau provided dùng mệnh đề hiện tại đơn you complete để nói điều kiện cho phép tham gia. as/so long as + S + V; provided/providing (that) + S + V.",
+      "usage": "as/so long as + S + V; provided/providing (that) + S + V",
+      "family": "condition (n): điều kiện; conditional (adj): có điều kiện; provide (v): cung cấp",
+      "example": "You may borrow the book as long as you return it on Friday.",
+      "translation": "Bạn có thể mượn sách miễn là trả lại vào thứ Sáu.",
+      "teacherSelected": true,
+      "questions": [
+        92
+      ],
+      "aliases": [
+        "Provided",
+        "provided"
+      ],
+      "question": 92
+    },
+    {
+      "term": "break a leg",
+      "meaning": "chúc may mắn, thường trước buổi diễn",
+      "usage": "say 'Break a leg!' to a performer",
+      "example": "You're on stage next. Break a leg!",
+      "translation": "Sắp đến lượt bạn lên sân khấu rồi. Chúc may mắn!",
+      "family": "thành ngữ, không hiểu là làm gãy chân",
+      "meta": "PHRASE",
+      "note": "Break a leg là lời chúc may mắn thân mật, phù hợp trước kỳ thi. say 'Break a leg!' to a performer.",
+      "question": 29,
+      "questions": [
+        29
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "you live and learn",
+      "meaning": "sống thì còn học hỏi, vừa biết thêm một điều",
+      "usage": "you live and learn",
+      "example": "I didn't know the shop closed so early. You live and learn!",
+      "translation": "Tôi không biết cửa hàng đóng sớm thế. Lại biết thêm một điều!",
+      "family": "live ở đây là sống, không phải tính từ trực tiếp",
+      "meta": "PHRASE",
+      "note": "You live and learn là cách thừa nhận mình vừa rút ra bài học từ trải nghiệm không hay. you live and learn.",
+      "question": 30,
+      "questions": [
+        30
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "count one’s chickens before they are hatched",
+      "meaning": "vội tin sẽ thành công khi chưa chắc chắn",
+      "usage": "don't count your chickens before they are hatched",
+      "example": "Don't count your chickens before they are hatched; the result is not out yet.",
+      "translation": "Đừng mừng quá sớm; kết quả vẫn chưa có.",
+      "family": "chickens số nhiều; hatch: nở; thường dùng dạng phủ định",
+      "meta": "PHRASE",
+      "note": "Count one’s chickens before they are hatched là tính trước thành quả khi chưa chắc có, tương tự tính cua trong lỗ.\ncount one’s chickens before they hatch = tính trước thành quả khi chưa chắc có. don't count your chickens before they are hatched.",
+      "question": 34,
+      "questions": [
+        34
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "in the media spotlight",
+      "meaning": "được truyền thông chú ý nhiều",
+      "usage": "be in the media spotlight",
+      "example": "The young singer is in the media spotlight.",
+      "translation": "Ca sĩ trẻ đang được truyền thông chú ý.",
+      "family": "spotlight (n/v); media: truyền thông",
+      "meta": "PHRASE",
+      "note": "In the media spotlight là ở tâm điểm chú ý của truyền thông; under the media spotlight cũng được dùng và đúng nghĩa. be in the media spotlight.",
+      "question": 61,
+      "questions": [
+        61
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "make/hit/grab the headlines",
+      "meaning": "trở thành tin nổi bật trên báo",
+      "usage": "make/hit/grab the headlines",
+      "example": "The discovery made the headlines.",
+      "translation": "Phát hiện này trở thành tin nổi bật.",
+      "family": "headline (n): tiêu đề báo; headlines trong cụm thường số nhiều",
+      "meta": "PHRASE",
+      "note": "Make/hit/grab the headlines là trở thành nội dung nổi bật trên báo. make/hit/grab the headlines.",
+      "question": 62,
+      "questions": [
+        62
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "lose one’s cool",
+      "meaning": "mất bình tĩnh",
+      "usage": "lose/keep your cool",
+      "example": "She never loses her cool under pressure.",
+      "translation": "Cô ấy không bao giờ mất bình tĩnh khi chịu áp lực.",
+      "family": "lose – lost – lost; cool ở đây là danh từ chỉ sự bình tĩnh",
+      "meta": "PHRASE",
+      "note": "Lose one’s cool là mất bình tĩnh, khớp chủ đề tức giận nơi công cộng. lose/keep your cool.",
+      "question": 65,
+      "questions": [
+        65
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ]
 }

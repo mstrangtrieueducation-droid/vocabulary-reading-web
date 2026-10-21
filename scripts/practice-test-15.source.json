@@ -400,7 +400,9 @@
       ],
       "displayAnswer": "evaluation / self-evaluation / self evaluation",
       "explanation": "Evaluation là việc đánh giá; emphasis on evaluation by individual schools nói việc mỗi trường thực hiện đánh giá.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "individual"
+      ]
     },
     {
       "globalNumber": 26,
@@ -482,7 +484,9 @@
       ],
       "displayAnswer": "effects → affects",
       "explanation": "Affect là động từ tác động đến; effect thường là danh từ ảnh hưởng hoặc động từ tạo ra.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Affect"
+      ]
     },
     {
       "globalNumber": 32,
@@ -560,7 +564,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Hardly see any stars = hầu như không nhìn thấy sao, khớp ánh sáng thành phố che lấp bầu trời.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Hardly"
+      ]
     },
     {
       "globalNumber": 39,
@@ -675,6 +681,7 @@
       "displayAnswer": "C",
       "explanation": "Tossing and turning là trở mình liên tục vì khó ngủ. Đây là cặp từ cố định thường đi cùng nhau.\ntoss and turn = trằn trọc, trở mình liên tục.",
       "teacherHighlights": [
+        "Tossing and turning",
         "toss and turn"
       ]
     },
@@ -725,7 +732,8 @@
       "displayAnswer": "D",
       "explanation": "Substantiate a claim là đưa bằng chứng đáng tin để chứng minh một khẳng định.",
       "teacherHighlights": [
-        "Substantiate"
+        "Substantiate",
+        "claim"
       ]
     },
     {
@@ -783,7 +791,10 @@
       ],
       "displayAnswer": "B",
       "explanation": "Beset somebody là gây khó khăn, đeo bám ai, phù hợp insomnia besets people.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Beset",
+        "beset"
+      ]
     },
     {
       "globalNumber": 58,
@@ -1167,7 +1178,9 @@
       "prefix": "The teacher advised",
       "suffix": ".",
       "fullSentence": "The teacher advised us to check the evidence before sharing the story.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Advise"
+      ]
     },
     {
       "globalNumber": 88,
@@ -1211,7 +1224,10 @@
       "prefix": "I could hardly",
       "suffix": ".",
       "fullSentence": "I could hardly hear the announcement because the music was so loud.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Hardly",
+        "barely"
+      ]
     },
     {
       "globalNumber": 91,
@@ -1233,7 +1249,9 @@
       "maxWords": 6,
       "blankAnswer": "succeeded in putting out the fire",
       "teacherHighlights": [
-        "Succeed in"
+        "Succeed in",
+        "putting out",
+        "put out"
       ]
     },
     {

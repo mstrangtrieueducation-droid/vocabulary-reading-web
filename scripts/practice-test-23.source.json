@@ -137,7 +137,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Cấu trúc nhượng bộ là tính từ + as + chủ ngữ + động từ: Ugly looking as it is = Although it is ugly looking.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Although"
+      ]
     },
     {
       "globalNumber": 5,
@@ -402,6 +404,7 @@
       "displayAnswer": "D",
       "explanation": "Adopt/keep a low profile = hạn chế thu hút sự chú ý, nhất là trước công chúng.",
       "teacherHighlights": [
+        "Adopt",
         "keep a low profile"
       ]
     },
@@ -475,7 +478,9 @@
       ],
       "displayAnswer": "D",
       "explanation": "An outbreak of violence là sự bùng phát bạo lực.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "outbreak"
+      ]
     },
     {
       "globalNumber": 33,
@@ -499,7 +504,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Sense of self là nhận thức về bản thân: mình là ai, tin vào điều gì và có giá trị nào.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Sense of self"
+      ]
     },
     {
       "globalNumber": 35,
@@ -510,7 +517,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Quality time là thời gian dành sự quan tâm thực sự cho người thân, không chỉ ở cạnh mà bận việc khác.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Quality time"
+      ]
     },
     {
       "globalNumber": 36,
@@ -646,7 +655,10 @@
       ],
       "displayAnswer": "with → to",
       "explanation": "Danh từ dedication đi với to khi nêu điều mình tận tâm theo đuổi: dedication to studying.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "dedication",
+        "dedication"
+      ]
     },
     {
       "globalNumber": 47,
@@ -712,7 +724,9 @@
       ],
       "displayAnswer": "C",
       "explanation": "Claim that + mệnh đề là cho rằng hoặc khẳng định một điều.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Claim"
+      ]
     },
     {
       "globalNumber": 53,
@@ -829,7 +843,9 @@
       ],
       "displayAnswer": "on",
       "explanation": "On the part of the teachers = từ phía các giáo viên.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "On the part of"
+      ]
     },
     {
       "globalNumber": 63,
@@ -877,7 +893,9 @@
       ],
       "displayAnswer": "somehow",
       "explanation": "Somehow or other = bằng cách nào đó, không rõ chính xác ra sao.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Somehow or other"
+      ]
     },
     {
       "globalNumber": 67,
@@ -946,7 +964,10 @@
       ],
       "displayAnswer": "A",
       "explanation": "Elapse = trôi qua, thường có chủ ngữ chỉ thời gian. As time elapses tương đương as time passes.",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "Elapse",
+        "elapse"
+      ]
     },
     {
       "globalNumber": 73,
@@ -991,6 +1012,7 @@
       "displayAnswer": "C",
       "explanation": "Đoạn ba gọi repetition alone là an unreliable strategy for lasting learning. Điều đó phù hợp unreliable in the long run.",
       "teacherHighlights": [
+        "lasting",
         "in the long run"
       ]
     },
@@ -1117,7 +1139,9 @@
       "fullSentence": "Tired as Mark was, he agreed to play tennis with his roommates.",
       "explanation": "Đưa tính từ tired lên đầu trong cấu trúc nhượng bộ tired as/though Mark was, tương đương although Mark was very tired.",
       "displayAnswer": "as Mark was, he agreed to play tennis with his roommates / though Mark was, he agreed to play tennis with his roommates",
-      "teacherHighlights": []
+      "teacherHighlights": [
+        "although"
+      ]
     },
     {
       "globalNumber": 86,

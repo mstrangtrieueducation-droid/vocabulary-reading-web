@@ -672,6 +672,184 @@
         100
       ],
       "teacherSelected": true
+    },
+    {
+      "term": "as long as / so long as / provided / providing",
+      "meta": "CONJUNCTIONS",
+      "meaning": "miễn là; với điều kiện là",
+      "note": "Provided that = miễn là, đặt điều kiện cho việc cho mượn xe: được dùng nếu biết giữ gìn. as/so long as + S + V; provided/providing (that) + S + V.",
+      "usage": "as/so long as + S + V; provided/providing (that) + S + V",
+      "family": "condition (n): điều kiện; conditional (adj): có điều kiện; provide (v): cung cấp",
+      "example": "You may borrow the book as long as you return it on Friday.",
+      "translation": "Bạn có thể mượn sách miễn là trả lại vào thứ Sáu.",
+      "teacherSelected": true,
+      "questions": [
+        2
+      ],
+      "aliases": [
+        "Provided"
+      ],
+      "question": 2
+    },
+    {
+      "question": 39,
+      "term": "increasingly",
+      "meta": "ADVERB",
+      "meaning": "ngày càng",
+      "note": "Cần trạng từ bổ nghĩa cho tính từ advanced: increasingly advanced technology = công nghệ ngày càng tiên tiến. increasingly difficult/popular; increasingly longer gaps.",
+      "usage": "increasingly difficult/popular; increasingly longer gaps",
+      "example": "The instructions became increasingly clear.",
+      "translation": "Các hướng dẫn ngày càng rõ ràng.",
+      "family": "increase (n/v); increasing (adj); increasingly (adv)",
+      "teacherSelected": true,
+      "questions": [
+        39
+      ],
+      "aliases": []
+    },
+    {
+      "question": 44,
+      "term": "manufacturers",
+      "meta": "NOUN",
+      "meaning": "các nhà sản xuất",
+      "note": "Manufacturers là những nhà sản xuất giấy, làm chủ ngữ của can offer. local manufacturers; manufacturers of bottles.",
+      "usage": "local manufacturers; manufacturers of bottles",
+      "example": "Local manufacturers produced reusable bottles.",
+      "translation": "Các nhà sản xuất địa phương làm ra những chai có thể dùng lại.",
+      "family": "manufacture (v/n); manufacturer (n); manufacturing (n)",
+      "teacherSelected": true,
+      "questions": [
+        44
+      ],
+      "aliases": []
+    },
+    {
+      "question": 75,
+      "term": "phase",
+      "meta": "NOUN",
+      "meaning": "giai đoạn",
+      "note": "Khí được giải phóng ở cuối red-giant phase, trước khi phần lõi còn lại trở thành white dwarf. Câu hỏi hỏi giai đoạn mà Mặt Trời đang kết thúc, nên chọn red giant. a difficult phase; a phase of development.",
+      "usage": "a difficult phase; a phase of development",
+      "example": "The project has entered a new phase.",
+      "translation": "Dự án đã bước sang giai đoạn mới.",
+      "family": "phase (n/v); phased (adj); stage (n)",
+      "teacherSelected": true,
+      "questions": [
+        75
+      ],
+      "aliases": []
+    },
+    {
+      "term": "advise",
+      "meta": "verb",
+      "meaning": "khuyên; tư vấn",
+      "note": "Advise somebody against + V-ing = khuyên ai đừng làm. Her chỉ Jane; becoming phải giữ nguyên từ khóa. advise someone to do; advise doing; advise against doing = khuyên không nên; a piece of advice = một lời khuyên..",
+      "usage": "advise someone to do; advise doing; advise against doing = khuyên không nên; a piece of advice = một lời khuyên.",
+      "family": "advise (v); advice (n); adviser/advisor (n); advisable (adj: nên làm).",
+      "example": "The teacher advised us to check our answers carefully.",
+      "translation": "Giáo viên khuyên chúng tôi kiểm tra kỹ đáp án.",
+      "teacherSelected": true,
+      "questions": [
+        94
+      ],
+      "question": 94,
+      "aliases": []
+    },
+    {
+      "term": "fly economy",
+      "meaning": "đi máy bay hạng phổ thông",
+      "usage": "fly economy/business class",
+      "example": "We flew economy to save money.",
+      "translation": "Chúng tôi bay hạng phổ thông để tiết kiệm.",
+      "family": "fly – flew – flown; economy class: hạng phổ thông",
+      "meta": "PHRASE",
+      "note": "Fly economy là đi máy bay hạng phổ thông; economy ở đây chỉ hạng vé. fly economy/business class.",
+      "question": 6,
+      "questions": [
+        6
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "do a crossword",
+      "meaning": "giải ô chữ",
+      "usage": "do/solve a crossword",
+      "example": "My father does a crossword every morning.",
+      "translation": "Bố tôi giải một ô chữ mỗi sáng.",
+      "family": "crossword puzzle: trò ô chữ; do – did – done",
+      "meta": "PHRASE",
+      "note": "Do a crossword là giải ô chữ. Đây là kết hợp động từ–danh từ cố định; không dùng make/write a crossword khi muốn nói người đọc giải ô chữ có sẵn trong báo. do/solve a crossword.",
+      "question": 8,
+      "questions": [
+        8
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "stop off",
+      "meaning": "ghé dừng ở một nơi trên đường đi",
+      "usage": "stop off at/in a place",
+      "example": "We stopped off at a café on the way home.",
+      "translation": "Chúng tôi ghé một quán cà phê trên đường về.",
+      "family": "stop – stopped – stopped; không phải dừng hẳn hành trình",
+      "meta": "PHRASE",
+      "note": "Stop off at a place là ghé dừng tại một điểm trên hành trình. stop off at/in a place.",
+      "question": 34,
+      "questions": [
+        34
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "get somebody involved",
+      "meaning": "khiến hoặc mời ai tham gia",
+      "usage": "get somebody involved in something",
+      "example": "The project gets parents involved in school life.",
+      "translation": "Dự án giúp phụ huynh tham gia hoạt động trường học.",
+      "family": "involve (v); involvement (n); involved in",
+      "meta": "PHRASE",
+      "note": "Get somebody involved = khiến/mời ai tham gia. Friends and loved ones là người được mời cùng hỗ trợ, nên dùng phân từ involved sau tân ngữ. get somebody involved in something.",
+      "question": 57,
+      "questions": [
+        57
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "stay on track",
+      "meaning": "tiếp tục đúng hướng, đúng tiến độ",
+      "usage": "stay/get back on track",
+      "example": "A weekly plan helps me stay on track.",
+      "translation": "Kế hoạch hằng tuần giúp tôi giữ đúng tiến độ.",
+      "family": "off track: chệch hướng; get back on track: trở lại đúng hướng",
+      "meta": "PHRASE",
+      "note": "Stay on track = tiếp tục đúng hướng với mục tiêu. Câu khuyên nhờ bạn bè hỗ trợ, không nói một tuyến đường cụ thể, nên dùng thành ngữ track. stay/get back on track.",
+      "question": 59,
+      "questions": [
+        59
+      ],
+      "aliases": [],
+      "teacherSelected": true
+    },
+    {
+      "term": "make/have observations",
+      "meaning": "quan sát, ghi nhận",
+      "usage": "make observations of something",
+      "example": "The students made observations of the insects.",
+      "translation": "Học sinh quan sát và ghi nhận về các loài côn trùng.",
+      "family": "observe (v); observation (n); observer: người quan sát",
+      "meta": "PHRASE",
+      "note": "make/have observations: quan sát, ghi nhận. Sau had dùng V3 → made/had. make observations of something.",
+      "question": 65,
+      "questions": [
+        65
+      ],
+      "aliases": [],
+      "teacherSelected": true
     }
   ],
   "revision": "2026-10-17-authentic"
