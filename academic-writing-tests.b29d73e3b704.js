@@ -1,0 +1,1 @@
+document.querySelectorAll('details.reference').forEach(details=>{details.addEventListener('toggle',()=>{const frame=details.querySelector('iframe');if(details.open&&!frame.getAttribute('src'))frame.setAttribute('src',frame.dataset.src);});});
