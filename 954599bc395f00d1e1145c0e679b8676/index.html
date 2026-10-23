@@ -521,7 +521,7 @@
     event.preventDefault();
     const name = normalizedName($("student-name").value);
     const className = $("student-class").value;
-    if (!name || !ALLOWED_CLASSES.includes(className)) {
+    if (!name || !(ALLOWED_CLASSES.includes(className) || window.MTTProfileClassAllowed?.(className) === true)) {
       $("gate-error").textContent = "Vui lòng nhập họ tên và chọn đúng lớp trước khi mở đề.";
       $("gate-error").hidden = false;
       (!name ? $("student-name") : $("student-class")).focus();

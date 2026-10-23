@@ -253,7 +253,7 @@
     });
     const isValidIdentity = candidate => {
       const cleaned = cleanIdentity(candidate);
-      return cleaned.name.length >= 2 && APP.course.classes.includes(cleaned.className);
+      return cleaned.name.length >= 2 && (APP.course.classes.includes(cleaned.className) || window.MTTProfileClassAllowed?.(cleaned.className) === true);
     };
     const sameIdentity = (left,right) => {
       const first = cleanIdentity(left);

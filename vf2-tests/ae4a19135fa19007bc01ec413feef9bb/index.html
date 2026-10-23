@@ -256,7 +256,7 @@
       return {sectionIndex, exercise:SECTIONS[sectionIndex].exerciseNumber, local:globalNumber - SECTIONS[sectionIndex].startGlobal + 1};
     };
     const cleanName = value => String(value || "").trim().replace(/\s+/g," ");
-    const validIdentity = value => Boolean(value && cleanName(value.name).length >= 2 && APP.course.classes.includes(value.className));
+    const validIdentity = value => Boolean(value && cleanName(value.name).length >= 2 && (APP.course.classes.includes(value.className) || window.MTTProfileClassAllowed?.(value.className) === true));
     const sameIdentity = (left,right) => validIdentity(left) && validIdentity(right) && cleanName(left.name).toLocaleLowerCase("vi") === cleanName(right.name).toLocaleLowerCase("vi") && left.className === right.className;
     const completeAnswers = value => Boolean(value && questions.every(number => norm(value[number])));
 

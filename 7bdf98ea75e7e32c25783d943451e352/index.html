@@ -242,7 +242,7 @@
     const cleanIdentity = candidate => {
       const name = String(candidate?.name || "").trim().replace(/\s+/g," ");
       const className = String(candidate?.className || "").trim();
-      return name.length >= 2 && COURSE.classes.includes(className) ? {name,className} : null;
+      return name.length >= 2 && (COURSE.classes.includes(className) || window.MTTProfileClassAllowed?.(className) === true) ? {name,className} : null;
     };
     const sameIdentity = (left,right) => {
       const a = cleanIdentity(left);
