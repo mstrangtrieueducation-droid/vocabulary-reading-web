@@ -8,7 +8,6 @@
   const link = document.querySelector(config.formLink || "#submitHomework");
   if (!link || !config.nameEntry || !config.classEntry) return;
 
-  const STORAGE_KEY = "ms-trang-trieu-student-profile-v1";
   const baseUrl = link.getAttribute("href") || "";
   const nameInput = config.nameSelector ? document.querySelector(config.nameSelector) : null;
   const classInput = config.classSelector ? document.querySelector(config.classSelector) : null;
@@ -27,14 +26,6 @@
     return validProfile(profile) ? profile : null;
   };
 
-  const readJson = (key) => {
-    try {
-      return JSON.parse(localStorage.getItem(key) || "null");
-    } catch {
-      return null;
-    }
-  };
-
   const readUrlProfile = () => {
     const params = new URLSearchParams(window.location.search);
     const first = (keys) => keys.map((key) => params.get(key)).find(Boolean) || "";
@@ -44,63 +35,22 @@
     });
   };
 
-  const readStoredProfile = () => {
-    const shared = normalizeProfile(readJson(STORAGE_KEY));
-    if (shared) return shared;
-
-    const knownKeys = [
-      "mstt-reading-b02-v1",
-      "ielts-listening-b04-practice-attempt",
-      "ielts:profile:v1",
-      "ri2:profile:v1",
-      "ri3:profile:v1"
-    ];
-    for (const key of knownKeys) {
-      const profile = normalizeProfile(readJson(key));
-      if (profile) return profile;
-    }
-
-    try {
-      const ri3Profile = normalizeProfile({
-        name: localStorage.getItem("ri3-student-name"),
-        className: localStorage.getItem("ri3-student-class")
-      });
-      if (ri3Profile) return ri3Profile;
-
-      for (let index = 0; index < localStorage.length; index += 1) {
-        const key = localStorage.key(index) || "";
-        if (!/(profile|identity|student|attempt|reading-b02|listening-b04)/i.test(key)) continue;
-        const profile = normalizeProfile(readJson(key));
-        if (profile) return profile;
-      }
-    } catch {
-      // The form link still opens normally when browser storage is unavailable.
-    }
-    return null;
-  };
-
   const readPageProfile = () => normalizeProfile({
     name: nameInput && nameInput.value,
     className: classInput && classInput.value
   });
 
-  const saveProfile = (profile) => {
-    if (!validProfile(profile)) return;
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(profile));
-    } catch {
-      // Prefilling the current link does not depend on storage being writable.
-    }
-  };
-
   const sync = () => {
-    const profile = readPageProfile() || readUrlProfile() || readStoredProfile();
+    // A managed lesson receives its identity from the canonical parent receiver.
+    // Never overwrite that identity from browser storage or an older attempt.
+    if (typeof window.MTTProfileClassAllowed === "function") return;
+    const profile = readPageProfile() || readUrlProfile();
     const destination = new URL(baseUrl, window.location.href);
     if (profile) {
       destination.searchParams.set("usp", "pp_url");
       destination.searchParams.set(`entry.${config.nameEntry}`, profile.name);
       destination.searchParams.set(`entry.${config.classEntry}`, profile.className);
-      saveProfile(profile);
+
     }
     link.href = destination.toString();
   };
