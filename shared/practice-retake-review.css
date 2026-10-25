@@ -1,0 +1,10 @@
+/* Shared review layout for all Practice Test retakes. Keep answer/scoring logic native. */
+.result{grid-template-rows:auto auto minmax(180px,1fr) auto;overflow-y:auto;overscroll-behavior:contain}
+.review-tools{align-items:flex-start}
+.wrong-list{min-width:0;flex:1;max-height:min(160px,22vh);overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+.review-filters{flex-wrap:wrap}
+.explain p{white-space:pre-line;overflow-wrap:anywhere}
+@media(max-width:760px){
+  .result{overflow:visible}
+  .wrong-list{width:100%;flex:auto}
+}
