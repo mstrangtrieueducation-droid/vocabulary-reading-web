@@ -25,6 +25,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Verify Grammar document roles and Unit bindings
+        run: node --test tests/grammar-document-binding.test.mjs
       - name: Stage lesson website without development catalogs
         run: |
           python3 - <<'PY'
