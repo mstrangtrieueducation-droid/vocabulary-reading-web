@@ -27,6 +27,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Verify Grammar document roles and Unit bindings
         run: node --test tests/grammar-document-binding.test.mjs
+      - name: Verify shared answer matching
+        run: node --test tests/answer-matcher.test.mjs
       - name: Stage lesson website without development catalogs
         run: |
           python3 - <<'PY'
