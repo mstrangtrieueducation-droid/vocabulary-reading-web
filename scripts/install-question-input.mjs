@@ -25,6 +25,10 @@ function visit(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true}))
   html=html.slice(0,start)+body+html.slice(end);
   html=html.replace('</head>','<style>.letters.word-choices{display:flex;flex-wrap:wrap}.letters.word-choices button{flex:1 1 110px;white-space:normal;overflow-wrap:anywhere;height:auto;min-height:44px;padding:10px}</style>\n</head>');
  }
- fs.writeFileSync(file,html);count++;
+ // Keep both maintained renderer variants (letter/choice) on the same selection logic.
+ html=html.replaceAll('question-input.js?v=20261102','question-input.js?v=20261102b');
+ html=html.replaceAll('button.textContent = choice;', 'button.textContent = inputSpec.choiceLabels?.[choice] || choice;');
+ html=html.replaceAll('if(answers[globalNumber] === choice)', 'if(MTTQuestionInput.selected(answers[globalNumber],choice,inputSpec))');
+ fs.writeFileSync(file,html.replaceAll('\r\n','\n'));count++;
 }}
 visit(root);console.log({pages:count});
