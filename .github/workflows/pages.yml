@@ -29,6 +29,8 @@ jobs:
         run: node --test tests/grammar-document-binding.test.mjs
       - name: Verify shared answer matching
         run: node --test tests/answer-matcher.test.mjs
+      - name: Verify question input types and no-article answers
+        run: node --test tests/question-input.test.mjs
       - name: Stage lesson website without development catalogs
         run: |
           python3 - <<'PY'
