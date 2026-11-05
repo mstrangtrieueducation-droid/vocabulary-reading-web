@@ -540,7 +540,8 @@
       "sectionCode": "I.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "standees"
+        "standees",
+        "standing"
       ],
       "displayAnswer": "standees",
       "explanation": "More ... than seated passengers đối chiếu người đứng và người ngồi.",
@@ -1080,7 +1081,9 @@
       "localNumber": 1,
       "acceptedAnswers": [
         "annoyed me was her constant interruptions during the meeting",
-        "annoyed me during the meeting was her constant interruptions"
+        "annoyed me during the meeting was her constant interruptions",
+        "I was annoyed by was her constant interruptions during the meeting",
+        "annoyed me were her constant interruptions during the meeting"
       ],
       "displayAnswer": "annoyed me was her constant interruptions during the meeting / annoyed me during the meeting was her constant interruptions",
       "prefix": "What",
@@ -1097,7 +1100,9 @@
         "can be compared with his dedication to the project",
         "can be compared to his dedication to the project",
         "compares with his dedication to the project",
-        "compares to his dedication to the project"
+        "compares to his dedication to the project",
+        "can compare with his dedication to the project",
+        "can compare to his dedication to the project"
       ],
       "displayAnswer": "can be compared with his dedication to the project / can be compared to his dedication to the project / compares with his dedication to the project / compares to his dedication to the project",
       "prefix": "Nothing",
@@ -1181,7 +1186,9 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "Anna hates more than posing for photos at these school reunions",
-        "that Anna hates more than posing for photos at these school reunions"
+        "that Anna hates more than posing for photos at these school reunions",
+        "Anna hates more about these school reunions than posing for photos",
+        "that Anna hates more about these school reunions than posing for photos"
       ],
       "displayAnswer": "Anna hates more than posing for photos at these school reunions / that Anna hates more than posing for photos at these school reunions",
       "prefix": "There is nothing",
@@ -1312,7 +1319,8 @@
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "brought home to me"
+        "brought home to me",
+        "brought it home to me"
       ],
       "displayAnswer": "brought home to me",
       "prefix": "His reaction",
@@ -1360,7 +1368,9 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "under media scrutiny",
-        "under scrutiny by the media"
+        "under scrutiny by the media",
+        "under the scrutiny of the media",
+        "under the media's scrutiny"
       ],
       "displayAnswer": "under media scrutiny / under scrutiny by the media",
       "prefix": "With his private life",
@@ -1407,7 +1417,9 @@
       "acceptedAnswers": [
         "may have been in deep water",
         "might have been in deep water",
-        "could have been in deep water"
+        "could have been in deep water",
+        "must have been in deep water",
+        "was probably in deep water"
       ],
       "displayAnswer": "may have been in deep water / might have been in deep water / could have been in deep water",
       "prefix": "The company",
@@ -1451,7 +1463,8 @@
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "matter how little money Simon has"
+        "matter how little money Simon has",
+        "matter how little money he has"
       ],
       "displayAnswer": "matter how little money Simon has",
       "prefix": "No",

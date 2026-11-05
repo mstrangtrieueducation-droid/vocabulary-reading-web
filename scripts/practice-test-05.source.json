@@ -660,7 +660,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "reunify → reunite"
+        "reunify → reunite",
+        "reunite"
       ],
       "displayAnswer": "reunify → reunite",
       "explanation": "Gia đình gặp lại nhau dùng reunite.\nreunite / reunion = đoàn tụ / cuộc đoàn tụ.",
@@ -675,7 +676,11 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "which → where",
-        "which → in which"
+        "which → in which",
+        "which → at which",
+        "which → during which",
+        "where",
+        "in which"
       ],
       "displayAnswer": "which → where / which → in which",
       "explanation": "Ceremony là bối cảnh → where/in which. Mệnh đề sau đã đủ chủ ngữ và tân ngữ.",
@@ -687,7 +692,10 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "give → pay",
-        "give respects → pay respects"
+        "give respects → pay respects",
+        "pay",
+        "pay respects",
+        "give respects → pay their respects"
       ],
       "displayAnswer": "give → pay / give respects → pay respects",
       "explanation": "Cụm chuẩn là pay respects to somebody: bày tỏ lòng kính trọng/tưởng nhớ.",
@@ -701,7 +709,10 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "Due to → Despite",
-        "Due to → In spite of"
+        "Due to → In spite of",
+        "Despite",
+        "In spite of",
+        "Due to → Notwithstanding"
       ],
       "displayAnswer": "Due to → Despite / Due to → In spite of",
       "explanation": "Dù đời sống hiện đại thay đổi, truyền thống vẫn được trân trọng: cần quan hệ nhượng bộ Despite/In spite of.",
@@ -712,7 +723,9 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "between → among"
+        "between → among",
+        "among",
+        "between → amongst"
       ],
       "displayAnswer": "between → among",
       "explanation": "Among Korean families diễn đạt trong cộng đồng nhiều gia đình nói chung.",
@@ -934,7 +947,8 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "exploring",
-        "at"
+        "at",
+        "on"
       ],
       "displayAnswer": "exploring / at",
       "explanation": "spend time exploring: dành thời gian khám phá; at the bottom: ở đáy biển.",
@@ -947,7 +961,9 @@
       "acceptedAnswers": [
         "forms",
         "kinds",
-        "types"
+        "types",
+        "species",
+        "sorts"
       ],
       "displayAnswer": "forms / kinds / types",
       "explanation": "Forms/kinds/types of marine life đều nói về các dạng sinh vật biển.",
@@ -1137,7 +1153,9 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "Mr. Smith known more about the Internet, he would have invested in some computer companies",
-        "Mr Smith known more about the Internet, he would have invested in some computer companies"
+        "Mr Smith known more about the Internet, he would have invested in some computer companies",
+        "Mr. Smith known more about the Internet, he would have invested in computer companies",
+        "Mr Smith known more about the Internet, he would have invested in computer companies"
       ],
       "displayAnswer": "Mr. Smith known more about the Internet, he would have invested in some computer companies",
       "explanation": "Had + chủ ngữ + V3 là đảo ngữ điều kiện loại 3.",
@@ -1151,7 +1169,9 @@
       "sectionCode": "III.1",
       "localNumber": 5,
       "acceptedAnswers": [
-        "of experience prevent him from doing this job"
+        "of experience prevent him from doing this job",
+        "of experience stop him from doing this job",
+        "of experience prevent him from doing the job"
       ],
       "displayAnswer": "of experience prevent him from doing this job",
       "explanation": "Lack of experience = sự thiếu kinh nghiệm; prevent somebody from doing something = ngăn ai làm gì.",
@@ -1169,7 +1189,9 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "up thinking he can find a job before the end of the year",
-        "up hope of finding a job before the end of the year"
+        "up hope of finding a job before the end of the year",
+        "up hope that he can find a job before the end of the year",
+        "up hope of getting a job before the end of the year"
       ],
       "displayAnswer": "up thinking he can find a job before the end of the year",
       "explanation": "Give up thinking/give up hope of finding diễn đạt không còn tin có thể tìm việc.",
@@ -1217,7 +1239,9 @@
       "sectionCode": "III.1",
       "localNumber": 9,
       "acceptedAnswers": [
-        "two doctors, both of whom were confident of curing me"
+        "two doctors, both of whom were confident of curing me",
+        "two doctors, who were both confident of curing me",
+        "two doctors and both of them were confident of curing me"
       ],
       "displayAnswer": "two doctors, both of whom were confident of curing me",
       "explanation": "Both of whom là mệnh đề quan hệ chỉ cả hai bác sĩ. Sau of dùng whom cho người; were hòa hợp với both.",
@@ -1233,7 +1257,11 @@
       "acceptedAnswers": [
         "short of my expectations although it had been written by such a good novelist",
         "short of my expectations though it had been written by such a good novelist",
-        "short of my expectations even though it had been written by such a good novelist"
+        "short of my expectations even though it had been written by such a good novelist",
+        "far short of my expectations although it had been written by such a good novelist",
+        "far short of my expectations even though it had been written by such a good novelist",
+        "short of my expectations, although it had been written by such a good novelist",
+        "short of my expectations, even though it had been written by such a good novelist"
       ],
       "displayAnswer": "short of my expectations although it had been written by such a good novelist",
       "explanation": "Fall short of expectations = không đạt kỳ vọng.",
@@ -1428,7 +1456,8 @@
       "localNumber": 9,
       "acceptedAnswers": [
         "was at sixes and sevens",
-        "was left at sixes and sevens"
+        "was left at sixes and sevens",
+        "was all at sixes and sevens"
       ],
       "displayAnswer": "was at sixes and sevens / was left at sixes and sevens",
       "explanation": "At sixes and sevens = rối loạn, không biết sắp xếp ra sao. Everyone là số ít nên was; thêm left được chấp nhận để nhấn hệ quả việc tái cơ cấu.",

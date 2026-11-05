@@ -659,7 +659,9 @@
       "localNumber": 1,
       "acceptedAnswers": [
         "protecting → protect",
-        "protecting → to protect"
+        "protecting → to protect",
+        "protect",
+        "to protect"
       ],
       "displayAnswer": "protecting → protect / protecting → to protect",
       "explanation": "Help có thể đi với động từ nguyên mẫu có hoặc không có to: helps protect/helps to protect.",
@@ -670,7 +672,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "responsive → responsible"
+        "responsive → responsible",
+        "responsible"
       ],
       "displayAnswer": "responsive → responsible",
       "explanation": "Responsible travel là du lịch có trách nhiệm, phù hợp mục tiêu bảo vệ môi trường và cộng đồng.",
@@ -681,7 +684,8 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "claim → claiming"
+        "claim → claiming",
+        "claiming"
       ],
       "displayAnswer": "claim → claiming",
       "explanation": "Claiming to be eco-friendly là cụm V-ing bổ sung cách các công ty thực hiện greenwashing.",
@@ -694,7 +698,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "depend → depends"
+        "depend → depends",
+        "depends"
       ],
       "displayAnswer": "depend → depends",
       "explanation": "Chủ ngữ The success of ecotourism có từ chính success số ít nên dùng depends.",
@@ -705,7 +710,8 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "preserves → preserved"
+        "preserves → preserved",
+        "preserved"
       ],
       "displayAnswer": "preserves → preserved",
       "explanation": "Sau can be cần quá khứ phân từ để tạo bị động: can be preserved = có thể được gìn giữ.",
@@ -1107,7 +1113,8 @@
       "sectionCode": "III.1",
       "localNumber": 3,
       "acceptedAnswers": [
-        "refused to sleep in that haunted house"
+        "refused to sleep in that haunted house",
+        "refused to sleep in the haunted house"
       ],
       "displayAnswer": "refused to sleep in that haunted house",
       "explanation": "Flatly refuse to do something là kiên quyết từ chối làm gì, tương đương khẳng định không gì thuyết phục được mình làm.",
@@ -1161,7 +1168,10 @@
       "acceptedAnswers": [
         "a standing ovation for the performance",
         "a standing ovation for his performance",
-        "a standing ovation for her performance"
+        "a standing ovation for her performance",
+        "a standing ovation",
+        "a standing ovation by the audience",
+        "a standing ovation for the actor's performance"
       ],
       "displayAnswer": "a standing ovation for the performance / a standing ovation for his performance / a standing ovation for her performance",
       "explanation": "A standing ovation là tràng vỗ tay mà khán giả đứng dậy tán thưởng.",
@@ -1227,7 +1237,8 @@
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "her bag smashed at the concert"
+        "her bag smashed at the concert",
+        "her bag smashed by someone at the concert"
       ],
       "displayAnswer": "her bag smashed at the concert",
       "explanation": "Have + vật + V3 có thể diễn đạt việc không may xảy đến với tài sản, không nhất thiết chủ thể thuê ai làm.",
@@ -1263,7 +1274,10 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "racked my brains in vain trying",
-        "racked my brain in vain trying"
+        "racked my brain in vain trying",
+        "racked my brains but failed",
+        "racked my brain but failed",
+        "racked my brains but was unable"
       ],
       "displayAnswer": "racked my brains in vain trying / racked my brain in vain trying",
       "explanation": "Rack one’s brain/brains là vắt óc suy nghĩ; cả số ít và số nhiều đều dùng được.",
@@ -1332,7 +1346,11 @@
         "know how difficult it is",
         "realise how difficult it is",
         "realize how difficult it is",
-        "understand how difficult it is"
+        "understand how difficult it is",
+        "know how hard it is",
+        "realise how hard it is",
+        "realize how hard it is",
+        "understand how hard it is"
       ],
       "displayAnswer": "know how difficult it is / realise how difficult it is / realize how difficult it is / understand how difficult it is",
       "explanation": "Little + trợ động từ + S + V: đảo ngữ phủ định. Sau does dùng know/realise/understand nguyên mẫu.",
@@ -1354,7 +1372,9 @@
       "acceptedAnswers": [
         "makes little difference to",
         "makes very little difference to",
-        "makes hardly any difference to"
+        "makes hardly any difference to",
+        "makes almost no difference to",
+        "makes scarcely any difference to"
       ],
       "displayAnswer": "makes little difference to / makes very little difference to / makes hardly any difference to",
       "explanation": "Make little difference to something = hầu như không làm thay đổi điều gì.",
@@ -1378,7 +1398,9 @@
       "acceptedAnswers": [
         "put me at ease with",
         "made me feel at ease with",
-        "made me feel at ease through"
+        "made me feel at ease through",
+        "put me at ease through",
+        "put me at my ease with"
       ],
       "displayAnswer": "put me at ease with / made me feel at ease with / made me feel at ease through",
       "explanation": "Put somebody at ease hoặc make somebody feel at ease là khiến ai thoải mái. With/through/because of nối cảm giác đó với sự tiếp đón nồng hậu.",

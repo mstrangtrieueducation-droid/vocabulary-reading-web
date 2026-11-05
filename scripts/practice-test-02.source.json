@@ -313,7 +313,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "You can say that again.\n= I agree with you.",
+      "explanation": "Đáp lại lời khen dùng lời cảm ơn: Thanks. I bought it at Macy’s. (You can say that again = tôi hoàn toàn đồng ý, không dùng để đáp lời khen.)",
       "teacherHighlights": [
         "You can say that again.",
         "I agree with you."
@@ -598,7 +598,8 @@
       "sectionCode": "I.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "characterized"
+        "characterized",
+        "characterised"
       ],
       "displayAnswer": "characterized",
       "explanation": "be characterized by…: có đặc điểm…",
@@ -709,7 +710,8 @@
       "acceptedAnswers": [
         "Line 4: in the end of → at the end of",
         "in the end of → at the end of",
-        "at the end of"
+        "at the end of",
+        "in → at"
       ],
       "displayAnswer": "Line 4: in the end of → at the end of",
       "explanation": "in the end\n# at the end of st",
@@ -725,7 +727,9 @@
       "acceptedAnswers": [
         "Line 6: so → but",
         "so → but",
-        "but"
+        "but",
+        "so → or",
+        "or"
       ],
       "displayAnswer": "Line 6: so → but",
       "explanation": "Hai mệnh đề đối lập: lễ hội thường rơi vào tháng Ba nhưng đôi khi lại vào cuối tháng Hai. Vì vậy so phải đổi thành but.",
@@ -1033,7 +1037,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "give an account of…\n= give a description of…",
+      "explanation": "Đoạn 1: Paul Martin mô tả một xã hội quá bận để ngủ và không coi trọng giấc ngủ → ông bày tỏ mối quan tâm về tình trạng thiếu ngủ (C).\ngive an account of… = give a description of…",
       "teacherHighlights": [
         "give an account of"
       ]
@@ -1153,7 +1157,11 @@
         "Had it not been for Lan's help, I wouldn't have been able to finish the project.",
         "Had it not been for Lan's help, I would not have been able to finish the project.",
         "Had it not been for Lan's help, I couldn't have finished the project.",
-        "Had it not been for Lan's help, I could not have finished the project."
+        "Had it not been for Lan's help, I could not have finished the project.",
+        "Had Lan not helped me, I wouldn't have been able to finish the project.",
+        "Had Lan not helped me, I would not have been able to finish the project.",
+        "Had Lan not helped me, I couldn't have finished the project.",
+        "Had Lan not helped me, I could not have finished the project."
       ],
       "displayAnswer": "Had it not been for Lan's help, I wouldn't have been able to finish the project.\n/\nHad it not been for Lan's help, I would not have been able to finish the project.\n/\nHad it not been for Lan's help, I couldn't have finished the project.\n/\nHad it not been for Lan's help, I could not have finished the project.",
       "explanation": "Đảo ngữ điều kiện loại ba dùng Had it not been for + danh từ, tương đương If it had not been for.",
@@ -1176,7 +1184,13 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "It is vital that the report should be finished by Monday.",
-        "It is vital that the report be finished by Monday."
+        "It is vital that the report be finished by Monday.",
+        "It's vital that the report should be finished by Monday.",
+        "It's vital that the report be finished by Monday.",
+        "It's vital that this report should be finished by Monday.",
+        "It's vital that this report be finished by Monday.",
+        "It is vital that this report should be finished by Monday.",
+        "It is vital that this report be finished by Monday."
       ],
       "displayAnswer": "It is vital that the report should be finished by Monday.\n/\nIt is vital that the report be finished by Monday.",
       "explanation": "→ Thức giả định",
@@ -1190,7 +1204,9 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "The singer had a little money when she died, which surprised everyone.",
-        "The singer had a little money when she died, which made everyone surprised."
+        "The singer had a little money when she died, which made everyone surprised.",
+        "The singer had a little money when she died, which came as a surprise to everyone.",
+        "The singer had a little money when she died, which surprised everybody."
       ],
       "displayAnswer": "The singer had a little money when she died, which surprised everyone.\n/\nThe singer had a little money when she died, which made everyone surprised.",
       "explanation": "Bắt buộc phải có dấu phẩy và bắt buộc phải dùng which → …, việc này làm cho mọi người ngạc nhiên. , which… có thể thế cho cả mệnh đề / cả thông tin được nhắc tới ở phía trước.",
@@ -1205,7 +1221,18 @@
       "sectionCode": "III.1",
       "localNumber": 6,
       "acceptedAnswers": [
-        "If it hadn’t been for the noise/it hadn’t been very noisy, we would have stayed long(er) at the party."
+        "If it hadn’t been for the noise, we would have stayed longer at the party.",
+        "If it hadn’t been for the noise, we would have stayed long at the party.",
+        "If it had not been for the noise, we would have stayed longer at the party.",
+        "If it had not been for the noise, we would have stayed long at the party.",
+        "If it hadn’t been very noisy, we would have stayed longer at the party.",
+        "If it hadn’t been very noisy, we would have stayed long at the party.",
+        "If it had not been very noisy, we would have stayed longer at the party.",
+        "If it had not been very noisy, we would have stayed long at the party.",
+        "If it hadn’t been so noisy, we would have stayed longer at the party.",
+        "If it had not been so noisy, we would have stayed longer at the party.",
+        "If the party hadn’t been so noisy, we would have stayed longer.",
+        "If the party hadn’t been very noisy, we would have stayed long."
       ],
       "displayAnswer": "If it hadn’t been for the noise/it hadn’t been very noisy, we would have stayed long(er) at the party.",
       "explanation": "Câu điều kiện loại ba diễn tả quá khứ trái thực tế: If it hadn’t been for the noise / If it hadn’t been very noisy, we would have stayed longer.",
@@ -1217,7 +1244,11 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "Such was the appeal of the book that I lost track of time.",
-        "Such a captivating book was it that I lost track of time."
+        "Such a captivating book was it that I lost track of time.",
+        "Such was the appeal of the book that I lost track of time while reading it.",
+        "Such a captivating book was it that I lost track of time while reading it.",
+        "Such is the appeal of the book that I lost track of time while reading it.",
+        "Such is the appeal of the book that I lost track of time."
       ],
       "displayAnswer": "Such was the appeal of the book that I lost track of time.\n/\nSuch a captivating book was it that I lost track of time.",
       "explanation": "captivating (a) = very interesting",
@@ -1230,7 +1261,10 @@
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "Rosa had difficulty (in) persuading her boss to give her a pay rise."
+        "Rosa had difficulty persuading her boss to give her a pay rise.",
+        "Rosa had difficulty in persuading her boss to give her a pay rise.",
+        "Rosa had great difficulty persuading her boss to give her a pay rise.",
+        "Rosa had great difficulty in persuading her boss to give her a pay rise."
       ],
       "displayAnswer": "Rosa had difficulty (in) persuading her boss to give her a pay rise.",
       "explanation": "Have difficulty (in) + V-ing nghĩa là gặp khó khăn khi làm gì. Persuade somebody to do something giữ nguyên cấu trúc ở phần sau.",
@@ -1243,7 +1277,10 @@
       "sectionCode": "III.1",
       "localNumber": 9,
       "acceptedAnswers": [
-        "You must not breathe a word about / a word of this highly confidential business plan."
+        "You must not breathe a word about this highly confidential business plan.",
+        "You must not breathe a word of this highly confidential business plan.",
+        "You must not breathe a word to anyone about this highly confidential business plan.",
+        "You must not breathe a word of this highly confidential business plan to anyone."
       ],
       "displayAnswer": "You must not breathe a word about / a word of this highly confidential business plan.",
       "explanation": "Breathe a word about/of something nghĩa là tiết lộ dù chỉ một lời. Câu phủ định must not breathe a word nhấn mạnh tính tuyệt mật.",
@@ -1257,7 +1294,8 @@
       "localNumber": 10,
       "acceptedAnswers": [
         "It was only when he read Julie's letter that he understood exactly what was wrong.",
-        "It was not until he read Julie's letter that he understood exactly what was wrong."
+        "It was not until he read Julie's letter that he understood exactly what was wrong.",
+        "It was not until he had read Julie's letter that he understood exactly what was wrong."
       ],
       "displayAnswer": "It was only when he read Julie's letter that he understood exactly what was wrong.\n/\nIt was not until he read Julie's letter that he understood exactly what was wrong.",
       "explanation": "Câu chẻ nhấn mạnh: It was … that …",
@@ -1355,7 +1393,10 @@
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "hasn't been confirmed yet"
+        "hasn't been confirmed yet",
+        "has not been confirmed yet",
+        "hasn't yet been confirmed",
+        "has not yet been confirmed"
       ],
       "displayAnswer": "hasn't been confirmed yet",
       "explanation": "Present perfect passive của confirm là has not/hasn’t been confirmed. Yet được giữ ở cuối để nói việc xác nhận đến nay vẫn chưa xảy ra.",
@@ -1397,7 +1438,8 @@
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "a name for himself"
+        "a name for himself",
+        "quite a name for himself"
       ],
       "displayAnswer": "a name for himself",
       "explanation": "make a name for oneself as…: trở nên nổi tiếng như là…",
@@ -1420,7 +1462,9 @@
       "localNumber": 8,
       "acceptedAnswers": [
         "be grateful if you could",
-        "feel grateful if you could"
+        "feel grateful if you could",
+        "be grateful if you would",
+        "be very grateful if you could"
       ],
       "displayAnswer": "be grateful if you could / feel grateful if you could",
       "explanation": "I’d be grateful if you could + V: tôi sẽ rất biết ơn nếu bạn có thể…",

@@ -652,7 +652,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "with → in"
+        "with → in",
+        "in"
       ],
       "displayAnswer": "with → in",
       "explanation": "Advancements in technology là những tiến bộ trong lĩnh vực công nghệ.",
@@ -664,7 +665,9 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "reduce → reducing",
-        "reduce → and reduce"
+        "reduce → and reduce",
+        "reducing",
+        "and reduce"
       ],
       "displayAnswer": "reduce → reducing / reduce → and reduce",
       "explanation": "Sau mệnh đề may transform industries, reducing… là cụm phân từ nêu kết quả, có cùng chủ thể automation and AI.",
@@ -676,7 +679,9 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "which → where",
-        "which → in which"
+        "which → in which",
+        "where",
+        "in which"
       ],
       "displayAnswer": "which → where / which → in which",
       "explanation": "Smart hubs là nơi các hoạt động diễn ra, nên cần where hoặc in which.",
@@ -688,7 +693,9 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "personified → personalised",
-        "personified → personalized"
+        "personified → personalized",
+        "personalised",
+        "personalized"
       ],
       "displayAnswer": "personified → personalised / personified → personalized",
       "explanation": "Personalised/personalized learning paths là lộ trình học được thiết kế phù hợp từng người.",
@@ -699,7 +706,8 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "remains → remain"
+        "remains → remain",
+        "remain"
       ],
       "displayAnswer": "remains → remain",
       "explanation": "Chủ ngữ challenges là số nhiều; các cụm climate change và social inequality chỉ là ví dụ nằm trong such as.",
@@ -920,7 +928,8 @@
       "localNumber": 9,
       "acceptedAnswers": [
         "for",
-        "among"
+        "among",
+        "in"
       ],
       "displayAnswer": "for / among",
       "explanation": "cause problems for people: gây vấn đề cho mọi người; among people: trong một nhóm người.",
@@ -1072,7 +1081,9 @@
         "as your scheme is, I do not think it will work",
         "though your scheme is, I do not think it will work",
         "as the scheme is, I do not think it will work",
-        "though the scheme is, I do not think it will work"
+        "though the scheme is, I do not think it will work",
+        "as your scheme may be, I do not think it will work",
+        "though your scheme may be, I do not think it will work"
       ],
       "displayAnswer": "as your scheme is, I do not think it will work / though your scheme is, I do not think it will work / as the scheme is, I do not think it will work / though the scheme is, I do not think it will work",
       "explanation": "Đưa tính từ brilliant lên đầu rồi dùng as/though + chủ ngữ + be để diễn đạt nhượng bộ.",
@@ -1104,7 +1115,10 @@
         "action must be taken to solve the problem of homelessness",
         "steps must be taken to solve the problem of homelessness",
         "measures must be taken to solve the problem of homelessness",
-        "action needs to be taken to solve the problem of homelessness"
+        "action needs to be taken to solve the problem of homelessness",
+        "action is needed to solve the problem of homelessness",
+        "action is required to solve the problem of homelessness",
+        "measures are needed to solve the problem of homelessness"
       ],
       "displayAnswer": "action must be taken to solve the problem of homelessness / steps must be taken to solve the problem of homelessness / measures must be taken to solve the problem of homelessness / action needs to be taken to solve the problem of homelessness",
       "explanation": "Something must be done quickly được diễn đạt bằng urgent action must be taken.",
@@ -1139,7 +1153,8 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "was standing a big man",
-        "stood a big man"
+        "stood a big man",
+        "there stood a big man"
       ],
       "displayAnswer": "was standing a big man / stood a big man",
       "explanation": "Khi cụm nơi chốn đứng đầu và chủ ngữ là cụm danh từ, có thể đảo toàn bộ động từ lên trước chủ ngữ: In front of them was standing a big man.",
@@ -1184,7 +1199,9 @@
       "localNumber": 9,
       "acceptedAnswers": [
         "how long you use it, it will not wear out",
-        "how long you use it, it won't wear out"
+        "how long you use it, it won't wear out",
+        "how long you use it for, it will not wear out",
+        "how long you use it for, it won't wear out"
       ],
       "displayAnswer": "how long you use it, it will not wear out / how long you use it, it won't wear out",
       "explanation": "No matter how long = dù sử dụng lâu đến đâu. Sau how long dùng trật tự khẳng định you use, không đảo do you use.",
@@ -1237,7 +1254,9 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "should have asked for",
-        "ought to have asked for"
+        "ought to have asked for",
+        "should have asked me for",
+        "ought to have asked me for"
       ],
       "displayAnswer": "should have asked for / ought to have asked for",
       "explanation": "Should have + V3 hoặc ought to have + V3 phê bình một việc đáng lẽ nên làm trong quá khứ nhưng đã không làm. Ask for permission là xin phép.",
@@ -1371,7 +1390,9 @@
       "localNumber": 8,
       "acceptedAnswers": [
         "Contrary to its harmless appearance",
-        "Contrary to appearances"
+        "Contrary to appearances",
+        "Contrary to its appearance",
+        "Contrary to how it appeared"
       ],
       "displayAnswer": "Contrary to its harmless appearance / Contrary to appearances",
       "explanation": "Contrary to + danh từ = trái với. Dùng its harmless appearance để đối chiếu vẻ bề ngoài vô hại với thực tế nguy hiểm, giữ ý nhượng bộ của although.",

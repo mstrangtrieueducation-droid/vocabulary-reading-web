@@ -1101,7 +1101,9 @@
         "he was halfway through the exercise did Tony realize how hard it would be",
         "he was halfway through the exercise did Tony realise how hard it would be",
         "he was halfway through it did Tony realize how hard the exercise would be",
-        "he was halfway through it did Tony realise how hard the exercise would be"
+        "he was halfway through it did Tony realise how hard the exercise would be",
+        "Tony was halfway through the exercise did he realize how hard it would be",
+        "Tony was halfway through the exercise did he realise how hard it would be"
       ],
       "displayAnswer": "he was halfway through the exercise did Tony realize how hard it would be / he was halfway through the exercise did Tony realise how hard it would be / he was halfway through it did Tony realize how hard the exercise would be / he was halfway through it did Tony realise how hard the exercise would be",
       "explanation": "Not until đầu câu yêu cầu đảo trợ động từ ở mệnh đề chính: did Tony realize.",
@@ -1117,7 +1119,10 @@
       "acceptedAnswers": [
         "to obey the rules may result in your disqualification from the competition",
         "to obey the rules may lead to your disqualification from the competition",
-        "to obey the rules may get you disqualified from the competition"
+        "to obey the rules may get you disqualified from the competition",
+        "to obey the rules may result in you being disqualified from the competition",
+        "to obey the rules may lead to you being disqualified from the competition",
+        "to obey the rules may result in your being disqualified from the competition"
       ],
       "displayAnswer": "to obey the rules may result in your disqualification from the competition / to obey the rules may lead to your disqualification from the competition / to obey the rules may get you disqualified from the competition",
       "explanation": "Failure to obey = việc không tuân thủ.",
@@ -1131,7 +1136,9 @@
       "sectionCode": "III.1",
       "localNumber": 4,
       "acceptedAnswers": [
-        "to sign an agreement she did not understand"
+        "to sign an agreement she did not understand",
+        "to sign an agreement that she did not understand",
+        "to sign an agreement which she did not understand"
       ],
       "displayAnswer": "to sign an agreement she did not understand",
       "explanation": "Refuse to do something thuật lại lời từ chối.",
@@ -1146,7 +1153,9 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "as the building was, it was not to my taste",
-        "though the building was, it was not to my taste"
+        "though the building was, it was not to my taste",
+        "as it was, the building was not to my taste",
+        "though it was, the building was not to my taste"
       ],
       "displayAnswer": "as the building was, it was not to my taste / though the building was, it was not to my taste",
       "explanation": "Impressive as/though the building was là cấu trúc nhượng bộ đảo tính từ.",
@@ -1196,7 +1205,9 @@
       "acceptedAnswers": [
         "absolute secrecy, the mission could not have succeeded",
         "absolute secrecy, the mission would not have succeeded",
-        "absolute secrecy, the mission would not have been successful"
+        "absolute secrecy, the mission would not have been successful",
+        "absolute secrecy, the mission would have failed",
+        "absolute secrecy, the mission could not have been successful"
       ],
       "displayAnswer": "absolute secrecy, the mission could not have succeeded / absolute secrecy, the mission would not have succeeded / absolute secrecy, the mission would not have been successful",
       "explanation": "Without + danh từ kết hợp could/would not have + V3 diễn tả điều kiện trái thực tế trong quá khứ.",
@@ -1262,7 +1273,9 @@
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "is put down to"
+        "is put down to",
+        "has been put down to",
+        "was put down to"
       ],
       "displayAnswer": "is put down to",
       "explanation": "Put something down to something = quy một kết quả cho nguyên nhân. Chuyển sang bị động với Sue’s success: is put down to.",

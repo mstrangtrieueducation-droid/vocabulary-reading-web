@@ -652,7 +652,9 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "train → training"
+        "train → training",
+        "training",
+        "been train → been training"
       ],
       "displayAnswer": "train → training",
       "explanation": "Has been + V-ing là hiện tại hoàn thành tiếp diễn, diễn tả quá trình rèn luyện kéo dài đến thời điểm kể.",
@@ -663,7 +665,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "was → were"
+        "was → were",
+        "were"
       ],
       "displayAnswer": "was → were",
       "explanation": "Chủ ngữ other children là số nhiều nên quá khứ tiếp diễn dùng were learning.",
@@ -674,7 +677,9 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "five-hours → five-hour"
+        "five-hours → five-hour",
+        "five-hour",
+        "five-hours hike → five-hour hike"
       ],
       "displayAnswer": "five-hours → five-hour",
       "explanation": "Tính từ ghép chỉ thời lượng đứng trước danh từ dùng đơn vị ở số ít: a five-hour hike.",
@@ -685,7 +690,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "compete → competed"
+        "compete → competed",
+        "competed"
       ],
       "displayAnswer": "compete → competed",
       "explanation": "Climbed và competed là hai hành động cùng xảy ra trong quá khứ, nối bằng and.",
@@ -696,7 +702,9 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "has → had"
+        "has → had",
+        "had",
+        "has scaled → had scaled"
       ],
       "displayAnswer": "has → had",
       "explanation": "By age seven là mốc đã qua trong câu chuyện; việc chinh phục ngọn núi đã hoàn tất trước mốc này nên dùng quá khứ hoàn thành had scaled.",
@@ -1069,7 +1077,10 @@
       "sectionCode": "III.1",
       "localNumber": 1,
       "acceptedAnswers": [
-        "have a special diet, they perish"
+        "have a special diet, they perish",
+        "have a special diet, they will perish",
+        "get a special diet, they perish",
+        "get a special diet, they will perish"
       ],
       "displayAnswer": "have a special diet, they perish",
       "explanation": "Unless = if…not.",
@@ -1104,7 +1115,11 @@
         "at a loss to understand Harold’s behavior",
         "at a loss to comprehend Harold’s behavior",
         "unable to understand Harold’s behavior",
-        "unable to comprehend Harold’s behavior"
+        "unable to comprehend Harold’s behavior",
+        "at a loss to understand Harold’s behaviour",
+        "at a loss to comprehend Harold’s behaviour",
+        "unable to understand Harold’s behaviour",
+        "unable to comprehend Harold’s behaviour"
       ],
       "displayAnswer": "at a loss to understand Harold’s behavior / at a loss to comprehend Harold’s behavior / unable to understand Harold’s behavior / unable to comprehend Harold’s behavior",
       "explanation": "Find myself at a loss to understand… = thấy mình không hiểu nổi…; unable to understand cũng giữ nghĩa của incomprehensible.\nbe at a loss to = không biết làm sao để.",
@@ -1161,7 +1176,8 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "Janice long to recover from her cold",
-        "long for Janice to recover from her cold"
+        "long for Janice to recover from her cold",
+        "Janice long to get over her cold"
       ],
       "displayAnswer": "Janice long to recover from her cold / long for Janice to recover from her cold",
       "explanation": "It takes somebody + thời gian + to V hoặc It takes + thời gian + for somebody + to V.",
@@ -1193,7 +1209,12 @@
       "acceptedAnswers": [
         "the fact that a famous film star attended, the party would not have been a success",
         "the attendance of a famous film star, the party would not have been a success",
-        "a famous film star’s attendance, the party would not have been a success"
+        "a famous film star’s attendance, the party would not have been a success",
+        "the fact that a famous film star attended, the party wouldn’t have been a success",
+        "the attendance of a famous film star, the party wouldn’t have been a success",
+        "a famous film star’s attendance, the party wouldn’t have been a success",
+        "the presence of a famous film star, the party would not have been a success",
+        "the presence of a famous film star, the party wouldn’t have been a success"
       ],
       "displayAnswer": "the fact that a famous film star attended, the party would not have been a success / the attendance of a famous film star, the party would not have been a success / a famous film star’s attendance, the party would not have been a success",
       "explanation": "But for + danh từ/cụm danh từ diễn đạt nếu không có… Với một bữa tiệc đã diễn ra, mệnh đề kết quả phải dùng would not have been a success.",
@@ -1229,7 +1250,12 @@
         "aim of furthering his study in the UK, Marshal has been taking an advanced English course",
         "intention of furthering his study in the UK, Marshal has been taking an advanced English course",
         "goal of furthering his study in the UK, Marshal has been taking an advanced English course",
-        "purpose of furthering his study in the UK, Marshal has been taking an advanced English course"
+        "purpose of furthering his study in the UK, Marshal has been taking an advanced English course",
+        "aim of furthering his study in the U.K., Marshal has been taking an advanced English course",
+        "intention of furthering his study in the U.K., Marshal has been taking an advanced English course",
+        "goal of furthering his study in the U.K., Marshal has been taking an advanced English course",
+        "purpose of furthering his study in the U.K., Marshal has been taking an advanced English course",
+        "aim of furthering his studies in the UK, Marshal has been taking an advanced English course"
       ],
       "displayAnswer": "aim of furthering his study in the UK, Marshal has been taking an advanced English course / intention of furthering his study in the UK, Marshal has been taking an advanced English course / goal of furthering his study in the UK, Marshal has been taking an advanced English course / purpose of furthering his study in the UK, Marshal has been taking an advanced English course",
       "explanation": "With the aim/intention/goal/purpose of + V-ing diễn đạt mục đích.",

@@ -638,7 +638,8 @@
       "sectionCode": "I.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "derailed"
+        "derailed",
+        "derailment"
       ],
       "displayAnswer": "derailed",
       "explanation": "Derail là trật bánh khỏi đường ray.",
@@ -1089,7 +1090,8 @@
       "suffix": "",
       "acceptedAnswers": [
         "wonderful an opportunity for us to miss",
-        "wonderful an opportunity to miss"
+        "wonderful an opportunity to miss",
+        "wonderful an opportunity to be missed"
       ],
       "fullSentence": "It’s too wonderful an opportunity for us to miss.",
       "explanation": "Cấu trúc too + tính từ + a/an + danh từ + (for somebody) + to V diễn tả quá ... để có thể .... Wonderful đứng trước an opportunity.",
@@ -1153,7 +1155,9 @@
         "as Sam tried to convince her to join his team, it was no use",
         "though Sam tried to convince her to join his team, it was no use",
         "as Sam tried to convince her to join his team, he could not",
-        "though Sam tried to convince her to join his team, he could not"
+        "though Sam tried to convince her to join his team, he could not",
+        "as Sam tried to convince her to join his team, he failed",
+        "though Sam tried to convince her to join his team, he failed"
       ],
       "fullSentence": "Hard as Sam tried to convince her to join his team, it was no use.",
       "explanation": "Hard as/though Sam tried mở mệnh đề nhượng bộ, = dù Sam đã rất cố gắng.",
@@ -1259,7 +1263,10 @@
       "suffix": "from carving eggshells",
       "acceptedAnswers": [
         "I derive a lot of pleasure",
-        "I derive great pleasure"
+        "I derive great pleasure",
+        "I derive much pleasure",
+        "I derive lots of pleasure",
+        "I derive enormous pleasure"
       ],
       "fullSentence": "I derive a lot of pleasure from carving eggshells",
       "explanation": "Derive pleasure from something nghĩa là nhận được niềm vui từ hoạt động đó. From là giới từ nên dùng carving.",
@@ -1282,7 +1289,9 @@
       "suffix": "the life of Marx as a young man",
       "acceptedAnswers": [
         "gives an interesting account of",
-        "provides an interesting account of"
+        "provides an interesting account of",
+        "is an interesting account of",
+        "offers an interesting account of"
       ],
       "fullSentence": "The book gives an interesting account of the life of Marx as a young man",
       "explanation": "An account of là sự kể lại hoặc mô tả, nên gives/provides an interesting account of tương đương interestingly describes.",
@@ -1375,7 +1384,9 @@
         "as a consequence of oversleeping",
         "as a consequence of our oversleeping",
         "in consequence of oversleeping",
-        "in consequence of our oversleeping"
+        "in consequence of our oversleeping",
+        "as a consequence of having overslept",
+        "in consequence of having overslept"
       ],
       "fullSentence": "We missed the match as a consequence of oversleeping this morning",
       "explanation": "As/in consequence of + danh từ hoặc V-ing nghĩa là do/hệ quả của. Oversleeping diễn đạt ngủ quá giờ, làm lỡ trận đấu.",
@@ -1419,7 +1430,8 @@
       "suffix": "of inflation",
       "acceptedAnswers": [
         "were adding fuel to the fire",
-        "were adding fuel to the problem"
+        "were adding fuel to the problem",
+        "were adding fuel to the flames"
       ],
       "fullSentence": "Rising food prices were adding fuel to the fire of inflation",
       "explanation": "Add fuel to the fire là làm tình hình vốn xấu trở nên tệ hơn, tương đương making … worse. Were adding giữ đúng quá khứ tiếp diễn của were making.",

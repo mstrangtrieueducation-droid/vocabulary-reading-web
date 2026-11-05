@@ -566,7 +566,8 @@
       "sectionCode": "I.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "replaced"
+        "replaced",
+        "displaced"
       ],
       "displayAnswer": "replaced",
       "explanation": "Replace = thay thế.",
@@ -1087,7 +1088,8 @@
       "localNumber": 1,
       "acceptedAnswers": [
         "we not tried to fix the car ourselves, the repairs would not have cost as much",
-        "we not tried to fix the car ourselves, the repairs would not have cost so much"
+        "we not tried to fix the car ourselves, the repairs would not have cost so much",
+        "we not tried to fix the car ourselves, the repairs would have cost less"
       ],
       "displayAnswer": "we not tried to fix the car ourselves, the repairs would not have cost as much / we not tried to fix the car ourselves, the repairs would not have cost so much",
       "prefix": "Had",
@@ -1101,7 +1103,8 @@
       "sectionCode": "III.1",
       "localNumber": 2,
       "acceptedAnswers": [
-        "was the success of the advertising campaign that the product sold out within a week"
+        "was the success of the advertising campaign that the product sold out within a week",
+        "a success was the advertising campaign that the product sold out within a week"
       ],
       "displayAnswer": "was the success of the advertising campaign that the product sold out within a week",
       "prefix": "Such",
@@ -1131,7 +1134,8 @@
       "acceptedAnswers": [
         "on the issue have been going on for over two weeks",
         "on the issue have been taking place for over two weeks",
-        "about the issue have been going on for over two weeks"
+        "about the issue have been going on for over two weeks",
+        "about the issue have been taking place for over two weeks"
       ],
       "displayAnswer": "on the issue have been going on for over two weeks / on the issue have been taking place for over two weeks / about the issue have been going on for over two weeks",
       "prefix": "Discussions",
@@ -1161,7 +1165,9 @@
       "acceptedAnswers": [
         "the conditions of the deserts are, many creatures still survive and thrive",
         "the conditions in the deserts are, many creatures still survive and thrive",
-        "desert conditions are, many creatures still survive and thrive"
+        "desert conditions are, many creatures still survive and thrive",
+        "the conditions of the deserts are, many creatures still survive and thrive in them",
+        "the conditions in the deserts are, many creatures still survive and thrive in them"
       ],
       "displayAnswer": "the conditions of the deserts are, many creatures still survive and thrive / the conditions in the deserts are, many creatures still survive and thrive / desert conditions are, many creatures still survive and thrive",
       "prefix": "Harsh as",
@@ -1177,7 +1183,8 @@
       "acceptedAnswers": [
         "had not lost my passport last week, I would not be having so much trouble now",
         "hadn't lost my passport last week, I wouldn't be having so much trouble now",
-        "had not lost my passport last week, I would not be having a lot of trouble now"
+        "had not lost my passport last week, I would not be having a lot of trouble now",
+        "had not lost my passport last week, I would not have so much trouble now"
       ],
       "displayAnswer": "had not lost my passport last week, I would not be having so much trouble now / hadn't lost my passport last week, I wouldn't be having so much trouble now / had not lost my passport last week, I would not be having a lot of trouble now",
       "prefix": "If I",
@@ -1192,7 +1199,9 @@
       "localNumber": 8,
       "acceptedAnswers": [
         "famous the artist becomes, the more valuable the picture becomes",
-        "famous the artist is, the more valuable the picture is"
+        "famous the artist is, the more valuable the picture is",
+        "famous the artist becomes, the more valuable the picture is",
+        "famous the artist becomes, the more valuable his or her picture becomes"
       ],
       "displayAnswer": "famous the artist becomes, the more valuable the picture becomes / famous the artist is, the more valuable the picture is",
       "prefix": "The more",
@@ -1209,7 +1218,10 @@
         "she had done a lot of research did she begin writing her book",
         "she had done a lot of research did she start writing her book",
         "she had done a lot of research did she begin to write her book",
-        "doing a lot of research did she begin writing her book"
+        "doing a lot of research did she begin writing her book",
+        "she had done a lot of research did she start to write her book",
+        "doing a lot of research did she start writing her book",
+        "having done a lot of research did she begin writing her book"
       ],
       "displayAnswer": "she had done a lot of research did she begin writing her book / she had done a lot of research did she start writing her book / she had done a lot of research did she begin to write her book / doing a lot of research did she begin writing her book",
       "prefix": "Only after",
@@ -1225,7 +1237,8 @@
       "acceptedAnswers": [
         "of the findings will be made until next week",
         "about the findings will be made until next week",
-        "will be made about the findings until next week"
+        "will be made about the findings until next week",
+        "will be made of the findings until next week"
       ],
       "displayAnswer": "of the findings will be made until next week / about the findings will be made until next week / will be made about the findings until next week",
       "prefix": "No announcement",
@@ -1308,7 +1321,8 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "in for unfair criticism",
-        "in for unjust criticism"
+        "in for unjust criticism",
+        "in for unjustified criticism"
       ],
       "displayAnswer": "in for unfair criticism / in for unjust criticism",
       "prefix": "Ali feels that he came",

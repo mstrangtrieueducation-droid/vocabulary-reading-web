@@ -606,7 +606,10 @@
         "consisted → comprised",
         "comprised",
         "are typically consisted → typically consist",
-        "typically consist"
+        "typically consist",
+        "consisted → made up",
+        "consisted -> made up",
+        "made up"
       ],
       "displayAnswer": "consisted → composed",
       "explanation": "Consist of là nội động từ, không dùng bị động are consisted of.",
@@ -624,7 +627,11 @@
         "remove but",
         "bỏ but",
         "but -> ∅",
-        "but → bỏ"
+        "but → bỏ",
+        "but → Ø",
+        "but -> Ø",
+        "but → 0",
+        "but -> 0"
       ],
       "displayAnswer": "but → ∅",
       "explanation": "Although đã mở mệnh đề nhượng bộ nên không thêm but nối mệnh đề chính.",
@@ -896,7 +903,8 @@
       "acceptedAnswers": [
         "access",
         "admission",
-        "entry"
+        "entry",
+        "entrance"
       ],
       "displayAnswer": "access / admission / entry",
       "explanation": "Free access/admission/entry to ... đều nói được vào miễn phí.",
@@ -1108,7 +1116,11 @@
         "poverty caused him to discontinue his studies",
         "poverty forced him to discontinue his studies",
         "poverty prevented him from continuing his studies",
-        "studies were discontinued because he was poor"
+        "studies were discontinued because he was poor",
+        "poverty made him discontinue his studies",
+        "poverty led him to discontinue his studies",
+        "poverty was the reason why he discontinued his studies",
+        "poverty was the reason he discontinued his studies"
       ],
       "displayAnswer": "poverty caused him to discontinue his studies / poverty forced him to discontinue his studies / poverty prevented him from continuing his studies / studies were discontinued because he was poor",
       "explanation": "because he was poor → his poverty. Việc bỏ học xảy ra trong quá khứ → caused/forced/prevented/were.",
@@ -1186,7 +1198,9 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "had not been for the money from the sponsors, we could not have conducted a successful show",
-        "hadn't been for the money from the sponsors, we couldn't have conducted a successful show"
+        "hadn't been for the money from the sponsors, we couldn't have conducted a successful show",
+        "had not been for the money from the sponsors, we would not have been able to conduct a successful show",
+        "hadn't been for the money from the sponsors, we wouldn't have been able to conduct a successful show"
       ],
       "displayAnswer": "had not been for the money from the sponsors, we could not have conducted a successful show / hadn't been for the money from the sponsors, we couldn't have conducted a successful show",
       "explanation": "If it had not been for + danh từ = nếu không nhờ... trong quá khứ.",
@@ -1233,7 +1247,10 @@
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "it impossible to believe my account of the incident"
+        "it impossible to believe my account of the incident",
+        "my account of the incident unbelievable",
+        "my account of the incident impossible to believe",
+        "my account of the incident incredible"
       ],
       "displayAnswer": "it impossible to believe my account of the incident",
       "explanation": "Find it + tính từ + to do: found it impossible to believe, = thấy không thể tin.",
@@ -1247,7 +1264,8 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "take what she said to heart"
+        "take what she said to heart",
+        "take her words to heart"
       ],
       "displayAnswer": "take what she said to heart",
       "explanation": "Take something to heart = để bụng, bị lời nói tác động khiến buồn. Don’t đã cho sẵn nên chỉ điền cụm động từ.",
@@ -1269,7 +1287,8 @@
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "take my hat off to you"
+        "take my hat off to you",
+        "take off my hat to you"
       ],
       "displayAnswer": "take my hat off to you",
       "explanation": "Take one’s hat off to somebody = ngưỡng mộ, bày tỏ sự khâm phục. Chủ ngữ I đi với my hat, to you chỉ người được khen.",
@@ -1360,7 +1379,8 @@
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "complimented William on"
+        "complimented William on",
+        "complimented him on"
       ],
       "displayAnswer": "complimented William on",
       "explanation": "Compliment somebody on something = khen ai về điều gì. Complimented ở quá khứ theo said; on là từ bắt buộc trong đề.",
@@ -1409,7 +1429,12 @@
       "acceptedAnswers": [
         "a seriously harmful effect on",
         "a very harmful effect on",
-        "a serious negative effect on"
+        "a serious negative effect on",
+        "a detrimental effect on",
+        "a seriously detrimental effect on",
+        "a seriously damaging effect on",
+        "a serious adverse effect on",
+        "a very negative effect on"
       ],
       "displayAnswer": "a seriously harmful effect on / a very harmful effect on / a serious negative effect on",
       "explanation": "Have an effect on somebody/something diễn tả tác động đến đối tượng.",
@@ -1431,7 +1456,10 @@
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "By no means is she"
+        "By no means is she",
+        "In no way is she",
+        "She is by no means",
+        "She is in no way"
       ],
       "displayAnswer": "By no means is she",
       "explanation": "By no means = hoàn toàn không; đặt đầu câu buộc đảo is she.",
@@ -1453,7 +1481,8 @@
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "although they pretended to be sad"
+        "although they pretended to be sad",
+        "although they pretended they were sad"
       ],
       "displayAnswer": "although they pretended to be sad",
       "explanation": "Although nối hai ý tương phản: bên ngoài tỏ ra buồn nhưng thực ra vui. Sau although cần mệnh đề có chủ ngữ và động từ.",

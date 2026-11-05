@@ -881,7 +881,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "thorough → thoroughly"
+        "thorough → thoroughly",
+        "thoroughly"
       ],
       "displayAnswer": "Line 3: thorough → thoroughly",
       "explanation": "thoroughly (adv): kỹ lưỡng; bổ nghĩa cho động từ clean.",
@@ -899,7 +900,10 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "places → is placed"
+        "places → is placed",
+        "is placed",
+        "places → are placed",
+        "are placed"
       ],
       "displayAnswer": "Line 4: places → is placed",
       "explanation": "A tray là chủ ngữ số ít, được đặt lên bàn → is placed.",
@@ -915,7 +919,8 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "reunity → reunion"
+        "reunity → reunion",
+        "reunion"
       ],
       "displayAnswer": "Line 5: reunity → reunion",
       "explanation": "family reunion: cuộc đoàn tụ gia đình; không dùng reunity.",
@@ -933,7 +938,10 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "contain → containing"
+        "contain → containing",
+        "containing",
+        "contain → that contain",
+        "contain → which contain"
       ],
       "displayAnswer": "Line 7: contain → containing",
       "explanation": "envelopes containing money = envelopes that contain money: phong bao chứa tiền.",
@@ -949,7 +957,8 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "reminding → reminder"
+        "reminding → reminder",
+        "reminder"
       ],
       "displayAnswer": "Line 7: reminding → reminder",
       "explanation": "a reminder of: điều nhắc nhở về…; cần danh từ sau a powerful.",
@@ -1482,7 +1491,9 @@
       "sectionCode": "III.1",
       "localNumber": 1,
       "acceptedAnswers": [
-        "Despite his severe disability, Kent participated in many sports."
+        "Despite his severe disability, Kent participated in many sports.",
+        "Despite his being severely disabled, Kent participated in many sports.",
+        "Despite his severe disability, Kent took part in many sports."
       ],
       "displayAnswer": "Despite his severe disability, Kent participated in many sports.",
       "explanation": "although + mệnh đề → despite + cụm danh từ. Severely disabled → his severe disability.",
@@ -1519,7 +1530,10 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "Not only does Barbara run a successful company but she also manages to look after her five children.",
-        "Not only does Barbara run a successful company, but she also manages to look after her five children."
+        "Not only does Barbara run a successful company, but she also manages to look after her five children.",
+        "Not only does Barbara run a successful company but also manages to look after her five children.",
+        "Not only does Barbara run a successful company, but also manages to look after her five children.",
+        "Not only does Barbara run a successful company, she also manages to look after her five children."
       ],
       "displayAnswer": "Not only does Barbara run a successful company but she also manages to look after her five children.",
       "explanation": "Not only + does + S + V…, but S also + V…; đảo ở vế đầu.",
@@ -1535,7 +1549,9 @@
       "sectionCode": "III.1",
       "localNumber": 4,
       "acceptedAnswers": [
-        "Man is mainly distinguished from other animals by the power of speech."
+        "Man is mainly distinguished from other animals by the power of speech.",
+        "Man is distinguished from other animals mainly by the power of speech.",
+        "Man is distinguished mainly from other animals by the power of speech."
       ],
       "displayAnswer": "Man is mainly distinguished from other animals by the power of speech.",
       "explanation": "distinguish A from B → A is distinguished from B by…: A được phân biệt với B nhờ…",
@@ -1553,7 +1569,11 @@
       "acceptedAnswers": [
         "The more qualifications you are able to amass, the more successful you are in the academic field.",
         "The more qualifications you are able to amass, the more successful you will be in the academic field.",
-        "The more qualifications you are able to amass, the more successful you can be in the academic field."
+        "The more qualifications you are able to amass, the more successful you can be in the academic field.",
+        "The more qualifications you amass, the more successful you are in the academic field.",
+        "The more qualifications you amass, the more successful you will be in the academic field.",
+        "The more qualifications you can amass, the more successful you will be in the academic field.",
+        "The more qualifications you can amass, the more successful you are in the academic field."
       ],
       "displayAnswer": "The more qualifications you are able to amass, the more successful you are in the academic field.",
       "explanation": "The + so sánh hơn…, the + so sánh hơn…: càng… càng…; amass = accumulate: tích lũy.",
@@ -1607,7 +1627,8 @@
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "Insect bites can be avoided in various ways."
+        "Insect bites can be avoided in various ways.",
+        "Insect bites can be avoided in a variety of ways."
       ],
       "displayAnswer": "Insect bites can be avoided in various ways.",
       "explanation": "Bị động với động từ tình thái: can + be + V3 → can be avoided.",
@@ -1661,7 +1682,9 @@
         "Failure to pay on time will cause your booking being canceled.",
         "Failure to pay on time will cause your booking being cancelled.",
         "Failure to pay on time will cause your booking's being canceled.",
-        "Failure to pay on time will cause your booking's being cancelled."
+        "Failure to pay on time will cause your booking's being cancelled.",
+        "Failure to pay on time will lead to the cancellation of your booking.",
+        "Failure to pay on time will result in your booking's cancellation."
       ],
       "displayAnswer": "Failure to pay on time will cause your booking to be canceled.",
       "explanation": "Failure to + V: việc không làm gì. Cause + vật + to be + V3: khiến việc bị…",
@@ -1677,7 +1700,8 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "began to fall prey to"
+        "began to fall prey to",
+        "began falling prey to"
       ],
       "displayAnswer": "began to fall prey to",
       "explanation": "fall prey to = fall victim to st: trở thành nạn nhân/chịu tác động xấu. rational = reasonable: hợp lý.",
@@ -1706,7 +1730,9 @@
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "always take your advice"
+        "always take your advice",
+        "always follow your advice",
+        "always act on your advice"
       ],
       "displayAnswer": "always take your advice",
       "explanation": "take somebody’s advice: làm theo lời khuyên.",
@@ -1734,7 +1760,9 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "not come up to his expectations",
-        "not live up to his expectations"
+        "not live up to his expectations",
+        "not meet his expectations",
+        "not match his expectations"
       ],
       "displayAnswer": "not come up to his expectations / not live up to his expectations",
       "explanation": "come/live up to one’s expectations: đúng với kỳ vọng; fall short of one’s expectations: không đạt kỳ vọng.",
@@ -1845,7 +1873,8 @@
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "sure how I would have reacted"
+        "sure how I would have reacted",
+        "sure how I'd have reacted"
       ],
       "displayAnswer": "sure how I would have reacted",
       "explanation": "what my reaction would have been → how I would have reacted. Reaction là danh từ; react là động từ.",
@@ -1870,7 +1899,10 @@
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "I will be surprised should"
+        "I will be surprised should",
+        "I would be surprised should",
+        "I'd be surprised should",
+        "I'll be surprised should"
       ],
       "displayAnswer": "I will be surprised should",
       "explanation": "Should + S + V: đảo ngữ điều kiện, tương đương if + S + should + V. economic climate: tình hình kinh tế; climate (n): bối cảnh.",

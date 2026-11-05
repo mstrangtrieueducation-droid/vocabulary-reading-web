@@ -1145,7 +1145,9 @@
         "can be compared with her sacrifice",
         "can be compared to her sacrifice",
         "compares with her sacrifice",
-        "compares to her sacrifice"
+        "compares to her sacrifice",
+        "can compare with her sacrifice",
+        "can compare to her sacrifice"
       ],
       "displayAnswer": "can be compared with her sacrifice / can be compared to her sacrifice / compares with her sacrifice / compares to her sacrifice",
       "prefix": "Nothing",
@@ -1180,7 +1182,10 @@
       "acceptedAnswers": [
         "to meet a more generous person than Andrew",
         "to meet anyone more generous than Andrew",
-        "to meet someone more generous than Andrew"
+        "to meet someone more generous than Andrew",
+        "to meet a person more generous than Andrew",
+        "to meet such a generous person as Andrew",
+        "to meet anybody more generous than Andrew"
       ],
       "displayAnswer": "to meet a more generous person than Andrew / to meet anyone more generous than Andrew / to meet someone more generous than Andrew",
       "prefix": "I’ve yet",
@@ -1278,7 +1283,11 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "provided you complete",
-        "provided that you complete"
+        "provided that you complete",
+        "provided you fill in",
+        "provided that you fill in",
+        "provided you fill out",
+        "provided that you fill out"
       ],
       "displayAnswer": "provided you complete / provided that you complete",
       "prefix": "You can join the course",
@@ -1302,7 +1311,8 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "until he has calmed down",
-        "until he calms down"
+        "until he calms down",
+        "until he's calmed down"
       ],
       "displayAnswer": "until he has calmed down / until he calms down",
       "prefix": "Please do not discuss the problem with Jimmy",
@@ -1344,7 +1354,10 @@
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "felt like joining"
+        "felt like joining",
+        "felt like taking part in",
+        "felt the urge to join",
+        "felt an urge to join"
       ],
       "displayAnswer": "felt like joining",
       "prefix": "Daniel suddenly",
@@ -1366,7 +1379,11 @@
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "under much greater pressure"
+        "under much greater pressure",
+        "under much more pressure",
+        "under far more pressure",
+        "under a lot more pressure",
+        "under far greater pressure"
       ],
       "displayAnswer": "under much greater pressure",
       "prefix": "The economic slowdown will put these families",
@@ -1413,7 +1430,9 @@
       "localNumber": 8,
       "acceptedAnswers": [
         "had not turned on the waterworks",
-        "hadn't turned on the waterworks"
+        "hadn't turned on the waterworks",
+        "had not turned the waterworks on",
+        "hadn't turned the waterworks on"
       ],
       "displayAnswer": "had not turned on the waterworks / hadn't turned on the waterworks",
       "prefix": "I would rather she",

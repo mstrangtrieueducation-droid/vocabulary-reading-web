@@ -488,11 +488,11 @@
       "teacherSelected": true
     },
     {
-      "term": "no point",
-      "meaning": "không có ích, không đáng làm",
-      "usage": "there is no point (in) + V-ing",
-      "example": "There is no point in arguing now.",
-      "translation": "Bây giờ tranh cãi cũng không có ích.",
+      "term": "at no point",
+      "meaning": "không lúc nào (đứng đầu câu thì đảo trợ động từ)",
+      "usage": "At no point + trợ động từ + S + V",
+      "example": "At no point was the public informed.",
+      "translation": "Không lúc nào công chúng được thông báo.",
       "family": "point (n); pointless (adj)",
       "meta": "PHRASE",
       "note": "At no point là cụm phủ định đặt đầu câu nên phải đảo trợ động từ lên trước chủ ngữ. The general public was informed là bị động quá khứ, thành was the general public informed. Will/can cần be và had cần been; đứng riêng như các lựa chọn thì không hoàn chỉnh.",

@@ -657,7 +657,8 @@
       "localNumber": 1,
       "acceptedAnswers": [
         "Line 1: Spread → Spreading",
-        "Spreading"
+        "Spreading",
+        "Spread → Spreading"
       ],
       "displayAnswer": "Line 1: Spread → Spreading",
       "explanation": "Spreading false rumors làm chủ ngữ → dùng V-ing.",
@@ -669,7 +670,8 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "Line 3: unhelpful → helpless",
-        "helpless"
+        "helpless",
+        "unhelpful → helpless"
       ],
       "displayAnswer": "Line 3: unhelpful → helpless",
       "explanation": "helpless: bất lực; unhelpful: không hữu ích/không giúp đỡ.",
@@ -685,7 +687,9 @@
       "acceptedAnswers": [
         "Line 3: the others → others",
         "Line 3: when the others → when others",
-        "others"
+        "others",
+        "the others → others",
+        "when the others → when others"
       ],
       "displayAnswer": "Line 3: the others → others",
       "explanation": "others: những người khác nói chung; the others: những người còn lại của một nhóm xác định.",
@@ -697,7 +701,8 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "Line 6: make → making",
-        "making"
+        "making",
+        "make → making"
       ],
       "displayAnswer": "Line 6: make → making",
       "explanation": "making mở cụm phân từ chỉ kết quả: việc tin đồn lan nhanh khiến hậu quả nghiêm trọng hơn.",
@@ -711,7 +716,9 @@
         "Line 7: as → such as",
         "Line 7: as → like",
         "such as",
-        "like"
+        "like",
+        "as → such as",
+        "as → like"
       ],
       "displayAnswer": "Line 7: as → such as / like",
       "explanation": "such as / like: chẳng hạn như, dùng để nêu ví dụ.",
@@ -866,7 +873,8 @@
       "sectionCode": "II.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "road"
+        "road",
+        "traffic"
       ],
       "displayAnswer": "road",
       "explanation": "road accidents: tai nạn giao thông đường bộ.",
@@ -1181,7 +1189,9 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "I need to have my passport renewed because I’m going abroad this summer.",
-        "I need my passport renewed because I’m going abroad this summer."
+        "I need my passport renewed because I’m going abroad this summer.",
+        "I need to renew my passport because I’m going abroad this summer.",
+        "I need to get my passport renewed because I’m going abroad this summer."
       ],
       "displayAnswer": "I need to have my passport renewed because I’m going abroad this summer.",
       "explanation": "have + vật + V3: nhờ/sắp xếp để việc được làm; have my passport renewed: gia hạn hộ chiếu.",
@@ -1308,7 +1318,8 @@
       "acceptedAnswers": [
         "really should back up",
         "should definitely back up",
-        "should really back up"
+        "should really back up",
+        "definitely should back up"
       ],
       "displayAnswer": "really should back up / should definitely back up / should really back up",
       "explanation": "really/definitely should + V: rất nên làm gì; tương đương highly recommended.",
@@ -1432,7 +1443,8 @@
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "in spite of never having"
+        "in spite of never having",
+        "in spite of having never"
       ],
       "displayAnswer": "in spite of never having",
       "explanation": "although + mệnh đề → in spite of + N/V-ing. Never having travelled: trước đó chưa từng đi.",

@@ -620,7 +620,8 @@
       "sectionCode": "I.2",
       "localNumber": 12,
       "acceptedAnswers": [
-        "counterproductive"
+        "counterproductive",
+        "counter-productive"
       ],
       "displayAnswer": "counterproductive",
       "explanation": "counterproductive = phản tác dụng: mở rộng đường lại khiến nhiều người lái xe hơn.",
@@ -633,7 +634,8 @@
       "sectionCode": "I.2",
       "localNumber": 13,
       "acceptedAnswers": [
-        "foregone"
+        "foregone",
+        "forgone"
       ],
       "displayAnswer": "foregone",
       "explanation": "a foregone conclusion = kết quả có thể đoán chắc.",
@@ -671,7 +673,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "likely → alike"
+        "likely → alike",
+        "alike"
       ],
       "displayAnswer": "likely → alike",
       "explanation": "A and B alike = cả A lẫn B; alike không phải likely (có khả năng).",
@@ -682,7 +685,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "ranged → ranging"
+        "ranged → ranging",
+        "ranging"
       ],
       "displayAnswer": "ranged → ranging",
       "explanation": "Ranging from…to… = trải từ…đến…; V-ing bổ nghĩa chủ động cho species.",
@@ -693,7 +697,12 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "When → While"
+        "When → While",
+        "While",
+        "When → Although",
+        "When → Though",
+        "When → Whereas",
+        "When → Whilst"
       ],
       "displayAnswer": "When → While",
       "explanation": "While = trong khi/mặc dù; nối ý các nhà khoa học tin với điều vẫn còn chưa rõ.",
@@ -704,7 +713,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "retain → remain"
+        "retain → remain",
+        "remain"
       ],
       "displayAnswer": "retain → remain",
       "explanation": "Remain + bổ ngữ = vẫn là/vẫn ở trạng thái; remain a mystery: vẫn là bí ẩn.",
@@ -715,7 +725,9 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "to → with"
+        "to → with",
+        "with",
+        "interacted to → interacted with"
       ],
       "displayAnswer": "to → with",
       "explanation": "Interact with = tương tác với.",
@@ -1112,7 +1124,11 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "chance of winning the 100 metres, as he’s out of training",
-        "chance of winning the 100 metres because he is out of training"
+        "chance of winning the 100 metres because he is out of training",
+        "chance of winning the 100 metres, as he is out of training",
+        "chance of winning the 100 metres because he’s out of training",
+        "chance of winning the 100 metres as he’s out of training",
+        "chance of winning the 100 metres as he is out of training"
       ],
       "displayAnswer": "chance of winning the 100 metres, as he’s out of training",
       "explanation": "Have almost no chance of + V-ing = hầu như không có khả năng làm gì.",
@@ -1164,7 +1180,9 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "on the bright side even when things were going wrong",
-        "on the bright side of things even when things were going wrong"
+        "on the bright side of things even when things were going wrong",
+        "on the bright side of life even when things were going wrong",
+        "on the bright side, even when things were going wrong"
       ],
       "displayAnswer": "on the bright side even when things were going wrong",
       "explanation": "Look on the bright side = nhìn mặt tích cực; invariably = luôn luôn.",
@@ -1216,7 +1234,10 @@
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "avoid waking anyone up, Anne tiptoed up the stairs"
+        "avoid waking anyone up, Anne tiptoed up the stairs",
+        "avoid waking anybody up, Anne tiptoed up the stairs",
+        "avoid waking up anyone, Anne tiptoed up the stairs",
+        "avoid waking anyone, Anne tiptoed up the stairs"
       ],
       "displayAnswer": "avoid waking anyone up, Anne tiptoed up the stairs",
       "explanation": "To avoid + V-ing = để tránh làm gì; avoid waking anyone up: tránh đánh thức bất kỳ ai.",
@@ -1231,7 +1252,9 @@
       "localNumber": 9,
       "acceptedAnswers": [
         "his victory to his genuine commitment",
-        "his winning to his genuine commitment"
+        "his winning to his genuine commitment",
+        "his win to his genuine commitment",
+        "his success to his genuine commitment"
       ],
       "displayAnswer": "his victory to his genuine commitment",
       "explanation": "Attribute A to B = cho rằng A là do B; chiến thắng là nhờ sự tận tâm.",
@@ -1309,7 +1332,8 @@
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "afford this holiday as long"
+        "afford this holiday as long",
+        "afford this holiday so long"
       ],
       "displayAnswer": "afford this holiday as long",
       "explanation": "Can afford = đủ tiền; as long as = provided: miễn là.",
@@ -1355,7 +1379,9 @@
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "Having finished my dinner"
+        "Having finished my dinner",
+        "Having finished dinner",
+        "Having had my dinner"
       ],
       "displayAnswer": "Having finished my dinner",
       "explanation": "Having + V3: hành động hoàn tất trước hành động chính, cùng chủ ngữ.",
@@ -1376,7 +1402,9 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "splashes out a lot of money",
-        "splashes out"
+        "splashes out",
+        "splashes out lots of money",
+        "splashes out a fortune"
       ],
       "displayAnswer": "splashes out a lot of money / splashes out",
       "explanation": "Splash out on something = chi nhiều tiền cho thứ gì.",
@@ -1420,7 +1448,8 @@
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "is not likely to go"
+        "is not likely to go",
+        "isn't likely to go"
       ],
       "displayAnswer": "is not likely to go",
       "explanation": "Be not likely to + V = có lẽ sẽ không; go on = kéo dài.",
@@ -1443,7 +1472,9 @@
       "sectionCode": "III.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "keep a straight face when"
+        "keep a straight face when",
+        "keep a straight face while",
+        "keep a straight face as"
       ],
       "displayAnswer": "keep a straight face when",
       "explanation": "Keep a straight face = giữ mặt nghiêm, không cười.",

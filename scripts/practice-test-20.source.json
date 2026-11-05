@@ -658,7 +658,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "number → amount"
+        "number → amount",
+        "amount"
       ],
       "displayAnswer": "number → amount",
       "explanation": "Time ở đây là lượng thời gian không đếm được, nên dùng amount of time.",
@@ -669,7 +670,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "helps → help"
+        "helps → help",
+        "help"
       ],
       "displayAnswer": "helps → help",
       "explanation": "Chủ ngữ là short sessions số nhiều; with frequent breaks chỉ bổ sung mô tả.",
@@ -683,7 +685,9 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "depend → depending",
-        "depend → and depend"
+        "depend → and depend",
+        "depending",
+        "and depend"
       ],
       "displayAnswer": "depend → depending / depend → and depend",
       "explanation": "Depending on… là cụm phân từ bổ sung điều kiện ảnh hưởng đến yêu cầu học.",
@@ -694,7 +698,9 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "creation → creativity"
+        "creation → creativity",
+        "creation → recreation",
+        "creativity"
       ],
       "displayAnswer": "creation → creativity",
       "explanation": "Creativity là khả năng sáng tạo, phù hợp danh sách rest, creativity and enjoyment of learning.",
@@ -705,7 +711,8 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "foster → fostering"
+        "foster → fostering",
+        "fostering"
       ],
       "displayAnswer": "foster → fostering",
       "explanation": "Trong be key to something/V-ing, to là giới từ, nên động từ sau nó phải là fostering.",
@@ -1094,7 +1101,9 @@
       "localNumber": 1,
       "acceptedAnswers": [
         "my borrowing your dictionary for a moment",
-        "if I borrowed your dictionary for a moment"
+        "if I borrowed your dictionary for a moment",
+        "me borrowing your dictionary for a moment",
+        "lending me your dictionary for a moment"
       ],
       "displayAnswer": "my borrowing your dictionary for a moment",
       "prefix": "Would you mind",
@@ -1110,7 +1119,9 @@
       "acceptedAnswers": [
         "have printed twenty copies because ten would have been enough",
         "have printed so many copies because ten would have been enough",
-        "have printed more than ten copies"
+        "have printed more than ten copies",
+        "have printed twenty copies as ten would have been enough",
+        "have printed twenty copies since ten would have been enough"
       ],
       "displayAnswer": "have printed twenty copies because ten would have been enough",
       "prefix": "We needn’t",
@@ -1191,7 +1202,9 @@
       "acceptedAnswers": [
         "hard I tried, I couldn’t get the job",
         "hard I tried, I could not get the job",
-        "hard I tried, I was unable to get the job"
+        "hard I tried, I was unable to get the job",
+        "hard I tried, I didn't get the job",
+        "hard I tried, I failed to get the job"
       ],
       "displayAnswer": "hard I tried, I couldn’t get the job / hard I tried, I could not get the job / hard I tried, I was unable to get the job",
       "prefix": "However",
@@ -1258,7 +1271,8 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "Linda apologized to me for"
+        "Linda apologized to me for",
+        "Linda apologized for"
       ],
       "displayAnswer": "Linda apologized to me for",
       "prefix": "",
@@ -1278,7 +1292,9 @@
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "Could you stand in for me"
+        "Could you stand in for me",
+        "Can you stand in for me",
+        "Would you stand in for me"
       ],
       "displayAnswer": "Could you stand in for me",
       "prefix": "",

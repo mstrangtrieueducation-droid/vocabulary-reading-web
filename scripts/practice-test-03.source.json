@@ -285,7 +285,7 @@
         "B"
       ],
       "displayAnswer": "B",
-      "explanation": "bring out = produce",
+      "explanation": "bring out the flavor: làm nổi bật/dậy hương vị.",
       "teacherHighlights": [
         "bring out"
       ]
@@ -689,7 +689,9 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "of → for",
-        "for"
+        "for",
+        "of → to",
+        "to"
       ],
       "displayAnswer": "of → for",
       "explanation": "Be vital for something = rất quan trọng cho điều gì.",
@@ -978,9 +980,9 @@
       "sectionCode": "II.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "A"
+        "C"
       ],
-      "displayAnswer": "A",
+      "displayAnswer": "C",
       "explanation": "Trẻ cần phần thưởng mới chịu học → động lực đến từ bên ngoài.\nbribe (v): hối lộ → bribery (n); rust (n): gỉ → rusty (adj); linger: nán lại; frown: nhăn mặt.",
       "teacherHighlights": [
         "bribe",
@@ -1108,7 +1110,11 @@
       "sectionCode": "III.1",
       "localNumber": 2,
       "acceptedAnswers": [
-        "This jewellery is in such good condition that it seems almost impossible to believe it is nearly a thousand years old."
+        "This jewellery is in such good condition that it seems almost impossible to believe it is nearly a thousand years old.",
+        "This jewellery is in such good condition that it seems unbelievable that it is almost a thousand years old.",
+        "This jewellery is in such good condition that it is hard to believe that it is almost a thousand years old.",
+        "This jewellery is in such good condition that it is hard to believe it is almost a thousand years old.",
+        "This jewellery is in such good condition that it seems impossible to believe that it is almost a thousand years old."
       ],
       "displayAnswer": "This jewellery is in such good condition that it seems almost impossible to believe it is nearly a thousand years old.",
       "explanation": "Such good condition that ... là cấu trúc such + adjective + noun + that. Vế sau phải giữ ý khó tin món trang sức đã gần một nghìn năm tuổi.",
@@ -1119,7 +1125,8 @@
       "sectionCode": "III.1",
       "localNumber": 3,
       "acceptedAnswers": [
-        "As far as punctuality is concerned, Fiona takes after her mother."
+        "As far as punctuality is concerned, Fiona takes after her mother.",
+        "As far as punctuality is concerned, Fiona really takes after her mother."
       ],
       "displayAnswer": "As far as punctuality is concerned, Fiona takes after her mother.",
       "explanation": "As far as + danh từ + be + concerned = in terms of = regarding → về mặt; về khía cạnh.",
@@ -1134,7 +1141,11 @@
       "sectionCode": "III.1",
       "localNumber": 4,
       "acceptedAnswers": [
-        "Working as a primary school teacher calls for a great deal of patience."
+        "Working as a primary school teacher calls for a great deal of patience.",
+        "Working as a primary school teacher calls for a lot of patience.",
+        "Working as a primary school teacher calls for a great deal of patience these days.",
+        "Working as a primary school teacher calls for a lot of patience these days.",
+        "Working as a primary school teacher these days calls for a great deal of patience."
       ],
       "displayAnswer": "Working as a primary school teacher calls for a great deal of patience.",
       "explanation": "call for = require → đòi hỏi phải có…",
@@ -1175,7 +1186,10 @@
       "sectionCode": "III.1",
       "localNumber": 7,
       "acceptedAnswers": [
-        "The price of the book may prevent it from becoming a bestseller."
+        "The price of the book may prevent it from becoming a bestseller.",
+        "The price of the book may prevent it from ever becoming a bestseller.",
+        "The price of the book may stop it from becoming a bestseller.",
+        "The price of the book may stop it from ever becoming a bestseller."
       ],
       "displayAnswer": "The price of the book may prevent it from becoming a bestseller.",
       "explanation": "Prevent something from becoming ... diễn tả giá của cuốn sách có thể ngăn nó trở thành bestseller.",
@@ -1188,7 +1202,8 @@
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "Sally was on the point of leaving the office when the boss asked her to type up a report."
+        "Sally was on the point of leaving the office when the boss asked her to type up a report.",
+        "Sally was on the point of leaving the office when her boss asked her to type up a report."
       ],
       "displayAnswer": "Sally was on the point of leaving the office when the boss asked her to type up a report.",
       "explanation": "be on the point of doing something = be about to do something → sắp sửa làm gì; đang định làm gì.\nbe on the point of doing st\n= be about to do st",
@@ -1204,7 +1219,14 @@
       "sectionCode": "III.1",
       "localNumber": 9,
       "acceptedAnswers": [
-        "It was the absence/lack of leadership on the committee that caused/resulted in/led to most of the problems."
+        "It was the absence of leadership on the committee that caused most of the problems.",
+        "It was the absence of leadership on the committee that resulted in most of the problems.",
+        "It was the absence of leadership on the committee that led to most of the problems.",
+        "It was the lack of leadership on the committee that caused most of the problems.",
+        "It was the lack of leadership on the committee that resulted in most of the problems.",
+        "It was the lack of leadership on the committee that led to most of the problems.",
+        "It was the lack of leadership on the committee that gave rise to most of the problems.",
+        "It was the absence of leadership on the committee that gave rise to most of the problems."
       ],
       "displayAnswer": "It was the absence/lack of leadership on the committee that caused/resulted in/led to most of the problems.",
       "explanation": "Câu chẻ It was ... that nhấn mạnh nguyên nhân: chính sự thiếu vắng lãnh đạo đã gây ra phần lớn vấn đề.",
@@ -1217,7 +1239,9 @@
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "The repair of the bridge is planned for this weekend."
+        "The repair of the bridge is planned for this weekend.",
+        "The repair of the bridge is scheduled for this weekend.",
+        "The repair of the bridge is planned to take place this weekend."
       ],
       "displayAnswer": "The repair of the bridge is planned for this weekend.",
       "explanation": "Động từ plan được chuyển thành danh từ repair làm chủ ngữ; cấu trúc bị động is planned for this weekend giữ nguyên thời gian dự kiến.",
@@ -1228,7 +1252,8 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "have any recollection of phoning me"
+        "have any recollection of phoning me",
+        "have any recollection of calling me"
       ],
       "displayAnswer": "have any recollection of phoning me",
       "explanation": "have a recollection of…: nhớ lại; có ấn tượng về một việc trong quá khứ. have … recollection of …: hồi tưởng; nhớ lại; có ấn tượng về việc gì trong quá khứ",
@@ -1295,7 +1320,10 @@
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "count on being allocated a car-parking"
+        "count on being allocated a car-parking",
+        "count on being given a car-parking",
+        "count on getting a car-parking",
+        "count on having a car-parking"
       ],
       "displayAnswer": "count on being allocated a car-parking",
       "explanation": "allocate (v): phân bổ thời gian, tiền bạc hoặc nguồn lực cho một mục đích.",
@@ -1317,7 +1345,8 @@
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "no time in getting started"
+        "no time in getting started",
+        "no time getting started"
       ],
       "displayAnswer": "no time in getting started",
       "explanation": "lose no time in doing something: làm ngay, không trì hoãn.",
@@ -1339,7 +1368,8 @@
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "prevented us from driving home"
+        "prevented us from driving home",
+        "prevented us driving home"
       ],
       "displayAnswer": "prevented us from driving home",
       "explanation": "Prevent somebody from + V-ing nghĩa là ngăn ai làm gì. Heavy snow là nguyên nhân khiến chúng tôi không thể lái xe về nhà.",
@@ -1361,7 +1391,9 @@
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "to put up with rudeness"
+        "to put up with rudeness",
+        "to put up with any rudeness",
+        "to put up with the rudeness"
       ],
       "displayAnswer": "to put up with rudeness",
       "explanation": "Put up with something nghĩa là chịu đựng. Be not willing to put up with tương đương would no longer tolerate.",

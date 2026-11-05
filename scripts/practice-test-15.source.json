@@ -480,7 +480,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "effects → affects"
+        "effects → affects",
+        "affects"
       ],
       "displayAnswer": "effects → affects",
       "explanation": "Affect là động từ tác động đến; effect thường là danh từ ảnh hưởng hoặc động từ tạo ra.",
@@ -493,7 +494,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "case → cases"
+        "case → cases",
+        "cases"
       ],
       "displayAnswer": "case → cases",
       "explanation": "In severe cases là trong những trường hợp nghiêm trọng.",
@@ -504,7 +506,8 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "made → making"
+        "made → making",
+        "making"
       ],
       "displayAnswer": "made → making",
       "explanation": "Making it challenging… là mệnh đề phân từ diễn tả hệ quả của việc hành vi lan truyền.",
@@ -515,7 +518,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "cyberbully → cyberbullying"
+        "cyberbully → cyberbullying",
+        "cyberbullying"
       ],
       "displayAnswer": "cyberbully → cyberbullying",
       "explanation": "The dangers of cyberbullying nói về sự nguy hiểm của hành vi bắt nạt trên mạng.",
@@ -527,7 +531,9 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "which → where",
-        "which → in which"
+        "which → in which",
+        "where",
+        "in which"
       ],
       "displayAnswer": "which → where / which → in which",
       "explanation": "Community được xem là môi trường trong đó mọi người tôn trọng nhau, nên dùng where hoặc in which.",
@@ -1091,7 +1097,11 @@
         "arrival at the airport, I was told my flight was cancelled",
         "getting to the airport, I was told my flight was cancelled",
         "arriving at the airport, I was told that my flight was canceled",
-        "my arrival at the airport, someone told me my flight was cancelled"
+        "my arrival at the airport, someone told me my flight was cancelled",
+        "arriving at the airport, I was told that my flight was cancelled",
+        "arriving at the airport, I was told my flight had been cancelled",
+        "arriving at the airport, I was told that my flight had been cancelled",
+        "my arrival at the airport, I was told my flight was cancelled"
       ],
       "displayAnswer": "arriving at the airport, I was told my flight was cancelled / arrival at the airport, I was told my flight was cancelled / getting to the airport, I was told my flight was cancelled / arriving at the airport, I was told that my flight was canceled / my arrival at the airport, someone told me my flight was cancelled",
       "explanation": "On + V-ing hoặc on arrival diễn tả ngay khi đến.",
@@ -1157,7 +1167,8 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "she had joined the school choir last year",
-        "that she had joined the school choir last year"
+        "that she had joined the school choir last year",
+        "she'd joined the school choir last year"
       ],
       "displayAnswer": "she had joined the school choir last year",
       "explanation": "Wish + quá khứ hoàn thành diễn tả sự tiếc nuối về việc đã không làm: wishes she had joined.",
@@ -1171,7 +1182,8 @@
       "sectionCode": "III.1",
       "localNumber": 7,
       "acceptedAnswers": [
-        "us to check the evidence before sharing the story"
+        "us to check the evidence before sharing the story",
+        "us to check the evidence before we shared the story"
       ],
       "displayAnswer": "us to check the evidence before sharing the story",
       "explanation": "Advise somebody to do something dùng để thuật lại lời khuyên.",
@@ -1217,7 +1229,9 @@
       "localNumber": 10,
       "acceptedAnswers": [
         "hear the announcement because the music was so loud",
-        "hear the announcement because of the loud music"
+        "hear the announcement because of the loud music",
+        "hear the announcement as the music was so loud",
+        "hear the announcement because the music was too loud"
       ],
       "displayAnswer": "hear the announcement because the music was so loud",
       "explanation": "Hardly và barely đều = hầu như không.",
@@ -1391,7 +1405,8 @@
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "in case I needed"
+        "in case I needed",
+        "in case I should need"
       ],
       "displayAnswer": "in case I needed",
       "explanation": "In case diễn tả sự phòng ngừa cho một khả năng có thể xảy ra. Mốc saved ở quá khứ nên dùng needed trong câu này.",
@@ -1436,7 +1451,9 @@
       "localNumber": 10,
       "acceptedAnswers": [
         "not possible to enter",
-        "not possible for you to enter"
+        "not possible for you to enter",
+        "not possible for anyone to enter",
+        "not possible for anybody to enter"
       ],
       "displayAnswer": "not possible to enter / not possible for you to enter",
       "explanation": "It is not possible to + động từ diễn tả việc không thể làm. Có thể thêm for you để giữ rõ đối tượng.",

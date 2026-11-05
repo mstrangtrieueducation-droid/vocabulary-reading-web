@@ -468,7 +468,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "mark → marks"
+        "mark → marks",
+        "marks"
       ],
       "displayAnswer": "mark → marks",
       "explanation": "Chủ ngữ của mệnh đề quan hệ which là Tet holiday, số ít, nên động từ hiện tại đơn phải là marks.",
@@ -480,7 +481,9 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "believe → believing",
-        "believe → and believe"
+        "believe → and believe",
+        "believing",
+        "and believe"
       ],
       "displayAnswer": "believe → believing / believe → and believe",
       "explanation": "Believing it will bring good luck là cụm phân từ diễn tả niềm tin của families khi dọn và trang trí nhà.",
@@ -491,7 +494,8 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "advanced → advance"
+        "advanced → advance",
+        "advance"
       ],
       "displayAnswer": "advanced → advance",
       "explanation": "In advance là cụm cố định, = trước, từ trước.",
@@ -505,7 +509,9 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "joyed → joyful",
-        "joyed → joyous"
+        "joyed → joyous",
+        "joyful",
+        "joyous"
       ],
       "displayAnswer": "joyed → joyful / joyed → joyous",
       "explanation": "Atmosphere cần tính từ mô tả không khí vui tươi, nên dùng joyful hoặc joyous.",
@@ -519,7 +525,9 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "one → ones",
-        "loved one → loved ones"
+        "loved one → loved ones",
+        "ones",
+        "loved ones"
       ],
       "displayAnswer": "one → ones / loved one → loved ones",
       "explanation": "All their loved ones chỉ tất cả những người thân yêu.",
@@ -900,7 +908,10 @@
         "put",
         "place",
         "set",
-        "arrange"
+        "arrange",
+        "lay",
+        "leave",
+        "scatter"
       ],
       "displayAnswer": "put / place / set / arrange",
       "explanation": "Put/place/set/arrange toys on the floor đều diễn đạt việc đặt/sắp đồ chơi trên sàn.",
@@ -933,7 +944,8 @@
       "sectionCode": "II.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "any"
+        "any",
+        "whatever"
       ],
       "displayAnswer": "any",
       "explanation": "At any time they want to = vào bất cứ lúc nào họ muốn.",
@@ -1072,7 +1084,9 @@
       "acceptedAnswers": [
         "had very little money when he died, which surprised everyone",
         "had very little money when he died, to everyone's surprise",
-        "had very little money at the time of his death, which surprised everyone"
+        "had very little money at the time of his death, which surprised everyone",
+        "surprised everyone by having very little money when he died",
+        "had very little money when he died, which was a surprise to everyone"
       ],
       "displayAnswer": "had very little money when he died, which surprised everyone / had very little money when he died, to everyone's surprise / had very little money at the time of his death, which surprised everyone",
       "explanation": "Very little money = gần như không có tiền; which surprised everyone chỉ toàn bộ việc ông qua đời nghèo túng.",
@@ -1281,7 +1295,8 @@
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "would do you good"
+        "would do you good",
+        "would do you some good"
       ],
       "displayAnswer": "would do you good",
       "explanation": "Do somebody good = có lợi, giúp ai khỏe hơn/cảm thấy tốt hơn.",
@@ -1346,7 +1361,8 @@
       "sectionCode": "III.2",
       "localNumber": 7,
       "acceptedAnswers": [
-        "to dawn on Alan"
+        "to dawn on Alan",
+        "to dawn on him"
       ],
       "displayAnswer": "to dawn on Alan",
       "explanation": "It dawns on somebody that/how… = ai bắt đầu nhận ra điều gì.\ndawn on somebody = khiến ai chợt nhận ra.",
@@ -1397,7 +1413,10 @@
       "localNumber": 9,
       "acceptedAnswers": [
         "spent the entire holiday complaining",
-        "spent her entire holiday complaining"
+        "spent her entire holiday complaining",
+        "complained throughout the entire holiday",
+        "complained for the entire holiday",
+        "complained during the entire holiday"
       ],
       "displayAnswer": "spent the entire holiday complaining / spent her entire holiday complaining",
       "explanation": "Entire = toàn bộ, tương đương throughout the holiday.",
@@ -1417,7 +1436,8 @@
       "sectionCode": "III.2",
       "localNumber": 10,
       "acceptedAnswers": [
-        "ruled out the government"
+        "ruled out the government",
+        "ruled out the government's"
       ],
       "displayAnswer": "ruled out the government",
       "explanation": "Rule out = loại trừ khả năng xảy ra.",

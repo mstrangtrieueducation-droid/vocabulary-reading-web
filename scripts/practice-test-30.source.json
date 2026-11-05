@@ -958,7 +958,8 @@
       "sectionCode": "II.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "terms"
+        "terms",
+        "light"
       ],
       "displayAnswer": "terms",
       "explanation": "In terms of là cụm cố định = xét về.",
@@ -1195,7 +1196,11 @@
       "sectionCode": "III.1",
       "localNumber": 6,
       "acceptedAnswers": [
-        "is restricted to registered users"
+        "is restricted to registered users",
+        "is limited to registered users",
+        "is given only to registered users",
+        "is only given to registered users",
+        "is granted only to registered users"
       ],
       "displayAnswer": "is restricted to registered users",
       "prefix": "Permission to download the course materials",
@@ -1212,7 +1217,9 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "me that they would send me the results the following day",
-        "me that they would send me the results the next day"
+        "me that they would send me the results the next day",
+        "me that they would send the results to me the following day",
+        "me that they would send me the results the day after"
       ],
       "displayAnswer": "me that they would send me the results the following day",
       "prefix": "The assistant reassured",
@@ -1230,7 +1237,10 @@
       "acceptedAnswers": [
         "to change his decision surprised nobody",
         "to change his decision did not surprise anybody",
-        "to change his decision did not surprise anyone"
+        "to change his decision did not surprise anyone",
+        "to change his decision came as no surprise",
+        "to change his decision came as no surprise to anyone",
+        "to change his decision surprised no one"
       ],
       "displayAnswer": "to change his decision surprised nobody",
       "prefix": "His refusal",
@@ -1244,7 +1254,9 @@
       "sectionCode": "III.1",
       "localNumber": 9,
       "acceptedAnswers": [
-        "is it that the new library will open in September"
+        "is it that the new library will open in September",
+        "is the new library to open in September",
+        "is it that the new library opens in September"
       ],
       "displayAnswer": "is it that the new library will open in September",
       "prefix": "How likely",
@@ -1392,7 +1404,9 @@
       "acceptedAnswers": [
         "accepted that you have grown out",
         "accepted that you've grown out",
-        "accepted that you had grown out"
+        "accepted that you had grown out",
+        "accepted you have grown out",
+        "accepted you had grown out"
       ],
       "displayAnswer": "accepted that you have grown out / accepted that you've grown out / accepted that you had grown out",
       "prefix": "It's time you",
@@ -1434,7 +1448,8 @@
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "On no account should the house"
+        "On no account should the house",
+        "On no account must the house"
       ],
       "displayAnswer": "On no account should the house",
       "prefix": "",
@@ -1462,7 +1477,7 @@
       "prefix": "She",
       "suffix": "that she didn't even hear me",
       "fullSentence": "She found her book so interesting that she didn't even hear me",
-      "explanation": "Find oneself + tính từ là nhận thấy mình ở trạng thái nào; interested mô tả người đọc bị cuốn hút.",
+      "explanation": "Find + tân ngữ + tính từ: found her book so interesting = thấy cuốn sách thú vị đến mức; interesting mô tả cuốn sách gây hứng thú, so ... that nêu hệ quả.",
       "keyword": "FOUND",
       "answerPrefix": "She",
       "answerSuffix": "that she didn't even hear me",
@@ -1485,7 +1500,7 @@
       ],
       "displayAnswer": "Much as Laura practiced / Much as Laura practised / However much Laura practiced / However much Laura practised / No matter how much Laura practiced / No matter how much Laura practised",
       "prefix": "",
-      "suffix": "playing the instrument , she could hardly improve her performance",
+      "suffix": "playing the instrument, she could hardly improve her performance",
       "fullSentence": "Much as Laura practiced playing the instrument, she could hardly improve her performance",
       "explanation": "Much as/However much/No matter how much diễn tả nhượng bộ: dù luyện tập rất nhiều vẫn gần như không tiến bộ.",
       "keyword": "MUCH",

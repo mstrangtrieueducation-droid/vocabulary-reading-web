@@ -1093,7 +1093,9 @@
       "acceptedAnswers": [
         "experienced a climber you are, mountaineering can still be dangerous",
         "experienced a climber you may be, mountaineering can still be dangerous",
-        "experienced you are as a climber, mountaineering can still be dangerous"
+        "experienced you are as a climber, mountaineering can still be dangerous",
+        "experienced you are, mountaineering can still be dangerous",
+        "experienced a climber you might be, mountaineering can still be dangerous"
       ],
       "displayAnswer": "experienced a climber you are, mountaineering can still be dangerous / experienced a climber you may be, mountaineering can still be dangerous / experienced you are as a climber, mountaineering can still be dangerous",
       "explanation": "However + Adj + S + V = dù…đến đâu. However experienced a climber you are: dù bạn leo núi giỏi đến đâu.",
@@ -1123,7 +1125,9 @@
       "acceptedAnswers": [
         "have been my younger brother who broke the window as he was outside all the time",
         "have been my younger brother who broke the window because he was outside all the time",
-        "have been my younger brother that broke the window as he was outside all the time"
+        "have been my younger brother that broke the window as he was outside all the time",
+        "have been my younger brother who broke the window since he was outside all the time",
+        "have been my younger brother that broke the window because he was outside all the time"
       ],
       "displayAnswer": "have been my younger brother who broke the window as he was outside all the time / have been my younger brother who broke the window because he was outside all the time / have been my younger brother that broke the window as he was outside all the time",
       "explanation": "Couldn’t have been là suy luận phủ định chắc chắn về quá khứ.",
@@ -1157,7 +1161,10 @@
         "to not turning off the heating system the night before",
         "to not having turned off the heating system the night before",
         "to having not turned off the heating system the night before",
-        "that he had not turned off the heating system the night before"
+        "that he had not turned off the heating system the night before",
+        "to not turning off the heating system the previous night",
+        "to not having turned off the heating system the previous night",
+        "that he had not turned off the heating system the previous night"
       ],
       "displayAnswer": "to not turning off the heating system the night before / to not having turned off the heating system the night before / to having not turned off the heating system the night before / that he had not turned off the heating system the night before",
       "explanation": "Confess to + V-ing hoặc confess that + mệnh đề đều đúng.",
@@ -1188,7 +1195,9 @@
         "the steep route, the hikers completed it",
         "the route being steep, the hikers completed it",
         "the steepness of the route, the hikers completed it",
-        "the fact that the route was steep, the hikers completed it"
+        "the fact that the route was steep, the hikers completed it",
+        "the route's steepness, the hikers completed it",
+        "the route being steep, the hikers still completed it"
       ],
       "displayAnswer": "the steep route, the hikers completed it / the route being steep, the hikers completed it / the steepness of the route, the hikers completed it / the fact that the route was steep, the hikers completed it",
       "explanation": "Despite đi với danh từ/cụm -ing; nếu dùng mệnh đề đầy đủ cần the fact that.",
@@ -1220,7 +1229,9 @@
         "she would get the broken window repaired the next day",
         "she would ask someone to repair the broken window the next day",
         "she would have the broken window repaired the following day",
-        "she would ask someone to repair the broken window the following day"
+        "she would ask someone to repair the broken window the following day",
+        "she would get the broken window repaired the following day",
+        "she would have someone repair the broken window the next day"
       ],
       "displayAnswer": "she would have the broken window repaired the next day / she would get the broken window repaired the next day / she would ask someone to repair the broken window the next day / she would have the broken window repaired the following day / she would ask someone to repair the broken window the following day",
       "explanation": "Lời nói được tường thuật ở quá khứ: I → she, will → would, tomorrow → the next/following day.",
@@ -1269,7 +1280,8 @@
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "gave her word that she would"
+        "gave her word that she would",
+        "gave her word she would"
       ],
       "displayAnswer": "gave her word that she would",
       "explanation": "Give one’s word = hứa chắc chắn. Lời hứa của Mai dùng her word; will chuyển would trong lời tường thuật quá khứ.",
@@ -1363,7 +1375,9 @@
         "to put off its decision",
         "to put its decision off",
         "to put off making its decision",
-        "to put off making a decision"
+        "to put off making a decision",
+        "to put off the decision",
+        "to put the decision off"
       ],
       "displayAnswer": "to put off its decision / to put its decision off / to put off making its decision / to put off making a decision",
       "explanation": "Put off = hoãn. Sau decided dùng to V; có thể đặt tân ngữ giữa put và off hoặc sau off.",

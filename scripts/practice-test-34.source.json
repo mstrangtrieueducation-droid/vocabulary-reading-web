@@ -868,7 +868,8 @@
       "acceptedAnswers": [
         "helps",
         "tends",
-        "seems"
+        "seems",
+        "serves"
       ],
       "displayAnswer": "helps / tends / seems",
       "explanation": "Regular practice là chủ ngữ số ít, nên helps/tends/seems đều có -s và theo sau được bằng to build.",
@@ -891,7 +892,8 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "This",
-        "It"
+        "It",
+        "That"
       ],
       "displayAnswer": "This / It",
       "explanation": "This/It thay cho việc giới thiệu bài hát hoặc nhạc cụ trẻ thích ở câu trước, làm chủ ngữ của may give.",
@@ -915,7 +917,8 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "curriculum",
-        "syllabus"
+        "syllabus",
+        "timetable"
       ],
       "displayAnswer": "curriculum / syllabus",
       "explanation": "Curriculum là chương trình học gồm các môn; syllabus là nội dung/kế hoạch giảng dạy, cũng dùng được trong câu này.",
@@ -1174,7 +1177,9 @@
       "acceptedAnswers": [
         "my explanation of what had happened totally unacceptable",
         "my explanation about what had happened totally unacceptable",
-        "what I said about what had happened totally unacceptable"
+        "what I said about what had happened totally unacceptable",
+        "what I said totally unacceptable",
+        "my explanation totally unacceptable"
       ],
       "displayAnswer": "my explanation of what had happened totally unacceptable / my explanation about what had happened totally unacceptable / what I said about what had happened totally unacceptable",
       "prefix": "They found",
@@ -1278,7 +1283,9 @@
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "are running low on firewood"
+        "are running low on firewood",
+        "are getting low on firewood",
+        "are running low on wood"
       ],
       "displayAnswer": "are running low on firewood",
       "prefix": "We",
@@ -1302,7 +1309,8 @@
       "acceptedAnswers": [
         "not mixed up in",
         "certainly not mixed up in",
-        "definitely not mixed up in"
+        "definitely not mixed up in",
+        "in no way mixed up in"
       ],
       "displayAnswer": "not mixed up in / certainly not mixed up in / definitely not mixed up in",
       "prefix": "My son was",
@@ -1325,7 +1333,8 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "struggle to make ends meet",
-        "have difficulty making ends meet"
+        "have difficulty making ends meet",
+        "can barely make ends meet"
       ],
       "displayAnswer": "struggle to make ends meet / have difficulty making ends meet",
       "prefix": "The Wrights",
@@ -1370,7 +1379,9 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "cut out to be an actor",
-        "cut out for an actor's life"
+        "cut out for an actor's life",
+        "cut out for acting",
+        "cut out for the acting profession"
       ],
       "displayAnswer": "cut out to be an actor / cut out for an actor's life",
       "prefix": "William decided that he was not",
@@ -1436,7 +1447,8 @@
       "localNumber": 10,
       "acceptedAnswers": [
         "it has fallen into disrepute",
-        "it has been brought into disrepute"
+        "it has been brought into disrepute",
+        "the company has fallen into disrepute"
       ],
       "displayAnswer": "it has fallen into disrepute / it has been brought into disrepute",
       "prefix": "Since the company was exposed in a newspaper,",

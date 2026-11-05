@@ -633,7 +633,9 @@
         "since",
         "due to → given that",
         "due to -> given that",
-        "given that"
+        "given that",
+        "due to → due to the fact that",
+        "due to the fact that"
       ],
       "displayAnswer": "due to → because / as / since / given that",
       "explanation": "Sau chỗ trống là mệnh đề it can give them..., nên dùng because/as/since hoặc given that.\ncompetitive edge = lợi thế cạnh tranh.",
@@ -678,7 +680,9 @@
       "acceptedAnswers": [
         "creating → to create",
         "creating -> to create",
-        "to create"
+        "to create",
+        "creating → for creating",
+        "for creating"
       ],
       "displayAnswer": "creating → to create",
       "explanation": "Use something to do something diễn tả dùng một công cụ để thực hiện mục đích.",
@@ -1123,7 +1127,11 @@
         "as it seems, he has learned that long poem by heart",
         "though it seems, he has learned that long poem by heart",
         "as it seems, he's learned that long poem by heart",
-        "though it seems, he's learned that long poem by heart"
+        "though it seems, he's learned that long poem by heart",
+        "as it may seem, he has learned that long poem by heart",
+        "though it may seem, he has learned that long poem by heart",
+        "as it seems, he has learnt that long poem by heart",
+        "though it seems, he has learnt that long poem by heart"
       ],
       "displayAnswer": "as it seems, he has learned that long poem by heart / though it seems, he has learned that long poem by heart / as it seems, he's learned that long poem by heart / though it seems, he's learned that long poem by heart",
       "prefix": "Unbelievable",
@@ -1169,7 +1177,8 @@
       "sectionCode": "III.1",
       "localNumber": 4,
       "acceptedAnswers": [
-        "was made to study Latin by his father"
+        "was made to study Latin by his father",
+        "was made by his father to study Latin"
       ],
       "displayAnswer": "was made to study Latin by his father",
       "prefix": "At the age of three, he",
@@ -1189,7 +1198,9 @@
         "more regular practice, you won't become more skilful",
         "more regular practice, you will not become more skillful",
         "practising more regularly, you will not become more skilful",
-        "practicing more regularly, you will not become more skillful"
+        "practicing more regularly, you will not become more skillful",
+        "practising more regularly, you will not become more skillful",
+        "practicing more regularly, you will not become more skilful"
       ],
       "displayAnswer": "more regular practice, you will not become more skilful / more regular practice, you won't become more skilful / more regular practice, you will not become more skillful / practising more regularly, you will not become more skilful / practicing more regularly, you will not become more skillful",
       "prefix": "Without",
@@ -1205,7 +1216,8 @@
       "acceptedAnswers": [
         "should have been given instructions to do their tasks",
         "should have been given instructions on how to do their tasks",
-        "ought to have been given instructions on how to do their tasks"
+        "ought to have been given instructions on how to do their tasks",
+        "ought to have been given instructions to do their tasks"
       ],
       "displayAnswer": "should have been given instructions to do their tasks / should have been given instructions on how to do their tasks / ought to have been given instructions on how to do their tasks",
       "prefix": "The newcomers",
@@ -1220,7 +1232,8 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "of the question for me to have supper ready by 8 o'clock",
-        "of the question that I will have supper ready by 8 o'clock"
+        "of the question that I will have supper ready by 8 o'clock",
+        "of the question to expect me to have supper ready by 8 o'clock"
       ],
       "displayAnswer": "of the question for me to have supper ready by 8 o'clock / of the question that I will have supper ready by 8 o'clock",
       "prefix": "It is out",
@@ -1332,7 +1345,8 @@
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "cut their picnic short"
+        "cut their picnic short",
+        "cut the picnic short"
       ],
       "displayAnswer": "cut their picnic short",
       "prefix": "They had to",

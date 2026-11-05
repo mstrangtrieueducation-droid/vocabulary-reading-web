@@ -675,7 +675,9 @@
       "acceptedAnswers": [
         "have → have been",
         "have traditionally regarded → have traditionally been regarded",
-        "traditionally → been traditionally"
+        "traditionally → been traditionally",
+        "have been",
+        "regarded → been regarded"
       ],
       "displayAnswer": "have → have been / have traditionally regarded → have traditionally been regarded / traditionally → been traditionally",
       "explanation": "Exams là thứ được coi là cách đánh giá, nên dùng hiện tại hoàn thành bị động have been regarded.",
@@ -686,7 +688,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "requiring → required"
+        "requiring → required",
+        "required"
       ],
       "displayAnswer": "requiring → required",
       "explanation": "The required skills là những kỹ năng được yêu cầu.",
@@ -698,7 +701,8 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "for → to",
-        "theories for → theories to"
+        "theories for → theories to",
+        "to"
       ],
       "displayAnswer": "for → to / theories for → theories to",
       "explanation": "Apply theories to problems = áp dụng lý thuyết vào vấn đề. Cấu trúc apply A to B yêu cầu to; for không đúng giới từ trong kết hợp đang kiểm tra.",
@@ -709,7 +713,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "maintain → remain"
+        "maintain → remain",
+        "remain"
       ],
       "displayAnswer": "maintain → remain",
       "explanation": "Exams remain important = kỳ thi vẫn quan trọng.",
@@ -720,7 +725,8 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "captures → capture"
+        "captures → capture",
+        "capture"
       ],
       "displayAnswer": "captures → capture",
       "explanation": "Sau would dùng động từ nguyên mẫu capture, bất kể chủ ngữ số ít. Therefore đã nối kết luận phù hợp; lỗi mục tiêu ở câu cuối là captures có s.",
@@ -1044,7 +1050,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "Bài cho quy tắc tỉ lệ thể tích chìm bằng tỉ lệ khối lượng riêng so với nước khi vật nổi cân bằng. Gỗ có mật độ bằng 7/10 nước sẽ chìm 7/10 thể tích; C đã được sửa đúng nội dung này.",
+      "explanation": "Bài cho quy tắc tỉ lệ thể tích chìm bằng tỉ lệ khối lượng riêng so với nước khi vật nổi cân bằng. Gỗ có mật độ bằng 7/10 nước sẽ chìm 7/10 thể tích → C.",
       "teacherHighlights": []
     },
     {
@@ -1174,7 +1180,11 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "Brian not lied to the police about the theft, he would not be having a lot of trouble now",
-        "Brian not lied to the police about the theft, he wouldn’t be having a lot of trouble now"
+        "Brian not lied to the police about the theft, he wouldn’t be having a lot of trouble now",
+        "Brian not lied to the police about the theft, he would not have a lot of trouble now",
+        "Brian not lied to the police about the theft, he wouldn’t have a lot of trouble now",
+        "Brian not lied to the police about the theft, he would not be having so much trouble now",
+        "Brian not lied to the police about the theft, he wouldn’t be having so much trouble now"
       ],
       "displayAnswer": "Brian not lied to the police about the theft, he would not be having a lot of trouble now",
       "explanation": "Had Brian not lied… là đảo ngữ điều kiện trái quá khứ.",
@@ -1188,7 +1198,10 @@
       "sectionCode": "III.1",
       "localNumber": 6,
       "acceptedAnswers": [
-        "long as you bring a group with you, you will have a free ticket"
+        "long as you bring a group with you, you will have a free ticket",
+        "long as you bring a group with you, you’ll have a free ticket",
+        "long as you bring a group with you, you will get a free ticket",
+        "long as you bring a group with you, you’ll get a free ticket"
       ],
       "displayAnswer": "long as you bring a group with you, you will have a free ticket",
       "explanation": "So long as = miễn là, tương đương if trong điều kiện được nhận vé.",
@@ -1219,7 +1232,10 @@
       "localNumber": 8,
       "acceptedAnswers": [
         "the blame on Tom for the plan failing",
-        "the blame for the plan’s failure on Tom"
+        "the blame for the plan’s failure on Tom",
+        "the blame on Tom for the plan’s failure",
+        "the blame on Tom for the failure of the plan",
+        "the blame for the failure of the plan on Tom"
       ],
       "displayAnswer": "the blame on Tom for the plan failing",
       "explanation": "Put the blame on somebody for something = đổ trách nhiệm cho ai về điều gì.",
@@ -1236,7 +1252,8 @@
       "localNumber": 9,
       "acceptedAnswers": [
         "to terms with the fact that their friendship is over",
-        "to terms with their friendship being over"
+        "to terms with their friendship being over",
+        "to terms with the end of their friendship"
       ],
       "displayAnswer": "to terms with the fact that their friendship is over",
       "explanation": "Come to terms with = chấp nhận một thực tế khó chịu.",
@@ -1252,7 +1269,9 @@
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "me by surprise that you began singing when they asked you to speak"
+        "me by surprise that you began singing when they asked you to speak",
+        "me by surprise that you began to sing when they asked you to speak",
+        "me by surprise when you began singing when they asked you to speak"
       ],
       "displayAnswer": "me by surprise that you began singing when they asked you to speak",
       "explanation": "Take somebody by surprise = làm ai bất ngờ.",
@@ -1291,7 +1310,8 @@
       "sectionCode": "III.2",
       "localNumber": 2,
       "acceptedAnswers": [
-        "takes pride in"
+        "takes pride in",
+        "takes great pride in"
       ],
       "displayAnswer": "takes pride in",
       "explanation": "Take pride in = tự hào về.",
@@ -1336,7 +1356,8 @@
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "everyone's surprise"
+        "everyone's surprise",
+        "everybody's surprise"
       ],
       "displayAnswer": "everyone's surprise",
       "explanation": "To everyone’s surprise = khiến mọi người ngạc nhiên.",
@@ -1358,7 +1379,10 @@
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "lost my appetite the moment"
+        "lost my appetite the moment",
+        "lost my appetite as soon as",
+        "lost my appetite the minute",
+        "lost my appetite the instant"
       ],
       "displayAnswer": "lost my appetite the moment",
       "explanation": "Lose one’s appetite = hết cảm giác muốn ăn. The moment giữ đúng nghĩa ngay khi, còn when chỉ chung thời điểm.",
@@ -1424,7 +1448,9 @@
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "to dawn on him"
+        "to dawn on him",
+        "to dawn on Alan",
+        "to dawn upon him"
       ],
       "displayAnswer": "to dawn on him",
       "explanation": "It begins to dawn on somebody… = ai bắt đầu nhận ra.",

@@ -530,7 +530,9 @@
       "localNumber": 1,
       "acceptedAnswers": [
         "is → were",
-        "is → was"
+        "is → was",
+        "were",
+        "was"
       ],
       "displayAnswer": "is → were / is → was",
       "explanation": "Câu đang giả định một thế giới không có tiền tệ, trong khi thực tế vẫn có, nên dùng điều kiện loại hai: If there were/was…, the economy would….",
@@ -541,7 +543,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "exchanged → exchanging"
+        "exchanged → exchanging",
+        "exchanging"
       ],
       "displayAnswer": "exchanged → exchanging",
       "explanation": "Exchanging goods and services là cụm phân từ chủ động giải thích cách people trao đổi theo hệ thống hàng đổi hàng.",
@@ -552,7 +555,8 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "subjected → subjective"
+        "subjected → subjective",
+        "subjective"
       ],
       "displayAnswer": "subjected → subjective",
       "explanation": "Subjective là tính từ chủ quan, phù hợp ý giá trị hàng hóa dựa trên đánh giá của mỗi người.",
@@ -564,7 +568,9 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "and on → but on",
-        "and → but"
+        "and → but",
+        "but on",
+        "but"
       ],
       "displayAnswer": "and on → but on / and → but",
       "explanation": "Cặp đối lập là no longer based on money but on access to resources: không còn dựa vào tiền mà dựa vào khả năng tiếp cận tài nguyên.",
@@ -575,7 +581,8 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "adopt → adapt"
+        "adopt → adapt",
+        "adapt"
       ],
       "displayAnswer": "adopt → adapt",
       "explanation": "Adapt to something = thích nghi với điều gì.",
@@ -1140,7 +1147,9 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "shops here can you find such exquisite hand-made suits",
-        "shops here can you find such exquisite handmade suits"
+        "shops here can you find such exquisite handmade suits",
+        "shops here do you find such exquisite hand-made suits",
+        "shops here do you find such exquisite handmade suits"
       ],
       "displayAnswer": "shops here can you find such exquisite hand-made suits / shops here can you find such exquisite handmade suits",
       "explanation": "In few shops here đứng đầu mang ý phủ định → đảo can trước you: can you find.\nexquisite = tinh xảo, rất đẹp.",
@@ -1157,7 +1166,9 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "me that I could take a month's paid leave",
-        "me that I could take one month's paid leave"
+        "me that I could take one month's paid leave",
+        "me that of course I could take a month's paid leave",
+        "me I could take a month's paid leave"
       ],
       "displayAnswer": "me that I could take a month's paid leave / me that I could take one month's paid leave",
       "explanation": "Reassure somebody that… là trấn an ai rằng một việc được bảo đảm.",
@@ -1272,7 +1283,10 @@
       "acceptedAnswers": [
         "will make another attempt to reach",
         "will make another effort to reach",
-        "will have another attempt at reaching"
+        "will have another attempt at reaching",
+        "will make another attempt at reaching",
+        "will have another go at reaching",
+        "will have another try at reaching"
       ],
       "displayAnswer": "will make another attempt to reach / will make another effort to reach / will have another attempt at reaching",
       "explanation": "Another attempt/effort diễn đạt thêm một lần thử nữa, tương đương try again. Make an attempt to V hoặc have an attempt at V-ing đều dùng được.",

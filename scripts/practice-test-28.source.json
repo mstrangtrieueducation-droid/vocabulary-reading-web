@@ -1137,7 +1137,10 @@
         "soon as your cheque is received, we shall send the goods to you",
         "soon as we receive your cheque, we will send the goods to you",
         "soon as we receive your cheque, we shall send you the goods",
-        "soon as we receive your check, we will send the goods to you"
+        "soon as we receive your check, we will send the goods to you",
+        "soon as we receive your cheque, we will send you the goods",
+        "soon as we receive your cheque, we'll send the goods to you",
+        "soon as we receive your cheque, we'll send you the goods"
       ],
       "displayAnswer": "soon as we receive your cheque, we shall send the goods to you / soon as your cheque is received, we shall send the goods to you / soon as we receive your cheque, we will send the goods to you / soon as we receive your cheque, we shall send you the goods / soon as we receive your check, we will send the goods to you",
       "prefix": "As",
@@ -1193,7 +1196,8 @@
       "acceptedAnswers": [
         "challenging was the test that only a few students passed",
         "difficult was the test that only a few students passed",
-        "great a challenge was the test that only a few students passed"
+        "great a challenge was the test that only a few students passed",
+        "hard was the test that only a few students passed"
       ],
       "displayAnswer": "challenging was the test that only a few students passed / difficult was the test that only a few students passed / great a challenge was the test that only a few students passed",
       "prefix": "So",
@@ -1210,7 +1214,9 @@
         "half as much as the luxury model",
         "half as much as the luxury one",
         "half the price of the luxury model",
-        "half what the luxury model costs"
+        "half what the luxury model costs",
+        "half as much as the luxury model does",
+        "half the price of the luxury one"
       ],
       "displayAnswer": "half as much as the luxury model / half as much as the luxury one / half the price of the luxury model / half what the luxury model costs",
       "prefix": "The basic model costs",
@@ -1296,7 +1302,8 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "as a last resort does he",
-        "as the last resort does he"
+        "as the last resort does he",
+        "as a last resort will he"
       ],
       "displayAnswer": "as a last resort does he / as the last resort does he",
       "prefix": "Only",

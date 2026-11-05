@@ -519,7 +519,8 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "correlated",
-        "interrelated"
+        "interrelated",
+        "related"
       ],
       "displayAnswer": "correlated / interrelated",
       "explanation": "Were cần quá khứ phân từ hoặc tính từ để chỉ các kết quả được liên hệ với nhau.",
@@ -877,7 +878,8 @@
       "acceptedAnswers": [
         "though",
         "although",
-        "while"
+        "while",
+        "whilst"
       ],
       "displayAnswer": "though / although / while",
       "explanation": "Though/although mở mệnh đề nhượng bộ: dù mọi người có thể không nhận ra, tin nhắn vẫn có thể gây xao nhãng.",
@@ -891,7 +893,9 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "them",
-        "messages"
+        "messages",
+        "these",
+        "those"
       ],
       "displayAnswer": "them / messages",
       "explanation": "Them thay cho emails and texts/the messages vừa được nhắc, nên tránh lặp danh từ.",
@@ -1120,7 +1124,9 @@
         "your generous contribution, we couldn’t continue our work",
         "your generous contributions, we couldn’t continue our work",
         "your generosity, we couldn’t continue our work",
-        "the fact that you contribute generously, we couldn’t continue our work"
+        "the fact that you contribute generously, we couldn’t continue our work",
+        "your generous contribution, we would not be able to continue our work",
+        "your generous contributions, we would not be able to continue our work"
       ],
       "displayAnswer": "your generous contribution, we couldn’t continue our work / your generous contributions, we couldn’t continue our work / your generosity, we couldn’t continue our work / the fact that you contribute generously, we couldn’t continue our work",
       "prefix": "But for",
@@ -1153,7 +1159,9 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "not have reacted so aggressively",
-        "never have reacted so aggressively"
+        "never have reacted so aggressively",
+        "have reacted less aggressively",
+        "have been less aggressive"
       ],
       "displayAnswer": "not have reacted so aggressively / never have reacted so aggressively",
       "prefix": "You should",
@@ -1168,7 +1176,9 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "was his disgust at the way she behaved that he refused to speak to her",
-        "was his disgust with the way she behaved that he refused to speak to her"
+        "was his disgust with the way she behaved that he refused to speak to her",
+        "was his disgust at her behaviour that he refused to speak to her",
+        "was his disgust at her behavior that he refused to speak to her"
       ],
       "displayAnswer": "was his disgust at the way she behaved that he refused to speak to her / was his disgust with the way she behaved that he refused to speak to her",
       "prefix": "Such",
@@ -1186,7 +1196,9 @@
         "to be seen whether he will keep his promise or not",
         "to be seen whether or not he will keep his promise",
         "uncertain whether he will keep his promise or not",
-        "uncertain whether or not he will keep his promise"
+        "uncertain whether or not he will keep his promise",
+        "to be seen whether he keeps his promise or not",
+        "to be seen whether or not he keeps his promise"
       ],
       "displayAnswer": "to be seen whether he’ll keep his promise or not / to be seen whether he will keep his promise or not / to be seen whether or not he will keep his promise / uncertain whether he will keep his promise or not / uncertain whether or not he will keep his promise",
       "prefix": "It remains",
@@ -1235,7 +1247,10 @@
         "off the handle over everything, even the slightest thing",
         "off the handle at all things, even the slightest one",
         "into a temper over everything, even the slightest thing",
-        "into a rage over everything, even the slightest thing"
+        "into a rage over everything, even the slightest thing",
+        "off the handle at the slightest thing",
+        "off the handle over the slightest thing",
+        "into a rage at the slightest thing"
       ],
       "displayAnswer": "off the handle at everything, even the slightest thing / off the handle over everything, even the slightest thing / off the handle at all things, even the slightest one / into a temper over everything, even the slightest thing / into a rage over everything, even the slightest thing",
       "prefix": "He flies",
@@ -1299,7 +1314,9 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "with a view to fostering",
-        "with a view to promoting"
+        "with a view to promoting",
+        "with a view to improving",
+        "with a view to building"
       ],
       "displayAnswer": "with a view to fostering / with a view to promoting",
       "prefix": "These people joined the club",
@@ -1369,7 +1386,7 @@
       "prefix": "",
       "suffix": ", all the students handed in their essays",
       "fullSentence": "With the exception of Minh, all the students handed in their essays",
-      "explanation": "With the exception of somebody nghĩa là ngoại trừ người đó. Phần điền phải có cả all the students làm chủ ngữ cho handed in.",
+      "explanation": "With the exception of somebody nghĩa là ngoại trừ người đó. Phần điền chỉ là With the exception of Minh; all the students đã có sẵn sau dấu phẩy.",
       "keyword": "EXCEPTION",
       "answerPrefix": "",
       "answerSuffix": ", all the students handed in their essays",

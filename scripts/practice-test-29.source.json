@@ -1085,7 +1085,8 @@
       "acceptedAnswers": [
         "time did the accused express regret for what he had done",
         "point did the accused express regret for what he had done",
-        "time did the accused express any regret for what he had done"
+        "time did the accused express any regret for what he had done",
+        "point did the accused express any regret for what he had done"
       ],
       "displayAnswer": "time did the accused express regret for what he had done / point did the accused express regret for what he had done / time did the accused express any regret for what he had done",
       "prefix": "At no",
@@ -1170,7 +1171,8 @@
       "sectionCode": "III.1",
       "localNumber": 6,
       "acceptedAnswers": [
-        "been a steady increase in the number of students using the library this term"
+        "been a steady increase in the number of students using the library this term",
+        "been a steady rise in the number of students using the library this term"
       ],
       "displayAnswer": "been a steady increase in the number of students using the library this term",
       "prefix": "There has",
@@ -1198,7 +1200,9 @@
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "borrowing my headphones without asking, which annoys me"
+        "borrowing my headphones without asking, which annoys me",
+        "borrowing my headphones without asking",
+        "borrowing my headphones without asking me"
       ],
       "displayAnswer": "borrowing my headphones without asking, which annoys me",
       "prefix": "My brother is always",
@@ -1261,7 +1265,10 @@
     {
       "acceptedAnswers": [
         "comparison between Susan's former presentation skills",
-        "comparing Susan's former presentation skills"
+        "comparing Susan's former presentation skills",
+        "comparison between her former skills",
+        "comparison between Susan's former skills",
+        "comparison between her former presentation skills"
       ],
       "displayAnswer": "comparison between Susan's former presentation skills / comparing Susan's former presentation skills",
       "prefix": "There is no",
@@ -1332,7 +1339,8 @@
     {
       "acceptedAnswers": [
         "not worth repairing",
-        "not worth having someone repair"
+        "not worth having someone repair",
+        "not worth fixing"
       ],
       "displayAnswer": "not worth repairing / not worth having someone repair",
       "prefix": "It is",
@@ -1379,7 +1387,9 @@
     {
       "acceptedAnswers": [
         "everything in his power to",
-        "all in his power to"
+        "all in his power to",
+        "everything within his power to",
+        "all within his power to"
       ],
       "displayAnswer": "everything in his power to / all in his power to",
       "prefix": "He did",

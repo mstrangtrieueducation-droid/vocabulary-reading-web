@@ -1109,7 +1109,11 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "to be seen whether the new plan is successful",
-        "to be seen whether the new plan will be successful"
+        "to be seen whether the new plan will be successful",
+        "to be seen if the new plan is successful",
+        "to be seen if the new plan will be successful",
+        "to be seen whether the new plan will succeed",
+        "to be seen whether or not the new plan is successful"
       ],
       "displayAnswer": "to be seen whether the new plan is successful",
       "prefix": "It remains",
@@ -1141,7 +1145,9 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "my appetite the moment I saw the dirty state of the restaurant kitchen",
-        "my appetite as soon as I saw how dirty the restaurant kitchen was"
+        "my appetite as soon as I saw how dirty the restaurant kitchen was",
+        "my appetite as soon as I saw the dirty state of the restaurant kitchen",
+        "my appetite the moment I saw how dirty the restaurant kitchen was"
       ],
       "displayAnswer": "my appetite the moment I saw the dirty state of the restaurant kitchen / my appetite as soon as I saw how dirty the restaurant kitchen was",
       "prefix": "I lost",
@@ -1158,7 +1164,9 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "into a temper whenever someone questions his decisions",
-        "into a rage whenever someone questions his decisions"
+        "into a rage whenever someone questions his decisions",
+        "off the handle whenever someone questions his decisions",
+        "into a fury whenever someone questions his decisions"
       ],
       "displayAnswer": "into a temper whenever someone questions his decisions",
       "prefix": "He flies",
@@ -1176,7 +1184,10 @@
       "acceptedAnswers": [
         "is little likelihood of this old car lasting for more than three years",
         "is little chance of this old car lasting more than three years",
-        "is little chance that this old car will last for more than three years"
+        "is little chance that this old car will last for more than three years",
+        "is little likelihood of this old car lasting more than three years",
+        "is little chance of this old car lasting for more than three years",
+        "is little likelihood that this old car will last for more than three years"
       ],
       "displayAnswer": "is little likelihood of this old car lasting for more than three years / is little chance of this old car lasting more than three years / is little chance that this old car will last for more than three years",
       "prefix": "There",
@@ -1194,7 +1205,9 @@
       "acceptedAnswers": [
         "it had not been for my literature teacher's strong influence on me, I would not be a teacher now",
         "it hadn't been for my literature teacher's strong influence on me, I wouldn't be a teacher now",
-        "my literature teacher had not influenced me so strongly, I would not be a teacher now"
+        "my literature teacher had not influenced me so strongly, I would not be a teacher now",
+        "it were not for my literature teacher's strong influence on me, I would not be a teacher now",
+        "it weren't for my literature teacher's strong influence on me, I wouldn't be a teacher now"
       ],
       "displayAnswer": "it had not been for my literature teacher's strong influence on me, I would not be a teacher now / it hadn't been for my literature teacher's strong influence on me, I wouldn't be a teacher now / my literature teacher had not influenced me so strongly, I would not be a teacher now",
       "prefix": "If",
@@ -1224,7 +1237,8 @@
       "sectionCode": "III.1",
       "localNumber": 9,
       "acceptedAnswers": [
-        "to have been as receptive to strange ideas as he was"
+        "to have been as receptive to strange ideas as he was",
+        "to have been as receptive to strange ideas as him"
       ],
       "displayAnswer": "to have been as receptive to strange ideas as he was",
       "prefix": "Nobody else seems",
@@ -1341,7 +1355,9 @@
       "sectionCode": "III.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "left the audience confused"
+        "left the audience confused",
+        "left the audience feeling confused",
+        "left the audience in confusion"
       ],
       "displayAnswer": "left the audience confused",
       "prefix": "The spokesperson's contradictory statements",
@@ -1429,7 +1445,10 @@
       "localNumber": 9,
       "acceptedAnswers": [
         "acted as a catalyst for",
-        "was a catalyst for"
+        "was a catalyst for",
+        "served as a catalyst for",
+        "was the catalyst for",
+        "acted as the catalyst for"
       ],
       "displayAnswer": "acted as a catalyst for / was a catalyst for",
       "prefix": "The breach of confidentiality",

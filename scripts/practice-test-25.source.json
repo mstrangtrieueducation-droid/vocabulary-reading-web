@@ -679,7 +679,9 @@
       "acceptedAnswers": [
         "is lead → is leading",
         "is lead → leads",
-        "lead → leading"
+        "lead → leading",
+        "is lead → has led",
+        "lead → led"
       ],
       "displayAnswer": "is lead → is leading / is lead → leads / lead → leading",
       "explanation": "Có thể sửa thành is leading theo hiện tại tiếp diễn, hoặc đổi cả is lead thành leads ở hiện tại đơn.",
@@ -908,7 +910,8 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "which",
-        "that"
+        "that",
+        "to"
       ],
       "displayAnswer": "which / that",
       "explanation": "Sensors and software là các vật/hệ thống, nên mệnh đề quan hệ dùng which hoặc that làm chủ ngữ của interpret.",
@@ -1136,7 +1139,10 @@
       "acceptedAnswers": [
         "the point of crying when he was reprimanded by his mother",
         "the verge of tears when he was reprimanded by his mother",
-        "the verge of crying when he was reprimanded by his mother"
+        "the verge of crying when he was reprimanded by his mother",
+        "the brink of tears when he was reprimanded by his mother",
+        "the point of crying when his mother reprimanded him",
+        "the verge of tears when his mother reprimanded him"
       ],
       "fullSentence": "The boy was on the point of crying when he was reprimanded by his mother.",
       "explanation": "Be on the point of doing something = sắp làm gì, tương đương be about to do.",
@@ -1187,7 +1193,9 @@
         "a fixed tax must be paid by",
         "a fixed tax has to be paid by",
         "payment of a fixed tax is required of",
-        "paying a fixed tax is obligatory for"
+        "paying a fixed tax is obligatory for",
+        "a fixed tax is to be paid by",
+        "a fixed tax is required to be paid by"
       ],
       "fullSentence": "Under that law, a fixed tax must be paid by all citizens.",
       "explanation": "Chuyển nghĩa vụ trong nước cộng hòa giả định sang bị động: a fixed tax must/has to be paid by all citizens.",
@@ -1202,7 +1210,9 @@
       "suffix": "turn out this way.",
       "acceptedAnswers": [
         "intend things to",
-        "mean for things to"
+        "mean for things to",
+        "mean things to",
+        "intend for things to"
       ],
       "fullSentence": "I did not intend things to turn out this way.",
       "explanation": "Intend something to do hoặc mean for something to do diễn tả ý định về kết quả.",
@@ -1233,7 +1243,9 @@
       "prefix": "Hardly",
       "suffix": "towards the exits.",
       "acceptedAnswers": [
-        "had the concert ended when the crowd surged"
+        "had the concert ended when the crowd surged",
+        "had the concert finished when the crowd surged",
+        "had the concert ended before the crowd surged"
       ],
       "fullSentence": "Hardly had the concert ended when the crowd surged towards the exits.",
       "explanation": "Hardly đặt đầu câu cần đảo had trước chủ ngữ và dùng quá khứ hoàn thành: had the concert ended.",
@@ -1292,7 +1304,8 @@
       "suffix": "his resignation",
       "acceptedAnswers": [
         "asked to hand in",
-        "requested to hand in"
+        "requested to hand in",
+        "told to hand in"
       ],
       "fullSentence": "After the scandal, he was asked to hand in his resignation",
       "explanation": "Hand in one's resignation = nộp đơn xin từ chức.",
@@ -1314,7 +1327,8 @@
       "prefix": "I have",
       "suffix": "this author before",
       "acceptedAnswers": [
-        "no recollection of meeting"
+        "no recollection of meeting",
+        "no recollection of having met"
       ],
       "fullSentence": "I have no recollection of meeting this author before",
       "explanation": "Have no recollection of doing something nghĩa là không nhớ đã làm gì. Of là giới từ, nên theo sau bằng meeting.",
@@ -1432,7 +1446,9 @@
       "acceptedAnswers": [
         "take proper account of certain factors",
         "take certain factors properly into account",
-        "take certain factors fully into account"
+        "take certain factors fully into account",
+        "take due account of certain factors",
+        "take certain factors into due account"
       ],
       "fullSentence": "You fail to take proper account of certain factors in your essay",
       "explanation": "Take proper account of hoặc take something properly/fully into account là xem xét đầy đủ, đúng mức.",

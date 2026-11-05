@@ -648,7 +648,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "innovating → innovative"
+        "innovating → innovative",
+        "innovative"
       ],
       "displayAnswer": "innovating → innovative",
       "explanation": "Approach cần tính từ chỉ tính chất: innovative approach = cách tiếp cận có tính đổi mới.",
@@ -661,7 +662,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "have → has"
+        "have → has",
+        "has"
       ],
       "displayAnswer": "have → has",
       "explanation": "Chủ ngữ chính là His research, một danh từ không đếm được được chia số ít.",
@@ -672,7 +674,8 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "been → being"
+        "been → being",
+        "being"
       ],
       "displayAnswer": "been → being",
       "explanation": "Sau for dùng V-ing → for not being more vocal: vì đã không lên tiếng rõ ràng hơn.",
@@ -683,7 +686,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "consequence → consequences"
+        "consequence → consequences",
+        "consequences"
       ],
       "displayAnswer": "consequence → consequences",
       "explanation": "Unintended consequences là những hệ quả ngoài dự kiến.",
@@ -694,7 +698,8 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "who → whom"
+        "who → whom",
+        "whom"
       ],
       "displayAnswer": "who → whom",
       "explanation": "Sau giới từ of cần đại từ quan hệ dạng tân ngữ whom: many of whom = nhiều người trong số họ.",
@@ -1048,7 +1053,9 @@
       "sectionCode": "III.1",
       "localNumber": 1,
       "acceptedAnswers": [
-        "she had applied for the job in the company"
+        "she had applied for the job in the company",
+        "she'd applied for the job in the company",
+        "she had applied for the job at the company"
       ],
       "displayAnswer": "she had applied for the job in the company",
       "explanation": "Wish + quá khứ hoàn thành diễn tả tiếc nuối về điều đã không làm.",
@@ -1083,7 +1090,9 @@
         "did it rain that they cancelled the flight",
         "did it rain that they canceled the flight",
         "did it rain that the flight was cancelled",
-        "did it rain that the flight was canceled"
+        "did it rain that the flight was canceled",
+        "did it rain that the flight had to be cancelled",
+        "did it rain that they had to cancel the flight"
       ],
       "displayAnswer": "did it rain that they cancelled the flight / did it rain that they canceled the flight / did it rain that the flight was cancelled / did it rain that the flight was canceled",
       "explanation": "So heavily + did + S + rain…that…: đảo ngữ nhấn mạnh mức độ mưa và hệ quả.",
@@ -1128,7 +1137,9 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "me that I would make a complete recovery",
-        "me I would make a complete recovery"
+        "me I would make a complete recovery",
+        "me that I'd make a complete recovery",
+        "me I'd make a complete recovery"
       ],
       "displayAnswer": "me that I would make a complete recovery / me I would make a complete recovery",
       "explanation": "Reassure somebody that… là trấn an ai rằng điều tốt sẽ xảy ra.",
@@ -1178,7 +1189,9 @@
         "has been a 5% increase in prices in the last year",
         "has been an increase of 5% in prices in the last year",
         "has been a five percent increase in prices in the last year",
-        "has been a five per cent increase in prices in the last year"
+        "has been a five per cent increase in prices in the last year",
+        "has been a 5% rise in prices in the last year",
+        "has been a rise of 5% in prices in the last year"
       ],
       "displayAnswer": "has been a 5% increase in prices in the last year / has been an increase of 5% in prices in the last year / has been a five percent increase in prices in the last year / has been a five per cent increase in prices in the last year",
       "explanation": "Đổi động từ increase thành danh từ an increase trong cấu trúc There has been… Hiện tại hoàn thành giữ quan hệ với in the last year.",
@@ -1250,7 +1263,8 @@
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "in case I ran"
+        "in case I ran",
+        "in case I should run"
       ],
       "displayAnswer": "in case I ran",
       "explanation": "In case + mệnh đề diễn tả phòng trường hợp có thể xảy ra. Câu kể quá khứ nên dùng I ran out of cash.",
@@ -1273,7 +1287,8 @@
       "sectionCode": "III.2",
       "localNumber": 4,
       "acceptedAnswers": [
-        "for a picnic have fallen through"
+        "for a picnic have fallen through",
+        "have fallen through"
       ],
       "displayAnswer": "for a picnic have fallen through",
       "explanation": "Fall through = kế hoạch không thực hiện được.",
@@ -1409,7 +1424,9 @@
       "localNumber": 10,
       "acceptedAnswers": [
         "take back what I said",
-        "take back my words"
+        "take back my words",
+        "take back my remark",
+        "take back my comment"
       ],
       "displayAnswer": "take back what I said / take back my words",
       "explanation": "Take back what I said/my remark = rút lại lời đã nói.",

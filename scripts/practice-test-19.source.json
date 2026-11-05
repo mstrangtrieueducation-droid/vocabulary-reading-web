@@ -584,7 +584,9 @@
       "localNumber": 1,
       "acceptedAnswers": [
         "Keep → Keeping",
-        "Keep → To keep"
+        "Keep → To keep",
+        "Keeping",
+        "To keep"
       ],
       "displayAnswer": "Keep → Keeping / Keep → To keep",
       "explanation": "Cụm làm chủ ngữ của is essential cần danh động từ Keeping fit hoặc động từ nguyên thể To keep fit.",
@@ -596,7 +598,9 @@
       "localNumber": 2,
       "acceptedAnswers": [
         "as → such as",
-        "as → like"
+        "as → like",
+        "such as",
+        "like"
       ],
       "displayAnswer": "as → such as / as → like",
       "explanation": "Sau conditions cần cụm nêu ví dụ như heart disease, type 2 diabetes và obesity.",
@@ -607,7 +611,8 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "Beside → Besides"
+        "Beside → Besides",
+        "Besides"
       ],
       "displayAnswer": "Beside → Besides",
       "explanation": "Besides = ngoài ra/ngoài những điều đã nêu, phù hợp nối lợi ích thể chất với tinh thần.",
@@ -618,7 +623,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "refreshing → refreshed"
+        "refreshing → refreshed",
+        "refreshed"
       ],
       "displayAnswer": "refreshing → refreshed",
       "explanation": "Feel refreshed là cảm thấy khoẻ khoắn, được phục hồi sau nghỉ ngơi.",
@@ -630,7 +636,9 @@
       "localNumber": 5,
       "acceptedAnswers": [
         "and → but",
-        "and → but also"
+        "and → but also",
+        "but",
+        "but also"
       ],
       "displayAnswer": "and → but / and → but also",
       "explanation": "Cặp nối chuẩn là not just… but (also)…: không chỉ vì sống lâu mà còn vì chất lượng cuộc sống.",
@@ -1088,7 +1096,10 @@
       "acceptedAnswers": [
         "absolutely no truth in that rumor about the politician and the construction contract",
         "absolutely no truth in that rumour about the politician and the construction contract",
-        "no truth whatsoever in that rumour about the politician and the construction contract"
+        "no truth whatsoever in that rumour about the politician and the construction contract",
+        "no truth whatsoever in that rumor about the politician and the construction contract",
+        "no truth at all in that rumour about the politician and the construction contract",
+        "no truth at all in that rumor about the politician and the construction contract"
       ],
       "displayAnswer": "absolutely no truth in that rumor about the politician and the construction contract / absolutely no truth in that rumour about the politician and the construction contract / no truth whatsoever in that rumour about the politician and the construction contract",
       "explanation": "There is no truth in a rumour = lời đồn không có căn cứ sự thật.",
@@ -1104,7 +1115,9 @@
       "sectionCode": "III.1",
       "localNumber": 3,
       "acceptedAnswers": [
-        "was his anger that no one dared to say anything"
+        "was his anger that no one dared to say anything",
+        "was his anger that no one dared say anything",
+        "was his anger that nobody dared to say anything"
       ],
       "displayAnswer": "was his anger that no one dared to say anything",
       "explanation": "So angry that… đổi sang danh từ anger với such: Such was his anger that… Đây là đảo be lên trước cụm danh từ his anger để nhấn mạnh mức độ.",
@@ -1120,7 +1133,8 @@
       "acceptedAnswers": [
         "refusal to work overtime surprised me",
         "refusal to work overtime came as a surprise to me",
-        "refusal to work overtime took me by surprise"
+        "refusal to work overtime took me by surprise",
+        "refusal to work overtime was a surprise to me"
       ],
       "displayAnswer": "refusal to work overtime surprised me / refusal to work overtime came as a surprise to me / refusal to work overtime took me by surprise",
       "explanation": "He said he wouldn’t work overtime được danh từ hoá thành his refusal to work overtime.",
@@ -1150,7 +1164,8 @@
       "localNumber": 6,
       "acceptedAnswers": [
         "how much they offer, my aunt refuses to sell her paintings",
-        "how much money they offer, my aunt refuses to sell her paintings"
+        "how much money they offer, my aunt refuses to sell her paintings",
+        "how much they offer her, my aunt refuses to sell her paintings"
       ],
       "displayAnswer": "how much they offer, my aunt refuses to sell her paintings",
       "explanation": "No matter how much và however much cùng diễn tả bất kể số tiền nhiều đến đâu.",
@@ -1165,7 +1180,8 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "our classmates’ help, we would not have finished the project on time",
-        "the help of our classmates, we would not have finished the project on time"
+        "the help of our classmates, we would not have finished the project on time",
+        "our classmates helping us, we would not have finished the project on time"
       ],
       "displayAnswer": "our classmates’ help, we would not have finished the project on time",
       "explanation": "But for + cụm danh từ = nếu không nhờ.",
@@ -1181,7 +1197,9 @@
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "objection to my opening the window"
+        "objection to my opening the window",
+        "objection to me opening the window",
+        "objection if I open the window"
       ],
       "displayAnswer": "objection to my opening the window",
       "explanation": "Have an objection to + danh từ/V-ing diễn tả phản đối điều gì.",
@@ -1200,7 +1218,9 @@
         "intention of furthering his studies in the UK, Marshal has been taking an advanced English course",
         "aim of furthering his studies in the UK, Marshal has been taking an advanced English course",
         "goal of furthering his studies in the UK, Marshal has been taking an advanced English course",
-        "objective of furthering his studies in the UK, Marshal has been taking an advanced English course"
+        "objective of furthering his studies in the UK, Marshal has been taking an advanced English course",
+        "intention of furthering his studies in the U.K., Marshal has been taking an advanced English course",
+        "aim of furthering his studies in the U.K., Marshal has been taking an advanced English course"
       ],
       "displayAnswer": "intention of furthering his studies in the UK, Marshal has been taking an advanced English course / aim of furthering his studies in the UK, Marshal has been taking an advanced English course / goal of furthering his studies in the UK, Marshal has been taking an advanced English course / objective of furthering his studies in the UK, Marshal has been taking an advanced English course",
       "explanation": "With the aim/intention/goal/objective of + V-ing diễn đạt mục đích.",
@@ -1216,7 +1236,9 @@
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "is restricted to members of the research team"
+        "is restricted to members of the research team",
+        "is limited to members of the research team",
+        "is only available to members of the research team"
       ],
       "displayAnswer": "is restricted to members of the research team",
       "explanation": "Be restricted to = được giới hạn cho một nhóm.",
@@ -1388,7 +1410,8 @@
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "working against the clock"
+        "working against the clock",
+        "racing against the clock"
       ],
       "displayAnswer": "working against the clock",
       "explanation": "Work against the clock là làm gấp để kịp thời hạn rất ngắn. Cụm giữ ý thiếu thời gian; vế so don’t waste time giữ lời nhắc không lãng phí.",

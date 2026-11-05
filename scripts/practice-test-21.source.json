@@ -671,7 +671,9 @@
       "acceptedAnswers": [
         "facing with → facing",
         "facing → faced",
-        "facing → being faced"
+        "facing → being faced",
+        "facing with → faced with",
+        "facing with → being faced with"
       ],
       "displayAnswer": "facing with → facing / facing → faced / facing → being faced",
       "explanation": "Face challenges dùng face chủ động và không có with.\nbe faced with = đối mặt với.",
@@ -1212,7 +1214,11 @@
         "hadn’t been working all day at the garage, he wouldn’t be very tired now",
         "had not been working all day at the garage, he would not be very tired now",
         "hadn’t worked all day at the garage, he wouldn’t be so tired now",
-        "had not worked all day at the garage, he would not be so tired now"
+        "had not worked all day at the garage, he would not be so tired now",
+        "hadn’t been working all day at the garage, he wouldn’t be so tired now",
+        "hadn’t worked all day at the garage, he wouldn’t be very tired now",
+        "hadn’t been working all day at the garage, he wouldn’t be tired now",
+        "hadn’t worked all day at the garage, he wouldn’t be tired now"
       ],
       "displayAnswer": "hadn’t been working all day at the garage, he wouldn’t be very tired now / had not been working all day at the garage, he would not be very tired now / hadn’t worked all day at the garage, he wouldn’t be so tired now / had not worked all day at the garage, he would not be so tired now",
       "prefix": "If my father",
@@ -1267,7 +1273,10 @@
         "renowned expert in the field",
         "well-known expert in the field",
         "recognised expert in the field",
-        "recognized expert in the field"
+        "recognized expert in the field",
+        "leading expert in the field",
+        "famous expert in the field",
+        "well known expert in the field"
       ],
       "displayAnswer": "renowned expert in the field / well-known expert in the field / recognised expert in the field / recognized expert in the field",
       "prefix": "Susan is a",
@@ -1290,7 +1299,9 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "it when other people tell him",
-        "when other people tell him"
+        "when other people tell him",
+        "it when others tell him",
+        "it when people tell him"
       ],
       "displayAnswer": "it when other people tell him / when other people tell him",
       "prefix": "John doesn't like",
@@ -1401,7 +1412,8 @@
       "sectionCode": "III.2",
       "localNumber": 8,
       "acceptedAnswers": [
-        "There is no question of"
+        "There is no question of",
+        "There's no question of"
       ],
       "displayAnswer": "There is no question of",
       "prefix": "",
@@ -1447,7 +1459,10 @@
       "localNumber": 10,
       "acceptedAnswers": [
         "you will enjoy yourself during",
-        "you have a good time during"
+        "you have a good time during",
+        "you enjoy yourself during",
+        "you'll enjoy yourself during",
+        "you'll have a good time during"
       ],
       "displayAnswer": "you will enjoy yourself during / you have a good time during",
       "prefix": "I hope",

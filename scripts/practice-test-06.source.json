@@ -658,7 +658,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "by → with"
+        "by → with",
+        "with"
       ],
       "displayAnswer": "by → with",
       "explanation": "Be decorated with flags nghĩa là được trang trí bằng cờ. With nêu vật trang trí; by thường nêu người thực hiện hành động bị động.",
@@ -671,7 +672,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "historic → historical"
+        "historic → historical",
+        "historical"
       ],
       "displayAnswer": "historic → historical",
       "explanation": "Historical exhibitions là triển lãm về lịch sử.\nhistoric / historical = có ý nghĩa lịch sử / thuộc về lịch sử.",
@@ -686,7 +688,9 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "as → such as",
-        "as → like"
+        "as → like",
+        "such as",
+        "like"
       ],
       "displayAnswer": "as → such as / as → like",
       "explanation": "Such as Hanoi… hoặc like Hanoi… đưa ra ví dụ các thành phố lớn.",
@@ -697,7 +701,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "patriot → patriotism"
+        "patriot → patriotism",
+        "patriotism"
       ],
       "displayAnswer": "patriot → patriotism",
       "explanation": "A sense of unity and patriotism cần hai danh từ trừu tượng song song.",
@@ -710,7 +715,10 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "celebrate → celebrating"
+        "celebrate → celebrating",
+        "celebrating",
+        "celebrate → that celebrate",
+        "celebrate → which celebrate"
       ],
       "displayAnswer": "celebrate → celebrating",
       "explanation": "Banners celebrating national pride rút gọn từ banners that celebrate….",
@@ -1100,7 +1108,12 @@
       "acceptedAnswers": [
         "had I shut the door than I realized I’d left the key inside",
         "had I shut the door than I realized that I’d left the key inside",
-        "had I shut the door than I realised that I had left the key inside"
+        "had I shut the door than I realised that I had left the key inside",
+        "had I shut the door than I realised I’d left the key inside",
+        "had I shut the door than I realised that I’d left the key inside",
+        "had I shut the door than I realized I had left the key inside",
+        "had I shut the door than I realized that I had left the key inside",
+        "had I shut the door than I realised I had left the key inside"
       ],
       "displayAnswer": "had I shut the door than I realized I’d left the key inside",
       "explanation": "No sooner + had + chủ ngữ + V3 + than + quá khứ đơn chỉ hai việc nối tiếp ngay.",
@@ -1114,7 +1127,8 @@
       "sectionCode": "III.1",
       "localNumber": 2,
       "acceptedAnswers": [
-        "Joe to feed the goldfish"
+        "Joe to feed the goldfish",
+        "Joe not to forget to feed the goldfish"
       ],
       "displayAnswer": "Joe to feed the goldfish",
       "explanation": "Remind somebody to do something = nhắc ai làm gì.",
@@ -1143,7 +1157,10 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "whose real name was Samuel L. Clemens, wrote “Tom Sawyer”",
-        "whose real name was Samuel L. Clemens, wrote \"Tom Sawyer\""
+        "whose real name was Samuel L. Clemens, wrote \"Tom Sawyer\"",
+        "whose real name was Samuel L. Clemens, wrote Tom Sawyer",
+        "whose real name was Samuel Clemens, wrote “Tom Sawyer”",
+        "whose real name was Samuel Clemens, wrote \"Tom Sawyer\""
       ],
       "displayAnswer": "whose real name was Samuel L. Clemens, wrote “Tom Sawyer”",
       "explanation": "Whose + danh từ diễn đạt sở hữu: tên thật của Mark Twain.",
@@ -1173,7 +1190,13 @@
       "acceptedAnswers": [
         "when I saw the singer onstage that I realised how short he was",
         "after I saw the singer onstage that I realised how short he was",
-        "when I saw him on stage that I realized how short the singer was"
+        "when I saw him on stage that I realized how short the singer was",
+        "when I saw the singer onstage that I realized how short he was",
+        "when I saw the singer on stage that I realised how short he was",
+        "when I saw the singer on stage that I realized how short he was",
+        "after I saw the singer onstage that I realized how short he was",
+        "when I saw him onstage that I realised how short the singer was",
+        "when I saw him onstage that I realized how short the singer was"
       ],
       "displayAnswer": "when I saw the singer onstage that I realised how short he was",
       "explanation": "It was only when/after…that… nhấn mạnh chỉ khi nhìn thấy mới nhận ra.",
@@ -1189,7 +1212,13 @@
       "acceptedAnswers": [
         "though the teacher explained the task, many students did not perform it well",
         "as the teacher explained the task, many students did not perform it well",
-        "as the teacher instructed the students, many of them did not perform the task well"
+        "as the teacher instructed the students, many of them did not perform the task well",
+        "though the teacher explained the task, many students didn't perform it well",
+        "as the teacher explained the task, many students didn't perform it well",
+        "as the teacher instructed the students, many of them didn't perform the task well",
+        "though the teacher explained the task, many students didn't perform the task well",
+        "though the teacher gave the instructions, many students didn't perform the task well",
+        "as the teacher gave the instructions, many students didn't perform the task well"
       ],
       "displayAnswer": "though the teacher explained the task, many students did not perform it well",
       "explanation": "Clearly + though/as + chủ ngữ + động từ là cấu trúc nhượng bộ đảo trạng từ.",
@@ -1203,7 +1232,9 @@
       "sectionCode": "III.1",
       "localNumber": 8,
       "acceptedAnswers": [
-        "to everyone because there are no fewer than twenty dinosaurs on display"
+        "to everyone because there are no fewer than twenty dinosaurs on display",
+        "to everyone as there are no fewer than twenty dinosaurs on display",
+        "to everyone since there are no fewer than twenty dinosaurs on display"
       ],
       "displayAnswer": "to everyone because there are no fewer than twenty dinosaurs on display",
       "explanation": "Appeal to somebody = thu hút/làm ai thích. Cần giới từ to trước everyone; giữ no fewer than twenty để bảo toàn ý ít nhất 20 mẫu trưng bày.",
@@ -1253,7 +1284,8 @@
       "sectionCode": "III.2",
       "localNumber": 1,
       "acceptedAnswers": [
-        "on good terms with"
+        "on good terms with",
+        "on friendly terms with"
       ],
       "displayAnswer": "on good terms with",
       "explanation": "Be on good terms with somebody = có quan hệ tốt với ai.",
@@ -1365,7 +1397,9 @@
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "took notice of"
+        "took notice of",
+        "took any notice of",
+        "took much notice of"
       ],
       "displayAnswer": "took notice of",
       "explanation": "Take notice of = chú ý tới.",

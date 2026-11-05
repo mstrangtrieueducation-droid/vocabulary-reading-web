@@ -658,7 +658,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "increasing → increase"
+        "increasing → increase",
+        "increase"
       ],
       "displayAnswer": "increasing → increase",
       "explanation": "The increase in contamination là sự gia tăng ô nhiễm. Sau the cần danh từ increase; increasing là dạng V-ing/tính từ không tạo cụm đúng trong bản đề đã chỉnh.",
@@ -669,7 +670,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "onto → into"
+        "onto → into",
+        "into"
       ],
       "displayAnswer": "onto → into",
       "explanation": "Release gases into the atmosphere = thải khí vào khí quyển.",
@@ -680,7 +682,8 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "observe → be observed"
+        "observe → be observed",
+        "be observed"
       ],
       "displayAnswer": "observe → be observed",
       "explanation": "Effects là đối tượng được quan sát, nên sau can cần bị động be observed.",
@@ -691,7 +694,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "insists → persists"
+        "insists → persists",
+        "persists"
       ],
       "displayAnswer": "insists → persists",
       "explanation": "The problem persists = vấn đề vẫn tiếp diễn hoặc chưa được giải quyết.",
@@ -704,7 +708,8 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "damages → damage"
+        "damages → damage",
+        "damage"
       ],
       "displayAnswer": "damages → damage",
       "explanation": "Damage chỉ thiệt hại nói chung là danh từ không đếm được: prevent future damage.",
@@ -943,7 +948,8 @@
         "can",
         "will",
         "would",
-        "should"
+        "should",
+        "must"
       ],
       "displayAnswer": "may / might / could / can / will / would / should",
       "explanation": "Trước be cần động từ tình thái: may/might/could/can chỉ khả năng; will/would dự đoán; should kỳ vọng.",
@@ -1076,7 +1082,11 @@
       "acceptedAnswers": [
         "has been successfully completed, the offer of a job will be confirmed",
         "has been passed, the offer of a job will be confirmed",
-        "is successful, the offer of a job will be confirmed"
+        "is successful, the offer of a job will be confirmed",
+        "has been passed successfully, the offer of a job will be confirmed",
+        "is passed, the offer of a job will be confirmed",
+        "has been successful, the offer of a job will be confirmed",
+        "is successfully completed, the offer of a job will be confirmed"
       ],
       "displayAnswer": "has been successfully completed, the offer of a job will be confirmed / has been passed, the offer of a job will be confirmed / is successful, the offer of a job will be confirmed",
       "explanation": "Once = một khi, theo sau bằng hiện tại đơn hoặc hiện tại hoàn thành để nói điều kiện trước tương lai.",
@@ -1093,7 +1103,9 @@
         "her apologies for not attending the meeting yesterday",
         "her apologies for not having attended the meeting yesterday",
         "her apology for not attending the meeting yesterday",
-        "her apology for not having attended the meeting yesterday"
+        "her apology for not having attended the meeting yesterday",
+        "her apologies for missing the meeting yesterday",
+        "her apologies for not being at the meeting yesterday"
       ],
       "displayAnswer": "her apologies for not attending the meeting yesterday / her apologies for not having attended the meeting yesterday / her apology for not attending the meeting yesterday / her apology for not having attended the meeting yesterday",
       "explanation": "Send one’s apologies for + V-ing là gửi lời xin lỗi vì việc gì.",
@@ -1112,7 +1124,11 @@
         "who suggested increasing the entrance fee",
         "that suggested increasing the entrance fee",
         "who made the suggestion to increase the entrance fee",
-        "that made the suggestion to increase the entrance fee"
+        "that made the suggestion to increase the entrance fee",
+        "who suggested that the entrance fee should be increased",
+        "who suggested that the entrance fee be increased",
+        "that suggested that the entrance fee should be increased",
+        "who suggested raising the entrance fee"
       ],
       "displayAnswer": "who suggested increasing the entrance fee / that suggested increasing the entrance fee / who made the suggestion to increase the entrance fee / that made the suggestion to increase the entrance fee",
       "explanation": "Câu chẻ It was Tommy who/that… nhấn mạnh Tommy là người đề xuất.",
@@ -1160,7 +1176,9 @@
       "acceptedAnswers": [
         "not used to getting up early in London",
         "not yet used to getting up early in London",
-        "unaccustomed to getting up early in London"
+        "unaccustomed to getting up early in London",
+        "not yet accustomed to getting up early in London",
+        "not accustomed to getting up early in London"
       ],
       "displayAnswer": "not used to getting up early in London / not yet used to getting up early in London / unaccustomed to getting up early in London",
       "explanation": "Be used to/be accustomed to + V-ing là đã quen với việc gì.",
@@ -1211,7 +1229,8 @@
       "sectionCode": "III.1",
       "localNumber": 9,
       "acceptedAnswers": [
-        "I had studied harder for the exam"
+        "I had studied harder for the exam",
+        "I'd studied harder for the exam"
       ],
       "displayAnswer": "I had studied harder for the exam",
       "explanation": "Wish + quá khứ hoàn thành diễn đạt tiếc nuối một việc đã không xảy ra trong quá khứ.",
@@ -1380,7 +1399,10 @@
         "little chance of you winning",
         "little chance of your winning",
         "little chance that you will win",
-        "not much chance of you winning"
+        "not much chance of you winning",
+        "little chance you will win",
+        "little chance that you'll win",
+        "not much chance of your winning"
       ],
       "displayAnswer": "little chance of you winning / little chance of your winning / little chance that you will win / not much chance of you winning",
       "explanation": "Unlikely = khả năng thấp, tương đương little/not much chance.",

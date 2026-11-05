@@ -911,7 +911,8 @@
       "sectionCode": "II.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "leads"
+        "leads",
+        "contributes"
       ],
       "displayAnswer": "leads",
       "explanation": "It thay cho tiredness, số ít → leads to: dẫn tới.",
@@ -1087,7 +1088,9 @@
       "acceptedAnswers": [
         "had not missed the flight this morning, she would be here to give the presentation now",
         "hadn't missed the flight this morning, she would be here to give the presentation now",
-        "had caught the flight this morning, she would be here to give the presentation now"
+        "had caught the flight this morning, she would be here to give the presentation now",
+        "had not missed the flight this morning, she'd be here to give the presentation now",
+        "hadn't missed the flight this morning, she'd be here to give the presentation now"
       ],
       "displayAnswer": "had not missed the flight this morning, she would be here to give the presentation now / hadn't missed the flight this morning, she would be here to give the presentation now / had caught the flight this morning, she would be here to give the presentation now",
       "prefix": "If Christina",
@@ -1216,7 +1219,8 @@
       "acceptedAnswers": [
         "is no limit to how much you can eat for $5 at the new lunch-bar",
         "is no limit to the amount you can eat for $5 at the new lunch-bar",
-        "is no limit to how much you can eat for 5 dollars at the new lunch-bar"
+        "is no limit to how much you can eat for 5 dollars at the new lunch-bar",
+        "is no limit to how much you can eat for $ 5 at the new lunch-bar"
       ],
       "displayAnswer": "is no limit to how much you can eat for $5 at the new lunch-bar / is no limit to the amount you can eat for $5 at the new lunch-bar / is no limit to how much you can eat for 5 dollars at the new lunch-bar",
       "prefix": "There",
@@ -1354,7 +1358,8 @@
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "acts on impulse"
+        "acts on impulse",
+        "acts impulsively"
       ],
       "displayAnswer": "acts on impulse",
       "prefix": "Zoe always",

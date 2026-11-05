@@ -882,13 +882,13 @@
     },
     {
       "term": "put stress on",
-      "meaning": "nhấn trọng âm hoặc nhấn mạnh",
-      "usage": "put stress on a syllable",
-      "example": "Put stress on the first syllable.",
-      "translation": "Hãy nhấn trọng âm vào âm tiết đầu.",
-      "family": "stress (n/v); stressed syllable: âm tiết có trọng âm",
+      "meaning": "gây áp lực lên",
+      "usage": "put stress on + nguồn lực/hệ thống",
+      "example": "Rapid growth puts stress on water supplies.",
+      "translation": "Sự tăng trưởng nhanh gây áp lực lên nguồn nước.",
+      "family": "stress (n/v); stressful (adj)",
       "meta": "PHRASE",
-      "note": "Đoạn một nêu high population densities put stress on available resources. Vì thế nguồn tài nguyên sẵn có chịu áp lực. put stress on a syllable.",
+      "note": "Đoạn một nêu high population densities put stress on available resources. Vì thế nguồn tài nguyên sẵn có chịu áp lực.",
       "question": 72,
       "questions": [
         72

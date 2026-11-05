@@ -902,7 +902,8 @@
       "sectionCode": "II.2",
       "localNumber": 5,
       "acceptedAnswers": [
-        "since"
+        "since",
+        "on"
       ],
       "displayAnswer": "since",
       "explanation": "Had shown improvement since the year 2000 nói sự cải thiện tính từ mốc 2000 đến thời điểm 2015 đang xét.",
@@ -1122,8 +1123,8 @@
         "another ten years had passed did my cousin return to his hometown",
         "another ten years had elapsed did my cousin return to his hometown",
         "another ten years had gone by did my cousin return to his hometown",
-        "another ten years later did my cousin return to his hometown",
-        "another ten years passed did my cousin return to his hometown"
+        "another ten years passed did my cousin return to his hometown",
+        "ten years later did my cousin return to his hometown"
       ],
       "displayAnswer": "another ten years had passed did my cousin return to his hometown / another ten years had elapsed did my cousin return to his hometown / another ten years had gone by did my cousin return to his hometown / another ten years later did my cousin return to his hometown / another ten years passed did my cousin return to his hometown",
       "prefix": "Not until",
@@ -1279,7 +1280,8 @@
         "at such a high speed",
         "at such a fast speed",
         "at such high speed",
-        "at such a fast pace"
+        "at such a fast pace",
+        "at such a speed"
       ],
       "displayAnswer": "at such a high speed / at such a fast speed / at such high speed / at such a fast pace",
       "prefix": "The drunken man was driving",
@@ -1347,7 +1349,8 @@
       "localNumber": 4,
       "acceptedAnswers": [
         "neither of which I liked",
-        "but I liked neither of them"
+        "but I liked neither of them",
+        "and I liked neither of them"
       ],
       "displayAnswer": "neither of which I liked / but I liked neither of them",
       "prefix": "The assistant showed me two laptops,",
@@ -1388,13 +1391,16 @@
       "sectionCode": "III.2",
       "localNumber": 6,
       "acceptedAnswers": [
-        "on a scale never seen before"
+        "on a scale never seen before",
+        "on a larger scale than ever",
+        "on a bigger scale than ever",
+        "on the largest scale ever"
       ],
       "displayAnswer": "on a scale never seen before",
       "prefix": "This year's rock festival is",
       "suffix": "in this country",
       "fullSentence": "This year's rock festival is on a scale never seen before in this country",
-      "explanation": "On a larger scale than any previous … diễn tả quy mô lớn hơn mọi lễ hội trước.",
+      "explanation": "On a scale never seen before = ở quy mô chưa từng có, tương đương larger than any previous rock festival.",
       "keyword": "SCALE",
       "answerPrefix": "This year's rock festival is",
       "answerSuffix": "in this country",
@@ -1459,7 +1465,8 @@
       "localNumber": 9,
       "acceptedAnswers": [
         "went on a shopping spree",
-        "embarked on a shopping spree"
+        "embarked on a shopping spree",
+        "went on a spending spree"
       ],
       "displayAnswer": "went on a shopping spree / embarked on a shopping spree",
       "prefix": "Despite her lack of money, she",
@@ -1480,7 +1487,8 @@
       "localNumber": 10,
       "acceptedAnswers": [
         "to keep her chin up",
-        "to keep her spirits up"
+        "to keep her spirits up",
+        "to keep up her spirits"
       ],
       "displayAnswer": "to keep her chin up / to keep her spirits up",
       "prefix": "What is amazing is how she is managing",

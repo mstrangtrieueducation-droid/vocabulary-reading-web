@@ -649,7 +649,10 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "transporting → transported"
+        "transporting → transported",
+        "transported",
+        "transporting → transportable",
+        "transportable"
       ],
       "displayAnswer": "transporting → transported",
       "explanation": "Quả chuối được vận chuyển, không tự vận chuyển thứ khác, nên cần quá khứ phân từ transported.",
@@ -660,7 +663,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "possibly → possible"
+        "possibly → possible",
+        "possible"
       ],
       "displayAnswer": "possibly → possible",
       "explanation": "Cụm đúng là in the most efficient way possible = bằng cách hiệu quả nhất có thể.",
@@ -671,7 +675,8 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "attack → attacks"
+        "attack → attacks",
+        "attacks"
       ],
       "displayAnswer": "attack → attacks",
       "explanation": "Which thay cho the fungus, một danh từ số ít, nên động từ hiện tại phải là attacks.",
@@ -682,7 +687,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "resistible → resistant"
+        "resistible → resistant",
+        "resistant"
       ],
       "displayAnswer": "resistible → resistant",
       "explanation": "Resistant to crop sprays = kháng thuốc phun cho cây trồng.",
@@ -695,7 +701,9 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "On → In"
+        "On → In",
+        "In",
+        "On an attempt → In an attempt"
       ],
       "displayAnswer": "On → In",
       "explanation": "là in an attempt to do something = trong nỗ lực làm gì.",
@@ -885,7 +893,8 @@
       "acceptedAnswers": [
         "waves",
         "tsunamis",
-        "those"
+        "those",
+        "ones"
       ],
       "displayAnswer": "waves / tsunamis / those",
       "explanation": "Phần sau dấu gạch ngang nhắc lại những đợt sóng thần vừa nêu.",
@@ -1016,7 +1025,7 @@
         "C"
       ],
       "displayAnswer": "C",
-      "explanation": "They trong They feel pressured… thay cho employees ở câu ngay trước. Bản gốc đặt cả workers và employees nên hai lựa chọn cùng có thể chỉ nhóm này; phương án workers đã được thay để chỉ còn C đúng.",
+      "explanation": "They trong They feel pressured… thay cho employees ở câu ngay trước → C.",
       "teacherHighlights": []
     },
     {
@@ -1060,7 +1069,10 @@
         "to obey the regulations may lead to your disqualification",
         "to obey the regulations may result in your disqualification",
         "to obey the regulations may cause you to be disqualified",
-        "to obey the regulations may result in you being disqualified"
+        "to obey the regulations may result in you being disqualified",
+        "to obey the regulations may result in your being disqualified",
+        "to obey the regulations may lead to you being disqualified",
+        "to obey the regulations may lead to your being disqualified"
       ],
       "displayAnswer": "to obey the regulations may lead to your disqualification / to obey the regulations may result in your disqualification / to obey the regulations may cause you to be disqualified / to obey the regulations may result in you being disqualified",
       "explanation": "Failure to + V: việc không làm gì. Giữ may vì câu gốc chỉ khả năng bị loại.",
@@ -1076,7 +1088,10 @@
       "acceptedAnswers": [
         "to her indifferent appearance, she is quite friendly",
         "to appearances, she is quite friendly",
-        "to the impression she gives, she is quite friendly"
+        "to the impression she gives, she is quite friendly",
+        "to her appearance of indifference, she is quite friendly",
+        "to how she appears, she is quite friendly",
+        "to her appearance, she is quite friendly"
       ],
       "displayAnswer": "to her indifferent appearance, she is quite friendly / to appearances, she is quite friendly / to the impression she gives, she is quite friendly",
       "explanation": "Contrary to… = trái với điều thể hiện hoặc được nghĩ tới.",
@@ -1108,7 +1123,9 @@
       "acceptedAnswers": [
         "the moon when our first grandchild was born",
         "the moon about the birth of our first grandchild",
-        "the moon at the birth of our first grandchild"
+        "the moon at the birth of our first grandchild",
+        "the moon about our first grandchild's birth",
+        "the moon with the birth of our first grandchild"
       ],
       "displayAnswer": "the moon when our first grandchild was born / the moon about the birth of our first grandchild / the moon at the birth of our first grandchild",
       "explanation": "Be over the moon là vô cùng vui sướng, tương đương elated.",
@@ -1141,7 +1158,10 @@
       "acceptedAnswers": [
         "not been for my mom’s help, I couldn’t have held a big party",
         "not been for my mom’s help, I could not have held a big party",
-        "not been for my mom’s help, I wouldn’t have been able to hold a big party"
+        "not been for my mom’s help, I wouldn’t have been able to hold a big party",
+        "not been for my mom’s help, I would not have been able to hold a big party",
+        "not been for my mom’s help, I wouldn’t have held a big party",
+        "not been for my mom’s help, I would not have held a big party"
       ],
       "displayAnswer": "not been for my mom’s help, I couldn’t have held a big party / not been for my mom’s help, I could not have held a big party / not been for my mom’s help, I wouldn’t have been able to hold a big party",
       "explanation": "Had it not been for… là đảo ngữ của If it had not been for…, giả định thiếu một sự giúp đỡ trong quá khứ.",
@@ -1157,7 +1177,10 @@
       "acceptedAnswers": [
         "is on average not as deep as the Pacific Ocean",
         "is not as deep as the Pacific Ocean on average",
-        "is on average shallower than the Pacific Ocean"
+        "is on average shallower than the Pacific Ocean",
+        "is shallower than the Pacific Ocean on average",
+        "is on average less deep than the Pacific Ocean",
+        "is not on average as deep as the Pacific Ocean"
       ],
       "displayAnswer": "is on average not as deep as the Pacific Ocean / is not as deep as the Pacific Ocean on average / is on average shallower than the Pacific Ocean",
       "explanation": "Đổi A sâu hơn B thành B không sâu bằng A hoặc B nông hơn A.",
@@ -1264,7 +1287,9 @@
       "sectionCode": "III.2",
       "localNumber": 3,
       "acceptedAnswers": [
-        "was good despite their lacking time"
+        "was good despite their lacking time",
+        "was good despite lacking time",
+        "was good despite them lacking time"
       ],
       "displayAnswer": "was good despite their lacking time",
       "explanation": "Lacking phải được giữ nguyên. Có thể dùng be lacking in something hoặc lacking làm dạng V-ing sau despite/in spite of.",

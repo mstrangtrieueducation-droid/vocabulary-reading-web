@@ -595,7 +595,8 @@
       "sectionCode": "I.3",
       "localNumber": 1,
       "acceptedAnswers": [
-        "achieve → achieving"
+        "achieve → achieving",
+        "achieving"
       ],
       "displayAnswer": "achieve → achieving",
       "explanation": "For là giới từ trong vital for, nên sau for cần danh từ hoặc V-ing: vital for achieving… = rất quan trọng để đạt được… Không dùng nguyên mẫu achieve trực tiếp sau giới từ for trong câu này.",
@@ -606,7 +607,8 @@
       "sectionCode": "I.3",
       "localNumber": 2,
       "acceptedAnswers": [
-        "balancing → balanced"
+        "balancing → balanced",
+        "balanced"
       ],
       "displayAnswer": "balancing → balanced",
       "explanation": "A fair and balanced world cần hai tính từ song song: fair và balanced.",
@@ -617,7 +619,8 @@
       "sectionCode": "I.3",
       "localNumber": 3,
       "acceptedAnswers": [
-        "access → accessing"
+        "access → accessing",
+        "accessing"
       ],
       "displayAnswer": "access → accessing",
       "explanation": "Prevent somebody from doing something là ngăn ai làm việc gì.",
@@ -630,7 +633,8 @@
       "sectionCode": "I.3",
       "localNumber": 4,
       "acceptedAnswers": [
-        "is → are"
+        "is → are",
+        "are"
       ],
       "displayAnswer": "is → are",
       "explanation": "Chủ ngữ chính là Policies số nhiều; that promote inclusion and fairness chỉ là mệnh đề bổ nghĩa.",
@@ -641,7 +645,8 @@
       "sectionCode": "I.3",
       "localNumber": 5,
       "acceptedAnswers": [
-        "to become → becomes"
+        "to become → becomes",
+        "becomes"
       ],
       "displayAnswer": "to become → becomes",
       "explanation": "Ensure có thể đi với mệnh đề đầy đủ: ensuring gender equality becomes a reality.",
@@ -932,7 +937,8 @@
       "sectionCode": "II.2",
       "localNumber": 9,
       "acceptedAnswers": [
-        "however"
+        "however",
+        "though"
       ],
       "displayAnswer": "however",
       "explanation": "However chen giữa hai dấu phẩy tạo sự chuyển ý: môi trường hiện tại khó sống, tuy vậy quá khứ có thể từng hỗ trợ sự sống.",
@@ -1151,7 +1157,9 @@
       "acceptedAnswers": [
         "anything else I could do but sit and wait",
         "anything I could do except sit and wait",
-        "anything else for me to do but sit and wait"
+        "anything else for me to do but sit and wait",
+        "anything else I could do except sit and wait",
+        "anything I could do but sit and wait"
       ],
       "displayAnswer": "anything else I could do but sit and wait / anything I could do except sit and wait / anything else for me to do but sit and wait",
       "explanation": "There wasn’t anything else…but/except… diễn tả không còn lựa chọn nào khác ngoài ngồi chờ.",
@@ -1181,7 +1189,8 @@
       "localNumber": 8,
       "acceptedAnswers": [
         "the details is limited to the managing director and the chief chemist",
-        "the details is restricted to the managing director and the chief chemist"
+        "the details is restricted to the managing director and the chief chemist",
+        "the details is confined to the managing director and the chief chemist"
       ],
       "displayAnswer": "the details is limited to the managing director and the chief chemist / the details is restricted to the managing director and the chief chemist",
       "explanation": "Knowledge of the details là chủ ngữ; knowledge không đếm được nên dùng is.",
@@ -1198,7 +1207,8 @@
         "was blamed for the accident by everyone",
         "was blamed by everyone for the accident",
         "was said by everyone to have caused the accident",
-        "was blamed by everyone for having caused the accident"
+        "was blamed by everyone for having caused the accident",
+        "was blamed by everyone for causing the accident"
       ],
       "displayAnswer": "was blamed for the accident by everyone / was blamed by everyone for the accident / was said by everyone to have caused the accident / was blamed by everyone for having caused the accident",
       "explanation": "Be blamed for something hoặc be said to have caused something chuyển lời quy trách nhiệm sang bị động.",
@@ -1214,7 +1224,9 @@
       "sectionCode": "III.1",
       "localNumber": 10,
       "acceptedAnswers": [
-        "is mainly distinguished from other animals by the power of speech"
+        "is mainly distinguished from other animals by the power of speech",
+        "is distinguished from other animals mainly by the power of speech",
+        "is mainly distinguished from other animals by his power of speech"
       ],
       "displayAnswer": "is mainly distinguished from other animals by the power of speech",
       "explanation": "Cấu trúc chủ động distinguishes man from other animals đổi thành man is distinguished from…by… Từ mainly giữ ý yếu tố chủ yếu.",
@@ -1271,7 +1283,9 @@
       "localNumber": 3,
       "acceptedAnswers": [
         "there is nothing wrong with",
-        "that there is nothing wrong with"
+        "that there is nothing wrong with",
+        "there's nothing wrong with",
+        "that there's nothing wrong with"
       ],
       "displayAnswer": "there is nothing wrong with / that there is nothing wrong with",
       "explanation": "There is nothing wrong with + V-ing nghĩa là làm việc đó không có gì sai/không có vấn đề. Bring đổi thành bringing vì đứng sau giới từ with.",
@@ -1363,7 +1377,8 @@
       "localNumber": 7,
       "acceptedAnswers": [
         "without her brother's advice when",
-        "without her brother's advice while"
+        "without her brother's advice while",
+        "without her brother advising her when"
       ],
       "displayAnswer": "without her brother's advice when / without her brother's advice while",
       "explanation": "Without + cụm danh từ diễn tả điều kiện phủ định: nếu không có lời khuyên của anh trai.",
