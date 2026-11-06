@@ -4,7 +4,7 @@
  * (chỉ khi số ảnh trong Doc khớp số ảnh đã đối chiếu). Bản lưu trước khi sửa nằm trong
  * thư mục "Bản lưu IELTS Viết Task 2 trước khi sửa (07-11-2026)".
  */
-const JOBS_URL = 'https://mstrangtrieueducation-droid.github.io/vocabulary-reading-web/tmp-outline-v2/jobs.json';
+const JOBS_URL = 'https://raw.githubusercontent.com/mstrangtrieueducation-droid/vocabulary-reading-web/main/tmp-outline-v2/jobs.json';
 
 function allTabs_(doc) {
   const out = [];
