@@ -57,10 +57,13 @@ function process_(apply) {
       if (imgs.length !== job.images.count) {
         r.img.push('COUNT ' + imgs.length + ' != ' + job.images.count + ' — bỏ qua ảnh');
       } else if (!apply) {
-        r.img.push('count ok ' + imgs.length + ', sẽ thay ' + job.images.items.length);
+        const bad = job.images.items.filter(([i, u, aspect]) => aspect && Math.abs(imgs[i].getHeight() / imgs[i].getWidth() - aspect) > 0.04).map(x => x[0]);
+        r.img.push('count ok ' + imgs.length + ', sẽ thay ' + job.images.items.length + (bad.length ? ', lệch tỉ lệ: ' + bad.join(',') : ''));
       } else {
-        job.images.items.forEach(([i, url]) => {
+        job.images.items.forEach(([i, url, aspect]) => {
           const old = imgs[i];
+          const a = old.getHeight() / old.getWidth();
+          if (aspect && Math.abs(a - aspect) > 0.04) { r.img.push('ASPECT ' + i + ' ' + a.toFixed(3) + ' != ' + aspect); return; }
           const par = old.getParent();
           const idx = par.getChildIndex(old);
           const w = old.getWidth();
