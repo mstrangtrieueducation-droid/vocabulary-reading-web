@@ -1,0 +1,13 @@
+/* Shared post-grading review layout for every retake test page (Practice Test 1-39, GF, VF1, VF2).
+   One scroll for the whole result: score, wrong-number list and every review card scroll together,
+   so a long explanation is never cut off; the retry button stays pinned at the bottom.
+   Linked with a media query that matches each page's desktop layout only; phone layouts already scroll the page.
+   Layout only - answer checking, scoring and score saving stay in each page. */
+#result:not([hidden]){display:flex;flex-direction:column;height:100%;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scroll-padding:12px 0 96px}
+#result>.result-head{flex:none;padding-top:12px;padding-bottom:12px}
+#result>.review-tools{flex:none;align-items:flex-start}
+#result .wrong-list{min-width:0;flex:1;max-height:min(150px,24vh);overflow-y:auto;overscroll-behavior:auto;scrollbar-gutter:stable}
+#result .review-filters{flex-wrap:wrap}
+#result>.reviews{flex:none;height:auto;min-height:0;max-height:none;overflow:visible}
+#result>.result-foot{position:sticky;bottom:0;z-index:5;margin-top:auto;flex:none;box-shadow:0 -8px 18px rgba(20,30,50,.08)}
+#result .explain p{white-space:pre-line;overflow-wrap:anywhere}
