@@ -460,10 +460,28 @@ function recordStart() {
 }
 function recordStop() { if (recorder && recorder.state !== "inactive") { try { recorder.stop(); } catch (e) {} } }
 function blobB64(blob) { return new Promise(res => { const fr = new FileReader(); fr.onload = () => res(String(fr.result).split(",")[1]); fr.readAsDataURL(blob); }); }
+// Gemini chỉ nhận WAV/MP3/AAC/OGG/FLAC; iPhone ghi audio/mp4, Android ghi webm → đổi sang WAV 16 kHz mono trước khi gửi.
+async function toWav(blob) {
+  const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return blob;
+  const ctx = new AC();
+  try {
+    const buf = await ctx.decodeAudioData(await blob.arrayBuffer());
+    const ch = buf.getChannelData(0), ratio = buf.sampleRate / 16000, n = Math.floor(ch.length / ratio);
+    const out = new DataView(new ArrayBuffer(44 + n * 2));
+    const w = (o, str) => { for (let i = 0; i < str.length; i++) out.setUint8(o + i, str.charCodeAt(i)); };
+    w(0, "RIFF"); out.setUint32(4, 36 + n * 2, true); w(8, "WAVE"); w(12, "fmt "); out.setUint32(16, 16, true); out.setUint16(20, 1, true); out.setUint16(22, 1, true);
+    out.setUint32(24, 16000, true); out.setUint32(28, 32000, true); out.setUint16(32, 2, true); out.setUint16(34, 16, true); w(36, "data"); out.setUint32(40, n * 2, true);
+    for (let i = 0; i < n; i++) { const s0 = Math.floor(i * ratio), s1 = Math.min(ch.length, Math.floor((i + 1) * ratio)); let acc = 0, c = 0; for (let j = s0; j < s1; j++) { acc += ch[j]; c++; } const v = Math.max(-1, Math.min(1, c ? acc / c : 0)); out.setInt16(44 + i * 2, v < 0 ? v * 0x8000 : v * 0x7fff, true); }
+    return new Blob([out], { type: "audio/wav" });
+  } catch (e) { diag("wav fail " + (e && e.name)); return blob; }
+  finally { try { ctx.close(); } catch (e) {} }
+}
 async function aiScore(blob, target, ipa, vi) {
-  const audio = await blobB64(blob);
-  const r = await fetch(C.API_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "score", hs: token, target, ipa, vi, mime: blob.type, audio, model: C.GRADER_MODEL || "" }) });
-  const j = await r.json(); if (!j.ok) throw new Error(j.error || "score");
+  const wav = await toWav(blob);
+  const audio = await blobB64(wav);
+  diag("send " + wav.type + " " + Math.round(audio.length / 1024) + "KB");
+  const r = await fetch(C.API_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "score", hs: token, target, ipa, vi, mime: wav.type, audio, model: C.GRADER_MODEL || "" }) });
+  const j = await r.json(); if (!j.ok) { const e = new Error(j.error || "score"); e.name = "api:" + (j.error || "?") + (j.status ? " " + j.status : "") + (j.detail ? " " + String(j.detail).replace(/\s+/g, " ").slice(0, 160) : ""); throw e; }
   return j.result;
 }
 function recErrorText(e) {
@@ -473,8 +491,9 @@ function recErrorText(e) {
   if (/NotFound|Devices/i.test(n)) return "Không tìm thấy micro trên máy này.";
   if (n === "recorder") return "Trình duyệt này chưa ghi âm được. Em dùng Chrome hoặc Safari bản mới.";
   if (/Failed to fetch|NetworkError|TypeError/i.test(n)) return "Mạng yếu, chưa gửi được bài đọc. Em kiểm tra mạng rồi thử lại.";
-  if (n === "nokey") return "Cô chưa bật chấm AI (chưa có khoá). Em báo cô nhé.";
-  return "Chưa chấm được (" + n + "). Em thử lại.";
+  if (n === "nokey" || /api:nokey/.test(n)) return "Cô chưa bật chấm AI (chưa có khoá). Em báo cô nhé.";
+  if (/api:notfound/.test(n)) return "Link học không còn hợp lệ. Em báo cô nhé.";
+  return "Chưa chấm được. Em thử lại. (" + n + ")";
 }
 
 /* ---------- Bước 2: phát âm ---------- */
@@ -505,7 +524,7 @@ function speakAI(i) {
     shell(lessonHead(i, 1) + '<section class="card lab"><div class="fc-top"><span class="count">Từ ' + (k + 1) + " / " + es.length + '</span><span class="tries">' + dots + "</span></div>" +
       '<h1 class="term xl">' + esc(e.term) + '</h1><p class="ipa">' + esc(e.ipa) + '</p><p class="muted">' + esc(e.vi) + "</p>" +
       '<div class="audio center"><button class="btn sound" data-say="' + esc(target) + '">🔊 Nghe mẫu</button><button class="btn ghost" data-say="' + esc(target) + '" data-slow="1">🐢 Chậm</button></div>' +
-      micHtml(state.wait ? "Đang chấm…" : "Bấm, đọc, bấm lại") + badge + (state.msg ? '<p class="hint">' + state.msg + "</p>" : "") + detail +
+      micHtml(state.wait ? "Đang chấm…" : "Bấm, đọc, bấm lại") + badge + (state.msg ? '<p class="hint">' + state.msg + "</p>" : "") + detail + (state.warn ? '<pre class="diag" id="diag">' + esc(DIAG.join("\n")) + "</pre>" : "") +
       '<div class="nav center">' + (state.warn && failCount >= 2 ? '<button class="btn ghost" id="skipw">Bỏ qua từ này</button>' : "") + (state.good || tries >= 3 ? '<button class="btn primary" id="nx">' + (k + 1 < es.length ? "Tiếp ➔" : "Xem kết quả ➔") + "</button>" : "") + "</div></section>", "lesson");
     const mic = document.getElementById("mic"); mic.onclick = toggle; if (state.wait) mic.disabled = true;
     const nx = document.getElementById("nx"); if (nx) nx.onclick = next;
