@@ -545,7 +545,7 @@ function speakAI(i) {
       '<h1 class="term xl">' + esc(e.term) + '</h1><p class="ipa">' + esc(e.ipa) + '</p><p class="muted">' + esc(e.vi) + "</p>" +
       '<div class="audio center"><button class="btn sound" data-say="' + esc(target) + '">🔊 Nghe mẫu</button><button class="btn ghost" data-say="' + esc(target) + '" data-slow="1">🐢 Chậm</button></div>' +
       micHtml(state.wait ? "Đang chấm…" : "Bấm, đọc, bấm lại") + badge + (state.msg ? '<p class="hint">' + state.msg + "</p>" : "") + detail + (state.warn ? '<pre class="diag" id="diag">' + esc(DIAG.join("\n")) + "</pre>" : "") +
-      '<div class="nav center">' + (state.warn && failCount >= 2 ? '<button class="btn ghost" id="skipw">Bỏ qua từ này</button>' : "") + (state.good || tries >= 3 ? '<button class="btn primary" id="nx">' + (k + 1 < es.length ? "Tiếp ➔" : "Xem kết quả ➔") + "</button>" : "") + "</div></section>", "lesson");
+      '<div class="nav center">' + (state.warn && failCount >= 2 ? '<button class="btn ghost" id="skipw">Bỏ qua từ này</button>' : "") + (state.good || state.bad ? '<button class="btn ' + (state.good || tries >= 3 ? "primary" : "ghost") + '" id="nx">' + (k + 1 < es.length ? (state.bad && tries < 3 ? "Sang từ sau ➔" : "Tiếp ➔") : "Xem kết quả ➔") + "</button>" : "") + "</div></section>", "lesson");
     const mic = document.getElementById("mic"); mic.onclick = toggle; if (state.wait) mic.disabled = true;
     const nx = document.getElementById("nx"); if (nx) nx.onclick = next;
     const sw = document.getElementById("skipw"); if (sw) sw.onclick = () => { res[k].skip = true; next(); };
@@ -567,7 +567,7 @@ function speakAI(i) {
       return aiScore(blob, target, e.ipa, e.vi).then(r => {
         if (seq + 1 !== shellSeq) return;
         tries++; failCount = 0; res[k].best = Math.max(res[k].best, r.score);
-        if (r.pass) { view({ good: 1, r }); const id = viewId; setTimeout(() => { if (id === viewId) next(); }, 2200); }
+        if (r.pass) view({ good: 1, r });
         else if (tries >= 3) { res[k].fail = true; view({ bad: 1, r, msg: "Chưa đạt sau 3 lượt — từ này sẽ vào phần ôn tập." }); }
         else view({ bad: 1, r });
       });
@@ -634,7 +634,7 @@ function speakSR(i) {
       tries++; devFails = 0;
       if (matches(target, alts)) {
         const pct = alts.conf ? Math.round(70 + 30 * alts.conf) : null;
-        view({ good: 1, pct }); const id = viewId; setTimeout(() => { if (id === viewId) next(); }, 1100);
+        view({ good: 1, pct });
       } else {
         const tip = advice(target, alts, e)[0] || "";
         if (tries >= 3) { res[k].fail = true; view({ bad: 1, msg: "Máy nghe: “" + esc(alts[0]) + "”. " + esc(tip) + " Từ này sẽ vào phần ôn tập." }); }
