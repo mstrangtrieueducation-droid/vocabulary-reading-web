@@ -583,7 +583,7 @@ function speakAI(i) {
   function next() {
     ++viewId; clearTimeout(autoStop); recordStop(); releaseMic();
     const e = es[k]; if (!e) return;
-    if (!res[k].skip) { res[k].ok = !res[k].fail && res[k].best >= 60; mark(e.n, res[k].ok); }
+    if (!res[k].skip) { res[k].ok = !res[k].fail && res[k].best >= 75; mark(e.n, res[k].ok); }
     k++; tries = 0; lastBlob = null;
     if (k < es.length) return view();
     const scored = res.filter(r => !r.skip), skipped = es.length - scored.length;

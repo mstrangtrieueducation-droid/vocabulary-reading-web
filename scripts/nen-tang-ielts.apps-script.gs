@@ -10,6 +10,7 @@ var BASE_URL = 'https://mstrangtrieueducation-droid.github.io/vocabulary-reading
 var DAYS = 30;
 // Khoá Gemini để chấm phát âm: cất trong Script Properties (Cài đặt dự án → Thuộc tính tập lệnh), tên GEMINI_KEY. Không ghi vào mã.
 var GEMINI_MODEL = 'gemini-3.5-flash-lite';
+var PASS_SCORE = 75;   // đạt từ 75 điểm
 function geminiKey() { return PropertiesService.getScriptProperties().getProperty('GEMINI_KEY') || ''; }
 var SHEET_ID = '12ln-A0tPOiinUSRJdkrGxx2bVzv_VcWgItkhi8bmCMc';
 var SHEET = 'Học sinh', LOG = 'Nhật ký', DATA = '_data';
@@ -193,6 +194,37 @@ function save(body) {
 }
 
 /* ---------------- Chấm phát âm bằng Gemini ---------------- */
+// Chấm 2 bước để máy không "nghe theo đáp án":
+//  1) Nghe mù: KHÔNG cho biết từ cần đọc, chỉ ghi lại đúng âm học sinh phát ra (IPA + từ gần nhất).
+//  2) So sánh: đưa từ đích + bản nghe mù + ghi âm, chấm khắt khe theo thang điểm cố định.
+var P1 = 'You are a strict phonetician. Listen to this recording of a Vietnamese learner saying one English word or a short phrase. ' +
+  'Transcribe EXACTLY what was pronounced, sound by sound, including every mistake. Do NOT guess or correct toward the word you think was intended. ' +
+  'Notice especially: missing or swallowed final consonants (t, d, k, tʃ, s, z, st…), short vs long vowels (ɪ vs iː), wrong vowel quality, and which syllable is stressed. ' +
+  'Return JSON only: {"ipa": "<narrow IPA of what was actually said, with stress mark>", "word": "<the English word(s) it actually sounds like; if it matches no real word, spell it the way it sounds>", "speech": <true if there is any speech>}';
+var P2 = 'Bạn là giám khảo phát âm tiếng Anh cho học sinh Việt Nam. Từ cần đọc: "{target}" {ipa}{vi}.\n' +
+  'Một chuyên gia đã nghe MÙ (không biết từ cần đọc) và ghi lại: /{hipa}/, nghe giống: "{hword}". Bản nghe mù có thể nhầm giữa các âm gần nhau; hãy nghe lại ghi âm để xác nhận.\n' +
+  'KHÔNG tính là lỗi: âm cuối không bật hơi nhưng vẫn có (t̚, k̚, p̚), giọng Anh hay Mỹ (ɑ/ɒ, r cuối), tr đọc gần tʃr, dr gần dʒr, t giữa thành flap, nối âm tự nhiên, lơ lớ nhẹ.\n' +
+  'LÀ lỗi thật (phải bắt): mất hẳn phụ âm cuối hoặc cụm cuối (vd cheat thành "chi", interest thành "interes"), đọc thành từ khác, thiếu/thừa âm tiết, sai trọng âm rõ, nguyên âm dài thành ngắn hoặc ngược lại làm đổi từ (beat/bit), sai hẳn phụ âm đầu (tʃ thành ʃ hoặc s rõ ràng).\n' +
+  'Thang điểm: đọc đúng (kể cả lơ lớ nhẹ) 85–100; 1 lỗi thật nhẹ 65–74; mất âm cuối hoặc sai trọng âm tối đa 60; thành từ khác hoặc thiếu âm tiết tối đa 35; không có tiếng nói 0–10.\n' +
+  'Trả về JSON, không thêm chữ: {"heard": "<từ nghe được>", "score": <0-100>, "errors": [{"sound": "<âm/phần sai>", "fix": "<cách sửa ngắn, tiếng Việt, tối đa 15 từ>"}], "tip": "<1 câu tiếng Việt, tối đa 20 từ>"}\n' +
+  'Tối đa 3 lỗi thật, nặng nhất trước. Đọc đúng thì errors=[] và khen ngắn.';
+function gem(key, model, parts, maxTok) {
+  try { return gem1(key, model, parts, maxTok); }
+  catch (e) { if (e && e.error === 'parse') return gem1(key, model, parts, maxTok); throw e; }   // Gemini đôi khi trả JSON cụt → thử lại 1 lần
+}
+function gem1(key, model, parts, maxTok) {
+  var res = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent', {
+    method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key }, muteHttpExceptions: true,
+    payload: JSON.stringify({ contents: [{ role: 'user', parts: parts }], generationConfig: { temperature: 0, responseMimeType: 'application/json', maxOutputTokens: maxTok || 2048 } })
+  });
+  var st = res.getResponseCode(), txt = res.getContentText();
+  if (st !== 200) throw { error: 'gemini', status: st, detail: txt.slice(0, 300) };
+  try {
+    var j = JSON.parse(txt), t = j.candidates[0].content.parts.map(function (p) { return p.text || ''; }).join('');
+    return JSON.parse(t.replace(/^\s*```(json)?|```\s*$/g, '').trim());
+  } catch (e) { throw { error: 'parse', detail: txt.slice(0, 300) }; }
+}
+function fill(t, o) { return t.replace(/\{(\w+)\}/g, function (m, k) { return o[k] == null ? '' : o[k]; }); }
 function score(body) {
   var key = geminiKey();
   if (!key) return json({ ok: false, error: 'nokey' });
@@ -200,30 +232,21 @@ function score(body) {
   if (!code || !body.audio || !body.target) return json({ ok: false, error: 'bad' });
   var sh = SS().getSheetByName(SHEET);
   if (findIdx(rows(sh), code) < 0) return json({ ok: false, error: 'notfound' });
+  var admin = body.key === ADMIN_KEY;   // chỉ cô (mã quản trị) mới được thử lời dặn khác
   var target = String(body.target).slice(0, 120), ipa = String(body.ipa || '').slice(0, 120), vi = String(body.vi || '').slice(0, 120);
-  var prompt = 'Bạn là giáo viên phát âm tiếng Anh (giọng Mỹ) cho học sinh Việt Nam trình độ B1. Học sinh được yêu cầu đọc to: "' + target + '"' +
-    (ipa ? ' (phiên âm ' + ipa + ')' : '') + (vi ? ', nghĩa: ' + vi : '') + '.\n' +
-    'Nghe đoạn ghi âm và chấm. Trả về JSON đúng schema, không thêm chữ nào khác:\n' +
-    '{"heard": "<chữ bạn nghe được, tiếng Anh>", "score": <0-100>, "pass": <true/false>, "errors": [{"sound": "<âm hoặc phần sai, ví dụ /iː/ hoặc âm cuối /t/ hoặc trọng âm>", "fix": "<cách sửa ngắn gọn bằng tiếng Việt, tối đa 15 từ>"}], "tip": "<1 câu khen hoặc nhắc bằng tiếng Việt, tối đa 20 từ>"}\n' +
-    'Quy tắc: pass=true khi người nghe bản ngữ hiểu đúng từ này và không sai trọng âm (score >= 70). Nếu ghi âm không có tiếng nói hoặc là từ khác hẳn: score <= 30, pass=false, errors=[], tip nói rõ máy không nghe thấy từ cần đọc. Tối đa 3 errors, ưu tiên lỗi nặng nhất. Không bịa lỗi khi phát âm đã tốt.';
-  var req = {
-    contents: [{ role: 'user', parts: [{ text: prompt }, { inlineData: { mimeType: String(body.mime || 'audio/webm').split(';')[0], data: body.audio } }] }],
-    generationConfig: { temperature: 0.2, responseMimeType: 'application/json', maxOutputTokens: 400 }
-  };
   var model = body.model && /^gemini-[\w.\-]+$/.test(body.model) ? body.model : GEMINI_MODEL;
-  var res = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent', {
-    method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key }, payload: JSON.stringify(req), muteHttpExceptions: true
-  });
-  var st = res.getResponseCode(), txt = res.getContentText();
-  if (st !== 200) return json({ ok: false, error: 'gemini', status: st, detail: txt.slice(0, 300) });
-  var out;
+  var audio = { inlineData: { mimeType: String(body.mime || 'audio/wav').split(';')[0], data: body.audio } };
+  var blind, out;
   try {
-    var j = JSON.parse(txt), t = j.candidates[0].content.parts.map(function (p) { return p.text || ''; }).join('');
-    out = JSON.parse(t.replace(/^```json|```$/g, '').trim());
-  } catch (e) { return json({ ok: false, error: 'parse', detail: txt.slice(0, 300) }); }
+    blind = gem(key, model, [audio, { text: admin && body.p1 ? body.p1 : P1 }], 1024);
+    if (blind && blind.speech === false) out = { heard: '', score: 0, errors: [], tip: 'Máy không nghe thấy tiếng em. Em đọc to và rõ hơn nhé.' };
+    else out = gem(key, model, [{ text: fill(admin && body.p2 ? body.p2 : P2, { target: target, ipa: ipa ? '(chuẩn ' + ipa + ')' : '', vi: vi ? ', nghĩa: ' + vi : '', hipa: String(blind.ipa || '').replace(/^\/|\/$/g, ''), hword: blind.word || '' }) }, audio], 2048);
+  } catch (e) { return json(e && e.error ? { ok: false, error: e.error, status: e.status, detail: e.detail } : { ok: false, error: 'err', detail: String(e) }); }
   out.score = Math.max(0, Math.min(100, Math.round(Number(out.score) || 0)));
-  out.pass = !!out.pass && out.score >= 60;
+  out.pass = out.score >= PASS_SCORE;
   out.errors = (out.errors || []).slice(0, 3);
+  out.heard_ipa = blind.ipa || '';
+  if (!out.heard) out.heard = blind.word || '';
   return json({ ok: true, result: out, model: model });
 }
 
