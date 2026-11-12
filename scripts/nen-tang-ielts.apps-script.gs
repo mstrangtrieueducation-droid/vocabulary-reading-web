@@ -6,7 +6,7 @@
  * - Gia hạn: sửa ô "Hạn chót" hoặc chọn dòng → menu Nền tảng IELTS → Gia hạn thêm 7 ngày.
  * Dự án Apps Script độc lập: chạy setup() một lần để tạo tab và cài trigger onEdit/onOpen cho Sheet.
  */
-var BASE_URL = 'https://mstrangtrieueducation-droid.github.io/vocabulary-reading-web/nen-tang-566dc2bfb2b2/';
+var BASE_URL = 'https://mstrangtrieueducation-droid.github.io/vocabulary-reading-web/dcaa7ee41f2f36d022bf75a486019b75/';
 var DAYS = 30;
 var SHEET_ID = '12ln-A0tPOiinUSRJdkrGxx2bVzv_VcWgItkhi8bmCMc';
 var SHEET = 'Học sinh', LOG = 'Nhật ký', DATA = '_data';
