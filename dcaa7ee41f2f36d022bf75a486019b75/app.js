@@ -274,15 +274,17 @@ document.addEventListener("keydown", e => {
   keyHandler(e);
 });
 let shellSeq = 0;
-function shell(inner, cls) {
+let labKeep = false;
+function shell(inner, cls, keepScroll) {
   keyHandler = null; stopListening(); shellSeq++;
+  if (!labKeep) labRelease(); labKeep = false;
   app.className = cls || "";
   app.innerHTML = inner;
   app.querySelectorAll("[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));
   app.querySelectorAll("[data-say]").forEach(b => b.onclick = () => say(b.dataset.say, b.dataset.slow === "1"));
   app.querySelectorAll("[data-howto]").forEach(b => b.onclick = howto);
   bindCopyLink();
-  window.scrollTo(0, 0);
+  if (!keepScroll) window.scrollTo(0, 0);
 }
 let activeRec = null;
 function stopListening() { if (activeRec) { userStopped = true; const r = activeRec; activeRec = null; try { r.stop(); } catch (e) {} } }
@@ -438,6 +440,93 @@ function learn(i, k) {
 
 /* ---------- Bước 2: phát âm ---------- */
 function micHtml(label) { return '<button class="mic" id="mic"><span class="mi">🎙️</span><span class="ml">' + (label || "Bấm để đọc") + "</span></button>"; }
+
+/* ---------- LAB: micro mở suốt phần Phát âm → bấm là thu ngay (không phải chờ micro "nóng") ----------
+   Thu thẳng PCM bằng Web Audio, giữ sẵn 0,4 giây trước khi bấm (không mất âm đầu), tự làm WAV 16 kHz.
+   Giọng mẫu cũng phát qua cùng AudioContext nên tự phát được sau khi chấm, không làm tắt micro. */
+const LAB = { ctx: null, stream: null, src: null, proc: null, sink: null, ring: [], rec: null, sr: 48000, buf: {}, playing: null };
+const canLab = !!((window.AudioContext || window.webkitAudioContext) && navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+function labCtx() {
+  if (!LAB.ctx) { const AC = window.AudioContext || window.webkitAudioContext; LAB.ctx = new AC(); LAB.sr = LAB.ctx.sampleRate; }
+  if (LAB.ctx.state !== "running") { try { LAB.ctx.resume(); } catch (e) {} }
+  return LAB.ctx;
+}
+function labCloseMic() {
+  try { if (LAB.proc) { LAB.proc.onaudioprocess = null; LAB.proc.disconnect(); } if (LAB.src) LAB.src.disconnect(); } catch (e) {}
+  if (LAB.stream) LAB.stream.getTracks().forEach(t => { try { t.stop(); } catch (e) {} });
+  LAB.stream = LAB.src = LAB.proc = null; LAB.ring = []; LAB.rec = null;
+}
+function labRelease() { labStopPlay(); labCloseMic(); }
+function labMicOk() {
+  const t = LAB.stream && LAB.stream.getAudioTracks()[0];
+  if (!t || t.readyState !== "live" || t.muted || !LAB.proc) return false;
+  // micro bị iPhone tắt tiếng thì trả về toàn số 0 tuyệt đối
+  const tail = LAB.ring.slice(-4); if (tail.length < 2) return true;
+  for (const b of tail) for (let i = 0; i < b.length; i += 7) if (b[i] !== 0) return true;
+  return false;
+}
+async function labMic() {
+  const ctx = labCtx(); labCloseMic();
+  LAB.stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: true, channelCount: 1 } });
+  LAB.src = ctx.createMediaStreamSource(LAB.stream);
+  LAB.proc = ctx.createScriptProcessor(2048, 1, 1);
+  if (!LAB.sink) { LAB.sink = ctx.createGain(); LAB.sink.gain.value = 0; LAB.sink.connect(ctx.destination); }
+  const keep = Math.ceil(0.45 * LAB.sr / 2048);
+  LAB.proc.onaudioprocess = ev => {
+    const d = new Float32Array(ev.inputBuffer.getChannelData(0));
+    if (LAB.rec) LAB.rec.push(d); else { LAB.ring.push(d); if (LAB.ring.length > keep) LAB.ring.shift(); }
+  };
+  LAB.src.connect(LAB.proc); LAB.proc.connect(LAB.sink);
+  diag("lab mic " + LAB.sr + "Hz");
+  await new Promise(r => setTimeout(r, IS_IOS ? 350 : 120));   // chỉ lần đầu
+}
+async function labReady() { labCtx(); if (!labMicOk()) await labMic(); }
+function labStart() { LAB.rec = LAB.ring.slice(); LAB.ring = []; }
+function labStop() {
+  const chunks = LAB.rec || []; LAB.rec = null;
+  let n = 0; chunks.forEach(c => n += c.length);
+  const all = new Float32Array(n); let o = 0; chunks.forEach(c => { all.set(c, o); o += c.length; });
+  return all;
+}
+function labWav(f32) {
+  const ratio = LAB.sr / 16000, n = Math.floor(f32.length / ratio);
+  let peak = 0; for (let i = 0; i < f32.length; i += 3) { const v = Math.abs(f32[i]); if (v > peak) peak = v; }
+  const gain = peak > 0.02 && peak < 0.5 ? Math.min(4, 0.7 / peak) : 1;   // giọng nhỏ thì khuếch đại lên
+  const dv = new DataView(new ArrayBuffer(44 + n * 2));
+  const w = (o, str) => { for (let i = 0; i < str.length; i++) dv.setUint8(o + i, str.charCodeAt(i)); };
+  w(0, "RIFF"); dv.setUint32(4, 36 + n * 2, true); w(8, "WAVE"); w(12, "fmt "); dv.setUint32(16, 16, true); dv.setUint16(20, 1, true); dv.setUint16(22, 1, true);
+  dv.setUint32(24, 16000, true); dv.setUint32(28, 32000, true); dv.setUint16(32, 2, true); dv.setUint16(34, 16, true); w(36, "data"); dv.setUint32(40, n * 2, true);
+  for (let i = 0; i < n; i++) { const a = Math.floor(i * ratio), b = Math.max(a + 1, Math.floor((i + 1) * ratio)); let acc = 0; for (let j = a; j < b; j++) acc += f32[j] || 0; const v = Math.max(-1, Math.min(1, acc / (b - a) * gain)); dv.setInt16(44 + i * 2, v < 0 ? v * 0x8000 : v * 0x7fff, true); }
+  const blob = new Blob([dv], { type: "audio/wav" }); blob.ready16k = true; blob.secs = f32.length / LAB.sr; blob.peak = peak; blob.f32 = f32;
+  return blob;
+}
+function labStopPlay() { if (LAB.playing) { try { LAB.playing.stop(); } catch (e) {} LAB.playing = null; } }
+async function labBuffer(h) {
+  if (LAB.buf[h]) return LAB.buf[h];
+  const ab = await (await fetch("./audio/" + h + ".mp3")).arrayBuffer();
+  const ctx = labCtx();
+  const b = await new Promise((res, rej) => { const p = ctx.decodeAudioData(ab, res, rej); if (p && p.then) p.then(res, rej); });
+  return (LAB.buf[h] = b);
+}
+async function labSay(text, slow) {
+  const t = cleanText(text), parts = AUDIO[t] ? [t] : t.split(/\s*,\s*/).map(cleanText), hs = parts.map(p => AUDIO[p]);
+  if (!LAB.ctx || !hs.every(Boolean)) return say(text, slow);
+  stopAudio(); labStopPlay();
+  for (const h of hs) {
+    const b = await labBuffer(h), src = LAB.ctx.createBufferSource();
+    src.buffer = b; src.playbackRate.value = slow ? 0.75 : 1; src.connect(LAB.ctx.destination);
+    LAB.playing = src; src.start();
+    await new Promise(r => { src.onended = r; });
+    if (LAB.playing !== src) return; await new Promise(r => setTimeout(r, 200));
+  }
+  LAB.playing = null;
+}
+function labPlayRaw(f32) {
+  if (!LAB.ctx || !f32 || !f32.length) return;
+  labStopPlay(); stopAudio();
+  const b = LAB.ctx.createBuffer(1, f32.length, LAB.sr); b.getChannelData(0).set(f32);
+  const src = LAB.ctx.createBufferSource(); src.buffer = b; src.connect(LAB.ctx.destination); LAB.playing = src; src.start();
+}
 /* ---------- ghi âm + chấm bằng AI (Gemini qua Apps Script) ---------- */
 const canRecord = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
 const AI_SCORING = !!(C.API_URL && (C.GRADER === "gemini" || C.GRADER === "azure") && canRecord && !localMode);
@@ -481,6 +570,12 @@ function decodeAt16k(ab) {
   return new Promise((res, rej) => { const p = ctx.decodeAudioData(ab, res, rej); if (p && p.then) p.then(res, rej); }).finally(() => { try { ctx.close(); } catch (e) {} });
 }
 async function toWav(blob) {
+  if (blob.ready16k) {
+    diag("audio " + blob.secs.toFixed(1) + "s peak " + blob.peak.toFixed(2));
+    if (blob.secs < 0.3) { const e = new Error("short"); e.name = "short"; throw e; }
+    if (blob.peak < 0.004) { const e = new Error("silent"); e.name = "silent"; throw e; }
+    return blob;
+  }
   let buf;
   try { buf = await decodeAt16k(await blob.arrayBuffer()); }
   catch (e) { diag("wav fail " + (e && e.name)); return blob; }
@@ -531,22 +626,84 @@ function alignWord(word, phs) {
   const w = word.toLowerCase(), spans = []; let i = 0;
   const tryAt = (pos, p) => { for (const sp of SP[p] || []) if (w.startsWith(sp, pos)) return sp.length; return 0; };
   phs.forEach((ph, k) => {
-    if (i >= w.length) { if (spans.length) spans[spans.length - 1].s = Math.min(spans[spans.length - 1].s, ph.s); return; }
+    if (i >= w.length) { const L = spans[spans.length - 1]; if (L && ph.s < L.s) { L.s = ph.s; L.k = k; } return; }
     const prev = spans[spans.length - 1], prevT = prev ? w.substr(i - prev.len, prev.len) : "";
     // âm gộp trong một chữ: "u" = /ju/ (popular), "x" = /ks/ (exercise) → âm sau dùng chung chữ với âm trước
-    if (prev && ((phs[k - 1].p === "j" && prevT === "u" && /^(u|uː|ʊ|ə)$/.test(ph.p)) || (prevT === "x" && /^(s|z)$/.test(ph.p)))) { prev.s = Math.min(prev.s, ph.s); return; }
+    if (prev && ((phs[k - 1].p === "j" && prevT === "u" && /^(u|uː|ʊ|ə)$/.test(ph.p)) || (prevT === "x" && /^(s|z)$/.test(ph.p)))) { if (ph.s < prev.s) { prev.s = ph.s; prev.k = k; } return; }
     let n = tryAt(i, ph.p);
     if (!n) {   // chữ câm / nguyên âm bị lướt: gắn vào âm trước rồi thử lại
-      for (let skip = 1; skip <= 2 && !n; skip++) { const m = tryAt(i + skip, ph.p); if (m) { if (spans.length) spans[spans.length - 1].len += skip; else spans.push({ len: skip, s: ph.s }); i += skip; n = m; } }
+      for (let skip = 1; skip <= 2 && !n; skip++) { const m = tryAt(i + skip, ph.p); if (m) { if (spans.length) spans[spans.length - 1].len += skip; else spans.push({ len: skip, s: ph.s, k }); i += skip; n = m; } }
     }
     if (!n) n = 1;
-    spans.push({ len: n, s: ph.s }); i += n;
+    spans.push({ len: n, s: ph.s, k }); i += n;
   });
   if (i < w.length) { if (spans.length) spans[spans.length - 1].len += w.length - i; else spans.push({ len: w.length - i, s: 100 }); }   // e câm cuối từ
-  let pos = 0; return spans.map(sp => { const t = word.substr(pos, sp.len); pos += sp.len; return { t, s: sp.s }; }).filter(x => x.t);
+  let pos = 0; return spans.map(sp => { const t = word.substr(pos, sp.len); pos += sp.len; return { t, s: sp.s, k: sp.k }; }).filter(x => x.t);
 }
 function colorWords(words) {
-  return words.map(r => r.miss ? '<span class="cw bad miss">' + esc(r.w) + '</span>' : '<span class="cw">' + alignWord(r.w, r.ph).map(x => '<b class="' + (x.s >= 80 ? 'ok' : x.s >= 60 ? 'mid' : 'bad') + '">' + esc(x.t) + '</b>').join('') + '</span>').join(' ');
+  return words.map((r, wi) => r.miss ? '<span class="cw bad miss">' + esc(r.w) + '</span>' : '<span class="cw">' + alignWord(r.w, r.ph).map(x => '<b class="' + (x.s >= 80 ? 'ok' : x.s >= 60 ? 'mid' : 'bad') + '" data-ph="' + wi + ':' + (x.k == null ? 0 : x.k) + '">' + esc(x.t) + '</b>').join('') + '</span>').join(' ');
+}
+const VOWEL_RE = /[aeiouæɑɒɔəɛɜɚɝɪʊʌ]/;
+const PAIR = {
+  "tʃ>ʃ": "Em đọc thành /ʃ/ (như “s” nặng, xì hơi). /tʃ/ phải CHẶN hơi trước: đầu lưỡi chạm lợi trên, rồi bật mạnh “ch”.",
+  "tʃ>t": "Em đọc thành /t/. /tʃ/ là “ch” bật: chu môi, chạm lưỡi rồi bật hơi “chờ”.",
+  "tʃ>s": "Em đọc thành /s/. /tʃ/: chạm đầu lưỡi lên lợi, chặn hơi rồi bật “ch”, chu môi.",
+  "ʃ>s": "Em đọc thành /s/. /ʃ/: chu môi tròn, lưỡi lùi vào trong, như tiếng “suỵt”.",
+  "dʒ>z": "Em đọc thành /z/. /dʒ/ là “giơ” bật: chạm lưỡi lên lợi rồi bật ra, chu môi.",
+  "dʒ>j": "Em đọc thành “d” mềm. /dʒ/: chạm lưỡi lên lợi rồi bật “giơ”, chu môi.",
+  "θ>t": "Em đọc thành /t/. /θ/: thè đầu lưỡi giữa hai hàm răng rồi THỔI hơi ra, không chạm bật.",
+  "θ>s": "Em đọc thành /s/. /θ/: đầu lưỡi phải ra giữa hai hàm răng, thổi hơi.",
+  "θ>f": "Em đọc thành /f/. /θ/: dùng lưỡi (giữa hai răng), không dùng môi.",
+  "ð>d": "Em đọc thành /d/. /ð/: đầu lưỡi giữa hai răng, rung cổ, đẩy hơi nhẹ.",
+  "ð>z": "Em đọc thành /z/. /ð/: thè lưỡi giữa hai răng, rung cổ.",
+  "i>ɪ": "Em đọc “i” NGẮN. Âm này là “i” DÀI /iː/: kéo dài “iii”, miệng cười căng.",
+  "iː>ɪ": "Em đọc “i” NGẮN. Âm này là “i” DÀI /iː/: kéo dài “iii”, miệng cười căng.",
+  "ɪ>i": "Em kéo dài “i” quá. /ɪ/ là “i” NGẮN, gọn, miệng thả lỏng (hơi giống “ê”).",
+  "ɪ>iː": "Em kéo dài “i” quá. /ɪ/ là “i” NGẮN, gọn, miệng thả lỏng.",
+  "æ>ɛ": "Em đọc thành “e”. /æ/: há miệng rộng hơn, hạ hàm, âm nằm giữa “a” và “e”.",
+  "æ>ɑ": "Em đọc thành “a”. /æ/: kéo khóe miệng sang hai bên, giữa “a” và “e”.",
+  "oʊ>ɔ": "Em đọc thành “ô/o” kiểu tiếng Việt. /oʊ/ là “âu”: bắt đầu “ô” rồi CHU MÔI trượt sang “u”.",
+  "oʊ>o": "Em đọc thành “ô” đứng yên. /oʊ/ là “âu”: “ô” rồi chu môi trượt sang “u”.",
+  "oʊ>ɑ": "Em đọc thành “a/o”. /oʊ/ là “âu”: môi tròn, “ô” trượt sang “u”.",
+  "eɪ>ɛ": "Em đọc thành “ê/e”. /eɪ/ là “ây”: “e” rồi trượt sang “i”.",
+  "aɪ>ɑ": "Em đọc thành “a”. /aɪ/ là “ai”: “a” rồi trượt lên “i”.",
+  "aʊ>ɑ": "Em đọc thành “a”. /aʊ/ là “ao”: “a” rồi chu môi trượt sang “u”.",
+  "ʌ>ɑ": "Em mở miệng quá rộng thành “a”. /ʌ/ là “ă” ngắn, miệng thả lỏng.",
+  "ʌ>ɔ": "Em tròn môi thành “o”. /ʌ/ là “ă” ngắn, không tròn môi.",
+  "ɑ>ʌ": "Em đọc ngắn quá. /ɑ/ là “a” mở rộng, hạ hàm, hơi dài.",
+  "z>s": "Em đọc thành /s/. /z/ phải RUNG cổ như tiếng ong “zzz”.",
+  "v>b": "Em đọc thành /b/. /v/: răng trên chạm nhẹ môi dưới, thổi và rung.",
+  "v>w": "Em đọc thành /w/. /v/: răng trên chạm môi dưới, không tròn môi.",
+  "ŋ>n": "Em đọc thành /n/. /ŋ/ là “ng”: cuống lưỡi nâng chạm vòm mềm, không bật “g”.",
+  "ɹ>l": "Em đọc thành /l/. /r/: cong đầu lưỡi về sau, KHÔNG chạm vòm miệng.",
+  "l>n": "Em đọc thành /n/. /l/: đầu lưỡi chạm lợi trên, hơi thoát hai bên lưỡi.",
+  "p>b": "Em đọc thành /b/. /p/: mím môi rồi bật hơi mạnh “phờ”, không rung cổ.",
+  "t>d": "Em đọc thành /d/. /t/ không rung cổ, bật hơi mạnh.",
+  "k>g": "Em đọc thành /g/. /k/ không rung cổ, bật hơi mạnh."
+};
+const PH_NAME = { "tʃ": "“ch” bật", "ʃ": "“s” nặng", "θ": "“th” thổi", "ð": "“th” rung", "iː": "“i” dài", "i": "“i” dài", "ɪ": "“i” ngắn", "æ": "“a-e”", "oʊ": "“âu”", "eɪ": "“ây”", "aɪ": "“ai”", "aʊ": "“ao”", "ʌ": "“ă”", "ə": "“ơ” nhẹ", "ŋ": "“ng”", "ɹ": "“r”", "dʒ": "“giơ”" };
+function analyse(words) {
+  const issues = [], seen = {}; let heardIpa = [], goodIpa = [];
+  words.forEach((r, wi) => {
+    if (r.miss) { issues.push({ wi, k: 0, s: 0, title: "Thiếu từ “" + r.w + "”", text: "Em chưa đọc từ này. Em đọc đủ cả cụm nhé." }); heardIpa.push("—"); goodIpa.push(r.w); return; }
+    const hw = [], gw = [];
+    r.ph.forEach((x, k) => {
+      const exp = x.p, best = x.alt && x.alt[0], heard = best && best !== exp ? best : null, vowel = VOWEL_RE.test(exp);
+      const pos = k === 0 ? "đầu" : k === r.ph.length - 1 ? "cuối" : "giữa";
+      gw.push(exp); hw.push(x.s >= 60 ? exp : x.s < 25 && !heard ? "" : (heard || exp));
+      if (x.s >= 60) return;
+      const key = exp + ">" + (heard || ""), sk = exp + "@" + pos; if (seen[sk]) return; seen[sk] = 1;
+      let text;
+      if (!vowel && pos === "cuối" && (x.s < 35 || (heard && VOWEL_RE.test(heard)))) text = "Em nuốt mất âm cuối /" + exp + "/ — lỗi rất hay gặp của người Việt. Đọc hết từ rồi bật nhẹ /" + exp + "/ ra: " + (PH_TIP[exp] || "đọc rõ âm này") + ".";
+      else if (heard && PAIR[key]) text = PAIR[key];
+      else if (heard) text = "Máy nghe em đọc giống /" + heard + "/ thay vì /" + exp + "/. " + (PH_TIP[exp] ? "Cách đọc /" + exp + "/: " + PH_TIP[exp] + "." : "Nghe mẫu và bắt chước chậm âm này.");
+      else text = "Âm /" + exp + "/ còn yếu. " + (PH_TIP[exp] ? "Cách đọc: " + PH_TIP[exp] + "." : "Nghe mẫu và bắt chước chậm âm này.");
+      issues.push({ wi, k, s: x.s, title: "/" + exp + "/" + (PH_NAME[exp] ? " " + PH_NAME[exp] : "") + " — " + (vowel ? "nguyên âm" : "âm " + pos + " từ") + " “" + r.w + "”", text });
+    });
+    heardIpa.push(hw.join("")); goodIpa.push(gw.join(""));
+  });
+  issues.sort((a, b) => a.s - b.s);
+  return { issues, heardIpa: heardIpa.join(" "), goodIpa: goodIpa.join(" ") };
 }
 const AZ_PASS = C.PASS_SCORE || 75, AZ_PHMIN = C.PH_MIN || 50;
 function azResult(j) {
@@ -561,7 +718,7 @@ function azResult(j) {
     const phs = w.Phonemes || [], row = { w: w.Word, ph: [] };
     phs.forEach((ph, idx) => {
       const pp = ph.PronunciationAssessment || ph, sc = Math.round(+pp.AccuracyScore || 0), sym = ph.Phoneme;
-      row.ph.push({ p: sym, s: sc });
+      row.ph.push({ p: sym, s: sc, alt: (pp.NBestPhonemes || []).map(z => z.Phoneme).filter(Boolean) });
       if (sc < pmin) pmin = sc;
       if (sc < 60 && !seen[sym]) {
         seen[sym] = 1;
@@ -577,12 +734,13 @@ function azResult(j) {
   if (pmin < AZ_PHMIN) score = Math.min(score, 65);
   const pass = score >= AZ_PASS;
   const tip = pass ? (score >= 90 ? "Rất chuẩn! Tiếp tục nhé." : "Đạt rồi, sửa thêm âm được nhắc cho chuẩn hơn.") : (errs.length ? "Em sửa âm được nhắc rồi đọc lại nhé." : "Em đọc rõ và đủ từng âm rồi thử lại nhé.");
-  diag("az acc " + Math.round(acc) + " comp " + comp + " pron " + Math.round(pron) + " · " + words.map(r => r.ph.map(x => x.p + x.s).join(" ")).join(" | "));
-  return { heard: "", score, pass, words, errors: errs.slice(0, 3).map(e => ({ sound: e.sound, fix: e.fix })), tip };
+  diag("az acc " + Math.round(acc) + " comp " + comp + " pron " + Math.round(pron) + " · " + words.map(r => r.ph.map(x => x.p + x.s + (x.alt[0] && x.alt[0] !== x.p ? ">" + x.alt[0] : "")).join(" ")).join(" | "));
+  const an = analyse(words);
+  return { heard: "", score, pass, words, an, errors: errs.slice(0, 3).map(e => ({ sound: e.sound, fix: e.fix })), tip };
 }
 async function azureScore(wav, target) {
   const ref = String(target).replace(/\s*[,~·]\s*/g, ". ");
-  const cfg = btoa(unescape(encodeURIComponent(JSON.stringify({ ReferenceText: ref, GradingSystem: "HundredMark", Granularity: "Phoneme", Dimension: "Comprehensive", EnableMiscue: true, PhonemeAlphabet: "IPA" }))));
+  const cfg = btoa(unescape(encodeURIComponent(JSON.stringify({ ReferenceText: ref, GradingSystem: "HundredMark", Granularity: "Phoneme", Dimension: "Comprehensive", EnableMiscue: true, PhonemeAlphabet: "IPA", NBestPhonemeCount: 5 }))));
   const body = await wav.arrayBuffer();
   for (let n = 0; n < 3; n++) {
     const tk = await azToken(n > 0);
@@ -628,79 +786,108 @@ function speak(i) {
   return speakSR(i);
 }
 function speakAI(i) {
-  if (C.GRADER === "azure") azToken().catch(() => {});
+  const AZ = C.GRADER === "azure", useLab = AZ && canLab;
+  if (AZ) azToken().catch(() => {});
   const es = V[i - 1].entries;
   const res = es.map(e => ({ ok: false, best: 0, pb: e.speak.map(() => 0) }));
-  let k = 0, part = 0, tries = 0, viewId = 0, busy = false, failCount = 0;
+  let k = 0, part = 0, tries = 0, viewId = 0, busy = false, failCount = 0, first = true, lastF32 = null, rec = false, autoStop = null, stopping = false;
+  const sayT = (t, slow) => useLab ? labSay(t, slow) : say(t, slow);
+  function ring(score, good) {
+    const c = 2 * Math.PI * 34, off = c * (1 - Math.max(0, Math.min(100, score)) / 100);
+    return '<div class="sring ' + (good ? "g" : score >= 60 ? "m" : "b") + '"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" class="bg"/><circle cx="40" cy="40" r="34" class="fg" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + off.toFixed(1) + '"/></svg><b>' + score + "</b><small>" + (good ? "Chuẩn!" : "Đọc lại") + "</small></div>";
+  }
   function view(state) {
     ++viewId; state = state || {}; busy = false;
-    const e = es[k], target = e.speak[part], multi = e.speak.length > 1;
+    const e = es[k], target = e.speak[part], multi = e.speak.length > 1, r = state.r, hasW = r && r.words && r.words.length;
     const dots = [0, 1, 2].map(t => '<i class="' + (t < tries ? (state.good && t === tries - 1 ? "g" : "b") : "") + '"></i>').join("");
+    const word = hasW ? colorWords(r.words) : esc(multi ? target : e.term);
+    let body = "";
+    if (r) {
+      const an = r.an;
+      body = '<div class="elsa">' + ring(r.score, state.good) + '<div class="ecol">' +
+        (an ? '<p class="cmp"><span>Em đọc</span> <b class="hi">/' + esc(an.heardIpa || "…") + '/</b><span>Chuẩn</span> <b>/' + esc(an.goodIpa) + "/</b></p>" : "") +
+        '<p class="tip">' + esc(r.tip || "") + "</p></div></div>" +
+        (an && an.issues.length ? '<ol class="issues">' + an.issues.slice(0, 3).map((x, n) => '<li data-iss="' + x.wi + ":" + x.k + '"><b>' + esc(x.title) + "</b><span>" + esc(x.text) + "</span></li>").join("") + "</ol>" :
+          (!an && r.errors && r.errors.length ? '<ul class="errs">' + r.errors.map(x => "<li><b>" + esc(x.sound) + "</b> — " + esc(x.fix) + "</li>").join("") + "</ul>" : "")) +
+        '<div class="audio center"><button class="btn ghost sm" id="mine">▶ Giọng em</button><button class="btn sound sm" id="mdl">🔊 Mẫu</button><button class="btn ghost sm" id="mdls">🐢 Mẫu chậm</button></div>';
+    }
     let badge = "";
-    if (state.good) badge = '<div class="badge good">' + state.r.score + "% · Chuẩn!</div>";
-    else if (state.bad) badge = '<div class="badge bad">' + state.r.score + "% · Cần đọc lại</div>";
-    else if (state.warn) badge = '<div class="badge warn">Chưa chấm được</div>';
+    if (state.warn) badge = '<div class="badge warn">Chưa chấm được</div>';
     else if (state.wait) badge = '<div class="badge wait">⏳ Đang chấm…</div>';
-    let detail = "";
-    if (state.r) {
-      const chips = state.r.words && state.r.words.length ? '<div class="phs">' + state.r.words.map(r => '<span class="pw">' + (r.miss ? '<b class="ph bad">thiếu “' + esc(r.w) + '”</b>' : "/" + r.ph.map(x => '<b class="ph ' + (x.s >= 80 ? "ok" : x.s >= 60 ? "mid" : "bad") + '">' + esc(x.p) + "</b>").join("") + "/") + "</span>").join(" ") + '<small>🟢 chuẩn · 🟡 gần đúng · 🔴 sai — chữ màu đỏ là chỗ em cần sửa</small></div>' : "";
-      detail = '<div class="aifb">' + chips + (state.r.heard ? '<p class="heard">Máy nghe: “' + esc(state.r.heard) + "”</p>" : "") +
-        (state.r.errors && state.r.errors.length ? '<ul class="errs">' + state.r.errors.map(x => "<li><b>" + esc(x.sound) + "</b> — " + esc(x.fix) + "</li>").join("") + "</ul>" : "") +
-        (state.r.tip ? '<p class="tip">💬 ' + esc(state.r.tip) + "</p>" : "") +
-        (lastBlob ? '<div class="audio center"><button class="btn ghost sm" id="mine">▶ Nghe lại giọng em</button><button class="btn sound sm" data-say="' + esc(target) + '">🔊 Giọng mẫu</button></div>' : "") + "</div>";
-    }
-    shell(lessonHead(i, 1) + '<section class="card lab"><div class="fc-top"><span class="count">Từ ' + (k + 1) + " / " + es.length + '</span><span class="tries">' + dots + "</span></div>" +
-      '<h1 class="term xl">' + (state.r && state.r.words && state.r.words.length && !multi ? colorWords(state.r.words) : esc(e.term)) + '</h1><p class="ipa">' + esc(e.ipa) + '</p><p class="muted">' + esc(e.vi) + "</p>" +
-      (multi ? '<p class="partline">Đọc phần ' + (part + 1) + "/" + e.speak.length + ': <b>' + (state.r && state.r.words && state.r.words.length ? colorWords(state.r.words) : esc(target)) + "</b></p>" : "") +
-      '<div class="audio center"><button class="btn sound" data-say="' + esc(target) + '">🔊 Nghe mẫu</button><button class="btn ghost" data-say="' + esc(target) + '" data-slow="1">🐢 Chậm</button></div>' +
-      micHtml(state.wait ? "Đang chấm…" : "Bấm, đọc, bấm lại") + badge + (state.msg ? '<p class="hint">' + state.msg + "</p>" : "") + detail + (state.warn ? '<pre class="diag" id="diag">' + esc(DIAG.join("\n")) + "</pre>" : "") +
-      '<div class="nav center">' + (state.warn && failCount >= 2 ? '<button class="btn ghost" id="skipw">Bỏ qua từ này</button>' : "") + (state.good || state.bad ? '<button class="btn ' + (state.good || tries >= 3 ? "primary" : "ghost") + '" id="nx">' + (part + 1 < e.speak.length ? (state.bad && tries < 3 ? "Bỏ qua, sang phần sau ➔" : "Phần tiếp ➔") : k + 1 < es.length ? (state.bad && tries < 3 ? "Sang từ sau ➔" : "Tiếp ➔") : "Xem kết quả ➔") + "</button>" : "") + "</div></section>", "lesson");
+    labKeep = useLab;
+    shell(lessonHead(i, 1) + '<section class="card lab"><div class="fc-top"><span class="count">Từ ' + (k + 1) + " / " + es.length + (multi ? " · phần " + (part + 1) + "/" + e.speak.length : "") + '</span><span class="tries">' + dots + "</span></div>" +
+      '<h1 class="term xl elsaw">' + word + '</h1><p class="ipa">' + esc(e.ipa) + '</p><p class="muted">' + esc(e.vi) + (multi ? " · đọc: <b>" + esc(target) + "</b>" : "") + "</p>" +
+      (!r ? '<div class="audio center"><button class="btn sound" id="mdl">🔊 Nghe mẫu</button><button class="btn ghost" id="mdls">🐢 Chậm</button></div>' : "") +
+      micHtml(state.wait ? "Đang chấm…" : r ? "Bấm để đọc lại" : "Bấm, đọc, bấm lại") + badge + (state.msg ? '<p class="hint">' + state.msg + "</p>" : "") + body +
+      (state.warn ? '<pre class="diag" id="diag">' + esc(DIAG.join("\n")) + "</pre>" : "") +
+      '<div class="nav center">' + (state.warn && failCount >= 2 ? '<button class="btn ghost" id="skipw">Bỏ qua từ này</button>' : "") + (state.good || state.bad ? '<button class="btn ' + (state.good || tries >= 3 ? "primary" : "ghost") + '" id="nx">' + (part + 1 < e.speak.length ? (state.bad && tries < 3 ? "Bỏ qua, sang phần sau ➔" : "Phần tiếp ➔") : k + 1 < es.length ? (state.bad && tries < 3 ? "Sang từ sau ➔" : "Tiếp ➔") : "Xem kết quả ➔") + "</button>" : "") + "</div></section>", "lesson", !first);
+    first = false;
     const mic = document.getElementById("mic"); mic.onclick = toggle; if (state.wait) mic.disabled = true;
-    const nx = document.getElementById("nx"); if (nx) nx.onclick = next;
-    const sw = document.getElementById("skipw"); if (sw) sw.onclick = () => { res[k].skip = true; next(); };
-    const mine = document.getElementById("mine"); if (mine && lastBlob) mine.onclick = () => { stopAudio(); const u = URL.createObjectURL(lastBlob); player.src = u; player.playbackRate = 1; player.play().catch(() => {}); };
-    onKeys(ev => { if (ev.key === " ") { ev.preventDefault(); toggle(); } else if (ev.key === "Enter" && nx) nx.click(); });
+    const on = (id, f) => { const el = document.getElementById(id); if (el) el.onclick = f; };
+    on("mdl", () => sayT(target)); on("mdls", () => sayT(target, true)); on("nx", next);
+    on("skipw", () => { res[k].skip = true; next(); });
+    on("mine", () => { if (useLab && lastF32) labPlayRaw(lastF32); else if (lastBlob) { stopAudio(); player.src = URL.createObjectURL(lastBlob); player.play().catch(() => {}); } });
+    app.querySelectorAll("[data-ph]").forEach(el => el.onclick = () => {
+      const li = app.querySelector('[data-iss="' + el.dataset.ph + '"]');
+      app.querySelectorAll(".issues li.on").forEach(x => x.classList.remove("on"));
+      if (li) { li.classList.add("on"); li.scrollIntoView({ block: "nearest", behavior: "smooth" }); } else toast(el.classList.contains("ok") ? "Phần này em đọc chuẩn rồi 👍" : "Phần này gần đúng, đọc rõ hơn chút nữa.");
+    });
+    onKeys(ev => { if (ev.key === " ") { ev.preventDefault(); toggle(); } else if (ev.key === "Enter") { const n = document.getElementById("nx"); if (n) n.click(); } });
+    if (state.bad && useLab) setTimeout(() => { if (viewId === state._vid) sayT(target); }, 450);   // sai thì tự phát giọng mẫu
   }
-  let autoStop = null, stopping = false;
-  function toggle() {
-    const mic = document.getElementById("mic"); if (!mic || mic.disabled) return;
-    if (recorder) {   // đọc xong: thu thêm 0,4 giây để không cụt âm cuối
-      if (stopping) return; stopping = true; clearTimeout(autoStop);
-      mic.querySelector(".ml").textContent = "Đang xử lý…";
-      setTimeout(() => { stopping = false; recordStop(); }, 400); return;
-    }
-    if (busy) return; busy = true;
-    releaseAudio(); lastBlob = null;
+  function setMic(label, live) { const m = document.getElementById("mic"); if (!m) return; m.classList.toggle("live", !!live); m.querySelector(".ml").textContent = label; }
+  function scoreBlob(blob) {
     const e = es[k], target = e.speak[part], seq = shellSeq;
-    mic.querySelector(".ml").textContent = "Chờ chút…";
-    // micro iPhone cần ~0,5 giây để "nóng"; chỉ báo “Nói đi” khi đã sẵn sàng, tránh mất âm đầu
-    recordStart(() => setTimeout(() => { const m = document.getElementById("mic"); if (m && recorder) { m.classList.add("live"); m.querySelector(".ml").textContent = "🔴 Nói đi! Xong bấm lại"; } }, IS_IOS ? 600 : 300)).then(blob => {
-      if (seq !== shellSeq) return;
-      if (blob.size < 1500) { busy = false; view({ warn: 1, msg: "Máy chưa thu được tiếng. Em bấm micro, đọc to rồi bấm lại." }); return; }
-      view({ wait: 1 }); lastBlob = blob;
-      return aiScore(blob, target, e.ipa, e.vi).then(r => {
-        if (seq + 1 !== shellSeq) return;
-        tries++; failCount = 0; res[k].pb[part] = Math.max(res[k].pb[part], r.score); res[k].best = Math.min.apply(null, res[k].pb);
-        if (r.pass) view({ good: 1, r });
-        else if (tries >= 3) { res[k].fail = true; view({ bad: 1, r, msg: "Chưa đạt sau 3 lượt — từ này sẽ vào phần ôn tập." }); }
-        else view({ bad: 1, r });
-      });
+    view({ wait: 1 });
+    return aiScore(blob, target, e.ipa, e.vi).then(r => {
+      if (seq + 1 !== shellSeq) return;
+      tries++; failCount = 0; res[k].pb[part] = Math.max(res[k].pb[part], r.score); res[k].best = Math.min.apply(null, res[k].pb);
+      if (r.pass) view({ good: 1, r });
+      else if (tries >= 3) { res[k].fail = true; view({ bad: 1, r, _vid: viewId + 1, msg: "Chưa đạt sau 3 lượt — từ này sẽ vào phần ôn tập." }); }
+      else view({ bad: 1, r, _vid: viewId + 1 });
     }).catch(err => {
       if (seq !== shellSeq && seq + 1 !== shellSeq) return;
-      diag("rec/score error " + (err && err.name || err)); failCount++;
+      diag("score error " + (err && err.name || err)); failCount++;
       view({ warn: 1, msg: esc(recErrorText(err)) });
     });
-    // tự dừng sau 7 giây nếu em quên bấm lại
+  }
+  function toggle() {
+    const mic = document.getElementById("mic"); if (!mic || mic.disabled) return;
+    if (useLab) {
+      if (rec) {   // dừng: thu thêm 0,25 giây cho trọn âm cuối
+        if (stopping) return; stopping = true; clearTimeout(autoStop); setMic("Đang chấm…");
+        setTimeout(() => { stopping = false; rec = false; const f = labStop(); lastF32 = f; const w = labWav(f); lastBlob = w; scoreBlob(w); }, 250);
+        return;
+      }
+      if (busy) return; busy = true; labStopPlay(); stopAudio();
+      const ready = labMicOk();
+      if (!ready) setMic("Mở micro…");
+      labReady().then(() => {
+        busy = false; labStart(); rec = true; setMic("🔴 Đang nghe… đọc xong bấm", true);
+        autoStop = setTimeout(() => { if (rec) toggle(); }, 7000);
+      }).catch(err => { busy = false; diag("mic " + (err && err.name)); failCount++; view({ warn: 1, msg: esc(recErrorText(err)) }); });
+      return;
+    }
+    // máy không có Web Audio: ghi kiểu cũ
+    if (recorder) { if (stopping) return; stopping = true; clearTimeout(autoStop); setMic("Đang xử lý…"); setTimeout(() => { stopping = false; recordStop(); }, 400); return; }
+    if (busy) return; busy = true; releaseAudio(); lastBlob = null;
+    const seq = shellSeq; setMic("Chờ chút…");
+    recordStart(() => setTimeout(() => { if (recorder) setMic("🔴 Nói đi! Xong bấm lại", true); }, IS_IOS ? 600 : 300)).then(blob => {
+      if (seq !== shellSeq) return;
+      if (blob.size < 1500) { busy = false; view({ warn: 1, msg: "Máy chưa thu được tiếng. Em bấm micro, đọc to rồi bấm lại." }); return; }
+      lastBlob = blob; return scoreBlob(blob);
+    }).catch(err => { diag("rec error " + (err && err.name || err)); failCount++; view({ warn: 1, msg: esc(recErrorText(err)) }); });
     autoStop = setTimeout(recordStop, 7000);
   }
   function next() {
-    ++viewId; clearTimeout(autoStop); recordStop(); releaseMic();
+    ++viewId; clearTimeout(autoStop); if (rec) { rec = false; labStop(); } recordStop(); labStopPlay();
     const e = es[k]; if (!e) return;
-    if (!res[k].skip && part + 1 < e.speak.length) { part++; tries = 0; lastBlob = null; return view(); }
+    if (!res[k].skip && part + 1 < e.speak.length) { part++; tries = 0; lastBlob = lastF32 = null; return view(); }
     part = 0;
     if (!res[k].skip) { res[k].ok = !res[k].fail && res[k].best >= 75; mark(e.n, res[k].ok); }
-    k++; tries = 0; lastBlob = null;
+    k++; tries = 0; lastBlob = lastF32 = null;
     if (k < es.length) return view();
+    labKeep = false;
     const scored = res.filter(r => !r.skip), skipped = es.length - scored.length;
     const score = scored.length ? Math.round(scored.reduce((a, r) => a + r.best, 0) / scored.length) : null;
     const weak = es.filter((x, j) => !res[j].skip && !res[j].ok).map(x => x.n);
