@@ -452,13 +452,13 @@ function pickMime() {
 function releaseMic() { if (micStream) { micStream.getTracks().forEach(t => { try { t.stop(); } catch (e) {} }); micStream = null; } }
 async function getMic() {
   releaseMic();
-  micStream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, channelCount: 1 } });
+  micStream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: true, channelCount: 1 } });
   const t = micStream.getAudioTracks()[0];
   diag("mic " + (t ? t.readyState + (t.muted ? " MUTED" : "") : "none"));
   if (t) { t.onmute = () => diag("mic muted"); t.onended = () => diag("mic ended"); }
   return micStream;
 }
-function recordStart() {
+function recordStart(onStarted) {
   return getMic().then(stream => new Promise((resolve, reject) => {
     const mime = pickMime(), chunks = [];
     let r; try { r = mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream); } catch (e) { releaseMic(); return reject("recorder"); }
@@ -467,6 +467,7 @@ function recordStart() {
     r.onerror = () => { recorder = null; releaseMic(); reject("recorder"); };
     if (IS_IOS) r.start(); else r.start(250);
     diag("rec start " + (r.mimeType || mime));
+    if (onStarted) onStarted();
   }));
 }
 function recordStop() { if (recorder && recorder.state !== "inactive") { try { recorder.stop(); } catch (e) {} } }
@@ -511,32 +512,73 @@ const PH_TIP = {
   "ɔɹ": "“o” rồi cong lưỡi “r”", "ɑɹ": "“a” rồi cong lưỡi “r”", "ɛɹ": "“e” rồi cong lưỡi “r”", "ɪɹ": "“i” rồi cong lưỡi “r”",
   "θ": "lưỡi giữa hai răng, thổi hơi (không đọc “th”/“t”)", "ð": "lưỡi giữa hai răng, rung cổ (không đọc “d”)",
   "ʃ": "“s” nặng, chu môi", "tʃ": "“ch” bật mạnh, chu môi", "dʒ": "“giơ” bật, chu môi", "ʒ": "như /ʃ/ nhưng rung cổ",
-  "t": "bật âm /t/ rõ, nhất là cuối từ", "d": "bật /d/ rõ, rung cổ", "k": "bật /k/ cuối từ", "g": "bật /g/ rung cổ", "p": "bật /p/ có hơi", "b": "/b/ rung cổ",
-  "s": "xì hơi /s/ rõ, nhất là cuối từ", "z": "/z/ rung như ong kêu", "v": "răng trên chạm môi dưới, rung (không đọc “b”)", "f": "răng trên chạm môi dưới, thổi hơi",
-  "l": "đầu lưỡi chạm lợi, cuối từ cũng phải có /l/", "ɹ": "cong lưỡi, không chạm vòm", "r": "cong lưỡi, không chạm vòm", "n": "/n/ rõ cuối từ", "m": "mím môi /m/", "ŋ": "“ng” cuối, không bật “g”", "h": "thở ra nhẹ", "w": "chu môi rồi mở", "j": "“i” lướt nhanh"
+  "t": "chạm lưỡi sau răng trên, bật /t/ rõ", "d": "bật /d/ rõ, rung cổ", "k": "bật /k/ rõ từ cuống lưỡi", "g": "bật /g/ rung cổ", "p": "bật /p/ có hơi", "b": "/b/ rung cổ",
+  "s": "xì hơi /s/ rõ", "z": "/z/ rung như ong kêu", "v": "răng trên chạm môi dưới, rung (không đọc “b”)", "f": "răng trên chạm môi dưới, thổi hơi",
+  "l": "đầu lưỡi chạm lợi trên, giữ /l/ rõ", "ɹ": "cong lưỡi, không chạm vòm", "r": "cong lưỡi, không chạm vòm", "n": "đầu lưỡi chạm lợi, /n/ rõ", "m": "mím môi /m/", "ŋ": "“ng”, không bật thêm “g”", "h": "thở ra nhẹ", "w": "chu môi rồi mở", "j": "“i” lướt nhanh"
 };
+// Ghép từng âm (IPA của Azure) vào chữ cái của từ để tô màu như Elsa.
+const SP = {
+  "tʃ": ["tch","ch","t"], "dʒ": ["dge","dg","j","g"], "ʃ": ["sh","ti","ci","ssi","si","ch","s"], "ʒ": ["si","s","g"], "θ": ["th"], "ð": ["th"], "ŋ": ["ng","n"],
+  "k": ["ck","ch","cc","c","k","q","x"], "g": ["gg","gu","g"], "f": ["ff","ph","gh","f"], "v": ["v","f"], "s": ["ss","sc","ce","c","s","x"], "z": ["zz","s","z","x"],
+  "t": ["tt","ed","t","d"], "d": ["dd","ed","d"], "p": ["pp","p"], "b": ["bb","b"], "m": ["mm","mb","m"], "n": ["nn","kn","gn","n"], "l": ["ll","le","l"],
+  "ɹ": ["rr","wr","r"], "r": ["rr","wr","r"], "h": ["wh","h"], "w": ["wh","w","u","o"], "j": ["y","i","u","e"],
+  "i": ["ee","ea","ie","ei","ey","e","i","y"], "iː": ["ee","ea","ie","ei","ey","e","i","y"], "ɪ": ["i","y","e","a","u","o"], "ɛ": ["ea","e","a","ai"], "æ": ["a"],
+  "ɑ": ["al","a","o","au","aw"], "ɔ": ["aw","au","ou","o","a"], "ʌ": ["ou","o","u"], "ə": ["a","e","i","o","u","ou"], "ʊ": ["oo","ou","u"], "u": ["oo","ou","ue","ew","o","u"], "uː": ["oo","ou","ue","ew","o","u"],
+  "eɪ": ["eigh","ai","ay","ey","ea","a"], "aɪ": ["igh","ie","y","i"], "oʊ": ["oa","ow","oe","ou","o"], "aʊ": ["ou","ow"], "ɔɪ": ["oi","oy"],
+  "ɚ": ["er","ur","ir","or","ar","re","r"], "ɝ": ["er","ur","ir","or","ear"], "ɔɹ": ["oor","our","ore","or","ar"], "ɑɹ": ["ar"], "ɛɹ": ["air","are","ear","er"], "ɪɹ": ["ear","eer","ere"]
+};
+function alignWord(word, phs) {
+  const w = word.toLowerCase(), spans = []; let i = 0;
+  const tryAt = (pos, p) => { for (const sp of SP[p] || []) if (w.startsWith(sp, pos)) return sp.length; return 0; };
+  phs.forEach((ph, k) => {
+    if (i >= w.length) { if (spans.length) spans[spans.length - 1].s = Math.min(spans[spans.length - 1].s, ph.s); return; }
+    const prev = spans[spans.length - 1], prevT = prev ? w.substr(i - prev.len, prev.len) : "";
+    // âm gộp trong một chữ: "u" = /ju/ (popular), "x" = /ks/ (exercise) → âm sau dùng chung chữ với âm trước
+    if (prev && ((phs[k - 1].p === "j" && prevT === "u" && /^(u|uː|ʊ|ə)$/.test(ph.p)) || (prevT === "x" && /^(s|z)$/.test(ph.p)))) { prev.s = Math.min(prev.s, ph.s); return; }
+    let n = tryAt(i, ph.p);
+    if (!n) {   // chữ câm / nguyên âm bị lướt: gắn vào âm trước rồi thử lại
+      for (let skip = 1; skip <= 2 && !n; skip++) { const m = tryAt(i + skip, ph.p); if (m) { if (spans.length) spans[spans.length - 1].len += skip; else spans.push({ len: skip, s: ph.s }); i += skip; n = m; } }
+    }
+    if (!n) n = 1;
+    spans.push({ len: n, s: ph.s }); i += n;
+  });
+  if (i < w.length) { if (spans.length) spans[spans.length - 1].len += w.length - i; else spans.push({ len: w.length - i, s: 100 }); }   // e câm cuối từ
+  let pos = 0; return spans.map(sp => { const t = word.substr(pos, sp.len); pos += sp.len; return { t, s: sp.s }; }).filter(x => x.t);
+}
+function colorWords(words) {
+  return words.map(r => r.miss ? '<span class="cw bad miss">' + esc(r.w) + '</span>' : '<span class="cw">' + alignWord(r.w, r.ph).map(x => '<b class="' + (x.s >= 80 ? 'ok' : x.s >= 60 ? 'mid' : 'bad') + '">' + esc(x.t) + '</b>').join('') + '</span>').join(' ');
+}
 const AZ_PASS = C.PASS_SCORE || 75, AZ_PHMIN = C.PH_MIN || 50;
 function azResult(j) {
   if (!j || j.RecognitionStatus !== "Success" || !j.NBest || !j.NBest.length) return { heard: "", score: 0, pass: false, errors: [], tip: "Máy không nghe thấy tiếng em. Em đọc to và rõ hơn nhé." };
   const nb = j.NBest[0], pa = nb.PronunciationAssessment || nb;
   const acc = +pa.AccuracyScore || 0, comp = +pa.CompletenessScore, pron = +pa.PronScore || acc;
-  const errs = [], seen = {}; let pmin = 100;
+  const errs = [], seen = {}, words = []; let pmin = 100;
   (nb.Words || []).forEach(w => {
     const et = (w.PronunciationAssessment || w).ErrorType || "None";
-    if (et === "Omission") { errs.push({ sound: "thiếu từ “" + w.Word + "”", fix: "Em đọc đủ cả từ “" + w.Word + "”.", s: 0 }); pmin = 0; return; }
+    if (et === "Omission") { errs.push({ sound: "thiếu từ “" + w.Word + "”", fix: "Em đọc đủ cả từ “" + w.Word + "”.", s: 0 }); pmin = 0; words.push({ w: w.Word, miss: 1, ph: [] }); return; }
     if (et === "Insertion") return;
-    (w.Phonemes || []).forEach(ph => {
-      const pp = ph.PronunciationAssessment || ph, sc = +pp.AccuracyScore || 0, sym = ph.Phoneme;
+    const phs = w.Phonemes || [], row = { w: w.Word, ph: [] };
+    phs.forEach((ph, idx) => {
+      const pp = ph.PronunciationAssessment || ph, sc = Math.round(+pp.AccuracyScore || 0), sym = ph.Phoneme;
+      row.ph.push({ p: sym, s: sc });
       if (sc < pmin) pmin = sc;
-      if (sc < 60 && !seen[sym]) { seen[sym] = 1; errs.push({ sound: "/" + sym + "/ trong “" + w.Word + "”", fix: PH_TIP[sym] || "nghe mẫu và đọc chậm âm này", s: sc }); }
+      if (sc < 60 && !seen[sym]) {
+        seen[sym] = 1;
+        const vowel = /[aeiouæɑɒɔəɛɜɚɝɪʊʌ]/.test(sym), pos = idx === 0 ? "đầu" : idx === phs.length - 1 ? "cuối" : "giữa";
+        const fix = (PH_TIP[sym] || (vowel ? "nghe mẫu, đọc chậm nguyên âm này" : "đọc rõ âm này")) + (!vowel && pos === "cuối" ? " — đừng nuốt âm cuối" : "");
+        errs.push({ sound: "/" + sym + "/ " + (vowel ? "trong" : pos + " từ") + " “" + w.Word + "”", fix: fix || "đọc rõ âm này", s: sc });
+      }
     });
+    words.push(row);
   });
   errs.sort((a, b) => a.s - b.s);
   let score = Math.round(isNaN(comp) ? pron : Math.min(pron, comp));
   if (pmin < AZ_PHMIN) score = Math.min(score, 65);
   const pass = score >= AZ_PASS;
   const tip = pass ? (score >= 90 ? "Rất chuẩn! Tiếp tục nhé." : "Đạt rồi, sửa thêm âm được nhắc cho chuẩn hơn.") : (errs.length ? "Em sửa âm được nhắc rồi đọc lại nhé." : "Em đọc rõ và đủ từng âm rồi thử lại nhé.");
-  return { heard: nb.Display || nb.Lexical || "", score, pass, errors: errs.slice(0, 3).map(e => ({ sound: e.sound, fix: e.fix })), tip };
+  diag("az acc " + Math.round(acc) + " comp " + comp + " pron " + Math.round(pron) + " · " + words.map(r => r.ph.map(x => x.p + x.s).join(" ")).join(" | "));
+  return { heard: "", score, pass, words, errors: errs.slice(0, 3).map(e => ({ sound: e.sound, fix: e.fix })), tip };
 }
 async function azureScore(wav, target) {
   const ref = String(target).replace(/\s*[,~·]\s*/g, ". ");
@@ -588,11 +630,11 @@ function speak(i) {
 function speakAI(i) {
   if (C.GRADER === "azure") azToken().catch(() => {});
   const es = V[i - 1].entries;
-  const res = es.map(() => ({ ok: false, best: 0 }));
-  let k = 0, tries = 0, viewId = 0, busy = false, failCount = 0;
+  const res = es.map(e => ({ ok: false, best: 0, pb: e.speak.map(() => 0) }));
+  let k = 0, part = 0, tries = 0, viewId = 0, busy = false, failCount = 0;
   function view(state) {
     ++viewId; state = state || {}; busy = false;
-    const e = es[k], target = e.speak.join(", ");
+    const e = es[k], target = e.speak[part], multi = e.speak.length > 1;
     const dots = [0, 1, 2].map(t => '<i class="' + (t < tries ? (state.good && t === tries - 1 ? "g" : "b") : "") + '"></i>').join("");
     let badge = "";
     if (state.good) badge = '<div class="badge good">' + state.r.score + "% · Chuẩn!</div>";
@@ -601,37 +643,44 @@ function speakAI(i) {
     else if (state.wait) badge = '<div class="badge wait">⏳ Đang chấm…</div>';
     let detail = "";
     if (state.r) {
-      detail = '<div class="aifb">' + (state.r.heard ? '<p class="heard">Máy nghe: “' + esc(state.r.heard) + "”</p>" : "") +
+      const chips = state.r.words && state.r.words.length ? '<div class="phs">' + state.r.words.map(r => '<span class="pw">' + (r.miss ? '<b class="ph bad">thiếu “' + esc(r.w) + '”</b>' : "/" + r.ph.map(x => '<b class="ph ' + (x.s >= 80 ? "ok" : x.s >= 60 ? "mid" : "bad") + '">' + esc(x.p) + "</b>").join("") + "/") + "</span>").join(" ") + '<small>🟢 chuẩn · 🟡 gần đúng · 🔴 sai — chữ màu đỏ là chỗ em cần sửa</small></div>' : "";
+      detail = '<div class="aifb">' + chips + (state.r.heard ? '<p class="heard">Máy nghe: “' + esc(state.r.heard) + "”</p>" : "") +
         (state.r.errors && state.r.errors.length ? '<ul class="errs">' + state.r.errors.map(x => "<li><b>" + esc(x.sound) + "</b> — " + esc(x.fix) + "</li>").join("") + "</ul>" : "") +
         (state.r.tip ? '<p class="tip">💬 ' + esc(state.r.tip) + "</p>" : "") +
         (lastBlob ? '<div class="audio center"><button class="btn ghost sm" id="mine">▶ Nghe lại giọng em</button><button class="btn sound sm" data-say="' + esc(target) + '">🔊 Giọng mẫu</button></div>' : "") + "</div>";
     }
     shell(lessonHead(i, 1) + '<section class="card lab"><div class="fc-top"><span class="count">Từ ' + (k + 1) + " / " + es.length + '</span><span class="tries">' + dots + "</span></div>" +
-      '<h1 class="term xl">' + esc(e.term) + '</h1><p class="ipa">' + esc(e.ipa) + '</p><p class="muted">' + esc(e.vi) + "</p>" +
+      '<h1 class="term xl">' + (state.r && state.r.words && state.r.words.length && !multi ? colorWords(state.r.words) : esc(e.term)) + '</h1><p class="ipa">' + esc(e.ipa) + '</p><p class="muted">' + esc(e.vi) + "</p>" +
+      (multi ? '<p class="partline">Đọc phần ' + (part + 1) + "/" + e.speak.length + ': <b>' + (state.r && state.r.words && state.r.words.length ? colorWords(state.r.words) : esc(target)) + "</b></p>" : "") +
       '<div class="audio center"><button class="btn sound" data-say="' + esc(target) + '">🔊 Nghe mẫu</button><button class="btn ghost" data-say="' + esc(target) + '" data-slow="1">🐢 Chậm</button></div>' +
       micHtml(state.wait ? "Đang chấm…" : "Bấm, đọc, bấm lại") + badge + (state.msg ? '<p class="hint">' + state.msg + "</p>" : "") + detail + (state.warn ? '<pre class="diag" id="diag">' + esc(DIAG.join("\n")) + "</pre>" : "") +
-      '<div class="nav center">' + (state.warn && failCount >= 2 ? '<button class="btn ghost" id="skipw">Bỏ qua từ này</button>' : "") + (state.good || state.bad ? '<button class="btn ' + (state.good || tries >= 3 ? "primary" : "ghost") + '" id="nx">' + (k + 1 < es.length ? (state.bad && tries < 3 ? "Sang từ sau ➔" : "Tiếp ➔") : "Xem kết quả ➔") + "</button>" : "") + "</div></section>", "lesson");
+      '<div class="nav center">' + (state.warn && failCount >= 2 ? '<button class="btn ghost" id="skipw">Bỏ qua từ này</button>' : "") + (state.good || state.bad ? '<button class="btn ' + (state.good || tries >= 3 ? "primary" : "ghost") + '" id="nx">' + (part + 1 < e.speak.length ? (state.bad && tries < 3 ? "Bỏ qua, sang phần sau ➔" : "Phần tiếp ➔") : k + 1 < es.length ? (state.bad && tries < 3 ? "Sang từ sau ➔" : "Tiếp ➔") : "Xem kết quả ➔") + "</button>" : "") + "</div></section>", "lesson");
     const mic = document.getElementById("mic"); mic.onclick = toggle; if (state.wait) mic.disabled = true;
     const nx = document.getElementById("nx"); if (nx) nx.onclick = next;
     const sw = document.getElementById("skipw"); if (sw) sw.onclick = () => { res[k].skip = true; next(); };
     const mine = document.getElementById("mine"); if (mine && lastBlob) mine.onclick = () => { stopAudio(); const u = URL.createObjectURL(lastBlob); player.src = u; player.playbackRate = 1; player.play().catch(() => {}); };
     onKeys(ev => { if (ev.key === " ") { ev.preventDefault(); toggle(); } else if (ev.key === "Enter" && nx) nx.click(); });
   }
-  let autoStop = null;
+  let autoStop = null, stopping = false;
   function toggle() {
     const mic = document.getElementById("mic"); if (!mic || mic.disabled) return;
-    if (recorder) { clearTimeout(autoStop); recordStop(); return; }
+    if (recorder) {   // đọc xong: thu thêm 0,4 giây để không cụt âm cuối
+      if (stopping) return; stopping = true; clearTimeout(autoStop);
+      mic.querySelector(".ml").textContent = "Đang xử lý…";
+      setTimeout(() => { stopping = false; recordStop(); }, 400); return;
+    }
     if (busy) return; busy = true;
     releaseAudio(); lastBlob = null;
-    const e = es[k], target = e.speak.join(", "), seq = shellSeq;
-    mic.querySelector(".ml").textContent = "Chuẩn bị…";
-    recordStart().then(blob => {
+    const e = es[k], target = e.speak[part], seq = shellSeq;
+    mic.querySelector(".ml").textContent = "Chờ chút…";
+    // micro iPhone cần ~0,5 giây để "nóng"; chỉ báo “Nói đi” khi đã sẵn sàng, tránh mất âm đầu
+    recordStart(() => setTimeout(() => { const m = document.getElementById("mic"); if (m && recorder) { m.classList.add("live"); m.querySelector(".ml").textContent = "🔴 Nói đi! Xong bấm lại"; } }, IS_IOS ? 600 : 300)).then(blob => {
       if (seq !== shellSeq) return;
       if (blob.size < 1500) { busy = false; view({ warn: 1, msg: "Máy chưa thu được tiếng. Em bấm micro, đọc to rồi bấm lại." }); return; }
       view({ wait: 1 }); lastBlob = blob;
       return aiScore(blob, target, e.ipa, e.vi).then(r => {
         if (seq + 1 !== shellSeq) return;
-        tries++; failCount = 0; res[k].best = Math.max(res[k].best, r.score);
+        tries++; failCount = 0; res[k].pb[part] = Math.max(res[k].pb[part], r.score); res[k].best = Math.min.apply(null, res[k].pb);
         if (r.pass) view({ good: 1, r });
         else if (tries >= 3) { res[k].fail = true; view({ bad: 1, r, msg: "Chưa đạt sau 3 lượt — từ này sẽ vào phần ôn tập." }); }
         else view({ bad: 1, r });
@@ -641,13 +690,14 @@ function speakAI(i) {
       diag("rec/score error " + (err && err.name || err)); failCount++;
       view({ warn: 1, msg: esc(recErrorText(err)) });
     });
-    // tự dừng sau 6 giây nếu em quên bấm lại
-    setTimeout(() => { const m = document.getElementById("mic"); if (m && recorder) { m.classList.add("live"); m.querySelector(".ml").textContent = "Đang thu… bấm lại khi đọc xong"; } }, 150);
-    autoStop = setTimeout(recordStop, 6000);
+    // tự dừng sau 7 giây nếu em quên bấm lại
+    autoStop = setTimeout(recordStop, 7000);
   }
   function next() {
     ++viewId; clearTimeout(autoStop); recordStop(); releaseMic();
     const e = es[k]; if (!e) return;
+    if (!res[k].skip && part + 1 < e.speak.length) { part++; tries = 0; lastBlob = null; return view(); }
+    part = 0;
     if (!res[k].skip) { res[k].ok = !res[k].fail && res[k].best >= 75; mark(e.n, res[k].ok); }
     k++; tries = 0; lastBlob = null;
     if (k < es.length) return view();

@@ -346,3 +346,12 @@ mark{background:var(--gold2);border-radius:5px;padding:0 4px;font-weight:700}
 .aifb .tip{margin:8px 0 0;color:var(--ink)}
 .btn.sm{min-height:40px;padding:8px 14px;font-size:14.5px}
 .mic.live{background:radial-gradient(circle at 35% 30%,#ff8a7a,#e0392b);color:#fff}
+
+.phs{text-align:center;margin:0 0 8px;font-size:18px;letter-spacing:.5px}
+.phs .pw{display:inline-block;margin:0 4px;color:var(--muted,#667)}
+.phs .ph{font-weight:800;padding:0 1px;border-radius:4px}
+.phs .ph.ok{color:#1f8a4c}.phs .ph.mid{color:#c48a00}.phs .ph.bad{color:#d03a2b;background:#fde8e5}
+.phs small{display:block;font-size:12px;color:#889;margin-top:2px;letter-spacing:0}
+.partline{margin:2px 0 6px;font-size:17px;color:var(--ink,#1a2340)}.partline b{color:var(--blue,#3a56d4);font-size:20px}
+.cw b{font-weight:inherit}.cw .ok{color:#1f8a4c}.cw .mid{color:#d49400}.cw .bad{color:#d03a2b;text-decoration:underline wavy #d03a2b;text-decoration-thickness:2px;text-underline-offset:6px}
+.cw.miss{color:#d03a2b;text-decoration:line-through}
