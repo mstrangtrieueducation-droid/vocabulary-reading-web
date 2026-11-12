@@ -9,7 +9,7 @@ var ADMIN_KEY = 'ĐẶT_MÃ_QUẢN_TRỊ_TRONG_APPS_SCRIPT';
 var BASE_URL = 'https://mstrangtrieueducation-droid.github.io/vocabulary-reading-web/dcaa7ee41f2f36d022bf75a486019b75/';
 var DAYS = 30;
 // Khoá Gemini để chấm phát âm: cất trong Script Properties (Cài đặt dự án → Thuộc tính tập lệnh), tên GEMINI_KEY. Không ghi vào mã.
-var GEMINI_MODEL = 'gemini-2.5-flash';
+var GEMINI_MODEL = 'gemini-3.8-flash';
 function geminiKey() { return PropertiesService.getScriptProperties().getProperty('GEMINI_KEY') || ''; }
 var SHEET_ID = '12ln-A0tPOiinUSRJdkrGxx2bVzv_VcWgItkhi8bmCMc';
 var SHEET = 'Học sinh', LOG = 'Nhật ký', DATA = '_data';
