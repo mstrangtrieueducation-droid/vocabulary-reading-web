@@ -644,6 +644,14 @@ function colorWords(words) {
   return words.map((r, wi) => r.miss ? '<span class="cw bad miss">' + esc(r.w) + '</span>' : '<span class="cw">' + alignWord(r.w, r.ph).map(x => '<b class="' + (x.s >= 80 ? 'ok' : x.s >= 60 ? 'mid' : 'bad') + '" data-ph="' + wi + ':' + (x.k == null ? 0 : x.k) + '">' + esc(x.t) + '</b>').join('') + '</span>').join(' ');
 }
 const VOWEL_RE = /[aeiouæɑɒɔəɛɜɚɝɪʊʌ]/;
+// cặp âm gần nhau, đọc kiểu nào cũng được coi là đúng (giọng tự nhiên, âm lướt)
+const BENIGN = { "ə>ɪ": 1, "ɪ>ə": 1, "ə>ʌ": 1, "ʌ>ə": 1, "ɑ>ɔ": 1, "ɔ>ɑ": 1, "t>d": 1, "ə>ɚ": 1, "ɚ>ə": 1, "i>ɪ@end": 1, "ɔɹ>ɔ": 1, "ɑɹ>ɑ": 1 };
+function subOf(x, isLast) {   // âm máy nghe được, nếu khác hẳn âm chuẩn
+  const h = x.alt && x.alt[0];
+  if (!h || h === x.p || x.s >= 75) return null;
+  if (BENIGN[x.p + ">" + h] || (isLast && BENIGN[x.p + ">" + h + "@end"])) return null;
+  return h;
+}
 const PAIR = {
   "tʃ>ʃ": "Em đọc thành /ʃ/ (như “s” nặng, xì hơi). /tʃ/ phải CHẶN hơi trước: đầu lưỡi chạm lợi trên, rồi bật mạnh “ch”.",
   "tʃ>t": "Em đọc thành /t/. /tʃ/ là “ch” bật: chu môi, chạm lưỡi rồi bật hơi “chờ”.",
@@ -688,10 +696,10 @@ function analyse(words) {
     if (r.miss) { issues.push({ wi, k: 0, s: 0, title: "Thiếu từ “" + r.w + "”", text: "Em chưa đọc từ này. Em đọc đủ cả cụm nhé." }); heardIpa.push("—"); goodIpa.push(r.w); return; }
     const hw = [], gw = [];
     r.ph.forEach((x, k) => {
-      const exp = x.p, best = x.alt && x.alt[0], heard = best && best !== exp ? best : null, vowel = VOWEL_RE.test(exp);
+      const exp = x.p, sub = subOf(x, k === r.ph.length - 1), best = x.alt && x.alt[0], heard = sub || (best && best !== exp && x.s < 60 ? best : null), vowel = VOWEL_RE.test(exp);
       const pos = k === 0 ? "đầu" : k === r.ph.length - 1 ? "cuối" : "giữa";
-      gw.push(exp); hw.push(x.s >= 60 ? exp : x.s < 25 && !heard ? "" : (heard || exp));
-      if (x.s >= 60) return;
+      gw.push(exp); hw.push(x.s >= 60 && !sub ? exp : x.s < 25 && !heard ? "" : (heard || exp));
+      if (x.s >= 60 && !sub) return;
       const key = exp + ">" + (heard || ""), sk = exp + "@" + pos; if (seen[sk]) return; seen[sk] = 1;
       let text;
       if (!vowel && pos === "cuối" && (x.s < 35 || (heard && VOWEL_RE.test(heard)))) text = "Em nuốt mất âm cuối /" + exp + "/ — lỗi rất hay gặp của người Việt. Đọc hết từ rồi bật nhẹ /" + exp + "/ ra: " + (PH_TIP[exp] || "đọc rõ âm này") + ".";
@@ -703,10 +711,56 @@ function analyse(words) {
     heardIpa.push(hw.join("")); goodIpa.push(gw.join(""));
   });
   issues.sort((a, b) => a.s - b.s);
-  return { issues, heardIpa: heardIpa.join(" "), goodIpa: goodIpa.join(" ") };
+  return { issues, heardIpa: heardIpa.join(" "), goodIpa: goodIpa.join(" "), subs: issues.length };
+}
+
+/* ---------- Trọng âm: đo độ to, cao giọng, độ dài của từng âm tiết (dựa vào mốc thời gian Azure trả về) ---------- */
+const V_START = /[aeiouæɑɒɔəɛɜɚɝɪʊʌ]/;
+function ipaStress(ipa) {   // → { n: số âm tiết, at: âm tiết nhấn (0-based) } từ phiên âm từ điển
+  const t = String(ipa || "").replace(/[\/\[\]]/g, "").trim();
+  if (!t || /\s/.test(t)) return null;
+  let n = 0, at = -1, inV = false;
+  for (const ch of t) {
+    if (ch === "ˈ") { at = n; inV = false; continue; }
+    if (ch === "ˌ" || ch === "." ) { inV = false; continue; }
+    const v = V_START.test(ch) || (inV && /[ːˑ]/.test(ch));
+    if (v && !inV) n++;
+    inV = v;
+  }
+  return n >= 2 && at >= 0 ? { n, at } : null;
+}
+function partIpa(e, part) {
+  const raw = String(e.ipa || "").replace(/^\/|\/$/g, "").trim(), toks = raw.split(/\s+/);
+  if (e.speak.length === 1) return toks.length === 1 ? raw : null;
+  return toks.length === e.speak.length ? toks[part] : null;
+}
+function f0At(f32, sr, a, b) {   // cao độ trung bình (Hz) bằng tự tương quan, 0 nếu không rõ
+  const seg = f32.subarray(Math.max(0, a), Math.min(f32.length, b)), N = Math.min(seg.length, Math.round(sr * 0.06));
+  if (N < sr * 0.025) return 0;
+  const st = Math.floor((seg.length - N) / 2), x = seg.subarray(st, st + N);
+  let e0 = 0; for (let i = 0; i < N; i++) e0 += x[i] * x[i]; if (e0 < 1e-6) return 0;
+  const lo = Math.floor(sr / 400), hi = Math.floor(sr / 70); let best = 0, bl = 0;
+  for (let l = lo; l <= hi && l < N - 1; l++) { let c = 0; for (let i = 0; i + l < N; i++) c += x[i] * x[i + l]; c /= e0; if (c > best) { best = c; bl = l; } }
+  return best > 0.45 ? sr / bl : 0;
+}
+function stressCheck(word, ipa, f32, sr) {
+  const want = ipaStress(ipa); if (!want || !word || !f32) return null;
+  const vs = (word.Phonemes || []).filter(ph => V_START.test(ph.Phoneme) && ph.Offset != null && ph.Duration);
+  if (vs.length !== want.n) return null;
+  const feats = vs.map(ph => {
+    const a = Math.round(ph.Offset / 1e7 * sr), b = Math.round((ph.Offset + ph.Duration) / 1e7 * sr);
+    let e = 0; for (let i = a; i < b && i < f32.length; i++) e += f32[i] * f32[i];
+    return { rms: Math.sqrt(e / Math.max(1, b - a)), dur: ph.Duration, f0: f0At(f32, sr, a, b) };
+  });
+  const mx = k => Math.max.apply(null, feats.map(f => f[k])) || 1, hasF0 = feats.every(f => f.f0 > 0);
+  const prom = feats.map(f => 0.45 * f.rms / mx("rms") + 0.2 * f.dur / mx("dur") + (hasF0 ? 0.35 * f.f0 / mx("f0") : 0));
+  let got = 0; prom.forEach((p, i) => { if (p > prom[got]) got = i; });
+  diag("stress want " + (want.at + 1) + "/" + want.n + " got " + (got + 1) + " · " + prom.map(p => p.toFixed(2)).join(" "));
+  const wrong = got !== want.at && prom[got] - prom[want.at] > (hasF0 ? 0.1 : 0.14);
+  return { n: want.n, want: want.at, got, wrong, sylls: vs.map(v => v.Phoneme) };
 }
 const AZ_PASS = C.PASS_SCORE || 75, AZ_PHMIN = C.PH_MIN || 50;
-function azResult(j) {
+function azResult(j, f32, sr, ipa) {
   if (!j || j.RecognitionStatus !== "Success" || !j.NBest || !j.NBest.length) return { heard: "", score: 0, pass: false, errors: [], tip: "Máy không nghe thấy tiếng em. Em đọc to và rõ hơn nhé." };
   const nb = j.NBest[0], pa = nb.PronunciationAssessment || nb;
   const acc = +pa.AccuracyScore || 0, comp = +pa.CompletenessScore, pron = +pa.PronScore || acc;
@@ -732,13 +786,22 @@ function azResult(j) {
   errs.sort((a, b) => a.s - b.s);
   let score = Math.round(isNaN(comp) ? pron : Math.min(pron, comp));
   if (pmin < AZ_PHMIN) score = Math.min(score, 65);
-  const pass = score >= AZ_PASS;
-  const tip = pass ? (score >= 90 ? "Rất chuẩn! Tiếp tục nhé." : "Đạt rồi, sửa thêm âm được nhắc cho chuẩn hơn.") : (errs.length ? "Em sửa âm được nhắc rồi đọc lại nhé." : "Em đọc rõ và đủ từng âm rồi thử lại nhé.");
-  diag("az acc " + Math.round(acc) + " comp " + comp + " pron " + Math.round(pron) + " · " + words.map(r => r.ph.map(x => x.p + x.s + (x.alt[0] && x.alt[0] !== x.p ? ">" + x.alt[0] : "")).join(" ")).join(" | "));
   const an = analyse(words);
-  return { heard: "", score, pass, words, an, errors: errs.slice(0, 3).map(e => ({ sound: e.sound, fix: e.fix })), tip };
+  // đọc thành âm khác (vd "coach" → "cao") thì chưa đạt dù điểm chung cao
+  if (an.subs) score = Math.min(score, 70 - 5 * Math.min(3, an.subs - 1));
+  let st = null;
+  try { if ((nb.Words || []).length === 1) st = stressCheck(nb.Words[0], ipa, f32, sr); } catch (e) { diag("stress err " + e.message); }
+  if (st && st.wrong) {
+    score = Math.min(score, 70);
+    const syl = i => "âm tiết " + (i + 1) + " (/" + st.sylls[i] + "/)";
+    an.issues.unshift({ wi: 0, k: -1, s: 0, stress: 1, title: "Sai trọng âm — “" + words[0].w + "”", text: "Em đang nhấn vào " + syl(st.got) + ", nhưng từ này phải nhấn " + syl(st.want) + ". Âm tiết được nhấn đọc TO hơn, CAO giọng hơn và DÀI hơn; các âm tiết còn lại đọc nhẹ, nhanh." });
+  }
+  const pass = score >= AZ_PASS;
+  const tip = pass ? (score >= 90 && !an.issues.length ? "Rất chuẩn! Tiếp tục nhé." : "Đạt rồi, sửa thêm chỗ được nhắc cho chuẩn hơn.") : (st && st.wrong && !an.subs ? "Âm đúng rồi, chỉ sai trọng âm. Nghe mẫu rồi nhấn lại nhé." : an.issues.length ? "Em sửa chỗ được nhắc rồi đọc lại nhé." : "Em đọc rõ và đủ từng âm rồi thử lại nhé.");
+  diag("az acc " + Math.round(acc) + " comp " + comp + " pron " + Math.round(pron) + " · " + words.map(r => r.ph.map(x => x.p + x.s + (x.alt[0] && x.alt[0] !== x.p ? ">" + x.alt[0] : "")).join(" ")).join(" | "));
+  return { heard: "", score, pass, words, an, stress: st, errors: errs.slice(0, 3).map(e => ({ sound: e.sound, fix: e.fix })), tip };
 }
-async function azureScore(wav, target) {
+async function azureScore(wav, target, ipa) {
   const ref = String(target).replace(/\s*[,~·]\s*/g, ". ");
   const cfg = btoa(unescape(encodeURIComponent(JSON.stringify({ ReferenceText: ref, GradingSystem: "HundredMark", Granularity: "Phoneme", Dimension: "Comprehensive", EnableMiscue: true, PhonemeAlphabet: "IPA", NBestPhonemeCount: 5 }))));
   const body = await wav.arrayBuffer();
@@ -747,7 +810,7 @@ async function azureScore(wav, target) {
     const r = await fetch("https://" + tk.region + ".stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US&format=detailed",
       { method: "POST", headers: { "Authorization": "Bearer " + tk.token, "Content-Type": "audio/wav; codecs=audio/pcm; samplerate=16000", "Accept": "application/json", "Pronunciation-Assessment": cfg }, body });
     diag("azure " + r.status);
-    if (r.ok) return azResult(await r.json());
+    if (r.ok) return azResult(await r.json(), wav.f32 || null, LAB.sr, ipa);
     if (r.status !== 401 && r.status !== 429 && r.status < 500) { const e = new Error("azure"); e.name = "api:azure " + r.status; throw e; }
     await new Promise(res => setTimeout(res, 500 * (n + 1)));
   }
@@ -757,7 +820,7 @@ async function aiScore(blob, target, ipa, vi) {
   const wav = await toWav(blob);
   const t0 = Date.now();
   if (C.GRADER === "azure" && wav.type === "audio/wav") {
-    try { const r = await azureScore(wav, target); diag("chấm " + (Date.now() - t0) + "ms"); return r; }
+    try { const r = await azureScore(wav, target, ipa); diag("chấm " + (Date.now() - t0) + "ms"); return r; }
     catch (e) { diag("azure lỗi " + (e && e.name) + " → chấm dự phòng"); }
   }
   const audio = await blobB64(wav);
@@ -839,7 +902,7 @@ function speakAI(i) {
   function scoreBlob(blob) {
     const e = es[k], target = e.speak[part], seq = shellSeq;
     view({ wait: 1 });
-    return aiScore(blob, target, e.ipa, e.vi).then(r => {
+    return aiScore(blob, target, partIpa(e, part) || e.ipa, e.vi).then(r => {
       if (seq + 1 !== shellSeq) return;
       tries++; failCount = 0; res[k].pb[part] = Math.max(res[k].pb[part], r.score); res[k].best = Math.min.apply(null, res[k].pb);
       if (r.pass) view({ good: 1, r });
