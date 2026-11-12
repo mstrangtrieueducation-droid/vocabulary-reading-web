@@ -145,6 +145,9 @@ function releaseAudio() {
   try { player.pause(); player.removeAttribute("src"); player.load(); } catch (e) {}
   if (window.speechSynthesis) speechSynthesis.cancel();
 }
+const DIAG = [];
+function diag(x) { DIAG.push(new Date().toISOString().slice(11, 19) + " " + x); if (DIAG.length > 12) DIAG.shift(); const d = document.getElementById("diag"); if (d) d.textContent = DIAG.join("\n"); }
+function liveText(t) { const l = document.getElementById("live"); if (l) l.textContent = t ? "Máy nghe: “" + t + "”" : ""; }
 function listenOnce(test) {
   return new Promise((resolve, reject) => {
     const r = new SR(); activeRec = r; r.lang = "en-US"; r.interimResults = true; r.maxAlternatives = 5; r.continuous = false;
@@ -152,6 +155,7 @@ function listenOnce(test) {
     const finish = () => { done = true; clearTimeout(t); clearTimeout(quiet); if (activeRec === r) activeRec = null; };
     const settle = () => { if (done) return; finish(); try { r.abort(); } catch (e) {} if (out.length) { out.conf = conf; resolve(out); } else reject("no-speech"); };
     const t = setTimeout(() => { try { r.stop(); } catch (e) {} setTimeout(settle, 900); }, 8000);
+    r.onstart = () => diag("start"); r.onaudiostart = () => diag("audiostart"); r.onspeechstart = () => diag("speechstart"); r.onspeechend = () => diag("speechend"); r.onaudioend = () => diag("audioend");
     r.onaudiostart = () => { const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } };
     r.onresult = ev => {
       const res = Array.from(ev.results);
@@ -160,11 +164,12 @@ function listenOnce(test) {
       const last = res[res.length - 1];
       if (last) for (const a of Array.from(last)) { const t2 = res.slice(0, -1).map(x => x[0].transcript).concat(a.transcript).join(" ").trim(); if (!alts.includes(t2)) alts.push(t2); if (conf == null && a.confidence > 0 && last.isFinal) conf = a.confidence; }
       out = alts.filter(Boolean).concat(out.filter(x => !alts.includes(x)));
+      diag("result " + (last && last.isFinal ? "final" : "interim") + ": " + full); liveText(full);
       if (test && test(out)) { if (last && last.isFinal && last[0].confidence > 0) conf = last[0].confidence; return settle(); }
       clearTimeout(quiet); quiet = setTimeout(() => { try { r.stop(); } catch (e) {} setTimeout(settle, 900); }, 1400);
     };
-    r.onerror = ev => { if (done) return; if (out.length) return settle(); finish(); reject(ev.error || "error"); };
-    r.onend = () => { if (done) return; settle(); };
+    r.onerror = ev => { diag("error " + ev.error); if (done) return; if (out.length) return settle(); finish(); reject(ev.error || "error"); };
+    r.onend = () => { diag("end"); if (done) return; settle(); };
     r.onnomatch = () => {};
     try { r.start(); const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } } catch (e) { finish(); reject("busy"); }
   });
@@ -446,7 +451,7 @@ function speak(i) {
     shell(lessonHead(i, 1) + '<section class="card lab"><div class="fc-top"><span class="count">Từ ' + (k + 1) + " / " + es.length + (e.speak.length > 1 ? " · phần " + (part + 1) + "/" + e.speak.length : "") + '</span><span class="tries">' + dots + "</span></div>" +
       '<h1 class="term xl">' + esc(target) + '</h1><p class="ipa">' + esc(e.ipa) + '</p><p class="muted">' + esc(e.vi) + "</p>" +
       '<div class="audio center"><button class="btn sound" data-say="' + esc(target) + '">🔊 Nghe mẫu</button><button class="btn ghost" data-say="' + esc(target) + '" data-slow="1">🐢 Chậm</button></div>' +
-      micHtml() + badge + (state.msg ? '<p class="hint">' + state.msg + "</p>" : "") +
+      micHtml() + '<p class="live" id="live"></p>' + badge + (state.msg ? '<p class="hint">' + state.msg + "</p>" : "") + '<pre class="diag" id="diag">' + esc(DIAG.join("\n")) + "</pre>" +
       '<div class="nav center">' + (state.warn && devFails >= 2 ? '<button class="btn ghost" id="skipw">Bỏ qua từ này</button>' : "") + (state.good || tries >= 3 ? '<button class="btn primary" id="nx">' + (k + 1 < es.length || part + 1 < e.speak.length ? "Tiếp ➔" : "Xem kết quả ➔") + "</button>" : "") + "</div></section>", "lesson");
     document.getElementById("mic").onclick = doListen;
     const nx = document.getElementById("nx"); if (nx) nx.onclick = next;

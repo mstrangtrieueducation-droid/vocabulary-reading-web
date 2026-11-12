@@ -334,3 +334,7 @@ mark{background:var(--gold2);border-radius:5px;padding:0 4px;font-weight:700}
 .exam>*,.learn>*,.hero>*,.result>*,.sheet>*{min-width:0}
 @media(min-width:1024px){.exam{grid-template-columns:260px minmax(0,1fr)}.learn{grid-template-columns:270px minmax(0,1fr)}.hero{grid-template-columns:1.05fr 1fr}.result{grid-template-columns:auto minmax(0,1fr)}}
 @media(max-height:520px) and (orientation:landscape){.hero{grid-template-columns:1fr 1fr}.result{grid-template-columns:auto minmax(0,1fr)}}
+
+.live{color:var(--blue);font-weight:700;min-height:1.4em;margin:4px 0}
+.diag{font:11px/1.35 Menlo,Consolas,monospace;color:#9aa3bb;text-align:left;background:#f7f8fc;border-radius:8px;padding:6px 8px;max-height:110px;overflow:auto;white-space:pre-wrap;margin:10px 0 0}
+.diag:empty{display:none}
