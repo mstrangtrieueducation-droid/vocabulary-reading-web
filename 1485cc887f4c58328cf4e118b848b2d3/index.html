@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Quản trị Nền tảng IELTS · Ms. Trang Trieu Education</title>
+<style>
+:root{--navy:#0b123f;--navy2:#111c52;--gold:#ffcf1f;--paper:#f6f7fb;--ink:#17213b;--muted:#62708c;--line:#dfe4ef;--soft:#eef2fb;--good:#167a4a;--goodbg:#e6f6ee;--bad:#b9302f;--badbg:#fdecec;--warn:#8a6200;--warnbg:#fff6d6}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Arial,"Segoe UI",sans-serif}
+button,input,select,textarea{font:inherit}
+header{background:var(--navy);color:#fff;display:flex;align-items:center;gap:14px;padding:10px 18px}
+header img{width:170px;height:66px;object-fit:cover;object-position:center 51%}
+header h1{font-size:19px;margin:0;flex:1}
+header button{background:transparent;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:10px;padding:6px 12px;cursor:pointer}
+main{max-width:1180px;margin:0 auto;padding:18px 14px 60px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 10px 28px rgba(11,18,63,.06);margin-bottom:16px}
+h2{font-size:18px;margin:0 0 10px;color:var(--navy)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:16px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.stat b{display:block;font-size:26px;color:var(--navy)}.stat span{color:var(--muted);font-size:13px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.row label{display:flex;flex-direction:column;font-size:13px;color:var(--muted);gap:4px;flex:1;min-width:160px}
+input,select,textarea{border:1.5px solid #c8d1ea;border-radius:10px;padding:9px 11px;color:var(--ink);background:#fff}
+.btn{background:var(--navy);color:#fff;border:0;border-radius:10px;padding:10px 16px;font-weight:700;cursor:pointer;white-space:nowrap}
+.btn.ghost{background:#fff;color:var(--navy);border:1px solid #b9c4e6}
+.btn.gold{background:var(--gold);color:var(--navy)}
+.btn.red{background:#fff;color:var(--bad);border:1px solid #efb7b6}
+.btn.sm{padding:6px 10px;font-size:13.5px}
+.btn:disabled{opacity:.6;cursor:wait}
+.newres{margin-top:12px;background:var(--goodbg);border-radius:12px;padding:12px 14px}
+.newres code{display:block;word-break:break-all;background:#fff;border-radius:8px;padding:8px 10px;margin:6px 0}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:12.5px;color:var(--muted);font-weight:700;padding:8px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr.click{cursor:pointer}tr.click:hover td{background:#f7f9ff}
+.name b{display:block}.name small{color:var(--muted)}
+.chip{display:inline-block;border-radius:99px;padding:2px 10px;font-size:12.5px;font-weight:700;white-space:nowrap}
+.c-new{background:var(--soft);color:var(--navy)}.c-run{background:#e7efff;color:#2446a8}.c-done{background:var(--goodbg);color:var(--good)}.c-exp{background:var(--badbg);color:var(--bad)}
+.c-late{background:var(--warnbg);color:var(--warn)}
+.bar{height:8px;background:var(--soft);border-radius:99px;overflow:hidden;min-width:90px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--navy2),#3a55c9)}
+.muted{color:var(--muted);font-size:13px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.tools input{flex:1;min-width:200px}
+#modal{position:fixed;inset:0;background:rgba(11,18,63,.45);display:none;align-items:flex-start;justify-content:center;padding:30px 12px;overflow:auto;z-index:10}
+#modal.on{display:flex}
+#modal .card{width:min(980px,100%);margin:0}
+.grid{overflow:auto}
+.grid table td,.grid table th{text-align:center;font-size:13.5px}
+.grid table td:first-child,.grid table th:first-child{text-align:left}
+.ok{color:var(--good);font-weight:700}.no{color:#b8c0d6}.lo{color:var(--bad);font-weight:700}
+.log{max-height:300px;overflow:auto;font-size:13.5px}
+.log div{padding:6px 0;border-bottom:1px dashed var(--line)}
+.weak{background:var(--badbg);border-radius:10px;padding:8px 12px;font-size:14px}
+#toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--navy);color:#fff;padding:9px 18px;border-radius:99px;opacity:0;transition:.25s;pointer-events:none;z-index:20}
+#toast.on{opacity:1}
+.login{max-width:420px;margin:60px auto}
+@media(max-width:760px){.hide-sm{display:none}header img{width:120px;height:48px}header h1{font-size:16px}}
+</style>
+</head>
+<body>
+<header><img src="../ms-trang-trieu-education-logo.64e2382ed4df.png" alt=""><h1>Quản trị · Nền tảng IELTS</h1><button id="logout" hidden>Đăng xuất</button></header>
+<main id="app"></main>
+<div id="modal"><div class="card" id="mbody"></div></div>
+<div id="toast"></div>
+<script src="../dcaa7ee41f2f36d022bf75a486019b75/config.js?v=4"></script>
+<script>
+(() => {
+"use strict";
+const API = window.NT_CONFIG.API_URL;
+const STUDENT_BASE = new URL("../dcaa7ee41f2f36d022bf75a486019b75/", location.href).href;
+const DAYS = 30, UNITS = 14, PASS = 80;
+const TITLES = ["Fun & Games","Learning & Doing","Coming & Going","Friends & Relations","Buying & Selling","Inventions & Discoveries","Sending & Receiving","People & Daily Life","Working & Earning","Body & Lifestyle","Creating & Building","Nature & the Universe","Laughing & Crying","Problems & Solutions"];
+const KEY = "nt-admin-key";
+let key = ""; try { key = localStorage.getItem(KEY) || ""; } catch (e) {}
+let list = [];
+const app = document.getElementById("app");
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const DAY = 864e5;
+const fmt = t => { if (!t) return "—"; const d = new Date(t); return d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear(); };
+const fmtT = t => { if (!t) return "—"; const d = new Date(t); return fmt(t) + " " + String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0"); };
+const clean = s => { ["progress", "done"].forEach(k => { if (s[k] != null) s[k] = String(s[k]).replace(/^'/, ""); }); if (typeof s.progress === "string" && /^0?\.\d+$/.test(s.progress)) s.progress = Math.round(parseFloat(s.progress) * 100) + "%"; return s; };
+const link = code => STUDENT_BASE + "?hs=" + code;
+function toast(m) { const t = document.getElementById("toast"); t.textContent = m; t.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("on"), 2400); }
+function copy(text, msg) { (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(() => toast(msg || "Đã sao chép"), () => { prompt("Sao chép:", text); }); }
+
+function get(params) { return fetch(API + "?" + new URLSearchParams(Object.assign({ key }, params))).then(r => r.json()); }
+function post(body) { return fetch(API, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(Object.assign({ key }, body)) }).then(r => r.json()); }
+
+function login(msg) {
+  document.getElementById("logout").hidden = true;
+  app.innerHTML = '<div class="card login"><h2>Đăng nhập quản trị</h2><p class="muted">Nhập mã quản trị cô đã được gửi. Máy này sẽ nhớ mã cho lần sau.</p>' + (msg ? '<p class="lo">' + esc(msg) + "</p>" : "") + '<form id="lf" class="row"><label>Mã quản trị<input id="lk" type="password" autocomplete="current-password" required></label><button class="btn">Vào</button></form></div>';
+  document.getElementById("lf").onsubmit = ev => { ev.preventDefault(); key = document.getElementById("lk").value.trim(); load(); };
+}
+function pace(s) {
+  if (!s.start) return null;
+  const st = new Date(s.start); st.setHours(0, 0, 0, 0);
+  const t = new Date(); t.setHours(0, 0, 0, 0);
+  const d = Math.floor((t - st) / DAY) + 1;
+  const target = Math.min(UNITS, Math.ceil(d * UNITS / (DAYS - 2)));
+  const done = parseInt(s.done) || 0;
+  return { d, target, done, behind: Math.max(0, target - 1 - done) };
+}
+function chip(s) {
+  const p = pace(s);
+  if (s.status === "Hoàn thành") return '<span class="chip c-done">Hoàn thành</span>';
+  if (s.status === "Hết hạn") return '<span class="chip c-exp">Hết hạn</span>';
+  if (!s.start) return '<span class="chip c-new">Chưa bắt đầu</span>';
+  if (p && p.behind > 0) return '<span class="chip c-late">Chậm ' + p.behind + " bài</span>";
+  return '<span class="chip c-run">Đúng tiến độ</span>';
+}
+function daysLeft(s) { if (!s.deadline) return "30 ngày (chưa mở link)"; const n = Math.ceil((new Date(s.deadline) - Date.now()) / DAY); return n >= 0 ? "còn " + n + " ngày" : "quá " + (-n) + " ngày"; }
+
+function load() {
+  app.innerHTML = '<p class="muted">Đang tải danh sách học sinh…</p>';
+  get({ action: "admin" }).then(j => {
+    if (!j.ok) { if (j.error === "key") { try { localStorage.removeItem(KEY); } catch (e) {} return login(key ? "Mã quản trị không đúng." : ""); } throw new Error(j.error); }
+    try { localStorage.setItem(KEY, key); } catch (e) {}
+    document.getElementById("logout").hidden = false;
+    list = j.students.map(clean); render();
+  }).catch(() => { app.innerHTML = '<div class="card"><p class="lo">Chưa kết nối được máy chủ. Kiểm tra mạng rồi tải lại trang.</p><button class="btn" onclick="location.reload()">Tải lại</button></div>'; });
+}
+
+function render() {
+  const n = s => list.filter(s).length;
+  const late = n(s => s.status !== "Hoàn thành" && s.status !== "Hết hạn" && s.start && pace(s).behind > 0);
+  app.innerHTML =
+    '<div class="stats"><div class="stat"><b>' + list.length + '</b><span>Học sinh</span></div><div class="stat"><b>' + n(s => !s.start) + '</b><span>Chưa bắt đầu</span></div><div class="stat"><b>' + n(s => s.start && s.status !== "Hoàn thành" && s.status !== "Hết hạn") + '</b><span>Đang học</span></div><div class="stat"><b style="color:var(--warn)">' + late + '</b><span>Đang chậm tiến độ</span></div><div class="stat"><b style="color:var(--good)">' + n(s => s.status === "Hoàn thành") + '</b><span>Hoàn thành</span></div><div class="stat"><b style="color:var(--bad)">' + n(s => s.status === "Hết hạn") + '</b><span>Hết hạn</span></div></div>' +
+    '<div class="card"><h2>Thêm học sinh mới</h2><form id="nf" class="row"><label>Họ và tên<input id="nn" required placeholder="VD: Nguyễn Minh Anh"></label><label>Lớp<input id="nc" placeholder="VD: IELTS 52"></label><label>Ghi chú<input id="no" placeholder="(không bắt buộc)"></label><button class="btn gold" id="nb">Tạo link</button></form><div id="nres"></div><p class="muted">30 ngày bắt đầu tính từ lúc học sinh mở link lần đầu.</p></div>' +
+    '<div class="card"><div class="tools"><input id="q" placeholder="Tìm tên, lớp…"><select id="f"><option value="">Tất cả</option><option value="new">Chưa bắt đầu</option><option value="run">Đang học</option><option value="late">Đang chậm</option><option value="done">Hoàn thành</option><option value="exp">Hết hạn</option></select><button class="btn ghost" id="rl">↻ Tải lại</button></div><div style="overflow:auto"><table><thead><tr><th>Học sinh</th><th>Trạng thái</th><th>Tiến độ</th><th class="hide-sm">Ngày học</th><th class="hide-sm">Từ vựng</th><th class="hide-sm">Ngữ pháp</th><th class="hide-sm">Phát âm</th><th class="hide-sm">Học gần nhất</th><th></th></tr></thead><tbody id="tb"></tbody></table></div></div>';
+  document.getElementById("nf").onsubmit = create;
+  document.getElementById("q").oninput = rows; document.getElementById("f").onchange = rows;
+  document.getElementById("rl").onclick = load;
+  rows();
+}
+function rows() {
+  const q = (document.getElementById("q").value || "").toLowerCase(), f = document.getElementById("f").value;
+  const tb = document.getElementById("tb");
+  const sorted = list.slice().sort((a, b) => new Date(b.last || b.created || 0) - new Date(a.last || a.created || 0));
+  const out = sorted.filter(s => {
+    if (q && !(s.name + " " + (s.cls || "") + " " + (s.note || "")).toLowerCase().includes(q)) return false;
+    const p = pace(s);
+    if (f === "new") return !s.start;
+    if (f === "run") return s.start && s.status !== "Hoàn thành" && s.status !== "Hết hạn";
+    if (f === "late") return s.start && s.status !== "Hoàn thành" && s.status !== "Hết hạn" && p.behind > 0;
+    if (f === "done") return s.status === "Hoàn thành";
+    if (f === "exp") return s.status === "Hết hạn";
+    return true;
+  });
+  tb.innerHTML = out.length ? out.map(s => {
+    const p = pace(s), pct = parseInt(s.progress) || 0;
+    return '<tr class="click" data-c="' + esc(s.code) + '"><td class="name"><b>' + esc(s.name) + "</b><small>" + esc(s.cls || "") + (s.note ? " · " + esc(s.note) : "") + "</small></td><td>" + chip(s) + '</td><td><div class="bar"><i style="width:' + pct + '%"></i></div><small class="muted">' + (parseInt(s.done) || 0) + "/14 bài · " + pct + "%</small></td>" +
+      '<td class="hide-sm">' + (p ? "Ngày " + Math.min(p.d, DAYS) + "/30<br><small class=muted>" + daysLeft(s) + "</small>" : '<small class="muted">—</small>') + '</td><td class="hide-sm">' + (s.vocab !== null && s.vocab !== "" ? s.vocab + "%" : "—") + '</td><td class="hide-sm">' + (s.grammar !== null && s.grammar !== "" ? s.grammar + "%" : "—") + '</td><td class="hide-sm">' + (s.speak !== null && s.speak !== "" ? s.speak + "%" : "—") + '</td><td class="hide-sm"><small>' + fmtT(s.last) + '</small></td><td><button class="btn ghost sm" data-copy="' + esc(s.code) + '">Copy link</button></td></tr>';
+  }).join("") : '<tr><td colspan="9" class="muted">Chưa có học sinh nào' + (q || f ? " phù hợp bộ lọc" : "") + ".</td></tr>";
+  tb.querySelectorAll("[data-copy]").forEach(b => b.onclick = ev => { ev.stopPropagation(); copy(link(b.dataset.copy), "Đã sao chép link"); });
+  tb.querySelectorAll("tr.click").forEach(tr => tr.onclick = () => detail(tr.dataset.c));
+}
+function message(s) { return "Chào " + s.name + "! Đây là link học chương trình Nền tảng IELTS (Vocab B1 + Ngữ pháp) của em: " + link(s.code) + " . Em có 30 ngày kể từ lúc mở link lần đầu để hoàn thành 14 bài và bài kiểm tra cuối khoá. Nên mở bằng Chrome, đeo tai nghe có micro để luyện phát âm. — Cô Trang"; }
+function create(ev) {
+  ev.preventDefault();
+  const b = document.getElementById("nb"); b.disabled = true; b.textContent = "Đang tạo…";
+  post({ action: "create", name: document.getElementById("nn").value, cls: document.getElementById("nc").value, note: document.getElementById("no").value }).then(j => {
+    if (!j.ok) throw new Error(j.error);
+    list.push(clean(j.student)); render();
+    const s = j.student;
+    document.getElementById("nres").innerHTML = '<div class="newres"><b>Đã tạo link cho ' + esc(s.name) + ':</b><code>' + esc(link(s.code)) + '</code><div class="row"><button class="btn sm" id="c1">Copy link</button><button class="btn ghost sm" id="c2">Copy tin nhắn gửi học sinh</button></div></div>';
+    document.getElementById("c1").onclick = () => copy(link(s.code), "Đã sao chép link");
+    document.getElementById("c2").onclick = () => copy(message(s), "Đã sao chép tin nhắn");
+  }).catch(() => { toast("Chưa tạo được, cô thử lại nhé."); b.disabled = false; b.textContent = "Tạo link"; });
+}
+
+function closeModal() { document.getElementById("modal").classList.remove("on"); }
+document.getElementById("modal").onclick = ev => { if (ev.target.id === "modal") closeModal(); };
+document.getElementById("logout").onclick = () => { try { localStorage.removeItem(KEY); } catch (e) {} key = ""; login(); };
+
+function detail(code) {
+  const m = document.getElementById("modal"), mb = document.getElementById("mbody");
+  m.classList.add("on"); mb.innerHTML = '<p class="muted">Đang tải chi tiết…</p>';
+  get({ action: "detail", code }).then(j => {
+    if (!j.ok) throw new Error(j.error);
+    const s = clean(j.student), st = j.state || { units: {} }, p = pace(s);
+    const cell = (v, pass) => v == null ? '<span class="no">—</span>' : v === true ? '<span class="ok">✓</span>' : '<span class="' + (pass && v < PASS ? "lo" : "ok") + '">' + v + "%</span>";
+    let grid = "";
+    for (let i = 1; i <= UNITS; i++) {
+      const u = (st.units || {})[i] || {};
+      grid += "<tr><td>" + i + ". " + esc(TITLES[i - 1]) + "</td><td>" + cell(u.learn ? true : null) + "</td><td>" + (u.speak ? (u.speak.score == null ? '<span class="muted">không chấm</span>' : cell(u.speak.score)) : cell(null)) + "</td><td>" + cell(u.quiz ? u.quiz.best : null, true) + (u.quiz ? ' <small class="muted">(' + u.quiz.tries + " lần)</small>" : "") + "</td><td>" + cell(u.gread ? true : null) + "</td><td>" + cell(u.gex ? u.gex.best : null, true) + (u.gex ? ' <small class="muted">(' + u.gex.tries + " lần)</small>" : "") + "</td></tr>";
+    }
+    mb.innerHTML = '<div class="row" style="justify-content:space-between;align-items:flex-start"><div><h2 style="margin:0">' + esc(s.name) + '</h2><p class="muted" style="margin:2px 0">' + esc(s.cls || "") + " · " + chip(s) + "</p></div><button class=\"btn ghost sm\" id=\"x\">Đóng ✕</button></div>" +
+      '<p>Tạo ngày ' + fmt(s.created) + " · Bắt đầu " + fmt(s.start) + " · Hạn chót <b>" + fmt(s.deadline) + "</b> (" + daysLeft(s) + ")" + (p ? " · Ngày " + Math.min(p.d, DAYS) + "/30, cần xong đến Bài " + p.target : "") + "</p>" +
+      '<p>Tiến độ <b>' + esc(s.progress || "0%") + "</b> · " + (parseInt(s.done) || 0) + "/14 bài · Đang học: " + esc(s.current || "—") + " · Kiểm tra cuối: " + (s.final != null && s.final !== "" ? s.final + "%" : "—") + "</p>" +
+      (s.weak ? '<p class="weak"><b>Từ hay sai:</b> ' + esc(s.weak) + "</p>" : "") +
+      '<div class="row" style="margin:10px 0"><button class="btn sm" id="cl">Copy link</button><button class="btn ghost sm" id="cm">Copy tin nhắn</button><button class="btn ghost sm" id="e3">Gia hạn +3 ngày</button><button class="btn ghost sm" id="e7">Gia hạn +7 ngày</button><button class="btn ghost sm" id="ed">Sửa tên / lớp / ghi chú</button><button class="btn red sm" id="del">Xoá học sinh</button></div>' +
+      '<div class="grid"><table><thead><tr><th>Bài</th><th>Học từ</th><th>Phát âm</th><th>Luyện từ</th><th>Ngữ pháp</th><th>BT ngữ pháp</th></tr></thead><tbody>' + grid + "</tbody></table></div>" +
+      '<h2 style="margin-top:16px">Nhật ký học</h2><div class="log">' + (j.log.length ? j.log.map(l => "<div><b>" + fmtT(l.at) + "</b> · " + esc([l.unit, l.part].filter(Boolean).join(" · ")) + (l.score !== "" && l.score != null ? " · <b>" + esc(l.score) + "</b>" : "") + (l.detail ? '<br><span class="muted">' + esc(l.detail) + "</span>" : "") + "</div>").join("") : '<p class="muted">Chưa có hoạt động.</p>') + "</div>";
+    document.getElementById("x").onclick = closeModal;
+    document.getElementById("cl").onclick = () => copy(link(s.code), "Đã sao chép link");
+    document.getElementById("cm").onclick = () => copy(message(s), "Đã sao chép tin nhắn");
+    const ext = days => post({ action: "extend", code, days }).then(r => { if (!r.ok) throw 0; toast("Đã gia hạn đến " + fmt(r.student.deadline)); upd(r.student); detail(code); }).catch(() => toast("Chưa gia hạn được."));
+    document.getElementById("e3").onclick = () => ext(3);
+    document.getElementById("e7").onclick = () => ext(7);
+    document.getElementById("ed").onclick = () => {
+      const name = prompt("Họ và tên:", s.name); if (name === null) return;
+      const cls = prompt("Lớp:", s.cls || ""); if (cls === null) return;
+      const note = prompt("Ghi chú:", s.note || ""); if (note === null) return;
+      post({ action: "edit", code, name, cls, note }).then(r => { if (!r.ok) throw 0; upd(r.student); detail(code); toast("Đã lưu"); }).catch(() => toast("Chưa lưu được."));
+    };
+    document.getElementById("del").onclick = () => {
+      if (!confirm("Xoá hẳn " + s.name + " cùng toàn bộ tiến độ? Link của em sẽ không dùng được nữa. Không hoàn tác được.")) return;
+      post({ action: "delete", code }).then(r => { if (!r.ok) throw 0; list = list.filter(x => x.code !== code); closeModal(); render(); toast("Đã xoá"); }).catch(() => toast("Chưa xoá được."));
+    };
+  }).catch(() => { mb.innerHTML = '<p class="lo">Chưa tải được chi tiết.</p><button class="btn ghost" onclick="document.getElementById(\'modal\').classList.remove(\'on\')">Đóng</button>'; });
+}
+function upd(s) { clean(s); const i = list.findIndex(x => x.code === s.code); if (i >= 0) list[i] = Object.assign(list[i], s); if (document.getElementById("tb")) render(); }
+
+if (key) load(); else login();
+})();
+</script>
+</body>
+</html>
