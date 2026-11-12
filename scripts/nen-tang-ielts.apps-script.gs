@@ -227,4 +227,7 @@ function score(body) {
   return json({ ok: true, result: out, model: model });
 }
 
+// Chạy một lần sau khi thêm chấm AI để Google hỏi quyền gọi ra ngoài (UrlFetchApp) + đọc Script Properties.
+function authorize() { var r = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/', { muteHttpExceptions: true }); Logger.log('fetch ' + r.getResponseCode() + ' · key ' + (geminiKey() ? 'có' : 'CHƯA CÓ')); }
+
 function SS() { return SpreadsheetApp.openById(SHEET_ID); }
