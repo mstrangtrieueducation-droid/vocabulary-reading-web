@@ -442,39 +442,58 @@ function micHtml(label) { return '<button class="mic" id="mic"><span class="mi">
 const canRecord = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
 const AI_SCORING = !!(C.API_URL && C.GRADER === "gemini" && canRecord && !localMode);
 let micStream = null, recorder = null, lastBlob = null;
-function pickMime() { for (const m of ["audio/webm;codecs=opus", "audio/mp4", "audio/webm", "audio/ogg;codecs=opus", "audio/mpeg"]) if (MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported(m)) return m; return ""; }
+function pickMime() {
+  // iPhone: mp4/AAC là định dạng gốc, ổn định nhất; webm trên iPhone hay ra file rỗng ở lần ghi thứ 2.
+  const list = IS_IOS ? ["audio/mp4", "audio/webm;codecs=opus", "audio/webm"] : ["audio/webm;codecs=opus", "audio/mp4", "audio/webm", "audio/ogg;codecs=opus"];
+  for (const m of list) if (MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported(m)) return m; return "";
+}
+// Mỗi lần ghi xin micro MỚI rồi tắt hẳn sau khi ghi xong. Giữ micro cũ thì iPhone tắt tiếng micro
+// sau khi phát giọng mẫu → lần ghi thứ 2 trở đi ra file rỗng/rất ngắn.
+function releaseMic() { if (micStream) { micStream.getTracks().forEach(t => { try { t.stop(); } catch (e) {} }); micStream = null; } }
 async function getMic() {
-  if (micStream && micStream.active) return micStream;
+  releaseMic();
   micStream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, channelCount: 1 } });
+  const t = micStream.getAudioTracks()[0];
+  diag("mic " + (t ? t.readyState + (t.muted ? " MUTED" : "") : "none"));
+  if (t) { t.onmute = () => diag("mic muted"); t.onended = () => diag("mic ended"); }
   return micStream;
 }
 function recordStart() {
   return getMic().then(stream => new Promise((resolve, reject) => {
     const mime = pickMime(), chunks = [];
-    let r; try { r = mime ? new MediaRecorder(stream, { mimeType: mime, audioBitsPerSecond: 32000 }) : new MediaRecorder(stream); } catch (e) { return reject("recorder"); }
+    let r; try { r = mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream); } catch (e) { releaseMic(); return reject("recorder"); }
     recorder = r; r.ondataavailable = ev => { if (ev.data && ev.data.size) chunks.push(ev.data); };
-    r.onstop = () => { recorder = null; const blob = new Blob(chunks, { type: r.mimeType || mime || "audio/webm" }); lastBlob = blob; resolve(blob); };
-    r.onerror = () => { recorder = null; reject("recorder"); };
-    r.start(250); diag("rec start " + (r.mimeType || mime));
+    r.onstop = () => { recorder = null; const blob = new Blob(chunks, { type: r.mimeType || mime || "audio/webm" }); releaseMic(); diag("rec stop " + Math.round(blob.size / 1024) + "KB"); lastBlob = blob; resolve(blob); };
+    r.onerror = () => { recorder = null; releaseMic(); reject("recorder"); };
+    if (IS_IOS) r.start(); else r.start(250);
+    diag("rec start " + (r.mimeType || mime));
   }));
 }
 function recordStop() { if (recorder && recorder.state !== "inactive") { try { recorder.stop(); } catch (e) {} } }
 function blobB64(blob) { return new Promise(res => { const fr = new FileReader(); fr.onload = () => res(String(fr.result).split(",")[1]); fr.readAsDataURL(blob); }); }
 // Gemini chỉ nhận WAV/MP3/AAC/OGG/FLAC; iPhone ghi audio/mp4, Android ghi webm → đổi sang WAV 16 kHz mono trước khi gửi.
-async function toWav(blob) {
-  const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return blob;
+function decodeAt16k(ab) {
+  const OAC = window.OfflineAudioContext || window.webkitOfflineAudioContext;
+  if (OAC) { const ctx = new OAC(1, 16000, 16000); return new Promise((res, rej) => { const p = ctx.decodeAudioData(ab, res, rej); if (p && p.then) p.then(res, rej); }); }
+  const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return Promise.reject(new Error("noaudio"));
   const ctx = new AC();
-  try {
-    const buf = await ctx.decodeAudioData(await blob.arrayBuffer());
-    const ch = buf.getChannelData(0), ratio = buf.sampleRate / 16000, n = Math.floor(ch.length / ratio);
-    const out = new DataView(new ArrayBuffer(44 + n * 2));
-    const w = (o, str) => { for (let i = 0; i < str.length; i++) out.setUint8(o + i, str.charCodeAt(i)); };
-    w(0, "RIFF"); out.setUint32(4, 36 + n * 2, true); w(8, "WAVE"); w(12, "fmt "); out.setUint32(16, 16, true); out.setUint16(20, 1, true); out.setUint16(22, 1, true);
-    out.setUint32(24, 16000, true); out.setUint32(28, 32000, true); out.setUint16(32, 2, true); out.setUint16(34, 16, true); w(36, "data"); out.setUint32(40, n * 2, true);
-    for (let i = 0; i < n; i++) { const s0 = Math.floor(i * ratio), s1 = Math.min(ch.length, Math.floor((i + 1) * ratio)); let acc = 0, c = 0; for (let j = s0; j < s1; j++) { acc += ch[j]; c++; } const v = Math.max(-1, Math.min(1, c ? acc / c : 0)); out.setInt16(44 + i * 2, v < 0 ? v * 0x8000 : v * 0x7fff, true); }
-    return new Blob([out], { type: "audio/wav" });
-  } catch (e) { diag("wav fail " + (e && e.name)); return blob; }
-  finally { try { ctx.close(); } catch (e) {} }
+  return new Promise((res, rej) => { const p = ctx.decodeAudioData(ab, res, rej); if (p && p.then) p.then(res, rej); }).finally(() => { try { ctx.close(); } catch (e) {} });
+}
+async function toWav(blob) {
+  let buf;
+  try { buf = await decodeAt16k(await blob.arrayBuffer()); }
+  catch (e) { diag("wav fail " + (e && e.name)); return blob; }
+  const ch = buf.getChannelData(0), ratio = buf.sampleRate / 16000, n = Math.floor(ch.length / ratio);
+  let peak = 0; for (let i = 0; i < ch.length; i += 4) { const v = Math.abs(ch[i]); if (v > peak) peak = v; }
+  diag("audio " + buf.duration.toFixed(1) + "s peak " + peak.toFixed(2));
+  if (buf.duration < 0.3) { const e = new Error("short"); e.name = "short"; throw e; }
+  if (peak < 0.004) { const e = new Error("silent"); e.name = "silent"; throw e; }
+  const out = new DataView(new ArrayBuffer(44 + n * 2));
+  const w = (o, str) => { for (let i = 0; i < str.length; i++) out.setUint8(o + i, str.charCodeAt(i)); };
+  w(0, "RIFF"); out.setUint32(4, 36 + n * 2, true); w(8, "WAVE"); w(12, "fmt "); out.setUint32(16, 16, true); out.setUint16(20, 1, true); out.setUint16(22, 1, true);
+  out.setUint32(24, 16000, true); out.setUint32(28, 32000, true); out.setUint16(32, 2, true); out.setUint16(34, 16, true); w(36, "data"); out.setUint32(40, n * 2, true);
+  for (let i = 0; i < n; i++) { const s0 = Math.floor(i * ratio), s1 = Math.max(s0 + 1, Math.min(ch.length, Math.floor((i + 1) * ratio))); let acc = 0, c = 0; for (let j = s0; j < s1; j++) { acc += ch[j]; c++; } const v = Math.max(-1, Math.min(1, c ? acc / c : 0)); out.setInt16(44 + i * 2, v < 0 ? v * 0x8000 : v * 0x7fff, true); }
+  return new Blob([out], { type: "audio/wav" });
 }
 async function aiScore(blob, target, ipa, vi) {
   const wav = await toWav(blob);
@@ -489,6 +508,7 @@ function recErrorText(e) {
   if (IN_APP) return "Ứng dụng đang mở link (Zalo/Facebook…) không cho dùng micro. Em mở bằng Chrome hoặc Safari.";
   if (/NotAllowed|Permission|Security/i.test(n)) return IS_IOS ? "Em cho phép micro: bấm chữ “AA” hoặc ⓘ cạnh địa chỉ web → Cài đặt trang web → Micrô → Cho phép, rồi tải lại trang." : "Em cho phép micro: bấm ổ khoá cạnh địa chỉ web → Micro → Cho phép, rồi tải lại trang.";
   if (/NotFound|Devices/i.test(n)) return "Không tìm thấy micro trên máy này.";
+  if (n === "short" || n === "silent") return "Máy chưa thu được tiếng em. Em bấm micro, đợi nút chuyển sang “Đang thu…” rồi mới đọc, đọc to và rõ, xong bấm lại.";
   if (n === "recorder") return "Trình duyệt này chưa ghi âm được. Em dùng Chrome hoặc Safari bản mới.";
   if (/Failed to fetch|NetworkError|TypeError/i.test(n)) return "Mạng yếu, chưa gửi được bài đọc. Em kiểm tra mạng rồi thử lại.";
   if (n === "nokey" || /api:nokey/.test(n)) return "Cô chưa bật chấm AI (chưa có khoá). Em báo cô nhé.";
@@ -537,7 +557,7 @@ function speakAI(i) {
     const mic = document.getElementById("mic"); if (!mic || mic.disabled) return;
     if (recorder) { clearTimeout(autoStop); recordStop(); return; }
     if (busy) return; busy = true;
-    stopAudio(); lastBlob = null;
+    releaseAudio(); lastBlob = null;
     const e = es[k], target = e.speak.join(", "), seq = shellSeq;
     mic.querySelector(".ml").textContent = "Chuẩn bị…";
     recordStart().then(blob => {
@@ -561,7 +581,7 @@ function speakAI(i) {
     autoStop = setTimeout(recordStop, 6000);
   }
   function next() {
-    ++viewId; clearTimeout(autoStop); recordStop();
+    ++viewId; clearTimeout(autoStop); recordStop(); releaseMic();
     const e = es[k]; if (!e) return;
     if (!res[k].skip) { res[k].ok = !res[k].fail && res[k].best >= 60; mark(e.n, res[k].ok); }
     k++; tries = 0; lastBlob = null;
