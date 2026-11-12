@@ -11,6 +11,7 @@ var DAYS = 30;
 // Khoá Gemini để chấm phát âm: cất trong Script Properties (Cài đặt dự án → Thuộc tính tập lệnh), tên GEMINI_KEY. Không ghi vào mã.
 var GEMINI_MODEL = 'gemini-3.5-flash-lite';
 var PASS_SCORE = 75;   // đạt từ 75 điểm
+var PH_MIN = 50;       // Azure: có âm nào dưới 50 điểm là chưa đạt
 function geminiKey() { return PropertiesService.getScriptProperties().getProperty('GEMINI_KEY') || ''; }
 var SHEET_ID = '12ln-A0tPOiinUSRJdkrGxx2bVzv_VcWgItkhi8bmCMc';
 var SHEET = 'Học sinh', LOG = 'Nhật ký', DATA = '_data';
@@ -132,6 +133,7 @@ function doPost(e) {
   var body; try { body = JSON.parse(e.postData.contents); } catch (x) { return json({ ok: false, error: 'bad' }); }
   if (body.action === 'save') return save(body);
   if (body.action === 'score') return score(body);
+  if (body.action === 'aztoken') return azToken(body);
   if (body.key !== ADMIN_KEY) return json({ ok: false, error: 'key' });
   var lock = LockService.getScriptLock(); lock.waitLock(20000);
   try {
@@ -251,8 +253,25 @@ function score(body) {
   return json({ ok: true, result: out, model: model });
 }
 
+// Trình duyệt xin "vé" Azure 10 phút rồi tự gửi ghi âm thẳng sang Azure (nhanh hơn, mã khoá không rời máy chủ).
+function azToken(body) {
+  var code = String(body.hs || '').trim();
+  if (!code) return json({ ok: false, error: 'bad' });
+  var cache = CacheService.getScriptCache(), hit = cache.get('aztok');
+  var props = PropertiesService.getScriptProperties(), key = props.getProperty('AZURE_KEY'), region = props.getProperty('AZURE_REGION') || 'eastus';
+  if (!key) return json({ ok: false, error: 'noazure' });
+  if (!hit) {
+    var sh = SS().getSheetByName(SHEET);
+    if (findIdx(rows(sh), code) < 0) return json({ ok: false, error: 'notfound' });
+    var res = UrlFetchApp.fetch('https://' + region + '.api.cognitive.microsoft.com/sts/v1.0/issueToken', { method: 'post', headers: { 'Ocp-Apim-Subscription-Key': key }, payload: '', muteHttpExceptions: true });
+    if (res.getResponseCode() !== 200) return json({ ok: false, error: 'azure', status: res.getResponseCode() });
+    hit = res.getContentText(); cache.put('aztok', hit, 480);   // vé sống 10 phút, giữ 8 phút
+  }
+  return json({ ok: true, token: hit, region: region });
+}
+
 // ---------- Chấm bằng Azure Pronunciation Assessment (máy chuyên chấm phát âm, điểm từng âm) ----------
-// Cần Script Properties: AZURE_KEY, AZURE_REGION (vd southeastasia).
+// Cần Script Properties: AZURE_KEY, AZURE_REGION (mặc định eastus).
 var PH_TIP = {
   'iː': 'kéo dài "i" như "iii", miệng cười', 'ɪ': '"i" ngắn, gọn, không kéo dài', 'æ': 'mở miệng rộng, giữa "a" và "e"',
   'ʌ': '"ă" ngắn, miệng thả lỏng', 'ɑ': '"a" mở rộng, hạ hàm', 'ɔ': '"o" tròn môi', 'ə': '"ơ" nhẹ, không nhấn', 'ɚ': '"ơ" rồi cong lưỡi "r"',
@@ -261,34 +280,41 @@ var PH_TIP = {
   'ʃ': '"s" nặng, chu môi', 'tʃ': '"ch" bật mạnh, chu môi', 'dʒ': '"giơ" bật, chu môi', 'ʒ': 'như "ʃ" nhưng rung cổ',
   't': 'bật âm /t/ rõ, nhất là cuối từ', 'd': 'bật /d/ rõ, rung cổ', 'k': 'bật /k/ cuối từ', 'g': 'bật /g/ rung cổ', 'p': 'bật /p/ có hơi', 'b': '/b/ rung cổ',
   's': 'xì hơi /s/ rõ, nhất là cuối từ', 'z': '/z/ rung như ong kêu', 'v': 'răng trên chạm môi dưới, rung (không đọc "b")', 'f': 'răng trên chạm môi dưới, thổi hơi',
+  'i': 'kéo dài "i" như "iii", miệng cười', 'u': '"u" dài, chu môi', 'ɛ': '"e" mở, ngắn', 'ɹ': 'cong lưỡi, không chạm vòm', 'ɔɹ': '"o" rồi cong lưỡi "r"', 'ɑɹ': '"a" rồi cong lưỡi "r"',
   'l': 'đầu lưỡi chạm lợi, cuối từ cũng phải có /l/', 'r': 'cong lưỡi, không chạm vòm', 'n': '/n/ rõ cuối từ', 'm': 'mím môi /m/', 'ŋ': '"ng" cuối, không bật "g"', 'h': 'thở ra nhẹ', 'w': 'chu môi rồi mở', 'j': '"i" lướt nhanh'
 };
 function scoreAzure(body, target) {
   var props = PropertiesService.getScriptProperties();
-  var key = props.getProperty('AZURE_KEY'), region = props.getProperty('AZURE_REGION') || 'southeastasia';
+  var key = props.getProperty('AZURE_KEY'), region = props.getProperty('AZURE_REGION') || 'eastus';
   if (!key) return { error: 'noazure' };
   var ref = String(target).replace(/\s*[,~·]\s*/g, '. ').replace(/\b(somebody|something|sb|st)\b/g, '$1');
   var cfg = { ReferenceText: ref, GradingSystem: 'HundredMark', Granularity: 'Phoneme', Dimension: 'Comprehensive', EnableMiscue: true, PhonemeAlphabet: 'IPA', NBestPhonemeCount: 3 };
   var url = 'https://' + region + '.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US&format=detailed';
   var t0 = Date.now();
-  var res = UrlFetchApp.fetch(url, {
-    method: 'post', muteHttpExceptions: true, contentType: 'audio/wav; codecs=audio/pcm; samplerate=16000',
-    headers: { 'Ocp-Apim-Subscription-Key': key, 'Accept': 'application/json', 'Pronunciation-Assessment': Utilities.base64Encode(JSON.stringify(cfg), Utilities.Charset.UTF_8) },
-    payload: Utilities.base64Decode(body.audio)
-  });
-  var st = res.getResponseCode(), txt = res.getContentText();
+  var res, st, txt;
+  for (var tryN = 0; tryN < 3; tryN++) {   // gói Free đôi khi từ chối khi nhiều em chấm cùng lúc → thử lại
+    res = UrlFetchApp.fetch(url, {
+      method: 'post', muteHttpExceptions: true, contentType: 'audio/wav; codecs=audio/pcm; samplerate=16000',
+      headers: { 'Ocp-Apim-Subscription-Key': key, 'Accept': 'application/json', 'Pronunciation-Assessment': Utilities.base64Encode(JSON.stringify(cfg), Utilities.Charset.UTF_8) },
+      payload: Utilities.base64Decode(body.audio)
+    });
+    st = res.getResponseCode(); txt = res.getContentText();
+    if (st !== 401 && st !== 429 && st < 500) break;
+    Utilities.sleep(600 * (tryN + 1));
+  }
   if (st !== 200) return { error: 'azure', status: st, detail: txt.slice(0, 300) };
   var j = JSON.parse(txt);
   if (j.RecognitionStatus !== 'Success' || !j.NBest || !j.NBest.length) return { result: { heard: '', score: 0, pass: false, errors: [], tip: 'Máy không nghe thấy tiếng em. Em đọc to và rõ hơn nhé.', ms: Date.now() - t0 } };
   var nb = j.NBest[0], pa = nb.PronunciationAssessment || nb;
   var acc = Number(pa.AccuracyScore) || 0, comp = Number(pa.CompletenessScore), pron = Number(pa.PronScore) || acc;
-  var words = nb.Words || [], errs = [], seen = {};
+  var words = nb.Words || [], errs = [], seen = {}, pmin = 100;
   words.forEach(function (w) {
     var wa = w.PronunciationAssessment || w, et = wa.ErrorType || 'None';
     if (et === 'Omission') { errs.push({ sound: 'thiếu từ "' + w.Word + '"', fix: 'Em đọc đủ cả từ "' + w.Word + '".', s: 0 }); return; }
     if (et === 'Insertion') return;
     (w.Phonemes || []).forEach(function (ph) {
       var sc = Number((ph.PronunciationAssessment || ph).AccuracyScore) || 0, sym = ph.Phoneme;
+      if (sc < pmin) pmin = sc;
       if (sc < 60 && !seen[sym]) {
         seen[sym] = 1;
         var nbp = ((ph.PronunciationAssessment || ph).NBestPhonemes || [])[0], heardAs = nbp && nbp.Phoneme && nbp.Phoneme !== sym ? ' (máy nghe như /' + nbp.Phoneme + '/)' : '';
@@ -298,10 +324,11 @@ function scoreAzure(body, target) {
   });
   errs.sort(function (a, b) { return a.s - b.s; });
   var score = Math.round(isNaN(comp) ? pron : Math.min(pron, comp));
+  if (pmin < PH_MIN) score = Math.min(score, 65);   // có 1 âm hỏng hẳn (vd mất âm cuối) thì chưa đạt dù điểm chung cao
   var pass = score >= PASS_SCORE;
   var tip = pass ? (score >= 90 ? 'Rất chuẩn! Tiếp tục nhé.' : 'Đạt rồi, sửa thêm âm được nhắc cho chuẩn hơn.') : (errs.length ? 'Em sửa âm được nhắc rồi đọc lại nhé.' : 'Em đọc rõ và đủ từng âm rồi thử lại nhé.');
   return { result: { heard: nb.Display || nb.Lexical || '', score: score, pass: pass, errors: errs.slice(0, 3).map(function (e) { return { sound: e.sound, fix: e.fix }; }), tip: tip,
-    detail: { acc: acc, comp: comp, pron: pron, flu: pa.FluencyScore }, ms: Date.now() - t0, engine: 'azure' } };
+    detail: { acc: acc, comp: comp, pron: pron, flu: pa.FluencyScore, ph: words.map(function (w) { return (w.Phonemes || []).map(function (ph) { return ph.Phoneme + ':' + Math.round(Number((ph.PronunciationAssessment || ph).AccuracyScore) || 0); }).join(' '); }).join(' | ') }, ms: Date.now() - t0, engine: 'azure' } };
 }
 
 // Chạy một lần sau khi thêm chấm AI để Google hỏi quyền gọi ra ngoài (UrlFetchApp) + đọc Script Properties.
