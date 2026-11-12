@@ -148,15 +148,19 @@ function releaseAudio() {
 const DIAG = [];
 function diag(x) { DIAG.push(new Date().toISOString().slice(11, 19) + " " + x); if (DIAG.length > 12) DIAG.shift(); const d = document.getElementById("diag"); if (d) d.textContent = DIAG.join("\n"); }
 function liveText(t) { const l = document.getElementById("live"); if (l) l.textContent = t ? "Máy nghe: “" + t + "”" : ""; }
+// iPhone: không được gọi abort(); phải đợi lần nghe trước "end" hẳn rồi mới start lần sau, nếu không sẽ báo "aborted".
+let recEnded = Promise.resolve();
 function listenOnce(test) {
   return new Promise((resolve, reject) => {
     const r = new SR(); activeRec = r; r.lang = "en-US"; r.interimResults = true; r.maxAlternatives = 5; r.continuous = false;
-    let done = false, out = [], conf = null, quiet = null;
+    let done = false, out = [], conf = null, quiet = null, endRes;
+    recEnded = new Promise(res => { endRes = res; setTimeout(res, 2500); });
     const finish = () => { done = true; clearTimeout(t); clearTimeout(quiet); if (activeRec === r) activeRec = null; };
-    const settle = () => { if (done) return; finish(); try { r.abort(); } catch (e) {} if (out.length) { out.conf = conf; resolve(out); } else reject("no-speech"); };
-    const t = setTimeout(() => { try { r.stop(); } catch (e) {} setTimeout(settle, 900); }, 8000);
-    r.onstart = () => diag("start"); r.onaudiostart = () => diag("audiostart"); r.onspeechstart = () => diag("speechstart"); r.onspeechend = () => diag("speechend"); r.onaudioend = () => diag("audioend");
-    r.onaudiostart = () => { const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } };
+    const stopSoft = () => { try { r.stop(); } catch (e) {} };
+    const settle = () => { if (done) return; finish(); stopSoft(); if (out.length) { out.conf = conf; resolve(out); } else reject("no-speech"); };
+    const t = setTimeout(() => { stopSoft(); setTimeout(settle, 1200); }, 8000);
+    r.onstart = () => diag("start"); r.onspeechstart = () => diag("speechstart"); r.onspeechend = () => diag("speechend"); r.onaudioend = () => diag("audioend");
+    r.onaudiostart = () => { diag("audiostart"); const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } };
     r.onresult = ev => {
       const res = Array.from(ev.results);
       const full = res.map(x => x[0].transcript).join(" ").trim();
@@ -166,19 +170,20 @@ function listenOnce(test) {
       out = alts.filter(Boolean).concat(out.filter(x => !alts.includes(x)));
       diag("result " + (last && last.isFinal ? "final" : "interim") + ": " + full); liveText(full);
       if (test && test(out)) { if (last && last.isFinal && last[0].confidence > 0) conf = last[0].confidence; return settle(); }
-      clearTimeout(quiet); quiet = setTimeout(() => { try { r.stop(); } catch (e) {} setTimeout(settle, 900); }, 1400);
+      if (last && last.isFinal) return settle();
+      clearTimeout(quiet); quiet = setTimeout(() => { stopSoft(); setTimeout(settle, 1200); }, 1500);
     };
     r.onerror = ev => { diag("error " + ev.error); if (done) return; if (out.length) return settle(); finish(); reject(ev.error || "error"); };
-    r.onend = () => { diag("end"); if (done) return; settle(); };
+    r.onend = () => { diag("end"); endRes(); if (done) return; settle(); };
     r.onnomatch = () => {};
-    try { r.start(); const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } } catch (e) { finish(); reject("busy"); }
+    try { r.start(); const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } } catch (e) { finish(); endRes(); reject("busy"); }
   });
 }
-// Gọi ngay trong lúc bấm (iPhone cần), nếu máy báo "aborted"/"busy" thì tự thử lại tối đa 2 lần.
+// Bấm là bật micro ngay (iPhone cần). Nếu máy báo "aborted"/"busy" thì đợi lần trước kết thúc hẳn rồi thử lại, tối đa 3 lần.
 function listen(test) {
   releaseAudio();
-  const attempt = n => listenOnce(test).catch(err => {
-    if ((err === "aborted" || err === "busy") && n < 2 && !userStopped) return new Promise(res => setTimeout(res, 450)).then(() => attempt(n + 1));
+  const attempt = n => (n ? recEnded.then(() => new Promise(res => setTimeout(res, 350))) : Promise.resolve()).then(() => listenOnce(test)).catch(err => {
+    if ((err === "aborted" || err === "busy") && n < 3 && !userStopped) return attempt(n + 1);
     throw err;
   });
   userStopped = false;
@@ -277,7 +282,7 @@ function shell(inner, cls) {
   window.scrollTo(0, 0);
 }
 let activeRec = null;
-function stopListening() { if (activeRec) { userStopped = true; const r = activeRec; activeRec = null; try { r.abort(); } catch (e) {} } }
+function stopListening() { if (activeRec) { userStopped = true; const r = activeRec; activeRec = null; try { r.stop(); } catch (e) {} } }
 function go(where) {
   if (isLocked()) return lockScreen();
   const [v, a] = where.split(":");
