@@ -158,9 +158,12 @@ function listenOnce(test) {
     const finish = () => { done = true; clearTimeout(t); clearTimeout(quiet); if (activeRec === r) activeRec = null; };
     const stopSoft = () => { try { r.stop(); } catch (e) {} };
     const settle = () => { if (done) return; finish(); stopSoft(); if (out.length) { out.conf = conf; resolve(out); } else reject("no-speech"); };
-    const t = setTimeout(() => { stopSoft(); setTimeout(settle, 1200); }, 8000);
+    // iPhone chỉ trả kết quả sau khi stop(), nên tự dừng sớm hơn; bấm lại micro khi đọc xong cũng dừng ngay.
+    const t = setTimeout(() => { stopSoft(); setTimeout(settle, 1500); }, IS_IOS ? 4500 : 8000);
+    r.stopNow = () => { if (done) return; diag("tap-stop"); stopSoft(); setTimeout(settle, 1500); };
     r.onstart = () => diag("start"); r.onspeechstart = () => diag("speechstart"); r.onspeechend = () => diag("speechend"); r.onaudioend = () => diag("audioend");
-    r.onaudiostart = () => { diag("audiostart"); const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } };
+    const liveMic = () => { if (done || activeRec !== r) return; const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc xong bấm lại"; } };
+    r.onaudiostart = () => { diag("audiostart"); liveMic(); };
     r.onresult = ev => {
       const res = Array.from(ev.results);
       const full = res.map(x => x[0].transcript).join(" ").trim();
@@ -176,7 +179,7 @@ function listenOnce(test) {
     r.onerror = ev => { diag("error " + ev.error); if (done) return; if (out.length) return settle(); finish(); reject(ev.error || "error"); };
     r.onend = () => { diag("end"); endRes(); if (done) return; settle(); };
     r.onnomatch = () => {};
-    try { r.start(); const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } } catch (e) { finish(); endRes(); reject("busy"); }
+    try { r.start(); liveMic(); } catch (e) { finish(); endRes(); reject("busy"); }
   });
 }
 // Bấm là bật micro ngay (iPhone cần). Nếu máy báo "aborted"/"busy" thì đợi lần trước kết thúc hẳn rồi thử lại, tối đa 3 lần.
@@ -464,7 +467,9 @@ function speak(i) {
     onKeys(ev => { if (ev.key === " ") { ev.preventDefault(); doListen(); } else if (ev.key === "Enter" && nx) nx.click(); });
   }
   function doListen() {
-    const btn = document.getElementById("mic"); if (!btn || btn.disabled) return; btn.disabled = true; btn.querySelector(".ml").textContent = "Chuẩn bị…";
+    const btn = document.getElementById("mic"); if (!btn) return;
+    if (btn.classList.contains("live")) { if (activeRec && activeRec.stopNow) activeRec.stopNow(); btn.querySelector(".ml").textContent = "Đang chấm…"; btn.classList.remove("live"); return; }
+    btn.querySelector(".ml").textContent = "Chuẩn bị…";
     const e = es[k], target = e.speak[part], seq = shellSeq;
     listen(alts => matches(target, alts)).then(alts => {
       if (seq !== shellSeq) return;
@@ -551,7 +556,9 @@ function runQuiz(opt, qs, onEnd) {
     }
     if (q.kind === "speak") document.getElementById("mic").onclick = () => {
       if (answered) return;
-      const m = document.getElementById("mic"); m.disabled = true; m.querySelector(".ml").textContent = "Chuẩn bị…";
+      const m = document.getElementById("mic");
+      if (m.classList.contains("live")) { if (activeRec && activeRec.stopNow) activeRec.stopNow(); m.querySelector(".ml").textContent = "Đang chấm…"; m.classList.remove("live"); return; }
+      m.querySelector(".ml").textContent = "Chuẩn bị…";
       const seq = shellSeq;
       listen(alts => q.targets.some(t => matches(t, alts))).then(alts => {
         if (seq !== shellSeq) return;
