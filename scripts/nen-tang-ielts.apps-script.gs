@@ -8,6 +8,9 @@
 var ADMIN_KEY = 'ĐẶT_MÃ_QUẢN_TRỊ_TRONG_APPS_SCRIPT';
 var BASE_URL = 'https://mstrangtrieueducation-droid.github.io/vocabulary-reading-web/dcaa7ee41f2f36d022bf75a486019b75/';
 var DAYS = 30;
+// Khoá Gemini để chấm phát âm: cất trong Script Properties (Cài đặt dự án → Thuộc tính tập lệnh), tên GEMINI_KEY. Không ghi vào mã.
+var GEMINI_MODEL = 'gemini-2.5-flash';
+function geminiKey() { return PropertiesService.getScriptProperties().getProperty('GEMINI_KEY') || ''; }
 var SHEET_ID = '12ln-A0tPOiinUSRJdkrGxx2bVzv_VcWgItkhi8bmCMc';
 var SHEET = 'Học sinh', LOG = 'Nhật ký', DATA = '_data';
 var HEAD = ['Mã', 'Họ và tên', 'Lớp', 'Link học', 'Ngày tạo', 'Bắt đầu', 'Hạn chót', 'Trạng thái', 'Tiến độ', 'Đang học', 'Số bài xong', 'Điểm từ vựng TB', 'Điểm ngữ pháp TB', 'Phát âm TB', 'Kiểm tra cuối', 'Từ hay sai', 'Hoạt động gần nhất', 'Ghi chú'];
@@ -127,6 +130,7 @@ function adminGet(p) {
 function doPost(e) {
   var body; try { body = JSON.parse(e.postData.contents); } catch (x) { return json({ ok: false, error: 'bad' }); }
   if (body.action === 'save') return save(body);
+  if (body.action === 'score') return score(body);
   if (body.key !== ADMIN_KEY) return json({ ok: false, error: 'key' });
   var lock = LockService.getScriptLock(); lock.waitLock(20000);
   try {
@@ -186,6 +190,41 @@ function save(body) {
     if (body.events && body.events.length) appendLog(code, r[1], body.events);
     return json({ ok: true });
   } finally { lock.releaseLock(); }
+}
+
+/* ---------------- Chấm phát âm bằng Gemini ---------------- */
+function score(body) {
+  var key = geminiKey();
+  if (!key) return json({ ok: false, error: 'nokey' });
+  var code = String(body.hs || '').trim();
+  if (!code || !body.audio || !body.target) return json({ ok: false, error: 'bad' });
+  var sh = SS().getSheetByName(SHEET);
+  if (findIdx(rows(sh), code) < 0) return json({ ok: false, error: 'notfound' });
+  var target = String(body.target).slice(0, 120), ipa = String(body.ipa || '').slice(0, 120), vi = String(body.vi || '').slice(0, 120);
+  var prompt = 'Bạn là giáo viên phát âm tiếng Anh (giọng Mỹ) cho học sinh Việt Nam trình độ B1. Học sinh được yêu cầu đọc to: "' + target + '"' +
+    (ipa ? ' (phiên âm ' + ipa + ')' : '') + (vi ? ', nghĩa: ' + vi : '') + '.\n' +
+    'Nghe đoạn ghi âm và chấm. Trả về JSON đúng schema, không thêm chữ nào khác:\n' +
+    '{"heard": "<chữ bạn nghe được, tiếng Anh>", "score": <0-100>, "pass": <true/false>, "errors": [{"sound": "<âm hoặc phần sai, ví dụ /iː/ hoặc âm cuối /t/ hoặc trọng âm>", "fix": "<cách sửa ngắn gọn bằng tiếng Việt, tối đa 15 từ>"}], "tip": "<1 câu khen hoặc nhắc bằng tiếng Việt, tối đa 20 từ>"}\n' +
+    'Quy tắc: pass=true khi người nghe bản ngữ hiểu đúng từ này và không sai trọng âm (score >= 70). Nếu ghi âm không có tiếng nói hoặc là từ khác hẳn: score <= 30, pass=false, errors=[], tip nói rõ máy không nghe thấy từ cần đọc. Tối đa 3 errors, ưu tiên lỗi nặng nhất. Không bịa lỗi khi phát âm đã tốt.';
+  var req = {
+    contents: [{ role: 'user', parts: [{ text: prompt }, { inlineData: { mimeType: String(body.mime || 'audio/webm').split(';')[0], data: body.audio } }] }],
+    generationConfig: { temperature: 0.2, responseMimeType: 'application/json', maxOutputTokens: 400 }
+  };
+  var model = body.model && /^gemini-[\w.\-]+$/.test(body.model) ? body.model : GEMINI_MODEL;
+  var res = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent', {
+    method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key }, payload: JSON.stringify(req), muteHttpExceptions: true
+  });
+  var st = res.getResponseCode(), txt = res.getContentText();
+  if (st !== 200) return json({ ok: false, error: 'gemini', status: st, detail: txt.slice(0, 300) });
+  var out;
+  try {
+    var j = JSON.parse(txt), t = j.candidates[0].content.parts.map(function (p) { return p.text || ''; }).join('');
+    out = JSON.parse(t.replace(/^```json|```$/g, '').trim());
+  } catch (e) { return json({ ok: false, error: 'parse', detail: txt.slice(0, 300) }); }
+  out.score = Math.max(0, Math.min(100, Math.round(Number(out.score) || 0)));
+  out.pass = !!out.pass && out.score >= 60;
+  out.errors = (out.errors || []).slice(0, 3);
+  return json({ ok: true, result: out, model: model });
 }
 
 function SS() { return SpreadsheetApp.openById(SHEET_ID); }

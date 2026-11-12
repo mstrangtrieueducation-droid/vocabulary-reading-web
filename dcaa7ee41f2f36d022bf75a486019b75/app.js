@@ -438,7 +438,126 @@ function learn(i, k) {
 
 /* ---------- Bước 2: phát âm ---------- */
 function micHtml(label) { return '<button class="mic" id="mic"><span class="mi">🎙️</span><span class="ml">' + (label || "Bấm để đọc") + "</span></button>"; }
+/* ---------- ghi âm + chấm bằng AI (Gemini qua Apps Script) ---------- */
+const canRecord = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
+const AI_SCORING = !!(C.API_URL && C.GRADER === "gemini" && canRecord && !localMode);
+let micStream = null, recorder = null, lastBlob = null;
+function pickMime() { for (const m of ["audio/webm;codecs=opus", "audio/mp4", "audio/webm", "audio/ogg;codecs=opus", "audio/mpeg"]) if (MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported(m)) return m; return ""; }
+async function getMic() {
+  if (micStream && micStream.active) return micStream;
+  micStream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, channelCount: 1 } });
+  return micStream;
+}
+function recordStart() {
+  return getMic().then(stream => new Promise((resolve, reject) => {
+    const mime = pickMime(), chunks = [];
+    let r; try { r = mime ? new MediaRecorder(stream, { mimeType: mime, audioBitsPerSecond: 32000 }) : new MediaRecorder(stream); } catch (e) { return reject("recorder"); }
+    recorder = r; r.ondataavailable = ev => { if (ev.data && ev.data.size) chunks.push(ev.data); };
+    r.onstop = () => { recorder = null; const blob = new Blob(chunks, { type: r.mimeType || mime || "audio/webm" }); lastBlob = blob; resolve(blob); };
+    r.onerror = () => { recorder = null; reject("recorder"); };
+    r.start(250); diag("rec start " + (r.mimeType || mime));
+  }));
+}
+function recordStop() { if (recorder && recorder.state !== "inactive") { try { recorder.stop(); } catch (e) {} } }
+function blobB64(blob) { return new Promise(res => { const fr = new FileReader(); fr.onload = () => res(String(fr.result).split(",")[1]); fr.readAsDataURL(blob); }); }
+async function aiScore(blob, target, ipa, vi) {
+  const audio = await blobB64(blob);
+  const r = await fetch(C.API_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "score", hs: token, target, ipa, vi, mime: blob.type, audio, model: C.GRADER_MODEL || "" }) });
+  const j = await r.json(); if (!j.ok) throw new Error(j.error || "score");
+  return j.result;
+}
+function recErrorText(e) {
+  const n = e && e.name ? e.name : String(e);
+  if (IN_APP) return "Ứng dụng đang mở link (Zalo/Facebook…) không cho dùng micro. Em mở bằng Chrome hoặc Safari.";
+  if (/NotAllowed|Permission|Security/i.test(n)) return IS_IOS ? "Em cho phép micro: bấm chữ “AA” hoặc ⓘ cạnh địa chỉ web → Cài đặt trang web → Micrô → Cho phép, rồi tải lại trang." : "Em cho phép micro: bấm ổ khoá cạnh địa chỉ web → Micro → Cho phép, rồi tải lại trang.";
+  if (/NotFound|Devices/i.test(n)) return "Không tìm thấy micro trên máy này.";
+  if (n === "recorder") return "Trình duyệt này chưa ghi âm được. Em dùng Chrome hoặc Safari bản mới.";
+  if (/Failed to fetch|NetworkError|TypeError/i.test(n)) return "Mạng yếu, chưa gửi được bài đọc. Em kiểm tra mạng rồi thử lại.";
+  if (n === "nokey") return "Cô chưa bật chấm AI (chưa có khoá). Em báo cô nhé.";
+  return "Chưa chấm được (" + n + "). Em thử lại.";
+}
+
+/* ---------- Bước 2: phát âm ---------- */
 function speak(i) {
+  if (AI_SCORING) return speakAI(i);
+  return speakSR(i);
+}
+function speakAI(i) {
+  const es = V[i - 1].entries;
+  const res = es.map(() => ({ ok: false, best: 0 }));
+  let k = 0, tries = 0, viewId = 0, busy = false, failCount = 0;
+  function view(state) {
+    ++viewId; state = state || {}; busy = false;
+    const e = es[k], target = e.speak.join(", ");
+    const dots = [0, 1, 2].map(t => '<i class="' + (t < tries ? (state.good && t === tries - 1 ? "g" : "b") : "") + '"></i>').join("");
+    let badge = "";
+    if (state.good) badge = '<div class="badge good">' + state.r.score + "% · Chuẩn!</div>";
+    else if (state.bad) badge = '<div class="badge bad">' + state.r.score + "% · Cần đọc lại</div>";
+    else if (state.warn) badge = '<div class="badge warn">Chưa chấm được</div>';
+    else if (state.wait) badge = '<div class="badge wait">⏳ Đang chấm…</div>';
+    let detail = "";
+    if (state.r) {
+      detail = '<div class="aifb">' + (state.r.heard ? '<p class="heard">Máy nghe: “' + esc(state.r.heard) + "”</p>" : "") +
+        (state.r.errors && state.r.errors.length ? '<ul class="errs">' + state.r.errors.map(x => "<li><b>" + esc(x.sound) + "</b> — " + esc(x.fix) + "</li>").join("") + "</ul>" : "") +
+        (state.r.tip ? '<p class="tip">💬 ' + esc(state.r.tip) + "</p>" : "") +
+        (lastBlob ? '<div class="audio center"><button class="btn ghost sm" id="mine">▶ Nghe lại giọng em</button><button class="btn sound sm" data-say="' + esc(target) + '">🔊 Giọng mẫu</button></div>' : "") + "</div>";
+    }
+    shell(lessonHead(i, 1) + '<section class="card lab"><div class="fc-top"><span class="count">Từ ' + (k + 1) + " / " + es.length + '</span><span class="tries">' + dots + "</span></div>" +
+      '<h1 class="term xl">' + esc(e.term) + '</h1><p class="ipa">' + esc(e.ipa) + '</p><p class="muted">' + esc(e.vi) + "</p>" +
+      '<div class="audio center"><button class="btn sound" data-say="' + esc(target) + '">🔊 Nghe mẫu</button><button class="btn ghost" data-say="' + esc(target) + '" data-slow="1">🐢 Chậm</button></div>' +
+      micHtml(state.wait ? "Đang chấm…" : "Bấm, đọc, bấm lại") + badge + (state.msg ? '<p class="hint">' + state.msg + "</p>" : "") + detail +
+      '<div class="nav center">' + (state.warn && failCount >= 2 ? '<button class="btn ghost" id="skipw">Bỏ qua từ này</button>' : "") + (state.good || tries >= 3 ? '<button class="btn primary" id="nx">' + (k + 1 < es.length ? "Tiếp ➔" : "Xem kết quả ➔") + "</button>" : "") + "</div></section>", "lesson");
+    const mic = document.getElementById("mic"); mic.onclick = toggle; if (state.wait) mic.disabled = true;
+    const nx = document.getElementById("nx"); if (nx) nx.onclick = next;
+    const sw = document.getElementById("skipw"); if (sw) sw.onclick = () => { res[k].skip = true; next(); };
+    const mine = document.getElementById("mine"); if (mine && lastBlob) mine.onclick = () => { stopAudio(); const u = URL.createObjectURL(lastBlob); player.src = u; player.playbackRate = 1; player.play().catch(() => {}); };
+    onKeys(ev => { if (ev.key === " ") { ev.preventDefault(); toggle(); } else if (ev.key === "Enter" && nx) nx.click(); });
+  }
+  let autoStop = null;
+  function toggle() {
+    const mic = document.getElementById("mic"); if (!mic || mic.disabled) return;
+    if (recorder) { clearTimeout(autoStop); recordStop(); return; }
+    if (busy) return; busy = true;
+    stopAudio(); lastBlob = null;
+    const e = es[k], target = e.speak.join(", "), seq = shellSeq;
+    mic.querySelector(".ml").textContent = "Chuẩn bị…";
+    recordStart().then(blob => {
+      if (seq !== shellSeq) return;
+      if (blob.size < 1500) { busy = false; view({ warn: 1, msg: "Máy chưa thu được tiếng. Em bấm micro, đọc to rồi bấm lại." }); return; }
+      view({ wait: 1 }); lastBlob = blob;
+      return aiScore(blob, target, e.ipa, e.vi).then(r => {
+        if (seq + 1 !== shellSeq) return;
+        tries++; failCount = 0; res[k].best = Math.max(res[k].best, r.score);
+        if (r.pass) { view({ good: 1, r }); const id = viewId; setTimeout(() => { if (id === viewId) next(); }, 2200); }
+        else if (tries >= 3) { res[k].fail = true; view({ bad: 1, r, msg: "Chưa đạt sau 3 lượt — từ này sẽ vào phần ôn tập." }); }
+        else view({ bad: 1, r });
+      });
+    }).catch(err => {
+      if (seq !== shellSeq && seq + 1 !== shellSeq) return;
+      diag("rec/score error " + (err && err.name || err)); failCount++;
+      view({ warn: 1, msg: esc(recErrorText(err)) });
+    });
+    // tự dừng sau 6 giây nếu em quên bấm lại
+    setTimeout(() => { const m = document.getElementById("mic"); if (m && recorder) { m.classList.add("live"); m.querySelector(".ml").textContent = "Đang thu… bấm lại khi đọc xong"; } }, 150);
+    autoStop = setTimeout(recordStop, 6000);
+  }
+  function next() {
+    ++viewId; clearTimeout(autoStop); recordStop();
+    const e = es[k]; if (!e) return;
+    if (!res[k].skip) { res[k].ok = !res[k].fail && res[k].best >= 60; mark(e.n, res[k].ok); }
+    k++; tries = 0; lastBlob = null;
+    if (k < es.length) return view();
+    const scored = res.filter(r => !r.skip), skipped = es.length - scored.length;
+    const score = scored.length ? Math.round(scored.reduce((a, r) => a + r.best, 0) / scored.length) : null;
+    const weak = es.filter((x, j) => !res[j].skip && !res[j].ok).map(x => x.n);
+    const prev = U(i).speak;
+    U(i).speak = { done: 1, score: score == null ? (prev && prev.score != null ? prev.score : null) : Math.max(score, prev && prev.score || 0), last: score, weak, skipped, ai: 1 };
+    save({ unit: i, part: "Phát âm", score: score == null ? "" : score, detail: (weak.length ? "Chưa đạt: " + weak.map(n => entryOf(n).term).join(", ") : "Đạt tất cả") + (skipped ? " · Không chấm được " + skipped + " từ" : "") + " · chấm AI" });
+    resultCard(i, "Phát âm", score == null ? 0 : score, weak.map(n => entryOf(n).term + " — " + entryOf(n).vi), { noPass: true, retry: () => speak(i), next: "quiz:" + i });
+  }
+  view();
+}
+function speakSR(i) {
   const es = V[i - 1].entries;
   if (!canListen || speakBroken) {
     shell(lessonHead(i, 1) + (IN_APP ? openOutsideHtml() : "") + '<section class="card center narrow"><div class="big-ico">🎙️</div><h2>Máy chưa chấm được phát âm</h2><p>' + (IN_APP ? "Mở link bằng Chrome hoặc Safari rồi vào lại bài này." : IS_IOS ? "iPhone: <b>Cài đặt → Cài đặt chung → Bàn phím → bật Đọc chính tả</b>; <b>Cài đặt → Safari → Micrô → Cho phép</b>. Mở bằng Safari rồi tải lại trang." : "Mở bằng <b>Chrome</b>, cho phép micro và có mạng ổn định.") + '</p><div class="nav center">' + (canListen ? '<button class="btn primary" id="retry">Thử lại</button>' : "") + '<button class="btn ghost" id="skip">Bỏ qua chấm bài này</button></div></section>', "lesson");
