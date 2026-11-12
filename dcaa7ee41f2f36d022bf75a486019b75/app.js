@@ -246,7 +246,7 @@ function unitView(i) {
   let h = '<section class="card"><p class="kicker">BÀI ' + i + " / " + N_UNITS + " · " + esc(V[i - 1].code) + "</p><h1>" + esc(V[i - 1].title) + '</h1><p class="small">Ngữ pháp: ' + esc(G[i - 1].title) + '</p><div class="steps">';
   st.forEach((s, k) => {
     const open = k === 0 || st[k - 1].ok || s.ok;
-    h += '<button class="step ' + (s.ok ? "done" : open ? "open" : "lock") + '" ' + (open ? 'data-go="' + s.k + ":" + i + '"' : "disabled") + '><span class="num">' + (s.ok ? "✓" : k + 1) + '</span><span class="ut"><b>' + s.name + "</b><small>" + esc(s.info) + '</small></span><span class="st">' + (s.score || (open ? "Bắt đầu" : "🔒")) + "</span></button>";
+    h += '<button class="step ' + (s.ok ? "done" : open ? "open" : "lock") + '" ' + (open ? 'data-go="' + s.k + ":" + i + '"' : "disabled") + '><span class="num">' + (s.ok ? "✓" : k + 1) + '</span><span class="ut"><b>' + s.name + "</b><small>" + esc(s.info) + '</small></span><span class="st">' + (s.score || (s.ok ? "Xong" : open ? "Bắt đầu" : "🔒")) + "</span></button>";
   });
   h += "</div>" + (unitDone(i) ? '<p class="pace good">Em đã hoàn thành Bài ' + i + "." + (i < N_UNITS ? ' <button class="link" data-go="unit:' + (i + 1) + '">Sang Bài ' + (i + 1) + " →</button>" : "") + "</p>" : '<p class="small">Làm lần lượt 5 bước. Có thể làm lại bước đã xong để nâng điểm.</p>') + "</section>";
   shell(h, "home");
