@@ -145,24 +145,34 @@ function releaseAudio() {
   try { player.pause(); player.removeAttribute("src"); player.load(); } catch (e) {}
   if (window.speechSynthesis) speechSynthesis.cancel();
 }
-function listenOnce() {
+function listenOnce(test) {
   return new Promise((resolve, reject) => {
-    const r = new SR(); activeRec = r; r.lang = "en-US"; r.interimResults = false; r.maxAlternatives = 6; r.continuous = false;
-    let done = false; const out = [];
-    const finish = () => { done = true; clearTimeout(t); if (activeRec === r) activeRec = null; };
-    const t = setTimeout(() => { try { r.stop(); } catch (e) {} }, 7000);
+    const r = new SR(); activeRec = r; r.lang = "en-US"; r.interimResults = true; r.maxAlternatives = 5; r.continuous = false;
+    let done = false, out = [], conf = null, quiet = null;
+    const finish = () => { done = true; clearTimeout(t); clearTimeout(quiet); if (activeRec === r) activeRec = null; };
+    const settle = () => { if (done) return; finish(); try { r.abort(); } catch (e) {} if (out.length) { out.conf = conf; resolve(out); } else reject("no-speech"); };
+    const t = setTimeout(() => { try { r.stop(); } catch (e) {} setTimeout(settle, 900); }, 8000);
     r.onaudiostart = () => { const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } };
-    r.onresult = ev => { for (const res of ev.results) for (const alt of res) { out.push(alt.transcript); if (out.conf == null && alt.confidence > 0) out.conf = alt.confidence; } };
-    r.onerror = ev => { if (done) return; finish(); reject(ev.error || "error"); };
-    r.onend = () => { if (done) return; finish(); out.length ? resolve(out) : reject("no-speech"); };
+    r.onresult = ev => {
+      const res = Array.from(ev.results);
+      const full = res.map(x => x[0].transcript).join(" ").trim();
+      const alts = [full];
+      const last = res[res.length - 1];
+      if (last) for (const a of Array.from(last)) { const t2 = res.slice(0, -1).map(x => x[0].transcript).concat(a.transcript).join(" ").trim(); if (!alts.includes(t2)) alts.push(t2); if (conf == null && a.confidence > 0 && last.isFinal) conf = a.confidence; }
+      out = alts.filter(Boolean).concat(out.filter(x => !alts.includes(x)));
+      if (test && test(out)) { if (last && last.isFinal && last[0].confidence > 0) conf = last[0].confidence; return settle(); }
+      clearTimeout(quiet); quiet = setTimeout(() => { try { r.stop(); } catch (e) {} setTimeout(settle, 900); }, 1400);
+    };
+    r.onerror = ev => { if (done) return; if (out.length) return settle(); finish(); reject(ev.error || "error"); };
+    r.onend = () => { if (done) return; settle(); };
     r.onnomatch = () => {};
-    try { r.start(); } catch (e) { finish(); reject("busy"); }
+    try { r.start(); const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } } catch (e) { finish(); reject("busy"); }
   });
 }
 // Gọi ngay trong lúc bấm (iPhone cần), nếu máy báo "aborted"/"busy" thì tự thử lại tối đa 2 lần.
-function listen() {
+function listen(test) {
   releaseAudio();
-  const attempt = n => listenOnce().catch(err => {
+  const attempt = n => listenOnce(test).catch(err => {
     if ((err === "aborted" || err === "busy") && n < 2 && !userStopped) return new Promise(res => setTimeout(res, 450)).then(() => attempt(n + 1));
     throw err;
   });
@@ -446,7 +456,7 @@ function speak(i) {
   function doListen() {
     const btn = document.getElementById("mic"); if (!btn || btn.disabled) return; btn.disabled = true; btn.querySelector(".ml").textContent = "Chuẩn bị…";
     const e = es[k], target = e.speak[part], seq = shellSeq;
-    listen().then(alts => {
+    listen(alts => matches(target, alts)).then(alts => {
       if (seq !== shellSeq) return;
       tries++; devFails = 0;
       if (matches(target, alts)) {
@@ -533,7 +543,7 @@ function runQuiz(opt, qs, onEnd) {
       if (answered) return;
       const m = document.getElementById("mic"); m.disabled = true; m.querySelector(".ml").textContent = "Chuẩn bị…";
       const seq = shellSeq;
-      listen().then(alts => {
+      listen(alts => q.targets.some(t => matches(t, alts))).then(alts => {
         if (seq !== shellSeq) return;
         speakTries++;
         if (q.targets.some(t => matches(t, alts))) finish(true, "Máy nghe: “" + esc(alts[0]) + "”");
