@@ -440,7 +440,7 @@ function learn(i, k) {
 function micHtml(label) { return '<button class="mic" id="mic"><span class="mi">🎙️</span><span class="ml">' + (label || "Bấm để đọc") + "</span></button>"; }
 /* ---------- ghi âm + chấm bằng AI (Gemini qua Apps Script) ---------- */
 const canRecord = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
-const AI_SCORING = !!(C.API_URL && C.GRADER === "gemini" && canRecord && !localMode);
+const AI_SCORING = !!(C.API_URL && (C.GRADER === "gemini" || C.GRADER === "azure") && canRecord && !localMode);
 let micStream = null, recorder = null, lastBlob = null;
 function pickMime() {
   // iPhone: mp4/AAC là định dạng gốc, ổn định nhất; webm trên iPhone hay ra file rỗng ở lần ghi thứ 2.
@@ -495,12 +495,76 @@ async function toWav(blob) {
   for (let i = 0; i < n; i++) { const s0 = Math.floor(i * ratio), s1 = Math.max(s0 + 1, Math.min(ch.length, Math.floor((i + 1) * ratio))); let acc = 0, c = 0; for (let j = s0; j < s1; j++) { acc += ch[j]; c++; } const v = Math.max(-1, Math.min(1, c ? acc / c : 0)); out.setInt16(44 + i * 2, v < 0 ? v * 0x8000 : v * 0x7fff, true); }
   return new Blob([out], { type: "audio/wav" });
 }
+/* --- Azure: xin "vé" 10 phút từ Apps Script rồi gửi ghi âm thẳng sang Azure (≈0,5 giây/lượt) --- */
+let azTok = null, azTokAt = 0, azTokP = null;
+function azToken(force) {
+  if (!force && azTok && Date.now() - azTokAt < 7 * 60 * 1000) return Promise.resolve(azTok);
+  if (azTokP && !force) return azTokP;
+  azTokP = fetch(C.API_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "aztoken", hs: token }) })
+    .then(r => r.json()).then(j => { azTokP = null; if (!j.ok) { const e = new Error("aztoken"); e.name = "api:" + (j.error || "aztoken"); throw e; } azTok = j; azTokAt = Date.now(); return j; }, e => { azTokP = null; throw e; });
+  return azTokP;
+}
+const PH_TIP = {
+  "iː": "kéo dài “i” như “iii”, miệng cười", "i": "kéo dài “i” như “iii”, miệng cười", "ɪ": "“i” ngắn, gọn, không kéo dài", "æ": "mở miệng rộng, giữa “a” và “e”",
+  "ʌ": "“ă” ngắn, miệng thả lỏng", "ɑ": "“a” mở rộng, hạ hàm", "ɔ": "“o” tròn môi", "ə": "“ơ” nhẹ, không nhấn", "ɚ": "“ơ” rồi cong lưỡi “r”", "ɝ": "“ơ” dài, cong lưỡi “r”",
+  "ɛ": "“e” mở, ngắn", "eɪ": "“ây” trượt từ e sang i", "aɪ": "“ai” rõ", "oʊ": "“âu” tròn môi", "aʊ": "“ao” rõ", "ɔɪ": "“oi” rõ", "ʊ": "“u” ngắn", "uː": "“u” dài, chu môi", "u": "“u” dài, chu môi",
+  "ɔɹ": "“o” rồi cong lưỡi “r”", "ɑɹ": "“a” rồi cong lưỡi “r”", "ɛɹ": "“e” rồi cong lưỡi “r”", "ɪɹ": "“i” rồi cong lưỡi “r”",
+  "θ": "lưỡi giữa hai răng, thổi hơi (không đọc “th”/“t”)", "ð": "lưỡi giữa hai răng, rung cổ (không đọc “d”)",
+  "ʃ": "“s” nặng, chu môi", "tʃ": "“ch” bật mạnh, chu môi", "dʒ": "“giơ” bật, chu môi", "ʒ": "như /ʃ/ nhưng rung cổ",
+  "t": "bật âm /t/ rõ, nhất là cuối từ", "d": "bật /d/ rõ, rung cổ", "k": "bật /k/ cuối từ", "g": "bật /g/ rung cổ", "p": "bật /p/ có hơi", "b": "/b/ rung cổ",
+  "s": "xì hơi /s/ rõ, nhất là cuối từ", "z": "/z/ rung như ong kêu", "v": "răng trên chạm môi dưới, rung (không đọc “b”)", "f": "răng trên chạm môi dưới, thổi hơi",
+  "l": "đầu lưỡi chạm lợi, cuối từ cũng phải có /l/", "ɹ": "cong lưỡi, không chạm vòm", "r": "cong lưỡi, không chạm vòm", "n": "/n/ rõ cuối từ", "m": "mím môi /m/", "ŋ": "“ng” cuối, không bật “g”", "h": "thở ra nhẹ", "w": "chu môi rồi mở", "j": "“i” lướt nhanh"
+};
+const AZ_PASS = C.PASS_SCORE || 75, AZ_PHMIN = C.PH_MIN || 50;
+function azResult(j) {
+  if (!j || j.RecognitionStatus !== "Success" || !j.NBest || !j.NBest.length) return { heard: "", score: 0, pass: false, errors: [], tip: "Máy không nghe thấy tiếng em. Em đọc to và rõ hơn nhé." };
+  const nb = j.NBest[0], pa = nb.PronunciationAssessment || nb;
+  const acc = +pa.AccuracyScore || 0, comp = +pa.CompletenessScore, pron = +pa.PronScore || acc;
+  const errs = [], seen = {}; let pmin = 100;
+  (nb.Words || []).forEach(w => {
+    const et = (w.PronunciationAssessment || w).ErrorType || "None";
+    if (et === "Omission") { errs.push({ sound: "thiếu từ “" + w.Word + "”", fix: "Em đọc đủ cả từ “" + w.Word + "”.", s: 0 }); pmin = 0; return; }
+    if (et === "Insertion") return;
+    (w.Phonemes || []).forEach(ph => {
+      const pp = ph.PronunciationAssessment || ph, sc = +pp.AccuracyScore || 0, sym = ph.Phoneme;
+      if (sc < pmin) pmin = sc;
+      if (sc < 60 && !seen[sym]) { seen[sym] = 1; errs.push({ sound: "/" + sym + "/ trong “" + w.Word + "”", fix: PH_TIP[sym] || "nghe mẫu và đọc chậm âm này", s: sc }); }
+    });
+  });
+  errs.sort((a, b) => a.s - b.s);
+  let score = Math.round(isNaN(comp) ? pron : Math.min(pron, comp));
+  if (pmin < AZ_PHMIN) score = Math.min(score, 65);
+  const pass = score >= AZ_PASS;
+  const tip = pass ? (score >= 90 ? "Rất chuẩn! Tiếp tục nhé." : "Đạt rồi, sửa thêm âm được nhắc cho chuẩn hơn.") : (errs.length ? "Em sửa âm được nhắc rồi đọc lại nhé." : "Em đọc rõ và đủ từng âm rồi thử lại nhé.");
+  return { heard: nb.Display || nb.Lexical || "", score, pass, errors: errs.slice(0, 3).map(e => ({ sound: e.sound, fix: e.fix })), tip };
+}
+async function azureScore(wav, target) {
+  const ref = String(target).replace(/\s*[,~·]\s*/g, ". ");
+  const cfg = btoa(unescape(encodeURIComponent(JSON.stringify({ ReferenceText: ref, GradingSystem: "HundredMark", Granularity: "Phoneme", Dimension: "Comprehensive", EnableMiscue: true, PhonemeAlphabet: "IPA" }))));
+  const body = await wav.arrayBuffer();
+  for (let n = 0; n < 3; n++) {
+    const tk = await azToken(n > 0);
+    const r = await fetch("https://" + tk.region + ".stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US&format=detailed",
+      { method: "POST", headers: { "Authorization": "Bearer " + tk.token, "Content-Type": "audio/wav; codecs=audio/pcm; samplerate=16000", "Accept": "application/json", "Pronunciation-Assessment": cfg }, body });
+    diag("azure " + r.status);
+    if (r.ok) return azResult(await r.json());
+    if (r.status !== 401 && r.status !== 429 && r.status < 500) { const e = new Error("azure"); e.name = "api:azure " + r.status; throw e; }
+    await new Promise(res => setTimeout(res, 500 * (n + 1)));
+  }
+  const e = new Error("azure"); e.name = "api:azure busy"; throw e;
+}
 async function aiScore(blob, target, ipa, vi) {
   const wav = await toWav(blob);
+  const t0 = Date.now();
+  if (C.GRADER === "azure" && wav.type === "audio/wav") {
+    try { const r = await azureScore(wav, target); diag("chấm " + (Date.now() - t0) + "ms"); return r; }
+    catch (e) { diag("azure lỗi " + (e && e.name) + " → chấm dự phòng"); }
+  }
   const audio = await blobB64(wav);
   diag("send " + wav.type + " " + Math.round(audio.length / 1024) + "KB");
   const r = await fetch(C.API_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "score", hs: token, target, ipa, vi, mime: wav.type, audio, model: C.GRADER_MODEL || "" }) });
   const j = await r.json(); if (!j.ok) { const e = new Error(j.error || "score"); e.name = "api:" + (j.error || "?") + (j.status ? " " + j.status : "") + (j.detail ? " " + String(j.detail).replace(/\s+/g, " ").slice(0, 160) : ""); throw e; }
+  diag("chấm " + (Date.now() - t0) + "ms");
   return j.result;
 }
 function recErrorText(e) {
@@ -522,6 +586,7 @@ function speak(i) {
   return speakSR(i);
 }
 function speakAI(i) {
+  if (C.GRADER === "azure") azToken().catch(() => {});
   const es = V[i - 1].entries;
   const res = es.map(() => ({ ok: false, best: 0 }));
   let k = 0, tries = 0, viewId = 0, busy = false, failCount = 0;
