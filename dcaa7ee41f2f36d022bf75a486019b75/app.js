@@ -140,22 +140,38 @@ function openOutsideHtml() {
     ' <button class="mini" data-copylink>Copy link</button></div>';
 }
 function bindCopyLink() { app.querySelectorAll("[data-copylink]").forEach(b => b.onclick = () => { (navigator.clipboard ? navigator.clipboard.writeText(location.href) : Promise.reject()).then(() => toast("Đã sao chép link, dán vào Chrome/Safari."), () => prompt("Sao chép link:", location.href)); }); }
-function listen() {
-  stopAudio();
-  return new Promise((resolve, reject) => setTimeout(() => {
+function releaseAudio() {
+  playQueue = [];
+  try { player.pause(); player.removeAttribute("src"); player.load(); } catch (e) {}
+  if (window.speechSynthesis) speechSynthesis.cancel();
+}
+function listenOnce() {
+  return new Promise((resolve, reject) => {
     const r = new SR(); activeRec = r; r.lang = "en-US"; r.interimResults = false; r.maxAlternatives = 6; r.continuous = false;
     let done = false; const out = [];
+    const finish = () => { done = true; clearTimeout(t); if (activeRec === r) activeRec = null; };
     const t = setTimeout(() => { try { r.stop(); } catch (e) {} }, 7000);
     r.onaudiostart = () => { const m = document.getElementById("mic"); if (m) { m.classList.add("live"); const l = m.querySelector(".ml"); if (l) l.textContent = "Đang nghe… đọc đi"; } };
     r.onresult = ev => { for (const res of ev.results) for (const alt of res) { out.push(alt.transcript); if (out.conf == null && alt.confidence > 0) out.conf = alt.confidence; } };
-    r.onerror = ev => { if (done) return; done = true; clearTimeout(t); reject(ev.error || "error"); };
-    r.onend = () => { if (done) return; done = true; clearTimeout(t); out.length ? resolve(out) : reject("no-speech"); };
+    r.onerror = ev => { if (done) return; finish(); reject(ev.error || "error"); };
+    r.onend = () => { if (done) return; finish(); out.length ? resolve(out) : reject("no-speech"); };
     r.onnomatch = () => {};
-    try { r.start(); } catch (e) { done = true; clearTimeout(t); reject("busy"); }
-  }, 120));
+    try { r.start(); } catch (e) { finish(); reject("busy"); }
+  });
 }
+// Gọi ngay trong lúc bấm (iPhone cần), nếu máy báo "aborted"/"busy" thì tự thử lại tối đa 2 lần.
+function listen() {
+  releaseAudio();
+  const attempt = n => listenOnce().catch(err => {
+    if ((err === "aborted" || err === "busy") && n < 2 && !userStopped) return new Promise(res => setTimeout(res, 450)).then(() => attempt(n + 1));
+    throw err;
+  });
+  userStopped = false;
+  return attempt(0);
+}
+let userStopped = false;
 let speakBroken = false;
-const DEVICE_ERRORS = new Set(["not-allowed", "service-not-allowed", "network", "audio-capture", "language-not-supported", "bad-grammar", "busy", "error", "aborted"]);
+const DEVICE_ERRORS = new Set(["not-allowed", "service-not-allowed", "network", "audio-capture", "language-not-supported", "bad-grammar", "error"]);
 const OPTIONAL = new Set(["somebody", "something", "sb", "st", "a", "an", "the", "or", "verb", "b"]);
 const SAME = [["flu", "flew"], ["weight", "wait"], ["sale", "sail"], ["fare", "fair"], ["whether", "weather"], ["piece", "peace"], ["principal", "principle"], ["aloud", "allowed"], ["brake", "break"], ["meat", "meet"], ["right", "write"], ["sole", "soul"], ["male", "mail"], ["bored", "board"], ["two", "to", "too", "2"], ["four", "for", "4"], ["one", "won", "1"], ["eight", "ate", "8"], ["hour", "our"], ["knew", "new"], ["know", "no"], ["through", "threw"], ["tale", "tail"], ["dear", "deer"], ["pain", "pane"], ["steal", "steel"], ["waist", "waste"], ["role", "roll"], ["site", "sight", "cite"], ["cell", "sell"], ["check", "cheque"], ["ok", "okay"], ["advert", "advirt"], ["licence", "license"], ["practise", "practice"], ["programme", "program"], ["colour", "color"], ["favour", "favor"], ["behaviour", "behavior"], ["centre", "center"], ["organise", "organize"], ["realise", "realize"]];
 const sameMap = {}; SAME.forEach(g => g.forEach(w => sameMap[w] = g));
@@ -203,6 +219,7 @@ function micErrorText(e) {
   else if (e === "not-allowed" || e === "service-not-allowed") m = "Em cần cho phép dùng micro: bấm biểu tượng ổ khoá/ⓘ cạnh địa chỉ web → Quyền → Micro → Cho phép, rồi tải lại trang.";
   else if (e === "network") m = "Chấm phát âm cần mạng ổn định. Em kiểm tra wifi/4G rồi thử lại.";
   else if (e === "audio-capture") m = "Không tìm thấy micro. Em kiểm tra tai nghe hoặc cho phép micro.";
+  else if (e === "aborted" || e === "busy") m = "Micro vừa bị ngắt (thường do âm thanh mẫu đang phát). Em đợi 1 giây rồi bấm micro lại.";
   else m = "Máy chưa chấm được.";
   return m + " (mã: " + e + ")";
 }
@@ -245,7 +262,7 @@ function shell(inner, cls) {
   window.scrollTo(0, 0);
 }
 let activeRec = null;
-function stopListening() { if (activeRec) { try { activeRec.abort(); } catch (e) {} activeRec = null; } }
+function stopListening() { if (activeRec) { userStopped = true; const r = activeRec; activeRec = null; try { r.abort(); } catch (e) {} } }
 function go(where) {
   if (isLocked()) return lockScreen();
   const [v, a] = where.split(":");
