@@ -234,6 +234,7 @@ function score(body) {
   if (findIdx(rows(sh), code) < 0) return json({ ok: false, error: 'notfound' });
   var admin = body.key === ADMIN_KEY;   // chỉ cô (mã quản trị) mới được thử lời dặn khác
   var target = String(body.target).slice(0, 120), ipa = String(body.ipa || '').slice(0, 120), vi = String(body.vi || '').slice(0, 120);
+  if (body.engine === 'azure') { var az = scoreAzure(body, target); return json(az.error ? { ok: false, error: az.error, status: az.status, detail: az.detail } : { ok: true, result: az.result }); }
   var model = body.model && /^gemini-[\w.\-]+$/.test(body.model) ? body.model : GEMINI_MODEL;
   var audio = { inlineData: { mimeType: String(body.mime || 'audio/wav').split(';')[0], data: body.audio } };
   var blind, out;
@@ -248,6 +249,59 @@ function score(body) {
   out.heard_ipa = blind.ipa || '';
   if (!out.heard) out.heard = blind.word || '';
   return json({ ok: true, result: out, model: model });
+}
+
+// ---------- Chấm bằng Azure Pronunciation Assessment (máy chuyên chấm phát âm, điểm từng âm) ----------
+// Cần Script Properties: AZURE_KEY, AZURE_REGION (vd southeastasia).
+var PH_TIP = {
+  'iː': 'kéo dài "i" như "iii", miệng cười', 'ɪ': '"i" ngắn, gọn, không kéo dài', 'æ': 'mở miệng rộng, giữa "a" và "e"',
+  'ʌ': '"ă" ngắn, miệng thả lỏng', 'ɑ': '"a" mở rộng, hạ hàm', 'ɔ': '"o" tròn môi', 'ə': '"ơ" nhẹ, không nhấn', 'ɚ': '"ơ" rồi cong lưỡi "r"',
+  'ɝ': '"ơ" dài, cong lưỡi "r"', 'eɪ': '"ây" trượt từ e sang i', 'aɪ': '"ai" rõ', 'oʊ': '"âu" tròn môi', 'aʊ': '"ao" rõ', 'ɔɪ': '"oi" rõ', 'ʊ': '"u" ngắn', 'uː': '"u" dài, chu môi',
+  'θ': 'đặt lưỡi giữa hai răng, thổi hơi (không đọc "th"/"t")', 'ð': 'lưỡi giữa hai răng, rung cổ (không đọc "d")',
+  'ʃ': '"s" nặng, chu môi', 'tʃ': '"ch" bật mạnh, chu môi', 'dʒ': '"giơ" bật, chu môi', 'ʒ': 'như "ʃ" nhưng rung cổ',
+  't': 'bật âm /t/ rõ, nhất là cuối từ', 'd': 'bật /d/ rõ, rung cổ', 'k': 'bật /k/ cuối từ', 'g': 'bật /g/ rung cổ', 'p': 'bật /p/ có hơi', 'b': '/b/ rung cổ',
+  's': 'xì hơi /s/ rõ, nhất là cuối từ', 'z': '/z/ rung như ong kêu', 'v': 'răng trên chạm môi dưới, rung (không đọc "b")', 'f': 'răng trên chạm môi dưới, thổi hơi',
+  'l': 'đầu lưỡi chạm lợi, cuối từ cũng phải có /l/', 'r': 'cong lưỡi, không chạm vòm', 'n': '/n/ rõ cuối từ', 'm': 'mím môi /m/', 'ŋ': '"ng" cuối, không bật "g"', 'h': 'thở ra nhẹ', 'w': 'chu môi rồi mở', 'j': '"i" lướt nhanh'
+};
+function scoreAzure(body, target) {
+  var props = PropertiesService.getScriptProperties();
+  var key = props.getProperty('AZURE_KEY'), region = props.getProperty('AZURE_REGION') || 'southeastasia';
+  if (!key) return { error: 'noazure' };
+  var ref = String(target).replace(/\s*[,~·]\s*/g, '. ').replace(/\b(somebody|something|sb|st)\b/g, '$1');
+  var cfg = { ReferenceText: ref, GradingSystem: 'HundredMark', Granularity: 'Phoneme', Dimension: 'Comprehensive', EnableMiscue: true, PhonemeAlphabet: 'IPA', NBestPhonemeCount: 3 };
+  var url = 'https://' + region + '.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US&format=detailed';
+  var t0 = Date.now();
+  var res = UrlFetchApp.fetch(url, {
+    method: 'post', muteHttpExceptions: true, contentType: 'audio/wav; codecs=audio/pcm; samplerate=16000',
+    headers: { 'Ocp-Apim-Subscription-Key': key, 'Accept': 'application/json', 'Pronunciation-Assessment': Utilities.base64Encode(JSON.stringify(cfg), Utilities.Charset.UTF_8) },
+    payload: Utilities.base64Decode(body.audio)
+  });
+  var st = res.getResponseCode(), txt = res.getContentText();
+  if (st !== 200) return { error: 'azure', status: st, detail: txt.slice(0, 300) };
+  var j = JSON.parse(txt);
+  if (j.RecognitionStatus !== 'Success' || !j.NBest || !j.NBest.length) return { result: { heard: '', score: 0, pass: false, errors: [], tip: 'Máy không nghe thấy tiếng em. Em đọc to và rõ hơn nhé.', ms: Date.now() - t0 } };
+  var nb = j.NBest[0], pa = nb.PronunciationAssessment || nb;
+  var acc = Number(pa.AccuracyScore) || 0, comp = Number(pa.CompletenessScore), pron = Number(pa.PronScore) || acc;
+  var words = nb.Words || [], errs = [], seen = {};
+  words.forEach(function (w) {
+    var wa = w.PronunciationAssessment || w, et = wa.ErrorType || 'None';
+    if (et === 'Omission') { errs.push({ sound: 'thiếu từ "' + w.Word + '"', fix: 'Em đọc đủ cả từ "' + w.Word + '".', s: 0 }); return; }
+    if (et === 'Insertion') return;
+    (w.Phonemes || []).forEach(function (ph) {
+      var sc = Number((ph.PronunciationAssessment || ph).AccuracyScore) || 0, sym = ph.Phoneme;
+      if (sc < 60 && !seen[sym]) {
+        seen[sym] = 1;
+        var nbp = ((ph.PronunciationAssessment || ph).NBestPhonemes || [])[0], heardAs = nbp && nbp.Phoneme && nbp.Phoneme !== sym ? ' (máy nghe như /' + nbp.Phoneme + '/)' : '';
+        errs.push({ sound: '/' + sym + '/ trong "' + w.Word + '"' + heardAs, fix: PH_TIP[sym] || 'nghe mẫu và đọc chậm âm này', s: sc });
+      }
+    });
+  });
+  errs.sort(function (a, b) { return a.s - b.s; });
+  var score = Math.round(isNaN(comp) ? pron : Math.min(pron, comp));
+  var pass = score >= PASS_SCORE;
+  var tip = pass ? (score >= 90 ? 'Rất chuẩn! Tiếp tục nhé.' : 'Đạt rồi, sửa thêm âm được nhắc cho chuẩn hơn.') : (errs.length ? 'Em sửa âm được nhắc rồi đọc lại nhé.' : 'Em đọc rõ và đủ từng âm rồi thử lại nhé.');
+  return { result: { heard: nb.Display || nb.Lexical || '', score: score, pass: pass, errors: errs.slice(0, 3).map(function (e) { return { sound: e.sound, fix: e.fix }; }), tip: tip,
+    detail: { acc: acc, comp: comp, pron: pron, flu: pa.FluencyScore }, ms: Date.now() - t0, engine: 'azure' } };
 }
 
 // Chạy một lần sau khi thêm chấm AI để Google hỏi quyền gọi ra ngoài (UrlFetchApp) + đọc Script Properties.
