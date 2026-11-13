@@ -357,6 +357,7 @@ function home() {
   const name = student && student.name ? student.name : "em";
   let status;
   if (completed()) status = '<span class="pace good">🏆 Đã hoàn thành chương trình</span>';
+  else if (!OWNER && Date.now() < startTime()) { const sd = new Date(startTime()); status = '<span class="pace ok">Bắt đầu chính thức ' + ["Chủ nhật", "thứ Hai", "thứ Ba", "thứ Tư", "thứ Năm", "thứ Sáu", "thứ Bảy"][sd.getDay()] + " " + fmtDate(startTime()) + " · em có thể học trước</span>"; }
   else if (p.done >= p.target) status = '<span class="pace good">Đi trước tiến độ</span>';
   else if (p.behind === 0) status = '<span class="pace ok">Đúng tiến độ</span>';
   else status = '<span class="pace bad">Chậm ' + p.behind + " bài</span>";
