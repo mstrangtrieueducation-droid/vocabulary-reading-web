@@ -230,11 +230,10 @@ function fill(t, o) { return t.replace(/\{(\w+)\}/g, function (m, k) { return o[
 function score(body) {
   var key = geminiKey();
   if (!key) return json({ ok: false, error: 'nokey' });
-  var code = String(body.hs || '').trim();
-  if (!code || !body.audio || !body.target) return json({ ok: false, error: 'bad' });
+  var code = String(body.hs || '').trim(), admin = body.key === ADMIN_KEY;   // cô (mã quản trị): bản chủ + thử lời dặn khác
+  if ((!code && !admin) || !body.audio || !body.target) return json({ ok: false, error: 'bad' });
   var sh = SS().getSheetByName(SHEET);
-  if (findIdx(rows(sh), code) < 0) return json({ ok: false, error: 'notfound' });
-  var admin = body.key === ADMIN_KEY;   // chỉ cô (mã quản trị) mới được thử lời dặn khác
+  if (!admin && findIdx(rows(sh), code) < 0) return json({ ok: false, error: 'notfound' });
   var target = String(body.target).slice(0, 120), ipa = String(body.ipa || '').slice(0, 120), vi = String(body.vi || '').slice(0, 120);
   if (body.engine === 'azure') { var az = scoreAzure(body, target); return json(az.error ? { ok: false, error: az.error, status: az.status, detail: az.detail } : { ok: true, result: az.result }); }
   var model = body.model && /^gemini-[\w.\-]+$/.test(body.model) ? body.model : GEMINI_MODEL;
@@ -255,14 +254,14 @@ function score(body) {
 
 // Trình duyệt xin "vé" Azure 10 phút rồi tự gửi ghi âm thẳng sang Azure (nhanh hơn, mã khoá không rời máy chủ).
 function azToken(body) {
-  var code = String(body.hs || '').trim();
-  if (!code) return json({ ok: false, error: 'bad' });
+  var code = String(body.hs || '').trim(), owner = body.key === ADMIN_KEY;   // cô mở "bản chủ" bằng mã quản trị
+  if (!code && !owner) return json({ ok: false, error: 'bad' });
   var cache = CacheService.getScriptCache(), hit = cache.get('aztok');
   var props = PropertiesService.getScriptProperties(), key = props.getProperty('AZURE_KEY'), region = props.getProperty('AZURE_REGION') || 'eastus';
   if (!key) return json({ ok: false, error: 'noazure' });
   if (!hit) {
     var sh = SS().getSheetByName(SHEET);
-    if (findIdx(rows(sh), code) < 0) return json({ ok: false, error: 'notfound' });
+    if (!owner && findIdx(rows(sh), code) < 0) return json({ ok: false, error: 'notfound' });
     var res = UrlFetchApp.fetch('https://' + region + '.api.cognitive.microsoft.com/sts/v1.0/issueToken', { method: 'post', headers: { 'Ocp-Apim-Subscription-Key': key }, payload: '', muteHttpExceptions: true });
     if (res.getResponseCode() !== 200) return json({ ok: false, error: 'azure', status: res.getResponseCode() });
     hit = res.getContentText(); cache.put('aztok', hit, 480);   // vé sống 10 phút, giữ 8 phút

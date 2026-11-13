@@ -8,6 +8,10 @@ const N_UNITS = V.length;
 const app = document.getElementById("app");
 const token = (new URLSearchParams(location.search).get("hs") || "").trim();
 const KEY = "nt-ielts:" + token;
+// Bản chủ (?hs=chu): cô xem/thử toàn bộ 14 bài + bài thi, không khoá, không tính vào danh sách học sinh.
+const OWNER = token === "chu";
+let OWNER_KEY = ""; try { OWNER_KEY = localStorage.getItem("nt-admin-key") || ""; } catch (e) {}
+const authBody = o => Object.assign(o, OWNER ? { key: OWNER_KEY } : { hs: token });
 const DAY = 86400000;
 let S = null;          // tiến độ của học sinh
 let student = null;    // thông tin từ Sheet
@@ -34,7 +38,7 @@ function save(event) {
   S.updatedAt = Date.now();
   saveLocal();
   if (event) pendingEvents.push(Object.assign({ at: new Date().toISOString() }, event));
-  if (localMode) return Promise.resolve();
+  if (localMode || OWNER) return Promise.resolve();
   return push();
 }
 let pushing = null;
@@ -61,7 +65,8 @@ setInterval(() => { if (!localMode && pendingEvents.length) push(); }, 60000);
 /* ---------- tiến độ & hạn ---------- */
 const unitDone = i => { const u = S.units[i] || {}; return !!(u.learn && u.speak && u.speak.done && (u.quiz && u.quiz.best >= C.PASS) && u.gread && (u.gex && u.gex.best >= C.PASS)); };
 const doneCount = () => { let n = 0; for (let i = 1; i <= N_UNITS; i++) if (unitDone(i)) n++; return n; };
-const unlocked = i => i === 1 || unitDone(i - 1);
+const unlocked = i => OWNER || i === 1 || unitDone(i - 1);
+const canFinal = () => OWNER || allDone();
 const allDone = () => doneCount() === N_UNITS;
 const completed = () => !!(S.final && S.final.best >= C.FINAL_PASS && allDone());
 function startTime() { return student && student.start ? new Date(student.start).getTime() : (S.start || Date.now()); }
@@ -284,6 +289,7 @@ function shell(inner, cls, keepScroll) {
   app.querySelectorAll("[data-say]").forEach(b => b.onclick = () => say(b.dataset.say, b.dataset.slow === "1"));
   app.querySelectorAll("[data-howto]").forEach(b => b.onclick = howto);
   bindCopyLink();
+  const orb = document.getElementById("ownReset"); if (orb) orb.onclick = () => { S = blank(); S.start = Date.now(); saveLocal(); toast("Đã xoá điểm thử, làm lại từ đầu."); home(); };
   if (!keepScroll) window.scrollTo(0, 0);
 }
 let activeRec = null;
@@ -301,7 +307,7 @@ function go(where) {
   if (v === "review") return review();
   if (v === "final") return finalTest();
 }
-function isLocked() { return !completed() && Date.now() > deadlineTime() && !localMode; }
+function isLocked() { return !OWNER && !completed() && Date.now() > deadlineTime() && !localMode; }
 function lockScreen() {
   shell('<section class="card center narrow"><img class="titi-lg" src="./titi/titi-calm.webp" alt=""><h1>Đã hết 30 ngày</h1><p>Chương trình kết thúc ngày ' + fmtDate(deadlineTime()) + " · em đã xong " + doneCount() + "/" + N_UNITS + " bài.</p><p class=\"muted\">Em liên hệ cô Trang để được gia hạn.</p></section>");
 }
@@ -330,7 +336,7 @@ function stepScore(i, k) {
   if (k === "gex" && u.gex) return u.gex.best + "%";
   return stepOk(i, k) ? "✓" : "";
 }
-const stepOpen = (i, j) => unlocked(i) && (j === 0 || stepOk(i, STEPS[j - 1].k) || stepOk(i, STEPS[j].k));
+const stepOpen = (i, j) => OWNER || unlocked(i) && (j === 0 || stepOk(i, STEPS[j - 1].k) || stepOk(i, STEPS[j].k));
 const stepsDone = i => STEPS.filter(s => stepOk(i, s.k)).length;
 function nextStep(i) { const j = STEPS.findIndex(s => !stepOk(i, s.k)); return j < 0 ? null : j; }
 function currentUnit() { for (let i = 1; i <= N_UNITS; i++) if (!unitDone(i)) return i; return 0; }
@@ -370,13 +376,13 @@ function home() {
   }
   const fin = S.final ? S.final.best + "%" : "";
   shell(
-    (IN_APP ? openOutsideHtml() : "") + (localMode ? '<p class="demo">Bản thử: tiến độ chỉ lưu trên máy này.</p>' : "") +
+    (IN_APP ? openOutsideHtml() : "") + (localMode ? '<p class="demo">Bản thử: tiến độ chỉ lưu trên máy này.</p>' : "") + (OWNER ? '<p class="demo owner">👁 <b>Bản chủ</b> — mở sẵn cả 14 bài và bài thi cuối khoá để cô xem, thử. Điểm chỉ lưu trên máy này, không vào danh sách học sinh. <button class="mini" id="ownReset">Làm lại từ đầu</button></p>' : "") +
     '<section class="hero"><div class="hello"><span class="kick">NỀN TẢNG IELTS · VOCAB B1 + NGỮ PHÁP</span><h1>Chào ' + esc(name) + "!</h1>" + status +
     '<div class="kpis"><div class="kpi"><span>📅</span><b>Ngày ' + Math.min(p.d, C.DAYS) + "/" + C.DAYS + "</b><small>Còn " + left + ' ngày</small></div><div class="kpi"><span>📚</span><b>' + p.done + "/" + N_UNITS + ' bài</b><small>Đã hoàn thành</small></div><div class="kpi"><span>🎯</span><b>' + (cu ? "Bài " + Math.max(p.target, cu) : "Cuối khoá") + "</b><small>Mục tiêu hôm nay</small></div></div>" +
     (due ? '<button class="review" data-go="review">🔁 Ôn ' + due + " từ đến hạn hôm nay ➔</button>" : "") + "</div>" + today + "</section>" +
     '<div class="sechead"><h2>Lộ trình 14 bài</h2><span class="muted">Đạt ≥ ' + C.PASS + '% để mở bài kế tiếp</span><button class="howbtn" data-howto>? Cách học</button></div>' +
     '<section class="grid">' + grid + "</section>" +
-    '<button class="finalbar ' + (completed() ? "done" : allDone() ? "open" : "lock") + '" ' + (allDone() ? 'data-go="final"' : "disabled") + '><span class="fi">★</span><span><b>Kiểm tra cuối khoá</b><small>40 câu từ vựng + ngữ pháp · đạt ≥ ' + C.FINAL_PASS + "%</small></span><span class=\"fs\">" + (completed() ? "✓ " + fin : allDone() ? (fin || "Vào thi ➔") : "🔒 Xong 14 bài để mở") + "</span></button>",
+    '<button class="finalbar ' + (completed() ? "done" : canFinal() ? "open" : "lock") + '" ' + (canFinal() ? 'data-go="final"' : "disabled") + '><span class="fi">★</span><span><b>Kiểm tra cuối khoá</b><small>40 câu từ vựng + ngữ pháp · đạt ≥ ' + C.FINAL_PASS + "%</small></span><span class=\"fs\">" + (completed() ? "✓ " + fin : canFinal() ? (fin || "Vào thi ➔") : "🔒 Xong 14 bài để mở") + "</span></button>",
     "wide");
   if (localMode) setSync("local"); else setSync(pendingEvents.length ? "err" : "ok");
 }
@@ -596,7 +602,7 @@ let azTok = null, azTokAt = 0, azTokP = null;
 function azToken(force) {
   if (!force && azTok && Date.now() - azTokAt < 7 * 60 * 1000) return Promise.resolve(azTok);
   if (azTokP && !force) return azTokP;
-  azTokP = fetch(C.API_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "aztoken", hs: token }) })
+  azTokP = fetch(C.API_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(authBody({ action: "aztoken" })) })
     .then(r => r.json()).then(j => { azTokP = null; if (!j.ok) { const e = new Error("aztoken"); e.name = "api:" + (j.error || "aztoken"); throw e; } azTok = j; azTokAt = Date.now(); return j; }, e => { azTokP = null; throw e; });
   return azTokP;
 }
@@ -825,7 +831,7 @@ async function aiScore(blob, target, ipa, vi) {
   }
   const audio = await blobB64(wav);
   diag("send " + wav.type + " " + Math.round(audio.length / 1024) + "KB");
-  const r = await fetch(C.API_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "score", hs: token, target, ipa, vi, mime: wav.type, audio, model: C.GRADER_MODEL || "" }) });
+  const r = await fetch(C.API_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(authBody({ action: "score", target, ipa, vi, mime: wav.type, audio, model: C.GRADER_MODEL || "" })) });
   const j = await r.json(); if (!j.ok) { const e = new Error(j.error || "score"); e.name = "api:" + (j.error || "?") + (j.status ? " " + j.status : "") + (j.detail ? " " + String(j.detail).replace(/\s+/g, " ").slice(0, 160) : ""); throw e; }
   diag("chấm " + (Date.now() - t0) + "ms");
   return j.result;
@@ -1198,7 +1204,7 @@ function review() {
 
 /* ---------- kiểm tra cuối khoá (làm hết rồi nộp) ---------- */
 function finalTest() {
-  if (!allDone()) return home();
+  if (!canFinal()) return home();
   const all = V.flatMap(u => u.entries.map(e => ({ e, pool: u.entries })));
   const kinds = ["listen", "meaning", "cloze", "dict", "meaning"];
   const vq = pick(all, 25).map(({ e, pool }, j) => vocabQuestion(e, kinds[j % kinds.length], pool, true));
@@ -1270,7 +1276,24 @@ function merge(server, local) {
   if (!server) return local; if (!local) return server;
   return (local.updatedAt || 0) > (server.updatedAt || 0) ? local : server;
 }
+function ownerBoot(msg) {
+  if (!OWNER_KEY) {
+    shell('<section class="card center narrow"><h1>Bản chủ</h1><p>Cô nhập mã quản trị (mã dùng ở trang quản trị) để mở toàn bộ bài.</p>' + (msg ? '<p class="hint">' + esc(msg) + "</p>" : "") +
+      '<p><input id="ownKey" type="password" placeholder="Mã quản trị" style="padding:10px 12px;border-radius:10px;border:1px solid #ccd;font-size:16px;width:220px"></p><button class="btn primary" id="ownGo">Mở bản chủ</button></section>');
+    const go = () => { const v = document.getElementById("ownKey").value.trim(); if (!v) return; OWNER_KEY = v; ownerBoot(); };
+    document.getElementById("ownGo").onclick = go; document.getElementById("ownKey").onkeydown = e => { if (e.key === "Enter") go(); };
+    return;
+  }
+  fetch(C.API_URL + "?action=admin&key=" + encodeURIComponent(OWNER_KEY)).then(r => r.json()).then(j => {
+    if (!j.ok) { try { localStorage.removeItem("nt-admin-key"); } catch (e) {} OWNER_KEY = ""; return ownerBoot("Mã quản trị không đúng."); }
+    try { localStorage.setItem("nt-admin-key", OWNER_KEY); } catch (e) {}
+    S = loadLocal() || blank(); if (!S.start) { S.start = Date.now(); saveLocal(); }
+    student = { name: "cô Trang", start: null, deadline: null };
+    home();
+  }).catch(() => shell('<section class="card center narrow"><h1>Chưa kết nối được</h1><p>Cô kiểm tra mạng rồi tải lại trang.</p><button class="btn primary" onclick="location.reload()">Tải lại</button></section>'));
+}
 function boot() {
+  if (OWNER && !localMode) return ownerBoot();
   if (!token) { shell('<section class="card center narrow"><h1>Nền tảng IELTS</h1><p>Em mở đúng link riêng cô Trang đã gửi nhé.</p></section>'); return; }
   if (localMode) {
     S = loadLocal() || blank(); if (!S.start) { S.start = Date.now(); saveLocal(); }
