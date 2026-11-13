@@ -167,6 +167,19 @@ function doPost(e) {
       sh.getRange(idx + 2, 1, 1, HEAD.length).setValues([row]);
       return json({ ok: true, student: rowObj(row) });
     }
+    if (body.action === 'reset') {   // cô đặt lại từ đầu: xoá tiến độ, đặt ngày bắt đầu mới (YYYY-MM-DD, giờ VN) → hạn 30 ngày
+      var sd = /^\d{4}-\d{2}-\d{2}$/.test(String(body.start || '')) ? Utilities.parseDate(body.start + ' 00:00:00', 'Asia/Ho_Chi_Minh', 'yyyy-MM-dd HH:mm:ss') : new Date();
+      var dl = new Date(sd.getTime() + DAYS * 864e5 - 1000);
+      row[COL['Bắt đầu'] - 1] = sd; row[COL['Hạn chót'] - 1] = dl; row[COL['Trạng thái'] - 1] = 'Đang học';
+      row[COL['Tiến độ'] - 1] = "'0%"; row[COL['Đang học'] - 1] = 'Bài 1'; row[COL['Số bài xong'] - 1] = "'0";
+      ['Điểm từ vựng TB', 'Điểm ngữ pháp TB', 'Phát âm TB', 'Kiểm tra cuối', 'Từ hay sai'].forEach(function (h) { row[COL[h] - 1] = ''; });
+      row[COL['Hoạt động gần nhất'] - 1] = new Date();
+      sh.getRange(idx + 2, 1, 1, HEAD.length).setValues([row]);
+      writeState(row[0], { v: 1, start: sd.getTime(), units: {}, words: {}, final: null, updatedAt: Date.now(), reset: Date.now() });
+      appendLog(row[0], row[1], [{ unit: '', part: 'Cô đặt lại từ đầu', score: '', detail: 'Bắt đầu ' + Utilities.formatDate(sd, 'Asia/Ho_Chi_Minh', 'dd/MM/yyyy') + ' · hạn chót ' + Utilities.formatDate(dl, 'Asia/Ho_Chi_Minh', 'dd/MM/yyyy') }]);
+      var o2 = rowObj(row); o2.status = liveStatus(row);
+      return json({ ok: true, student: o2 });
+    }
     if (body.action === 'delete') {
       sh.deleteRow(idx + 2); deleteState(row[0]);
       return json({ ok: true });
