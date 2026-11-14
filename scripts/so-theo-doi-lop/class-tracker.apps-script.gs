@@ -134,7 +134,18 @@ function stMainRT(ss, cells) {
   for (var c = lastCol - 1; c >= 0 && !col; c--) for (var r = 0; r < 5; r++) {
     var t = stKey(head[r][c]); if (t === stKey(ST_RT_HEAD) || t.indexOf('IT NHAT 2 NGAY TUOI 1 LAN') >= 0) { col = c + 1; break; }
   }
-  if (!col) { sh.insertColumnAfter(lastCol); col = lastCol + 1; }
+  var maxCol = sh.getMaxColumns();
+  if (!col) { sh.insertColumnAfter(maxCol); col = maxCol + 1; }   // sau cả cột đệm trống của nhóm cuối
+  else if (col < maxCol) {   // bản đầu chèn trước cột đệm của nhóm Speaking: dời cột này ra tận cùng, trả cột đệm về nhóm
+    var right = sh.getRange(1, col + 1, sh.getMaxRows(), maxCol - col).getDisplayValues();
+    if (right.every(function (r) { return r.every(function (v) { return v === ''; }); })) {
+      sh.moveColumns(sh.getRange(1, col, 1, 1), maxCol + 1); var sp = col; col = maxCol;
+      var prev = sh.getRange(1, sp - 1).getMergedRanges()[0];
+      if (prev && prev.getNumRows() === 1 && prev.getRow() === 1 && prev.getLastColumn() === sp - 1 && !sh.getRange(1, sp).isPartOfMerge()) {
+        var c0 = prev.getColumn(); prev.breakApart(); sh.getRange(1, c0, 1, sp - c0 + 1).merge();
+      }
+    }
+  }
   // cột mới chèn sau cùng có thể dính vào ô gộp tiêu đề của nhóm bên trái: tách ra, gộp lại nhóm đó như cũ (không gồm cột này)
   var hr = sh.getRange(1, col, 5, 1), merged = hr.getMergedRanges();
   if (merged.length) {
