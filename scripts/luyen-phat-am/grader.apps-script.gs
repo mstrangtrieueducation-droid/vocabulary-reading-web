@@ -214,13 +214,16 @@ function paGet(p) {
   return json({ ok: true, pass: PA_PASS, results: out });
 }
 
-/* ---------- Schedule: chương trình "LUYỆN PHÁT ÂM" trong AUTO_SELF_STUDY_CATALOG (chạy lại được, ghi đè đúng các dòng của chương trình) ---------- */
+/* ---------- Schedule: chương trình "LUYỆN PHÁT ÂM" ----------
+   Schedule đọc tin nhắn tự luyện từ file mẫu (SCHEDULE_AUTO.selfStudyTemplateSpreadsheetId): mỗi tab = 1 chương trình,
+   cột A = BÀI, cột B = TIN NHẮN. AUTO_SELF_STUDY_CATALOG chỉ là bản chụp, bị ghi đè mỗi lần Schedule đọc lại.
+   Hàm này ghi (chạy lại được) tab "LUYỆN PHÁT ÂM" vào file mẫu đó. */
+var PA_TEMPLATE_SS = '11WwQ2hD10tVVxa-tm-_oE_3c74M2ZkqzmH2nAJiz9g4';
 function paScheduleCatalog() {
   var rows = JSON.parse(UrlFetchApp.fetch('https://raw.githubusercontent.com/mstrangtrieueducation-droid/vocabulary-reading-web/main/scripts/luyen-phat-am/schedule-catalog.json?' + Date.now()).getContentText());
-  var sh = SpreadsheetApp.openById('1NHZ6N2fp-ptJ9p7_HN65fFSs-A_lohiGVTwndm3ud6Q').getSheetByName('AUTO_SELF_STUDY_CATALOG');
-  var last = sh.getLastRow(), a = sh.getRange(1, 1, last, 1).getValues(), first = 0;
-  for (var i = 0; i < a.length; i++) if (a[i][0] === 'LUYỆN PHÁT ÂM') { first = i + 1; break; }
-  var at = first || last + 1;
-  sh.getRange(at, 1, rows.length, 3).setValues(rows);
-  Logger.log('Catalog LUYỆN PHÁT ÂM: dòng ' + at + '–' + (at + rows.length - 1));
+  var ss = SpreadsheetApp.openById(PA_TEMPLATE_SS), sh = ss.getSheetByName('LUYỆN PHÁT ÂM') || ss.insertSheet('LUYỆN PHÁT ÂM');
+  sh.clearContents();
+  sh.getRange(1, 1, 1, 2).setValues([['BÀI', 'TIN NHẮN']]).setFontWeight('bold');
+  sh.getRange(2, 1, rows.length, 2).setValues(rows.map(function (r) { return [r[1], r[2]]; }));
+  Logger.log('Mẫu LUYỆN PHÁT ÂM: ' + rows.length + ' bài');
 }
