@@ -15,9 +15,10 @@ const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&a
 const store = { get(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
 function toast(m) { const t = document.getElementById("toast"); t.textContent = m; t.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("on"), 2800); }
 const dayNow = () => Math.floor((Date.now() + 7 * 3600e3) / 864e5);   // ngày theo giờ Việt Nam
-const W = {}, PW = {}; P.forEach(a => { PW[a.code] = a; a.words.forEach(w => { w.code = a.code; W[w.id] = w; }); });
+const W = {}, PW = {}; P.forEach(a => { PW[a.code] = a; a.words.forEach(w => { w.code = a.code; W[w.id] = w; }); a.learn = a.words.filter(w => !w.g); a.guess = a.words.filter(w => w.g); });
+/* g:1 = từ chuyên ngành / quá sâu: chỉ cần ĐOÁN nghĩa khi đọc — không gieo vào cây, không kiểm tra (danh sách: scripts/cay-tu-vung-reading/curate.json). */
 /* Thang lớn của cây giữ như cũ (= số từ của 27 bài tự luyện); từ Full Test cộng thêm giúp cây lên cấp nhanh hơn. */
-const ALL = P.filter(a => !a.full).reduce((n, a) => n + a.words.length, 0) || Object.keys(W).length;
+const ALL = P.filter(a => !a.full).reduce((n, a) => n + a.learn.length, 0) || Object.keys(W).length;
 const tName = a => (a.full ? "Full Test " : "Test ") + a.t;   // nhãn bài: "Test 5" / "Full Test 12"
 /* ?add=… nhận mã 1 passage, hoặc mã cả Full Test ("IELTS READING FULL TEST 12") → gieo cả 3 passage. */
 const codesFor = c => PW[c] ? [c] : P.filter(a => a.code.indexOf(c + " - PASSAGE ") === 0).map(a => a.code);
@@ -34,7 +35,8 @@ if (student && (!student.name || C.CLASSES.indexOf(student.cls) < 0)) student = 
 const keyOf = s => "rt-state:" + s.name.toUpperCase() + "|" + s.cls;
 let S = null;
 const blank = () => ({ v: 1, t: 0, add: {}, words: {}, rev: 0, days: {}, pass: {} });
-function loadLocal() { S = (student && store.get(keyOf(student))) || blank(); }
+function prune() { Object.keys(S.words).forEach(id => { if (!W[id] || W[id].g) delete S.words[id]; }); }   // bỏ từ chỉ cần đoán / từ không còn trong danh sách
+function loadLocal() { S = (student && store.get(keyOf(student))) || blank(); prune(); }
 function save() { S.t = Date.now(); store.set(keyOf(student), S); push(); }
 let pushT = null, dirty = false;
 function body() { const b = buckets(); return JSON.stringify({ action: "rt_save", name: student.name, cls: student.cls, state: S,
@@ -56,7 +58,7 @@ async function pull() {
   try {
     const u = new URL(C.API); u.searchParams.set("action", "rt"); u.searchParams.set("name", student.name); u.searchParams.set("cls", student.cls); u.searchParams.set("t", Date.now());
     const j = await fetch(u.href).then(r => r.json());
-    if (j && j.ok && j.state && (+j.state.t || 0) > (+S.t || 0)) { S = Object.assign(blank(), j.state); store.set(keyOf(student), S); return true; }
+    if (j && j.ok && j.state && (+j.state.t || 0) > (+S.t || 0)) { S = Object.assign(blank(), j.state); prune(); store.set(keyOf(student), S); return true; }
   } catch (e) {}
   return false;
 }
@@ -66,7 +68,7 @@ const BOX_DAYS = [0, 1, 3, 7, 14, 30];
 function addPassage(code) {
   const a = PW[code]; if (!a) return 0;
   let n = 0; if (!S.add[code]) S.add[code] = dayNow();
-  a.words.forEach(w => { if (!S.words[w.id]) { S.words[w.id] = { b: 0, d: dayNow(), m: 0, s: 0 }; n++; } });
+  a.learn.forEach(w => { if (!S.words[w.id]) { S.words[w.id] = { b: 0, d: dayNow(), m: 0, s: 0 }; n++; } });
   return n;
 }
 function grade(id, ok) {
@@ -189,9 +191,9 @@ function home() {
   const groups = {}, gKey = a => (a.full ? "F" : "") + a.t; P.forEach(a => (groups[gKey(a)] = groups[gKey(a)] || []).push(a));
   const mine = P.filter(a => S.add[a.code]);
   const pRow = a => {
-    const ws = a.words.map(w => S.words[w.id]).filter(Boolean), sure = ws.filter(w => w.s && w.b >= 3).length, on = !!S.add[a.code];
-    return '<button class="p' + (on ? " on" : "") + '" data-add="' + esc(a.code) + '"><span class="n">' + (on ? "✓" : "P" + a.p) + '</span><span class="tx"><b>' + esc(a.title) + "</b><small>" + tName(a) + " · Passage " + a.p + " · " + a.words.length + " từ" + (on ? " · nhớ chắc " + sure : "") + "</small>" +
-      (on ? '<span class="bar"><i style="width:' + Math.round(sure / a.words.length * 100) + '%"></i></span>' : "") + "</span>" + (on ? "" : '<span class="add">+ Gieo</span>') + "</button>";
+    const ws = a.learn.map(w => S.words[w.id]).filter(Boolean), sure = ws.filter(w => w.s && w.b >= 3).length, on = !!S.add[a.code];
+    return '<button class="p' + (on ? " on" : "") + '" data-add="' + esc(a.code) + '"><span class="n">' + (on ? "✓" : "P" + a.p) + '</span><span class="tx"><b>' + esc(a.title) + "</b><small>" + tName(a) + " · Passage " + a.p + " · " + a.learn.length + " từ" + (a.guess.length ? " (+" + a.guess.length + " từ chỉ cần đoán)" : "") + (on ? " · nhớ chắc " + sure : "") + "</small>" +
+      (on ? '<span class="bar"><i style="width:' + Math.round(sure / Math.max(1, a.learn.length) * 100) + '%"></i></span>' : "") + "</span>" + (on ? "" : '<span class="add">+ Gieo</span>') + "</button>";
   };
   shell('<div class="cols"><div class="left">' + treeCard() + '</div><div>' +
     '<section class="card"><span class="kick">Chào ' + esc(student.name.split(" ").pop()) + '!</span><h1 style="font-size:20px">Học từ học thuật theo bài đọc</h1>' +
@@ -220,6 +222,11 @@ function wordList(f) {
 /* ---------- giọng đọc (như trang Reading: giọng Anh của máy) ---------- */
 function say(t) { try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(String(t).replace(/·/g, ",")); u.lang = "en-GB"; u.rate = 0.86; const v = speechSynthesis.getVoices(); u.voice = v.find(x => /^en-gb/i.test(x.lang)) || v.find(x => /^en/i.test(x.lang)) || null; speechSynthesis.speak(u); } catch (e) {} }
 function bindSay(root) { root.querySelectorAll("[data-say]").forEach(b => b.onclick = ev => { ev.stopPropagation(); say(b.dataset.say); }); }
+function guessHtml(a) {   // từ chuyên ngành: chỉ cần hiểu khi đọc, không phải học thuộc
+  if (!a.guess.length) return "";
+  return '<div class="guess"><b>🔎 Từ chuyên ngành — chỉ cần đoán nghĩa khi đọc</b><small>Không phải học thuộc, không có trong bài kiểm tra. Khi gặp trong bài, em đoán nghĩa từ câu xung quanh.</small>' +
+    a.guess.map(w => '<p><em>' + esc(w.w) + "</em> — " + esc(w.vi) + "</p>").join("") + "</div>";
+}
 function cardHtml(w) {
   return '<div class="wcard"><div class="w">' + esc(w.w) + '</div><p class="ipa" style="margin:0">' + esc([w.ipa, w.pos].filter(Boolean).join(" · ")) + "</p>" +
     '<button class="say" data-say="' + esc(w.w) + '">▶ Nghe từ</button>' + (w.ex ? '<button class="say" data-say="' + esc(w.ex) + '">▶ Nghe câu</button>' : "") +
@@ -237,7 +244,7 @@ function findForm(word, ex) {
 }
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function distract(id, field, n) {
-  const w = W[id], same = PW[w.code].words.filter(x => x.id !== id), other = Object.values(W).filter(x => x.code !== w.code && (x.pos || "").split(" ")[0] === (w.pos || "").split(" ")[0]);
+  const w = W[id], same = PW[w.code].learn.filter(x => x.id !== id), other = Object.values(W).filter(x => !x.g && x.code !== w.code && (x.pos || "").split(" ")[0] === (w.pos || "").split(" ")[0]);
   const pool = shuffle(same.slice()).concat(shuffle(other.slice())), out = [], seen = new Set([String(w[field]).toLowerCase()]);
   for (const x of pool) { const v = String(x[field] || "").toLowerCase(); if (!v || seen.has(v)) continue; seen.add(v); out.push(x); if (out.length >= n) break; }
   return out;
@@ -321,7 +328,7 @@ function gateState(code) {
 function gate(code) {
   const a = PW[code]; if (!a) return home();
   if (!S.add[code]) { addPassage(code); save(); }
-  const g = gateState(code), ids = a.words.map(w => w.id), need = Math.ceil(ids.length * C.PASS_PCT / 100);
+  const g = gateState(code), ids = a.learn.map(w => w.id), need = Math.ceil(ids.length * C.PASS_PCT / 100);
   const step = (ok, n, t, sub, btn) => '<div class="gstep' + (ok ? " ok" : "") + '"><span class="gn">' + (ok ? "✓" : n) + '</span><div class="gtx"><b>' + t + "</b><small>" + sub + "</small>" + (ok ? "" : btn) + "</div></div>";
   const p = S.pass[code];
   shell('<section class="card gate"><span class="kick">Mở khoá bài đọc</span><h1 style="font-size:20px">' + esc(a.title) + '</h1><p class="small muted" style="margin:2px 0 12px">' + esc(tName(a)) + " · Passage " + a.p + " · " + ids.length + " từ</p>" +
@@ -338,8 +345,8 @@ function gate(code) {
     const sc = total ? Math.round(right / total * 100) : 0; S.last = S.last || {}; S.last[code] = sc;
     if (sc >= C.PASS_PCT) { S.pass = S.pass || {}; S.pass[code] = { d: dayNow(), sc: sc }; }
     save(); gate(code); toast(sc >= C.PASS_PCT ? "Đạt " + sc + "% 🎉" : "Mới đúng " + sc + "% — em xem lại từ rồi làm lại nhé."); } });
-  if ($("gl")) $("gl").onclick = () => { const el = $("glist"); if (el.innerHTML) { el.innerHTML = ""; return; } el.innerHTML = a.words.map(cardHtml).join(""); bindSay(el); el.scrollIntoView({ behavior: "smooth", block: "start" }); };
-  if ($("go2")) $("go2").onclick = async () => { const b = $("go2"); b.disabled = true; b.textContent = "Đang mở bài…"; await pushNow(); location.href = backUrl(a); };
+  if ($("gl")) $("gl").onclick = () => { const el = $("glist"); if (el.innerHTML) { el.innerHTML = ""; return; } el.innerHTML = a.learn.map(cardHtml).join("") + guessHtml(a); bindSay(el); el.scrollIntoView({ behavior: "smooth", block: "start" }); };
+  if ($("go2")) $("go2").onclick = async () => { const b = $("go2"); b.disabled = true; b.textContent = "Đang mở bài…"; S.t = Date.now(); store.set(keyOf(student), S); await pushNow(); location.href = backUrl(a); };
   $("gh").onclick = () => { history.replaceState(null, "", location.pathname); home(); };
 }
 

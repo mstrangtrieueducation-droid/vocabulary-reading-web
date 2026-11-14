@@ -104,3 +104,5 @@ details.lib summary{cursor:pointer;font-weight:700;color:var(--navy3);padding:6p
 .gate .gbtns{display:flex;gap:8px;flex-wrap:wrap}.gate .gbtns .btn{flex:1 1 140px}
 .gate #glist .wcard{margin-top:10px}
 .center{text-align:center}
+.guess{margin-top:12px;padding:12px 14px;border-radius:14px;background:#f1f5f9;border:1px dashed #94a3b8}
+.guess b{display:block;font-size:14.5px}.guess small{display:block;color:#5b6475;margin:2px 0 6px}.guess p{margin:4px 0;font-size:14px}
