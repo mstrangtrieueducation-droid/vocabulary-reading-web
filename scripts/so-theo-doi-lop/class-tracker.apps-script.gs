@@ -30,7 +30,7 @@ function stBooks() {
   var sh = SpreadsheetApp.openById(ST_SCHEDULE).getSheetByName('AUTO_LOP_THEO_DOI'), map = {};
   if (sh && sh.getLastRow() > 1) sh.getRange(2, 1, sh.getLastRow() - 1, 2).getDisplayValues().forEach(function (r) {
     var cls = String(r[0]).replace(/\s+/g, ' ').trim().toUpperCase(), id = String(r[1]).trim();
-    if (/^IELTS \d+$/.test(cls) && /^[-\w]{25,}$/.test(id)) map[cls] = id;
+    if (/^(IELTS|FIGHTER) \d+$/.test(cls) && /^[-\w]{25,}$/.test(id)) map[cls] = id;   // FIGHTER: chỉ cột CÂY TỪ VỰNG
   });
   c.put('st_books', JSON.stringify(map), 21600);
   return map;
@@ -123,7 +123,7 @@ function stSyncPA(onlyClasses) {
 /* ---------------- CÂY TỪ VỰNG ---------------- */
 /* Cây từ vựng IELTS (chương trình riêng, ít nhất 2 ngày tưới 1 lần). Trạng thái JSON (cột 11) có lw = ngày tưới gần nhất,
    ngày tính như trang web: floor((giờ UTC + 7h) / 1 ngày). Ghi lại mỗi khi có lượt lưu mới HOẶC sang ngày mới (để "trễ N ngày" tự tăng). */
-var ST_RT_TOTAL = 702, ST_RT_RHYTHM = 2;
+var ST_RT_TOTAL = { IELTS: 702, FIGHTER: 1138 }, ST_RT_RHYTHM = 2;   // số cây của từng chương trình (data.js)
 function stDay(t) { return Math.floor((t + 7 * 3600e3) / 864e5); }
 function stDayStr(d) { return Utilities.formatDate(new Date(d * 864e5), 'UTC', 'dd/MM'); }
 /* Cột "CÂY TỪ VỰNG" trên tab chính THEO DÕI TOÀN DIỆN (Cô 14/11: "lưu vào theo dõi toàn diện luôn").
@@ -131,9 +131,12 @@ function stDayStr(d) { return Utilities.formatDate(new Date(d * 864e5), 'UTC', '
    Chỉ ghi vào ô của cột này, đúng dòng học sinh (khớp tên với cột B); học sinh chưa vào cây ghi "— CHƯA VÀO CÂY". */
 var ST_RT_HEAD = 'CÂY TỪ VỰNG';
 function stMainRT(ss, cells) {
-  var sh = ss.getSheetByName(ST_MAIN); if (!sh || sh.getLastRow() < 6) return;
-  var lastCol = sh.getLastColumn(), head = sh.getRange(1, 1, 5, lastCol).getDisplayValues(), col = 0;
-  for (var c = lastCol - 1; c >= 0 && !col; c--) for (var r = 0; r < 5; r++) {
+  var sh = ss.getSheetByName(ST_MAIN); if (!sh || sh.getLastRow() < 4) return;
+  var colA = sh.getRange(1, 1, Math.min(10, sh.getLastRow()), 1).getDisplayValues(), H = 0;   // số dòng tiêu đề: IELTS 5, FIGHTER 3
+  while (H < colA.length && !/^\d+$/.test(String(colA[H][0]).trim())) H++;
+  if (H < 1 || H >= colA.length) return;
+  var lastCol = sh.getLastColumn(), head = sh.getRange(1, 1, H, lastCol).getDisplayValues(), col = 0;
+  for (var c = lastCol - 1; c >= 0 && !col; c--) for (var r = 0; r < H; r++) {
     var t = stKey(head[r][c]); if (t === stKey(ST_RT_HEAD) || t.indexOf('IT NHAT 2 NGAY TUOI 1 LAN') >= 0) { col = c + 1; break; }
   }
   var maxCol = sh.getMaxColumns();
@@ -151,7 +154,7 @@ function stMainRT(ss, cells) {
     }
   }
   // cột mới chèn sau cùng có thể dính vào ô gộp tiêu đề của nhóm bên trái: tách ra, gộp lại nhóm đó như cũ (không gồm cột này)
-  var hr = sh.getRange(1, col, 5, 1), merged = hr.getMergedRanges();
+  var hr = sh.getRange(1, col, H, 1), merged = hr.getMergedRanges();
   if (merged.length) {
     merged.forEach(function (m) {
       var r0 = m.getRow(), c0 = m.getColumn(), nr = m.getNumRows(), nc = m.getNumColumns();
@@ -160,17 +163,20 @@ function stMainRT(ss, cells) {
     });
   }
   if (stKey(sh.getRange(1, col).getDisplayValue()) !== stKey(ST_RT_HEAD)) {
-    hr.setValues([[ST_RT_HEAD], ['TỰ LUYỆN · ÍT NHẤT 2 NGÀY TƯỚI 1 LẦN'], ['NHỊP TƯỚI · TIẾN ĐỘ'], ['🌳 Vườn từ vựng trên dashboard'], ['Tự động cập nhật mỗi giờ']])
+    var lines = [ST_RT_HEAD, 'TỰ LUYỆN · ÍT NHẤT 2 NGÀY TƯỚI 1 LẦN', 'NHỊP TƯỚI · TIẾN ĐỘ', '🌳 Vườn từ vựng trên dashboard', 'Tự động cập nhật mỗi giờ'];
+    if (H < 5) lines = lines.slice(0, H - 1).concat([lines.slice(H - 1).join(' · ')]);
+    while (lines.length < H) lines.push('');
+    hr.setValues(lines.map(function (x) { return [x]; }))
       .setFontWeight('bold').setWrap(true).setHorizontalAlignment('center').setVerticalAlignment('middle').setBackground('#e8f8ee').setFontColor('#0b5d36');
     sh.setColumnWidth(col, 230);
   }
-  var n = sh.getLastRow() - 5, names = sh.getRange(6, 1, n, 2).getDisplayValues(), cur = sh.getRange(6, col, n, 1).getValues(), out = [], changed = false;
+  var n = sh.getLastRow() - H, names = sh.getRange(H + 1, 1, n, 2).getDisplayValues(), cur = sh.getRange(H + 1, col, n, 1).getValues(), out = [], changed = false;
   for (var i = 0; i < n; i++) {
     var a = String(names[i][0]).trim(), b = String(names[i][1]).trim(), v = cur[i][0];
     if (/^\d+$/.test(a) && b) { v = cells[stKey(b)] || '— CHƯA VÀO CÂY'; }
     if (v !== cur[i][0]) changed = true; out.push([v]);
   }
-  if (changed) sh.getRange(6, col, n, 1).setValues(out).setWrap(true).setVerticalAlignment('top');
+  if (changed) sh.getRange(H + 1, col, n, 1).setValues(out).setWrap(true).setVerticalAlignment('top');
   var old = ss.getSheetByName(ST_RT_TAB); if (old && ss.getSheets().length > 1) ss.deleteSheet(old);   // tab riêng cũ (do máy tạo) không dùng nữa
 }
 
@@ -181,7 +187,7 @@ function stSyncRT(force) {
   var v = last < 2 ? [] : sh.getRange(2, 1, last - 1, 11).getValues(), data = {}, newest = 0, today = stDay(Date.now());
   v.forEach(function (r) {
     var cls = String(r[0]).trim().toUpperCase(), name = String(r[1]).replace(/\s+/g, ' ').trim();
-    if (!/^IELTS \d+$/.test(cls) || stKey(name).length < 5) return;
+    if (!/^(IELTS|FIGHTER) \d+$/.test(cls) || stKey(name).length < 5) return;
     if (r[9] instanceof Date) newest = Math.max(newest, r[9].getTime());
     var st = {}; try { st = JSON.parse(r[10]) || {}; } catch (e) {}
     var lw = +st.lw || 0; if (!lw && st.days) Object.keys(st.days).forEach(function (d) { lw = Math.max(lw, +d || 0); });
@@ -201,7 +207,7 @@ function stSyncRT(force) {
         else if (today <= due) status = today === due ? '⏰ ĐÚNG NHỊP · hạn hôm nay' : '✅ ĐÚNG NHỊP';
         else status = '⚠️ TRỄ ' + (today - due) + ' NGÀY';
         cells[key] = status + (lw ? '\nTưới gần nhất: ' + stDayStr(lw) + ' · hạn tiếp: ' + stDayStr(due) : '') +
-          '\nĐã gieo ' + (+r[3] || 0) + '/' + ST_RT_TOTAL + ' từ · cần ôn ' + (+r[4] || 0) + ' · nhớ chắc ' + ((+r[6] || 0) + (+r[7] || 0)) + '\nĐã tưới ' + x.n + ' lần';
+          '\nĐã gieo ' + (+r[3] || 0) + '/' + ST_RT_TOTAL[cls.split(' ')[0]] + ' từ · cần ôn ' + (+r[4] || 0) + ' · nhớ chắc ' + ((+r[6] || 0) + (+r[7] || 0)) + '\nĐã tưới ' + x.n + ' lần';
       });
       stMainRT(ss, cells);
     } catch (e) { console.log('stSyncRT ' + cls + ': ' + e); }

@@ -7,7 +7,7 @@
    - Lưu trong máy + đồng bộ về Apps Script (Nền tảng IELTS · CayTuVungReading.gs) theo họ tên + lớp. */
 (() => {
 "use strict";
-const C = Object.assign({ CLASSES: [], API: "", NEW_PER_SESSION: 10, EXTRA: 5, NEW_MAX_DAY: 20, REVIEW_MAX: 20, RHYTHM_DAYS: 2 }, window.RT_CONFIG || {});
+const C = Object.assign({ NAME: "IELTS", COL_NOTE: "Cụm từ hay dùng trong bài viết IELTS", CLASSES: [], API: "", NEW_PER_SESSION: 10, EXTRA: 5, NEW_MAX_DAY: 20, REVIEW_MAX: 20, RHYTHM_DAYS: 2 }, window.RT_CONFIG || {});
 const U = window.RT_UNITS || [];
 const app = document.getElementById("app");
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -29,11 +29,12 @@ const STAGES = [];
 U.forEach((u, i) => { const s = { t: i + 1, name: u.label || "Chặng " + (i + 1), units: [i], ids: [] }; STAGES.push(s); u.words.forEach(w => { s.ids.push(w.id); STAGE_OF[w.id] = STAGES.length - 1; }); });
 
 /* ---------- học sinh + trạng thái ---------- */
-let student = store.get("rt-student");
+const SKEY = C.NAME === "IELTS" ? "rt-student" : "rt-student:" + C.NAME;   // mỗi chương trình nhớ học sinh riêng
+let student = store.get(SKEY);
 let AUTO = { go: false, focus: "" };
 try {   // mở từ dashboard lớp: ?name=…&cls=… (họ tên + lớp của học sinh đang xem)
   const q = new URLSearchParams(location.search), qn = (q.get("name") || "").replace(/\s+/g, " ").trim(), qc = (q.get("cls") || "").replace(/\s+/g, " ").trim().toUpperCase();
-  if (qn.length >= 5 && (window.RT_CONFIG && window.RT_CONFIG.CLASSES || []).indexOf(qc) >= 0) { student = { name: qn, cls: qc }; store.set("rt-student", student); }
+  if (qn.length >= 5 && (window.RT_CONFIG && window.RT_CONFIG.CLASSES || []).indexOf(qc) >= 0) { student = { name: qn, cls: qc }; store.set(SKEY, student); }
   AUTO = { go: q.get("go") === "1", focus: q.get("focus") || "" };   // từ Vườn từ vựng: tưới ngay / luyện riêng 1 từ
   if (location.search) history.replaceState(null, "", location.pathname);
 } catch (e) {}
@@ -179,7 +180,7 @@ function shell(html, cls) {
 let inReview = false;
 const confirmLeave = () => !inReview || window.confirm("Em đang tưới dở. Thoát ra thì lượt này chưa được tính — vẫn thoát?");
 function entry(then) {
-  shell('<section class="card narrow entry"><div class="sprout" aria-hidden="true">🌱</div><span class="kick">Ms Trang Trieu Education · IELTS</span><h1>Cây từ vựng IELTS</h1>' +
+  shell('<section class="card narrow entry"><div class="sprout" aria-hidden="true">🌱</div><span class="kick">Ms Trang Trieu Education · ' + esc(C.NAME) + '</span><h1>Cây từ vựng ' + esc(C.NAME) + '</h1>' +
     '<p class="muted">Mỗi lần tưới chỉ 5–7 phút: ôn từ cũ đến hạn và gieo thêm từ mới. <b>Ít nhất 2 ngày tưới 1 lần</b> để cây không héo.</p>' +
     '<form id="ef" novalidate><label class="field"><span>Họ và tên</span><input id="en" autocomplete="name" maxlength="80" placeholder="Nhập đầy đủ họ tên" value="' + esc(student ? student.name : "") + '"></label>' +
     '<label class="field"><span>Lớp</span><select id="ec"><option value="">Chọn lớp</option>' + C.CLASSES.map(c => "<option" + (student && student.cls === c ? " selected" : "") + ">" + esc(c) + "</option>").join("") + "</select></label>" +
@@ -191,7 +192,7 @@ function entry(then) {
     if (name.split(" ").length < 2 || name.length < 5) { ee.textContent = "Em nhập đầy đủ họ và tên nhé."; return; }
     if (C.CLASSES.indexOf(cls) < 0) { ee.textContent = "Em chọn lớp của mình nhé."; return; }
     const b = ev.target.querySelector("button"); b.disabled = true; b.textContent = "Đang mở cây…";
-    student = { name, cls }; store.set("rt-student", student); loadLocal(); await pull(); then();
+    student = { name, cls }; store.set(SKEY, student); loadLocal(); await pull(); then();
   };
 }
 
@@ -225,7 +226,7 @@ function home() {
   };
   const pctSown = Math.round(nW / TOTAL * 100), pctSure = Math.round((b.sure + b.fruit) / TOTAL * 100);
   shell('<div class="cols"><div class="left">' +
-    '<section class="card hero' + (wilt ? " wilted" : "") + '"><div class="hhead"><div><span class="kick">Cây từ vựng IELTS</span><h1>' + TREE_STAGES[k] + ' <span class="lvl">Cấp ' + k + "/5</span></h1></div>" + rhythmChip(r) + "</div>" +
+    '<section class="card hero' + (wilt ? " wilted" : "") + '"><div class="hhead"><div><span class="kick">Cây từ vựng ' + esc(C.NAME) + '</span><h1>' + TREE_STAGES[k] + ' <span class="lvl">Cấp ' + k + "/5</span></h1></div>" + rhythmChip(r) + "</div>" +
     '<div class="scene">' + treeSvg(wilt) + "</div>" +
     '<p class="hmsg">' + msg + "</p>" + btn +
     '<div class="trtiles">' + tile("due", b.due, "Cần ôn") + tile("grow", b.grow, "Đang lớn") + tile("sure", b.sure, "Nhớ chắc") + tile("fruit", b.fruit, "Ra quả") + "</div></section>" +
@@ -421,7 +422,7 @@ function review(opt) {
       label = "Đúng hay sai?"; prompt = '<div class="qbig">' + esc(w.w) + '</div><p class="center small muted">' + esc(w.pos || "") + '</p><p class="qtext big">nghĩa là: “' + esc(shown) + '”</p>';
       const isT = shown === viShort(w.vi); opts = [{ t: "✔ Đúng", ok: isT }, { t: "✘ Sai", ok: !isT }]; answer = isT ? "Đúng" : "Sai — nghĩa đúng: " + w.vi;
     }
-    else if (k === "colloc") { const g = gapped(colOf(w)); answer = g.form; label = "Hoàn thành collocation"; prompt = '<p class="qtext big">' + g.html + '</p><p class="small muted center">Cụm từ hay dùng trong bài viết IELTS</p>'; opts = wordOpts("mean", true); opts.forEach(o => { if (o.ok) o.t = g.form.toLowerCase(); }); }
+    else if (k === "colloc") { const g = gapped(colOf(w)); answer = g.form; label = "Hoàn thành collocation"; prompt = '<p class="qtext big">' + g.html + '</p><p class="small muted center">' + esc(C.COL_NOTE) + '</p>'; opts = wordOpts("mean", true); opts.forEach(o => { if (o.ok) o.t = g.form.toLowerCase(); }); }
     else if (k === "form") {
       const g = gapped(ctx); answer = g.form; label = "Chọn dạng từ (word form) đúng";
       const forms = [g.form.toLowerCase()].concat(fam, [w.w.toLowerCase()]).filter((x, j, a) => a.indexOf(x) === j).slice(0, 4);

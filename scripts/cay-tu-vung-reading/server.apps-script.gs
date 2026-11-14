@@ -37,7 +37,7 @@ function rtGet(p) {
 }
 function rtSave(body) {
   var name = String(body.name || '').replace(/\s+/g, ' ').trim(), cls = String(body.cls || '').trim();
-  if (rtNorm(name).length < 5 || !/^IELTS \d+$/.test(cls)) return json({ ok: false, error: 'name' });
+  if (rtNorm(name).length < 5 || !/^(IELTS|FIGHTER) \d+$/.test(cls)) return json({ ok: false, error: 'name' });   // FIGHTER: Cây từ vựng FIGHTER (3ef8b052…)
   var st = body.state, txt = JSON.stringify(st || {});
   if (!st || typeof st !== 'object' || txt.length > 45000) return json({ ok: false, error: 'state' });
   var s = body.sum || {}, lock = LockService.getScriptLock(); lock.waitLock(20000);
