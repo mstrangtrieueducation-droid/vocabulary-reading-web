@@ -141,7 +141,9 @@ function stMainRT(ss, cells) {
   else if (col < maxCol) {   // bản đầu chèn trước cột đệm của nhóm Speaking: dời cột này ra tận cùng, trả cột đệm về nhóm
     var right = sh.getRange(1, col + 1, sh.getMaxRows(), maxCol - col).getDisplayValues();
     if (right.every(function (r) { return r.every(function (v) { return v === ''; }); })) {
-      sh.moveColumns(sh.getRange(1, col, 1, 1), maxCol + 1); var sp = col; col = maxCol;
+      var mr = sh.getMaxRows(); sh.insertColumnAfter(maxCol);   // chép cột sang cuối rồi xoá chỗ cũ (moveColumns không chạy ở cột cuối)
+      sh.getRange(1, col, mr, 1).copyTo(sh.getRange(1, maxCol + 1, mr, 1)); sh.setColumnWidth(maxCol + 1, 230);
+      sh.deleteColumn(col); var sp = col; col = maxCol;
       var prev = sh.getRange(1, sp - 1).getMergedRanges()[0];
       if (prev && prev.getNumRows() === 1 && prev.getRow() === 1 && prev.getLastColumn() === sp - 1 && !sh.getRange(1, sp).isPartOfMerge()) {
         var c0 = prev.getColumn(); prev.breakApart(); sh.getRange(1, c0, 1, sp - c0 + 1).merge();
