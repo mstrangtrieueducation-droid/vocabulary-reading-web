@@ -16,7 +16,8 @@ var ST_TZ = 'Asia/Ho_Chi_Minh';
 
 function stKey(s) {
   return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[đĐ]/g, 'D')
-    .replace(/\s+/g, ' ').trim().toUpperCase();
+    .replace(/\s+/g, ' ').trim().toUpperCase()
+    .replace(/\s+(NEW|MOI|HV MOI)\b.*$/, '').replace(/\s*[\(\[].*$/, '').replace(/\s+\d{1,2}\/\d{1,2}(\/\d{2,4})?$/, '').trim();   // sổ ghi "TÊN new 31/10/2026"
 }
 function stTime(d) { return d instanceof Date ? Utilities.formatDate(d, ST_TZ, 'dd/MM/yyyy HH:mm') : ''; }
 
