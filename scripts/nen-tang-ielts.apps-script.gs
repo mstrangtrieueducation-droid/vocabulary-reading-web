@@ -479,13 +479,47 @@ function gradeVideo(r) {
       '(3) Từng câu B: chấm âm cuối, nối âm, trọng âm, ngắt nghỉ; câu không đọc → "missing".\nViết NHẬN XÉT BẰNG TIẾNG VIỆT, ngắn, cụ thể, xưng "em".\n' +
       'Trả về JSON đúng mẫu: {"screen_ok": true/false, "voice_ok": true/false, "score": 0-100, "summary": "1–2 câu nhận xét chung", "words": [{"n": số mục, "w": "từ", "heard": "/IPA em đọc/", "st": "ok" | "wrong" | "missing", "issue": "lỗi cụ thể nếu wrong", "fix": "cách sửa ngắn"}], "sentences": [{"i": 1, "st": "ok" | "wrong" | "missing", "issue": "...", "fix": "..."}], "tips": ["tối đa 3 lời khuyên ưu tiên"]}. "words" PHẢI có đủ ' + L.words.length + ' mục, "sentences" đủ ' + L.sents.length + ' câu.';
     var body = { contents: [{ role: 'user', parts: [{ file_data: { mime_type: mime, file_uri: uri } }, { text: prompt }] }],
-      generationConfig: { temperature: 0.2, responseMimeType: 'application/json', maxOutputTokens: 12000, mediaResolution: 'MEDIA_RESOLUTION_LOW' } };
-    var res = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/models/' + GEMINI_VIDEO_MODEL + ':generateContent', { method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key }, muteHttpExceptions: true, payload: JSON.stringify(body) });
+      generationConfig: { temperature: 0.2, maxOutputTokens: 8192, mediaResolution: 'MEDIA_RESOLUTION_LOW',
+        thinkingConfig: { thinkingLevel: 'low', includeThoughts: false },               // như KIDS: suy nghĩ mức thấp → rẻ, vẫn chuẩn
+        responseFormat: { text: { mimeType: 'APPLICATION_JSON', schema: gradeSchema() } } } };   // khuôn JSON bắt buộc: đủ từng mục
+    var call = geminiCall(key, body), res = call.r;
+    if (res.getResponseCode() === 400 && /responseFormat|schema|thinking/i.test(res.getContentText())) {   // phòng khi API đổi
+      body.generationConfig = { temperature: 0.2, maxOutputTokens: 8192, mediaResolution: 'MEDIA_RESOLUTION_LOW', responseMimeType: 'application/json' };
+      call = geminiCall(key, body); res = call.r;
+    }
     if (res.getResponseCode() !== 200) return { err: 'Gemini ' + res.getResponseCode() + ' ' + res.getContentText().slice(0, 200) };
     var j = JSON.parse(res.getContentText()), t = j.candidates[0].content.parts.map(function (p) { return p.text || ''; }).join('');
     var out = JSON.parse(t.replace(/^\s*```(json)?|```\s*$/g, '').trim());
-    return finishGrade(out, L, n);
+    out = finishGrade(out, L, n); out.usage = usageOf(j, call.tier); return out;
   } finally { try { UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/' + uri.split('/v1beta/')[1], { method: 'delete', headers: { 'x-goog-api-key': key }, muteHttpExceptions: true }); } catch (x) {} }
+}
+// Gọi Gemini như KIDS: thử hạng Flex (rẻ 50%) trước; Flex bận (429/503/504) hoặc quá giờ thì gửi lại đúng yêu cầu đó ở hạng thường.
+function geminiCall(key, body) {
+  var url = 'https://generativelanguage.googleapis.com/v1beta/models/' + GEMINI_VIDEO_MODEL + ':generateContent';
+  var h = new Date(Date.now() + 7 * 3600e3), m = h.getUTCHours() * 60 + h.getUTCMinutes(), wait = (m >= 18 * 60 + 30 && m < 23 * 60 + 15) ? 20 : 45;   // tối đông học sinh: chờ Flex ít hơn
+  var flex = JSON.parse(JSON.stringify(body)); flex.service_tier = 'flex';
+  try {
+    var r = UrlFetchApp.fetch(url, { method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key, 'X-Server-Timeout': String(wait) }, muteHttpExceptions: true, payload: JSON.stringify(flex) });
+    var c = r.getResponseCode();
+    if (c !== 429 && c !== 503 && c !== 504 && !(c === 400 && /service_tier/i.test(r.getContentText()))) return { r: r, tier: 'FLEX' };
+  } catch (e) {}
+  var r2 = UrlFetchApp.fetch(url, { method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key }, muteHttpExceptions: true, payload: JSON.stringify(body) });
+  return { r: r2, tier: 'STANDARD' };
+}
+// Chi phí ước tính theo bảng giá Gemini (cùng cách tính với KIDS), Flex = 50%.
+function usageOf(j, tier) {
+  var u = j.usageMetadata || {}, p = +u.promptTokenCount || 0, o = +u.candidatesTokenCount || 0, t = +u.thoughtsTokenCount || 0;
+  tier = String(u.serviceTier || tier || 'STANDARD').toUpperCase();
+  var usd = (tier === 'FLEX' ? 0.5 : 1) * (p * 0.75 + (o + t) * 3.75) / 1e6;
+  return { tier: tier, inTok: p, outTok: o + t, usd: Math.round(usd * 100000) / 100000 };
+}
+function gradeSchema() {
+  var S = { type: 'string' }, B = { type: 'boolean' }, I = { type: 'integer' }, ST = { type: 'string', enum: ['ok', 'wrong', 'missing'] };
+  var obj = function (p) { return { type: 'object', properties: p, required: Object.keys(p) }; };
+  return obj({ screen_ok: B, voice_ok: B, score: I, summary: S,
+    words: { type: 'array', items: obj({ n: I, w: S, heard: S, st: ST, issue: S, fix: S }) },
+    sentences: { type: 'array', items: obj({ i: I, st: ST, issue: S, fix: S }) },
+    tips: { type: 'array', items: S } });
 }
 // Điểm tính từ danh sách từng mục (không tin con số tổng của máy): từ 60%, câu 40%; sai = 0,4 điểm, thiếu = 0.
 function finishGrade(out, L, n) {
