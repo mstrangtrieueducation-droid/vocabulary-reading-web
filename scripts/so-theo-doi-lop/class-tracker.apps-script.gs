@@ -124,11 +124,35 @@ function stSyncPA(onlyClasses) {
 var ST_RT_TOTAL = 702, ST_RT_RHYTHM = 2;
 function stDay(t) { return Math.floor((t + 7 * 3600e3) / 864e5); }
 function stDayStr(d) { return Utilities.formatDate(new Date(d * 864e5), 'UTC', 'dd/MM'); }
+/* Cột "CÂY TỪ VỰNG" trên tab chính THEO DÕI TOÀN DIỆN (Cô 14/11: "lưu vào theo dõi toàn diện luôn").
+   Một cột riêng ở tận cùng bên phải (không chèn giữa, nên không làm lệch cột của các bài khác); tìm lại theo tiêu đề dòng 1.
+   Chỉ ghi vào ô của cột này, đúng dòng học sinh (khớp tên với cột B); học sinh chưa vào cây ghi "— CHƯA VÀO CÂY". */
+var ST_RT_HEAD = 'CÂY TỪ VỰNG';
+function stMainRT(ss, cells) {
+  var sh = ss.getSheetByName(ST_MAIN); if (!sh || sh.getLastRow() < 6) return;
+  var lastCol = sh.getLastColumn(), head = sh.getRange(1, 1, 1, lastCol).getDisplayValues()[0], col = 0;
+  for (var c = head.length - 1; c >= 0; c--) if (stKey(head[c]) === stKey(ST_RT_HEAD)) { col = c + 1; break; }
+  if (!col) {
+    sh.insertColumnAfter(lastCol); col = lastCol + 1;
+    sh.getRange(1, col, 5, 1).setValues([[ST_RT_HEAD], ['TỰ LUYỆN · ÍT NHẤT 2 NGÀY TƯỚI 1 LẦN'], ['NHỊP TƯỚI · TIẾN ĐỘ'], ['🌳 Vườn từ vựng trên dashboard'], ['Tự động cập nhật mỗi giờ']])
+      .setFontWeight('bold').setWrap(true).setHorizontalAlignment('center').setVerticalAlignment('middle').setBackground('#e8f8ee').setFontColor('#0b5d36');
+    sh.setColumnWidth(col, 230);
+  }
+  var n = sh.getLastRow() - 5, names = sh.getRange(6, 1, n, 2).getDisplayValues(), cur = sh.getRange(6, col, n, 1).getValues(), out = [], changed = false;
+  for (var i = 0; i < n; i++) {
+    var a = String(names[i][0]).trim(), b = String(names[i][1]).trim(), v = cur[i][0];
+    if (/^\d+$/.test(a) && b) { v = cells[stKey(b)] || '— CHƯA VÀO CÂY'; }
+    if (v !== cur[i][0]) changed = true; out.push([v]);
+  }
+  if (changed) sh.getRange(6, col, n, 1).setValues(out).setWrap(true).setVerticalAlignment('top');
+  var old = ss.getSheetByName(ST_RT_TAB); if (old && ss.getSheets().length > 1) ss.deleteSheet(old);   // tab riêng cũ (do máy tạo) không dùng nữa
+}
+
 function stSyncRT(force) {
   var P = PropertiesService.getScriptProperties();
   if (!P.getProperty('RT_SHEET_ID')) return;
-  var sh = rtSS().getSheetByName(RT_TAB), last = sh.getLastRow(); if (last < 2) return;
-  var v = sh.getRange(2, 1, last - 1, 11).getValues(), data = {}, newest = 0, today = stDay(Date.now());
+  var sh = rtSS().getSheetByName(RT_TAB), last = sh.getLastRow();
+  var v = last < 2 ? [] : sh.getRange(2, 1, last - 1, 11).getValues(), data = {}, newest = 0, today = stDay(Date.now());
   v.forEach(function (r) {
     var cls = String(r[0]).trim().toUpperCase(), name = String(r[1]).replace(/\s+/g, ' ').trim();
     if (!/^IELTS \d+$/.test(cls) || stKey(name).length < 5) return;
@@ -140,23 +164,20 @@ function stSyncRT(force) {
   var stamp = newest + '|' + today;
   if (force !== true && newest && stamp === P.getProperty('ST_RT_LAST')) return;   // không có gì mới, cùng ngày
   var books = stBooks();
-  Object.keys(data).forEach(function (cls) {
-    if (!books[cls]) return;
+  Object.keys(books).forEach(function (cls) {   // mọi lớp IELTS có sổ: em chưa vào cây cũng thấy "— CHƯA VÀO CÂY"
     try {
-      var ss = SpreadsheetApp.openById(books[cls]);
-      var rows = stRows(stRoster(ss), data[cls]).map(function (s) {
-        if (!s.d) return [s.no, s.name, s.group, '— chưa vào cây', '', '', '', '', '', '', ''];
-        var r = s.d.r, lw = s.d.lw, due = lw + ST_RT_RHYTHM, status;
-        if (!lw) status = '— chưa tưới lần nào';
-        else if (lw === today) status = '✅ Đã tưới hôm nay';
-        else if (today <= due) status = today === due ? '⏰ Đúng nhịp · hạn hôm nay' : '✅ Đúng nhịp';
-        else status = '⚠️ Trễ ' + (today - due) + ' ngày';
-        return [s.no, s.name, s.group, status, lw ? stDayStr(lw) : '', lw ? stDayStr(due) : '',
-          (+r[3] || 0) + '/' + ST_RT_TOTAL, +r[4] || 0, (+r[6] || 0) + (+r[7] || 0), +r[7] || 0, s.d.n];
+      var ss = SpreadsheetApp.openById(books[cls]), mine = data[cls] || {};
+      var cells = {};
+      Object.keys(mine).forEach(function (key) {
+        var x = mine[key], r = x.r, lw = x.lw, due = lw + ST_RT_RHYTHM, status;
+        if (!lw) status = '🌱 ĐÃ VÀO CÂY · chưa tưới lần nào';
+        else if (lw === today) status = '✅ ĐÃ TƯỚI HÔM NAY';
+        else if (today <= due) status = today === due ? '⏰ ĐÚNG NHỊP · hạn hôm nay' : '✅ ĐÚNG NHỊP';
+        else status = '⚠️ TRỄ ' + (today - due) + ' NGÀY';
+        cells[key] = status + (lw ? '\nTưới gần nhất: ' + stDayStr(lw) + ' · hạn tiếp: ' + stDayStr(due) : '') +
+          '\nĐã gieo ' + (+r[3] || 0) + '/' + ST_RT_TOTAL + ' từ · cần ôn ' + (+r[4] || 0) + ' · nhớ chắc ' + ((+r[6] || 0) + (+r[7] || 0)) + '\nĐã tưới ' + x.n + ' lần';
       });
-      stWriteTab(ss, ST_RT_TAB, 'Tự động từ Cây từ vựng IELTS (ít nhất 2 ngày tưới 1 lần). Cập nhật ' + stTime(new Date()) + ' (mỗi giờ). Không sửa tay — sẽ bị ghi đè.',
-        ['STT', 'HỌ TÊN HỌC VIÊN', 'NHÓM', 'NHỊP TƯỚI', 'TƯỚI GẦN NHẤT', 'HẠN TƯỚI TIẾP', 'ĐÃ GIEO', 'CẦN ÔN', 'NHỚ CHẮC', 'RA QUẢ', 'SỐ LẦN TƯỚI'],
-        rows, [40, 190, 90, 190, 110, 110, 80, 70, 80, 70, 90]);
+      stMainRT(ss, cells);
     } catch (e) { console.log('stSyncRT ' + cls + ': ' + e); }
   });
   P.setProperty('ST_RT_LAST', stamp);
