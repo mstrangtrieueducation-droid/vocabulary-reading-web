@@ -1,0 +1,112 @@
+@ M | 0 | 0 | Model Reading Practice | Climate Change and the Inuit
+incident | n | /ˈɪnsɪdənt/ | sự việc, vụ việc (≠ accident: tai nạn) | — | a serious incident
+arctic | adj, n | /ˈɑːktɪk/ | (thuộc) Bắc Cực | — | the Arctic / Arctic ice
+urgent | adj | /ˈɜːdʒənt/ | khẩn cấp | urgency (n) · urgently (adv) | an urgent need
+tough | adj | /tʌf/ | khó khăn, khắc nghiệt | toughness (n) | tough conditions
+combine | v | /kəmˈbaɪn/ | kết hợp | combination (n) | combine A with B
+ancestor | n | /ˈænsestə(r)/ | tổ tiên | ancestral (adj) · ancestry (n) | our distant ancestors
+out of the question | idiom | /ˌaʊt əv ðə ˈkwestʃən/ | không thể được (= impossible) | — | sth is out of the question
+exploit | v | /ɪkˈsplɔɪt/ | khai thác | exploitation (n) | exploit natural resources
+obtain | v | /əbˈteɪn/ | giành được, có được (= gain) | obtainable (adj) | obtain food / information
+adapt to | v | /əˈdæpt tə/ | thích nghi với (≠ adopt: áp dụng) | adaptation (n) · adaptable (adj) | adapt to a new environment
+emerge | v | /iˈmɜːdʒ/ | nổi lên, xuất hiện | emergence (n) | a new problem emerged
+harsh | adj | /hɑːʃ/ | khắc nghiệt | harshness (n) | a harsh climate
+abandon | v | /əˈbændən/ | từ bỏ, bỏ rơi | abandonment (n) | abandon a traditional way of life
+indigenous | adj | /ɪnˈdɪdʒənəs/ | bản địa (= native) | — | indigenous people
+scarce | adj | /skeəs/ | khan hiếm | scarcity (n) | food is scarce
+state | adj | /steɪt/ | (thuộc) nhà nước | state benefit (n): trợ cấp của nhà nước | state schools / state benefits
+depression | n | /dɪˈpreʃn/ | chứng trầm cảm; sự suy sụp | depressed (adj) | suffer from depression
+ignore | v | /ɪɡˈnɔː(r)/ | phớt lờ | ignorance (n) · ignorant (adj) | ignore a warning
+consult | v | /kənˈsʌlt/ | hỏi ý kiến, tham khảo | consultation (n) · consultant (n) | consult the elders
+permit | v | /pəˈmɪt/ | cho phép (= allow) | permission (n) | be permitted to do sth
+determined | adj | /dɪˈtɜːmɪnd/ | quyết tâm | determination (n) | be determined to do sth
+resolve | v | /rɪˈzɒlv/ | giải quyết (= solve) | resolution (n) | resolve a problem
+consequence | n | /ˈkɒnsɪkwəns/ | hậu quả, kết quả (= result) | consequently (adv) | as a consequence of sth
+alter | v | /ˈɔːltə(r)/ | thay đổi (= change) | alteration (n) | alter the landscape
+alternative | adj, n | /ɔːlˈtɜːnətɪv/ | thay thế; sự lựa chọn thay thế | alternatively (adv) | an alternative to sth
+vital | adj | /ˈvaɪtl/ | thiết yếu, sống còn (= essential) | vitality (n) | play a vital role
+absence | n | /ˈæbsəns/ | sự vắng mặt, sự thiếu (>< presence: sự có mặt) | absent (adj) >< present (adj) | in the absence of sth
+remain | v | /rɪˈmeɪn/ | vẫn, vẫn còn, giữ nguyên | remainder (n) · remaining (adj) | remain unchanged
+@ R1P1 | 1 | 1 | IELTS Reading 1 · Passage 1 | Passage 1
+obstacle | n | /ˈɒbstəkl/ | chướng ngại vật, rào cản (= barrier) | — | avoid / overcome an obstacle
+given | prep | /ˈɡɪvn/ | xét đến, vì (= because) | given that + mệnh đề | given the darkness, …
+dominate | v | /ˈdɒmɪneɪt/ | áp đảo, thống trị | dominant (adj) · domination (n) | dominate the night sky
+prey | n | /preɪ/ | con mồi (>< predator: thú săn mồi) | predator (n) · predatory (adj) | hunt for prey
+manage to | v | /ˈmænɪdʒ tə/ | xoay xở được, làm được (= succeed in doing) | — | manage to catch insects
+be exposed to | v phr | /ɪkˈspəʊzd tə/ | tiếp xúc với, phải chịu | exposure (n) | be exposed to danger
+echo | n | /ˈekəʊ/ | tiếng vang, tiếng vọng | echo (v) | listen to the echoes
+detect | v | /dɪˈtekt/ | phát hiện | detection (n) · detector (n) | detect an object
+navigate | v | /ˈnævɪɡeɪt/ | định hướng, tìm đường | navigation (n) | navigate in the dark
+principle | n | /ˈprɪnsəpl/ | nguyên lý, nguyên tắc | — | the same principle
+strike | v | /straɪk/ | gây ấn tượng (= impress) | striking (adj) | it strikes sb that…
+apply | v | /əˈplaɪ/ | áp dụng, ứng dụng | application (n) · applicable (adj) | apply a principle to sth
+military | adj | /ˈmɪlətri/ | thuộc quân đội | — | military use
+submarine | n | /ˌsʌbməˈriːn/ | tàu ngầm | — | submarine technology
+perceive | v | /pəˈsiːv/ | nhận thức, cảm nhận | perception (n) | perceive the world through sound
+limb | n | /lɪm/ | tay chân, tứ chi | — | upper / lower limbs
+term | n | /tɜːm/ | thuật ngữ, khái niệm (= concept) | — | a technical term
+sophisticated | adj | /səˈfɪstɪkeɪtɪd/ | tinh vi, phức tạp (= complicated, complex) | sophistication (n) | sophisticated equipment
+pioneer | v, n | /ˌpaɪəˈnɪə(r)/ | đi tiên phong; người tiên phong | pioneering (adj) | pioneer a technique
+manufacture | v | /ˌmænjuˈfæktʃə(r)/ | sản xuất | manufacturer (n) | manufacture equipment
+consume | v | /kənˈsjuːm/ | tiêu thụ | consumption (n) · consumer (n) | consume energy
+accurate | adj | /ˈækjərət/ | chính xác | accuracy (n) >< inaccurate | an accurate picture
+visual | adj | /ˈvɪʒuəl/ | thuộc thị giác, hình ảnh | visually (adv) · vision (n) | visual information
+theory | n | /ˈθɪəri/ | lý thuyết, giả thuyết | theoretical (adj) | a theory about sth
+@ R1P2 | 1 | 2 | IELTS Reading 1 · Passage 2 | Passage 2
+policy | n | /ˈpɒləsi/ | chính sách | — | water policy
+revise | v | /rɪˈvaɪz/ | điều chỉnh, sửa đổi; ôn tập | revision (n) | revise a policy
+meet | v | /miːt/ | đáp ứng (thử thách, yêu cầu, nhu cầu) | — | meet a challenge / a need / a demand
+irrigation | n | /ˌɪrɪˈɡeɪʃn/ | sự tưới tiêu (nông nghiệp) | irrigate (v) | irrigation systems
+relevant | adj | /ˈreləvənt/ | liên quan, thích hợp | relevance (n) >< irrelevant | relevant to sth
+address | v | /əˈdres/ | giải quyết (vấn đề) (= solve) | — | address a problem
+manipulate | v | /məˈnɪpjuleɪt/ | điều khiển, thao túng | manipulation (n) | manipulate water resources
+dam | n | /dæm/ | đập nước | — | build a dam
+pipe | n | /paɪp/ | ống nước | pipeline (n) | water pipes
+revolution | n | /ˌrevəˈluːʃn/ | cuộc cách mạng | revolutionary (adj) | the Industrial Revolution
+pace | n | /peɪs/ | tốc độ, nhịp độ | keep pace with sb/sth: bắt kịp ai/cái gì | at a rapid pace
+sanitation | n | /ˌsænɪˈteɪʃn/ | vệ sinh (cấp thoát nước) | — | poor sanitation
+inferior to | adj | /ɪnˈfɪəriə(r) tə/ | kém hơn (>< superior to) | inferiority (n) | inferior to sb/sth
+adequate | adj | /ˈædɪkwət/ | đủ, đầy đủ (= sufficient) | adequately (adv) >< inadequate | adequate water supplies
+imitate | v | /ˈɪmɪteɪt/ | bắt chước | imitation (n) | imitate other countries
+beyond | prep | /bɪˈjɒnd/ | vượt quá, ngoài | — | beyond our control
+decade · century · millennium | n | /ˈdekeɪd/ · /ˈsentʃəri/ · /mɪˈleniəm/ | thập kỷ · thế kỷ · thiên niên kỷ | — | for decades
+thrive | v | /θraɪv/ | phát triển mạnh, thịnh vượng (= prosper, flourish) | thriving (adj) | thrive on sth
+tension | n | /ˈtenʃn/ | sự căng thẳng | tense (adj) | tension between countries
+dispute | n, v | /dɪˈspjuːt/ | sự tranh chấp; tranh cãi | indisputable (adj): không thể chối cãi | a dispute over water
+at the outset of | phr | /ət ði ˈaʊtset əv/ | ngay từ đầu (= at the beginning of) | — | at the outset of the century
+priority | n | /praɪˈɒrəti/ | sự ưu tiên | prioritise (v) | a top priority
+infrastructure | n | /ˈɪnfrəstrʌktʃə(r)/ | cơ sở hạ tầng | — | water infrastructure
+facility | n | /fəˈsɪləti/ | cơ sở vật chất, thiết bị | facilitate (v) | treatment facilities
+philosophy | n | /fəˈlɒsəfi/ | triết lý, triết học | philosophical (adj) | a new philosophy
+demand | n, v | /dɪˈmɑːnd/ | nhu cầu; yêu cầu | demanding (adj) | the demand for water
+diminish | v | /dɪˈmɪnɪʃ/ | giảm, giảm bớt | — | diminishing resources
+efficient | adj | /ɪˈfɪʃnt/ | hiệu quả, ít lãng phí (≈ effective) | efficiency (n) >< inefficient | efficient use of water
+criteria | n | /kraɪˈtɪəriə/ | các tiêu chí đánh giá (số ít: criterion) | — | meet the criteria
+budget | n | /ˈbʌdʒɪt/ | ngân sách | — | a limited budget
+domestic | adj | /dəˈmestɪk/ | trong nhà, sinh hoạt; trong nước | — | domestic water use
+phenomenon | n | /fəˈnɒmɪnən/ | hiện tượng (số nhiều: phenomena) | phenomenal (adj) | a global phenomenon
+standard | n | /ˈstændəd/ | tiêu chuẩn, chuẩn mực | standardise (v) | living standards
+expand | v | /ɪkˈspænd/ | mở rộng, tăng | expansion (n) | expand rapidly
+extend | v | /ɪkˈstend/ | kéo dài, mở rộng | extension (n) · extensive (adj) | extend a network
+concern | n, v | /kənˈsɜːn/ | mối lo ngại, quan tâm; liên quan đến | be concerned with = be related to | a growing concern
+@ R1P3 | 1 | 3 | IELTS Reading 1 · Passage 3 | Passage 3
+approach | n, v | /əˈprəʊtʃ/ | cách tiếp cận, phương pháp; tiếp cận | — | a new approach to learning
+propose | v | /prəˈpəʊz/ | đề xuất | proposal (n) | propose a method
+conscious of | adj | /ˈkɒnʃəs əv/ | ý thức được, nhận thức về | consciousness (n) · consciously (adv) | be conscious of sth
+technique | n | /tekˈniːk/ | kỹ thuật, phương pháp | technical (adj) | a learning technique
+curriculum | n | /kəˈrɪkjələm/ | chương trình học | — | the school curriculum
+stimulate | v | /ˈstɪmjuleɪt/ | kích thích, khơi gợi | stimulation (n) · stimulus (n) | stimulate the brain
+recall | v | /rɪˈkɔːl/ | nhớ lại, gợi lại | recall (n) | recall information
+assume | v | /əˈsjuːm/ | cho rằng (= suppose) | assumption (n) | it is assumed that…
+attempt | n, v | /əˈtempt/ | nỗ lực, cố gắng (= effort) | make an attempt / effort to do sth | in an attempt to do sth
+effortless | adj | /ˈefətləs/ | dễ dàng, không tốn sức (= easy) | effort (n) · effortlessly (adv) | effortless learning
+accomplish | v | /əˈkʌmplɪʃ/ | đạt được, hoàn thành (= achieve) | accomplishment (n) | accomplish a task
+acknowledge | v | /əkˈnɒlɪdʒ/ | công nhận, thừa nhận | acknowledgement (n) | be widely acknowledged
+attribute | v | /əˈtrɪbjuːt/ | cho rằng (A) là do (B) (= put A down to B) | attribution (n) | attribute A to B
+illustrate | v | /ˈɪləstreɪt/ | minh họa, chứng minh (= demonstrate) | illustration (n) | illustrate a point
+procedure | n | /prəˈsiːdʒə(r)/ | quy trình, thủ tục | procedural (adj) | a simple procedure
+hypnosis | n | /hɪpˈnəʊsɪs/ | thuật thôi miên | hypnotise (v) | under hypnosis
+valid | adj | /ˈvælɪd/ | có giá trị, hợp lệ | validity (n) >< invalid | a valid method
+prior to | prep | /ˈpraɪə(r) tə/ | trước (= before) | priority (n) | prior to the lesson
+conventional | adj | /kənˈvenʃənl/ | truyền thống, thông thường (= traditional) | convention (n) | conventional teaching methods
+shift | n, v | /ʃɪft/ | sự thay đổi, dịch chuyển (= change) | — | a shift in attitudes
