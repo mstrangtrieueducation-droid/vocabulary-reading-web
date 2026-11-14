@@ -267,20 +267,29 @@ function wordList(q, f) {
 /* Giọng đọc: ưu tiên file âm thanh giọng Anh (chạy được cả trong Zalo/Facebook, nơi giọng của máy hay bị câm); lỗi thì dùng giọng của máy. */
 const SND = { on: store.get("rt-sound") !== false };
 let ttsAudio = null;
+function enVoice() { try { const v = window.speechSynthesis ? speechSynthesis.getVoices() : []; return v.find(x => /^en-gb/i.test(x.lang)) || v.find(x => /^en(-|_|$)/i.test(x.lang)) || null; } catch (e) { return null; } }
 function speakDevice(t) {
-  try { if (!window.speechSynthesis) return; speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t); u.lang = "en-GB"; u.rate = 0.88;
-    const v = speechSynthesis.getVoices(); u.voice = v.find(x => /^en-gb/i.test(x.lang)) || v.find(x => /^en/i.test(x.lang)) || null; speechSynthesis.speak(u); } catch (e) {}
+  try { if (!window.speechSynthesis) return false; speechSynthesis.cancel(); if (speechSynthesis.paused) speechSynthesis.resume();
+    const u = new SpeechSynthesisUtterance(t); u.lang = "en-GB"; u.rate = 0.9; const v = enVoice(); if (v) { u.voice = v; u.lang = v.lang; }
+    setTimeout(() => speechSynthesis.speak(u), 60);   // Chrome: nói ngay sau cancel() hay bị câm
+    return true; } catch (e) { return false; }
+}
+function speakAudio(t) {   // máy không có giọng tiếng Anh (vd. trình duyệt trong Zalo): dùng file phát âm
+  try {
+    if (ttsAudio) ttsAudio.pause();
+    const play = src => { const a = new Audio(); ttsAudio = a; a.referrerPolicy = "no-referrer"; a.src = src; const p = a.play(); if (p && p.catch) p.catch(() => {}); return a; };
+    if (/^[a-z-]+$/i.test(t)) {
+      fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + encodeURIComponent(t.toLowerCase())).then(r => r.json()).then(j => {
+        const urls = [].concat(...(Array.isArray(j) ? j : []).map(e => (e.phonetics || []).map(p => p.audio).filter(Boolean)));
+        const u = urls.find(x => /-uk\./.test(x)) || urls[0];
+        play(u || "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-GB&q=" + encodeURIComponent(t));
+      }).catch(() => play("https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-GB&q=" + encodeURIComponent(t)));
+    } else play("https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-GB&q=" + encodeURIComponent(t.slice(0, 190)));
+  } catch (e) {}
 }
 function say(t) {
   t = String(t || "").replace(/·/g, ",").replace(/\s+/g, " ").trim(); if (!t) return;
-  try {
-    if (ttsAudio) { ttsAudio.pause(); ttsAudio.onerror = null; }
-    const a = new Audio(); ttsAudio = a; a.referrerPolicy = "no-referrer"; let fell = false;
-    const fallback = () => { if (fell) return; fell = true; speakDevice(t); };
-    a.onerror = fallback;
-    a.src = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-GB&ttsspeed=" + (t.length > 40 ? "0.9" : "0.75") + "&q=" + encodeURIComponent(t.slice(0, 190));
-    const p = a.play(); if (p && p.catch) p.catch(fallback);
-  } catch (e) { speakDevice(t); }
+  if (enVoice()) speakDevice(t); else speakAudio(t);
 }
 try { if (window.speechSynthesis) speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices(); } catch (e) {}
 function bindSay(root) { root.querySelectorAll("[data-say]").forEach(b => b.onclick = ev => { ev.stopPropagation(); say(b.dataset.say); }); }
@@ -354,6 +363,7 @@ function family(w) {   // các dạng khác trong word family: "devastation (n) 
     .filter(x => /^[a-z][a-z-]{2,}$/.test(x) && x !== w.w.toLowerCase());
 }
 const colOf = w => String(w.col || "").split(/\s+\/\s+|;\s*|\s+·\s+/).map(x => x.trim()).find(x => x && findForm(w.w, x)) || "";   // "the Arctic / Arctic ice" → 1 cụm
+const viShort = s => String(s || "").replace(/\s*\((?![A-Z]\))[^()]*\)/g, "").replace(/\s*[=≠≈]\s*[^,;]*$/, "").replace(/\s{2,}/g, " ").replace(/^[\s,;]+|[\s,;]+$/g, "").trim() || String(s || "");   // Cô 14/11: ghi chú trong ngoặc làm lộ đáp án — bỏ hết khi hiện ở câu hỏi
 const ctxOf = w => (w.ex && findForm(w.w, w.ex)) ? w.ex : colOf(w);
 const norm = s => String(s || "").toLowerCase().replace(/[’']/g, "'").replace(/\(.*?\)/g, "").replace(/\b(sb|sth)\b/g, " ").replace(/[^a-z' -]/g, "").replace(/\s+/g, " ").trim();
 const typeable = w => !/[·\/…]/.test(w.w) && w.w.length <= 26;
@@ -403,25 +413,25 @@ function review(opt) {
     let prompt = "", opts = null, answer = w.w, typeMode = false, label = "", autoSay = false;
     const gapped = c => { const r = findForm(w.w, c); return { r, form: c.slice(r[0], r[1]), html: esc(c.slice(0, r[0])) + '<span class="gap"></span>' + esc(c.slice(r[1])) }; };
     const wordOpts = (mode, lower) => shuffle([w].concat(similar(q.id, mode, 3))).map(x => ({ t: lower ? x.w.toLowerCase() : x.w, ok: x.id === q.id }));
-    if (k === "mean") { label = "Chọn nghĩa đúng"; prompt = '<div class="qbig">' + esc(w.w) + '</div><p class="ipa center">' + esc([w.ipa, w.pos].filter(Boolean).join(" · ")) + ' <button class="say mini" data-say="' + esc(w.w) + '">🔊</button></p>'; opts = shuffle([w].concat(similar(q.id, "mean", 3))).map(x => ({ t: x.vi, ok: x.id === q.id })); }
-    else if (k === "word") { label = "Chọn từ đúng nghĩa"; prompt = '<p class="qtext big">' + esc(w.vi) + "</p>" + (w.pos ? '<p class="small muted center">(' + esc(w.pos) + ")</p>" : ""); opts = wordOpts("form"); }
+    if (k === "mean") { label = "Chọn nghĩa đúng"; prompt = '<div class="qbig">' + esc(w.w) + '</div><p class="ipa center">' + esc([w.ipa, w.pos].filter(Boolean).join(" · ")) + ' <button class="say mini" data-say="' + esc(w.w) + '">🔊</button></p>'; opts = shuffle([w].concat(similar(q.id, "mean", 3))).map(x => ({ t: viShort(x.vi), ok: x.id === q.id })); }
+    else if (k === "word") { label = "Chọn từ đúng nghĩa"; prompt = '<p class="qtext big">' + esc(viShort(w.vi)) + "</p>" + (w.pos ? '<p class="small muted center">(' + esc(w.pos) + ")</p>" : ""); opts = wordOpts("form"); }
     else if (k === "listen") { label = "🎧 Nghe và chọn từ em nghe được"; prompt = '<div class="center"><button class="bigsay" data-say="' + esc(w.w) + '" aria-label="Nghe lại">🔊</button><p class="small muted">Bấm loa để nghe lại</p></div>'; opts = wordOpts("form"); autoSay = true; }
     else if (k === "tf") {
-      const truth = Math.random() < 0.5, other = similar(q.id, "mean", 1)[0], shown = truth || !other ? w.vi : other.vi;
+      const truth = Math.random() < 0.5, other = similar(q.id, "mean", 1)[0], shown = viShort(truth || !other ? w.vi : other.vi);
       label = "Đúng hay sai?"; prompt = '<div class="qbig">' + esc(w.w) + '</div><p class="center small muted">' + esc(w.pos || "") + '</p><p class="qtext big">nghĩa là: “' + esc(shown) + '”</p>';
-      opts = [{ t: "✔ Đúng", ok: shown === w.vi }, { t: "✘ Sai", ok: shown !== w.vi }]; answer = shown === w.vi ? "Đúng" : "Sai — nghĩa đúng: " + w.vi;
+      const isT = shown === viShort(w.vi); opts = [{ t: "✔ Đúng", ok: isT }, { t: "✘ Sai", ok: !isT }]; answer = isT ? "Đúng" : "Sai — nghĩa đúng: " + w.vi;
     }
     else if (k === "colloc") { const g = gapped(colOf(w)); answer = g.form; label = "Hoàn thành collocation"; prompt = '<p class="qtext big">' + g.html + '</p><p class="small muted center">Cụm từ hay dùng trong bài viết IELTS</p>'; opts = wordOpts("mean", true); opts.forEach(o => { if (o.ok) o.t = g.form.toLowerCase(); }); }
     else if (k === "form") {
       const g = gapped(ctx); answer = g.form; label = "Chọn dạng từ (word form) đúng";
       const forms = [g.form.toLowerCase()].concat(fam, [w.w.toLowerCase()]).filter((x, j, a) => a.indexOf(x) === j).slice(0, 4);
       if (forms.length < 3) { const extra = similar(q.id, "form", 8).filter(x => single(x)).map(x => x.w.toLowerCase()).slice(0, 4 - forms.length); extra.forEach(x => { if (forms.indexOf(x) < 0) forms.push(x); }); }
-      prompt = '<p class="qtext">' + g.html + '</p><p class="small muted">Gợi ý nghĩa: ' + esc(w.vi) + '</p>'; opts = shuffle(forms.map(x => ({ t: x, ok: x === g.form.toLowerCase() })));
+      prompt = '<p class="qtext">' + g.html + '</p><p class="small muted">Gợi ý nghĩa: ' + esc(viShort(w.vi)) + '</p>'; opts = shuffle(forms.map(x => ({ t: x, ok: x === g.form.toLowerCase() })));
     }
     else if (k === "cloze") { const g = gapped(ctx); answer = g.form; label = "Điền từ vào câu"; prompt = '<p class="qtext">' + g.html + '</p><p class="small muted">Chọn từ phù hợp nhất với câu</p>'; opts = wordOpts("mean", true); opts.forEach(o => { if (o.ok) o.t = g.form.toLowerCase(); }); }
-    else if (k === "type") { const g = gapped(ctx); answer = g.form; label = "Tự gõ từ còn thiếu"; prompt = '<p class="qtext">' + g.html + '</p><p class="small muted">Nghĩa: ' + esc(w.vi) + " · bắt đầu bằng <b>" + esc(g.form.slice(0, 1)) + "</b> · " + g.form.length + " chữ cái</p>"; typeMode = true; }
+    else if (k === "type") { const g = gapped(ctx); answer = g.form; label = "Tự gõ từ còn thiếu"; prompt = '<p class="qtext">' + g.html + '</p><p class="small muted">Nghĩa: ' + esc(viShort(w.vi)) + " · bắt đầu bằng <b>" + esc(g.form.slice(0, 1)) + "</b> · " + g.form.length + " chữ cái</p>"; typeMode = true; }
     else if (k === "dictation") { label = "🎧 Nghe và chép chính tả"; prompt = '<div class="center"><button class="bigsay" data-say="' + esc(w.w) + '" aria-label="Nghe lại">🔊</button><p class="small muted">Nghe rồi gõ lại đúng chính tả · ' + w.w.length + " chữ cái</p></div>"; typeMode = true; autoSay = true; }
-    else { label = "Tự gõ từ theo nghĩa"; prompt = '<p class="qtext big">' + esc(w.vi) + '</p><p class="small muted center">' + (w.pos ? esc(w.pos) + " · " : "") + "bắt đầu bằng <b>" + esc(w.w.slice(0, 1)) + "</b> · " + w.w.length + " chữ cái</p>"; typeMode = true; }
+    else { label = "Tự gõ từ theo nghĩa"; prompt = '<p class="qtext big">' + esc(viShort(w.vi)) + '</p><p class="small muted center">' + (w.pos ? esc(w.pos) + " · " : "") + "bắt đầu bằng <b>" + esc(w.w.slice(0, 1)) + "</b> · " + w.w.length + " chữ cái</p>"; typeMode = true; }
     shell('<section class="card quiz">' + head + '<span class="qtype">' + label + "</span>" + prompt +
       (typeMode ? '<form class="typein" id="tf"><input id="ti" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Gõ từ…"><button class="btn primary" type="submit">Kiểm tra</button></form><button class="btn ghost block" id="idk" style="margin-top:10px">Em chưa nhớ — xem đáp án</button>'
         : '<div class="opts' + (opts.length === 2 ? " two" : "") + '">' + opts.map((o, kk) => '<button class="opt" data-k="' + kk + '">' + esc(o.t) + "</button>").join("") + "</div>") + '<div id="fb"></div></section>', "page-quiz");
