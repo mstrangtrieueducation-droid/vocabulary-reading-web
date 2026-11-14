@@ -274,50 +274,73 @@ const REVIEW_MAX = 15;
 const reviewNeeded = () => !OWNER && S.rev !== dayNow() && dueWords().length > 0;
 const memStats = () => { const ws = Object.values(S.words); return { sure: ws.filter(w => w.box >= 3).length, learning: ws.filter(w => w.box < 3).length, total: V.reduce((a, u) => a + u.entries.length, 0) }; };
 /* ---------- cây từ vựng: mỗi bài là một cành, mỗi từ là một lá ---------- */
-// Lá khô = từ đến hạn ôn ("tưới cây" = ôn từ); lá xanh đậm dần theo mức nhớ; quả đỏ = từ đã thuộc lâu.
-const LEAF = ["#b9dc8c", "#8fca69", "#5cae4f", "#2f8a3f", "#1f6f33"], DRY = "#d6a043";
-function rnd(seed) { let x = Math.sin(seed * 9301 + 49297) * 233280; return x - Math.floor(x); }
+// Lá khô = từ đến hạn ôn ("tưới cây" = ôn từ); lá xanh đậm dần theo mức nhớ; quả = từ đã thuộc lâu.
+const LEAF = [["#d8efb4", "#a9d67a"], ["#bfe58f", "#7fc25a"], ["#8fd06a", "#4fa646"], ["#5cb85a", "#2b7f3c"], ["#3f9e4c", "#1d6430"]], DRY = ["#f3d79a", "#cf9a45"];
+const STAGES = [["Hạt giống", 0], ["Mầm non", 0.05], ["Cây con", 0.25], ["Cây non", 0.5], ["Cây lớn", 0.8], ["Cây sai quả", 1.01]];
+function rnd(seed) { const x = Math.sin(seed * 9301 + 49297) * 233280; return x - Math.floor(x); }
 function treeStage(sure, total, grown) {
-  const p = total ? sure / total : 0;
-  return !grown ? ["🌰", "Hạt giống"] : p < 0.05 ? ["🌱", "Mầm non"] : p < 0.25 ? ["🌿", "Cây con"] : p < 0.5 ? ["🪴", "Cây non"] : p < 0.8 ? ["🌳", "Cây lớn"] : ["🍎", "Cây sai quả"];
+  if (!grown) return { k: 0, name: STAGES[0][0] };
+  const p = total ? sure / total : 0; let k = 1; while (k < STAGES.length - 1 && p >= STAGES[k][1]) k++;
+  return { k, name: STAGES[k][0] };
 }
+const LEAF_PATH = "M0 0C3.5-4.6 10.5-5.2 15 0C10.5 5.2 3.5 4.6 0 0Z";
 function treeSvg(small) {
-  const d = dayNow(), units = [];
+  const d = dayNow(), units = [], id = small ? "ts" : "th";
   for (let i = 1; i <= N_UNITS; i++) { const es = V[i - 1].entries.filter(e => S.words[e.n]); if (es.length) units.push({ i, es }); }
-  const W = 360, G = 292, nB = units.length;
-  const top = G - 60 - Math.max(0, nB - 1) * 15 - 26, y0 = nB ? Math.max(0, Math.round(top - 48)) : 200;
-  let s = '<svg class="tree' + (small ? " sm" : "") + '" viewBox="0 ' + y0 + " " + W + " " + (304 - y0) + '" role="img" aria-label="Cây từ vựng">' +
-    '<ellipse cx="180" cy="' + (G + 2) + '" rx="150" ry="9" fill="#e4ecd6"/>';
-  if (!nB) return s + '<path d="M180 ' + G + ' q-2 -16 -14 -24 q14 2 14 18 q2 -18 16 -20 q-12 8 -16 26" fill="#8fca69"/><ellipse cx="180" cy="' + (G - 1) + '" rx="9" ry="4" fill="#9a6b3f"/></svg>';
-  const tw = 7 + nB * 0.9;
-  s += '<path d="M' + (180 - tw) + " " + G + " C" + (180 - tw * 0.6) + " " + (G - 60) + " " + (180 - 3) + " " + (top + 40) + " 178 " + top + " L182 " + top + " C" + (183) + " " + (top + 40) + " " + (180 + tw * 0.6) + " " + (G - 60) + " " + (180 + tw) + " " + G + ' Z" fill="#8a5a33"/>';
-  let leaves = "", k = 0;
+  const W = 360, G = 286, nB = units.length;
+  const gap = nB > 1 ? Math.min(15, (G - 62 - 28 - 58) / (nB - 1)) : 15;
+  const top = G - 62 - Math.max(0, nB - 1) * gap - 28, y0 = nB ? Math.max(0, Math.round(top - 52)) : 150;
+  let defs = '<defs><linearGradient id="' + id + 'tk" x1="0" x2="1"><stop offset="0" stop-color="#6b4226"/><stop offset=".55" stop-color="#9a6a42"/><stop offset="1" stop-color="#704629"/></linearGradient>' +
+    '<radialGradient id="' + id + 'cn" cx=".5" cy=".55" r=".5"><stop offset="0" stop-color="#d7efbf" stop-opacity=".95"/><stop offset="1" stop-color="#d7efbf" stop-opacity="0"/></radialGradient>' +
+    '<linearGradient id="' + id + 'gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe29a"/><stop offset="1" stop-color="#93c66d"/></linearGradient>' +
+    '<radialGradient id="' + id + 'fr" cx=".35" cy=".35" r=".7"><stop offset="0" stop-color="#ff8a75"/><stop offset=".6" stop-color="#e5483b"/><stop offset="1" stop-color="#b82e26"/></radialGradient>' +
+    '<path id="' + id + 'lf" d="' + LEAF_PATH + '"/>';
+  LEAF.concat([DRY]).forEach((c, k) => { defs += '<linearGradient id="' + id + "l" + k + '" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="' + c[0] + '"/><stop offset="1" stop-color="' + c[1] + '"/></linearGradient>'; });
+  defs += "</defs>";
+  let s = '<svg class="tree' + (small ? " sm" : "") + '" viewBox="0 ' + y0 + " " + W + " " + (300 - y0) + '" role="img" aria-label="Cây từ vựng">' + defs +
+    '<path d="M-10 ' + (G + 4) + " Q90 " + (G - 14) + " 180 " + (G - 6) + " T370 " + (G + 2) + " V310 H-10Z\" fill=\"url(#" + id + 'gd)"/>';
+  for (let g = 0; g < 7; g++) { const gx = 30 + g * 50 + rnd(g) * 20, gy = G + 2 - Math.sin(gx / 60) * 3; s += '<path d="M' + gx + " " + gy + " l2 -7 l2 7 l2 -5 l1 5\" fill=\"none\" stroke=\"#7fb85a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>"; }
+  if (!nB) return s + '<path d="M180 ' + (G - 6) + ' C179 ' + (G - 22) + " 176 " + (G - 32) + " 170 " + (G - 38) + '" stroke="#5aa64a" stroke-width="3" fill="none" stroke-linecap="round"/>' +
+    '<use href="#' + id + 'lf" fill="url(#' + id + 'l2)" transform="translate(170 ' + (G - 38) + ') rotate(200) scale(1.3)"/><use href="#' + id + 'lf" fill="url(#' + id + 'l1)" transform="translate(177 ' + (G - 28) + ') rotate(-25) scale(1.2)"/></svg>';
+  const tw = 6 + nB * 0.85;
+  let back = "", wood = "", leaves = "", k = 0;
   units.forEach((u, b) => {
-    const side = b % 2 ? 1 : -1, y = G - 60 - b * 15, L = 78 - b * 2.6, ex = 180 + side * L, ey = y - 22 - rnd(u.i) * 8;
-    s += '<ellipse cx="' + (180 + side * L * 0.62).toFixed(1) + '" cy="' + (y - 14) + '" rx="' + (L * 0.5).toFixed(1) + '" ry="17" fill="#cfe8b4" opacity=".55"/>';
-    s += '<path d="M180 ' + y + " Q" + (180 + side * L * 0.45) + " " + (y - 2) + " " + ex + " " + ey + '" stroke="#8a5a33" stroke-width="' + Math.max(2, 5 - b * 0.2) + '" fill="none" stroke-linecap="round"/>';
-    u.es.forEach((e, j) => {
-      const w = S.words[e.n], t = 0.3 + 0.7 * rnd(e.n * 3.1), bx = 180 + (ex - 180) * t, by = y + (ey - y) * t - 2 * t * (1 - t) * 4;
-      const r = 4 + 11 * t, a = rnd(e.n * 7.7) * 6.283, x = bx + Math.cos(a) * r * rnd(e.n + 2), yy = by + Math.sin(a) * r * 0.7 * rnd(e.n + 5) - 3;
-      const due = w.box < 4 && w.due <= d, col = due ? DRY : LEAF[Math.min(4, w.box)], rot = Math.round(rnd(e.n * 1.3) * 360);
-      leaves += '<ellipse class="lf" style="animation-delay:' + (k++ % 40) * 12 + 'ms" cx="' + x.toFixed(1) + '" cy="' + yy.toFixed(1) + '" rx="7" ry="3.5" fill="' + col + '" transform="rotate(' + rot + " " + x.toFixed(1) + " " + yy.toFixed(1) + ')"><title>' + esc(e.term) + "</title></ellipse>";
-      if (w.box >= 4) leaves += '<circle cx="' + (x + 2).toFixed(1) + '" cy="' + (yy + 3).toFixed(1) + '" r="3" fill="#e2483d"/>';
+    const side = b % 2 ? 1 : -1, y = G - 62 - b * gap, L = nB >= 5 ? 46 + 40 * Math.sin(Math.PI * (b + 0.9) / (nB + 0.6)) : 80 - b * 2.8, ex = 180 + side * L, ey = y - 20 - rnd(u.i) * 8;
+    back += '<ellipse cx="' + (180 + side * L * 0.6).toFixed(1) + '" cy="' + (y - 13) + '" rx="' + (L * 0.56).toFixed(1) + '" ry="21" fill="url(#' + id + 'cn)"/>';
+    wood += '<path d="M180 ' + (y + 3) + " Q" + (180 + side * L * 0.42) + " " + (y - 1) + " " + ex.toFixed(1) + " " + ey.toFixed(1) + '" stroke="url(#' + id + 'tk)" stroke-width="' + Math.max(1.8, 4.6 - b * 0.2).toFixed(1) + '" fill="none" stroke-linecap="round"/>';
+    u.es.forEach(e => {
+      const w = S.words[e.n], t = 0.28 + 0.72 * rnd(e.n * 3.1), bx = 180 + (ex - 180) * t, by = y + (ey - y) * t;
+      const r = 3 + 10 * t, a = rnd(e.n * 7.7) * 6.283, x = bx + Math.cos(a) * r * (0.4 + 0.6 * rnd(e.n + 2)), yy = by + Math.sin(a) * r * 0.75 - 2;
+      const due = w.box < 4 && w.due <= d, g = due ? 5 : Math.min(4, w.box), rot = Math.round((side < 0 ? 180 : 0) + (rnd(e.n * 1.3) - 0.5) * 140 + (due ? 35 : 0));
+      leaves += '<use class="lf" style="animation-delay:' + (k++ % 50) * 10 + 'ms" href="#' + id + 'lf" fill="url(#' + id + "l" + g + ')" transform="translate(' + x.toFixed(1) + " " + yy.toFixed(1) + ") rotate(" + rot + ") scale(" + (due ? 0.82 : 0.9 + 0.15 * rnd(e.n)).toFixed(2) + ')"><title>' + esc(e.term) + "</title></use>";
+      if (w.box >= 4) leaves += '<circle cx="' + (x + 1.5).toFixed(1) + '" cy="' + (yy + 4.5).toFixed(1) + '" r="3.4" fill="url(#' + id + 'fr)"/><path d="M' + (x + 1.5).toFixed(1) + " " + (yy + 1.2).toFixed(1) + ' l1 -2" stroke="#5a3a1e" stroke-width=".9"/>';
     });
   });
-  let crown = '<ellipse cx="180" cy="' + (top - 4) + '" rx="22" ry="15" fill="#cfe8b4" opacity=".7"/>';
-  for (let q = 0; q < 9; q++) { const cx = 180 + Math.cos(q * 0.7) * (6 + q * 1.6), cy = top - 6 + Math.sin(q * 1.9) * 7; crown += '<ellipse cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" rx="6.5" ry="3.3" fill="' + LEAF[2 + q % 2] + '" transform="rotate(' + (q * 41) + " " + cx.toFixed(1) + " " + cy.toFixed(1) + ')"/>'; }
-  return s + crown + leaves + "</svg>";
+  const trunk = '<path d="M' + (180 - tw) + " " + (G - 4) + " C" + (180 - tw * 0.55) + " " + (G - 70) + " 177 " + (top + 46) + " 178.6 " + top + " L181.4 " + top + " C183 " + (top + 46) + " " + (180 + tw * 0.55) + " " + (G - 70) + " " + (180 + tw) + " " + (G - 4) +
+    " Q180 " + (G + 2) + " " + (180 - tw) + " " + (G - 4) + 'Z" fill="url(#' + id + 'tk)"/>';
+  let crown = '<ellipse cx="180" cy="' + (top - 2) + '" rx="26" ry="18" fill="url(#' + id + 'cn)"/>';
+  for (let q = 0; q < 9; q++) crown += '<use href="#' + id + 'lf" fill="url(#' + id + "l" + (2 + q % 2) + ')" transform="translate(' + (180 + Math.cos(q * 0.8) * 4).toFixed(1) + " " + (top + 2 - q * 0.6).toFixed(1) + ") rotate(" + (q * 40 - 90) + ') scale(.95)"/>';
+  return s + back + trunk + wood + crown + leaves + "</svg>";
+}
+function leafIcon(g, fruit) {
+  const c = g === 5 ? DRY : LEAF[g];
+  return '<svg viewBox="0 0 22 22" class="li" aria-hidden="true">' + (fruit ? '<circle cx="11" cy="12" r="6.5" fill="#e5483b"/><circle cx="9" cy="10" r="1.8" fill="#ff9d8c"/><path d="M11 5.5q1-3 4-3.5" stroke="#5a3a1e" stroke-width="1.4" fill="none" stroke-linecap="round"/>'
+    : '<path d="M3 15C6 7 13 4 19 4C18 11 14 18 6 18Z" fill="' + c[1] + '"/><path d="M5 17C9 12 13 9 17 6" stroke="' + c[0] + '" stroke-width="1.3" fill="none" stroke-linecap="round"/>') + "</svg>";
 }
 function treeCard() {
   const ms = memStats(), d = dayNow(), ws = Object.values(S.words);
   const isDue = w => w.box < 4 && w.due <= d, due = ws.filter(isDue).length, fruit = ws.filter(w => w.box >= 4).length,
     sureNow = ws.filter(w => !isDue(w) && w.box >= 3).length, growing = ws.filter(w => !isDue(w) && w.box < 3).length;
-  const [ic, name] = treeStage(ms.sure, ms.total, ws.length > 0), rn = reviewNeeded();
-  return '<section class="card treecard"><div class="trhead"><span class="kick">CÂY TỪ VỰNG CỦA EM</span><h2>' + ic + " " + name + '</h2><p class="small muted">Mỗi bài là một cành, mỗi từ là một lá. Ôn đúng hạn thì lá xanh đậm dần và ra quả.</p></div>' +
-    treeSvg() +
-    '<div class="trlegend"><span><i style="background:' + DRY + '"></i>Lá khô · cần ôn <b>' + due + '</b></span><span><i style="background:' + LEAF[1] + '"></i>Đang lớn <b>' + growing + '</b></span><span><i style="background:' + LEAF[3] + '"></i>Nhớ chắc <b>' + sureNow + '</b></span><span><i class="fr"></i>Quả · thuộc lâu <b>' + fruit + "</b></span></div>" +
-    '<p class="trbar"><span style="width:' + Math.round(ms.sure / Math.max(1, ms.total) * 100) + '%"></span></p><p class="small muted center">' + ms.sure + " / " + ms.total + " từ cả khoá đã nhớ chắc</p>" +
-    (due ? '<button class="btn ' + (rn ? "gold" : "ghost") + ' big water" data-go="review">💧 Tưới cây: ôn ' + Math.min(due, REVIEW_MAX) + " từ" + (rn ? "" : " (thêm)") + " ➔</button>" : ws.length ? '<p class="okline center">✓ Hôm nay cây đã được tưới đủ.</p>' : "") + "</section>";
+  const st = treeStage(ms.sure, ms.total, ws.length > 0), rn = reviewNeeded(), pct = Math.round(ms.sure / Math.max(1, ms.total) * 100);
+  const tile = (g, fr, n, lab) => '<div class="tt' + (g === 5 && n ? " hot" : "") + '">' + leafIcon(g, fr) + "<b>" + n + "</b><small>" + lab + "</small></div>";
+  return '<section class="card treecard"><div class="trtop"><div><span class="kick">Cây từ vựng của em</span><h2>' + st.name + '</h2><span class="stage">' +
+    STAGES.slice(1).map((x, j) => '<i class="' + (j + 1 <= st.k ? "on" : "") + '"></i>').join("") + "</span></div>" +
+    '<div class="ring2" style="--p:' + pct + '"><b>' + pct + "%</b><small>nhớ chắc</small></div></div>" +
+    '<div class="scene' + (ws.length ? "" : " seed") + '">' + treeSvg() + (ws.length ? "" : '<p class="seedtip">Học xong bước Từ vựng của Bài 1 là cây nảy mầm</p>') + "</div>" +
+    '<div class="trtiles">' + tile(5, 0, due, "Cần ôn") + tile(1, 0, growing, "Đang lớn") + tile(3, 0, sureNow, "Nhớ chắc") + tile(4, 1, fruit, "Ra quả") + "</div>" +
+    (due ? '<button class="btn water' + (rn ? "" : " soft") + '" data-go="review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C9 7.5 6 10.6 6 14.2A6 6 0 0 0 18 14.2C18 10.6 15 7.5 12 3Z" fill="currentColor"/></svg>Tưới cây · ôn ' + Math.min(due, REVIEW_MAX) + " từ" + (rn ? '<small>khoảng 3 phút</small>' : '<small>không bắt buộc</small>') + "</button>"
+      : ws.length ? '<p class="watered">Hôm nay cây đã được tưới đủ</p>' : "") +
+    '<p class="trnote">Mỗi bài là một cành, mỗi từ là một lá. Ôn đúng hạn để lá xanh đậm dần và ra quả.</p></section>';
 }
 
 
