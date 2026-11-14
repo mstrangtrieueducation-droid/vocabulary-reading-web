@@ -92,7 +92,8 @@ function appendLog(code, name, events) {
 /* ---------------- GET ---------------- */
 function doGet(e) {
   var p = e.parameter || {};
-  if (p.action === 'pa') return paGet(p);   // Luyện phát âm IELTS (tệp scripts/luyen-phat-am/grader.apps-script.gs)
+  if (p.action === 'pa') return paGet(p);
+  if (p.action === 'rt') return rtGet(p);   // Cây từ vựng học thuật Reading (scripts/cay-tu-vung-reading/server.apps-script.gs)   // Luyện phát âm IELTS (tệp scripts/luyen-phat-am/grader.apps-script.gs)
   if (p.action === 'admin' || p.action === 'detail' || p.action === 'forminfo') return adminGet(p);
   var code = String(p.hs || '').trim();
   var lock = LockService.getScriptLock(); lock.waitLock(20000);
@@ -134,6 +135,7 @@ function adminGet(p) {
 function doPost(e) {
   var body; try { body = JSON.parse(e.postData.contents); } catch (x) { return json({ ok: false, error: 'bad' }); }
   if (body.action === 'save') return save(body);
+  if (body.action === 'rt_save') return rtSave(body);   // Cây từ vựng học thuật Reading
   if (body.action === 'score') return score(body);
   if (body.action === 'aztoken') return azToken(body);
   if (body.key !== ADMIN_KEY) return json({ ok: false, error: 'key' });
