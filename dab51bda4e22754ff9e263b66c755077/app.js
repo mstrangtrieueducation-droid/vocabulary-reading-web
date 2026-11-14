@@ -1,5 +1,5 @@
 /* Cây từ vựng học thuật — IELTS Reading tự luyện. Ms Trang Trieu Education.
-   - Từ lấy đúng danh sách từ cô soạn của 27 bài Reading (data.js). Không bắt học hết một bài một lúc:
+   - Từ lấy đúng danh sách từ cô soạn: 27 bài Reading tự luyện + "Từ vựng cần lưu ý" của Full Test 11–23 (data.js). Không bắt học hết một bài một lúc:
      mở bài đọc nào thì gieo từ bài đó; mỗi ngày tối đa 8 từ mới + tối đa 15 từ đến hạn (~3–5 phút).
    - Ôn ngắt quãng (Leitner): đúng đúng hạn → lên hộp, ôn lại sau 1 → 3 → 7 → 14 → 30 ngày; sai → về hộp 0, ôn lại ngày mai.
    - Dạng bài khó dần theo mức nhớ: làm quen thẻ từ → chọn nghĩa → chọn từ theo nghĩa → điền từ vào câu của bài đọc → tự gõ từ.
@@ -14,7 +14,11 @@ const store = { get(k) { try { return JSON.parse(localStorage.getItem(k) || "nul
 function toast(m) { const t = document.getElementById("toast"); t.textContent = m; t.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("on"), 2800); }
 const dayNow = () => Math.floor((Date.now() + 7 * 3600e3) / 864e5);   // ngày theo giờ Việt Nam
 const W = {}, PW = {}; P.forEach(a => { PW[a.code] = a; a.words.forEach(w => { w.code = a.code; W[w.id] = w; }); });
-const ALL = Object.keys(W).length;
+/* Thang lớn của cây giữ như cũ (= số từ của 27 bài tự luyện); từ Full Test cộng thêm giúp cây lên cấp nhanh hơn. */
+const ALL = P.filter(a => !a.full).reduce((n, a) => n + a.words.length, 0) || Object.keys(W).length;
+const tName = a => (a.full ? "Full Test " : "Test ") + a.t;   // nhãn bài: "Test 5" / "Full Test 12"
+/* ?add=… nhận mã 1 passage, hoặc mã cả Full Test ("IELTS READING FULL TEST 12") → gieo cả 3 passage. */
+const codesFor = c => PW[c] ? [c] : P.filter(a => a.code.indexOf(c + " - PASSAGE ") === 0).map(a => a.code);
 
 /* ---------- học sinh + trạng thái ---------- */
 let student = store.get("rt-student");
@@ -165,19 +169,23 @@ function entry(then) {
 /* ---------- trang chủ ---------- */
 function home() {
   const q = new URLSearchParams(location.search), addCode = q.get("add");
-  if (addCode && PW[addCode]) { const n = addPassage(addCode); save(); history.replaceState(null, "", location.pathname); if (n) toast("Đã gieo " + n + " từ của " + PW[addCode].title + " vào cây 🌱"); }
-  const groups = {}; P.forEach(a => (groups[a.t] = groups[a.t] || []).push(a));
+  const addList = addCode ? codesFor(addCode) : [];
+  if (addList.length) {
+    let n = 0; addList.forEach(c => { n += addPassage(c); }); save(); history.replaceState(null, "", location.pathname);
+    if (n) toast("Đã gieo " + n + " từ của " + (addList.length > 1 ? tName(PW[addList[0]]) : PW[addList[0]].title) + " vào cây 🌱");
+  }
+  const groups = {}, gKey = a => (a.full ? "F" : "") + a.t; P.forEach(a => (groups[gKey(a)] = groups[gKey(a)] || []).push(a));
   const mine = P.filter(a => S.add[a.code]);
   const pRow = a => {
     const ws = a.words.map(w => S.words[w.id]).filter(Boolean), sure = ws.filter(w => w.s && w.b >= 3).length, on = !!S.add[a.code];
-    return '<button class="p' + (on ? " on" : "") + '" data-add="' + esc(a.code) + '"><span class="n">' + (on ? "✓" : "P" + a.p) + '</span><span class="tx"><b>' + esc(a.title) + "</b><small>Test " + a.t + " · Passage " + a.p + " · " + a.words.length + " từ" + (on ? " · nhớ chắc " + sure : "") + "</small>" +
+    return '<button class="p' + (on ? " on" : "") + '" data-add="' + esc(a.code) + '"><span class="n">' + (on ? "✓" : "P" + a.p) + '</span><span class="tx"><b>' + esc(a.title) + "</b><small>" + tName(a) + " · Passage " + a.p + " · " + a.words.length + " từ" + (on ? " · nhớ chắc " + sure : "") + "</small>" +
       (on ? '<span class="bar"><i style="width:' + Math.round(sure / a.words.length * 100) + '%"></i></span>' : "") + "</span>" + (on ? "" : '<span class="add">+ Gieo</span>') + "</button>";
   };
   shell('<div class="cols"><div class="left">' + treeCard() + '</div><div>' +
     '<section class="card"><span class="kick">Chào ' + esc(student.name.split(" ").pop()) + '!</span><h1 style="font-size:20px">Học từ học thuật theo bài đọc</h1>' +
     '<div class="how"><b>Không cần học thuộc cả bài một lúc.</b> Em đọc bài nào thì gieo từ bài đó vào cây. Mỗi ngày bấm <b>Tưới cây</b> vài phút: máy đưa ra từ cũ đến hạn và vài từ mới, dạng bài khó dần (chọn nghĩa → chọn từ → điền vào câu của bài đọc → tự gõ từ). Từ nào nhớ chắc thì lâu mới hỏi lại.</div></section>' +
     (mine.length ? '<h2 class="sec">Bài đã gieo (' + mine.length + ")</h2><div class=\"ps\">" + mine.map(pRow).join("") + "</div>" : "") +
-    '<h2 class="sec">Gieo từ của bài đọc</h2><div class="tests">' + Object.keys(groups).map(t => '<div class="test"><h3>IELTS Reading Test ' + t + '</h3><div class="ps">' + groups[t].map(pRow).join("") + "</div></div>").join("") + "</div>" +
+    '<h2 class="sec">Gieo từ của bài đọc</h2><div class="tests">' + Object.keys(groups).map(t => '<div class="test"><h3>IELTS Reading ' + tName(groups[t][0]) + '</h3><div class="ps">' + groups[t].map(pRow).join("") + "</div></div>").join("") + "</div>" +
     (Object.keys(S.words).length ? '<h2 class="sec">Sổ từ của em</h2><section class="card"><input id="fq" class="field" style="width:100%;height:44px;border:1.5px solid #cdd5ec;border-radius:12px;padding:0 12px" placeholder="Tìm từ…"><div class="wlist" id="wl"></div></section>' : "") +
     "</div></div>");
   const go = document.getElementById("go"); if (go) go.onclick = review;
@@ -201,10 +209,10 @@ function wordList(f) {
 function say(t) { try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(String(t).replace(/·/g, ",")); u.lang = "en-GB"; u.rate = 0.86; const v = speechSynthesis.getVoices(); u.voice = v.find(x => /^en-gb/i.test(x.lang)) || v.find(x => /^en/i.test(x.lang)) || null; speechSynthesis.speak(u); } catch (e) {} }
 function bindSay(root) { root.querySelectorAll("[data-say]").forEach(b => b.onclick = ev => { ev.stopPropagation(); say(b.dataset.say); }); }
 function cardHtml(w) {
-  return '<div class="wcard"><div class="w">' + esc(w.w) + '</div><p class="ipa" style="margin:0">' + esc(w.ipa) + (w.pos ? " · " + esc(w.pos) : "") + "</p>" +
+  return '<div class="wcard"><div class="w">' + esc(w.w) + '</div><p class="ipa" style="margin:0">' + esc([w.ipa, w.pos].filter(Boolean).join(" · ")) + "</p>" +
     '<button class="say" data-say="' + esc(w.w) + '">▶ Nghe từ</button>' + (w.ex ? '<button class="say" data-say="' + esc(w.ex) + '">▶ Nghe câu</button>' : "") +
     "<p><b>Nghĩa:</b> " + esc(w.vi) + "</p>" + (w.fam ? "<p><b>Word family:</b> " + esc(w.fam) + "</p>" : "") + (w.col ? "<p><b>Collocation:</b> <em>" + esc(w.col) + "</em></p>" : "") + (w.ex ? "<p><b>Ví dụ:</b> " + esc(w.ex) + "</p>" : "") +
-    '<p class="small muted">' + esc(PW[w.code].title) + " · Test " + PW[w.code].t + " P" + PW[w.code].p + "</p></div>";
+    '<p class="small muted">' + esc(PW[w.code].title) + " · " + tName(PW[w.code]) + " P" + PW[w.code].p + "</p></div>";
 }
 
 /* ---------- câu hỏi ---------- */
@@ -246,7 +254,7 @@ function review() {
       return;
     }
     let prompt = "", opts = null, answer = w.w, typeMode = false, label = "";
-    if (q.k === "mean") { label = "Chọn nghĩa đúng"; prompt = '<div class="qbig">' + esc(w.w) + '</div><p class="ipa">' + esc(w.ipa) + (w.pos ? " · " + esc(w.pos) : "") + ' <button class="say" data-say="' + esc(w.w) + '">▶</button></p>'; opts = shuffle([w].concat(distract(q.id, "vi", 3))).map(x => ({ t: x.vi, ok: x.id === q.id })); }
+    if (q.k === "mean") { label = "Chọn nghĩa đúng"; prompt = '<div class="qbig">' + esc(w.w) + '</div><p class="ipa">' + esc([w.ipa, w.pos].filter(Boolean).join(" · ")) + ' <button class="say" data-say="' + esc(w.w) + '">▶</button></p>'; opts = shuffle([w].concat(distract(q.id, "vi", 3))).map(x => ({ t: x.vi, ok: x.id === q.id })); }
     else if (q.k === "word") { label = "Chọn từ đúng nghĩa"; prompt = '<p class="qtext">' + esc(w.vi) + "</p>" + (w.col ? '<p class="small muted">Gợi ý collocation: ' + esc(w.col.replace(new RegExp(w.w.split(" ")[0], "ig"), "___")) + "</p>" : ""); opts = shuffle([w].concat(distract(q.id, "w", 3))).map(x => ({ t: x.w, ok: x.id === q.id })); }
     else if (q.k === "cloze" || q.k === "type") {
       const r = findForm(w.w, w.ex), form = w.ex.slice(r[0], r[1]); answer = form;
