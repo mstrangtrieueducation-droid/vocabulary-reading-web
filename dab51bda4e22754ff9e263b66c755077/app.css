@@ -94,3 +94,13 @@ details.lib summary{cursor:pointer;font-weight:700;color:var(--navy3);padding:6p
 .trnote{margin:10px 0 0;text-align:center;font-size:12px;color:#94a3b8}
 @keyframes mkin{from{opacity:0}to{opacity:1}}
 @keyframes drift{from{transform:translateX(-6px)}to{transform:translateX(10px)}}
+/* cổng mở bài đọc */
+.gate .gstep{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1.5px solid #e2e8f0;border-radius:14px;margin:10px 0;background:#fff}
+.gate .gstep.ok{border-color:#a7f3d0;background:#ecfdf5}
+.gate .gn{flex:0 0 30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:var(--navy);color:#fff}
+.gate .gstep.ok .gn{background:#10b981}
+.gate .gtx{flex:1;min-width:0}.gate .gtx b{display:block;font-size:15.5px}.gate .gtx small{display:block;color:#5b6475;margin:2px 0 8px;font-size:13.5px}
+.gate .gstep.ok .gtx small{margin-bottom:0}
+.gate .gbtns{display:flex;gap:8px;flex-wrap:wrap}.gate .gbtns .btn{flex:1 1 140px}
+.gate #glist .wcard{margin-top:10px}
+.center{text-align:center}

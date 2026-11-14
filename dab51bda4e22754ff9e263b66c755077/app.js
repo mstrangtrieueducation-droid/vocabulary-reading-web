@@ -3,10 +3,12 @@
      mở bài đọc nào thì gieo từ bài đó; mỗi ngày tối đa 8 từ mới + tối đa 15 từ đến hạn (~3–5 phút).
    - Ôn ngắt quãng (Leitner): đúng đúng hạn → lên hộp, ôn lại sau 1 → 3 → 7 → 14 → 30 ngày; sai → về hộp 0, ôn lại ngày mai.
    - Dạng bài khó dần theo mức nhớ: làm quen thẻ từ → chọn nghĩa → chọn từ theo nghĩa → điền từ vào câu của bài đọc → tự gõ từ.
-   - Lưu trong máy + đồng bộ về Apps Script (bảng theo dõi của cô) theo họ tên + lớp. */
+   - Lưu trong máy + đồng bộ về Apps Script (bảng theo dõi của cô) theo họ tên + lớp.
+   - Cổng mở bài đọc (?gate=1&add=MÃ BÀI&name=…&cls=…&back=…, do nút "BẮT ĐẦU LÀM BÀI" của trang Reading tự luyện mở):
+     muốn vào bài đọc thì (1) tưới cây hôm nay (hết từ cũ đến hạn) và (2) kiểm tra từ của bài, đúng ngay lần đầu ≥ 80%. */
 (() => {
 "use strict";
-const C = Object.assign({ CLASSES: [], API: "", NEW_PER_DAY: 8, REVIEW_MAX: 15, READING_BASE: "" }, window.RT_CONFIG || {});
+const C = Object.assign({ CLASSES: [], API: "", NEW_PER_DAY: 8, REVIEW_MAX: 15, READING_BASE: "https://mstrangtrieueducation-droid.github.io/ielts-reading-web/", PASS_PCT: 80 }, window.RT_CONFIG || {});
 const P = window.RT_DATA || [];
 const app = document.getElementById("app");
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -22,10 +24,16 @@ const codesFor = c => PW[c] ? [c] : P.filter(a => a.code.indexOf(c + " - PASSAGE
 
 /* ---------- học sinh + trạng thái ---------- */
 let student = store.get("rt-student");
+/* Trang Reading gửi kèm họ tên + lớp em vừa điền → dùng đúng tên đó (cùng khoá với trang Reading, khỏi gõ lại). */
+const URLQ = new URLSearchParams(location.search);
+(() => {
+  const n = String(URLQ.get("name") || "").replace(/\s+/g, " ").trim(), c = String(URLQ.get("cls") || "").trim();
+  if (n.length >= 5 && /^IELTS \d+$/.test(c)) { if (C.CLASSES.indexOf(c) < 0) C.CLASSES.push(c); student = { name: n, cls: c }; store.set("rt-student", student); }
+})();
 if (student && (!student.name || C.CLASSES.indexOf(student.cls) < 0)) student = null;
 const keyOf = s => "rt-state:" + s.name.toUpperCase() + "|" + s.cls;
 let S = null;
-const blank = () => ({ v: 1, t: 0, add: {}, words: {}, rev: 0, days: {} });
+const blank = () => ({ v: 1, t: 0, add: {}, words: {}, rev: 0, days: {}, pass: {} });
 function loadLocal() { S = (student && store.get(keyOf(student))) || blank(); }
 function save() { S.t = Date.now(); store.set(keyOf(student), S); push(); }
 let pushT = null, dirty = false;
@@ -35,6 +43,10 @@ function flush(beacon) {
   if (!C.API || !dirty || !student) return; clearTimeout(pushT); dirty = false;
   if (beacon && navigator.sendBeacon) { try { if (navigator.sendBeacon(C.API, new Blob([body()], { type: "text/plain;charset=utf-8" }))) return; } catch (e) {} }
   fetch(C.API, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: body(), keepalive: true }).catch(() => { dirty = true; });
+}
+async function pushNow() {   // lưu ngay lên máy chủ trước khi quay lại bài đọc
+  if (!C.API || !student) return; clearTimeout(pushT); dirty = false;
+  try { await fetch(C.API, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: body(), keepalive: true }); } catch (e) { dirty = true; }
 }
 function push() { if (!C.API) return; dirty = true; clearTimeout(pushT); pushT = setTimeout(() => flush(false), 800); }
 addEventListener("pagehide", () => flush(true));
@@ -239,10 +251,10 @@ function kindFor(id) {
   if (b === 2) return cl ? "cloze" : "word";
   return cl ? "type" : "typemean";
 }
-function review() {
-  const L = dueList(), queue = L.due.concat(L.fresh).map(id => ({ id, k: kindFor(id) })), total = queue.length, wrong = new Set(), first = {};
+function review(custom) {   // custom = { ids, kind(id), done(right, total) } — dùng cho cổng mở bài đọc
+  const L = custom ? null : dueList(), queue = (custom ? custom.ids : L.due.concat(L.fresh)).map(id => ({ id, k: custom ? custom.kind(id) : kindFor(id) })), total = queue.length, wrong = new Set(), first = {};
   let i = 0, right = 0;
-  if (!total) return home();
+  if (!total) return custom ? custom.done(0, 0) : home();
   const next = () => {
     if (i >= queue.length) return finish();
     const q = queue[i], w = W[q.id];
@@ -286,6 +298,7 @@ function review() {
     });
   };
   const finish = () => {
+    if (custom) return custom.done(right, total);
     S.rev = dayNow(); save(); flush(false);
     shell('<section class="card done"><div class="big">🌳</div><h1>Cây đã được tưới!</h1><p>Em trả lời đúng ngay lần đầu <b>' + right + "/" + total + "</b> từ." + (wrong.size ? " Những từ chưa nhớ sẽ quay lại vào ngày mai." : "") + "</p>" +
       (streak() > 1 ? "<p>🔥 " + streak() + " ngày liền tưới cây.</p>" : "") + '<button class="btn primary block" id="hm">Xem cây của em</button></section>');
@@ -294,7 +307,47 @@ function review() {
   next();
 }
 
+/* ---------- cổng mở bài đọc ---------- */
+function backUrl(a) {
+  const b = URLQ.get("back");
+  try { if (b && new URL(b).origin === location.origin) return b; } catch (e) {}
+  return a && a.slug ? C.READING_BASE + a.slug + "/" : C.READING_BASE;
+}
+function gateState(code) {
+  S.pass = S.pass || {};
+  const d = dayNow(), old = Object.entries(S.words).filter(([, w]) => w.s && w.d <= d).map(([id]) => id);
+  return { old, watered: !old.length || S.rev === d, passed: !!S.pass[code] };
+}
+function gate(code) {
+  const a = PW[code]; if (!a) return home();
+  if (!S.add[code]) { addPassage(code); save(); }
+  const g = gateState(code), ids = a.words.map(w => w.id), need = Math.ceil(ids.length * C.PASS_PCT / 100);
+  const step = (ok, n, t, sub, btn) => '<div class="gstep' + (ok ? " ok" : "") + '"><span class="gn">' + (ok ? "✓" : n) + '</span><div class="gtx"><b>' + t + "</b><small>" + sub + "</small>" + (ok ? "" : btn) + "</div></div>";
+  const p = S.pass[code];
+  shell('<section class="card gate"><span class="kick">Mở khoá bài đọc</span><h1 style="font-size:20px">' + esc(a.title) + '</h1><p class="small muted" style="margin:2px 0 12px">' + esc(tName(a)) + " · Passage " + a.p + " · " + ids.length + " từ</p>" +
+    '<div class="how" style="margin:0 0 14px"><b>Phải thuộc từ thì mới đọc hiểu được.</b> Làm xong 2 bước dưới đây (khoảng 5 phút) là mở được bài đọc.</div>' +
+    step(g.watered, 1, "Tưới cây hôm nay", g.watered ? (g.old.length ? "Đã tưới xong hôm nay." : "Không có từ cũ cần ôn.") : g.old.length + " từ cũ đã đến hạn ôn — tưới 1 lượt rồi vào bài.", '<button class="btn water" id="gw"><span>💧 Tưới cây · ' + Math.min(g.old.length, C.REVIEW_MAX) + " từ</span></button>") +
+    step(g.passed, 2, "Kiểm tra từ của bài này", g.passed ? "Đã đạt " + p.sc + "% — vào bài được rồi." : "Chọn nghĩa đúng cho " + ids.length + " từ của bài. Cần đúng ngay lần đầu từ " + need + "/" + ids.length + " từ (" + C.PASS_PCT + "%)." + (p === undefined && S.last && S.last[code] ? " Lần trước: " + S.last[code] + "%." : ""),
+      '<div class="gbtns"><button class="btn ghost" id="gl">📖 Xem lại từ</button><button class="btn primary" id="gq">Làm bài kiểm tra</button></div>') +
+    (g.watered && g.passed ? '<button class="btn gold block" id="go2" style="margin-top:14px;height:52px">Mở bài đọc ➔</button>' : '<p class="small muted center" style="margin-top:12px">🔒 Bài đọc mở khi xong cả 2 bước.</p>') +
+    '<div id="glist"></div><button class="btn ghost block" id="gh" style="margin-top:12px">Về cây của em</button></section>');
+  const $ = id => document.getElementById(id);
+  if ($("gw")) $("gw").onclick = () => review({ ids: g.old.slice(0, C.REVIEW_MAX), kind: kindFor, done: () => {
+    S.rev = dayNow(); save(); gate(code); } });   // như nút Tưới cây ở trang chủ: 1 lượt (≤ 15 từ) là tính đã tưới hôm nay
+  if ($("gq")) $("gq").onclick = () => review({ ids: shuffle(ids.slice()), kind: id => (S.words[id] && S.words[id].s && S.words[id].b >= 2) ? kindFor(id) : "mean", done: (right, total) => {
+    const sc = total ? Math.round(right / total * 100) : 0; S.last = S.last || {}; S.last[code] = sc;
+    if (sc >= C.PASS_PCT) { S.pass = S.pass || {}; S.pass[code] = { d: dayNow(), sc: sc }; }
+    save(); gate(code); toast(sc >= C.PASS_PCT ? "Đạt " + sc + "% 🎉" : "Mới đúng " + sc + "% — em xem lại từ rồi làm lại nhé."); } });
+  if ($("gl")) $("gl").onclick = () => { const el = $("glist"); if (el.innerHTML) { el.innerHTML = ""; return; } el.innerHTML = a.words.map(cardHtml).join(""); bindSay(el); el.scrollIntoView({ behavior: "smooth", block: "start" }); };
+  if ($("go2")) $("go2").onclick = async () => { const b = $("go2"); b.disabled = true; b.textContent = "Đang mở bài…"; await pushNow(); location.href = backUrl(a); };
+  $("gh").onclick = () => { history.replaceState(null, "", location.pathname); home(); };
+}
+
 /* ---------- khởi động ---------- */
 if (!P.length) { app.innerHTML = '<section class="card narrow center"><h1>Chưa tải được từ vựng</h1><p>Em kiểm tra mạng rồi tải lại trang.</p></section>'; return; }
-if (!student) entry(home); else { loadLocal(); home(); pull().then(ch => { if (ch && !app.querySelector(".qtop")) home(); }); }
+const GATE = URLQ.get("gate") === "1" && PW[URLQ.get("add")] ? URLQ.get("add") : "";
+if (GATE) {
+  const start = async () => { loadLocal(); app.innerHTML = '<section class="card narrow center"><p>Đang mở cây của em…</p></section>'; await pull(); gate(GATE); };
+  if (!student) entry(start); else start();
+} else if (!student) entry(home); else { loadLocal(); home(); pull().then(ch => { if (ch && !app.querySelector(".qtop")) home(); }); }
 })();
