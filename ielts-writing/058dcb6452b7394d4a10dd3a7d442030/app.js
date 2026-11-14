@@ -559,7 +559,7 @@
         : `${completed}/${total} yêu cầu đã sẵn sàng`;
     }
     submitHomework?.classList.toggle("is-incomplete", !ready);
-    if (ready && submissionMessage) submissionMessage.textContent = "Đã kiểm tra đủ. Em có thể mở cổng nộp ảnh vở.";
+    if (ready && submissionMessage) submissionMessage.textContent = "Đã kiểm tra đủ. Em đã hoàn thành; cổng nộp dự phòng chỉ dùng khi máy không gửi được kết quả.";
   };
 
   checklist.forEach((input) => {
@@ -586,7 +586,7 @@
     }
     if (!formUrl || formUrl.includes("__B04_HOMEWORK_FORM_URL__")) {
       event.preventDefault();
-      if (submissionMessage) submissionMessage.textContent = "Cổng nộp ảnh vở Buổi 04 đang được giáo viên kết nối.";
+      if (submissionMessage) submissionMessage.textContent = "Cổng nộp dự phòng Buổi 04 đang được giáo viên kết nối.";
     }
   });
 

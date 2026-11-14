@@ -334,6 +334,8 @@ window.WP_DATA = {
   },
 
   "05": {
+    lessonLabel: "IELTS Viết · Buổi 05 · Tổng quan Writing Task 1",
+    code: "IELTS-WRITING-W05", countRow: true,
     deckTitle: "7 hình dạng biểu đồ có thể gặp",
     imageDeck: true,
     cards: [
@@ -416,4 +418,10 @@ window.WP_DATA = {
         ex: "Quy trình rất ít gặp nên không học quá sâu; xem video riêng trước khi thi." }
     ]
   }
+};
+
+/* Kết quả bài kiểm tra cuối được gửi vào cùng Form điểm mà trang Buổi 02/04 đang dùng (không cần đăng nhập, không có tệp). */
+window.WP_SUBMIT = window.WP_SUBMIT || {
+  formResponseUrl: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfH-pzv77M2stPpbwOlszoD5Y2BdW2QuZ53EKcSZoMeUs1M3w/formResponse",
+  entries: { name: "entry.1754266146", className: "entry.995369251", assignmentCode: "entry.1467133061", score: "entry.1887315469", total: "entry.1169186318", wrong: "entry.691096781", percent: "entry.1818207727" }
 };
