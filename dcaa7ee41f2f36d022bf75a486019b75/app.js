@@ -273,6 +273,52 @@ const dueWords = () => Object.entries(S.words).filter(([, w]) => w.box < 4 && w.
 const REVIEW_MAX = 15;
 const reviewNeeded = () => !OWNER && S.rev !== dayNow() && dueWords().length > 0;
 const memStats = () => { const ws = Object.values(S.words); return { sure: ws.filter(w => w.box >= 3).length, learning: ws.filter(w => w.box < 3).length, total: V.reduce((a, u) => a + u.entries.length, 0) }; };
+/* ---------- cây từ vựng: mỗi bài là một cành, mỗi từ là một lá ---------- */
+// Lá khô = từ đến hạn ôn ("tưới cây" = ôn từ); lá xanh đậm dần theo mức nhớ; quả đỏ = từ đã thuộc lâu.
+const LEAF = ["#b9dc8c", "#8fca69", "#5cae4f", "#2f8a3f", "#1f6f33"], DRY = "#d6a043";
+function rnd(seed) { let x = Math.sin(seed * 9301 + 49297) * 233280; return x - Math.floor(x); }
+function treeStage(sure, total, grown) {
+  const p = total ? sure / total : 0;
+  return !grown ? ["🌰", "Hạt giống"] : p < 0.05 ? ["🌱", "Mầm non"] : p < 0.25 ? ["🌿", "Cây con"] : p < 0.5 ? ["🪴", "Cây non"] : p < 0.8 ? ["🌳", "Cây lớn"] : ["🍎", "Cây sai quả"];
+}
+function treeSvg(small) {
+  const d = dayNow(), units = [];
+  for (let i = 1; i <= N_UNITS; i++) { const es = V[i - 1].entries.filter(e => S.words[e.n]); if (es.length) units.push({ i, es }); }
+  const W = 360, G = 292, nB = units.length;
+  const top = G - 60 - Math.max(0, nB - 1) * 15 - 26, y0 = nB ? Math.max(0, Math.round(top - 48)) : 200;
+  let s = '<svg class="tree' + (small ? " sm" : "") + '" viewBox="0 ' + y0 + " " + W + " " + (304 - y0) + '" role="img" aria-label="Cây từ vựng">' +
+    '<ellipse cx="180" cy="' + (G + 2) + '" rx="150" ry="9" fill="#e4ecd6"/>';
+  if (!nB) return s + '<path d="M180 ' + G + ' q-2 -16 -14 -24 q14 2 14 18 q2 -18 16 -20 q-12 8 -16 26" fill="#8fca69"/><ellipse cx="180" cy="' + (G - 1) + '" rx="9" ry="4" fill="#9a6b3f"/></svg>';
+  const tw = 7 + nB * 0.9;
+  s += '<path d="M' + (180 - tw) + " " + G + " C" + (180 - tw * 0.6) + " " + (G - 60) + " " + (180 - 3) + " " + (top + 40) + " 178 " + top + " L182 " + top + " C" + (183) + " " + (top + 40) + " " + (180 + tw * 0.6) + " " + (G - 60) + " " + (180 + tw) + " " + G + ' Z" fill="#8a5a33"/>';
+  let leaves = "", k = 0;
+  units.forEach((u, b) => {
+    const side = b % 2 ? 1 : -1, y = G - 60 - b * 15, L = 78 - b * 2.6, ex = 180 + side * L, ey = y - 22 - rnd(u.i) * 8;
+    s += '<ellipse cx="' + (180 + side * L * 0.62).toFixed(1) + '" cy="' + (y - 14) + '" rx="' + (L * 0.5).toFixed(1) + '" ry="17" fill="#cfe8b4" opacity=".55"/>';
+    s += '<path d="M180 ' + y + " Q" + (180 + side * L * 0.45) + " " + (y - 2) + " " + ex + " " + ey + '" stroke="#8a5a33" stroke-width="' + Math.max(2, 5 - b * 0.2) + '" fill="none" stroke-linecap="round"/>';
+    u.es.forEach((e, j) => {
+      const w = S.words[e.n], t = 0.3 + 0.7 * rnd(e.n * 3.1), bx = 180 + (ex - 180) * t, by = y + (ey - y) * t - 2 * t * (1 - t) * 4;
+      const r = 4 + 11 * t, a = rnd(e.n * 7.7) * 6.283, x = bx + Math.cos(a) * r * rnd(e.n + 2), yy = by + Math.sin(a) * r * 0.7 * rnd(e.n + 5) - 3;
+      const due = w.box < 4 && w.due <= d, col = due ? DRY : LEAF[Math.min(4, w.box)], rot = Math.round(rnd(e.n * 1.3) * 360);
+      leaves += '<ellipse class="lf" style="animation-delay:' + (k++ % 40) * 12 + 'ms" cx="' + x.toFixed(1) + '" cy="' + yy.toFixed(1) + '" rx="7" ry="3.5" fill="' + col + '" transform="rotate(' + rot + " " + x.toFixed(1) + " " + yy.toFixed(1) + ')"><title>' + esc(e.term) + "</title></ellipse>";
+      if (w.box >= 4) leaves += '<circle cx="' + (x + 2).toFixed(1) + '" cy="' + (yy + 3).toFixed(1) + '" r="3" fill="#e2483d"/>';
+    });
+  });
+  let crown = '<ellipse cx="180" cy="' + (top - 4) + '" rx="22" ry="15" fill="#cfe8b4" opacity=".7"/>';
+  for (let q = 0; q < 9; q++) { const cx = 180 + Math.cos(q * 0.7) * (6 + q * 1.6), cy = top - 6 + Math.sin(q * 1.9) * 7; crown += '<ellipse cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" rx="6.5" ry="3.3" fill="' + LEAF[2 + q % 2] + '" transform="rotate(' + (q * 41) + " " + cx.toFixed(1) + " " + cy.toFixed(1) + ')"/>'; }
+  return s + crown + leaves + "</svg>";
+}
+function treeCard() {
+  const ms = memStats(), d = dayNow(), ws = Object.values(S.words);
+  const isDue = w => w.box < 4 && w.due <= d, due = ws.filter(isDue).length, fruit = ws.filter(w => w.box >= 4).length,
+    sureNow = ws.filter(w => !isDue(w) && w.box >= 3).length, growing = ws.filter(w => !isDue(w) && w.box < 3).length;
+  const [ic, name] = treeStage(ms.sure, ms.total, ws.length > 0), rn = reviewNeeded();
+  return '<section class="card treecard"><div class="trhead"><span class="kick">CÂY TỪ VỰNG CỦA EM</span><h2>' + ic + " " + name + '</h2><p class="small muted">Mỗi bài là một cành, mỗi từ là một lá. Ôn đúng hạn thì lá xanh đậm dần và ra quả.</p></div>' +
+    treeSvg() +
+    '<div class="trlegend"><span><i style="background:' + DRY + '"></i>Lá khô · cần ôn <b>' + due + '</b></span><span><i style="background:' + LEAF[1] + '"></i>Đang lớn <b>' + growing + '</b></span><span><i style="background:' + LEAF[3] + '"></i>Nhớ chắc <b>' + sureNow + '</b></span><span><i class="fr"></i>Quả · thuộc lâu <b>' + fruit + "</b></span></div>" +
+    '<p class="trbar"><span style="width:' + Math.round(ms.sure / Math.max(1, ms.total) * 100) + '%"></span></p><p class="small muted center">' + ms.sure + " / " + ms.total + " từ cả khoá đã nhớ chắc</p>" +
+    (due ? '<button class="btn ' + (rn ? "gold" : "ghost") + ' big water" data-go="review">💧 Tưới cây: ôn ' + Math.min(due, REVIEW_MAX) + " từ" + (rn ? "" : " (thêm)") + " ➔</button>" : ws.length ? '<p class="okline center">✓ Hôm nay cây đã được tưới đủ.</p>' : "") + "</section>";
+}
 
 
 /* ---------- khung trang ---------- */
@@ -395,8 +441,7 @@ function home() {
     (IN_APP ? openOutsideHtml() : "") + (localMode ? '<p class="demo">Bản thử: tiến độ chỉ lưu trên máy này.</p>' : "") + (OWNER ? '<p class="demo owner">👁 <b>Bản chủ</b> — mở sẵn cả 14 bài và bài thi cuối khoá để cô xem, thử. Điểm chỉ lưu trên máy này, không vào danh sách học sinh. <button class="mini" id="ownReset">Làm lại từ đầu</button></p>' : "") +
     '<section class="hero"><div class="hello"><span class="kick">NỀN TẢNG IELTS · VOCAB B1 + NGỮ PHÁP</span><h1>Chào ' + esc(name) + "!</h1>" + status +
     '<div class="kpis"><div class="kpi"><span>📅</span><b>Ngày ' + Math.min(p.d, C.DAYS) + "/" + C.DAYS + "</b><small>Còn " + left + ' ngày</small></div><div class="kpi"><span>📚</span><b>' + p.done + "/" + N_UNITS + ' bài</b><small>Đã hoàn thành</small></div><div class="kpi"><span>🎯</span><b>' + (cu ? "Bài " + Math.max(p.target, cu) : "Cuối khoá") + "</b><small>Mục tiêu hôm nay</small></div></div>" +
-    (due ? '<button class="review" data-go="review">🔁 ' + (rn ? "Hôm nay em cần ôn " + Math.min(due, REVIEW_MAX) + " từ cũ trước khi học tiếp" : "Ôn thêm " + Math.min(due, REVIEW_MAX) + " từ (không bắt buộc)") + " ➔</button>" : "") +
-    (ms.sure + ms.learning ? '<p class="memline">🧠 Đã nhớ chắc <b>' + ms.sure + "</b> từ · đang ôn " + ms.learning + " · cả khoá " + ms.total + " từ</p>" : "") + "</div>" + today + "</section>" +
+    (rn ? '<button class="review" data-go="review">💧 Cây từ vựng đang khô: ôn ' + Math.min(due, REVIEW_MAX) + " từ cũ trước khi học tiếp ➔</button>" : "") + "</div>" + today + "</section>" + treeCard() +
     '<div class="sechead"><h2>Lộ trình 14 bài</h2><span class="muted">Đạt ≥ ' + C.PASS + '% để mở bài kế tiếp</span><button class="howbtn" data-howto>? Cách học</button></div>' +
     '<section class="grid">' + grid + "</section>" +
     '<button class="finalbar ' + (completed() ? "done" : canFinal() ? "open" : "lock") + '" ' + (canFinal() ? 'data-go="final"' : "disabled") + '><span class="fi">★</span><span><b>Kiểm tra cuối khoá</b><small>40 câu từ vựng + ngữ pháp · đạt ≥ ' + C.FINAL_PASS + "%</small></span><span class=\"fs\">" + (completed() ? "✓ " + fin : canFinal() ? (fin || "Vào thi ➔") : "🔒 Xong 14 bài để mở") + "</span></button>",
@@ -1335,8 +1380,8 @@ function review(then) {
     save({ unit: "", part: "Ôn tập", score, detail: ns.length + " từ" + (wrong.length ? " · Sai: " + wrong.join("; ") : "") });
     resultCard(0, "Ôn tập", score, wrong, { noPass: true, msg: score >= 80 ? "Em nhớ từ tốt lắm!" : score >= 50 ? "Ôn xong — cố thêm chút nữa nhé!" : "Ôn xong — các từ sai sẽ quay lại ngày mai" });
     const nav = app.querySelector(".result .rright .nav"); if (nav) {
-      const ms = memStats(), p = document.createElement("p"); p.className = "memline";
-      p.innerHTML = "🧠 Em đã nhớ chắc <b>" + ms.sure + "</b> từ. " + (wrong.length ? "Từ sai sẽ quay lại vào ngày mai." : "Các từ đúng sẽ quay lại sau vài ngày để em nhớ lâu hơn.") + (then ? ' <button class="btn primary" data-go="' + esc(then) + '">Học tiếp ➔</button>' : "");
+      const ms = memStats(), p = document.createElement("div"); p.className = "memline";
+      p.innerHTML = treeSvg(true) + "🌳 Cây đã được tưới! Em đã nhớ chắc <b>" + ms.sure + "</b> từ. " + (wrong.length ? "Từ sai sẽ quay lại vào ngày mai." : "Các từ đúng sẽ quay lại sau vài ngày để em nhớ lâu hơn.") + (then ? ' <button class="btn primary" data-go="' + esc(then) + '">Học tiếp ➔</button>' : "");
       nav.parentNode.insertBefore(p, nav); p.querySelectorAll("[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));
     }
   });

@@ -401,3 +401,14 @@ ul.tips{padding-left:20px;margin:4px 0}ul.tips li{margin:3px 0}
 .result .memline{background:var(--soft);border-radius:12px;padding:10px 12px;opacity:1}
 .result .memline .btn{margin-left:6px}
 .hintw{margin-top:8px;font-family:ui-monospace,Menlo,Consolas,monospace;letter-spacing:2px;font-size:18px;color:var(--muted)}
+.treecard{margin:-8px 0 26px;padding:18px}.treecard h2{font-size:21px;margin:2px 0}
+.trhead{text-align:center}.tree{display:block;width:100%;max-width:520px;margin:6px auto 0;height:auto}
+.tree.sm{max-width:240px;margin:0 auto 6px}
+.tree .lf{animation:leafin .45s ease-out both}
+@keyframes leafin{from{opacity:0}to{opacity:1}}
+.trlegend{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;font-size:13px;margin:6px 0 10px}
+.trlegend span{display:inline-flex;align-items:center;gap:5px}.trlegend i{width:14px;height:8px;border-radius:50%;display:inline-block}
+.trlegend i.fr{width:9px;height:9px;background:#e2483d}
+.trbar{height:10px;border-radius:99px;background:#e8eedf;overflow:hidden;margin:4px auto;max-width:420px}.trbar span{display:block;height:100%;background:linear-gradient(90deg,#8fca69,#2f8a3f);border-radius:99px}
+.treecard .water{display:block;margin:12px auto 0}
+.result .memline{text-align:center}
