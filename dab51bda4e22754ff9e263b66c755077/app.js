@@ -263,12 +263,56 @@ function wordList(q, f) {
   el.querySelectorAll("[data-w]").forEach(bt => bt.onclick = () => { const host = bt.nextElementSibling && bt.nextElementSibling.classList.contains("wcard") ? bt.nextElementSibling : null; if (host) { host.remove(); return; } bt.insertAdjacentHTML("afterend", cardHtml(W[bt.dataset.w])); bindSay(el); });
 }
 
-/* ---------- giọng đọc ---------- */
-function say(t) { try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(String(t).replace(/·/g, ",")); u.lang = "en-GB"; u.rate = 0.86; const v = speechSynthesis.getVoices(); u.voice = v.find(x => /^en-gb/i.test(x.lang)) || v.find(x => /^en/i.test(x.lang)) || null; speechSynthesis.speak(u); } catch (e) {} }
+/* ---------- âm thanh: giọng đọc + tiếng reo ---------- */
+/* Giọng đọc: ưu tiên file âm thanh giọng Anh (chạy được cả trong Zalo/Facebook, nơi giọng của máy hay bị câm); lỗi thì dùng giọng của máy. */
+const SND = { on: store.get("rt-sound") !== false };
+let ttsAudio = null;
+function speakDevice(t) {
+  try { if (!window.speechSynthesis) return; speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t); u.lang = "en-GB"; u.rate = 0.88;
+    const v = speechSynthesis.getVoices(); u.voice = v.find(x => /^en-gb/i.test(x.lang)) || v.find(x => /^en/i.test(x.lang)) || null; speechSynthesis.speak(u); } catch (e) {}
+}
+function say(t) {
+  t = String(t || "").replace(/·/g, ",").replace(/\s+/g, " ").trim(); if (!t) return;
+  try {
+    if (ttsAudio) { ttsAudio.pause(); ttsAudio.onerror = null; }
+    const a = new Audio(); ttsAudio = a; a.referrerPolicy = "no-referrer"; let fell = false;
+    const fallback = () => { if (fell) return; fell = true; speakDevice(t); };
+    a.onerror = fallback;
+    a.src = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-GB&ttsspeed=" + (t.length > 40 ? "0.9" : "0.75") + "&q=" + encodeURIComponent(t.slice(0, 190));
+    const p = a.play(); if (p && p.catch) p.catch(fallback);
+  } catch (e) { speakDevice(t); }
+}
+try { if (window.speechSynthesis) speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices(); } catch (e) {}
 function bindSay(root) { root.querySelectorAll("[data-say]").forEach(b => b.onclick = ev => { ev.stopPropagation(); say(b.dataset.say); }); }
+/* tiếng reo tự tổng hợp (không cần tải file) */
+let actx = null;
+function tone(seq) {
+  if (!SND.on) return;
+  try {
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)(); if (actx.state === "suspended") actx.resume();
+    let t = actx.currentTime + 0.01;
+    seq.forEach(([f, d, type, vol]) => { const o = actx.createOscillator(), g = actx.createGain(); o.type = type || "sine"; o.frequency.value = f;
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(vol || 0.22, t + 0.02); g.gain.exponentialRampToValueAtTime(0.0001, t + d);
+      o.connect(g); g.connect(actx.destination); o.start(t); o.stop(t + d + 0.02); t += d * 0.82; });
+  } catch (e) {}
+}
+const SFX = {
+  ok: () => tone([[784, .12, "triangle"], [1047, .22, "triangle"]]),
+  combo: () => tone([[659, .1, "triangle"], [784, .1, "triangle"], [1047, .1, "triangle"], [1319, .28, "triangle", .25]]),
+  no: () => tone([[311, .16, "sine", .18], [233, .3, "sine", .16]]),
+  done: () => tone([[523, .14, "triangle"], [659, .14, "triangle"], [784, .14, "triangle"], [1047, .2, "triangle"], [784, .1, "triangle"], [1047, .45, "triangle", .26]])
+};
+function confetti() {
+  const box = document.createElement("div"); box.className = "confetti"; const em = ["🍃", "🌿", "💧", "✨", "🌸", "🍎"];
+  for (let k = 0; k < 26; k++) { const s = document.createElement("span"); s.textContent = em[k % em.length]; s.style.left = Math.random() * 100 + "%"; s.style.animationDelay = (Math.random() * 0.6) + "s"; s.style.fontSize = (16 + Math.random() * 14) + "px"; box.appendChild(s); }
+  document.body.appendChild(box); setTimeout(() => box.remove(), 3200);
+}
+const PRAISE = ["Chính xác! 🎉", "Tuyệt vời! ✨", "Giỏi quá! 🌿", "Quá đỉnh! 💪", "Chuẩn luôn! 🎯", "Xuất sắc! 🌟", "Nhớ tốt lắm! 🧠", "Đúng rồi, tiếp tục nhé! 🚀"];
+const CHEER = ["Không sao, sai để nhớ lâu hơn! 💡", "Gần đúng rồi — xem kỹ lại nhé! 👀", "Cố lên, từ này sẽ quay lại để em chinh phục! 🌱", "Ghi nhớ lần này là lần sau chắc chắn đúng! 💪"];
+const COMBO = { 3: "🔥 3 câu đúng liên tiếp!", 5: "🔥🔥 5 câu liền — phong độ quá!", 8: "🌟 8 câu liên tiếp — siêu trí nhớ!", 12: "🏆 12 câu liền — không thể cản nổi!" };
 function cardHtml(w) {
   return '<div class="wcard"><div class="wtop"><div><div class="w">' + esc(w.w) + '</div><p class="ipa">' + esc([w.ipa, w.pos].filter(Boolean).join(" · ")) + "</p></div>" +
-    '<div class="says"><button class="say" data-say="' + esc(w.w) + '" aria-label="Nghe từ">▶ Từ</button>' + (w.ex ? '<button class="say" data-say="' + esc(w.ex) + '" aria-label="Nghe câu">▶ Câu</button>' : "") + "</div></div>" +
+    '<div class="says"><button class="say" data-say="' + esc(w.w) + '" aria-label="Nghe từ">🔊 Từ</button>' + (w.ex || w.col ? '<button class="say" data-say="' + esc(w.ex || w.col) + '" aria-label="Nghe câu">🔊 Câu</button>' : "") + "</div></div>" +
     '<p class="mean">' + esc(w.vi) + "</p>" +
     '<dl>' + (w.fam ? "<dt>Word family</dt><dd>" + esc(w.fam) + "</dd>" : "") + (w.col ? "<dt>Collocation</dt><dd><em>" + esc(w.col) + "</em></dd>" : "") + (w.ex ? "<dt>Ví dụ</dt><dd>" + esc(w.ex) + "</dd>" : "") + "</dl>" +
     "</div>";
@@ -276,69 +320,123 @@ function cardHtml(w) {
 
 /* ---------- câu hỏi ---------- */
 function findForm(word, ex) {
-  const base = String(word).toLowerCase().replace(/\(.*?\)/g, "").split(/\s*[\/·;,]\s*/)[0].replace(/…/g, "").replace(/\b(sb|sth)\b/g, " ").trim();
+  const base = String(word).toLowerCase().replace(/\(.*?\)/g, "").split(/\s*[\/·;,]\s*/)[0].replace(/…/g, "").replace(/\b(sb|sth|one's)\b/g, " ").trim();
   const parts = base.split(/\s+/).filter(Boolean); if (!parts.length || !ex) return null;
   const stem = p => p.length > 4 ? p.replace(/(e|y|ies|es|s|ed|ing)$/, "").slice(0, Math.max(3, p.length - 3)) : p;
   const re = new RegExp("\\b" + parts.map(p => stem(p).replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "[a-z'’-]*").join("[\\s-]+(?:\\w+[\\s-]+)?") + "\\b", "i");
   const m = re.exec(ex); return m ? [m.index, m.index + m[0].length] : null;
 }
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
-function distract(id, field, n) {
-  const w = W[id], p0 = (w.pos || "").split(/[ ,]/)[0];
-  const near = U[w.u].words.filter(x => x.id !== id), same = ORDER.map(i => W[i]).filter(x => x.id !== id && x.u !== w.u && (x.pos || "").split(/[ ,]/)[0] === p0);
-  const pool = shuffle(near.slice()).concat(shuffle(same)), out = [], seen = new Set([String(w[field]).toLowerCase()]);
-  for (const x of pool) { const v = String(x[field] || "").toLowerCase(); if (!v || seen.has(v)) continue; seen.add(v); out.push(x); if (out.length >= n) break; }
-  return out;
+const pos0 = w => String(w.pos || "").split(/[ ,]/)[0];
+function lev(a, b) { if (a === b) return 0; const m = a.length, n = b.length; if (!m || !n) return m + n; let p = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) { const c = [i]; for (let j = 1; j <= n; j++) c[j] = Math.min(p[j] + 1, c[j - 1] + 1, p[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); p = c; } return p[n]; }
+const VI_STOP = new Set(["sự", "của", "làm", "bị", "được", "có", "một", "các", "những", "cho", "và", "với", "người", "việc", "cái", "điều", "về", "ở", "từ", "trong", "không", "thuộc", "tính", "rất", "là", "ra", "lên", "đến", "ai", "gì", "khi", "mà", "hay", "hoặc", "nhiều", "lại"]);
+const viTok = s => new Set(String(s || "").toLowerCase().replace(/\(.*?\)|[=≠><].*$/g, " ").split(/[^\p{L}]+/u).filter(x => x && !VI_STOP.has(x)));
+/* Đáp án nhiễu "khó đoán": cùng từ loại + giống mặt chữ (khi hỏi từ tiếng Anh) hoặc gần nghĩa (khi hỏi nghĩa) — không còn chọn đại cũng đúng. */
+function similar(id, mode, n) {
+  const w = W[id], p = pos0(w), lw = w.w.toLowerCase(), vt = viTok(w.vi), seenV = new Set([w.vi.toLowerCase()]), seenW = new Set([lw]);
+  const scored = ORDER.map(k => W[k]).filter(x => x.id !== id).map(x => {
+    let s = (pos0(x) === p ? 4 : 0) + Math.random() * 1.5; const lx = x.w.toLowerCase();
+    if (mode === "form") { let pre = 0; while (pre < Math.min(lx.length, lw.length) && lx[pre] === lw[pre]) pre++; s += Math.min(pre, 5) * 0.9 + (lx.slice(-3) === lw.slice(-3) ? 2 : 0) + (Math.abs(lx.length - lw.length) <= 2 ? 1 : 0) + Math.max(0, 4 - lev(lx, lw)) * 0.8; }
+    else { const xt = viTok(x.vi); let sh = 0; xt.forEach(t => { if (vt.has(t)) sh++; }); s += sh * 2.2 + (x.u === w.u ? 0.8 : 0); }
+    return [s, x];
+  }).sort((a, b) => b[0] - a[0]);
+  const out = [];
+  for (const [, x] of scored.slice(0, 40)) {
+    const v = x.vi.toLowerCase(), k = x.w.toLowerCase();
+    if (seenV.has(v) || seenW.has(k) || (mode === "mean" && (v.includes(w.vi.toLowerCase()) || w.vi.toLowerCase().includes(v)))) continue;
+    seenV.add(v); seenW.add(k); out.push(x); if (out.length >= n * 2) break;
+  }
+  return shuffle(out.slice(0, Math.max(n + 2, n))).slice(0, n);
 }
+function family(w) {   // các dạng khác trong word family: "devastation (n) · devastating (adj)" → ["devastation", "devastating"]
+  return String(w.fam || "").split(/[·,]/).map(x => x.trim()).filter(x => x && !/^></.test(x)).map(x => x.split(/[(:]/)[0].trim().toLowerCase())
+    .filter(x => /^[a-z][a-z-]{2,}$/.test(x) && x !== w.w.toLowerCase());
+}
+const colOf = w => String(w.col || "").split(/\s+\/\s+|;\s*|\s+·\s+/).map(x => x.trim()).find(x => x && findForm(w.w, x)) || "";   // "the Arctic / Arctic ice" → 1 cụm
+const ctxOf = w => (w.ex && findForm(w.w, w.ex)) ? w.ex : colOf(w);
 const norm = s => String(s || "").toLowerCase().replace(/[’']/g, "'").replace(/\(.*?\)/g, "").replace(/\b(sb|sth)\b/g, " ").replace(/[^a-z' -]/g, "").replace(/\s+/g, " ").trim();
+const typeable = w => !/[·\/…]/.test(w.w) && w.w.length <= 26;
+const single = w => /^[a-z-]+$/i.test(w.w);
+/* Dạng bài theo độ nhớ của từ (hộp Leitner), chọn ngẫu nhiên trong nhóm để không nhàm:
+   hộp 0: nghĩa · nghe-chọn · đúng/sai | 1: chọn từ theo nghĩa · collocation · đúng/sai | 2: điền câu · word form · collocation
+   hộp ≥3: tự gõ trong câu · nghe-chép chính tả · word form · gõ theo nghĩa */
 function kindFor(id) {
-  const w = S.w[id]; if (!w) return "learn";
-  const b = w[0], cl = !!findForm(W[id].w, W[id].ex || W[id].col);
-  if (b <= 0) return "mean";
-  if (b === 1) return "word";
-  if (b === 2) return cl ? "cloze" : "word";
-  return cl ? "type" : "typemean";
+  const w = W[id], s = S.w[id]; if (!s) return "learn";
+  const b = s[0], ctx = !!ctxOf(w), fam = family(w).length >= 1 && ctx, col = !!colOf(w);
+  const pools = [
+    ["mean", "mean", "listen", "tf"],
+    ["word", "word", "tf"].concat(col ? ["colloc", "colloc"] : []),
+    ["word"].concat(ctx ? ["cloze", "cloze"] : [], fam ? ["form", "form"] : [], col ? ["colloc"] : []),
+    (typeable(w) ? ["typemean"] : ["word"]).concat(ctx && typeable(w) ? ["type", "type"] : [], single(w) ? ["dictation"] : [], fam ? ["form"] : [])
+  ];
+  const p = pools[Math.min(3, b)]; return p[Math.floor(Math.random() * p.length)];
 }
-const typeable = w => !/[·\/]/.test(w.w);   // "brick · concrete · steel · tile" không bắt gõ
 function review(opt) {
   const practice = !!(opt && opt.ids);   // luyện riêng (từ Vườn từ vựng): không tính là một lần tưới
   const L = practice ? { due: opt.ids.filter(id => S.w[id]), fresh: opt.ids.filter(id => !S.w[id]) } : opt && opt.fresh ? { due: [], fresh: opt.fresh } : plan();
   const queue = L.due.map(id => ({ id, k: kindFor(id) })).concat(L.fresh.map(id => ({ id, k: "learn" })));
-  if (practice) L.due.forEach(id => { const w = W[id]; queue.push({ id, k: w.ex || w.col ? (findForm(w.w, w.ex || w.col) ? "cloze" : "word") : "word", again: true }); });
-  queue.forEach(q => { if ((q.k === "type" || q.k === "typemean") && !typeable(W[q.id])) q.k = "word"; });
-  const total = queue.length, first = {}, wrong = new Set(); let i = 0, right = 0;
+  if (practice) L.due.forEach(id => { const w = W[id]; queue.push({ id, k: ctxOf(w) ? (family(w).length ? "form" : "cloze") : single(w) ? "listen" : "word", again: true }); });
+  const total = queue.length, first = {}, wrong = new Set(); let i = 0, right = 0, streak = 0, best = 0;
   if (!total) return home();
   inReview = true;
   const next = () => {
     if (i >= queue.length) return finish();
     const q = queue[i], w = W[q.id];
-    const head = '<div class="qtop"><button class="x" id="qx" aria-label="Thoát">✕</button><span class="prog"><i style="width:' + Math.round(i / queue.length * 100) + '%"></i></span><span class="qcount">' + Math.min(i + 1, queue.length) + "/" + queue.length + "</span></div>";
-    const bindX = () => { document.getElementById("qx").onclick = () => { if (confirmLeave()) { inReview = false; home(); } }; };
+    const head = '<div class="qtop"><button class="x" id="qx" aria-label="Thoát">✕</button><span class="prog"><i style="width:' + Math.round(i / queue.length * 100) + '%"></i></span><span class="qcount">' + Math.min(i + 1, queue.length) + "/" + queue.length + '</span><button class="x snd" id="snd" aria-label="Bật/tắt tiếng" title="Bật/tắt tiếng reo">' + (SND.on ? "🔔" : "🔕") + "</button></div>" + (streak >= 2 ? '<div class="streak">🔥 ' + streak + " câu đúng liên tiếp</div>" : "");
+    const bindX = () => {
+      document.getElementById("qx").onclick = () => { if (confirmLeave()) { inReview = false; home(); } };
+      document.getElementById("snd").onclick = ev => { SND.on = !SND.on; store.set("rt-sound", SND.on); ev.currentTarget.textContent = SND.on ? "🔔" : "🔕"; if (SND.on) SFX.ok(); };
+    };
     if (q.k === "learn") {
       shell('<section class="card quiz">' + head + '<span class="qtype new">🌱 Từ mới · làm quen</span>' + cardHtml(w) + '<div class="nav"><button class="btn primary block" id="nx">Em đã đọc kỹ ➔ Kiểm tra</button></div></section>', "page-quiz");
       bindX(); bindSay(app); say(w.w);
-      document.getElementById("nx").onclick = () => { q.k = "mean"; next(); };
+      document.getElementById("nx").onclick = () => { q.k = Math.random() < 0.5 || !single(w) ? "mean" : "listen"; next(); };
       return;
     }
-    let prompt = "", opts = null, answer = w.w, typeMode = false, label = "";
-    if (q.k === "mean") { label = "Chọn nghĩa đúng"; prompt = '<div class="qbig">' + esc(w.w) + '</div><p class="ipa center">' + esc([w.ipa, w.pos].filter(Boolean).join(" · ")) + ' <button class="say mini" data-say="' + esc(w.w) + '">▶</button></p>'; opts = shuffle([w].concat(distract(q.id, "vi", 3))).map(x => ({ t: x.vi, ok: x.id === q.id })); }
-    else if (q.k === "word") { label = "Chọn từ đúng nghĩa"; prompt = '<p class="qtext big">' + esc(w.vi) + "</p>" + (w.pos ? '<p class="small muted center">(' + esc(w.pos) + ")</p>" : ""); opts = shuffle([w].concat(distract(q.id, "w", 3))).map(x => ({ t: x.w, ok: x.id === q.id })); }
-    else if (q.k === "cloze" || q.k === "type") {
-      const ctx = w.ex && findForm(w.w, w.ex) ? w.ex : w.col, r = findForm(w.w, ctx), form = ctx.slice(r[0], r[1]); answer = form;
-      label = q.k === "cloze" ? "Điền từ vào câu của bài đọc" : "Tự gõ từ còn thiếu";
-      prompt = '<p class="qtext">' + esc(ctx.slice(0, r[0])) + '<span class="gap"></span>' + esc(ctx.slice(r[1])) + '</p><p class="small muted">Nghĩa: ' + esc(w.vi) + (q.k === "type" ? " · bắt đầu bằng <b>" + esc(form.slice(0, 1)) + "</b> · " + form.length + " chữ cái" : "") + "</p>";
-      if (q.k === "cloze") opts = shuffle([w].concat(distract(q.id, "w", 3))).map(x => ({ t: x.w, ok: x.id === q.id })); else typeMode = true;
-    } else { label = "Tự gõ từ theo nghĩa"; prompt = '<p class="qtext big">' + esc(w.vi) + '</p><p class="small muted center">' + (w.pos ? esc(w.pos) + " · " : "") + "bắt đầu bằng <b>" + esc(w.w.slice(0, 1)) + "</b></p>"; typeMode = true; }
+    let k = q.k, ctx = ctxOf(w), fam = family(w);
+    if ((k === "cloze" || k === "type" || k === "form") && !ctx) k = "word";
+    if (k === "form" && !fam.length) k = ctx ? "cloze" : "word";
+    if (k === "colloc" && !colOf(w)) k = "word";
+    if ((k === "type" || k === "typemean") && !typeable(w)) k = "word";
+    if ((k === "dictation" || k === "listen") && !single(w)) k = "word";
+    let prompt = "", opts = null, answer = w.w, typeMode = false, label = "", autoSay = false;
+    const gapped = c => { const r = findForm(w.w, c); return { r, form: c.slice(r[0], r[1]), html: esc(c.slice(0, r[0])) + '<span class="gap"></span>' + esc(c.slice(r[1])) }; };
+    const wordOpts = (mode, lower) => shuffle([w].concat(similar(q.id, mode, 3))).map(x => ({ t: lower ? x.w.toLowerCase() : x.w, ok: x.id === q.id }));
+    if (k === "mean") { label = "Chọn nghĩa đúng"; prompt = '<div class="qbig">' + esc(w.w) + '</div><p class="ipa center">' + esc([w.ipa, w.pos].filter(Boolean).join(" · ")) + ' <button class="say mini" data-say="' + esc(w.w) + '">🔊</button></p>'; opts = shuffle([w].concat(similar(q.id, "mean", 3))).map(x => ({ t: x.vi, ok: x.id === q.id })); }
+    else if (k === "word") { label = "Chọn từ đúng nghĩa"; prompt = '<p class="qtext big">' + esc(w.vi) + "</p>" + (w.pos ? '<p class="small muted center">(' + esc(w.pos) + ")</p>" : ""); opts = wordOpts("form"); }
+    else if (k === "listen") { label = "🎧 Nghe và chọn từ em nghe được"; prompt = '<div class="center"><button class="bigsay" data-say="' + esc(w.w) + '" aria-label="Nghe lại">🔊</button><p class="small muted">Bấm loa để nghe lại</p></div>'; opts = wordOpts("form"); autoSay = true; }
+    else if (k === "tf") {
+      const truth = Math.random() < 0.5, other = similar(q.id, "mean", 1)[0], shown = truth || !other ? w.vi : other.vi;
+      label = "Đúng hay sai?"; prompt = '<div class="qbig">' + esc(w.w) + '</div><p class="center small muted">' + esc(w.pos || "") + '</p><p class="qtext big">nghĩa là: “' + esc(shown) + '”</p>';
+      opts = [{ t: "✔ Đúng", ok: shown === w.vi }, { t: "✘ Sai", ok: shown !== w.vi }]; answer = shown === w.vi ? "Đúng" : "Sai — nghĩa đúng: " + w.vi;
+    }
+    else if (k === "colloc") { const g = gapped(colOf(w)); answer = g.form; label = "Hoàn thành collocation"; prompt = '<p class="qtext big">' + g.html + '</p><p class="small muted center">Cụm từ hay dùng trong bài viết IELTS</p>'; opts = wordOpts("mean", true); opts.forEach(o => { if (o.ok) o.t = g.form.toLowerCase(); }); }
+    else if (k === "form") {
+      const g = gapped(ctx); answer = g.form; label = "Chọn dạng từ (word form) đúng";
+      const forms = [g.form.toLowerCase()].concat(fam, [w.w.toLowerCase()]).filter((x, j, a) => a.indexOf(x) === j).slice(0, 4);
+      if (forms.length < 3) { const extra = similar(q.id, "form", 8).filter(x => single(x)).map(x => x.w.toLowerCase()).slice(0, 4 - forms.length); extra.forEach(x => { if (forms.indexOf(x) < 0) forms.push(x); }); }
+      prompt = '<p class="qtext">' + g.html + '</p><p class="small muted">Gợi ý nghĩa: ' + esc(w.vi) + '</p>'; opts = shuffle(forms.map(x => ({ t: x, ok: x === g.form.toLowerCase() })));
+    }
+    else if (k === "cloze") { const g = gapped(ctx); answer = g.form; label = "Điền từ vào câu"; prompt = '<p class="qtext">' + g.html + '</p><p class="small muted">Chọn từ phù hợp nhất với câu</p>'; opts = wordOpts("mean", true); opts.forEach(o => { if (o.ok) o.t = g.form.toLowerCase(); }); }
+    else if (k === "type") { const g = gapped(ctx); answer = g.form; label = "Tự gõ từ còn thiếu"; prompt = '<p class="qtext">' + g.html + '</p><p class="small muted">Nghĩa: ' + esc(w.vi) + " · bắt đầu bằng <b>" + esc(g.form.slice(0, 1)) + "</b> · " + g.form.length + " chữ cái</p>"; typeMode = true; }
+    else if (k === "dictation") { label = "🎧 Nghe và chép chính tả"; prompt = '<div class="center"><button class="bigsay" data-say="' + esc(w.w) + '" aria-label="Nghe lại">🔊</button><p class="small muted">Nghe rồi gõ lại đúng chính tả · ' + w.w.length + " chữ cái</p></div>"; typeMode = true; autoSay = true; }
+    else { label = "Tự gõ từ theo nghĩa"; prompt = '<p class="qtext big">' + esc(w.vi) + '</p><p class="small muted center">' + (w.pos ? esc(w.pos) + " · " : "") + "bắt đầu bằng <b>" + esc(w.w.slice(0, 1)) + "</b> · " + w.w.length + " chữ cái</p>"; typeMode = true; }
     shell('<section class="card quiz">' + head + '<span class="qtype">' + label + "</span>" + prompt +
       (typeMode ? '<form class="typein" id="tf"><input id="ti" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Gõ từ…"><button class="btn primary" type="submit">Kiểm tra</button></form><button class="btn ghost block" id="idk" style="margin-top:10px">Em chưa nhớ — xem đáp án</button>'
-        : '<div class="opts">' + opts.map((o, kk) => '<button class="opt" data-k="' + kk + '"><span class="ok-l">' + "ABCD"[kk] + "</span>" + esc(o.t) + "</button>").join("") + "</div>") + '<div id="fb"></div></section>', "page-quiz");
-    bindX(); bindSay(app);
+        : '<div class="opts' + (opts.length === 2 ? " two" : "") + '">' + opts.map((o, kk) => '<button class="opt" data-k="' + kk + '">' + esc(o.t) + "</button>").join("") + "</div>") + '<div id="fb"></div></section>', "page-quiz");
+    bindX(); bindSay(app); if (autoSay) say(w.w);
     const decide = ok => {
       if (!(q.id in first)) { first[q.id] = ok; grade(q.id, ok); if (ok) right++; else wrong.add(q.id); save(); }
-      if (!ok && !q.again) queue.push({ id: q.id, k: q.k === "type" || q.k === "typemean" ? "word" : q.k, again: true });
-      document.getElementById("fb").innerHTML = '<div class="fb ' + (ok ? "ok" : "no") + '"><b class="h">' + (ok ? ["Đúng rồi! 🎉", "Chính xác! ✨", "Giỏi lắm! 🌿"][i % 3] : "Chưa đúng — đáp án: " + esc(answer)) + "</b>" + (ok && w.col ? "<span>Collocation: <em>" + esc(w.col) + "</em></span>" : "") + "</div>" + (ok ? "" : cardHtml(w)) +
+      if (!ok && !q.again) queue.push({ id: q.id, k: k === "type" || k === "typemean" || k === "dictation" ? "word" : k === "tf" ? "mean" : k, again: true });
+      streak = ok ? streak + 1 : 0; best = Math.max(best, streak);
+      const combo = ok && COMBO[streak];
+      if (ok) (combo ? SFX.combo : SFX.ok)(); else SFX.no();
+      if (ok) { const c = app.querySelector(".quiz"); if (c) { c.classList.remove("pop"); void c.offsetWidth; c.classList.add("pop"); } }
+      document.getElementById("fb").innerHTML = '<div class="fb ' + (ok ? "ok" : "no") + '"><b class="h">' + (ok ? PRAISE[Math.floor(Math.random() * PRAISE.length)] : CHEER[Math.floor(Math.random() * CHEER.length)]) + "</b>" +
+        (combo ? '<span class="combo">' + combo + "</span>" : "") + (ok ? (w.col ? "<span>Collocation: <em>" + esc(w.col) + "</em></span>" : "") : "<span>Đáp án: <b>" + esc(answer) + "</b></span>") + "</div>" + (ok ? "" : cardHtml(w)) +
         '<div class="nav"><button class="btn primary block" id="nx">Tiếp ➔</button></div>';
-      bindSay(app); if (!ok) say(w.w);
+      bindSay(app); if (!ok || k === "listen" || k === "dictation") setTimeout(() => say(w.w), ok ? 0 : 450);
       const nx = document.getElementById("nx"); nx.onclick = () => { i++; next(); }; nx.focus({ preventScroll: true }); nx.scrollIntoView({ behavior: "smooth", block: "nearest" });
     };
     if (typeMode) {
@@ -353,7 +451,9 @@ function review(opt) {
   };
   const finish = () => {
     inReview = false;
-    const d = dayNow(), r0 = rhythm(), wasLate = r0.k === "late";
+    const d = dayNow(), r0 = rhythm(), wasLate = r0.k === "late", pct = Math.round(right / Math.max(1, L.due.length + L.fresh.length) * 100);
+    const verdict = pct >= 90 ? "Xuất sắc! Trí nhớ của em thật ấn tượng 🏆" : pct >= 70 ? "Rất tốt! Cây của em đang lớn nhanh 🌳" : pct >= 50 ? "Khá lắm! Tưới đều là những từ khó sẽ thuộc 💪" : "Mỗi lần sai là một lần nhớ sâu hơn — cố lên nhé! 🌱";
+    SFX.done(); confetti();
     if (practice) { save(); flush(false);
       shell('<section class="card done"><div class="scene small">' + treeSvg(false) + '</div><h1>Luyện xong từ này! 🌿</h1><p>Em trả lời đúng ngay lần đầu <b>' + right + "/" + L.due.concat(L.fresh).length + '</b>. Luyện riêng không thay cho lượt tưới — nhớ tưới cả vườn ít nhất 2 ngày 1 lần nhé.</p><button class="btn primary block" id="hm">Về cây của em</button></section>', "page-done");
       document.getElementById("hm").onclick = home; return; }
@@ -361,7 +461,8 @@ function review(opt) {
     save(); flush(false);
     const st = rhythmStreak(), r = rhythm();
     shell('<section class="card done"><div class="scene small">' + treeSvg(false) + "</div><h1>" + (wasLate ? "Cây xanh lại rồi! 🌳" : "Cây đã được tưới! 🌳") + "</h1>" +
-      "<p>Em trả lời đúng ngay lần đầu <b>" + right + "/" + total + "</b> từ." + (wrong.size ? " Những từ chưa nhớ sẽ quay lại vào lần tưới sau." : "") + "</p>" +
+      '<p class="verdict">' + verdict + "</p>" +
+      "<p>Đúng ngay lần đầu <b>" + right + "/" + (L.due.length + L.fresh.length) + "</b> từ" + (best >= 3 ? " · chuỗi đúng dài nhất <b>🔥 " + best + "</b>" : "") + "." + (wrong.size ? " Những từ chưa nhớ sẽ quay lại vào lần tưới sau." : "") + "</p>" +
       '<div class="donegrid"><div><b>' + Object.keys(S.w).length + "/" + TOTAL + "</b><small>từ đã gieo</small></div><div><b>" + (st || 1) + '</b><small>lần đúng nhịp liên tiếp</small></div><div><b>' + wd(r.due) + " " + dm(r.due) + "</b><small>hạn tưới tiếp theo</small></div></div>" +
       '<button class="btn primary block" id="hm">Xem cây của em</button></section>', "page-done");
     document.getElementById("hm").onclick = home;
