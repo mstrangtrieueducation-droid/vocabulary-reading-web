@@ -430,7 +430,7 @@ function ntGradeQueue() {
   try {
     var sh = vSheet(), last = sh.getLastRow(); if (last < 2) return;
     var v = sh.getRange(2, 1, last - 1, VHEAD.length).getValues();
-    for (var i = 0; i < v.length && Date.now() - t0 < 200000; i++) {
+    for (var i = 0; i < v.length && Date.now() - t0 < 150000; i++) {
       var st = v[i][7], tries = +v[i][10] || 0;
       if (!(st === 'Chờ chấm' || (st === 'Lỗi, thử lại' && tries < 3))) continue;
       sh.getRange(i + 2, 8).setValue('Đang chấm'); SpreadsheetApp.flush();
@@ -478,11 +478,12 @@ function gradeVideo(r) {
       'Cách chấm: (1) Màn hình có đúng trang Bài ' + n + ' không; có giọng HỌC SINH đọc không (giọng máy/giọng mẫu phát ra không tính). (2) Đi lần lượt TỪNG mục A từ 1 đến ' + L.words.length + ', nghe THẬT KỸ, KHÔNG đoán theo danh sách — chỉ "ok" khi nghe rõ đủ âm và đúng trọng âm. Bắt lỗi hay gặp của người Việt: nuốt/sai âm cuối (/t/ /d/ /k/ /s/ /z/ /tʃ/ /dʒ/ /st/…), /tʃ/ đọc thành /ʃ/ hoặc "ch" Việt, /ʃ/ thành s, /θ/ /ð/ thành t/d, sai nguyên âm dài/ngắn, nguyên âm đôi /oʊ/ /eɪ/ /aɪ/ đọc thành đơn, SAI TRỌNG ÂM (so với dấu ˈ). Mục có nhiều từ (cách nhau bằng ·) phải đọc đủ từng từ. Mục nào em bỏ qua (kể cả bỏ 1 từ trong mục), đọc nhầm sang từ khác hoặc không nghe thấy → "missing". Ghi vào "heard" phiên âm IPA của đúng cái em THỰC SỰ phát ra (nghe sao ghi vậy, có dấu trọng âm), rồi so với phiên âm chuẩn để quyết định ok/wrong — lệch âm nào hoặc lệch trọng âm là wrong.\n' +
       '(3) Từng câu B: chấm âm cuối, nối âm, trọng âm, ngắt nghỉ; câu không đọc → "missing".\nViết NHẬN XÉT BẰNG TIẾNG VIỆT, ngắn, cụ thể, xưng "em".\n' +
       'Trả về JSON đúng mẫu: {"screen_ok": true/false, "voice_ok": true/false, "score": 0-100, "summary": "1–2 câu nhận xét chung", "words": [{"n": số mục, "w": "từ", "heard": "/IPA em đọc/", "st": "ok" | "wrong" | "missing", "issue": "lỗi cụ thể nếu wrong", "fix": "cách sửa ngắn"}], "sentences": [{"i": 1, "st": "ok" | "wrong" | "missing", "issue": "...", "fix": "..."}], "tips": ["tối đa 3 lời khuyên ưu tiên"]}. "words" PHẢI có đủ ' + L.words.length + ' mục, "sentences" đủ ' + L.sents.length + ' câu.';
-    var body = { contents: [{ role: 'user', parts: [{ file_data: { mime_type: mime, file_uri: uri } }, { text: prompt }] }],
+    var body = { contents: [{ role: 'user', parts: [{ file_data: { mime_type: mime, file_uri: uri }, video_metadata: { fps: 0.25 } }, { text: prompt }] }],
       generationConfig: { temperature: 0.2, maxOutputTokens: 8192, mediaResolution: 'MEDIA_RESOLUTION_LOW',
         thinkingConfig: { thinkingLevel: 'low', includeThoughts: false },               // như KIDS: suy nghĩ mức thấp → rẻ, vẫn chuẩn
         responseFormat: { text: { mimeType: 'APPLICATION_JSON', schema: gradeSchema() } } } };   // khuôn JSON bắt buộc: đủ từng mục
     var call = geminiCall(key, body), res = call.r;
+    if (res.getResponseCode() === 400 && /video_metadata|fps/i.test(res.getContentText())) { delete body.contents[0].parts[0].video_metadata; call = geminiCall(key, body); res = call.r; }
     if (res.getResponseCode() === 400 && /responseFormat|schema|thinking/i.test(res.getContentText())) {   // phòng khi API đổi
       body.generationConfig = { temperature: 0.2, maxOutputTokens: 8192, mediaResolution: 'MEDIA_RESOLUTION_LOW', responseMimeType: 'application/json' };
       call = geminiCall(key, body); res = call.r;
@@ -496,7 +497,7 @@ function gradeVideo(r) {
 // Gọi Gemini như KIDS: thử hạng Flex (rẻ 50%) trước; Flex bận (429/503/504) hoặc quá giờ thì gửi lại đúng yêu cầu đó ở hạng thường.
 function geminiCall(key, body) {
   var url = 'https://generativelanguage.googleapis.com/v1beta/models/' + GEMINI_VIDEO_MODEL + ':generateContent';
-  var h = new Date(Date.now() + 7 * 3600e3), m = h.getUTCHours() * 60 + h.getUTCMinutes(), wait = (m >= 18 * 60 + 30 && m < 23 * 60 + 15) ? 20 : 45;   // tối đông học sinh: chờ Flex ít hơn
+  var h = new Date(Date.now() + 7 * 3600e3), m = h.getUTCHours() * 60 + h.getUTCMinutes(), wait = (m >= 18 * 60 + 30 && m < 23 * 60 + 15) ? 30 : 100;   // như KIDS: tối đông học sinh chờ Flex 30 s, giờ khác 100 s
   var flex = JSON.parse(JSON.stringify(body)); flex.service_tier = 'flex';
   try {
     var r = UrlFetchApp.fetch(url, { method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key, 'X-Server-Timeout': String(wait) }, muteHttpExceptions: true, payload: JSON.stringify(flex) });
