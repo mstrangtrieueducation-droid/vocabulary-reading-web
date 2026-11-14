@@ -8,6 +8,8 @@
    tên không có trong sổ được liệt kê riêng ở cuối ("Tên chưa khớp sổ") để cô sửa.
    Chạy 1 lần: stSetup()  (cài trigger mỗi giờ + ghi lần đầu cho mọi lớp).
    ====================================================================== */
+/* Chạy tay (hàm đầu tiên trong tệp = hàm mặc định khi bấm Chạy): cập nhật ngay cột CÂY TỪ VỰNG ở mọi sổ lớp. */
+function stCayTuVungNgay() { CacheService.getScriptCache().remove('st_books'); stSyncRT(true); }
 var ST_SCHEDULE = '1NHZ6N2fp-ptJ9p7_HN65fFSs-A_lohiGVTwndm3ud6Q';
 var ST_MAIN = 'THEO DÕI TOÀN DIỆN';
 var ST_PA_TAB = 'LUYỆN PHÁT ÂM';
@@ -213,5 +215,3 @@ function stSetup() {
   stSyncPA(null); stSyncRT(true);
 }
 function stHourly() { stSyncRT(false); }
-/* Chạy tay trong trình soạn thảo để cập nhật cột CÂY TỪ VỰNG ngay. */
-function stCayTuVungNgay() { CacheService.getScriptCache().remove('st_books'); stSyncRT(true); }
