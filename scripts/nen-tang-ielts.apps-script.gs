@@ -419,9 +419,10 @@ function vocabUnit(n) {
 // Nội dung học sinh phải đọc trong video — PHẢI giống hệt readingSheet() trên web (app.js)
 function readingList(u) {
   var words = u.entries.map(function (e) { return e.speak.join(' · '); });
+  var ipas = u.entries.map(function (e) { return e.ipa || ''; });
   var es = u.entries.filter(function (e) { return e.ex; }), sents = [];
   for (var k = 0; k < 5 && es.length; k++) sents.push(es[Math.floor(k * es.length / 5)].ex);
-  return { words: words, sents: sents };
+  return { words: words, ipas: ipas, sents: sents };
 }
 function ntGradeQueue() {
   var lock = LockService.getScriptLock(); if (!lock.tryLock(1000)) return;   // một lượt chấm một lúc
@@ -473,21 +474,42 @@ function gradeVideo(r) {
   try {
     var L = readingList(u);
     var prompt = 'Bạn là giáo viên phát âm tiếng Anh (giọng Mỹ), chấm bài cho học sinh Việt Nam, trình độ B1. Video là bản quay màn hình: học sinh mở trang "Nộp bài – Bài ' + n + '" (Nền tảng IELTS) và ĐỌC TO các từ, câu hiện trên màn hình.\n' +
-      'Học sinh: "' + r[3] + '". Danh sách phải đọc:\nA. TỪ (theo thứ tự): ' + L.words.map(function (w, i) { return (i + 1) + '. ' + w; }).join(' | ') + '\nB. CÂU: ' + L.sents.map(function (s, i) { return (i + 1) + '. ' + s; }).join(' | ') + '\n' +
-      'Yêu cầu: (1) kiểm tra màn hình có đúng trang Bài ' + n + ' không và có giọng học sinh đọc không (giọng máy/giọng mẫu phát ra không tính). (2) Nghe THẬT KỸ từng từ, KHÔNG đoán theo danh sách: chỉ coi là đúng khi nghe rõ đủ âm. Bắt các lỗi hay gặp của người Việt: nuốt âm cuối (/t/, /d/, /k/, /s/, /z/, /tʃ/, /st/…), sai nguyên âm dài/ngắn, sai trọng âm, đọc /θ/ /ð/ thành t/d, /ʃ/ thành s, bỏ từ.\n' +
-      '(3) Câu: chấm nối âm, âm cuối, trọng âm, ngắt nghỉ.\nCho điểm 0–100 (đọc thiếu nhiều thì điểm thấp). Viết NHẬN XÉT BẰNG TIẾNG VIỆT, ngắn, cụ thể, xưng "em".\n' +
-      'Trả về JSON đúng mẫu: {"screen_ok": true/false, "voice_ok": true/false, "score": 0-100, "summary": "1–2 câu nhận xét chung", "words": [{"w": "từ trong danh sách", "ok": true/false, "issue": "lỗi cụ thể nếu sai", "fix": "cách sửa ngắn"}], "sentences": [{"i": 1, "ok": true/false, "issue": "...", "fix": "..."}], "missing": ["từ/câu em không đọc"], "tips": ["tối đa 3 lời khuyên ưu tiên"]}. Trong "words" chỉ liệt kê các từ SAI hoặc CHƯA RÕ (từ đúng thì bỏ qua).';
+      'Học sinh: "' + r[3] + '".\nA. TỪ (theo thứ tự, kèm phiên âm chuẩn để đối chiếu — dấu ˈ là trọng âm):\n' + L.words.map(function (w, i) { return (i + 1) + '. ' + w + '  ' + L.ipas[i]; }).join('\n') + '\nB. CÂU:\n' + L.sents.map(function (s, i) { return (i + 1) + '. ' + s; }).join('\n') + '\n' +
+      'Cách chấm: (1) Màn hình có đúng trang Bài ' + n + ' không; có giọng HỌC SINH đọc không (giọng máy/giọng mẫu phát ra không tính). (2) Đi lần lượt TỪNG mục A từ 1 đến ' + L.words.length + ', nghe THẬT KỸ, KHÔNG đoán theo danh sách — chỉ "ok" khi nghe rõ đủ âm và đúng trọng âm. Bắt lỗi hay gặp của người Việt: nuốt/sai âm cuối (/t/ /d/ /k/ /s/ /z/ /tʃ/ /dʒ/ /st/…), /tʃ/ đọc thành /ʃ/ hoặc "ch" Việt, /ʃ/ thành s, /θ/ /ð/ thành t/d, sai nguyên âm dài/ngắn, nguyên âm đôi /oʊ/ /eɪ/ /aɪ/ đọc thành đơn, SAI TRỌNG ÂM (so với dấu ˈ). Mục nào em bỏ qua, đọc nhầm sang từ khác hoặc không nghe thấy → "missing".\n' +
+      '(3) Từng câu B: chấm âm cuối, nối âm, trọng âm, ngắt nghỉ; câu không đọc → "missing".\nViết NHẬN XÉT BẰNG TIẾNG VIỆT, ngắn, cụ thể, xưng "em".\n' +
+      'Trả về JSON đúng mẫu: {"screen_ok": true/false, "voice_ok": true/false, "score": 0-100, "summary": "1–2 câu nhận xét chung", "words": [{"n": số mục, "w": "từ", "st": "ok" | "wrong" | "missing", "issue": "lỗi cụ thể nếu wrong", "fix": "cách sửa ngắn"}], "sentences": [{"i": 1, "st": "ok" | "wrong" | "missing", "issue": "...", "fix": "..."}], "tips": ["tối đa 3 lời khuyên ưu tiên"]}. "words" PHẢI có đủ ' + L.words.length + ' mục, "sentences" đủ ' + L.sents.length + ' câu.';
     var body = { contents: [{ role: 'user', parts: [{ file_data: { mime_type: mime, file_uri: uri } }, { text: prompt }] }],
-      generationConfig: { temperature: 0.2, responseMimeType: 'application/json', maxOutputTokens: 6000, mediaResolution: 'MEDIA_RESOLUTION_LOW' } };
+      generationConfig: { temperature: 0.2, responseMimeType: 'application/json', maxOutputTokens: 12000, mediaResolution: 'MEDIA_RESOLUTION_LOW' } };
     var res = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/models/' + GEMINI_VIDEO_MODEL + ':generateContent', { method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key }, muteHttpExceptions: true, payload: JSON.stringify(body) });
     if (res.getResponseCode() !== 200) return { err: 'Gemini ' + res.getResponseCode() + ' ' + res.getContentText().slice(0, 200) };
     var j = JSON.parse(res.getContentText()), t = j.candidates[0].content.parts.map(function (p) { return p.text || ''; }).join('');
     var out = JSON.parse(t.replace(/^\s*```(json)?|```\s*$/g, '').trim());
-    out.score = Math.max(0, Math.min(100, Math.round(+out.score || 0)));
-    if (out.screen_ok === false || out.voice_ok === false) { out.score = Math.min(out.score, 30); out.summary = (out.voice_ok === false ? 'Video chưa nghe rõ giọng em đọc. ' : 'Video chưa quay đúng trang Nộp bài của Bài ' + n + '. ') + (out.summary || '') + ' Em quay lại và nộp lại nhé.'; }
-    out.model = GEMINI_VIDEO_MODEL; out.unit = n;
-    return out;
+    return finishGrade(out, L, n);
   } finally { try { UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/' + uri.split('/v1beta/')[1], { method: 'delete', headers: { 'x-goog-api-key': key }, muteHttpExceptions: true }); } catch (x) {} }
+}
+// Điểm tính từ danh sách từng mục (không tin con số tổng của máy): từ 60%, câu 40%; sai = 0,4 điểm, thiếu = 0.
+function finishGrade(out, L, n) {
+  var W = out.words || [], S = out.sentences || [], miss = [], bad = [], wp = 0, sp = 0, nW = L.words.length, nS = L.sents.length;
+  var byN = {}; W.forEach(function (w) { if (w && w.n) byN[+w.n] = w; });
+  for (var k = 1; k <= nW; k++) {
+    var w = byN[k], st = w ? String(w.st || (w.ok === false ? 'wrong' : 'ok')) : 'missing';
+    if (st === 'ok') wp += 1;
+    else if (st === 'missing') miss.push(L.words[k - 1]);
+    else { wp += 0.4; bad.push({ w: w.w || L.words[k - 1], ok: false, issue: w.issue || '', fix: w.fix || '' }); }
+  }
+  var sents = [];
+  for (var q = 1; q <= nS; q++) {
+    var x = S.filter(function (y) { return +y.i === q; })[0], st2 = x ? String(x.st || (x.ok === false ? 'wrong' : 'ok')) : 'missing';
+    if (st2 === 'ok') { sp += 1; sents.push({ i: q, ok: true }); }
+    else if (st2 === 'missing') { miss.push('Câu ' + q); sents.push({ i: q, ok: false, issue: 'Em chưa đọc câu này', fix: '' }); }
+    else { sp += 0.4; sents.push({ i: q, ok: false, issue: x.issue || '', fix: x.fix || '' }); }
+  }
+  var calc = Math.round(60 * wp / Math.max(1, nW) + 40 * sp / Math.max(1, nS));
+  out.score = Math.min(calc, Math.max(0, Math.min(100, Math.round(+out.score || calc))));
+  out.words = bad; out.sentences = sents; out.missing = miss;
+  if (out.screen_ok === false || out.voice_ok === false) { out.score = Math.min(out.score, 30); out.summary = (out.voice_ok === false ? 'Video chưa nghe rõ giọng em đọc. ' : 'Video chưa quay đúng trang Nộp bài của Bài ' + n + '. ') + (out.summary || '') + ' Em quay lại và nộp lại nhé.'; }
+  out.model = GEMINI_VIDEO_MODEL; out.unit = n;
+  return out;
 }
 function geminiUpload(key, fileId, size, mime, name) {
   var start = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/upload/v1beta/files', {
