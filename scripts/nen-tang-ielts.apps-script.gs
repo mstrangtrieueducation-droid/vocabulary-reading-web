@@ -460,7 +460,7 @@ function videoBest(code) {   // điểm cao nhất từng bài
 function videoList(code) {   // gửi về trang học sinh / quản trị
   return videoRows(code).map(function (r) {
     var fb = null; try { fb = r[9] ? JSON.parse(r[9]) : null; } catch (e) {}
-    return { at: iso(r[0]), unit: unitNo(r[5]), status: r[7], score: r[8] === '' ? null : +r[8], fb: r[7] === 'Đã chấm' ? fb : null, gradedAt: iso(r[11]) };
+    return { at: iso(r[0]), unit: unitNo(r[5]), status: r[7], score: r[8] === '' ? null : +r[8], fb: r[7] === 'Đã chấm' ? fb : null, gradedAt: iso(r[11]), file: String(r[6] || '').split(',')[0] };
   });
 }
 /* ---------- Gemini đọc video ---------- */
