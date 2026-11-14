@@ -210,3 +210,14 @@ function paGet(p) {
   });
   return json({ ok: true, pass: PA_PASS, results: out });
 }
+
+/* ---------- Schedule: chương trình "LUYỆN PHÁT ÂM" trong AUTO_SELF_STUDY_CATALOG (chạy lại được, ghi đè đúng các dòng của chương trình) ---------- */
+function paScheduleCatalog() {
+  var rows = JSON.parse(UrlFetchApp.fetch('https://raw.githubusercontent.com/mstrangtrieueducation-droid/vocabulary-reading-web/main/scripts/luyen-phat-am/schedule-catalog.json?' + Date.now()).getContentText());
+  var sh = SpreadsheetApp.openById('1NHZ6N2fp-ptJ9p7_HN65fFSs-A_lohiGVTwndm3ud6Q').getSheetByName('AUTO_SELF_STUDY_CATALOG');
+  var last = sh.getLastRow(), a = sh.getRange(1, 1, last, 1).getValues(), first = 0;
+  for (var i = 0; i < a.length; i++) if (a[i][0] === 'LUYỆN PHÁT ÂM') { first = i + 1; break; }
+  var at = first || last + 1;
+  sh.getRange(at, 1, rows.length, 3).setValues(rows);
+  Logger.log('Catalog LUYỆN PHÁT ÂM: dòng ' + at + '–' + (at + rows.length - 1));
+}
