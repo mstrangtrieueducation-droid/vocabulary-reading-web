@@ -5,9 +5,65 @@
 "use strict";
 const C = Object.assign({ CLASSES: [], FORM_URL: "", FORM_ENTRIES: {} }, window.PA_CONFIG || {});
 const D = window.PA_DATA || [];
+const S = window.PA_SOUNDS || {};
 const app = document.getElementById("app");
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const mark = s => esc(s).replace(/\*([^*]+)\*/g, '<b class="st">$1</b>').replace(/\s*([↗↘])/g, '<span class="ar">&nbsp;$1</span>').replace(/ \/ /g, ' <span class="pz">/</span> ');
+const mark = s => esc(s).replace(/\*([^*]+)\*/g, '<b class="st">$1</b>').replace(/\s*([↗↘])/g, '<span class="ar">&nbsp;$1</span>').replace(/ \/ /g, ' <span class="pz">/</span> ').replace(/‿/g, '<span class="lk">‿</span>');
+/* tô màu âm khó: m = [[đầu, cuối, khoá âm, 1 trọng tâm | 0 chung, màu?]] theo vị trí trong chuỗi gốc (xem scripts/luyen-phat-am/sounds.mjs) */
+function render(t, m) {
+  const ms = (m || []).filter(x => S[x[2]]).sort((a, b) => a[0] - b[0]);
+  if (!ms.length) return mark(t);
+  let out = "", pos = 0;
+  ms.forEach((x, i) => { if (x[0] < pos) return; out += t.slice(pos, x[0]) + "\uE000" + String.fromCharCode(0xE100 + i) + t.slice(x[0], x[1]) + "\uE001"; pos = x[1]; });
+  out += t.slice(pos);
+  return mark(out).replace(/\uE000([\uE100-\uEFFF])/g, (_, c) => { const x = ms[c.charCodeAt(0) - 0xE100]; return '<span class="snd c-' + (x[4] || S[x[2]].c) + (x[3] ? " f" : "") + '" data-k="' + esc(x[2]) + '">'; }).replace(/\uE001/g, "</span>");
+}
+const wordAt = (t, a, b) => { while (a > 0 && /[A-Za-zé'’]/.test(t[a - 1])) a--; while (b < t.length && /[A-Za-zé'’]/.test(t[b])) b++; return t.slice(a, b); };
+const ipaOf = k => S[k].ipa && S[k].ipa !== "cụm" ? S[k].ipa : "";
+/* hộp "Chú ý khi đọc": âm trọng tâm của tuần (kèm cách đọc) + chip các âm khó chung và kí hiệu có trong câu */
+function keyBox(parts, compact) {
+  const K = new Map();
+  parts.forEach(p => (p.m || []).forEach(([a, b, k, f, c]) => {
+    if (!S[k]) return;
+    let e = K.get(k); if (!e) K.set(k, e = { f: 0, c: c || S[k].c, w: [] });
+    if (f) e.f = 1;
+    const w = wordAt(p.t, a, b); if (w && e.w.indexOf(w) < 0) e.w.push(w);
+  }));
+  const all = parts.map(p => p.t).join(" "), focus = [], rest = [];
+  K.forEach((e, k) => (e.f && !compact ? focus : rest).push([k, e]));
+  const chip = ([k, e]) => '<button type="button" class="kchip c-' + e.c + (e.f ? " f" : "") + '" data-k="' + esc(k) + '"><i></i>' + esc(ipaOf(k) || S[k].n) + (ipaOf(k) ? " <small>" + esc(S[k].n) + "</small>" : "") + "</button>";
+  const sym = [];
+  if (/\*[^*]+\*/.test(all)) sym.push('<span class="kx"><b class="st">Aa</b> nhấn mạnh</span>');
+  if (/ \/ /.test(all)) sym.push('<span class="kx"><span class="pz">/</span> ngắt hơi</span>');
+  if (/[↗↘]/.test(all)) sym.push('<span class="kx"><span class="ar">↗↘</span> lên / xuống giọng</span>');
+  if (/‿/.test(all)) sym.push('<span class="kx"><span class="lk">‿</span> nối âm</span>');
+  if (!focus.length && !rest.length && !sym.length) return "";
+  return '<div class="keys">' +
+    focus.map(([k, e]) => '<div class="krow c-' + e.c + '"><span class="kb">' + esc(ipaOf(k) || "cụm") + '</span><span class="kt"><b>' + esc(S[k].n.charAt(0).toUpperCase() + S[k].n.slice(1)) + (ipaOf(k) ? " " + esc(ipaOf(k)) : "") + "</b>" + (e.w.length && (parts.length > 1 || e.w[0] !== parts[0].t) ? '<span class="kw">' + e.w.slice(0, 5).map(esc).join(" · ") + "</span>" : "") + "<em>" + esc(S[k].tip) + "</em></span></div>").join("") +
+    (rest.length || sym.length ? '<div class="kmore">' + (rest.length && !compact && focus.length ? '<span class="kl">Chú ý thêm</span>' : "") + rest.map(chip).join("") + sym.join("") + "</div>" : "") +
+    '<p class="ktip" hidden></p></div>';
+}
+function showTip(el) {
+  const scope = el.closest(".kscope"); if (!scope) return;
+  const tip = scope.querySelector(".ktip"), k = el.dataset.k; if (!tip || !S[k]) return;
+  const same = tip.dataset.k === k && !tip.hidden && tip.dataset.w === (el.classList.contains("snd") ? el.textContent : "");
+  scope.querySelectorAll(".snd.hot").forEach(x => x.classList.remove("hot"));
+  if (same) { tip.hidden = true; tip.dataset.k = ""; return; }
+  let w = "";
+  if (el.classList.contains("snd")) { const host = el.parentNode; const txt = host.textContent; let off = 0; for (const n of host.childNodes) { if (n === el) break; off += n.textContent.length; } w = wordAt(txt, off, off + el.textContent.length); }
+  tip.dataset.k = k; tip.dataset.w = el.classList.contains("snd") ? el.textContent : "";
+  tip.innerHTML = (w ? "<b>" + esc(w) + "</b> · " : "") + '<span class="kb sm">' + esc(ipaOf(k) || "cụm") + "</span> <b>" + esc(S[k].n.charAt(0).toUpperCase() + S[k].n.slice(1)) + "</b>: " + esc(S[k].tip);
+  tip.hidden = false;
+  scope.querySelectorAll('.snd[data-k="' + k + '"]').forEach(x => x.classList.add("hot"));
+}
+app.addEventListener("click", ev => { const el = ev.target.closest && ev.target.closest(".snd, .kchip"); if (el && app.contains(el)) showTip(el); });
+const ICON = {
+  play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="fi" d="M4 9.5v5h3.6L13 19V5L7.6 9.5z"/><path d="M16.2 9a4.2 4.2 0 0 1 0 6M18.8 6.4a8 8 0 0 1 0 11.2"/></svg>',
+  slow: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="fi" d="M4 9.5v5h3.6L13 19V5L7.6 9.5z"/><path d="M16.2 9a4.2 4.2 0 0 1 0 6"/><circle class="fi" cx="20" cy="12" r="1.1"/></svg>',
+  mic: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect class="fi" x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></svg>',
+  me: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="fi" d="M8 5.5v13l10.5-6.5z"/></svg>',
+  cmp: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h12.5l-3-3M20 15H7.5l3 3"/></svg>'
+};
 function toast(msg) { const t = document.getElementById("toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("on"), 2800); }
 const store = { get(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
 let student = store.get("pa-student");
@@ -123,8 +179,10 @@ function entry(then) {
 /* ---------- danh sách 50 tuần ---------- */
 function home() {
   const groups = []; D.forEach(L => { let g = groups[groups.length - 1]; if (!g || g.name !== L.g) groups.push(g = { name: L.g, items: [] }); g.items.push(L); });
+  const nsub = D.filter(L => P[L.w] && P[L.w].sub).length;
   shell(inAppHtml() + '<section class="card hello"><span class="kick">Luyện phát âm IELTS · 50 tuần</span><h1>Chào ' + esc(student.name.split(" ").pop()) + "!</h1>" +
-    "<p>Mỗi tuần một lỗi phát âm và một chủ đề Speaking Part 1, khoảng 10–15 phút. Em nghe mẫu, nghe chậm, thu giọng mình để so sánh, rồi quay màn hình đọc bài và nộp cho cô.</p></section>" +
+    "<p>Mỗi tuần một lỗi phát âm và một chủ đề Speaking Part 1, khoảng 10–15 phút. Em nghe mẫu, nghe chậm, thu giọng mình để so sánh, rồi quay màn hình đọc bài và nộp cho cô.</p>" +
+    '<div class="prog"><span style="width:' + Math.round(nsub / D.length * 100) + '%"></span></div><p class="progt">Đã nộp <b>' + nsub + "</b> / " + D.length + " tuần</p></section>" +
     groups.map(g => '<h2 class="grp">' + esc(g.name) + "<small>Tuần " + g.items[0].w + "–" + g.items[g.items.length - 1].w + '</small></h2><div class="weeks">' +
       g.items.map(L => '<a class="wk' + (P[L.w] && P[L.w].sub ? " done" : "") + '" href="?w=' + L.w + '"><span class="n">' + (P[L.w] && P[L.w].sub ? "✓" : L.w) + "</span><span><b>" + esc(L.s) + "</b><small>Tuần " + L.w + " · " + esc(L.t) + " · " + L.code + "</small></span></a>").join("") + "</div>").join(""));
 }
@@ -133,11 +191,10 @@ function home() {
 const STEPS = [["Từ khoá", "Nghe – thu – so sánh"], ["Từng câu", "Câu trả lời Part 1"], ["Trọn câu", "Đọc liền một hơi"], ["Nộp bài", "Quay màn hình"]];
 function lesson(L) {
   const pr = prog(L.w), recs = {};
-  const hasMarks = /[*↗↘‿]| \/ /.test(JSON.stringify(L.q) + JSON.stringify(L.k.map(x => x.t)));
   const items = [
-    L.k.map(x => ({ kind: "w", html: mark(x.t), ipa: x.ipa, vi: x.vi, audio: [x.a], max: 12 })).concat(L.r.map(x => ({ kind: "w", html: mark(x.t), ipa: x.ipa, vi: x.vi, audio: [x.a], max: 12, review: x.from }))),
-    [].concat.apply([], L.q.map((q, qi) => q.s.map((s, si) => ({ kind: "s", q: q.q, qa: q.qa, qi, html: mark(s.t), audio: [s.a], max: 25, label: "Câu hỏi " + (qi + 1) + " · câu " + (si + 1) + "/" + q.s.length })))),
-    L.q.map((q, qi) => ({ kind: "f", q: q.q, qa: q.qa, qi, html: q.s.map(s => mark(s.t)).join(" "), audio: q.s.map(s => s.a), max: 60, label: "Câu trả lời " + (qi + 1) + "/3" }))
+    L.k.map(x => ({ kind: "w", parts: [x], html: render(x.t, x.m), ipa: x.ipa, vi: x.vi, audio: [x.a], max: 12 })).concat(L.r.map(x => ({ kind: "w", parts: [x], html: render(x.t, x.m), ipa: x.ipa, vi: x.vi, audio: [x.a], max: 12, review: x.from }))),
+    [].concat.apply([], L.q.map((q, qi) => q.s.map((s, si) => ({ kind: "s", q: q.q, qa: q.qa, qi, parts: [s], html: render(s.t, s.m), audio: [s.a], max: 25, label: "Câu hỏi " + (qi + 1) + " · câu " + (si + 1) + "/" + q.s.length })))),
+    L.q.map((q, qi) => ({ kind: "f", q: q.q, qa: q.qa, qi, parts: q.s, html: q.s.map(s => render(s.t, s.m)).join(" "), audio: q.s.map(s => s.a), max: 60, label: "Câu trả lời " + (qi + 1) + "/3" }))
   ];
   let step = 0, idx = 0, recording = false, busy = false, msg = "";
   shell("");
@@ -146,7 +203,7 @@ function lesson(L) {
   const stepOk = s => s < 3 ? items[s].every((x, i) => done(s, i)) : !!pr.sub;
 
   function head() {
-    return '<section class="card lhead"><span class="kick">Tuần ' + L.w + " · " + esc(L.g) + "</span><h1>" + esc(L.s) + '</h1><div class="meta"><span class="tag">Part 1: ' + esc(L.t) + " · " + esc(L.tv) + '</span><span class="tag">Mã bài ' + L.code + "</span></div>" +
+    return '<section class="card lhead"><span class="kick">Tuần ' + L.w + " · " + esc(L.g) + "</span><h1>" + esc(L.s) + '</h1><div class="meta"><span class="tag">Part 1 · ' + esc(L.t) + " · " + esc(L.tv) + '</span><span class="tag code">' + L.code + "</span></div>" +
       (step === 0 && idx === 0 ? '<ol class="explain">' + L.x.map(t => "<li>" + mark(t) + "</li>").join("") + "</ol>" : '<details class="why"><summary>Xem lại cách đọc</summary><ol class="explain">' + L.x.map(t => "<li>" + mark(t) + "</li>").join("") + "</ol></details>") + "</section>" +
       '<nav class="steps" aria-label="Các bước">' + STEPS.map((s, i) => '<button data-step="' + i + '" class="' + (i === step ? "cur " : "") + (stepOk(i) ? "ok" : "") + '"><b>' + (stepOk(i) ? "✓ " : "") + "BƯỚC " + (i + 1) + "</b>" + s[0] + "</button>").join("") + "</nav>";
   }
@@ -156,15 +213,15 @@ function lesson(L) {
     recordStop(); recording = false; busy = false; stopAudio();
     if (step === 3) return submit();
     const list = items[step], it = list[idx], key = step + ":" + idx, rec = recs[key];
-    const legend = hasMarks && step > 0 ? '<p class="legend"><b class="st">từ gạch chân</b> = nhấn mạnh · <span class="pz">/</span> = ngắt hơi · <span class="ar">↗ ↘</span> = lên / xuống giọng · ‿ = nối âm</p>' : "";
-    const html = inAppHtml() + head() + '<section class="card"><div class="fc-top"><span class="count">' + (it.kind === "w" ? "Từ " + (idx + 1) + " / " + list.length + (it.review ? " · ôn lại tuần " + it.review : "") : esc(it.label)) + '</span><span class="dots">' + list.map((x, i) => '<i class="' + (done(step, i) ? "d " : "") + (i === idx ? "c" : "") + '"></i>').join("") + "</span></div>" +
-      (it.q ? '<div class="qline"><span><b>GIÁM KHẢO HỎI</b>' + esc(it.q) + '</span><button class="btn ghost sm" id="qa" aria-label="Nghe câu hỏi">🔊</button></div>' : "") + legend +
+    const html = inAppHtml() + head() + '<section class="card practice kscope"><div class="fc-top"><span class="count">' + (it.kind === "w" ? "Từ " + (idx + 1) + " / " + list.length + (it.review ? " · ôn lại tuần " + it.review : "") : esc(it.label)) + '</span><span class="dots">' + list.map((x, i) => '<i class="' + (done(step, i) ? "d " : "") + (i === idx ? "c" : "") + '"></i>').join("") + "</span></div>" +
+      (it.q ? '<div class="qline"><span><b>Giám khảo hỏi</b>' + esc(it.q) + '</span><button class="btn tonal sm icon" id="qa" aria-label="Nghe câu hỏi">' + ICON.play + "</button></div>" : "") +
       '<h2 class="term ' + (it.kind === "s" ? "sent" : it.kind === "f" ? "full" : "") + '">' + it.html + "</h2>" +
       (it.ipa ? '<p class="ipa">' + esc(it.ipa) + '</p><p class="vi">' + esc(it.vi) + "</p>" : "") +
-      '<div class="audio"><button class="btn sound" id="mdl">🔊 Nghe mẫu</button><button class="btn ghost" id="slow">🐢 Nghe chậm</button></div>' +
-      (canRecord ? '<button class="mic" id="mic"><span class="mi">🎙️</span><span class="ml">' + (rec ? "Thu lại" : "Bấm để thu giọng em") + "</span></button>" : '<p class="hint warn">Trình duyệt này chưa ghi âm được. Em vẫn nghe mẫu và đọc theo được; muốn thu giọng thì mở bằng Chrome hoặc Safari.</p>') +
+      keyBox(it.parts) +
+      '<div class="audio"><button class="btn tonal" id="mdl">' + ICON.play + 'Nghe mẫu</button><button class="btn tonal" id="slow">' + ICON.slow + "Nghe chậm</button></div>" +
+      (canRecord ? '<button class="mic' + (rec ? " has" : "") + '" id="mic"><span class="mi">' + ICON.mic + '</span><span class="ml">' + (rec ? "Thu lại" : "Bấm để thu giọng em") + "</span></button>" : '<p class="hint warn">Trình duyệt này chưa ghi âm được. Em vẫn nghe mẫu và đọc theo được; muốn thu giọng thì mở bằng Chrome hoặc Safari.</p>') +
       '<p class="hint' + (msg ? " warn" : "") + '" id="hint">' + (msg || (rec ? "Nghe lại giọng em rồi so với mẫu. Chưa giống thì thu lại, bao nhiêu lần cũng được." : it.kind === "f" ? "Nghe mẫu cả câu trả lời, rồi bấm micro và đọc liền một hơi." : "Nghe mẫu 2–3 lần, nghe chậm để bắt từng âm, rồi bấm micro và đọc.")) + "</p>" +
-      (rec ? '<div class="audio"><button class="btn ghost" id="me">▶ Giọng em</button><button class="btn ghost" id="cmp">🔁 So sánh: mẫu → em</button></div>' : "") +
+      (rec ? '<div class="audio mine"><button class="btn ghost" id="me">' + ICON.me + 'Giọng em</button><button class="btn ghost" id="cmp">' + ICON.cmp + "So sánh: mẫu → em</button></div>" : "") +
       '<div class="nav"><button class="btn ghost" id="pv"' + (step === 0 && idx === 0 ? " disabled" : "") + '>← Trước</button><button class="btn ' + (rec || done(step, idx) || !canRecord ? "primary" : "ghost") + '" id="nx">' + (idx + 1 < list.length ? "Tiếp ➔" : step === 2 ? "Sang bước nộp bài ➔" : "Sang bước " + (step + 2) + " ➔") + "</button></div></section>";
     const y = window.scrollY; app.innerHTML = html; if (top) window.scrollTo(0, 0); else window.scrollTo(0, y);
     bindSteps();
@@ -220,7 +277,7 @@ function lesson(L) {
       "<li>Em <b>quay thử 10 giây</b>, nói một câu rồi xem lại để chắc chắn nghe rõ giọng em.</li>" +
       "<li>Em đọc to, rõ lần lượt <b>3 câu trả lời</b> trong khung vàng bên dưới (không cần đọc câu hỏi). Nhớ đúng âm của tuần này: <b>" + esc(L.s) + "</b>.</li>" +
       "<li>Đọc xong, em dừng quay màn hình rồi bấm <b>Nộp bài</b> để gửi đúng video của bài này.</li></ol>" +
-      '<div class="sheet"><h3>Em đọc 3 câu trả lời này trong video</h3>' + L.q.map((q, i) => '<div class="a"><p class="qq">' + (i + 1) + ". " + esc(q.q) + '</p><p class="aa">' + q.s.map(s => mark(s.t)).join(" ") + "</p></div>").join("") + "</div>" +
+      '<div class="sheet kscope"><h3>Em đọc 3 câu trả lời này trong video</h3>' + keyBox([].concat.apply([], L.q.map(q => q.s)), true) + L.q.map((q, i) => '<div class="a"><p class="qq">' + (i + 1) + ". " + esc(q.q) + '</p><p class="aa">' + q.s.map(s => render(s.t, s.m)).join(" ") + "</p></div>").join("") + "</div>" +
       '<div class="checks">' + L.q.map((q, i) => '<label><input type="checkbox"> Em đã đọc câu trả lời ' + (i + 1) + " trong video.</label>").join("") + '<label><input type="checkbox"> Em đã xem lại video: có hình màn hình này và nghe rõ giọng em.</label></div>' +
       (url ? '<a class="btn gold big block" id="send" href="' + esc(url) + '" target="_blank" rel="noopener">Nộp bài</a><p class="small muted center" style="margin-top:10px">Form đã điền sẵn họ tên, lớp và mã bài <b>' + L.code + "</b>. Em đăng nhập Google để tải video lên, bấm <b>Gửi</b> và chờ xác nhận đã nộp.</p>" :
         '<button class="btn gold big block off" id="send" disabled>Nộp bài</button><p class="hint warn">Cô chưa mở Form nộp bài cho khoá này. Em giữ video lại và báo cô nhé.</p>') +
