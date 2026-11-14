@@ -3,7 +3,7 @@
    Phần ghi âm lấy cách làm của trang Nền tảng IELTS: mỗi lượt xin micro mới rồi tắt hẳn (iPhone), iPhone ghi mp4. */
 (() => {
 "use strict";
-const C = Object.assign({ CLASSES: [], FORM_URL: "", FORM_ENTRIES: {} }, window.PA_CONFIG || {});
+const C = Object.assign({ CLASSES: [], FORM_URL: "", FORM_ENTRIES: {}, API: "" }, window.PA_CONFIG || {});
 const D = window.PA_DATA || [];
 const S = window.PA_SOUNDS || {};
 const app = document.getElementById("app");
@@ -71,6 +71,54 @@ if (student && (!student.name || C.CLASSES.indexOf(student.cls) < 0)) student = 
 const P = store.get("pa-progress") || {};
 const saveP = () => store.set("pa-progress", P);
 const prog = w => P[w] || (P[w] = { d: {}, sub: 0 });
+
+/* ---------- kết quả máy chấm (Apps Script → Gemini) ---------- */
+let R = null, PASS = 80, rTok = 0;
+async function loadResults(force) {
+  if (!C.API || !student) return null;
+  if (R && !force) return R;
+  try {
+    const u = new URL(C.API);
+    u.searchParams.set("action", "pa"); u.searchParams.set("name", student.name); u.searchParams.set("cls", student.cls); u.searchParams.set("t", Date.now());
+    const j = await fetch(u.href).then(r => r.json());
+    if (!j || !j.ok) return R;
+    PASS = j.pass || 80; R = {};
+    (j.results || []).forEach(x => (R[x.code] = R[x.code] || []).push(x));
+    store.set("pa-results", { who: student.name + "|" + student.cls, R });
+    return R;
+  } catch (e) { return R; }
+}
+(() => { const c = store.get("pa-results"); if (c && student && c.who === student.name + "|" + student.cls) R = c.R; })();
+const resList = code => (R && R[code]) || [];
+const resLast = code => { const a = resList(code); return a.length ? a[a.length - 1] : null; };
+const resBest = code => resList(code).filter(x => x.status === "Đã chấm").sort((a, b) => b.score - a.score)[0] || null;
+const PENDING = ["Chờ chấm", "Đang chấm", "Lỗi, thử lại"];
+function scoreBadge(code) {
+  const last = resLast(code), best = resBest(code);
+  if (best && best.pass) return '<span class="sc ok">' + best.score + " điểm ✓</span>";
+  if (last && PENDING.indexOf(last.status) >= 0) return '<span class="sc wait">Đang chấm</span>';
+  if (last && last.status === "Đã chấm") return '<span class="sc bad">' + last.score + " · nộp lại</span>";
+  if (last) return '<span class="sc wait">Cô xem lại</span>';
+  return "";
+}
+const fmtAt = iso => { try { const d = new Date(iso); return d.toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" }) + " " + d.toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit" }); } catch (e) { return ""; } };
+function resultCard(L) {
+  const last = resLast(L.code);
+  if (!C.API) return "";
+  if (!last) return '<div class="res none"><b>Kết quả chấm</b><p>Em chưa có bài nộp cho ' + L.code + '. Nộp xong, máy chấm trong khoảng 5–15 phút và điểm hiện ngay ở đây.</p><button class="btn ghost sm" id="rf">Cập nhật kết quả</button></div>';
+  const head = '<div class="res-h"><b>Kết quả chấm</b><small>Nộp lúc ' + esc(fmtAt(last.at)) + (resList(L.code).length > 1 ? " · lần " + resList(L.code).length : "") + "</small></div>";
+  if (PENDING.indexOf(last.status) >= 0) return '<div class="res wait">' + head + "<p>⏳ Cô đã nhận video. Máy đang chấm, khoảng 5–15 phút nữa em bấm <b>Cập nhật kết quả</b> nhé.</p>" + '<button class="btn ghost sm" id="rf">Cập nhật kết quả</button></div>';
+  if (last.status !== "Đã chấm" || !last.fb) return '<div class="res wait">' + head + "<p>" + (last.status === "Không có video" ? "Bài nộp chưa có video. Em quay lại và nộp lại nhé." : "Video chưa chấm tự động được, cô sẽ xem và chấm tay.") + '</p><button class="btn ghost sm" id="rf">Cập nhật kết quả</button></div>';
+  const fb = last.fb, sents = [].concat.apply([], L.q.map(q => q.s));
+  const bad = (fb.sentences || []).filter(x => !x.ok), foc = fb.focus || [];
+  return '<div class="res ' + (last.pass ? "ok" : "bad") + '">' + head +
+    '<div class="res-s"><span class="big">' + last.score + "</span><span><b>" + (last.pass ? "Đạt" : "Chưa đạt") + "</b><small>" + (last.pass ? "Đạt từ " + PASS + " điểm. Giỏi lắm!" : "Cần từ " + PASS + " điểm. Em luyện lại phần được nhắc, quay và nộp lại nhé.") + "</small></span></div>" +
+    (fb.summary ? '<p class="res-sum">' + esc(fb.summary) + "</p>" : "") +
+    (bad.length ? '<h4>Câu cần sửa</h4><ul class="res-l">' + bad.map(x => "<li><span class=\"qt\">Câu " + x.i + ": " + render(sents[x.i - 1] ? sents[x.i - 1].t : "", sents[x.i - 1] ? sents[x.i - 1].m : []) + "</span>" + (x.issue ? "<em>" + esc(x.issue) + "</em>" : "") + (x.fix ? "<i>→ " + esc(x.fix) + "</i>" : "") + "</li>").join("") + "</ul>" : "") +
+    (foc.length ? '<h4>Âm trọng tâm đọc chưa đúng</h4><ul class="res-l">' + foc.map(x => "<li><b>" + esc(x.w) + "</b>" + (x.heard ? ' <span class="heard">em đọc ' + esc(x.heard) + "</span>" : "") + (x.fix ? "<i>→ " + esc(x.fix) + "</i>" : "") + "</li>").join("") + "</ul>" : "") +
+    ((fb.tips || []).length ? '<h4>Lời khuyên</h4><ul class="res-t">' + fb.tips.map(t => "<li>" + esc(t) + "</li>").join("") + "</ul>" : "") +
+    '<button class="btn ghost sm" id="rf">Cập nhật kết quả</button></div>';
+}
 
 /* ---------- máy & trình duyệt ---------- */
 const UA = navigator.userAgent || "";
@@ -184,7 +232,9 @@ function home() {
     "<p>Mỗi tuần một lỗi phát âm và một chủ đề Speaking Part 1, khoảng 10–15 phút. Em nghe mẫu, nghe chậm, thu giọng mình để so sánh, rồi quay màn hình đọc bài và nộp cho cô.</p>" +
     '<div class="prog"><span style="width:' + Math.round(nsub / D.length * 100) + '%"></span></div><p class="progt">Đã nộp <b>' + nsub + "</b> / " + D.length + " tuần</p></section>" +
     groups.map(g => '<h2 class="grp">' + esc(g.name) + "<small>Tuần " + g.items[0].w + "–" + g.items[g.items.length - 1].w + '</small></h2><div class="weeks">' +
-      g.items.map(L => '<a class="wk' + (P[L.w] && P[L.w].sub ? " done" : "") + '" href="?w=' + L.w + '"><span class="n">' + (P[L.w] && P[L.w].sub ? "✓" : L.w) + "</span><span><b>" + esc(L.s) + "</b><small>Tuần " + L.w + " · " + esc(L.t) + " · " + L.code + "</small></span></a>").join("") + "</div>").join(""));
+      g.items.map(L => '<a class="wk' + (P[L.w] && P[L.w].sub ? " done" : "") + '" href="?w=' + L.w + '"><span class="n">' + (P[L.w] && P[L.w].sub ? "✓" : L.w) + "</span><span><b>" + esc(L.s) + "</b><small>Tuần " + L.w + " · " + esc(L.t) + " · " + L.code + "</small></span>" + scoreBadge(L.code) + "</a>").join("") + "</div>").join(""));
+  const tok = ++rTok;
+  loadResults(true).then(() => { if (tok === rTok && !weekParam() && R) app.querySelectorAll(".wk").forEach(a => { const w = +new URL(a.href).searchParams.get("w"), L = D[w - 1]; const old = a.querySelector(".sc"); if (old) old.remove(); if (L) a.insertAdjacentHTML("beforeend", scoreBadge(L.code)); }); });
 }
 
 /* ---------- bài học ---------- */
@@ -203,7 +253,7 @@ function lesson(L) {
   const stepOk = s => s < 3 ? items[s].every((x, i) => done(s, i)) : !!pr.sub;
 
   function head() {
-    return '<section class="card lhead"><span class="kick">Tuần ' + L.w + " · " + esc(L.g) + "</span><h1>" + esc(L.s) + '</h1><div class="meta"><span class="tag">Part 1 · ' + esc(L.t) + " · " + esc(L.tv) + '</span><span class="tag code">' + L.code + "</span></div>" +
+    return '<section class="card lhead"><span class="kick">Tuần ' + L.w + " · " + esc(L.g) + "</span><h1>" + esc(L.s) + '</h1><div class="meta"><span class="tag">Part 1 · ' + esc(L.t) + " · " + esc(L.tv) + '</span><span class="tag code">' + L.code + "</span>" + scoreBadge(L.code) + "</div>" +
       (step === 0 && idx === 0 ? '<ol class="explain">' + L.x.map(t => "<li>" + mark(t) + "</li>").join("") + "</ol>" : '<details class="why"><summary>Xem lại cách đọc</summary><ol class="explain">' + L.x.map(t => "<li>" + mark(t) + "</li>").join("") + "</ol></details>") + "</section>" +
       '<nav class="steps" aria-label="Các bước">' + STEPS.map((s, i) => '<button data-step="' + i + '" class="' + (i === step ? "cur " : "") + (stepOk(i) ? "ok" : "") + '"><b>' + (stepOk(i) ? "✓ " : "") + "BƯỚC " + (i + 1) + "</b>" + s[0] + "</button>").join("") + "</nav>";
   }
@@ -270,7 +320,7 @@ function lesson(L) {
   }
   function submit() {
     const url = formUrl(), practised = [0, 1, 2].every(stepOk);
-    app.innerHTML = head() + '<section class="card"><span class="kick">Bước 4 · Trả bài</span><h2 style="margin-top:4px">Quay màn hình, đọc 3 câu trả lời và nộp cho cô</h2>' +
+    app.innerHTML = head() + '<section class="card"><span class="kick">Bước 4 · Trả bài</span><h2 style="margin-top:4px">Quay màn hình, đọc 3 câu trả lời và nộp cho cô</h2>' + resultCard(L) +
       (practised ? "" : '<p class="hint warn" style="text-align:left;margin-top:10px">Em chưa luyện hết các bước 1–3. Em nên luyện xong rồi mới quay bài nộp.</p>') +
       '<div class="codebar"><span><small>Mã bài</small><b>' + L.code + "</b></span><span><small>Học sinh</small><b>" + esc(student.name) + " · " + esc(student.cls) + "</b></span></div>" +
       "<h3>Hướng dẫn trả bài</h3><ol class=\"guide\"><li>Em mở đúng màn hình này, tắt giọng mẫu, rồi bật <b>quay màn hình</b> và thu cả <b>micro</b>. Em không cần quay mặt.</li>" +
@@ -284,10 +334,14 @@ function lesson(L) {
       '<div class="nav"><button class="btn ghost" id="pv">← Luyện lại</button><a class="btn ghost" href="./">Danh sách 50 tuần</a></div></section>';
     window.scrollTo(0, 0); bindSteps();
     document.getElementById("pv").onclick = () => { step = 2; idx = 0; draw(true); };
+    const rf = document.getElementById("rf");
+    if (rf) rf.onclick = async () => { rf.disabled = true; rf.textContent = "Đang tải…"; await loadResults(true); if (step === 3) { const y = window.scrollY; submit(); window.scrollTo(0, y); } };
     const send = document.getElementById("send");
     if (url) send.onclick = () => { pr.sub = Date.now(); saveP(); const t = app.querySelector('[data-step="3"]'); if (t) { t.classList.add("ok"); t.querySelector("b").textContent = "✓ BƯỚC 4"; } };
   }
   draw(true);
+  const tok = ++rTok;
+  loadResults(true).then(() => { if (tok !== rTok || !R) return; if (step === 3) { const y = window.scrollY; submit(); window.scrollTo(0, y); } else { const m = app.querySelector(".lhead .meta"); if (m) { const o = m.querySelector(".sc"); if (o) o.remove(); m.insertAdjacentHTML("beforeend", scoreBadge(L.code)); } } });
 }
 
 if (!D.length) app.innerHTML = '<section class="card narrow center"><h1>Chưa tải được bài học</h1><p>Em kiểm tra mạng rồi tải lại trang.</p><button class="btn primary" onclick="location.reload()">Tải lại</button></section>';
