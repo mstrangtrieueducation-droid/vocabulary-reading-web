@@ -130,11 +130,22 @@ function stDayStr(d) { return Utilities.formatDate(new Date(d * 864e5), 'UTC', '
 var ST_RT_HEAD = 'CÂY TỪ VỰNG';
 function stMainRT(ss, cells) {
   var sh = ss.getSheetByName(ST_MAIN); if (!sh || sh.getLastRow() < 6) return;
-  var lastCol = sh.getLastColumn(), head = sh.getRange(1, 1, 1, lastCol).getDisplayValues()[0], col = 0;
-  for (var c = head.length - 1; c >= 0; c--) if (stKey(head[c]) === stKey(ST_RT_HEAD)) { col = c + 1; break; }
-  if (!col) {
-    sh.insertColumnAfter(lastCol); col = lastCol + 1;
-    sh.getRange(1, col, 5, 1).setValues([[ST_RT_HEAD], ['TỰ LUYỆN · ÍT NHẤT 2 NGÀY TƯỚI 1 LẦN'], ['NHỊP TƯỚI · TIẾN ĐỘ'], ['🌳 Vườn từ vựng trên dashboard'], ['Tự động cập nhật mỗi giờ']])
+  var lastCol = sh.getLastColumn(), head = sh.getRange(1, 1, 5, lastCol).getDisplayValues(), col = 0;
+  for (var c = lastCol - 1; c >= 0 && !col; c--) for (var r = 0; r < 5; r++) {
+    var t = stKey(head[r][c]); if (t === stKey(ST_RT_HEAD) || t.indexOf('IT NHAT 2 NGAY TUOI 1 LAN') >= 0) { col = c + 1; break; }
+  }
+  if (!col) { sh.insertColumnAfter(lastCol); col = lastCol + 1; }
+  // cột mới chèn sau cùng có thể dính vào ô gộp tiêu đề của nhóm bên trái: tách ra, gộp lại nhóm đó như cũ (không gồm cột này)
+  var hr = sh.getRange(1, col, 5, 1), merged = hr.getMergedRanges();
+  if (merged.length) {
+    merged.forEach(function (m) {
+      var r0 = m.getRow(), c0 = m.getColumn(), nr = m.getNumRows(), nc = m.getNumColumns();
+      m.breakApart();
+      if (c0 < col && nc > 1) { var keep = sh.getRange(r0, c0, nr, col - c0); if (keep.getNumRows() * keep.getNumColumns() > 1) keep.merge(); }
+    });
+  }
+  if (stKey(sh.getRange(1, col).getDisplayValue()) !== stKey(ST_RT_HEAD)) {
+    hr.setValues([[ST_RT_HEAD], ['TỰ LUYỆN · ÍT NHẤT 2 NGÀY TƯỚI 1 LẦN'], ['NHỊP TƯỚI · TIẾN ĐỘ'], ['🌳 Vườn từ vựng trên dashboard'], ['Tự động cập nhật mỗi giờ']])
       .setFontWeight('bold').setWrap(true).setHorizontalAlignment('center').setVerticalAlignment('middle').setBackground('#e8f8ee').setFontColor('#0b5d36');
     sh.setColumnWidth(col, 230);
   }
