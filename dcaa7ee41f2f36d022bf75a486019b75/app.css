@@ -502,3 +502,4 @@ main.wide{max-width:1220px}
   .st .sic{display:none}.st .sl{white-space:nowrap}.st .sn{width:24px;height:24px;font-size:12px}
   .hm{display:none}
 }
+.vres.invalid .vtop{align-items:flex-start}.vbad{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#fff1f2;color:#e11d48;font-size:26px;font-weight:800;border:2px solid #fecdd3}.vres.invalid b{display:block;color:#be123c;font-size:17px;margin-bottom:4px}

@@ -542,7 +542,7 @@ function finishGrade(out, L, n) {
   var calc = Math.round(60 * wp / Math.max(1, nW) + 40 * sp / Math.max(1, nS));
   out.score = Math.min(calc, Math.max(0, Math.min(100, Math.round(+out.score || calc))));
   out.words = bad; out.sentences = sents; out.missing = miss;
-  if (out.screen_ok === false || out.voice_ok === false) { out.score = Math.min(out.score, 30); out.summary = (out.voice_ok === false ? 'Video chưa nghe rõ giọng em đọc. ' : 'Video chưa quay đúng trang Nộp bài của Bài ' + n + '. ') + (out.summary || '') + ' Em quay lại và nộp lại nhé.'; }
+  if (out.screen_ok === false || out.voice_ok === false) { out.score = Math.min(out.score, 30); out.invalid = true; out.words = []; out.sentences = []; out.missing = []; out.summary = (out.voice_ok === false ? 'Video chưa nghe rõ giọng em đọc. ' : 'Video chưa quay đúng trang Nộp bài của Bài ' + n + '. ') + (out.summary || '') + ' Em quay lại và nộp lại nhé.'; }
   out.model = GEMINI_VIDEO_MODEL; out.unit = n;
   return out;
 }

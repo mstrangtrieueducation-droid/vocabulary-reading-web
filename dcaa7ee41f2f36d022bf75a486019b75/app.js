@@ -991,7 +991,10 @@ function formLink(i) {
   } catch (e) { return ""; }
 }
 function fbHtml(v) {
-  const f = v.fb || {}, words = f.words || [], sents = f.sentences || [], miss = f.missing || [], tips = f.tips || [];
+  const f = v.fb || {}, bad = f.invalid || f.voice_ok === false || f.screen_ok === false;
+  const words = bad ? [] : f.words || [], sents = bad ? [] : f.sentences || [], miss = bad ? [] : f.missing || [], tips = f.tips || [];
+  if (bad) return '<div class="vres invalid"><div class="vtop"><div class="vbad">!</div><div class="ecol"><b>Video chưa hợp lệ — em quay lại nhé</b><p class="tip">' + esc(f.summary || "") + '</p><p class="small muted">Máy chấm lúc ' + fmtDT(v.gradedAt || v.at) + "</p></div></div>" +
+    (tips.length ? '<ul class="tips">' + tips.map(t => "<li>" + esc(t) + "</li>").join("") + "</ul>" : "") + "</div>";
   return '<div class="vres"><div class="vtop">' + '<div class="sring ' + (v.score >= 80 ? "g" : v.score >= 60 ? "m" : "b") + '"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" class="bg"/><circle cx="40" cy="40" r="34" class="fg" stroke-dasharray="213.6" stroke-dashoffset="' + (213.6 * (1 - v.score / 100)).toFixed(1) + '"/></svg><b>' + v.score + "</b><small>điểm</small></div>" +
     '<div class="ecol"><p class="tip">' + esc(f.summary || "") + '</p><p class="small muted">Máy chấm lúc ' + fmtDT(v.gradedAt || v.at) + "</p></div></div>" +
     (words.length ? '<h4>Từ cần sửa</h4><ol class="issues">' + words.map(w => "<li><b>" + esc(w.w) + "</b><span>" + esc(w.issue || "") + (w.fix ? " → " + esc(w.fix) : "") + "</span></li>").join("") + "</ol>" : '<p class="okline">✓ Các từ em đọc đều ổn.</p>') +
@@ -1061,7 +1064,7 @@ function speakVideo(i, view) {
     return;
   } else {
     const url = formLink(i), code = unitCode(i);
-    shell(lessonHead(i, 1) + '<section class="card">' + tabs +
+    shell(lessonHead(i, 1) + videoStatus(i) + '<section class="card">' + tabs +
       '<div class="codebar"><span><small>Mã bài</small><b>' + code + '</b></span><span><small>Học sinh</small><b>' + esc(student && student.name || "") + (student && student.cls ? " · " + esc(student.cls) : "") + "</b></span></div>" +
       '<h3>Hướng dẫn quay video</h3><ol class="guide"><li>Bật <b>quay màn hình</b> (nhớ bật cả <b>micro</b>), để màn hình ở đúng trang này. Không cần quay mặt.</li>' +
       "<li>Đọc to, rõ, chậm <b>tất cả từ ở phần A</b> theo thứ tự, rồi <b>5 câu ở phần B</b>. Không bật giọng mẫu khi đang quay.</li>" +
@@ -1071,7 +1074,7 @@ function speakVideo(i, view) {
       '<h3>B. Đọc các câu</h3><ol class="rsents">' + L.sents.map(t => "<li>" + esc(t) + "</li>").join("") + "</ol></div>" +
       (url ? '<a class="btn gold big block" id="send" href="' + esc(url) + '" target="_blank" rel="noopener">Nộp bài</a><p class="small muted center" style="margin-top:8px">Form đã điền sẵn tên, lớp và mã bài <b>' + code + "</b>. Em chỉ tải video lên rồi bấm Gửi.</p>" :
         '<button class="btn gold big block" disabled>Nộp bài</button><p class="hint warn">Cô chưa mở Form nộp bài. Em giữ video lại và báo cô nhé.</p>') +
-      '<div class="nav center"><button class="btn ghost" id="chk">🔄 Xem kết quả chấm</button><button class="btn primary" id="nx">Sang bước tiếp ➔</button></div></section>' + videoStatus(i), "lesson");
+      '<div class="nav center"><button class="btn ghost" id="chk">🔄 Xem kết quả chấm</button><button class="btn primary" id="nx">Sang bước tiếp ➔</button></div></section>', "lesson");
     const send = document.getElementById("send");
     if (send) send.addEventListener("click", () => {
       U(i).speak = Object.assign({}, U(i).speak || {}, { done: 1, sub: Date.now(), video: 1 });
