@@ -274,73 +274,88 @@ const REVIEW_MAX = 15;
 const reviewNeeded = () => !OWNER && S.rev !== dayNow() && dueWords().length > 0;
 const memStats = () => { const ws = Object.values(S.words); return { sure: ws.filter(w => w.box >= 3).length, learning: ws.filter(w => w.box < 3).length, total: V.reduce((a, u) => a + u.entries.length, 0) }; };
 /* ---------- cây từ vựng: mỗi bài là một cành, mỗi từ là một lá ---------- */
-// Lá khô = từ đến hạn ôn ("tưới cây" = ôn từ); lá xanh đậm dần theo mức nhớ; quả = từ đã thuộc lâu.
-const LEAF = [["#d8efb4", "#a9d67a"], ["#bfe58f", "#7fc25a"], ["#8fd06a", "#4fa646"], ["#5cb85a", "#2b7f3c"], ["#3f9e4c", "#1d6430"]], DRY = ["#f3d79a", "#cf9a45"];
-const STAGES = [["Hạt giống", 0], ["Mầm non", 0.05], ["Cây con", 0.25], ["Cây non", 0.5], ["Cây lớn", 0.8], ["Cây sai quả", 1.01]];
+// Cây kiểu Forest/Duolingo: thân bè gốc, cành cong, tán tròn xếp lớp; trên tán điểm nụ vàng (cần ôn), chồi non (đang lớn), lá xanh đậm (nhớ chắc), quả đỏ (thuộc lâu).
+const STAGES = ["Hạt giống", "Mầm non", "Cây con", "Cây non", "Cây lớn", "Cây sai quả"], STAGE_AT = [0, 0, 0.05, 0.25, 0.5, 0.8];
 function rnd(seed) { const x = Math.sin(seed * 9301 + 49297) * 233280; return x - Math.floor(x); }
 function treeStage(sure, total, grown) {
-  if (!grown) return { k: 0, name: STAGES[0][0] };
-  const p = total ? sure / total : 0; let k = 1; while (k < STAGES.length - 1 && p >= STAGES[k][1]) k++;
-  return { k, name: STAGES[k][0] };
+  if (!grown) return { k: 0, name: STAGES[0] };
+  const p = total ? sure / total : 0; let k = 1; while (k < 5 && p >= STAGE_AT[k + 1]) k++;
+  return { k, name: STAGES[k] };
 }
-const LEAF_PATH = "M0 0C3.5-4.6 10.5-5.2 15 0C10.5 5.2 3.5 4.6 0 0Z";
+function wordBuckets() {
+  const d = dayNow(), b = { due: 0, grow: 0, sure: 0, fruit: 0 };
+  Object.values(S.words).forEach(w => { if (w.box < 4 && w.due <= d) b.due++; else if (w.box >= 4) b.fruit++; else if (w.box >= 3) b.sure++; else b.grow++; });
+  return b;
+}
+const f1 = n => (+n).toFixed(1);
 function treeSvg(small) {
-  const d = dayNow(), units = [], id = small ? "ts" : "th";
-  for (let i = 1; i <= N_UNITS; i++) { const es = V[i - 1].entries.filter(e => S.words[e.n]); if (es.length) units.push({ i, es }); }
-  const W = 360, G = 286, nB = units.length;
-  const gap = nB > 1 ? Math.min(15, (G - 62 - 28 - 58) / (nB - 1)) : 15;
-  const top = G - 62 - Math.max(0, nB - 1) * gap - 28, y0 = nB ? Math.max(0, Math.round(top - 52)) : 150;
-  let defs = '<defs><linearGradient id="' + id + 'tk" x1="0" x2="1"><stop offset="0" stop-color="#6b4226"/><stop offset=".55" stop-color="#9a6a42"/><stop offset="1" stop-color="#704629"/></linearGradient>' +
-    '<radialGradient id="' + id + 'cn" cx=".5" cy=".55" r=".5"><stop offset="0" stop-color="#d7efbf" stop-opacity=".95"/><stop offset="1" stop-color="#d7efbf" stop-opacity="0"/></radialGradient>' +
-    '<linearGradient id="' + id + 'gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe29a"/><stop offset="1" stop-color="#93c66d"/></linearGradient>' +
-    '<radialGradient id="' + id + 'fr" cx=".35" cy=".35" r=".7"><stop offset="0" stop-color="#ff8a75"/><stop offset=".6" stop-color="#e5483b"/><stop offset="1" stop-color="#b82e26"/></radialGradient>' +
-    '<path id="' + id + 'lf" d="' + LEAF_PATH + '"/>';
-  LEAF.concat([DRY]).forEach((c, k) => { defs += '<linearGradient id="' + id + "l" + k + '" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="' + c[0] + '"/><stop offset="1" stop-color="' + c[1] + '"/></linearGradient>'; });
-  defs += "</defs>";
-  let s = '<svg class="tree' + (small ? " sm" : "") + '" viewBox="0 ' + y0 + " " + W + " " + (300 - y0) + '" role="img" aria-label="Cây từ vựng">' + defs +
-    '<path d="M-10 ' + (G + 4) + " Q90 " + (G - 14) + " 180 " + (G - 6) + " T370 " + (G + 2) + " V310 H-10Z\" fill=\"url(#" + id + 'gd)"/>';
-  for (let g = 0; g < 7; g++) { const gx = 30 + g * 50 + rnd(g) * 20, gy = G + 2 - Math.sin(gx / 60) * 3; s += '<path d="M' + gx + " " + gy + " l2 -7 l2 7 l2 -5 l1 5\" fill=\"none\" stroke=\"#7fb85a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>"; }
-  if (!nB) return s + '<path d="M180 ' + (G - 6) + ' C179 ' + (G - 22) + " 176 " + (G - 32) + " 170 " + (G - 38) + '" stroke="#5aa64a" stroke-width="3" fill="none" stroke-linecap="round"/>' +
-    '<use href="#' + id + 'lf" fill="url(#' + id + 'l2)" transform="translate(170 ' + (G - 38) + ') rotate(200) scale(1.3)"/><use href="#' + id + 'lf" fill="url(#' + id + 'l1)" transform="translate(177 ' + (G - 28) + ') rotate(-25) scale(1.2)"/></svg>';
-  const tw = 6 + nB * 0.85;
-  let back = "", wood = "", leaves = "", k = 0;
-  units.forEach((u, b) => {
-    const side = b % 2 ? 1 : -1, y = G - 62 - b * gap, L = nB >= 5 ? 46 + 40 * Math.sin(Math.PI * (b + 0.9) / (nB + 0.6)) : 80 - b * 2.8, ex = 180 + side * L, ey = y - 20 - rnd(u.i) * 8;
-    back += '<ellipse cx="' + (180 + side * L * 0.6).toFixed(1) + '" cy="' + (y - 13) + '" rx="' + (L * 0.56).toFixed(1) + '" ry="21" fill="url(#' + id + 'cn)"/>';
-    wood += '<path d="M180 ' + (y + 3) + " Q" + (180 + side * L * 0.42) + " " + (y - 1) + " " + ex.toFixed(1) + " " + ey.toFixed(1) + '" stroke="url(#' + id + 'tk)" stroke-width="' + Math.max(1.8, 4.6 - b * 0.2).toFixed(1) + '" fill="none" stroke-linecap="round"/>';
-    u.es.forEach(e => {
-      const w = S.words[e.n], t = 0.28 + 0.72 * rnd(e.n * 3.1), bx = 180 + (ex - 180) * t, by = y + (ey - y) * t;
-      const r = 3 + 10 * t, a = rnd(e.n * 7.7) * 6.283, x = bx + Math.cos(a) * r * (0.4 + 0.6 * rnd(e.n + 2)), yy = by + Math.sin(a) * r * 0.75 - 2;
-      const due = w.box < 4 && w.due <= d, g = due ? 5 : Math.min(4, w.box), rot = Math.round((side < 0 ? 180 : 0) + (rnd(e.n * 1.3) - 0.5) * 140 + (due ? 35 : 0));
-      leaves += '<use class="lf" style="animation-delay:' + (k++ % 50) * 10 + 'ms" href="#' + id + 'lf" fill="url(#' + id + "l" + g + ')" transform="translate(' + x.toFixed(1) + " " + yy.toFixed(1) + ") rotate(" + rot + ") scale(" + (due ? 0.82 : 0.9 + 0.15 * rnd(e.n)).toFixed(2) + ')"><title>' + esc(e.term) + "</title></use>";
-      if (w.box >= 4) leaves += '<circle cx="' + (x + 1.5).toFixed(1) + '" cy="' + (yy + 4.5).toFixed(1) + '" r="3.4" fill="url(#' + id + 'fr)"/><path d="M' + (x + 1.5).toFixed(1) + " " + (yy + 1.2).toFixed(1) + ' l1 -2" stroke="#5a3a1e" stroke-width=".9"/>';
-    });
+  const id = small ? "ts" : "th", b = wordBuckets(), nW = b.due + b.grow + b.sure + b.fruit;
+  let nU = 0; for (let i = 1; i <= N_UNITS; i++) if (V[i - 1].entries.some(e => S.words[e.n])) nU++;
+  const W = 340, H = 210, G = 186, X = 170;
+  let s = '<svg class="tree" viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="xMidYMax meet" role="img" aria-label="Cây từ vựng">' +
+    '<defs><radialGradient id="' + id + 'sun"><stop offset="0" stop-color="#fef3c7"/><stop offset=".45" stop-color="#fde68a" stop-opacity=".9"/><stop offset="1" stop-color="#fde68a" stop-opacity="0"/></radialGradient>' +
+    '<linearGradient id="' + id + 'tk" x1="0" x2="1"><stop offset="0" stop-color="#7c4a21"/><stop offset=".5" stop-color="#a86b36"/><stop offset="1" stop-color="#7c4a21"/></linearGradient>' +
+    '<radialGradient id="' + id + 'fr" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#fda4af"/><stop offset=".5" stop-color="#f43f5e"/><stop offset="1" stop-color="#dc2626"/></radialGradient>' +
+    '<radialGradient id="' + id + 'bd" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#fde68a"/><stop offset=".6" stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/></radialGradient>' +
+    '<path id="' + id + 'lf" d="M0 0C3-4 9-4.6 13 0C9 4.6 3 4 0 0Z"/></defs>' +
+    '<circle cx="292" cy="40" r="34" fill="url(#' + id + 'sun)"/><circle cx="292" cy="40" r="13" fill="#fcd34d"/>' +
+    '<g class="cloud c1" fill="#fff" opacity=".95"><ellipse cx="62" cy="40" rx="22" ry="9"/><circle cx="54" cy="35" r="9"/><circle cx="68" cy="31" r="11"/></g>' +
+    '<g class="cloud c2" fill="#fff" opacity=".85"><ellipse cx="222" cy="26" rx="16" ry="6.5"/><circle cx="216" cy="22" r="6.5"/><circle cx="227" cy="19" r="8"/></g>' +
+    '<path d="M0 168C55 150 120 154 178 166S286 152 340 160V210H0Z" fill="#86efac"/>' +
+    '<path d="M0 188C60 174 128 178 186 186S290 176 340 182V210H0Z" fill="#4ade80"/>';
+  [[22, 176, 9], [96, 182, 7], [250, 180, 8], [322, 178, 7]].forEach(([x, y, r]) => { s += '<circle cx="' + (x - r * 0.7) + '" cy="' + (y + 2) + '" r="' + (r * 0.7) + '" fill="#22c55e"/><circle cx="' + x + '" cy="' + y + '" r="' + r + '" fill="#34d399"/><circle cx="' + (x + r * 0.8) + '" cy="' + (y + 2) + '" r="' + (r * 0.65) + '" fill="#22c55e"/>'; });
+  [[34, 194, "#fff"], [72, 186, "#fbcfe8"], [262, 190, "#fff"], [300, 184, "#fde68a"], [118, 197, "#fbcfe8"]].forEach(([x, y, c]) => {
+    for (let p = 0; p < 5; p++) s += '<circle cx="' + f1(x + Math.cos(p * 1.2566) * 2.4) + '" cy="' + f1(y + Math.sin(p * 1.2566) * 2.4) + '" r="1.9" fill="' + c + '"/>';
+    s += '<circle cx="' + x + '" cy="' + y + '" r="1.4" fill="#f59e0b"/>';
   });
-  const trunk = '<path d="M' + (180 - tw) + " " + (G - 4) + " C" + (180 - tw * 0.55) + " " + (G - 70) + " 177 " + (top + 46) + " 178.6 " + top + " L181.4 " + top + " C183 " + (top + 46) + " " + (180 + tw * 0.55) + " " + (G - 70) + " " + (180 + tw) + " " + (G - 4) +
-    " Q180 " + (G + 2) + " " + (180 - tw) + " " + (G - 4) + 'Z" fill="url(#' + id + 'tk)"/>';
-  let crown = '<ellipse cx="180" cy="' + (top - 2) + '" rx="26" ry="18" fill="url(#' + id + 'cn)"/>';
-  for (let q = 0; q < 9; q++) crown += '<use href="#' + id + 'lf" fill="url(#' + id + "l" + (2 + q % 2) + ')" transform="translate(' + (180 + Math.cos(q * 0.8) * 4).toFixed(1) + " " + (top + 2 - q * 0.6).toFixed(1) + ") rotate(" + (q * 40 - 90) + ') scale(.95)"/>';
-  return s + back + trunk + wood + crown + leaves + "</svg>";
+  if (!nW) {   // hạt giống: chồi nhỏ trên ụ đất
+    return s + '<ellipse cx="' + X + '" cy="' + (G + 1) + '" rx="16" ry="4.5" fill="#a16207" opacity=".55"/>' +
+      '<path d="M' + X + " " + G + " C" + X + " " + (G - 10) + " " + (X - 1) + " " + (G - 16) + " " + X + " " + (G - 22) + '" stroke="#65a30d" stroke-width="2.6" fill="none" stroke-linecap="round"/>' +
+      '<use href="#' + id + 'lf" fill="#84cc16" transform="translate(' + X + " " + (G - 22) + ') rotate(205) scale(1.15)"/><use href="#' + id + 'lf" fill="#65a30d" transform="translate(' + X + " " + (G - 21) + ') rotate(-30) scale(1.05)"/></svg>';
+  }
+  const sc = 0.66 + 0.34 * Math.min(1, nU / N_UNITS), TH = 60 * sc, top = G - TH, R = 80 * sc, RV = 62 * sc, cy = top - RV * 0.45;
+  // thân bè gốc + 3 cành cong hướng lên
+  s += '<path d="M' + f1(X - 12 * sc) + " " + G + "C" + f1(X - 5 * sc) + " " + f1(G - 8 * sc) + " " + f1(X - 4.5 * sc) + " " + f1(G - 34 * sc) + " " + f1(X - 4 * sc) + " " + f1(top) + "L" + f1(X + 4 * sc) + " " + f1(top) + "C" + f1(X + 4.5 * sc) + " " + f1(G - 34 * sc) + " " + f1(X + 5 * sc) + " " + f1(G - 8 * sc) + " " + f1(X + 12 * sc) + " " + G + "Q" + X + " " + (G + 3) + " " + f1(X - 12 * sc) + " " + G + 'Z" fill="url(#' + id + 'tk)"/>';
+  const br = (dx, dy, c1x, c1y) => '<path d="M' + X + " " + f1(top + 10 * sc) + "Q" + f1(X + c1x * sc) + " " + f1(top + c1y * sc) + " " + f1(X + dx * sc) + " " + f1(top + dy * sc) + '" stroke="url(#' + id + 'tk)" stroke-width="' + f1(4.2 * sc) + '" fill="none" stroke-linecap="round"/>';
+  s += br(-34, -26, -8, -6) + br(34, -24, 8, -4) + br(2, -38, 1, -16);
+  // vòm tán xếp lớp: lớp sau đậm, lớp trước sáng
+  const blob = (pts, fill) => pts.map(([a, b2, r]) => '<circle cx="' + f1(X + a * R) + '" cy="' + f1(cy + b2 * RV) + '" r="' + f1(r * R) + '" fill="' + fill + '"/>').join("");
+  s += blob([[-0.62, 0.22, 0.42], [0.62, 0.22, 0.42], [-0.34, -0.3, 0.48], [0.34, -0.3, 0.48], [0, -0.52, 0.46], [0, 0.18, 0.56], [-0.7, -0.05, 0.36], [0.7, -0.05, 0.36]], "#4ade80");
+  s += blob([[-0.5, 0.08, 0.38], [0.48, 0.1, 0.38], [-0.24, -0.34, 0.4], [0.28, -0.32, 0.38], [0, -0.04, 0.48]], "#86efac");
+  s += blob([[-0.34, -0.42, 0.22], [-0.56, -0.08, 0.16], [0.06, -0.6, 0.16]], "#bbf7d0");
+  // điểm từ trên tán: mỗi dấu = một nhóm từ, chia theo tỉ lệ thật
+  const M = Math.min(nW, Math.round(10 + 46 * sc * sc)), cats = [["due", b.due], ["grow", b.grow], ["sure", b.sure], ["fruit", b.fruit]];
+  const cnt = cats.map(([k, n]) => ({ k, n, m: n ? Math.max(1, Math.floor(n / nW * M)) : 0 }));
+  let left = M - cnt.reduce((a, c) => a + c.m, 0); cnt.slice().sort((a, c) => (c.n / nW * M % 1) - (a.n / nW * M % 1)).forEach(c => { if (left > 0 && c.n) { c.m++; left--; } });
+  const seq = []; cnt.forEach(c => { for (let q = 0; q < c.m; q++) seq.push(c.k); });
+  const order = seq.map((k, q) => [k, rnd(q * 13.7 + seq.length)]).sort((a, c) => a[1] - c[1]).map(x => x[0]);
+  let marks = "";
+  order.forEach((k, q) => {
+    const r = Math.sqrt((q + 0.6) / order.length), th = q * 2.39996 + 0.4, x = X + r * R * 0.9 * Math.cos(th), y = cy - RV * 0.06 + r * RV * 0.82 * Math.sin(th), dl = ' style="animation-delay:' + (q * 18) + 'ms"';
+    if (k === "fruit") marks += '<g class="mk"' + dl + '><path d="M' + f1(x) + " " + f1(y - 3.6) + 'q.6-2.6 2.6-3.4" stroke="#7c4a21" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="' + f1(x) + '" cy="' + f1(y) + '" r="4" fill="url(#' + id + 'fr)"/><circle cx="' + f1(x - 1.4) + '" cy="' + f1(y - 1.4) + '" r="1.1" fill="#fff" opacity=".9"/></g>';
+    else if (k === "due") marks += '<g class="mk"' + dl + '><ellipse cx="' + f1(x) + '" cy="' + f1(y) + '" rx="3" ry="3.9" fill="url(#' + id + 'bd)"/><path d="M' + f1(x - 2.6) + " " + f1(y + 2.2) + "q2.6 2.4 5.2 0" + '" stroke="#16a34a" stroke-width="1.3" fill="none" stroke-linecap="round"/><circle cx="' + f1(x - 0.9) + '" cy="' + f1(y - 1.4) + '" r=".8" fill="#fff" opacity=".85"/></g>';
+    else marks += '<use class="mk"' + dl + ' href="#' + id + 'lf" fill="' + (k === "sure" ? "#10b981" : "#84cc16") + '" transform="translate(' + f1(x - 4) + " " + f1(y) + ") rotate(" + Math.round(rnd(q * 3.3) * 120 - 60) + ") scale(" + (k === "sure" ? 0.78 : 0.62) + ')"/>';
+  });
+  return s + marks + "</svg>";
 }
-function leafIcon(g, fruit) {
-  const c = g === 5 ? DRY : LEAF[g];
-  return '<svg viewBox="0 0 22 22" class="li" aria-hidden="true">' + (fruit ? '<circle cx="11" cy="12" r="6.5" fill="#e5483b"/><circle cx="9" cy="10" r="1.8" fill="#ff9d8c"/><path d="M11 5.5q1-3 4-3.5" stroke="#5a3a1e" stroke-width="1.4" fill="none" stroke-linecap="round"/>'
-    : '<path d="M3 15C6 7 13 4 19 4C18 11 14 18 6 18Z" fill="' + c[1] + '"/><path d="M5 17C9 12 13 9 17 6" stroke="' + c[0] + '" stroke-width="1.3" fill="none" stroke-linecap="round"/>') + "</svg>";
-}
+const ICONS = {
+  due: '<svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 3.5C10.6 8.6 7.5 12.2 7.5 16.2a6.5 6.5 0 0 0 13 0c0-4-3.1-7.6-6.5-12.7Z" fill="#f59e0b"/><path d="M11 15.5a3.4 3.4 0 0 0 2.4 3.6" stroke="#fff7d6" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>',
+  grow: '<svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 24V13" stroke="#4d7c0f" stroke-width="2.2" stroke-linecap="round"/><path d="M14 14C13.6 9 9.8 6.6 5 7c.2 4.9 3.8 7.6 9 7Z" fill="#65a30d"/><path d="M14 12.5c.6-4.6 4.3-7 9-6.4-.4 4.6-4 7-9 6.4Z" fill="#84cc16"/><path d="M8 24.5h12" stroke="#a3a3a3" stroke-width="1.6" stroke-linecap="round" opacity=".5"/></svg>',
+  sure: '<svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 23C5 12 11 5 23 4c.4 11.6-6 18.6-18 19Z" fill="#059669"/><path d="M6 22C10 16 14 12 20 7.5M11.5 16.5l-.4-4.2M14.6 13.4l3.8.2" stroke="#a7f3d0" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>',
+  fruit: '<svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 4c-.4 4-2.6 8-5.6 11M14 4c1 4 3.2 7.6 6.2 10.6" stroke="#7c4a21" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M14 4.4c2.6-2.4 6.4-2.2 8 .2-2.8 2-5.6 1.6-8-.2Z" fill="#16a34a"/><circle cx="8.6" cy="18.6" r="5" fill="#e11d48"/><circle cx="19.8" cy="18.2" r="5" fill="#e11d48"/><circle cx="7" cy="17" r="1.4" fill="#fff" opacity=".85"/><circle cx="18.2" cy="16.6" r="1.4" fill="#fff" opacity=".85"/></svg>'
+};
 function treeCard() {
-  const ms = memStats(), d = dayNow(), ws = Object.values(S.words);
-  const isDue = w => w.box < 4 && w.due <= d, due = ws.filter(isDue).length, fruit = ws.filter(w => w.box >= 4).length,
-    sureNow = ws.filter(w => !isDue(w) && w.box >= 3).length, growing = ws.filter(w => !isDue(w) && w.box < 3).length;
-  const st = treeStage(ms.sure, ms.total, ws.length > 0), rn = reviewNeeded(), pct = Math.round(ms.sure / Math.max(1, ms.total) * 100);
-  const tile = (g, fr, n, lab) => '<div class="tt' + (g === 5 && n ? " hot" : "") + '">' + leafIcon(g, fr) + "<b>" + n + "</b><small>" + lab + "</small></div>";
-  return '<section class="card treecard"><div class="trtop"><div><span class="kick">Cây từ vựng của em</span><h2>' + st.name + '</h2><span class="stage">' +
-    STAGES.slice(1).map((x, j) => '<i class="' + (j + 1 <= st.k ? "on" : "") + '"></i>').join("") + "</span></div>" +
-    '<div class="ring2" style="--p:' + pct + '"><b>' + pct + "%</b><small>nhớ chắc</small></div></div>" +
-    '<div class="scene' + (ws.length ? "" : " seed") + '">' + treeSvg() + (ws.length ? "" : '<p class="seedtip">Học xong bước Từ vựng của Bài 1 là cây nảy mầm</p>') + "</div>" +
-    '<div class="trtiles">' + tile(5, 0, due, "Cần ôn") + tile(1, 0, growing, "Đang lớn") + tile(3, 0, sureNow, "Nhớ chắc") + tile(4, 1, fruit, "Ra quả") + "</div>" +
-    (due ? '<button class="btn water' + (rn ? "" : " soft") + '" data-go="review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C9 7.5 6 10.6 6 14.2A6 6 0 0 0 18 14.2C18 10.6 15 7.5 12 3Z" fill="currentColor"/></svg>Tưới cây · ôn ' + Math.min(due, REVIEW_MAX) + " từ" + (rn ? '<small>khoảng 3 phút</small>' : '<small>không bắt buộc</small>') + "</button>"
-      : ws.length ? '<p class="watered">Hôm nay cây đã được tưới đủ</p>' : "") +
-    '<p class="trnote">Mỗi bài là một cành, mỗi từ là một lá. Ôn đúng hạn để lá xanh đậm dần và ra quả.</p></section>';
+  const ms = memStats(), b = wordBuckets(), nW = b.due + b.grow + b.sure + b.fruit;
+  const st = treeStage(ms.sure, ms.total, nW > 0), rn = reviewNeeded(), pct = Math.round(ms.sure / Math.max(1, ms.total) * 100), C2 = 2 * Math.PI * 28;
+  const tile = (k, n, lab) => '<div class="tt ' + k + '">' + ICONS[k] + "<div><b>" + n + "</b><small>" + lab + "</small></div></div>";
+  return '<section class="card treecard"><div class="trtop"><div class="trinfo"><span class="trkick">Cây từ vựng của em</span><div class="trname"><h2>' + st.name + '</h2><span class="lvl">Cấp ' + st.k + "/5</span></div>" +
+    '<span class="stage">' + [1, 2, 3, 4, 5].map(j => '<i class="' + (j <= st.k ? "on" : "") + '"></i>').join("") + "</span></div>" +
+    '<div class="ring3"><svg viewBox="0 0 68 68" aria-hidden="true"><circle cx="34" cy="34" r="28" stroke="#e2e8f0"/><circle cx="34" cy="34" r="28" stroke="#10b981" stroke-dasharray="' + f1(C2 * pct / 100) + " " + f1(C2) + '" transform="rotate(-90 34 34)"' + (pct ? "" : ' opacity="0"') + '/></svg><b>' + pct + "%</b><small>nhớ chắc</small></div></div>" +
+    '<div class="scene' + (nW ? "" : " seed") + '">' + treeSvg() + (nW ? "" : '<p class="seedtip">Học xong bước Từ vựng của Bài 1 để gieo hạt 🌱</p>') + "</div>" +
+    '<div class="trtiles">' + tile("due", b.due, "Cần ôn") + tile("grow", b.grow, "Đang lớn") + tile("sure", b.sure, "Nhớ chắc") + tile("fruit", b.fruit, "Ra quả") + "</div>" +
+    (b.due ? '<button class="btn water' + (rn ? "" : " soft") + '" data-go="review"><span>💧 Tưới cây · Ôn ' + Math.min(b.due, REVIEW_MAX) + ' từ</span><span class="pill">' + (rn ? "⏱ ~3 phút" : "Không bắt buộc") + "</span></button>"
+      : nW ? '<p class="watered">✓ Hôm nay cây đã được tưới đủ</p>' : "") +
+    '<p class="trnote">🌱 Ôn đúng hạn mỗi ngày để cây xanh tán và kết trái.</p></section>';
 }
 
 
@@ -350,8 +365,8 @@ const STEPS = [
   { k: "learn", icon: "🎧", name: "Từ vựng", sub: "" },
   { k: "speak", icon: "🎙️", name: "Phát âm", sub: "" },
   { k: "quiz", icon: "⚡", name: "Luyện từ", sub: "20 câu" },
-  { k: "gread", icon: "📐", name: "Công thức NP", sub: "" },
-  { k: "gex", icon: "✍️", name: "Bài tập NP", sub: "12 câu" }
+  { k: "gread", icon: "📐", name: "Ngữ pháp", sub: "" },
+  { k: "gex", icon: "✍️", name: "Bài tập", sub: "12 câu" }
 ];
 let keyHandler = null;
 function onKeys(fn) { keyHandler = fn; }
@@ -396,7 +411,7 @@ function lockScreen() {
 }
 function howto() {
   const d = document.createElement("div"); d.className = "modal";
-  d.innerHTML = '<div class="modal-box"><h2>Mỗi bài có 5 bước</h2><div class="pills">' + STEPS.map((s, j) => '<span class="pill">' + (j + 1) + ". " + s.icon + " " + s.name + (s.sub ? " (" + s.sub + ")" : "") + "</span>").join('<span class="arrow">➔</span>') + '</div><p><b>🔁 Ôn từ mỗi ngày:</b> mỗi ngày học, em ôn trước tối đa ' + REVIEW_MAX + ' từ cũ đến hạn (khoảng 3 phút) rồi mới học tiếp. Từ đúng quay lại sau 1 → 3 → 7 → 14 ngày, từ sai quay lại ngày mai — nhờ vậy em nhớ từ lâu.</p><p class="muted">Luyện từ và Bài tập NP đạt ≥ ' + C.PASS + '% để mở bài kế tiếp. Nên dùng Chrome hoặc Safari, đeo tai nghe có micro.</p><button class="btn primary" id="mclose">Đã hiểu</button></div>';
+  d.innerHTML = '<div class="modal-box"><h2>Mỗi bài có 5 bước</h2><div class="pills">' + STEPS.map((s, j) => '<span class="pill">' + (j + 1) + ". " + s.icon + " " + s.name + (s.sub ? " (" + s.sub + ")" : "") + "</span>").join('<span class="arrow">➔</span>') + '</div><p><b>🔁 Ôn từ mỗi ngày:</b> mỗi ngày học, em ôn trước tối đa ' + REVIEW_MAX + ' từ cũ đến hạn (khoảng 3 phút) rồi mới học tiếp. Từ đúng quay lại sau 1 → 3 → 7 → 14 ngày, từ sai quay lại ngày mai — nhờ vậy em nhớ từ lâu.</p><p class="muted">Luyện từ và Bài tập đạt ≥ ' + C.PASS + '% để mở bài kế tiếp. Nên dùng Chrome hoặc Safari, đeo tai nghe có micro.</p><button class="btn primary" id="mclose">Đã hiểu</button></div>';
   document.body.appendChild(d);
   const close = () => d.remove();
   d.onclick = e => { if (e.target === d) close(); };
@@ -426,7 +441,7 @@ function currentUnit() { for (let i = 1; i <= N_UNITS; i++) if (!unitDone(i)) re
 function stepper(i, cur) {
   return '<nav class="stepper">' + STEPS.map((s, j) => {
     const ok = stepOk(i, s.k), open = stepOpen(i, j);
-    return '<button class="st ' + (j === cur ? "cur " : "") + (ok ? "ok" : open ? "open" : "lock") + '" ' + (open ? 'data-go="' + s.k + ":" + i + '"' : "disabled") + '><span class="sn">' + (ok ? "✓" : j + 1) + '</span><span class="sl">' + s.icon + " " + s.name + "</span></button>";
+    return '<button class="st ' + (j === cur ? "cur " : "") + (ok ? "ok" : open ? "open" : "lock") + '" ' + (open ? 'data-go="' + s.k + ":" + i + '"' : "disabled") + '><span class="sn">' + (ok ? "✓" : j + 1) + '</span><span class="sl"><span class="sic">' + s.icon + " </span>" + s.name + "</span></button>";
   }).join("") + "</nav>";
 }
 function lessonHead(i, cur) {
@@ -444,30 +459,33 @@ function home() {
   else if (p.done >= p.target) status = '<span class="pace good">Đi trước tiến độ</span>';
   else if (p.behind === 0) status = '<span class="pace ok">Đúng tiến độ</span>';
   else status = '<span class="pace bad">Chậm ' + p.behind + " bài</span>";
-  let today = "";
+  const due = dueWords().length, rn = reviewNeeded(), dayN = Math.max(0, Math.min(p.d, C.DAYS));
+  let mission;
   if (cu) {
-    const ns = nextStep(cu), dots = STEPS.map((s, j) => '<i class="' + (stepOk(cu, s.k) ? "ok" : j === ns ? "cur" : "") + '" title="' + s.name + '">' + s.icon + "</i>").join("");
-    today = '<div class="today"><div class="tt"><span class="kick">BÀI HÔM NAY</span><h2>Bài ' + cu + " · " + esc(V[cu - 1].title) + '</h2><span class="tag light">' + esc((SH[cu - 1] || {}).short || "") + '</span><div class="dots">' + dots + '</div><span class="small">Tiến độ ' + stepsDone(cu) + '/5 bước</span><button class="btn gold big" data-go="' + STEPS[ns].k + ":" + cu + '">▶ ' + (stepsDone(cu) ? "Tiếp tục" : "Bắt đầu") + " Bài " + cu + " (Bước " + (ns + 1) + "/5) ➔</button></div><img class=\"titi-hero\" src=\"./titi/titi-good.webp\" alt=\"Cô giáo Titi\"></div>";
+    const ns = nextStep(cu);
+    const steps = STEPS.map((s, j) => '<li class="' + (stepOk(cu, s.k) ? "ok" : j === ns ? "cur" : "") + '"><i>' + (stepOk(cu, s.k) ? "✓" : s.icon) + "</i><span>" + s.name + "</span></li>").join("");
+    const cta = rn ? '<button class="btn gold wcta" data-go="review">💧 Ôn ' + Math.min(due, REVIEW_MAX) + ' từ cũ trước <span class="pill">⏱ ~3 phút</span></button><p class="wnote">Ôn xong là vào Bài ' + cu + "</p>"
+      : '<button class="btn gold wcta" data-go="' + STEPS[ns].k + ":" + cu + '">▶ ' + (stepsDone(cu) ? "Học tiếp" : "Bắt đầu") + " Bài " + cu + ": " + esc(V[cu - 1].title) + "</button>";
+    mission = '<div class="wday"><span class="wlab">Bài hôm nay · Bước ' + (ns + 1) + '/5</span><b>Bài ' + cu + " · " + esc(V[cu - 1].title) + '</b><span class="wtag">' + esc((SH[cu - 1] || {}).short || "") + '</span><ol class="wsteps">' + steps + "</ol></div>" + cta;
   } else {
-    today = '<div class="today"><div class="tt"><span class="kick">CHẶNG CUỐI</span><h2>' + (completed() ? "Hoàn thành xuất sắc!" : "Kiểm tra cuối khoá") + '</h2><span class="small">40 câu · đạt ≥ ' + C.FINAL_PASS + '%</span><button class="btn gold big" data-go="final">' + (completed() ? "Làm lại để nâng điểm" : "▶ Vào bài kiểm tra") + ' ➔</button></div><img class="titi-hero" src="./titi/titi-top.webp" alt=""></div>';
+    mission = '<div class="wday"><span class="wlab">Chặng cuối</span><b>' + (completed() ? "Hoàn thành xuất sắc!" : "Kiểm tra cuối khoá") + '</b><span class="wtag">40 câu · đạt ≥ ' + C.FINAL_PASS + '%</span></div><button class="btn gold wcta" data-go="final">' + (completed() ? "Làm lại để nâng điểm" : "▶ Vào bài kiểm tra") + "</button>";
   }
-  const due = dueWords().length, ms = memStats(), rn = reviewNeeded();
-  if (rn && cu) today = today.replace(/<button class="btn gold big" data-go="[^"]+">[^<]*<\/button>/, '<button class="btn gold big" data-go="review">🔁 Ôn ' + Math.min(due, REVIEW_MAX) + ' từ cũ trước (~3 phút) ➔</button><span class="small">Ôn xong là vào Bài ' + cu + "</span>");
+  const welcome = '<section class="welcome"><img class="wtiti" src="./titi/' + (completed() ? "titi-top" : "titi-good") + '.webp" alt="">' +
+    '<span class="wkick">Nền tảng IELTS · Vocab B1</span><h1>Chào ' + esc(name) + "!</h1>" + status +
+    '<div class="wprog"><div class="wbar"><span style="width:' + Math.round(dayN / C.DAYS * 100) + '%"></span></div><div class="wstats"><span><b>Ngày ' + dayN + "/" + C.DAYS + "</b> · còn " + left + " ngày</span><span><b>" + p.done + "/" + N_UNITS + "</b> bài xong</span></div></div>" + mission + "</section>";
   let grid = "";
   for (let i = 1; i <= N_UNITS; i++) {
     const d = unitDone(i), op = unlocked(i), n = stepsDone(i);
-    const seg = STEPS.map(s => '<i class="' + (stepOk(i, s.k) ? "on" : "") + '"></i>').join("");
-    grid += '<button class="lc ' + (d ? "done" : op ? "open" : "lock") + (i === cu ? " cur" : "") + '" ' + (op ? 'data-go="unit:' + i + '"' : "disabled") + '><span class="no">' + String(i).padStart(2, "0") + '</span><span class="lcs">' + (d ? "✓ Xong" : op ? n + "/5" : "🔒") + '</span><b class="lct">' + esc(V[i - 1].title) + '</b><span class="tag">' + esc((SH[i - 1] || {}).short || "") + '</span><span class="seg">' + seg + "</span></button>";
+    const seg = STEPS.map(s => '<i class="' + (stepOk(i, s.k) ? "on" : "") + '" title="' + s.name + '"></i>').join("");
+    grid += '<button class="lc ' + (d ? "done" : op ? "open" : "lock") + (i === cu ? " cur" : "") + '" ' + (op ? 'data-go="unit:' + i + '"' : "disabled") + '><span class="no">' + String(i).padStart(2, "0") + '</span><span class="lcbody"><b class="lct">' + esc(V[i - 1].title) + '</b><span class="tag">' + esc((SH[i - 1] || {}).short || "") + '</span><span class="lcfoot"><span class="lcdots">' + seg + '</span><span class="lcs">' + (d ? "✓ Xong" : op ? n + "/5" : "🔒") + "</span></span></span></button>";
   }
   const fin = S.final ? S.final.best + "%" : "";
   shell(
     (IN_APP ? openOutsideHtml() : "") + (localMode ? '<p class="demo">Bản thử: tiến độ chỉ lưu trên máy này.</p>' : "") + (OWNER ? '<p class="demo owner">👁 <b>Bản chủ</b> — mở sẵn cả 14 bài và bài thi cuối khoá để cô xem, thử. Điểm chỉ lưu trên máy này, không vào danh sách học sinh. <button class="mini" id="ownReset">Làm lại từ đầu</button></p>' : "") +
-    '<section class="hero"><div class="hello"><span class="kick">NỀN TẢNG IELTS · VOCAB B1 + NGỮ PHÁP</span><h1>Chào ' + esc(name) + "!</h1>" + status +
-    '<div class="kpis"><div class="kpi"><span>📅</span><b>Ngày ' + Math.min(p.d, C.DAYS) + "/" + C.DAYS + "</b><small>Còn " + left + ' ngày</small></div><div class="kpi"><span>📚</span><b>' + p.done + "/" + N_UNITS + ' bài</b><small>Đã hoàn thành</small></div><div class="kpi"><span>🎯</span><b>' + (cu ? "Bài " + Math.max(p.target, cu) : "Cuối khoá") + "</b><small>Mục tiêu hôm nay</small></div></div>" +
-    (rn ? '<button class="review" data-go="review">💧 Cây từ vựng đang khô: ôn ' + Math.min(due, REVIEW_MAX) + " từ cũ trước khi học tiếp ➔</button>" : "") + "</div>" + today + "</section>" + treeCard() +
-    '<div class="sechead"><h2>Lộ trình 14 bài</h2><span class="muted">Đạt ≥ ' + C.PASS + '% để mở bài kế tiếp</span><button class="howbtn" data-howto>? Cách học</button></div>' +
+    '<div class="homegrid"><aside class="hside">' + welcome + treeCard() + '</aside><div class="hmain">' +
+    '<div class="sechead"><div><h2>Lộ trình 14 bài</h2><span class="muted">Đạt ≥ ' + C.PASS + '% để mở bài kế tiếp</span></div><button class="howbtn" data-howto>? Cách học</button></div>' +
     '<section class="grid">' + grid + "</section>" +
-    '<button class="finalbar ' + (completed() ? "done" : canFinal() ? "open" : "lock") + '" ' + (canFinal() ? 'data-go="final"' : "disabled") + '><span class="fi">★</span><span><b>Kiểm tra cuối khoá</b><small>40 câu từ vựng + ngữ pháp · đạt ≥ ' + C.FINAL_PASS + "%</small></span><span class=\"fs\">" + (completed() ? "✓ " + fin : canFinal() ? (fin || "Vào thi ➔") : "🔒 Xong 14 bài để mở") + "</span></button>",
+    '<button class="finalbar ' + (completed() ? "done" : canFinal() ? "open" : "lock") + '" ' + (canFinal() ? 'data-go="final"' : "disabled") + '><span class="fi">★</span><span><b>Kiểm tra cuối khoá</b><small>40 câu từ vựng + ngữ pháp · đạt ≥ ' + C.FINAL_PASS + "%</small></span><span class=\"fs\">" + (completed() ? "✓ " + fin : canFinal() ? (fin || "Vào thi ➔") : "🔒 Xong 14 bài để mở") + "</span></button></div></div>",
     "wide");
   if (localMode) setSync("local"); else setSync(pendingEvents.length ? "err" : "ok");
 }
@@ -479,11 +497,11 @@ function unitView(i) {
   let cards = "";
   STEPS.forEach((s, j) => {
     const ok = stepOk(i, s.k), open = stepOpen(i, j), sc = stepScore(i, s.k);
-    cards += '<button class="sc ' + (ok ? "ok" : open ? "open" : "lock") + (j === ns ? " next" : "") + '" ' + (open ? 'data-go="' + s.k + ":" + i + '"' : "disabled") + '><span class="si">' + s.icon + '</span><span class="sno">Bước ' + (j + 1) + "</span><b>" + s.name + "</b><small>" + (s.k === "learn" ? V[i - 1].entries.length + " từ" : s.k === "gread" ? esc((SH[i - 1] || {}).short || "") : s.sub || "Máy chấm") + '</small><span class="sb">' + (sc || (open ? "Bắt đầu ➔" : "🔒")) + "</span></button>";
+    cards += '<button class="sc ' + (ok ? "ok" : open ? "open" : "lock") + (j === ns ? " next" : "") + '" ' + (open ? 'data-go="' + s.k + ":" + i + '"' : "disabled") + '><span class="si">' + s.icon + '</span><span class="sno">Bước ' + (j + 1) + "</span><b>" + s.name + "</b><small>" + (s.k === "learn" ? V[i - 1].entries.length + " từ" : s.k === "gread" ? esc((SH[i - 1] || {}).short || "") : (s.k === "speak" && C.SPEAK_MODE === "video" ? "Luyện + quay video" : s.sub || "Máy chấm")) + '</small><span class="sb">' + (sc || (open ? "Bắt đầu ➔" : "🔒")) + "</span></button>";
   });
   shell('<header class="lhead"><button class="crumb" data-go="home">← Lộ trình</button><div class="lt"><b>Bài ' + i + " · " + esc(V[i - 1].title) + '</b><span class="tag">' + esc((SH[i - 1] || {}).short || "") + '</span></div><button class="howbtn" data-howto>? Cách học</button></header>' +
     stepper(i, ns == null ? -1 : ns) + '<section class="steps5">' + cards + "</section>" +
-    (unitDone(i) ? '<div class="donebar">✓ Em đã xong Bài ' + i + (i < N_UNITS ? ' <button class="btn primary" data-go="unit:' + (i + 1) + '">Sang Bài ' + (i + 1) + " ➔</button>" : ' <button class="btn gold" data-go="final">Vào kiểm tra cuối khoá ➔</button>') + "</div>" : '<p class="muted center">Luyện từ & Bài tập NP đạt ≥ ' + C.PASS + "% để mở bài kế tiếp</p>"), "lesson");
+    (unitDone(i) ? '<div class="donebar">✓ Em đã xong Bài ' + i + (i < N_UNITS ? ' <button class="btn primary" data-go="unit:' + (i + 1) + '">Sang Bài ' + (i + 1) + " ➔</button>" : ' <button class="btn gold" data-go="final">Vào kiểm tra cuối khoá ➔</button>') + "</div>" : '<p class="muted center">Luyện từ & Bài tập đạt ≥ ' + C.PASS + "% để mở bài kế tiếp</p>"), "lesson");
 }
 
 /* ---------- Bước 1: học từ ---------- */
@@ -998,31 +1016,49 @@ function speakVideo(i, view) {
   const u = V[i - 1], es = u.entries, L = readingList(i);
   view = view || "practice";
   const useLab = canLab;
-  const tabs = '<div class="seg"><button class="' + (view === "practice" ? "on" : "") + '" data-v="practice">1. Luyện đọc</button><button class="' + (view === "submit" ? "on" : "") + '" data-v="submit">2. Quay video & nộp</button></div>';
+  const tabs = '<div class="seg"><button class="' + (view === "practice" ? "on" : "") + '" data-v="practice">1. Luyện đọc</button><button class="' + (view === "submit" ? "on" : "") + '" data-v="submit">2. Quay video<span class="hm"> & nộp</span></button></div>';
   if (view === "practice") {
     labKeep = useLab;
-    shell(lessonHead(i, 1) + videoStatus(i) + '<section class="card">' + tabs + '<p class="muted" style="margin:10px 0 4px">Em nghe mẫu, nghe chậm, rồi bấm 🎙️ tự thu giọng và ▶ nghe lại để so với mẫu. Phần này không chấm điểm — luyện kỹ rồi sang bước 2 quay video nộp cho cô.</p>' +
-      '<div class="plist">' + es.map((e, k) => '<div class="prow" data-k="' + k + '"><div class="pw"><b>' + esc(e.speak.join(" · ")) + '</b><span class="ipa">' + esc(e.ipa) + '</span><span class="muted small">' + esc(e.vi) + '</span></div><div class="pb"><button class="btn sound sm" data-a="say">🔊</button><button class="btn ghost sm" data-a="slow">🐢</button><button class="btn ghost sm" data-a="rec">🎙️</button><button class="btn ghost sm" data-a="play" disabled>▶</button></div></div>').join("") + "</div>" +
-      '<h3 style="margin-top:18px">Câu mẫu</h3><div class="plist">' + L.sents.map((t, k) => '<div class="prow" data-s="' + k + '"><div class="pw"><span>' + esc(t) + '</span></div><div class="pb"><button class="btn sound sm" data-a="say">🔊</button><button class="btn ghost sm" data-a="slow">🐢</button><button class="btn ghost sm" data-a="rec">🎙️</button><button class="btn ghost sm" data-a="play" disabled>▶</button></div></div>').join("") + "</div>" +
-      '<div class="nav center"><button class="btn primary" id="gosub">Sang bước 2: Quay video & nộp ➔</button></div></section>', "lesson");
-    const recs = {}; let recKey = null, stopT = null;
-    const textOf = row => row.dataset.k != null ? es[+row.dataset.k].speak.join(", ") : L.sents[+row.dataset.s];
-    app.querySelectorAll(".prow").forEach(row => {
-      const key = row.dataset.k != null ? "k" + row.dataset.k : "s" + row.dataset.s, txt = textOf(row);
-      row.querySelector('[data-a="say"]').onclick = () => useLab ? labSay(txt) : say(txt);
-      row.querySelector('[data-a="slow"]').onclick = () => useLab ? labSay(txt, true) : say(txt, true);
-      const recB = row.querySelector('[data-a="rec"]'), playB = row.querySelector('[data-a="play"]');
-      playB.onclick = () => { if (recs[key]) labPlayRaw(recs[key]); };
-      recB.onclick = () => {
+    const items = es.map(e => ({ t: e.speak.join(" · "), say: e.speak.join(", "), ipa: e.ipa, vi: e.vi, kind: e.type })).concat(L.sents.map(t => ({ t, say: t, sent: 1 })));
+    const recs = {}; let idx = speakVideo.idx && speakVideo.idx[i] < items.length ? speakVideo.idx[i] : 0, recOn = false, stopT = null;
+    const sayT = (t, slow) => useLab ? labSay(t, slow) : say(t, slow);
+    const render = () => {
+      (speakVideo.idx = speakVideo.idx || {})[i] = idx;
+      labKeep = useLab;
+      const it = items[idx], nW = es.length, isS = !!it.sent, last = idx === items.length - 1;
+      const chips = items.map((x, k) => '<button class="pchip' + (k === idx ? " on" : "") + (recs[k] ? " done" : "") + (x.sent ? " s" : "") + '" data-k="' + k + '">' + (x.sent ? "C" + (k - nW + 1) : k + 1) + "</button>").join("");
+      shell(lessonHead(i, 1) + videoStatus(i) + '<section class="card lab2">' + tabs +
+        '<div class="ptop"><span>' + (isS ? "Câu " + (idx - nW + 1) + "/" + L.sents.length : "Từ " + (idx + 1) + "/" + nW) + '</span><span class="muted">Luyện thoải mái · không chấm điểm</span></div>' +
+        '<div class="pbar"><i style="width:' + Math.round((idx + 1) / items.length * 100) + '%"></i></div><div class="pchips">' + chips + "</div>" +
+        '<div class="pstage' + (isS ? " sent" : "") + '">' + (it.kind ? '<span class="ptype">' + esc(it.kind) + "</span>" : '<span class="ptype">Câu mẫu</span>') +
+        '<h2 class="pword">' + esc(it.t) + "</h2>" + (it.ipa ? '<p class="pipa">' + esc(it.ipa) + "</p>" : "") + (it.vi ? '<p class="pvi">' + esc(it.vi) + "</p>" : "") +
+        '<div class="plisten"><button class="btn sound" id="pS">🔊 Nghe mẫu</button><button class="btn ghost" id="pL">🐢 Chậm</button></div>' +
+        '<button class="pmic' + (recOn ? " live" : "") + '" id="pM" aria-label="Thu giọng"><span class="ring r1"></span><span class="ring r2"></span><span class="mi">' + (recOn ? "⏹" : "🎙️") + '</span></button><p class="pmicl">' + (recOn ? "Đang thu… bấm để dừng" : recs[idx] ? "Bấm để thu lại" : "Bấm để thu giọng em") + "</p>" +
+        (recs[idx] ? '<div class="pcmp"><button class="btn ghost" id="pP">▶ Nghe giọng em</button><button class="btn ghost" id="pC">🔁 Em rồi mẫu</button></div>' : "") + "</div>" +
+        '<div class="nav pnav"><button class="btn ghost" id="pPrev" ' + (idx ? "" : "disabled") + ">←</button>" + (last ? '<button class="btn primary" id="gosub">Sang bước 2: Quay video & nộp ➔</button>' : '<button class="btn primary" id="pNext">' + (idx === nW - 1 ? "Sang câu mẫu ➔" : "Tiếp ➔") + "</button>") + "</div></section>", "lesson", true);
+      const cur = app.querySelector(".pchip.on"); if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: "nearest", inline: "center" });
+      app.querySelectorAll(".pchip").forEach(b => b.onclick = () => { if (recOn) return; idx = +b.dataset.k; render(); });
+      document.getElementById("pS").onclick = () => sayT(it.say);
+      document.getElementById("pL").onclick = () => sayT(it.say, true);
+      const pP = document.getElementById("pP"), pC = document.getElementById("pC");
+      if (pP) pP.onclick = () => labPlayRaw(recs[idx]);
+      if (pC) pC.onclick = () => { labPlayRaw(recs[idx]); setTimeout(() => sayT(it.say), Math.min(12000, recs[idx].length / LAB.sr * 1000 + 400)); };
+      document.getElementById("pM").onclick = () => {
         if (!useLab) { toast("Máy này chưa thu giọng được, em luyện bằng nghe mẫu nhé."); return; }
-        if (recKey === key) { clearTimeout(stopT); setTimeout(() => { recKey = null; recs[key] = labStop(); recB.textContent = "🎙️"; recB.classList.remove("live"); playB.disabled = false; labPlayRaw(recs[key]); }, 250); return; }
-        if (recKey) return;
-        labStopPlay(); stopAudio(); recB.textContent = "…";
-        labReady().then(() => { recKey = key; labStart(); recB.textContent = "⏹"; recB.classList.add("live"); stopT = setTimeout(() => { if (recKey === key) recB.click(); }, 12000); })
-          .catch(err => { recB.textContent = "🎙️"; toast(recErrorText(err)); });
+        if (recOn) { clearTimeout(stopT); setTimeout(() => { recOn = false; recs[idx] = labStop(); render(); labPlayRaw(recs[idx]); }, 250); return; }
+        labStopPlay(); stopAudio(); const m = document.getElementById("pM"); m.querySelector(".mi").textContent = "…";
+        labReady().then(() => { recOn = true; labStart(); render(); const k0 = idx; stopT = setTimeout(() => { if (recOn && idx === k0) document.getElementById("pM").click(); }, 12000); })
+          .catch(err => { m.querySelector(".mi").textContent = "🎙️"; toast(recErrorText(err)); });
       };
-    });
-    document.getElementById("gosub").onclick = () => speakVideo(i, "submit");
+      const pv = document.getElementById("pPrev"), nx = document.getElementById("pNext"), gs = document.getElementById("gosub");
+      if (pv) pv.onclick = () => { if (!recOn) { idx--; render(); } };
+      if (nx) nx.onclick = () => { if (!recOn) { idx++; render(); } };
+      if (gs) gs.onclick = () => speakVideo(i, "submit");
+      app.querySelectorAll(".seg [data-v]").forEach(b => b.onclick = () => { if (!recOn) speakVideo(i, b.dataset.v); });
+      onKeys(ev => { if (recOn) return; if (ev.key === "ArrowRight" && idx < items.length - 1) { idx++; render(); } else if (ev.key === "ArrowLeft" && idx) { idx--; render(); } else if (ev.key === " ") { ev.preventDefault(); sayT(it.say); } });
+    };
+    render();
+    return;
   } else {
     const url = formLink(i), code = unitCode(i);
     shell(lessonHead(i, 1) + '<section class="card">' + tabs +
@@ -1383,7 +1419,7 @@ function grammarQuestion(x, lessonTitle) {
   return { kind: "type", sec: "g", label: "Gõ đáp án vào chỗ trống", prompt: esc(x.q).replace(/___/g, '<span class="gap">______</span>'), accept: x.a, correctText: x.a[0], why: x.why, review: pre + x.q.replace("___", "[" + x.a[0] + "]") };
 }
 function grammarQuiz(i) {
-  runQuiz({ title: "Bài tập NP", head: lessonHead(i, 4) }, shuffle(G[i - 1].ex).map(x => grammarQuestion(x)), (score, wrong) => {
+  runQuiz({ title: "Bài tập ngữ pháp", head: lessonHead(i, 4) }, shuffle(G[i - 1].ex).map(x => grammarQuestion(x)), (score, wrong) => {
     const p = U(i).gex || { best: 0, tries: 0 };
     U(i).gex = { best: Math.max(p.best, score), last: score, tries: p.tries + 1 };
     save({ unit: i, part: "Bài tập ngữ pháp", score, detail: wrong.length ? "Sai: " + wrong.join("; ") : "Đúng hết" });
@@ -1404,7 +1440,7 @@ function review(then) {
     resultCard(0, "Ôn tập", score, wrong, { noPass: true, msg: score >= 80 ? "Em nhớ từ tốt lắm!" : score >= 50 ? "Ôn xong — cố thêm chút nữa nhé!" : "Ôn xong — các từ sai sẽ quay lại ngày mai" });
     const nav = app.querySelector(".result .rright .nav"); if (nav) {
       const ms = memStats(), p = document.createElement("div"); p.className = "memline";
-      p.innerHTML = treeSvg(true) + "🌳 Cây đã được tưới! Em đã nhớ chắc <b>" + ms.sure + "</b> từ. " + (wrong.length ? "Từ sai sẽ quay lại vào ngày mai." : "Các từ đúng sẽ quay lại sau vài ngày để em nhớ lâu hơn.") + (then ? ' <button class="btn primary" data-go="' + esc(then) + '">Học tiếp ➔</button>' : "");
+      p.innerHTML = '<div class="scene sm">' + treeSvg(true) + "</div>🌳 Cây đã được tưới! Em đã nhớ chắc <b>" + ms.sure + "</b> từ. " + (wrong.length ? "Từ sai sẽ quay lại vào ngày mai." : "Các từ đúng sẽ quay lại sau vài ngày để em nhớ lâu hơn.") + (then ? ' <button class="btn primary" data-go="' + esc(then) + '">Học tiếp ➔</button>' : "");
       nav.parentNode.insertBefore(p, nav); p.querySelectorAll("[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));
     }
   });
