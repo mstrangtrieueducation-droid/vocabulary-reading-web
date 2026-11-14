@@ -26,10 +26,14 @@ U.forEach((u, i) => u.words.forEach(w => { w.u = i; W[w.id] = w; ORDER.push(w.id
 const TOTAL = ORDER.length, ORD = {}; ORDER.forEach((id, i) => { ORD[id] = i; });
 /* Chặng = 1 đề (Model, Reading 1 … Reading 10), mỗi chặng gồm các passage. */
 const STAGES = [];
-U.forEach((u, i) => { const k = u.t; let s = STAGES.find(x => x.t === k); if (!s) { s = { t: k, name: k ? "Reading " + k : "Model Reading", units: [], ids: [] }; STAGES.push(s); } s.units.push(i); u.words.forEach(w => { s.ids.push(w.id); STAGE_OF[w.id] = STAGES.length - 1; }); });
+U.forEach((u, i) => { const s = { t: i + 1, name: u.label || "Chặng " + (i + 1), units: [i], ids: [] }; STAGES.push(s); u.words.forEach(w => { s.ids.push(w.id); STAGE_OF[w.id] = STAGES.length - 1; }); });
 
 /* ---------- học sinh + trạng thái ---------- */
 let student = store.get("rt-student");
+try {   // mở từ dashboard lớp: ?name=…&cls=… (họ tên + lớp của học sinh đang xem)
+  const q = new URLSearchParams(location.search), qn = (q.get("name") || "").replace(/\s+/g, " ").trim(), qc = (q.get("cls") || "").replace(/\s+/g, " ").trim().toUpperCase();
+  if (qn.length >= 5 && (window.RT_CONFIG && window.RT_CONFIG.CLASSES || []).indexOf(qc) >= 0) { student = { name: qn, cls: qc }; store.set("rt-student", student); history.replaceState(null, "", location.pathname); }
+} catch (e) {}
 if (student && (!student.name || C.CLASSES.indexOf(student.cls) < 0)) student = null;
 const keyOf = s => "rt-state:" + s.name.toUpperCase() + "|" + s.cls;
 let S = null;
@@ -210,8 +214,8 @@ function home() {
   const stageRow = (s, i) => {
     const sown = s.ids.filter(id => S.w[id]).length, sure = s.ids.filter(id => S.w[id] && S.w[id][0] >= 3).length, all = s.ids.length;
     const state = sown === all ? "done" : sown ? "now" : (i === 0 || STAGES[i - 1].ids.every(id => S.w[id])) ? "next" : "lock";
-    const titles = s.units.map(ui => U[ui].title).join(" · ");
-    return '<li class="stg ' + state + '"><span class="dot">' + (state === "done" ? "✓" : state === "lock" ? "🔒" : (s.t || "M")) + '</span><div class="sx"><div class="sh"><b>' + esc(s.name) + "</b><small>" + sown + "/" + all + " từ</small></div>" +
+    const titles = s.ids.slice(0, 5).map(id => W[id].w).join(" · ") + " …";
+    return '<li class="stg ' + state + '"><span class="dot">' + (state === "done" ? "✓" : state === "lock" ? "🔒" : s.t) + '</span><div class="sx"><div class="sh"><b>' + esc(s.name) + "</b><small>" + sown + "/" + all + " từ</small></div>" +
       '<p class="st">' + esc(titles) + "</p>" + '<div class="bar2"><i class="a" style="width:' + Math.round(sown / all * 100) + '%"></i><i class="b" style="width:' + Math.round(sure / all * 100) + '%"></i></div></div></li>';
   };
   const pctSown = Math.round(nW / TOTAL * 100), pctSure = Math.round((b.sure + b.fruit) / TOTAL * 100);
@@ -227,7 +231,7 @@ function home() {
     '<div class="bigbar"><i class="a" style="width:' + pctSown + '%"></i><i class="b" style="width:' + pctSure + '%"></i></div>' +
     '<div class="legend"><span><i class="la"></i>Đã gieo ' + nW + '</span><span><i class="lb"></i>Nhớ chắc ' + (b.sure + b.fruit) + "</span>" + (fin ? "<span>🏁 Dự kiến gieo hết: <b>" + dmy(fin) + "</b></span>" : "") + "</div>" +
     '<ol class="stages">' + STAGES.map(stageRow).join("") + "</ol>" +
-    '<p class="small muted" style="margin:10px 0 0">Từ được gieo tự động theo thứ tự trong file từ vựng của cô: Model → Reading 1 → … → Reading 10.</p></section>' +
+    '<p class="small muted" style="margin:10px 0 0">Từ vựng dùng chung cho mọi kỹ năng — lấy từ các bài đọc và bài viết mẫu của cô — gieo tự động theo thứ tự từng chặng.</p></section>' +
     (nW ? '<section class="card"><div class="rh"><h2>Sổ từ của em</h2><span class="rule">' + nW + ' từ</span></div><div class="filters" id="ff">' +
       [["all", "Tất cả"], ["due", "Cần ôn"], ["grow", "Đang lớn"], ["sure", "Nhớ chắc"], ["fruit", "Ra quả"]].map(([v, t], i) => '<button data-f="' + v + '"' + (i ? "" : ' class="on"') + ">" + t + "</button>").join("") +
       '</div><input id="fq" class="search" placeholder="🔎 Tìm từ hoặc nghĩa…"><div class="wlist" id="wl"></div></section>' : "") +
@@ -258,12 +262,11 @@ function wordList(q, f) {
 function say(t) { try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(String(t).replace(/·/g, ",")); u.lang = "en-GB"; u.rate = 0.86; const v = speechSynthesis.getVoices(); u.voice = v.find(x => /^en-gb/i.test(x.lang)) || v.find(x => /^en/i.test(x.lang)) || null; speechSynthesis.speak(u); } catch (e) {} }
 function bindSay(root) { root.querySelectorAll("[data-say]").forEach(b => b.onclick = ev => { ev.stopPropagation(); say(b.dataset.say); }); }
 function cardHtml(w) {
-  const u = U[w.u];
   return '<div class="wcard"><div class="wtop"><div><div class="w">' + esc(w.w) + '</div><p class="ipa">' + esc([w.ipa, w.pos].filter(Boolean).join(" · ")) + "</p></div>" +
     '<div class="says"><button class="say" data-say="' + esc(w.w) + '" aria-label="Nghe từ">▶ Từ</button>' + (w.ex ? '<button class="say" data-say="' + esc(w.ex) + '" aria-label="Nghe câu">▶ Câu</button>' : "") + "</div></div>" +
     '<p class="mean">' + esc(w.vi) + "</p>" +
-    '<dl>' + (w.fam ? "<dt>Word family</dt><dd>" + esc(w.fam) + "</dd>" : "") + (w.col ? "<dt>Collocation</dt><dd><em>" + esc(w.col) + "</em></dd>" : "") + (w.ex ? "<dt>Trong bài đọc</dt><dd>" + esc(w.ex) + "</dd>" : "") + "</dl>" +
-    '<p class="src">' + esc(u.label) + (/^Passage \d/.test(u.title) ? "" : " · " + esc(u.title)) + "</p></div>";
+    '<dl>' + (w.fam ? "<dt>Word family</dt><dd>" + esc(w.fam) + "</dd>" : "") + (w.col ? "<dt>Collocation</dt><dd><em>" + esc(w.col) + "</em></dd>" : "") + (w.ex ? "<dt>Ví dụ</dt><dd>" + esc(w.ex) + "</dd>" : "") + "</dl>" +
+    "</div>";
 }
 
 /* ---------- câu hỏi ---------- */
@@ -285,7 +288,7 @@ function distract(id, field, n) {
 const norm = s => String(s || "").toLowerCase().replace(/[’']/g, "'").replace(/\(.*?\)/g, "").replace(/\b(sb|sth)\b/g, " ").replace(/[^a-z' -]/g, "").replace(/\s+/g, " ").trim();
 function kindFor(id) {
   const w = S.w[id]; if (!w) return "learn";
-  const b = w[0], cl = !!findForm(W[id].w, W[id].ex);
+  const b = w[0], cl = !!findForm(W[id].w, W[id].ex || W[id].col);
   if (b <= 0) return "mean";
   if (b === 1) return "word";
   if (b === 2) return cl ? "cloze" : "word";
@@ -314,9 +317,9 @@ function review(opt) {
     if (q.k === "mean") { label = "Chọn nghĩa đúng"; prompt = '<div class="qbig">' + esc(w.w) + '</div><p class="ipa center">' + esc([w.ipa, w.pos].filter(Boolean).join(" · ")) + ' <button class="say mini" data-say="' + esc(w.w) + '">▶</button></p>'; opts = shuffle([w].concat(distract(q.id, "vi", 3))).map(x => ({ t: x.vi, ok: x.id === q.id })); }
     else if (q.k === "word") { label = "Chọn từ đúng nghĩa"; prompt = '<p class="qtext big">' + esc(w.vi) + "</p>" + (w.pos ? '<p class="small muted center">(' + esc(w.pos) + ")</p>" : ""); opts = shuffle([w].concat(distract(q.id, "w", 3))).map(x => ({ t: x.w, ok: x.id === q.id })); }
     else if (q.k === "cloze" || q.k === "type") {
-      const r = findForm(w.w, w.ex), form = w.ex.slice(r[0], r[1]); answer = form;
+      const ctx = w.ex && findForm(w.w, w.ex) ? w.ex : w.col, r = findForm(w.w, ctx), form = ctx.slice(r[0], r[1]); answer = form;
       label = q.k === "cloze" ? "Điền từ vào câu của bài đọc" : "Tự gõ từ còn thiếu";
-      prompt = '<p class="qtext">' + esc(w.ex.slice(0, r[0])) + '<span class="gap"></span>' + esc(w.ex.slice(r[1])) + '</p><p class="small muted">Nghĩa: ' + esc(w.vi) + (q.k === "type" ? " · bắt đầu bằng <b>" + esc(form.slice(0, 1)) + "</b> · " + form.length + " chữ cái" : "") + "</p>";
+      prompt = '<p class="qtext">' + esc(ctx.slice(0, r[0])) + '<span class="gap"></span>' + esc(ctx.slice(r[1])) + '</p><p class="small muted">Nghĩa: ' + esc(w.vi) + (q.k === "type" ? " · bắt đầu bằng <b>" + esc(form.slice(0, 1)) + "</b> · " + form.length + " chữ cái" : "") + "</p>";
       if (q.k === "cloze") opts = shuffle([w].concat(distract(q.id, "w", 3))).map(x => ({ t: x.w, ok: x.id === q.id })); else typeMode = true;
     } else { label = "Tự gõ từ theo nghĩa"; prompt = '<p class="qtext big">' + esc(w.vi) + '</p><p class="small muted center">' + (w.pos ? esc(w.pos) + " · " : "") + "bắt đầu bằng <b>" + esc(w.w.slice(0, 1)) + "</b></p>"; typeMode = true; }
     shell('<section class="card quiz">' + head + '<span class="qtype">' + label + "</span>" + prompt +

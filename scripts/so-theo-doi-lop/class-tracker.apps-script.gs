@@ -120,7 +120,7 @@ function stSyncPA(onlyClasses) {
 /* ---------------- CÂY TỪ VỰNG ---------------- */
 /* Cây từ vựng IELTS (chương trình riêng, ít nhất 2 ngày tưới 1 lần). Trạng thái JSON (cột 11) có lw = ngày tưới gần nhất,
    ngày tính như trang web: floor((giờ UTC + 7h) / 1 ngày). Ghi lại mỗi khi có lượt lưu mới HOẶC sang ngày mới (để "trễ N ngày" tự tăng). */
-var ST_RT_TOTAL = 504, ST_RT_RHYTHM = 2;
+var ST_RT_TOTAL = 702, ST_RT_RHYTHM = 2;
 function stDay(t) { return Math.floor((t + 7 * 3600e3) / 864e5); }
 function stDayStr(d) { return Utilities.formatDate(new Date(d * 864e5), 'UTC', 'dd/MM'); }
 function stSyncRT(force) {

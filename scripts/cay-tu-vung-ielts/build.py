@@ -1,4 +1,3 @@
-# Dựng data.js của Cây từ vựng IELTS từ list1.txt + list2.txt (Model, Reading 1–6: file từ vựng của cô) + Reading 7–10 (../cay-tu-vung-reading/lists). H = thư mục làm việc chứa source.json (đoạn văn các bài, lấy câu ví dụ) và lists/.
 import json,re,sys,glob,os
 sys.path.insert(0,'../vocab2')
 H='/tmp/claude-0/-home-claude/8b58f47d-80a0-559a-a6bb-5d1f43873c47/scratchpad/'
@@ -59,7 +58,23 @@ for t in range(7,11):
     for p in (1,2,3):
         raw=open(H+f'vocab2/lists/T{t:02d}P{p}.txt').read().split('##')[0].strip().split('\n')
         add_unit(f'R{t}P{p}',t,p,f'IELTS Reading {t} · Passage {p}',src[(t,p)]['title'],raw)
-ids=[w['id'] for u in units for w in u['words']]; assert len(ids)==len(set(ids))
+# ---- Viết: từ vựng & collocations trong bài mẫu Task 2 (buổi 27–39), xuất hiện ≥2 lần ----
+wr=[]
+for line in open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'writing.txt')).read().strip().split('\n'):
+    c=[x.strip() for x in line.split('|')]; assert len(c)==6,line
+    w,pos,ipa,vi,fam,col=c; k=w.lower()
+    if k in seen: dups.append(f'W: {w} (đã có ở {seen[k]})'); continue
+    seen[k]='W'; wr.append({'id':slug(w),'w':w,'pos':pos,'ipa':ipa,'vi':vi,'fam':'' if fam=='—' else fam,'col':col,'ex':''})
+rd=[w for u in units for w in u['words']]
+# trộn đều: cứ khoảng 2–3 từ Đọc thì 1 từ Viết, giữ thứ tự từng danh sách
+allw=[];j=0
+for i,w in enumerate(rd):
+    allw.append(w)
+    while j<len(wr) and (j+1)*len(rd)<=(i+1)*len(wr): allw.append(wr[j]); j+=1
+allw+=wr[j:]
+K=max(1,round(len(allw)/50)); cut=[round(i*len(allw)/K) for i in range(K+1)]
+units=[{'key':f'C{n+1}','label':f'Chặng {n+1}','words':allw[cut[n]:cut[n+1]]} for n in range(K)]
+ids=[w['id'] for u in units for w in u['words']]; assert len(ids)==len(set(ids)),[x for x in ids if ids.count(x)>1][:5]
 json.dump(units,open('tree.json','w'),ensure_ascii=False,indent=0)
 print('units',len(units),'words',len(ids)); print('DUPS',len(dups),*dups,sep='\n'); print('NO EX',len(miss),*miss,sep='\n')
-for u in units: print(u['key'],len(u['words']))
+print([len(u['words']) for u in units])
