@@ -191,3 +191,5 @@ function stSetup() {
   stSyncPA(null); stSyncRT(true);
 }
 function stHourly() { stSyncRT(false); }
+/* Chạy tay trong trình soạn thảo để cập nhật cột CÂY TỪ VỰNG ngay. */
+function stCayTuVungNgay() { CacheService.getScriptCache().remove('st_books'); stSyncRT(true); }
