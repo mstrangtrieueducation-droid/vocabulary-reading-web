@@ -92,7 +92,7 @@ function appendLog(code, name, events) {
 /* ---------------- GET ---------------- */
 function doGet(e) {
   var p = e.parameter || {};
-  if (p.action === 'admin' || p.action === 'detail') return adminGet(p);
+  if (p.action === 'admin' || p.action === 'detail' || p.action === 'forminfo') return adminGet(p);
   var code = String(p.hs || '').trim();
   var lock = LockService.getScriptLock(); lock.waitLock(20000);
   try {
@@ -107,13 +107,14 @@ function doGet(e) {
     }
     var ls = liveStatus(r); if (ls !== r[COL['Trạng thái'] - 1]) { r[COL['Trạng thái'] - 1] = ls; changed = true; }
     if (changed) sh.getRange(i + 2, 1, 1, HEAD.length).setValues([r]);
-    return json({ ok: true, now: new Date().toISOString(), student: { name: r[1], cls: r[2], start: start.toISOString(), deadline: deadline instanceof Date ? deadline.toISOString() : null }, state: readState(code) });
+    return json({ ok: true, now: new Date().toISOString(), student: { name: r[1], cls: r[2], start: start.toISOString(), deadline: deadline instanceof Date ? deadline.toISOString() : null }, state: readState(code), videos: videoList(code) });
   } finally { lock.releaseLock(); }
 }
 
 function adminGet(p) {
   if (p.key !== ADMIN_KEY) return json({ ok: false, error: 'key' });
   var sh = SS().getSheetByName(SHEET), vals = rows(sh);
+  if (p.action === 'forminfo') return json({ ok: true, form: ntFormInfo() });
   if (p.action === 'admin') {
     return json({ ok: true, now: new Date().toISOString(), base: BASE_URL, students: vals.filter(function (r) { return r[0]; }).map(function (r) { var o = rowObj(r); o.status = liveStatus(r); return o; }) });
   }
@@ -125,7 +126,7 @@ function adminGet(p) {
     for (var j = lv.length - 1; j >= 0 && log.length < 150; j--) if (String(lv[j][1]) === code) log.push({ at: iso(lv[j][0]), unit: lv[j][3], part: lv[j][4], score: lv[j][5], detail: lv[j][6] });
   }
   var o = rowObj(vals[i]); o.status = liveStatus(vals[i]);
-  return json({ ok: true, student: o, state: readState(code), log: log });
+  return json({ ok: true, student: o, state: readState(code), log: log, videos: videoList(code) });
 }
 
 /* ---------------- POST ---------------- */
@@ -200,7 +201,7 @@ function save(body) {
     r[COL['Trạng thái'] - 1] = s.completed ? 'Hoàn thành' : (dl instanceof Date && Date.now() > dl.getTime() ? 'Hết hạn' : 'Đang học');
     r[COL['Tiến độ'] - 1] = "'" + (s.percent || 0) + '%'; r[COL['Đang học'] - 1] = s.current || '';
     r[COL['Số bài xong'] - 1] = "'" + (s.unitsDone || 0) + '/14'; r[COL['Điểm từ vựng TB'] - 1] = s.vocab == null ? '' : s.vocab;
-    r[COL['Điểm ngữ pháp TB'] - 1] = s.grammar == null ? '' : s.grammar; r[COL['Phát âm TB'] - 1] = s.speak == null ? '' : s.speak;
+    r[COL['Điểm ngữ pháp TB'] - 1] = s.grammar == null ? '' : s.grammar; (function () { var b = videoBest(code), ks = Object.keys(b); r[COL['Phát âm TB'] - 1] = ks.length ? Math.round(ks.reduce(function (x, k) { return x + b[k].score; }, 0) / ks.length) : ''; })();
     r[COL['Kiểm tra cuối'] - 1] = s.final == null ? '' : s.final; r[COL['Từ hay sai'] - 1] = s.weak || ''; r[COL['Hoạt động gần nhất'] - 1] = new Date();
     sh.getRange(i + 2, 1, 1, HEAD.length).setValues([r]);
     if (body.events && body.events.length) appendLog(code, r[1], body.events);
@@ -341,6 +342,178 @@ function scoreAzure(body, target) {
   var tip = pass ? (score >= 90 ? 'Rất chuẩn! Tiếp tục nhé.' : 'Đạt rồi, sửa thêm âm được nhắc cho chuẩn hơn.') : (errs.length ? 'Em sửa âm được nhắc rồi đọc lại nhé.' : 'Em đọc rõ và đủ từng âm rồi thử lại nhé.');
   return { result: { heard: nb.Display || nb.Lexical || '', score: score, pass: pass, errors: errs.slice(0, 3).map(function (e) { return { sound: e.sound, fix: e.fix }; }), tip: tip,
     detail: { acc: acc, comp: comp, pron: pron, flu: pa.FluencyScore, ph: words.map(function (w) { return (w.Phonemes || []).map(function (ph) { return ph.Phoneme + ':' + Math.round(Number((ph.PronunciationAssessment || ph).AccuracyScore) || 0); }).join(' '); }).join(' | ') }, ms: Date.now() - t0, engine: 'azure' } };
+}
+
+
+/* ======================================================================
+   PHÁT ÂM KIỂU KIDS: học sinh quay màn hình đọc to → nộp Google Form → Gemini tự chấm.
+   - ntSetup(): chạy 1 lần (tạo Form, sheet "Video phát âm", trigger). Câu "tải video" thêm tay trong Form.
+   - ntOnSubmit: Form gửi → xếp hàng. ntGradeQueue (5 phút/lần): chấm từng video bằng Gemini.
+   - Kết quả: sheet "Video phát âm" + Nhật ký + cột "Phát âm TB"; trang học sinh tự hiện điểm, nhận xét.
+   ====================================================================== */
+var VIDEO = 'Video phát âm';
+var VHEAD = ['Thời gian nộp', 'Mã phản hồi', 'Mã học sinh', 'Họ và tên', 'Lớp', 'Bài', 'Mã tệp', 'Trạng thái', 'Điểm', 'Nhận xét (JSON)', 'Số lần thử', 'Chấm lúc'];
+var GEMINI_VIDEO_MODEL = 'gemini-3.8-flash';
+var VQ = ['Mã học sinh', 'Họ và tên', 'Lớp', 'Mã bài'];
+
+function vSheet() {
+  var ss = SS(), sh = ss.getSheetByName(VIDEO);
+  if (!sh) { sh = ss.insertSheet(VIDEO); sh.getRange(1, 1, 1, VHEAD.length).setValues([VHEAD]).setFontWeight('bold').setBackground('#0b123f').setFontColor('#ffffff'); sh.setFrozenRows(1); }
+  return sh;
+}
+function ntSetup() {
+  var P = PropertiesService.getScriptProperties(), id = P.getProperty('NT_FORM_ID'), form;
+  if (id) { try { form = FormApp.openById(id); } catch (e) { form = null; } }
+  if (!form) {
+    form = FormApp.create('NỀN TẢNG IELTS | NỘP VIDEO PHÁT ÂM');
+    form.setDescription('Em quay màn hình trang "Nộp bài" của Nền tảng IELTS, đọc to các từ và câu trên màn hình, rồi tải video lên đây. Họ tên, lớp, mã bài đã được điền sẵn — em không sửa.');
+    VQ.forEach(function (t) { form.addTextItem().setTitle(t).setRequired(true); });
+    form.setConfirmationMessage('Cô đã nhận video. Máy sẽ chấm trong khoảng 5–15 phút, điểm và nhận xét hiện ngay trong bài Phát âm trên trang Nền tảng của em.');
+    form.setAllowResponseEdits(false); form.setLimitOneResponsePerUser(false);
+    P.setProperty('NT_FORM_ID', form.getId());
+  }
+  vSheet();
+  ScriptApp.getProjectTriggers().forEach(function (t) { if (['ntOnSubmit', 'ntGradeQueue'].indexOf(t.getHandlerFunction()) >= 0) ScriptApp.deleteTrigger(t); });
+  ScriptApp.newTrigger('ntOnSubmit').forForm(form).onFormSubmit().create();
+  ScriptApp.newTrigger('ntGradeQueue').timeBased().everyMinutes(5).create();
+  Logger.log('Form sửa: ' + form.getEditUrl());
+  Logger.log('Form nộp: ' + form.getPublishedUrl());
+  Logger.log(JSON.stringify(ntFormInfo()));
+}
+function ntFormInfo() {
+  var id = PropertiesService.getScriptProperties().getProperty('NT_FORM_ID'); if (!id) return null;
+  var form = FormApp.openById(id), r = form.createResponse(), items = form.getItems(), map = {};
+  items.forEach(function (it) { var t = it.getTitle(); if (VQ.indexOf(t) >= 0 && it.getType() === FormApp.ItemType.TEXT) r.withItemResponse(it.asTextItem().createResponse('__' + VQ.indexOf(t) + '__')); });
+  var url = r.toPrefilledUrl();
+  VQ.forEach(function (t, i) { var m = url.match(new RegExp('(entry\\.\\d+)=__' + i + '__')); if (m) map[t] = m[1]; });
+  var hasFile = items.some(function (it) { return it.getType() === FormApp.ItemType.FILE_UPLOAD; });
+  return { url: form.getPublishedUrl(), edit: form.getEditUrl(), entries: map, hasFileUpload: hasFile };
+}
+function itemVal(resp, title) {
+  var out = null;
+  resp.getItemResponses().forEach(function (ir) { if (ir.getItem().getTitle() === title) out = ir.getResponse(); });
+  return out;
+}
+function ntOnSubmit(e) {
+  var resp = e && e.response; if (!resp) return;
+  var files = [];
+  resp.getItemResponses().forEach(function (ir) { if (ir.getItem().getType() === FormApp.ItemType.FILE_UPLOAD) files = files.concat(ir.getResponse() || []); });
+  var code = String(itemVal(resp, 'Mã học sinh') || '').trim(), unit = String(itemVal(resp, 'Mã bài') || '').trim();
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    vSheet().appendRow([resp.getTimestamp(), resp.getId(), code, itemVal(resp, 'Họ và tên') || '', itemVal(resp, 'Lớp') || '', unit, files.join(','), files.length ? 'Chờ chấm' : 'Không có video', '', '', 0, '']);
+    var sh = SS().getSheetByName(SHEET), vals = rows(sh), i = findIdx(vals, code);
+    if (i >= 0) { appendLog(code, vals[i][1], [{ unit: unit, part: 'Nộp video phát âm', score: '', detail: files.length ? 'Chờ máy chấm' : 'Thiếu video' }]); }
+  } finally { lock.releaseLock(); }
+  try { ScriptApp.newTrigger('ntGradeQueue').timeBased().after(60 * 1000).create(); } catch (x) {}
+}
+function unitNo(s) { var m = String(s || '').match(/(\d{1,2})\s*$/); return m ? +m[1] : 0; }
+var VOCAB_CACHE = null;
+function vocabUnit(n) {
+  if (!VOCAB_CACHE) {
+    var t = UrlFetchApp.fetch(BASE_URL + 'vocab.js?v=' + Date.now(), { muteHttpExceptions: true }).getContentText();
+    VOCAB_CACHE = JSON.parse(t.slice(t.indexOf('['), t.lastIndexOf(']') + 1));
+  }
+  return VOCAB_CACHE.filter(function (u) { return u.unit === n; })[0] || null;
+}
+// Nội dung học sinh phải đọc trong video — PHẢI giống hệt readingSheet() trên web (app.js)
+function readingList(u) {
+  var words = u.entries.map(function (e) { return e.speak.join(' · '); });
+  var es = u.entries.filter(function (e) { return e.ex; }), sents = [];
+  for (var k = 0; k < 5 && es.length; k++) sents.push(es[Math.floor(k * es.length / 5)].ex);
+  return { words: words, sents: sents };
+}
+function ntGradeQueue() {
+  var lock = LockService.getScriptLock(); if (!lock.tryLock(1000)) return;   // một lượt chấm một lúc
+  var t0 = Date.now();
+  try {
+    var sh = vSheet(), last = sh.getLastRow(); if (last < 2) return;
+    var v = sh.getRange(2, 1, last - 1, VHEAD.length).getValues();
+    for (var i = 0; i < v.length && Date.now() - t0 < 200000; i++) {
+      var st = v[i][7], tries = +v[i][10] || 0;
+      if (!(st === 'Chờ chấm' || (st === 'Lỗi, thử lại' && tries < 3))) continue;
+      sh.getRange(i + 2, 8).setValue('Đang chấm'); SpreadsheetApp.flush();
+      var res;
+      try { res = gradeVideo(v[i]); } catch (e) { res = { err: String(e && e.message || e).slice(0, 300) }; }
+      if (res.err) { sh.getRange(i + 2, 8, 1, 5).setValues([[tries + 1 >= 3 ? 'Lỗi — cô xem tay' : 'Lỗi, thử lại', '', JSON.stringify({ error: res.err }), tries + 1, new Date()]]); continue; }
+      sh.getRange(i + 2, 8, 1, 5).setValues([['Đã chấm', res.score, JSON.stringify(res), tries + 1, new Date()]]);
+      afterGrade(String(v[i][2]), String(v[i][5]), res);
+    }
+  } finally { lock.releaseLock(); }
+}
+function afterGrade(code, unitCode, res) {
+  var sh = SS().getSheetByName(SHEET), vals = rows(sh), i = findIdx(vals, code); if (i < 0) return;
+  appendLog(code, vals[i][1], [{ unit: unitCode, part: 'Máy chấm video phát âm', score: res.score, detail: res.summary || '' }]);
+  var best = videoBest(code), ks = Object.keys(best);
+  if (ks.length) { vals[i][COL['Phát âm TB'] - 1] = Math.round(ks.reduce(function (a, k) { return a + best[k].score; }, 0) / ks.length); sh.getRange(i + 2, 1, 1, HEAD.length).setValues([vals[i]]); }
+}
+function videoRows(code) {
+  var sh = SS().getSheetByName(VIDEO); if (!sh || sh.getLastRow() < 2) return [];
+  return sh.getRange(2, 1, sh.getLastRow() - 1, VHEAD.length).getValues().filter(function (r) { return String(r[2]) === code; });
+}
+function videoBest(code) {   // điểm cao nhất từng bài
+  var best = {};
+  videoRows(code).forEach(function (r) { var u = unitNo(r[5]); if (r[7] === 'Đã chấm' && u && (!best[u] || +r[8] > best[u].score)) best[u] = { score: +r[8] }; });
+  return best;
+}
+function videoList(code) {   // gửi về trang học sinh / quản trị
+  return videoRows(code).map(function (r) {
+    var fb = null; try { fb = r[9] ? JSON.parse(r[9]) : null; } catch (e) {}
+    return { at: iso(r[0]), unit: unitNo(r[5]), status: r[7], score: r[8] === '' ? null : +r[8], fb: r[7] === 'Đã chấm' ? fb : null, gradedAt: iso(r[11]) };
+  });
+}
+/* ---------- Gemini đọc video ---------- */
+function gradeVideo(r) {
+  var key = geminiKey(); if (!key) return { err: 'Chưa có GEMINI_KEY' };
+  var fileId = String(r[6]).split(',')[0]; if (!fileId) return { err: 'Không có video' };
+  var n = unitNo(r[5]), u = vocabUnit(n); if (!u) return { err: 'Không rõ bài ' + r[5] };
+  var f = DriveApp.getFileById(fileId), size = f.getSize(), mime = f.getMimeType() || 'video/mp4';
+  if (size > 1500 * 1024 * 1024) return { err: 'Video quá nặng (' + Math.round(size / 1048576) + ' MB)' };
+  var uri = geminiUpload(key, fileId, size, mime, 'nt-' + r[2] + '-' + n);
+  try {
+    var L = readingList(u);
+    var prompt = 'Bạn là giáo viên phát âm tiếng Anh (giọng Mỹ), chấm bài cho học sinh Việt Nam, trình độ B1. Video là bản quay màn hình: học sinh mở trang "Nộp bài – Bài ' + n + '" (Nền tảng IELTS) và ĐỌC TO các từ, câu hiện trên màn hình.\n' +
+      'Học sinh: "' + r[3] + '". Danh sách phải đọc:\nA. TỪ (theo thứ tự): ' + L.words.map(function (w, i) { return (i + 1) + '. ' + w; }).join(' | ') + '\nB. CÂU: ' + L.sents.map(function (s, i) { return (i + 1) + '. ' + s; }).join(' | ') + '\n' +
+      'Yêu cầu: (1) kiểm tra màn hình có đúng trang Bài ' + n + ' không và có giọng học sinh đọc không (giọng máy/giọng mẫu phát ra không tính). (2) Nghe THẬT KỸ từng từ, KHÔNG đoán theo danh sách: chỉ coi là đúng khi nghe rõ đủ âm. Bắt các lỗi hay gặp của người Việt: nuốt âm cuối (/t/, /d/, /k/, /s/, /z/, /tʃ/, /st/…), sai nguyên âm dài/ngắn, sai trọng âm, đọc /θ/ /ð/ thành t/d, /ʃ/ thành s, bỏ từ.\n' +
+      '(3) Câu: chấm nối âm, âm cuối, trọng âm, ngắt nghỉ.\nCho điểm 0–100 (đọc thiếu nhiều thì điểm thấp). Viết NHẬN XÉT BẰNG TIẾNG VIỆT, ngắn, cụ thể, xưng "em".\n' +
+      'Trả về JSON đúng mẫu: {"screen_ok": true/false, "voice_ok": true/false, "score": 0-100, "summary": "1–2 câu nhận xét chung", "words": [{"w": "từ trong danh sách", "ok": true/false, "issue": "lỗi cụ thể nếu sai", "fix": "cách sửa ngắn"}], "sentences": [{"i": 1, "ok": true/false, "issue": "...", "fix": "..."}], "missing": ["từ/câu em không đọc"], "tips": ["tối đa 3 lời khuyên ưu tiên"]}. Trong "words" chỉ liệt kê các từ SAI hoặc CHƯA RÕ (từ đúng thì bỏ qua).';
+    var body = { contents: [{ role: 'user', parts: [{ file_data: { mime_type: mime, file_uri: uri } }, { text: prompt }] }],
+      generationConfig: { temperature: 0.2, responseMimeType: 'application/json', maxOutputTokens: 6000, mediaResolution: 'MEDIA_RESOLUTION_LOW' } };
+    var res = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/models/' + GEMINI_VIDEO_MODEL + ':generateContent', { method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key }, muteHttpExceptions: true, payload: JSON.stringify(body) });
+    if (res.getResponseCode() !== 200) return { err: 'Gemini ' + res.getResponseCode() + ' ' + res.getContentText().slice(0, 200) };
+    var j = JSON.parse(res.getContentText()), t = j.candidates[0].content.parts.map(function (p) { return p.text || ''; }).join('');
+    var out = JSON.parse(t.replace(/^\s*```(json)?|```\s*$/g, '').trim());
+    out.score = Math.max(0, Math.min(100, Math.round(+out.score || 0)));
+    if (out.screen_ok === false || out.voice_ok === false) { out.score = Math.min(out.score, 30); out.summary = (out.voice_ok === false ? 'Video chưa nghe rõ giọng em đọc. ' : 'Video chưa quay đúng trang Nộp bài của Bài ' + n + '. ') + (out.summary || '') + ' Em quay lại và nộp lại nhé.'; }
+    out.model = GEMINI_VIDEO_MODEL; out.unit = n;
+    return out;
+  } finally { try { UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/' + uri.split('/v1beta/')[1], { method: 'delete', headers: { 'x-goog-api-key': key }, muteHttpExceptions: true }); } catch (x) {} }
+}
+function geminiUpload(key, fileId, size, mime, name) {
+  var start = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/upload/v1beta/files', {
+    method: 'post', contentType: 'application/json', muteHttpExceptions: true,
+    headers: { 'x-goog-api-key': key, 'X-Goog-Upload-Protocol': 'resumable', 'X-Goog-Upload-Command': 'start', 'X-Goog-Upload-Header-Content-Length': String(size), 'X-Goog-Upload-Header-Content-Type': mime },
+    payload: JSON.stringify({ file: { display_name: name } })
+  });
+  var h = start.getAllHeaders(), up = h['x-goog-upload-url'] || h['X-Goog-Upload-URL'];
+  if (!up) throw new Error('Gemini upload start ' + start.getResponseCode() + ' ' + start.getContentText().slice(0, 150));
+  var CH = 16 * 1024 * 1024, off = 0, token = ScriptApp.getOAuthToken(), res;
+  while (off < size) {
+    var end = Math.min(size, off + CH) - 1;
+    var part = UrlFetchApp.fetch('https://www.googleapis.com/drive/v3/files/' + fileId + '?alt=media', { headers: { Authorization: 'Bearer ' + token, Range: 'bytes=' + off + '-' + end }, muteHttpExceptions: true });
+    if (part.getResponseCode() >= 300) throw new Error('Drive ' + part.getResponseCode());
+    var bytes = part.getContent(), last = end + 1 >= size;
+    res = UrlFetchApp.fetch(up, { method: 'post', muteHttpExceptions: true, payload: bytes, headers: { 'X-Goog-Upload-Command': last ? 'upload, finalize' : 'upload', 'X-Goog-Upload-Offset': String(off) } });
+    if (res.getResponseCode() >= 300) throw new Error('Gemini upload ' + res.getResponseCode() + ' ' + res.getContentText().slice(0, 150));
+    off += bytes.length;
+  }
+  var file = JSON.parse(res.getContentText()).file, name2 = file.name, uri = file.uri;
+  for (var k = 0; k < 40 && file.state === 'PROCESSING'; k++) {
+    Utilities.sleep(3000);
+    file = JSON.parse(UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/' + name2, { headers: { 'x-goog-api-key': key }, muteHttpExceptions: true }).getContentText());
+  }
+  if (file.state !== 'ACTIVE') throw new Error('Gemini chưa xử lý xong video (' + file.state + ')');
+  return uri;
 }
 
 // Chạy một lần sau khi thêm chấm AI để Google hỏi quyền gọi ra ngoài (UrlFetchApp) + đọc Script Properties.
