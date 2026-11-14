@@ -118,35 +118,47 @@ function stSyncPA(onlyClasses) {
 }
 
 /* ---------------- CÂY TỪ VỰNG ---------------- */
+/* Cây từ vựng IELTS (chương trình riêng, ít nhất 2 ngày tưới 1 lần). Trạng thái JSON (cột 11) có lw = ngày tưới gần nhất,
+   ngày tính như trang web: floor((giờ UTC + 7h) / 1 ngày). Ghi lại mỗi khi có lượt lưu mới HOẶC sang ngày mới (để "trễ N ngày" tự tăng). */
+var ST_RT_TOTAL = 504, ST_RT_RHYTHM = 2;
+function stDay(t) { return Math.floor((t + 7 * 3600e3) / 864e5); }
+function stDayStr(d) { return Utilities.formatDate(new Date(d * 864e5), 'UTC', 'dd/MM'); }
 function stSyncRT(force) {
   var P = PropertiesService.getScriptProperties();
   if (!P.getProperty('RT_SHEET_ID')) return;
   var sh = rtSS().getSheetByName(RT_TAB), last = sh.getLastRow(); if (last < 2) return;
-  var v = sh.getRange(2, 1, last - 1, 10).getValues(), data = {}, newest = 0;
+  var v = sh.getRange(2, 1, last - 1, 11).getValues(), data = {}, newest = 0, today = stDay(Date.now());
   v.forEach(function (r) {
     var cls = String(r[0]).trim().toUpperCase(), name = String(r[1]).replace(/\s+/g, ' ').trim();
     if (!/^IELTS \d+$/.test(cls) || stKey(name).length < 5) return;
     if (r[9] instanceof Date) newest = Math.max(newest, r[9].getTime());
-    (data[cls] = data[cls] || {})[stKey(name)] = { name: name, r: r };
+    var st = {}; try { st = JSON.parse(r[10]) || {}; } catch (e) {}
+    var lw = +st.lw || 0; if (!lw && st.days) Object.keys(st.days).forEach(function (d) { lw = Math.max(lw, +d || 0); });
+    (data[cls] = data[cls] || {})[stKey(name)] = { name: name, r: r, lw: lw, n: +st.n || (st.days ? Object.keys(st.days).length : 0) };
   });
-  if (force !== true && newest && String(newest) === P.getProperty('ST_RT_LAST')) return;   // không có gì mới
+  var stamp = newest + '|' + today;
+  if (force !== true && newest && stamp === P.getProperty('ST_RT_LAST')) return;   // không có gì mới, cùng ngày
   var books = stBooks();
   Object.keys(data).forEach(function (cls) {
     if (!books[cls]) return;
     try {
-      var ss = SpreadsheetApp.openById(books[cls]), today = Utilities.formatDate(new Date(), ST_TZ, 'dd/MM/yyyy');
+      var ss = SpreadsheetApp.openById(books[cls]);
       var rows = stRows(stRoster(ss), data[cls]).map(function (s) {
         if (!s.d) return [s.no, s.name, s.group, '— chưa vào cây', '', '', '', '', '', '', ''];
-        var r = s.d.r, when = r[9] instanceof Date ? r[9] : null;
-        var watered = when && Utilities.formatDate(when, ST_TZ, 'dd/MM/yyyy') === today ? '✅ hôm nay' : '';
-        return [s.no, s.name, s.group, +r[2] || 0, +r[3] || 0, +r[5] || 0, +r[6] || 0, +r[7] || 0, +r[8] || 0, stTime(when), watered];
+        var r = s.d.r, lw = s.d.lw, due = lw + ST_RT_RHYTHM, status;
+        if (!lw) status = '— chưa tưới lần nào';
+        else if (lw === today) status = '✅ Đã tưới hôm nay';
+        else if (today <= due) status = today === due ? '⏰ Đúng nhịp · hạn hôm nay' : '✅ Đúng nhịp';
+        else status = '⚠️ Trễ ' + (today - due) + ' ngày';
+        return [s.no, s.name, s.group, status, lw ? stDayStr(lw) : '', lw ? stDayStr(due) : '',
+          (+r[3] || 0) + '/' + ST_RT_TOTAL, +r[4] || 0, (+r[6] || 0) + (+r[7] || 0), +r[7] || 0, s.d.n];
       });
-      stWriteTab(ss, ST_RT_TAB, 'Tự động từ Cây từ vựng học thuật (IELTS Reading). Cập nhật ' + stTime(new Date()) + ' (mỗi giờ). Không sửa tay — sẽ bị ghi đè.',
-        ['STT', 'HỌ TÊN HỌC VIÊN', 'NHÓM', 'BÀI ĐÃ GIEO', 'SỐ TỪ', 'ĐANG LỚN', 'NHỚ CHẮC', 'RA QUẢ', 'NGÀY LIỀN', 'TƯỚI GẦN NHẤT', 'HÔM NAY'],
-        rows, [40, 190, 90, 80, 70, 80, 80, 70, 80, 130, 90]);
+      stWriteTab(ss, ST_RT_TAB, 'Tự động từ Cây từ vựng IELTS (ít nhất 2 ngày tưới 1 lần). Cập nhật ' + stTime(new Date()) + ' (mỗi giờ). Không sửa tay — sẽ bị ghi đè.',
+        ['STT', 'HỌ TÊN HỌC VIÊN', 'NHÓM', 'NHỊP TƯỚI', 'TƯỚI GẦN NHẤT', 'HẠN TƯỚI TIẾP', 'ĐÃ GIEO', 'CẦN ÔN', 'NHỚ CHẮC', 'RA QUẢ', 'SỐ LẦN TƯỚI'],
+        rows, [40, 190, 90, 190, 110, 110, 80, 70, 80, 70, 90]);
     } catch (e) { console.log('stSyncRT ' + cls + ': ' + e); }
   });
-  if (newest) P.setProperty('ST_RT_LAST', String(newest));
+  P.setProperty('ST_RT_LAST', stamp);
 }
 
 /* Chạy 1 lần trong trình soạn thảo: cài trigger mỗi giờ cho Cây từ vựng + ghi lần đầu cả hai tab. */

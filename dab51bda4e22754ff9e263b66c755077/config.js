@@ -2,7 +2,7 @@
    API: Apps Script dự án Nền tảng IELTS (tệp CayTuVungReading.gs = scripts/cay-tu-vung-reading/server.apps-script.gs) — lưu cây của từng học sinh, bảng theo dõi cho cô.
    Nhịp: ít nhất RHYTHM_DAYS ngày tưới 1 lần; mỗi lần ≤ REVIEW_MAX từ ôn + NEW_PER_SESSION từ mới (gieo thêm EXTRA từ/lần, tối đa NEW_MAX_DAY từ mới/ngày). */
 window.RT_CONFIG = {
-  CLASSES: ["IELTS 45", "IELTS 46", "IELTS 47", "IELTS 48", "IELTS 49", "IELTS 50", "IELTS 51", "IELTS 52"],
+  CLASSES: ["IELTS 35", "IELTS 40", "IELTS 41", "IELTS 42", "IELTS 43", "IELTS 44", "IELTS 45", "IELTS 46", "IELTS 47", "IELTS 48", "IELTS 49", "IELTS 50", "IELTS 51", "IELTS 52"],
   NEW_PER_SESSION: 10,
   EXTRA: 5,
   NEW_MAX_DAY: 20,
