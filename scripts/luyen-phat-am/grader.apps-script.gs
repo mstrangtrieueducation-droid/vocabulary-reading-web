@@ -95,16 +95,19 @@ function paGradeQueue() {
     var keep = P.getProperty('PA_TRIGGER_ID');   // dọn các trigger "chấm sau 60 s" đã chạy
     ScriptApp.getProjectTriggers().forEach(function (t) { if (t.getHandlerFunction() === 'paGradeQueue' && t.getUniqueId() !== keep) { try { ScriptApp.deleteTrigger(t); } catch (x) {} } });
     var sh = paSheet(), last = sh.getLastRow(); if (last < 2) return;
-    var v = sh.getRange(2, 1, last - 1, PA_HEAD.length).getValues();
+    var v = sh.getRange(2, 1, last - 1, PA_HEAD.length).getValues(), touched = {};
     for (var i = 0; i < v.length && Date.now() - t0 < 150000; i++) {
       var st = v[i][6], tries = +v[i][11] || 0;
       if (!(st === 'Chờ chấm' || (st === 'Lỗi, thử lại' && tries < 3))) continue;
-      sh.getRange(i + 2, 7).setValue('Đang chấm'); SpreadsheetApp.flush();
+      sh.getRange(i + 2, 7).setValue('Đang chấm'); SpreadsheetApp.flush(); touched[String(v[i][3]).trim().toUpperCase()] = 1;
       var res;
       try { res = paGradeVideo(v[i]); } catch (e) { res = { err: String(e && e.message || e).slice(0, 300) }; }
       if (res.err) { sh.getRange(i + 2, 7, 1, 8).setValues([[tries + 1 >= 3 ? 'Lỗi — cô xem tay' : 'Lỗi, thử lại', '', '', '', JSON.stringify({ error: res.err }), tries + 1, new Date(), '']]); continue; }
       sh.getRange(i + 2, 7, 1, 8).setValues([['Đã chấm', res.score, res.pass ? 'Đạt' : 'Chưa đạt — luyện lại và nộp lại', res.summary || '', JSON.stringify(res), tries + 1, new Date(), res.usage ? res.usage.usd : '']]);
     }
+    SpreadsheetApp.flush();
+    var cls = Object.keys(touched);   // ghi điểm sang sổ lớp (tab "LUYỆN PHÁT ÂM", SoTheoDoiLop.gs)
+    if (cls.length) { try { stSyncPA(cls); } catch (e) { console.log('stSyncPA: ' + e); } }
   } finally { P.deleteProperty('PA_BUSY'); }
 }
 
