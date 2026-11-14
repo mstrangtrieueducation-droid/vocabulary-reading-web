@@ -25,6 +25,7 @@ const pick = (a, n) => shuffle(a).slice(0, n);
 const norm = s => String(s || "").toLowerCase().replace(/[’‘`]/g, "'").replace(/[^a-z0-9' ]+/g, " ").replace(/\s+/g, " ").trim();
 const today0 = () => { const d = new Date(); d.setHours(0, 0, 0, 0); return d.getTime(); };
 const fmtDate = t => { const d = new Date(t); return d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear(); };
+const fmtDT = t => { const d = new Date(t); return String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0") + " " + d.getDate() + "/" + (d.getMonth() + 1); };
 function toast(msg) { const t = document.getElementById("toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("on"), 2600); }
 const entryOf = n => { for (const u of V) for (const e of u.entries) if (e.n === n) return e; return null; };
 const unitOfEntry = n => V.find(u => u.entries.some(e => e.n === n));
@@ -852,8 +853,115 @@ function recErrorText(e) {
 
 /* ---------- Bước 2: phát âm ---------- */
 function speak(i) {
+  if (C.SPEAK_MODE === "video") return speakVideo(i);
   if (AI_SCORING) return speakAI(i);
   return speakSR(i);
+}
+/* ---------- Phát âm kiểu KIDS: luyện trên web → quay màn hình đọc → nộp Form → Gemini tự chấm ---------- */
+let VIDEOS = [];   // kết quả chấm video từ máy chủ
+const unitCode = i => "NT-B" + String(i).padStart(2, "0");
+// PHẢI giống hệt readingList() trong Apps Script
+function readingList(i) {
+  const u = V[i - 1], words = u.entries.map(e => e.speak.join(" · ")), es = u.entries.filter(e => e.ex), sents = [];
+  for (let k = 0; k < 5 && es.length; k++) sents.push(es[Math.floor(k * es.length / 5)].ex);
+  return { words, sents };
+}
+function videosOf(i) { return VIDEOS.filter(v => v.unit === i).sort((a, b) => new Date(b.at) - new Date(a.at)); }
+function adoptVideos(list) {   // điểm máy chấm → tiến độ của em
+  VIDEOS = list || []; let changed = false;
+  for (let i = 1; i <= N_UNITS; i++) {
+    const g = videosOf(i).filter(v => v.status === "Đã chấm" && v.score != null); if (!g.length) continue;
+    const best = Math.max.apply(null, g.map(v => v.score)), u = U(i);
+    if (!u.speak || u.speak.score !== best || !u.speak.done) { u.speak = Object.assign({}, u.speak || {}, { done: 1, score: best, video: 1 }); changed = true; }
+  }
+  if (changed) { S.updatedAt = Date.now(); saveLocal(); }
+  return changed;
+}
+function formLink(i) {
+  if (!C.FORM_URL) return "";
+  try {
+    const u = new URL(C.FORM_URL), E = C.FORM_ENTRIES || {};
+    u.searchParams.set("usp", "pp_url");
+    if (E.hs) u.searchParams.set(E.hs, token);
+    if (E.name) u.searchParams.set(E.name, student && student.name || "");
+    if (E.cls) u.searchParams.set(E.cls, student && student.cls || "");
+    if (E.lesson) u.searchParams.set(E.lesson, unitCode(i));
+    return u.href;
+  } catch (e) { return ""; }
+}
+function fbHtml(v) {
+  const f = v.fb || {}, words = f.words || [], sents = f.sentences || [], miss = f.missing || [], tips = f.tips || [];
+  return '<div class="vres"><div class="vtop">' + '<div class="sring ' + (v.score >= 80 ? "g" : v.score >= 60 ? "m" : "b") + '"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" class="bg"/><circle cx="40" cy="40" r="34" class="fg" stroke-dasharray="213.6" stroke-dashoffset="' + (213.6 * (1 - v.score / 100)).toFixed(1) + '"/></svg><b>' + v.score + "</b><small>điểm</small></div>" +
+    '<div class="ecol"><p class="tip">' + esc(f.summary || "") + '</p><p class="small muted">Máy chấm lúc ' + fmtDT(v.gradedAt || v.at) + "</p></div></div>" +
+    (words.length ? '<h4>Từ cần sửa</h4><ol class="issues">' + words.map(w => "<li><b>" + esc(w.w) + "</b><span>" + esc(w.issue || "") + (w.fix ? " → " + esc(w.fix) : "") + "</span></li>").join("") + "</ol>" : '<p class="okline">✓ Các từ em đọc đều ổn.</p>') +
+    (sents.filter(x => !x.ok).length ? '<h4>Câu cần sửa</h4><ol class="issues">' + sents.filter(x => !x.ok).map(x => "<li><b>Câu " + esc(x.i) + "</b><span>" + esc(x.issue || "") + (x.fix ? " → " + esc(x.fix) : "") + "</span></li>").join("") + "</ol>" : "") +
+    (miss.length ? '<p class="hint warn">Em chưa đọc: ' + esc(miss.join(", ")) + "</p>" : "") +
+    (tips.length ? '<h4>Lời khuyên</h4><ul class="tips">' + tips.map(t => "<li>" + esc(t) + "</li>").join("") + "</ul>" : "") + "</div>";
+}
+function videoStatus(i) {
+  const vs = videosOf(i); if (!vs.length) return "";
+  const v = vs[0];
+  if (v.status === "Đã chấm" && v.score != null) return '<section class="card"><span class="kick">Kết quả bài nộp gần nhất</span>' + fbHtml(v) + "</section>";
+  const txt = v.status === "Không có video" ? "Bài nộp lúc " + fmtDT(v.at) + " chưa có video. Em nộp lại nhé." :
+    /^Lỗi/.test(v.status) ? "Máy chưa chấm được bài nộp lúc " + fmtDT(v.at) + (v.status === "Lỗi — cô xem tay" ? ", cô sẽ xem tay." : ", máy đang thử lại.") :
+    "Cô đã nhận video lúc " + fmtDT(v.at) + ". Máy đang chấm, thường mất 5–15 phút. Em bấm “Xem kết quả” để cập nhật.";
+  return '<section class="card"><span class="kick">Bài đã nộp</span><p style="margin:8px 0 0">' + txt + "</p></section>";
+}
+function refreshVideos(i) {
+  if (localMode || OWNER || !C.API_URL) return Promise.resolve();
+  return fetch(C.API_URL + "?action=load&hs=" + encodeURIComponent(token)).then(r => r.json()).then(j => { if (j.ok) { if (adoptVideos(j.videos)) push(); } });
+}
+function speakVideo(i, view) {
+  const u = V[i - 1], es = u.entries, L = readingList(i);
+  view = view || "practice";
+  const useLab = canLab;
+  const tabs = '<div class="seg"><button class="' + (view === "practice" ? "on" : "") + '" data-v="practice">1. Luyện đọc</button><button class="' + (view === "submit" ? "on" : "") + '" data-v="submit">2. Quay video & nộp</button></div>';
+  if (view === "practice") {
+    labKeep = useLab;
+    shell(lessonHead(i, 1) + videoStatus(i) + '<section class="card">' + tabs + '<p class="muted" style="margin:10px 0 4px">Em nghe mẫu, nghe chậm, rồi bấm 🎙️ tự thu giọng và ▶ nghe lại để so với mẫu. Phần này không chấm điểm — luyện kỹ rồi sang bước 2 quay video nộp cho cô.</p>' +
+      '<div class="plist">' + es.map((e, k) => '<div class="prow" data-k="' + k + '"><div class="pw"><b>' + esc(e.speak.join(" · ")) + '</b><span class="ipa">' + esc(e.ipa) + '</span><span class="muted small">' + esc(e.vi) + '</span></div><div class="pb"><button class="btn sound sm" data-a="say">🔊</button><button class="btn ghost sm" data-a="slow">🐢</button><button class="btn ghost sm" data-a="rec">🎙️</button><button class="btn ghost sm" data-a="play" disabled>▶</button></div></div>').join("") + "</div>" +
+      '<h3 style="margin-top:18px">Câu mẫu</h3><div class="plist">' + L.sents.map((t, k) => '<div class="prow" data-s="' + k + '"><div class="pw"><span>' + esc(t) + '</span></div><div class="pb"><button class="btn sound sm" data-a="say">🔊</button><button class="btn ghost sm" data-a="slow">🐢</button><button class="btn ghost sm" data-a="rec">🎙️</button><button class="btn ghost sm" data-a="play" disabled>▶</button></div></div>').join("") + "</div>" +
+      '<div class="nav center"><button class="btn primary" id="gosub">Sang bước 2: Quay video & nộp ➔</button></div></section>', "lesson");
+    const recs = {}; let recKey = null, stopT = null;
+    const textOf = row => row.dataset.k != null ? es[+row.dataset.k].speak.join(", ") : L.sents[+row.dataset.s];
+    app.querySelectorAll(".prow").forEach(row => {
+      const key = row.dataset.k != null ? "k" + row.dataset.k : "s" + row.dataset.s, txt = textOf(row);
+      row.querySelector('[data-a="say"]').onclick = () => useLab ? labSay(txt) : say(txt);
+      row.querySelector('[data-a="slow"]').onclick = () => useLab ? labSay(txt, true) : say(txt, true);
+      const recB = row.querySelector('[data-a="rec"]'), playB = row.querySelector('[data-a="play"]');
+      playB.onclick = () => { if (recs[key]) labPlayRaw(recs[key]); };
+      recB.onclick = () => {
+        if (!useLab) { toast("Máy này chưa thu giọng được, em luyện bằng nghe mẫu nhé."); return; }
+        if (recKey === key) { clearTimeout(stopT); setTimeout(() => { recKey = null; recs[key] = labStop(); recB.textContent = "🎙️"; recB.classList.remove("live"); playB.disabled = false; labPlayRaw(recs[key]); }, 250); return; }
+        if (recKey) return;
+        labStopPlay(); stopAudio(); recB.textContent = "…";
+        labReady().then(() => { recKey = key; labStart(); recB.textContent = "⏹"; recB.classList.add("live"); stopT = setTimeout(() => { if (recKey === key) recB.click(); }, 12000); })
+          .catch(err => { recB.textContent = "🎙️"; toast(recErrorText(err)); });
+      };
+    });
+    document.getElementById("gosub").onclick = () => speakVideo(i, "submit");
+  } else {
+    const url = formLink(i), code = unitCode(i);
+    shell(lessonHead(i, 1) + '<section class="card">' + tabs +
+      '<div class="codebar"><span><small>Mã bài</small><b>' + code + '</b></span><span><small>Học sinh</small><b>' + esc(student && student.name || "") + (student && student.cls ? " · " + esc(student.cls) : "") + "</b></span></div>" +
+      '<h3>Hướng dẫn quay video</h3><ol class="guide"><li>Bật <b>quay màn hình</b> (nhớ bật cả <b>micro</b>), để màn hình ở đúng trang này. Không cần quay mặt.</li>' +
+      "<li>Đọc to, rõ, chậm <b>tất cả từ ở phần A</b> theo thứ tự, rồi <b>5 câu ở phần B</b>. Không bật giọng mẫu khi đang quay.</li>" +
+      "<li>Đọc xong, dừng quay. Xem lại thử 5 giây để chắc nghe rõ giọng em.</li>" +
+      "<li>Bấm <b>Nộp bài</b>, đăng nhập Google nếu được hỏi, tải video lên rồi bấm <b>Gửi</b>.</li></ol>" +
+      '<div class="rsheet"><h3>A. Đọc các từ</h3><ol class="rwords">' + L.words.map(w => "<li>" + esc(w) + "</li>").join("") + "</ol>" +
+      '<h3>B. Đọc các câu</h3><ol class="rsents">' + L.sents.map(t => "<li>" + esc(t) + "</li>").join("") + "</ol></div>" +
+      (url ? '<a class="btn gold big block" id="send" href="' + esc(url) + '" target="_blank" rel="noopener">Nộp bài</a><p class="small muted center" style="margin-top:8px">Form đã điền sẵn tên, lớp và mã bài <b>' + code + "</b>. Em chỉ tải video lên rồi bấm Gửi.</p>" :
+        '<button class="btn gold big block" disabled>Nộp bài</button><p class="hint warn">Cô chưa mở Form nộp bài. Em giữ video lại và báo cô nhé.</p>') +
+      '<div class="nav center"><button class="btn ghost" id="chk">🔄 Xem kết quả chấm</button><button class="btn primary" id="nx">Sang bước tiếp ➔</button></div></section>' + videoStatus(i), "lesson");
+    const send = document.getElementById("send");
+    if (send) send.addEventListener("click", () => {
+      U(i).speak = Object.assign({}, U(i).speak || {}, { done: 1, sub: Date.now(), video: 1 });
+      save({ unit: i, part: "Phát âm", score: "", detail: "Mở Form nộp video " + code });
+    });
+    document.getElementById("chk").onclick = () => { toast("Đang cập nhật…"); refreshVideos(i).then(() => speakVideo(i, "submit")); };
+    document.getElementById("nx").onclick = () => { if (!(U(i).speak && U(i).speak.done)) { toast("Em quay video và bấm Nộp bài trước nhé."); return; } go("quiz:" + i); };
+  }
+  app.querySelectorAll(".seg [data-v]").forEach(b => b.onclick = () => speakVideo(i, b.dataset.v));
 }
 function speakAI(i) {
   const AZ = C.GRADER === "azure", useLab = AZ && canLab;
@@ -1309,10 +1417,11 @@ function boot() {
     student = j.student;
     S = merge(j.state, loadLocal()) || blank();
     if (!S.start) S.start = new Date(student.start).getTime();
+    const vChanged = adoptVideos(j.videos);
     saveLocal();
     if (isLocked()) return lockScreen();
     home();
-    if (!j.state || (S.updatedAt || 0) > (j.state.updatedAt || 0)) push();
+    if (vChanged || !j.state || (S.updatedAt || 0) > (j.state.updatedAt || 0)) push();
   }).catch(() => {
     const l = loadLocal();
     if (l) { S = l; localMode = false; student = student || { name: "" }; home(); toast("Mạng yếu: em vẫn học được, tiến độ tự lưu khi có mạng."); }

@@ -370,3 +370,29 @@ mark{background:var(--gold2);border-radius:5px;padding:0 4px;font-weight:700}
 .issues li b{display:block;color:#b2301f;margin-bottom:2px}.issues li span{font-size:15px}
 .issues li.on{box-shadow:0 0 0 3px #f2a093}
 .mic.live{animation:micp 1s infinite}@keyframes micp{0%,100%{box-shadow:0 0 0 0 rgba(208,58,43,.45)}50%{box-shadow:0 0 0 16px rgba(208,58,43,0)}}
+
+/* ---- Phát âm kiểu KIDS: luyện + nộp video ---- */
+.seg{display:flex;gap:6px;background:#eef1f8;border-radius:12px;padding:4px;margin:0 0 6px}
+.seg button{flex:1;border:0;background:transparent;padding:10px 8px;border-radius:9px;font:inherit;font-weight:700;color:#55607a;cursor:pointer}
+.seg button.on{background:#fff;color:var(--ink,#0d1433);box-shadow:0 1px 4px rgba(13,20,51,.12)}
+.plist{display:grid;gap:8px;margin-top:8px}
+.prow{display:flex;align-items:center;gap:10px;justify-content:space-between;border:1px solid #e3e7f1;border-radius:12px;padding:9px 12px;background:#fff}
+.prow .pw{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;min-width:0}
+.prow .pw b{font-size:18px}.prow .pw .ipa{color:#3a56d4;font-size:15px}
+.prow .pb{display:flex;gap:6px;flex:none}
+.prow .pb .btn{min-width:42px;padding:8px 10px}
+.prow .pb .live{background:#d03a2b;color:#fff;border-color:#d03a2b}
+.codebar{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.codebar span{background:#0d1433;color:#fff;border-radius:12px;padding:8px 14px;display:flex;flex-direction:column}
+.codebar small{color:#f5c542;font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase}
+.codebar b{font-size:18px}
+ol.guide{padding-left:20px;margin:6px 0 12px}ol.guide li{margin:4px 0}
+.rsheet{background:#fffbea;border:2px solid #f5c542;border-radius:16px;padding:14px 18px;margin:12px 0}
+.rsheet h3{margin:4px 0 8px}
+.rsheet .rwords{columns:2;column-gap:28px;padding-left:28px;margin:0 0 10px;font-size:20px;font-weight:700;line-height:1.7}
+.rsheet .rsents{padding-left:24px;margin:0;font-size:18px;line-height:1.6}.rsheet .rsents li{margin:6px 0}
+@media (min-width:900px){.rsheet .rwords{columns:3}}
+@media (max-width:520px){.rsheet .rwords{columns:1;font-size:19px}.prow{flex-direction:column;align-items:flex-start}.prow .pb{align-self:stretch;justify-content:flex-end}}
+.vres h4{margin:14px 0 4px}.vtop{display:flex;gap:14px;align-items:center}
+.okline{color:#1f8a4c;font-weight:700}
+ul.tips{padding-left:20px;margin:4px 0}ul.tips li{margin:3px 0}
