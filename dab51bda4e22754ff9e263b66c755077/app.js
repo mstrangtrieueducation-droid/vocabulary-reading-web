@@ -30,9 +30,12 @@ U.forEach((u, i) => { const s = { t: i + 1, name: u.label || "Chặng " + (i + 1
 
 /* ---------- học sinh + trạng thái ---------- */
 let student = store.get("rt-student");
+let AUTO = { go: false, focus: "" };
 try {   // mở từ dashboard lớp: ?name=…&cls=… (họ tên + lớp của học sinh đang xem)
   const q = new URLSearchParams(location.search), qn = (q.get("name") || "").replace(/\s+/g, " ").trim(), qc = (q.get("cls") || "").replace(/\s+/g, " ").trim().toUpperCase();
-  if (qn.length >= 5 && (window.RT_CONFIG && window.RT_CONFIG.CLASSES || []).indexOf(qc) >= 0) { student = { name: qn, cls: qc }; store.set("rt-student", student); history.replaceState(null, "", location.pathname); }
+  if (qn.length >= 5 && (window.RT_CONFIG && window.RT_CONFIG.CLASSES || []).indexOf(qc) >= 0) { student = { name: qn, cls: qc }; store.set("rt-student", student); }
+  AUTO = { go: q.get("go") === "1", focus: q.get("focus") || "" };   // từ Vườn từ vựng: tưới ngay / luyện riêng 1 từ
+  if (location.search) history.replaceState(null, "", location.pathname);
 } catch (e) {}
 if (student && (!student.name || C.CLASSES.indexOf(student.cls) < 0)) student = null;
 const keyOf = s => "rt-state:" + s.name.toUpperCase() + "|" + s.cls;
@@ -75,8 +78,10 @@ async function pull() {
 const BOX_DAYS = [0, 1, 3, 7, 14, 30];
 function grade(id, ok) {
   const d = dayNow(); let w = S.w[id];
-  if (!w) { S.w[id] = ok ? [1, d + 1, 0, d] : [0, d + 1, 1, d]; return; }   // từ mới: lần đầu gặp
+  if (!w) { S.w[id] = ok ? [1, d + 1, 0, d, 1] : [0, d + 1, 1, d, 0]; return; }   // từ mới: lần đầu gặp; [4] = số lần đúng (Vườn từ vựng trên dashboard)
+  if (w[4] == null) w[4] = w[0];
   if (!ok) { w[0] = 0; w[1] = d + 1; w[2]++; return; }
+  w[4]++;
   if (w[1] > d) return;   // làm lại trong ngày không tính lên hộp
   w[0] = Math.min(5, w[0] + 1); w[1] = d + BOX_DAYS[w[0]];
 }
@@ -296,8 +301,10 @@ function kindFor(id) {
 }
 const typeable = w => !/[·\/]/.test(w.w);   // "brick · concrete · steel · tile" không bắt gõ
 function review(opt) {
-  const L = opt && opt.fresh ? { due: [], fresh: opt.fresh } : plan();
+  const practice = !!(opt && opt.ids);   // luyện riêng (từ Vườn từ vựng): không tính là một lần tưới
+  const L = practice ? { due: opt.ids.filter(id => S.w[id]), fresh: opt.ids.filter(id => !S.w[id]) } : opt && opt.fresh ? { due: [], fresh: opt.fresh } : plan();
   const queue = L.due.map(id => ({ id, k: kindFor(id) })).concat(L.fresh.map(id => ({ id, k: "learn" })));
+  if (practice) L.due.forEach(id => { const w = W[id]; queue.push({ id, k: w.ex || w.col ? (findForm(w.w, w.ex || w.col) ? "cloze" : "word") : "word", again: true }); });
   queue.forEach(q => { if ((q.k === "type" || q.k === "typemean") && !typeable(W[q.id])) q.k = "word"; });
   const total = queue.length, first = {}, wrong = new Set(); let i = 0, right = 0;
   if (!total) return home();
@@ -347,6 +354,9 @@ function review(opt) {
   const finish = () => {
     inReview = false;
     const d = dayNow(), r0 = rhythm(), wasLate = r0.k === "late";
+    if (practice) { save(); flush(false);
+      shell('<section class="card done"><div class="scene small">' + treeSvg(false) + '</div><h1>Luyện xong từ này! 🌿</h1><p>Em trả lời đúng ngay lần đầu <b>' + right + "/" + L.due.concat(L.fresh).length + '</b>. Luyện riêng không thay cho lượt tưới — nhớ tưới cả vườn ít nhất 2 ngày 1 lần nhé.</p><button class="btn primary block" id="hm">Về cây của em</button></section>', "page-done");
+      document.getElementById("hm").onclick = home; return; }
     S.days[d] = 1; if (S.lw !== d) S.n = (S.n || 0) + 1; S.lw = d; if (opt && opt.fresh) S.x[d] = (S.x[d] || 0) + opt.fresh.length;
     save(); flush(false);
     const st = rhythmStreak(), r = rhythm();
@@ -362,5 +372,11 @@ function review(opt) {
 /* ---------- khởi động ---------- */
 if (!U.length) { app.innerHTML = '<section class="card narrow center"><h1>Chưa tải được từ vựng</h1><p>Em kiểm tra mạng rồi tải lại trang.</p></section>'; return; }
 addEventListener("beforeunload", ev => { if (inReview) { ev.preventDefault(); ev.returnValue = ""; } });
-if (!student) entry(home); else { loadLocal(); home(); pull().then(ch => { if (ch && !inReview) home(); }); }
+function autostart() {   // mở từ Vườn từ vựng trên dashboard
+  if (AUTO.focus && W[AUTO.focus]) { const f = AUTO.focus; AUTO = { go: false, focus: "" }; review({ ids: [f] }); return true; }
+  if (AUTO.go) { AUTO = { go: false, focus: "" }; const L = plan(); if (L.due.length + L.fresh.length) { review(); return true; } }
+  return false;
+}
+if (!student) entry(() => { if (!autostart()) home(); });
+else { loadLocal(); home(); pull().then(ch => { if (inReview) return; if (!autostart() && ch) home(); }); }
 })();
