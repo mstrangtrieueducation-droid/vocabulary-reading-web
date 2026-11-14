@@ -396,3 +396,8 @@ ol.guide{padding-left:20px;margin:6px 0 12px}ol.guide li{margin:4px 0}
 .vres h4{margin:14px 0 4px}.vtop{display:flex;gap:14px;align-items:center}
 .okline{color:#1f8a4c;font-weight:700}
 ul.tips{padding-left:20px;margin:4px 0}ul.tips li{margin:3px 0}
+
+.memline{margin:10px 0 0;font-size:14px;color:inherit;opacity:.92}.memline b{font-size:15px}
+.result .memline{background:var(--soft);border-radius:12px;padding:10px 12px;opacity:1}
+.result .memline .btn{margin-left:6px}
+.hintw{margin-top:8px;font-family:ui-monospace,Menlo,Consolas,monospace;letter-spacing:2px;font-size:18px;color:var(--muted)}

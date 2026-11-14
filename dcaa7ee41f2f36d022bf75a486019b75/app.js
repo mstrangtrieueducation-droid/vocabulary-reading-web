@@ -255,12 +255,24 @@ function micErrorText(e) {
 
 /* ---------- ôn tập ngắt quãng ---------- */
 const BOX_DAYS = [0, 1, 3, 7, 14];
+// Hộp Leitner: đúng khi đã đến hạn → lên hộp (ôn lại sau 1 → 3 → 7 → 14 ngày); sai → về hộp 0, ôn lại ngày mai.
+// Đúng khi CHƯA đến hạn (vd. làm lại bài luyện trong ngày) không được lên hộp, để không "thuộc giả".
 function mark(n, ok) {
-  const w = S.words[n] || (S.words[n] = { box: 0, due: 0, miss: 0 });
-  if (ok) w.box = Math.min(4, w.box + 1); else { w.box = 0; w.miss++; }
-  w.due = dayNow() + BOX_DAYS[w.box] + (ok ? 0 : 1);
+  const w = S.words[n] || (S.words[n] = { box: 0, due: 0, miss: 0 }), d = dayNow();
+  if (!ok) { w.box = 0; w.miss++; w.due = d + 1; return; }
+  if (w.due > d) return;
+  w.box = Math.min(4, w.box + 1); w.due = d + BOX_DAYS[w.box];
 }
-const dueWords = () => Object.entries(S.words).filter(([, w]) => w.box < 4 && w.due <= dayNow()).map(([n]) => +n);
+// Học xong bước 1 của bài nào thì mọi từ của bài đó vào lịch ôn (ôn lần đầu ngày hôm sau).
+function enroll(i) {
+  let n = 0; (V[i - 1] || { entries: [] }).entries.forEach(e => { if (!S.words[e.n]) { S.words[e.n] = { box: 0, due: dayNow() + 1, miss: 0 }; n++; } });
+  return n;
+}
+function enrollAll() { let n = 0; for (let i = 1; i <= N_UNITS; i++) if ((S.units[i] || {}).learn) n += enroll(i); return n; }
+const dueWords = () => Object.entries(S.words).filter(([, w]) => w.box < 4 && w.due <= dayNow()).map(([n]) => +n).sort((a, b) => S.words[a].due - S.words[b].due || S.words[b].miss - S.words[a].miss);
+const REVIEW_MAX = 15;
+const reviewNeeded = () => !OWNER && S.rev !== dayNow() && dueWords().length > 0;
+const memStats = () => { const ws = Object.values(S.words); return { sure: ws.filter(w => w.box >= 3).length, learning: ws.filter(w => w.box < 3).length, total: V.reduce((a, u) => a + u.entries.length, 0) }; };
 
 
 /* ---------- khung trang ---------- */
@@ -299,6 +311,7 @@ function go(where) {
   if (isLocked()) return lockScreen();
   const [v, a] = where.split(":");
   if (v === "home") return home();
+  if (["learn", "speak", "quiz", "gread", "gex"].includes(v) && reviewNeeded()) return reviewGate(where);
   if (v === "unit") return unitView(+a);
   if (v === "learn") return learn(+a, firstUnseen(+a));
   if (v === "speak") return speak(+a);
@@ -314,7 +327,7 @@ function lockScreen() {
 }
 function howto() {
   const d = document.createElement("div"); d.className = "modal";
-  d.innerHTML = '<div class="modal-box"><h2>Mỗi bài có 5 bước</h2><div class="pills">' + STEPS.map((s, j) => '<span class="pill">' + (j + 1) + ". " + s.icon + " " + s.name + (s.sub ? " (" + s.sub + ")" : "") + "</span>").join('<span class="arrow">➔</span>') + '</div><p class="muted">Luyện từ và Bài tập NP đạt ≥ ' + C.PASS + '% để mở bài kế tiếp. Nên dùng Chrome hoặc Safari, đeo tai nghe có micro.</p><button class="btn primary" id="mclose">Đã hiểu</button></div>';
+  d.innerHTML = '<div class="modal-box"><h2>Mỗi bài có 5 bước</h2><div class="pills">' + STEPS.map((s, j) => '<span class="pill">' + (j + 1) + ". " + s.icon + " " + s.name + (s.sub ? " (" + s.sub + ")" : "") + "</span>").join('<span class="arrow">➔</span>') + '</div><p><b>🔁 Ôn từ mỗi ngày:</b> mỗi ngày học, em ôn trước tối đa ' + REVIEW_MAX + ' từ cũ đến hạn (khoảng 3 phút) rồi mới học tiếp. Từ đúng quay lại sau 1 → 3 → 7 → 14 ngày, từ sai quay lại ngày mai — nhờ vậy em nhớ từ lâu.</p><p class="muted">Luyện từ và Bài tập NP đạt ≥ ' + C.PASS + '% để mở bài kế tiếp. Nên dùng Chrome hoặc Safari, đeo tai nghe có micro.</p><button class="btn primary" id="mclose">Đã hiểu</button></div>';
   document.body.appendChild(d);
   const close = () => d.remove();
   d.onclick = e => { if (e.target === d) close(); };
@@ -369,7 +382,8 @@ function home() {
   } else {
     today = '<div class="today"><div class="tt"><span class="kick">CHẶNG CUỐI</span><h2>' + (completed() ? "Hoàn thành xuất sắc!" : "Kiểm tra cuối khoá") + '</h2><span class="small">40 câu · đạt ≥ ' + C.FINAL_PASS + '%</span><button class="btn gold big" data-go="final">' + (completed() ? "Làm lại để nâng điểm" : "▶ Vào bài kiểm tra") + ' ➔</button></div><img class="titi-hero" src="./titi/titi-top.webp" alt=""></div>';
   }
-  const due = dueWords().length;
+  const due = dueWords().length, ms = memStats(), rn = reviewNeeded();
+  if (rn && cu) today = today.replace(/<button class="btn gold big" data-go="[^"]+">[^<]*<\/button>/, '<button class="btn gold big" data-go="review">🔁 Ôn ' + Math.min(due, REVIEW_MAX) + ' từ cũ trước (~3 phút) ➔</button><span class="small">Ôn xong là vào Bài ' + cu + "</span>");
   let grid = "";
   for (let i = 1; i <= N_UNITS; i++) {
     const d = unitDone(i), op = unlocked(i), n = stepsDone(i);
@@ -381,7 +395,8 @@ function home() {
     (IN_APP ? openOutsideHtml() : "") + (localMode ? '<p class="demo">Bản thử: tiến độ chỉ lưu trên máy này.</p>' : "") + (OWNER ? '<p class="demo owner">👁 <b>Bản chủ</b> — mở sẵn cả 14 bài và bài thi cuối khoá để cô xem, thử. Điểm chỉ lưu trên máy này, không vào danh sách học sinh. <button class="mini" id="ownReset">Làm lại từ đầu</button></p>' : "") +
     '<section class="hero"><div class="hello"><span class="kick">NỀN TẢNG IELTS · VOCAB B1 + NGỮ PHÁP</span><h1>Chào ' + esc(name) + "!</h1>" + status +
     '<div class="kpis"><div class="kpi"><span>📅</span><b>Ngày ' + Math.min(p.d, C.DAYS) + "/" + C.DAYS + "</b><small>Còn " + left + ' ngày</small></div><div class="kpi"><span>📚</span><b>' + p.done + "/" + N_UNITS + ' bài</b><small>Đã hoàn thành</small></div><div class="kpi"><span>🎯</span><b>' + (cu ? "Bài " + Math.max(p.target, cu) : "Cuối khoá") + "</b><small>Mục tiêu hôm nay</small></div></div>" +
-    (due ? '<button class="review" data-go="review">🔁 Ôn ' + due + " từ đến hạn hôm nay ➔</button>" : "") + "</div>" + today + "</section>" +
+    (due ? '<button class="review" data-go="review">🔁 ' + (rn ? "Hôm nay em cần ôn " + Math.min(due, REVIEW_MAX) + " từ cũ trước khi học tiếp" : "Ôn thêm " + Math.min(due, REVIEW_MAX) + " từ (không bắt buộc)") + " ➔</button>" : "") +
+    (ms.sure + ms.learning ? '<p class="memline">🧠 Đã nhớ chắc <b>' + ms.sure + "</b> từ · đang ôn " + ms.learning + " · cả khoá " + ms.total + " từ</p>" : "") + "</div>" + today + "</section>" +
     '<div class="sechead"><h2>Lộ trình 14 bài</h2><span class="muted">Đạt ≥ ' + C.PASS + '% để mở bài kế tiếp</span><button class="howbtn" data-howto>? Cách học</button></div>' +
     '<section class="grid">' + grid + "</section>" +
     '<button class="finalbar ' + (completed() ? "done" : canFinal() ? "open" : "lock") + '" ' + (canFinal() ? 'data-go="final"' : "disabled") + '><span class="fi">★</span><span><b>Kiểm tra cuối khoá</b><small>40 câu từ vựng + ngữ pháp · đạt ≥ ' + C.FINAL_PASS + "%</small></span><span class=\"fs\">" + (completed() ? "✓ " + fin : canFinal() ? (fin || "Vào thi ➔") : "🔒 Xong 14 bài để mở") + "</span></button>",
@@ -432,7 +447,7 @@ function learn(i, k) {
   const pv = document.getElementById("prev"), nx = document.getElementById("next"), dn = document.getElementById("done");
   if (pv) pv.onclick = () => learn(i, k - 1);
   if (nx) nx.onclick = () => learn(i, k + 1);
-  const finish = () => { U(i).learn = 1; save({ unit: i, part: "Học từ", score: "", detail: es.length + " từ" }); toast("Xong bước 1!"); speak(i); };
+  const finish = () => { U(i).learn = 1; enroll(i); save({ unit: i, part: "Học từ", score: "", detail: es.length + " từ" }); toast("Xong bước 1!"); speak(i); };
   if (dn) dn.onclick = finish;
   onKeys(ev => {
     if (ev.key === "ArrowRight" && k + 1 < es.length) learn(i, k + 1);
@@ -1245,6 +1260,14 @@ function vocabQuestion(e, kind, pool, noSpeak) {
     const opts = shuffle([ans].concat([...new Set(ds)].slice(0, 3)));
     return { kind: "choice", n: e.n, sec: "v", label: "Điền vào chỗ trống", prompt: esc(e.ex.slice(0, a)) + '<span class="gap">______</span>' + esc(e.ex.slice(b)), options: opts, answer: opts.indexOf(ans), correctText: ans, why: e.term + " — " + e.vi, review: rv };
   }
+  if (kind === "recall") {   // tự nhớ ra từ tiếng Anh từ nghĩa tiếng Việt, có gợi ý chữ cái đầu
+    const vis = String(e.vi || "").split(" · "), j = e.speak.length === 1 ? 0 : vis.length === e.speak.length ? Math.floor(Math.random() * e.speak.length) : -1;
+    if (j >= 0) {
+      const w = e.speak[j], hint = w.split(" ").map(t => t[0] + "_".repeat(Math.max(0, t.length - 1))).join("  ");
+      return { kind: "type", n: e.n, sec: "v", label: "✍️ Gõ từ tiếng Anh nghĩa là:", prompt: "<b>" + esc(e.speak.length === 1 ? e.vi : vis[j]) + '</b><div class="hintw">' + esc(hint) + "</div>", accept: [w].concat(e.speak.length === 1 ? e.term.split(/\s*[~·]\s*/) : []), correctText: w, why: e.term + " — " + e.vi, review: w + " — " + (e.speak.length === 1 ? e.vi : vis[j]) };
+    }
+    return vocabQuestion(e, "cloze", pool, noSpeak);
+  }
   if (kind === "dict") {
     const w = e.speak.find(p => /^[a-z-]{4,}$/i.test(p));
     if (w) return { kind: "type", n: e.n, sec: "v", label: "🎧 Nghe và gõ lại từ", audio: w, accept: [w], correctText: w, why: e.vi, review: w + " — " + e.vi };
@@ -1301,14 +1324,27 @@ function grammarQuiz(i) {
 }
 
 /* ---------- ôn tập ---------- */
-function review() {
-  const ns = pick(dueWords(), 15);
+// Từ càng nhớ lâu thì câu hỏi càng khó: nhận ra (nghe/chọn nghĩa) → dùng trong câu → tự nhớ ra và gõ.
+const REVIEW_KINDS = [["listen", "meaning", "cloze"], ["meaning", "cloze", "recall"], ["cloze", "dict", "recall"], ["recall", "recall", "cloze"], ["recall"]];
+function review(then) {
+  const ns = dueWords().slice(0, REVIEW_MAX);
   if (!ns.length) { toast("Hôm nay em không có từ nào cần ôn."); return home(); }
-  const qs = ns.map(n => { const u = unitOfEntry(n); return vocabQuestion(entryOf(n), pick(["listen", "meaning", "cloze", "say"], 1)[0], u.entries); });
-  runQuiz({ title: "Ôn tập", head: '<header class="lhead"><button class="crumb" data-go="home">← Lộ trình</button><div class="lt"><b>🔁 Ôn tập từ đến hạn</b></div></header>' }, qs, (score, wrong) => {
+  const qs = shuffle(ns).map(n => { const u = unitOfEntry(n), w = S.words[n] || { box: 0 }; return vocabQuestion(entryOf(n), pick(REVIEW_KINDS[Math.min(4, w.box)], 1)[0], u.entries, true); });
+  runQuiz({ title: "Ôn tập", head: '<header class="lhead"><button class="crumb" data-go="home">← Lộ trình</button><div class="lt"><b>🔁 Ôn từ cũ</b></div></header>' }, qs, (score, wrong) => {
+    S.rev = dayNow();
     save({ unit: "", part: "Ôn tập", score, detail: ns.length + " từ" + (wrong.length ? " · Sai: " + wrong.join("; ") : "") });
-    resultCard(0, "Ôn tập", score, wrong, { noPass: true });
+    resultCard(0, "Ôn tập", score, wrong, { noPass: true, msg: score >= 80 ? "Em nhớ từ tốt lắm!" : score >= 50 ? "Ôn xong — cố thêm chút nữa nhé!" : "Ôn xong — các từ sai sẽ quay lại ngày mai" });
+    const nav = app.querySelector(".result .rright .nav"); if (nav) {
+      const ms = memStats(), p = document.createElement("p"); p.className = "memline";
+      p.innerHTML = "🧠 Em đã nhớ chắc <b>" + ms.sure + "</b> từ. " + (wrong.length ? "Từ sai sẽ quay lại vào ngày mai." : "Các từ đúng sẽ quay lại sau vài ngày để em nhớ lâu hơn.") + (then ? ' <button class="btn primary" data-go="' + esc(then) + '">Học tiếp ➔</button>' : "");
+      nav.parentNode.insertBefore(p, nav); p.querySelectorAll("[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));
+    }
   });
+}
+function reviewGate(where) {
+  const n = Math.min(dueWords().length, REVIEW_MAX);
+  shell('<section class="card center narrow"><img class="titi-lg" src="./titi/titi-good.webp" alt=""><h1>Ôn ' + n + ' từ cũ trước nhé!</h1><p>Mỗi ngày em ôn lại các từ đã học đúng lúc sắp quên — chỉ khoảng 3 phút, giúp em nhớ từ lâu hơn rất nhiều.</p><p class="muted small">Từ đúng sẽ quay lại sau 1 → 3 → 7 → 14 ngày; từ sai quay lại ngày mai.</p><button class="btn gold big" id="rvGo">🔁 Bắt đầu ôn ➔</button></section>');
+  document.getElementById("rvGo").onclick = () => review(where);
 }
 
 /* ---------- kiểm tra cuối khoá (làm hết rồi nộp) ---------- */
@@ -1368,7 +1404,7 @@ function resultCard(i, part, score, wrong, o) {
   o = o || {};
   const pass = o.pass || C.PASS, ok = o.noPass || score >= pass;
   const img = score >= 90 ? "titi-top" : ok ? "titi-good" : "titi-calm";
-  const msg = score >= 90 ? "Xuất sắc!" : ok ? "Đạt yêu cầu — tốt lắm!" : "Chưa đạt " + pass + "% · làm lại để nâng điểm";
+  const msg = o.msg || (score >= 90 ? "Xuất sắc!" : ok ? "Đạt yêu cầu — tốt lắm!" : "Chưa đạt " + pass + "% · làm lại để nâng điểm");
   const deg = Math.round(score * 3.6);
   let h = (i ? lessonHead(i, STEPS.findIndex(s => ({ "Phát âm": "speak", "Luyện từ": "quiz", "Bài tập ngữ pháp": "gex" })[part] === s.k)) : "") +
     '<section class="card result"><div class="rleft"><div class="ring ' + (ok ? "good" : "bad") + '" style="--d:' + deg + 'deg"><span>' + score + "%</span></div><img class=\"titi-lg\" src=\"./titi/" + img + '.webp" alt=""></div><div class="rright"><span class="kick">' + (i ? "BÀI " + i + " · " : "") + esc(part.toUpperCase()) + "</span><h1>" + msg + "</h1>" +
@@ -1405,7 +1441,7 @@ function boot() {
   if (OWNER && !localMode) return ownerBoot();
   if (!token) { shell('<section class="card center narrow"><h1>Nền tảng IELTS</h1><p>Em mở đúng link riêng cô Trang đã gửi nhé.</p></section>'); return; }
   if (localMode) {
-    S = loadLocal() || blank(); if (!S.start) { S.start = Date.now(); saveLocal(); }
+    S = loadLocal() || blank(); if (!S.start) { S.start = Date.now(); } enrollAll(); saveLocal();
     student = { name: token === "demo" ? "cô (bản thử)" : "", start: null, deadline: null };
     return home();
   }
@@ -1417,7 +1453,7 @@ function boot() {
     student = j.student;
     S = merge(j.state, loadLocal()) || blank();
     if (!S.start) S.start = new Date(student.start).getTime();
-    const vChanged = adoptVideos(j.videos);
+    const vChanged = adoptVideos(j.videos) | (enrollAll() > 0);
     saveLocal();
     if (isLocked()) return lockScreen();
     home();
