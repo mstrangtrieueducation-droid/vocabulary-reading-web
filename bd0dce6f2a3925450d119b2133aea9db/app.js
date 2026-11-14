@@ -67,6 +67,11 @@ const ICON = {
 function toast(msg) { const t = document.getElementById("toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("on"), 2800); }
 const store = { get(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
 let student = store.get("pa-student");
+try {   // mở từ dashboard lớp (ô 🎙 Luyện phát âm): ?w=…&name=…&cls=… — họ tên + lớp của học sinh đang xem
+  const q = new URLSearchParams(location.search), qn = (q.get("name") || "").replace(/\s+/g, " ").trim(), qc = (q.get("cls") || "").replace(/\s+/g, " ").trim().toUpperCase();
+  if (qn.length >= 5 && C.CLASSES.indexOf(qc) >= 0) { student = { name: qn, cls: qc }; store.set("pa-student", student); }
+  if (q.has("name") || q.has("cls")) { q.delete("name"); q.delete("cls"); history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : "")); }
+} catch (e) {}
 if (student && (!student.name || C.CLASSES.indexOf(student.cls) < 0)) student = null;
 const P = store.get("pa-progress") || {};
 const saveP = () => store.set("pa-progress", P);
