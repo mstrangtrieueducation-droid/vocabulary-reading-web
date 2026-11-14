@@ -92,6 +92,7 @@ function appendLog(code, name, events) {
 /* ---------------- GET ---------------- */
 function doGet(e) {
   var p = e.parameter || {};
+  if (p.action === 'pa') return paGet(p);   // Luyện phát âm IELTS (tệp scripts/luyen-phat-am/grader.apps-script.gs)
   if (p.action === 'admin' || p.action === 'detail' || p.action === 'forminfo') return adminGet(p);
   var code = String(p.hs || '').trim();
   var lock = LockService.getScriptLock(); lock.waitLock(20000);
